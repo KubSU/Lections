@@ -1,0 +1,7880 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 5
+\tocdepth 5
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 5 31 -1
+\bullet 3 5 31 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\prime}
+{\prime}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\longrightarrow}
+{\longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
+{\un{\ov{\Sigma}{#2}}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
+{\underset{#1}{\lim}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\underset{#1}{\max}}
+{\underset{#1}{\max}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\underset{#1}{\min}}
+{\underset{#1}{\min}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+{\underset{#1}{\overset{#2}{\int}}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{\pr\pr}
+{\pr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{\ppr\pr}
+{\ppr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
+{\oui{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\triangle}
+{\triangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ek}{\equiv}
+{\equiv}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mor}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mand}{\cap}
+{\cap}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Дискретка, Второй семестр.
+\end_layout
+
+\begin_layout Section
+Конечные автоматы.
+\end_layout
+
+\begin_layout Standard
+Будем рассматриватьмоднли систем обрабатывающие данные из внешней среды.
+ Эти системы имеют устройства для ввода и вывода, механизм обратотки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Вход}\longrightarrow\left[\text{Ы}\right]\longrightarrow\text{Выход}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем рассматриватьмодели, работающие в дескретном времени, тоесть работа
+ выполняется по шагам и они пронумерованы по времени.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{0}$
+\end_inset
+
+- начальный момент времени.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{0},t_{0}+1,t_{0}+2\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем считать что в каждый момент времени устройство находится в одниом
+ из своих внутренних состояний.
+ Функционирование устройства однозначно определяется входными данными и
+ текущим состоянием.
+\end_layout
+
+\begin_layout Standard
+Результатом работы устройства является однозначное определяемое новое состояние
+ ( В следующий момент времени) и значением, поступающим на выход устройства.
+\end_layout
+
+\begin_layout Definition*
+Формальное определение автоны функции 
+\begin_inset Formula $g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $f\left(x_{1},\tr x_{n},x_{n+1}\right)$
+\end_inset
+
+ получается из g и h с помошью операция примитивной рекурсии, если 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $f\left(x_{1}\tr x_{n},0\right)=g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $f\left(x_{1}\tr x_{n},y+1\right)=h\left(x_{1}\tr x_{n},y,f\left(x_{1}\tr x_{n},y\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+В f :
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+- параметры, которые в схеме не меняются, 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ - переменная рекурсии, 
+\begin_inset Formula $x_{n+2}$
+\end_inset
+
+ - процедура рекурсивногго обращения.
+\end_layout
+
+\begin_layout Definition
+примитивная рекурсия мложелирует оператор арифмитического цикла.
+\end_layout
+
+\begin_layout Definition
+Класс всех числ
+\end_layout
+
+\begin_layout Definition*
+Формальное определение автомата.
+ Конечным автоматом называется пятёрка 
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $A,B,Q$
+\end_inset
+
+ - конечные множества, а 
+\begin_inset Formula $\varphi,\psi$
+\end_inset
+
+- отображения: 
+\begin_inset Formula $\varphi:A\times Q\longrightarrow Q$
+\end_inset
+
+ ;
+\begin_inset Formula $\psi:A\times Q\longrightarrow B$
+\end_inset
+
+ называются функциями перехода и выхода автомата.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $A$
+\end_inset
+
+ - Входной алфавит.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $B$
+\end_inset
+
+ - Выходной алфавит.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $Q$
+\end_inset
+
+ - Множество состояний.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $\varphi$
+\end_inset
+
+- Функция изменения состояния.
+ 
+\begin_inset Formula $\left(a\in A;q,q'\in Q;\varphi\left(a,q\right)=q'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $\psi$
+\end_inset
+
+- Функция вывода.
+\end_layout
+
+\begin_layout Subsection
+Представление автоматов
+\end_layout
+
+\begin_layout Subsubsection
+Табличное задание.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ a_{1}\ldots a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B=\left\{ b_{1}\ldots b_{m}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\left\{ q_{1}\ldots q_{r}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{cccccc}
+\varphi & q_{1} & \ldots & q_{i} & \ldots & q_{r}\\
+a_{1} &  &  & \downarrow\\
+\ldots &  &  & \downarrow\\
+a_{j} & \longrightarrow & \longrightarrow & \sigma_{i,j}\\
+\ldots\\
+a_{n}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma_{i,j}=\varphi\left(a_{i},q_{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{cccccc}
+\psi & q_{1} & \ldots & q_{i} & \ldots & q_{r}\\
+a_{1} &  &  & \downarrow\\
+\ldots &  &  & \downarrow\\
+a_{j} & \longrightarrow & \longrightarrow & \delta_{i,j}\\
+\ldots\\
+a_{n}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta_{i,j}=\psi\left(a_{i},q_{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Диаграммы перехода.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ a_{1}\ldots a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B=\left\{ b_{1}\ldots b_{m}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\left\{ q_{1}\ldots q_{r}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем изображатьсостояние автоматакругами, которым приписаны состояния.Из
+ кружков выходят дуги, где дуга - алфавит 
+\begin_inset Formula $\varphi\left(a_{i},q_{j}\right)$
+\end_inset
+
+.
+ Дополнительно все дуги размечены значения 
+\begin_inset Formula $\psi\left(a_{i},q_{j}\right)$
+\end_inset
+
+, т.е.
+ выходные параметры.
+\end_layout
+
+\begin_layout Example*
+Газетный автомат.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $3,5$
+\end_inset
+
+ сантимов - это монеты.
+ В автомат помещаются монеты,и он способен выдать газету, если в него помещено
+ не менее 
+\begin_inset Formula $10$
+\end_inset
+
+ монет.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $A=\left\{ 3,5,\Lambda,K\right\} $
+\end_inset
+
+(
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ - ничего, 
+\begin_inset Formula $K$
+\end_inset
+
+ - кнопка)
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $B=\left\{ \Lambda,\varrho\right\} $
+\end_inset
+
+(
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ - ничего, 
+\begin_inset Formula $\varrho$
+\end_inset
+
+ - газета)
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $Q=\left(0,3,6,8,9,10\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+и т.д.
+\end_layout
+
+\begin_layout Remark*
+Это неполный пример, я пока не знаю, как можно его дополнить.
+\end_layout
+
+\begin_layout Subsubsection
+Каконические уравнения.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+; 
+\begin_inset Formula $A=\left\{ a_{1}\ldots a_{n}\right\} $
+\end_inset
+
+; 
+\begin_inset Formula $B=\left\{ b_{1}\ldots b_{m}\right\} $
+\end_inset
+
+; 
+\begin_inset Formula $Q=\left\{ q_{1}\ldots q_{r}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ - время состояния 
+\begin_inset Formula $q_{0}\in Q$
+\end_inset
+
+ в этот момент тогда работа Ы во времени представляется следующими отношениями:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t_{0}\right)=t_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t+1\right)=\varphi\left(x\left(t\right),q\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+- входной символ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t\right)$
+\end_inset
+
+- состояние автомата в момент 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(t\right)=\psi\left(x\left(t\right),q\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+- символ выхода.
+\end_layout
+
+\begin_layout Subsection
+Функции конечных автоматов.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A=\left(a_{1}\ldots a_{n}\right)$
+\end_inset
+
+, где элементы - символы.
+ Слово в 
+\begin_inset Formula $A$
+\end_inset
+
+ - всякая конечная последовательность символов.
+ Пустое слово - 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ Множество слов в 
+\begin_inset Formula $A$
+\end_inset
+
+ - это 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha,\beta\in A^{*}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ - сцепление(конкютинация) - это слово, получаемое выписыванием сначала
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, потом 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+ - автомат.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{0};q_{0}\in Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha=\sigma_{1}\sigma_{2}\sigma_{3}\ldots\sigma_{s}$
+\end_inset
+
+ - поступает слово.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\begin{array}{cccccccc}
+ & t_{0} & t_{0}+1 & t_{0}+2 & t_{0}+3 & \ldots & t_{0}+s-1\\
+\alpha & \sigma_{1} & \sigma_{2} & \sigma_{3} & \sigma_{4} & \ldots & \sigma_{s}\\
+q_{i} & q_{0} & q' & q'' & q''' & \ldots & q^{s-1} & q^{s}s\\
+\beta & \delta_{1} & \delta_{2} & \delta_{3} & \delta_{4} & \ldots & \delta_{s}
+\end{array}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi\left(\sigma_{i},q^{i-1}\right)=\delta_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(\sigma_{j},q^{j-1}\right)=q^{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если на вход Ы поступает 
+\begin_inset Formula $\alpha=\sigma_{1}\ldots\sigma_{s}$
+\end_inset
+
+(входное слово), а на выходе выходит 
+\begin_inset Formula $\beta=\delta_{1}\ldots\delta_{s}$
+\end_inset
+
+(выходное слово), то будем говорить, что автомат из 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ перерабатывает слово 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в слово 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $f:A^{*}\longrightarrow B^{*}$
+\end_inset
+
+, вычисляемая автоматом Ы из 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\begin_inset Formula $\Longleftrightarrow(def)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\alpha\in A^{*}\left(f\left(\alpha\right)=\beta\longleftrightarrow\text{\ensuremath{Ы}из \ensuremath{q_{0}}перерабатывает \ensuremath{\alpha}в \ensuremath{\beta}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Числовые функции, вычисляемые автоматами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:N^{k}\longrightarrow N$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=\left\{ 1,2,3,4,5,6,7,8\ldots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x_{1}\ldots x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{1}\ldots x_{n}$
+\end_inset
+
+ - исходные данные (
+\begin_inset Formula $x_{i}\in\left\{ 0,1\right\} $
+\end_inset
+
+), добавлены нули слева для выравнивания их по длинне.
+ Рассматривам 
+\begin_inset Formula $x_{1}\ldots x_{n}$
+\end_inset
+
+двоичными наборами с любым количеством незначимых нулей.
+ 
+\begin_inset Formula $\left(\overline{x_{1}\ldots x_{n}}\right)$
+\end_inset
+
+- слово, симвалами которого различные наборы длинны 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Соответстыуют 1,2,3..
+ разрядов 
+\begin_inset Formula $x_{1},x_{2}\ldots x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $f:N^{k}\longrightarrow N$
+\end_inset
+
+ вычисляется 
+\begin_inset Formula $Ы=\left(E_{2}^{2},E_{2},Q,\varphi,\psi\right)$
+\end_inset
+
+ из 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\begin_inset Formula $\Longleftrightarrow(def)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x_{1}\ldots x_{n}\in N\left(f\left(x_{1}\ldots x_{n}\right)=y\Longleftrightarrow\text{Ы}\text{из }q_{0}\mbox{ перерабатывает }\mbox{\left(\overline{x_{1}\ldots x_{n}}\right) }\mbox{ в }\overline{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $f\left(x,y\right)=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $A=\begin{Bmatrix}0 & 0 & 1 & 1\\
+0 & 1 & 0 & 1
+\end{Bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $B=\left\{ 0,1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+......
+\end_layout
+
+\begin_layout Remark*
+С примерами у меня как то не пошло, хз как его тут делать.
+\end_layout
+
+\begin_layout Definition*
+Если 
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+,то словяная функция, вычасляющаяся 
+\begin_inset Formula $Ы$
+\end_inset
+
+ из 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ обозначаается как 
+\begin_inset Formula $f_{\text{ы}}^{q_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Неформулируемость функции умножения в автоматах.
+\end_layout
+
+\begin_layout Theorem*
+Числовая функция 
+\begin_inset Formula $f\left(x,y\right)=x\cdot y$
+\end_inset
+
+ не вычислима конечными автоматами.
+\end_layout
+
+\begin_layout Proof
+Предположим обратное.
+ 
+\begin_inset Formula $Ы=\left(E_{2}^{2},E_{2},Q,\varphi,\psi\right)$
+\end_inset
+
+.
+ Из начального состояния 
+\begin_inset Formula $q_{0}\in Q$
+\end_inset
+
+ вычисляет функцию 
+\begin_inset Formula $f\left(x,y\right)=x\cdot y$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $f_{\text{ы}}^{q_{0}}=x\cdot y$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\left|Q\right|=r$
+\end_inset
+
+.
+ Рассмотрим процесс преработки автоматом Ы входных слов, представляющих
+ числа, двоичная запись которых длинны 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Длинна произведения таких чисел может равняться 
+\begin_inset Formula $2\cdot n$
+\end_inset
+
+ это так, поскольку самое большое число - 
+\begin_inset Formula $\left(2\cdot n-1\right)$
+\end_inset
+
+, а их произведение - 
+\begin_inset Formula $\left(2^{n}-1\right)^{2}=2^{2n}-2\cdot2^{2n}+1$
+\end_inset
+
+.
+ Рассмотрим процесс переработки таких чисел после подачи на вход автомата
+ их старших разрядов.
+ После переработки 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ он находится в первом из своих состояний и продолжает работу, пока на вход
+ не поступит пара нулей.
+ Тоесть заполнение автоматом старших 
+\begin_inset Formula $n$
+\end_inset
+
+ разрялов произведения зависит лишь в каком он состоянии он начинает формировать
+ значения этих разрядов.
+ 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ Разных способов заполненгия старших 
+\begin_inset Formula $n$
+\end_inset
+
+ разряддов 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+разрядных произведений по 
+\begin_inset Formula $n$
+\end_inset
+
+ - разрядным числам неболее чем 
+\begin_inset Formula $r$
+\end_inset
+
+ и значения старших 
+\begin_inset Formula $n$
+\end_inset
+
+ разрядов произведения зависит только от того, в каком состоянии автомат
+ начинает формировать значения этих разрядов.
+ Значения старших 
+\begin_inset Formula $n$
+\end_inset
+
+ разрядов произведения 
+\begin_inset Formula $n$
+\end_inset
+
+ разрядных чисел представляет собой любые двоичные последовательности длинны
+ 
+\begin_inset Formula $n$
+\end_inset
+
+, поэтому их не меньще чем 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+.
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+Должно выполняться 
+\begin_inset Formula $r\geq2^{n}$
+\end_inset
+
+, не верно так как 
+\begin_inset Formula $r$
+\end_inset
+
+ - фиксировано, а 
+\begin_inset Formula $n$
+\end_inset
+
+ - произвольное.
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ Противоречие.
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+Предположеие не верно.
+ 
+\emph on
+Чтд.
+\end_layout
+
+\begin_layout Subsection
+Переработка автоматами неограниченых сверхслов.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\align block
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ - конечный алфовит.
+ 
+\begin_inset Formula $A^{\infty}$
+\end_inset
+
+ - множество сверхслов в алфовите 
+\begin_inset Formula $A$
+\end_inset
+
+ (
+\begin_inset Formula $\infty$
+\end_inset
+
+ последовательность символов из 
+\begin_inset Formula $A$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Definition*
+Сверхслово 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - переодическое 
+\begin_inset Formula $\Longleftrightarrow(def)$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha=\beta\text{\ensuremath{\left(\gamma\right)^{\infty}}}$
+\end_inset
+
+ , где 
+\begin_inset Formula $\beta,\gamma\in A^{*}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\gamma\right|>0$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Theorem*
+Пусть 
+\begin_inset Formula $Ы=\left(E_{2}^{2},E_{2},Q,\varphi,\psi\right)$
+\end_inset
+
+ - конечный автомат, 
+\begin_inset Formula $q'\in Q$
+\end_inset
+
+ (q' - начальное состояние),
+\begin_inset Formula $\alpha\in A^{\infty}$
+\end_inset
+
+(
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - переодическое сверхслово)
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ Ы перерабатывает 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в бесконечное переодическое сверхслово.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\alpha=\beta\text{\ensuremath{\left(\gamma\right)^{\infty}}}$
+\end_inset
+
+ ; 
+\begin_inset Formula $\left|\gamma\right|>0$
+\end_inset
+
+ .
+ Рассмотрим процесс переработки 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.Рассмотрим последовательность 
+\begin_inset Formula $q_{1},q_{2},q_{3}\ldots q_{i}\ldots$
+\end_inset
+
+(1**).
+ Это состояния автомата в момент переработки символов последовательно идущих
+ слов 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ в 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\left|\begin{array}{ccccccc}
+\beta & \gamma & \gamma & \gamma & \ldots & \gamma & \ldots\\
+ & q_{1} & q_{2} & q_{3} &  & q_{i}
+\end{array}\right|$
+\end_inset
+
+ Так как множество состояний 
+\begin_inset Formula $Ы$
+\end_inset
+
+ конечное, то в послеповательности (1**) состояния повторяются.
+ Пусть 
+\begin_inset Formula $q_{s}=q_{p}$
+\end_inset
+
+ при 
+\begin_inset Formula $s<p$
+\end_inset
+
+.
+ Это означает что переработка последовательно идущих слов 
+\begin_inset Formula $\left(\gamma\right)^{p-s}$
+\end_inset
+
+ начиная с вхождения 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ в 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ с номера 
+\begin_inset Formula $s$
+\end_inset
+
+ выполняется одинаково.
+ 
+\begin_inset Formula $\left|\begin{array}{ccccccc}
+ & 1 & \ldots & s & \ldots & s+p & \ldots\\
+\beta & \gamma & \ldots & \gamma & \ldots & \gamma & \ldots
+\end{array}\right|$
+\end_inset
+
+ Тоесть :
+\begin_inset Formula $f_{\text{ы}}^{q'}\left(\alpha\right)$
+\end_inset
+
+=
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $f_{\text{ы}}^{q'}\left(\beta\gamma^{\infty}\right)$
+\end_inset
+
+=
+\begin_inset Formula $f_{\text{ы}}^{q'}\left(\beta\gamma^{s-1}\left(\gamma^{p-s}\right)^{\infty}\right)$
+\end_inset
+
+ =
+\begin_inset Formula $f_{\text{ы}}^{q'}\left(\beta\gamma^{s-1}\right)\left(f_{\text{ы}}^{qs}\left(\gamma^{p-s}\right)\right)$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Чтд
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+.
+\end_layout
+
+\begin_layout Subsection
+Отличимость состояний конечного автомата.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon=\{\left(q',q''\right)|q'$
+\end_inset
+
+и 
+\begin_inset Formula $q''$
+\end_inset
+
+ - неотличимы }
+\end_layout
+
+\begin_layout Definition*
+Состояния 
+\begin_inset Formula $q',q''\in Q;\text{\ensuremath{Ы}}=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+ - неотличимы 
+\begin_inset Formula $\Longleftrightarrow(def)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $f_{ы}^{q'}\equiv f_{ы}^{q''}$
+\end_inset
+
+ или 
+\begin_inset Formula $\forall\alpha\in A^{*}\left(f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition*
+Состояния 
+\begin_inset Formula $q',q''\in Q;\text{\ensuremath{Ы}}=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+ - отличимы 
+\begin_inset Formula $\Longleftrightarrow(def)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $f_{ы}^{q'}\neq f_{ы}^{q''}$
+\end_inset
+
+ или 
+\begin_inset Formula $\exists\alpha\in A^{*}\left(f_{\text{ы}}^{q'}\left(\alpha\right)\neq f_{\text{ы}}^{q''}\left(\alpha\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Распознавания отличимости или неотличимости состояния автомана по определению
+ не возможно.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим задачу распознавания отличимых и неотличимых состояний автомата.
+\end_layout
+
+\begin_layout Definition*
+Состояния 
+\begin_inset Formula $q',q''\in Q;\text{\ensuremath{Ы}}=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+ называются 
+\begin_inset Formula $K$
+\end_inset
+
+ - неотличимыми если 
+\begin_inset Formula $\forall\alpha\in A^{*}\left(|\alpha|\leq K\rightarrow f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+На мноджестве 
+\begin_inset Formula $Q$
+\end_inset
+
+ определим отногшение 
+\begin_inset Formula $K$
+\end_inset
+
+ - неотличимости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{1},q_{2},q_{3}\ldots q_{i}$
+\end_inset
+
+ , где 
+\begin_inset Formula $q_{i}=\left\{ \left(q',q''\right)|q'\text{ и }q''-i-\text{неотличимы}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Добавим к этим отношениям отношение неотличимости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon=\left\{ \left(q',q''\right)|q'\text{ и }q''-\text{неотличимы}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Каждое отношение 
+\begin_inset Formula $q_{1},q_{2}\ldots\varepsilon$
+\end_inset
+
+ - отношения эквивалентности на 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Проверим рефлексивность, симмертичность и транзитивность.
+\end_layout
+
+\begin_layout Proof
+1) 
+\emph on
+Рефлексивность.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall q\in Q\left(q\rho q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\alpha\right|\leq i\longrightarrow f_{\text{ы}}^{q}=f_{\text{ы}}^{q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+Рефлексивность 
+\begin_inset Formula $+$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+2) 
+\emph on
+Симметричнось.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall q',q''\left(q'\rho q''\longrightarrow q''\rho q'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall\alpha\in A^{*}\left(\left|\alpha\right|<i\longrightarrow f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)\Longrightarrow\forall\alpha\in A^{*}\left(\left|\alpha\right|<i\longrightarrow f_{\text{ы}}^{q''}\left(\alpha\right)=f_{\text{ы}}^{q'}\left(\alpha\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+Симметричность допишу мб, а пока я хз (
+\begin_inset Formula $\pm$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+3) 
+\emph on
+Транзитивность.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall q',q'',q'''\left(q'\rho q''\&q''\rho q'''\longrightarrow q'\rho q'''\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+.....
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+В общем чтд.
+\end_layout
+
+\begin_layout Lemma*
+\begin_inset Formula $q_{1}\supseteq q_{2}\supseteq q_{3}\supseteq\ldots\supseteq\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Разделим доказательство на два пункта.
+\end_layout
+
+\begin_layout Proof
+1) 
+\emph on
+Докажем что 
+\begin_inset Formula $q_{i}\supseteq q_{i+1}$
+\end_inset
+
+при 
+\begin_inset Formula $i=1,2,3\ldots n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\left(q',q''\right)\in\rho_{i+1}\Longrightarrow\forall\alpha\in A^{*}\left(\left|\alpha\right|\leq i+1\longrightarrow f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)\Longrightarrow\forall\alpha\in A^{*}\left(\left|\alpha\right|\leq i\longrightarrow f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)\Longrightarrow\left(q',q''\right)\in\rho_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+2) 
+\emph on
+Покажем что
+\begin_inset Formula $\rho_{i}\supseteq\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $q',q"\in\varepsilon\Longrightarrow\forall\alpha\in A^{*}\left(f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)\Longrightarrow\forall\alpha\in A^{*}\left(\left|\alpha\right|\leq i\longrightarrow f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(\alpha\right)\right)\Longrightarrow\left(q',q''\right)\in\rho_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+Чтд.
+\end_layout
+
+\begin_layout Lemma*
+Если 
+\begin_inset Formula $\rho_{i}=\rho_{i+1}\Longrightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma*
+1)
+\begin_inset Formula $\forall j\left(\rho_{i}=\rho_{i+j}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma*
+2)
+\begin_inset Formula $\rho_{i}=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+1)
+\begin_inset Formula $\rho_{i}=\rho_{i+1}\Rightarrow\rho_{i}=\rho_{i+2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\rho_{i}\supseteq\rho_{i+2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\rho_{i+2}\supseteq\rho_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(q',q''\right)\in\rho_{i}\Rightarrow\left(q',q''\right)\in\rho_{i+2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\alpha\in A^{*}$
+\end_inset
+
+ ; 
+\begin_inset Formula $|\alpha|=i+2$
+\end_inset
+
+ ; 
+\begin_inset Formula $\alpha=a\cdot\beta$
+\end_inset
+
+ ; 
+\begin_inset Formula $|\beta|=i+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{\text{ы}}^{q'}\left(\alpha\right)=f_{\text{ы}}^{q'}\left(a\beta\right)=f_{\text{ы}}^{q'}\left(a\right)*f_{\text{ы}}^{\varphi\left(a,q'\right)}\left(\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{\text{ы}}^{q''}\left(\alpha\right)=f_{\text{ы}}^{q''}\left(a\beta\right)=f_{\text{ы}}^{q''}\left(a\right)*f_{\text{ы}}^{\varphi\left(a,q''\right)}\left(\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{\text{ы}}^{q''}\left(\alpha\right)=f_{\text{ы}}^{q'}\left(\alpha\right)\Rightarrow f_{\text{ы}}^{\varphi\left(a,q'\right)}\left(\beta\right)=f_{\text{ы}}^{\varphi\left(a,q''\right)}\left(\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\varphi\left(a,q'\right),\varphi\left(a,q''\right)\right)\in\rho_{i}\sl\left(\varphi\left(a,q'\right),\varphi\left(a,q''\right)\right)\in\rho_{i+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+2)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\rho_{i}=\rho_{i+k}\ ;\ k>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\rho_{i}=\rho_{i+1}=\rho_{i+2}\sl\rho_{i+1}=\rho_{i+3}=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Покажем что 
+\begin_inset Formula $\rho_{i}=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\alpha\in A^{*}$
+\end_inset
+
+, если
+\begin_inset Formula $\left|\alpha\right|\leq i\sl f^{q'}\left(\alpha\right)=f^{q''}\left(\alpha\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\alpha\right|>i\sl f^{q'}\left(\alpha\right)=f^{q''}\left(\alpha\right)$
+\end_inset
+
+так как 
+\begin_inset Formula $\left(q',q''\right)\in\rho_{i+k}\sl\forall\alpha\in A*\left(f^{q'}\left(\alpha\right)=f^{q''}\left(\alpha\right)\right)\sl\left(q',q''\right)\in\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+(3) Разбиение 
+\begin_inset Formula $Q$
+\end_inset
+
+ пораждаемое 
+\begin_inset Formula $\rho_{i+1}$
+\end_inset
+
+ является подразбиением разбиения 
+\begin_inset Formula $Q$
+\end_inset
+
+ пораждаемое 
+\begin_inset Formula $\rho_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $\left(q',q''\right)\in\rho_{i+1}\sl\left(q',q''\right)\in\rho_{i+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тоесть всякий класс 
+\begin_inset Formula $i+1$
+\end_inset
+
+ неотличимых состояний Поэтому всякий класс неотличимых состояний является
+ частью класса 
+\begin_inset Formula $i$
+\end_inset
+
+ неотличимых состояний.
+\end_layout
+
+\begin_layout Theorem*
+Пусть 
+\begin_inset Formula $q'$
+\end_inset
+
+ и 
+\begin_inset Formula $q''$
+\end_inset
+
+ - отличимые состояния автомата 
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\exists\alpha\in A^{*}\left(\left(\left|\alpha\right|\leq\left|Q\right|-1\right)\&\left(f^{q'}\left(\alpha\right)\nr f^{q''}\left(\alpha\right)\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для автомата Ы рассмотрим последповательность отношений 
+\begin_inset Formula $i$
+\end_inset
+
+ неотличимсти состояний.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $q_{1}\supset q_{2}\supset q_{3}\supset\ldots q_{i}=q_{i+1}=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+То 
+\begin_inset Formula $\rho_{1}$
+\end_inset
+
+ разбивает множество 
+\begin_inset Formula $Q$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Это так поскольку если 
+\begin_inset Formula $\rho_{1}$
+\end_inset
+
+ разбивает Q на одно множество, то все состояния автомата Ы являются 1-неотличим
+ыми, что вличет неотличимость любых 2х состояний автомата Ы.
+\end_layout
+
+\begin_layout Proof
+Тошда число множеств разбиения не меньше чем 3.
+\end_layout
+
+\begin_layout Proof
+А кол во множеств разбиения 
+\end_layout
+
+\begin_layout Proof
+Максималдьное кол во множеств разбиения Q = 
+\begin_inset Formula $\left|Q\right|$
+\end_inset
+
+
+\begin_inset Formula $\sl i+q\leq\left|Q\right|\sl i\leq\left|Q\right|-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тоесть q' и q'' -отличимые состояния автомата Ы должны различаться хотябы
+ на одном слове, длиннна которого не превосходит
+\begin_inset Formula $\left|Q\right|-1$
+\end_inset
+
+, инече в противнгом случае они оказываются неотличтимыми.
+\end_layout
+
+\begin_layout Proof
+Замечание.
+ Доказанная теорема означает, что если Ы имеет N состояний, то отличимость
+ любых 2х его состояний можно проверить если рассмотреть как автомат из
+ этих состояний перерабатывает входные слова длинны не меньше n-1 , если
+ они отличимы, то это будет распознано, а если неотличимы, то не других
+ словах неотличимость проверять нет смысла по доказанной теореме.
+\end_layout
+
+\begin_layout Proof
+Оченка мощность 
+\begin_inset Formula $\left|Q\right|-1$
+\end_inset
+
+ длинны проверяемых слов является точной, тоесть сущ автоматы для которых
+ отличимость некоторых состояний требеет проверки отличимости некоторых
+ состояний.
+\end_layout
+
+\begin_layout Subsection
+Минимальный автомат.
+ 
+\end_layout
+
+\begin_layout Standard
+Нерегулярность структуры венника.
+ 
+\end_layout
+
+\begin_layout Definition
+Автоматы 
+\begin_inset Formula $\text{Ы}_{1}=\left(A,B,Q_{1},\varphi_{1},\psi_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\text{Ы}_{2}=\left(A,B,Q_{2},\varphi_{2},\psi_{2}\right)$
+\end_inset
+
+ называются эквиввалентными если 
+\begin_inset Formula $\forall q'\in Q_{1}\exists q'';\in Q_{2}\left(f_{\text{ы}_{1}}^{q'}\equiv f_{\text{ы}_{2}}^{q''}\right)\&\forall q''\in Q_{2}\exists q';\in Q_{1}\left(f_{\text{ы}_{1}}^{q'}\equiv f_{\text{ы}_{2}}^{q''}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Автомат Ы-минимальный-если любые 2 его состояний неотличимы.
+\end_layout
+
+\begin_layout Lemma
+О минимальном автомате.
+\end_layout
+
+\begin_layout Lemma
+Для каждого автомата Ы существует эквивалентный ему минимальный автомат
+ Т
+\end_layout
+
+\begin_layout Proof
+Пусть сущ автомат Ы ,если он минимальный то теорема доказана))
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1},\tr Q_{d}$
+\end_inset
+
+- классы неотличимых состояний.
+ 
+\begin_inset Formula $Q=\left\{ q_{1},\tr q_{m}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q^{*}=\left\{ q^{1},\tr q^{d}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Определим 
+\begin_inset Formula $\text{Т}=\left(A,B,Q^{*},\Phi,\Psi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\xi:Q\longrightarrow\left\{ 1,\tr d\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Данная фуннкция переводит состояния Ы классы неотличимых состояний этого
+ автомата.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\eta:\left\{ 1,\tr d\right\} \longrightarrow\left\{ 1,\tr m\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall i=\overline{1,d}\ \left(\eta\left(i\right)=min\left(t\right)\right)\ ;\ q_{t}\in Q_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\Phi:A\times Q^{*}\longrightarrow Q^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\Phi\left(a,q^{i}\right)=q^{\xi\left(\varphi\left(a,q_{\eta\left(i\right)}\right)\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\Psi\left(a,q^{i}\right)=\Psi\left(a,q_{\eta\left(i\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Доказательство минималности Т и его эквивалентности автомату Ы.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $q^{i}\in Q^{*}$
+\end_inset
+
+покажем 
+\begin_inset Formula $f_{\tau}^{q^{i}}\equiv f_{\text{ы}}^{q_{\eta\left(i\right)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Покажем 
+\begin_inset Formula $f_{T}^{q^{i}}\left(\alpha\right)=f_{\text{ы}}^{q_{\eta\left(i\right)}}\left(\alpha\right)$
+\end_inset
+
+индукцией по длинне слов 
+\begin_inset Formula $\alpha\in A^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для таких слов одновременно будем доказывать еще 1нг утверждение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\alpha\in A^{*}\left(\Phi\left(\alpha,q^{i}\right)=q^{s}\right)$
+\end_inset
+
+ токого что 
+\begin_inset Formula $q_{\eta\left(s\right)}$
+\end_inset
+
+и 
+\begin_inset Formula $\varphi\left(\alpha,q_{\eta\left(i\right)}\right)$
+\end_inset
+
+- неотличимы.
+\end_layout
+
+\begin_layout Standard
+Базис индукции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\alpha\right|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{T}^{q^{i}}\left(a\right)=\Psi\left(a,q^{i}\right)=\Psi\left(a,q_{\eta\left(i\right)}\right)=f_{\text{Ы}}^{q_{\eta\left(i\right)}}\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q^{s}=\Phi\left(a,q^{i}\right)=q^{\xi\left(\varphi\left(a,q_{\eta\left(i\right)}\right)\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi\ \varphi\left(a,q_{\eta\left(i\right)}\right)\in Q_{s}$
+\end_inset
+
+тогда 
+\begin_inset Formula $q_{\eta\left(s\right)}$
+\end_inset
+
+и 
+\begin_inset Formula $\varphi\left(\alpha,q_{\eta\left(i\right)}\right)$
+\end_inset
+
+- неотличимы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{s}\ q_{\eta\left(s\right)}\in Q_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Индуктивное предположение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\alpha\right|=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\alpha\in A^{*}\left(\left|\alpha\right|=k\longrightarrow f_{T}^{q^{i}}\left(\alpha\right)=f_{\text{ы}}^{q_{\eta\left(i\right)}}\left(\alpha\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Индуктивный переход
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\alpha\right|=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha=\beta\cdot a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\beta\right|=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{T}^{q^{i}}\left(\alpha\right)=f_{T}^{q^{i}}\left(\beta\right)\cdot f_{T}^{q^{s}}\left(a\right)\ ;\ \left(q^{s}=\Phi\left(\beta,q^{i}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{\text{ы}}^{q_{\eta\left(i\right)}}\left(\alpha\right)=f_{\text{ы}}^{\eta\left(i\right)}\left(\beta\right)\cdot f_{\text{ы}}^{\varphi\left(\beta,q_{\eta\left(i\right)}\right)}\left(a\right)$
+\end_inset
+
+=
+\begin_inset Formula $\Psi\left(a,q_{\eta\left(s\right)}\right)=\Psi\left(a,\varphi\left(\beta,q_{\eta\left(i\right)}\right)\right)\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Psi\left(a,\varphi\left(\beta,q_{\eta\left(i\right)}\right)\right)=f_{\text{ы}}^{\varphi\left(\beta,q_{\eta\left(i\right)}\right)}\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Докажем второе индуктивное утверждеие
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $q_{\eta\left(s\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(\beta,q_{\eta\left(s\right)}\right)$
+\end_inset
+
+- неотличимы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(a,q_{\eta\left(s\right)}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(\alpha,q_{\eta\left(i\right)}\right)$
+\end_inset
+
+-тоже неотлшичимы
+\end_layout
+
+\begin_layout Standard
+Покажем что Т эквивалентно Ы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall q^{i}\in Q^{*}\exists q_{j}\in Q\left(f_{T}^{q^{i}}\equiv f_{\text{ы}}^{q_{j}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Покажем что 
+\begin_inset Formula $\forall q_{j}\in Q\exists q^{i}\in Q^{*}\left(f_{T}^{q^{i}}\equiv f_{\text{ы}}^{q_{j}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $q_{j}\in Q\&q_{i}\in Q_{k}\sl f_{\text{ы}}^{q_{j}}\equiv f_{\text{ы}}^{q_{\nu\left(k\right)}}\equiv f_{T}^{q^{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Покажем что Т - минимальный.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q^{i},q^{j}\in Q^{*}\&\; i\neq j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+f_{T}^{q^{i}}\equiv f_{\text{ы}}^{q_{\nu\left(i\right)}}\\
+f_{T}^{q^{j}}\equiv f_{\text{ы}}^{q_{\nu\left(j\right)}}
+\end{cases}\sl f_{T}^{q^{i}}\neq f_{T}^{q^{j}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Распознование слов автоматами.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+ - произвольный автомат.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{0}\in Q$
+\end_inset
+
+ - начальное состояние.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\subseteq Q$
+\end_inset
+
+ - множество распознающих состояний.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\alpha\in A^{*}$
+\end_inset
+
+ Ы 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ распознаются D 
+\begin_inset Formula $\ddsl$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\left(\alpha,q_{0}\right)\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для престтавления автоматов распознающих слова, применяется специальная
+ форма обозначения 
+\begin_inset Formula $Ы=\left(A,Q,\varphi,q_{0},D\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U\subseteq A^{*}$
+\end_inset
+
+- образует автоматный язык (Множество слов распознаваемых автоматом) для
+ 
+\begin_inset Formula $Ы=\left(A,Q,\varphi,q_{0},D\right)$
+\end_inset
+
+ если, 
+\begin_inset Formula $\forall\alpha\in A^{*}\left(\alpha\in U\longleftrightarrow\varphi\left(\alpha,q_{0}\right)\in D\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $A=\left\{ S,O\right\} $
+\end_inset
+
+, построем автомат распознабюший 
+\begin_inset Formula $\alpha=\alpha'sos\alpha''$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $Ы_{1}=\left(A,Q_{1},\varphi_{1},q_{0}^{1},D_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $Ы_{2}=\left(A,Q_{2},\varphi_{2},q_{0}^{2},D_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $U_{1}$
+\end_inset
+
+и 
+\begin_inset Formula $U_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $Ы_{3}=\left(A,Q_{3},\varphi_{3},q_{0}^{3},D_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $U_{1}\cup U_{2}\left(U_{1}\cap U_{2},U_{1}\setminus U_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Определим автомат 
+\begin_inset Formula $\text{Ы}_{3}$
+\end_inset
+
+ так чтобы он моделировал работу автоматов 
+\begin_inset Formula $\text{Ы}_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\text{Ы}_{1}$
+\end_inset
+
+ отновременно и независимо.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Ы_{3}=\left(A,Q_{1}\times Q_{2},\varphi_{3},\left(q_{0}^{2},q_{0}^{1}\right),D_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi_{3}:A\times Q_{1}\times Q_{2}\longrightarrow Q_{1}\times Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi_{3}\left(a,q',q''\right)=\left(\varphi_{1}\left(a,q'\right),\varphi_{2}\left(a,q''\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $Ы_{3}$
+\end_inset
+
+ должен распознавать 
+\begin_inset Formula $U_{1}\cup U_{2}$
+\end_inset
+
+ то в качестве 
+\begin_inset Formula $D_{3}$
+\end_inset
+
+ возбмем множество 
+\begin_inset Formula $D_{3}=D_{1}\times Q_{2}\cup Q_{1}\times D_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Покажем, что для так выбранного множества 
+\begin_inset Formula $D_{3}$
+\end_inset
+
+- множество 
+\begin_inset Formula $U_{3}=U_{1}\cup U_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Покажем, что 
+\begin_inset Formula $U_{3}\subseteq U_{1}\cup U_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha\in U_{3}\sl\varphi_{3}\left(\alpha,\left(q_{0}^{1},q_{0}^{2}\right)\right)\in D_{3}\sl\left(q',q''\right)\in D_{1}\times Q_{2}\cup D_{2}\times Q_{1}\sl q'\in D_{1}\vee q''\in D_{2}\sl\alpha\in U_{1}\vee\alpha\in U_{2}\sl\alpha\in U_{1}\cup U_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\left(q',q''\right)=\left(q_{0}^{1},q_{0}^{2}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha\in U_{1}\cup U_{2}\sl\varphi_{1}\left(\alpha,q_{0}^{1}\right)\in D_{1}\vee\varphi_{2}\left(\alpha,q_{0}^{2}\right)\in D_{2}\sl\left(\varphi_{1}\left(\alpha,q_{0}^{1}\right),\varphi_{2}\left(\alpha,q_{0}^{2}\right)\right)\in Q_{1}\times D_{2}\sl\left(\varphi_{1}\left(\alpha,q_{0}^{1}\right),\varphi_{2}\left(\alpha,q_{0}^{2}\right)\right)\in D_{1}\times Q_{1}\sl\alpha\in U_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Рассмотреть самостоятельно.
+\end_layout
+
+\begin_layout Enumerate
+Рассмотреть самостоятельно.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Операции над автоматами.
+\end_layout
+
+\begin_layout Subsubsection
+Операции суперпозиции автоматов.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Ы_{1}=\left(A,B,Q_{1},\varphi_{1},\psi_{1}\right)$
+\end_inset
+
+ - автомат, 
+\begin_inset Formula $q_{0}^{1}\in Q_{1}$
+\end_inset
+
+ - начальное состояние и 
+\begin_inset Formula $Ы_{2}=\left(B,C,Q_{2},\varphi_{2},\psi_{2}\right)$
+\end_inset
+
+ - автомат, 
+\begin_inset Formula $q_{0}^{2}\in Q_{2}$
+\end_inset
+
+ - начальное состояние, рассмотрим 
+\begin_inset Formula $Ы_{3}=\left(A,C,Q_{3},\varphi_{3},\psi_{3}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Ы_{3}$
+\end_inset
+
+ - это:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\longrightarrow\left[\longrightarrow\left[?\right]_{\text{Ы}_{1}}\longrightarrow\left[?\right]_{\text{Ы}_{2}}\longrightarrow\right]_{\text{Ы}_{3}}\longrightarrow
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{3}=Q_{1}\times Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{3}:A\times Q_{1}\times Q_{2}\longrightarrow Q_{1}\times Q_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi_{3}:A\times Q_{1}\times Q_{2}\longrightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы_{3}$
+\end_inset
+
+ можно задасть с помощью следующих канонических уравнений:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{1}\left(t_{0}\right)=q_{0}^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{2}\left(t_{0}\right)=q_{0}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t_{0}\right)=\left(q_{0}^{1},q_{0}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{1}\left(t+1\right)=\varphi_{1}\left(x\left(t\right),q_{1}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{2}\left(t+1\right)=\varphi_{2}\left(\psi_{1}\left(x\left(t\right),q_{1}\left(t\right)\right),q_{2}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(t\right)=\psi_{2}\left(\psi_{1}\left(x\left(t\right),q_{1}\left(t\right)\right),q_{2}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Операции обратной связи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы=\left(A^{2},A^{2},Q,\varphi,\psi\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ A^{2}=A\times A\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{0}$
+\end_inset
+
+- начальное состояние 
+\begin_inset Formula $Ы$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $З=\left(A,A,A,\varphi_{З}.\psi_{З}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $A=\left\{ a_{1},\tr a_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $q_{0}^{З}=a_{1}$
+\end_inset
+
+, автомат задержки задается так: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+q\left(t_{0}\right)=a_{1}\\
+q\left(t+1\right)=x\left(t\right)\\
+y\left(t\right)=q\left(t\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Автомат задержки реализует такое преобразование входных последовательностей
+ символов, в котором такие символы появляются во входной последовательности,
+ с задержкой на один шаг.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим авомат 
+\begin_inset Formula $Ы'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Remark*
+Тут должна быть картинка, которую сделает Жорик.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы'$
+\end_inset
+
+ - Применение к Ы операцуии обратной связи.
+\end_layout
+
+\begin_layout Standard
+Ы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t_{0}\right)=q_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t+!\right)=\varphi\left(x_{1}\left(t\right),x_{2}\left(t\right),q\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+q_{1}\left(t\right)=\psi\ensuremath{_{1}}\left(x_{1}\left(t\right),x_{2}\left(t\right),q\left(t\right)\right)\\
+q_{2}\left(t\right)=\psi_{2}\left(x_{1}\left(t\right),x_{2}\left(t\right),q\left(t\right)\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы'=\left(A,A,Q\times A,\varphi',\psi'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Каноничекские кравнения для Ы': 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(q_{0},a_{1}\right)\begin{cases}
+q_{0}\left(t_{0}\right)=q_{0}\\
+q_{2}\left(t_{0}\right)=a_{1}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{1}\left(t+1\right)=\varphi\left(x\left(t\right),q_{2}\left(t\right),q_{1}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{2}\left(t+1\right)=\psi_{2}\left(x\left(t\right),q_{2}\left(t\right),q_{1}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(t\right)=\psi_{1}$
+\end_inset
+
+
+\begin_inset Formula $\left(x\left(t\right),q_{2}\left(t\right),q_{1}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Автоматные схемы.
+ 
+\begin_inset Formula $(23.3.2013)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 4 автомата: &,
+\begin_inset Formula $V$
+\end_inset
+
+,
+\begin_inset Formula $\overline{\text{}},$
+\end_inset
+
+З.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\left\{ 0,1\right\} ,\left\{ 0,1\right\} ,\left\{ q_{0}\right\} ,\varphi_{\&},\psi_{\&}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi\left(\left(x_{1}\left(t\right),x_{2}\left(t\right)\right),g\left(t\right)\right)=\psi\left(\tr\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из этих элементов состовляются автоматныне схемы по правилам:
+\end_layout
+
+\begin_layout Enumerate
+Некоторое кол-во входов 
+\begin_inset Formula $x_{1},\tr x_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+На каждый вход каждого элемента подается ровно один вход схемы или ровно
+ 1 выход элеменат.
+\end_layout
+
+\begin_layout Enumerate
+Выходы системы могут расщепляться.
+\end_layout
+
+\begin_layout Enumerate
+Выходы элементов , не подсоеденненные к входам других элементов - выход
+ схемы, они наменуются 
+\begin_inset Formula $y_{1},\tr y_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Автоматная схема может содержать цыклы, каждый из которых проходит хотябы
+ через 1 элемент задержки.
+\end_layout
+
+\begin_layout Subsection
+Моделирование произвольных автоматов автоматными схемами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ы=\left(A,B,Q,\varphi,\psi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ a_{1}\ldots a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B=\left\{ b_{1}\ldots b_{m}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\left\{ q_{0},q_{1}\ldots q_{r}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\st\left[\text{Ы}\right]\st$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cc}
+x_{1} & \st\\
+x_{p} & \st
+\end{array}\left[\begin{array}{ccc}
+\\
+ & \text{Ы}'\\
+\\
+\end{array}\right]$
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{cc}
+\st & y_{1}\\
+\st & y_{s}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Символы входного авфавита автомата Ы будем кодировать 2чными наборами 
+\begin_inset Formula $]\log_{2}n[$
+\end_inset
+
+ - P.
+\end_layout
+
+\begin_layout Standard
+Почему столько? - минимальная длинна 2чного набара, которых не меньше чем
+ n.
+\end_layout
+
+\begin_layout Standard
+Аналогично быдем представлять символы вывохного алфавита и множество состояний
+ автомата Ы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $]\log_{2}m[\ =\ S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $]\log_{2}\left(r+!\right)[\ =\ d$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Иньективно сопоставим 2чные наборы длинны S,p,d их A,B,Q.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим каноническое уравнение для Ы.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t_{0}\right)=q_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(t+1\right)=\varphi\left(x\left(t\right),q\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(t\right)=\psi\left(x\left(t\right),q\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем представлять входные символы Ы: 
+\begin_inset Formula $\left(x_{1}\left(t\right),\tr,x_{p}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем представлятьвыходные символы Ы: 
+\begin_inset Formula $\left(y_{1}\left(t\right),\tr,y_{p}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем представлять множество состояний Ы: 
+\begin_inset Formula $\left(q_{1}\left(t\right),\tr,q_{d}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда конон.
+ Ы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+q_{1}\left(t_{0}\right)=0\\
+q_{d}\left(t_{0}\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{1}\left(t+1\right)=\varphi_{1}\left(x_{1}\left(t\right),\tr,x_{p}\left(t\right),q_{1}\left(t\right),\tr,q_{d}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{d}\left(t+1\right)=\varphi_{d}\left(x_{1}\left(t\right),\tr,x_{p}\left(t\right),q_{1}\left(t\right),\tr,q_{d}\left(t\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}\left(t\right)=\psi_{1}\left(x_{1}\left(t\right),\tr,x_{p}\left(t\right),q_{1}\left(t\right),\tr,q_{d}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{s}\left(t\right)=\psi_{s}\left(x_{1}\left(t\right),\tr,x_{p}\left(t\right),q_{1}\left(t\right),\tr,q_{d}\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{1}\cdots\varphi_{p},\psi_{1}\cdots\psi_{s}$
+\end_inset
+
+ - функции алгебралогики.
+ Их можно отределить по автомату Ы и выбранной схеме кодирования входный,
+ выходный символов и состояний.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{1}\left(x_{1}\left(t\right),\tr,x_{p}\left(t\right),q_{1}\left(t\right),\tr,q_{d}\left(t\right)\right)$
+\end_inset
+
+- как посчитать.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma_{1}\tr\sigma_{p}\ a\in A\ ;\ \delta_{1}\tr\delta_{s}\ q\in Q$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(a,q\right)=q'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\lambda_{1}\tr\lambda_{d}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Положим значение 
+\begin_inset Formula $\varphi_{1}\left(\sigma_{1}\tr\sigma_{p},\delta_{1}\tr\delta_{s}\right)=\lambda_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тоесть для состояний Ы' кодирующих входные символы Ы, работает с точностью
+ до кодирования элементов A,B,Q двоичными наборами.
+\end_layout
+
+\begin_layout Standard
+Поскольку функции 
+\begin_inset Formula $\varphi_{1}\tr\varphi_{d}$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi_{1}\tr\psi_{s}$
+\end_inset
+
+ - функции алгеьралогики , то тогда существует функции алгабралогики, вычисляющи
+е эти функции.
+\end_layout
+
+\begin_layout Remark
+Тут схема.
+ (Обращаться к Жоре)
+\end_layout
+
+\begin_layout Standard
+Построенная автоматная схема моделирует работу Ы'.
+ Это схема работает так же как и автомат Ы, тоесть если внекоторой момент
+ времени на в......
+ состояния элемента задержки схемы состовляют код q, если при этом a вырабатывае
+т выходной символ b.......
+ а новое состояние элемента задержки состовляет код q'.
+\end_layout
+
+\begin_layout Section
+Рекурсивыные функция.
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать 
+\begin_inset Formula $f:N^{K}\st N$
+\end_inset
+
+, где 
+\begin_inset Formula $N=\left\{ 0,1,2,3,4,5,6,7,8,9\tr\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определим класс простецйших функций.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $o\left(x\right)=0$
+\end_inset
+
+ - нулевой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s\left(x\right)=x+1$
+\end_inset
+
+ - следование.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{n}^{m}\left(x_{1}\tr x_{n}\right)=x^{m}\ ;\ \left(1\leq m\leq n\right)$
+\end_inset
+
+ - проэкция.
+\end_layout
+
+\begin_layout Standard
+Всякая простейшая функция является интуитивно вычислиной.
+\end_layout
+
+\begin_layout Subsection
+Элеменарные функции.
+\end_layout
+
+\begin_layout Definition
+Пусть заданы функции 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $f\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $g_{1}\left(x_{11}\tr x_{1m_{1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $g_{n}\left(x_{n1}\tr x_{nm_{n}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $h\left(x_{1}\tr x_{k}\right)=f\left(g_{1}\left(x_{11}\tr x_{1m_{1}}\right),\tr,g_{n}\left(x_{n1}\tr x_{nm_{n}}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $x_{1}\tr x_{k}$
+\end_inset
+
+ - не дублируются.
+\end_layout
+
+\begin_layout Definition
+Суперпозицией функций 
+\begin_inset Formula $g_{1}\tr g_{n}$
+\end_inset
+
+ это функция 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество всех функций, получаемых из простейших функций с помощью конечного
+ числа применений операций суперпозиции называется классом элементарных
+ функций.
+\end_layout
+
+\begin_layout Definition
+Класс элементарной фукнций состовляю функции существенно зависящие от не
+ более 1ой переменной.
+\end_layout
+
+\begin_layout Definition
+Всякая элементарная функция эвляется интуитивно вычислимой.
+\end_layout
+
+\begin_layout Definition
+Для этого достаточно проверить, что 
+\begin_inset Formula $g_{1}\tr g_{n}$
+\end_inset
+
+ - вычислимые, то их сумеппозиция h тоже вычислима.
+\end_layout
+
+\begin_layout Subsection
+Примитивно-рекурсивные функции.
+\end_layout
+
+\begin_layout Definition
+Пусть заданы функции 
+\begin_inset Formula $g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $f\left(x_{1},\tr x_{n},x_{n+1}\right)$
+\end_inset
+
+ получается из g и h с помошью операция примитивной рекурсии, если 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $f\left(x_{1}\tr x_{n},0\right)=g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $f\left(x_{1}\tr x_{n},y+1\right)=h\left(x_{1}\tr x_{n},y,f\left(x_{1}\tr x_{n},y\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+В f :
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+- параметры, которые в схеме не меняются, 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ - переменная рекурсии, 
+\begin_inset Formula $x_{n+2}$
+\end_inset
+
+ - процедура рекурсивногго обращения.
+\end_layout
+
+\begin_layout Standard
+Примитивная рекурсия функция моделирует оператор арифмитического цикла.
+\end_layout
+
+\begin_layout Standard
+Класс всех числдовых функций, которые могут быть получнеы из просетйших
+ с помошью конечного числа приметений операции суперпозиции и припмитивной
+ рекурсии называется классом примитиыно рекурсивных функцый.
+\end_layout
+
+\begin_layout Subsection
+Рекурсивные фукнции.
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать 
+\begin_inset Formula $f:N^{k}\st N$
+\end_inset
+
+, где 
+\begin_inset Formula $N=\left\{ 0,1,2,3,4\tr\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Определим класс простейших функций.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left.\begin{array}{c}
+O\left(x\right)=0\\
+S\left(x\right)=x+1\\
+I_{n}^{m}\left(x_{1},\tr x_{n}\right)=x_{m}
+\end{array}\right\} \begin{array}{c}
+-\ \text{нулем}\\
+-\ \text{следования}\\
+-\ \text{проэкцией}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Всякая простейшая функция является интуитивно вычислимой.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Элементарные функции
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Пусть заданы функции 
+\begin_inset Formula $f\left(x_{1}\tr x_{n}\right),\ g_{1}\left(x_{11}\tr x_{1m_{1}}\right)\ \tr\ g_{n}\left(x_{n1}\tr x_{nm_{n}}\right)$
+\end_inset
+
+.
+ Суперпозиция 
+\begin_inset Formula $f,g_{1}\tr g_{n}$
+\end_inset
+
+ - это 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{k}\right)=f\left(g_{1}\tr g_{n}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{1}\tr x_{k}$
+\end_inset
+
+ - все различные символы переменных функций 
+\begin_inset Formula $g_{1}\tr g_{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Множество всех функций, получаемых из простейших с помощью конечного числа
+ применения суперпозиции называется классом элементарных функций.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(S\left(x\right)\right)=x+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Класс элементарных функций зависит от не более 1ой переменной.
+ Всякая элементарная функция является интуитивно вычислимой, достаточно
+ проверить, что 
+\begin_inset Formula $f,g_{1}\tr g_{n}$
+\end_inset
+
+ - вычислимые, то их суперпозиция тоже будет вычислима.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Приметивно рекурсивные фукнции.
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Пусть задана 
+\begin_inset Formula $g\left(x_{1}\tr x_{n}\right),\ h\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)$
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $f\left(x_{1}\tr x_{n+1}\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ с помощью операции приметивной рекурсии если: 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},0\right)=g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},y+1\right)=h\left(x_{1}\tr x_{n},y,f\left(x_{1}\tr x_{n},y\right)\right)$
+\end_inset
+
+.
+ (
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ - ппараметры функции, 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ - переменная рекурсии, 
+\begin_inset Formula $x_{n+2}$
+\end_inset
+
+ - переменная рекурсивного вызова)
+\end_layout
+
+\begin_layout Standard
+Приметивная рекурсия моделирует цикл.
+ Класс всех числовых функций, которые могут быть получены из простых функций
+ с помощью операции суперпозиции и приметивной ркурсии называются классом
+ приметивно - рекурсивных функций.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,0\right)=I_{1}^{1}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y+1\right)=S\left(f\left(x,y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Всякая приметивно рекурсивная функция является интуитивно вычислимой.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Частично рекурсивные функции.
+ (ЧРФ)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $g\left(x_{1}\tr x_{n},x_{n+1}\right)$
+\end_inset
+
+ где 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ - пареметры функции, 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ - переменная минимизации.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x_{1}\tr x_{n},x_{n+1}\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $g$
+\end_inset
+
+ с помощью операции минимизации если: 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},x_{n+1}\right)=\mu t\left(g\left(x_{1}\tr x_{n},t\right)=x_{n+1}\right)$
+\end_inset
+
+, где: 
+\end_layout
+
+\begin_layout Enumerate
+В качестве значения 
+\begin_inset Formula $t,\ min\ -\ t$
+\end_inset
+
+ для которого 
+\begin_inset Formula $g\left(x_{1}\tr x_{n},t\right)=x_{n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Значение 
+\begin_inset Formula $\left.\begin{array}{c}
+g\left(x_{1}\tr x_{n},0\right)\\
+\tr\\
+g\left(x_{1}\tr x_{n},t\right)
+\end{array}\right\} $
+\end_inset
+
+ - определены.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $g$
+\end_inset
+
+ является интуитивно вычислимой, то 
+\begin_inset Formula $f$
+\end_inset
+
+ получается из 
+\begin_inset Formula $g$
+\end_inset
+
+ с помощью операции минимизации тоже вычислима.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\varphi\left(x,y\right)=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=\mu t\left(g\left(x,t\right)=y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f=\begin{cases}
+y-x, & y\br x\\
+-, & \text{иначе}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=\mu t\left(g\left(t\right)=x\right)$
+\end_inset
+
+ - является всюдуопределенной, то и инбенктивной.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=g^{-1}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Класс всех числовых функций, которые подучаются из простейших с помощью
+ конечного применения операции минимизации, примитиыной рекурсии и суперпозиции
+ - это класс частично рекурсивных функций(ЧРФ).
+ ЧРФ - интуитивно понятная функция.
+\end_layout
+
+\begin_layout Subsection
+Тезис Черча (Cherch)
+\end_layout
+
+\begin_layout Claim
+Класс интуитивно вычислимых числовых функций сопподает с классом частично
+ рекурсивных функций.
+\end_layout
+
+\begin_layout Standard
+Основные доводы в пользу справедливости тезиса Черча:
+\end_layout
+
+\begin_layout Enumerate
+Любые рассматриваемые вычислимые функции имеют рекурсивные функции.
+\end_layout
+
+\begin_layout Enumerate
+Примеры других формализаций понятия алгоритма пораждают классы вычислимых
+ числовых функций, которые не шире ЧРФ.
+\end_layout
+
+\begin_layout Subsection
+Представление и определение ЧРФ нагруженнуженными деревьями.
+\end_layout
+
+\begin_layout Standard
+Пусть А - алфавит, который составляют следующие символы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ O,S,I,C,P,M,1\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Будем рассмтривать опред.
+ ЧРФ с помощь.
+ нагруженных деверьев, верщины которых размечены одним из символов А.
+\end_layout
+
+\begin_layout Enumerate
+Представление простейших функций.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $O\left(x\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $O$
+\end_inset
+
+
+\begin_inset Formula $\bullet---\bullet<i>$
+\end_inset
+
+ где 
+\begin_inset Formula $<i>=1\tr1$
+\end_inset
+
+ - i раз.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\bullet---\bullet$
+\end_inset
+
+
+\begin_inset Formula $<i>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{n}^{m}\left(x_{i_{1}}\tr x_{i_{n}}\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $I\bullet\begin{array}{c}
+\nearrow\bullet\ <i_{n}>\\
+\nearrow\bullet\ \ \ \tr\\
+-\bullet\ \ <i_{1}>\\
+\searrow\bullet<m>\\
+\searrow\bullet<n>
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Представление операции суперпозиции.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $h\left(x_{1}\tr x_{k}\right)=f\left(g_{1}\left(x_{11}\tr x_{1m_{1}}\right)\tr g_{n}\left(x_{n1}\tr x_{nm_{n}}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\ \bullet\begin{array}{c}
+\nearrow\bullet D_{f}\\
+\nearrow\bullet D_{g_{1}}\\
+\searrow\bullet\tr\\
+\searrow\bullet D_{g_{n}}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Представление операции приметивной рекурсии.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f\left(x_{1}\tr x_{n},0\right)=g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x_{1}\tr x_{n},y+1\right)=h\left(x_{1}\tr x_{n},y,f\left(x_{1}\tr x_{n},y\right)\right)$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\bullet\begin{array}{c}
+\nearrow\bullet Dg\\
+\searrow\bullet Dh
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Моделирование минимизации.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f\left(x_{1}\tr x_{n},x_{n+1}\right)=\mu t\left(g\left(x_{1}\tr x_{n},t\right)=x_{n+1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+
+\begin_inset Formula $\bullet-\bullet Dg$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Remark
+Количество потомков каждой вершины дерева представляющего заданный ЧРФ полнстью
+ определена разметкой вершины и в некоторых случаях поддеревом для левогог
+ потомка.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,0\right)=I_{1}^{1}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y+1\right)=S\left(I_{3}^{3}\left(x,y,f\left(x,y\right)\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P\bullet\left|\begin{array}{c}
+\nearrow\bullet C\left|\begin{array}{c}
+\nearrow\bullet S\ \ -\ \ \bullet\left\langle 1\right\rangle \ \ \\
+\searrow\bullet I\left|\begin{array}{c}
+\nearrow\bullet\left\langle 111\right\rangle \\
+\nearrow\bullet\left\langle 11\right\rangle \\
+-\bullet\left\langle 1\right\rangle \\
+\searrow\bullet\left\langle 111\right\rangle \\
+\searrow\bullet\left\langle 111\right\rangle 
+\end{array}\right.
+\end{array}\right.\\
+\searrow\bullet I\left|\begin{array}{c}
+\nearrow\bullet\left\langle 1\right\rangle \\
+-\bullet\left\langle 1\right\rangle \\
+\searrow\bullet\left\langle 1\right\rangle 
+\end{array}\right.
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Нумерация ЧРФ
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha_{0},\alpha_{1},\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $A=\left\{ S,O,I,C,P,M,1,\$\right\} $
+\end_inset
+
+ последовательность , в которой расположены по возрастанию длинн, а слова
+ равной длинны по алфавиту.
+\end_layout
+
+\begin_layout Standard
+Существует алгоритм, который по номеру 
+\begin_inset Formula $i$
+\end_inset
+
+ слова в последовательности 1 строит 
+\begin_inset Formula $\alpha i$
+\end_inset
+
+, тоесть существует алгоритм генерирующий последовательность 1, как последовател
+ьность 
+\begin_inset Formula $\alpha1\tr\alpha i\tr$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\beta_{0},\beta_{1},\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Для распознавания того, является ли произволное взятое слово проследовательности
+ 1 кодом дерева определения рекурсивной функции можно воспользоваться следующей
+ процедурой: 
+\end_layout
+
+\begin_layout Enumerate
+Если 1й символ слова S (Конечная функция) то дальше в слове должна следовать
+ последовательность едениц.
+ 
+\begin_inset Formula $\left[S\$11\tr1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+О - аналогияно
+\end_layout
+
+\begin_layout Enumerate
+Если начинается с символа I то распознается существование цепочки едениц
+ непоследовательно следующие за I.
+ Считанное количество еденгиц - количествово переменных в фугкции, в этом
+ случае нужно проверить, что хвост состоит из 
+\begin_inset Formula $n+1$
+\end_inset
+
+ группы едениц, разделенный маркером 
+\begin_inset Formula $\$$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left[I\$1\tr1\$,\ \ \ \ \right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+C : Тогда оставшуюся часть слова можно разбить на 2 части, так что левая
+ часть определяет некую функцию n перпеменных, а правая часть разбывается
+ на n частей, каждая из которых определяет...
+ 
+\begin_inset Formula $\left[C,\ D_{f}\ ,\ D_{q_{1}},D_{q_{2}},\tr,D_{q_{n}}\ \right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+P : То остав 
+\begin_inset Formula $\left[P,\ \alpha'\ ,\ \alpha''\ \right]\ ;\ \alpha'\ -\ g\left(x_{1}\tr x_{n}\right)\ ;\ \alpha''\ -\ h\left(x_{1},\tr x_{n},x_{n+1},x_{n+2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+M - аналогично.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Опаределим последовательность 3, составленных деревьями определениями рекурсивны
+х функция , кодами которых являются элементами последовательности 2.
+ 
+\begin_inset Formula $D_{0},D_{1},\tr,D_{i},\tr$
+\end_inset
+
+ Сдесь последовательность 3 является конструктивной, поскольку существует
+ алгоритм, посоледовательного построения этой последовательности.
+\end_layout
+
+\begin_layout Enumerate
+Определим последовательность 
+\begin_inset Formula $f_{0},f_{1},\tr,f_{i},\tr$
+\end_inset
+
+ представимых деревьями из последовательности 3.
+ Такая последовательность является вычислимым.
+ Существует алгоритм, который по номеру i строит определение функции 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ и делает ее вычислимой на любом наборе значений ее переменных.
+ 
+\begin_inset Formula $f_{i}\left(\tr;\tr\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Определим последовательность 5 
+\begin_inset Formula $h_{0},h_{1}\tr,h_{i},\tr$
+\end_inset
+
+ составленную функциями последовательностип 4, к которым применяется орерация
+ отождествления переменных.
+ 
+\begin_inset Formula $f_{i}\left(x_{i_{1}}\tr x_{i_{m_{i}}}\right)\ \sl\ h_{i}=f_{i}\left(I_{'}^{'}\left(x_{'}\right),\tr I_{'}^{'}\left(x_{'}\right)\right)$
+\end_inset
+
+ Сдесь последовательность 5 является вычислимой, поскольку существует алгоритм,
+ посоледовательного построения этой последовательности.
+ Можно вычестить 
+\begin_inset Formula $h_{i}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Последовательность 4 содержит все частично рекурсивные функции, а каждая
+ такая функция встречается в 4 бесконечно много раз.
+\end_layout
+
+\begin_layout Subsection
+Универсальные функции.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $U\left(n,x\right)$
+\end_inset
+
+ - называется универсальной для множества всех ЧРФ от 1ной переменной, если
+ 
+\begin_inset Formula $\ddsl$
+\end_inset
+
+ выполняются 2 требования:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $U\left(n,x\right)$
+\end_inset
+
+ - вычислима.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall i\ \exists n\left(h_{i}\left(x\right)=U\left(n,x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Существуют универсальные ЧРФ.
+\end_layout
+
+\begin_layout Proof
+Определим функцию 
+\begin_inset Formula $U\left(n,x\right)=h_{n}\left(x\right)$
+\end_inset
+
+.
+ Покажем, что 
+\begin_inset Formula $U\left(n,x\right)$
+\end_inset
+
+ - вычислима.
+ Пусть заданы значения n и x.
+ Построим определения дерева 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U\left(n,x\right)\sl\begin{array}{c}
+\\
+\\
+\\
+D_{n}\\
+\Downarrow\\
+f_{n}\left(x_{n_{1}}\tr x_{n_{m_{n}}}\right)
+\end{array}\sl D_{n}'$
+\end_inset
+
+.
+ Преобразуем 
+\begin_inset Formula $D_{n}$
+\end_inset
+
+ в 
+\begin_inset Formula $D_{n}'$
+\end_inset
+
+ являющееся корнем дерева 4.
+ 
+\begin_inset Formula $D_{n}'=C\begin{cases}
+D_{n}\\
+D_{I_{1}^{'}\left(x_{1}\right)}\\
+D_{I_{1}^{'}\left(x_{1}\right)}
+\end{cases}$
+\end_inset
+
+ Подставим в дерево 
+\begin_inset Formula $D_{n}'$
+\end_inset
+
+ вместо переменных значения x и выполним необходимые вычисления.
+ Приведенная последовательность действий задает общий алгоритм вычисления
+ 
+\begin_inset Formula $U\left(n,x\right)$
+\end_inset
+
+ , поэтому 
+\begin_inset Formula $U\left(n,x\right)$
+\end_inset
+
+ является вычислимой.
+ Поскольку 
+\begin_inset Formula $\forall n\ \left(U\left(n,x\right)=h_{n}\left(x\right)\right)$
+\end_inset
+
+ то справедливо и 2е утверждение.
+\end_layout
+
+\begin_layout Subsection
+Разрешимость алгоретмических проблем.
+\end_layout
+
+\begin_layout Enumerate
+Проверка эквивалентности программ по ее номеру.
+ 
+\begin_inset Formula $f_{n}\equiv f_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+...
+ 
+\end_layout
+
+\begin_layout Definition
+Характерестическа я функция 
+\begin_inset Formula $A\subseteq N^{K}$
+\end_inset
+
+ называется фукнция 
+\begin_inset Formula $X_{A}\left(x_{1}\tr x_{k}\right)=\begin{cases}
+1, & \left(x_{1}\tr x_{k}\right)\in A\\
+0, & \left(x_{1}\tr x_{k}\right)\notin A
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $A\subseteq N^{K}$
+\end_inset
+
+ - разрешимое множество 
+\begin_inset Formula $\ddsl$
+\end_inset
+
+ 
+\begin_inset Formula $X_{A}$
+\end_inset
+
+ - вычислимо.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+Поскольку множество всех подмножеств множества натуральных чисел неравномощно
+ мощности счетных бесконечных множеств, то существует неразрешимое множество
+\end_layout
+
+\begin_layout Subsubsection
+Неразрешимость проблемы остановки.
+\end_layout
+
+\begin_layout Standard
+Проблема остановки: Если у вас на универсальной ЭВМ заданы начальные данные,
+ вычисление завергиться или нет?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}=\left\{ \left(n,x\right)|h_{n}\left(x\right)\ -\ \text{должно быть определено}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ - неразрештмое множество.
+\end_layout
+
+\begin_layout Proof
+Предположим противное.
+ 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+- разрешимое множество.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X_{A_{1}}\left(n,x\right)=\begin{cases}
+1, & h_{n}\left(x\right)\ -\ \text{определено}\\
+0, & h_{n}\left(x\right)\ -\ \text{неопредеоено}
+\end{cases}$
+\end_inset
+
+ - вычислима.
+\end_layout
+
+\begin_layout Proof
+Определим вспомогательную функцию 
+\begin_inset Formula $p\left(x\right)=X_{A_{1}}\left(x,x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $X_{A_{1}}$
+\end_inset
+
+ - вычислима, то 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+ - вычислима.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $d\left(x\right)=\begin{cases}
+1, & p\left(x\right)=0\\
+-, & p\left(x\right)=1
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как р - вычислима, то 
+\begin_inset Formula $d$
+\end_inset
+
+ - тоже вычислима.
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ - вычислимая, то 
+\begin_inset Formula $\exists i\ \left(d\left(x\right)=h_{i}\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Возьмем подходящее значение 
+\begin_inset Formula $i$
+\end_inset
+
+ для которого 
+\begin_inset Formula $d\left(x\right)=h_{i}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим значение 
+\begin_inset Formula $d\left(i\right)$
+\end_inset
+
+.
+ Возможны 2 случая:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $d\left(i\right)$
+\end_inset
+
+ - определено.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $d\left(i\right)=1\sl p\left(i\right)=0\sl X_{A_{1}}\left(i,i\right)=0\sl h_{i}\left(i\right)-$
+\end_inset
+
+ не определено 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $d\left(i\right)$
+\end_inset
+
+ - определено.
+ Так как 
+\begin_inset Formula $\left(i,i\right)\notin A_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $h_{i}\left(i\right)=d\left(i\right)$
+\end_inset
+
+.
+ Этот случай невозможный.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(i\right)$
+\end_inset
+
+- не определено.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $p\left(i\right)=1\ \sl\ X_{A_{1}}\left(i,i\right)=1\ \sl\ h_{i}\left(i\right)$
+\end_inset
+
+- определено
+\begin_inset Formula $\sl\ d\left(i\right)-$
+\end_inset
+
+определено.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Поскольку оба случая невозможны, то получаем противоречие, которое означает
+ что 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ - неразрешимое множество.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\begin_inset Formula $\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\begin_inset Formula $\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\begin_inset Formula $\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{0}$
+\end_inset
+
+
+\begin_inset Formula $\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Неразрешимость проблемы всюдуопределенности.
+\end_layout
+
+\begin_layout Standard
+Определим множество 
+\begin_inset Formula $A_{2}=\left\{ n|d_{n}\left(x\right)\ -\ \text{всюдуопределена}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ - неразрешиомое.
+\end_layout
+
+\begin_layout Proof
+Предположим противное.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X_{A_{2}}\left(n\right)=\begin{cases}
+1, & d_{n}\ -\ \text{всюдуопределена}\\
+0, & d_{n}\ -\ \text{невсюдуопределена}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Вспомогательная функция 
+\begin_inset Formula $g\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $g\left(0\right)=\mu t\left(d_{t}\left(x\right)\ -\ \text{всюдуопределена}\right)\ \sl\ g\left(0\right)=\mu t\left(X_{A_{2}}\left(t\right)=1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $g\left(n+1\right)=\mu t\left(t>g\left(n\right)\&X_{A_{2}}\left(t\right)=1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $d_{0},d_{1}\tr$
+\end_inset
+
+ - 5я последовательность 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $d_{g\left(0\right)},d_{g\left(1\right)}\tr$
+\end_inset
+
+ - всюдуопределенная последовательность 
+\end_layout
+
+\begin_layout Proof
+Так 
+\begin_inset Formula $X_{A_{2}}$
+\end_inset
+
+ - вычислимое, тогда 
+\begin_inset Formula $g$
+\end_inset
+
+ - тоже вычисоимая.
+\end_layout
+
+\begin_layout Proof
+1) 
+\begin_inset Formula $h\left(x\right)=d_{g\left(x\right)}\left(x\right)+1$
+\end_inset
+
+ - Хитрый способ, мы по нему не пойдем.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $U\left(n,x\right)=d_{n}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Определим функцию 
+\begin_inset Formula $H\left(n,x\right)=U\left(g\left(n\right),x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $H\left(n,x\right)$
+\end_inset
+
+ - универсальная для множества всех одноместных всюдуопределенных функций.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $H\left(o,x\right)=d_{g\left(0\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $H\left(1,x\right)=d_{g\left(1\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $H\left(2,x\right)=d_{g\left(2\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Определим функцию 
+\begin_inset Formula $h\left(x\right)=H\left(x,x\right)+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $H$
+\end_inset
+
+ - вычислима, то 
+\begin_inset Formula $h$
+\end_inset
+
+ - тоже вычислима.
+\end_layout
+
+\begin_layout Proof
+Поэтому 
+\begin_inset Formula $\exists i\ \left(h\left(x\right)=d_{g\left(i\right)}\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula $h\left(i\right)=H\left(i,i\right)+1=d_{g\left(i\right)}\left(i\right)+1$
+\end_inset
+
+ , а с другой стороны 
+\begin_inset Formula $h\left(i\right)=d_{g\left(i\right)}\left(i\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $d_{g\left(i\right)}$
+\end_inset
+
+ -всюдуопределенная, так как 
+\begin_inset Formula $d_{g\left(i\right)}\left(i\right)+1$
+\end_inset
+
+ и 
+\begin_inset Formula $d_{g\left(i\right)}\left(i\right)$
+\end_inset
+
+ существуют и яявляются разными.
+ Это противоречие.
+\end_layout
+
+\begin_layout Proof
+Следовательно предположение о том что характеристическия функция 
+\begin_inset Formula $X_{A_{2}}$
+\end_inset
+
+ является вычислимой - не верно.
+ Значит 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ - неразремое множество.
+\end_layout
+
+\begin_layout Subsubsection
+Неразрешимость проблемы эквивалентности.
+\end_layout
+
+\begin_layout Standard
+Опреденим 
+\begin_inset Formula $A_{3}\left\{ \left(n,m\right)|d_{n}\equiv d_{m}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ - неразрешимо.
+\end_layout
+
+\begin_layout Proof
+От противного.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X_{A_{3}}\left(n,m\right)=\begin{cases}
+1,\ d_{n}\equiv d_{m}\\
+0,\ d_{n}\nr d_{m}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Сведем эту теорему к 2му случаю(
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ - неразрешиомое.).
+\end_layout
+
+\begin_layout Proof
+Определим вспомогательную функцию, основанную на преобразовании 
+\begin_inset Formula $d_{n}\left(x\right)\ \sl\ sg\left(d_{n}\left(x\right)\right)+\overline{sg}\left(d_{n}\left(x\right)\right)=g_{n}\left(x\right)\ ;\ n=1,2,3\tr$
+\end_inset
+
+ 
+\begin_inset Formula $sg\left(x\right)=\begin{cases}
+1,\ x>0\\
+0,\ x=0
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $d_{n}\ \sl\ g_{n}$
+\end_inset
+
+ - Обладает следующим свойством: 
+\begin_inset Formula $d_{n}\left(x\right)-$
+\end_inset
+
+всюдуопределена 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $g_{n}\left(x\right)\equiv1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Определим значения номеров, под которыми 
+\begin_inset Formula $g_{n}\left(x\right)$
+\end_inset
+
+ встречается в последовательности 5.
+\end_layout
+
+\begin_layout Proof
+Покажем, что существует такая вычислимая функция 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+, что 
+\begin_inset Formula $g_{n}\left(x\right)=d_{p\left(n\right)}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Уточним схему вычисления знеачения 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $d_{n}\left(x\right)\ \sl\ D_{n}=f_{n}\left(\tr\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Трансфопмируем это дерево 
+\begin_inset Formula $D_{n}\ \sl\ D_{n}'=d_{n}\left(x\right)=f_{n}\left(I_{1}^{1}\left(x\right)\tr I_{1}^{1}\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+преобразуем 
+\begin_inset Formula $D_{n}'$
+\end_inset
+
+ в 
+\begin_inset Formula $D_{n}''$
+\end_inset
+
+ - дерево определения функции 
+\begin_inset Formula $g_{n}\left(x\right)=sg\left(d_{n}\left(x\right)\right)+\overline{sg}\left(d_{n}\left(x\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $C-\left\langle \begin{array}{c}
+D_{+}\\
+D_{sg\left(d_{n}\left(x\right)\right)}\\
+D_{\overline{sg}\left(d_{n}\left(x\right)\right)}
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha_{D_{n}''}$
+\end_inset
+
+ - код этого дерева 
+\begin_inset Formula $=\beta_{m}$
+\end_inset
+
+.
+ тогда положим 
+\begin_inset Formula $p\left(n\right)=m$
+\end_inset
+
+.
+ Поскольку 
+\begin_inset Formula $D_{n}''$
+\end_inset
+
+ является девевом определения функции 
+\begin_inset Formula $g_{n}\left(x\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\beta_{m}$
+\end_inset
+
+ - код этогог дерева.
+ Значит 
+\begin_inset Formula $d_{m}\left(x\right)=g_{n}\left(x\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{0},d_{1}\tr d_{n}\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{n}\ \sl\ g_{n}\left(x\right)\ \sl D_{n}''=D_{m}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Proof
+Поэтому 
+\begin_inset Formula $\forall n\ \left(g_{n}\left(x\right)=d_{p\left(n\right)}\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Определим вспомогательную функцию 
+\begin_inset Formula $H\left(n\right)=X_{A_{3}}\left(i_{0},p\left(n\right)\right),\ d_{i_{0}}\left(x\right)\equiv1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+H\left(n\right) & = & \begin{cases}
+1,\ d_{i_{0}}\equiv d_{p\left(n\right)}\\
+0,\ d_{i_{0}}\nr d_{p\left(n\right)}
+\end{cases}\ \dsl\ \begin{cases}
+1,\ d_{p\left(n\right)}\equiv1\\
+0,\ d_{p\left(n\right)}\nr1
+\end{cases}\ \dsl\\
+ & \dsl & \begin{cases}
+1,\ d_{n}\ -\ \text{всюдуопределена}\\
+0,\ d_{n}\ -\ \text{невсюдуопределена}
+\end{cases}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $H\left(n\right)$
+\end_inset
+
+ - Характеристическая функция 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ вычислима, 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ - вычислима, то 
+\begin_inset Formula $H$
+\end_inset
+
+
+\begin_inset Formula $\left(n\right)$
+\end_inset
+
+ - вычислимая характеристическая функция множества 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+ Последнее противоречит неразрешимости множества 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ , значит 
+\begin_inset Formula $X_{A_{3}}$
+\end_inset
+
+ не может быть вычислимой, а 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ - неразрешимое.
+\end_layout
+
+\begin_layout Subsection
+Вычислительная сложность програм.
+\end_layout
+
+\begin_layout Standard
+Вычислительная сложность програм связана с оценкой потребляемых им ресурсов,
+ времени и памяти.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ -некоторая программа, 
+\begin_inset Formula $a$
+\end_inset
+
+ - начальное данное этой программы.
+ Временем работы 
+\begin_inset Formula $P\left(a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $T_{P}\left(a\right)$
+\end_inset
+
+ называется количество действийь(команд) выполненных 
+\begin_inset Formula $P$
+\end_inset
+
+ при работе при начальном данном а.
+\end_layout
+
+\begin_layout Standard
+Под длейтсвиями или операциями будут пониматся преобразования, физическое
+ время выполнения которых ялвляется сравнимым на любых начальных данных.
+ Для реальных программ действиями считаются 
+\begin_inset Formula $+1,-1$
+\end_inset
+
+, сравнения.
+ 
+\end_layout
+
+\begin_layout Standard
+Определим характеристику данных программы Р называемого рамером данных.
+ (
+\begin_inset Formula $\left|\left|a\right|\right|$
+\end_inset
+
+) Данная система является имперической, и связанною с предпологаемыми алгоритмам
+и обработки.
+ Если А это число, то размером А можно взять длинну 2чного представдения
+ А, если А- массив, при обработки которого не выполняются сложные вычисления
+ с элементами массива, то тогда это число элемантов в этом массиве,а есть
+ наоборот, то размер а - это сумма размеров его отдельных элементов.
+ Тогда вычислительной сложностью программы Р называется 
+\begin_inset Formula $t_{P}\left(n\right)=\underset{\left|\left|a\right|\right|=n}{\max}\left(T_{P}\left(a\right)\right)$
+\end_inset
+
+.
+ На практике 
+\begin_inset Formula $t_{p}\left(n\right)$
+\end_inset
+
+ обычно рассматривают с точностью до порядка, как 
+\begin_inset Formula $O\left(t_{P}\left(n\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Классы функций сложности пролграм.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.\begin{array}{c}
+t_{p}\left(n\right)=o\left(c\right),\ c-const\\
+t_{p}\left(n\right)=o\left(\log_{2}n\right)\\
+t_{p}\left(n\right)=o\left(n\right)
+\end{array}\right\} $
+\end_inset
+
+Алгоритмы реального времени.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.\begin{array}{c}
+t_{p}\left(n\right)=o\left(n\um\log_{2}n\right)\\
+t_{p}\left(n\right)=o\left(n^{k}\right)
+\end{array}\right\} $
+\end_inset
+
+Практически приминимые.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{p}\left(n\right)=o\left(2^{n}\right)$
+\end_inset
+
+ Не приминимые алгоритмы.
+\end_layout
+
+\begin_layout Example
+Рассмотрим задачу сортировки целочисленного массива, который должен быть
+ упорядочен по вощростанию.
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+var a[1..n] 
+\emph on
+-массив
+\end_layout
+
+\begin_layout LyX-Code
+for i:=1 to n-1 do
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+begin
+\end_layout
+
+\begin_layout LyX-Code
+for j:=i+1 to n do
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+begin
+\end_layout
+
+\begin_layout LyX-Code
+if a[i]>a[j] then
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+a[i]
+\begin_inset Formula $\leftrightarrow$
+\end_inset
+
+a[j];
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+end;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+end;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $\underline{\underline{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{1}+S_{2}+\tr+S_{n-1}$
+\end_inset
+
+ - так вычисляется сложность программ.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{1}=2+\left(n-1\right)\um6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{2}=2+\left(n-2\right)\um6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{n-1}=2+1\um6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Общее время равно 
+\begin_inset Formula $2\left(n-1\right)+6\left(1+2+\tr+\left(n-1\right)\right)=2\left(n-1\right)+6\left(\dfrac{n}{2}\left(n-1\right)\right)=o\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+Будем рассматтривать целочисленный массив, который должен быть упорядочен
+ по возростанию.
+ (
+\begin_inset Formula $n\um\log_{2}n$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+a[1..n]
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Будем представлять массив а с помощью насыщеннгого бинарного дерева.
+ В таком дереве ярусы полность запалнениы в порялдке сверху вниз, за исключение
+ последненго, который может быть заполнен чистично слева направа.
+ ...
+ в порядке обхода его вершин по ярусам, ...
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+7,14,2,3,8,9,6,3,10,5
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Formula $\begin{array}{c}
+7\\
+\swarrow\searrow\\
+14\ \ 2\\
+\swarrow\searrow\swarrow\searrow\\
+3\ \ 8\ \ 9\ \ 6\\
+\swarrow\searrow\ \searrow\ \ \ \ \ \ \\
+3\ \ 10\ \ 5\ \ \ \ \ \ 
+\end{array}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Example
+В таком дереве левые и правые потомки верщини 
+\begin_inset Formula $a[i]$
+\end_inset
+
+ соответствуют элементам массива 
+\begin_inset Formula $a[2i]$
+\end_inset
+
+ и 
+\begin_inset Formula $a[2i+1]$
+\end_inset
+
+.
+ Это свояство можнодоказать индукцией по i.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Безис 
+\begin_inset Formula $i=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $a[1]\ a[2]\ a[3]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Индуктивное предположение.
+ 
+\begin_inset Formula $i=k$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $a[k]\ a[2k]\ a[2k+1]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Индуктивный переход.
+ 
+\begin_inset Formula $i=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $a[k+1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a[2k+1+1]=a\left[2\left(k+1\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a[2k+1+1+1]=a[2\left(k+1\right)+1]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+Оценим глубину(количество ярусов) этого дерева.
+\end_layout
+
+\begin_layout Example
+Если у нас k ярусов, то в массиве 
+\begin_inset Formula $2^{0}+2^{1}+\tr+2^{k-1}\leq2\um2^{k-1}\sim2^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $k\sim\log_{2}n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Быстрая сортировка массива а выполняется в 2 этапа.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Преобразования а в массив соответствующий сортирующим деревом.(Дерево, сопоставле
+нное массиву называется сортирующим, если в нем на каждом пути из корня
+ в лист элементы упорядочены по возростанию.)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Будем рассматривать элементы а в обратном порядке.
+ На каждом шаге рассматривается очередной элемент а[i].
+ 
+\end_layout
+
+\begin_layout Enumerate
+...
+ со значениями в вершанах потомков
+\end_layout
+
+\begin_layout Enumerate
+Если a[i] меньше одного из своих потомков, по переставим его местами с меньшим
+ из его потомков.
+\end_layout
+
+\begin_layout Enumerate
+Для нового положения a[i] повторим это действие.
+\end_layout
+
+\begin_layout Standard
+Когда процесс построения сортирующего дерева закончится, то массив а будет
+ преобразован в массив соответствующей сортирующему дереву.
+ Это так потому что в противном случае в дереве будет такой элемент 
+\begin_inset Formula $a[i]>a[2i]$
+\end_inset
+
+ либо 
+\begin_inset Formula $a[i]>a[2i+1]$
+\end_inset
+
+ .
+ В обоих случаях это противоречит...
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Выписывание упорядоченово массива по сортирующему дереву.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+2\\
+\swarrow\searrow\\
+3\qquad6\\
+\swarrow\searrow\ \swarrow\searrow\\
+3\ \ \ 5\ 9\ \ \ 7\\
+\swarrow\searrow\ \searrow\ \ \ \ \ \ \\
+14\ \ 10\ \ 8\ \ \ \ \ \ 
+\end{array}\sl\begin{array}{c}
+3\\
+\swarrow\searrow\\
+3\qquad6\\
+\swarrow\searrow\ \swarrow\searrow\\
+10\ \ \ 5\ 9\ \ \ 7\\
+\swarrow\ \ \ \ \searrow\ \ \ \ \ \\
+14\ \ \ \ \ \ \ 8\ \ \ \ \ 
+\end{array}\sl\begin{array}{c}
+3\\
+\swarrow\searrow\\
+5\ \ \ \ 6\\
+\swarrow\searrow\ \swarrow\searrow\\
+10\ \ \ 8\ 9\ \ \ 7\\
+\swarrow\ \ \ \ \ \ \ \ \ \ \ \\
+14\ \ \ \ \ \ \ \ \ \ \ \ \ 
+\end{array}\sl\begin{array}{c}
+5\\
+\swarrow\searrow\\
+8\ \ \;\ \ 6\\
+\swarrow\ \ \swarrow\searrow\\
+10\ \ \ \ 9\ \ \ 7\\
+\swarrow\ \ \ \ \ \ \ \ \ \ \ \\
+14\ \ \ \ \ \ \ \ \ \ \ \ \ 
+\end{array}$
+\end_inset
+
+и так далее
+\end_layout
+
+\begin_layout Standard
+На каждом шаге в массив добавляется наименьшее из значений освавшихся в
+ массиве.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $n\um\log_{2}n$
+\end_inset
+
+ - время.
+\end_layout
+
+\begin_layout Section
+Системы Поста.
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать 3 алфавита 
+\begin_inset Formula $A,B,V$
+\end_inset
+
+, которые назовем основным алфавитом, вспотогательным алфавитом и алфавитом
+ переменных соответственно.
+ 
+\begin_inset Formula $\left|A\cup B\right|\br2$
+\end_inset
+
+ Будем считать 
+\begin_inset Formula $A,B,V$
+\end_inset
+
+- дезьюнктные(попарно непересекающиеся).
+ 
+\end_layout
+
+\begin_layout Standard
+Назовем 
+\begin_inset Formula $t\in\left(A\cup B\cup V\right)^{*}$
+\end_inset
+
+ образцом, эталоном и тп.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $t$
+\end_inset
+
+ - некоторый образец, и 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ - сомволы переменных t, то применением t называется результат замены 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ на непустые слова в алфавите 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для формального опрнеделений применения образца, определим понятия подсттановки
+ 
+\begin_inset Formula $\Theta=\left(\begin{array}{c}
+x_{1}\tr x_{n}\\
+\alpha_{1}\tr\alpha_{n}
+\end{array}\right)$
+\end_inset
+
+
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}\in\left(A\cup B\right)^{*}$
+\end_inset
+
+(
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}$
+\end_inset
+
+ - непустые) Тогда применения t с помощью 
+\begin_inset Formula $\Theta$
+\end_inset
+
+, это 
+\begin_inset Formula $t\um\Theta=\alpha$
+\end_inset
+
+ слово, получаемое из из t заменой каждого вхождения 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ на соответствующее слово в 
+\begin_inset Formula $\Theta$
+\end_inset
+
+.
+ Если t образец то 
+\begin_inset Formula $U_{t}$
+\end_inset
+
+ - множество применений t, в которых переменные были заменены на непустые
+ слова.
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $t_{1},t_{2}$
+\end_inset
+
+ - образци и 
+\begin_inset Formula $U_{t_{1}}\equiv U_{t_{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $t_{1},t_{2}$
+\end_inset
+
+ - совподают с точностью до переименования переменных.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $"\sl"$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $t_{1}=\sigma_{1}\tr\sigma_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $t_{2}=\delta_{1}\tr\delta_{m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $m=n$
+\end_inset
+
+ поскольку в противном случае кратчайшее применение 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ имеет разные длинны.
+\end_layout
+
+\begin_layout Proof
+Будем рассматривать пары 
+\begin_inset Formula $\left(\sigma_{i};\delta_{i}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $\sigma_{i},\delta_{i}\in A\mor B\ $
+\end_inset
+
+они совподают, тогда если бы эти символы были разные, то кратчайшим применением
+ 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+, с - символы были бы разные, что противоречит 
+\begin_inset Formula $U_{t_{1}}\ek U_{t_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left.\begin{array}{c}
+\sigma_{i}\in V\\
+\delta_{i}\in A\mor B
+\end{array}\right\} \sl$
+\end_inset
+
+ кратчайший применений 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ в i - позиции встречается не менее 2х разных символов, а в кратчайшем применени
+и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ в i - позиции встречается ровно одн.
+ 
+\begin_inset Formula $\delta_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ противоречис с 
+\begin_inset Formula $U_{t_{1}}\ek U_{t_{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ невозможен 2й случай.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left.\begin{array}{c}
+\delta_{i}\in V\\
+\sigma_{i}\in A\mor B
+\end{array}\right\} $
+\end_inset
+
+ - так же не возможен.
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\begin{array}{c}
+\sigma_{i}\in V\\
+\delta_{i}\in V
+\end{array}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\sigma_{i}=\sigma_{j}$
+\end_inset
+
+, покажем что 
+\begin_inset Formula $\delta_{i}=\delta_{j}$
+\end_inset
+
+.
+ Если это не было так, то тогда кратчайшим применением t, были бы одинаковы
+ в 
+\begin_inset Formula $j$
+\end_inset
+
+ и пт
+\begin_inset Formula $i$
+\end_inset
+
+ , а кратчайшее применение 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ - были бы разные 
+\begin_inset Formula $\sl$
+\end_inset
+
+ противоречие 
+\begin_inset Formula $U_{t_{1}}\ek U_{t_{2}}$
+\end_inset
+
+.
+ Значит совполающим в 
+\begin_inset Formula $i$
+\end_inset
+
+ и 
+\begin_inset Formula $j$
+\end_inset
+
+ символан 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, в 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ соответствуют сопвподающие.
+ Поменяв в рассуждение 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ можно прийти в заключению, что одному символу из 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ соответствует 1 символ из 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ из 
+\begin_inset Formula $1\tr n$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ что 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ совподают с точностью до переименования переменных.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $"\Longleftarrow"$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ совподают с точностью до переименования переменных, докажем что 
+\begin_inset Formula $U_{t_{1}}\ek U_{t_{2}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Сведем к 
+\begin_inset Formula $U_{t_{1}}\subseteq U_{t_{2}}$
+\end_inset
+
+ и 
+\begin_inset Formula $U_{t_{1}}\supseteq U_{t_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $U_{t_{1}}\subseteq U_{t_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $t_{2}=t_{1}\um\Theta$
+\end_inset
+
+, где 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ подстановка сопоставлемая переменным 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\alpha\in U_{t_{1}}\sl\alpha=t_{1}\um\Theta'$
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha=\left(t_{2}\um\Theta^{-1}\right)\Theta'=t_{2}\Theta^{-1}\Theta'\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha\in U_{t_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $U_{t_{1}}\supseteq U_{t_{2}}$
+\end_inset
+
+ - Доказывается аналогично.
+\end_layout
+
+\begin_layout Definition
+Продукцией называется выражение
+\begin_inset Formula $\df{t_{1}\tr t_{n}}{t_{n+1}}$
+\end_inset
+
+, где 
+\begin_inset Formula $t_{1}\tr t_{n}$
+\end_inset
+
+ - образци в 
+\begin_inset Formula $A,B,V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Продукции 
+\begin_inset Formula $t_{1}\tr t_{n}$
+\end_inset
+
+ - посылки, 
+\begin_inset Formula $t_{n+1}$
+\end_inset
+
+ - заключение.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $n=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ продукция это аксиома.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}\in\left(A\mor B\right)^{*}$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\Pi=\df{t_{1}\tr t_{n}}{t_{n+1}}$
+\end_inset
+
+ применимы к словам 
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если существует 
+\begin_inset Formula $\exists\Theta\ \forall i=\overline{1,n}\left(\alpha_{i}=t_{i}\Theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Результатом 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ к 
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}$
+\end_inset
+
+ с 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ - это слово 
+\begin_inset Formula $\alpha_{n+1}=t_{n+1}\Theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Системой поста (продукционной системой) называется четверка 
+\begin_inset Formula $P=\left(A,B,V,\Pi\right)$
+\end_inset
+
+, где А - основной алфавит, В - вендм.
+ алфавит, V - переменные, 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ - конечное множесмтво подукции этих алфавитов.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Последовательность слов 
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(A\mor B\right)$
+\end_inset
+
+ образуют вывод к Р если 
+\begin_inset Formula $\forall j=1,2\tr n\tr\ \alpha_{j}$
+\end_inset
+
+ - является применением некоторой аксиомы, либо применением одной из 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ к алфавиту уже включенным к выводу.
+\end_layout
+
+\begin_layout Standard
+Понятие вывода обладает свойством недертишиновасти, тоесть 
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}$
+\end_inset
+
+ составляет вывод, то его можно продолжить.
+ В качестве 
+\begin_inset Formula $\alpha_{i+1}$
+\end_inset
+
+ можно записать 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ и т п., тоесть можно продолжить и без разници как 
+\begin_inset Formula $\alpha\in\left(A\mor B\right)^{*}$
+\end_inset
+
+ выводимо в Р, если в Р существует вывод, содержащий 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Задачи, решаемые системами поста.
+\end_layout
+
+\begin_layout Standard
+Задачей в системах поста называется выражение 
+\begin_inset Formula $t-?$
+\end_inset
+
+.
+ Решение 
+\begin_inset Formula $t-?$
+\end_inset
+
+ это все слова 
+\begin_inset Formula $\alpha\in\left(A\mor B\right)^{*}$
+\end_inset
+
+ такое что 
+\begin_inset Formula $\exists\Theta\left(\alpha=t\Theta\right)$
+\end_inset
+
+, тоесть решение, этот найти 
+\begin_inset Formula $\Theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда если t содержит символы неизвестных переменных, то 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ указывает на значение этих переменных.
+\end_layout
+
+\begin_layout Standard
+Одна и таже задача имеет бесконечно много решений, или нетимеет их совсем.
+\end_layout
+
+\begin_layout Standard
+Для решения произвольных задач в системах поста, которая моделирует последовател
+ьность построения всевозможных выводов в этой системе.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $t-?$
+\end_inset
+
+ - постановка задачи.
+ Будем считать решением 
+\begin_inset Formula $t-?$
+\end_inset
+
+ шагами , так что на шаге с номером i.
+ строятся все выводы длинны i, в которых применяются 
+\begin_inset Formula $\Theta$
+\end_inset
+
+, заменяющие символы переменных на неболее чем i символьные слова.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t-?$
+\end_inset
+
+ - постановка задачи.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P=\left(A,B,V,\text{П}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{1}\tr\Pi_{r}$
+\end_inset
+
+ - аксиомы.
+ 
+\begin_inset Formula $\Theta_{1}\tr\Theta_{S}$
+\end_inset
+
+ - подстановки, где все переменные заменяются на не более чем 1носимвольныет
+ сллова.
+\end_layout
+
+\begin_layout Enumerate
+Шаг 1.
+ Пусть R - множество всевозможных подстановок вместо переменных из 
+\begin_inset Formula $V$
+\end_inset
+
+ слов 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\pi^{1}\tr\pi^{t}$
+\end_inset
+
+ - все возможные аксиомы из 
+\begin_inset Formula $\Pi$
+\end_inset
+
+.
+ Построим всевозможное применение этих аксиомЮ плочаемое из подстановок
+ из 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\alpha_{1}\tr\alpha_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Представим ..
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Шаг 2.
+ Пусть R - множество всевозможных подставовок, заменяющее ..
+ переменых на неболле чем 2х символьные слова.
+ Построим всевозможные применение аксиом 
+\begin_inset Formula $\pi^{1}\tr\pi^{t}$
+\end_inset
+
+ с помощью подстановок из R.
+ Продолжим каждый из полученных начал выывода еще на 1н шаг.
+ Для произвольного 
+\begin_inset Formula $\alpha_{i}'$
+\end_inset
+
+ построим ...
+ Добавим к таким выводам те, которые получаются применением продукции не
+ аксиом из 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ к словам, которые уже включены в выводы.
+ Продолжение выводов, начинающихся с 
+\begin_inset Formula $\alpha_{i}'$
+\end_inset
+
+ начинающиххся ....
+ выполняется по правилу:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Последовательно ..
+\end_layout
+
+\begin_layout Enumerate
+Если выбрана некоторая продукция 
+\begin_inset Formula $\pi=\df{t_{1}\tr t_{q}}{t_{q+1}}$
+\end_inset
+
+ то возьмем последователдьность 
+\begin_inset Formula $\alpha_{i}\alpha_{i}\tr\alpha_{i}$
+\end_inset
+
+ содержащая q раз 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+Будем переберать подстановки из 
+\begin_inset Formula $\alpha_{i}\alpha_{i}\tr\alpha_{i}$
+\end_inset
+
+ способом 
+\begin_inset Formula $\forall i=\overline{1,q}\left(\alpha_{i}'=t_{i}\Theta\right)$
+\end_inset
+
+.
+ Всякий раз когда условие выполнена, продолжим вывод длинны 1 до вывода
+ длинны 2, добавив к нему слово 
+\begin_inset Formula $t_{q+1}\Theta$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Шаг с номером k.
+ Пусть R - множество всевозможных подстановок вместо переменных из V переменных
+ из АиБ ..
+ слов длинны k.
+ R - конечное множество.
+ Будем строить всевозмоджные выводы длинны k, к которым применяюттся подстановки
+ по следующей схеме:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Для такого начала построим всевозмыжные продолжения, добавив еще 1но слово.
+ Сначала построим всевозможные продолжения, получаемых применением аксиом
+ с помощью подстановок из R.
+ Затем продолжим выбранное начало вывода длинны i с помощью применение продукции
+ неаксиом.
+ Для этого воспользуемся следующей схемой:
+\end_layout
+
+\begin_layout Enumerate
+Будем последовательно просматриватть все продукции ...
+\end_layout
+
+\begin_layout Enumerate
+Для каждой продукции 
+\begin_inset Formula $\df{t_{1}\tr t_{q}}{t_{q+1}}$
+\end_inset
+
+ будем просматривать всевозможные последовательности слов 
+\begin_inset Formula $\beta_{1}\tr\beta_{q}$
+\end_inset
+
+ составляемые из слов 
+\begin_inset Formula $\alpha',\alpha''\tr\alpha^{\left(i\right)}$
+\end_inset
+
+.
+ После этого среди подстановок из R выберает такие, для которых выполняется
+ условие 
+\begin_inset Formula $\forall i=\overline{1,q}\left(\beta_{i}=t_{i}\Theta\right)$
+\end_inset
+
+.
+ Если выполнено, то добавляем слово.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+и так далее.
+\end_layout
+
+\begin_layout Standard
+Покажем что приведенный алгоритм построения выводов не все выводыт строит.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha\in\Omega_{p}$
+\end_inset
+
+- (
+\begin_inset Formula $\Omega_{p}$
+\end_inset
+
+ - мнодество слов ..) если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ выводится в p в составе вывода длинны k и в этом выводе применяются подстановки
+, заменяющие символы переменных на неболее чем s символьные слова.
+ Тогда по приведенному алгоритма работы механизма вывода 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ будет встречаться в выводах на шаге 
+\begin_inset Formula $\max\left(k,s\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Свойства множеств слов выводимыми системами поста.
+\end_layout
+
+\begin_layout Standard
+Пусть заданы системы поста 
+\begin_inset Formula $P_{1}=\left(A_{1},B_{1},V_{1},\Pi_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{2}=\left(A_{2},B_{2},V_{2},\Pi_{2}\right)$
+\end_inset
+
+.
+ Потребуем чтобы множества все кроме 
+\begin_inset Formula $\Pi_{1}\cup\Pi_{2}$
+\end_inset
+
+ были дезьюнктными.
+ Обозначим как 
+\begin_inset Formula $\Omega_{p_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Omega_{p_{2}}$
+\end_inset
+
+ - мнодество слов выводимые 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ не содержащие символов вспомогательного алфавита.
+\end_layout
+
+\begin_layout Theorem
+Существуют в системах поста 
+\begin_inset Formula $P_{3}=\left(A,B,V,\Pi_{3}\right)$
+\end_inset
+
+ которое ....
+ 
+\begin_inset Formula $\Omega_{p_{3}}=\Omega_{p_{2}}\cup\Omega_{p_{1}}$
+\end_inset
+
+ (
+\begin_inset Formula $\Omega_{p_{3}}=\Omega_{p_{2}}\cap\Omega_{p_{1}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+Определип системы поста 
+\begin_inset Formula $P_{3}$
+\end_inset
+
+, положим 
+\begin_inset Formula $A=A_{1}\cup A_{2},\ B=B_{1}\cup B_{2},\ V=V_{1}\cup V_{2}$
+\end_inset
+
+.
+ Пусть S и Q - 2 новых вспомогательных символа.
+ Преобразуем продукции из 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ по правиу 
+\begin_inset Formula $\df{t_{1}\tr t_{n}}{t_{n+1}}\ \sl\ \df{St_{1}\tr St_{n}}{St_{n+1}}$
+\end_inset
+
+.
+ Преобразуем продукции из 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ : 
+\begin_inset Formula $\df{t_{1}\tr t_{n}}{t_{n+1}}\ \sl\ \df{Qt_{1}\tr Qt_{n}}{Qt_{n+1}}$
+\end_inset
+
+ .
+ Обьеденим полученные множества продукции.
+\end_layout
+
+\begin_layout Proof
+Добавим к ним еще 2 продукции.
+ 
+\begin_inset Formula $\df{Sx}x$
+\end_inset
+
+ и 
+\begin_inset Formula $\df{Qx}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Покажем что 
+\begin_inset Formula $\Omega_{p_{3}}=\Omega_{p_{1}}\cup\Omega_{p_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Проверем включения (1) 
+\begin_inset Formula $\Omega_{p_{3}}\subseteq\Omega_{p_{1}}\cup\Omega_{p_{2}}$
+\end_inset
+
+ и (2) 
+\begin_inset Formula $\Omega_{p_{1}}\cup\Omega_{p_{2}}\subseteq\Omega_{p_{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha\in\Omega_{p_{3}}\ \sl\ S\alpha\ or\ Q\alpha\ \sl\ \alpha\in\Omega_{p_{1}}\ or\ \alpha\in\Omega_{p_{2}}\ \sl\ \alpha\in\Omega_{p_{1}}\cup\Omega_{p_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\alpha\ or\ Q\alpha\ \sl\ \alpha\in\Omega_{p_{3}}\ or\ \alpha\in\Omega_{p_{3}}\ \sl\ \alpha\in\Omega_{p_{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+В случае когда 
+\begin_inset Formula $\Omega_{p_{3}}=\Omega_{p_{2}}\cap\Omega_{p_{1}}$
+\end_inset
+
+ достаточно преобразовать продукции 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ по приведенной схеме, и добавить к продукциям еще 1ну 
+\begin_inset Formula $\df{Sx\ Qx}x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $P_{1}\ 0\ \df x{x0}$
+\end_inset
+
+ выводятся любые последовательности нулей, 
+\begin_inset Formula $P_{2}\ 1\ \df x{x1}$
+\end_inset
+
+- цепочки из 1ц, а если их обьеденить, то получится хлам.
+\end_layout
+
+\begin_layout Subsection
+Функции, вычисляемые системами поста.
+ 
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать представление произвольных чисел из N.
+\end_layout
+
+\begin_layout Definition
+Числовая функция 
+\begin_inset Formula $f\left(x_{1}\tr x_{n}\right)\ \left(f:N^{n}\st N\right)$
+\end_inset
+
+ вычисляется в системе поста P только тогда когда 
+\begin_inset Formula $\forall x_{1}\tr x_{n}\in N\left(f\left(x_{1}\tr x_{n}\right)=y\longleftrightarrow\text{в }P_{3}\text{ выводится слово }f\left(\overline{x_{1}}\tr\overline{x_{n}}\right)=\overline{y}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Всякая частично рекурсивная поста вычисляется системами поста.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Высислимость в системах поста простейших функций.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Представление чисел из N
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\df{Nx}{O\left(x\right)=0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S\left(x\right)=x+1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\df{Nx0}{S\left(x0\right)=x1}\ \df{Nx1\ S\left(x\right)=y}{S\left(x1\right)=y0}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $I_{n}^{m}\left(x_{1}\tr x_{n}\right)=x_{m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Nx_{1}\tr Nn$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{n}^{m}\left(x_{1}\tr x_{n}\right)=x_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Вычислимость операции суперпозиции.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $h\left(x_{1}\tr x_{k}\right)=f\left(g_{1}\left(x_{11}\tr x_{1m_{1}}\right)\tr g_{n}\left(x_{n1}\tr x_{nm_{n}}\right)\right)$
+\end_inset
+
+ где 
+\begin_inset Formula $f\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ вычисляется в системах поста 
+\begin_inset Formula $P_{f}$
+\end_inset
+
+ , а 
+\begin_inset Formula $g_{i}\left(x_{i1}\tr x_{im_{i}}\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $P_{g_{i}}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $F,G_{1}\tr G_{n}$
+\end_inset
+
+ - вспомогательные символы, которые не содержаться среди символов переменных
+ в системах поста 
+\begin_inset Formula $P_{f},P_{g_{1}}\tr P_{g_{n}}$
+\end_inset
+
+.
+ Преобразуем продукции 
+\begin_inset Formula $P_{f}$
+\end_inset
+
+ по правилу 
+\begin_inset Formula $\df{t_{1}\tr t_{k}}{t_{k+1}}\st\df{Ft_{1}\tr t_{k}}{Ft_{k+1}}$
+\end_inset
+
+, а 
+\begin_inset Formula $Pg_{i},\ i=\overline{1,n}$
+\end_inset
+
+ по правилу 
+\begin_inset Formula $\df{t_{1}\tr t_{k}}{t_{k+1}}\st\df{G_{i}t_{1}\tr G_{i}t_{k}}{G_{i}t_{k+1}}$
+\end_inset
+
+.
+ Обьеденим определенные выше множества продукции, и добавим в них еще 1ну
+ продукцию 
+\begin_inset Formula $G_{1}g_{1}\left(x_{11}\tr x_{1m_{1}}\right)G_{2}g_{2}\left(x_{21}\tr x_{2m_{2}}\right)\tr G_{n}g_{n}\left(x_{n1}\tr x_{nm_{n}}\right)$
+\end_inset
+
+ тогда 
+\begin_inset Formula $G_{i}g_{i}\left(x_{i1}\tr x_{im_{i}}\right)=y_{i},\ i=\overline{1,n}$
+\end_inset
+
+ и 
+\begin_inset Formula $Ff\left(y_{1}\tr y_{n}\right)=z$
+\end_inset
+
+ тогда 
+\begin_inset Formula $h\left(x_{1}\tr x_{k}\right)=z$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Вычислимоть операций примитивной рекурсии.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},x_{n+1}\right),\ n\br0$
+\end_inset
+
+ получается из 
+\begin_inset Formula $g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)$
+\end_inset
+
+ в помощью операции примитивной рекурсии.
+ 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},0\right)=g\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},y+1\right)=h\left(x_{1}\tr x_{n},y,f\left(x_{1}\tr x_{n},y\right)\right)$
+\end_inset
+
+ Определим систему поста, в которой вычисляется функция 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S\left(x\right)=x+1$
+\end_inset
+
+ там встречается, так что оно в таком виде мешается.
+ Обозначим 
+\begin_inset Formula $G,H,\Sigma$
+\end_inset
+
+ как вспомогательные символы, отсутствующие в алфавитах систем поста 
+\begin_inset Formula $P_{h},P_{g},P_{S}$
+\end_inset
+
+.
+ Преобрахуем продукции перечисленых систем по правилу 
+\begin_inset Formula $P_{g}:\df{t_{1}\tr t_{k}}{t_{k+1}}\st\df{Gt_{1}\tr Gt_{k}}{Gt_{k+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{h}:\df{t_{1}\tr t_{k}}{t_{k+1}}\st\df{Ht_{1}\tr Ht_{k}}{Ht_{k+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{S}:\df{t_{1}\tr t_{k}}{t_{k+1}}\st\df{\Sigma t_{1}\tr\Sigma t_{k}}{\Sigma t_{k+1}}$
+\end_inset
+
+.
+ Обьезденим полдученные множества продукции и добавим к ним еще две.
+ 
+\begin_inset Formula $g\left(x_{1}\tr x_{n}\right)=z$
+\end_inset
+
+ тогда 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},0\right)=z$
+\end_inset
+
+ и еще 2е соотношение : Пусть 
+\begin_inset Formula $\Sigma S\left(y\right)=v$
+\end_inset
+
+ тогда 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},y\right)=p$
+\end_inset
+
+ и 
+\begin_inset Formula $Hh\left(x_{1}\tr x_{n}y,p\right)=z$
+\end_inset
+
+ и тогда 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},v\right)=z$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Вычислимость операции минимизации.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},x_{n+1}\right)=\mu t\left(g\left(x_{1}\tr x_{n},t\right)=x_{n+1}\right),\ n\br0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(x_{1}\tr x_{n},x_{n+1}\right)$
+\end_inset
+
+ - минимальное t такое что 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x_{1}\tr x_{n},t\right)=x_{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x_{1}\tr x_{n},i\right),\ i\mr t$
+\end_inset
+
+ - определены
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $P_{g}$
+\end_inset
+
+ - система поста, в которой вычисляется функция g, и 
+\begin_inset Formula $P_{S}$
+\end_inset
+
+ - 
+\begin_inset Formula $S\left(x\right)=x+1$
+\end_inset
+
+ .
+ Допистум что щас мы уже развели продукции, и не будем описывать щас вспомогател
+ьные символы.
+ Определим вспомогательную функцию 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)=\begin{cases}
+0, & \text{если}\ g\left(x_{1}\tr x_{n},i\right)\ \text{определены}\ i\mr x_{n+2}\ \text{и не равны}\ x_{n+2}\\
+1, & \begin{array}{c}
+\text{если}\ g\left(x_{1}\tr x_{n},i\right)\ \text{определены для}\ i\mr x_{n+2}\ \sl\\
+g\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)=x_{n+1}\ \forall j<x_{n+2}\left(g\left(x_{1}\tr x_{n1}\right)\nr x_{n+1}\right)
+\end{array}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выпишим продукции, позволяющие вычислять значения функции 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g\left(x_{1}\tr x_{n},0\right)=y\ y\nr x_{n+1}\ \varphi\left(x_{1}\tr x_{n},x_{n+1},0\right)=0$
+\end_inset
+
+ это есть нет.
+ Если да: 
+\begin_inset Formula $g\left(x_{1}\tr x_{n},0\right)=x_{n+1}\ \varphi\left(x_{1}\tr x_{n},x_{n+1},0\right)=1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n},x_{n+1},t\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $S\left(t\right)=d$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(x_{1}\tr x_{n},d\right)=y$
+\end_inset
+
+ 
+\begin_inset Formula $y\nr x_{n+1}$
+\end_inset
+
+ - Это есть нет, то в этом случае делаем 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n},x_{n+1},d\right)=0$
+\end_inset
+
+.
+ Если да : 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n},x_{n+1},t\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $S\left(t\right)=d$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(x_{1}\tr x_{n},d\right)=x_{n+1}$
+\end_inset
+
+ то 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n},x_{n+1},d\right)=1$
+\end_inset
+
+ К выписанным продукциям добаыим еще 1ну 
+\begin_inset Formula $\df{\varphi\left(x_{1}\tr x_{n},x_{n+1},x_{n+2}\right)=1}{f\left(x_{1}\tr x_{n},x_{n+1}\right)=x_{n+2}}$
+\end_inset
+
+.
+ Можно обойтись без 5ой, если исправить 2ю и 4ю, не запоминать, а сразу
+ выводить ответ.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+В приведенных продукциях не приведена разметка 
+\begin_inset Formula $P_{g},P_{S}$
+\end_inset
+
+ - это можно сделать, но на правельность это не влияет, так как мы уже это
+ дклать умеем.
+\end_layout
+
+\begin_layout Enumerate
+В системах поста, в которых выводится 
+\begin_inset Formula $\nr$
+\end_inset
+
+ (неравенство) .
+ Для этого неравенство должно быть определено отдельно.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $x\nr y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+<
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{x\ \text{меньше}\ y}{x\nr y}\ \df{x\nr y}{y\nr x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{Nx\ Ny\ x\preceq y}{x\nr y}\ \df{\begin{array}{c}
+\_\preceq0\\
+\_\preceq1\\
+x\preceq y
+\end{array}\ x\preceq y}{x\begin{array}{c}
+0\\
+0\\
+1\\
+1
+\end{array}\preceq g\begin{array}{c}
+0\\
+1\\
+0\\
+1
+\end{array}\ x\preceq y}\ \df{Nv0x\ Nv1\ z\ xPz}{v0x<v1z}\ \mbox{\df{xPy}{x\begin{array}{c}
+ 0\\
+0\\
+1\\
+1 
+\end{array}Py\begin{array}{c}
+ 0\\
+1\\
+0\\
+1 
+\end{array}} }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Где 
+\begin_inset Formula $\preceq$
+\end_inset
+
+ - меньше по значению и Р - равно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{f\left(x,iz\right)=y}{x<y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Потоки в сетях.
+\end_layout
+
+\begin_layout Definition
+Сетью называется ориентированный граф 
+\begin_inset Formula $N=\left(V,U,\left\{ I,S\right\} \right)$
+\end_inset
+
+, где 
+\begin_inset Formula $V$
+\end_inset
+
+ - множество вершин, 
+\begin_inset Formula $I$
+\end_inset
+
+ - множество ребер 
+\begin_inset Formula $\left\{ I,S\right\} $
+\end_inset
+
+ верщины, называемые истоком и стоком сети, такой что из 
+\begin_inset Formula $I$
+\end_inset
+
+ ребра тольковыходят, в 
+\begin_inset Formula $S$
+\end_inset
+
+ ребра только входят, для остальных верщин имеются как входдящие и выходящие
+ ребра и для каждой влутренней верщины 
+\begin_inset Formula $v\in V\backslash\left\{ I,S\right\} $
+\end_inset
+
+ существует путь в 
+\begin_inset Formula $S$
+\end_inset
+
+ и из 
+\begin_inset Formula $I$
+\end_inset
+
+ существует путь в 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Сеть 
+\begin_inset Formula $N=\left(V,U,\left\{ I,S\right\} \right)$
+\end_inset
+
+ назхывается транстпортной сетью, если задано отображение 
+\begin_inset Formula $\psi:U\st R^{+}$
+\end_inset
+
+ (множество неотрицительных чисел), называемые пропускнгой способностью
+ ребер.
+ Будем представлять транстпорную сеть как 
+\begin_inset Formula $N=\left(V,U,\left\{ I,S\right\} ,\psi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\varphi:U\st R^{+}$
+\end_inset
+
+ называется потоков в транстпортной сети 
+\begin_inset Formula $N=\left(V,U,\left\{ I,S\right\} ,\psi\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\ddsl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall u\in U\left(0\mr\varphi\left(n\right)\mr\psi\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v\in V\backslash\left\{ I,S\right\} \left(\Sigma\varphi\left(u\right)=\Sigma\varphi\left(u\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\ \ \ \ \ \ \ \ u\in E^{+}\left(v\right)\ u\in E^{-}\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E^{+}\left(v\right)$
+\end_inset
+
+ - ребра, которые ведут в 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E^{-}\left(v\right)$
+\end_inset
+
+ - ребра, которые выходят из 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Велечиной потока 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ транстпортной сети 
+\begin_inset Formula $N$
+\end_inset
+
+ называется 
+\begin_inset Formula $N\left(\varphi\right)=\Sigma\varphi\left(u\right),\ u\in E^{-}\left(I\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Для каждой транстпортной сети 
+\begin_inset Formula $N=\left(V,U,\left\{ I,S\right\} ,\psi\right)$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi\left(u\right)=\Sigma\varphi\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Разобьем доказательство на 2 этапа.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть поток 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ таков, что в 
+\begin_inset Formula $N$
+\end_inset
+
+ не существует элементарных циклов длинны не меньше чем 3, по которым течет
+ ненулевой поток.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда удалим из 
+\begin_inset Formula $N$
+\end_inset
+
+ все рёбра, по которым течет 0ой поток.
+ В рехультате получим новую сеть, в каторой все пути, выходящие из каждой
+ вершины ведут только в сток.
+ Сопоставим вершинам сети номера ярусов этих вершин, равные максимуму длин
+ путей ведущих из истока в такие вершины.
+ Разместим вершины сети по ярусам.
+ Разобьем ребра, соединяющие рверщины несоседних ярусов вспомогательными
+ точками.
+ Ребра разбиения сохраняют величину потока, пропускную способность разбиваемых
+ ребер.
+ При этом полученной транстпортной сети величина входного потока равна 
+\begin_inset Formula $\left.\begin{array}{c}
+\Sigma\varphi\left(u\right)\\
+u\in E^{-}\left(I\right)
+\end{array}\right|\begin{array}{c}
+\Sigma\varphi\left(u\right)\\
+u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+.
+ В последней сети суммарный входной поток полностью поступает в вершины
+ 1го яруса.
+ Из этих вершин в том же самом обьеме передается в вершины 2го яруса.
+ Из вершин 2го яруса поток в том же обьеме переходит в вершины 3го яруса
+ и так далее.
+ На последнем шаге поток в том же самом обьеме передается из вершин предпоследне
+го яруса в сток.
+ Поэтому 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi\left(u\right)=\Sigma\varphi\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Предположим что существуют элементарные циклы длинны больше чем 3, по которым
+ течет ненулевой поток.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть С - некоторый такой цикл.
+ Обозначим как 
+\begin_inset Formula $d=\min\left(\varphi\left(u\right)\right),\ u\in C$
+\end_inset
+
+ .
+ Преобразуем поток 
+\begin_inset Formula $\varphi\ \forall u\in U\left(\varphi_{1}\left(u\right)=\begin{cases}
+\varphi\left(u\right)-d & ,\text{если}\ u\in C\\
+\varphi\left(u\right) & ,\text{иначе}
+\end{cases}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall u\in U\left(0\mr\varphi_{1}\left(u\right)\mr\psi\left(n\right)\right)$
+\end_inset
+
+ Верно потому что поток на ребрах вне С не изменяется, а а ребрах С он уменьшает
+ся на величину для величину, для которой он не может быть отрицательной.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v\in V\backslash\left\{ I,S\right\} \left(\begin{array}{c}
+\Sigma\varphi\left(v\right)=\Sigma\varphi\left(v\right)\\
+v\in E^{-}\left(I\right)\ v\in E^{+}\left(S\right)
+\end{array}\right)$
+\end_inset
+
+ Верно поскольку для внутренних вершин не принадлежвщих С суммарный взодной
+ и выходной потоки не изменяются и поэтому остаются равными, а для вершин
+ принадлежаший С суммарные входные и выходные потоки уменьшается на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Поэтому входные и выходные потоки внутренных верщин оежащих на С так же
+ остаются равными.
+\end_layout
+
+\begin_layout Standard
+Поскольку С не содерщих исток и сток 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi\left(u\right)=\Sigma\varphi_{1}\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{-}\left(I\right)
+\end{array}$
+\end_inset
+
+ и 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi\left(u\right)=\Sigma\varphi_{1}\left(u\right)\\
+u\in E^{+}\left(S\right)\ u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+.
+ При преобразовании 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ в 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ хотябы 1но ребро цикла С станет ребром, по которому течет 0ой поток.
+ Если для 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ в сети N существуют элементарные циклы длинны не меньше чем 3 по которым
+ те ненулевой поток, по повторим рассуждение.
+ В результате получим поток 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ такой что 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi_{2}\left(u\right)=\Sigma\varphi_{1}\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{-}\left(I\right)
+\end{array}$
+\end_inset
+
+ и 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi_{2}\left(u\right)=\Sigma\varphi_{1}\left(u\right)\\
+u\in E^{+}\left(S\right)\ u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+ При этом в сети N появятся ребра, по которым течет 0ой поток.
+ И так талее.
+ Продолжаем процелл до тех пор, когда будет получен поток 
+\begin_inset Formula $\varphi_{k}$
+\end_inset
+
+ в котором не существует элементарных циклов ддлинны не меньше чем 3 по
+ которым течет ненулевой поток.
+ Тоесть 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi_{k}\left(u\right)=\Sigma\varphi_{k}\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+.
+ Поскольку сумма 
+\begin_inset Formula $\Sigma\varphi\left(u\right)=\Sigma\varphi_{1}\left(u\right)=\Sigma\varphi_{2}\left(u\right)=\tr=\Sigma\varphi_{k}\left(u\right),\ u\in E^{-}\left(I\right)$
+\end_inset
+
+ (для каждого графа отдельно) и 
+\begin_inset Formula $\Sigma\varphi\left(u\right)=\Sigma\varphi_{1}\left(u\right)=\Sigma\varphi_{2}\left(u\right)=\tr=\Sigma\varphi_{k}\left(u\right),\ u\in E^{+}\left(S\right)$
+\end_inset
+
+(для каждого графа отдельно).
+ И так как 
+\begin_inset Formula $\begin{array}{c}
+\Sigma\varphi_{k}\left(u\right)=\Sigma\varphi_{k}\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{+}\left(S\right)
+\end{array}$
+\end_inset
+
+ то там все всему равно.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Definition
+Поток 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ транстпортной сети N называется максимальнмы потоком в данной сети, если
+ 
+\begin_inset Formula $N\left(\varphi\right)=\max\left(N\left(\varphi'\right)\right),\ \varphi'$
+\end_inset
+
+ - поток в N.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Поток 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ транстпортной сети N называется полным потоком если на каждом элементарном
+ пути вежущем из истока в сток, встречается хотябы 1но ребро 
+\begin_inset Formula $u\left(\varphi\left(u\right)=\psi\left(u\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Всякий максимальный поток в N является полным потоков в сети N.
+ Обратное утверждение не верно в общем случае.
+\end_layout
+
+\begin_layout Theorem
+Для всякой транстпортной сети существует полный поток.
+\end_layout
+
+\begin_layout Proof
+Проведем доказательство путем метода назыщения дуг.
+\end_layout
+
+\begin_layout Proof
+Определим 
+\begin_inset Formula $\varphi_{0}:U\st R^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $\forall u\left(\varphi\left(u\right)=0\right)$
+\end_inset
+
+.
+ Опроеделим поток 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ в 
+\begin_inset Formula $N$
+\end_inset
+
+ если в сети чуществует хотябы 1 элементарный путь ведущий из истока в сток
+ все ребра которого еще не догружены, то возьмем еще такой поток 
+\begin_inset Formula $w$
+\end_inset
+
+ определим величитну минимального недогруза ребер 
+\begin_inset Formula $d=\min\left(\psi\left(u\right)-\varphi_{i}\left(u\right)\right),\ u\in E\left(w\right)$
+\end_inset
+
+ .
+ И преобразуем 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ в 
+\begin_inset Formula $\varphi_{i+1}$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\forall u\in U\left(\varphi_{i+1}\left(u\right)=\begin{cases}
+\varphi_{i}\left(u\right)+d & ,u\in E\left(w\right)\\
+\varphi_{i}\left(u\right) & ,\text{иначе}
+\end{cases}\right)$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall u\in U\left(0\mr\varphi_{i+1}\left(u\right)\mr\psi\left(u\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall v\in V\backslash\left\{ S,I\right\} \left(\begin{array}{c}
+\Sigma\varphi_{i+1}\left(u\right)=\Sigma\varphi_{i+1}\left(u\right)\\
+u\in E^{-}\left(I\right)\ u\in E^{+}\left(S\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поскольку на каждом шаге в сети получается хотябы 1но ребро, максимально
+ нагруженный потоком, то через конечное число шагов данный процесс приведет
+ в построенному максимальному потоку.
+\end_layout
+
+\begin_layout Subsection
+Сечение сетей.
+\end_layout
+
+\begin_layout Standard
+Разобраться самим.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $L\in U$
+\end_inset
+
+ транстпортной сети 
+\begin_inset Formula $N=\left(V,U,\left\{ I,S\right\} ,\psi\right)$
+\end_inset
+
+ любой путь в N ведущий из I в S содержит хотяы 1но ребро из L.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\forall W=I,\tr,S\ \exists u\in E\left(w\right)\left(u\in L\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если L сечение сети N, то пропускной способностью L называется величина
+ 
+\begin_inset Formula $\begin{array}{c}
+L\left(N\right)=\Sigma\psi\left(u\right)\\
+\ \ \ \ \ u\in L
+\end{array}$
+\end_inset
+
+.
+ Для любого сечения в сети N и любого потока в этой сети справедливо неравенство
+\begin_inset Formula $N\left(\varphi\right)\mr L\left(N\right)$
+\end_inset
+
+ (
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - поток, 
+\begin_inset Formula $L$
+\end_inset
+
+ - сечение, 
+\begin_inset Formula $N$
+\end_inset
+
+ - сеть)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

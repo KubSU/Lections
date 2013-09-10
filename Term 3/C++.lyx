@@ -1,0 +1,858 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+C
+\backslash
+C++
+\end_layout
+
+\begin_layout Section
+Введение.
+ Основные понятие языка
+\end_layout
+
+\begin_layout Standard
+Язык программирование
+\series bold
+ с
+\backslash
+с++
+\series default
+ получил свое развитие с начала 1980 годов.
+ Более рание версии назывались язком 
+\series bold
+с
+\series default
+.
+ Данный язык 
+\series bold
+с
+\backslash
+с++
+\series default
+ удобен и использовался для написания опреационных систем.
+ Из-за этого его называют языком системного программирования.
+ Unix и ее програмное обеспечение так-же написанно на 
+\series bold
+с
+\backslash
+с++
+\series default
+.
+ 
+\series bold
+с++
+\series default
+ содержит язык 
+\series bold
+с
+\series default
+ как подмножество.
+ Между 
+\series bold
+с 
+\series default
+и 
+\series bold
+с++ 
+\series default
+иметеется сходство на уровне типов данных, операций, операторов, объектов,
+ адресов и т.п.
+ За некоторыми исключениями, а именно выделения динамической памяти: 
+\series bold
+new and delete.
+ с++ 
+\series default
+использует теже самые последовательности вызова и возврата из функций что
+ и в 
+\series bold
+с.
+ 
+\series default
+Одним из превоночальных предназначений было применение его вместо программирован
+ия на 
+\series bold
+assembler'e --- 
+\series default
+то есть облегчить жизнь программисту.
+ Когда разрабатывали с++ были приняты все меры для сохранения этой возможности
+ (поддерживать ассемблер).
+ Язык с++ --- это язык с, расширенный введением функций 
+\series bold
+inline
+\series default
+, введением классов, прегруженых операций, перегруженных имен функций, константн
+ых типов, ссылок, операций управления свободной памятью, проверки параметров
+ функции.
+ 
+\end_layout
+
+\begin_layout Subsection
+Различия между с и с++
+\end_layout
+
+\begin_layout Enumerate
+Типы параметров функции могут быть заданы и будут проверяться, могут выполняться
+ преобразования типов.
+\end_layout
+
+\begin_layout Enumerate
+Для выраженийс числами с плавующей точкой может использоваться, плавующаяя
+ арифметика одинарной точности
+\end_layout
+
+\begin_layout Enumerate
+Имена функции могут быть перегруженны
+\end_layout
+
+\begin_layout Enumerate
+Операции могут быть перегруженны
+\end_layout
+
+\begin_layout Enumerate
+Могут осуществляться 
+\series bold
+inline 
+\series default
+подстановка функции
+\end_layout
+
+\begin_layout Enumerate
+Объекты данных могут быть константами
+\end_layout
+
+\begin_layout Enumerate
+Могут быть описаны объекты ссылочного типа
+\end_layout
+
+\begin_layout Enumerate
+Операция 
+\series bold
+new and delete
+\series default
+ обеспечивают свободное хранение данных в памяти
+\end_layout
+
+\begin_layout Enumerate
+Класс может обеспечивать сокрытие данных, гарантированную иницилизацию,
+ определяемые пользователем преоброзования и динамическое задание типов
+ через использование виртуальных функций
+\end_layout
+
+\begin_layout Enumerate
+Имя класса являеться именем типа
+\end_layout
+
+\begin_layout Enumerate
+Любой указатель, может присваиваться указателю 
+\series bold
+void* 
+\series default
+без приведения типов
+\end_layout
+
+\begin_layout Section
+Алфавит языка
+\end_layout
+
+\begin_layout Standard
+Не весь алфавит
+\end_layout
+
+\begin_layout Standard
+= присваивание
+\end_layout
+
+\begin_layout Standard
+== равно
+\end_layout
+
+\begin_layout Standard
+!= неравно
+\end_layout
+
+\begin_layout Standard
+Управляющие последовательности (escape последовательности) то есть специальные
+ символьные комбинации, используемые в функциях ввода и вывода информаци.
+ Начинаються с 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\series default
+и потом группа латинских букв: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escape последовательности
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Послед-сть
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Описание
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Код
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Звонок.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+007
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Возврат на шаг.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+008
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+t
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Горизонтальная табуляция.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Переход на новую строку.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Вертикальная табуляция.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+r
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Возврат каретки.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Перевод формата.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Обратная дробная черта.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+ddd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Символ набора кодов в восьмеричном представлении.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+xddd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Символ набора кодов в шеснадцатиричном представлении.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когда компилятор обрабатывает программу он разбивает ее на группы символов
+ называемых лексемы.
+ Лексема --- это еденица текста программы, которая имеет определенный смысл
+ для компилятора, которая не может быть разбита в дальнейшем.
+ Существует 6 классов лексем.
+\end_layout
+
+\begin_layout Enumerate
+Индетификаторы и имена
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Регистр имеет значение.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ключевые слова
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Это индетификаторы имеющиее определенное смысловое значение, которое не
+ может быть использовано в качестве переменнной и констант.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Константы
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Константы представляют собой данные используемые только для чтения, не меняют
+ своего значения в процессе выполнения прогрммы.
+ Константы бывают:
+\end_layout
+
+\begin_layout Itemize
+Типизированные, с указанием типа 
+\series bold
+const int a=1;
+\end_layout
+
+\begin_layout Itemize
+Нетипизированные, без типа 
+\series bold
+#define a 1; 
+\end_layout
+
+\begin_layout Standard
+Можно определить с помощью 
+\series bold
+#define and const.
+ 
+\series default
+#
+\series bold
+define 
+\series default
+это макрас подстановки.
+ В качестве значения может быть использоваться простое число указанного
+ типа или же простое вырожение, допустипое для данного типа.
+ В зависимости от типа данных константы бывают:
+\end_layout
+
+\begin_layout Itemize
+Целые
+\end_layout
+
+\begin_layout Itemize
+Вещественный
+\end_layout
+
+\begin_layout Itemize
+Символьные 
+\end_layout
+
+\begin_layout Itemize
+Строковые 
+\end_layout
+
+\begin_layout Itemize
+Перечислимые
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Строки
+\end_layout
+
+\begin_layout Enumerate
+Операторы
+\end_layout
+
+\begin_layout Enumerate
+Прочие разделители
+\end_layout
+
+\begin_layout Standard
+Границы лексем определяються пробельными символами, а так-же другими лексемами.
+ Количество пробелов не имеет значения.
+ Возможно 3 способа комментирования кода:
+\end_layout
+
+\begin_layout Enumerate
+//комены в одну строку
+\end_layout
+
+\begin_layout Enumerate
+/* комнты не в одну строчку*/
+\end_layout
+
+\begin_layout Paragraph
+Переменные.
+\end_layout
+
+\begin_layout Standard
+Они могут изменять свое значение в ходе работы програмы.
+ Любая переменная должна иметь имя и должна быть описованна.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+int a=1;
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+double penetretion=3.14;
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+string str;
+\end_layout
+
+\begin_layout Paragraph
+Категории типов
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+void
+\series default
+ --- нет типа
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+function
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+scalar
+\series default
+ --- арифметический, перечеслимый, указатель и ссылки
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+aggregate
+\series default
+ --- массив, струкутра, объеденения и классы
+\end_layout
+
+\begin_layout Paragraph
+Типы данных
+\end_layout
+
+\begin_layout Standard
+картинка
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

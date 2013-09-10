@@ -1,0 +1,2282 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\prime}
+{\prime}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\longrightarrow}
+{\longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
+{\un{\ov{\Sigma}{#2}}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
+{\underset{#1}{\lim}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\underset{#1}{\max}}
+{\underset{#1}{\max}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\underset{#1}{\min}}
+{\underset{#1}{\min}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+{\underset{#1}{\overset{#2}{\int}}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{\pr\pr}
+{\pr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{\ppr\pr}
+{\ppr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
+{\oui{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\triangle}
+{\triangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Физика
+\end_layout
+
+\begin_layout Standard
+Преподаватель: 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Рубцов Сергей Евгеньевич
+\end_layout
+
+\begin_layout Standard
+Литератера:
+\end_layout
+
+\begin_layout Enumerate
+Савельев 
+\begin_inset Quotes eld
+\end_inset
+
+Курс общей физики
+\begin_inset Quotes erd
+\end_inset
+
+.
+ (Брать с механикой)
+\end_layout
+
+\begin_layout Enumerate
+Трофимова Т.И.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Курс физики
+\begin_inset Quotes erd
+\end_inset
+
+ (Учебник - шпаргалка)
+\end_layout
+
+\begin_layout Part
+Механика
+\end_layout
+
+\begin_layout Section
+Введение
+\end_layout
+
+\begin_layout Definition
+Механика изучает простейшую форму движения, тоесть перемещения материальных
+ тел в пространстве с течением времени.
+\end_layout
+
+\begin_layout Enumerate
+Нужно выбрать тело отсчета.
+\end_layout
+
+\begin_layout Enumerate
+Выбрать систему отсчета (в чем мерить, нетолько пространства, но и времени).
+ Арифметизация пространства и времени.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+На данный момент есть общепризнаная система измерений(международная).
+ Первоначально было принято что 1 метр - это 
+\begin_inset Formula $\df 1{40\ 000\ 000}$
+\end_inset
+
+от длинны меридиана.
+ Также выбрана 1 сукунда - это часть (
+\begin_inset Formula $\df 1{31\ 500\ 000,\tr}$
+\end_inset
+
+) тропических суток в 1900 году.
+ Длительность суток везде разная.
+ 1960 году выло выяснено что привязывать систему отсчета к земле(она с каждым
+ годом разбухает) невозможно.
+ Тогда метр и сукунда были пересмотрены и привязаны к частоте какого-то
+ там излучения.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Система координат.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Декартова 
+\end_layout
+
+\begin_layout Itemize
+Цилиндрическая(на плоскости Полярная)
+\end_layout
+
+\begin_layout Itemize
+Сферическая
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Классическая механика представляет собой теорию движения достаточно медленных
+ макроскопических тел.
+ В нашей вселенной существует предельная скорость (скорость света 
+\begin_inset Formula $c=3\um10^{8}\ \df{\text{м}}{\text{с}}$
+\end_inset
+
+, 
+\begin_inset Formula $v$
+\end_inset
+
+ - так будем обозначать скорость света, и 
+\begin_inset Formula $v\ll c$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Paragraph
+Объекты изучения:
+\end_layout
+
+\begin_layout Definition
+Материальная точка - тело, размерами которого можно принебречб по сразнению
+ с его пространственными перемещениями.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Система материальных точек - это совокупность частиц, положения и движение
+ каждой их каторых влияет на положение и движение остальных точек системы.
+\end_layout
+
+\begin_layout Standard
+Механика изучает такие обьекты как : материальная точка, система материальных
+ точек.
+\end_layout
+
+\begin_layout Definition
+Абсолютное твердое тело - это такое тело, деформациями которого можно принебречь
+ по сравнению с его пространственным перемещением.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Сплошная среда - это тоже система материальных точек, но которая всюду плотная
+ (нету промежутка между точками).
+\end_layout
+
+\begin_layout Paragraph
+Глобальные разделы механики:
+\end_layout
+
+\begin_layout Enumerate
+Кинематика (изучает движения тел с течением времни без учета причин, которые
+ это жвижение вызывают).
+\end_layout
+
+\begin_layout Enumerate
+Статика (изучает условия равновесия тел).
+\end_layout
+
+\begin_layout Enumerate
+Динамика (изучает движения тел в связи с теми причинами, которые его вызывают).
+\end_layout
+
+\begin_layout Definition
+Основные понятие класический механики: пространство и время.
+\end_layout
+
+\begin_layout Paragraph
+Постулаты механики:
+\end_layout
+
+\begin_layout Enumerate
+Считается возможным одновременные измерения с кокой угодно точностью любых
+ физических величин, характерихующих движение макроскопических тел.
+\end_layout
+
+\begin_layout Enumerate
+Продолжительность любого процесса одинакова во всех системах отсчета как
+ бы они не двигались.
+\end_layout
+
+\begin_layout Enumerate
+Значение пространственного интервала (расстояния) между положениями любых
+ материальных точек в данный момент одинакого во всех системах отсчета.
+\end_layout
+
+\begin_layout Definition
+Сила --- это мера взаимодействия между телами.
+ 
+\end_layout
+
+\begin_layout Standard
+Существует 4 вида взаимодействия: Гравитационная, Электромагнитная, еще
+ 2 Внутриядерных взаимодействия - Сильное и Слабое.
+\end_layout
+
+\begin_layout Definition
+Масса --- это мера инертности тел.
+ (Мера поддатливости к внешнему водействию).
+\end_layout
+
+\begin_layout Standard
+Система отсчета включает тело отсчета, систему координат и часы.
+\end_layout
+
+\begin_layout Section
+Кинематика
+\end_layout
+
+\begin_layout Subsection
+Способы задания движения точки.
+\end_layout
+
+\begin_layout Definition
+Траэктория --- это линия, по которой движится тело.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Вектор перемещения --- вектор, соеденяющий начальное и текущее положение
+ тела.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Радиус вектор --- вектор, соеденяющий тело отсчета и текущее потожение точки.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Путь --- полное расстояние, пройденное точкой по траектории.
+\end_layout
+
+\begin_layout Enumerate
+Естественный способ.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Задается:
+\end_layout
+
+\begin_layout Itemize
+Траэктория движения.
+\end_layout
+
+\begin_layout Itemize
+Начальное положения на траэктории.
+\end_layout
+
+\begin_layout Itemize
+Направление положительного движения по траэктории.
+\end_layout
+
+\begin_layout Itemize
+Текущее положение точки на траэктории как функция времени.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Функция должна быть:
+\end_layout
+
+\begin_layout Itemize
+Однозначной
+\end_layout
+
+\begin_layout Itemize
+Непрерывной
+\end_layout
+
+\begin_layout Itemize
+Дифференцируемой
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Координатный способ.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Задается:
+\end_layout
+
+\begin_layout Itemize
+Какая либо система координат
+\end_layout
+
+\begin_layout Itemize
+Координаты движущейся точки как функция времени.
+ 
+\begin_inset Formula $\left(q_{x}\left(t\right),q_{y}\left(t\right),q_{z}\left(t\right)\right)$
+\end_inset
+
+ или в Декартовой системе координат 
+\begin_inset Formula $\left(\begin{array}{c}
+x=x\left(t\right)\\
+y=y\left(t\right)\\
+z=z\left(t\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Векторный способ
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Основан на задании радиус вектора материальной точки как функции от времени.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Кинематические элементы движения точки.
+\end_layout
+
+\begin_layout Subsubsection
+Скорость
+\end_layout
+
+\begin_layout Standard
+Пусть точка переместилась из положения 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ в положение 
+\begin_inset Formula $M$
+\end_inset
+
+ за время 
+\begin_inset Formula $\D t$
+\end_inset
+
+.
+ Тогда:
+\end_layout
+
+\begin_layout Itemize
+Средняя скорость точки 
+\begin_inset Formula $\vec{v}_{cp}=\df{\D\vec{r}}{\D t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Устремим 
+\begin_inset Formula $\D t$
+\end_inset
+
+ к нулю, получим мгновенную скорость: 
+\begin_inset Formula $\vec{v}\left(t\right)=\ul{\D t\st0}\df{\D\vec{r}}{\D t}=\df{d\vec{r}}{dt}=\dot{\vec{r}}$
+\end_inset
+
+.
+ Где 
+\begin_inset Formula $\dot{\vec{r}}$
+\end_inset
+
+ --- производная.
+\end_layout
+
+\begin_layout Standard
+Т.к.
+ радиус-вектор может быть задан в виде: 
+\begin_inset Formula $\vec{r}=\vec{i}\um x+\vec{j}\um y+\vec{k}\um z$
+\end_inset
+
+, то продифференцировав, получим: 
+\begin_inset Formula $\df{d\vec{r}}{dt}=\vec{i}\df{dx}{dt}+\vec{j}\df{dy}{dt}+\vec{k}\df{dz}{dt}$
+\end_inset
+
+.
+ Или 
+\begin_inset Formula $\vec{v}=\vec{i}\um v_{x}+\vec{j}\um v_{y}+\vec{k}\um v_{z}=\vec{i}\dot{x}+\vec{j}\dot{y}+\vec{k}\dot{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Скорость можно вычислить, как длину вектора скорости:
+\begin_inset Formula $\left|\vec{v}\right|=\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}=v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Направляющие косинусы вектора скорости:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\alpha=\df{v_{x}}v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\beta=\df{v_{y}}v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\gamma=\df{v_{z}}v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ускорение
+\end_layout
+
+\begin_layout Standard
+Пусть вектор скорости изменился от 
+\begin_inset Formula $\vec{v_{0}}$
+\end_inset
+
+ до 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ за время 
+\begin_inset Formula $\D t.$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $\D\vec{v}=\vec{v}-\vec{v_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Средним ускорением называется величнина 
+\begin_inset Formula $\vec{\omega_{cp}}=\df{\D\vec{v}}{\D t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Устремим 
+\begin_inset Formula $\D t$
+\end_inset
+
+ к нулю, получим мгновенное ускорение:
+\begin_inset Formula $\vec{\omega}=\ul{\D t\st0}\df{\D\vec{v}}{\D t}=\df{d\vec{v}}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{\omega}=\dot{\vec{v}}=\ddot{\vec{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{x}=\dot{v_{x}}=\ddot{x},\ \omega_{y}=\dot{v_{y}}=\ddot{y},\ \omega_{z}=\dot{v_{z}}=\ddot{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ускорение можно вычислить, как длину вектора ускорения:
+\begin_inset Formula $\left|\vec{\omega}\right|=\sqrt{\omega_{x}^{2}+\omega_{y}^{2}+\omega_{z}^{2}}=w$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Направляющие косинусы вектора ускорения:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\alpha=\df{\omega_{x}}{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\beta=\df{\omega_{y}}{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\gamma=\df{\omega_{z}}{\omega}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Естесственный способ задания движения
+\end_layout
+
+\begin_layout Paragraph
+Скорость:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v_{cp}}=\df{\D\vec{r}}{\D t}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}=\ul{\D t}\df{\D\vec{r}}{\D t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вектор скорости направлен по касательной к траектори в сторону движения.
+ Единичный вектор касательной будем обозначать 
+\begin_inset Formula $\vec{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}=v\um\vec{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v=\left|\vec{v}\right|=\left|\ul{\D t\st0}\df{\D\vec{r}}{\D t}\right|=\ul{\D t\st0}\df{\left|\D\vec{r}\right|}{\D t}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\D\vec{r}\right|\br\D\left|\vec{r}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v=\left|\vec{v}\right|=\left|\ul{\D t\st0}\df{\D\vec{r}}{\D t}\right|=\ul{\D t\st0}\df{\left|\D\vec{r}\right|}{\D t}=\ul{\D t\st0}\df{\D S}{\D t}=\df{dS}{dt}=\dot{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}=\vec{\tau}\um\df{dS}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Ускорение:
+\end_layout
+
+\begin_layout Standard
+Разобьем путь на маленькие части.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{i}=\ous i{}S_{i}=\ous i{}v_{i}\D t_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\left(t\right)=\left|\vec{v}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тоесть путь 
+\begin_inset Formula $S=\ul{\D t_{i}\st0}\ous i{}v_{i}\D t_{i}=\oui{t_{0}}tv\left(t\right)dt$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+А перемещение 
+\begin_inset Formula $\D\vec{r}=\oui{t_{0}}t\vec{v}\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возьмем траекторию и расположими на ней 3 точки 
+\begin_inset Formula $M_{0},\ M_{1},\ M_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Предельное положение плоскости, проходящей через точки 
+\begin_inset Formula $M_{0},\ M_{1},\ M_{2}$
+\end_inset
+
+, когда 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ стремяться к 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ называется соприкасающейся плоскостью точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Предельное положение точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ когда 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+стремиться к 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+называется касательной траэктории к точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Перпендикуряр касательной называется нормалью.
+ Этих нормалей у траэктории в данной точке бесконгечное множество.
+\end_layout
+
+\begin_layout Standard
+Нормаль, лежащая в соприкасающейся плоскости называется главной нормалью.
+ Вектор главной нормали направлен в сторону вогнутости кривой.
+\end_layout
+
+\begin_layout Standard
+Плоскость, перпендикулярная касательной называется нормальной плоскостью.
+\end_layout
+
+\begin_layout Standard
+Плоскость, перпендикулярная соприкасающейся плоскости и нормальной плоскости
+ называется спрямляющей плоскостью.
+\end_layout
+
+\begin_layout Standard
+Вектор, нормали, лежащий в спрямляющей слоскости называется бинормалью и
+ обозначается 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+.
+ Направление бинормали выбирается так, чтобы вектора 
+\begin_inset Formula $\vec{v},\ \vec{n},\ \vec{b}$
+\end_inset
+
+ образовывали правую тройку векторов.
+\end_layout
+
+\begin_layout Standard
+Система координат, построенная на векторах 
+\begin_inset Formula $\vec{\tau},\ \vec{n},\ \vec{b}$
+\end_inset
+
+ носит название естественного трехгранника (или просто естественной системы
+ координат).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\vec{\tau},\vec{n}\right)$
+\end_inset
+
+ - соприкасаюшаяся плоскость 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\vec{n},\vec{b}\right)$
+\end_inset
+
+ - нормальная плоскость
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\vec{\tau},\vec{b}\right)$
+\end_inset
+
+ - спрямляющая плоскость
+\end_layout
+
+\begin_layout Standard
+Угол смежности 
+\begin_inset Formula $\D\Theta$
+\end_inset
+
+ - угол между 
+\begin_inset Formula $\vec{\tau}$
+\end_inset
+
+ и 
+\begin_inset Formula $\vec{\tau_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Средняя кривизна траектории определяется как 
+\begin_inset Formula $K_{cp}=\df{\D\Theta}{\D S}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ну так не пойдет, понятно что нада находить кривизну в каждой точке:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K=\ul{\D S\st0}\df{\D\Theta}{\D S}=\df{d\Theta}{dS}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Предельное положение окружности, проходяшей через 3 точки 
+\begin_inset Formula $M_{0},\ M_{1},\ M_{2}$
+\end_inset
+
+, когда 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ стремяться к 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+называются кругом кривизны.
+\end_layout
+
+\begin_layout Definition
+Радиус круга кривизны называется радиусом кривизны траектории в данной точке
+ и обозначается 
+\begin_inset Formula $\rho=\df 1K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+Ускорение при естественном задании движения точки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}=\vec{\tau}\um v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{\omega}=\df{d\vec{v}}{dt}=\df{d\vec{\tau}}{dt}\um v+\vec{\tau}\um\df{dv}{dt}$
+\end_inset
+
+ - тут проблема в 1ом слагаемом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st\b}\df{\vec{\tau}-\vec{\tau_{0}}}{\D t}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{\tau}}{dt}=\vec{n}\um\left|\df{d\vec{\tau}}{dt}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st0}\df{\left|\D\vec{\tau}\right|}{\D t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\D\vec{\tau}\right|=2\um\left|\tau\right|\um\sin\df{\D\Theta}2=\left\{ \sin\alpha\approx\alpha,\ \text{при}\ \alpha\st0\right\} =2\um\left|\tau\right|\um\df{\D\Theta}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st0}\df{\left|\D\vec{\tau}\right|}{\D t}=\ul{\D t\st0}\df{\D\Theta}{\D t}=\ul{\D t\st0}\df{\D\Theta}{\D S}\um\df{\D S}{\D t}=\ul{\D S\st0}\df{\D\Theta}{\D S}\um\ul{\D t\st0}\df{\D S}{\D t}=K\um v=\df v{\rho}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\df{d\vec{\tau}}{dt}=\vec{n}\um\df v{\rho}$
+\end_inset
+
+, и получаем слуедющую формулу 
+\begin_inset Formula $\vec{\omega}=\vec{n}\um\df{v^{2}}{\rho}+\vec{\tau}\um\df{dv}{dt}$
+\end_inset
+
+.
+ Первое слогаемое называется ноормальным ускорением, 2е - касательным ускорением
+ (или тангенциальным).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{n}=\df{v^{2}}{\rho}$
+\end_inset
+
+ - величина нормального ускорения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{\tau}=\df{dv}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\sqrt{\omega_{\tau}^{2}+\omega_{n}^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Часные случаи движения
+\end_layout
+
+\begin_layout Subsubsection
+Прямолинейное движение
+\end_layout
+
+\begin_layout Standard
+Система кординат выбирается так, чтобы траектория лежала на одной из осей,
+ например 
+\begin_inset Formula $Ox$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=x\left(t\right)$
+\end_inset
+
+ - уравнение движения точки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{x}=\dot{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{x}=\ddot{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если знаки 
+\begin_inset Formula $\omega_{x}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{x}$
+\end_inset
+
+ совподают - то движение ускоренное, еслим наоборот - то замедленное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{x}=0\ \sl\ v_{x}=const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{x}=a=const$
+\end_inset
+
+ - равнопеременное движение (равноускоренное или равнозамедленное).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v=v_{0}+at$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{x}=x_{0}+v_{0}t+\df{at^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=A\um\sin\left(\omega t+\psi\right)$
+\end_inset
+
+ - уравнение колебательного движения.
+\end_layout
+
+\begin_layout Subsubsection
+Круговое движение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ - радиус окружности.
+ 
+\end_layout
+
+\begin_layout Standard
+В таком случае величана скорости будет 
+\begin_inset Formula $v=\df{ds}{dt}$
+\end_inset
+
+, а направлена скорость по касательной.
+\end_layout
+
+\begin_layout Standard
+Но на самом деле тут удобно описывать положение точки при помощи угла.
+ Измеряем мы его в радианах.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=R\um\varphi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Скорость 
+\begin_inset Formula $v=R\um\df{d\varphi}{dt}=R\um\omega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\df{d\varphi}{dt}$
+\end_inset
+
+ - угловая скорость
+\end_layout
+
+\begin_layout Standard
+Ускорение 
+\begin_inset Formula $\omega_{\tau}=\df{dv}{dt}$
+\end_inset
+
+.
+ Ввиду 
+\begin_inset Formula $\overline{\omega}=\overline{\tau}\um\omega_{\tau}+\overline{n}\um\omega_{n}$
+\end_inset
+
+ получим 
+\begin_inset Formula $\omega_{n}=\df{v^{2}}{\rho}=\df{v^{2}}R=\omega^{2}\um R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{\tau}=\df{dv}{dt}=R\um\df{d\omega}{dt}=R\um\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon=\df{d\omega}{dt}$
+\end_inset
+
+ - угловое ускорение
+\end_layout
+
+\begin_layout Standard
+Если записывать величину полного ускорения во время движения точки то 
+\begin_inset Formula $\omega=\sqrt{\omega_{n}^{2}+\omega_{\tau}^{2}}=R\sqrt{\omega^{4}+\varepsilon^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Кинематика системы и абсолютно твердого тела.
+\end_layout
+
+\begin_layout Definition
+Механической системой называется множество материальных точек, в котором
+ движение каждой точки зависит от положения и движения остальных точек системы.
+ 
+\end_layout
+
+\begin_layout Standard
+Будем говорить что положение механической системы задано, если известно
+ положение всех точек системы.
+ Если у нас система состоит из 
+\begin_inset Formula $n$
+\end_inset
+
+ точек, то чтобы задать систему точек, нам нада задать 
+\begin_inset Formula $3n$
+\end_inset
+
+ координат.
+\end_layout
+
+\begin_layout Itemize
+Геометрическая связь: 
+\begin_inset Formula $f\left(x_{1},y_{1},z_{1}\tr x_{n},y_{n},z_{n},t\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В ней не участвует ничего кроме координат и времени.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Кинематическая связь: 
+\begin_inset Formula $g\left(x_{1},y_{1},z_{1}\tr x_{n},y_{n},z_{n},\dot{x_{1}},\dot{y_{1}},\dot{z_{1}},\tr\dot{x_{n}},\dot{y_{n}},\dot{z_{n}},t\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть имеется система 
+\begin_inset Formula $n$
+\end_inset
+
+ точек и на нее наложено 
+\begin_inset Formula $K$
+\end_inset
+
+ геометрических связей, 
+\begin_inset Formula $K\mr3\um n$
+\end_inset
+
+.
+ То тогда мы имеем 
+\begin_inset Formula $3n-K$
+\end_inset
+
+ независимых координат, которые носят называние координат системы.
+ Число координат системы в случае существования 
+\emph on
+только
+\emph default
+ геометрических связей называется 
+\emph on
+числом степеней свободы системы
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+Абсолютно твердым телом называется такая механическая система, в каторой
+ рассстояние между любыми 2-мя точками постоянно.
+\end_layout
+
+\begin_layout Theorem
+Абсолютно твердое тело имеет 6 степеней свободы.
+\end_layout
+
+\begin_layout Proof
+Берем любые 3 точки твердого тела.
+ 
+\begin_inset Formula $A\left(x_{a},y_{a},z_{a}\right),\ B\left(x_{b},y_{b},z_{b}\right),\ C\left(x_{c},y_{c},z_{c}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $R_{A,B}=\sqrt{\left(x_{a}-x_{b}\right)^{2}+\left(y_{a}-y_{b}\right)^{2}+\left(z_{a}-z_{b}\right)^{2}}=const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $R_{B,C}=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $R_{A,C}=const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+9 координат, 3 уравнения.
+ Число степеней свободы = 6.
+\end_layout
+
+\begin_layout Proof
+Добавим к нему еще 1ну точку 
+\begin_inset Formula $D\left(x_{d},y_{d},z_{d}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Добавление ее сразуже добавляет еще 3 уравнения связи.
+\end_layout
+
+\begin_layout Proof
+Опять же 6 степеней свободы.
+\end_layout
+
+\begin_layout Proof
+Если добавлять еще ограниченное количество точек у нас останется ровно 6
+ степеней свободы.
+\end_layout
+
+\begin_layout Subsection
+Простейшие случаи движения твердого тела
+\end_layout
+
+\begin_layout Standard
+Простейшими случаями движения являются:
+\end_layout
+
+\begin_layout Enumerate
+Поступательное движение
+\end_layout
+
+\begin_layout Enumerate
+Вращательное движение (вращение твердого тела вокруг неподвижной оси).
+\end_layout
+
+\begin_layout Definition
+Поступательное движение, это такое движение при котором любая прямая, проведенна
+я в твердом теле остается паралельной самой себе за все время движения.
+\end_layout
+
+\begin_layout Example
+Возьмем твердое тело, 2 точки 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $M$
+\end_inset
+
+ принадлежат ему, а точка 
+\begin_inset Formula $O$
+\end_inset
+
+ не пренадлежит ему.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $OA=\vec{r_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $OM=\vec{r}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $AM=\vec{r'}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{r'}=\vec{r}-\vec{r_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{v}=\df{d\vec{r}}{dt}=\df{d\vec{r_{0}}}{dt}+\df{d\vec{r'}}{dt}=\vec{v_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{\omega}=\vec{\omega_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+При поступательном движении скорость и ускорение всех точек твердого тела
+ совподает, а траэктории получаются друг из друга паралельным переносом.
+ Тоесть движение твердого тела сводится к механики точки.
+\end_layout
+
+\begin_layout Example
+Угловая скорость называется радиан в секунду 
+\begin_inset Formula $\left[\omega\right]=\df{\text{рад}}c=\df 1c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left[n\right]=\df{\text{об}}{\text{мин}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\omega=\df{n\um2\pi}{60}=\df{n\um\pi}{30}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если твердое тело движется так, что 2 его точки остаются неподвижным, то
+ движение тела называется вращательным, а прямая, проходящая через эти 2
+ точки --- осью вращения.
+\end_layout
+
+\begin_layout Example
+В начальный момент времмени проведем через твердое тело через ось вращения
+ плоскость.
+ Угол между начальным положением и положением, меняющимся у части этой плоскости
+, пренадлежащей твердому телу, назывется углом вращения твердого тела.
+\end_layout
+
+\begin_layout Example
+Возьмем точку твердого тела 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Повернем тело и точка 
+\begin_inset Formula $M$
+\end_inset
+
+ перейдет в точку 
+\begin_inset Formula $M'$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $O$
+\end_inset
+
+ - начало координат.
+ 
+\begin_inset Formula $\D\vec{r}=MM'$
+\end_inset
+
+.
+\begin_inset Formula $A_{M}$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{M'}$
+\end_inset
+
+ - проэкции точек 
+\begin_inset Formula $M$
+\end_inset
+
+ и 
+\begin_inset Formula $M'$
+\end_inset
+
+ на 
+\begin_inset Formula $Oxy$
+\end_inset
+
+.
+ Угол 
+\begin_inset Formula $A_{M}OA_{M'}=\D\varphi$
+\end_inset
+
+ - угол вращения.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ - расстояние от точки 
+\begin_inset Formula $M$
+\end_inset
+
+ до оси вращения.
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - угол между 
+\begin_inset Formula $Oz$
+\end_inset
+
+ и 
+\begin_inset Formula $M$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{v_{M}}=\df{d\vec{r}}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $v=\df{d\varphi}{dt}\um a=\df{d\varphi}{dt}\um r\um\sin\alpha$
+\end_inset
+
+ - похоже на векторное произведение 2х векторов.
+\end_layout
+
+\begin_layout Example
+Мы вводим в рассмотрение понятие вектора угловой скорости 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+.
+ Он направлен по оси вращения так что если смотреть с конца вектора то вращение
+ происходит против часовой стрелке.
+\end_layout
+
+\begin_layout Example
+В данной системе он направлен вверх.
+ (В положительном направлении оси 
+\begin_inset Formula $Oz$
+\end_inset
+
+\SpecialChar \@.
+)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{\xi}=\df{d\vec{\omega}}{dt}$
+\end_inset
+
+ - угловое ускорение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\vec{v}=\vec{\omega}\times\vec{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{\omega}=\df{d\vec{v}}{dt}=\df{d\vec{\omega}}{dt}\times\vec{r}+\vec{\omega}\times\df{d\vec{r}}{dt}=\vec{\xi}\times\vec{r}+\vec{\omega}\times\vec{v}=\vec{\xi}\times\vec{r}+\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{\xi}\times\vec{r}$
+\end_inset
+
+ это 
+\begin_inset Formula $\vec{\omega_{\tau}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)$
+\end_inset
+
+ это 
+\begin_inset Formula $\vec{\omega_{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{d\vec{r}}{dt}=\vec{\omega}\times\vec{r}$
+\end_inset
+
+ только для 
+\begin_inset Formula $\left|\vec{r}\right|=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Задаем положение твердого тела в пространстве
+\end_layout
+
+\begin_layout Enumerate
+Выбирается 1н полюс(1на точка в твердом теле)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Мы выбраны 1ну точку, она задает положение тела в пространстве, а теперь
+ нам необходимо задать ориентацию.
+ Но удобнее ее задавать не точками, а углами.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Нарисуем 2 системы координат.
+ Одна глобальная, другая локальная относительно тела.
+\end_layout
+
+\begin_layout Enumerate
+Потом мы переносим паралельным переносом точку 
+\begin_inset Formula $C\left(x,y,z\right)$
+\end_inset
+
+ (начало локольной системы координат) с точкой 
+\begin_inset Formula $O\left(X,Y,Z\right)$
+\end_inset
+
+(началом глобальной системы координат)\SpecialChar \@.
+
+\end_layout
+
+\begin_layout Enumerate
+Построим линию пересечения плоскостей 
+\begin_inset Formula $OXY$
+\end_inset
+
+ и плоскости 
+\begin_inset Formula $CXY$
+\end_inset
+
+.
+ Эта линия (
+\begin_inset Formula $Ol$
+\end_inset
+
+) носит название линией узлов.
+\end_layout
+
+\begin_layout Enumerate
+Первый угол который мы определяем это угол 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ между 
+\begin_inset Formula $Z$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+ через 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Угол отчитывается от 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ Называется он угол мутации.
+\end_layout
+
+\begin_layout Enumerate
+Следующий угол (
+\begin_inset Formula $\varphi$
+\end_inset
+
+) между 
+\begin_inset Formula $Ox$
+\end_inset
+
+ и 
+\begin_inset Formula $Ol$
+\end_inset
+
+.
+ Угол прецессии.
+\end_layout
+
+\begin_layout Enumerate
+Потом угол (
+\begin_inset Formula $\psi$
+\end_inset
+
+) между 
+\begin_inset Formula $Ol$
+\end_inset
+
+ и 
+\begin_inset Formula $Ox$
+\end_inset
+
+ - угол собственного вращения.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $0\mr\Theta\mr\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0\mr\varphi\mr2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0\mr\psi\mr2\pi$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Corollary
+Таким образом координаты твердого тела задаются с помощью 6-ти координат
+ и углами Эйлера 
+\begin_inset Formula $\varphi,\Theta,\psi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Произвольное движение твердого тела
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+(Относится к преведущему примеру)
+\end_layout
+
+\begin_layout Standard
+Возьмеме на теле точку 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Проведем векторы 
+\begin_inset Formula $\vec{r}=OM$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{r_{0}}=OC$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{r'}=CO$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r}=\vec{r_{0}}+\vec{r'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\vec{r'}\right|=const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{v_{M}}=\df{d\vec{r}}{dt}=\df{d\vec{r_{0}}}{dt}+\df{d\vec{r'}}{dt}=\vec{v_{C}}+\left[\vec{\omega};\vec{r'}\right]\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1е слогаемое представляет из себя поступадельную составляющую движения,
+ 2е слогаемое - вращение движение вокруг полюса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{\omega}_{M}=\df{d\vec{v}_{M}}{dt}=\df{d\vec{v}_{C}}{dt}+\df{d\left[\vec{\omega},\vec{r}'\right]}{dt}=\vec{\omega}_{C}+\left[\df{d\vec{\omega}}{dt};\vec{r}'\right]+\left[\vec{\omega};\df{d\vec{r}'}{dt}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{\omega}_{M}=\vec{\omega}_{C}+\left[\vec{\varepsilon};\vec{r}'\right]+\left[\vec{\omega};\left[\vec{\omega};\vec{r}'\right]\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Первое слогаемое - поступаттельное ускорение, 2 других - составляющие вращательн
+ого ускорения.
+\end_layout
+
+\begin_layout Standard
+Выберем другую точку вместо M - точку А.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r}'=CM$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{a}=CA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r^{*}}=AM$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{v}_{M}=\vec{v}_{C}+\left[\vec{\omega};\vec{r}'\right]\label{eq:2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{v}_{M}=\vec{v}_{A}+\left[\vec{\omega}';\vec{r^{*}}\right]\label{eq:3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...................
+\end_layout
+
+\begin_layout Corollary
+Сопоставляя последнее равенство с соотношением (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) приходим к выводу, что 
+\begin_inset Formula $\vec{\omega}=\vec{\omega}'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Как сказал Тимур, оптимизация выбора полюса
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 2 случая:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{v}_{C}\bot\vec{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пенренесем 
+\begin_inset Formula $C$
+\end_inset
+
+ в 
+\begin_inset Formula $A$
+\end_inset
+
+ на вектор 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{a}\bot\vec{v}_{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{a}\bot\vec{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\vec{v}_{C}\right|=\left|\left[\vec{\omega};\vec{a}\right]\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тут 2 направления по прямой, на которой лкжит вектор 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+.
+ Выберем его так, чтобы 
+\begin_inset Formula $\left[\vec{\omega};\vec{a}\right]=-\vec{v}_{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r}'-\vec{a}=\vec{r^{*}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{M}=v_{C}+\left[\vec{\omega};\left(\vec{r^{*}}+\vec{a}\right)\right]=\vec{v}_{C}+\left[\vec{\omega};\vec{r^{*}}\right]+\left[\vec{\omega};\vec{a}\right]=\left[\vec{\omega};\vec{r^{*}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Получается что относительно точки А тело совершает чисто вращательное движение
+ вокруг оси, проходяшее через точку А, в направлении вектора 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+(Мгновенная ось вращениея.).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\vec{v}_{C}\overline{\bot}\vec{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Разложим 
+\begin_inset Formula $\vec{v}_{C}$
+\end_inset
+
+ на 2 составляющих 
+\begin_inset Formula $\vec{v}_{C}=\vec{v}_{\Vert}+\vec{v}_{\bot}$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\vec{\omega};\vec{a}\right]=-\vec{v}_{\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Повторяем действия, которые мы уже проводили...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{M}=\tr=\vec{v}_{C}+\left[\vec{\omega};\vec{r^{*}}\right]-\vec{v}_{\bot}=\vec{v}_{\Vert}+\left[\vec{\omega};\vec{r^{*}}\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Corollary
+В данном случае, движение точки А представляет собой винтовое движение.
+ Ось, относительно которой происходит врашение называется мгновенной винтовой
+ осью.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Динамика
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Термодинамика
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

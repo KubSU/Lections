@@ -1,0 +1,334 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Архитиктура ЭВМ
+\end_layout
+
+\begin_layout Section
+Введение
+\end_layout
+
+\begin_layout Standard
+Под архитектурой ЭВМ будем понимать основные принципы устройства компьютера:
+ его структуру, взаимосвязи между отдельными эллементами, а так-же команды.
+ Функциональную схему ПК можно представить:
+\end_layout
+
+\begin_layout Standard
+ОП ЦП МОНИТОР КЛАВА
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ \ \ \ \ \ \ \Downarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Системная шина
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ \ \ \ \ \ \ \Downarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+мышь дисковод и т.п
+\end_layout
+
+\begin_layout Standard
+Система шина(магистраль)-путь по которому передаеться информация от источника
+ к любому приемнику.
+ Функционально в системной магистрали можно выделить 3 эллемента.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Шина адреса, по каторой передаються адреса оперативной памити
+\end_layout
+
+\begin_layout Enumerate
+Шина данных, по которой передаються данные 
+\end_layout
+
+\begin_layout Enumerate
+Управляющая шина, по которой передаються команды управления
+\end_layout
+
+\begin_layout Section
+Оперативная память
+\end_layout
+
+\begin_layout Standard
+Минимальная структурная единица ОП --- это бит (bi
+\emph on
+nary digi
+\emph default
+t).
+ Обычно обрабатываеться не один бит, а последовательность, которую называют
+ байт.
+ Логически байт содержит 8 битов, а физически он содержит 9 битов.
+ Девятый бит - это контроль на четность.
+ Требования контроля на четность заключаеться в том, что количество еденичных
+ битов в байте всегда должно быть не четно.
+ Байт это минимально адресуемая еденица памяти, то есть каждый байт имеет
+ свой адресс или номер.
+ (7| | | | | | |0) - тип байт.
+ Компы с архитектурой intel используют принцип адресности.
+ Тоесть для доступа к любой информации, которая храниться в некотором байте
+ необходимо указать адрес этого байта.
+ ОП является энергозависимым устройством для хранения команд и данных.
+ В памяти храняться не только данные, но и команды --- это принцип програмного
+ управления.
+ 
+\end_layout
+
+\begin_layout Definition
+Поле ОП это совокупность байтов с последовательными адресами.
+ 
+\end_layout
+
+\begin_layout Standard
+Выделяют поля фиксированной длины: 
+\end_layout
+
+\begin_layout Itemize
+Word 2 байта, 
+\end_layout
+
+\begin_layout Itemize
+DoubleWord 4 байта.
+ 
+\end_layout
+
+\begin_layout Standard
+Сегмент поля памяти, адрес которого кратен 16.
+ Максимальная длина сегмента 64кб.
+ Это в частности означает, что адрес любого байта внутри сегмента можно
+ задать 16-разрядным двоичным числом относительно начала этого сегмента,
+ такие относительные адреса называют смешение.
+ Таким образом адрес любого байта можно предаставить в виде адреса сегмента(база
+) и смещения внутри сегмента.
+ 
+\end_layout
+
+\begin_layout Section
+Схема ЦП
+\end_layout
+
+\begin_layout Standard
+рисунок
+\end_layout
+
+\begin_layout Itemize
+ОУ --- опреационное устройство.
+ Выполняет основную обработку данных.
+\end_layout
+
+\begin_layout Itemize
+ШИ --- шинный интерфейс.
+ Обеспечивает ОУ данными и командами.
+\end_layout
+
+\begin_layout Itemize
+АЛУ --- арифметико-логическое устройство.
+ Основной эллемент выполняющий преобразования данных.
+\end_layout
+
+\begin_layout Itemize
+УУ --- устройство управления.
+ Управляет работой ЦП и остальных элементов компьютера.
+\end_layout
+
+\begin_layout Subsection
+Регистры
+\end_layout
+
+\begin_layout Standard
+В состав ЦП входит локальная память, называемая так-же регистрвой.
+ Это восемь 16-разрядных регистров общего назначения (РОН).
+ Они предназначены для хранения данных, которые часто использует некоторая
+ программа.
+ Основным свойством локальной памяти являеться высокая скорость доступа
+ к хранящийся к ней информации в сравнении со скоростью доступа к ОП.
+ Особенность регистров общего назначения состоит в том, что возможна адресация
+ как всего регистра, так и однобайтовой части.
+ 
+\end_layout
+
+\begin_layout Subsection
+Регистры общего назначения.
+ РОН.
+\end_layout
+
+\begin_layout Standard
+Основное использование регистров общего назначения, состоит в следующем:
+\end_layout
+
+\begin_layout Itemize
+АХ --- основной сумматор и применяется для всех операций ввода вывода, некоторых
+ операций над строками или некоторых арифметических операций.
+ Некоторые команды генерируют более эффективный код если они имеют ссылки
+ на регистр АХ.
+\end_layout
+
+\begin_layout Itemize
+ВХ --- базовый регистр.
+ Это единственный регистр общего назначения, который может использоваться
+ в качестве 
+\begin_inset Quotes eld
+\end_inset
+
+индекса
+\begin_inset Quotes erd
+\end_inset
+
+ для расширенной адресации, используется так-же при вычислениях.
+ 
+\end_layout
+
+\begin_layout Itemize
+СХ --- счетчик.
+ Управляет количеством повторений циклов и числом битов для сдвигов.
+ Так-же используется при вычислениях.
+\end_layout
+
+\begin_layout Itemize
+DX --- регистр данных.
+ Применяется для некоторых операций ввода-вывода и для операций умножения
+ и деления над большыми числами, которые используют регистровую пару (DX,AX).
+ 
+\end_layout
+
+\begin_layout Itemize
+SP and BP --- обеспечивают системе доступ к данным в сегменте стека.
+ Реже они используются для операции сложения и вычитания.
+\end_layout
+
+\begin_layout Itemize
+SР --- Stack Pointer.
+ Указатель стека позволяет временно хранить адреса и иногда данные.
+ Связан с регистром SS для адресации стека.
+\end_layout
+
+\begin_layout Itemize
+ВР --- Base Pointer.
+ Указатель базы облегчает доступ к параметрам, данным и адресам передаваемым
+ через stack.
+\end_layout
+
+\begin_layout Itemize
+SI and DI --- индексные регистры, используются для расширенной адресации.
+\end_layout
+
+\begin_layout Itemize
+SI --- индекс источника.
+ Связан с регистром DS.
+\end_layout
+
+\begin_layout Itemize
+DI --- индекс назначения.
+ Связан с регистром ES.
+\end_layout
+
+\begin_layout Remark
+Любые РОН могут использоваться для сложения и вычитания, как 8 так и 16
+ битных чисел.
+\end_layout
+
+\begin_layout Subsection
+Регистр командного указателя.
+ IP.
+\end_layout
+
+\begin_layout Standard
+IP - содержит смещение на команду, которая должна быть выполнена следующей.
+\end_layout
+
+\begin_layout Section
+Сегментные регистры
+\end_layout
+
+\end_body
+\end_document

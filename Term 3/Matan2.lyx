@@ -1,0 +1,5106 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\prime}
+{\prime}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\longrightarrow}
+{\longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
+{\un{\ov{\Sigma}{#2}}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
+{\underset{#1}{\lim}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\underset{#1}{\max}}
+{\underset{#1}{\max}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\underset{#1}{\min}}
+{\underset{#1}{\min}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+{\underset{#1}{\overset{#2}{\int}}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{\pr\pr}
+{\pr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{\ppr\pr}
+{\ppr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
+{\oui{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\triangle}
+{\triangle}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Математический анализ (v2.0)
+\end_layout
+
+\begin_layout Section
+Числовые ряды.
+\end_layout
+
+\begin_layout Subsection
+Понятие числового ряда.
+ Сходимость числового ряда.
+\end_layout
+
+\begin_layout Definition
+Рассмотрим числовую последовательность 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ и образуют выражение вида 
+\begin_inset Formula 
+\begin{equation}
+a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:Сршылряд}
+\end{equation}
+
+\end_inset
+
+Выражение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+) называется числовым рядом, а числа 
+\begin_inset Formula $a_{1},a_{2}\tr a_{n}\tr$
+\end_inset
+
+ - членами ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Конечная сумма 
+\begin_inset Formula $S_{n}=a_{1}+a_{2}+\tr+a_{n}$
+\end_inset
+
+ называется n-ной частичной суммой ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Если существует конечный предел 
+\begin_inset Formula $\ul{n\st\b}S_{n}=S$
+\end_inset
+
+, то его называют суммой ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+), а ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+) называется сходящимся к сумме 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Если предел бесконечен или не существует,то ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+) называется расходящимся.
+\end_layout
+
+\begin_layout Remark
+Так как 
+\begin_inset Formula $S_{1}=a_{1},\ S_{2}=S_{1}+a_{2}\ \sl\ a_{2}=S_{2}-S_{1}\ \sl\ a_{n}=S_{n}-S_{n-1}$
+\end_inset
+
+ то устанавливается однозначное соответствие 
+\begin_inset Formula $\left\{ a_{n}\right\} \longleftrightarrow\left\{ S_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1-1+1-1+1+\tr=\ous{n=1}{\b}\left(-1\right)^{n+1}$
+\end_inset
+
+ Она не сходится.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - исследовать на сходимость
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $S_{n}=a+a^{2}+a^{3}+\tr+a^{n}=\left\{ \begin{array}{c}
+b_{1}=a\\
+q=q
+\end{array}\right\} =\df{b_{1}\left(1-a^{4}\right)}{1-q}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Из определения суммы числового ряда вытикают свойства:
+\end_layout
+
+\begin_layout Enumerate
+Если ряд 
+\begin_inset Formula $\ous{i=1}{\b}a_{n}$
+\end_inset
+
+ сходится к сумме S, то ряд 
+\begin_inset Formula $A+a_{1}+a_{2}+a_{3}+\tr+a_{n}+\tr$
+\end_inset
+
+ сходится к сумме 
+\begin_inset Formula $A+S$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Рассмотрим последовательность частичных сумм нового ряда.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\Sigma_{n+1}=A+a_{1}+a_{2}+\tr+a_{n}=\left\{ a_{1}+a_{2}+\tr+a_{n}=S_{n}\right\} =A+S_{n}\ov{\st}{n\st\b}A+S$
+\end_inset
+
+ так как 
+\begin_inset Formula $S_{n}\ov{\st}{n\st\b}S$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если ряд сумма 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится к S, то ряд 
+\begin_inset Formula $\ous{n=1}{\b}\alpha\um a_{n}$
+\end_inset
+
+ - сходится к 
+\begin_inset Formula $\alpha\um S$
+\end_inset
+
+, где 
+\begin_inset Formula $\alpha\in\R$
+\end_inset
+
+ произвольное.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $\ous{n=1}{}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Определение ряд 
+\begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)$
+\end_inset
+
+ называется суммой(разностью) рядов 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если ряды 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ сходятся, то ряды 
+\begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)$
+\end_inset
+
+ тоже схожятся, причем выполняется следующее равенство: 
+\begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)=$
+\end_inset
+
+
+\begin_inset Formula $\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $\Sigma_{n}=\ous{k=1}n\left(a_{k}\pm b_{k}\right)=\ous{k=1}na_{n}\pm\ous{k=1}nb_{n}\ov{\st}{n\st\b}\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Отбрасывание конечного числа первых членов числового ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ не влияет на его сходимость.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Пусть ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - сходится.
+ Отбросим k первых слогаемых ряда, получим следующий ряд: 
+\begin_inset Formula $a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr$
+\end_inset
+
+ .
+ Последовательность его частичных сумм: 
+\begin_inset Formula $\Sigma_{n}=a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr=S_{k+n}-S_{k}\ov{\st}{n\st\b}S-S_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Критерий Коши сходимости числовых рядов.
+\end_layout
+
+\begin_layout Standard
+Так как сходимость числорвого ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ равносильно сходимости числовых последовательстей, то применяя критерий
+ Коши к реследоватеьности 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ можно записать: 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(Критерий Коши) Ряд 
+\begin_inset Formula $\ous{n=1}{\b}$
+\end_inset
+
+ - сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ - сходиться 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
+\end_inset
+
+ 
+\begin_inset Formula $\forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
+\end_inset
+
+ 
+\begin_inset Formula $\forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость следующий ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{n\left(n+1\right)}=\df 12+\df 1{2\um3}+\tr+\df 1{n\left(n+1\right)}+\tr$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $a_{n}=\df 1{n\left(n+1\right)}=\df 1n-\df 1{n+1}$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{n}=\left(1-\df 12\right)+\left(\df 12-\df 13\right)+\left(\df 13-\df 14\right)+\tr+\left(\df 1{n-1}-\df 1n\right)+\left(\df 1n-\df 1{n+1}\right)+\tr\ov{\st}{n\st\b}1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+Гормонический ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr$
+\end_inset
+
+.
+ Докажем его расходимость, тоесть выполняестя следующее условие 
+\begin_inset Formula 
+\begin{eqnarray*}
+\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists p\in\N\ :\  & \left|\ous{k=n+1}{n+p}\df 1k\right|= & \df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
+ & = & \df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N}>N\um\df 1{2N}=\df 12
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Остаток симлового ряда.
+ Необходиммое условие сходимости числового ряда.
+\end_layout
+
+\begin_layout Definition
+Числовой ряд 
+\begin_inset Formula $r_{n}=a_{n+1}+a_{n+2}+\tr$
+\end_inset
+
+ - называется n-ным остатком числового ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\ous{n=1}{\b}a_{n}=S_{n}+r_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+(1) Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{n\st\b}r_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{n=1}{\b}a_{n}=\ul{n\st\b}S_{n}=S\ \dsl\ \ul{n\st\b}\left(S-S_{n}\right)=\ul{n\st\b}r_{n}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Lemma
+(2, Необходимый признак сходимости числового ряда)
+\end_layout
+
+\begin_layout Lemma
+Есля числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится, то 
+\begin_inset Formula $\ul{n\st\b}a_{n}=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ - сумма ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)\st S-S=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Доказанный признак - достаточный признак расходимости: 
+\begin_inset Formula $\ul{n\st\b}a_{n}\nr0$
+\end_inset
+
+ или не существует, то ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - расходится.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость 
+\begin_inset Formula $\ous{n=1}{\b}\df n{2n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\df n{2n+1}=\df 12\nr0\ \sl\ $
+\end_inset
+
+ расходится.
+\end_layout
+
+\begin_layout Remark
+Необходимый признак не является достаточным.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df 1n$
+\end_inset
+
+ - необходиммость выполнна, но он расходится.
+\end_layout
+
+\begin_layout Subsection
+Сходимость знакоположительных рядов.
+\end_layout
+
+\begin_layout Definition
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - знакоположительный, если 
+\begin_inset Formula $a_{n}\br0\ \forall n\in\N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Необходимое и достаточное условие сходимости знакоположительных рядов.
+\end_layout
+
+\begin_layout Standard
+Рассматривается ряд
+\begin_inset Formula $\ous{n=1}{\b}a_{n},\ a_{n}\br0$
+\end_inset
+
+.
+ Заметим что 
+\begin_inset Formula $S_{n+1}=S_{n}+a_{n+1}\ \sl\ S_{n+1}\br S_{n}\ \forall n\in\N\ \sl\ \left\{ S_{n}\right\} $
+\end_inset
+
+ неубывает.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ по теореме о сходимости монотонной последовательности получим сдледующую
+ теорему.
+\end_layout
+
+\begin_layout Theorem
+(1) Знакоположительный ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ последовательность 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ ограниена сверху ( 
+\begin_inset Formula $\exists M>0\ \forall n\in\N\ S_{n}\mr M$
+\end_inset
+
+ ) .
+\end_layout
+
+\begin_layout Remark
+Из теоремы следует что ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n},\ a_{n}\br0$
+\end_inset
+
+ - расходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ последовательность 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ неограничена сверху ( 
+\begin_inset Formula $\forall M>0\ \exists n\in\N\ S_{n}\mr M$
+\end_inset
+
+ ) .
+\end_layout
+
+\begin_layout Subsubsection
+Признаки сравнения.
+\end_layout
+
+\begin_layout Theorem
+(2) (Признак сравнения) Пусть ряды 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ - знакоположительны, если 
+\begin_inset Formula $\exists n_{0}\ \forall n\br n_{0}\ a_{n}\mr b_{n}$
+\end_inset
+
+ то
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+из сходимости ряда 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ следует сходимость ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+из расходимости ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ следует расходимость ряда 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Так как отбрасывание конечного числа членов ряда не влияет на сходимость,
+ в дальнейшем будем считать 
+\begin_inset Formula $a_{n}\mr b_{n}\ \forall n\in\N$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть ряд 
+\begin_inset Formula $\ous{n=1}{\b}n_{n}$
+\end_inset
+
+ - сходится 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ous{k=1}na_{k}\mr\ous{k=1}nb_{k}\mr M$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+По теореме 1 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - сходится.
+ Так как все егоо частичные суммы огрпаничены в совокупности.
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ - расходится 
+\begin_inset Formula $\sl$
+\end_inset
+
+ частичные суммы ряда его неограничены 
+\begin_inset Formula $\sl$
+\end_inset
+
+ то и частичные суммы 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ неограничены 
+\begin_inset Formula $\sl$
+\end_inset
+
+ По теореме 1 
+\begin_inset Formula $\sl$
+\end_inset
+
+ ряд 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ расходится.
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Исследовать на сходимость 
+\begin_inset Formula $\ous{n=1}{\b}\df{5+\left(-1\right)^{n}\um3}{2^{n+3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $0\mr a_{n}=\df{5+\left(-1\right)^{n}\um3}{2^{n+3}}\ov{\st}{n\st\b}0$
+\end_inset
+
+ - необходимость выполняется.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{5+\left(-1\right)^{n}\um3}{2^{n+3}}\mr\df 8{2^{n+1}}=\df 1{2^{n}}=b_{n}$
+\end_inset
+
+ 
+\backslash
+
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ схидится, то и исходная сумма тоже сходится.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{n+1}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Необходимое условие 
+\begin_inset Formula $\ul{n\st\b}\df{n+1}{n^{2}}=0$
+\end_inset
+
+ выполнено.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $a_{n}=\df{n+1}{n^{2}}\br\df n{n^{2}}=\df 1n=b_{n}$
+\end_inset
+
+ - 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ -расходится, то и 
+\begin_inset Formula $\ous{n=1}{\b}\df{n+1}{n^{2}}$
+\end_inset
+
+ расходится.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{n}}$
+\end_inset
+
+ - сходится (
+\begin_inset Formula $\df 1{2^{n}}$
+\end_inset
+
+ ).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=2}{\b}\df 1{\ln n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 1{\ln n}>\df 1n\ \sl\ $
+\end_inset
+
+ расходится.
+\end_layout
+
+\begin_layout Theorem
+(3) Признак сходимости.
+\end_layout
+
+\begin_layout Theorem
+Если существует конечный предел 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=L>0$
+\end_inset
+
+ то знакоположительные ряды 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ сходятся или расходятся одновременно.
+\end_layout
+
+\begin_layout Proof
+Из определения:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=L\ \dsl\ \forall\varepsilon>0\ \exists N\ \forall n\br N\ \left|\df{a_{n}}{b_{n}}-L\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $-\varepsilon<\df{a_{n}}{b_{n}}-L<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $-\varepsilon+L<\df{a_{n}}{b_{n}}<\varepsilon+L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:*********************************}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть сходится ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ тогда используя левую часть неравенства (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:*********************************"
+
+\end_inset
+
+) получаем по признаку сравнения, что сходится ряд 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}\left(L-\varepsilon\right)=\left(L-\varepsilon\right)\ous{n=1}{\b}b_{n}$
+\end_inset
+
+ следовательность ряд 
+\begin_inset Formula $\ous{n=1}{\b}$
+\end_inset
+
+ сходится.
+\end_layout
+
+\begin_layout Proof
+Если сходится ряд 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}\ \sl\ous{n=1}{\b}b_{n}\left(L-\varepsilon\right)$
+\end_inset
+
+ то используя правую часть неравенства (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:*********************************"
+
+\end_inset
+
+) получим по признаку сравнения, что сходится ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Требование 
+\begin_inset Formula $L>0$
+\end_inset
+
+ существенно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{2}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}\df 1n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{a_{n}}{b_{n}}=\df{\df 1{n^{2}}}{\df 1n}=\df 1n\ov{\st}{n\st\b}0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Неработает.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость такой ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{\sin\df 1{\sqrt{n}}}{n+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $a_{n}=\df{\sin\df 1{\sqrt{n}}}{n+1}\sim\df{\df 1{\sqrt{n}}}n=\df 1{n^{\df 32}}=b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=1,\ \ous{n=1}{\b}\df 1{n^{\alpha}}$
+\end_inset
+
+ сходится к 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ (Это обобщеннный гармонический ряд) 
+\end_layout
+
+\begin_layout Subsubsection
+Признак Даламбера
+\end_layout
+
+\begin_layout Theorem
+Признак Даламбера.
+\end_layout
+
+\begin_layout Theorem
+Если для ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+) cуществует конечный предел 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+при 
+\begin_inset Formula $L<1$
+\end_inset
+
+ ряд сходится 
+\end_layout
+
+\begin_layout Enumerate
+при 
+\begin_inset Formula $L>1$
+\end_inset
+
+ ряд сходится 
+\end_layout
+
+\begin_layout Enumerate
+при 
+\begin_inset Formula $L=1$
+\end_inset
+
+ требуется дополнительное исследование
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L\ \dsl\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ L-\varepsilon<\df{a_{n+1}}{a_{n}}<L+\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}\left(L-\varepsilon\right)<a_{n+1}<a_{n}\left(L+\varepsilon\right)\ \forall n\br N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $L<1$
+\end_inset
+
+ то существует такое 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ такое маленькое, что 
+\begin_inset Formula $0<L+\varepsilon=q<1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{N+1}<a_{N}\um q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{N+2}<a_{N+1}\um q<a_{N}\um q^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{N+K}<a_{N}\um q^{K},\ K=1,2,3,4,5,6,7\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как числовой ряд 
+\begin_inset Formula $\ous{K=1}{\b}a_{N}\um q^{K}=a_{N}\um\ous{K=1}{\b}q^{K}$
+\end_inset
+
+ - сходящая геометрическая прогрессия(
+\begin_inset Formula $q<1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+То ряд 
+\begin_inset Formula $\ous{K=1}{\b}a_{N+K}=\ous{n=N+1}{\b}a_{n}$
+\end_inset
+
+ - сходится.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Сходится 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L>1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\exists\varepsilon>0\ 1<L-\varepsilon=q<L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $a_{n}\um q<a_{n+1}\ \forall n\br N$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{N+1}>q\um a_{N}>a_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{N+2}>a_{N}\um q^{2}>a_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{N+k}>a_{N}>0\ \forall N\br n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl\ \ul{k\st\b}a_{N+k}\nr0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+(1) Исследовать на сходимость.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{n!}{n^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $a_{n}=\df{n!}{n^{n}}\ov{\st}{n\st\b}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df{\left(n+1\right)!}{\left(n+1\right)^{n+1}}\um\df{n^{n}}{n!}=\ul{n\st\b}\df 1{\left(\df{n+1}n\right)^{n}}=\ul{n\st\b}\df 1{\left(1+\df 1n\right)^{n}}=\df 1e<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+(2) Исследовать на сходимость
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{2^{n}}{n^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df{2^{n+1}}{\left(n+1\right)^{4}}\um\df{n^{4}}{2^{n}}=2>1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Признак Коши
+\end_layout
+
+\begin_layout Theorem
+(5) Признак Коши.
+\end_layout
+
+\begin_layout Theorem
+Пусть для ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+) существует предел 
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+При 
+\begin_inset Formula $L<1$
+\end_inset
+
+ ряд сходится
+\end_layout
+
+\begin_layout Enumerate
+При 
+\begin_inset Formula $L>1$
+\end_inset
+
+ ряд расходится
+\end_layout
+
+\begin_layout Enumerate
+При 
+\begin_inset Formula $L=1$
+\end_inset
+
+ требуется дополнительное исследоватние
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L\ \dsl\ \forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ L-\varepsilon<\sqrt[n]{a_{n}}L+\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(L-\varepsilon\right)^{n}<a_{n}<\left(L+\varepsilon\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0<L+\varepsilon=q<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как ряд 
+\begin_inset Formula $\ous{n=1}{\b}q^{n}$
+\end_inset
+
+ сходится то по признаку сравнения сходится и ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L>1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\exists\varepsilon>0\ q=L-\varepsilon>1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Используя другую часть неравенства 
+\begin_inset Formula $q^{n}<a_{n}\ \forall n\br N$
+\end_inset
+
+ и расходимость ряда 
+\begin_inset Formula $\ous{n=1}{\b}a^{n}$
+\end_inset
+
+ следует по признаку сравнения расходимость ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Сршылряд"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+(1) Исследовать на сходимость
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\left(\df{2n}{n+1}\right)^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{\left(\df{2n}{n+1}\right)^{n}}=\ul{n\st\b}\df{2n}{n+1}=2>1$
+\end_inset
+
+ Ряд расходится.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+(2) Исследовать на сходимость.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{2^{n}\um n^{n^{2}}}{\left(n+1\right)^{n^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=\ul{n\st\b}\df{2\um n^{n}}{\left(n+1\right)^{n}}=\ul{n\st\b}\df 2{\left(1+\df 1n\right)^{n}}=\df 2e<1$
+\end_inset
+
+ - ряд сходится.
+\end_layout
+
+\begin_layout Subsubsection
+Интегральный признак.
+\end_layout
+
+\begin_layout Theorem
+(6) Интегральный признак.
+\end_layout
+
+\begin_layout Theorem
+Если функция 
+\begin_inset Formula $y=f\left(x\right)>0$
+\end_inset
+
+ непрерывна и монотонна убывает на промежитке 
+\begin_inset Formula $[1,+\b)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}=f\left(n\right)$
+\end_inset
+
+ то ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\oui 1{\b}f\left(x\right)dx$
+\end_inset
+
+ сходятся и расходятся одновременно, причем выполняется неравенство: 
+\begin_inset Formula $\oui 1{\b}\fx dx\mr\ous{n=1}{\b}a_{n}\mr\oui 1{\b}\fx dx+a_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall k\in\N\ \forall x\in\left[k,k+1\right]\ f\left(k+1\right)\mr\fx\mr f\left(k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a_{k+1}\mr f\left(x\right)\mr a_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Проинтегрируем неравенство по отрезку 
+\begin_inset Formula $\left[k,k+1\right]$
+\end_inset
+
+: 
+\begin_inset Formula $\oui k{k+1}f\left(k+1\right)dx\mr\oui k{k+1}f\left(x\right)dx\mr\oui k{k+1}f\left(k\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a_{k+1}\mr\oui k{k+1}f\left(x\right)dx\mr a_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a_{2}\mr\oui 12f\left(x\right)dx\mr a_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a_{3}\mr\oui 23\fx dx\mr a_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a_{n+1}\mr\oui k{k+1}\fx dx\mr a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\oui 1{\b}\fx dx$
+\end_inset
+
+ сходится к хначению 
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui 1{n+1}\fx dx<\oui 1{\b}\fx dx=I\ \sl\oui 1{n+1}\fx dx<I$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sl\ S_{n+1}-a_{1}<I\ \sl\ S_{n+1}<I+a_{1}\ \forall n\in\N\ \sl$
+\end_inset
+
+ Все суммы 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ ограничены в совокупности сверху.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ По теореме 1 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если сходится ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}\ \sl\ $
+\end_inset
+
+ все суммы 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ ограничены в совокупности 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $F_{n}=\oui 1{n+1}\fx dx$
+\end_inset
+
+ возрастает и ограничена 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ сходится 
+\begin_inset Formula $\oui 1{\b}\fx dx$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Remark
+В случае сходимости пределльным перпеходом в неравенстве 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $S-a_{1}\mr\oui 1{\b}\fx dx\mr S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+(1) Исследовать на сходимость следующий ряд.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{p}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=\df 1{x^{p}}>0,\searrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\oui 1{\b}\fx dx=\oui 1{\b}\df{dx}{x^{p}}$
+\end_inset
+
+ - сзодится при 
+\begin_inset Formula $p>1$
+\end_inset
+
+, расходится при 
+\begin_inset Formula $p\mr1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Обобщенный гармонический ряд.
+\end_layout
+
+\begin_layout Subsubsection
+Признак Раабе
+\end_layout
+
+\begin_layout Theorem
+Если для ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}(a_{n}>0)$
+\end_inset
+
+ выполнено условие 
+\begin_inset Formula $\exists\ul{n\st\b}n\left(\dfrac{a_{n}}{a_{n+1}}-1\right)=L$
+\end_inset
+
+, то при L>1 ряд сходится, а при L<1 ряд расходится.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость знакоположительный ряд.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 12+\df 12\um\df 34+\tr+\df{1\um3\um\tr\um\left(2n-1\right)}{2\um4\um\tr\um\left(2n\right)}=\ous{n=1}{\b}\df{\left(2n-1\right)!!}{\left(2n\right)!!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+По Даланберу: 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n}+1}{a_{n}}=\ul{n\st\b}\df{2n+1}{2n+2}=1$
+\end_inset
+
+ - требуется дополнительное исследование.
+\end_layout
+
+\begin_layout Example
+По Раабе: 
+\begin_inset Formula $\ul{n\st\b}n\left(\df{a_{n}}{a_{n+1}}-1\right)=\ul{n\st\b}n\left(\df{2n+2}{2n+1}-1\right)=\ul{n\st\b}n\um\df 1{2n+1}=\df 12<1$
+\end_inset
+
+ - ряд расходится.
+\end_layout
+
+\begin_layout Subsection
+Сходимость произвольных рядов.
+\end_layout
+
+\begin_layout Subsubsection
+Сходимость знакочередующихся рядов.
+\end_layout
+
+\begin_layout Paragraph
+Признак Лейбница.
+\end_layout
+
+\begin_layout Definition
+Числовой ряд вида 
+\begin_inset Formula 
+\begin{equation}
+\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+называется знакочередующимся.
+\end_layout
+
+\begin_layout Theorem
+Если для знакочередующегося ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) выполнены условия:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n+1}<a_{n}\ \forall n\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{n\st\b}a_{n}=0$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+то ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) обязательно сходится.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим последовательность частичных сумм ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) с четными номерами: 
+\begin_inset Formula $S_{2n}=a_{1}-a_{2}+a_{3}-a_{4}+\tr+a_{2n-1}-a_{2n}=\left(a_{1}-a_{2}\right)+\left(a_{3}-a_{4}\right)+\tr+\left(a_{2n-1}-a_{2n}\right)$
+\end_inset
+
+ У нас n скобок и каждая скобка положительна.
+ С другой стороны 
+\begin_inset Formula $S_{2n}=a_{1}-\left(a_{2}-a_{3}\right)-\left(a_{4}-a_{5}\right)-\tr-\left(\tr\right)-a_{2n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}>S_{2n}>0,\ $
+\end_inset
+
+причем 
+\begin_inset Formula $S_{2n}$
+\end_inset
+
+ возрастает с увеличением номера n.
+ 
+\begin_inset Formula $\sl S_{2n}$
+\end_inset
+
+ - возрастающая и ограниченая 
+\begin_inset Formula $\sl$
+\end_inset
+
+ по Теореме о сходимости монотонных последовательностей 
+\begin_inset Formula $\exists\ul{n\st\b}S_{2n}=S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим последовательность частичных сумм ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) с нечетными номерами: 
+\begin_inset Formula $\ul{n\st\b}S_{2n+1}=\ul{n\st\b}\left(S_{2n}+a_{2n+1}\right)=\left\{ \begin{array}{c}
+S_{2n}\st S\\
+a_{2n}+1\st0
+\end{array}\right\} =S.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тоесть 
+\begin_inset Formula $\ul{n\st\b}S_{2n}=\ul{n\st\b}S_{2n+1}=S\ \sl\ $
+\end_inset
+
+ ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) сходится.
+\end_layout
+
+\begin_layout Remark
+т.к.
+ 
+\begin_inset Formula $S_{2n}<a_{1}$
+\end_inset
+
+ то 
+\begin_inset Formula $S\mr a_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+Для остатка ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) имеет место следующая формула 
+\begin_inset Formula $R_{n}=S-S_{n}=\left(-1\right)^{n+2}\um\left(a_{n+1}-a_{n+2}+\tr\right)$
+\end_inset
+
+ - в скобке знакочередующийся ряд.
+ 
+\begin_inset Formula $\left|R_{n}\right|\mr a_{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) удовлетворяющий условиям теоремы называется рядом Лейбница.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость 
+\begin_inset Formula $\ous{n=2}{\b}\df{\left(-1\right)^{n}}{\ln n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $a_{n}=\df 1{\ln n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Пооверим выполнение условий признака Лейбница.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n+1}=\df 1{\ln n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\df 1{\ln n}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Перед нами ряд Лейбница.
+ Он сходится.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=2}{\b}\df{\left(-1\right)^{n}\um\ln n}n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $a_{n}=\df{\ln n}n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Монотонность.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f\pr=\left(\df{\ln x}x\right)\pr=\df{\df 1x\um x-\ln x}{x^{2}}=\df{1-\ln x}{x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Убывание наченая с номера 3.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ul{n\st\b}\df{\ln n}n=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Так как отбрасывание конечного числа членов невлияет на сходимость последователь
+ности то это ряд Лейбница и он сходится.
+\end_layout
+
+\begin_layout Paragraph
+Признак Абиля - Дерихле.
+\end_layout
+
+\begin_layout Example
+Рассмматривается произвольный ( в общем случае - знакопеременный ) ряд 
+\begin_inset Formula $\ous{n-1}{\b}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Пусть даны 2 последовательности
+\begin_inset Formula $\left\{ u_{n}\right\} ,\ \left\{ v_{n}\right\} $
+\end_inset
+
+.
+ Рассмотрим суммы вида 
+\begin_inset Formula $S_{n}=\ous{k=1}nu_{k}$
+\end_inset
+
+.
+ Тогда выполняется 
+\emph on
+Тождество Абеля
+\emph default
+ 
+\begin_inset Formula 
+\begin{equation}
+\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p-1}S_{k}\um\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}\label{eq:2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $u_{k}=S_{k}-S_{k-1}$
+\end_inset
+
+, то берем сумму 
+\begin_inset Formula $\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p}S_{k}\um v_{k}-\ous{k=n}{n+p}S_{k-1}v_{k}=\ous{k=n}{n+p}S_{k}\um v_{k}-\ous{k=n-1}{n+p-1}S_{k}\um v_{k+1}=\ous{k=n}{n+p-1}S_{k}\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+(Признак Абеля-Дерихле)
+\end_layout
+
+\begin_layout Theorem
+Ряд 
+\begin_inset Formula 
+\begin{equation}
+\ous{n=1}{\b}u_{n}v_{n}\label{eq:3}
+\end{equation}
+
+\end_inset
+
+сходится если:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Последовательность 
+\begin_inset Formula $\left\{ v_{k}\right\} $
+\end_inset
+
+ невозрастает и 
+\begin_inset Formula $\ul{n\st\b}v_{n}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Последовательность 
+\begin_inset Formula $S_{n}=\ous{k=1}nu_{k}$
+\end_inset
+
+ ограничена.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Согласно критерию Коши сходимости числового ряда ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n}{n+p}u_{k}v_{k}\right|<\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ - ограничена 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists M>0\ \forall n\in\N\ \left|S_{n}\right|<M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\ul{n\st\b}v_{n}=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ 0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}?$
+\end_inset
+
+ Пока не знаем на что делить но щас узнает и напишим.
+\end_layout
+
+\begin_layout Proof
+Получим 
+\begin_inset Formula $\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\ref{eq:2}\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Каждое слогаемое (а их 3) меньше чем M.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $<M\um\left(\ous{k=n}{n+p-1}\left(v_{k}-v_{k+1}\right)+v_{n+p}+v_{n}\right)=M\um2\um v_{n}<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ 0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}{2M}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Теорема доказана.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость следующий ряд:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $1+\df 12-\df 23+\df 14+\df 15-\df 26+\tr+\df 1{3n-2}+\df 1{3n-1}-\df 2{3n}+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Решение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $v_{n}=\df 1n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{n}:1,1,-2,1,1,-2,\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ v_{n}\right\} -$
+\end_inset
+
+ невозрастает.
+ 
+\begin_inset Formula $\ul{n\st\b}\df 1n=0$
+\end_inset
+
+ - выполняется.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{n}:1,2,0,1,2,0,1,2,0\tr$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $M=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|S_{n}\right|\mr2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Абсолютная сходимость числовых рядов.
+\end_layout
+
+\begin_layout Definition
+Числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) называется абсолютно сходящимся, если сходится знакоположительный ряд
+ 
+\begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+Всякий абсолютно сходящийся ряд сходится.
+\end_layout
+
+\begin_layout Proof
+Пусть ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) сходится абсолютно 
+\begin_inset Formula $\sl$
+\end_inset
+
+ (по критерию Коши) 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n}{n+p}a_{k}\right|\mr\ous{k=n}{n+p}\left|a_{k}\right|<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\ous{k=n}{n+p}a_{k}\right|<\varepsilon$
+\end_inset
+
+ - критерий Коши сходимости ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Remark
+Обратное утверждение не верно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{\left(-1\right)^{n}}n$
+\end_inset
+
+ - знакочередующийся ряд - ряд Лейбница, так как 
+\begin_inset Formula $a_{n}=\df 1n,\ \left\{ a_{n}\right\} \searrow\ \ul{n\st\b}a_{n}=0$
+\end_inset
+
+, а ряд модулей 
+\begin_inset Formula $\ous{n=1}{\b}\df 1n$
+\end_inset
+
+ - гармонический ряд, который сходится.
+\end_layout
+
+\begin_layout Definition
+Если числовой ряд сходится, но не сходится абсолютно то его называют неабсолютно
+сходящимся (условносходящимся) числовым рядом.
+\end_layout
+
+\begin_layout Subsubsection
+Переместительное свойство абсолютно сходящихся рядов.
+\end_layout
+
+\begin_layout Standard
+В ряде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) произвольно переставим члены ряда.
+ Получим новый ряд 
+\begin_inset Formula 
+\begin{equation}
+\ous{k=1}{\b}a_{k}'=a_{1}'+a_{2}'+\tr+a_{k}'+\tr\label{eq:4}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $a_{k}'=a_{n_{k}}$
+\end_inset
+
+.
+ Вопрос: Сходится ли ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+) при условии сходимости ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+), если сходится, то к какой сумме?
+\end_layout
+
+\begin_layout Theorem
+Если ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) сходится абсолютно, то ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+) также сходится абсолютно и суммы рядов равны.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим 2 случая:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) знакоположительный.
+ В этом случае получается 
+\begin_inset Formula $\ous{k=1}{\b}a_{k}=\ous{k=1}{\b}\left|a_{k}\right|=S$
+\end_inset
+
+ - сумма этого ряда.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Для ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+) рассмотрим 
+\begin_inset Formula $k$
+\end_inset
+
+ - ю частичную сумму:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{k}'=a_{1}'+a_{2}'+a_{3}'+\tr+a_{k}'=a_{n_{1}}+a_{n_{2}}+a_{n_{3}}+\tr+a_{n_{k}}\mr\left\{ m_{k}=\max\left\{ n_{1},n_{2},\tr,n_{k}\right\} \right\} \mr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mr a_{1}+a_{2}+\tr+a_{m_{k}}=S_{m_{k}}\mr S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом последовательность 
+\begin_inset Formula $\left\{ S_{k}'\right\} $
+\end_inset
+
+ - последовательность неувывает и ограничена сверху числом 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ (по теореме о сходимости монотонных последовательностей) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\ul{k\st\b}S_{k}'=S'$
+\end_inset
+
+ причем 
+\begin_inset Formula $S'\mr S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) в свою очередь получается перестановкой членов ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+), то 
+\begin_inset Formula $S\mr S'$
+\end_inset
+
+, таким образом сразуже получается 
+\begin_inset Formula $S=S'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) знакопеременный ряд.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Обозначим последовательности положительных членов 
+\begin_inset Formula $p_{1},p_{2},\tr,p_{n},\tr$
+\end_inset
+
+ и модулей отрицательных членов 
+\begin_inset Formula $q_{1},q_{2},\tr,q_{n},\tr$
+\end_inset
+
+ .
+ ......
+ Обозначим 
+\begin_inset Formula $P_{n}=p_{1}+p_{2}+\tr+p_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $Q_{n}=q_{1}+q_{2}+\tr+q_{n}$
+\end_inset
+
+ - частичные суммы рядов 
+\begin_inset Formula $\ous{k=1}{\b}p_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{k=1}{\b}q_{k}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $P_{n}+Q_{n}\mr\ous{k=1}{\b}\left|a_{k}\right|$
+\end_inset
+
+, то 
+\begin_inset Formula $\begin{array}{c}
+P_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b\\
+Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
+\end{array}$
+\end_inset
+
+
+\begin_inset Formula $\forall n\in\N$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ p_{n}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ q_{n}\right\} $
+\end_inset
+
+ сходящиеся последовательности 
+\begin_inset Formula $\sl$
+\end_inset
+
+ ряды 
+\begin_inset Formula $A=\ous{k=1}{\b}p_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\ous{k=1}{\b}q_{k}$
+\end_inset
+
+ сходятся к конечным суммам.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ при любой перестановке получим 
+\begin_inset Formula $\ous{k=1}{\b}a_{k}'=\ul{n\st\b}\left(P_{n}-Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=A-B=C$
+\end_inset
+
+ - сумма.
+\end_layout
+
+\begin_layout Standard
+Докажем абсолютную сходимость.
+\end_layout
+
+\begin_layout Standard
+Пусть (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) сходитя абсолютно 
+\begin_inset Formula $\sl$
+\end_inset
+
+ сходится ряд из модулей 
+\begin_inset Formula $\ous{k=1}{\b}\left|a_{k}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ (смотри 1й случай) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ сходится ряд 
+\begin_inset Formula $\ous{n=1}{\b}\left|a_{n}'\right|$
+\end_inset
+
+, тоесть ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+) сходится абсолютно.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Перестановка членов условно сходящегося ряда.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пример - знакочередующийся ряд.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{k=1}{\b}\df{\left(-1\right)^{n}}n=1-\df 12+\df 13-\df 14+\df 15+\tr$
+\end_inset
+
+ - сходяшийся ряд Лейбница.
+ Обозначим его сумму 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Заметим что 
+\begin_inset Formula $\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+\tr+\dfrac{\left(-1\right)^{n-1}}{n}\um x^{n}+\tr$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S=\ln2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Абсолютной сходимости нет 
+\begin_inset Formula $\sl$
+\end_inset
+
+ ряд сходится условно.
+\end_layout
+
+\begin_layout Example
+Переставим члены ряда:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(1-\df 12-\df 14\right)+\left(\df 13-\df 16-\df 18\right)+\tr+\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)+\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим частичные суммы:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{3m}'=\ous{k=1}m\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)=\df 12\um\ous{k=1}m\left(\df 1{2k-1}-\df 1{2k}\right)=\df 12\left(1-\df 12+\df 13-\df 14+\tr+\df 1{2m-1}-\df 1{2m}\right)\overset{m\st\b}{\st}\df S2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{3m-1}'=S_{3m}'+\df 1{4m}\overset{m\st\b}{\st}\df S2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{3m-2}'=S_{3m-1}'+\df 1{4m-2}\overset{m\st\b}{\st}\df S2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Таким образом 
+\begin_inset Formula $\ul{m\st\b}S_{3m}'=\ul{m\st\b}S_{3m-1}'=\ul{m\st\b}S_{3m-2}'=\df S2$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Сумма 
+\begin_inset Formula $\ous{k=1}{\b}a_{k}'=\df S2=\df{\ln2}2\nr S=\ln2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+
+\emph on
+(Римана)
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $\ous{k=1}{\b}a_{n}$
+\end_inset
+
+ схордится условно, то 
+\begin_inset Formula $\forall B\in\R$
+\end_inset
+
+ то можно переставить членый ряда так, то полученный ряд будет сходиться
+ к 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) сходится условно, и его сумма равна S.
+ Рассмотрим 2 последовательности 
+\begin_inset Formula $\left\{ p_{n}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ q_{n}\right\} $
+\end_inset
+
+, которые были рассмотрены в доказательстве преведущей теореме.
+ Получим 2 знакаположительных ряда 
+\begin_inset Formula $\ous{n=1}{\b}p_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}q_{n}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|=\b$
+\end_inset
+
+, то 
+\begin_inset Formula $\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ous{n=1}{\b}\left|a_{n}\right|=\b$
+\end_inset
+
+ и 
+\begin_inset Formula $\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=\ul{n\st\b}\ous{n=1}{\b}q_{n}+\ul{n\st\b}\ous{n=1}{\b}p_{n}=\ous{n=1}{\b}p_{n}+\ous{n=1}{\b}q_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $S=\ul{n\st\b}\left(P_{n}-Q_{n}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\ul{n\st\b}P_{n}=\ul{n\st\b}\left(S+Q_{n}\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\ul{n\st\b}\ous{k=1}np_{n}=\ous{n=1}{\b}p_{n}$
+\end_inset
+
+ конечная , то и 
+\begin_inset Formula $\ul{n\st\b}\left(S+Q_{n}\right)=S+\ous{n=1}{\b}q_{n}$
+\end_inset
+
+ - также канечная.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $B\in\R$
+\end_inset
+
+ - произвольное число, тогда 
+\begin_inset Formula $\exists k_{1}$
+\end_inset
+
+, что 
+\begin_inset Formula $p_{1}+p_{2}+\tr+p_{k_{1}}\br B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|S_{k_{1}}-B\right|<p_{k_{1}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists m_{1}$
+\end_inset
+
+ такое что 
+\begin_inset Formula $p_{1}+\tr+p_{k_{1}}-q_{1}-q_{2}-\tr-q_{m_{1}}\mr B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|S_{k_{1}+m_{1}}-B\right|>q_{m_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists k_{2}$
+\end_inset
+
+ такое что 
+\begin_inset Formula $S_{k_{1}+m_{1}}'+p_{k_{1}+1}+p_{k_{1}+2}+\tr+p_{k_{2}}\br B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|S_{k_{2}+m_{1}}'-B\right|<p_{k_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists m_{2}$
+\end_inset
+
+такое что 
+\begin_inset Formula $S_{k_{2}+m_{1}}'-q_{m_{1}+1}-q_{m_{1}+2}-\tr-q_{m_{2}}\mr B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|S_{k_{2}+m_{2}}-B\right|>q_{m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+И так далее...
+\end_layout
+
+\begin_layout Proof
+В полученом ряде участвуют все члены исходного ряда.
+\end_layout
+
+\begin_layout Proof
+Так как ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+) сходится, то по необходимому признаку сходимотри ряда имеет место 
+\begin_inset Formula $\ul{n\st\b}a_{n}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{n\st\b}p_{k_{n}}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\ul{n\st\b}q_{m_{n}}=0$
+\end_inset
+
+.
+ Так как частичные суммы при раскрытии скобок изменяются монотонно (например
+ от 
+\begin_inset Formula $S_{k_{2}+m_{1}}'$
+\end_inset
+
+ до 
+\begin_inset Formula $S_{k_{2}+m_{2}}'$
+\end_inset
+
+ - убывает), то 
+\begin_inset Formula $\exists\ul{n\st\b}S_{n}'=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Дифференциальные исчисления функции многих переменных
+\end_layout
+
+\begin_layout Subsection
+Понятие функции многих переменных (ФМП)
+\end_layout
+
+\begin_layout Subsubsection
+Понятие евклидовой плоскости и евклидова пространства
+\end_layout
+
+\begin_layout Definition
+Координатной плоскостью 
+\begin_inset Formula $\left(A^{2}\right)$
+\end_inset
+
+ называется множество пар 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ вещественных чисел 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Каждую пару называют точкой 
+\begin_inset Formula $M\left(x,y\right)$
+\end_inset
+
+ координатной плоскости, а числа 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ координатами точки 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Евклидовой плоскостью 
+\begin_inset Formula $\left(E^{2}\right)$
+\end_inset
+
+ называется координатная плосткость, в каторой можно определить расстояние
+ между любыми двумя точками 
+\begin_inset Formula $M'\left(x',y'\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $M''\left(x'',y''\right)$
+\end_inset
+
+ по формуле 
+\begin_inset Formula $\rho\left(M',M''\right)=\sqrt{\left(x'-x''\right)^{2}+\left(y'-y''\right)^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество упорядоченых троек 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ вещественных чисел 
+\begin_inset Formula $x,\ y$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+ называется координатным пространством 
+\begin_inset Formula $\left(A^{3}\right)$
+\end_inset
+
+.
+ Каждую тройку 
+\begin_inset Formula $\left(x,y,z\right)\in A^{3}$
+\end_inset
+
+ называют точкой 
+\begin_inset Formula $M\left(x,y,z\right)$
+\end_inset
+
+ пространства 
+\begin_inset Formula $\left(A^{3}\right)$
+\end_inset
+
+, а числа 
+\begin_inset Formula $x,\ y,\ z$
+\end_inset
+
+ - координатами точки.
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Евклидовым пространством 
+\begin_inset Formula $\left(E^{3}\right)$
+\end_inset
+
+ называется координатное пространство, в котором можно определить расстояние
+ между точками 
+\begin_inset Formula $M'\left(x',y',z'\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $M''\left(x'',y'',z''\right)$
+\end_inset
+
+ по следующей формуле 
+\begin_inset Formula $\rho\left(M',M''\right)=\sqrt{\left(x'-x''\right)^{2}+\left(y'-y''\right)^{2}+\left(z'-z''\right)^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Множества в 
+\begin_inset Formula $E^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Круг радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $M\left(x_{0},y_{0}\right)$
+\end_inset
+
+ это 
+\begin_inset Formula $\overline{S}_{R}\left(M\right)=\left\{ N\left(x,y\right)|\rho\left(N,M\right)\mr R\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Окружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $M\left(x_{0},y_{0}\right)$
+\end_inset
+
+ это 
+\begin_inset Formula $\text{С}_{R}\left(M\right)=\left\{ N\left(x,y\right)|\rho\left(N,M\right)=R\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Если в определении круга 
+\begin_inset Formula $\overline{S}_{R}\left(M\right)$
+\end_inset
+
+ неравенство строгое, то получим открытый круг 
+\begin_inset Formula $S_{R}\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Прямоугольником с центром в точке 
+\begin_inset Formula $M\left(x_{0},y_{0}\right)$
+\end_inset
+
+ называется множество 
+\begin_inset Formula $\text{П}\left(M\right)=\left\{ N\left(x,y\right)|\begin{cases}
+\left|x-x_{0}\right|\mr d_{1}\\
+\left|y-y_{0}\right|\mr d_{2}
+\end{cases},d_{1},d_{2}>0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если все неравенства строгие, то прямоугольник называется открытым.
+\end_layout
+
+\begin_layout Definition
+Шар с ценстром в точке 
+\begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ называется множество 
+\begin_inset Formula $\overline{S_{R}}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)\mr R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Открытый шар - 
+\begin_inset Formula $S_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)<R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Сферой с ценстром в точке 
+\begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ называется мноджество 
+\begin_inset Formula $C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\overline{S_{R}}\left(M\right)=S_{R}\left(M\right)\cup C_{R}\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Паралелепипед 
+\begin_inset Formula $\text{П}\left(M\right)=\left\{ N\left(x,y,z\right)|\begin{cases}
+\left|x-x_{0}\right|\mr d_{1}\\
+\left|y-y_{0}\right|\mr d_{2}\\
+\left|z-z_{0}\right|\mr d_{3}
+\end{cases},\ d_{1},d_{2},d_{3}>0\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Открытый паралелипипед, это когда в определении паралелепипеда все неравенства
+ строгие.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Понятие функции 2х и 3х переменных
+\end_layout
+
+\begin_layout Definition
+Если каждой точке 
+\begin_inset Formula $M\left(x,y\right)\in D\subset E^{2}$
+\end_inset
+
+ можно поставить в соответствии определенное значение 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+, то говорят, что на области 
+\begin_inset Formula $D$
+\end_inset
+
+ определена функция 2х переменных 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Функцию 2х переменных можно изобразить графически как поверхность в пространстве
+ 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+точками с координатами 
+\begin_inset Formula $\left(x,y,f\left(x,y\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+Множество всех значений, принимаемых функцией 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ на области 
+\begin_inset Formula $D$
+\end_inset
+
+ называется областью значений функции 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $E\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+Аналогично определяется функция 3-х переменных 
+\begin_inset Formula $u=f\left(x,y,z\right)$
+\end_inset
+
+ и ее область значений 
+\begin_inset Formula $E\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Рассмотрим песколько примеров.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u=x^{2}+y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $D\left(f\right)=E^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(f\right)=R+=[0,+\b)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u=\sqrt{9-x^{2}-y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $D\left(f\right)=\overline{S_{3}}\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(f\right)=\left[0,3\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u=\ln\left(x-y+z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $D\left(f\right)\ :\ x-y+z>0\ \sl\ z>y-z$
+\end_inset
+
+ - полупространство в 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(f\right)=\left(-\b,+\b\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Понятие 
+\begin_inset Formula $n$
+\end_inset
+
+-мерного координатного и евклидового пространства.
+\end_layout
+
+\begin_layout Definition
+Множество совокупностей 
+\begin_inset Formula $M\left(x_{1},x_{2}\tr x_{m}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{i}\in\R,\ i=\overline{1,m}$
+\end_inset
+
+, называется 
+\begin_inset Formula $n$
+\end_inset
+
+-мерным координатным пространством 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+, а точка 
+\begin_inset Formula $M\in A^{m}$
+\end_inset
+
+ - точка пространства 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Если в координатном пространстве 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+ ввести растояние между произвольными точками 
+\begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $N\left(y_{1}\tr y_{m}\right)$
+\end_inset
+
+ по формуле 
+\begin_inset Formula $\rho\left(M,N\right)=\sqrt{\ous{i=1}m\left(x_{i}-y_{i}\right)^{2}}$
+\end_inset
+
+ то его называют евклидовым 
+\begin_inset Formula $n$
+\end_inset
+
+-мерным пространством, и обозначают 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Множества в пространстве 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $n$
+\end_inset
+
+-мерный шар радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $M\in E^{m}$
+\end_inset
+
+ это 
+\begin_inset Formula $\overline{S_{R}}\left(M\right)=\left\{ N\in E^{m}|\rho\left(N,M\right)\mr R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Открытый 
+\begin_inset Formula $n$
+\end_inset
+
+-мерный шар это 
+\begin_inset Formula $S_{R}\left(M\right)=\left\{ N\in E^{m}|\rho\left(N,M\right)\mr R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $n$
+\end_inset
+
+-мерная сфера радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $M\in E^{m}$
+\end_inset
+
+ это 
+\begin_inset Formula $C_{R}\left(M\right)=\left\{ N\in E^{m}|\rho\left(N,M\right)=R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\overline{S_{R}}\left(M\right)=S_{R}\left(M\right)\cup C_{R}\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $n$
+\end_inset
+
+-мерный координатный паралелепипед с центром в точке 
+\begin_inset Formula $M\in E^{m}$
+\end_inset
+
+ это 
+\begin_inset Formula $\text{П}\left(M\right)=\left\{ N\in E^{m}|\left|a_{i}-x_{i}\right|\mr d_{i},\ i=\overline{1,m},\ d_{i}>0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Открытым 
+\begin_inset Formula $n$
+\end_inset
+
+-мерным коородинатным паралелепипедом называется паралелепипед, в определении
+ которого все неравенства строгие.
+\end_layout
+
+\begin_layout Definition
+Открытый гар радиуса 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $M$
+\end_inset
+
+ называется 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-окрестностью точки 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Внутри 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-окрестности точки 
+\begin_inset Formula $M$
+\end_inset
+
+ можно поместить некоторую прямокгольную окрестность и наоборот.
+\end_layout
+
+\begin_layout Remark
+В общем случае пространства 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+: 
+\begin_inset Formula $\text{П}_{2\um\df{\varepsilon}{\sqrt{m}}}\left(M\right)\subset S_{\varepsilon}\left(M\right)\subset\text{П}_{2\varepsilon}\left(M\right)\subset\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $M$
+\end_inset
+
+ - внутренняя точка множества 
+\begin_inset Formula $D\in E^{m}$
+\end_inset
+
+, если в 
+\begin_inset Formula $D$
+\end_inset
+
+ содержится 
+\begin_inset Formula $M$
+\end_inset
+
+ вместе со своей окрестностью.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D=\left\{ M\left(x,y\right)|x^{2}+y^{2}\mr1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{1}\left(\df 12;0\right)$
+\end_inset
+
+ - внутренння точка, так как мы можем указать окрестность ее 
+\begin_inset Formula $\exists S_{\df 14}\left(M_{1}\right)\subset D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{2}\left(1;0\right)$
+\end_inset
+
+ - не внутренняя точка, так как мы не можем указать такиу окрестность, которая
+ содержится во множестве 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $M$
+\end_inset
+
+ называется граничной точком множества 
+\begin_inset Formula $D$
+\end_inset
+
+, если в любой ее окрестности содержатся точки пренадлежащие 
+\begin_inset Formula $D$
+\end_inset
+
+ и не пренадлежащие 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(Относится к преведущему примеру)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ - граничная точка
+\end_layout
+
+\begin_layout Remark
+Если взять 
+\begin_inset Formula $D=\left\{ M\left(x,y\right)|x^{2}+y^{2}<1\right\} $
+\end_inset
+
+, то 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ все равно останется граничной точкой.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\subset D$
+\end_inset
+
+ называется открытым множеством, если все его точки - внутреннии.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D_{1}=\left\{ \left(x,y\right)|x^{2}+y^{2}<9\right\} $
+\end_inset
+
+ --- открытое множество
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D_{2}=\left\{ \left(x,y\right)|\begin{cases}
+x^{2}+y^{2}<9 & ,x>0\\
+x^{2}+y^{2}\mr9 & ,x\mr0
+\end{cases}\right\} $
+\end_inset
+
+ - у этого множества есть граничные точки 
+\begin_inset Formula $\sl$
+\end_inset
+
+ оно не открытое
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D\subset E^{m}$
+\end_inset
+
+ называется замкнутым, если оно содержит все свои граничные точки.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(Относится к преведущему примеру)
+\end_layout
+
+\begin_layout Example
+В этом примере нету замкрутых множеств.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D\subset E^{m}$
+\end_inset
+
+ называется ограниченным, если 
+\begin_inset Formula $\exists K>0\ \forall M\in D\ \rho\left(O,M\right)<K$
+\end_inset
+
+, иначе говоря что область 
+\begin_inset Formula $D\subset S_{K}\left(O\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Точка 
+\begin_inset Formula $O$
+\end_inset
+
+ --- начало координат.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество точкек 
+\begin_inset Formula $l\subset E^{m}$
+\end_inset
+
+ называется непрерывной кривой в пространстве 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+, еслри кооррдинаты тотчки 
+\begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ удовлетворяют системе 
+\begin_inset Formula $\begin{cases}
+x_{1} & =\varphi_{1}\left(t\right)\\
+x_{2} & =\varphi_{2}\left(t\right)\\
+\tr & \dots\\
+x_{m} & =\varphi_{m}\left(t\right)
+\end{cases},\ t\in\left[\alpha,\beta\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Точки 
+\begin_inset Formula $M_{0}\left(\varphi_{1}\left(\alpha\right)\tr\varphi_{m}\left(\alpha\right)\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{1}\left(\varphi_{1}\left(\beta\right)\tr\varphi_{m}\left(\beta\right)\right)$
+\end_inset
+
+называются концевыми точками кривой 
+\begin_inset Formula $l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D\in E^{m}$
+\end_inset
+
+ называется связным, если любые 2 точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ из 
+\begin_inset Formula $D$
+\end_inset
+
+ можно соеденить непредрывной кривой, целикой содержашиеся в 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Понятие функции 
+\begin_inset Formula $n$
+\end_inset
+
+ переменных
+\end_layout
+
+\begin_layout Definition
+Если каждой точке 
+\begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ множества 
+\begin_inset Formula $D\subset E^{m}$
+\end_inset
+
+ можно поставить в соотвествии определенное число 
+\begin_inset Formula $u$
+\end_inset
+
+, то говорят, что на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+ определена функция 
+\begin_inset Formula $m$
+\end_inset
+
+ переменных.
+ Множество всех значений функции 
+\begin_inset Formula $f\left(M\right)$
+\end_inset
+
+, принимаемых на области 
+\begin_inset Formula $D$
+\end_inset
+
+ называется областью значений функции 
+\begin_inset Formula $f\left(M\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+ и обохзначается 
+\begin_inset Formula $E\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Предельное значение функций многих переменных
+\end_layout
+
+\begin_layout Subsubsection
+Сходящиеся последовательности точек в 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+.
+ Критерий Коши сходимости последовательностей.
+\end_layout
+
+\begin_layout Definition
+Последовательность точек 
+\begin_inset Formula $\left\{ x_{n}\right\} =\left\{ x_{1}^{\left(n\right)},x_{2}^{\left(n\right)},\tr,x_{n}^{\left(n\right)}\right\} $
+\end_inset
+
+ называется сходящейся в пространстве 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+ к точке 
+\begin_inset Formula $x=\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \rho\left(x_{n},x\right)<\varepsilon$
+\end_inset
+
+ или 
+\begin_inset Formula $\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\varepsilon$
+\end_inset
+
+, записывают при этом 
+\begin_inset Formula $\ul{n\st\b}x_{n}=x$
+\end_inset
+
+ или 
+\begin_inset Formula $x_{n}\st x$
+\end_inset
+
+ при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+.
+ Точка 
+\begin_inset Formula $x$
+\end_inset
+
+ называется предельной точкой последовательности 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $\ul{n\st\b}x_{n}=x\ \dsl x_{i}^{\left(n\right)}\st x_{i}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i=\overline{1,m}$
+\end_inset
+
+, тоесть сходимость в 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+ - покоординатная!
+\end_layout
+
+\begin_layout Proof
+Докажем необходимость и достаточность.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\ul{n\st\b}x_{n}=x\ \sl\ \forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \rho\left(x_{n},x\right)<\varepsilon=\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}\br\forall\left|x_{i}^{\left(n\right)}-x_{i}\right|,\ i=\overline{1,m}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|x_{i}^{\left(n\right)}-x_{i}\right|<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{n\st\b}x_{i}^{\left(n\right)}=x_{i}\ \forall i=\overline{1,m}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть есть координатная сходимость, тоесть 
+\begin_inset Formula $x_{i}^{\left(n\right)}\overset{n\st\b}{\st}x_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i=\overline{1,m}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall\varepsilon>0\ \exists N_{i}=N_{i}\left(\varepsilon\right)\ \forall n\br N_{i}\ \left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}?,\ \forall i=\overline{1,m}$
+\end_inset
+
+ Щас разберемся что там написано вместо 
+\begin_inset Formula $?$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\br N=\max\left\{ N_{1}\tr N_{m}\right\} :\left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}{\sqrt{m}},\ \forall i=\overline{1,m}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\rho\left(x_{n},x\right)=\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\left\{ \left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}<\df{\varepsilon^{2}}m\right\} <\df{\varepsilon}{\sqrt{m}}\um\sqrt{m},\ i=\overline{1,m}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Definition
+Последовательность 
+\begin_inset Formula $\left\{ X_{n}\right\} \subset E^{m}$
+\end_inset
+
+ называется фундаментальной, если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \rho\left(x_{n+p},x_{n}\right)<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+(Критерий Коши)
+\end_layout
+
+\begin_layout Theorem
+Последовательность 
+\begin_inset Formula $\left\{ X_{n}\right\} \in E^{m}$
+\end_inset
+
+ - сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ X_{n}\right\} $
+\end_inset
+
+ - фундаментальна.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left\{ X_{n}\right\} \in E^{m}$
+\end_inset
+
+ - сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ по преведущей лемме 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i=\overline{1,m}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ X_{i}^{\left(A\right)}\right\} $
+\end_inset
+
+- сходящаяся числовая последовательность 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ по критерию коши для сходящихся последовательностей 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i=\overline{1,m}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ X_{i}^{\left(A\right)}\right\} $
+\end_inset
+
+ - фундаметтальны 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ X_{n}\right\} $
+\end_inset
+
+ - покоординатная фундаментальность 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\left(!\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ X_{n}\right\} $
+\end_inset
+
+ - фундаментальна.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left\{ x_{n}\right\} \subset E^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{n}=\left(\df 1n;\df{n+1}{n-2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{1}^{\left(n\right)}=\df 1n\overset{n\st\b}{\st}0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{2}^{\left(n\right)}=\df{n+1}{n-2}\overset{n\st\b}{\st}1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{n\st\b}x_{n}=M\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Последовательность 
+\begin_inset Formula $\left\{ M_{n}\right\} \vkl E^{m}$
+\end_inset
+
+ называется ограниченой если 
+\begin_inset Formula $\exists K>0\ \rho\left(0,M_{n}\right)\mr K$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Theorem
+(Больштрано-Вейштрассе)
+\end_layout
+
+\begin_layout Theorem
+Из всякой ограниченной последовательности 
+\begin_inset Formula $\left\{ x_{n}\right\} \vkl E^{n}$
+\end_inset
+
+ можно выделить сходяшаюся подпоследовательность.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\exists K>0\ \rho\left(0,x_{n}\right)\mr K$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\forall i=\overline{1,m}$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x_{i}^{\left(n\right)}\right|\mr\sqrt{\ous{j=1}m\left(x_{j}^{n}\right)^{2}}=\rho\left(0,x_{n}\right)\mr K$
+\end_inset
+
+ , тоесть 
+\begin_inset Formula $\left\{ x_{i}^{\left(n\right)}\right\} $
+\end_inset
+
+ - ограниченная числовая последовательность 
+\begin_inset Formula $\forall i=\overline{1,m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+По теореме Б-В для числовых последовательностей 
+\begin_inset Formula $\left\{ x_{1}^{\left(n\right)}\right\} \supset\left\{ x_{1}^{\left(n_{k_{1}}\right)}\right\} -$
+\end_inset
+
+ сходяшаяся подпоследовательность.
+ 
+\begin_inset Formula $\ul{n_{k_{1}}\st\b}x_{1}^{\left(n_{k_{1}}\right)}=a_{1}$
+\end_inset
+
+.
+ Потом 
+\begin_inset Formula $\left\{ x_{2}^{\left(n_{k_{1}}\right)}\right\} \supset\left\{ x_{2}^{\left(n_{k_{2}}\right)}\right\} $
+\end_inset
+
+ - сходяшаяся.
+ 
+\begin_inset Formula $\ul{n_{k_{2}}\st\b}x_{2}^{\left(n_{k_{2}}\right)}=a_{2}$
+\end_inset
+
+ На 
+\begin_inset Formula $m$
+\end_inset
+
+-том шаге получим: 
+\begin_inset Formula $\left\{ x_{m}^{\left(n_{k_{m-1}}\right)}\right\} \supset\left\{ x_{m}^{\left(n_{k_{m}}\right)}\right\} \overset{n_{k_{m}}\st\b}{\st}a_{m}$
+\end_inset
+
+.
+ Очевидно что 
+\begin_inset Formula $X_{n_{k_{m}}}=\left(x_{1}^{n_{k_{m}}},x_{2}^{n_{k_{m}}},\tr,x_{m}^{n_{k_{m}}}\right)$
+\end_inset
+
+ - сходящаяся последовательность, включенная в 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left\{ x_{n_{k_{m}}}\right\} \overset{n_{k_{m}}\st\b}{\st}A\left(a_{1},a_{2}\tr a_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $M\in E^{m}$
+\end_inset
+
+ называется предельной для множества 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+, если для любой выколотой окрестности точки 
+\begin_inset Formula $M$
+\end_inset
+
+ найдется точка из 
+\begin_inset Formula $D$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\in D\ 0<\rho\left(M,N\right)<\varepsilon$
+\end_inset
+
+ где 
+\begin_inset Formula $N\in U_{\varepsilon}\left(M\right)=S_{\varepsilon}\left(M\right)\backslash M$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Lemma
+Точка 
+\begin_inset Formula $M\in E^{m}$
+\end_inset
+
+ является предельной точкой множества 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\left\{ x_{n}\right\} \vkl D,\ x_{n}\nr M\ \forall n\in\N\ \ul{n\st\b}x_{n}=M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество всех предельных точек множества 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+ называется производной множества 
+\begin_inset Formula $D$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $D\pr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D$
+\end_inset
+
+ - замкнуто, если оно содержит все свои предельные точки.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $\overline{D}=D\cup D\pr$
+\end_inset
+
+ называется замыканием множества 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem*
+Доказать, что 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ - замкнутое множество.
+\end_layout
+
+\begin_layout Subsection
+Понятие предельноего значеения функции многих переменных
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(Гейне)
+\end_layout
+
+\begin_layout Definition
+Число 
+\begin_inset Formula $b$
+\end_inset
+
+ называется пределом функции 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A\left(a_{1}\tr a_{m}\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $\forall\left\{ x_{n}\right\} \vkl D\left(f\right),\ x_{n}\nr A$
+\end_inset
+
+ из сходимости 
+\begin_inset Formula $x_{n}\overset{n\st\b}{\st}A$
+\end_inset
+
+ следует сходимость 
+\begin_inset Formula $f\left(x_{n}\right)\st b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(Коши)
+\end_layout
+
+\begin_layout Definition
+Чило 
+\begin_inset Formula $b$
+\end_inset
+
+ называется пределом функции 
+\begin_inset Formula $u=f\left(M\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A$
+\end_inset
+
+, если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall x\in D\left(f\right)\ 0<\rho\left(x,A\right)<\delta\sl\left|f\left(x\right)-b\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Обозначается: 
+\begin_inset Formula $\ul{M\st A}f\left(M\right)=b$
+\end_inset
+
+ или 
+\begin_inset Formula $\ul{\begin{array}{c}
+x_{1}\st a_{1}\\
+\tr\\
+x_{m}\st a_{m}
+\end{array}}f\left(x_{1},x_{2}\tr x_{m}\right)=b$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Theorem
+Преведущие два определения эквивалентны.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(Гейне)
+\end_layout
+
+\begin_layout Definition
+Число 
+\begin_inset Formula $b$
+\end_inset
+
+ называется пределом функции 
+\begin_inset Formula $u=f\left(M\right)$
+\end_inset
+
+ на бесконечности, если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\D=\D\left(\varepsilon\right)\ \forall M\in D\left(f\right)\ \rho\left(0,M\right)>\D\sl\left|f\left(M\right)-b\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=\df 1{x^{2}+y^{2}}\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|f\left(x,y\right)-0\right|=\df 1{x^{2}+y^{2}}<\mbox{}<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\rho\left(0,M\right)=\sqrt{x^{2}+y^{2}}>\D\longleftrightarrow\df 1{\sqrt{x^{2}+y^{2}}}<\df 1{\D}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\D=\df 1{\sqrt{\varepsilon}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+(Арифметические свойства пределов)
+\end_layout
+
+\begin_layout Lemma
+Если 
+\begin_inset Formula $\ul{M\st A}f\left(M\right)=b$
+\end_inset
+
+, 
+\begin_inset Formula $\ul{M\st A}g\left(M\right)=c$
+\end_inset
+
+, то
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ul{M\st A}\left(f\left(M\right)\pm g\left(M\right)\right)=b\pm c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{M\st A}\left(f\left(M\right)\um g\left(M\right)\right)=b\um c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{M\st A}\left(\df{f\left(M\right)}{g\left(M\right)}\right)=\df bc,\ c\nr0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+Функция 
+\begin_inset Formula $u=f\left(M\right)$
+\end_inset
+
+ называется бесконечно малой при 
+\begin_inset Formula $M\st A$
+\end_inset
+
+ , еслти 
+\begin_inset Formula $\ul{M\st A}f\left(M\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Lemma
+Если 
+\begin_inset Formula $\exists\ul{M\st A}f\left(M\right)=b$
+\end_inset
+
+Ю то имеет место представление 
+\begin_inset Formula $f\left(M\right)=b+\alpha\left(M\right),\ $
+\end_inset
+
+ где 
+\begin_inset Formula $\alpha\left(M\right)$
+\end_inset
+
+ - бесконечно малая функция более высого порядка при 
+\begin_inset Formula $M\st A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $u=f\left(M\right)$
+\end_inset
+
+ называется бесконечно большой при 
+\begin_inset Formula $M\st A$
+\end_inset
+
+ если 
+\begin_inset Formula $\ul{M\st A}f\left(M\right)=\b$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\forall E>0\ \exists\delta=\delta\left(E,A\right)\ \forall M\in D\left(f\right)\ 0<\rho\left(A,M\right)<\delta\sl\left|f\left(M\right)\right|>E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Сравнения порядков бесконечно малых и бесконекчно больших функций производится
+ аналогично одномерному случаю.
+\end_layout
+
+\begin_layout Subsection
+Критерий Коши существования конечногопредела функций многих переменных
+\end_layout
+
+\begin_layout Definition
+Фукнция 
+\begin_inset Formula $u=f\left(M\right)$
+\end_inset
+
+ удовлетворяет условию Коши в точке 
+\begin_inset Formula $A$
+\end_inset
+
+, если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall M',M''\in D\left(f\right)\ \left(0<\rho\left(A,M'\right)<\delta\right)\&\left(0<\rho\left(A,M''\right)<\delta\right)\sl\left|f\left(M'\right)-f\left(M''\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $u=f\left(M\right)$
+\end_inset
+
+ имеет конечный предел в точке 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ функция 
+\begin_inset Formula $f\left(M\right)$
+\end_inset
+
+ удовлетворяет условию Коши в точке 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\left(!\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(1)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{\begin{array}{c}
+x_{1}\st a_{1}\\
+\tr\\
+x_{m}\st a_{m}
+\end{array}}c\um x_{1}^{\alpha_{1}}\um x_{2}^{\alpha_{2}}\um\tr\um x_{m}^{\alpha_{m}}=\left\{ c,\alpha_{1}\tr\alpha_{m}\ -\ const\right\} =c\um a_{1}^{\alpha_{1}}\um\tr\um a_{m}^{\alpha_{m}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2)
+\end_layout
+
+\begin_layout Example
+Для дробно рациональных функций аргументов 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{\begin{array}{c}
+x_{1}\st a_{1}\\
+\tr\\
+x_{m}\st a_{m}
+\end{array}}Q\left(x_{1},x_{2}\tr x_{n}\right)=Q\left(a_{1}\tr a_{n}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(3)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=x^{y},\ x>0,\ y\in\R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $a>0,\ b\in\R$
+\end_inset
+
+ тогда 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st a\\
+y\st b
+\end{array}}x^{y}=\ul{\begin{array}{c}
+x\st a\\
+y\st b
+\end{array}}e^{y\um\ln x}=\left\{ \text{непрерывность}\ e^{t}\right\} =e^{\ul{\begin{array}{c}
+x\st a\\
+y\st b
+\end{array}}y\um\ln x}=$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $=\left\{ \begin{array}{c}
+\text{арифметические свойства пределов}\\
+\text{непрерывность}\ \ln t
+\end{array}\right\} =e^{b\um\ln b}=a^{b}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(4)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st0\\
+y\st0
+\end{array}}\df{x\um y}{x^{2}+y^{2}}=?$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Решать будим по Гейне.
+ Рассмотрим последовательлность:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{n}'\left(\df 1n;\df 1n\right)\st0\left(0,0\right)\sl f\left(M_{n}'\right)=f\left(\df 1n,\df 1n\right)=\df{\df 1{n^{2}}}{2\um\df 1{n^{2}}}=\df 12\overset{n\st\b}{\st}\df 12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M''\left(\df 1n,\df 2n\right)\st0\left(0,0\right)\sl f\left(M_{n}''\right)=f\left(\df 1n;\df 2n\right)=\df{\df 2{n^{2}}}{\df 1{n^{2}}+\df 4{n^{2}}}=\df 25\overset{n\st\b}{\st}\df 25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 12\nr\df 25\ \sl\ \overline{\exists}\ul{\begin{array}{c}
+x\st0\\
+y\st0
+\end{array}}\df{xy}{x^{2}+y^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

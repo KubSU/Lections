@@ -1,0 +1,390 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Экономика
+\end_layout
+
+\begin_layout Standard
+Преподаватель:
+\end_layout
+
+\begin_layout Standard
+Шевченко Екатерина Владиморовна
+\end_layout
+
+\begin_layout Standard
+Литература:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Основы экономики.
+ Учебное пособие для неэкономических специальностей.
+\begin_inset Quotes erd
+\end_inset
+
+ Сидоров
+\end_layout
+
+\begin_layout Enumerate
+Колисов Н Д Сидоров 
+\begin_inset Quotes eld
+\end_inset
+
+Экономическая теория
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Булатова 
+\begin_inset Quotes eld
+\end_inset
+
+Экономика
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Микроэкономика
+\end_layout
+
+\begin_layout Subsection
+Спрос и предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\text{Сторона предложения}\right]\ \rightarrow\ \left[\text{Товар}\right]\ \longrightarrow\ \left[\text{Сторона потребления}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Спрос: Потребление, Рост благосостояния.
+\end_layout
+
+\begin_layout Standard
+Предложения: Прибыль 
+\end_layout
+
+\begin_layout Standard
+Товар или услуга - обьект рыночного обмена.
+\end_layout
+
+\begin_layout Standard
+Обмен бывает в натуральной форме (Обмен товара на товар (Т - Т), называвется
+ бартер) или в денежной форме (Товар - Деньги - Товар)
+\end_layout
+
+\begin_layout Enumerate
+Потребность - Нужда, необходимость в чем то конкретно
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Потребности бывают(расположены в порядке убывания значимости):
+\end_layout
+
+\begin_layout Enumerate
+Физиологическая
+\end_layout
+
+\begin_layout Enumerate
+Безопасность
+\end_layout
+
+\begin_layout Enumerate
+Социальная
+\end_layout
+
+\begin_layout Enumerate
+Самореализация
+\end_layout
+
+\begin_layout Enumerate
+Признание
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Желание - Потребность, имеющая законченную форму, зависящую от личных качеств
+ человека
+\end_layout
+
+\begin_layout Enumerate
+Спрос(обозначается 
+\begin_inset Formula $D$
+\end_inset
+
+) - Готовность преобрести определенный товар или услугу
+\end_layout
+
+\begin_layout Enumerate
+Платежеспособный спрос - Спрос, подтвержденный денежными средствами
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+Закон кривой спроса(
+\begin_inset Formula $\dfrac{1}{x}$
+\end_inset
+
+): По мере снижения цены на товар, спрос на него растет.
+\end_layout
+
+\begin_layout Standard
+Неценовые факторы:
+\end_layout
+
+\begin_layout Enumerate
+Вкусы портебителя(Восприятие)
+\end_layout
+
+\begin_layout Enumerate
+Рост числа покупатилей
+\end_layout
+
+\begin_layout Enumerate
+Цены на сопутствующие товары или спрос на них
+\end_layout
+
+\begin_layout Enumerate
+Безопасность ( Гост, Технические условия, Брак, Срок годности)
+\end_layout
+
+\begin_layout Enumerate
+Коммуникации (Чем больше нам рекламируют товар, то тогда даже если мы не
+ хотим покупать этот товар, мы его покупаем)
+\end_layout
+
+\begin_layout Standard
+Суествует понятие элостичность спроса - это степень изменения спроса в зависимос
+ти от изменения цен.
+ Существует понятие еденичной элостичности - зубная паста, высокая и средняя.
+ 
+\begin_inset Formula $E=1$
+\end_inset
+
+ - равновесная элостичность, 
+\begin_inset Formula $E<1$
+\end_inset
+
+ - низкая элостичность, 
+\begin_inset Formula $E>1$
+\end_inset
+
+ - высокая элостичность
+\end_layout
+
+\begin_layout Standard
+Закон кривой предложения : Цена растет - Предложение растет
+\end_layout
+
+\begin_layout Standard
+Аксиомы маркетинга(рынка):
+\end_layout
+
+\begin_layout Enumerate
+Успех - вызывает подражание
+\end_layout
+
+\begin_layout Enumerate
+Подражание - выбор
+\end_layout
+
+\begin_layout Enumerate
+Выбор - конкуренция
+\end_layout
+
+\begin_layout Enumerate
+Конкуренция - совершенство
+\end_layout
+
+\begin_layout Standard
+Точка равновесия - Это обьеденение графиков функций закона предложения и
+ закона спроса - Одна точка.
+ Ниже по 
+\begin_inset Formula $Oy$
+\end_inset
+
+ - дифецит, выше - излишки.
+\end_layout
+
+\begin_layout Standard
+Цена также регулируется госсударством.
+ Завышенные ценны называются дискриминационными, заниженные - демпенговые.
+\end_layout
+
+\begin_layout Standard
+Цена:
+\end_layout
+
+\begin_layout Enumerate
+Себестоимость
+\end_layout
+
+\begin_layout Enumerate
+Зароботная плата
+\end_layout
+
+\begin_layout Enumerate
+Налоги
+\end_layout
+
+\begin_layout Enumerate
+Амортизация(Средства на ремонт или типо того)
+\end_layout
+
+\begin_layout Enumerate
+Прибыль
+\end_layout
+
+\begin_layout Standard
+В зависимости от спроса на товары и услуги меняестся жизненный их цикл.
+ Для успешного и длительного жизненного цикла важно грамотно формировать
+ ценовую политику, поддерживать качество продукции и вести постоянный учет
+ меняющихся факторов.
+ 
+\end_layout
+
+\begin_layout Standard
+Факторы микросреды:
+\end_layout
+
+\begin_layout Enumerate
+Внутренняя среда компании(Финансы, Персоонал, Техника и Технологии, Маркетинг)
+\end_layout
+
+\begin_layout Enumerate
+Конкуренты
+\end_layout
+
+\begin_layout Enumerate
+Поставщики
+\end_layout
+
+\begin_layout Enumerate
+Посредники - Связующее звено между потребителем и производителем, иногда
+ они тне нужны.
+\end_layout
+
+\begin_layout Enumerate
+Контактные аулдитории - Фирмы, котогрые напрямую не задействуют производству,
+ но способствуют ему.
+\end_layout
+
+\begin_layout Standard
+Любое предприятие воздействует на факторы микросреды исходя из собственных
+ ресурсов и стратегии.
+ 
+\end_layout
+
+\begin_layout Standard
+Существует правило Поретто или правило 20
+\backslash
+80 - 20% постоянных клиентов приносят 80% прибыли.
+\end_layout
+
+\begin_layout Standard
+В условиях рыночной экономики любая фирма должна стремиться заваевать конкурентн
+ое преимущество и постоянно формировать новые идеи на период падения спроса.
+\end_layout
+
+\begin_layout Section
+Макроэкономика
+\end_layout
+
+\end_body
+\end_document
