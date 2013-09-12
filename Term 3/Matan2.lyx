@@ -4969,6 +4969,10 @@ x_{m}\st a_{m}
  
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Example
 
 \emph on
@@ -4992,6 +4996,10 @@ x_{m}\st a_{m}
 \end_inset
 
  
+\end_layout
+
+\begin_layout --Separator--
+
 \end_layout
 
 \begin_layout Example
@@ -5041,6 +5049,10 @@ y\st b
  
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Example
 
 \emph on
@@ -5083,7 +5095,742 @@ y\st0
 \end{array}}\df{xy}{x^{2}+y^{2}}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(5)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st0\\
+y\st0
+\end{array}}\df{x^{2}y}{x^{2}+y^{2}}=\left\{ \df{xy}{x^{2}+y^{2}}\mr\df 12\right\} =0$
+\end_inset
+
+ так как 
+\begin_inset Formula $\left|\df{x^{2}y}{x^{2}+y^{2}}\right|\mr\df 12\um\left|x\right|\overset{x\st0}{\st}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Повторные пределы
+\end_layout
+
+\begin_layout Definition
+Рассмотрим функцию 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+, определенную в окрестности точки 
+\begin_inset Formula $A\left(x_{0},y_{0}\right)$
+\end_inset
+
+(выколотой).
+ Прямоугольная окрестность:
+\begin_inset Formula $\left|x-x_{0}\right|<\delta,\ \left|y-y_{0}\right|<\delta$
+\end_inset
+
 .
+ Если 
+\begin_inset Formula $\forall y\ :\ 0<\left|y-y_{0}\right|<\delta$
+\end_inset
+
+ существует предел 
+\begin_inset Formula $\ul{x\st x_{0}}f\left(x,y\right)=\varphi\left(y\right)$
+\end_inset
+
+ и существует предел 
+\begin_inset Formula $\ul{y\st y_{0}}\varphi\left(y\right)=b$
+\end_inset
+
+, то выражение 
+\begin_inset Formula $\ul{y\st y_{0}}\left(\ul{x\st x_{0}}f\left(x,y\right)\right)=b$
+\end_inset
+
+ называется повторным пределом функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+ (по 
+\begin_inset Formula $y$
+\end_inset
+
+ - внешгий предел, по 
+\begin_inset Formula $x$
+\end_inset
+
+ - внутренний).
+ Аналогично определеяется другой предел: 
+\begin_inset Formula $\ul{x\st x_{0}}\ul{y\st y_{0}}f\left(x,y\right)=\ul{x\st x_{0}}\left(\ul{y\st y_{0}}f\left(x,y\right)\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\ul{y\st y_{0}}f\left(x,y\right)=\varphi\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(1) 
+\begin_inset Formula $f\left(x,y\right)=\df{x-y+x^{2}+y^{2}}{x+y}$
+\end_inset
+
+ 
+\begin_inset Formula $A\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\varphi\left(y\right)=\ul{x\st0}\df{x-y+x^{2}+y^{2}}{x+y}=\df{-y+y^{2}}y=y-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{y\st0}\varphi\left(y\right)=-1=\ul{x\st0}\ul{y\st0}f\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\psi\left(x\right)=\ul{y\st0}\df{x-y+x^{2}+y^{2}}{x+y}=x+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\psi\left(x\right)=1=\ul{y\st0}\ul{x\st0}f\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2) 
+\begin_inset Formula $f\left(x,y\right)=\df{x\um\sin\df 1x+y}{x+y}$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{y\st0}\ul{x\st0}f\left(x,y\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ul{y\st0}f\left(x,y\right)=\ul{x\st0}\sin\df 1x$
+\end_inset
+
+ - не существует.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(3) 
+\begin_inset Formula $f\left(x,y\right)=x\um\sin\df 1y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{y\st0}\ul{x\st0}f\left(x,y\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ul{y\st0}f\left(x,y\right)$
+\end_inset
+
+ - не существует.
+\end_layout
+
+\begin_layout Remark
+Предел функции в точке 
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st x_{0}\\
+y\st y_{0}
+\end{array}}f\left(x,y\right)$
+\end_inset
+
+ будем называть двойным пределом.
+\end_layout
+
+\begin_layout Theorem
+Если 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Существует конечный или бесконечный предел 
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st a\\
+y\st b
+\end{array}}f\left(x,y\right)=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall y\in Y\ \exists$
+\end_inset
+
+ конечный предел 
+\begin_inset Formula $\varphi\left(y\right)=\ul{x\st a}f\left(x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+то существует повторный предел 
+\begin_inset Formula $\ul{y\st b}\ul{x\st a}f\left(x,y\right)$
+\end_inset
+
+, равный двойному.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим случай когда 
+\begin_inset Formula $a,b,A$
+\end_inset
+
+ - конечные числа..
+\end_layout
+
+\begin_layout Proof
+Из определения предела 
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st a\\
+y\st b
+\end{array}}f\left(x,y\right)=A$
+\end_inset
+
+ 
+\begin_inset Formula $:$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,\left(a,b\right)\right)>0\ \forall\left(x,y\right)\in D\left(f\right)\ \left(\left|x-a\right|<\delta\right)\&\left(\left|y-b\right|<\delta\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\left(x,y\right)-A\right|<\df{\varepsilon}2$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Зафиксируем 
+\begin_inset Formula $\forall y\ \left|y-b\right|<\delta$
+\end_inset
+
+ и перейдем в неравенстве 
+\begin_inset Formula $\left|f\left(x,y\right)-A\right|<\df{\varepsilon}2$
+\end_inset
+
+ к пределу при 
+\begin_inset Formula $x\st a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\varphi\left(y\right)-A\right|\mr\df{\varepsilon}2<\varepsilon$
+\end_inset
+
+ тоесть предел 
+\begin_inset Formula $\ul{y\st b}\varphi\left(y\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(4) 
+\begin_inset Formula $\ul{\begin{array}{c}
+x\st0\\
+y\st0
+\end{array}}\df{xy}{x^{2}+y^{2}}$
+\end_inset
+
+ - несуществует.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ul{y\st0}\df{xy}{x^{2}+y^{2}}=\ul{y\st0}\ul{x\st0}\df{xy}{x^{2}+y^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Непрерывные функции многих переменных
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(1) Функция 
+\begin_inset Formula $u=f\left(x_{1},x_{2}\tr x_{n}\right)$
+\end_inset
+
+, определенная на множестве 
+\begin_inset Formula $D\subset E^{n}$
+\end_inset
+
+, называется непрерывной в точке 
+\begin_inset Formula $A\left(a_{1},a_{2}\tr a_{n}\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $\ul{\begin{array}{c}
+x_{1}\st a_{1}\\
+\tr\\
+x_{n}\st a_{n}
+\end{array}}f\left(x_{1}\tr x_{n}\right)=f\left(a_{1}\tr a_{n}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(2) Функция 
+\begin_inset Formula $u=f\left(\vec{x}\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $A\left(a_{1}\tr a_{n}\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec{x}=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \rho\left(\vec{x},A\right)<\delta\ \sl\ \left|f\left(\vec{x}\right)-f\left(A\right)\right|<\varepsilon$
+\end_inset
+
+ или 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec{x}=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \left(\left|x_{1}-a_{1}\right|<\delta\right)\&\tr\&\left(\left|x_{n}-a_{n}\right|<\delta\right)\ \sl\ \left|f\left(\vec{x}\right)-f\left(A\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(3) (По Гейне)
+\end_layout
+
+\begin_layout Definition
+Самому..
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Обозначения: 
+\begin_inset Formula $x_{1}-a_{1}=\D x_{1},\tr x_{n}-a_{n}=\D x_{n}$
+\end_inset
+
+ - приращения координат точки 
+\begin_inset Formula $A$
+\end_inset
+
+ при переходе к точке 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Разность 
+\begin_inset Formula $\D U=\D f\left(A\right)=f\left(a_{1}+\D x_{1},\tr a_{n}+\D x_{n}\right)$
+\end_inset
+
+ называется полным приращением 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A\left(a_{1}\tr a_{n}\right)$
+\end_inset
+
+ отвечающим приращениям 
+\begin_inset Formula $\D x_{1}\tr\D x_{n}$
+\end_inset
+
+ аргументов 
+\begin_inset Formula $a_{1}\tr a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(4) 
+\begin_inset Formula $\ul{\begin{array}{c}
+\D x_{1}\st0\\
+\tr\\
+\D x_{n}\st0
+\end{array}}\D f\left(A\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Точки, в которых функция 
+\begin_inset Formula $u=f\left(\vec{x}\right),\ \vec{x}=\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ не является непрерывной называются точками разрыва.
+\end_layout
+
+\begin_layout Subsection
+Основные свойства непрерывных функций
+\end_layout
+
+\begin_layout Theorem
+(1) Если функции 
+\begin_inset Formula $f\left(\vec{M}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(\vec{M}\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $A\left(a_{1}\tr a_{n}\right)$
+\end_inset
+
+, то функции 
+\begin_inset Formula $f\left(\vec{M}\right)\pm g\left(\vec{M}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(\vec{M}\right)\um g\left(\vec{M}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\df{f\left(\vec{M}\right)}{g\left(\vec{M}\right)},\ \left(f\left(\vec{A}\right)\nr0\right)$
+\end_inset
+
+- непрерывны.
+\end_layout
+
+\begin_layout Proof
+Сами с помощью арифметических свойств пределов.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=\begin{cases}
+\df{x^{2}y}{x^{4}+y^{2}} & ,\left(x,y\right)\nr\left(0,0\right)\\
+0 & ,\left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Возможная точка разрыва - точка 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+- исследуем.
+\end_layout
+
+\begin_layout Example
+Рассмотрим семейство прямых 
+\begin_inset Formula $y=kx,\ x\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M\left(x,y\right)=M\left(x,kx\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(M\right)=\df{kx^{3}}{x^{4}+k^{2}x^{2}}=\df{kx}{x^{2}+k^{2}}\ov{\st}{x\st0}0=f\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим параболу 
+\begin_inset Formula $y=x^{2},\ x\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $N\left(x,y^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(N\right)=\df{x^{4}}{2x^{4}}\ov{\st}{x\st0}\df 12\nr f\left(0,0\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Таким образом 
+\begin_inset Formula $O\left(0,0\right)$
+\end_inset
+
+ - точка разрыва.
+\end_layout
+
+\begin_layout Standard
+Пусть аргументы 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(\vec{M}\right)$
+\end_inset
+
+ определяются системой: 
+\begin_inset Formula $\begin{cases}
+x_{1}=\varphi_{1}\left(t_{1}\tr t_{k}\right)\\
+\tr\\
+x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
+\end{cases}$
+\end_inset
+
+, тоесть каждой точке 
+\begin_inset Formula $\vec{T}\left(t_{1}\tr t_{k}\right)\in E^{k}$
+\end_inset
+
+ ставится в соответствие точка 
+\begin_inset Formula $\vec{M}\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ из пространства 
+\begin_inset Formula $E^{n}$
+\end_inset
+
+и при подстановке в функцию 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ получим слкдующую функцию: 
+\begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1}\tr t_{k}\right),\tr\varphi_{n}\left(t_{1}\tr t_{k}\right)\right)=g\left(t_{1}\tr t_{k}\right)$
+\end_inset
+
+ - сложная функция аргументов 
+\begin_inset Formula $t_{1}\tr t_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(2) (О непрерывности сложной функции)
+\end_layout
+
+\begin_layout Theorem
+Если функции 
+\begin_inset Formula $x_{i}=\varphi_{i}\left(t_{1}\tr t_{k}\right),\ i=\overline{1,n}$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $\vec{A}\left(a_{1}\tr a_{k}\right)\in E^{k}$
+\end_inset
+
+, а функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+непрерывна в точке 
+\begin_inset Formula $\vec{B}\left(b_{1}\tr b_{n}\right),$
+\end_inset
+
+ где 
+\begin_inset Formula $b_{i}=\varphi_{i}\left(\vec{A}\right)$
+\end_inset
+
+, то сложная функция 
+\begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1}\tr t_{k}\right),\tr\varphi_{n}\left(t_{1}\tr t_{k}\right)\right)$
+\end_inset
+
+ по переменным 
+\begin_inset Formula $t_{1}\tr t_{k}$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=\sin\left(x^{2}-y^{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=t_{1}+t_{2}-t_{3}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y=t_{1}\um t_{2}\um t_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=\sin\left(\left(t_{1}+t_{2}-t_{3}^{2}\right)^{2}-\left(t_{1}\um t_{2}\um t_{3}\right)^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Сами...
+\end_layout
+
+\begin_layout Theorem
+(3) (О устойчивости знака)
+\end_layout
+
+\begin_layout Theorem
+Пусть функция 
+\begin_inset Formula $u=f\left(\vec{M}\right)$
+\end_inset
+
+ непрерывна в области 
+\begin_inset Formula $D\subset E^{n}$
+\end_inset
+
+.
+ Если точка 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ - внутреняя точка области 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(\vec{A}\right)\nr0$
+\end_inset
+
+, то в некоторой окрестности точки 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ функция 
+\begin_inset Formula $f\left(\vec{M}\right)$
+\end_inset
+
+ сохраняет знак.
+\end_layout
+
+\begin_layout Proof
+Сами..
+\end_layout
+
+\begin_layout Theorem
+(4) (О прохождении непрерывной фкунции через промежуточное значение)
 \end_layout
 
 \begin_layout Standard
