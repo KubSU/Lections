@@ -954,7 +954,22 @@ reference "eq:1"
 
 \end_inset
 
- где 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y\left(x_{0}\right)=y_{0}\label{eq:8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
 \begin_inset Formula $a\left(x\right)$
 \end_inset
 
@@ -972,7 +987,998 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Theorem
-?
+Пусть функции 
+\begin_inset Formula $a\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b\left(x\right)$
+\end_inset
+
+ определены и непрерывны на интерваде 
+\begin_inset Formula $x\in\left(\alpha,\beta\right)$
+\end_inset
+
+ тогда для любого 
+\begin_inset Formula $x_{0}\in\left(\alpha,\beta\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $-\b<y_{0},+\b$
+\end_inset
+
+ существует единственное решение задачи Коши 
+\begin_inset Formula $y\left(x_{0}\right)=y_{0}$
+\end_inset
+
+, определенного на всем интервале 
+\begin_inset Formula $\left(\alpha,\beta\right)$
+\end_inset
+
+, (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+) --- задача Коши.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим ленейное однородное уравнение: 
+\begin_inset Formula 
+\begin{equation}
+\df{dx}{dy}=a\left(x\right)\label{eq:9}
+\end{equation}
+
+\end_inset
+
+.
+ И получим решение задачи кКоши для этого уравнения.
+ 
+\begin_inset Formula $y\left(x\right)\equiv0$
+\end_inset
+
+ - решение.
+ Найдем другие решения.
+ Пусть в некоторой точке решение не равно нюлю, тогда в силу непрерывности
+ оно отлично от нбля и в некоторой ее окрестности.
+ 
+\end_layout
+
+\begin_layout Proof
+Разделим на y : 
+\begin_inset Formula $\df 1y\um\df{dy}{dx}=a\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui{x_{0}}x\df 1y\um\df{dy}{dx}dx=\oui{x_{0}}xa\left(\xi\right)d\xi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ln\left|y\right||_{x_{0}}^{x}=\oui{x_{0}}xa\left(\xi\right)d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ln\left|y\left(x\right)\right|=\ln\left|y\right|+\oui{x_{0}}xa\left(\xi\right)d\xi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Тогда так как
+\begin_inset Formula $u=\ln e^{u}$
+\end_inset
+
+ получаем..
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=y_{0}\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:10}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:10"
+
+\end_inset
+
+) является решением задачи Коши (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:9"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Единственость решения задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:9"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+) вытекает из способа получения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:10"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:11}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:11"
+
+\end_inset
+
+) - Общее решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:9"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $c=u\left(x_{0}\right)$
+\end_inset
+
+ уравнение выглядит так: 
+\begin_inset Formula $y\left(x\right)=u\left(x_{0}\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Перейдем к неоднородному уравнению 7.
+ Для нахождения решения неоднородного уравнения примениим метод вариации
+ произвольной постоянной, тоесть решения будим искать в виде: 
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:12}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ - новая неизвестная функции.
+\end_layout
+
+\begin_layout Proof
+Подсттавим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:12"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+).
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+z\pr\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\um a\left(x\right) & = & a\left(x\right)\um z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+b\left(x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда чтобы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:12"
+
+\end_inset
+
+) было решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+) неодходимо и достаточно чтобы 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ было решением уравнения 
+\begin_inset Formula $\df{dz}{dx}=b\left(x\right)\um\exp\left(-\oui{x_{0}}xa\left(\xi\right)d\xi\right)$
+\end_inset
+
+.
+ Заметим что для того, чтобы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:12"
+
+\end_inset
+
+) удовлетворяла условиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+) необходимо чтобы 
+\begin_inset Formula $z\left(x_{0}\right)=y_{0}$
+\end_inset
+
+.
+ Проинтегруем в проделах от 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ до 
+\begin_inset Formula $x$
+\end_inset
+
+ и воспользуемся условием 
+\begin_inset Formula $z\left(x_{0}\right)=y_{0}$
+\end_inset
+
+, получим 
+\begin_inset Formula $z\left(x\right)=y_{0}+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta$
+\end_inset
+
+.
+ Подставим 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:12"
+
+\end_inset
+
+), получим что решения задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+) имеет вид: 
+\begin_inset Formula 
+\begin{eqnarray}
+y\left(x\right) & = & y_{0}\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta\label{eq:13}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+То что это решение проверяется непосредственно подстановкой.
+\end_layout
+
+\begin_layout Proof
+Покажем что решения задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+) единственное.
+ предположим противное.
+ Существует 2 решения 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+\df{dy_{1}}{dx}=a\left(x\right)y_{1}+b\left(x\right)\\
+y_{1}\left(x_{0}\right)=y_{0}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+\df{dy_{2}}{dx}=a\left(x\right)y_{2}+b\left(x\right)\\
+y_{2}\left(x_{0}\right)=y_{0}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $u\left(x\right)=y_{1}-y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда вычтем из верхнего нижнее.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{du}{dx}=a\left(x\right)u\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Вычтем подругому, и получим..
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+\df{du}{dx}=a\left(x\right)u\left(x\right)\\
+u\left(x_{0}\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Получим что 
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ является решением задачи Коши для однородного уравнения с 0-ым начальным
+ условием.
+\end_layout
+
+\begin_layout Proof
+Этой задачи Коши ест решение 
+\begin_inset Formula $u\left(x\right)\equiv0$
+\end_inset
+
+.
+ Но так по доказанному выше задача Коши для однородных уравнений имеет единствен
+ное решение, то кроме 
+\begin_inset Formula $u\left(x\right)\equiv0$
+\end_inset
+
+, других решений нету
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $y_{1}\nr y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что общее решения уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+) имеет вод такой вод вид:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta\label{eq:14}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Общее решение неоднородного уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+) есть сумма общего решения однородного(йе слогаемое в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:14"
+
+\end_inset
+
+)) и частного решения неоднородного(2е слогаемое в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:14"
+
+\end_inset
+
+)).
+\end_layout
+
+\begin_layout Subsection
+Уравнение в полных дифференциалах
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение вида: 
+\begin_inset Formula 
+\begin{equation}
+M\left(x,y\right)N\left(x,y\right)dy=0\label{eq:t1}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Если левая часть уравннения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) есть полный дифференциал некоторой функции 2х переменных 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+, то уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) называется уравнением уравнением полных дифференциалов.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $M\left(x,y\right),\ N\left(x,y\right),\ \df{\delta M}{\delta y},\ \df{\delta N}{\delta x}$
+\end_inset
+
+ непрерывны, то изж курса математического анализа известно что для того
+ чтобы левая часть (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) была полным дифференциалом некоторой функции необходимо и достаточно выполнени
+е условия: 
+\begin_inset Formula 
+\begin{equation}
+\df{\delta M}{\delta y}\equiv\df{\delta N}{\delta x}\label{eq:t2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Может быть что уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) не является уравнением в полных дифференциалах, но после умножения на
+ некоторую функцию оно становится уравнением в полных дифференциалах.
+\end_layout
+
+\begin_layout Standard
+Рассмотри следующий примерчик:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $xdy-ydx=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M=-y,\ N=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{\delta M}{\delta y}=-1,\ \df{\delta N}{\delta x}=1$
+\end_inset
+
+ - значит оно не является уравнением в полных дифференциалах
+\end_layout
+
+\begin_layout Example
+Но умножим его на 
+\begin_inset Formula $\df 1{x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 1xdy-\df y{x^{2}}dx=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $-\df 1{x^{2}}=-\df 1{x^{2}}$
+\end_inset
+
+ - А тут все нормально.
+\end_layout
+
+\begin_layout Definition
+Множитоель, после умножения на который уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) становится уравнением в полных дифференциалах называется интегрирующим
+ множителем.
+\end_layout
+
+\begin_layout Standard
+Известно что для любого уравненения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) если 
+\begin_inset Formula $M$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ - гладкие, существует интегрирующий множитель, но нет способа, позваляющего
+ находить его всегда, но в часных случаях, в часностиЮ когда интегрирующий
+ множитель зависит только от одной переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ или 
+\begin_inset Formula $y$
+\end_inset
+
+ его можно находить.
+ Щас мы покажем это, и приведем условия, позволяющие определять интегрирующий
+ множитель.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu\left(x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\delta}{\delta y}\left(M\left(x,y\right)\mu\left(x,y\right)\right)=\df{\delta}{\delta x}\left(N\left(x,y\right)\mu\left(x,y\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\delta M}{\delta y}\mu+M\df{\delta\mu}{\delta y}=\df{\delta N}{\delta x}\um\mu+N\df{\delta\mu}{\delta x}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Разделим на 
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{M\df{\delta\mu}{dy}-N\df{\delta\mu}{\delta x}}{\mu}=\df{\delta N}{\delta x}-\df{\delta M}{\delta y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если интегрирующий множитель не зависит от 
+\begin_inset Formula $x$
+\end_inset
+
+, а зависит только от 
+\begin_inset Formula $y$
+\end_inset
+
+, то..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\delta\mu}{\delta x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df 1{\mu}\um\df{\delta M}{\delta y}=\df{\df{\delta N}{\delta x}-\df{\delta M}{\delta y}}M\label{eq:t3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если наоборот то..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\delta M}{\delta y}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df 1{\mu}\um\df{\delta M}{\delta x}=\df{\df{\delta M}{\delta y}-\df{\delta N}{\delta x}}N\label{eq:t4}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Отсюда вытекают следующие условия: 
+\end_layout
+
+\begin_layout Standard
+Если правая чсть (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t3"
+
+\end_inset
+
+) зависит только от 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ то у уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t1"
+
+\end_inset
+
+) существует интегрирующий множитель, зависящий только от 
+\begin_inset Formula $y$
+\end_inset
+
+ и его легко найти.
+ Если правая часть (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t4"
+
+\end_inset
+
+) зависит только от 
+\begin_inset Formula $x$
+\end_inset
+
+, то существует интегрирующий множитель, зависящий от 
+\begin_inset Formula $x$
+\end_inset
+
+ и его также легко найти.
+\end_layout
+
+\begin_layout Subsection
+Лемма Гронуолла-Белмона
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $u\left(t\right),\ \alpha\left(t\right),\ c\br0$
+\end_inset
+
+ и функциии 
+\begin_inset Formula $u\left(t\right),\ \alpha\left(t\right)$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $t\in\left[a,b\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $u\left(t\right)$
+\end_inset
+
+ удовлетворяет неравенству 
+\begin_inset Formula $u\left(t\right)\mr c+\left|\oui{t_{0}}t\alpha\left(\zeta\right)u\left(\zeta\right)d\zeta\right|$
+\end_inset
+
+, тогда 
+\begin_inset Formula $u\left(t\right)\mr c\um\exp\left(\left|\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $t>t_{0}$
+\end_inset
+
+, тогда можно снять модули.
+ Введем функцию 
+\begin_inset Formula $v\left(t\right)=\varepsilon+c+\oui{t_{0}}t\alpha\left(\zeta\right)u\left(\zeta\right)d\zeta,\ \varepsilon>0$
+\end_inset
+
+.
+ Очевижно что 
+\begin_inset Formula $v>0,\ v\left(t\right)>u\left(t\right)$
+\end_inset
+
+.
+ Продеференцируем равенство, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $v\pr\left(t\right)=\alpha\left(t\right)u\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $v\left(t\right)>u\left(t\right)$
+\end_inset
+
+, ото можем написать..
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $v\pr\left(t\right)\mr\alpha\left(t\right)v\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{v\pr}v\mr\alpha\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui{t_{0}}t\df{v\pr}vd\zeta\mr\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ln v|_{t_{0}}^{t}\mr\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $v\left(t\right)\mr v\left(t_{0}\right)\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $u\left(t\right)<v\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(t_{0}\right)=\varepsilon+c$
+\end_inset
+
+, то получаем 
+\begin_inset Formula $u\left(t\right)<\left(c+\varepsilon\right)\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Ето неравенство справедливо для любого 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Перейдем в этом реравенству при 
+\begin_inset Formula $\varepsilon\st0$
+\end_inset
+
+, получим..
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $u\left(t\right)\mr c\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $t<t_{0}$
+\end_inset
+
+ учител предлогает нам провести доказательство самостоятельно...
+\end_layout
+
+\begin_layout Subsection
+Теоремы существования
+\end_layout
+
+\begin_layout Standard
+Рассмотрим: 
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=f\left(x,y\right)\label{eq:th1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y\left(x_{0}\right)=y_{0}\label{eq:th2}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ - известная функция своих аргументов, 
+\begin_inset Formula $x$
+\end_inset
+
+ - независимая пернеменная, 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+- искомая функция.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
