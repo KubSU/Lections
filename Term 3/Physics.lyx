@@ -2251,6 +2251,338 @@ reference "eq:3"
 Динамика
 \end_layout
 
+\begin_layout Subsection
+Первый закон Ньютона.
+ Инерциальные системы отсчета
+\end_layout
+
+\begin_layout Standard
+Это такие системы, в который пространство однородно(все физические точки
+ эквивалентны), изобранно ...........................(все направдления в пространстве эквивалентны)
+ и время однородно(физическая эквивалентность всех моментов времени).
+ 
+\end_layout
+
+\begin_layout Standard
+Изолированная точка может оставаться в покое, либо ....................
+\end_layout
+
+\begin_layout Subsubsection
+Первый закон Ньютона
+\end_layout
+
+\begin_layout Standard
+Существуют такие системы отсчета, в которых всякое тело находится в состоянии
+ покоя или равномерного прямолинейного движения, пока воздействия со стороны
+ других тел не заставят его изменить это состояние.
+\end_layout
+
+\begin_layout Subsection
+Второй закон Ньютона.
+ Понятие о силе и массе
+\end_layout
+
+\begin_layout Definition
+Сила это мера взаимодействия тел (количественная мера взаимодействия тел).
+\end_layout
+
+\begin_layout Standard
+........................................
+\end_layout
+
+\begin_layout Standard
+3 принципа суперпозиции силы:
+\end_layout
+
+\begin_layout Enumerate
+Действие каждой из приложенных к материальной точке сил независит от того,
+ находится ли она в движении или покоиться, а также не зависит от числа
+ другихвоздействующих на нее сил.
+\end_layout
+
+\begin_layout Enumerate
+Силы, действующие на любую частицу складываются векторным способом
+\end_layout
+
+\begin_layout Enumerate
+Механическое состояние материальной точки не изменится, если приложить к
+ ней систему сил равную нулю
+\end_layout
+
+\begin_layout Definition
+Инертность тела --- податливость тела.
+ Количественной мерой инерции является масса.
+\end_layout
+
+\begin_layout Remark
+Масса является величиной адитивной, тоесть масса системы является суммой
+ масс ее составляющих.
+\end_layout
+
+\begin_layout Subsubsection
+Второй закон Ньютона
+\end_layout
+
+\begin_layout Standard
+Ускорение, которое преобретает тело прямопропорционально силе и обратнопропорцио
+нально массе.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{\omega}=k\um\df{\vec{F}}m\label{eq:1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Выполнятеся только в инерциальных системах.
+ 
+\end_layout
+
+\begin_layout Definition
+Система, построенная на длинне, времени и массе называется абсолютной.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+СИ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+СОС
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+длинаа
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+метры
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+сантиметры
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+время
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+секунды
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+секунды
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+масса
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+килограммы
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+граммы
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выберем еденици измерения силы так чтобы коофицент пропорциональности в
+ уравнении (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1-1"
+
+\end_inset
+
+) был равен 
+\begin_inset Formula $\vec{F}=m\um\vec{\omega}$
+\end_inset
+
+ [
+\begin_inset Formula $\df{\text{кг}\um\text{метр}}{\text{секунда}}$
+\end_inset
+
+]=Ньютон
+\end_layout
+
+\begin_layout Subsection
+Третий закон Ньютона
+\end_layout
+
+\begin_layout Standard
+Действие тел друг на друга носит характер взаимодействия.
+ Сила, с которой действуют друг на друга тела равны по величине , противоположны
+ по направлению.
+\end_layout
+
+\begin_layout Standard
+Взаимодействие передается мгновенно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{12}=F_{\left(r12\right)}$
+\end_inset
+
+ --- типо зависит от расстояния.
+\end_layout
+
+\begin_layout Subsection
+Принцип относительности Галилея
+\end_layout
+
+\begin_layout Standard
+Возьмем 2 инерциальные системы отсчета:
+\end_layout
+
+\begin_layout Standard
+........
+\end_layout
+
+\begin_layout Standard
+Одна двигается вокруг другой --------------- с некоторой 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ к вокруг к к двигаться поступательно, относительно к с 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{z}=\vec{R}+\vec{z'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{R}=\vec{R_{0}}+\vec{v_{0}}\um t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v_{m}}=\dot{\vec{r}}=\dot{\vec{R}}-\dot{\vec{r'}}=\vec{v_{0}}+\dot{\vec{r'}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{\omega_{m}}=\dot{\vec{v_{m}}}=\ddot{\vec{r'}}=\vec{\omega'}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Отличить 2 системы нереально...
+\end_layout
+
+\begin_layout Standard
+Все механические являния в различных инерциальных система отсчета потекают
+ одинацовым образом, следовательно такими механическими опытами невозможно
+ установить, находится данное система в покое или движется прямолинейно
+ и равномерно.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
