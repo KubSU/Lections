@@ -1,3 +1,4 @@
+#!/bin/sh
 find ../ -type f -name '*.lyx' |
 while read filename; do
 	echo "Generating tex: ${filename}";
