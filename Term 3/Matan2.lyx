@@ -298,8 +298,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\D}{\triangle}
-{\triangle}
+\newcommand{\D}{\Delta}
+{\Delta}
 \end_inset
 
 
@@ -5831,6 +5831,734 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 
 \begin_layout Theorem
 (4) (О прохождении непрерывной фкунции через промежуточное значение)
+\end_layout
+
+\begin_layout Theorem
+Если функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ непрерывна на связной области 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+, то для любых двух точек 
+\begin_inset Formula $A,B\in D$
+\end_inset
+
+ и любой непрерывной линией 
+\begin_inset Formula $l\vkl D$
+\end_inset
+
+, соеденяющей точки 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+,для любого значения 
+\begin_inset Formula $c$
+\end_inset
+
+ между 
+\begin_inset Formula $f\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(B\right)$
+\end_inset
+
+ существует точка 
+\begin_inset Formula $N\in l$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $f\left(N\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Итак пусть кривая 
+\begin_inset Formula $l$
+\end_inset
+
+ определяется так 
+\begin_inset Formula $\begin{cases}
+x_{1}=q_{1}\left(t\right)\\
+\tr\\
+x_{m}=q_{m}\left(t\right)
+\end{cases},\ t\in\left[\alpha,\beta\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\left(\varphi_{1}\left(\alpha\right),\tr,\varphi_{m}\left(\alpha\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $B\left(\varphi_{1}\left(\beta\right),\tr,\varphi_{m}\left(\beta\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда получим на 
+\begin_inset Formula $l$
+\end_inset
+
+ функцию
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $u=f\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)=g\left(t\right)$
+\end_inset
+
+ - функция одной переменной.
+ Переменной 
+\begin_inset Formula $t\in\left[\alpha,\beta\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $g\left(t\right)$
+\end_inset
+
+ - непрерывна на отрезке 
+\begin_inset Formula $\left[\alpha,\beta\right]$
+\end_inset
+
+ 
+\emph on
+(По теореме (2) (О непрерывности сложной функции))
+\emph default
+.
+\end_layout
+
+\begin_layout Proof
+По второй теореме Больцана-Коши 
+\begin_inset Formula $\forall c$
+\end_inset
+
+ между 
+\begin_inset Formula $g\left(\alpha\right)=f\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(\beta\right)=f\left(B\right)$
+\end_inset
+
+ существует 
+\begin_inset Formula $t\in\left[\alpha,\beta\right]$
+\end_inset
+
+ такое что 
+\begin_inset Formula $g\left(t\right)=f\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как точка 
+\begin_inset Formula $\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)\in l$
+\end_inset
+
+, то обозначим ее 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(5) (Певвая теорема Вейштрассе)
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ непрерывная на ограниченом замкнутом множестве 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+ ограничена на нем.
+\end_layout
+
+\begin_layout Proof
+От противного.
+ Пусть 
+\begin_inset Formula $f\left(\vec{X}\right)$
+\end_inset
+
+ - неограничена на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall n\in\N\ \exists M_{n}\in D\ \left|f\left(M_{n}\right)\right|>n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Рассмотрим последовательность 
+\begin_inset Formula $\left\{ M_{n}\right\} \vkl D$
+\end_inset
+
+.
+ По теореме Больцана-Вейштрассе можно извлечь сходящуюся под последовательность
+ 
+\begin_inset Formula $\left\{ M_{n_{k}}\right\} $
+\end_inset
+
+ обозначающаяся 
+\begin_inset Formula $\ul{k\st\b}M_{n_{k}}=M$
+\end_inset
+
+ - эта точка пренадлежит, так как 
+\begin_inset Formula $D$
+\end_inset
+
+ - замкнута.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(M\right)$
+\end_inset
+
+ существует и конечно.
+ 
+\end_layout
+
+\begin_layout Proof
+С другой стороны из 
+\begin_inset Formula $\forall n\in\N\ \exists M_{n}\in D\ \left|f\left(M_{n}\right)\right|>n$
+\end_inset
+
+ следует что 
+\begin_inset Formula $\ul{k\st\b}f\left(M_{n_{k}}\right)=\b$
+\end_inset
+
+.
+ 
+\emph on
+Непрерывность по Гейне.
+
+\emph default
+ 
+\begin_inset Formula $f\left(M_{n_{k}}\right)=f\left(M\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(6) (Вторая теорема Вейтрассе)
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ - непрерывная на ограниченом замкнутом множестве 
+\begin_inset Formula $D\vkl E^{n}$
+\end_inset
+
+, достигает на них своих точных граней.
+\end_layout
+
+\begin_layout Proof
+(Без доказательства) Сами..
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+, определенная на области 
+\begin_inset Formula $D\vkl E^{n}$
+\end_inset
+
+ называется равномерно непрерывной, если 
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)>0\ \forall x',x''\in D\ \rho\left(x',x''\right)<\delta\ \sl\ \left|f\left(x'\right)-f\left(x''\right)\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+(7) (Теорема Кантора)
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ непрерывна на ограниченом замкнутом множестве 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+ равномерно непрерывна на нем.
+\end_layout
+
+\begin_layout Proof
+Сами..
+\end_layout
+
+\begin_layout Section
+Часные производные, диференциалы функций многих переменых
+\end_layout
+
+\begin_layout Subsection
+Часные производные функций многих переменных
+\end_layout
+
+\begin_layout Standard
+Пусть фунция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ определена на области 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+.
+ Придадим аргументу 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ точки 
+\begin_inset Formula $M\left(x_{1},x_{2}\tr x_{i-1},x_{i},x_{i+1}\tr x_{m}\right)$
+\end_inset
+
+ приращение 
+\begin_inset Formula $\D x_{i}$
+\end_inset
+
+, получим часное преращение функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+ : 
+\begin_inset Formula $\D_{x_{i}}f\left(M\right)=f\left(x_{1},x_{2}\tr x_{i-1},x_{i}+\D x_{i},x_{i+1},\tr x_{m}\right)-f\left(x_{1},x_{2}\tr x_{i-1},x_{i},x_{i+1},\tr x_{m}\right),\ i=\overline{1,m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Если существует конечный предел разностному отношению 
+\begin_inset Formula $\df{\D_{x_{i}}f\left(M\right)}{\D x_{i}}$
+\end_inset
+
+ при 
+\begin_inset Formula $\D x_{i}\st0,\ i=\overline{1,m}$
+\end_inset
+
+, то его называют часной производной функции 
+\begin_inset Formula $f\left(\vec{X}\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+ по аргументу 
+\begin_inset Formula $x_{i},\ i=\overline{1,m}$
+\end_inset
+
+.
+ И обозначается 
+\begin_inset Formula $\df{\delta u}{\delta x_{i}};\ \df{\delta f\left(M\right)}{\delta x_{i}};\ u_{x_{i}}\pr\left(M\right)$
+\end_inset
+
+ На практике при вычислении чассной производной 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ по переменной 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ остальными переменные 
+\begin_inset Formula $x_{k},\ k\nr i$
+\end_inset
+
+ считаются константами.
+\end_layout
+
+\begin_layout Example
+Найти часные производные.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=\arctg\df xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr=\left\{ y=const\right\} =\df 1{1+\left(\df xy\right)^{2}}\um\left(\df xy\right)_{x}\pr=\df y{y^{2}+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{y}\pr=\left\{ x=const\right\} =\df 1{1+\left(\df xy\right)^{2}}\um\left(\df xy\right)_{x}\pr=-\df x{x^{2}-y^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=x\um\sin\left(y\um z\right)+\ln\left(x+y-z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr=\left\{ z,y=const\right\} =\sin\left(y\um x\right)+\df 1{x+y-z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{y}\pr=x\um\cos\left(y\um z\right)\um z+\df 1{x+y-z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{z}\pr=x\um\cos\left(y\um z\right)\um y-\df 1{x+y-z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+Из существования часных производных функций в точке не следует непрерывность
+ функции в этой точке.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+\df{x\um y}{x^{2}+y^{2}} & ,\left(x,y\right)\nr\vec{0}\\
+0 & ,\left(x,y\right)=\vec{0}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{x}\pr\left(0,0\right)=\ul{\D x\st0}\df{f\left(\D x,0\right)-f\left(0,0\right)}{\D x}=\ul{\D x\st0}\df 0{\D x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{y}\pr\left(0,0\right)=\ul{\D y\st0}\df{f\left(0,\D y\right)-f\left(0,0\right)}{\D y}=\tr=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Итак, 
+\begin_inset Formula $\exists f_{x}\pr$
+\end_inset
+
+ и 
+\begin_inset Formula $\exists f_{y}\pr$
+\end_inset
+
+, но в точке 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ разрывна.
+\end_layout
+
+\begin_layout Subsection
+Геметрический смысл часной производной
+\end_layout
+
+\begin_layout Standard
+Рассмотрим на примере функции дщрух переменных 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g\left(x\right)=f$
+\end_inset
+
+
+\begin_inset Formula $\left(x,y_{0}\right)$
+\end_inset
+
+ - функция одной переменной 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{x}\pr\left(x,y_{0}\right)=\ul{\D x\st0}\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}=\ul{\D x\st0}\df{g\left(x_{0}+\D x\right)-g\left(x_{0}\right)}{\D x}=g\pr\left(x_{0}\right)$
+\end_inset
+
+ - тангенс угла наклона касательной к графику 
+\begin_inset Formula $u=f\left(x,y_{0}\right)$
+\end_inset
+
+, получаещемуся в сечении поверхности 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ плоскостью 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Дифференцируемость функций многих переменных
+\end_layout
+
+\begin_layout Standard
+Рассмотрим функцию 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+, определенную на 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Приращение 
+\begin_inset Formula $\D x_{1}\tr\D x_{m}$
+\end_inset
+
+ аргументов 
+\begin_inset Formula $x_{1},\tr,x_{m}$
+\end_inset
+
+ точки 
+\begin_inset Formula $M$
+\end_inset
+
+ отвечает полное приращение функции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D u=\D f=f\left(x_{1}+\D x_{1},x_{2}+\D x_{2},\tr,x_{m}+\D x_{m}\right)-f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(1) 
+\emph default
+Функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ называется дифференцируемой в точке 
+\begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+, если полное приращение 
+\begin_inset Formula $\D u$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula 
+\begin{equation}
+\D u=A_{1}\D x_{1}+A_{2}\D x_{2}+\tr+A_{m}\D x_{m}+\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\label{eq:5}
+\end{equation}
+
+\end_inset
+
+, где 
+\begin_inset Formula $\alpha_{i}\left(\D x_{1},\tr,\D x_{m}\right)$
+\end_inset
+
+ - величина бесконечно малая при 
+\begin_inset Formula $\begin{array}{c}
+\D x_{1}\st0\\
+\tr\\
+\D x_{m}\st0
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\rho=\sqrt{\D x_{1}^{2}+\tr+\D x_{m}^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(2)
+\emph default
+ Функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+называется дифференцируемой в точке 
+\begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+если имеет место предстваление 
+\begin_inset Formula 
+\begin{equation}
+\D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Определения (1) и (2) эквивалентны.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\sl\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\right| & \mr\\
+ & \mr & \left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho=\\
+ & = & \left\{ \begin{array}{c}
+\df{\left|\D x_{i}\right|}{\rho}\mr1,\ i=\overline{1,m}\ -\ \text{ограниченая}\\
+\left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\st0
+\end{array}\right\} =\\
+ & = & \gamma\left(\rho\right)\um\rho
+\end{eqnarray*}
+
+\end_inset
+
+ Где 
+\begin_inset Formula $\gamma\left(\rho\right)\um\rho$
+\end_inset
+
+ бесконечно малая при 
+\begin_inset Formula $\rho\st0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\Longleftarrow\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df{o\left(\rho\right)}{\rho}\um\df{\D x_{1}^{2}+\tr+\D x_{m}^{2}}{\rho}=\\
+ & = & \left(\df{o\left(\rho\right)}{\rho}\um\df{\D x_{1}}{\rho}\right)\um\D x_{1}+\tr+\left(\df{o\left(\rho\right)}{\rho}\um\df{\D x_{m}}{\rho}\right)\um\D x_{m}=\\
+ & = & \left\{ \begin{array}{c}
+\df{o\left(\rho\right)}{\rho}\ -\ \text{бесконечно малая}\\
+\df{\D x_{1}}{\rho}\mr1\ -\ \text{ограниченая}
+\end{array}\right\} =\\
+ & = & \alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m},\ \text{где}\ \alpha_{i}\left(\D x_{1}\tr\D x_{m}\right)\st0\ \text{при}\ \begin{array}{c}
+\D x_{1}\st0\\
+\tr\\
+\D x_{m}\st0
+\end{array}
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
