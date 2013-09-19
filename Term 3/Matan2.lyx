@@ -6554,7 +6554,560 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Definition
+Сумма 
+\begin_inset Formula $A_{1}\D x_{1}+\tr+A_{n}\D x_{n}$
+\end_inset
+
+ называется главной линейной, относительно 
+\begin_inset Formula $\D x_{i}$
+\end_inset
+
+-ых
+\begin_inset Formula $\left(i=\overline{1,n}\right)$
+\end_inset
+
+ частью приращения функции 
+\begin_inset Formula $\D u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(1) 
+\end_layout
+
+\begin_layout Theorem
+Если функция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ дифференцируема в точке 
+\begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\exists f_{x_{i}}\left(M\right)=A_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим часное приращение 
+\begin_inset Formula $\D_{x_{i}}u\left(M\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D_{x_{i}}u\left(M\right)=\left\{ \begin{array}{c}
+\ref{eq:5}\\
+\D x_{i}\nr0\\
+\D x_{k}=0,\ k\nr i
+\end{array}\right\} =A_{i}\D x_{i}+\alpha_{i}\D x_{i},\ i=\overline{1,m}$
+\end_inset
+
  
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{\D x_{i}\st0}\df{\D_{x_{i}}u}{\D x_{i}}=\ul{\D x_{i}\st0}\left(A_{i}+\alpha_{i}\right)=A_{i}=\df{\delta f\left(M\right)}{\delta x_{i}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие:
+\end_layout
+
+\begin_layout Standard
+Условие дифференцируемости функции 
+\begin_inset Formula $u=f\left(x\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+ можно записать в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\D u=\ous{i=1}mf_{x_{i}}^{\left(M\right)}\D x_{i}+o\left(\rho\right)\label{eq:7}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Если функция 
+\begin_inset Formula $u=f\left(\vec{x}\right)$
+\end_inset
+
+ диференцируема в точке 
+\begin_inset Formula $M$
+\end_inset
+
+, то она непрерывная в точке 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Используя определение непрерывности в разносной форме, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{\begin{array}{c}
+\D x_{1}\st0\\
+\tr\\
+\D x_{m}\st0
+\end{array}}=\left\{ \ref{eq:7}\right\} =0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Геометрический смысл диференцируемости функции многих переменных
+\end_layout
+
+\begin_layout Standard
+Рассмотрим график функции 
+\begin_inset Formula $u=f\left(x,y\right),\ M_{0}\left(x_{0},y_{0}\right),\ M_{1}\left(x_{1},y_{1}\right),\ N_{0}\left(x_{0},y_{0},f\left(x_{0},y_{0}\right)\right),\ N_{1}\left(x_{1},y_{1},f\left(x_{1},y_{1}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Тут должен быть рисунок Тимура
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Плоскость 
+\begin_inset Formula $\Pi$
+\end_inset
+
+, проходящая через точку 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+ называется касательной к поверхности 
+\begin_inset Formula $S=\left\{ \left(x,y,z\right)|u=f\left(x,y\right)\right\} $
+\end_inset
+
+, если угол между этой плоскостью и произвольной секущей 
+\begin_inset Formula $N_{0}N_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(N_{1}\in S\right)$
+\end_inset
+
+ стремится к 0 при 
+\begin_inset Formula $N_{1}\st N_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем, что из дифференцируемости функции 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ следует существование касательной к плоскости 
+\begin_inset Formula $\Pi$
+\end_inset
+
+, проходящей через точку 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+В дальнейшем будем слитать что точка 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ имеет координаты 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+, а точка 
+\begin_inset Formula $N_{1}\left(x,y,f\left(x,y\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $\D x=x-x_{0},\ \D y=y-y_{0},\ \D u=f\left(x,y\right)-f\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Условие диффернцируемости в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ дает следующее:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D u=u-u_{0}=A\left(x-x_{0}\right)+B\left(y-y_{0}\right)+o\left(\rho\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Уравнение 
+\begin_inset Formula $u-u_{0}=A\left(x-x_{0}\right)+B\left(y-y_{0}\right)$
+\end_inset
+
+ - уравнение плоскости в пространстве 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+ с нормальным вектором 
+\begin_inset Formula $\vec{n}=\left(A,B,-1\right)\ \left(\bot\vec{a}\left(x-x_{0},y-y_{0},u-u_{0}\right)=\vec{NN_{0}}\right)$
+\end_inset
+
+.
+ Точка 
+\begin_inset Formula $N$
+\end_inset
+
+ - это пересечение 
+\begin_inset Formula $M_{1}N_{1}$
+\end_inset
+
+ с 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем что эта плоскость как раз и есть касательная к поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ в точке 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для этого достаточно доказать что угол 
+\begin_inset Formula $\varphi=\hat{\left(\vec{n},\vec{N_{0}N}\right)}$
+\end_inset
+
+ стремится к 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+ при 
+\begin_inset Formula $N_{1}\in S\st N_{0}$
+\end_inset
+
+, независимо от способа стремления 
+\begin_inset Formula $N_{1}\st N_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\cos\varphi\right| & = & \df{\left|\left(\vec{n},\vec{N_{0}N_{1}}\right)\right|}{\left|\vec{n}\right|\um\left|\vec{N_{0}N_{1}}\right|}=\\
+ & = & \df{\left|A\um\D x+B\um\D y-\D u\right|}{\sqrt{A^{2}+B^{2}+1}\um\sqrt{\D x^{2}+\D y^{2}+\D u^{2}}}\mr\\
+ & \mr & \left\{ \begin{array}{c}
+\sqrt{A^{2}+B^{2}+1}\ -\ \text{ограниченая и }\br1\\
+\sqrt{\D x^{2}+\D y^{2}+\D u^{2}}\br\rho\\
+\left|A\um\D x+B\um\D y-\D u\right|=o\left(\rho\right)
+\end{array}\right\} \mr\\
+ & \mr & \left|\df{o\left(\rho\right)}{\rho}\right|\overset{\rho\st0}{\st}0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Достаточное условие дифференцируемости функции в точке
+\end_layout
+
+\begin_layout Theorem
+Пусть функция 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ имет в окресности точки 
+\begin_inset Formula $M\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ часные производные 
+\begin_inset Formula $f_{x_{i}}\pr\left(x_{1},\tr,x_{m}\right),\ i=\overline{1,m}$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Тогда фунция 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ дифференцируема в точке 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Ограничимся функцией двух переменных 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем дифференцируемость функции 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Черчежик 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $P\left(x_{0}+\D x,y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Приращение 
+\begin_inset Formula 
+\begin{eqnarray*}
+\D u & = & f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=\\
+ & = & \left(f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)\right)+\left(f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)\right)=\\
+ & = & \left\{ \begin{array}{c}
+g\left(t\right)=f\left(x_{0}+\D x,t\right)\\
+f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)=\\
+=g\left(y_{0}+\D y\right)-g\left(y_{0}\right)=\\
+=\left\{ \text{по теореме Логранжа}\right\} =\\
+=g\pr\left(y_{0}+\Theta_{1}\um\D y\right)\um\D y,\ \Theta_{1}\in\left(0,1\right)=\\
+=f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y\\
+\text{Аналогично }\exists\Theta_{2}\in\left(0,1\right),\ \text{такая что}\\
+f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)=\\
+=f_{x}\pr\left(x_{0}+\Theta_{2}\D x_{1},y_{0}\right)\um\D x
+\end{array}\right\} =\\
+ & = & f_{x}\pr\left(x_{0}+\Theta_{2}\um\D x,y_{0}\right)\um\D x+f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y=\\
+ & = & \left\{ \begin{array}{c}
+\text{Так как \ensuremath{f_{x}\pr}и \ensuremath{f_{y}\pr}непрерывны в точке \ensuremath{M}, то}\\
+\text{по теореме о представлении непрерывной функции}\\
+f_{x}\pr\left(x_{0}+\Theta_{2}\um\D x,y_{0}\right)=f_{x}\pr\left(x_{0},y_{0}\right)+\alpha\\
+f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{y}\pr\left(x_{0},y_{0}\right)+\beta\\
+\text{где}\ \alpha,\beta\overset{\begin{array}{c}
+\D x\st0\\
+\D y\st0
+\end{array}}{\st}0
+\end{array}\right\} =\\
+ & = & \left(f_{x}\pr\left(x_{0},y_{0}\right)+\alpha\right)\um\D x+\left(f_{y}\pr\left(x_{0},y_{0}\right)+\beta\right)\um\D y=\\
+ & = & f_{x}\pr\left(M\right)\um\D x+f_{y}\pr\left(M\right)\um\D y+\alpha\um\D x+\beta\um\D y
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рекорд: Самы большой уравнение Васья!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В итоге мы получили представоление 1.
+\end_layout
+
+\begin_layout Subsection
+Производные сложных функций
+\end_layout
+
+\begin_layout Standard
+Рассмотрим функцию 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+, причем выполняется система уравнений:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+x_{1}=\varphi_{1}\left(t_{1},\tr,t_{k}\right)\\
+\tr\\
+x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
+\end{cases}\label{eq:8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тоесть функция 
+\begin_inset Formula $u=f\left(\vec{x}\right)$
+\end_inset
+
+ - сложная функция аргументов 
+\begin_inset Formula $t_{1},\tr,t_{m}$
+\end_inset
+
+.
+ Оказывается что прги некоторых условиях часные производные от функции 
+\begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,t_{k}\right)\right)$
+\end_inset
+
+ по переменным 
+\begin_inset Formula $t_{i},\ i=\overline{1,k}$
+\end_inset
+
+ вычисляются по формулам.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{\delta f}{\delta t_{1}}=\df{\delta f}{\delta x_{1}}\um\df{\delta x_{1}}{\delta t_{1}}+\df{\delta f}{\delta x_{2}}\um\df{\delta x_{2}}{\delta t_{1}}+\tr+\df{\delta f}{\delta x_{m}}\um\df{\delta x_{m}}{\delta t_{1}}\\
+\tr\\
+\df{\delta f}{\delta t_{k}}=\df{\delta f}{\delta x_{1}}\um\df{\delta x_{1}}{\delta t_{k}}+\df{\delta f}{\delta x_{2}}\um\df{\delta x_{2}}{\delta t_{k}}+\tr+\df{\delta f}{\delta x_{m}}\um\df{\delta x_{m}}{\delta t_{k}}
+\end{cases}\label{eq:9}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y,z\right)=x^{2}+y\um\sin z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=t^{3}\\
+y=2\um t\\
+z=t^{2}+1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{t}\pr=f\pr\left(t^{3},2\um t,t^{2}+1\right)=\df{df}{dt}=\df{\delta f}{\delta x}\um\df{dx}{dt}+\df{\delta f}{\delta y}\um\df{dy}{dt}+\df{\delta f}{\delta z}\um\df{dz}{dt}=2x\um3t^{2}+\sin z\um2+y\um\cos z\um2t$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
