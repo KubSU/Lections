@@ -1766,5 +1766,499 @@ A
 Структура программы
 \end_layout
 
+\begin_layout Standard
+Программа на языке ассемблера, это последовательность инструкций каждый
+ из которых записываеться в отдельной строке.
+ Инструкции языка ассмблера деляться на три группы:
+\end_layout
+
+\begin_layout Enumerate
+Коментарии
+\end_layout
+
+\begin_layout Enumerate
+Директивы
+\end_layout
+
+\begin_layout Enumerate
+Команды
+\end_layout
+
+\begin_layout Subsection
+Коментарии
+\end_layout
+
+\begin_layout Standard
+Как обычно не влияют на смысл программы и предназначены для описания особенносте
+й алгоритма.
+ Коментарией являеться любая строка, начинающиеся с символа 
+\begin_inset Quotes eld
+\end_inset
+
+;
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Все символы после ; являються коментариями.
+ Допускается многострочный коментарией: COMMENT <маркер><текст>.
+ В качества маркера выбираеться первый отличный от пробела символ следующий
+ за словом COMMENT.
+ Концом такого коментария будет строка с символом маркера, то есть.
+ СOMMENT *вы все гавно*.
+ Такой вид коментария обычно используеться, когда нужно временно(например
+ при отледаке) исключить из программы некоторый код.
+\end_layout
+
+\begin_layout Subsection
+Директивы
+\end_layout
+
+\begin_layout Standard
+Кроме машинных команд программе нужно указывать, какие константы и переменные
+ использутся, какие имена мы им дали.
+\end_layout
+
+\begin_layout Standard
+[<ИМЯ>]<Директивы>[<операнды>][;<коментарий>]
+\end_layout
+
+\begin_layout Standard
+X DB 10,-3,02FAh;массив из 3 эллементов
+\end_layout
+
+\begin_layout Standard
+Y DB 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+y
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Команды
+\end_layout
+
+\begin_layout Standard
+Это символьная мнемоническая форма записи машинных команд.
+ 
+\end_layout
+
+\begin_layout Standard
+[<Метка>:]<Команда>[<операнды>][;<коментарий>]
+\end_layout
+
+\begin_layout Standard
+L1: ADD AX,2 ; увеличить АХ на 2
+\end_layout
+
+\begin_layout Subsection
+Директивы определения данных 3 штуки
+\end_layout
+
+\begin_layout Standard
+Предназначены для описания переменных исползуеммых в программе.
+\end_layout
+
+\begin_layout Itemize
+DB-описание байты
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+define byte-определить байт
+\end_layout
+
+\begin_layout Standard
+[<имя>] DB <операнд>{,<операнд>}
+\end_layout
+
+\begin_layout Standard
+По этой дерективе ассемблер вычесляет операнды и записывает их значения
+ в последовательные байты памяти.
+ Первому из этих байтов даеться указанное имя, по которому можно ссылаться
+ на этот адрес из других мест программы, есть два основных способоа задания
+ операнда: ?(неопределенное значение) и констатное выражение со значением
+ (-128..255).
+\end_layout
+
+\begin_layout Itemize
+A DB ?-описывает одЫн байт расположенный по адресу А, в который ничего не
+ записывается.
+ В этом байте будет, то что осталось от предыдушей программы.
+ Адрес ячейки выделенной переменной с именем А принято называть значением
+ имени А(не путать с содержимым, которое хранится по этому адресу).
+ По описанию переменной ассамблер запоминает, сколько байтов занимает переменная
+ в памяти-это размер называеться типом имени переменной.
+ Значение(адрес) и тип(размер) имени переменной одназачно определяет ячейку
+ обазначаемую этим именем.
+ Оператор типа TYPE <имя>.
+ Значение этого оператора являеться размер в байтах ячейки выделенной под
+ переменную с указанным именем.
+ В ассемблере есть стандартная константа с красивым именем BYTE=1.
+ И тогда TYPE A имеет размер BYTE.
+ 
+\end_layout
+
+\begin_layout Itemize
+Константное выражение.
+ Позволяет поисывать перменные с начальными значениями.
+ При выполнении программы эти значения могут изменяться.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A DB 254 ; OFEh
+\end_layout
+
+\begin_layout Itemize
+B DB -2 ; OFEh(256-2=254)
+\end_layout
+
+\begin_layout Itemize
+C DB 15h; 21(10)
+\end_layout
+
+\begin_layout Standard
+Часто в качестве начально значения указываеться символ, задать его можно
+ двумя способами: 
+\end_layout
+
+\begin_layout Itemize
+D1 DB '*'
+\end_layout
+
+\begin_layout Itemize
+D1 DB 2Ah<-код символа
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Деректива с несколькими операндами.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+M DB 2
+\end_layout
+
+\begin_layout LyX-Code
+DB -2
+\end_layout
+
+\begin_layout LyX-Code
+DB ?
+\end_layout
+
+\begin_layout LyX-Code
+DB '*'
+\end_layout
+
+\begin_layout Standard
+Сдесь описан массив состоящий из 4 элементов.
+ Допускаеться упрощенная запись: M DB 2,-2,?,'*'.
+ По этому описанию.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Имя М задает адрес первого байта.
+ Для ссылок на остальные используется конструкция М+К.
+ Записи вида <имя>
+\begin_inset Formula $\pm\text{К}$
+\end_inset
+
+ это говорит о том что можно прибавить или отнять указанное количество байтов.
+\end_layout
+
+\begin_layout LyX-Code
+X DB 1,12,3
+\end_layout
+
+\begin_layout LyX-Code
+M DB 2,-2,?,'*'
+\end_layout
+
+\begin_layout LyX-Code
+Y DB 4,5,6
+\end_layout
+
+\begin_layout LyX-Code
+[M-2]=12
+\end_layout
+
+\begin_layout LyX-Code
+[Y-6]=12
+\end_layout
+
+\begin_layout LyX-Code
+[Y-7]=1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Операнд строка
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+S1 DB 'a','b','c'
+\end_layout
+
+\begin_layout LyX-Code
+S2 DB 'abc'
+\end_layout
+
+\begin_layout LyX-Code
+S3 DB 'a'
+\end_layout
+
+\begin_layout LyX-Code
+   DB 'b' 
+\end_layout
+
+\begin_layout LyX-Code
+   DB 'c'
+\end_layout
+
+\begin_layout LyX-Code
+S1 S2 S3 равны 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Конструктор повторения DUP
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+DW-описание слова
+\end_layout
+
+\begin_layout Itemize
+DD-двойное слово
+\end_layout
+
 \end_body
 \end_document
