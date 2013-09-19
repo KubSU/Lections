@@ -79,139 +79,139 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sl}{\Longrightarrow}
+\renewcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dsl}{\Longleftrightarrow}
+\renewcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tr}{\ldots}
+\renewcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\nr}{\neq}
+\renewcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\um}{\cdot}
+\renewcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pr}{\prime}
+\renewcommand{\pr}{\prime}
 {\prime}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tg}{\text{tg}}
+\renewcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tan}{\tg}
+\renewcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\arctg}{\text{arctg}}
+\renewcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\arcctg}{\text{arcctg}}
+\renewcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\N}{\mathbb{N}}
+\renewcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\R}{\mathbb{R}}
+\renewcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Q}{\text{Q}}
+\renewcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sh}{\text{sh}}
+\renewcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ch}{\text{ch}}
+\renewcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\th}{\text{th}}
+\renewcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\st}{\longrightarrow}
+\renewcommand{\st}{\longrightarrow}
 {\longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sinx}{\sin\left(x\right)}
+\renewcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\cosx}{\cos\left(x\right)}
+\renewcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\fx}{f\left(x\right)}
+\renewcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\un}[2]{\underset{#2}{#1}}
+\renewcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
@@ -220,98 +220,104 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ov}[2]{\overset{#2}{#1}}
+\renewcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
+\renewcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
 {\un{\ov{\Sigma}{#2}}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ul}[1]{\underset{#1}{\lim}}
+\renewcommand{\ul}[1]{\underset{#1}{\lim}}
 {\underset{#1}{\lim}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umax}[1]{\underset{#1}{\max}}
+\renewcommand{\umax}[1]{\underset{#1}{\max}}
 {\underset{#1}{\max}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umin}[1]{\underset{#1}{\min}}
+\renewcommand{\umin}[1]{\underset{#1}{\min}}
 {\underset{#1}{\min}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+\renewcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\newcommand{\ppr}{\pr\pr}
+\renewcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pppr}{\ppr\pr}
+\renewcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\br}{\geq}
+\renewcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\mr}{\leq}
+\renewcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oiu}[2]{\oui{#1}{#2}}
+\renewcommand{\oiu}[2]{\oui{#1}{#2}}
 {\oui{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\df}[2]{\dfrac{#1}{#2}}
+\renewcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tl}{\approx}
+\renewcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\D}{\Delta}
+\renewcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\b}{\infty}
+\renewcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vkl}{\subset}
+\renewcommand{\vkl}{\subset}
 {\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
 \end_inset
 
 
@@ -6853,7 +6859,7 @@ status open
 
 \begin_layout Proof
 Для этого достаточно доказать что угол 
-\begin_inset Formula $\varphi=\hat{\left(\vec{n},\vec{N_{0}N}\right)}$
+\begin_inset Formula $\varphi=\widehat{\left(\vec{n},\vec{N_{0}N}\right)}$
 \end_inset
 
  стремится к 
