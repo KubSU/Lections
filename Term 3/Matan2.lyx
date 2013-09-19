@@ -79,139 +79,139 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\sl}{\Longrightarrow}
+\newcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dsl}{\Longleftrightarrow}
+\newcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tr}{\ldots}
+\newcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\nr}{\neq}
+\newcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\um}{\cdot}
+\newcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pr}{\prime}
+\newcommand{\pr}{\prime}
 {\prime}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tg}{\text{tg}}
+\newcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tan}{\tg}
+\newcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arctg}{\text{arctg}}
+\newcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arcctg}{\text{arcctg}}
+\newcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\N}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Z}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Q}{\text{Q}}
+\newcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sh}{\text{sh}}
+\newcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ch}{\text{ch}}
+\newcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\th}{\text{th}}
+\newcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\st}{\longrightarrow}
+\newcommand{\st}{\longrightarrow}
 {\longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sinx}{\sin\left(x\right)}
+\newcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\cosx}{\cos\left(x\right)}
+\newcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\fx}{f\left(x\right)}
+\newcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\un}[2]{\underset{#2}{#1}}
+\newcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
@@ -220,103 +220,103 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
+\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
 {\un{\ov{\Sigma}{#2}}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\underset{#1}{\lim}}
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
 {\underset{#1}{\lim}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\underset{#1}{\max}}
+\newcommand{\umax}[1]{\underset{#1}{\max}}
 {\underset{#1}{\max}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\underset{#1}{\min}}
+\newcommand{\umin}[1]{\underset{#1}{\min}}
 {\underset{#1}{\min}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{\pr\pr}
+\newcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{\ppr\pr}
+\newcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\oui{#1}{#2}}
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
 {\oui{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
@@ -5466,7 +5466,7 @@ x_{n}\st a_{n}
 
 \emph on
 (2) Функция 
-\begin_inset Formula $u=f\left(\vec{x}\right)$
+\begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
  непрерывна в точке 
@@ -5474,11 +5474,11 @@ x_{n}\st a_{n}
 \end_inset
 
  если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec{x}=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \rho\left(\vec{x},A\right)<\delta\ \sl\ \left|f\left(\vec{x}\right)-f\left(A\right)\right|<\varepsilon$
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec x=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \rho\left(\vec x,A\right)<\delta\ \sl\ \left|f\left(\vec x\right)-f\left(A\right)\right|<\varepsilon$
 \end_inset
 
  или 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec{x}=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \left(\left|x_{1}-a_{1}\right|<\delta\right)\&\tr\&\left(\left|x_{n}-a_{n}\right|<\delta\right)\ \sl\ \left|f\left(\vec{x}\right)-f\left(A\right)\right|<\varepsilon$
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec x=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \left(\left|x_{1}-a_{1}\right|<\delta\right)\&\tr\&\left(\left|x_{n}-a_{n}\right|<\delta\right)\ \sl\ \left|f\left(\vec x\right)-f\left(A\right)\right|<\varepsilon$
 \end_inset
 
 
@@ -5566,7 +5566,7 @@ x_{n}\st a_{n}
 
 \begin_layout Definition
 Точки, в которых функция 
-\begin_inset Formula $u=f\left(\vec{x}\right),\ \vec{x}=\left(x_{1}\tr x_{n}\right)$
+\begin_inset Formula $u=f\left(\vec x\right),\ \vec x=\left(x_{1}\tr x_{n}\right)$
 \end_inset
 
  не является непрерывной называются точками разрыва.
@@ -5578,11 +5578,11 @@ x_{n}\st a_{n}
 
 \begin_layout Theorem
 (1) Если функции 
-\begin_inset Formula $f\left(\vec{M}\right)$
+\begin_inset Formula $f\left(\vec M\right)$
 \end_inset
 
  и 
-\begin_inset Formula $g\left(\vec{M}\right)$
+\begin_inset Formula $g\left(\vec M\right)$
 \end_inset
 
  непрерывны в точке 
@@ -5590,15 +5590,15 @@ x_{n}\st a_{n}
 \end_inset
 
 , то функции 
-\begin_inset Formula $f\left(\vec{M}\right)\pm g\left(\vec{M}\right)$
+\begin_inset Formula $f\left(\vec M\right)\pm g\left(\vec M\right)$
 \end_inset
 
 , 
-\begin_inset Formula $f\left(\vec{M}\right)\um g\left(\vec{M}\right)$
+\begin_inset Formula $f\left(\vec M\right)\um g\left(\vec M\right)$
 \end_inset
 
 , 
-\begin_inset Formula $\df{f\left(\vec{M}\right)}{g\left(\vec{M}\right)},\ \left(f\left(\vec{A}\right)\nr0\right)$
+\begin_inset Formula $\df{f\left(\vec M\right)}{g\left(\vec M\right)},\ \left(f\left(\vec A\right)\nr0\right)$
 \end_inset
 
 - непрерывны.
@@ -5684,7 +5684,7 @@ x_{n}\st a_{n}
 \end_inset
 
  функции 
-\begin_inset Formula $f\left(\vec{M}\right)$
+\begin_inset Formula $f\left(\vec M\right)$
 \end_inset
 
  определяются системой: 
@@ -5696,11 +5696,11 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_inset
 
 , тоесть каждой точке 
-\begin_inset Formula $\vec{T}\left(t_{1}\tr t_{k}\right)\in E^{k}$
+\begin_inset Formula $\vec T\left(t_{1}\tr t_{k}\right)\in E^{k}$
 \end_inset
 
  ставится в соответствие точка 
-\begin_inset Formula $\vec{M}\left(x_{1}\tr x_{n}\right)$
+\begin_inset Formula $\vec M\left(x_{1}\tr x_{n}\right)$
 \end_inset
 
  из пространства 
@@ -5732,7 +5732,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_inset
 
  непрерывны в точке 
-\begin_inset Formula $\vec{A}\left(a_{1}\tr a_{k}\right)\in E^{k}$
+\begin_inset Formula $\vec A\left(a_{1}\tr a_{k}\right)\in E^{k}$
 \end_inset
 
 , а функция 
@@ -5740,11 +5740,11 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_inset
 
 непрерывна в точке 
-\begin_inset Formula $\vec{B}\left(b_{1}\tr b_{n}\right),$
+\begin_inset Formula $\vec B\left(b_{1}\tr b_{n}\right),$
 \end_inset
 
  где 
-\begin_inset Formula $b_{i}=\varphi_{i}\left(\vec{A}\right)$
+\begin_inset Formula $b_{i}=\varphi_{i}\left(\vec A\right)$
 \end_inset
 
 , то сложная функция 
@@ -5800,7 +5800,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 
 \begin_layout Theorem
 Пусть функция 
-\begin_inset Formula $u=f\left(\vec{M}\right)$
+\begin_inset Formula $u=f\left(\vec M\right)$
 \end_inset
 
  непрерывна в области 
@@ -5809,7 +5809,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 
 .
  Если точка 
-\begin_inset Formula $\vec{A}$
+\begin_inset Formula $\vec A$
 \end_inset
 
  - внутреняя точка области 
@@ -5817,15 +5817,15 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_inset
 
  и 
-\begin_inset Formula $f\left(\vec{A}\right)\nr0$
+\begin_inset Formula $f\left(\vec A\right)\nr0$
 \end_inset
 
 , то в некоторой окрестности точки 
-\begin_inset Formula $\vec{A}$
+\begin_inset Formula $\vec A$
 \end_inset
 
  функция 
-\begin_inset Formula $f\left(\vec{M}\right)$
+\begin_inset Formula $f\left(\vec M\right)$
 \end_inset
 
  сохраняет знак.
@@ -6007,7 +6007,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_layout Proof
 От противного.
  Пусть 
-\begin_inset Formula $f\left(\vec{X}\right)$
+\begin_inset Formula $f\left(\vec X\right)$
 \end_inset
 
  - неограничена на 
@@ -6193,7 +6193,7 @@ x_{m}=q_{m}\left(t\right)
 \end_inset
 
 , то его называют часной производной функции 
-\begin_inset Formula $f\left(\vec{X}\right)$
+\begin_inset Formula $f\left(\vec X\right)$
 \end_inset
 
  в точке 
@@ -6292,8 +6292,8 @@ x_{m}=q_{m}\left(t\right)
 
 \begin_layout Example
 \begin_inset Formula $f\left(x,y\right)=\begin{cases}
-\df{x\um y}{x^{2}+y^{2}} & ,\left(x,y\right)\nr\vec{0}\\
-0 & ,\left(x,y\right)=\vec{0}
+\df{x\um y}{x^{2}+y^{2}} & ,\left(x,y\right)\nr\vec 0\\
+0 & ,\left(x,y\right)=\vec 0
 \end{cases}$
 \end_inset
 
@@ -6512,15 +6512,15 @@ x_{m}=q_{m}\left(t\right)
 
 \begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
+\begin{alignat*}{1}
 \left|\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\right| & \mr\\
- & \mr & \left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho=\\
- & = & \left\{ \begin{array}{c}
+ & \mr\left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho=\\
+ & =\left\{ \begin{array}{c}
 \df{\left|\D x_{i}\right|}{\rho}\mr1,\ i=\overline{1,m}\ -\ \text{ограниченая}\\
 \left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\st0
 \end{array}\right\} =\\
- & = & \gamma\left(\rho\right)\um\rho
-\end{eqnarray*}
+ & =\gamma\left(\rho\right)\um\rho
+\end{alignat*}
 
 \end_inset
 
@@ -6660,7 +6660,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \begin_layout Lemma
 Если функция 
-\begin_inset Formula $u=f\left(\vec{x}\right)$
+\begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
  диференцируема в точке 
@@ -6695,7 +6695,23 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \begin_layout Standard
 Рассмотрим график функции 
-\begin_inset Formula $u=f\left(x,y\right),\ M_{0}\left(x_{0},y_{0}\right),\ M_{1}\left(x_{1},y_{1}\right),\ N_{0}\left(x_{0},y_{0},f\left(x_{0},y_{0}\right)\right),\ N_{1}\left(x_{1},y_{1},f\left(x_{1},y_{1}\right)\right)$
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M\left(x_{0},y_{0}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M_{1}\left(x_{1},y_{1}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $N_{0}\left(x_{0},y_{0},f\left(x_{0},y_{0}\right)\right)$
+\end_inset
+
+, 
+\begin_inset Formula $N_{1}\left(x_{1},y_{1},f\left(x_{1},y_{1}\right)\right)$
 \end_inset
 
 .
@@ -6779,7 +6795,11 @@ status open
 \end_inset
 
 , а точка 
-\begin_inset Formula $N_{1}\left(x,y,f\left(x,y\right)\right)$
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ координаты 
+\begin_inset Formula $\left(x,y,f\left(x,y\right)\right)$
 \end_inset
 
 .
@@ -6818,7 +6838,7 @@ status open
 \end_inset
 
  с нормальным вектором 
-\begin_inset Formula $\vec{n}=\left(A,B,-1\right)\ \left(\bot\vec{a}\left(x-x_{0},y-y_{0},u-u_{0}\right)=\vec{NN_{0}}\right)$
+\begin_inset Formula $\vec n=\left(A,B,-1\right)\ \left(\bot\vec a\left(x-x_{0},y-y_{0},u-u_{0}\right)=\vec{NN_{0}}\right)$
 \end_inset
 
 .
@@ -6859,7 +6879,7 @@ status open
 
 \begin_layout Proof
 Для этого достаточно доказать что угол 
-\begin_inset Formula $\varphi=\widehat{\left(\vec{n},\vec{N_{0}N}\right)}$
+\begin_inset Formula $\varphi=\widehat{\left(\vec n,\vec{N_{0}N}\right)}$
 \end_inset
 
  стремится к 
@@ -6880,7 +6900,7 @@ status open
 \begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\cos\varphi\right| & = & \df{\left|\left(\vec{n},\vec{N_{0}N_{1}}\right)\right|}{\left|\vec{n}\right|\um\left|\vec{N_{0}N_{1}}\right|}=\\
+\left|\cos\varphi\right| & = & \df{\left|\left(\vec n,\vec{N_{0}N_{1}}\right)\right|}{\left|\vec n\right|\um\left|\vec{N_{0}N_{1}}\right|}=\\
  & = & \df{\left|A\um\D x+B\um\D y-\D u\right|}{\sqrt{A^{2}+B^{2}+1}\um\sqrt{\D x^{2}+\D y^{2}+\D u^{2}}}\mr\\
  & \mr & \left\{ \begin{array}{c}
 \sqrt{A^{2}+B^{2}+1}\ -\ \text{ограниченая и }\br1\\
@@ -7025,7 +7045,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-В итоге мы получили представоление 1.
+В итоге мы получили представление 1.
 \end_layout
 
 \begin_layout Subsection
@@ -7057,7 +7077,7 @@ x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
 
 \begin_layout Standard
 Тоесть функция 
-\begin_inset Formula $u=f\left(\vec{x}\right)$
+\begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
  - сложная функция аргументов 
@@ -7066,7 +7086,11 @@ x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
 
 .
  Оказывается что прги некоторых условиях часные производные от функции 
-\begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,t_{k}\right)\right)$
+\begin_inset Formula 
+\[
+u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,t_{k}\right)\right)
+\]
+
 \end_inset
 
  по переменным 
