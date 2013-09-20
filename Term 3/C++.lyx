@@ -838,6 +838,746 @@ aggregate
 картинка
 \end_layout
 
+\begin_layout Paragraph
+Операнды и выражения
+\end_layout
+
+\begin_layout Standard
+Операнды-константы, литеры, выражение или вызов функции или более сложные
+ выражения содержашие различные операции и скобки.
+ Л
+\end_layout
+
+\begin_layout Standard
+Каждый операнд, который представляет то или иное выражение может сам быть
+ выражением.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Бывает унарное выражение, которое состоит из операнда и предшествушего ему
+ знаку унарной операции.
+ Формат: <знак унарной операции><выражение>
+\end_layout
+
+\begin_layout Enumerate
+Бинарное выражение, состоящие из двух операндов разделенный знаком бинарной
+ операции.
+ Формат:<Выражение1><знак><Выражение2>.
+\end_layout
+
+\begin_layout Enumerate
+Тернарное выражение,которое состоит из трех операндов разделенных знаками
+ тернарной операции, либо вопрос ?, либо :.
+ Формат:<Выражение1>?<Операнд 2>:<Операнд 3>
+\end_layout
+
+\begin_layout Standard
+Выражение так-же делятся на 3 типа, как представленно выше.
+ Унарные операции выполняються слева на право.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Унарные операции
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Унарный 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Отрицание 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Inc 
+\begin_inset Quotes eld
+\end_inset
+
+++
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Dec 
+\begin_inset Quotes eld
+\end_inset
+
+--
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Поразрядное отрицание или дополнение
+\begin_inset Quotes eld
+\end_inset
+
+~
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Лоигческое отрицание 
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Разодрисация 
+\begin_inset Quotes eld
+\end_inset
+
+*
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Вычесление адреса 
+\begin_inset Quotes eld
+\end_inset
+
+&
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Подсчет размера 
+\begin_inset Quotes eld
+\end_inset
+
+sizeof
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Бинарные операции
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+*
+\begin_inset Quotes erd
+\end_inset
+
+ умножение
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+ деление
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+%
+\begin_inset Quotes erd
+\end_inset
+
+ остаток от деления
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+ сложение
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+ вычитание
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+<<
+\begin_inset Quotes erd
+\end_inset
+
+ сдвиг влево
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+>>
+\begin_inset Quotes erd
+\end_inset
+
+ сдвиг вправо
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+<
+\begin_inset Quotes erd
+\end_inset
+
+ меньше
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+<=
+\begin_inset Quotes erd
+\end_inset
+
+ меньше либо равно
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+>=
+\begin_inset Quotes erd
+\end_inset
+
+ больше либо равно
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+==
+\begin_inset Quotes erd
+\end_inset
+
+ равно
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+!=
+\begin_inset Quotes erd
+\end_inset
+
+ неравно
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+&
+\begin_inset Quotes erd
+\end_inset
+
+ поразрядное и
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+|
+\begin_inset Quotes erd
+\end_inset
+
+ поразрядное или
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+^
+\begin_inset Quotes erd
+\end_inset
+
+ поразрядное исключающие или
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+&&
+\begin_inset Quotes erd
+\end_inset
+
+ логическое и
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+||
+\begin_inset Quotes erd
+\end_inset
+
+ логическое или
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ последовательное вычесление
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+=
+\begin_inset Quotes erd
+\end_inset
+
+ присваивание
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+*=
+\begin_inset Quotes erd
+\end_inset
+
+ умножение присваивание 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+/=
+\begin_inset Quotes erd
+\end_inset
+
+ деление присваивание
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+%=
+\begin_inset Quotes erd
+\end_inset
+
+ no comment
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+-=
+\begin_inset Quotes erd
+\end_inset
+
+ no comment
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
++=
+\begin_inset Quotes erd
+\end_inset
+
+ no comment
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+<<=
+\begin_inset Quotes erd
+\end_inset
+
+ no comment
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+>>=
+\begin_inset Quotes erd
+\end_inset
+
+ no comment
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+&=
+\begin_inset Quotes erd
+\end_inset
+
+ порозрядное и с присваиванием
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+|=
+\begin_inset Quotes erd
+\end_inset
+
+ поразрядное или с присваиванием
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+^=
+\begin_inset Quotes erd
+\end_inset
+
+ исключающиеся или
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+При вычеслении выражений тип каждого операнда может быть преобразован к
+ другому типу.
+ Сами преобразования могут быть не явными - это когда выполение операций
+ и вызовы функций.
+ Или же явными, когда выполняються операции приведения.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Приорететы операции и порядок вычесления.
+\end_layout
+
+\begin_layout Standard
+С высшего приоретета
+\end_layout
+
+\begin_layout Enumerate
+() [] 
+\series bold
+.
+
+\series default
+ ->
+\end_layout
+
+\begin_layout Enumerate
+- + ~ ! * & ++ -- sizeof - унарные
+\end_layout
+
+\begin_layout Enumerate
+* / %
+\end_layout
+
+\begin_layout Enumerate
++ -
+\end_layout
+
+\begin_layout Enumerate
+<< >>
+\end_layout
+
+\begin_layout Enumerate
+< > <= >=
+\end_layout
+
+\begin_layout Enumerate
+== !=
+\end_layout
+
+\begin_layout Enumerate
+& (Порязрадное и)
+\end_layout
+
+\begin_layout Enumerate
+^ (Порозрядное исключающие или)
+\end_layout
+
+\begin_layout Enumerate
+| (Порозрядное или)
+\end_layout
+
+\begin_layout Enumerate
+&&
+\end_layout
+
+\begin_layout Enumerate
+||
+\end_layout
+
+\begin_layout Enumerate
+?: (Условная операция)
+\end_layout
+
+\begin_layout Enumerate
+= *= /= %= += -= и т.п
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+,
+\series default
+ (последовательное вычесление)
+\end_layout
+
+\begin_layout Paragraph
+Арифметические преобразование при вычеслении выражения
+\end_layout
+
+\begin_layout Standard
+При выполнения операции происходит автоматические преобразование типов,
+ чтобы привести операнды выражений к общему типу или чтоб расширить, короткие
+ велечины до размера целых велечин, используемых в машинных командах.
+ Выполнение преобразование зависит от специфики операции и от типа операнда
+ или операндов.
+ Рассмотрим общие арфметические преобразования.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Операнды типа float преобразуються к типу double
+\end_layout
+
+\begin_layout Enumerate
+Если один операнд Longdouble то второй преобразуеться к этому же типу.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Если один опернад double то второй так-же преобразуються к типу double
+\end_layout
+
+\begin_layout Enumerate
+Любые операнды типа char and short преобразються к типу int
+\end_layout
+
+\begin_layout Enumerate
+Любые операнды unsigned char and unsigned short преобразуються к unsigned
+ int
+\end_layout
+
+\begin_layout Enumerate
+Если один операнд типа unsigned long то и второй тоже будет таким
+\end_layout
+
+\begin_layout Enumerate
+Если один операнд типа Long то и второй тоже к нему преобразуется
+\end_layout
+
+\begin_layout Enumerate
+Если один операнд unsigned int то и второй тоже будет таким
+\end_layout
+
+\begin_layout Standard
+Таким образом при вычеслении выражений, операнды преобразуються в типу того
+ операнда, который имеет наибольший размер.
+ Выполнение операторов присваивание, правило преобразования для следуюшего
+ кода будут...
+\end_layout
+
+\begin_layout LyX-Code
+double ft,sd;
+\end_layout
+
+\begin_layout LyX-Code
+unsigned char ch;
+\end_layout
+
+\begin_layout LyX-Code
+unsigned long in;
+\end_layout
+
+\begin_layout LyX-Code
+int i;
+\end_layout
+
+\begin_layout LyX-Code
+sd=ft*(i+ch/in);
+\end_layout
+
+\begin_layout Standard
+Операнд ch преобразуеться к unsigned int потом к unsigned long, далее по
+ правилу i преобразуеться к unsigned long и результат операции в скобках
+ так-же будет иметь тип unsigned long.
+ Затем он преобразуеться к типу double.
+ И весь результат будет иметь тип double.
+ При преоборазование символьных переменных в целые возникает один момент,
+ компилятор неуказывает сам должны ли переменным типам char соотвествовать
+ числовые значение со знаком или без.
+ Ответ на этот вопрос меняется из поколения к поколению ЭВМ содержится в
+ их архитектуре.
+ К примеру: крайне левый бит некой переменной char содержаший 1 перобразуеться
+ в отрицательное целое, если 0 то положителное.
+ На других ЭВМ такое преоразование сопровождаеться добовлением 0 с левого
+ края.
+ В результате чего всегда получется положительное число.
+ В языке с++ любой символ из стандратного набора никогда не даст отрицательного.
+ Эти символы можно спокойно использовать как положительные велечины.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Мультипликативные и аддитивные операции
+\end_layout
+
+\begin_layout Part
+
+\series bold
+ТУТ ПИЗДЕЦ !!! ОН НЕСЕТ БРЕД
+\end_layout
+
+\begin_layout Standard
+В с++ подерживаеться следующий стандартный набор мультипликатиные операций:
+ * / % + -.
+ Так-же унарный - или +, чтобы менять знак переменной
+\end_layout
+
+\begin_layout Standard
+*-ассоциативна 
+\end_layout
+
+\begin_layout Standard
+Аддитивные операции + и -, групируються слева на право, и выполняються обычные
+ арифметические преобразования.
+ Переполнение не ообрабатываеться, тоесть информация теряется, если результат
+ аддитивной операции не может быть представлен типом операндов после преобразова
+ния.
+ При этом ошибки небудет.
+ 
+\end_layout
+
+\begin_layout Standard
+Пример:
+\end_layout
+
+\begin_layout LyX-Code
+int i=30000;
+\end_layout
+
+\begin_layout LyX-Code
+int j=300000
+\end_layout
+
+\begin_layout LyX-Code
+int k;
+\end_layout
+
+\begin_layout LyX-Code
+k=i+j; 
+\end_layout
+
+\begin_layout LyX-Code
+k=-чеготам.
+\end_layout
+
+\begin_layout Standard
+Если адресс * числом, то получеться что целоые число получеться как умножение
+ числа на размер того блока куда показывает адресс.
+ Когда преобразованная целая велечина складываеться с велечиной указателя,
+ то результатом являеться указатель, адресующей ячейку памяти расположенну
+ на целую велечину дальше от исходного адреса.
+ И новое значение указателя адресует тотже самый тип данных, что и старый
+ указатель.
+ 
+\end_layout
+
+\begin_layout Standard
+++ и -- - это унарные операции присвивания они увеличивают или уменшают
+ значения операнда на еденицу.
+ Операнд может быть как целый так и float, а так-же указатель.
+ В с++ допускаться два способа записи префексная и постфиксная.
+ Если знак операций стоит перед опернадом - префиксная.
+ Если знак оперции стоит после опернда - постфиксная.
+ 
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
