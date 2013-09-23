@@ -336,6 +336,18 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\vec{#1}}
+{\vec{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -3718,6 +3730,620 @@ m\df{dv_{z}}{dt}=f_{3}\left(v_{z}\right) & ,z\left(0\right)=z_{0},\ v_{z}\left(0
 \end_inset
 
  Эрг
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+23.09.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Мощностъ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=\df{\D A}{\D t}$
+\end_inset
+
+ - средняя мощность.
+\end_layout
+
+\begin_layout Standard
+Рассматривать работу как дифффренциал можно только, есть работа зависит
+ только от времени.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=\df{dA}{dt}$
+\end_inset
+
+ - мгновенная можность
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=\df{\vec Fd\vec r}{dt}=\vec F\um\vec v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В система с 
+\begin_inset Formula $\left[N\right]=\df{\text{Дж}}c=\text{Ватт}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+В систем сгс 
+\begin_inset Formula $\left[N\right]=\df{\text{Эрг}}{\text{c}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Потенциальное поле сил.
+ Силы консервативные и не консервативные.
+\end_layout
+
+\begin_layout Definition
+Если на тело в любой точке пространства дейтсвует сила, закономерно меняющаяся
+ от точке к точке, то говорят, что сила находится в поле сил.
+\end_layout
+
+\begin_layout Remark
+Понятие поля оно справедливо не только для понятия силы.
+ Можно для любой физической величины определирть поле, например поле температур,
+ море..
+ Понятие поля - всеобьемлющее.
+\end_layout
+
+\begin_layout Definition
+В том случае, когда при перемещении тела из одного положения в другое, работа,
+ совершаимая силами поля не зависит от пути(траэктории), а только от начального
+ и конечного положения, то поле сил называется потанциальным, а сила - консерват
+ивной.
+\end_layout
+
+\begin_layout Theorem
+Работа консервативных сил на любом замкнутом пути равна нулю.
+\end_layout
+
+\begin_layout Proof
+Расмотри некое поле сил и точка пероемещаетс по замкнутому пути.
+ Возьмем на этой трнаэктории два положение.
+ Путь из первого во второе положение назовем первым, а из аторого в первый
+ - вторым.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A=A_{1,2}^{I}+A_{2,1}^{II}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\delta A$
+\end_inset
+
+ - собота, потраченная на перемещение точки по пути 
+\begin_inset Formula $I$
+\end_inset
+
+, а 
+\begin_inset Formula $\delta A'$
+\end_inset
+
+ - рабьота, потраченная на перемещение точки по пути 
+\begin_inset Formula $II$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\delta A=-\delta A'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{2,1}^{II}=-A_{1,2}^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A=A_{2,1}^{II}-A_{1,2}^{I}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Силы трения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=\vec{F_{tp}}\um d\vec r=\vec{F_{tp}}\vec vdt<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{tp}<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Работа сил трения всегда является отрицательнгой.
+ Сила трения - неконсервативная сила.
+\end_layout
+
+\begin_layout Subsubsection
+Сила тяжести 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\oui{\overset{\smile}{1,2}}{}\vec pd\vec r=\oui{\overset{\smile}{1,2}}{}m\vec gd\vec r=m\vec g\oui{\overset{\smile}{1,2}}{}d\vec r=m\vec g\vec{\D r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\oui{\overset{\smile}{1,2}}{}\vec pd\vec r=\oui{\overset{\smile}{1,2}}{}m\vec gd\vec r=m\vec g\oui{\overset{\smile}{1,2}}{}d\vec r=m\vec g\vec{\D r}=m\um g\um\D r\um\cos\alpha=m\um g\um\D h=m\um g\um\left(h_{1}-h_{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Сила называется центральной, если в любой момент времени линия действия
+ силы проходит через одну и ту же точку.
+\end_layout
+
+\begin_layout Remark
+Оказывается любая центральная сила консервативна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\oui{\overset{\smile}{1,2}}{}\vec Fd\vec r$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec Fd\vec r=F\um\left|d\vec r\right|\cos\alpha$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Теперь если он возьмет и спраэктирует....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec Fd\vec r=F\um\left|d\vec r\right|\cos\alpha=F\um d\left|\vec r\right|=F\um dr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\oui{\overset{\smile}{1,2}}{}\vec Fd\vec r=\oui{\overset{\smile}{1,2}}{}F\um dr=\oui{r_{1}}{r_{2}}F\um dr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Следовательно любая центральная сила консервативна.
+\end_layout
+
+\begin_layout Subsubsection
+Сила упругости
+\end_layout
+
+\begin_layout Standard
+В простейшем варианте силы упругости имеют вод такое обозначение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{\text{упр}}=-k\um x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Его работа равняется, если он тяянет пружинку, равняется 
+\begin_inset Formula $A=\oui 0xF\um dx=\oui 0xk\um x\um dx=\df{k\um x^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{\text{упр}}=-\df{k\um x^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сила упругости - консервативная сила.
+\end_layout
+
+\begin_layout Definition
+Физическая величина, характеризующая способность тела соверщать работу называетс
+я энергией.
+\end_layout
+
+\begin_layout Standard
+Если я трачу какую нить элементарную энергию, то она идет на какую то элементарн
+ую работу.
+ 
+\begin_inset Formula $dE=\delta A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Механическая энергия может быть:
+\end_layout
+
+\begin_layout Enumerate
+Энергия, связанная с движением тела - кинетическая энергия
+\end_layout
+
+\begin_layout Enumerate
+Энергия, связанная с нахождением тела в потанциальном поле сил - потенциальная
+ энергия
+\end_layout
+
+\begin_layout Subsection
+Кинетическая энергия
+\end_layout
+
+\begin_layout Standard
+Пусть у нас некое тело под действием силы 
+\begin_inset Formula $\vec F=const$
+\end_inset
+
+ за какой то промежуток времени разгоняется до скорости 
+\begin_inset Formula $\vec v$
+\end_inset
+
+.
+ Сила совершает работу и олна переходит в кинетическую энергию этого тела.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=dE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Кинетическую энергию обозначают 
+\begin_inset Formula $\delta T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=dT$
+\end_inset
+
+ - вод такое соотнощение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=\vec F\um\vec v\um dt=dT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вспомним второй закон Ньютона
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m\um\df{d\vec v}{dt}\um\vec v\um dt=dT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m\um\vec v\um d\vec v=dT$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m\um d\df{v^{2}}2=dT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\df{m\um v^{2}}2=dT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{m\um v^{2}}2=T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec J=m\um\vec v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\df{J^{2}}{2\um m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если полностью вся работа идет на изменения скорости, значит 
+\begin_inset Formula $A=\D T$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Потенциальная энергия
+\end_layout
+
+\begin_layout Standard
+Рассмотрим некоторую материальную точку, нахъодящуюся в поле потенциальных
+ сил.
+ Введем систему координат..
+ Введем некую функцию 
+\begin_inset Formula $U\left(\vec r\right)$
+\end_inset
+
+, которая тоже будет закономерно меняться от точке к точке.
+ Мы возьмем точку 0 и рандомно зададим значение функции от этой точки 
+\begin_inset Formula $U_{0}=U\left(\vec{r_{0}}\right)$
+\end_inset
+
+.
+ Возьмем еще 1ну точку и сделаем тоже самое..
+\end_layout
+
+\begin_layout Standard
+И тогда получим..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U\left(\vec{r_{1}}\right)=U_{1}=U_{0}+A_{1,0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1,0}$
+\end_inset
+
+ - работa сил поля по перемешению точки из потожения 1 в 0.
+\end_layout
+
+\begin_layout Standard
+Возьмем еще 1ну точку..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U\left(\vec{r_{2}}\right)=U_{2}=U_{0}+A_{2,0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1,2}=A_{1,0}+A_{0,2}=A_{1,0}-A_{2,0}=\left(U_{1}-U_{0}\right)-\left(U_{2}-U_{0}\right)=U_{1}-U_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1,2}=U_{1}-U_{2}=-\D U$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как размерность 
+\begin_inset Formula $U$
+\end_inset
+
+ совподает с размерностью работы, и изменение функции 
+\begin_inset Formula $U$
+\end_inset
+
+ дает нам работу, то можно рассматривать функцию 
+\begin_inset Formula $U$
+\end_inset
+
+ как функцию потенциальной энергии.
+\end_layout
+
+\begin_layout Standard
+Работа сил тяжести 
+\begin_inset Formula $A=m\um g\um\D h=m\um g\um\left(h_{1}-h_{2}\right)$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Remark
+При задании функции потенциальной энергии необходимо задать нулевой уровень
+ потенциальной энергии.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}-U_{2}=m\um g\um h_{1}-m\um g\um h_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=m\um g\um h$
+\end_inset
+
+, где 
+\begin_inset Formula $h$
+\end_inset
+
+ - расстояние от нулевого уровня.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ может быть отрицательным
+\end_layout
+
+\begin_layout Standard
+Работа сил упругости 
+\begin_inset Formula $A=-k\df{x^{2}}2$
+\end_inset
+
+, значит 
+\begin_inset Formula $U=k\df{x^{2}}2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Свяжем понятия силы и энергии..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=\vec F\um d\vec l=-dU$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\um dl\um\cos\alpha=-du$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{l}\um dl=-du$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{l}$
+\end_inset
+
+ - проэкция силы на направления 
+\begin_inset Formula $\vec l$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{l}=-\df{\DD u}{\DD e}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{x}=-\df{\DD u}{\DD x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{y}=-\df{\DD u}{\DD y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{z}=-\df{\DD u}{\DD z}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v F=\v i\um F_{x}+\v j\um F_{y}+\v k\um F_{z}=-\left(\v i\df{\DD u}{\DD x}+\v j\df{\DD u}{\DD y}+\v k\df{\DD u}{\DD z}\right)$
+\end_inset
+
+ - градиент.
+ Обозначается 
+\begin_inset Formula $grad$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v F=-gradU$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
