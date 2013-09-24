@@ -321,6 +321,24 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\DD}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -6334,7 +6352,7 @@ x_{m}=q_{m}\left(t\right)
  разрывна.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Геметрический смысл часной производной
 \end_layout
 
@@ -6623,7 +6641,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\ul{\D x_{i}\st0}\df{\D_{x_{i}}u}{\D x_{i}}=\ul{\D x_{i}\st0}\left(A_{i}+\alpha_{i}\right)=A_{i}=\df{\delta f\left(M\right)}{\delta x_{i}}$
+\begin_inset Formula $\ul{\D x_{i}\st0}\df{\D_{x_{i}}u}{\D x_{i}}=\ul{\D x_{i}\st0}\left(A_{i}+\alpha_{i}\right)=A_{i}=\df{\dd f\left(M\right)}{\dd x_{i}}$
 \end_inset
 
  
@@ -6689,8 +6707,8 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \end_layout
 
-\begin_layout Subsection
-Геометрический смысл диференцируемости функции многих переменных
+\begin_layout Subsubsection
+Геометрический смысл диференцируемости функций многих переменных
 \end_layout
 
 \begin_layout Standard
@@ -7104,9 +7122,9 @@ u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
-\df{\delta f}{\delta t_{1}}=\df{\delta f}{\delta x_{1}}\um\df{\delta x_{1}}{\delta t_{1}}+\df{\delta f}{\delta x_{2}}\um\df{\delta x_{2}}{\delta t_{1}}+\tr+\df{\delta f}{\delta x_{m}}\um\df{\delta x_{m}}{\delta t_{1}}\\
+\df{\dd f}{\dd t_{1}}=\df{\dd f}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{1}}+\df{\dd f}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{1}}+\tr+\df{\dd f}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{1}}\\
 \tr\\
-\df{\delta f}{\delta t_{k}}=\df{\delta f}{\delta x_{1}}\um\df{\delta x_{1}}{\delta t_{k}}+\df{\delta f}{\delta x_{2}}\um\df{\delta x_{2}}{\delta t_{k}}+\tr+\df{\delta f}{\delta x_{m}}\um\df{\delta x_{m}}{\delta t_{k}}
+\df{\dd f}{\dd t_{k}}=\df{\dd f}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{k}}+\df{\dd f}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{k}}+\tr+\df{\dd f}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{k}}
 \end{cases}\label{eq:9}
 \end{equation}
 
@@ -7134,13 +7152,641 @@ z=t^{2}+1
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{t}\pr=f\pr\left(t^{3},2\um t,t^{2}+1\right)=\df{df}{dt}=\df{\delta f}{\delta x}\um\df{dx}{dt}+\df{\delta f}{\delta y}\um\df{dy}{dt}+\df{\delta f}{\delta z}\um\df{dz}{dt}=2x\um3t^{2}+\sin z\um2+y\um\cos z\um2t$
+\begin_inset Formula $f_{t}\pr=f\pr\left(t^{3},2\um t,t^{2}+1\right)=\df{df}{dt}=\df{\dd f}{\dd x}\um\df{dx}{dt}+\df{\DD f}{\dd y}\um\df{dy}{dt}+\df{\dd f}{\dd z}\um\df{dz}{dt}=2x\um3t^{2}+\sin z\um2+y\um\cos z\um2t$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+24.09.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если функции 
+\begin_inset Formula $\varphi_{i}\left(t_{1}\tr t_{k}\right),\ i=\overline{1,m}$
+\end_inset
+
+ дифференцируемы в точке 
+\begin_inset Formula $N\left(t_{1}\pr,\tr,t_{k}\pr\right)$
+\end_inset
+
+ а фцнкция 
+\begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
+\end_inset
+
+ дифференцируема в точке 
+\begin_inset Formula $M\left(x_{1}\pr,\tr,x_{m}\pr\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{j}\pr=\varphi_{j}\left(t_{1}\pr,\tr,t_{k}\pr\right)$
+\end_inset
+
+, то существуют часные производные сложной функции 
+\begin_inset Formula $u$
+\end_inset
+
+ по аргументам 
+\begin_inset Formula $t_{1},\tr,t_{k}$
+\end_inset
+
+ в точке 
+\begin_inset Formula $N$
+\end_inset
+
+, вычисляемые по формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:9"
+
+\end_inset
+
+).
+ Причем часные производные 
+\begin_inset Formula $\df{\text{\emph{д}}u}{\DD x_{j}}$
+\end_inset
+
+ вычисляются в точке 
+\begin_inset Formula $M$
+\end_inset
+
+, а 
+\begin_inset Formula $\df{\dd x_{j}}{\dd t_{i}}$
+\end_inset
+
+ в точке 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим слудующий случай.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $u=f\left(x,y,z\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+x=x\left(t\right)\\
+y=y\left(t\right)\\
+z=z\left(t\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тоесть точка 
+\begin_inset Formula $N\left(t\right)$
+\end_inset
+
+ , а 
+\begin_inset Formula $M\left(x\left(t\right),y\left(t\right),z\left(t\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Придадим аргументу приращение 
+\begin_inset Formula $\D t$
+\end_inset
+
+, ему отвечает приращения 
+\begin_inset Formula $\D x,\D y,\D z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D x=x\left(t+\D t\right)-x\left(t\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+А также приращение 
+\begin_inset Formula $\D u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Получим из диффренцируемости функции 
+\begin_inset Formula $u$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D u=u_{x}\pr\um\D x+u_{y}\pr\um\D y+u_{z}\pr\D z+\alpha\um\D x+\beta\um\D y+\gamma\um\D z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Разделим на 
+\begin_inset Formula $\D t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\D u}{\D t}=u_{x}\pr\um\df{\D x}{\D t}+u_{y}\pr\um\df{\D y}{\D t}+u_{z}\pr\um\df{\D z}{\D t}+\alpha\um\df{\D x}{\D t}+\beta\um\df{\D y}{\D t}+\gamma\um\df{\D z}{\D t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В приделе при 
+\begin_inset Formula $\D t\st0$
+\end_inset
+
+ получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\D x}{\D t}=\df{dx}{dt}=x\pr\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\D y}{\D t}=\df{dy}{dt}=y\pr\left(t\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\D z}{\D t}=\df{dz}{dt}=z\pr\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\alpha\um\df{\D x}{\D t}+\beta\um\df{\D y}{\D t}+\gamma\um\df{\D z}{\D t}\right)\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{du}{dt}=\df{\dd u}{\dd x}\um\df{dx}{dt}+\df{\dd u}{\dd y}\um\df{dy}{dt}+\df{\dd u}{\dd z}\um\df{dz}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрми другой случай.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+x=\varphi\left(t,\tau\right)\\
+y=\psi\left(t,\tau\right)\\
+z=\chi\left(t,\tau\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В этом случае 
+\begin_inset Formula $u=f\left(\varphi\left(t,\tau\right),\psi\left(t,\tau\right),\chi\left(t,\tau\right)\right)$
+\end_inset
+
+функция двух переменных.
+ В этом члучае фиксируя значения 
+\begin_inset Formula $\tau$
+\end_inset
+
+ мы получим сложную функцию одной переменной.
+ И получится, анологично случаю 1му следующее:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\dd u}{\dd t}=\df{\dd u}{\dd x}\um\df{\dd x}{\dd t}+\df{\dd u}{\dd y}\um\df{\dd y}{\dd t}+\df{\dd u}{\dd z}\um\df{\dd z}{\dd t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогично делаем и для 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Дифференциал функций многих переменных
+\end_layout
+
+\begin_layout Definition
+Дифференциал 
+\begin_inset Formula $du$
+\end_inset
+
+ функций многих перемнных 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+в точке 
+\begin_inset Formula $M\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ называется главная линейная по 
+\begin_inset Formula $\D x_{1},\tr,\D x_{m}$
+\end_inset
+
+ часть приращения 
+\begin_inset Formula $\D u$
+\end_inset
+
+ функции в точке 
+\begin_inset Formula $M$
+\end_inset
+
+, отвечающая приращениям 
+\begin_inset Formula $\D x_{1},\tr,\D x_{m}$
+\end_inset
+
+ аргументов.
+\end_layout
+
+\begin_layout Standard
+Таким образом дифференциал 
+\begin_inset Formula $du=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}$
+\end_inset
+
+ считая 
+\begin_inset Formula $x_{1},\tr,x_{m}$
+\end_inset
+
+ независимыми переменными, можно полоожить 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D x_{i}=dx_{i},\ i=\overline{1,m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{i}=f_{x_{i}}\pr\left(M\right),\ i=\overline{1,m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $du=u_{x_{1}}\pr\um dx_{1}+\tr+u_{x_{m}}\pr\um dx_{m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Геометрический смысл дифференциала функций двух переменных
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рисуночек Тимура
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $du\left(x_{0},y_{0}\right)=f_{x}\pr\left(x_{0},y_{0}\right)dx+f_{y}\pr\left(x_{0},y_{0}\right)dy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Инвариантности формы дифференциала
+\end_layout
+
+\begin_layout Standard
+Для случая, когда 
+\begin_inset Formula $x_{1},\tr,x_{m}$
+\end_inset
+
+ - неазависимые переменные, дифферендиал функции 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ тимеет вид: 
+\begin_inset Formula $du=\df{\dd u}{\dd x_{1}}\um dx_{1}+\df{\dd u}{\dd x_{2}}\um dx_{2}+\tr+\df{\dd u}{\dd x_{m}}\um dx_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если аргументы 
+\begin_inset Formula $x_{1}\tr x_{m}$
+\end_inset
+
+ - зависимые, то
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x_{1}=\varphi_{1}\left(t_{1},\tr,t_{k}\right)\\
+\tr\\
+x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+То при условии дифференцируемости функции 
+\begin_inset Formula $\varphi_{1}\left(t_{1}\tr t_{k}\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $N\left(t_{1}\pr,\tr,t_{k}\pr\right)$
+\end_inset
+
+ и дифференцируемости функции 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M\left(x_{1}\pr,\tr,x_{m}\pr\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{i}\pr=\varphi_{i}\left(N\right),\ i=\overline{1,m}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Для сложения функции 
+\begin_inset Formula $u$
+\end_inset
+
+ аргументов 
+\begin_inset Formula $t_{1}\tr t_{k}$
+\end_inset
+
+ получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd u}{\dd t_{k}}\um dt_{k}=\\
+ & = & \left\{ \text{Дифференциал сложных функций}\right\} =\\
+ & = & \left(\df{\dd u}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{1}}+\df{\dd u}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{1}}+\tr+\df{\dd u}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{1}}\right)\um dt_{1}+\\
+ & + & \left(\df{\dd u}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{2}}+\df{\dd u}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{2}}+\tr+\df{\dd u}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{2}}\right)\um dt_{2}+\\
+ & + & \tr+\\
+ & + & \left(\df{\dd u}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{k}}+\df{\dd u}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{k}}+\tr+\df{\dd u}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{k}}\right)\um dt_{k}=\\
+ & = & \df{\dd u}{\dd x_{1}}\um\left(\df{\dd x_{1}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{1}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{1}}{\dd t_{k}}\um dt_{k}\right)+\\
+ & + & \tr+\\
+ & + & \df{\dd u}{\dd x_{m}}\um\left(\df{\dd x_{m}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{m}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{m}}{\dd t_{k}}\um dt_{k}\right)=\\
+ & = & \left\{ \begin{array}{c}
+\df{\dd x_{1}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{1}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{1}}{\dd t_{k}}\um dt_{k}=dx_{1}\\
+\tr\\
+\df{\dd x_{m}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{m}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{m}}{\dd t_{k}}\um dt_{k}=dx_{m}
+\end{array}\right\} =\\
+ & = & \df{\dd u}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd u}{\dd x_{m}}\um dx_{m}
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Производная по направлению.
+ Градиент.
+\end_layout
+
+\begin_layout Standard
+Пусть дана функция 
+\begin_inset Formula $u=f\left(x,y,z\right)$
+\end_inset
+
+, определена в некоторой окресности точки 
+\begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотри еденичный вектор 
+\begin_inset Formula $\vec n=\left(\cos\alpha,\cos\beta,\cos\gamma\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим линия 
+\begin_inset Formula $l$
+\end_inset
+
+ - ось, проходящая через точку 
+\begin_inset Formula $M$
+\end_inset
+
+ вдоль вектора 
+\begin_inset Formula $\vec n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=x_{0}+l\um\cos\alpha\\
+y=y_{0}+l\um\cos\beta\\
+z=z_{0}+l\um\cos\gamma
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ на оси 
+\begin_inset Formula $\vec l$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(x,y,z\right)=f\left(x_{0}+l\um\cos\alpha,y_{0}+l\um\cos\beta,z_{0}+l\um\cos\gamma\right)$
+\end_inset
+
+ - сложная функция аргумента 
+\begin_inset Formula $l$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Definition
+Если существует производная от функции 
+\begin_inset Formula $f\left(x\left(l\right),y\left(l\right),z\left(l\right)\right)$
+\end_inset
+
+ по аргументу 
+\begin_inset Formula $l$
+\end_inset
+
+ в точке 
+\begin_inset Formula $l=0$
+\end_inset
+
+, то ее называют производной функции 
+\begin_inset Formula $u=f\left(x,y,z\right)$
+\end_inset
+
+ по направлению 
+\begin_inset Formula $l$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+ И обозначается 
+\begin_inset Formula $\df{\dd u}{\dd l}=\df{\dd f\left(M_{0}\right)}{\dd l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Согласно доказанной формуле для производной сложной функции получим 
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{\dd u}{\dd l} & = & \df{\dd u}{\dd x}\um\df{\dd x}{\dd l}+\df{\dd u}{\dd y}\um\df{\dd y}{\dd l}+\df{\dd u}{\dd z}\um\df{\dd z}{\dd l}=\\
+ & = & \left\{ \df{\dd x}{\dd l}=\left(x_{0}+\cos\alpha\right)\pr\right\} =\\
+ & = & \df{\dd u}{\dd x}\um\cos\alpha+\df{\dd u}{\dd y}\um\cos\beta+\df{\dd u}{\dd z}\um\cos\gamma
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Нрадиентом функциии 
+\begin_inset Formula $u=f\left(x,y,z\right)$
+\end_inset
+
+ в точке
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ называется выражение 
+\begin_inset Formula $\nabla u=\grad u=u\pr=\left(\begin{array}{c}
+\df{\dd u}{\dd x}\\
+\df{\dd u}{\dd y}\\
+\df{\dd u}{\dd z}
+\end{array}\right)$
+\end_inset
+
+ - часные производный функции в 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Очевидно что 
+\begin_inset Formula $\df{\dd u}{\dd l}=\left(\vec n,\grad u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докадем что направление градиента - направление наискорейшего роста функции:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd u}{\dd l}=\left(\vec n,\grad u\right)=\left|\vec n\right|\um\left|\grad u\right|\um\cos\left(\hat{\vec n,\grad u}\right)=\left|\grad u\right|\um\cos\left(\hat{\vec n,\grad u}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd u}{\dd l}\st max$
+\end_inset
+
+ при 
+\begin_inset Formula $\cos\left(\hat{\vec n,\grad u}\right)=1$
+\end_inset
+
+ , тоесть 
+\begin_inset Formula $\vec n=\df{\grad u}{\left|\grad u\right|}$
+\end_inset
+
+ - сложная функция аргумента 
+\begin_inset Formula $l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=f\left(x,y\right)=x^{2}+y^{2}$
+\end_inset
+
 
 \end_layout
 
