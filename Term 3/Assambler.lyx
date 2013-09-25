@@ -1979,12 +1979,12 @@ L1: ADD AX,2 ; увеличить АХ на 2
 \end_layout
 
 \begin_layout Itemize
-DB-описание байты
+DB --- описание байты
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-define byte-определить байт
+define byte --- определить байт
 \end_layout
 
 \begin_layout Standard
@@ -2251,13 +2251,532 @@ S1 S2 S3 равны
 Конструктор повторения DUP
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Часто в дерективе приходиться указывать одинаковые операнды
+\end_layout
+
+\begin_layout LyX-Code
+A DB 0,0,0,0,0,0,0,0,0,0,0,0,0
+\end_layout
+
+\begin_layout LyX-Code
+A DB 13 DUP(0)
+\end_layout
+
+\begin_layout Standard
+Это конструкция имеет вид: n DUP (p1,p2,...,pk), где n константа или констатное
+ выражение, значение которого может быть вычесленно во время компиляции.
+ р1, р2, ...
+ рk любые допустимые эллементы дерективы DB в томчисле и конструкция повторения.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+B DB 3 DUP(1,2); 1,2,1,2,1,2
+\end_layout
+
+\begin_layout LyX-Code
+C DB 10 DUP(20 DUP(?))
+\end_layout
+
+\begin_layout Standard
+Про пример выше.
+ В дерективе выделаяеться 200 байтов, значения которых неопределены, это
+ место можно трактовать 10 строк по 20 эллементов в каждой строке.
+ Фактически должны быть организованна, специальная обработка этих 200 байтов
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
-DW-описание слова
+DW --- описание слова
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+define word --- описываються переменные размером в слово
+\end_layout
+
+\begin_layout LyX-Code
+A DW ?
+\end_layout
+
+\begin_layout LyX-Code
+TYPE A=2, ибо WORD
 \end_layout
 
 \begin_layout Itemize
-DD-двойное слово
+Константное выражение 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $-32768..65535\quad[-2^{15};\,2^{16}-1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+B DW 1234h
+\end_layout
+
+\begin_layout LyX-Code
+C DW -2
+\end_layout
+
+\begin_layout Standard
+Как и в случае дерективы DB неотрицательные числа записываются в память
+ как числа без знака, а отрицательные в дополнительном коде.
+ При размещении числовых констант, ассе
+\end_layout
+
+\begin_layout Standard
+мблер автоматически меняет местами значения старшего и младшего байтов.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+В
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+С
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FF
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Частным случаем может быть описание строки, состоящие из двух или одного
+ символа
+\end_layout
+
+\begin_layout LyX-Code
+S1 DW '01'
+\end_layout
+
+\begin_layout LyX-Code
+S2 DW '1'
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Адресное выражение
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Адресное выражение --- это выражение, значением которого является адрес.
+\end_layout
+
+\begin_layout LyX-Code
+A DB ?
+\end_layout
+
+\begin_layout LyX-Code
+B DW A
+\end_layout
+
+\begin_layout Standard
+В слово выделенное под переменную В записывается адрес переменной А.
+ Значение этого адреса определяется, как велечина смещения соответствующего
+ поля, относительно начала того сегмента, в котором это поле памяти зарезервиров
+анно.
+ В качестве адресного выражения может быть использованно специальная переменная
+ $ --- счетчик команд.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+A DW $
+\end_layout
+
+\begin_layout Standard
+Запись означает что в поле А адрес поля А
+\end_layout
+
+\begin_layout LyX-Code
+B DB 100DUP(?)
+\end_layout
+
+\begin_layout LyX-Code
+C DW $-B;=100-длина В
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Все что работало с DB работает и с DW
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+DD --- двойное слово
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+define double word --- описывает двойное слово
+\end_layout
+
+\begin_layout Standard
+Имена таких переменных имеют тип DWORD=4байта
+\end_layout
+
+\begin_layout Itemize
+Целое чесло
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $[-2^{31},\,2^{32}-1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+X DD 123456h
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Константное выражение
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $[-2^{15};\,2^{16}-1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В языке ассемблера результаты всех операций беруться по моделю велечены
+ 
+\begin_inset Formula $2^{16}=10000h$
+\end_inset
+
+.
+ Поэтому получить выражение значение, которого являлось бы 32битовое(даже
+ 17 битовое) число не удаеться
+\end_layout
+
+\begin_layout LyX-Code
+X DD 8000h+8002h;=2
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В DD работает все как в DB и DW
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Директивы эквивалетности и присваивания
 \end_layout
 
 \end_body
