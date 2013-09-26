@@ -7790,6 +7790,555 @@ z=z_{0}+l\um\cos\gamma
 
 \end_layout
 
+\begin_layout Example
+\begin_inset Formula $\grad u=\left(\begin{array}{c}
+u_{x}\pr\\
+u_{y}\pr
+\end{array}\right)=\left(\begin{array}{c}
+2x\\
+2y
+\end{array}\right)=2\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{0}\left(1,0\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\grad u\left(M_{0}\right)=\left(\begin{array}{c}
+2\\
+0
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{1}\left(\df{\sqrt{2}}2,\df{\sqrt{2}}2\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\grad u\left(M_{1}\right)=\left(\begin{array}{c}
+\sqrt{2}\\
+\sqrt{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Часные производные и дифференциалы высших порядков
+\end_layout
+
+\begin_layout Subsection
+Часные производные высших порядков
+\end_layout
+
+\begin_layout Standard
+Пусть дана функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Выражения вида 
+\begin_inset Formula $\df{\dd^{2}f}{\dd x\dd y}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd y}\right),\ \df{\dd^{2}f}{\dd x^{2}}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd x}\right),\ \df{\dd^{2}f}{\dd y^{2}}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd y}\right),\ \df{\dd^{2}f}{\dd y\dd x}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd x}\right)$
+\end_inset
+
+ называвются второй производной от функуции 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+.
+ Обозначаются подругому: 
+\begin_inset Formula $u_{yx}\ppr,\ u_{x^{2}}\ppr,\ u_{y^{2}}\ppr,\ u_{yx}\ppr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+В случае 
+\begin_inset Formula $E^{m}$
+\end_inset
+
+, 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\df{\dd^{2}f}{\dd x_{k}\dd x_{i}}=\df{\dd}{\dd x_{k}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}x_{k}}\ppr,\ i\nr k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\df{\dd^{2}f}{\dd x_{i}^{2}}=\df{\dd}{\dd x_{i}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}^{2}}\ppr,\ i=\overline{1,m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(1)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=x^{3}\left(y^{2}+z^{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Найти 
+\begin_inset Formula $u_{x}\pr,\ u_{y}\pr,\ u_{z}\pr,\ u_{x^{2}}\pr\pr,\ u_{y^{2}}\pr\pr,\ u_{z^{2}}\pr\pr,\ u_{xy}\ppr,\ u_{yx}\ppr,\ u_{zy}\ppr,\ u_{yz}\ppr,\ u_{zx}\ppr,\ u_{xz}\ppr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr=3x^{2}\left(y^{2}+z^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{y}\pr=2y\um x^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{z}\pr=2x^{3}y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+В этом примере смешанные производные не зависяят от порядка дифференцирования.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2) (Когда 
+\begin_inset Formula $f_{xy}\ppr\ne f_{yx}\ppr$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+xy\df{x^{2}-y^{2}}{x^{2}+y^{2}} & ,\left(x,y\right)\nr\left(0,0\right)\\
+0 & ,\left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{x}\pr\left(x,y\right)=\begin{cases}
+y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{2}}\right] & ,\left(x,y\right)\nr\left(0,0\right)\\
+0 & ,\left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{x}\pr\left(0,y\right)=-y$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f_{xy}\ppr\left(0,y\right)=-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+В часности 
+\begin_inset Formula $f_{xy}\ppr\left(0,0\right)=-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{y}\pr=\begin{cases}
+x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{2}}\right] & ,\left(x,y\right)\nr\left(0,0\right)\\
+0 & ,\left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{y}\pr\left(x,0\right)=x\ \sl\ f_{yx}\pr\left(x,0\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+В часности 
+\begin_inset Formula $f_{yx}\ppr\left(0,0\right)=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{xy}\ppr\left(0,0\right)\nr f_{yx}\ppr\left(0,0\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+(О равенстве смешаных производных)
+\end_layout
+
+\begin_layout Theorem
+Пусть
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - определена в открытой области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+В области 
+\begin_inset Formula $D$
+\end_inset
+
+ определены часные производные 
+\begin_inset Formula $f_{x}\pr,\ f_{y}\pr,\ f_{xy}\ppr,f_{yx}\ppr.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Производные 
+\begin_inset Formula $f_{xy}\ppr,\ f_{yx}\ppr$
+\end_inset
+
+ непрерывны в некоторой точке 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда 
+\begin_inset Formula $f_{xy}\ppr\left(x_{0},y_{0}\right)=f_{yx}\ppr\left(x_{0},y_{0}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Рассмотрим выражение:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\omega & = & \df 1{\D x}\left(\df{f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)}{\D y}-\df{f\left(x_{0},y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)}{\D y}\right)=\\
+ & = & \left\{ \begin{array}{c}
+\text{Обозначим}\\
+\varphi\left(x\right)=\df{f\left(x,y_{0}+\D y\right)-f\left(x,y_{0}\right)}{\D y}\\
+\varphi\pr\left(x\right)=\df{f_{x}\pr\left(x,y_{0}+\D y\right)-f_{x}\pr\left(x,y_{0}\right)}{\D y}
+\end{array}\right\} =\\
+ & = & \df{\varphi\left(x_{0}+\D x\right)-\varphi\left(x\right)}{\D x}=\\
+ & = & \left\{ \text{По Логранжу}\right\} =\\
+ & = & \df{\varphi\pr\left(x_{0}+\Theta\um\D x\right)\um\D x}{\D x}=\\
+ & = & \varphi\pr\left(x_{0}+\Theta\um\D x\right)=\\
+ & = & \df{f_{x}\pr\left(x_{0}+\Theta\um\D x,y_{0}+\D y\right)-f_{x}\pr\left(x_{0}+\Theta\um\D x,y_{0}\right)}{\D y}=\\
+ & = & \left\{ f_{xy}\ppr\ -\ \text{существует}\right\} =\\
+ & = & \left\{ \text{По Т. Логранжа по аргументу}\ y\right\} =\\
+ & = & \df{f_{xy}\ppr\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y}{\D y}=\\
+ & = & f_{xy}\ppr\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right),\ \Theta,\Theta_{1}\in\left(0;1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогично, 
+\begin_inset Formula 
+\begin{eqnarray*}
+\omega & = & \df 1{\D y}\left(\df{f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}+\D y\right)}{\D x}-\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}\right)=\\
+ & = & f_{yx}\ppr\left(x_{0}+\Theta_{2}\um\D x,y_{0}+\Theta_{3}\um\D y\right),\ \Theta_{3},\Theta_{4}\in\left(0;1\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Итак, 
+\begin_inset Formula $f_{xy}\ppr\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{yx}\ppr\left(x_{0}+\Theta_{2}\um\D x,y_{0}+\Theta_{3}\um\D y\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $f_{xy}\ppr$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{yx}\ppr$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ , то при 
+\begin_inset Formula $\begin{array}{c}
+\D x\st0\\
+\D y\st0
+\end{array}$
+\end_inset
+
+ в пределе получится 
+\begin_inset Formula $f_{xy}\ppr\left(M_{0}\right)=f_{yx}\ppr\left(M_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Дифференциалы высших порядков.
+ Неинвариантность их формы.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим функцию 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Дифференциалом второго порядка от функции 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M\left(x,y\right)$
+\end_inset
+
+ называется выражение: 
+\begin_inset Formula $d^{2}u=d\left(du\right)=d\left(df\left(x,y\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+В случае, когда 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ - независимые переменные, 
+\begin_inset Formula $\D x=dx,\ \D y=dy$
+\end_inset
+
+ - не зависят от 
+\begin_inset Formula $x,y$
+\end_inset
+
+ (
+\begin_inset Formula $\left(dx\right)_{x}\pr=\left(dx\right)_{y}\pr=\left(dy\right)_{x}\pr=\left(dy\right)_{y}\pr=0$
+\end_inset
+
+), получим 
+\begin_inset Formula 
+\begin{eqnarray*}
+d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
+ & = & \left(u_{x}\pr\um dx+u_{y}\um dy\right)_{x}\pr\um dx+\left(u_{x}\pr\um dx+u_{y}\um dy\right)_{y}\pr\um dy=\\
+ & = & u_{x^{2}}\ppr\um d\left(x^{2}\right)+u_{yx}\ppr\um dy\um dx+u_{xy}\ppr\um dx\um dy+u_{y^{2}}\ppr\um d\left(y^{2}\right)=\\
+ & = & \left\{ u_{xy}\ppr=u_{yx}\ppr\right\} =\\
+ & = & u_{x^{2}}\ppr\um d\left(x^{2}\right)+2u_{xy}\ppr\um dx\um dy+u_{y^{2}}\ppr\um d\left(y^{2}\right)=\\
+ & = & \left\{ \text{Симаолическая запись}\right\} =\\
+ & = & \left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u
+\end{eqnarray*}
+
+\end_inset
+
+ Аналогично 
+\begin_inset Formula 
+\begin{equation}
+\forall n\in\N\ \ d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:1-1}
+\end{equation}
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $d^{3}\left(f\left(x,y\right)\right)=\df{\dd^{3}f}{\dd\left(x^{3}\right)}\um dx^{3}+3\um\df{\dd^{3}f}{\dd\left(x^{2}\right)\um\dd y}\um dx^{2}\um dy+3\um\df{\dd^{3}f}{\dd x\um\dd\left(y^{2}\right)}\um dx\um dy^{2}+\df{\dd^{3}f}{\dd\left(y^{3}\right)}\um dy^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+В общем случае 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d^{n}u=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Рассмотрим случай зависимых переменных.
+\end_layout
+
+\begin_layout Standard
+Пусть например 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y$
+\end_inset
+
+ - зависят: 
+\begin_inset Formula $x=\varphi\left(t\right),\ y=\psi\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В этом случае 
+\begin_inset Formula $dx=\varphi\pr\left(t\right)\um dt\nr\D x$
+\end_inset
+
+, если 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ - нелинейная функция.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dy=\psi\pr\left(t\right)\um dt\nr\D y$
+\end_inset
+
+, если она нелин6ейная.
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $d^{2}x=d\left(\varphi\pr\left(t\right)\um dt\right)=\varphi\ppr\left(t\right)\um d\left(t^{2}\right)\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\left\{ duv=du\um v=u\um dv\right\} =d\left(u_{x}\pr\right)\um dx+u_{x}\pr\um d^{2}x+d\left(u_{y}\pr\right)\um dy+u_{y}\pr\um d^{2}y=\\
+ & = & u_{x^{2}}\pr\um d\left(x^{2}\right)+u_{xy}\ppr\um dy\um dx+u_{x}\pr\um d\left(x^{2}\right)+u_{yx}\ppr\um dx\um dy+y_{y^{2}}\ppr\um d\left(y^{2}\right)+u_{y}\pr\um d^{2}y=\\
+ & = & \left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u+u_{x}\pr\um d^{2}x+y_{y}\pr\um d^{2}y
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+В случае 
+\begin_inset Formula $x_{i}=\varphi_{i}\left(t_{1},\tr,t_{k}\right)$
+\end_inset
+
+ - линейная функция,
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $x_{i}=a_{i}^{\left(1\right)}\um t_{1}+a_{i}^{\left(2\right)}t_{2}+\tr+a_{i}^{\left(k\right)}t_{k},\ i=\overline{1,m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\sl dx_{i}=a_{i}^{\left(1\right)}\um dt_{1}+a_{i}^{\left(2\right)}\um dt_{2}+\tr+a_{i}^{\left(k\right)}\um dt_{k}=a_{i}^{\left(1\right)}\um\D t_{1}+a_{i}^{\left(2\right)}\um\D t_{2}+\tr+a_{i}^{\left(k\right)}\um\D t_{k}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
