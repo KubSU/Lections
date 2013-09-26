@@ -2779,5 +2779,379 @@ X DD 8000h+8002h;=2
 Директивы эквивалетности и присваивания
 \end_layout
 
+\begin_layout Standard
+Константы описываються с использованием дерективы эквивалетности EQU:
+\end_layout
+
+\begin_layout Standard
+<имя>EQU<операнд>.
+\end_layout
+
+\begin_layout Standard
+Здесь обязательно должно быть указаноимя и один операнд.
+ Это деректива эквивалента этому коду в паскале Const <имя>=<операнд>.
+\end_layout
+
+\begin_layout Standard
+С её помощью программист информирует ассемблер о способе интерпретации некоторог
+о имени.
+ Возможно 3 способа задания операнда:
+\end_layout
+
+\begin_layout Enumerate
+Операнд константное выражение
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+A EQU 10
+\end_layout
+
+\begin_layout LyX-Code
+X DB A DUP(?)
+\end_layout
+
+\begin_layout LyX-Code
+Y DB A*10+1; 101
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Операнд имя
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+A EQU N
+\end_layout
+
+\begin_layout Standard
+В этом случаее именя A and N являються синонимами
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Операнд произвольный текст не являющийся константым выражением или именем.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В этом случае, любое вхождение имени, ассемблер заменяет на соответствующий
+ текст.
+ Отметим, что деректива EQU носит чисто информационый характер.
+ По ней ассемблер ничего не записывает в программу, поэтому дерективу EQU
+ можно ставить в любое место программы.
+\end_layout
+
+\begin_layout Standard
+<имя>=<конст.выражение>
+\end_layout
+
+\begin_layout LyX-Code
+K=1
+\end_layout
+
+\begin_layout LyX-Code
+N EQU K;N И К СИНОНИМЫ
+\end_layout
+
+\begin_layout LyX-Code
+A DB N; A:=1
+\end_layout
+
+\begin_layout LyX-Code
+K=2
+\end_layout
+
+\begin_layout LyX-Code
+A DB N; A:=2
+\end_layout
+
+\begin_layout Standard
+Если с помощью дерективы эквивалентности можно определить не только число
+ но и другие конструкции, то присваивание можно определить только константу.
+\end_layout
+
+\begin_layout Standard
+Появление в языке констант, которые менять свои значения вносит некоторую
+ неопределенность
+\end_layout
+
+\begin_layout LyX-Code
+K=1
+\end_layout
+
+\begin_layout LyX-Code
+N EQU K
+\end_layout
+
+\begin_layout LyX-Code
+A DW N; A:=1
+\end_layout
+
+\begin_layout LyX-Code
+K=2
+\end_layout
+
+\begin_layout LyX-Code
+B DW N; B:=2
+\end_layout
+
+\begin_layout LyX-Code
+//-------------
+\end_layout
+
+\begin_layout LyX-Code
+K=1
+\end_layout
+
+\begin_layout LyX-Code
+N EQU K+10
+\end_layout
+
+\begin_layout LyX-Code
+C DW N; C=11
+\end_layout
+
+\begin_layout LyX-Code
+K=2
+\end_layout
+
+\begin_layout LyX-Code
+D DW N; D=11
+\end_layout
+
+\begin_layout Standard
+Введем слудюшие уточнения в действие эквивалентност.
+ Если в правой части дерективы указанно имя константы, то имя слево не константо
+, а как синоним имени справа.
+ Если в правой части указанно любое другое констатное выражение, то имя
+ слева становиться именем константы.
+ По дерективе присваивания, правая часть вычесляеться сразу и становиться
+ новым значением константы
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Команды целочисленной арифметике
+\end_layout
+
+\begin_layout Enumerate
+i8, i16, i32 --- непосредственные операнды, те которые задаються в самой
+ команде.
+ Длиной соответсвтенно 8, 16, 32 бита.
+ 
+\end_layout
+
+\begin_layout Enumerate
+r8, r16 --- регистры общего назначения.
+ r8 байтовые регистры: AH, BL, ...
+ r16 регистры размером слово: AX, SI, CХ.
+\end_layout
+
+\begin_layout Enumerate
+sr --- сегментные регистры.
+\end_layout
+
+\begin_layout Enumerate
+m8, m16, m32 --- адресс памяти соответсующей длины.
+\end_layout
+
+\begin_layout Subsection
+Команда пересылки.
+ MOV
+\end_layout
+
+\begin_layout Standard
+Имеет синтаксис:
+\end_layout
+
+\begin_layout Standard
+MOV op1, op2// op1:=op2
+\end_layout
+
+\begin_layout Standard
+В качестве операндов могут задаваться: регистры, непосредственный операнд
+ и адреса.
+\end_layout
+
+\begin_layout Standard
+Например
+\end_layout
+
+\begin_layout LyX-Code
+MOV AX,SI
+\end_layout
+
+\begin_layout LyX-Code
+MOV BL,CH
+\end_layout
+
+\begin_layout LyX-Code
+MOV AL,BX
+\end_layout
+
+\begin_layout LyX-Code
+//-----------
+\end_layout
+
+\begin_layout LyX-Code
+A DW ?
+\end_layout
+
+\begin_layout LyX-Code
+B DW ?
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+MOV A,B//ERROR
+\end_layout
+
+\begin_layout LyX-Code
+MOV A,10
+\end_layout
+
+\begin_layout LyX-Code
+MOV AX,A
+\end_layout
+
+\begin_layout LyX-Code
+MOV B,AX
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В команде MOV нельзя одновременно использовать два сегментных регистра.
+ С помощью MOV нельзя изменить регистр CS.
+ Кроме явного задания адресов операндов(имена регистров, имена полей памяти),
+ можно использовать так называемую косвенную адресацию, то есть адресс некоторог
+о поля может формироваться с учетом содержимого некоторых регистров.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+MOV AX, A[SI]
+\end_layout
+
+\begin_layout Standard
+Адресс второго операнда вычесляеться как сумма адреса имени А и содержимого
+ регистра SI.
+ [ ]-содержимое по соответствующему адресу
+\end_layout
+
+\begin_layout LyX-Code
+A DW 100DUP(?)
+\end_layout
+
+\begin_layout LyX-Code
+ADR DW A
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+...
+\end_layout
+
+\begin_layout LyX-Code
+MOV SI, ADR
+\end_layout
+
+\begin_layout LyX-Code
+...
+\end_layout
+
+\begin_layout LyX-Code
+MOV AX, [SI]
+\end_layout
+
+\begin_layout LyX-Code
+...
+\end_layout
+
+\begin_layout LyX-Code
+SUB SI,SI
+\end_layout
+
+\begin_layout LyX-Code
+MOV AX,A[SI]
+\end_layout
+
+\begin_layout LyX-Code
+ADD SI,2
+\end_layout
+
+\begin_layout LyX-Code
+MOV AX,A[SI]
+\end_layout
+
+\begin_layout LyX-Code
+...
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Оператор указания типа.
+ PTR
+\end_layout
+
+\begin_layout Standard
+Может возникать ситуация, когда ассемблер не может одназначно определить
+ размер пересылаемой велечины.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mov [si],0
+\end_layout
+
+\begin_layout Standard
+По этой команде нельзя одназначно определить, что следует сформировать по
+ адресу который храниться в si.
+ Нулевой байт или нулевое слово.
+ В таких случаях программист, должен явно укзать ассемблеру такую информацию
+ с помощью оператора указания типа <тип>PTR<выражение>, где тип --- это
+ byte, word, dword, а выражение может быть константым или адресным.
+\end_layout
+
+\begin_layout LyX-Code
+mov byte ptr[si],0
+\end_layout
+
+\begin_layout LyX-Code
+mov word ptr[si],0
+\end_layout
+
+\begin_layout Standard
+Оператор PTR нужно не уточнить а нужно изменить тип непосредственного операнда,
+ например:
+\end_layout
+
+\begin_layout LyX-Code
+z dw 1234h  	
+\end_layout
+
+\begin_layout LyX-Code
+mov z, byte ptr 0
+\end_layout
+
+\begin_layout LyX-Code
+//----------------------
+\end_layout
+
+\begin_layout Subsection
+Команда обмена.
+ XCHG
+\end_layout
+
+\begin_layout Standard
+XCHG op1,op2//swap(op1,op2)
+\end_layout
+
+\begin_layout Section
+Команды сложения и вычитания
+\end_layout
+
 \end_body
 \end_document
