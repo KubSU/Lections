@@ -324,6 +324,35 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -2943,6 +2972,930 @@ y\left(0\right)=y_{0}
 
 \begin_layout Example
 Решение разрушается.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+27.09.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(О гладкости решений дифференциального уравнения)
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ имеет непрерывные производные по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ до 
+\begin_inset Formula $p$
+\end_inset
+
+-того порядка, то решение уравнения 
+\begin_inset Formula $\df{dy}{dx}=f\left(x,y\right)$
+\end_inset
+
+ имеет непрерывные производные по 
+\begin_inset Formula $x$
+\end_inset
+
+ до 
+\begin_inset Formula $\left(p+1\right)$
+\end_inset
+
+-го порядка.
+\end_layout
+
+\begin_layout Remark
+Под 0-ым прорядком производной подразумевается сама фугкция.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - некоторое решение уравнения 1.
+ Тогда функуция 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ имеет производную, слдовательно, отна непрерывна.
+ И справедливо тождество 
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=f\left(x,y\left(x\right)\right)\label{eq:qq1}
+\end{equation}
+
+\end_inset
+
+.
+ Тогда поскольку функция непрерывна , тотгда и правая часть (2) будет непрерывна
+ по 
+\begin_inset Formula $x$
+\end_inset
+
+ как суперпозиция непрерывных функций.
+ Следовательно, и левая частьо непрерывна.
+ Тоесть, решение тнепрерывно-дифференцируемо.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $p=1$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ имеет непрерывные производные по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Тогда правая часть имеет непрерывную производную по 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Следовательно и левая чать имеет непрерывную производную.
+ Тоесть 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+дважды непрерывна-дифференцируема.
+\end_layout
+
+\begin_layout Proof
+Продеференцируем правую часть
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\df{d^{2}y}{dx^{2}}=\df{\dd f}{\dd x}+\df{\dd f}{\dd y}\um\df{dy}{dx}\label{eq:qq2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Применяя к этому точжеству теже рассуждения теже, что и выше, докажем теорему,
+ для 
+\begin_inset Formula $p=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+И так далее..
+\end_layout
+
+\begin_layout Subsection
+Системы дифференциальных уравнений
+\end_layout
+
+\begin_layout Standard
+Рассмотри м системцу дифференциальных уравнпений вида 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dy_{1}}{dx}=f_{1}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)\\
+\tr\\
+\df{dy_{n}}{dx}=f_{n}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)
+\end{cases}\label{eq:qq3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+y_{1}\left(x_{0}\right)=y_{1}^{(0}\\
+\tr\\
+y_{n}\left(x_{0}\right)=y_{n}^{\left(0\right)}
+\end{cases}\label{eq:qq4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}\tr f_{n}$
+\end_inset
+
+ - известные функции своих аргументов,Э 
+\begin_inset Formula $x$
+\end_inset
+
+ - независимая переменная, 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ - искомые функциии, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ -начальная точка, 
+\begin_inset Formula $y_{1}^{\left(0\right)},\tr,y_{n}^{\left(0\right)}$
+\end_inset
+
+ - заданеные постоянные.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+как понимать эти обозначения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\tr\\
+y_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вектор-функцию 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ будем назыввать дифференцируемой в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ если в этой точке будет диференцируемы функции 
+\begin_inset Formula $y_{i}\left(x_{0}\right),\ i=\overline{1,n}$
+\end_inset
+
+.
+ И под производной функции будем понимать 
+\begin_inset Formula $y\pr\left(x_{0}\right)=\left(\begin{array}{c}
+y_{1}\pr\left(x_{0}\right)\\
+\tr\\
+y_{n}\pr\left(x_{0}\right)
+\end{array}\right)$
+\end_inset
+
+.
+ Аналогично можно говориьт об интеграле 
+\begin_inset Formula $\oui aby\left(x\right)dx=\left(\begin{array}{c}
+\oui aby_{1}\left(x\right)dx\\
+\tr\\
+\oui aby_{n}\left(x\right)dx
+\end{array}\right)$
+\end_inset
+
+.
+ Обозначим чсерез 
+\begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
+f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
+\tr\\
+f_{n}\left(x,y_{1},\tr my_{n}\right)
+\end{array}\right)=\left(\begin{array}{c}
+f_{1}\left(x,y\right)\\
+\tr\\
+f_{n}\left(x,y\right)
+\end{array}\right)$
+\end_inset
+
+.
+ Это есть огтображение некоторой облсати 
+\begin_inset Formula $G\in R_{n+1}$
+\end_inset
+
+ в пространство 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+.
+ Обозначим через 
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+y_{1}^{\left(0\right)}\\
+\tr\\
+y_{n}^{\left(0\right)}
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда задачу (3,4) в векторной форме можем записать 
+\begin_inset Formula $\begin{cases}
+\df{dy}{dx}=f\left(x,y\right)\\
+y\left(x_{0}\right)=y^{\left(0\right)}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $n$
+\end_inset
+
+-мерное пространство векторов 
+\begin_inset Formula $y=\left(\begin{array}{c}
+y_{1}\\
+\vtr\\
+y_{n}
+\end{array}\right)$
+\end_inset
+
+.
+ Норма - неотрицательно определенная функция, и обладающее свойствами: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|y\br0\right|\right|,\ \left|\left|y\right|\right|=0\ \sl\ y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|c\um y\right|\right|=\left|c\right|\um\left|\left|y\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|y^{\left(1\right)}+y^{\left(2\right)}\right|\right|\mr\left|\left|y^{\left(1\right)}\right|\right|+\left|\left|y^{\left(2\right)}\right|\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Мы возщьмеме за норму 
+\begin_inset Formula $\left|\left|y\right|\right|=\sqrt{\ous{i=1}ny^{\left(n\right)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Отображение 
+\begin_inset Formula $f$
+\end_inset
+
+ удовлоетворяет условию Липшиша с константой 
+\begin_inset Formula $l$
+\end_inset
+
+ по 2-му аргументу в области 
+\begin_inset Formula $G$
+\end_inset
+
+ переменных 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ если, 
+\begin_inset Formula $\forall\left(x,y_{1}\right),\left(x,y_{2}\right)\in G\vkl R_{n+1}$
+\end_inset
+
+ справедлива норма 
+\begin_inset Formula $\left|\left|f\left(x,y^{\left(1\right)}\right)-f\left(x,y^{\left(2\right)}\right)\right|\right|\mr L\um\left|\left|y^{\left(1\right)}-y^{\left(2\right)}\right|\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(Существования и едениственности Пикара для систем)
+\end_layout
+
+\begin_layout Theorem
+Пусть область 
+\begin_inset Formula $G$
+\end_inset
+
+ переменных 
+\begin_inset Formula $\left\{ \left(x,y_{1},\tr,y_{n}\right)\right\} $
+\end_inset
+
+ пространства 
+\begin_inset Formula $R_{n+1}$
+\end_inset
+
+ вектор-функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ непрерывна по 
+\begin_inset Formula $x$
+\end_inset
+
+ и удовлетворяют условию Липшица по 2-му аргументу 
+\begin_inset Formula $y$
+\end_inset
+
+ в любой замкнутой ограниченой области 
+\begin_inset Formula $\overline{G_{1}}\vkl G$
+\end_inset
+
+, тогда для любой точке 
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in G$
+\end_inset
+
+ найдется отрезок 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ , содержаший 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ внутри, что на нем сущестуют единственные решения задачи (3,4).
+ 
+\end_layout
+
+\begin_layout Proof
+Самостоятельно..
+ Подсказка: Он аналогичен для теоремы Пикара для обычных уравнений.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+хз
+\end_layout
+
+\begin_layout Enumerate
+Доказательство непрерывности вод этого отображения.
+\end_layout
+
+\begin_layout Enumerate
+Берем некоторую 
+\begin_inset Formula $\overline{G_{1}}\vkl G$
+\end_inset
+
+, такую что 
+\begin_inset Formula $\left(x_{0},y^{\left(0\right)}\right)\in G_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $M=\un{\max}{\overline{G_{1}}}\left|\left|f\left(x,y\right)\right|\right|$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Вводим область 
+\begin_inset Formula $\D=\left\{ \left(x,y_{1},\tr,y_{n}\right)\ |\ \left|\left|y-y^{\left(0\right)}\right|\right|\mr M\um\left|\left|x-x_{0}\right|\right|,\ x\in\left[a,b\right],\ x_{0}\in\left(a,b\right)\right\} \in\overline{G_{1}}$
+\end_inset
+
+ - аналог тех равнобежренных треугольников.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Выбераем непрерывную вектор-функцию 
+\begin_inset Formula $\varphi_{0}\left(x\right)$
+\end_inset
+
+, для которой точки 
+\begin_inset Formula $\left(x,\varphi\left(x\right)\right)\in\overline{G_{1}},\ x\in\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+После этого аналогичным образом строим вектор функцию 
+\begin_inset Formula $\varphi^{\left(1\right)}\left(x\right),\tr,\varphi^{\left(k\right)},\tr$
+\end_inset
+
+ .
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Они определены и непрерывны на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, каждая из н6их в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ при нимает значение вектора 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+.
+ И 
+\begin_inset Formula $\left(x,\varphi^{\left(k\right)}\left(x\right)\right)\vkl\D,\ x\in\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+После этого мв строим ряд 
+\begin_inset Formula $\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(n\right)}\left(x\right)-\varphi^{\left(n-1\right)}\left(x\right)\right)+\tr$
+\end_inset
+
+ И для этого рядо докажем оценку
+\begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}K^{k-1}\um2\um c$
+\end_inset
+
+, и докажем, что она схзодится у некоторой непрерывной функции 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Линейные системы
+\end_layout
+
+\begin_layout Standard
+Буддем рассмотривать линейные системы, разрешенные отностительно производных
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy_{1}}{dx}=a_{1,1}\left(x\right)\um y_{1}+\tr+a_{1,n}\left(x\right)\um y_{n}+f_{1}\left(x\right)\\
+\tr\\
+\df{dy_{n}}{dx}=a_{n,1}\left(x\right)\um y_{1}+\tr+a_{n,n}\left(x\right)\um y_{n}+f_{n}\left(x\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{i,j}\left(x\right),f_{i}\left(x\right),\ i,j=\overline{1,n}$
+\end_inset
+
+ - заданные непрерывные функции.
+ В дальнейшем будем преполагать, что они замкнуты на интервале 
+\begin_inset Formula $x\in\left(\alpha,\beta\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ - независимая переменная, 
+\begin_inset Formula $y_{1}\left(x\right)\tr y_{n}\left(x\right)$
+\end_inset
+
+ - неизвестные фнкции.
+ 
+\end_layout
+
+\begin_layout Standard
+Задача Коши 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+y_{1}\left(x_{0}\right)=y_{1}^{\left(0\right)}\\
+\tr\\
+y_{n}\left(x_{0}\right)=y_{n}^{\left(0\right)}
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\left(\begin{array}{c}
+f_{1}\left(x\right)\\
+\tr\\
+f_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\left(x\right)=\left(\begin{array}{c}
+a_{1,1}\left(x\right)\tr a_{1,n}\left(x\right)\\
+\tr\\
+a_{n,1}\tr a_{n,n}
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+y_{1}^{\left(0\right)}\\
+\tr\\
+y_{n}^{\left(0\right)}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда векторная запись задачи Коши принимает вид 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy}{dx}=A\left(x\right)\um y+f\left(x\right)\\
+y\left(x_{0}\right)=y^{\left(0\right)}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+..
+ тогда правая часть удовлетворяет условию Липшица по переменной 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ А тогда теорема Пикара для (1,2) справедлива, но из теоремы Пикара будет
+ вытекать что найдется такой отрещок 
+\begin_inset Formula $\left[a,b\right]\vkl\left(\alpha,\beta\right),\ x_{0}\in\left(a,b\right)$
+\end_inset
+
+ и оно будет единственным.
+\end_layout
+
+\begin_layout Theorem
+(Теорема о существовании и единственности для линейных систем)
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $a_{i,j}\left(x\right),\ f_{i}\left(x\right),\ i,j=\overline{1,n}$
+\end_inset
+
+ - определены и непрерывны на 
+\begin_inset Formula $x\in\left(\alpha,\beta\right)$
+\end_inset
+
+.
+ Тогда для любой точки 
+\begin_inset Formula $x_{0}\in\left(\alpha,\beta\right)$
+\end_inset
+
+ и для любого набора 
+\begin_inset Formula $-\b<y_{i}^{\left(0\right)}<+\b$
+\end_inset
+
+ существует единственное решение задачи (1,2) определенное на всем интервале
+ 
+\begin_inset Formula $\left(\alpha,\beta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно..
+ План.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y\left(x\right)=y^{\left(0\right)}+\oui{x_{0}}xA\left(\xi\right)\um y\left(\xi\right)d\xi+\oui{x_{0}}xf\left(\xi\right)d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Возьмем произвольный 
+\begin_inset Formula $\left[a_{1},b_{1}\right]\vkl\left(\alpha,\beta\right),\ x_{0}\in\left[a_{1},b_{1}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+И докажем что решение там определено.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Возьмем произвольную непрерывную функцию 
+\begin_inset Formula $\varphi^{\left(0\right)}\left(x\right),\ x\in\left[a_{1},b_{1}\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+И строем последовательность 
+\begin_inset Formula $\varphi^{\left(k+1\right)}\left(x\right)=y^{\left(0\right)}+\oui{x_{0}}xA\left(\xi\right)\varphi^{\left(k\right)}\left(\xi\right)d\xi+\oui{x_{0}}xf\left(\xi\right)f\xi$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi^{\left(k\right)}\left(x_{0}\right)=y^{\left(0\right)}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Снова строем ряд 
+\begin_inset Formula $\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right)+\tr$
+\end_inset
+
+ И решаем его схожимость.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|=\left|\left|\oui{x_{0}}xA\left(\xi\right)\left(\varphi^{\left(k\right)}\left(\xi\right)-\varphi^{\left(k+1\right)}\left(\xi\right)\right)d\xi\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Найдется такая константа 
+\begin_inset Formula $M$
+\end_inset
+
+, что 
+\begin_inset Formula $\un{\max}{i,j,x\in\left[a_{1},b_{1}\right]}\left|\left|a_{i,j}\left(x\right)\right|\right|\mr M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}M^{k-1}\um2\um c,\ \forall x\in\left[a_{1},b_{1}\right]$
+\end_inset
+
+, но ряд вод с таким членом сходится при любых 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left(\alpha,\beta\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если в системе (1) 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+, то система называется линейной-однородной, а противном случае она называется
+ линейной-неоднородной.
+\end_layout
+
+\begin_layout Subsection
+Свойства решений линейных однородных систем
+\end_layout
+
+\begin_layout Standard
+Бдем рассматривать линейную однородную систему (3).
+ И пусть имееться 
+\begin_inset Formula $m$
+\end_inset
+
+ решений системы (3).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y^{\left(1\right)}\left(x\right)=\left(\begin{array}{c}
+y_{1}^{\left(1\right)}\left(x\right)\\
+\vtr\\
+y_{n}^{\left(1\right)}\left(x\right)
+\end{array}\right),\tr,y^{\left(m\right)}\left(x\right)=\left(\begin{array}{c}
+y_{1}^{\left(n\right)}\left(x\right)\\
+\vtr\\
+y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+(1,О свойствах решений линейных однородных системы)
+\end_layout
+
+\begin_layout Theorem
+Линейная комбинация решений линейной однородной системы 
+\begin_inset Formula $\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)$
+\end_inset
+
+ является так же решением этой системы.
+\end_layout
+
+\begin_layout Proof
+Пусть вектор функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ - решениелинейной однородной системы.
+ 
+\begin_inset Formula $\df{dy}{dx}=A\left(x\right)y=0.$
+\end_inset
+
+ Подставим в нее вектор функцию 
+\begin_inset Formula $y\left(x\right)=\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)$
+\end_inset
+
+, тогда в левой части получим 
+\begin_inset Formula $\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)=\ous{k=1}mc_{k}\df{dy^{\left(k\right)}}{dx}-\ous{k=1}mc_{k}A\left(x\right)y^{\left(k\right)}\left(x\right)=\ous{k=1}mc_{k}\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $y^{\left(k\right)}$
+\end_inset
+
+ - решение , то 
+\begin_inset Formula $\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)=0$
+\end_inset
+
+, тогда и 
+\begin_inset Formula $\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)=0$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Рассмотрим некоторые вектор функции .
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ называются линейно зависимыми на интервале 
+\begin_inset Formula $\left(\alpha,\beta\right)$
+\end_inset
+
+, если существуют постоянные 
+\begin_inset Formula $c_{1},\tr,c_{m}$
+\end_inset
+
+ не все равные нулю, что 
+\begin_inset Formula $c_{1}y^{\left(1\right)}\left(x\right)+\tr+c_{m}y^{\left(m\right)}\left(x\right)=0,\ \forall x\in\left(\alpha,\beta\right)$
+\end_inset
+
+.
+ Если не удается найти ткие 
+\begin_inset Formula $c_{1},\tr,c_{m}$
+\end_inset
+
+ , то системы функций называют линейно независимой.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Определитель 
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+y_{1}^{\left(1\right)}\left(x\right) &  & y_{1}^{\left(n\right)}\left(x\right)\\
+\\
+y_{n}^{\left(1\right)}\left(X\right) &  & y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right|$
+\end_inset
+
+ называют определителем Вронского, построемым по функциям 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right)\tr y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(2)
+\end_layout
+
+\begin_layout Theorem
+Если вектор функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right)\tr y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ линейно зависимы, то определитель вронсткого, построеный по этим функциям
+ тождественно равен нулю.
+\end_layout
+
+\begin_layout Proof
+Вытекает из известной теоремы линейной алгебры..
+ Если столбцы определителя линейно зависимы, то определитель равен нулю
 \end_layout
 
 \end_body
