@@ -348,6 +348,24 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\dd}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\const}{\text{константа}}
+{\text{константа}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -4346,22 +4364,683 @@ status open
 
 \end_layout
 
+\begin_layout Subsection
+Классификация свободных механических систем
+\end_layout
+
 \begin_layout Standard
-\begin_inset Newpage newpage
+Внеутренние силы - силы взаимодействия между точками системы, они потенциальны.
+ Исключения составляют лиш силы трения, они в одних случаях можно считать
+ как внутриними так и внешними.
+\end_layout
+
+\begin_layout Standard
+Будем считать, что если все силы потенциальны, то полная потенциальная энергия
+ 
+\begin_inset Formula $U=U^{\left(e\right)}+U^{\left(i\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $e$
+\end_inset
+
+ - внешних силы, 
+\begin_inset Formula $i$
+\end_inset
+
+ - внутренних.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{\left(e\right)}=U\left(\vec{r_{1}},\vec{r_{2}},\tr,\vec{r_{n}},t\right)$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{i,j}\left(\left|\vec{r_{i}}-\vec{r_{j}}\right|\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{\left(i\right)}=\df 12\um\ous{i=1}n\left(\ous{j=1,\ i\nr j}n\left(U_{i,j}\left(\left|\vec{r_{i}}-\vec{r_{j}}\right|\right)\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Полная потенциальная энергия частицы 
+\begin_inset Formula 
+\begin{equation}
+U=U^{\left(e\right)}\left(\vec{r_{1}},\tr,\vec{r_{n}},t\right)+\df 12\um\ous{i=1}n\left(\ous{j=1,\ i\nr j}n\left(U_{i,j}\left(\left|\vec{r_{i}}-\vec{r_{j}}\right|\right)\right)\right)\label{eq:q1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Классификация систем по отношению к этой формуле щас будет.
+\end_layout
+
+\begin_layout Enumerate
+Замкнутые механические системы
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Системы, на которые не действуют внешние силы или действие внешних сил скомпенси
+ровано.
+ В формуле (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q1"
+
+\end_inset
+
+) нету первого слогаемого.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $U^{\left(e\right)}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $U=\df 12\um\ous{i=1}n\left(\ous{j=1,\ i\nr j}n\left(U_{i,j}\left(\left|\vec{r_{i}}-\vec{r_{j}}\right|\right)\right)\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\df{dU}{dt}=\ous{i=1}n\df{\dd U}{\dd\v{r_{i}}}\um\df{d\v{r_{i}}}{dt}\label{eq:A}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df{\dd U}{\dd\v{r_{i}}}=\left(\df{\dd U}{\dd x_{i}};\df{\dd U}{\dd y_{i}};\df{\dd U}{\dd z_{i}}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df{d\v{r_{i}}}{dt}=\left(\df{dx_{i}}{dt};\df{dy_{i}}{dt};\df{dz_{i}}{dt}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Системы, находяшиеся во внешних потенциальных 
+\emph on
+стационарных 
+\emph default
+силовых полях
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Станционарная - явно от времени не зависящая.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $U^{\left(e\right)}=U\left(\v{r_{1}},\tr,\v{r_{n}}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Полная потенциальная энергия явно от времени не зависит.
+\begin_inset Newline newline
+\end_inset
+
+Полная производная от потенциальной энергии так-же определяется формулой
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:A"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Внешние потенциальное поле не стационарно.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В этом случае формула (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:A"
+
+\end_inset
+
+) примет следующий вид 
+\begin_inset Formula 
+\begin{equation}
+\df{dU}{dt}=\ous{i=1}n\df{\dd U}{\dd\v{r_{i}}}\um\df{d\v{r_{i}}}{dt}+\df{\dd U}{\dd t}\label{eq:B}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Все остальные.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Это те системы, которые могут находиться в вихревых силовых полях(магнитных
+ и т п), и также все системы, в которых есть внешние силы трения, и также
+ внитрение.
+ Мы должны рассматривать в общих позициях.
+ Мы можем пошитать потенциальную энергию для отдельных сил, но не можем
+ пощитать полную потенциальную энергию.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Первые интегралы уравнений движения и законы сохранения
+\end_layout
+
+\begin_layout Standard
+В этом случае мвы должны задать 
+\begin_inset Formula $\v{r_{1}},\tr,\v{r_{n}},\dot{\v{r_{1}}},\tr,\dot{\v{r_{n}}}$
+\end_inset
+
+.
+ Мы должы задать 
+\begin_inset Formula $6\um n$
+\end_inset
+
+ значений.
+ Но в процессе движенрия системы есть такие функции,, которые не меняют
+ своих значения во время движения.
+ Любую такую функцию 
+\begin_inset Formula $f_{\alpha}\left(\v{r_{1}},\tr,\v{r_{n}},\dot{\v{r_{1}}},\tr,\dot{\v{r_{n}}},t\right)=f_{\alpha_{0}}-const$
+\end_inset
+
+ называют первым интегралом уревнения движения.
+ 
+\end_layout
+
+\begin_layout Example
+Пусть движется точка в жидкости.
+ Действует на нее только сила вязкого трения.
+ Сила тяжести компенсируется силой архимеда.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{\text{тр}}=-k\um v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $m\df{d\v v}{dt}=-k\um\v v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $m\df{d\v v}{dt}+k\um\df{d\v r}{dt}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{d\left(m\um\v v\right)}{dt}+\df{d\left(k\um\v r\right)}{dt}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df d{dt}\left(m\um\v v+k\um\v r\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $m\um\v v+k\um\v r=\const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Fact*
+Теорема о существовании: 
+\begin_inset Quotes eld
+\end_inset
+
+Ведьмы существуют.
+ Это моя Жена!
+\begin_inset Quotes erd
+\end_inset
+
+ - говорил учитель Сергея Евгеньевича.
+\end_layout
+
+\begin_layout Standard
+Мы можем понизить число диференциальных уравнний с помощью этих первых интеграло
+в.
+ 
+\end_layout
+
+\begin_layout Standard
+Среди первых интегралов уравнений движения выделяю группу (имеющих глубокое
+ происхождение) имеющих особое значение.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Функция в указанных интегралов не зависит явно от времени.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{\alpha}\text{ - не зависит явно от времени.}\label{eq:q3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Функция (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q3"
+
+\end_inset
+
+) определяет некую физическую величину, которая является 
+\emph on
+аддитивной
+\emph default
+.
+ Это означает что для системы это величина равна сумме величин частей системы,
+ или значение указанной величины для системы равно сумме значений этой величины
+ для каждой частицы системы.
+ 
+\end_layout
+
+\begin_layout Enumerate
+О существовании первых интегралов этой группы можно судить не по дифференциальны
+м уравнениям движения, а исходя из общих физических представлений о природе.
+ 
+\end_layout
+
+\begin_layout Standard
+Указанная группа интегралов носит название 
+\emph on
+законов сохранения
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Мы будем рассматривать 3 закона:
+\end_layout
+
+\begin_layout Enumerate
+Закон сохранения 
+\emph on
+механическеой энергии
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Механическая энергия сохраняется в процессе движения у замкнутых систем
+ и систем находящихся в стацианарных потенциальных силовых полях, для систем
+ типа 1 и 2.
+\emph default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df{\dd U}{\dd\v{r_{i}}}=\left(\df{\dd U}{\dd x_{i}};\df{\dd U}{\dd y_{i}};\df{\dd U}{\dd z_{i}}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Покажем что этот закон можно получить из общих уравнений движения.
+\begin_inset Newline newline
+\end_inset
+
+Рассмотрми уравнения движения 
+\begin_inset Formula $m_{i}\df{d\v{v_{i}}}{dt}=\v{F_{i}},\ i=\overline{1,n}$
+\end_inset
+
+.
+ Гдe 
+\begin_inset Formula $\v{F_{i}}$
+\end_inset
+
+ - равножействующая всех внутренних и внешних сил, дейтсвующих на 
+\begin_inset Formula $i$
+\end_inset
+
+-ю точку.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\v{F_{i}}=-\grad U=-\left(\df{\dd U}{\dd x_{i}};\df{\dd U}{\dd y_{i}};\df{\dd U}{\dd z_{i}}\right)=-\df{\dd U}{\dd\v{r_{i}}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m_{i}\df{d\v{v_{i}}}{dt}=-\df{\dd U}{\dd\v{r_{i}}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Каждое уравнение скалярно умножим на скорость соответствущей точки.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m_{i}\v{v_{i}}\df{d\v{v_{i}}}{dt}=-\df{\dd U}{\dd\v{r_{i}}}\v{v_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df 12\um m_{i}\um\df{dv_{i}^{2}}{dt}=-\df{\dd U}{\dd\v{r_{i}}}\um\df{d\v{r_{i}}}{dt}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\ous{i=1}n\left(\df d{dt}\left(\df{m_{i}v_{i}^{2}}2\right)\right)=-\ous{i=1}n\left(\df{\dd U}{\dd\v{r_{i}}}\um\df{d\v{r_{i}}}{dt}\right)\label{eq:q4}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ из (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:A"
+
+\end_inset
+
+) 
+\begin_inset Formula $\ous{i=1}n\left(\df{\dd U}{\dd\v{r_{i}}}\um\df{d\v{r_{i}}}{dt}\right)=\df{dU}{dt}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df d{dt}\ous{i=1}nT_{i}=-\df{dU}{dt}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df{dT}{dt}+\df{dU}{dt}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $T+U=E_{0}-\const$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Рассмотрим систему, находяшубюся не в стационарном силовом поле(систему
+ 3).
+
+\emph default
+ ( рассматриваем тип сиситемы 3)
+\begin_inset Newline newline
+\end_inset
+
+Формула (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q4"
+
+\end_inset
+
+) исходя из соотношения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:B"
+
+\end_inset
+
+) принимает вид 
+\begin_inset Formula $\df d{dt}\ous{i=1}nT_{i}=-\df{dU}{dt}+\df{\dd U}{\dd t}$
+\end_inset
+
+.
+ Тоесть 
+\begin_inset Formula $\df d{dt}\left(T+U\right)=\df{\dd U}{\dd t}$
+\end_inset
+
+.
+ Изменения энергии равно изменениям потенциальной энергии со временем.
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Теперь рассмотрим сиситему типа 4.
+\begin_inset Newline newline
+\end_inset
+
+
+\emph default
+Сила 
+\begin_inset Formula $\v{F_{i}}$
+\end_inset
+
+ - непотанциальна.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\v{F_{i}}=m_{i}\df{d\v{v_{i}}}{dt}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m_{i}\um\v{v_{i}}\um\df{d\v{v_{i}}}{dt}=\v{v_{i}}\um\v{F_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df d{dt}\left(\df{m_{i}v_{i}^{2}}2\right)=\df{d\v{r_{i}}}{dt}\um\v{F_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\df d{dt}\left(\df{m_{i}v_{i}^{2}}2\right)=\df{\v{F_{i}}d\v{r_{i}}}{dt}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $d\left(T_{i}\right)=\v{F_{i}}\um d\v{r_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dT_{i}=\delta A_{i}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Суммируя по всем 
+\begin_inset Formula $i$
+\end_inset
+
+ получим диференциалт кинетический энергии равнен элементарной работе всех
+ внутренних и внешних сил, действующих по систему.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dT=\delta A$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dT=\ous{i=1}n\v{F_{i}^{\left(e\right)}}d\v{r_{i}}+\ous{i=1}n\ous{i=1,\ i\nr j}n\v{F_{i,j}}\um d\v{r_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\D T=A^{\left(e\right)}+A^{\left(i\right)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Это теорема и изменений кинетаческой энергии: изменение кинетической энергии
+ системы равно работе внутренних и внешних сил.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $-\D U^{\left(i\right)}=A^{\left(i\right)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\D\left(T+U\right)=A^{\left(e\right)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\D\left(T+U\right)\mr0$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Закон сохранения 
+\emph on
+импульса
+\end_layout
+
+\begin_layout Enumerate
+Закон сохранения 
+\emph on
+момента импульса
 \end_layout
 
 \begin_layout Part
 Термодинамика
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
