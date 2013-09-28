@@ -60,8 +60,8 @@ theorems-starred
 \topmargin 2cm
 \rightmargin 2cm
 \bottommargin 2cm
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 5
+\tocdepth 5
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -216,9 +216,6 @@ theorems-starred
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \renewcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
