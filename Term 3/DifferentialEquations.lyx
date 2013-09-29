@@ -442,12 +442,12 @@ theorems-starred
 
 \begin_layout Standard
 Дифференциальным уравнением называется соотношение, содержащее независимые
- переменые, искомые функции этих переменных и производные этих функций.
+ переменные, искомые функции этих переменных и производные этих функций.
  Это нельзя считать определением.
 \end_layout
 
 \begin_layout Standard
-Если неизвестные функции, входяшие в уравнение зависят от одной переменной,
+Если неизвестные функции, входящие в уравнение зависят от одной переменной,
  то такое уравнение называют обыкновенных дифференциальным уравнением.
  Если же неизвестная функция зависит от нескольких переменных и содержит
  частные производные, то его называют дифференциальным уравнением с частными
@@ -459,11 +459,8 @@ theorems-starred
 \end_layout
 
 \begin_layout Definition
-Обыкновенным дифференциальным уравнением 
-\begin_inset Formula $n$
-\end_inset
-
--ного порядка называется соотношение вида 
+Обыкновенным дифференциальным уравнением n-ного порядка называется соотношение
+ вида 
 \begin_inset Formula 
 \begin{equation}
 F\left(x,y\left(x\right),\df{dx}{dy},\tr,\df{d^{n}y}{dx^{n}}\right)=0\label{eq:1}
@@ -479,7 +476,7 @@ F\left(x,y\left(x\right),\df{dx}{dy},\tr,\df{d^{n}y}{dx^{n}}\right)=0\label{eq:1
 \begin_inset Formula $x$
 \end_inset
 
- --- независимая переменнная, 
+ --- независимая переменная, 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
@@ -520,7 +517,7 @@ reference "eq:1"
 
 \begin_layout Standard
 Если дифференциальные уравнения разрешено относительно старшей производной,
- тоесть записано в виде 
+ то-есть записано в виде 
 \begin_inset Formula 
 \begin{equation}
 \df{d^{n}y}{dx^{n}}=f\left(x,y\left(x\right),\df{dy}{dx},\tr,\df{d^{n-1}y}{dx^{n-1}}\right)\label{eq:2}
@@ -553,7 +550,7 @@ reference "eq:1"
 \begin_inset Formula $x$
 \end_inset
 
- --- независимая переменая, 
+ --- независимая переменная, 
 \begin_inset Formula $y_{1}\left(x\right)\tr y_{n}\left(x\right)$
 \end_inset
 
@@ -576,7 +573,7 @@ reference "eq:2"
 \end_layout
 
 \begin_layout Standard
-Напимер 
+Например 
 \begin_inset Formula $y_{1}\left(x\right)=y\left(x\right)$
 \end_inset
 
@@ -625,7 +622,7 @@ reference "eq:4"
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
- являеся решением уравнения (
+ является решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:2"
@@ -723,7 +720,7 @@ reference "eq:3"
 \end_layout
 
 \begin_layout Definition
-Фазовая траектория --- проэкция интегральной кривой на фазовое пространство.
+Фазовая траектория --- проекция интегральной кривой на фазовое пространство.
 \end_layout
 
 \begin_layout Example
@@ -761,8 +758,8 @@ y_{2}\left(x\right)=\varphi_{2}\left(x\right)
 \end_layout
 
 \begin_layout Standard
-Дифференциальные уравнения имеют бестконечно много решений.
- Чтобы выделить единственное решенгие, нужно задавать дополнительные условия.
+Дифференциальные уравнения имеют бесконечно много решений.
+ Чтобы выделить единственное решение, нужно задавать дополнительные условия.
  Если дополнительные условия задаются в 1ой точке, то они называются начальными
  условиями или условиями Коши.
  Если дополнительные условия задаются более чем в 1ой точке, то они называются
@@ -782,7 +779,7 @@ reference "eq:2"
 
 \end_inset
 
-) начальные услолвия : 
+) начальные условия : 
 \begin_inset Formula $\begin{cases}
 y\left(x_{0}\right) & =y_{1,0}\\
 \tr & \dots\\
@@ -828,7 +825,7 @@ reference "eq:1"
 
 \end_inset
 
-) или его общим интегралом, если при соответствуюшем выборе постоянных 
+) или его общим интегралом, если при соответствующем выборе постоянных 
 \begin_inset Formula $c_{1}\tr c_{n}$
 \end_inset
 
@@ -888,7 +885,7 @@ reference "eq:1"
 \end_inset
 
 .
- Далее нам нужно найти другии решения, так как 
+ Далее нам нужно найти другие решения, так как 
 \begin_inset Formula $f_{2}$
 \end_inset
 
@@ -1036,7 +1033,7 @@ y\left(x_{0}\right)=y_{0}\label{eq:8}
 \begin_inset Formula $b\left(x\right)$
 \end_inset
 
- определены и непрерывны на интерваде 
+ определены и непрерывны на интервале 
 \begin_inset Formula $x\in\left(\alpha,\beta\right)$
 \end_inset
 
@@ -1067,7 +1064,7 @@ reference "eq:8"
 \end_layout
 
 \begin_layout Proof
-Рассмотрим ленейное однородное уравнение: 
+Рассмотрим линейное однородное уравнение: 
 \begin_inset Formula 
 \begin{equation}
 \df{dx}{dy}=a\left(x\right)\label{eq:9}
@@ -1076,15 +1073,15 @@ reference "eq:8"
 \end_inset
 
 .
- И получим решение задачи кКоши для этого уравнения.
+ И получим решение задачи Коши для этого уравнения.
  
 \begin_inset Formula $y\left(x\right)\equiv0$
 \end_inset
 
  - решение.
  Найдем другие решения.
- Пусть в некоторой точке решение не равно нюлю, тогда в силу непрерывности
- оно отлично от нбля и в некоторой ее окрестности.
+ Пусть в некоторой точке решение не равно нулю, тогда в силу непрерывности
+ оно отлично от нуля и в некоторой ее окрестности.
  
 \end_layout
 
@@ -1162,7 +1159,7 @@ reference "eq:8"
 \end_layout
 
 \begin_layout Proof
-Единственость решения задачи (
+Единственность решения задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:9"
@@ -1229,8 +1226,8 @@ reference "eq:9"
 
 \begin_layout Proof
 Перейдем к неоднородному уравнению 7.
- Для нахождения решения неоднородного уравнения примениим метод вариации
- произвольной постоянной, тоесть решения будим искать в виде: 
+ Для нахождения решения неоднородного уравнения применим метод вариации
+ произвольной постоянной, то-есть решения будим искать в виде: 
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:12}
@@ -1246,7 +1243,7 @@ y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\ri
 \end_layout
 
 \begin_layout Proof
-Подсттавим (
+Подставим (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:12"
@@ -1287,7 +1284,7 @@ reference "eq:7"
 
 \end_inset
 
-) неодходимо и достаточно чтобы 
+) необходимо и достаточно чтобы 
 \begin_inset Formula $z\left(x\right)$
 \end_inset
 
@@ -1315,7 +1312,7 @@ reference "eq:8"
 \end_inset
 
 .
- Проинтегруем в проделах от 
+ Проинтегрируем в проделах от 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -1440,13 +1437,13 @@ y_{2}\left(x_{0}\right)=y_{0}
 \end_layout
 
 \begin_layout Proof
-Вычтем подругому, и получим..
+Вычтем по-другому, и получим..
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula $\begin{cases}
-\df{du}{dx}=a\left(x\right)u\left(x\right)\\
-u\left(x_{0}\right)=0
+\df{du}{dx} & =a\left(x\right)u\left(x\right)\\
+u\left(x_{0}\right) & =0
 \end{cases}$
 \end_inset
 
@@ -1514,14 +1511,14 @@ reference "eq:7"
 
 \end_inset
 
-) есть сумма общего решения однородного(йе слогаемое в (
+) есть сумма общего решения однородного(1-е слагаемое в (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:14"
 
 \end_inset
 
-)) и частного решения неоднородного(2е слогаемое в (
+)) и частного решения неоднородного(2-е слагаемое в (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:14"
@@ -1548,7 +1545,7 @@ M\left(x,y\right)N\left(x,y\right)dy=0\label{eq:t1}
 \end_layout
 
 \begin_layout Definition
-Если левая часть уравннения (
+Если левая часть уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t1"
@@ -1574,8 +1571,8 @@ reference "eq:t1"
 \begin_inset Formula $M\left(x,y\right),\ N\left(x,y\right),\ \df{\delta M}{\delta y},\ \df{\delta N}{\delta x}$
 \end_inset
 
- непрерывны, то изж курса математического анализа известно что для того
- чтобы левая часть (
+ непрерывны, то из курса математического анализа известно что для того чтобы
+ левая часть (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t1"
@@ -1654,7 +1651,7 @@ reference "eq:t1"
 \end_layout
 
 \begin_layout Definition
-Множитоель, после умножения на который уравнение (
+Множитель, после умножения на который уравнение (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t1"
@@ -1666,7 +1663,7 @@ reference "eq:t1"
 \end_layout
 
 \begin_layout Standard
-Известно что для любого уравненения (
+Известно что для любого уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t1"
@@ -1681,8 +1678,8 @@ reference "eq:t1"
 \begin_inset Formula $N$
 \end_inset
 
- - гладкие, существует интегрирующий множитель, но нет способа, позваляющего
- находить его всегда, но в часных случаях, в часностиЮ когда интегрирующий
+ - гладкие, существует интегрирующий множитель, но нет способа, позволяющего
+ находить его всегда, но в частных случаях, в частности, когда интегрирующий
  множитель зависит только от одной переменной 
 \begin_inset Formula $x$
 \end_inset
@@ -1691,8 +1688,8 @@ reference "eq:t1"
 \begin_inset Formula $y$
 \end_inset
 
- его можно находить.
- Щас мы покажем это, и приведем условия, позволяющие определять интегрирующий
+, его можно находить.
+ Сейчас мы покажем это, и приведем условия, позволяющие определять интегрирующий
  множитель.
 \end_layout
 
@@ -1789,7 +1786,7 @@ reference "eq:t1"
 \end_layout
 
 \begin_layout Standard
-Если правая чсть (
+Если правая часть (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t3"
@@ -1832,7 +1829,7 @@ reference "eq:t4"
 \end_layout
 
 \begin_layout Subsection
-Лемма Гронуолла-Белмона
+Лемма Гронуолла--Белмона
 \end_layout
 
 \begin_layout Lemma
@@ -1840,7 +1837,7 @@ reference "eq:t4"
 \begin_inset Formula $u\left(t\right),\ \alpha\left(t\right),\ c\br0$
 \end_inset
 
- и функциии 
+ и функции 
 \begin_inset Formula $u\left(t\right),\ \alpha\left(t\right)$
 \end_inset
 
@@ -1874,12 +1871,12 @@ reference "eq:t4"
 \end_inset
 
 .
- Очевижно что 
+ Очевидно что 
 \begin_inset Formula $v>0,\ v\left(t\right)>u\left(t\right)$
 \end_inset
 
 .
- Продеференцируем равенство, получим:
+ Продифференцируем равенство, получим:
 \end_layout
 
 \begin_layout Proof
@@ -1949,7 +1946,7 @@ reference "eq:t4"
 \end_layout
 
 \begin_layout Proof
-Ето неравенство справедливо для любого 
+Это неравенство справедливо для любого 
 \begin_inset Formula $\varepsilon>0$
 \end_inset
 
@@ -1957,7 +1954,7 @@ reference "eq:t4"
 \end_layout
 
 \begin_layout Proof
-Перейдем в этом реравенству при 
+Перейдем в этом неравенстве при 
 \begin_inset Formula $\varepsilon\st0$
 \end_inset
 
@@ -1976,7 +1973,7 @@ reference "eq:t4"
 \begin_inset Formula $t<t_{0}$
 \end_inset
 
- учител предлогает нам провести доказательство самостоятельно...
+ преподаватель предлагает нам провести доказательство самостоятельно...
 \end_layout
 
 \begin_layout Subsection
@@ -2011,7 +2008,7 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \begin_inset Formula $x$
 \end_inset
 
- - независимая пернеменная, 
+ - независимая переменная, 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
@@ -2039,7 +2036,7 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \end_layout
 
 \begin_layout Definition
-Фунция 
+Функция 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -2067,7 +2064,7 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- имеет ограниченую часную производную 
+ имеет ограниченную частную производную 
 \begin_inset Formula $\df{\delta f}{\delta y}$
 \end_inset
 
@@ -2075,7 +2072,7 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \begin_inset Formula $G$
 \end_inset
 
-, то она удовлетворяет условию Лепшица в области 
+, то она удовлетворяет условию Липшица в области 
 \begin_inset Formula $G$
 \end_inset
 
@@ -2095,16 +2092,16 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \end_layout
 
 \begin_layout Standard
-Класс функуций, удовлетворяющих условию Лейпшица не шире дифференцируемых
- функций, но не любая непрерывная фуннкция удовлетворяет условию Лейпшица.
+Класс функций, удовлетворяющих условию Липшица не шире дифференцируемых
+ функций, но не любая непрерывная функция удовлетворяет условию Липшица.
 \end_layout
 
 \begin_layout Example
 \begin_inset Formula $f\left(x,y\right)=\left|y\right|$
 \end_inset
 
- - удовлетворяет Липшицу, но не является дифференцируемой в области, содержащей
- точки оси абсцис.
+ - удовлетворяет условию Липшица, но не является дифференцируемой в области,
+ содержащей точки оси абсцисс.
 \end_layout
 
 \begin_layout Standard
@@ -2228,7 +2225,7 @@ y\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,y\left(\xi\right)\right)d\xi\label{
 \end_layout
 
 \begin_layout Standard
-Уравнения, в которых неисвестная функция входит под знак интеграла называют
+Уравнения, в которых неизвестная функция входит под знак интеграла называют
  интегральными уравнениями.
 \end_layout
 
@@ -2277,7 +2274,7 @@ reference "eq:th3"
 \end_inset
 
 ).
- Справедливо и обратная: если некоторая непрерывная функция удловлетворяет
+ Справедливо и обратная: если некоторая непрерывная функция удовлетворяет
  уравнению (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2300,7 +2297,7 @@ reference "eq:th2"
 \end_inset
 
 ).
- Поэтому можно доказывать какието утверждения не для задачи (
+ Поэтому можно доказывать какие-то утверждения не для задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th1"
@@ -2345,11 +2342,11 @@ reference "eq:th3"
 \begin_inset Formula $x$
 \end_inset
 
- и удовлоетворяет условию Липшица по 
+ и удовлетворяет условию Липшица по 
 \begin_inset Formula $y$
 \end_inset
 
- в любой замкнутой ограниченой области 
+ в любой замкнутой ограниченной области 
 \begin_inset Formula $\overline{G_{1}}\vkl G$
 \end_inset
 
@@ -2410,7 +2407,7 @@ reference "eq:th2"
 
 \end_inset
 
- Теорему бедем доказывать для интегрального уравнения (
+ Теорему будем доказывать для интегрального уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th3"
@@ -2445,11 +2442,11 @@ reference "eq:th2"
 \end_inset
 
 .
- Тогда по теореме Вейштрасса в силу непрерывности 
+ Тогда по теореме Вейерштрасса в силу непрерывности 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- функуция 
+ функция 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2479,7 +2476,7 @@ status open
 \end_inset
 
  проведем две прямые.
- Одну с угловый коофицентом 
+ Одну с угловым коэффициентом 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2487,7 +2484,7 @@ status open
 \begin_inset Formula $AB$
 \end_inset
 
-), а другую с угловым коофицентом 
+), а другую с угловым коэффициентом 
 \begin_inset Formula $-M$
 \end_inset
 
@@ -2496,7 +2493,7 @@ status open
 \end_inset
 
 ).
- Проверем две прямые 
+ Проведем две прямые 
 \begin_inset Formula $x=a$
 \end_inset
 
@@ -2504,7 +2501,7 @@ status open
 \begin_inset Formula $x=b$
 \end_inset
 
-, паралельные оси ординат, так, чтобы получить два равнобедренных треугольника
+, параллельные оси ординат, так, чтобы получить два равнобедренных треугольника
  
 \begin_inset Formula $\D ABC$
 \end_inset
@@ -2518,7 +2515,7 @@ status open
 \end_inset
 
 .
- Возьмем произвольнуй непрерывную функцию 
+ Возьмем произвольную непрерывную функцию 
 \begin_inset Formula $\varphi_{0}\left(x\right)$
 \end_inset
 
@@ -2540,7 +2537,7 @@ status open
 \begin_inset Formula $\varphi_{1}\left(x\right)$
 \end_inset
 
- - определена, неррерывна на 
+ - определена, непрерывна на 
 \begin_inset Formula $\left[a,b\right]$
 \end_inset
 
@@ -2601,17 +2598,17 @@ status open
 \end_inset
 
 .
- Процесс построения функуций 
+ Процесс построения функций 
 \begin_inset Formula $\varphi_{1}.\varphi_{2}\tr\varphi_{n}\tr$
 \end_inset
 
- называется процессом последоветельных приближений.
- Покажем, что неа отрезке 
+ называется процессом последовательных приближений.
+ Покажем, что на отрезке 
 \begin_inset Formula $\left[a,b\right]$
 \end_inset
 
  построенная последовательность функций сходится равномерно к непрерывному
- решению уравнния (
+ решению уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th3"
@@ -2627,12 +2624,11 @@ reference "eq:th3"
 
 \end_inset
 
-.
- Поэтому вместо доказательства сходимости последовательности 
+Поэтому вместо доказательства сходимости последовательности 
 \begin_inset Formula $\left\{ \varphi_{n}\right\} $
 \end_inset
 
- будем доказывать сходимость функуционального ряда 
+ будем доказывать сходимость функционального ряда 
 \begin_inset Formula 
 \begin{equation}
 \varphi_{n}\left(x\right)=\varphi_{1}\left(x\right)+\left(\varphi_{2}\left(x\right)-\varphi_{1}\left(x\right)\right)+\tr+\left(\varphi_{n}\left(x\right)-\varphi_{n-1}\left(x\right)\right)+\tr\label{eq:th6}
@@ -2753,7 +2749,7 @@ reference "eq:th6"
 \begin_inset Formula $a_{n}=2\um c\um k^{n-1}\um\df{\left|b-a\right|^{n-1}}{\left(n-1\right)!}$
 \end_inset
 
- является сходящиимся.
+ является сходящимся.
 \end_layout
 
 \begin_layout Proof
@@ -2853,16 +2849,16 @@ reference "eq:th3"
 \begin_inset Formula $\left(x_{1},\psi\left(x_{1}\right)\right)\in\overline{G_{1}}$
 \end_inset
 
-, но не пренадлежат треугольникам.
+, но не принадлежат треугольникам.
  Тогда 
 \begin_inset Formula $\left|\psi\left(x_{1}\right)-y_{0}\right|\mr M\left|x_{0}-x\right|$
 \end_inset
 
- - протеворечие 
+ - противоречие 
 \begin_inset Formula $\sl$
 \end_inset
 
- график находтся в треугольниках 
+ график находится в треугольниках 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -2936,7 +2932,7 @@ reference "eq:th2"
 \end_layout
 
 \begin_layout Proof
-Без докзательства.
+Без доказательства.
 \end_layout
 
 \begin_layout Example
@@ -3024,7 +3020,7 @@ status open
 \end_layout
 
 \begin_layout Remark
-Под 0-ым прорядком производной подразумевается сама фугкция.
+Под 0-ым порядком производной подразумевается сама функция.
 \end_layout
 
 \begin_layout Proof
@@ -3033,11 +3029,11 @@ status open
 \end_inset
 
  - некоторое решение уравнения 1.
- Тогда функуция 
+ Тогда функция 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
- имеет производную, слдовательно, отна непрерывна.
+ имеет производную, следовательно, она непрерывна.
  И справедливо тождество 
 \begin_inset Formula 
 \begin{equation}
@@ -3046,15 +3042,14 @@ status open
 
 \end_inset
 
-.
- Тогда поскольку функция непрерывна , тотгда и правая часть (2) будет непрерывна
+Тогда поскольку функция непрерывна , тогда и правая часть (2) будет непрерывна
  по 
 \begin_inset Formula $x$
 \end_inset
 
  как суперпозиция непрерывных функций.
- Следовательно, и левая частьо непрерывна.
- Тоесть, решение тнепрерывно-дифференцируемо.
+ Следовательно, и левая часть непрерывна.
+ То-есть, решение непрерывно-дифференцируемо.
 \end_layout
 
 \begin_layout Proof
@@ -3062,7 +3057,7 @@ status open
 \begin_inset Formula $p=1$
 \end_inset
 
-, тоесть 
+, то-есть 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -3080,16 +3075,16 @@ status open
 \end_inset
 
 .
- Следовательно и левая чать имеет непрерывную производную.
- Тоесть 
+ Следовательно и левая часть имеет непрерывную производную.
+ То-есть 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
-дважды непрерывна-дифференцируема.
+ дважды непрерывно-дифференцируема.
 \end_layout
 
 \begin_layout Proof
-Продеференцируем правую часть
+Продифференцируем правую часть
 \end_layout
 
 \begin_layout Proof
@@ -3104,7 +3099,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Применяя к этому точжеству теже рассуждения теже, что и выше, докажем теорему,
+Применяя к этому тождеству те-же рассуждения, что и выше, докажем теорему,
  для 
 \begin_inset Formula $p=2$
 \end_inset
@@ -3121,7 +3116,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Рассмотри м системцу дифференциальных уравнпений вида 
+Рассмотрим систему дифференциальных уравнений вида 
 \end_layout
 
 \begin_layout Standard
@@ -3154,27 +3149,39 @@ y_{n}\left(x_{0}\right)=y_{n}^{\left(0\right)}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 \begin_inset Formula $f_{1}\tr f_{n}$
 \end_inset
 
- - известные функции своих аргументов,Э 
+ --- известные функции своих аргументов, 
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $x$
 \end_inset
 
- - независимая переменная, 
+ --- независимая переменная, 
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- - искомые функциии, 
+ --- искомые функции, 
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $x_{0}$
 \end_inset
 
- -начальная точка, 
+ --- начальная точка, 
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $y_{1}^{\left(0\right)},\tr,y_{n}^{\left(0\right)}$
 \end_inset
 
- - заданеные постоянные.
+ --- заданные постоянные.
 \end_layout
 
 \begin_layout Standard
@@ -3206,11 +3213,11 @@ y_{n}\left(x\right)
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
- будем назыввать дифференцируемой в точке 
+ будем называть дифференцируемой в точке 
 \begin_inset Formula $x_{0}$
 \end_inset
 
- если в этой точке будет диференцируемы функции 
+ если в этой точке будет дифференцируемы функции 
 \begin_inset Formula $y_{i}\left(x_{0}\right),\ i=\overline{1,n}$
 \end_inset
 
@@ -3224,16 +3231,19 @@ y_{n}\pr\left(x_{0}\right)
 \end_inset
 
 .
- Аналогично можно говориьт об интеграле 
-\begin_inset Formula $\oui aby\left(x\right)dx=\left(\begin{array}{c}
+ Аналогично можно говорить об интеграле 
+\begin_inset Formula 
+\[
+\oui aby\left(x\right)dx=\left(\begin{array}{c}
 \oui aby_{1}\left(x\right)dx\\
 \tr\\
 \oui aby_{n}\left(x\right)dx
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
-.
- Обозначим чсерез 
+Обозначим через 
 \begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
 f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
 \tr\\
@@ -3246,7 +3256,7 @@ f_{n}\left(x,y\right)
 \end_inset
 
 .
- Это есть огтображение некоторой облсати 
+ Это --- есть отображение некоторой области 
 \begin_inset Formula $G\in R_{n+1}$
 \end_inset
 
@@ -3288,7 +3298,8 @@ y_{n}
 \end_inset
 
 .
- Норма - неотрицательно определенная функция, и обладающее свойствами: 
+ Норма --- неотрицательно определенная функция, и обладающее свойствами:
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -3313,7 +3324,7 @@ y_{n}
 \end_layout
 
 \begin_layout Standard
-Мы возщьмеме за норму 
+Мы возьмем за норму 
 \begin_inset Formula $\left|\left|y\right|\right|=\sqrt{\ous{i=1}ny^{\left(n\right)}}$
 \end_inset
 
@@ -3325,7 +3336,7 @@ y_{n}
 \begin_inset Formula $f$
 \end_inset
 
- удовлоетворяет условию Липшиша с константой 
+ удовлетворяет условию Липшица с константой 
 \begin_inset Formula $l$
 \end_inset
 
@@ -3353,7 +3364,7 @@ y_{n}
 \end_layout
 
 \begin_layout Theorem
-(Существования и едениственности Пикара для систем)
+(Существования и единственности Пикара для систем)
 \end_layout
 
 \begin_layout Theorem
@@ -3381,7 +3392,7 @@ y_{n}
 \begin_inset Formula $y$
 \end_inset
 
- в любой замкнутой ограниченой области 
+ в любой замкнутой ограниченной области 
 \begin_inset Formula $\overline{G_{1}}\vkl G$
 \end_inset
 
@@ -3393,11 +3404,11 @@ y_{n}
 \begin_inset Formula $\left[a,b\right]$
 \end_inset
 
- , содержаший 
+ , содержащий 
 \begin_inset Formula $x_{0}$
 \end_inset
 
- внутри, что на нем сущестуют единственные решения задачи (3,4).
+ внутри, что на нем существуют единственные решения задачи (3,4).
  
 \end_layout
 
@@ -3440,12 +3451,12 @@ y_{n}
 \begin_inset Formula $\D=\left\{ \left(x,y_{1},\tr,y_{n}\right)\ |\ \left|\left|y-y^{\left(0\right)}\right|\right|\mr M\um\left|\left|x-x_{0}\right|\right|,\ x\in\left[a,b\right],\ x_{0}\in\left(a,b\right)\right\} \in\overline{G_{1}}$
 \end_inset
 
- - аналог тех равнобежренных треугольников.
+ - аналог тех равнобедренных треугольников.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Выбераем непрерывную вектор-функцию 
+Выбираем непрерывную вектор-функцию 
 \begin_inset Formula $\varphi_{0}\left(x\right)$
 \end_inset
 
@@ -3474,7 +3485,7 @@ y_{n}
 \begin_inset Formula $x_{0}$
 \end_inset
 
- при нимает значение вектора 
+ принимает значение вектора 
 \begin_inset Formula $y_{0}$
 \end_inset
 
@@ -3488,15 +3499,15 @@ y_{n}
 
 \end_deeper
 \begin_layout Enumerate
-После этого мв строим ряд 
+После этого мы строим ряд 
 \begin_inset Formula $\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(n\right)}\left(x\right)-\varphi^{\left(n-1\right)}\left(x\right)\right)+\tr$
 \end_inset
 
- И для этого рядо докажем оценку
+ И для этого ряда докажем оценку
 \begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}K^{k-1}\um2\um c$
 \end_inset
 
-, и докажем, что она схзодится у некоторой непрерывной функции 
+, и докажем, что она сходится у некоторой непрерывной функции 
 \begin_inset Formula $\varphi\left(x\right)$
 \end_inset
 
@@ -3509,7 +3520,7 @@ y_{n}
 \end_layout
 
 \begin_layout Standard
-Буддем рассмотривать линейные системы, разрешенные отностительно производных
+Будем рассматривать линейные системы, разрешенные относительно производных
  
 \end_layout
 
@@ -3529,7 +3540,7 @@ y_{n}
 \end_inset
 
  - заданные непрерывные функции.
- В дальнейшем будем преполагать, что они замкнуты на интервале 
+ В дальнейшем будем предполагать, что они замкнуты на интервале 
 \begin_inset Formula $x\in\left(\alpha,\beta\right)$
 \end_inset
 
@@ -3542,7 +3553,7 @@ y_{n}
 \begin_inset Formula $y_{1}\left(x\right)\tr y_{n}\left(x\right)$
 \end_inset
 
- - неизвестные фнкции.
+ - неизвестные функции.
  
 \end_layout
 
@@ -3616,7 +3627,7 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 
 .
  А тогда теорема Пикара для (1,2) справедлива, но из теоремы Пикара будет
- вытекать что найдется такой отрещок 
+ вытекать что найдется такой отрезок 
 \begin_inset Formula $\left[a,b\right]\vkl\left(\alpha,\beta\right),\ x_{0}\in\left(a,b\right)$
 \end_inset
 
@@ -3705,7 +3716,7 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 \begin_inset Formula $\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right)+\tr$
 \end_inset
 
- И решаем его схожимость.
+ И решаем его сходимость.
 \end_layout
 
 \begin_layout Enumerate
@@ -3762,8 +3773,8 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 \end_layout
 
 \begin_layout Standard
-Бдем рассматривать линейную однородную систему (3).
- И пусть имееться 
+Будем рассматривать линейную однородную систему (3).
+ И пусть имеется 
 \begin_inset Formula $m$
 \end_inset
 
@@ -3803,7 +3814,7 @@ y_{n}^{\left(n\right)}\left(x\right)
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- - решениелинейной однородной системы.
+ --- решение линейной однородной системы.
  
 \begin_inset Formula $\df{dy}{dx}=A\left(x\right)y=0.$
 \end_inset
@@ -3813,11 +3824,16 @@ y_{n}^{\left(n\right)}\left(x\right)
 \end_inset
 
 , тогда в левой части получим 
-\begin_inset Formula $\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)=\ous{k=1}mc_{k}\df{dy^{\left(k\right)}}{dx}-\ous{k=1}mc_{k}A\left(x\right)y^{\left(k\right)}\left(x\right)=\ous{k=1}mc_{k}\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)$
+\begin_inset Formula 
+\begin{align*}
+\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right) & =\\
+ & =\ous{k=1}mc_{k}\df{dy^{\left(k\right)}}{dx}-\ous{k=1}mc_{k}A\left(x\right)y^{\left(k\right)}\left(x\right)=\\
+ & =\ous{k=1}mc_{k}\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)
+\end{align*}
+
 \end_inset
 
-.
- Так как 
+Так как 
 \begin_inset Formula $y^{\left(k\right)}$
 \end_inset
 
@@ -3853,11 +3869,11 @@ y_{n}^{\left(n\right)}\left(x\right)
 \end_inset
 
 .
- Если не удается найти ткие 
+ Если не удается найти такие 
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
- , то системы функций называют линейно независимой.
+ , то систему функций называют линейно независимой.
 \end_layout
 
 \begin_layout --Separator--
@@ -3867,13 +3883,13 @@ y_{n}^{\left(n\right)}\left(x\right)
 \begin_layout Definition
 Определитель 
 \begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
-y_{1}^{\left(1\right)}\left(x\right) &  & y_{1}^{\left(n\right)}\left(x\right)\\
-\\
-y_{n}^{\left(1\right)}\left(X\right) &  & y_{n}^{\left(n\right)}\left(x\right)
+y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\right)
 \end{array}\right|$
 \end_inset
 
- называют определителем Вронского, построемым по функциям 
+ называют определителем Вронского, построенным по функциям 
 \begin_inset Formula $y^{\left(1\right)}\left(x\right)\tr y^{\left(n\right)}\left(x\right)$
 \end_inset
 
@@ -3889,7 +3905,7 @@ y_{n}^{\left(1\right)}\left(X\right) &  & y_{n}^{\left(n\right)}\left(x\right)
 \begin_inset Formula $y^{\left(1\right)}\left(x\right)\tr y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- линейно зависимы, то определитель вронсткого, построеный по этим функциям
+ линейно зависимы, то определитель Вронского, построенный по этим функциям
  тождественно равен нулю.
 \end_layout
 
