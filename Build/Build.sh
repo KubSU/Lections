@@ -7,8 +7,8 @@ while read filename; do
 	lyx -e pdf2 "${filename}";
 done
 
-find ../ \( -name '*.tex' -o -name '*.out' -o -name '*.log' -o -name '*.aux' -o -name '*.toc' \) |
+find ../ -name '*.pdf' |
 while read fname; do
-	echo "Deletting: ${fname}";
-	rm "${fname}";
+	echo "Moving: ${fname}";
+	mv "${fname}" ./;
 done
