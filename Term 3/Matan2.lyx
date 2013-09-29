@@ -412,7 +412,11 @@ reference "eq:Сршылряд"
 \begin_inset Formula $S_{n}=a_{1}+a_{2}+\tr+a_{n}$
 \end_inset
 
- называется n-ной частичной суммой ряда (
+ называется 
+\begin_inset Formula $n-$
+\end_inset
+
+ой частичной суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Сршылряд"
@@ -505,7 +509,7 @@ q=q
 \end_deeper
 \end_deeper
 \begin_layout Standard
-Из определения суммы числового ряда вытикают свойства:
+Из определения суммы числового ряда вытекают свойства:
 \end_layout
 
 \begin_layout Enumerate
@@ -513,7 +517,11 @@ q=q
 \begin_inset Formula $\ous{i=1}{\b}a_{n}$
 \end_inset
 
- сходится к сумме S, то ряд 
+ сходится к сумме 
+\begin_inset Formula $S$
+\end_inset
+
+, то ряд 
 \begin_inset Formula $A+a_{1}+a_{2}+a_{3}+\tr+a_{n}+\tr$
 \end_inset
 
@@ -546,7 +554,11 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- сходится к S, то ряд 
+ сходится к 
+\begin_inset Formula $S$
+\end_inset
+
+, то ряд 
 \begin_inset Formula $\ous{n=1}{\b}\alpha\um a_{n}$
 \end_inset
 
@@ -599,7 +611,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)$
 \end_inset
 
- тоже схожятся, причем выполняется следующее равенство: 
+ тоже сходятся, причем выполняется следующее равенство: 
 \begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)=$
 \end_inset
 
@@ -634,7 +646,11 @@ q=q
 \end_inset
 
  - сходится.
- Отбросим k первых слогаемых ряда, получим следующий ряд: 
+ Отбросим 
+\begin_inset Formula $k$
+\end_inset
+
+ первых слагаемых ряда, получим следующий ряд: 
 \begin_inset Formula $a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr$
 \end_inset
 
@@ -653,12 +669,12 @@ q=q
 \end_layout
 
 \begin_layout Standard
-Так как сходимость числорвого ряда 
+Так как сходимость числового ряда 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- равносильно сходимости числовых последовательстей, то применяя критерий
- Коши к реследоватеьности 
+ равносильно сходимости числовых последовательностей, то применяя критерий
+ Коши к последовательности 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
@@ -750,12 +766,12 @@ q=q
 \end_layout
 
 \begin_layout Example
-Гормонический ряд 
+Гармонический ряд 
 \begin_inset Formula $\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr$
 \end_inset
 
 .
- Докажем его расходимость, тоесть выполняестя следующее условие 
+ Докажем его расходимость, то-есть выполняется следующее условие 
 \begin_inset Formula 
 \begin{eqnarray*}
 \exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists p\in\N\ :\  & \left|\ous{k=n+1}{n+p}\df 1k\right|= & \df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
@@ -768,16 +784,24 @@ q=q
 \end_layout
 
 \begin_layout Subsubsection
-Остаток симлового ряда.
- Необходиммое условие сходимости числового ряда.
+Остаток числового ряда.
+ Необходимое условие сходимости числового ряда.
 \end_layout
 
 \begin_layout Definition
 Числовой ряд 
-\begin_inset Formula $r_{n}=a_{n+1}+a_{n+2}+\tr$
+\begin_inset Formula 
+\[
+r_{n}=a_{n+1}+a_{n+2}+\tr
+\]
+
 \end_inset
 
- - называется n-ным остатком числового ряда 
+ называется 
+\begin_inset Formula $n$
+\end_inset
+
+-ым остатком числового ряда 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}.$
 \end_inset
 
@@ -819,7 +843,7 @@ q=q
 \end_layout
 
 \begin_layout Lemma
-Есля числовой ряд 
+Если числовой ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -881,11 +905,11 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}\df 1n$
 \end_inset
 
- - необходиммость выполнна, но он расходится.
+ - необходимость выполнена, но он расходится.
 \end_layout
 
 \begin_layout Subsection
-Сходимость знакоположительных рядов.
+Сходимость знако-положительных рядов.
 \end_layout
 
 \begin_layout Definition
@@ -893,7 +917,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - знакоположительный, если 
+ --- знако-положительный, если 
 \begin_inset Formula $a_{n}\br0\ \forall n\in\N$
 \end_inset
 
@@ -901,7 +925,7 @@ q=q
 \end_layout
 
 \begin_layout Subsubsection
-Необходимое и достаточное условие сходимости знакоположительных рядов.
+Необходимое и достаточное условие сходимости знако-положительных рядов.
 \end_layout
 
 \begin_layout Standard
@@ -914,17 +938,17 @@ q=q
 \begin_inset Formula $S_{n+1}=S_{n}+a_{n+1}\ \sl\ S_{n+1}\br S_{n}\ \forall n\in\N\ \sl\ \left\{ S_{n}\right\} $
 \end_inset
 
- неубывает.
+ не убывает.
  
 \begin_inset Formula $\sl$
 \end_inset
 
- по теореме о сходимости монотонной последовательности получим сдледующую
+ по теореме о сходимости монотонной последовательности получим следующую
  теорему.
 \end_layout
 
 \begin_layout Theorem
-(1) Знакоположительный ряд 
+(1) Знако-положительный ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -936,7 +960,7 @@ q=q
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограниена сверху ( 
+ ограничена сверху ( 
 \begin_inset Formula $\exists M>0\ \forall n\in\N\ S_{n}\mr M$
 \end_inset
 
@@ -956,7 +980,7 @@ q=q
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- неограничена сверху ( 
+ не ограничена сверху ( 
 \begin_inset Formula $\forall M>0\ \exists n\in\N\ S_{n}\mr M$
 \end_inset
 
@@ -976,7 +1000,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- - знакоположительны, если 
+ - знако-положительны, если 
 \begin_inset Formula $\exists n_{0}\ \forall n\br n_{0}\ a_{n}\mr b_{n}$
 \end_inset
 
@@ -1045,7 +1069,7 @@ q=q
 \end_inset
 
  - сходится.
- Так как все егоо частичные суммы огрпаничены в совокупности.
+ Так как все его частичные суммы ограничены в совокупности.
 \end_layout
 
 \begin_layout Enumerate
@@ -1057,7 +1081,7 @@ q=q
 \begin_inset Formula $\sl$
 \end_inset
 
- частичные суммы ряда его неограничены 
+ частичные суммы ряда его не ограничены 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -1065,7 +1089,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- неограничены 
+ не ограничены 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -1111,7 +1135,7 @@ q=q
 \begin_inset Formula $b_{n}$
 \end_inset
 
- схидится, то и исходная сумма тоже сходится.
+ сходится, то и исходная сумма тоже сходится.
 \end_layout
 
 \begin_layout --Separator--
@@ -1190,7 +1214,7 @@ q=q
 \begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=L>0$
 \end_inset
 
- то знакоположительные ряды 
+ то знако-положительные ряды 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1253,7 +1277,7 @@ reference "eq:*********************************"
 \begin_inset Formula $\ous{n=1}{\b}b_{n}\left(L-\varepsilon\right)=\left(L-\varepsilon\right)\ous{n=1}{\b}b_{n}$
 \end_inset
 
- следовательность ряд 
+ следовательно ряд 
 \begin_inset Formula $\ous{n=1}{\b}$
 \end_inset
 
@@ -1306,7 +1330,7 @@ reference "eq:*********************************"
 \end_layout
 
 \begin_layout Example
-Неработает.
+Не работает.
 \end_layout
 
 \begin_layout --Separator--
@@ -1336,7 +1360,7 @@ reference "eq:*********************************"
 \begin_inset Formula $\alpha>0$
 \end_inset
 
- (Это обобщеннный гармонический ряд) 
+ (Это обобщенный гармонический ряд) 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1359,7 +1383,7 @@ reference "eq:Сршылряд"
 
 \end_inset
 
-) cуществует конечный предел 
+) существует конечный предел 
 \begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L$
 \end_inset
 
@@ -1652,7 +1676,7 @@ reference "eq:Сршылряд"
 \begin_inset Formula $L=1$
 \end_inset
 
- требуется дополнительное исследоватние
+ требуется дополнительное исследование.
 \end_layout
 
 \end_deeper
@@ -1798,7 +1822,7 @@ reference "eq:Сршылряд"
 \begin_inset Formula $y=f\left(x\right)>0$
 \end_inset
 
- непрерывна и монотонна убывает на промежитке 
+ непрерывна и монотонна убывает на промежутке 
 \begin_inset Formula $[1,+\b)$
 \end_inset
 
@@ -1906,7 +1930,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \begin_inset Formula $\oui 1{\b}\fx dx$
 \end_inset
 
- сходится к хначению 
+ сходится к значению 
 \begin_inset Formula $I$
 \end_inset
 
@@ -1988,7 +2012,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \end_deeper
 \end_deeper
 \begin_layout Remark
-В случае сходимости пределльным перпеходом в неравенстве 
+В случае сходимости предельным переходом в неравенстве 
 \begin_inset Formula $n\st\b$
 \end_inset
 
@@ -2024,7 +2048,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \begin_inset Formula $\oui 1{\b}\fx dx=\oui 1{\b}\df{dx}{x^{p}}$
 \end_inset
 
- - сзодится при 
+ --- сходится при 
 \begin_inset Formula $p>1$
 \end_inset
 
@@ -2052,11 +2076,19 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \begin_inset Formula $\exists\ul{n\st\b}n\left(\dfrac{a_{n}}{a_{n+1}}-1\right)=L$
 \end_inset
 
-, то при L>1 ряд сходится, а при L<1 ряд расходится.
+, то при 
+\begin_inset Formula $L>1$
+\end_inset
+
+ ряд сходится, а при 
+\begin_inset Formula $L<1$
+\end_inset
+
+ ряд расходится.
 \end_layout
 
 \begin_layout Example
-Исследовать на сходимость знакоположительный ряд.
+Исследовать на сходимость знако-положительный ряд.
 \end_layout
 
 \begin_layout Example
@@ -2067,7 +2099,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \end_layout
 
 \begin_layout Example
-По Даланберу: 
+По Даламберу: 
 \begin_inset Formula $\ul{n\st\b}\df{a_{n}+1}{a_{n}}=\ul{n\st\b}\df{2n+1}{2n+2}=1$
 \end_inset
 
@@ -2160,7 +2192,11 @@ reference "eq:1"
 \begin_inset Formula $S_{2n}=a_{1}-a_{2}+a_{3}-a_{4}+\tr+a_{2n-1}-a_{2n}=\left(a_{1}-a_{2}\right)+\left(a_{3}-a_{4}\right)+\tr+\left(a_{2n-1}-a_{2n}\right)$
 \end_inset
 
- У нас n скобок и каждая скобка положительна.
+ У нас 
+\begin_inset Formula $n$
+\end_inset
+
+ скобок и каждая скобка положительна.
  С другой стороны 
 \begin_inset Formula $S_{2n}=a_{1}-\left(a_{2}-a_{3}\right)-\left(a_{4}-a_{5}\right)-\tr-\left(\tr\right)-a_{2n}$
 \end_inset
@@ -2178,12 +2214,16 @@ reference "eq:1"
 \begin_inset Formula $S_{2n}$
 \end_inset
 
- возрастает с увеличением номера n.
+ возрастает с увеличением номера 
+\begin_inset Formula $n$
+\end_inset
+
+.
  
 \begin_inset Formula $\sl S_{2n}$
 \end_inset
 
- - возрастающая и ограниченая 
+ - возрастающая и ограниченная 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -2213,7 +2253,7 @@ a_{2n}+1\st0
 \end_layout
 
 \begin_layout Proof
-Тоесть 
+То есть 
 \begin_inset Formula $\ul{n\st\b}S_{2n}=\ul{n\st\b}S_{2n+1}=S\ \sl\ $
 \end_inset
 
@@ -2228,7 +2268,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Remark
-т.к.
+Т.к.
  
 \begin_inset Formula $S_{2n}<a_{1}$
 \end_inset
@@ -2291,7 +2331,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Example
-Пооверим выполнение условий признака Лейбница.
+Поверим выполнение условий признака Лейбница.
 \end_layout
 
 \begin_deeper
@@ -2347,7 +2387,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Standard
-Убывание наченая с номера 3.
+Убывание начиная с номера 3.
 \end_layout
 
 \end_deeper
@@ -2360,16 +2400,16 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Example
-Так как отбрасывание конечного числа членов невлияет на сходимость последователь
-ности то это ряд Лейбница и он сходится.
+Так как отбрасывание конечного числа членов не влияет на сходимость последовател
+ьности то это ряд Лейбница и он сходится.
 \end_layout
 
 \begin_layout Paragraph
-Признак Абиля - Дерихле.
+Признак Абеля - Дирихле.
 \end_layout
 
 \begin_layout Example
-Рассмматривается произвольный ( в общем случае - знакопеременный ) ряд 
+Рассматривается произвольный ( в общем случае - знакопеременный ) ряд 
 \begin_inset Formula $\ous{n-1}{\b}a_{n}$
 \end_inset
 
@@ -2415,7 +2455,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Theorem
-(Признак Абеля-Дерихле)
+(Признак Абеля--Дирихле)
 \end_layout
 
 \begin_layout Theorem
@@ -2436,7 +2476,7 @@ reference "eq:1"
 \begin_inset Formula $\left\{ v_{k}\right\} $
 \end_inset
 
- невозрастает и 
+ не возрастает и 
 \begin_inset Formula $\ul{n\st\b}v_{n}=0$
 \end_inset
 
@@ -2492,7 +2532,7 @@ reference "eq:3"
 \begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ 0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}?$
 \end_inset
 
- Пока не знаем на что делить но щас узнает и напишим.
+ Пока не знаем на что делить но сейчас узнаем и напишем.
 \end_layout
 
 \begin_layout Proof
@@ -2505,7 +2545,11 @@ reference "eq:3"
 \end_layout
 
 \begin_layout Proof
-Каждое слогаемое (а их 3) меньше чем M.
+Каждое слагаемое (а их 3) меньше чем 
+\begin_inset Formula $M$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Proof
@@ -2561,7 +2605,7 @@ reference "eq:3"
 \begin_inset Formula $\left\{ v_{n}\right\} -$
 \end_inset
 
- невозрастает.
+ не возрастает.
  
 \begin_inset Formula $\ul{n\st\b}\df 1n=0$
 \end_inset
@@ -2607,7 +2651,7 @@ reference "eq:1"
 
 \end_inset
 
-) называется абсолютно сходящимся, если сходится знакоположительный ряд
+) называется абсолютно сходящимся, если сходится знако-положительный ряд
  
 \begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|.$
 \end_inset
@@ -2673,8 +2717,8 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Definition
-Если числовой ряд сходится, но не сходится абсолютно то его называют неабсолютно
-сходящимся (условносходящимся) числовым рядом.
+Если числовой ряд сходится, но не сходится абсолютно то его называют не
+ абсолютно сходящимся (условно сходящимся) числовым рядом.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2751,7 +2795,7 @@ reference "eq:1"
 
 \end_inset
 
-) знакоположительный.
+) знако-положительный.
  В этом случае получается 
 \begin_inset Formula $\ous{k=1}{\b}a_{k}=\ous{k=1}{\b}\left|a_{k}\right|=S$
 \end_inset
@@ -2772,7 +2816,7 @@ reference "eq:4"
 \begin_inset Formula $k$
 \end_inset
 
- - ю частичную сумму:
+-ю частичную сумму:
 \end_layout
 
 \begin_layout Standard
@@ -2794,7 +2838,7 @@ reference "eq:4"
 \begin_inset Formula $\left\{ S_{k}'\right\} $
 \end_inset
 
- - последовательность неувывает и ограничена сверху числом 
+ - последовательность не убывает и ограничена сверху числом 
 \begin_inset Formula $S$
 \end_inset
 
@@ -2836,7 +2880,7 @@ reference "eq:4"
 \begin_inset Formula $S\mr S'$
 \end_inset
 
-, таким образом сразуже получается 
+, таким образом сразу-же получается 
 \begin_inset Formula $S=S'$
 \end_inset
 
@@ -2947,7 +2991,7 @@ reference "eq:1"
 
 \end_inset
 
-) сходитя абсолютно 
+) сходится абсолютно 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -2967,7 +3011,7 @@ reference "eq:1"
 \begin_inset Formula $\ous{n=1}{\b}\left|a_{n}'\right|$
 \end_inset
 
-, тоесть ряд (
+, то-есть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:4"
@@ -2991,7 +3035,7 @@ reference "eq:4"
 \begin_inset Formula $\ous{k=1}{\b}\df{\left(-1\right)^{n}}n=1-\df 12+\df 13-\df 14+\df 15+\tr$
 \end_inset
 
- - сходяшийся ряд Лейбница.
+ - сходящийся ряд Лейбница.
  Обозначим его сумму 
 \begin_inset Formula $S$
 \end_inset
@@ -3083,11 +3127,11 @@ reference "eq:4"
 \begin_inset Formula $\ous{k=1}{\b}a_{n}$
 \end_inset
 
- схордится условно, то 
+ сходится условно, то 
 \begin_inset Formula $\forall B\in\R$
 \end_inset
 
- то можно переставить членый ряда так, то полученный ряд будет сходиться
+ то можно переставить члены ряда так, то полученный ряд будет сходиться
  к 
 \begin_inset Formula $B$
 \end_inset
@@ -3103,7 +3147,11 @@ reference "eq:1"
 
 \end_inset
 
-) сходится условно, и его сумма равна S.
+) сходится условно, и его сумма равна 
+\begin_inset Formula $S$
+\end_inset
+
+.
  Рассмотрим 2 последовательности 
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
@@ -3112,8 +3160,8 @@ reference "eq:1"
 \begin_inset Formula $\left\{ q_{n}\right\} $
 \end_inset
 
-, которые были рассмотрены в доказательстве преведущей теореме.
- Получим 2 знакаположительных ряда 
+, которые были рассмотрены в доказательстве предыдущей теореме.
+ Получим 2 знако-положительных ряда 
 \begin_inset Formula $\ous{n=1}{\b}p_{n}$
 \end_inset
 
@@ -3155,7 +3203,7 @@ reference "eq:1"
 \begin_inset Formula $\ul{n\st\b}\left(S+Q_{n}\right)=S+\ous{n=1}{\b}q_{n}$
 \end_inset
 
- - также канечная.
+ - также конечная.
 \end_layout
 
 \begin_layout Proof
@@ -3240,7 +3288,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Proof
-В полученом ряде участвуют все члены исходного ряда.
+В полученном ряде участвуют все члены исходного ряда.
 \end_layout
 
 \begin_layout Proof
@@ -3251,7 +3299,7 @@ reference "eq:1"
 
 \end_inset
 
-) сходится, то по необходимому признаку сходимотри ряда имеет место 
+) сходится, то по необходимому признаку сходимости ряда имеет место 
 \begin_inset Formula $\ul{n\st\b}a_{n}=0$
 \end_inset
 
@@ -3342,7 +3390,7 @@ reference "eq:1"
 \begin_inset Formula $\left(E^{2}\right)$
 \end_inset
 
- называется координатная плосткость, в каторой можно определить расстояние
+ называется координатная плоскость, в которой можно определить расстояние
  между любыми двумя точками 
 \begin_inset Formula $M'\left(x',y'\right)$
 \end_inset
@@ -3363,7 +3411,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Definition
-Множество упорядоченых троек 
+Множество упорядоченных троек 
 \begin_inset Formula $\left(x,y,z\right)$
 \end_inset
 
@@ -3505,7 +3553,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Definition
-Шар с ценстром в точке 
+Шар с центром в точке 
 \begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
@@ -3529,7 +3577,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Definition
-Сферой с ценстром в точке 
+Сферой с центром в точке 
 \begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
@@ -3537,7 +3585,7 @@ reference "eq:1"
 \begin_inset Formula $R$
 \end_inset
 
- называется мноджество 
+ называется множество 
 \begin_inset Formula $C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\} $
 \end_inset
 
@@ -3552,7 +3600,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Definition
-Паралелепипед 
+Параллелепипед 
 \begin_inset Formula $\text{П}\left(M\right)=\left\{ N\left(x,y,z\right)|\begin{cases}
 \left|x-x_{0}\right|\mr d_{1}\\
 \left|y-y_{0}\right|\mr d_{2}\\
@@ -3564,7 +3612,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Remark
-Открытый паралелипипед, это когда в определении паралелепипеда все неравенства
+Открытый параллелепипед, это когда в определении параллелепипеда все неравенства
  строгие.
  
 \end_layout
@@ -3647,7 +3695,7 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Example
-Рассмотрим песколько примеров.
+Рассмотрим несколько примеров.
 \end_layout
 
 \begin_deeper
@@ -3730,7 +3778,7 @@ reference "eq:1"
 \begin_inset Formula $n$
 \end_inset
 
--мерного координатного и евклидового пространства.
+-мерного координатного и Евклидового пространства.
 \end_layout
 
 \begin_layout Definition
@@ -3766,7 +3814,7 @@ reference "eq:1"
 \begin_inset Formula $A^{m}$
 \end_inset
 
- ввести растояние между произвольными точками 
+ ввести расстояние между произвольными точками 
 \begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
@@ -3858,7 +3906,7 @@ reference "eq:1"
 \begin_inset Formula $n$
 \end_inset
 
--мерный координатный паралелепипед с центром в точке 
+-мерный координатный параллелепипед с центром в точке 
 \begin_inset Formula $M\in E^{m}$
 \end_inset
 
@@ -3874,12 +3922,12 @@ reference "eq:1"
 \begin_inset Formula $n$
 \end_inset
 
--мерным коородинатным паралелепипедом называется паралелепипед, в определении
+-мерным координатным параллелепипедом называется параллелепипед, в определении
  которого все неравенства строгие.
 \end_layout
 
 \begin_layout Definition
-Открытый гар радиуса 
+Открытый шар радиуса 
 \begin_inset Formula $\varepsilon$
 \end_inset
 
@@ -3907,7 +3955,7 @@ reference "eq:1"
 \begin_inset Formula $M$
 \end_inset
 
- можно поместить некоторую прямокгольную окрестность и наоборот.
+ можно поместить некоторую прямоугольную окрестность и наоборот.
 \end_layout
 
 \begin_layout Remark
@@ -3953,7 +4001,7 @@ reference "eq:1"
 \begin_inset Formula $M_{1}\left(\df 12;0\right)$
 \end_inset
 
- - внутренння точка, так как мы можем указать окрестность ее 
+ - внутренняя точка, так как мы можем указать окрестность ее 
 \begin_inset Formula $\exists S_{\df 14}\left(M_{1}\right)\subset D$
 \end_inset
 
@@ -3964,7 +4012,7 @@ reference "eq:1"
 \begin_inset Formula $M_{2}\left(1;0\right)$
 \end_inset
 
- - не внутренняя точка, так как мы не можем указать такиу окрестность, которая
+ - не внутренняя точка, так как мы не можем указать такую окрестность, которая
  содержится во множестве 
 \begin_inset Formula $D$
 \end_inset
@@ -3977,15 +4025,15 @@ reference "eq:1"
 \begin_inset Formula $M$
 \end_inset
 
- называется граничной точком множества 
+ называется граничной точкой множества 
 \begin_inset Formula $D$
 \end_inset
 
-, если в любой ее окрестности содержатся точки пренадлежащие 
+, если в любой ее окрестности содержатся точки принадлежащие 
 \begin_inset Formula $D$
 \end_inset
 
- и не пренадлежащие 
+ и не принадлежащие 
 \begin_inset Formula $D$
 \end_inset
 
@@ -3995,7 +4043,7 @@ reference "eq:1"
 \begin_layout Example
 
 \emph on
-(Относится к преведущему примеру)
+(Относится к предыдущему примеру)
 \end_layout
 
 \begin_layout Example
@@ -4022,7 +4070,7 @@ reference "eq:1"
 \begin_inset Formula $M\subset D$
 \end_inset
 
- называется открытым множеством, если все его точки - внутреннии.
+ называется открытым множеством, если все его точки - внутренние.
 \end_layout
 
 \begin_layout Example
@@ -4057,11 +4105,11 @@ x^{2}+y^{2}\mr9 & ,x\mr0
 \begin_layout Example
 
 \emph on
-(Относится к преведущему примеру)
+(Относится к предыдущему примеру)
 \end_layout
 
 \begin_layout Example
-В этом примере нету замкрутых множеств.
+В этом примере нету замкнутых множеств.
 \end_layout
 
 \begin_layout Definition
@@ -4093,7 +4141,7 @@ x^{2}+y^{2}\mr9 & ,x\mr0
 \end_layout
 
 \begin_layout Definition
-Множество точкек 
+Множество точек 
 \begin_inset Formula $l\subset E^{m}$
 \end_inset
 
@@ -4101,7 +4149,7 @@ x^{2}+y^{2}\mr9 & ,x\mr0
 \begin_inset Formula $E^{m}$
 \end_inset
 
-, еслри кооррдинаты тотчки 
+, если координаты точки 
 \begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
@@ -4150,7 +4198,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $D$
 \end_inset
 
- можно соеденить непредрывной кривой, целикой содержашиеся в 
+ можно соединить непрерывной кривой, целиком содержащейся в 
 \begin_inset Formula $D$
 \end_inset
 
@@ -4174,7 +4222,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $D\subset E^{m}$
 \end_inset
 
- можно поставить в соотвествии определенное число 
+ можно поставить в соответствие определенное число 
 \begin_inset Formula $u$
 \end_inset
 
@@ -4203,7 +4251,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $D$
 \end_inset
 
- и обохзначается 
+ и обозначается 
 \begin_inset Formula $E\left(f\right)$
 \end_inset
 
@@ -4280,7 +4328,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\forall i=\overline{1,m}$
 \end_inset
 
-, тоесть сходимость в 
+, то-есть сходимость в 
 \begin_inset Formula $E^{m}$
 \end_inset
 
@@ -4330,7 +4378,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 
 \end_deeper
 \begin_layout Enumerate
-Пусть есть координатная сходимость, тоесть 
+Пусть есть координатная сходимость, то-есть 
 \begin_inset Formula $x_{i}^{\left(n\right)}\overset{n\st\b}{\st}x_{i}$
 \end_inset
 
@@ -4350,7 +4398,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\forall\varepsilon>0\ \exists N_{i}=N_{i}\left(\varepsilon\right)\ \forall n\br N_{i}\ \left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}?,\ \forall i=\overline{1,m}$
 \end_inset
 
- Щас разберемся что там написано вместо 
+ Сейчас разберемся что там написано вместо 
 \begin_inset Formula $?$
 \end_inset
 
@@ -4418,7 +4466,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\dsl$
 \end_inset
 
- по преведущей лемме 
+ по предыдущей лемме 
 \begin_inset Formula $\dsl$
 \end_inset
 
@@ -4430,7 +4478,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ X_{i}^{\left(A\right)}\right\} $
 \end_inset
 
-- сходящаяся числовая последовательность 
+ - сходящаяся числовая последовательность 
 \begin_inset Formula $\dsl$
 \end_inset
 
@@ -4446,7 +4494,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ X_{i}^{\left(A\right)}\right\} $
 \end_inset
 
- - фундаметтальны 
+ - фундаментальны 
 \begin_inset Formula $\dsl$
 \end_inset
 
@@ -4513,7 +4561,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ M_{n}\right\} \vkl E^{m}$
 \end_inset
 
- называется ограниченой если 
+ называется ограниченной если 
 \begin_inset Formula $\exists K>0\ \rho\left(0,M_{n}\right)\mr K$
 \end_inset
 
@@ -4521,7 +4569,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Theorem
-(Больштрано-Вейштрассе)
+(Больцано-Вейерштрассе)
 \end_layout
 
 \begin_layout Theorem
@@ -4529,7 +4577,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ x_{n}\right\} \vkl E^{n}$
 \end_inset
 
- можно выделить сходяшаюся подпоследовательность.
+ можно выделить сходящуюся подпоследовательность.
 \end_layout
 
 \begin_layout Proof
@@ -4545,7 +4593,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left|x_{i}^{\left(n\right)}\right|\mr\sqrt{\ous{j=1}m\left(x_{j}^{n}\right)^{2}}=\rho\left(0,x_{n}\right)\mr K$
 \end_inset
 
- , тоесть 
+ , то-есть 
 \begin_inset Formula $\left\{ x_{i}^{\left(n\right)}\right\} $
 \end_inset
 
@@ -4562,7 +4610,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ x_{1}^{\left(n\right)}\right\} \supset\left\{ x_{1}^{\left(n_{k_{1}}\right)}\right\} -$
 \end_inset
 
- сходяшаяся подпоследовательность.
+ сходящаяся подпоследовательность.
  
 \begin_inset Formula $\ul{n_{k_{1}}\st\b}x_{1}^{\left(n_{k_{1}}\right)}=a_{1}$
 \end_inset
@@ -4572,7 +4620,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ x_{2}^{\left(n_{k_{1}}\right)}\right\} \supset\left\{ x_{2}^{\left(n_{k_{2}}\right)}\right\} $
 \end_inset
 
- - сходяшаяся.
+ - сходящаяся.
  
 \begin_inset Formula $\ul{n_{k_{2}}\st\b}x_{2}^{\left(n_{k_{2}}\right)}=a_{2}$
 \end_inset
@@ -4704,7 +4752,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Subsection
-Понятие предельноего значеения функции многих переменных
+Понятие предельного значения функции многих переменных
 \end_layout
 
 \begin_layout Definition
@@ -4752,7 +4800,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Definition
-Чило 
+Число 
 \begin_inset Formula $b$
 \end_inset
 
@@ -4790,7 +4838,7 @@ x_{m}\st a_{m}
 \end_layout
 
 \begin_layout Theorem
-Преведущие два определения эквивалентны.
+Предыдущие два определения эквивалентны.
 \end_layout
 
 \begin_layout Definition
@@ -4891,7 +4939,7 @@ x_{m}\st a_{m}
 \begin_inset Formula $M\st A$
 \end_inset
 
- , еслти 
+ , если 
 \begin_inset Formula $\ul{M\st A}f\left(M\right)=0$
 \end_inset
 
@@ -4903,7 +4951,7 @@ x_{m}\st a_{m}
 \begin_inset Formula $\exists\ul{M\st A}f\left(M\right)=b$
 \end_inset
 
-Ю то имеет место представление 
+, то имеет место представление 
 \begin_inset Formula $f\left(M\right)=b+\alpha\left(M\right),\ $
 \end_inset
 
@@ -4911,7 +4959,7 @@ x_{m}\st a_{m}
 \begin_inset Formula $\alpha\left(M\right)$
 \end_inset
 
- - бесконечно малая функция более высого порядка при 
+ - бесконечно малая функция более высокого порядка при 
 \begin_inset Formula $M\st A$
 \end_inset
 
@@ -4931,24 +4979,28 @@ x_{m}\st a_{m}
 \begin_inset Formula $\ul{M\st A}f\left(M\right)=\b$
 \end_inset
 
-, тоесть 
-\begin_inset Formula $\forall E>0\ \exists\delta=\delta\left(E,A\right)\ \forall M\in D\left(f\right)\ 0<\rho\left(A,M\right)<\delta\sl\left|f\left(M\right)\right|>E$
+, то-есть 
+\begin_inset Formula 
+\[
+\forall E>0\ \exists\delta=\delta\left(E,A\right)\ \forall M\in D\left(f\right)\ 0<\rho\left(A,M\right)<\delta\sl\left|f\left(M\right)\right|>E
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-Сравнения порядков бесконечно малых и бесконекчно больших функций производится
+Сравнения порядков бесконечно малых и бесконечно больших функций производится
  аналогично одномерному случаю.
 \end_layout
 
 \begin_layout Subsection
-Критерий Коши существования конечногопредела функций многих переменных
+Критерий Коши существования конечного предела функций многих переменных
 \end_layout
 
 \begin_layout Definition
-Фукнция 
+Функция 
 \begin_inset Formula $u=f\left(M\right)$
 \end_inset
 
@@ -5110,7 +5162,7 @@ y\st0
 
 \begin_layout Example
 Решать будим по Гейне.
- Рассмотрим последовательлность:
+ Рассмотрим последовательность:
 \end_layout
 
 \begin_layout Example
@@ -5209,12 +5261,12 @@ y\st0
 \begin_inset Formula $y$
 \end_inset
 
- - внешгий предел, по 
+ - внешний предел, по 
 \begin_inset Formula $x$
 \end_inset
 
  - внутренний).
- Аналогично определеяется другой предел: 
+ Аналогично определяется другой предел: 
 \begin_inset Formula $\ul{x\st x_{0}}\ul{y\st y_{0}}f\left(x,y\right)=\ul{x\st x_{0}}\left(\ul{y\st y_{0}}f\left(x,y\right)\right)$
 \end_inset
 
@@ -5430,7 +5482,7 @@ y\st b
 \begin_inset Formula $\left|\varphi\left(y\right)-A\right|\mr\df{\varepsilon}2<\varepsilon$
 \end_inset
 
- тоесть предел 
+ то-есть предел 
 \begin_inset Formula $\ul{y\st b}\varphi\left(y\right)=A$
 \end_inset
 
@@ -5447,7 +5499,7 @@ y\st0
 \end{array}}\df{xy}{x^{2}+y^{2}}$
 \end_inset
 
- - несуществует.
+ - не существует.
 \end_layout
 
 \begin_layout Example
@@ -5634,7 +5686,7 @@ x_{n}\st a_{n}
 \begin_inset Formula $\df{f\left(\vec M\right)}{g\left(\vec M\right)},\ \left(f\left(\vec A\right)\nr0\right)$
 \end_inset
 
-- непрерывны.
+ - непрерывны.
 \end_layout
 
 \begin_layout Proof
@@ -5656,7 +5708,7 @@ x_{n}\st a_{n}
 \begin_inset Formula $\left(0,0\right)$
 \end_inset
 
-- исследуем.
+ - исследуем.
 \end_layout
 
 \begin_layout Example
@@ -5728,7 +5780,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end{cases}$
 \end_inset
 
-, тоесть каждой точке 
+, то-есть каждой точке 
 \begin_inset Formula $\vec T\left(t_{1}\tr t_{k}\right)\in E^{k}$
 \end_inset
 
@@ -5744,7 +5796,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
 \end_inset
 
- получим слкдующую функцию: 
+ получим следующую функцию: 
 \begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1}\tr t_{k}\right),\tr\varphi_{n}\left(t_{1}\tr t_{k}\right)\right)=g\left(t_{1}\tr t_{k}\right)$
 \end_inset
 
@@ -5845,7 +5897,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \begin_inset Formula $\vec A$
 \end_inset
 
- - внутреняя точка области 
+ - внутренняя точка области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -5869,7 +5921,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_layout
 
 \begin_layout Theorem
-(4) (О прохождении непрерывной фкунции через промежуточное значение)
+(4) (О прохождении непрерывной функции через промежуточное значение)
 \end_layout
 
 \begin_layout Theorem
@@ -5889,7 +5941,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \begin_inset Formula $l\vkl D$
 \end_inset
 
-, соеденяющей точки 
+, соединяющей точки 
 \begin_inset Formula $A$
 \end_inset
 
@@ -5986,7 +6038,7 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Proof
-По второй теореме Больцана-Коши 
+По второй теореме Больцано-Коши 
 \begin_inset Formula $\forall c$
 \end_inset
 
@@ -6022,7 +6074,7 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Theorem
-(5) (Певвая теорема Вейштрассе)
+(5) (Первая теорема Вейерштрассе)
 \end_layout
 
 \begin_layout Theorem
@@ -6030,7 +6082,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
- непрерывная на ограниченом замкнутом множестве 
+ непрерывная на ограниченном замкнутом множестве 
 \begin_inset Formula $D\vkl E^{m}$
 \end_inset
 
@@ -6043,7 +6095,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $f\left(\vec X\right)$
 \end_inset
 
- - неограничена на 
+ - не ограничена на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -6067,8 +6119,8 @@ x_{m}=q_{m}\left(t\right)
 \end_inset
 
 .
- По теореме Больцана-Вейштрассе можно извлечь сходящуюся под последовательность
- 
+ По теореме Больцано-Вейерштрассе можно извлечь сходящуюся под последовательност
+ь 
 \begin_inset Formula $\left\{ M_{n_{k}}\right\} $
 \end_inset
 
@@ -6076,7 +6128,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $\ul{k\st\b}M_{n_{k}}=M$
 \end_inset
 
- - эта точка пренадлежит, так как 
+ - эта точка принадлежит, так как 
 \begin_inset Formula $D$
 \end_inset
 
@@ -6116,7 +6168,7 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Theorem
-(6) (Вторая теорема Вейтрассе)
+(6) (Вторая теорема Вейерштрасса)
 \end_layout
 
 \begin_layout Theorem
@@ -6124,7 +6176,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
 \end_inset
 
- - непрерывная на ограниченом замкнутом множестве 
+ - непрерывная на ограниченном замкнутом множестве 
 \begin_inset Formula $D\vkl E^{n}$
 \end_inset
 
@@ -6160,7 +6212,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
- непрерывна на ограниченом замкнутом множестве 
+ непрерывна на ограниченном замкнутом множестве 
 \begin_inset Formula $D\vkl E^{m}$
 \end_inset
 
@@ -6172,15 +6224,61 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Section
-Часные производные, диференциалы функций многих переменых
+Частные производные, дифференциалы функций многих переменных
 \end_layout
 
-\begin_layout Subsection
-Часные производные функций многих переменных
+\begin_layout Subsubsection
+Геометрический смысл частной производной
 \end_layout
 
 \begin_layout Standard
-Пусть фунция 
+Рассмотрим на примере функции двух переменных 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g\left(x\right)=f$
+\end_inset
+
+
+\begin_inset Formula $\left(x,y_{0}\right)$
+\end_inset
+
+ - функция одной переменной 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{x}\pr\left(x,y_{0}\right)=\ul{\D x\st0}\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}=\ul{\D x\st0}\df{g\left(x_{0}+\D x\right)-g\left(x_{0}\right)}{\D x}=g\pr\left(x_{0}\right)$
+\end_inset
+
+ - тангенс угла наклона касательной к графику 
+\begin_inset Formula $u=f\left(x,y_{0}\right)$
+\end_inset
+
+, получающемуся в сечении поверхности 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ плоскостью 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Частные производные функций многих переменных
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
@@ -6201,7 +6299,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $\D x_{i}$
 \end_inset
 
-, получим часное преращение функции 
+, получим частное приращение функции 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 
@@ -6225,7 +6323,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $\D x_{i}\st0,\ i=\overline{1,m}$
 \end_inset
 
-, то его называют часной производной функции 
+, то его называют частной производной функции 
 \begin_inset Formula $f\left(\vec X\right)$
 \end_inset
 
@@ -6242,7 +6340,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $\df{\delta u}{\delta x_{i}};\ \df{\delta f\left(M\right)}{\delta x_{i}};\ u_{x_{i}}\pr\left(M\right)$
 \end_inset
 
- На практике при вычислении чассной производной 
+ На практике при вычислении частной производной 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 
@@ -6258,7 +6356,7 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Example
-Найти часные производные.
+Найти частные производные.
 \end_layout
 
 \begin_layout Example
@@ -6319,7 +6417,7 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Remark
-Из существования часных производных функций в точке не следует непрерывность
+Из существования частных производных функций в точке не следует непрерывность
  функции в этой точке.
 \end_layout
 
@@ -6365,52 +6463,6 @@ x_{m}=q_{m}\left(t\right)
 \end_inset
 
  разрывна.
-\end_layout
-
-\begin_layout Subsubsection
-Геметрический смысл часной производной
-\end_layout
-
-\begin_layout Standard
-Рассмотрим на примере функции дщрух переменных 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $g\left(x\right)=f$
-\end_inset
-
-
-\begin_inset Formula $\left(x,y_{0}\right)$
-\end_inset
-
- - функция одной переменной 
-\begin_inset Formula $x$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{x}\pr\left(x,y_{0}\right)=\ul{\D x\st0}\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}=\ul{\D x\st0}\df{g\left(x_{0}+\D x\right)-g\left(x_{0}\right)}{\D x}=g\pr\left(x_{0}\right)$
-\end_inset
-
- - тангенс угла наклона касательной к графику 
-\begin_inset Formula $u=f\left(x,y_{0}\right)$
-\end_inset
-
-, получаещемуся в сечении поверхности 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- плоскостью 
-\begin_inset Formula $y=y_{0}$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection
@@ -6514,7 +6566,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
-если имеет место предстваление 
+если имеет место представление 
 \begin_inset Formula 
 \begin{equation}
 \D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:6}
@@ -6637,7 +6689,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \end_layout
 
 \begin_layout Proof
-Рассмотрим часное приращение 
+Рассмотрим частное приращение 
 \begin_inset Formula $\D_{x_{i}}u\left(M\right)$
 \end_inset
 
@@ -6696,7 +6748,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
- диференцируема в точке 
+ дифференцируема в точке 
 \begin_inset Formula $M$
 \end_inset
 
@@ -6723,7 +6775,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \end_layout
 
 \begin_layout Subsubsection
-Геометрический смысл диференцируемости функций многих переменных
+Геометрический смысл дифференцируемости функций многих переменных
 \end_layout
 
 \begin_layout Standard
@@ -6819,7 +6871,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-В дальнейшем будем слитать что точка 
+В дальнейшем будем считать что точка 
 \begin_inset Formula $M_{1}$
 \end_inset
 
@@ -6847,7 +6899,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Условие диффернцируемости в точке 
+Условие дифференцируемости в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -6958,11 +7010,11 @@ status open
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
- имет в окресности точки 
+ имеет в окрестности точки 
 \begin_inset Formula $M\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
- часные производные 
+ частные производные 
 \begin_inset Formula $f_{x_{i}}\pr\left(x_{1},\tr,x_{m}\right),\ i=\overline{1,m}$
 \end_inset
 
@@ -6971,7 +7023,7 @@ status open
 \end_inset
 
 .
- Тогда фунция 
+ Тогда функция 
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
@@ -7011,7 +7063,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Черчежик 
+Чертежик 
 \end_layout
 
 \end_inset
@@ -7069,7 +7121,7 @@ f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{y}\pr\left(x_{0},y_{0
 status open
 
 \begin_layout Plain Layout
-Рекорд: Самы большой уравнение Васья!
+Рекорд: Самый большой уравнение Васья!
 \end_layout
 
 \end_inset
@@ -7109,7 +7161,7 @@ x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
 \end_layout
 
 \begin_layout Standard
-Тоесть функция 
+То-есть функция 
 \begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
@@ -7118,7 +7170,7 @@ x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
 \end_inset
 
 .
- Оказывается что прги некоторых условиях часные производные от функции 
+ Оказывается что при некоторых условиях частные производные от функции 
 \begin_inset Formula 
 \[
 u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,t_{k}\right)\right)
@@ -7195,7 +7247,7 @@ status open
 \begin_inset Formula $N\left(t_{1}\pr,\tr,t_{k}\pr\right)$
 \end_inset
 
- а фцнкция 
+ а функция 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
@@ -7207,7 +7259,7 @@ status open
 \begin_inset Formula $x_{j}\pr=\varphi_{j}\left(t_{1}\pr,\tr,t_{k}\pr\right)$
 \end_inset
 
-, то существуют часные производные сложной функции 
+, то существуют частные производные сложной функции 
 \begin_inset Formula $u$
 \end_inset
 
@@ -7227,7 +7279,7 @@ reference "eq:9"
 \end_inset
 
 ).
- Причем часные производные 
+ Причем частные производные 
 \begin_inset Formula $\df{\text{\emph{д}}u}{\DD x_{j}}$
 \end_inset
 
@@ -7247,7 +7299,7 @@ reference "eq:9"
 \end_layout
 
 \begin_layout Proof
-Рассмотрим слудующий случай.
+Рассмотрим следующий случай.
 \end_layout
 
 \begin_layout Proof
@@ -7269,7 +7321,7 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-Тоесть точка 
+То-есть точка 
 \begin_inset Formula $N\left(t\right)$
 \end_inset
 
@@ -7308,7 +7360,7 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-Получим из диффренцируемости функции 
+Получим из дифференцируемости функции 
 \begin_inset Formula $u$
 \end_inset
 
@@ -7320,7 +7372,11 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\D u=u_{x}\pr\um\D x+u_{y}\pr\um\D y+u_{z}\pr\D z+\alpha\um\D x+\beta\um\D y+\gamma\um\D z$
+\begin_inset Formula 
+\[
+\D u=u_{x}\pr\um\D x+u_{y}\pr\um\D y+u_{z}\pr\D z+\alpha\um\D x+\beta\um\D y+\gamma\um\D z
+\]
+
 \end_inset
 
 
@@ -7335,7 +7391,11 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\df{\D u}{\D t}=u_{x}\pr\um\df{\D x}{\D t}+u_{y}\pr\um\df{\D y}{\D t}+u_{z}\pr\um\df{\D z}{\D t}+\alpha\um\df{\D x}{\D t}+\beta\um\df{\D y}{\D t}+\gamma\um\df{\D z}{\D t}$
+\begin_inset Formula 
+\[
+\df{\D u}{\D t}=u_{x}\pr\um\df{\D x}{\D t}+u_{y}\pr\um\df{\D y}{\D t}+u_{z}\pr\um\df{\D z}{\D t}+\alpha\um\df{\D x}{\D t}+\beta\um\df{\D y}{\D t}+\gamma\um\df{\D z}{\D t}
+\]
+
 \end_inset
 
 
@@ -7385,7 +7445,7 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-Рассмотрми другой случай.
+Рассмотрим другой случай.
 \end_layout
 
 \begin_layout Proof
@@ -7405,12 +7465,12 @@ z=\chi\left(t,\tau\right)
 \end_inset
 
 функция двух переменных.
- В этом члучае фиксируя значения 
+ В этом случае фиксируя значения 
 \begin_inset Formula $\tau$
 \end_inset
 
  мы получим сложную функцию одной переменной.
- И получится, анологично случаю 1му следующее:
+ И получится, аналогично случаю 1му следующее:
 \end_layout
 
 \begin_layout Proof
@@ -7437,7 +7497,7 @@ z=\chi\left(t,\tau\right)
 \begin_inset Formula $du$
 \end_inset
 
- функций многих перемнных 
+ функций многих переменных 
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
@@ -7473,7 +7533,7 @@ z=\chi\left(t,\tau\right)
 \begin_inset Formula $x_{1},\tr,x_{m}$
 \end_inset
 
- независимыми переменными, можно полоожить 
+ независимыми переменными, можно положить 
 \end_layout
 
 \begin_layout Standard
@@ -7530,11 +7590,11 @@ status open
 \begin_inset Formula $x_{1},\tr,x_{m}$
 \end_inset
 
- - неазависимые переменные, дифферендиал функции 
+ - независимые переменные, дифференциал функции 
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
- тимеет вид: 
+ имеет вид: 
 \begin_inset Formula $du=\df{\dd u}{\dd x_{1}}\um dx_{1}+\df{\dd u}{\dd x_{2}}\um dx_{2}+\tr+\df{\dd u}{\dd x_{m}}\um dx_{m}$
 \end_inset
 
@@ -7631,7 +7691,7 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
 \begin_inset Formula $u=f\left(x,y,z\right)$
 \end_inset
 
-, определена в некоторой окресности точки 
+, определена в некоторой окрестности точки 
 \begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
@@ -7639,7 +7699,7 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
 \end_layout
 
 \begin_layout Standard
-Рассмотри еденичный вектор 
+Рассмотри единичный вектор 
 \begin_inset Formula $\vec n=\left(\cos\alpha,\cos\beta,\cos\gamma\right)$
 \end_inset
 
@@ -7737,7 +7797,7 @@ z=z_{0}+l\um\cos\gamma
 \end_layout
 
 \begin_layout Definition
-Нрадиентом функциии 
+Градиентом функции 
 \begin_inset Formula $u=f\left(x,y,z\right)$
 \end_inset
 
@@ -7753,7 +7813,7 @@ z=z_{0}+l\um\cos\gamma
 \end{array}\right)$
 \end_inset
 
- - часные производный функции в 
+ - частные производные функции в 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -7769,7 +7829,7 @@ z=z_{0}+l\um\cos\gamma
 \end_layout
 
 \begin_layout Standard
-Докадем что направление градиента - направление наискорейшего роста функции:
+Докажем что направление градиента --- направление наискорейшего роста функции:
 \end_layout
 
 \begin_layout Standard
@@ -7787,7 +7847,7 @@ z=z_{0}+l\um\cos\gamma
 \begin_inset Formula $\cos\left(\hat{\vec n,\grad u}\right)=1$
 \end_inset
 
- , тоесть 
+ , то-есть 
 \begin_inset Formula $\vec n=\df{\grad u}{\left|\grad u\right|}$
 \end_inset
 
@@ -7850,11 +7910,11 @@ y
 \end_layout
 
 \begin_layout Section
-Часные производные и дифференциалы высших порядков
+Частные производные и дифференциалы высших порядков
 \end_layout
 
 \begin_layout Subsection
-Часные производные высших порядков
+Частные производные высших порядков
 \end_layout
 
 \begin_layout Standard
@@ -7871,12 +7931,12 @@ y
 \begin_inset Formula $\df{\dd^{2}f}{\dd x\dd y}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd y}\right),\ \df{\dd^{2}f}{\dd x^{2}}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd x}\right),\ \df{\dd^{2}f}{\dd y^{2}}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd y}\right),\ \df{\dd^{2}f}{\dd y\dd x}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd x}\right)$
 \end_inset
 
- называвются второй производной от функуции 
+ называются второй производной от функции 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
 .
- Обозначаются подругому: 
+ Обозначаются по-другому: 
 \begin_inset Formula $u_{yx}\ppr,\ u_{x^{2}}\ppr,\ u_{y^{2}}\ppr,\ u_{yx}\ppr$
 \end_inset
 
@@ -7952,7 +8012,7 @@ y
 \end_layout
 
 \begin_layout Example
-В этом примере смешанные производные не зависяят от порядка дифференцирования.
+В этом примере смешанные производные не зависят от порядка дифференцирования.
 \end_layout
 
 \begin_layout --Separator--
@@ -8005,7 +8065,7 @@ y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Example
-В часности 
+В частности 
 \begin_inset Formula $f_{xy}\ppr\left(0,0\right)=-1$
 \end_inset
 
@@ -8030,7 +8090,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Example
-В часности 
+В частности 
 \begin_inset Formula $f_{yx}\ppr\left(0,0\right)=1$
 \end_inset
 
@@ -8045,7 +8105,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Theorem
-(О равенстве смешаных производных)
+(О равенстве смешанных производных)
 \end_layout
 
 \begin_layout Theorem
@@ -8069,7 +8129,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \begin_inset Formula $D$
 \end_inset
 
- определены часные производные 
+ определены частные производные 
 \begin_inset Formula $f_{x}\pr,\ f_{y}\pr,\ f_{xy}\ppr,f_{yx}\ppr.$
 \end_inset
 
@@ -8172,7 +8232,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 
 \begin_layout Subsection
 Дифференциалы высших порядков.
- Неинвариантность их формы.
+ Не инвариантность их формы.
 \end_layout
 
 \begin_layout Standard
