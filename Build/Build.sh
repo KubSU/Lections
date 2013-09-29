@@ -1,14 +1,10 @@
 #!/bin/sh
+
+@echo off
 find ../ -type f -name '*.lyx' |
 while read filename; do
 	echo "Generating tex: ${filename}";
-	lyx -e pdflatex "${filename}";
-done
-
-find ../ -type f -name '*.tex' |
-while read filename; do
-	echo "Compiling pdf: ${filename}";
-	pdflatex "${filename}" > /dev/null;
+	lyx -e pdf2 "${filename}";
 done
 
 find ../ \( -name '*.tex' -o -name '*.out' -o -name '*.log' -o -name '*.aux' -o -name '*.toc' \) |
