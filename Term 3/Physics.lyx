@@ -3542,6 +3542,9 @@ m\df{dv_{z}}{dt}=f_{3}\left(v_{z}\right) & ,z\left(0\right)=z_{0},\ v_{z}\left(0
 
 \begin_layout Subsubsection
 Сила, действующая на точку имеет вид: 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $F\left(\vec r,\vec v,t\right)=-k\vec r-\alpha\vec v+\vec f\left(t\right)$
 \end_inset
 
