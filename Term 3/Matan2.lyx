@@ -79,277 +79,277 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\sl}{\Longrightarrow}
+\newcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dsl}{\Longleftrightarrow}
+\newcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tr}{\ldots}
+\newcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\nr}{\neq}
+\newcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\um}{\cdot}
+\newcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pr}{\prime}
+\newcommand{\pr}{\prime}
 {\prime}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tg}{\text{tg}}
+\newcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tan}{\tg}
+\newcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arctg}{\text{arctg}}
+\newcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arcctg}{\text{arcctg}}
+\newcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\N}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Z}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Q}{\text{Q}}
+\newcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sh}{\text{sh}}
+\newcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ch}{\text{ch}}
+\newcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\th}{\text{th}}
+\newcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\st}{\longrightarrow}
+\newcommand{\st}{\longrightarrow}
 {\longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sinx}{\sin\left(x\right)}
+\newcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\cosx}{\cos\left(x\right)}
+\newcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\fx}{f\left(x\right)}
+\newcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\un}[2]{\underset{#2}{#1}}
+\newcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
+\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
 {\un{\ov{\Sigma}{#2}}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\underset{#1}{\lim}}
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
 {\underset{#1}{\lim}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\underset{#1}{\max}}
+\newcommand{\umax}[1]{\underset{#1}{\max}}
 {\underset{#1}{\max}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\underset{#1}{\min}}
+\newcommand{\umin}[1]{\underset{#1}{\min}}
 {\underset{#1}{\min}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{\pr\pr}
+\newcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{\ppr\pr}
+\newcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\oui{#1}{#2}}
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
 {\oui{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\v}[1]{\vec{#1}}
+\newcommand{\v}[1]{\vec{#1}}
 {\vec{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mom}{\text{mom}}
+\newcommand{\mom}{\text{mom}}
 {\text{mom}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\x}{\times}
+\newcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\DD}{\text{\emph{д}}}
+\newcommand{\DD}{\text{\emph{д}}}
 {\text{\emph{д}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dd}{\text{\emph{д}}}
+\newcommand{\dd}{\text{\emph{д}}}
 {\text{\emph{д}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\grad}{\text{grad}}
+\newcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
@@ -401,6 +401,17 @@ reference "eq:Сршылряд"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/Background.svg
+	height 5cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout --Separator--
@@ -6227,7 +6238,7 @@ x_{m}=q_{m}\left(t\right)
 Частные производные, дифференциалы функций многих переменных
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Геометрический смысл частной производной
 \end_layout
 
@@ -6252,6 +6263,44 @@ x_{m}=q_{m}\left(t\right)
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Pictures/Matan2/PrivateDifferential.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
