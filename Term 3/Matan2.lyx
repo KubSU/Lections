@@ -8426,7 +8426,9 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\left\{ duv=du\um v=u\um dv\right\} =d\left(u_{x}\pr\right)\um dx+u_{x}\pr\um d^{2}x+d\left(u_{y}\pr\right)\um dy+u_{y}\pr\um d^{2}y=\\
+d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\\
+ & = & \left\{ duv=du\um v=u\um dv\right\} =\\
+ & = & d\left(u_{x}\pr\right)\um dx+u_{x}\pr\um d^{2}x+d\left(u_{y}\pr\right)\um dy+u_{y}\pr\um d^{2}y=\\
  & = & u_{x^{2}}\pr\um d\left(x^{2}\right)+u_{xy}\ppr\um dy\um dx+u_{x}\pr\um d\left(x^{2}\right)+u_{yx}\ppr\um dx\um dy+y_{y^{2}}\ppr\um d\left(y^{2}\right)+u_{y}\pr\um d^{2}y=\\
  & = & \left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u+u_{x}\pr\um d^{2}x+y_{y}\pr\um d^{2}y
 \end{eqnarray*}
@@ -8576,7 +8578,8 @@ a_{2,1} & a_{2,2}
 По формуле тейлора: 
 \begin_inset Formula 
 \begin{eqnarray*}
-\D f & = & f\left(x,y\right)-f\left(x_{0},y_{0}\right)=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}2,\ \Theta\in\left(0,1\right)=\\
+\D f & = & f\left(x,y\right)-f\left(x_{0},y_{0}\right)=\\
+ & = & df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}2,\ \Theta\in\left(0,1\right)=\\
  & = & \df 12\left(f_{x^{2}}\ppr\left(N\right)\um\D x^{2}+2f_{xy}\ppr\left(N\right)\D x\D y+f_{y^{2}}\ppr\left(N\right)\D y^{2}\right)
 \end{eqnarray*}
 
@@ -8593,7 +8596,7 @@ a_{2,1} & a_{2,2}
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\mbox{Tак частные производные 2го порядка непрерывны в точке} M_{0}$
+\begin_inset Formula $\mbox{Tак частные производные 2го порядка непрерывны в точке}M_{0}$
 \end_inset
 
 , то
@@ -8662,7 +8665,10 @@ a_{2,1} & a_{2,2}
 \end_layout
 
 \begin_layout Proof
-Тогда 
+Тогда:
+\end_layout
+
+\begin_layout Proof
 \begin_inset Formula $\D f\df{\rho^{2}}2\left(a_{1,1}\cos^{2}\varphi+2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi+\alpha_{1,1}\cos^{2}\varphi+2\alpha_{1,2}\cos\varphi\sin\varphi+\alpha_{2,2}\sin^{2}\varphi\right)$
 \end_inset
 
@@ -9073,19 +9079,21 @@ f_{y}\pr=
 \end{cases} & \sl & \begin{cases}
 x^{2}+\df{36}{x^{2}}-13\\
 y=\df 6x
-\end{cases}\dsl\left\{ \begin{array}{c}
+\end{cases}\dsl\\
+ & \dsl & \left\{ \begin{array}{c}
 x^{4}-13x^{2}+36=0\\
 \left[\begin{array}{c}
 x^{2}=9\\
 x^{2}=4
 \end{array}\right.
-\end{array}\right\} \dsl\begin{cases}
+\end{array}\right\} \dsl\\
+ & \dsl & \begin{cases}
 \left[\begin{array}{c}
 x^{2}=9\\
 x^{2}=4
 \end{array}\right.\\
 y=\df 6x
-\end{cases}\\
+\end{cases}\dsl\\
  & \dsl & \left[\begin{array}{c}
 \begin{cases}
 x=3\\
