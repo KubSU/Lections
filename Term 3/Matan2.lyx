@@ -915,7 +915,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Subsection
-Сходимость знако-положительных рядов.
+Сходимость знакоположительных рядов.
 \end_layout
 
 \begin_layout Definition
@@ -923,7 +923,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- --- знако-положительный, если 
+ --- знакоположительный, если 
 \begin_inset Formula $a_{n}\br0\ \forall n\in\N$
 \end_inset
 
@@ -931,7 +931,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Subsubsection
-Необходимое и достаточное условие сходимости знако-положительных рядов.
+Необходимое и достаточное условие сходимости знакоположительных рядов.
 \end_layout
 
 \begin_layout Standard
@@ -954,7 +954,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Theorem
-(1) Знако-положительный ряд 
+(1) Знакоположительный ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1006,7 +1006,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- - знако-положительны, если 
+ - знакоположительны, если 
 \begin_inset Formula $\exists n_{0}\ \forall n\br n_{0}\ a_{n}\mr b_{n}$
 \end_inset
 
@@ -1220,7 +1220,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=L>0$
 \end_inset
 
- то знако-положительные ряды 
+ то знакоположительные ряды 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -2094,7 +2094,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \end_layout
 
 \begin_layout Example
-Исследовать на сходимость знако-положительный ряд.
+Исследовать на сходимость знакоположительный ряд.
 \end_layout
 
 \begin_layout Example
@@ -2657,7 +2657,7 @@ reference "eq:1"
 
 \end_inset
 
-) называется абсолютно сходящимся, если сходится знако-положительный ряд
+) называется абсолютно сходящимся, если сходится знакоположительный ряд
  
 \begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|.$
 \end_inset
@@ -2801,7 +2801,7 @@ reference "eq:1"
 
 \end_inset
 
-) знако-положительный.
+) знакоположительный.
  В этом случае получается 
 \begin_inset Formula $\ous{k=1}{\b}a_{k}=\ous{k=1}{\b}\left|a_{k}\right|=S$
 \end_inset
@@ -3167,7 +3167,7 @@ reference "eq:1"
 \end_inset
 
 , которые были рассмотрены в доказательстве предыдущей теореме.
- Получим 2 знако-положительных ряда 
+ Получим 2 знакоположительных ряда 
 \begin_inset Formula $\ous{n=1}{\b}p_{n}$
 \end_inset
 
@@ -5515,11 +5515,11 @@ y\st0
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Непрерывные функции многих переменных
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Определение
 \end_layout
 
@@ -5663,7 +5663,7 @@ x_{n}\st a_{n}
  не является непрерывной называются точками разрыва.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Основные свойства непрерывных функций
 \end_layout
 
@@ -6229,11 +6229,11 @@ x_{m}=q_{m}\left(t\right)
 Сами..
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Частные производные, дифференциалы функций многих переменных
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Геометрический смысл частной производной
 \end_layout
 
@@ -6317,7 +6317,7 @@ status collapsed
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Частные производные функций многих переменных
 \end_layout
 
@@ -6509,7 +6509,7 @@ status collapsed
  разрывна.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Дифференцируемость функций многих переменных
 \end_layout
 
@@ -6818,7 +6818,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Геометрический смысл дифференцируемости функций многих переменных
 \end_layout
 
@@ -7045,7 +7045,7 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
+\begin_layout Subsubsection
 Достаточное условие дифференцируемости функции в точке
 \end_layout
 
@@ -7177,7 +7177,7 @@ status open
 В итоге мы получили представление 1.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Производные сложных функций
 \end_layout
 
@@ -7532,7 +7532,7 @@ z=\chi\left(t,\tau\right)
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Дифференциал функций многих переменных
 \end_layout
 
@@ -7601,7 +7601,7 @@ z=\chi\left(t,\tau\right)
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Геометрический смысл дифференциала функций двух переменных
 \end_layout
 
@@ -7625,7 +7625,7 @@ status open
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Инвариантности формы дифференциала
 \end_layout
 
@@ -7725,7 +7725,7 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Производная по направлению.
  Градиент.
 \end_layout
@@ -7953,11 +7953,11 @@ y
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Частные производные и дифференциалы высших порядков
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Частные производные высших порядков
 \end_layout
 
@@ -8274,7 +8274,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Дифференциалы высших порядков.
  Не инвариантность их формы.
 \end_layout
@@ -8575,7 +8575,7 @@ a_{2,1} & a_{2,2}
 
 \end_deeper
 \begin_layout Proof
-По формуле тейлора: 
+По формуле Тейлора: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \D f & = & f\left(x,y\right)-f\left(x_{0},y_{0}\right)=\\
@@ -8754,7 +8754,7 @@ a_{2,1} & a_{2,2}
 \begin_inset Formula $a_{1,1}$
 \end_inset
 
- совподают, причем, по второй теореме Вейерштрасса, так как 
+ совпадают, причем, по второй теореме Вейерштрасса, так как 
 \begin_inset Formula $\D_{1}$
 \end_inset
 
@@ -8912,7 +8912,7 @@ reference "eq:z1"
 \begin_inset Formula $a_{1,1}\cos\varphi_{1}+a_{1,2}\sin\varphi_{1}=0$
 \end_inset
 
-, тоесть 
+, то-есть 
 \begin_inset Formula $\ctg\varphi_{1}=-\df{a_{1,2}}{a_{1,1}}.$
 \end_inset
 
@@ -8921,7 +8921,7 @@ reference "eq:z1"
 \end_inset
 
 .
- Так как при достоточно малых 
+ Так как при достаточно малых 
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -9025,7 +9025,7 @@ reference "eq:z1"
 \begin_inset Formula $\D_{2}$
 \end_inset
 
- применяет значенения разных знаков.
+ применяет значения разных знаков.
  Следовательно 
 \begin_inset Formula $\D_{2}$
 \end_inset
@@ -9042,7 +9042,7 @@ reference "eq:z1"
 \begin_inset Formula $\D f$
 \end_inset
 
- меняет знак в окресности точки 
+ меняет знак в окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -9227,12 +9227,12 @@ y=-3
 
 \end_layout
 
-\begin_layout Section
-Диференцирование функций заданных неявно
+\begin_layout Subsection
+Дифференцирование функций заданных неявно
 \end_layout
 
-\begin_layout Subsection
-Диференцирование функций одной переменной заданных неявно
+\begin_layout Subsubsection
+Дифференцирование функций одной переменной заданных неявно
 \end_layout
 
 \begin_layout Definition
@@ -9252,7 +9252,7 @@ y=-3
 \begin_inset Formula $y$
 \end_inset
 
- не вырожено через 
+ не выражено через 
 \begin_inset Formula $x$
 \end_inset
 
@@ -9260,7 +9260,7 @@ y=-3
 \begin_inset Formula $x$
 \end_inset
 
- неудается.
+ не удается.
 \end_layout
 
 \begin_layout Example
@@ -9275,7 +9275,7 @@ y=-3
 status open
 
 \begin_layout Plain Layout
-Тут ДОЛЖЕН быть русунок эллипса.
+Тут ДОЛЖЕН быть рисунок эллипса.
  Жорик!
 \end_layout
 
@@ -9328,7 +9328,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-Пусть для уранения 
+Пусть для уравнения 
 \begin_inset Formula $f\left(x,y\right)=0$
 \end_inset
 
@@ -9352,11 +9352,12 @@ status open
 \begin_inset Formula $f_{y}\pr\nr0$
 \end_inset
 
-.Тогда существем прямокгольник: 
+.
+ Тогда существует прямоугольник: 
 \begin_inset Formula $\Pi=\left\{ \left(x,y\right)|\left|x-x_{0}\right|<a,\ \left|y-y_{0}\right|<b\right\} \vkl\Omega$
 \end_inset
 
-, в катором множество решения уравнения 
+, в котором множество решения уравнения 
 \begin_inset Formula $f\left(x,y\right)=0$
 \end_inset
 
@@ -9478,7 +9479,7 @@ status open
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - отричательно в точке 
+ - отрицательна в точке 
 \begin_inset Formula $N\left(x_{0},y_{0}-b\right)$
 \end_inset
 
