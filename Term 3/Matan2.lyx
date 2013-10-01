@@ -354,6 +354,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -8458,6 +8464,1082 @@ d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\left\
 
 \begin_layout Remark
 \begin_inset Formula $\sl dx_{i}=a_{i}^{\left(1\right)}\um dt_{1}+a_{i}^{\left(2\right)}\um dt_{2}+\tr+a_{i}^{\left(k\right)}\um dt_{k}=a_{i}^{\left(1\right)}\um\D t_{1}+a_{i}^{\left(2\right)}\um\D t_{2}+\tr+a_{i}^{\left(k\right)}\um\D t_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+пропущено
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1.10.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $u=f\left(x,y\right),\ M_{0}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a_{1,1} & a_{1,2}\\
+a_{2,1} & a_{2,2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $a_{1,1}=f_{x^{2}}\ppr\left(M_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $a_{1,2}=f_{xy}\ppr\left(M_{0}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $a_{2,2}=f_{y^{2}}\ppr\left(M_{0}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{1,1}\um a_{2,2}-a_{1,2}^{2}>0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Существует экстремум.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если 
+\begin_inset Formula $a_{1,1}>0$
+\end_inset
+
+ - 
+\begin_inset Formula $\min$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Если 
+\begin_inset Formula $a_{1,1}<0$
+\end_inset
+
+ - 
+\begin_inset Formula $\max$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{1,1}\um a_{2,2}-a_{1,2}^{2}<0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Не существует экстремума.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+По формуле тейлора: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\D f & = & f\left(x,y\right)-f\left(x_{0},y_{0}\right)=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}2,\ \Theta\in\left(0,1\right)=\\
+ & = & \df 12\left(f_{x^{2}}\ppr\left(N\right)\um\D x^{2}+2f_{xy}\ppr\left(N\right)\D x\D y+f_{y^{2}}\ppr\left(N\right)\D y^{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $N\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\mbox{Tак частные производные 2го порядка непрерывны в точке} M_{0}$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{x^{2}}\ppr\left(N\right)=a_{1,1}+\alpha_{1,1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{xy}\ppr\left(N\right)=a_{1,2}+\alpha_{1,2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{y^{2}}\ppr\left(N\right)=a_{2,2}+\alpha_{2,2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Где 
+\begin_inset Formula $\alpha_{i,j}\st0$
+\end_inset
+
+ при 
+\begin_inset Formula $\D x\st0$
+\end_inset
+
+ и 
+\begin_inset Formula $\D y\st0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D f=\df 12\left(a_{1,1}\D x^{2}+2a_{1,2}\D x\D y+a_{2,2}\D y^{2}+\alpha_{1,1}\D x^{2}+2\alpha_{1,2}\D x\D y+\alpha_{2,2}\D y^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x=\rho\sin\varphi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y=\rho\cos\varphi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula $\D f\df{\rho^{2}}2\left(a_{1,1}\cos^{2}\varphi+2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi+\alpha_{1,1}\cos^{2}\varphi+2\alpha_{1,2}\cos\varphi\sin\varphi+\alpha_{2,2}\sin^{2}\varphi\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D_{1}=a_{1,1}\cos^{2}\varphi+2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D_{2}=\alpha_{1,1}\cos^{2}\varphi+2\alpha_{1,2}\cos\varphi\sin\varphi+\alpha_{2,2}\sin^{2}\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{1,2}\um a_{2,2}-a_{1,2}^{2}>0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $a_{1,1}a_{2,2}>0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1,1}\nr0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\D_{1}=\df 1{a_{1,1}}\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Так как 
+\begin_inset Formula $\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}\br0,\ \left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)>0,\ \sin^{2}\varphi\br0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]>0,\ \forall\varphi\in\left[0,2\pi\right]\label{eq:z1}
+\end{equation}
+
+\end_inset
+
+Поэтому знаки выражений 
+\begin_inset Formula $\D_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{1,1}$
+\end_inset
+
+ совподают, причем, по второй теореме Вейерштрасса, так как 
+\begin_inset Formula $\D_{1}$
+\end_inset
+
+ - непрерывна на 
+\begin_inset Formula $\left[0,2\pi\right]$
+\end_inset
+
+, получим, что 
+\begin_inset Formula $\exists m>0$
+\end_inset
+
+, что 
+\begin_inset Formula $\left|\D_{1}\right|\br m>0$
+\end_inset
+
+.
+ (
+\begin_inset Formula $\exists\min\left|\D_{1}\right|=m>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left[0,2\pi\right]$
+\end_inset
+
+).
+ Так как при достаточно малых 
+\begin_inset Formula $\rho$
+\end_inset
+
+, модуль 
+\begin_inset Formula $\D_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\D_{2}\right|\mr\left|\alpha_{1,1}\right|+2\left|\alpha_{1,2}\right|+\left|\alpha_{2,2}\right|<m$
+\end_inset
+
+, при достаточно малых 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ Следовательно 
+\begin_inset Formula $\D_{1}+\D_{2}$
+\end_inset
+
+, а значений 
+\begin_inset Formula $\D f$
+\end_inset
+
+ сохраняет знак 
+\begin_inset Formula $a_{1,1}$
+\end_inset
+
+.
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+При 
+\begin_inset Formula $a_{1,1}>0$
+\end_inset
+
+ 
+\begin_inset Formula $\D f>0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\min$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+При 
+\begin_inset Formula $a_{1,1}<0$
+\end_inset
+
+ 
+\begin_inset Formula $\D f<0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\max$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $a_{1,1}a_{2,2}-a_{1,2}^{2}<0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Случай 
+\begin_inset Formula $a_{1,1}\ne0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Рассмотрим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:z1"
+
+\end_inset
+
+) для 
+\begin_inset Formula $\D_{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+При 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]=a_{1,1}^{2}>0$
+\end_inset
+
+.
+ Если же взять 
+\begin_inset Formula $\varphi=\varphi_{1}$
+\end_inset
+
+ из условия 
+\begin_inset Formula $a_{1,1}\cos\varphi_{1}+a_{1,2}\sin\varphi_{1}=0$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\ctg\varphi_{1}=-\df{a_{1,2}}{a_{1,1}}.$
+\end_inset
+
+ То выражение 
+\begin_inset Formula $\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]=\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi_{1}$
+\end_inset
+
+.
+ Так как при достоточно малых 
+\begin_inset Formula $\rho$
+\end_inset
+
+ выражение 
+\begin_inset Formula $\D_{2}$
+\end_inset
+
+ можно сделать сколь угодно малым по модулю при 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi=\varphi_{1}$
+\end_inset
+
+, то приращение 
+\begin_inset Formula $\D f$
+\end_inset
+
+ принимает разные знаки на направлениях 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi=\varphi_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Экстремума нет.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Случай 
+\begin_inset Formula $a_{1,1}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\D_{1}=2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi=\sin\varphi\left(2a_{1,2}\cos\varphi+a_{2,2}\sin\varphi\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Тогда определим 
+\begin_inset Formula $\varphi=\varphi_{1}$
+\end_inset
+
+ так, чтобы 
+\begin_inset Formula $\left|a_{2,2}\right|\um\left|\sin\varphi_{1}\right|<2\um\left|a_{1,2}\right|\um\left|\cos\varphi_{1}\right|$
+\end_inset
+
+, для того чтобы знак скобки 
+\begin_inset Formula $\left(2a_{1,2}\cos\varphi+a_{2,2}\sin\varphi\right)$
+\end_inset
+
+ не менялся никогда.
+ 
+\begin_inset Formula $\left|\ctg\varphi_{1}\right|>\df 12\left|\df{a_{2,2}}{a_{1,2}}\right|$
+\end_inset
+
+ - такое 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ существует.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+При 
+\begin_inset Formula $\varphi=\varphi_{1}$
+\end_inset
+
+ и при 
+\begin_inset Formula $\varphi=-\varphi_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\D_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\D_{2}$
+\end_inset
+
+ применяет значенения разных знаков.
+ Следовательно 
+\begin_inset Formula $\D_{2}$
+\end_inset
+
+ можно сделать сколько угодно малым, при достаточно малых 
+\begin_inset Formula $\rho$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\D f$
+\end_inset
+
+ меняет знак в окресности точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Экстремума нет.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $u=x^{3}+3xy^{2}+39x-36y+26$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Находим критические точки.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\begin{array}{c}
+f_{x}\pr=\\
+f_{y}\pr=
+\end{array}\begin{cases}
+3x^{2}+3y^{2}-39=0\\
+6xy-36=0
+\end{cases} & \sl & \begin{cases}
+x^{2}+\df{36}{x^{2}}-13\\
+y=\df 6x
+\end{cases}\dsl\left\{ \begin{array}{c}
+x^{4}-13x^{2}+36=0\\
+\left[\begin{array}{c}
+x^{2}=9\\
+x^{2}=4
+\end{array}\right.
+\end{array}\right\} \dsl\begin{cases}
+\left[\begin{array}{c}
+x^{2}=9\\
+x^{2}=4
+\end{array}\right.\\
+y=\df 6x
+\end{cases}\\
+ & \dsl & \left[\begin{array}{c}
+\begin{cases}
+x=3\\
+y=2
+\end{cases}\\
+\begin{cases}
+x=-3\\
+y=-2
+\end{cases}\\
+\begin{cases}
+x=2\\
+y=3
+\end{cases}\\
+\begin{cases}
+x=-2\\
+y=-3
+\end{cases}
+\end{array}\right.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{x^{2}}\ppr=6x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{xy}\ppr=f_{yx}\ppr=6y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{y^{2}}\ppr=6x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $A=\left(\begin{array}{cc}
+6x & 6y\\
+6y & 6x
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{1}\left(3,2\right),\ M_{2}\left(-3,-2\right),\ M_{3}\left(2,3\right),\ M_{4}\left(-2,-3\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{1}\left(3,2\right)\sl$
+\end_inset
+
+ 
+\begin_inset Formula $6\left(\begin{array}{cc}
+3 & 2\\
+2 & 3
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $a_{1,1}=18>0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{\min}=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{2}\left(-3,-2\right)\ \sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(\begin{array}{cc}
+-18 & -12\\
+-12 & -18
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\D_{2}=36\left(9-4\right)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\D_{1}=-18<0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{\max}=u\left(-3,-2\right)=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Диференцирование функций заданных неявно
+\end_layout
+
+\begin_layout Subsection
+Диференцирование функций одной переменной заданных неявно
+\end_layout
+
+\begin_layout Definition
+Говорят, что уравнение 
+\begin_inset Formula $f\left(x,y\right)=0$
+\end_inset
+
+ задает неявно функцию 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+, если в уравнении 
+\begin_inset Formula $f\left(x,y\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ не вырожено через 
+\begin_inset Formula $x$
+\end_inset
+
+, или выразить однозначно через 
+\begin_inset Formula $x$
+\end_inset
+
+ неудается.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}-1=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Тут ДОЛЖЕН быть русунок эллипса.
+ Жорик!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Оно определяет 2 однозначные функции 
+\begin_inset Formula $y=\pm b\sqrt{1-\df{x^{2}}{a^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y_{1}=b\sqrt{1-\df{x^{2}}{a^{2}}}$
+\end_inset
+
+ - верхняя часть
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y_{2}=-b\sqrt{1-\df{x^{2}}{a^{2}}}$
+\end_inset
+
+ - Нижняя часть
+\end_layout
+
+\begin_layout Example
+Не во всех точках можно определить функцию однозначно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+В самой правой и левой нельзя во всех остальных можно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(1)
+\end_layout
+
+\begin_layout Theorem
+Пусть для уранения 
+\begin_inset Formula $f\left(x,y\right)=0$
+\end_inset
+
+ выполнены условия: 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - определена в некоторой окрестности 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ точки 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ и непрерывна в этой окрестности с частными производными 
+\begin_inset Formula $f_{x}\pr,\ f_{y}\pr$
+\end_inset
+
+, причем 
+\begin_inset Formula $f_{y}\pr\nr0$
+\end_inset
+
+.Тогда существем прямокгольник: 
+\begin_inset Formula $\Pi=\left\{ \left(x,y\right)|\left|x-x_{0}\right|<a,\ \left|y-y_{0}\right|<b\right\} \vkl\Omega$
+\end_inset
+
+, в катором множество решения уравнения 
+\begin_inset Formula $f\left(x,y\right)=0$
+\end_inset
+
+ определяется непрерывно дифференцируемой функцией 
+\begin_inset Formula $y=\psi\left(x\right),\ x\in\left(x_{0}-a,x_{0}+a\right)$
+\end_inset
+
+, причем 
+\begin_inset Formula $\psi\pr\left(x\right)=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)}{f_{y}\pr\left(x,\psi\left(x\right)\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $f_{y}\pr\left(M_{0}\right)\nr0$
+\end_inset
+
+, например 
+\begin_inset Formula $f_{y}\pr\left(M_{0}\right)>0$
+\end_inset
+
+.
+ Тогда для функции одной переменной 
+\begin_inset Formula $f\left(x_{0},y\right)=h\left(y\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $h\pr\left(y\right)=f_{y}\pr\left(x_{0},y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Так как 
+\begin_inset Formula $h\pr\left(y_{0}\right)=f_{y}\pr\left(x_{0},y_{0}\right)>0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ В точке 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ функция 
+\begin_inset Formula $h\left(y\right)$
+\end_inset
+
+ возрастает 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x_{0},y\right)$
+\end_inset
+
+ так-же возрастает по 
+\begin_inset Formula $y$
+\end_inset
+
+-ку в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, причем 
+\begin_inset Formula $f\left(M_{0}\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x_{0},y\right)<0$
+\end_inset
+
+ при 
+\begin_inset Formula $y<y_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x_{0},y\right)>0$
+\end_inset
+
+ при 
+\begin_inset Formula $y>y_{0}$
+\end_inset
+
+, точнее 
+\begin_inset Formula $\exists b>0$
+\end_inset
+
+ такое что 
+\begin_inset Formula $\forall y\in\left[y_{0}-b,y_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x_{0},y\right)<0$
+\end_inset
+
+ , 
+\begin_inset Formula $\forall y\in\left(y_{0},y_{0}+b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x_{0},y\right)>0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ непрерывна и 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - отричательно в точке 
+\begin_inset Formula $N\left(x_{0},y_{0}-b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - положительна в точке 
+\begin_inset Formula $P\left(x_{0},y_{0}+b\right)$
+\end_inset
+
+.
+ Так как она непрерывна, то по теореме о сохранении знака непрерывной функции,
+ можем получить: 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists a_{1}\ :\ f\left(x,y_{0}+b\right)>0\ \forall x\in\left(x_{0}-a_{1},x_{0}+a_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists a_{2}\ :\ f\left(x,y_{0}-b\right)\ \forall x\in\left(x_{0}-a_{2},x_{0}+a_{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $a=\min\left\{ a_{1},a_{2}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f\left(M\right)>0\ \forall M\left(x,y_{0}+b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f\left(M\right)<0\ \forall M\left(x,y_{0}-b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\sim\left|x-x_{0}\right|<a$
 \end_inset
 
 
