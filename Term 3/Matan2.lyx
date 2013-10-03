@@ -6,7 +6,6 @@
 \use_default_options true
 \begin_modules
 theorems-starred
-theorems-named
 \end_modules
 \maintain_unincluded_children false
 \language russian
@@ -390,7 +389,7 @@ theorems-named
  и образуют выражение вида 
 \begin_inset Formula 
 \begin{equation}
-a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:Сршылряд}
+a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:1}
 \end{equation}
 
 \end_inset
@@ -398,7 +397,7 @@ a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:Сршылряд}
 Выражение (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -409,7 +408,7 @@ reference "eq:Сршылряд"
  - членами ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -432,7 +431,7 @@ reference "eq:Сршылряд"
 ой частичной суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -451,14 +450,14 @@ reference "eq:Сршылряд"
 , то его называют суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
 ), а ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -470,7 +469,7 @@ reference "eq:Сршылряд"
  Если предел бесконечен или не существует,то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -1266,7 +1265,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:*********************************}
+b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:2}
 \end{equation}
 
 \end_inset
@@ -1282,7 +1281,7 @@ b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:
  тогда используя левую часть неравенства (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:*********************************"
+reference "eq:2"
 
 \end_inset
 
@@ -1305,7 +1304,7 @@ reference "eq:*********************************"
  то используя правую часть неравенства (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:*********************************"
+reference "eq:2"
 
 \end_inset
 
@@ -1392,7 +1391,7 @@ reference "eq:*********************************"
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -1656,7 +1655,7 @@ reference "eq:Сршылряд"
 Пусть для ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -1738,7 +1737,7 @@ reference "eq:Сршылряд"
  сходится то по признаку сравнения сходится и ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -1773,7 +1772,7 @@ reference "eq:Сршылряд"
  следует по признаку сравнения расходимость ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Сршылряд"
+reference "eq:1"
 
 \end_inset
 
@@ -1929,7 +1928,7 @@ reference "eq:Сршылряд"
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
+s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \end{equation}
 
 \end_inset
@@ -2143,7 +2142,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 Числовой ряд вида 
 \begin_inset Formula 
 \begin{equation}
-\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:4-1}
+\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:4}
 \end{equation}
 
 \end_inset
@@ -2159,7 +2158,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 Если для знакочередующегося ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2186,7 +2185,7 @@ reference "eq:4-1"
 то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2197,7 +2196,7 @@ reference "eq:4-1"
 Рассмотрим последовательность частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2251,7 +2250,7 @@ reference "eq:4-1"
 Рассмотрим последовательность частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2273,7 +2272,7 @@ a_{2n}+1\st0
  ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2301,7 +2300,7 @@ reference "eq:4-1"
 Для остатка ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2321,7 +2320,7 @@ reference "eq:4-1"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2447,7 +2446,7 @@ reference "eq:4-1"
  
 \begin_inset Formula 
 \begin{equation}
-\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p-1}S_{k}\um\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}\label{eq:2}
+\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p-1}S_{k}\um\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}\label{eq:5}
 \end{equation}
 
 \end_inset
@@ -2475,7 +2474,7 @@ reference "eq:4-1"
 Ряд 
 \begin_inset Formula 
 \begin{equation}
-\ous{n=1}{\b}u_{n}v_{n}\label{eq:3}
+\ous{n=1}{\b}u_{n}v_{n}\label{eq:6}
 \end{equation}
 
 \end_inset
@@ -2509,7 +2508,7 @@ reference "eq:4-1"
 Согласно критерию Коши сходимости числового ряда ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:3"
+reference "eq:6"
 
 \end_inset
 
@@ -2550,7 +2549,7 @@ reference "eq:3"
 
 \begin_layout Proof
 Получим 
-\begin_inset Formula $\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\ref{eq:2}\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}$
+\begin_inset Formula $\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\ref{eq:5}\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}$
 \end_inset
 
 .
@@ -2660,7 +2659,7 @@ reference "eq:3"
  (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2680,7 +2679,7 @@ reference "eq:4-1"
 Пусть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2703,7 +2702,7 @@ reference "eq:4-1"
  - критерий Коши сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2742,7 +2741,7 @@ reference "eq:4-1"
 В ряде (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2750,7 +2749,7 @@ reference "eq:4-1"
  Получим новый ряд 
 \begin_inset Formula 
 \begin{equation}
-\ous{k=1}{\b}a_{k}'=a_{1}'+a_{2}'+\tr+a_{k}'+\tr\label{eq:4}
+\ous{k=1}{\b}a_{k}'=a_{1}'+a_{2}'+\tr+a_{k}'+\tr\label{eq:7}
 \end{equation}
 
 \end_inset
@@ -2763,14 +2762,14 @@ reference "eq:4-1"
  Вопрос: Сходится ли ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:7"
 
 \end_inset
 
 ) при условии сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2781,14 +2780,14 @@ reference "eq:4-1"
 Если ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
 ) сходится абсолютно, то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:7"
 
 \end_inset
 
@@ -2804,7 +2803,7 @@ reference "eq:4"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -2821,7 +2820,7 @@ reference "eq:4-1"
 Для ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:7"
 
 \end_inset
 
@@ -2878,14 +2877,14 @@ reference "eq:4"
 Так как ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
 ) в свою очередь получается перестановкой членов ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:7"
 
 \end_inset
 
@@ -2905,7 +2904,7 @@ reference "eq:4"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -3000,7 +2999,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 Пусть (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -3027,7 +3026,7 @@ reference "eq:4-1"
 , то-есть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:7"
 
 \end_inset
 
@@ -3156,7 +3155,7 @@ reference "eq:4"
 Пусть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -3308,7 +3307,7 @@ reference "eq:4-1"
 Так как ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4-1"
+reference "eq:4"
 
 \end_inset
 
@@ -6576,7 +6575,7 @@ status collapsed
  можно представить в виде 
 \begin_inset Formula 
 \begin{equation}
-\D u=A_{1}\D x_{1}+A_{2}\D x_{2}+\tr+A_{m}\D x_{m}+\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\label{eq:5}
+\D u=A_{1}\D x_{1}+A_{2}\D x_{2}+\tr+A_{m}\D x_{m}+\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\label{eq:8}
 \end{equation}
 
 \end_inset
@@ -6620,7 +6619,7 @@ status collapsed
 если имеет место представление 
 \begin_inset Formula 
 \begin{equation}
-\D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:6}
+\D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:9}
 \end{equation}
 
 \end_inset
@@ -6749,7 +6748,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \begin_layout Proof
 \begin_inset Formula $\D_{x_{i}}u\left(M\right)=\left\{ \begin{array}{c}
-\ref{eq:5}\\
+\ref{eq:8}\\
 \D x_{i}\nr0\\
 \D x_{k}=0,\ k\nr i
 \end{array}\right\} =A_{i}\D x_{i}+\alpha_{i}\D x_{i},\ i=\overline{1,m}$
@@ -6786,7 +6785,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\D u=\ous{i=1}mf_{x_{i}}^{\left(M\right)}\D x_{i}+o\left(\rho\right)\label{eq:7}
+\D u=\ous{i=1}mf_{x_{i}}^{\left(M\right)}\D x_{i}+o\left(\rho\right)\label{eq:10}
 \end{equation}
 
 \end_inset
@@ -6819,7 +6818,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \D x_{1}\st0\\
 \tr\\
 \D x_{m}\st0
-\end{array}}=\left\{ \ref{eq:7}\right\} =0$
+\end{array}}=\left\{ \ref{eq:10}\right\} =0$
 \end_inset
 
 
@@ -8349,7 +8348,7 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
  Аналогично 
 \begin_inset Formula 
 \begin{equation}
-\forall n\in\N\ \ d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:1-1}
+\forall n\in\N\ \ d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:13}
 \end{equation}
 
 \end_inset
@@ -8472,7 +8471,297 @@ d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\\
 status open
 
 \begin_layout Plain Layout
-пропущено
+Пропущено было.
+ Дописываю 3.10.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Формула Тейлора
+\end_layout
+
+\begin_layout Standard
+Напомним что для случая одной переменной имеет место разложение по формуле
+ Тейлора.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\D F\left(t_{0}\right) & = & F\left(t_{0}+\D t\right)-F\left(t_{0}\right)=\\
+ & = & F\pr\left(t_{0}\right)\um\D t+\df{F\ppr\left(t_{0}\right)}{2!}\um\D t^{2}+\tr+\df{F^{\left(n\right)}\left(t_{0}\right)}{n!}+\df{F^{\left(n+1\right)}\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!}=\\
+ & = & dF\left(t_{0}\right)+\df{d^{2}F\left(t_{0}\right)}{2!}+\tr+\df{d^{n}F\left(t_{0}\right)}{n!}+\df{d^{n+1}F\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+Пусть в некоторой окресности точки 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ имеет непрерывные часные производные до 
+\begin_inset Formula $\left(n+1\right)$
+\end_inset
+
+-го порядка.
+ Тогда 
+\begin_inset Formula $\forall M\left(x_{0}+\D x,y_{0}+\D y\right)$
+\end_inset
+
+ имеет место равенстово
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\begin{equation}
+\D f\left(x_{0},y_{0}\right)=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)\label{eq:prop1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Положим 
+\begin_inset Formula $x=x_{0}+t\um\D x,\ y=y_{0}+t\um\D y,\ t\in\left(0,1\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $F\left(t\right)=f\left(x_{0}+t\um\D x,y_{0}+t\um\D y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\D f\left(x_{0},y_{0}\right) & = & f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=\\
+ & = & F\left(1\right)-F\left(0\right)=\\
+ & = & \D F\left(0\right)=\\
+ & = & \left\{ \text{По формуле Тейлора для функций многих переменных}\right\} =\\
+ & = & dF\left(0\right)+\df{d^{2}F\left(0\right)}{2!}+\tr+\df{d^{n}F\left(0\right)}{n!}+\df{d^{n+1}F\left(\Theta\right)}{\left(n+1\right)!}=\\
+ & = & \left\{ \begin{array}{c}
+\text{Так как }x=x_{0}+t\um\D x,\ y=y_{0}+t\um\D y\\
+\text{линейно зависят от}\ t\ \sl\\
+\sl d\tr d^{k}\ \text{обладают инвариантностью формы}
+\end{array}\right\} =\\
+ & = & (\ref{eq:prop1})=\\
+ & = & df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Экстремумы функций многих переменных
+\end_layout
+
+\begin_layout Subsubsection
+Понятие функций многих переменных.
+ Необходимое условие жкстремума.
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+ определена в области 
+\begin_inset Formula $D$
+\end_inset
+
+ и точка 
+\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
+\end_inset
+
+ - внутренняя точка области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ называется точкой строгого локального максимумма (минимума) функции 
+\begin_inset Formula $u=f\left(x_{1},\tr x_{m}\right)$
+\end_inset
+
+ существует такая выколотая окресность точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, что 
+\begin_inset Formula $\forall M\in U_{\varepsilon}\left(M_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(M\right)<f\left(M_{0}\right)\ \left(f\left(M\right)>f\left(M_{0}\right)\right)$
+\end_inset
+
+.
+ Если в определении неравенства не строгие, то 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ - точка не строгого локального локального максимума (минимума).
+\end_layout
+
+\begin_layout Theorem
+(Необходимое условие локального экстремума)
+\end_layout
+
+\begin_layout Theorem
+Если точка 
+\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
+\end_inset
+
+ является точкой локального экстремума функции 
+\begin_inset Formula $u=f\left(\vec x\right)$
+\end_inset
+
+ и сушествует часная производная 
+\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть например тока 
+\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
+\end_inset
+
+ - это точка локального максимума.
+ Возьмем 
+\begin_inset Formula $\forall i,\ i=\overline{1,m}$
+\end_inset
+
+, и зафиксируем все переменные проме 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+, тоесть будем рассматривать точки вида 
+\begin_inset Formula $M\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right),\ x_{i}\in\R,\ M\in D\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Получим функцию одной переменной 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $:$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right)=g\left(x_{i}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\forall x_{i}\in\left(x_{i}^{0}-\varepsilon,x_{i}^{0}+\varepsilon\right):f\left(M_{0}\right)=g\left(x_{i}^{0}\right)\br g\left(x_{i}\right)=f\left(M\right),\ M\in U_{\varepsilon}\left(M_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x_{i}^{0}$
+\end_inset
+
+ - точка локального максимума функции одной переменной 
+\begin_inset Formula $\sl$
+\end_inset
+
+ по тоереме Ферма 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $g\pr\left(x_{i}\right)=\df{\dd f\left(M_{0}\right)}{\dd x_{i}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Точки в каторых выполняется условие 
+\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
+\end_inset
+
+ называются критическими, станционарными, подозреваемыми на экстремум.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ - критическая точка функции 
+\begin_inset Formula $f\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\grad\left(M_{0}\right)=\left(\begin{array}{c}
+0\\
+\vtr\\
+0
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $df\left(M_{0}\right)=\ous{i=1}m\df{\dd f\left(M_{0}\right)}{\dd x_{i}}\um x_{i}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Туть чуть дописать осталось
 \end_layout
 
 \end_inset
@@ -8749,7 +9038,7 @@ a_{2,1} & a_{2,2}
  
 \begin_inset Formula 
 \begin{equation}
-\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]>0,\ \forall\varphi\in\left[0,2\pi\right]\label{eq:z1}
+\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]>0,\ \forall\varphi\in\left[0,2\pi\right]\label{eq:14}
 \end{equation}
 
 \end_inset
@@ -8887,7 +9176,7 @@ a_{2,1} & a_{2,2}
 Рассмотрим (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:z1"
+reference "eq:14"
 
 \end_inset
 
@@ -10108,7 +10397,7 @@ f_{y}\pr=2\um y
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F\left(x,y,z\right)=0\label{eq:q1}
+F\left(x,y,z\right)=0\label{eq:15}
 \end{equation}
 
 \end_inset
@@ -10217,7 +10506,7 @@ F\left(x,y,z\right)=0\label{eq:q1}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:q2}
+F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:16}
 \end{equation}
 
 \end_inset
@@ -10229,7 +10518,7 @@ F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q2"
+reference "eq:16"
 
 \end_inset
 
@@ -10243,7 +10532,7 @@ reference "eq:q2"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\df{x-x_{0}}{F_{x}\pr\left(M_{0}\right)}=\df{y-y_{0}}{F_{y}\pr\left(M_{0}\right)}=\df{z-z_{0}}{F_{z}\pr\left(M_{0}\right)}\label{eq:q3}
+\df{x-x_{0}}{F_{x}\pr\left(M_{0}\right)}=\df{y-y_{0}}{F_{y}\pr\left(M_{0}\right)}=\df{z-z_{0}}{F_{z}\pr\left(M_{0}\right)}\label{eq:17}
 \end{equation}
 
 \end_inset
@@ -10255,7 +10544,7 @@ reference "eq:q2"
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q3"
+reference "eq:17"
 
 \end_inset
 
@@ -10287,14 +10576,14 @@ reference "eq:q3"
  Уравнения получаются аналогичные (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q2"
+reference "eq:16"
 
 \end_inset
 
 ,
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q3"
+reference "eq:17"
 
 \end_inset
 
@@ -10428,7 +10717,7 @@ reference "eq:q3"
 F_{1}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0\\
 \vtr\\
 F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
-\end{cases}\label{eq:q4}
+\end{cases}\label{eq:18}
 \end{equation}
 
 \end_inset
@@ -10444,7 +10733,7 @@ F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
  - решения системы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q4"
+reference "eq:18"
 
 \end_inset
 
@@ -10459,7 +10748,7 @@ reference "eq:q4"
 Пусть система функций (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q4"
+reference "eq:18"
 
 \end_inset
 
@@ -10509,7 +10798,7 @@ reference "eq:q4"
  удовлетворяет системе (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:q4"
+reference "eq:18"
 
 \end_inset
 
