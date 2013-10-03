@@ -1578,6 +1578,299 @@ k=-чеготам.
  
 \end_layout
 
+\begin_layout Section
+Конструкция программы
+\end_layout
+
+\begin_layout Enumerate
+Директивы препроцессора.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Определяют действия перед компиляцией, а так-же включаеют инструкции, которым
+ следует компилятор во время компиляции
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Объявление
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Написание переменных функций, структур, классов и типов данных
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Определения
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тела выполняемых функций проекта
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Объявление переменных:
+\end_layout
+
+\begin_layout Standard
+[класс памяти][знаковость][длина]тип список-переменных
+\end_layout
+
+\begin_layout Enumerate
+Класса памяти
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+auto --- перменная определена в том блоке в котором она описана, и во вложенных
+ блоках.
+ Определенная вне всех блоков переменная видема до конца файла.
+ И как правило слово это не пишеться
+\end_layout
+
+\begin_layout Itemize
+static --- переменная существует глобально, не зависимо от того на каком
+ блоке уровней определена.
+ Воздействие ее до конца файла, в котором она определена
+\end_layout
+
+\begin_layout Itemize
+extern --- переменая или функция определена в другом файле, а объявление
+ представляет собой ссылку действуюшую в рамках одного проекта.
+\end_layout
+
+\begin_layout Itemize
+register --- используеться только для типов char and int.
+ Означает, что переменнная при возможности храниться в регистре процессора.
+ 
+\end_layout
+
+\begin_layout Standard
+1 и 4 классы не допу каються к явному указанию на внешному уровне.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Знаковость
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Может быть указана только для перечеслимых типов или порядковых типов: char
+ and int.
+\end_layout
+
+\begin_layout Itemize
+signed
+\end_layout
+
+\begin_layout Itemize
+unsigned
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Длина
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Определена для Int, float, double
+\end_layout
+
+\begin_layout Itemize
+Отсутсвует(по умолчанию)
+\end_layout
+
+\begin_layout Itemize
+short 
+\end_layout
+
+\begin_layout Itemize
+long
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Дейтвие этих модификаторов зависит от компилятора и апаратной платформы.
+ На IBM PC-short int and int совпадают и занимают 2 байта, а Long int требует
+ 4 байта 
+\end_layout
+
+\begin_layout Section
+Описание функции
+\end_layout
+
+\begin_layout Standard
+Формат объявления:
+\end_layout
+
+\begin_layout Standard
+<Тип функции> <имя >(тип1 параметр1, ...
+ , типn параметрn); 
+\end_layout
+
+\begin_layout Standard
+Объявление необходиом для функций, которые описанны ниже.
+\end_layout
+
+\begin_layout Standard
+Пример:
+\end_layout
+
+\begin_layout LyX-Code
+float f1(double t, double v)
+\end_layout
+
+\begin_layout LyX-Code
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+return t+v;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+extern char fo();// функция в другом файле
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+f2();//прототип, а сама функция вместе с телом определно ниже
+\end_layout
+
+\begin_layout Standard
+Для вызова функции из другого файла можно использовать:
+\end_layout
+
+\begin_layout Enumerate
+Extern;
+\end_layout
+
+\begin_layout Enumerate
+#include<имя файла.h> если свой класс то в ковычках
+\end_layout
+
+\begin_layout Standard
+Пример:
+\end_layout
+
+\begin_layout LyX-Code
+int f1(int n)// если функция без типа, то по умолчанию int
+\end_layout
+
+\begin_layout LyX-Code
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+extern int f4(int);
+\end_layout
+
+\begin_layout LyX-Code
+return f4(n);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}//функция определена во внешнем файла и должна быть доступна к моменту
+ сборки приложения.
+\end_layout
+
+\begin_layout Standard
+Объявление типа позволяет создать свой тип, оно состоит в присвоении некотрому
+ базовому или составному типу языка с++.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+struct list
+\end_layout
+
+\begin_layout LyX-Code
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+char name[20]
+\end_layout
+
+\begin_layout LyX-Code
+long int phone;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\begin_layout LyX-Code
+struct list mylist[20]
+\end_layout
+
+\begin_layout Standard
+Описан массив структур типа List c именем Mulist из 20 элементов.
+\end_layout
+
+\begin_layout Standard
+Есть еще typedef дает другое имя уже сушествуем струтурам или типам.
+ typedef float real.
+ 
+\end_layout
+
+\begin_layout Standard
+Так-же есть #define.
+ #define cin read
+\end_layout
+
+\begin_layout Standard
+Определение функции задает ее тело, которое представляет собой состовной
+ оператор или блок, содержащий что-то там.
+ Определение функции задает имя тип возращаемого значения и атрибуты ее
+ формальных параметров.
+\end_layout
+
+\begin_layout LyX-Code
+int f(int a, int b) 
+\end_layout
+
+\begin_layout LyX-Code
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+return(a+b)/2; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\begin_layout Standard
+Допускаеться спецификацции класса памяти, static или extern.
+ 
+\end_layout
+
+\begin_layout Part
+Я ОТКАЗЫВАЮЬ ДАЛЬШЕ ПИСАТЬ
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset

@@ -3153,5 +3153,391 @@ XCHG op1,op2//swap(op1,op2)
 Команды сложения и вычитания
 \end_layout
 
+\begin_layout LyX-Code
+add op1, op2;op1:=op1+op2;
+\end_layout
+
+\begin_layout LyX-Code
+sub op1, op2;op1:=op1-op2;
+\end_layout
+
+\begin_layout Standard
+Программист должен сам учитывать, над каким типом целых чисел выполняеться
+ операции.
+ При выполнении операции результат может не помещаться в отведенное ему
+ место, тогда для контроля коректности полученного результата, следует анализиро
+вать биты флагового регистра: OF - знаковый, CF - без знаковый.
+ Если рузельтат операции с безнаковыми числами непомещаеться в соответствующий
+ байт или слово, то CF устанавливаеться значение 1.
+ Это означает, что результат сформирован по модулю 2^16 анлогичная ситуация
+ у знаковых чисел будет OF=1.
+ 
+\end_layout
+
+\begin_layout Standard
+Термины: установить флаг, означает, что флаг принимает значение 1, сбросить
+ флаг, флаг принимает значение 0.
+ Кроме флагов OF and CF, команда сложения и вычитания меняет флаги ZF and
+ SF.
+\end_layout
+
+\begin_layout Subsection
+INC and DEC
+\end_layout
+
+\begin_layout LyX-Code
+inc op1; op1++
+\end_layout
+
+\begin_layout LyX-Code
+dec op1; op1--
+\end_layout
+
+\begin_layout LyX-Code
+neg op; op:=-op
+\end_layout
+
+\begin_layout Standard
+Есть особые случаи op byte and op:=-128 Значение после Neg не измениться
+ и т.п случаи.
+\end_layout
+
+\begin_layout Standard
+op word and word:=-32768 в этом слуаче OF=1 при других операндах 0.
+ Если операнд равен 0, то CF=0 в остальных случаях 1, при этом обычном способом
+ устанавилваються ZF and SF.
+\end_layout
+
+\begin_layout Subsection
+ADC and SBB
+\end_layout
+
+\begin_layout LyX-Code
+adc op1, op2;op1:=op1+op2+СF; сложение с переносом
+\end_layout
+
+\begin_layout LyX-Code
+sbb op1, op2;op1:=op1-op2-CF; вычитание с учетом заёма
+\end_layout
+
+\begin_layout Standard
+Эти команды предназначены для моделирования сложения и вычитания длинных
+ чисел, которые имеют формат DD.
+ 
+\end_layout
+
+\begin_layout Standard
+При выполнении adc:
+\end_layout
+
+\begin_layout Standard
+хх...х 1х...х
+\end_layout
+
+\begin_layout Standard
+хх...х 1х...х
+\end_layout
+
+\begin_layout Standard
+------------
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+х 0х...х
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+СF=1
+\end_layout
+
+\begin_layout Standard
+Например:
+\end_layout
+
+\begin_layout LyX-Code
+x dd ?
+\end_layout
+
+\begin_layout LyX-Code
+y dd ?
+\end_layout
+
+\begin_layout LyX-Code
+z dd ?; z:=x+y; Напомним что ассемблер записывает в память значения в перевернту
+ом виде.
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, word ptr x
+\end_layout
+
+\begin_layout LyX-Code
+add ax, word ptr y
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, word ptr x+2; CF=0|1
+\end_layout
+
+\begin_layout LyX-Code
+adc bx, word ptr y+2
+\end_layout
+
+\begin_layout LyX-Code
+mov word ptr z, ax
+\end_layout
+
+\begin_layout LyX-Code
+mov word ptr z+2, bx
+\end_layout
+
+\begin_layout Standard
+Реализцаия сложения для большых чисел.
+ Анологично можно реализовать вычитание длинных беззнаковых чисел.
+ 
+\end_layout
+
+\begin_layout Section
+Команды умножения и деления
+\end_layout
+
+\begin_layout Subsection
+Умножение
+\end_layout
+
+\begin_layout Standard
+В отличии от сложения и вычитания, умножение и деление для знаковых и беззнакомы
+х чисел, производиться по разным алгоритмам.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mul op; без знака
+\end_layout
+
+\begin_layout LyX-Code
+imul op; знак
+\end_layout
+
+\begin_layout Standard
+Положение первого операнда фиксировано, второй операнд 
+\begin_inset Quotes eld
+\end_inset
+
+ор
+\begin_inset Quotes erd
+\end_inset
+
+ задаеться в команде.
+ ор-регистр или поле памяти, размер ор определяет размер результата.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+op-db
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+ax:=al*op
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+op-dw
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+(dx,ax):=ax*op
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Под результат отводиться в два раза больше места, чем под сомножители.
+ Умножение n-значных чисел в общем случае дает произведение из 2n-знаков.
+ Если результат не размещаеться в формате операндов, тo CF and OF сбрасываються
+ в 0.
+ Если результат действительно требует удвоенного объема памяти, то CF and
+ OF устанавливаються в 1.
+ 
+\end_layout
+
+\begin_layout Subsection
+Деление
+\end_layout
+
+\begin_layout LyX-Code
+div op; unsigned
+\end_layout
+
+\begin_layout LyX-Code
+idiv op; signed
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+op-db
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+ah:=ax mod op
+\end_layout
+
+\begin_layout LyX-Code
+al:=ax div op
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+op-dw
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+dx:=(dx,ax) mod op
+\end_layout
+
+\begin_layout LyX-Code
+ax:=(dx,ax) div op
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В этих командах указываеться только второй операнд, делитель, который может
+ быть регистром или поле памяти, но не может быть непосредсвеннем операндом.
+\end_layout
+
+\begin_layout Standard
+Обратим внимание на случай op-dw.
+ Обычно делимое помещаетьсяв регистр ах при этом dx=0(до div).
+ При выполнении деления возможно появления ошибок, деление на 0 или переполнение.
+ Переполнение бывает тогда, когда неполное частное не помещаеться в отведенное
+ ему место.
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, 600
+\end_layout
+
+\begin_layout LyX-Code
+mov bh, 2
+\end_layout
+
+\begin_layout LyX-Code
+div bh; будет error!!
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+ex 2:
+\end_layout
+
+\begin_layout LyX-Code
+z:=x div y
+\end_layout
+
+\begin_layout LyX-Code
+x db ?
+\end_layout
+
+\begin_layout LyX-Code
+y db ?
+\end_layout
+
+\begin_layout LyX-Code
+z db ?
+\end_layout
+
+\begin_layout LyX-Code
+....
+\end_layout
+
+\begin_layout LyX-Code
+mov al, x
+\end_layout
+
+\begin_layout LyX-Code
+sub ah, ah
+\end_layout
+
+\begin_layout LyX-Code
+div y
+\end_layout
+
+\begin_layout LyX-Code
+mov z, al
+\end_layout
+
+\begin_layout Section
+Изменения размера числа.
+ CBW
+\end_layout
+
 \end_body
 \end_document
