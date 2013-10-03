@@ -6,6 +6,7 @@
 \use_default_options true
 \begin_modules
 theorems-starred
+theorems-named
 \end_modules
 \maintain_unincluded_children false
 \language russian
@@ -357,6 +358,12 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\ctg}{\text{ctg}}
 {\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
 \end_inset
 
 
@@ -2136,7 +2143,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 Числовой ряд вида 
 \begin_inset Formula 
 \begin{equation}
-\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:1}
+\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:4-1}
 \end{equation}
 
 \end_inset
@@ -2152,7 +2159,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 Если для знакочередующегося ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2179,7 +2186,7 @@ reference "eq:1"
 то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2190,7 +2197,7 @@ reference "eq:1"
 Рассмотрим последовательность частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2244,7 +2251,7 @@ reference "eq:1"
 Рассмотрим последовательность частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2266,7 +2273,7 @@ a_{2n}+1\st0
  ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2294,7 +2301,7 @@ reference "eq:1"
 Для остатка ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2314,7 +2321,7 @@ reference "eq:1"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2653,7 +2660,7 @@ reference "eq:3"
  (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2673,7 +2680,7 @@ reference "eq:1"
 Пусть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2696,7 +2703,7 @@ reference "eq:1"
  - критерий Коши сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2735,7 +2742,7 @@ reference "eq:1"
 В ряде (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2763,7 +2770,7 @@ reference "eq:4"
 ) при условии сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2774,7 +2781,7 @@ reference "eq:1"
 Если ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2797,7 +2804,7 @@ reference "eq:4"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2871,7 +2878,7 @@ reference "eq:4"
 Так как ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2898,7 +2905,7 @@ reference "eq:4"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -2993,7 +3000,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 Пусть (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -3149,7 +3156,7 @@ reference "eq:4"
 Пусть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -3301,7 +3308,7 @@ reference "eq:1"
 Так как ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:4-1"
 
 \end_inset
 
@@ -7196,7 +7203,7 @@ status open
 x_{1}=\varphi_{1}\left(t_{1},\tr,t_{k}\right)\\
 \tr\\
 x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
-\end{cases}\label{eq:8}
+\end{cases}\label{eq:11}
 \end{equation}
 
 \end_inset
@@ -7236,7 +7243,7 @@ u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,
 \df{\dd f}{\dd t_{1}}=\df{\dd f}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{1}}+\df{\dd f}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{1}}+\tr+\df{\dd f}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{1}}\\
 \tr\\
 \df{\dd f}{\dd t_{k}}=\df{\dd f}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{k}}+\df{\dd f}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{k}}+\tr+\df{\dd f}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{k}}
-\end{cases}\label{eq:9}
+\end{cases}\label{eq:12}
 \end{equation}
 
 \end_inset
@@ -7318,7 +7325,7 @@ status open
 , вычисляемые по формулам (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:9"
+reference "eq:12"
 
 \end_inset
 
@@ -8487,6 +8494,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
+(Достаточное условие локального экстремума)
 \begin_inset Formula $u=f\left(x,y\right),\ M_{0}\left(x_{0},y_{0}\right)$
 \end_inset
 
@@ -9541,6 +9549,1002 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+3.10.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)$
+\end_inset
+
+ фугкция одной переменной 
+\begin_inset Formula $g\left(y\right)=f\left(x,y\right)$
+\end_inset
+
+ (Зафиксировали 
+\begin_inset Formula $x$
+\end_inset
+
+ и при нем меняем 
+\begin_inset Formula $y$
+\end_inset
+
+) : 
+\begin_inset Formula $g\left(y_{0}-b\right)<0,\ g\left(y_{0}+b\right)>0$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(y\right)$
+\end_inset
+
+ - непрерывна на 
+\begin_inset Formula $\left[y_{0}-b,y_{0}+b\right]$
+\end_inset
+
+.
+ То первой по теореме Больцана-Коши 
+\begin_inset Formula $\exists\overline{y}\ :\ g\left(\overline{y}\right)=f\left(x,\overline{y}\right)=0$
+\end_inset
+
+.
+ А еще нам нада доказать что 
+\begin_inset Formula $\overline{y}$
+\end_inset
+
+ - единственная точка где 
+\begin_inset Formula $g\left(\overline{y}\right)=0$
+\end_inset
+
+.
+ Так как при этом 
+\begin_inset Formula $g\pr\left(y\right)=f_{y}\pr\left(x,y\right)>0$
+\end_inset
+
+ при 
+\begin_inset Formula $y\in\left(y_{0}-b,y_{0}+b\right)$
+\end_inset
+
+то 
+\begin_inset Formula $g\left(y\right)$
+\end_inset
+
+ - монотонно возрастает на отрезке 
+\begin_inset Formula $\left[y_{0}-b,y_{0}+b\right]$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\overline{y}$
+\end_inset
+
+ - единственное решение уравнения 
+\begin_inset Formula $f\left(x,\overline{y}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Мы получили что
+\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\ \exists!y=\psi\left(x\right)$
+\end_inset
+
+, такой что 
+\begin_inset Formula $f\left(x,\psi\left(x\right)\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Докажем дифференцируемость 
+\begin_inset Formula $\psi\pr\left(x\right)$
+\end_inset
+
+ на интервале 
+\begin_inset Formula $\left(x_{0}-a,x_{0}+a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $x\in\left(x_{0}-a,x_{0}+a\right)$
+\end_inset
+
+ - произвольная точка.
+ Придадим приращение 
+\begin_inset Formula $\D x$
+\end_inset
+
+ 
+\begin_inset Formula $:$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x+\D x\right)\in\left(x_{0}-a,x_{0}+a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D f=f\left(x+\D x,\psi\left(x+\D x\right)\right)-f\left(x,\psi\left(x\right)\right)=\left\{ \begin{array}{c}
+f\left(x,\psi\left(x\right)\right)=0\\
+f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
+\end{array}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как часные производные функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - непрерывны на 
+\begin_inset Formula $\Pi$
+\end_inset
+
+, то функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - диференцируема на 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Используя диференцируемость в точке 
+\begin_inset Formula $M\left(x,\psi\left(x\right)\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\D f & = & A\um\D x+B\um\D y+\alpha\um\D x+\beta\um\D y=\left\{ \begin{array}{c}
+A\um\D x+B\um\D y\ -\ \text{главная часть}\\
+\alpha\um\D x+\beta\um\D y=o\left(\rho\right)
+\end{array}\right\} \\
+ & = & f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\alpha\um\D x+\beta\um\D y
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+\alpha\um\D x=-\left(f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\beta\um\D y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\D y}{\D x}=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)+\alpha}{f_{y}\pr\left(x,\psi\left(x\right)\right)+\beta}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D x\st0\sl\D y\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists\ul{\D x\st0}\df{\D y}{\D x}\ddsl\psi\pr\left(x\right)=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)}{f_{y}\pr\left(x,\psi\left(x\right)\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x^{2}+y^{2}-1=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2}-1=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y=\pm\sqrt{1-x^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Remark
+
+\emph on
+Вспомнить пример про эллипс!
+\end_layout
+
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $-y_{x}\pr=-\df{f_{y}\pr}{f_{x}\pr}=\left\{ \begin{array}{c}
+f_{x}\pr=2\um x\\
+f_{y}\pr=2\um y
+\end{array}\right\} =-\df{2\um x}{2\um y}=-\df xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y\ne0\ \sl\ x\nr\pm1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{0}\left(\df 12;\df{\sqrt{3}}2\right)\ \sl\ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y\pr\left(\df 12\right)=-\df{\df 12}{\df{\sqrt{3}}2}=-\df 1{\sqrt{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{1}\left(\df 12;\df{\sqrt{3}}2\right)\ \sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y\pr\left(\df 12\right)=-\df{\df 12}{-\df{\sqrt{3}}2}=\df 1{\sqrt{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $e^{y}-e^{x}+x\um y=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Найти 
+\begin_inset Formula $y_{x}\pr$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,y\right)=e^{y}-e^{x}+x\um y,\ f\left(0,0\right)=0$
+\end_inset
+
+ - вып
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{x}\pr=-e^{x}+y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{y}\pr=e^{y}+x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y_{x}\pr=-\df{f_{x}\pr}{f_{y}\pr}=\df{e^{x}-y}{e^{y}+x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y\left(0\right)=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Диференцирование функций многих переменных заданных неявно
+\end_layout
+
+\begin_layout Theorem
+(2)
+\end_layout
+
+\begin_layout Theorem
+Пусть в точке 
+\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0},u^{0}\right)$
+\end_inset
+
+ выполнено следующее уравнение: 
+\begin_inset Formula $F\left(x_{1},x_{2},\tr,x_{m},u\right)=0$
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $F\left(\vec x,u\right)$
+\end_inset
+
+ - непрерывна в окресности точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+: 
+\begin_inset Formula $\Omega\vkl E^{m+1}$
+\end_inset
+
+ вместе с часными производными 
+\begin_inset Formula $Fx_{i}\pr,\ i=\overline{1,m}$
+\end_inset
+
+, причем 
+\begin_inset Formula $F_{u}\pr\left(M_{0}\right)\nr0$
+\end_inset
+
+.
+ Тогда в некоторой окресности точки 
+\begin_inset Formula $N_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
+\end_inset
+
+ определена однозначная функция 
+\begin_inset Formula $u=f\left(x_{1},x_{2},\tr,x_{m}\right)$
+\end_inset
+
+, причем дифференцируемая в точке 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+ и выполнены следующие равенства: 
+\begin_inset Formula $f_{x_{i}}\pr\left(N_{0}\right)=-\df{F_{x_{i}}\pr\left(M_{0}\right)}{F_{u}\pr\left(M_{0}\right)},\ i=\overline{1,m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+В нашем курсе не рассматривается это доказательство.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u^{3}-2\um u^{2}\um x+u\um x\um y-2=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{0}\left(1,1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr,u_{y}\pr=?$
+\end_inset
+
+ в точке 
+\begin_inset Formula $N_{0}\left(1,1\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F\left(x,y,u\right)=u^{3}-2\um u^{2}\um x+u\um x\um y-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{x}\pr=-2\um u^{2}+u\um y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{y}\pr=u\um x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{u}\pr=3\um u^{2}-4\um u\um x+x\um y=\left\{ \text{В точке }M_{0}\left(1,1,1\right)\right\} =0\ \sl\ $
+\end_inset
+
+ Диференцируемости нету 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr\left(1,1\right)=-\df{-2\um u^{2}+u\um y}{3\um u^{2}-4\um u\um x+x\um y}=\left\{ \text{Мы работаем в точке }M_{0}\left(1,1,1\right)\right\} =\df 10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Ну тут что то с приметом у Малыхина не так пошло.
+ Переделаем примерчик...
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u^{3}-2\um u^{2}\um x+u\um x\um y-2=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M_{0}\left(1,0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr,u_{y}\pr=?$
+\end_inset
+
+ в точке 
+\begin_inset Formula $N_{0}\left(1,0\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F\left(x,y,u\right)=u^{3}-2\um u^{2}\um x+u\um x\um y-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{x}\pr=-2\um u^{2}+u\um y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{y}\pr=u\um x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{u}\pr=3\um u^{2}-4\um u\um x+x\um y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{x}\pr\left(1,0\right)=-\df{-2\um u^{2}+u\um y}{3\um u^{2}-4\um u\um x+x\um y}=\left\{ \text{Мы работаем в точке }M_{0}\left(1,0,0\right)\right\} =0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Касательная плоскостьо и нормаль к поверхности
+\end_layout
+
+\begin_layout Standard
+Пусть поверхность 
+\begin_inset Formula $S\vkl E^{3}$
+\end_inset
+
+ задана неявно:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F\left(x,y,z\right)=0\label{eq:q1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $F\left(x_{0},y_{0},z_{0}\right)=0$
+\end_inset
+
+ и в некоторой окресности точки 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ часные производные 
+\begin_inset Formula $F_{x}\pr,F_{y}\pr,F_{z}\pr$
+\end_inset
+
+ - непрерывны и не равны нулю одновременно в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\grad F\left(M_{0}\right)=\left(F_{x}\pr\left(M_{0}\right),F_{y}\pr\left(M_{0}\right),F_{z}\pr\left(M_{0}\right)\right)$
+\end_inset
+
+.
+ Пусть например 
+\begin_inset Formula $F_{z}\pr\left(M_{0}\right)\nr0$
+\end_inset
+
+.
+ Тогда по теореме (2) существует окресность точки 
+\begin_inset Formula $N_{0}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ в которой однозначно определена функция 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+.
+ Графически она определяет некоторый кусок певерхности 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Уравнение касательной плоскости к куску 
+\begin_inset Formula $S$
+\end_inset
+
+, проходящий через точку 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0},z_{0}\right):$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z-z_{0}=f_{x}\pr\left(N_{0}\right)\um\left(x-x_{0}\right)+f_{y}\pr\left(N_{0}\right)\um\left(y-y_{0}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Но так как функция задана неявно..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{x}\pr\left(N_{0}\right)=-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{y}\pr\left(N_{0}\right)=-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z-z_{0}=\left(-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(x-x_{0}\right)+\left(-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(y-y_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:q2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q2"
+
+\end_inset
+
+) - уравнение касательной к прослости в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{x-x_{0}}{F_{x}\pr\left(M_{0}\right)}=\df{y-y_{0}}{F_{y}\pr\left(M_{0}\right)}=\df{z-z_{0}}{F_{z}\pr\left(M_{0}\right)}\label{eq:q3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q3"
+
+\end_inset
+
+) - уравнение нормали.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $F_{x}\pr\left(M_{0}\right)\nr0$
+\end_inset
+
+ либо 
+\begin_inset Formula $F_{y}\pr\left(M_{0}\right)\nr0$
+\end_inset
+
+ поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+ задается 
+\begin_inset Formula $x=x\left(y,z\right)$
+\end_inset
+
+ либо 
+\begin_inset Formula $y=y\left(x,z\right)$
+\end_inset
+
+ - неявные, однозначные функции.
+ Уравнения получаются аналогичные (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q3"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+В случае когда 
+\begin_inset Formula $\grad F\left(M_{0}\right)$
+\end_inset
+
+ касательная плоскость к 
+\begin_inset Formula $S$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ может и не существовать
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $z^{2}-x^{2}-y^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Точка 
+\begin_inset Formula $M_{0}\left(0,0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{x}\pr=-2\um x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{y}\pr=-2\um y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $F_{z}\pr=2\um z$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\grad F\left(M_{0}\right)=\left(\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Remark
+\begin_inset Formula $\forall\left(x,y,z\right)\in E^{3}\ z^{2}=x^{2}+y^{2},\ z=\pm\sqrt{x^{2}+y^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|x\right|=\left|z\right|$
+\end_inset
+
+ - Конус.
+\end_layout
+
+\begin_layout Standard
+В любой точке 
+\begin_inset Formula $M'\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ отличной от точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ кравнение касательной к плоскости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-2\um x_{0}\um\left(x-x_{0}\right)-2\um y_{0}\um\left(y-y_{0}\right)+2\um z_{0}\left(z-z_{0}\right)=0$
+\end_inset
+
+ - уравнение касательной.
+\end_layout
+
+\begin_layout Standard
+Можно провести бесконечное множество касательных плоскостей в точке 
+\begin_inset Formula $M_{0}\left(0,0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Система функций заданных неявно
+\end_layout
+
+\begin_layout Standard
+Пусть система функций 
+\begin_inset Formula $y_{1},\tr,y_{k}$
+\end_inset
+
+ задана неявно:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+F_{1}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0\\
+\vtr\\
+F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
+\end{cases}\label{eq:q4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тоесть функции 
+\begin_inset Formula $y_{1},\tr,y_{k}$
+\end_inset
+
+ - решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q4"
+
+\end_inset
+
+), 
+\begin_inset Formula $y_{j}=y_{j}\left(x_{1},\tr x_{m}\right),\ j=\overline{1,k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+Пусть система функций (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q4"
+
+\end_inset
+
+) удовлетворяет условиям:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Фунции 
+\begin_inset Formula $F_{j}$
+\end_inset
+
+ определены в некоторой окресности 
+\begin_inset Formula $\Omega\vkl E^{m+k}$
+\end_inset
+
+ точки 
+\begin_inset Formula $M_{0}\left(x_{1}^{0},x_{2}^{0},\tr,x_{m}^{0},y_{1}^{0},\tr,y_{k}^{0}\right)$
+\end_inset
+
+ и непрерывно диференцируемы в этой окресности.
+\end_layout
+
+\begin_layout Enumerate
+Якобиан(определитель Якоби) системы отличен от нуля.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|\begin{array}{cccc}
+\df{\dd F_{1}}{\dd y_{1}} & \df{\dd F_{1}}{\dd y_{2}} & \tr & \df{\dd F_{1}}{\dd y_{k}}\\
+\df{\dd F_{2}}{\dd y_{1}} & \df{\dd F_{2}}{\dd y_{2}} & \tr & \df{\dd F_{2}}{\dd y_{k}}\\
+\vtr & \vtr &  & \vtr\\
+\df{\dd F_{k}}{\dd y_{1}} & \df{\dd F_{k}}{\dd y_{2}} & \tr & \df{\dd F_{k}}{\dd y_{k}}
+\end{array}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Точка 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ удовлетворяет системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:q4"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда существует окресность точки 
+\begin_inset Formula $M_{0}:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\D=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m};\ \left|y_{j}-y_{j}^{0}\right|<b,\ j=\overline{1,k}\right\} \vkl\Omega$
+\end_inset
+
+ такая точ система определяет 
+\begin_inset Formula $y_{1},y_{2},\tr,y_{k}$
+\end_inset
+
+ однозначно как непрерывно диффренцируемые функции на множестве
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\D^{0}=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m}\right\} \vkl E^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В нашем курсе его не будет..
 \end_layout
 
 \begin_layout Standard
