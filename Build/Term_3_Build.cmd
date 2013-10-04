@@ -7,3 +7,4 @@ LyX.exe -e pdf2 "DifferentialEquations.lyx"
 LyX.exe -e pdf2 "Ekonomiks.lyx"
 LyX.exe -e pdf2 "Matan2.lyx"
 LyX.exe -e pdf2 "Physics.lyx"
+pause
