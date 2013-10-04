@@ -501,7 +501,7 @@ theorems-starred
  человеческие(интеллектуальные), организационно-культурные.
  Отношения производства должны подразумевать получения определенной эффективност
 и (
-\begin_inset Formula $Эффективность=\dfrac{\text{блага}}{\text{затраты}}(%,коэффициент)\ensuremath{}
+\begin_inset Formula $Эффективность=\dfrac{\text{блага}}{\text{затраты}}(%,коэффициент)ensuremath{}
 $
 \end_inset
 
@@ -633,8 +633,318 @@ $
  Это необходимо с целью минимизации рисков и оптимизации ресурсов.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+4.10.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Тема к следующему семенару.
+\end_layout
+
+\begin_layout Standard
+О предпринимательстве:
+\end_layout
+
+\begin_layout Enumerate
+Теория в развитии предпринимательства и этапы развития предпринимательства
+\end_layout
+
+\begin_layout Enumerate
+Сущность и функции предпринималельства в рыночной среде
+\end_layout
+
+\begin_layout Enumerate
+Признаки предпринимательсткой деятельности 
+\end_layout
+
+\begin_layout Enumerate
+Условия развития предпринимательства
+\end_layout
+
+\begin_layout Enumerate
+Основные организационно правовые формы(ОПФ) предприятий
+\end_layout
+
+\begin_layout Enumerate
+Малые предприятия и их особенносьти 
+\end_layout
+
+\begin_layout Subsection
+Осноыные и показатели функционирования хозяйственногно механизма.
+\end_layout
+
+\begin_layout Standard
+Деятельность любой компании характеризуется следующими показателями:
+\end_layout
+
+\begin_layout Enumerate
+Выручка (то что мы получили от продажи услуг/товаров)
+\end_layout
+
+\begin_layout Enumerate
+Численность персоонала (может меняться, текучесть кадров наз0ывается когда
+ быстро меняется работники на 1м рабочем месте)
+\end_layout
+
+\begin_layout Enumerate
+Материальные затраты (затраты на закупку материалов, сырья, электроинергии,
+ комплектующие) 
+\end_layout
+
+\begin_layout Enumerate
+Стоимость осноыных фондов (показатель характеризующий имущество, то которое
+ есть у компании) (вычисляется средняя в год)
+\end_layout
+
+\begin_layout Enumerate
+Стоимость оборотных средств (вычисляется средняя в год) 
+\end_layout
+
+\begin_layout Enumerate
+Себестоимость продукции/услуг (сколько средств ушло на создание товара)
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Исходные данные.
+\end_layout
+
+\begin_layout Standard
+Цена = затраты на изготовдение (себестоимость) + зароботная плата + амортизация
+ + налоги + 
+\emph on
+прибыль
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Амортизация - отчисление на востановление износа (фиксируется как процент
+ от прибыли) (связана либо с моральным износом или с физическим).
+\end_layout
+
+\begin_layout Standard
+Налог - (6-36%).
+\end_layout
+
+\begin_layout Standard
+Выручка - Цена 
+\begin_inset Formula $\times$
+\end_inset
+
+ Обьем продукции.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Рачетные данные.
+\end_layout
+
+\begin_layout Enumerate
+Прибыль = Выручка - Себестоимость
+\end_layout
+
+\begin_layout Enumerate
+Прибыль (чистая) = Выручка - Себестоимость - Амортизация - Налоги - Зароботная
+ плата.
+\end_layout
+
+\begin_layout Enumerate
+Производительность труда = 
+\begin_inset Formula $\dfrac{\text{Выручка}}{\text{Численность персоонала}}\ [\text{руб.}]$
+\end_inset
+
+; 
+\begin_inset Formula $\dfrac{\text{Обьем продукции}}{\text{Численность персоонала}}\ [\text{количество}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Рентабильность = 
+\begin_inset Formula $\dfrac{\text{Прибыль}}{\text{Себестоимость}}\ [\%]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Материальноемкость = 
+\begin_inset Formula $\dfrac{\text{Метериальные затраты}}{\text{Выручка}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Фондоемкость = 
+\begin_inset Formula $\dfrac{\text{Основные фонды}}{\text{Вырука}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Зарплатаемкость = 
+\begin_inset Formula $\dfrac{\text{Фонд оплаты труда}}{\text{Выручка}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Армотизационная емкость = 
+\begin_inset Formula $\dfrac{\text{Амортизация}}{\text{Выручка}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Рентабельность продаж = 
+\begin_inset Formula $\dfrac{\text{Выручка}}{\text{Себестоимоть}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Фондоотдача = 
+\begin_inset Formula $\dfrac{1}{\text{Фондоемкость}}$
+\end_inset
+
+ = 
+\begin_inset Formula $\dfrac{\text{Выручка}}{\text{Основные фонды}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Анализ деятельности предприятия всегда производится за отчетный периуд в
+ динамике.
+ По итогам выявляются негативные фокторы воздействия и разрабатывается комплекс
+ мер по их устранению.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Требования к системе хозяйственного мезанизма:
+\end_layout
+
+\begin_layout Enumerate
+Создание равных условий для всех субьектов и всех форм собственности 
+\end_layout
+
+\begin_layout Enumerate
+Включения механизмов, позволяющих поддерживать рыночное равновесие 
+\end_layout
+
+\begin_layout Enumerate
+Высокие противозатратные свойства
+\end_layout
+
+\begin_layout Enumerate
+Переход на новые подходы к оценке деятельноти предприятий (затратные, конкурентн
+ые)
+\end_layout
+
+\begin_layout Enumerate
+Обеспечить эффективное регулирование производственных отношений как по вертикали
+, так и по горизонтали
+\end_layout
+
+\begin_layout Enumerate
+Высокие антиинфляционные свойства
+\end_layout
+
+\begin_layout Enumerate
+Механизм должен быть универсальным и позволять переход с ценовых на налоговые
+ формы регулирования
+\end_layout
+
+\begin_layout Enumerate
+Свобода предпринимательсткой деятельности (я делаю что мне хочется, но только
+ соблюдая законы)
+\end_layout
+
+\begin_layout Enumerate
+Самофинансирование субьектов засчет реализации продукции
+\end_layout
+
+\begin_layout Enumerate
+Баланст интересов всех субьектов и территорий
+\end_layout
+
+\begin_layout Enumerate
+Защита интересов производителей и потребителей
+\end_layout
+
+\begin_layout Enumerate
+Антиманапольность
+\end_layout
+
+\begin_layout Enumerate
+Системность саморегулирования и научная обоснованность
+\end_layout
+
+\begin_layout Standard
+Система хозяйственного мезанизма длолжна операться на грамотное распределение
+ бюджета, инвестиционный мехнанизм, стимулирующий механизм, налогооблажение
+ и ценовую политику.
+ (Бывает политика низуих цен и высоких.
+ Низких - сначала привлекают покупателя низкими уенами и потом ее повышают,
+ Высоких - делаем свой това ректламой типо крутым и снимаем сливки, и потом
+ потихонечку приходится понижать цену по идее).
+
+\emph on
+ Вся совокупность нормативов при соответствующих расчетах помогает разрешить
+ большинство проблем, независимо от времени и экономической ситуации.
+ Перечисленные нормативы являеются основой для функционирования как отечественны
+х, так и зарубажных компаний.
+\end_layout
+
 \begin_layout Section
 Макроэкономика
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
 \end_layout
 
 \end_body

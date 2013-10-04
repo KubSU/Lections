@@ -349,7 +349,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\vtr}{}
+\newcommand{\vtr}{\vdots}
+{\vdots}
 \end_inset
 
 
@@ -3911,7 +3912,811 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 
 \begin_layout Proof
 Вытекает из известной теоремы линейной алгебры..
- Если столбцы определителя линейно зависимы, то определитель равен нулю
+ Если столбцы определителя линейно зависимы, то определитель равен нулю.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+4.10.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy}{dx}=\vec A\left(x\right)\um\vec y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(3)
+\end_layout
+
+\begin_layout Theorem
+Пусть вектор функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ - решения линейной однородной диференциальной системы (1).
+ тогда если определеитель Вронского, составленный по этим вектор-функциям,
+ равен нулю в некоторой точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, то эти вектор функции линейно зависимы.
+\end_layout
+
+\begin_layout Proof
+Пусть определитель Вронского в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ равен нулю.
+ Тогда столбцы определителя 
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right|$
+\end_inset
+
+ линейно зависимы, это значит найдутся постоянные 
+\begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
+\end_inset
+
+, не все равные нулю, что линейная комбинация столбцов определителя равна
+ нулю.
+ 
+\begin_inset Formula $\alpha_{1}\um y^{\left(1\right)}\left(x_{0}\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x_{0}\right)=0$
+\end_inset
+
+ С помошью этих постоянных 
+\begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
+\end_inset
+
+ построим вектор функцию.
+ 
+\begin_inset Formula $u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ ПО теореме (1) она будет решением системы (1).
+ При этом в силу 
+\begin_inset Formula $\alpha_{1}\um y^{\left(1\right)}\left(x_{0}\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x_{0}\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $u\left(x_{0}\right)=0$
+\end_inset
+
+.
+ Вектор функция тождественный ноль 
+\begin_inset Formula $y\left(x\right)\equiv0$
+\end_inset
+
+ удовлетворяет системе (1), и в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ он тоже равен нюлю.
+ Получилось что есть 2 вектор функции (
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+), которые являются решениями и совподают в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Ну а тогда в силу теоремы единственности они совподают.
+ 
+\begin_inset Formula $u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x\right)\equiv0$
+\end_inset
+
+.
+ Это означает что решения 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ линейно зависимы.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+ 
+\emph default
+Если опредлелитель Вронсткого, построеный порешениян линейной однородной
+ системы (1) обращается в ноль в некоторой точке, то он тождественногй равен
+ нулю.
+\end_layout
+
+\begin_layout Remark
+Если вектор-функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ не являются решениями линейной однородной диференциальной системы (1) с
+ неприрывными коофицентами, то утверждение, аналогичное теомере (3), для
+ них не верно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(\begin{array}{c}
+x\\
+0
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\begin{array}{c}
+x^{2}\\
+0
+\end{array}\right)$
+\end_inset
+
+ - Две вектор функции.
+ Они линейно не зависимы.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{cc}
+x & x^{2}\\
+0 & 0
+\end{array}\right|=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Это потому что эти вектор функции не являются решениями системы (1).
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $n$
+\end_inset
+
+ линейно независимых решений линейной однородной системы (1) называется
+ фундаментольной системой решений этой системы.
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ - размерность системы (1).
+\end_layout
+
+\begin_layout Theorem
+(4)
+\end_layout
+
+\begin_layout Theorem
+Фундаментальнаят системы решений существует у каждой линейной однородной
+ системы (1).
+\end_layout
+
+\begin_layout Proof
+Рассмотрим 
+\begin_inset Formula $n$
+\end_inset
+
+ еденичных числовых векторов.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $e^{\left(1\right)}=\left(\begin{array}{c}
+1\\
+0\\
+\vtr\\
+0
+\end{array}\right),\ e^{\left(2\right)}=\left(\begin{array}{c}
+0\\
+1\\
+\vtr\\
+0
+\end{array}\right),\ \tr,\ e^{\left(n\right)}=\left(\begin{array}{c}
+0\\
+0\\
+\vtr\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+И построим 
+\begin_inset Formula $n$
+\end_inset
+
+ решений системы (1), а именно решений слеующих задач Коши:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x_{0}\in\left(\alpha,\beta\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y^{\left(1\right)}\left(x\right)\ :\ \begin{cases}
+\df{dy^{\left(1\right)}}{dx}=Ay^{\left(1\right)}\\
+y^{\left(1\right)}\left(x_{0}\right)=e^{\left(1\right)}
+\end{cases},\ \tr,\ y^{\left(n\right)}\left(x\right)\ :\ \begin{cases}
+\df{dy^{\left(n\right)}}{dx}=Ay^{\left(n\right)}\\
+y^{\left(n\right)}\left(x_{0}\right)=e^{\left(n\right)}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Такие решения существуют и определены на всем интервале 
+\begin_inset Formula $\left(\alpha,\beta\right)$
+\end_inset
+
+.
+ Заметим, что определитель Вронского, построенный по вектор функциям имеет
+ вид 
+\begin_inset Formula $W\left(x_{0}\right)=\left|\begin{array}{cccc}
+1 & 0 & \tr & 0\\
+0 & 1 & \tr & 0\\
+\vtr & \vtr & \ddots & \vtr\\
+0 & 0 & \tr & 1
+\end{array}\right|=1\nr0$
+\end_inset
+
+ Следовательно эти вектор функции не могут быть линейно зввисимыми.
+ Ну а тогда они образуют фундаментальную систему решений.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Theorem
+(5)
+\end_layout
+
+\begin_layout Theorem
+Общее решение линейной однородной системы (1) естьлинейная комбинаци с произволь
+ьными постоянными фундаментальной системы решений.
+\end_layout
+
+\begin_layout Proof
+Пусть вектор функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ образуют фундаментальную систему решений системы (1), тоест они линейно
+ не зависимы.
+ Пусть вектор функция 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ некоторое решение системы (1).
+ Покаждем что найдутся постоянные 
+\begin_inset Formula $c_{1},\tr,c_{m}$
+\end_inset
+
+, что эту вектор функцию можно предстовить в виде 
+\begin_inset Formula $y\left(x\right)=c_{1}\um y^{\left(1\right)}\left(x\right)+\tr+c_{n}\um y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ Возьмем некоторую точку 
+\begin_inset Formula $x_{0}\in\left(\alpha,\beta\right)$
+\end_inset
+
+ и рассмотрим вектор функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ в этой точке.
+ 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}^{\left(1\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(1\right)}\left(x_{0}\right)
+\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+y_{1}^{\left(n\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(n\right)}\left(x_{0}\right)
+\end{array}\right)$
+\end_inset
+
+Тогда эти же числовые вектора будут линейно не зависимые.
+ Следовательно, образуют базис в 
+\begin_inset Formula $n$
+\end_inset
+
+-мерном пространстве.
+ Расмсмотрим 
+\begin_inset Formula $y\left(x_{0}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}\left(x_{0}\right)\\
+\vtr\\
+y_{n}\left(x_{0}\right)
+\end{array}\right)$
+\end_inset
+
+ можно разложить по базису 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}^{\left(1\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(1\right)}\left(x_{0}\right)
+\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+y_{1}^{\left(n\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(n\right)}\left(x_{0}\right)
+\end{array}\right)$
+\end_inset
+
+, тоесть найдутся 
+\begin_inset Formula $c_{1},\tr,c_{n}$
+\end_inset
+
+, что будет справедливо равенство 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}\left(x_{0}\right)\\
+\vtr\\
+y_{n}\left(x_{0}\right)
+\end{array}\right)=c_{1}\um\left(\begin{array}{c}
+y_{1}^{\left(1\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(1\right)}\left(x_{0}\right)
+\end{array}\right)+\tr+c_{n}\um\left(\begin{array}{c}
+y_{1}^{\left(n\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(n\right)}\left(x_{0}\right)
+\end{array}\right)$
+\end_inset
+
+.
+ Используя эти постоянные построим вектор функцию 
+\begin_inset Formula $u\left(x\right)=c_{1}\um y^{\left(1\right)}\left(x\right)+\tr+c_{n}\um y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ По теореме (1) она будет решением системы (1) и в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ в силу 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}\left(x_{0}\right)\\
+\vtr\\
+y_{n}\left(x_{0}\right)
+\end{array}\right)=c_{1}\um\left(\begin{array}{c}
+y_{1}^{\left(1\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(1\right)}\left(x_{0}\right)
+\end{array}\right)+\tr+c_{n}\um\left(\begin{array}{c}
+y_{1}^{\left(n\right)}\left(x_{0}\right)\\
+\vtr\\
+y_{n}^{\left(n\right)}\left(x_{0}\right)
+\end{array}\right)$
+\end_inset
+
+ будет совподать с функцией 
+\begin_inset Formula $u\left(x_{0}\right)=y\left(x_{0}\right)$
+\end_inset
+
+ в тичке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Cледовательно, в силу теоремы единственности, 
+\begin_inset Formula $u\left(x\right)\equiv y\left(x\right)$
+\end_inset
+
+.
+ Следовательно 
+\begin_inset Formula $y\left(x\right)=\ous{k=1}nc_{k}\um y^{\left(k\right)}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+Их всех этих теорем следует что множество решений системы (1) является 
+\begin_inset Formula $n$
+\end_inset
+
+ - мерным линейным пространством.
+\end_layout
+
+\begin_layout Theorem
+(Лиувилля для линейных систем)
+\end_layout
+
+\begin_layout Theorem
+Пусть вектор-функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ решение системы (1), а 
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right|$
+\end_inset
+
+ - определитель Вронского, построенный по этим решениям.
+ Тогда он является решение следующему дифференциальному уравнению: 
+\begin_inset Formula $\df{dW}{dx}=\ous{k=1}na_{k,k}\left(x\right)\um W\left(x\right)$
+\end_inset
+
+.
+ (
+\begin_inset Formula $\ous{k=1}na_{k,k}\left(x\right)$
+\end_inset
+
+- след матрици 
+\begin_inset Formula $A$
+\end_inset
+
+, тоесть сумма диагональных элементов)
+\end_layout
+
+\begin_layout Proof
+Определитель Вронского можно считать.
+ 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ переменных 
+\begin_inset Formula $y_{i}\left(j\right)$
+\end_inset
+
+ , каждая их которыз зависит еще от 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}$
+\end_inset
+
+.
+ Через 
+\begin_inset Formula $B_{i,j}$
+\end_inset
+
+ обозначим алгеброическое дополнение элемента 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+.
+ Заметим, что часная производная 
+\begin_inset Formula $\df{\dd W}{\dd y_{i}^{\left(j\right)}}=B_{i,j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+(Разложим определитель Вронского по 
+\begin_inset Formula $i$
+\end_inset
+
+-й строке 
+\begin_inset Formula $W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left(j\right)}\left(x\right)\um B_{i,j}+\tr+y_{i}^{\left(n\right)}\left(x\right)\um B_{i,n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $y_{i}^{\left(j\right)}\left(x\right)$
+\end_inset
+
+ - не будет входить не в одно из алгебраических 
+\begin_inset Formula $B_{i,1},\tr B_{i,n}$
+\end_inset
+
+ дополнений в силу вычеркивания 
+\begin_inset Formula $i$
+\end_inset
+
+-й строки и 
+\begin_inset Formula $j$
+\end_inset
+
+-го столбца, а входит он только в одно это слогаемое 
+\begin_inset Formula $y_{i}^{\left(j\right)}\left(x\right)\um B_{i,j}$
+\end_inset
+
+.
+ Отсюда и следуте равенство 
+\begin_inset Formula $\df{\dd W}{\dd y_{i}^{\left(j\right)}}=B_{i,j}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{i,j=1}nB_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{j=1}n\left(\ous{i=1}n\left(B_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $i=1$
+\end_inset
+
+, 
+\begin_inset Formula $\ous{j=1}nB_{1,j}\um\df{dy_{1}^{\left(j\right)}}{dx}$
+\end_inset
+
+ - это разложение по 1й строке определителя 
+\begin_inset Formula $\left|\begin{array}{cccc}
+\df{dy_{1}^{\left(1\right)}}{dx} & \df{dy_{1}^{\left(2\right)}}{dx} & \tr & \df{dy_{1}^{\left(n\right)}}{dx}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|.$
+\end_inset
+
+ При 
+\begin_inset Formula $i=2$
+\end_inset
+
+ продеференцирована 2я строка..
+\end_layout
+
+\begin_layout Proof
+Следственно
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{dW}{dx}=\left|\begin{array}{cccc}
+\df{dy_{1}^{\left(1\right)}}{dx} & \df{dy_{1}^{\left(2\right)}}{dx} & \tr & \df{dy_{1}^{\left(n\right)}}{dx}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|+\left|\begin{array}{cccc}
+dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
+\df{y_{2}^{\left(1\right)}}{dx} & \df{y_{2}^{\left(2\right)}}{dx} & \tr & \df{y_{2}^{\left(n\right)}}{dx}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|+\tr+\left|\begin{array}{cccc}
+dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+\df{y_{n}^{\left(1\right)}}{dx} & \df{y_{n}^{\left(2\right)}}{dx} & \tr & \df{y_{n}^{\left(n\right)}}{dx}
+\end{array}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}=A\um y^{\left(k\right)},\ k=\overline{1,n}$
+\end_inset
+
+, то 
+\begin_inset Formula $\df{dy_{i}^{\left(k\right)}}{dx}=\ous{j=1}na_{i,j}\um y_{j}^{\left(k\right)},\ i,k=\overline{1,n}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{dW}{dx} & = & \left|\begin{array}{cccc}
+\ous{j=1}na_{1,j}\um y_{j}^{\left(1\right)} & \ous{j=1}na_{1,j}\um y_{j}^{\left(2\right)} & \tr & \ous{j=1}na_{1,j}\um y_{j}^{\left(n\right)}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|+\\
+ & + & \left|\begin{array}{cccc}
+dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
+\ous{j=1}na_{2,j}\um y_{j}^{\left(1\right)} & \ous{j=1}na_{2,j}\um y_{j}^{\left(2\right)} & \tr & \ous{j=1}na_{2,j}\um y_{j}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|+\\
+ & + & \tr+\\
+ & + & \left|\begin{array}{cccc}
+dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+\ous{j=1}na_{n,j}\um y_{j}^{\left(1\right)} & \ous{j=1}na_{n,j}\um y_{j}^{\left(2\right)} & \tr & \ous{j=1}na_{n,j}\um y_{j}^{\left(n\right)}
+\end{array}\right|
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из 1й строки вычтем 
+\begin_inset Formula $i$
+\end_inset
+
+-ю (
+\begin_inset Formula $i=\overline{2,n}$
+\end_inset
+
+) строку, умноженную на 
+\begin_inset Formula $a_{i,n}$
+\end_inset
+
+.
+ (Это для 1го определителя, для остальных сделаем наподобее аналогично...)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{dW}{dx} & = & \left|\begin{array}{cccc}
+a_{1,1}\um y_{j}^{\left(1\right)} & a_{1,1}\um y_{1}^{\left(2\right)} & \tr & a_{1,1}\um y_{1}^{\left(n\right)}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|+\\
+ & + & \left|\begin{array}{cccc}
+dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
+a_{2,2}\um y_{2}^{\left(1\right)} & a_{2,2}\um y_{2}^{\left(2\right)} & \tr & a_{2,2}\um y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
+\end{array}\right|+\\
+ & + & \tr+\\
+ & + & \left|\begin{array}{cccc}
+dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
+y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
+\vtr & \vtr & \ddots & \vtr\\
+a_{n,n}\um y_{n}^{\left(1\right)} & a_{n,n}\um y_{n}^{\left(2\right)} & \tr & a_{n,n}\um y_{n}^{\left(n\right)}
+\end{array}\right|
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Теперь выносим из каждого опрелелителя 
+\begin_inset Formula $a_{i,i},\ i=\overline{1,n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{dW}{dx}=a_{1,1}\um W\left(x\right)+a_{2,2}\um W\left(x\right)+\tr+a_{n,n}\um W\left(x\right)=W\left(x\right)\um\ous{k=1}na_{k,k}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Фундаментальная матрица и ее свойства
+\end_layout
+
+\begin_layout Standard
+Пусть вектор-функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ - решения системы (1).
+ Составим матрицу из этих вектор функций, которую обозначим через 
+\begin_inset Formula $Y\left(x\right)=\left(\begin{array}{ccc}
+y_{1}^{\left(1\right)}\left(x\right) & \tr & y_{1}^{\left(n\right)}\left(x\right)\\
+\vtr & \ddots & \vtr\\
+y_{1}^{\left(n\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+.
+ Под производной матрици будем понималь по определению 
+\begin_inset Formula $\df{dY}{dx}=\left(\begin{array}{ccc}
+\df{y_{1}^{\left(1\right)}\left(x\right)}{dx} & \tr & \df{y_{1}^{\left(n\right)}\left(x\right)}{dx}\\
+\vtr & \ddots & \vtr\\
+\df{y_{1}^{\left(n\right)}\left(x\right)}{dx} & \tr & \df{y_{n}^{\left(n\right)}\left(x\right)}{dx}
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}=A\left(x\right)\um y^{\left(k\right)},\ k=\overline{1,n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда эти 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ равенств можно обьеденить 
+\begin_inset Formula 
+\begin{equation}
+\df{dY}{dx}=A\um Y\label{eq:rr4}
+\end{equation}
+
+\end_inset
+
+в матречное равенство.
+\end_layout
+
+\begin_layout Definition
+Фундаментальной матрицей линейной однородной системы (1) будем называтеь
+ решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr4"
+
+\end_inset
+
+), невырожденной хотябы в 1-ой точке.
+\end_layout
+
+\begin_layout Standard
+Столбцы фундаментальной матрици обзазуют фундаментальную систему решений
+ системы (1), и обратно.
+ Поэтому нахождение фундаментальной матрици аналогично нахождению фундаментально
+й системы решщений.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 1.
+ 
+\emph default
+Пусть 
+\begin_inset Formula $Y\left(x\right)$
+\end_inset
+
+ - фундаментальная матрица системы (1), а 
+\begin_inset Formula $\vec c=\left(\begin{array}{c}
+c_{1}\\
+\vtr\\
+c_{n}
+\end{array}\right)\in R^{n}$
+\end_inset
+
+.Тогда 
+\begin_inset Formula $y\left(x\right)=Y\left(x\right)\um c$
+\end_inset
+
+ будет решщение м системы (ы) и любое решение системы (1) можно представить
+ в виде 
+\begin_inset Formula $y\left(x\right)=Y\left(x\right)\um c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \end_body
