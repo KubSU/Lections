@@ -366,6 +366,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -10506,7 +10512,7 @@ F\left(x,y,z\right)=0\label{eq:15}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:16}
+F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:17}
 \end{equation}
 
 \end_inset
@@ -10518,7 +10524,7 @@ F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:16"
+reference "eq:17"
 
 \end_inset
 
@@ -10532,7 +10538,7 @@ reference "eq:16"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\df{x-x_{0}}{F_{x}\pr\left(M_{0}\right)}=\df{y-y_{0}}{F_{y}\pr\left(M_{0}\right)}=\df{z-z_{0}}{F_{z}\pr\left(M_{0}\right)}\label{eq:17}
+\df{x-x_{0}}{F_{x}\pr\left(M_{0}\right)}=\df{y-y_{0}}{F_{y}\pr\left(M_{0}\right)}=\df{z-z_{0}}{F_{z}\pr\left(M_{0}\right)}\label{eq:18}
 \end{equation}
 
 \end_inset
@@ -10544,7 +10550,7 @@ reference "eq:16"
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:17"
+reference "eq:18"
 
 \end_inset
 
@@ -10576,14 +10582,14 @@ reference "eq:17"
  Уравнения получаются аналогичные (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:16"
+reference "eq:17"
 
 \end_inset
 
 ,
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:17"
+reference "eq:18"
 
 \end_inset
 
@@ -10717,7 +10723,7 @@ reference "eq:17"
 F_{1}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0\\
 \vtr\\
 F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
-\end{cases}\label{eq:18}
+\end{cases}\label{eq:19}
 \end{equation}
 
 \end_inset
@@ -10733,7 +10739,7 @@ F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
  - решения системы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:18"
+reference "eq:19"
 
 \end_inset
 
@@ -10748,7 +10754,7 @@ reference "eq:18"
 Пусть система функций (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:18"
+reference "eq:19"
 
 \end_inset
 
@@ -10781,9 +10787,9 @@ reference "eq:18"
 \begin_inset Formula $\left|\begin{array}{cccc}
 \df{\dd F_{1}}{\dd y_{1}} & \df{\dd F_{1}}{\dd y_{2}} & \tr & \df{\dd F_{1}}{\dd y_{k}}\\
 \df{\dd F_{2}}{\dd y_{1}} & \df{\dd F_{2}}{\dd y_{2}} & \tr & \df{\dd F_{2}}{\dd y_{k}}\\
-\vtr & \vtr &  & \vtr\\
+\vtr & \vtr & \ntr & \vtr\\
 \df{\dd F_{k}}{\dd y_{1}} & \df{\dd F_{k}}{\dd y_{2}} & \tr & \df{\dd F_{k}}{\dd y_{k}}
-\end{array}\right|$
+\end{array}\right|=\left|\df{\dd F}{\dd y}\right|=\left|\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\right|\nr0$
 \end_inset
 
 
@@ -10798,7 +10804,7 @@ reference "eq:18"
  удовлетворяет системе (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:18"
+reference "eq:19"
 
 \end_inset
 
@@ -10834,6 +10840,568 @@ reference "eq:18"
 
 \begin_layout Proof
 В нашем курсе его не будет..
+\end_layout
+
+\begin_layout Remark
+Как находить часные производные? 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+y_{1}=\psi_{1}\left(x_{1},\tr,x_{m}\right)\\
+\tr\\
+y_{k}=\psi_{k}\left(x_{1},\tr,x_{m}\right)
+\end{cases}\label{eq:20}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\df{dy_{j}}{dx_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Обозначим 
+\begin_inset Formula $x=\left(x_{1},\tr,x_{m}\right)$
+\end_inset
+
+, тогда подстановка (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:20"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:19"
+
+\end_inset
+
+) дает:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\begin{cases}
+F_{1}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\right)\equiv0\\
+\tr\\
+F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\right)\equiv0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Диференцируем по 
+\begin_inset Formula $x_{l}$
+\end_inset
+
+ каждое тождество, получим:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\begin{cases}
+\df{\dd F_{1}}{\dd x_{l}}+\df{\dd F_{1}}{\dd y_{1}}\um\df{\dd\psi_{1}}{\dd x_{l}}+\tr+\df{\dd F_{1}}{\dd y_{k}}\um\df{\dd\psi_{k}}{\dd x_{l}}=0\\
+\tr\\
+\df{\dd F_{k}}{\dd x_{l}}+\df{\dd F_{k}}{\dd y_{1}}\um\df{\dd\psi_{1}}{\dd x_{l}}+\tr+\df{\dd F_{k}}{\dd y_{k}}\um\df{\dd\psi_{k}}{\dd x_{l}}=0
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Это линейная система, относительно неизвесных 
+\begin_inset Formula $\df{\dd\psi_{j}}{\dd x_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
+\end_inset
+
+.
+ Она однозначно разрешима тогда и только тогда, когда ее определитель -
+ Якобиан: 
+\begin_inset Formula $\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\nr0$
+\end_inset
+
+, а решения этой системы выглядят следующим образом: 
+\begin_inset Formula $\begin{cases}
+\df{\dd y_{1}}{\dd x_{l}}=-\df{\dd\left(F_{1},F_{2},\tr,F_{k}\right)}{\dd\left(x_{l},y_{2},\tr,y_{k}\right)}\\
+\tr\\
+\df{\dd y_{k}}{\dd x_{l}}=-\df{\df{\dd\left(F_{1},F_{2},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k-1},x_{l}\right)}}{\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},y_{2},\tr,y_{k}\right)}}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Зависимость функциий.
+ Понятие.
+\end_layout
+
+\begin_layout Standard
+Пусть даны 
+\begin_inset Formula $k$
+\end_inset
+
+ функций 
+\begin_inset Formula $m$
+\end_inset
+
+ переменых 
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+u_{1}=\varphi_{1}\left(x_{1},\tr,x_{m}\right)\\
+\tr\\
+u_{k}=\varphi_{k}\left(x_{1},\tr,x_{m}\right)
+\end{cases}\label{eq:21}
+\end{equation}
+
+\end_inset
+
+, определенных в области 
+\begin_inset Formula $D\vkl E^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(1)
+\emph default
+ Функция 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+ зависит от остальных функций системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:21"
+
+\end_inset
+
+) в области 
+\begin_inset Formula $D$
+\end_inset
+
+, если 
+\begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ k\br n$
+\end_inset
+
+, где 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ - некоторая функция 
+\begin_inset Formula $\left(k-1\right)$
+\end_inset
+
+ аргументов.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(2) 
+\emph default
+Система функций (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:21"
+
+\end_inset
+
+) называется зависимой в области 
+\begin_inset Formula $D$
+\end_inset
+
+, если одна из функций системы зависит от остальных.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+(3) 
+\emph default
+Если не существует функций 
+\begin_inset Formula $\Psi\left(t_{1},\tr,t_{k-1}\right)$
+\end_inset
+
+, что 
+\begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ n=\overline{1,k}$
+\end_inset
+
+, то функции называются незаивсимыми на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(1)
+\emph default
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+u_{1}=x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}\\
+u_{2}=x_{1}+x_{2}+x_{3}+x_{4}\\
+u_{3}=2\um x_{1}\um x_{2}+2\um x_{1}\um x_{3}+2\um x_{1}\um x_{4}+2\um x_{2}\um x_{3}+2\um x_{2}\um x_{4}+2\um x_{3}\um x_{4}
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{3}=u_{2}^{2}-u_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+u_{1}=x+y\\
+u_{2}=x-y
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D\vkl E^{2},\ M_{0}\left(0,0\right)\in D$
+\end_inset
+
+ - внутренняя точка области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Функция 
+\begin_inset Formula $u_{1}=y+x$
+\end_inset
+
+ сохраняет постоянное значение, а именно 
+\begin_inset Formula $y_{1}=0$
+\end_inset
+
+ на прямой 
+\begin_inset Formula $y=-x$
+\end_inset
+
+, а функкция 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ на этой прямой имеет вид 
+\begin_inset Formula $u_{2}=2\um x$
+\end_inset
+
+ - данное выражение не является константой, следовательно 
+\begin_inset Formula $u_{2}=2\um x$
+\end_inset
+
+ - не зависит от 
+\begin_inset Formula $u_{1}\equiv0$
+\end_inset
+
+ на этой прямой.
+\end_layout
+
+\begin_layout Example
+Докажем теперь что 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ не зависит от 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+.
+ На прямой 
+\begin_inset Formula $y=x$
+\end_inset
+
+, можем заметить что 
+\begin_inset Formula $u_{2}\equiv0$
+\end_inset
+
+, функция 
+\begin_inset Formula $u_{1}=2\um x$
+\end_inset
+
+ на этой прямой это переменная, следовательно 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ не зависит на прямой 
+\begin_inset Formula $y=x$
+\end_inset
+
+ от 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+, значит и на 
+\begin_inset Formula $D$
+\end_inset
+
+ она не зависит, а значит что система независимая.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $k$
+\end_inset
+
+ функций от 
+\begin_inset Formula $m$
+\end_inset
+
+ переменных 
+\begin_inset Formula $\left(k\mr m\right)$
+\end_inset
+
+,определяемых системой (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:21"
+
+\end_inset
+
+) определены и диференцированы в окресности точки 
+\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
+\end_inset
+
+, если Якобиан от этих функций по каким либо 
+\begin_inset Formula $k$
+\end_inset
+
+ переменным отличен от нуля в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, то система функций (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:21"
+
+\end_inset
+
+) не зависима в некоторой окресности точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть, не теряя общности отличен от нуля Якобиан по переменным 
+\begin_inset Formula $x_{1},x_{2},\tr,x_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\df{\dd\left(u_{1},u_{2},\tr,u_{k}\right)}{\dd\left(x_{1},\tr,x_{k}\right)}\nr0\label{eq:22}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Предположим противное, тоесть 
+\begin_inset Formula $u_{1},\tr,u_{k}$
+\end_inset
+
+ - зависимы в некоторой окресности точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, например 
+\begin_inset Formula $u_{n}=\Psi\left(u_{1},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right)$
+\end_inset
+
+ в окресности точки 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ - сложная фунция аргументов 
+\begin_inset Formula $x_{1},\tr,x_{m}$
+\end_inset
+
+, но дифференцируем по 
+\begin_inset Formula $x_{j},\ j=\overline{1,k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+\df{\dd u_{n}}{\dd x_{1}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{1}}\\
+\df{\dd u_{n}}{\dd x_{2}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{2}}\\
+\tr\\
+\df{\dd u_{n}}{\dd x_{k}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{k}}
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Данное выражение означает, что вектор 
+\begin_inset Formula $\left(\begin{array}{c}
+\df{\dd u_{n}}{\dd x_{1}}\\
+\vtr\\
+\df{\dd u_{n}}{\dd x_{k}}
+\end{array}\right)$
+\end_inset
+
+, являющийся 
+\begin_inset Formula $n$
+\end_inset
+
+-ной строкой определителя Якоби является лоинейной комбинацией остальных
+ строк определителя, следовательно определитель Якоби равен нулю.
+ Противоречие.
+\end_layout
+
+\begin_layout Subsubsection
+Условный экстремум.
+ Понятие.
+\end_layout
+
+\begin_layout Example
+Найти экстремумы функции 
+\begin_inset Formula 
+\begin{equation}
+u=x^{2}+y^{2}\label{eq:23}
+\end{equation}
+
+\end_inset
+
+ при условии 
+\begin_inset Formula 
+\begin{equation}
+x+y-1=0\label{eq:24}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Выразим 
+\begin_inset Formula $y=1-x$
+\end_inset
+
+, подставим его в 
+\begin_inset Formula $\tilde{u}=x^{2}+\left(1+x\right)^{2}=2\um x^{2}-2\um x+1$
+\end_inset
+
+ - функция одной переменной.
+\end_layout
+
+\begin_layout Example
+Её область определение 
+\begin_inset Formula $x\in\left(-\b,+\b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Найдем ее экстремумы:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\tilde{u}\pr=4\um x-2=0\ \sl\ x=\df 12$
+\end_inset
+
+ - критическая точка.
+ Так как функция 
+\begin_inset Formula $\tilde{u}$
+\end_inset
+
+, переходя через точку 
+\begin_inset Formula $x=\df 12$
+\end_inset
+
+ меняет знак с минуса на плюс, значить 
+\begin_inset Formula $x=\df 12$
+\end_inset
+
+ - точка минимума.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\tilde{u}_{min}=\tilde{u}\left(\df 12\right)=\df 12$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Заметим что глобальный экстремем (минимум) 
+\begin_inset Formula $M_{0}\left(0,0\right),\ f_{min}=f\left(0,0\right)=0$
+\end_inset
+
+.
+ Полученный экстремум называется условным, так как необходимо учитывать
+ дополнительное условие - условие связи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:24"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
