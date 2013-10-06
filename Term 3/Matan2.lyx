@@ -337,14 +337,14 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\DD}{\text{\emph{д}}}
-{\text{\emph{д}}}
+\newcommand{\DD}{\partial}
+{\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dd}{\text{\emph{д}}}
-{\text{\emph{д}}}
+\newcommand{\dd}{\partial}
+{\partial}
 \end_inset
 
 
