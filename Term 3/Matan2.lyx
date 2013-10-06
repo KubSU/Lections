@@ -8509,7 +8509,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-Пусть в некоторой окресности точки 
+Пусть в некоторой окрестности точки 
 \begin_inset Formula $M_{0}\left(x_{0},y_{0}\right)$
 \end_inset
 
@@ -8517,7 +8517,7 @@ status open
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
- имеет непрерывные часные производные до 
+ имеет непрерывные частные производные до 
 \begin_inset Formula $\left(n+1\right)$
 \end_inset
 
@@ -8526,7 +8526,7 @@ status open
 \begin_inset Formula $\forall M\left(x_{0}+\D x,y_{0}+\D y\right)$
 \end_inset
 
- имеет место равенстово
+ имеет место равенство:
 \end_layout
 
 \begin_layout Theorem
@@ -8588,7 +8588,7 @@ status open
 
 \begin_layout Subsubsection
 Понятие функций многих переменных.
- Необходимое условие жкстремума.
+ Необходимое условие экстремума.
 \end_layout
 
 \begin_layout Standard
@@ -8616,11 +8616,11 @@ status open
 \begin_inset Formula $M_{0}$
 \end_inset
 
- называется точкой строгого локального максимумма (минимума) функции 
+ называется точкой строгого локального максимума (минимума) функции 
 \begin_inset Formula $u=f\left(x_{1},\tr x_{m}\right)$
 \end_inset
 
- существует такая выколотая окресность точки 
+ существует такая выколотая окрестность точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -8653,7 +8653,7 @@ status open
 \begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
- и сушествует часная производная 
+ и существует частная производная 
 \begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)$
 \end_inset
 
@@ -8674,11 +8674,11 @@ status open
 \begin_inset Formula $\forall i,\ i=\overline{1,m}$
 \end_inset
 
-, и зафиксируем все переменные проме 
+, и зафиксируем все переменные кроме 
 \begin_inset Formula $x_{i}$
 \end_inset
 
-, тоесть будем рассматривать точки вида 
+, то есть будем рассматривать точки вида 
 \begin_inset Formula $M\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right),\ x_{i}\in\R,\ M\in D\left(f\right)$
 \end_inset
 
@@ -8715,7 +8715,7 @@ status open
 \begin_inset Formula $\sl$
 \end_inset
 
- по тоереме Ферма 
+ по теореме Ферма 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -8727,11 +8727,11 @@ status open
 \end_layout
 
 \begin_layout Remark
-Точки в каторых выполняется условие 
+Точки в которых выполняется условие 
 \begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
 \end_inset
 
- называются критическими, станционарными, подозреваемыми на экстремум.
+ называются критическими, стационарными, подозреваемыми на экстремум.
 \end_layout
 
 \begin_layout --Separator--
@@ -8767,7 +8767,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Туть чуть дописать осталось
+Тут чуть дописать осталось
 \end_layout
 
 \end_inset
@@ -9864,7 +9864,7 @@ status open
 \begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)$
 \end_inset
 
- фугкция одной переменной 
+ функция одной переменной 
 \begin_inset Formula $g\left(y\right)=f\left(x,y\right)$
 \end_inset
 
@@ -9889,12 +9889,12 @@ status open
 \end_inset
 
 .
- То первой по теореме Больцана-Коши 
+ То первой по теореме Больцано-Коши 
 \begin_inset Formula $\exists\overline{y}\ :\ g\left(\overline{y}\right)=f\left(x,\overline{y}\right)=0$
 \end_inset
 
 .
- А еще нам нада доказать что 
+ А еще нам нужно доказать что 
 \begin_inset Formula $\overline{y}$
 \end_inset
 
@@ -9988,7 +9988,7 @@ f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
 \end_layout
 
 \begin_layout Proof
-Так как часные производные функции 
+Так как частные производные функции 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -10000,7 +10000,7 @@ f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - диференцируема на 
+ - дифференцируема на 
 \begin_inset Formula $\Pi$
 \end_inset
 
@@ -10008,7 +10008,7 @@ f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
 \begin_inset Formula $\sl$
 \end_inset
 
- Используя диференцируемость в точке 
+ Используя дифференцируемость в точке 
 \begin_inset Formula $M\left(x,\psi\left(x\right)\right)$
 \end_inset
 
@@ -10198,7 +10198,7 @@ f_{y}\pr=2\um y
 \end_layout
 
 \begin_layout Subsubsection
-Диференцирование функций многих переменных заданных неявно
+Дифференцирование функций многих переменных заданных неявно
 \end_layout
 
 \begin_layout Theorem
@@ -10219,7 +10219,7 @@ f_{y}\pr=2\um y
 \begin_inset Formula $F\left(\vec x,u\right)$
 \end_inset
 
- - непрерывна в окресности точки 
+ - непрерывна в окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -10227,7 +10227,7 @@ f_{y}\pr=2\um y
 \begin_inset Formula $\Omega\vkl E^{m+1}$
 \end_inset
 
- вместе с часными производными 
+ вместе с частными производными 
 \begin_inset Formula $Fx_{i}\pr,\ i=\overline{1,m}$
 \end_inset
 
@@ -10236,7 +10236,7 @@ f_{y}\pr=2\um y
 \end_inset
 
 .
- Тогда в некоторой окресности точки 
+ Тогда в некоторой окрестности точки 
 \begin_inset Formula $N_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
 \end_inset
 
@@ -10309,7 +10309,7 @@ f_{y}\pr=2\um y
 \begin_inset Formula $F_{u}\pr=3\um u^{2}-4\um u\um x+x\um y=\left\{ \text{В точке }M_{0}\left(1,1,1\right)\right\} =0\ \sl\ $
 \end_inset
 
- Диференцируемости нету 
+ Дифференцируемости нет 
 \end_layout
 
 \begin_layout Example
@@ -10320,7 +10320,7 @@ f_{y}\pr=2\um y
 \end_layout
 
 \begin_layout Remark
-Ну тут что то с приметом у Малыхина не так пошло.
+Ну тут что то с примером у Малыхина не так пошло.
  Переделаем примерчик...
 \end_layout
 
@@ -10389,7 +10389,7 @@ f_{y}\pr=2\um y
 \end_layout
 
 \begin_layout Subsubsection
-Касательная плоскостьо и нормаль к поверхности
+Касательная плоскость и нормаль к поверхности.
 \end_layout
 
 \begin_layout Standard
@@ -10416,11 +10416,11 @@ F\left(x,y,z\right)=0\label{eq:15}
 \begin_inset Formula $F\left(x_{0},y_{0},z_{0}\right)=0$
 \end_inset
 
- и в некоторой окресности точки 
+ и в некоторой окрестности точки 
 \begin_inset Formula $M_{0}\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
- часные производные 
+ частные производные 
 \begin_inset Formula $F_{x}\pr,F_{y}\pr,F_{z}\pr$
 \end_inset
 
@@ -10428,7 +10428,7 @@ F\left(x,y,z\right)=0\label{eq:15}
 \begin_inset Formula $M_{0}$
 \end_inset
 
-, тоесть 
+, то есть 
 \begin_inset Formula $\grad F\left(M_{0}\right)=\left(F_{x}\pr\left(M_{0}\right),F_{y}\pr\left(M_{0}\right),F_{z}\pr\left(M_{0}\right)\right)$
 \end_inset
 
@@ -10438,7 +10438,7 @@ F\left(x,y,z\right)=0\label{eq:15}
 \end_inset
 
 .
- Тогда по теореме (2) существует окресность точки 
+ Тогда по теореме (2) существует окрестность точки 
 \begin_inset Formula $N_{0}\left(x_{0},y_{0}\right)$
 \end_inset
 
@@ -10447,7 +10447,7 @@ F\left(x,y,z\right)=0\label{eq:15}
 \end_inset
 
 .
- Графически она определяет некоторый кусок певерхности 
+ Графически она определяет некоторый кусок поверхности 
 \begin_inset Formula $S$
 \end_inset
 
@@ -10528,7 +10528,7 @@ reference "eq:17"
 
 \end_inset
 
-) - уравнение касательной к прослости в точке 
+) - уравнение касательной к плоскости в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -10684,7 +10684,7 @@ reference "eq:18"
 \begin_inset Formula $M_{0}$
 \end_inset
 
- кравнение касательной к плоскости
+ уравнение касательной к плоскости
 \end_layout
 
 \begin_layout Standard
@@ -10732,7 +10732,7 @@ F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
 \end_layout
 
 \begin_layout Standard
-Тоесть функции 
+То есть функции 
 \begin_inset Formula $y_{1},\tr,y_{k}$
 \end_inset
 
@@ -10763,11 +10763,11 @@ reference "eq:19"
 
 \begin_deeper
 \begin_layout Enumerate
-Фунции 
+Функции 
 \begin_inset Formula $F_{j}$
 \end_inset
 
- определены в некоторой окресности 
+ определены в некоторой окрестности 
 \begin_inset Formula $\Omega\vkl E^{m+k}$
 \end_inset
 
@@ -10775,7 +10775,7 @@ reference "eq:19"
 \begin_inset Formula $M_{0}\left(x_{1}^{0},x_{2}^{0},\tr,x_{m}^{0},y_{1}^{0},\tr,y_{k}^{0}\right)$
 \end_inset
 
- и непрерывно диференцируемы в этой окресности.
+ и непрерывно дифференцируемы в этой окрестности.
 \end_layout
 
 \begin_layout Enumerate
@@ -10784,12 +10784,16 @@ reference "eq:19"
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\left|\begin{array}{cccc}
+\begin_inset Formula 
+\[
+\left|\begin{array}{cccc}
 \df{\dd F_{1}}{\dd y_{1}} & \df{\dd F_{1}}{\dd y_{2}} & \tr & \df{\dd F_{1}}{\dd y_{k}}\\
 \df{\dd F_{2}}{\dd y_{1}} & \df{\dd F_{2}}{\dd y_{2}} & \tr & \df{\dd F_{2}}{\dd y_{k}}\\
 \vtr & \vtr & \ntr & \vtr\\
 \df{\dd F_{k}}{\dd y_{1}} & \df{\dd F_{k}}{\dd y_{2}} & \tr & \df{\dd F_{k}}{\dd y_{k}}
-\end{array}\right|=\left|\df{\dd F}{\dd y}\right|=\left|\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\right|\nr0$
+\end{array}\right|=\left|\df{\dd F}{\dd y}\right|=\left|\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\right|\nr0
+\]
+
 \end_inset
 
 
@@ -10813,7 +10817,7 @@ reference "eq:19"
 
 \end_deeper
 \begin_layout Theorem
-Тогда существует окресность точки 
+Тогда существует окрестность точки 
 \begin_inset Formula $M_{0}:$
 \end_inset
 
@@ -10824,11 +10828,11 @@ reference "eq:19"
 \begin_inset Formula $\D=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m};\ \left|y_{j}-y_{j}^{0}\right|<b,\ j=\overline{1,k}\right\} \vkl\Omega$
 \end_inset
 
- такая точ система определяет 
+ такая система определяет 
 \begin_inset Formula $y_{1},y_{2},\tr,y_{k}$
 \end_inset
 
- однозначно как непрерывно диффренцируемые функции на множестве
+ однозначно как непрерывно дифференцируемые функции на множестве
 \end_layout
 
 \begin_layout Theorem
@@ -10843,7 +10847,7 @@ reference "eq:19"
 \end_layout
 
 \begin_layout Remark
-Как находить часные производные? 
+Как находить частные производные? 
 \end_layout
 
 \begin_layout Remark
@@ -10891,18 +10895,22 @@ reference "eq:19"
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 F_{1}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\right)\equiv0\\
 \tr\\
 F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\right)\equiv0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Remark
-Диференцируем по 
+Дифференцируем по 
 \begin_inset Formula $x_{l}$
 \end_inset
 
@@ -10910,40 +10918,52 @@ F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\ri
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{\dd F_{1}}{\dd x_{l}}+\df{\dd F_{1}}{\dd y_{1}}\um\df{\dd\psi_{1}}{\dd x_{l}}+\tr+\df{\dd F_{1}}{\dd y_{k}}\um\df{\dd\psi_{k}}{\dd x_{l}}=0\\
 \tr\\
 \df{\dd F_{k}}{\dd x_{l}}+\df{\dd F_{k}}{\dd y_{1}}\um\df{\dd\psi_{1}}{\dd x_{l}}+\tr+\df{\dd F_{k}}{\dd y_{k}}\um\df{\dd\psi_{k}}{\dd x_{l}}=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Remark
-Это линейная система, относительно неизвесных 
+Это линейная система, относительно неизвестных 
 \begin_inset Formula $\df{\dd\psi_{j}}{\dd x_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
 \end_inset
 
 .
- Она однозначно разрешима тогда и только тогда, когда ее определитель -
+ Она однозначно разрешима тогда и только тогда, когда ее определитель ---
  Якобиан: 
-\begin_inset Formula $\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\nr0$
+\begin_inset Formula 
+\[
+\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\nr0
+\]
+
 \end_inset
 
-, а решения этой системы выглядят следующим образом: 
-\begin_inset Formula $\begin{cases}
+А решения этой системы выглядят следующим образом: 
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{\dd y_{1}}{\dd x_{l}}=-\df{\dd\left(F_{1},F_{2},\tr,F_{k}\right)}{\dd\left(x_{l},y_{2},\tr,y_{k}\right)}\\
 \tr\\
 \df{\dd y_{k}}{\dd x_{l}}=-\df{\df{\dd\left(F_{1},F_{2},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k-1},x_{l}\right)}}{\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},y_{2},\tr,y_{k}\right)}}
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsubsection
-Зависимость функциий.
+Зависимость функций.
  Понятие.
 \end_layout
 
@@ -10956,7 +10976,7 @@ F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\ri
 \begin_inset Formula $m$
 \end_inset
 
- переменых 
+ переменных 
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -11050,7 +11070,7 @@ reference "eq:21"
 \begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ n=\overline{1,k}$
 \end_inset
 
-, то функции называются незаивсимыми на 
+, то функции называются независимыми на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -11127,7 +11147,7 @@ u_{2}=x-y
 \begin_inset Formula $y=-x$
 \end_inset
 
-, а функкция 
+, а функция 
 \begin_inset Formula $u_{2}$
 \end_inset
 
@@ -11207,7 +11227,7 @@ reference "eq:21"
 
 \end_inset
 
-) определены и диференцированы в окресности точки 
+) определены и дифференцируемы в окрестности точки 
 \begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
 \end_inset
 
@@ -11226,7 +11246,7 @@ reference "eq:21"
 
 \end_inset
 
-) не зависима в некоторой окресности точки 
+) не зависима в некоторой окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -11254,11 +11274,11 @@ reference "eq:21"
 \end_layout
 
 \begin_layout Proof
-Предположим противное, тоесть 
+Предположим противное, то есть 
 \begin_inset Formula $u_{1},\tr,u_{k}$
 \end_inset
 
- - зависимы в некоторой окресности точки 
+ - зависимы в некоторой окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -11266,11 +11286,11 @@ reference "eq:21"
 \begin_inset Formula $u_{n}=\Psi\left(u_{1},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right)$
 \end_inset
 
- в окресности точки 
+ в окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
- - сложная фунция аргументов 
+ - сложная функция аргументов 
 \begin_inset Formula $x_{1},\tr,x_{m}$
 \end_inset
 
@@ -11306,7 +11326,7 @@ reference "eq:21"
 \begin_inset Formula $n$
 \end_inset
 
--ной строкой определителя Якоби является лоинейной комбинацией остальных
+-ной строкой определителя Якоби является линейной комбинацией остальных
  строк определителя, следовательно определитель Якоби равен нулю.
  Противоречие.
 \end_layout
@@ -11349,7 +11369,7 @@ x+y-1=0\label{eq:24}
 \end_layout
 
 \begin_layout Example
-Её область определение 
+Ее область определения 
 \begin_inset Formula $x\in\left(-\b,+\b\right)$
 \end_inset
 
@@ -11388,7 +11408,7 @@ x+y-1=0\label{eq:24}
 \end_layout
 
 \begin_layout Example
-Заметим что глобальный экстремем (минимум) 
+Заметим что глобальный экстремум (минимум) 
 \begin_inset Formula $M_{0}\left(0,0\right),\ f_{min}=f\left(0,0\right)=0$
 \end_inset
 
