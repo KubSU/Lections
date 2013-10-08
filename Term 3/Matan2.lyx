@@ -251,6 +251,12 @@ theorems-starred
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\underset{#1}{\overset{#2}{\iint}}}
+{\underset{#1}{\overset{#2}{\iint}}}
+\end_inset
+
  
 \begin_inset FormulaMacro
 \newcommand{\ppr}{\pr\pr}
@@ -369,6 +375,18 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\ntr}{\ddots}
 {\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
 \end_inset
 
 
@@ -12218,6 +12236,835 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 
 \end_deeper
 \end_deeper
+\begin_layout Section
+Интегральное исчисления фнукций многгих переменных
+\end_layout
+
+\begin_layout Subsection
+Двойные интегралы
+\end_layout
+
+\begin_layout Subsubsection
+Задача об обьеме цилендрического бруса
+\end_layout
+
+\begin_layout Standard
+Путсь 
+\begin_inset Formula $D\vkl E^{2}$
+\end_inset
+
+ - квадрируемая область, а функция 
+\begin_inset Formula $u=f\left(x;y\right)$
+\end_inset
+
+ опредщелена на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Ставится задача нахождения обьема цилиндрического бруса, ограниченного
+ плоскостью 
+\begin_inset Formula $XoY$
+\end_inset
+
+, поверхностью 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ и поверхностью, составленной из перпендикуляровк плоскости 
+\begin_inset Formula $XoY$
+\end_inset
+
+, проходящих через точки границыобласти 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Разобьем область 
+\begin_inset Formula $D$
+\end_inset
+
+ спряпляемыми линиями на непересекающийся подобласти 
+\begin_inset Formula $D=D_{1}\ob D_{2}\ob\tr\ob D_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $D_{i}\cap D_{j}=\textrm{Ø}\ j\nr i$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i=\overline{1,n}$
+\end_inset
+
+ выберем произвольную точку 
+\begin_inset Formula $M_{i}\left(\xi_{i},\nu_{i}\right)\in D_{i}$
+\end_inset
+
+, обозначим 
+\begin_inset Formula $\D S_{i}$
+\end_inset
+
+ - площадь 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{i}=\un{\sup}{M',M''\in D_{i}}\varrho\left(M',M''\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda=\un{\max}{i=\overline{1,n}}\lambda_{i}$
+\end_inset
+
+ Тогда при достаточно дольших 
+\begin_inset Formula $n$
+\end_inset
+
+ и малых 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ конечная сумма 
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
+\end_inset
+
+ приблженна равна обьему нашего груза.
+ 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+ погрешность приближения стремится к нулю.
+ В пределе получаем обьем груза.
+\end_layout
+
+\begin_layout Definition
+Если существует конечный предел при 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+ последовательности 
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
+\end_inset
+
+, не зависящия от способа разбиения области 
+\begin_inset Formula $D$
+\end_inset
+
+ и набора точек 
+\begin_inset Formula $\left\{ M_{i}\right\} $
+\end_inset
+
+, то его называют двойным интегралом от функции 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ по области 
+\begin_inset Formula $D$
+\end_inset
+
+, обозначают: 
+\begin_inset Formula $\un{\iint}Df\left(x,y\right)\um dx\um dy\ \ddsl\ul{\begin{array}{c}
+n\st\b\\
+\lambda\st0
+\end{array}}\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
+\end_inset
+
+.
+ А функция называется интегрируемой по области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Суммы Дарду для двойного интеграла.
+\end_layout
+
+\begin_layout Standard
+Условия существования интегралов.
+\end_layout
+
+\begin_layout Lemma
+Функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+, интегрируемая на области 
+\begin_inset Formula $D$
+\end_inset
+
+ обязательно ограничена на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно разобрать.
+ Переносим схему доказательства с аналогичной теоремы о одинарном интеграле.
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ ограничена, тоесть 
+\begin_inset Formula $\exists m,M\in\R\ m\mr f\left(x,y\right)\mr M$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотти м произвольное разбиение 
+\begin_inset Formula $D=\un{\ov{\ob}n}{i=1}D_{i}$
+\end_inset
+
+, обозначим 
+\begin_inset Formula $m_{i}=\un{\inf}{}f\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M_{i}=\un{\sup}{}f\left(x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Суммы 
+\begin_inset Formula $s_{n}=\ous{i=1}nm_{i}\D S_{i},\ S_{n}=\ous{i=1}nM_{i}\D S_{i}$
+\end_inset
+
+ называются нижней и верхней суммами Дарбу для функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Легко доказать что 
+\begin_inset Formula $s_{n}\mr\sigma_{n}\mr S_{n}$
+\end_inset
+
+ для любого разбиения и для любого набора точек 
+\begin_inset Formula $\left\{ M_{i}\right\} $
+\end_inset
+
+.
+ Сами доказать нада.
+\end_layout
+
+\begin_layout Paragraph
+Свойства сумм Дарбу.
+\end_layout
+
+\begin_layout Theorem
+(1)
+\end_layout
+
+\begin_layout Theorem
+При добавлении в разбиение еще 1-ной спрямляемой линии нижние сммы Дарбу
+ не убывают, а верхние суммы Дарбу не возрастают.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно..
+\end_layout
+
+\begin_layout Theorem
+(2)
+\end_layout
+
+\begin_layout Theorem
+Всякая нижняя сумма Дарбу 
+\begin_inset Formula $s'$
+\end_inset
+
+ не привосходит всякой верхней суммы Дарбу 
+\begin_inset Formula $S''$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно..
+\end_layout
+
+\begin_layout Theorem
+(3)
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ интегрируемая на области 
+\begin_inset Formula $D$
+\end_inset
+
+ тогда и только тогад, когда 
+\begin_inset Formula $\ul{\begin{array}{c}
+n\st\b\\
+\lambda\st0
+\end{array}}\left(S_{n}-s_{n}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно..
+\end_layout
+
+\begin_layout Subsubsection
+Классы интегрируемых функций
+\end_layout
+
+\begin_layout Theorem
+(1)
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+ интегрируема на ней.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно..
+\end_layout
+
+\begin_layout Theorem
+Если ограниченная функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ имеет на области 
+\begin_inset Formula $D$
+\end_inset
+
+ разрывы лишь на конечном множестве кривых площади 0, то 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ интегрируемая на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Subsubsection
+Свойства двойного интеграла
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Совойство 1.
+ 
+\emph default
+Если область 
+\begin_inset Formula $D=D_{1}\ob D_{2},\ D_{1}\cap D_{2}=\textrm{Ø}$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ интегируемая на 
+\begin_inset Formula $D$
+\end_inset
+
+ , то 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ интегрируема на 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $D_{2}$
+\end_inset
+
+, причем 
+\begin_inset Formula $\un{\iint}Df\left(x,y\right)\um dx\um dy=\un{\iint}{D_{1}}f\left(x,y\right)\um dx\um dy+\un{\iint}{D_{2}}f\left(x,y\right)\um dx\um dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 2.
+ 
+\emph default
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ интегируемая на 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula $\forall k\in\R\ \un{\iint}Dk\um f\left(x,y\right)\um dx\um dy=k\um\un{\iint}Df\left(x,y\right)\um dx\um dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 3.
+ 
+\emph default
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x,y\right)$
+\end_inset
+
+ - интегрируемы на 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x,y\right)\pm g\left(x,y\right)$
+\end_inset
+
+ так же интегрируема на 
+\begin_inset Formula $D$
+\end_inset
+
+ и верна формула: 
+\begin_inset Formula $\un{\iint}D\left(f\left(x,y\right)\pm g\left(x,y\right)\right)\um dx\um dy=\un{\iint}Df\left(x,y\right)\um dx\um dy\pm\un{\iint}Dg\left(x,y\right)\um dx\um dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 4.
+ 
+\emph default
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x,y\right)$
+\end_inset
+
+интеририруемы на 
+\begin_inset Formula $D$
+\end_inset
+
+ и выполняется условие 
+\begin_inset Formula $f\left(x,y\right)\mr g\left(x,y\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\un{\iint}Df\left(x,y\right)dxdy\mr\un{\iint}Dg\left(x,y\right)dxdy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 5.
+ 
+\emph default
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - интегирируемы на 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|f\left(x,y\right)\right|$
+\end_inset
+
+ - интегрируема на 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\un{\iint}df\left(x,y\right)dxdy\right|\mr\un{\iint}D\left|f\left(x,y\right)\right|dxdy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 6.
+
+\emph default
+ Если 
+\begin_inset Formula $m\mr f\left(x,y\right)\mr M$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - интегрируема на 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula $m\um S_{D}\mr\un{\iint}Df\left(x,y\right)dxdy\mr M\um S_{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 7.
+ 
+\emph default
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ - интегирируемы на 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|f\left(x,y\right)\right|$
+\end_inset
+
+ - интегрируема на 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula $\exists\mu\in\left[m,M\right]\ \un{\iint}Df\left(x,y\right)dxdy=\mu\um S_{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+\end_layout
+
+\begin_layout Subsubsection
+Приведение двойног интеграла к повторному.
+\end_layout
+
+\begin_layout Paragraph
+Случай прямоугольной области
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $D=\left\{ \Pi|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ определена на 
+\begin_inset Formula $D$
+\end_inset
+
+, для удобвства 
+\begin_inset Formula $f\left(x,y\right)\br0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рисунок 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если вспомнить формулу обьема тела через его поперечное сечение 
+\begin_inset Formula $V=\oui abQ\left(x\right)dx$
+\end_inset
+
+, где 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ - площадь криволинейной трапеции, выражаемая интегралом.
+ 
+\begin_inset Formula $Q\left(x\right)=\oui cdf\left(x,y\right)dy$
+\end_inset
+
+.
+ В результоате получим повторный интеграл 
+\begin_inset Formula $\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx=\oui abdx\oui cdf\left(x,y\right)dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Аналогично определдяесят повторный интеграл 
+\begin_inset Formula $\oui cddy\oui abf\left(x,y\right)dx=\oui cd\left(\oui abf\left(x,y\right)dx\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Если 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Определена в прямокгольной области 
+\begin_inset Formula $D=\Pi=\left\{ \left(x,y\right)|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ двойной игтеграл 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\left[a,b\right]\ \exists$
+\end_inset
+
+ интеграл 
+\begin_inset Formula $\oui abf\left(x,y\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+то существуе повторный интеграл 
+\begin_inset Formula $\oui abdx\oui cdf\left(x,y\right)dy$
+\end_inset
+
+, равный двойному.
+\end_layout
+
+\begin_layout Proof
+Разобьем отрезки 
+\begin_inset Formula $\left[a,b\right],\ \left[c,d\right]:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a=x_{0}<x_{1}<\tr<x_{i}<x_{i+1}<\tr<x_{n}=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c=y_{0}<y_{1}<\tr<y_{k}<y_{ik+1}<\tr<y_{m}=d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $D_{i,k}=\left\{ \left(x,y\right)|x\in\left[x_{i},x_{i+1}\right],\ y\in\left[y_{k},y_{k+1}\right]\right\} ,\ i=\overline{1,n-1},\ k=\overline{1,m-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $D=\Pi=\un{\ob}{i,k}D_{i,k},\ \D x_{i}=x_{i+1}-x_{i},\ \D y_{k}=y_{k+1}-y_{k},\ m_{i,k}=\un{\inf}{D_{i,k}}f\left(x,y\right),\ M_{i,k}=\un{\sup}{D_{i,k}}f\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Выьерем произвольные 
+\begin_inset Formula $\xi_{i}\in\left[x_{i},x_{i+1}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $m_{i,k}\um\D y_{k}\mr\oui{y_{k}}{y_{k+1}}f\left(\xi_{i},y\right)dy\mr M_{i,k}\um\D y_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Суммирует по 
+\begin_inset Formula $k=\overline{0,m-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\mr\oui cdf\left(\xi_{i},y\right)dy\mr\ous{k=0}{m-1}M_{i,k}\um\D y_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножая на 
+\begin_inset Formula $\D x_{i}$
+\end_inset
+
+ и суммируя по 
+\begin_inset Formula $i=\overline{1,n-1}$
+\end_inset
+
+ получается:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}\mr\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}\mr\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}=s_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}=S_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Это верхняя и нижняя суммы Дарбу для двойного интеграла.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $S_{n},\ s_{n}\ov{\st}{\begin{array}{c}
+n\st\b\\
+\lambda\st0
+\end{array}}\un{\iint}Df\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}$
+\end_inset
+
+ - интегральная сумма для определенного интеграла 
+\begin_inset Formula $\oui abF\left(x\right)dx=\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx=\un{\dint}Df\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
