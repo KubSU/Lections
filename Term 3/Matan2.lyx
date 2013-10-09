@@ -11515,7 +11515,7 @@ reference "eq:26"
 
 \end_inset
 
-), если существует окресность 
+), если существует окрестность 
 \begin_inset Formula $U\left(M_{0}\right)$
 \end_inset
 
@@ -11550,7 +11550,7 @@ reference "eq:26"
 \begin_inset Formula $U\left(M_{0}\right)$
 \end_inset
 
- и непрерывно диффференцируемы в самоф точке 
+ и непрерывно дифференцируемы в самой точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -11570,7 +11570,7 @@ reference "eq:26"
 \begin_inset Formula $\sl$
 \end_inset
 
- по теореме о системе неявных функций существует окресность в точке 
+ по теореме о системе неявных функций существует окрестность в точке 
 \begin_inset Formula $M_{0}'\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
 \end_inset
 
@@ -11664,7 +11664,7 @@ reference "eq:26"
 
 .
  Так как дифференциал обладает свойством инвариантности формы, он может
- выглядить так: (но только в точке 
+ выглядеть так: (но только в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -11727,7 +11727,7 @@ reference "eq:31"
 
 \end_inset
 
-) получим однозначно неизвесные 
+) получим однозначно неизвестные 
 \begin_inset Formula $dy_{1},\tr,dy_{k}$
 \end_inset
 
@@ -11796,15 +11796,15 @@ reference "eq:26"
 \end_layout
 
 \begin_layout Standard
-На практике удобно применять метод множетилей Логранжа.
+На практике удобно применять метод множителей Лагранжа.
 \end_layout
 
 \begin_layout Subsubsection
-Метод множетилей Логранжа
+Метод множителей Лагранжа
 \end_layout
 
 \begin_layout Standard
-Рассмотривается функция Логранжа 
+Рассматривается функция Лагранжа 
 \end_layout
 
 \begin_layout Standard
@@ -11815,11 +11815,11 @@ reference "eq:26"
 \begin_inset Formula $\lambda_{j},\ j=\overline{1,k}$
 \end_inset
 
- (пока) неисвестные множетили Логранжа.
+ (пока) неизвестные множители Лагранжа.
 \end_layout
 
 \begin_layout Standard
-Считая выполнеными условия (
+Считая выполненными условия (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:26"
@@ -11860,7 +11860,7 @@ reference "eq:26"
 \begin_inset Formula $dL=0$
 \end_inset
 
-, тоесть 
+, то есть 
 \begin_inset Formula $\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}+\df{\dd L}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd L}{\dd y_{k}}\um dy_{k}=0$
 \end_inset
 
@@ -11924,7 +11924,7 @@ F_{k}=0
 \end_layout
 
 \begin_layout Standard
-Достаточное условие укстремума:
+Достаточное условие экстремума:
 \end_layout
 
 \begin_layout Standard
@@ -11946,7 +11946,7 @@ F_{k}=0
 \begin_inset Formula $d^{2}u$
 \end_inset
 
- на знак часто требуется дополнительное дифференцировать (взять дифффреенциал)
+ на знак часто требуется дополнительное дифференцировать (взять дифференциал)
  условия связи - это позволяет получить соотношение между 
 \begin_inset Formula $dx_{1},\tr,dx_{m},dy_{1},\tr,d_{y_{k}}.$
 \end_inset
@@ -12237,7 +12237,7 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \end_deeper
 \end_deeper
 \begin_layout Section
-Интегральное исчисления фнукций многгих переменных
+Интегральное исчисления функций многих переменных
 \end_layout
 
 \begin_layout Subsection
@@ -12245,11 +12245,11 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \end_layout
 
 \begin_layout Subsubsection
-Задача об обьеме цилендрического бруса
+Задача об объеме цилиндрического бруса
 \end_layout
 
 \begin_layout Standard
-Путсь 
+Пусть 
 \begin_inset Formula $D\vkl E^{2}$
 \end_inset
 
@@ -12257,12 +12257,12 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \begin_inset Formula $u=f\left(x;y\right)$
 \end_inset
 
- опредщелена на 
+ определена на 
 \begin_inset Formula $D$
 \end_inset
 
 .
- Ставится задача нахождения обьема цилиндрического бруса, ограниченного
+ Ставится задача нахождения объема цилиндрического бруса, ограниченного
  плоскостью 
 \begin_inset Formula $XoY$
 \end_inset
@@ -12271,11 +12271,11 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
- и поверхностью, составленной из перпендикуляровк плоскости 
+ и поверхностью, составленной из перпендикуляров плоскости 
 \begin_inset Formula $XoY$
 \end_inset
 
-, проходящих через точки границыобласти 
+, проходящих через точки границы области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12287,7 +12287,7 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \begin_inset Formula $D$
 \end_inset
 
- спряпляемыми линиями на непересекающийся подобласти 
+ спрямляемыми линиями на непересекающийся подобласти 
 \begin_inset Formula $D=D_{1}\ob D_{2}\ob\tr\ob D_{n}$
 \end_inset
 
@@ -12319,7 +12319,7 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \begin_inset Formula $\lambda=\un{\max}{i=\overline{1,n}}\lambda_{i}$
 \end_inset
 
- Тогда при достаточно дольших 
+ Тогда при достаточно больших 
 \begin_inset Formula $n$
 \end_inset
 
@@ -12331,13 +12331,13 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
 \end_inset
 
- приблженна равна обьему нашего груза.
+ приближенно равна объему нашего груза.
  
 \begin_inset Formula $n\st\b,\ \lambda\st0$
 \end_inset
 
  погрешность приближения стремится к нулю.
- В пределе получаем обьем груза.
+ В пределе получаем объем груза.
 \end_layout
 
 \begin_layout Definition
@@ -12349,7 +12349,7 @@ d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
 \begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
 \end_inset
 
-, не зависящия от способа разбиения области 
+, не зависящая от способа разбиения области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12381,7 +12381,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Subsubsection
-Суммы Дарду для двойного интеграла.
+Суммы Дарбу для двойного интеграла.
 \end_layout
 
 \begin_layout Standard
@@ -12414,7 +12414,7 @@ n\st\b\\
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
- ограничена, тоесть 
+ ограничена, то есть 
 \begin_inset Formula $\exists m,M\in\R\ m\mr f\left(x,y\right)\mr M$
 \end_inset
 
@@ -12426,7 +12426,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Standard
-Рассмотти м произвольное разбиение 
+Рассмотрим произвольное разбиение 
 \begin_inset Formula $D=\un{\ov{\ob}n}{i=1}D_{i}$
 \end_inset
 
@@ -12463,7 +12463,7 @@ n\st\b\\
 \end_inset
 
 .
- Сами доказать нада.
+ Самим доказать надо.
 \end_layout
 
 \begin_layout Paragraph
@@ -12475,7 +12475,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Theorem
-При добавлении в разбиение еще 1-ной спрямляемой линии нижние сммы Дарбу
+При добавлении в разбиение еще 1-ной спрямляемой линии нижние суммы Дарбу
  не убывают, а верхние суммы Дарбу не возрастают.
 \end_layout
 
@@ -12492,7 +12492,7 @@ n\st\b\\
 \begin_inset Formula $s'$
 \end_inset
 
- не привосходит всякой верхней суммы Дарбу 
+ не превосходит всякой верхней суммы Дарбу 
 \begin_inset Formula $S''$
 \end_inset
 
@@ -12516,7 +12516,7 @@ n\st\b\\
 \begin_inset Formula $D$
 \end_inset
 
- тогда и только тогад, когда 
+ тогда и только тогда, когда 
 \begin_inset Formula $\ul{\begin{array}{c}
 n\st\b\\
 \lambda\st0
@@ -12575,7 +12575,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Subsubsection
@@ -12585,7 +12585,7 @@ n\st\b\\
 \begin_layout Standard
 
 \emph on
-Совойство 1.
+Свойство 1.
  
 \emph default
 Если область 
@@ -12596,7 +12596,7 @@ n\st\b\\
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- интегируемая на 
+ интегрируемая на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12620,7 +12620,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Standard
@@ -12633,7 +12633,7 @@ n\st\b\\
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- интегируемая на 
+ интегрируемая на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12645,7 +12645,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Standard
@@ -12682,7 +12682,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Standard
@@ -12699,7 +12699,7 @@ n\st\b\\
 \begin_inset Formula $g\left(x,y\right)$
 \end_inset
 
-интеририруемы на 
+ интегрируемы на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12715,7 +12715,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Standard
@@ -12728,7 +12728,7 @@ n\st\b\\
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - интегирируемы на 
+ - интегрируемы на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12748,7 +12748,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Standard
@@ -12777,7 +12777,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Standard
@@ -12790,7 +12790,7 @@ n\st\b\\
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - интегирируемы на 
+ - интегрируемы на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12810,11 +12810,11 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналологично для однинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1го курса...
 \end_layout
 
 \begin_layout Subsubsection
-Приведение двойног интеграла к повторному.
+Приведение двойного интеграла к повторному.
 \end_layout
 
 \begin_layout Paragraph
@@ -12835,7 +12835,7 @@ n\st\b\\
 \begin_inset Formula $D$
 \end_inset
 
-, для удобвства 
+, для удобства 
 \begin_inset Formula $f\left(x,y\right)\br0$
 \end_inset
 
@@ -12856,7 +12856,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Если вспомнить формулу обьема тела через его поперечное сечение 
+Если вспомнить формулу объема тела через его поперечное сечение 
 \begin_inset Formula $V=\oui abQ\left(x\right)dx$
 \end_inset
 
@@ -12870,7 +12870,7 @@ status open
 \end_inset
 
 .
- В результоате получим повторный интеграл 
+ В результате получим повторный интеграл 
 \begin_inset Formula $\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx=\oui abdx\oui cdf\left(x,y\right)dy$
 \end_inset
 
@@ -12878,7 +12878,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Аналогично определдяесят повторный интеграл 
+Аналогично определятся повторный интеграл 
 \begin_inset Formula $\oui cddy\oui abf\left(x,y\right)dx=\oui cd\left(\oui abf\left(x,y\right)dx\right)dx$
 \end_inset
 
@@ -12891,7 +12891,7 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-Определена в прямокгольной области 
+Определена в прямоугольной области 
 \begin_inset Formula $D=\Pi=\left\{ \left(x,y\right)|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
 \end_inset
 
@@ -12902,7 +12902,7 @@ status open
 \begin_inset Formula $\exists$
 \end_inset
 
- двойной игтеграл 
+ двойной интеграл 
 \begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
 \end_inset
 
@@ -12922,7 +12922,7 @@ status open
 
 \end_deeper
 \begin_layout Theorem
-то существуе повторный интеграл 
+то существует повторный интеграл 
 \begin_inset Formula $\oui abdx\oui cdf\left(x,y\right)dy$
 \end_inset
 
@@ -12967,7 +12967,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Выьерем произвольные 
+Выберем произвольные 
 \begin_inset Formula $\xi_{i}\in\left[x_{i},x_{i+1}\right]$
 \end_inset
 

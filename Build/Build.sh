@@ -3,7 +3,7 @@
 @echo off
 find ../ -type f -name '*.lyx' |
 while read filename; do
-	echo "Generating tex: ${filename}";
+	echo "Generating pdf: ${filename}";
 	lyx -e pdf2 "${filename}";
 done
 
