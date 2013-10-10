@@ -13066,7 +13066,798 @@ n\st\b\\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Случай криволинейной области 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим например область 
+\begin_inset Formula $D=\{\left(x,y\right)|\left(x,y\right)\in E^{2}$
+\end_inset
+
+, ограниченая прямыми 
+\begin_inset Formula $x=a,\ x=b$
+\end_inset
+
+ и линиями 
+\begin_inset Formula $y=y_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y=y_{2}\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}\left(x\right)\mr y_{2}\left(x\right),$
+\end_inset
+
+ при 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Formula $\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 3.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\forall x_{0}\in\left[a,b\right]$
+\end_inset
+
+ площадь поперечного сечения цилендрического бруса равна:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q\left(x_{0}\right)=\oui{y_{1}\left(x_{0}\right)}{y_{2}\left(x_{0}\right)}f\left(x_{0},y\right)dy$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $V=\oui abQ\left(x\right)\um dx=\oui ab\left(\oui{y_{1}\left(x_{0}\right)}{y_{2}\left(x_{0}\right)}f\left(x_{0},y\right)dy\right)dx=\oui abdx\oui{y_{1}\left(x_{0}\right)}{y_{2}\left(x_{0}\right)}f\left(x_{0},y\right)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Пусть:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Функция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ инт егрируема на области 
+\begin_inset Formula $D$
+\end_inset
+
+, олгртаниченой линиями 
+\begin_inset Formula $x=a,\ x=b,\ y=y_{1}\left(x\right),\ y=y_{2}\left(x\right)$
+\end_inset
+
+ (
+\begin_inset Formula $\exists\un{\dint}Df\left(x,y\right)dxdy$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)dy$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+тогда существует повторный интегриал, равный двойному.
+\end_layout
+
+\begin_layout Proof
+Будем считать, что 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $c=\un{\min}{\left[a,b\right]}y_{1}\left(x\right),\ d=\un{\max}{\left[a,b\right]}y_{2}\left(x\right)$
+\end_inset
+
+.
+ Поместим области 
+\begin_inset Formula $D$
+\end_inset
+
+ в прямоугольник 
+\begin_inset Formula $\Pi=\left\{ \left(x,y\right)|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
+\end_inset
+
+.
+ Рассмотрим слудующую функцию двих переменных: 
+\begin_inset Formula $f^{*}\left(x,y\right)=\begin{cases}
+f\left(x,y\right), & \left(x,y\right)\in D\\
+0, & \left(x,y\right)\in\Pi\backslash D
+\end{cases}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f^{*}\left(x,y\right)$
+\end_inset
+
+ - интегрирована на прямоугольнике 
+\begin_inset Formula $\Pi$
+\end_inset
+
+, так как 
+\begin_inset Formula $\un{\dint}Df^{*}\left(x,y\right)\um dxvdy=\un{\dint}Df\left(x,y\right)\um dx\um dy+\un{\dint}{\Pi\backslash D}0\um dx$
+\end_inset
+
+, 
+\begin_inset Formula $\un{\dint}{\Pi\backslash D}0\um dx=0$
+\end_inset
+
+.
+ Далее 
+\begin_inset Formula 
+\begin{eqnarray*}
+\forall x & \in & \left[a,b\right]\ \oui cdf^{*}\left(x,y\right)\um dy=\oui c{y_{1}\left(x\right)}f^{*}\left(x,y\right)\um dy+\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f^{*}\left(x,y\right)\um dy+\oui{y_{2}\left(x\right)}df^{*}\left(x,y\right)\um dy=\\
+ & = & \left\{ \begin{array}{c}
+\oui{y_{2}\left(x\right)}df^{*}\left(x,y\right)\um dy,\ \left(x,y\right)\in\Pi\backslash D\ \sl\ \oui{y_{2}\left(x\right)}df^{*}\left(x,y\right)\um dy=0\\
+\oui c{y_{1}\left(x\right)}f^{*}\left(x,y\right)\um dy,\ \left(x,y\right)\in\Pi\backslash D\ \sl\ \oui c{y_{1}\left(x\right)}f^{*}\left(x,y\right)\um dy=0\\
+\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f^{*}\left(x,y\right)\um dy,\ \left(x,y\right)\in G\ \sl\ \oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f^{*}\left(x,y\right)\um dy=\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)\um dy
+\end{array}\right\} =\\
+ & = & \oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)\um dy
+\end{eqnarray*}
+
+\end_inset
+
+ Существует предел 2)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\exists\oui abdx\oui cdf^{*}\left(x,y\right)dy=\oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Область 
+\begin_inset Formula $D\vkl E^{2}$
+\end_inset
+
+ называется правильной пго 
+\begin_inset Formula $y$
+\end_inset
+
+, если всякая прямая 
+\begin_inset Formula $x=const$
+\end_inset
+
+ пересекает границу 
+\begin_inset Formula $\dd D$
+\end_inset
+
+ области 
+\begin_inset Formula $D$
+\end_inset
+
+ не более чем в 2х точках.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 5.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ определяет одну огбщую точку (точку входа), а 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ - вторую (точку выхода), а графики функций 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+и 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ - линии входа и выхода соответственно.
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 6.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если область 
+\begin_inset Formula $D$
+\end_inset
+
+ неправьльная по 
+\begin_inset Formula $y$
+\end_inset
+
+, то несколькими прямыми вида 
+\begin_inset Formula $x=const$
+\end_inset
+
+ область 
+\begin_inset Formula $D$
+\end_inset
+
+ разбивает на несколько областей, правильных по 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $D=\un{\ob}iD_{i}$
+\end_inset
+
+, причем 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\ous i{}\un{\dint}{D_{i}}f\left(x,y\right)\um dx\um dy$
+\end_inset
+
+.
+ Аналогично, если область 
+\begin_inset Formula $D$
+\end_inset
+
+ правилььная по 
+\begin_inset Formula $x$
+\end_inset
+
+ (тоесть 
+\begin_inset Formula $\forall y\in\left[c,d\right]\ x\in\left[x_{1}\left(y\right),x_{2}\left(y\right)\right]$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}\left(y\right)$
+\end_inset
+
+ - линия входа, 
+\begin_inset Formula $x_{2}\left(y\right)$
+\end_inset
+
+ - линия выхода), то 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\oui cddy\oui{x_{1}\left(y\right)}{x_{2}\left(y\right)}f\left(x,y\right)\um dx\um dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Правильной называется область, правильная по 
+\begin_inset Formula $x$
+\end_inset
+
+ и по 
+\begin_inset Formula $y$
+\end_inset
+
+ одновременно.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 7.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(1)
+\end_layout
+
+\begin_layout Example
+Расставить пределы интегрирования в разном порядке ддля интегралов 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
+\end_inset
+
+, где область 
+\begin_inset Formula $D$
+\end_inset
+
+ ограничена следующими линиями: 
+\begin_inset Formula $y=x^{2},\ x=a,\ y=0,\ a>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+По 
+\begin_inset Formula $x$
+\end_inset
+
+ внешне, по 
+\begin_inset Formula $y$
+\end_inset
+
+ внутреннее интегррирование: 
+\begin_inset Formula $x\in\left[0,a\right]$
+\end_inset
+
+, длиния входа 
+\begin_inset Formula $y=0$
+\end_inset
+
+, линия выхода 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Тут был прикол насчет свяклы и студентов
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 8.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x\in\left[0,a\right]\ \sl\ y\in\left[0,x^{2}\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $I=\un{\dint}Df\left(x,y\right)dxdy=\oui 0adx\oui 0{x^{2}}f\left(x,y\right)dxdy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+По 
+\begin_inset Formula $x$
+\end_inset
+
+ внутренне, по 
+\begin_inset Formula $y$
+\end_inset
+
+ внутренне.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 9.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $y\in\left[0,a^{2}\right]\ \sl\ x\in\left[\sqrt{y},a\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $I=\oui 0{a^{2}}dy\oui{\sqrt{y}}af\left(x,y\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Remark
+В случае если для линии входа или выхода нельзя указать единую аналитическую
+ зависимость, осласть 
+\begin_inset Formula $D$
+\end_inset
+
+ разбивают на подобласти.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2)
+\end_layout
+
+\begin_layout Example
+Вычислим 
+\begin_inset Formula $\un{\dint}Dx^{2}ydxdy$
+\end_inset
+
+, где 
+\begin_inset Formula $D:\left\{ y=0,\ y=2\um x^{3},\ x+y=3\right\} $
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 10.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+При 
+\begin_inset Formula $x\in\left[0,3\right]$
+\end_inset
+
+ линия входа 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+ Линия выхода: при 
+\begin_inset Formula $x\in\left[0,1\right]\ \longleftrightarrow\ y=2\um x^{3}$
+\end_inset
+
+, при 
+\begin_inset Formula $x\in\left[1,3\right]\ \longleftrightarrow\ y=3-x$
+\end_inset
+
+.
+ Прямой 
+\begin_inset Formula $x=1$
+\end_inset
+
+ разбиваем на 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $D_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\dint}Dx^{2}ydxdy & = & \un{\dint}{D_{1}}x^{2}ydxdy+\un{\dint}{D_{2}}x^{2}ydxdy=\\
+ & = & \oui 01dx\oui 0{2\um x^{3}}x^{2}ydy+\oui 13dx\oui 0{3-x}x^{2}ydy=\\
+ & = & \oui 01x^{2}\um\df{y^{2}}2|_{0}^{2x^{3}}+\oui 13x^{2}\df{y^{2}}2|_{0}^{3}=\\
+ & = & \df 12\oui 014x^{8}dx+\df 12\oui 13\left(9x^{2}-6x^{3}+x^{4}\right)dx=\\
+ & = & \df 29+\df 12\left(\tr\right)\tr
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Мы пошли по сложному пути, есть путь полегче.
+ Можно было расставлять пределы интегрирования, выходя из того, что 
+\begin_inset Formula $D$
+\end_inset
+
+ правильная область по 
+\begin_inset Formula $x$
+\end_inset
+
+, а не длелить ее на 2 области.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 11.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $I=\oui 02dy\oui{\sqrt[3]{\df y2}}{3-y}x^{2}ydx=\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление двойного интеграла в полярных координатах.
+\end_layout
+
+\begin_layout Standard
+В плоскоти 
+\begin_inset Formula $XoY$
+\end_inset
+
+ введем полярные координаты 
+\begin_inset Formula $\begin{cases}
+x=r\um\cos\varphi\\
+y=r\um\sin\varphi
+\end{cases}$
+\end_inset
+
+.
+ Пусть фунция 
+\begin_inset Formula $u=f\left(x,y\right)$
+\end_inset
+
+ определена на множестве 
+\begin_inset Formula $D\vkl E^{2}$
+\end_inset
+
+, и существует двойной интеграл по этой области.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис.
+ 12.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть в полярных координатах область 
+\begin_inset Formula $D$
+\end_inset
+
+ заключена между лучами 
+\begin_inset Formula $\varphi=\alpha,\ \varphi=\beta$
+\end_inset
+
+ или, проще говоря, 
+\begin_inset Formula $\varphi\in\left[\alpha,\beta\right]$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $D$
+\end_inset
+
+ правильная по 
+\begin_inset Formula $r$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\forall\varphi_{0}\in\left[\alpha,\beta\right]$
+\end_inset
+
+ луч 
+\begin_inset Formula $\varphi=\varphi_{0}$
+\end_inset
+
+ пересекает 
+\begin_inset Formula $\dd D$
+\end_inset
+
+ в 2-х точках: 
+\begin_inset Formula $r_{1}\left(\varphi_{0}\right),\ r_{2}\left(\varphi_{0}\right)$
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $r_{1}\left(\varphi\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $r_{2}\left(\varphi\right)$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $\left[\alpha,\beta\right]$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $a=\umin{\left[\alpha,\beta\right]}r_{2}\left(\varphi\right),\ b=\umax{\left[\alpha,\beta\right]}r_{2}\left(\varphi\right)$
+\end_inset
+
+.
+ Рассмотрим разбиение: 
+\begin_inset Formula $\alpha=\varphi_{0}<\varphi_{1}<\tr<\varphi_{l}=\beta$
+\end_inset
+
+, 
+\begin_inset Formula $a<r_{0}<r_{1}<\tr<r_{n}=b$
+\end_inset
+
+.
+ Получим полярную сетку, образованную лучами 
+\begin_inset Formula $\varphi=\varphi_{k},\ k=\overline{0,l-1}$
+\end_inset
+
+ и дугами окружностей 
+\begin_inset Formula $r=r_{i},\ i=\overline{0,n-1}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $D_{i,k}$
+\end_inset
+
+ - область ограничиемая лучами 
+\begin_inset Formula $\varphi=\varphi_{k},\ \varphi=\varphi_{k+1}=\varphi_{k}+\D\varphi_{k}$
+\end_inset
+
+ и дугами 
+\begin_inset Formula $r=r_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $r=r_{i+1}=r_{i}+\D r_{i}$
+\end_inset
+
+.
+ Её площадь 
+\begin_inset Formula 
+\begin{eqnarray*}
+\D S_{i,k} & = & \df{r_{i+1}^{2}\D\varphi_{k}}2-\df{r_{i}^{2}\um\D\varphi_{k}}2=\df{\D\varphi_{k}}2\left(r_{i+1}-r_{i}\right)\left(r_{i+1}+r_{i}\right)=\\
+ & = & \df{\D\varphi_{k}}2\left(2r_{i}\um\D r_{i}+\left(\D r_{i}\right)^{2}\right)\approx\\
+ & \approx & \left\{ \text{Отбрасываем бесконечно малые более высоких порядков}\right\} \approx\\
+ & \approx & r_{i}\um\D r_{i}\um\D\varphi_{k}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ous i{}\ous k{}f\left(\xi_{i,k},\eta_{i,k}\right)\um\D S_{i,k}\approx\ous i{}\ous k{}f\left(r_{i}\um\cos\varphi_{k},r_{i}\um\sin\varphi_{k}\right)\um r_{i}\um\D r_{i}\um\D\varphi_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $\lambda=\umax{i,k}$
+\end_inset
+
+ диаметра 
+\begin_inset Formula $D_{i,k}\st0,\ n\st\b,\ l\st\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Левая часть стремится к 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
+\end_inset
+
+, при этом 
+\begin_inset Formula $\max\D r_{i}\st0,\ \max\D\varphi_{k}\st0$
+\end_inset
+
+, и правая часть - это интегральная сумма для двойного интеграла 
+\begin_inset Formula $\un{\dint}Df\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr\um d\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oui{\alpha}{\beta}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr
+\]
+
 \end_inset
 
 
