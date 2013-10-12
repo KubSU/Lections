@@ -4706,14 +4706,582 @@ c_{n}
 
  будет решщение м системы (ы) и любое решение системы (1) можно представить
  в виде 
-\begin_inset Formula $y\left(x\right)=Y\left(x\right)\um c$
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=Y\left(x\right)\um c\label{eq:rr5}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $ $
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{ccc}
+y_{1}^{\left(1\right)}\left(x\right) & \tr & y_{1}^{\left(n\right)}\left(x\right)\\
+\vtr & \ddots & \vtr\\
+y_{1}^{\left(n\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right)\um\left(\begin{array}{c}
+c_{1}\\
+\\
+c_{n}
+\end{array}\right)=\left(\begin{array}{c}
+c_{1}y_{1}^{\left(1\right)}\left(x\right)\tr c_{n}y_{1}^{\left(n\right)}\left(x\right)\\
+\\
+\\
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По теореме 1 о свойстве решений однородных систем 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ --- решение (1).
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ --- произвольное решение (1), где 
+\begin_inset Formula $x\in(\alpha,\beta)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y(x)$
+\end_inset
+
+ --- фундаментальная матрица, определенная на 
+\begin_inset Formula $(\alpha,\beta)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Построим 
+\begin_inset Formula $u(x)=Y(x)\um Y^{-1}(x_{0})y(x_{0})$
+\end_inset
+
+ Тгда по доказанному выше: 
+\begin_inset Formula $u(x)$
+\end_inset
+
+ --- решение(1) и 
+\begin_inset Formula $u(x_{0})=Y(x_{0})Y^{-1}(x_{0})y(x_{0})=y(x_{0})$
+\end_inset
+
+ тогда в силу теоремы существования и единственности для линейных систем
+ они совпадают: 
+\begin_inset Formula $y(x)=u(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Свойство 2:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Y(x)$
+\end_inset
+
+ --- фундаментальная матрица системы(1), а 
+\begin_inset Formula $C$
+\end_inset
+
+ -- невырожденная матрица с постоянными элементами, тогда 
+\begin_inset Formula $Y_{2}(x)=Y_{1}(x)\um C$
+\end_inset
+
+ --- фундаментальная матрица.
+\end_layout
+
+\begin_layout Standard
+Тк 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+--- фундаментальная матрица, то 
+\begin_inset Formula $\df{dY_{1}}{dx}=A(x)Y_{1}(x)$
+\end_inset
+
+ умножая на 
+\begin_inset Formula $C$
+\end_inset
+
+ получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df d{dx}(Y_{1}C)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y_{2}(x_{0})$
+\end_inset
+
+--- невырожденная матрица, как произведение двух невырожденных
+\end_layout
+
+\begin_layout Standard
+Свойство 3Ж
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Y_{1}(x),Y_{2}(x)$
+\end_inset
+
+ --- фундаментальные матрицы, тогда найдется невырожд матрица 
+\begin_inset Formula $C$
+\end_inset
+
+ такая что 
+\begin_inset Formula $Y_{2}(x)=Y_{1}(x)C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Возьмем 
+\begin_inset Formula $x_{0}\in(\alpha,\beta)$
+\end_inset
+
+ и построим 
+\begin_inset Formula $U(x)=Y_{1}(x)\um Y_{1}^{-1}(x_{0})\um Y_{2}(x_{0})$
+\end_inset
+
+ Тгда U по доказанному выше --- фундаментальная матрица системы 1 те будет
+ решением матричного уравнения 4 и 
+\begin_inset Formula $U(x_{0})=Y_{2}(x_{0})$
+\end_inset
+
+.
+ Мы имеем 2 решения совпад.
+ в одной точке тогда в силу теоремы существования и единственности для линейных
+ систем: 
+\begin_inset Formula $Y_{2}(x)\equiv U(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Линейные неоднородные системы дифференциальных уравнений.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим линейную неоднородную систему вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=A(x)y+f(x)\label{eq:ln1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\vec{\phi(x)}$
+\end_inset
+
+ --- некоторое решение системы 1.
+\end_layout
+
+\begin_layout Claim
+Любое решение (1) может быть представлено в виде 
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+где V(x) --- решение соответствующей однородной системы и обратно любая
+ вектор функция вида (2) будет решением системы (1)
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $V(x)$
+\end_inset
+
+ --- некотрое решение линейной однородной систеемы , а 
+\begin_inset Formula $\phi(x)$
+\end_inset
+
+--- некотрое решение линейной неоднородной систеемы.
+ покажем, что (2) является решением (1):
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\df{dy}{dx}-A(x)y=\df d{dx}(V+\phi)-A(V+\phi)=\df{dV}{dx}+\df{d\phi}{dx}-AV-A\phi=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+обратно покажем, что решение системы 1 можно представить в виде 2.
+ Для этого возьмем 
+\begin_inset Formula $V(x)=y(x)-\phi(x)$
+\end_inset
+
+.
+ Покажем что V(x) --- решение соответствующей однородной системы:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\df{dV}{dx}-AV=\df d{dx}(y-\phi)-A(y-\phi)=\df{dy}{dx}-\df{d\phi}{dx}-Ay+A\phi=\left(\df{dy}{dx}-Ay\right)-\left(\df{d\phi}{dx}-A\phi\right)....
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следствие: пусть 
+\begin_inset Formula $y_{1}(x)\tr y_{n}(x)$
+\end_inset
+
+ .....
+ тогда любое решение системы 1 можно представить в виде ...
+ где 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ --- соответствующим образом подобранные постоянные.
+ Это следствие вытекает из тверждения и теоремы 5.
+\end_layout
+
+\begin_layout Standard
+Другими словами: общее решение - сумма частного решения и общего решения
+ соотв линейной 
+\emph on
+однородной
+\emph default
+ системы.
+\end_layout
+
+\begin_layout Subsection
+Метод вариации произвольных постоянных для систем
+\end_layout
+
+\begin_layout Standard
+пусть известно общее решение соответствующей 
+\emph on
+однородной 
+\emph default
+системы.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(x_{0})=y^{(0)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Покажем как найти решение задачи Коши (1,3).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y(x)$
+\end_inset
+
+ --- фундаментальная матрица ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y(x)=Y(x)c$
+\end_inset
+
+ --- ....
+\end_layout
+
+\begin_layout Standard
+Тогда решение неоднородной системы (1) будем искать в виде: 
+\begin_inset Formula 
+\begin{equation}
+y(x)=Y(x)\um c(x)\label{eq:ln4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $c(x)$
+\end_inset
+
+ --- неизвестная вектор--функция.
+\end_layout
+
+\begin_layout Standard
+Подставим (4) в 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{dY}{dx}c(x)+Y(x)\df{dc}{dx}=A(x)Y(x)c(x)+f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+остается 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y(x)\df{dc}{dx}=f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Умножим слева на обратную фунд.
+ матрицу:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{dc}{dx}=Y^{-1}(x)f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Проинтегрируем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c(x)-c(x_{0})=\oiu{x_{0}}xY^{-1}(s)f(s)ds
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c(x_{0})$
+\end_inset
+
+ выберем так, чтобы выполнялось условие 3:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c(x_{0})=Y^{-1}(x_{0})\um y^{(0)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+подставим в 4 и получим, что решение задачи (1,3):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(x)=Y(x)Y^{-1}(x_{0})y^{(0)}+Y(x)\oiu{x_{0}}xY^{-1}(s)f(s)ds
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обозначим матрицу Коши как: 
+\begin_inset Formula $C(x,\, s)=Y(x)\um Y^{-1}(s)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y(x)=C(x,x_{0})y^{(0)}+\oiu{x_{0}}xC(x,s)f(s)ds\label{eq:ln5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Первое слагаемое в 5 --- решение соотв однородной системы удовл.
+ условию 3
+\end_layout
+
+\begin_layout Standard
+Второе слагаемое в 5 --- решение неоднородной системы 1, удовл нулевому
+ начальному условию.
+\end_layout
+
+\begin_layout Standard
+Тогда общее решение системы 1 имеет вид:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y(x)=Y(x)c+\oiu{x_{0}}xC(c,s)f(s)ds\label{eq:ln6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $c$
+\end_inset
+
+ --- вектор с произвольными постоянными компонентами.
+\end_layout
+
+\begin_layout Section
+Линейные дифференциальные уравнения n-го порядка.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнения вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d^{n}y}{dx^{n}}=a_{n-1}(x)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{n-1}(x)\df{d^{n}y}{dx^{n}}+a_{0}(x)y+f(x)\label{eq:ldn1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+если 
+\begin_inset Formula $f(x)\equiv0$
+\end_inset
+
+, то уравнение назыв линейным однородным, иначе неоднородным.
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+Введем обозначения 
+\begin_inset Formula $Y(x)=\left(\begin{array}{c}
+y_{0}(x)\\
+\tr\\
+y_{n-1}(x)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x)=\left(\begin{array}{c}
+0\\
+\tr\\
+0\\
+f(x)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A(x)=\left(\begin{array}{c}
+\\
+\\
+\\
+\end{array}\right)$
 \end_inset
 
 
