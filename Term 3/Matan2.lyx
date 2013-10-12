@@ -13863,6 +13863,824 @@ status open
 
 \end_layout
 
+\begin_layout Example
+
+\emph on
+(1) 
+\emph default
+Перейти к полярным координатам в интеграле:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy,\ Di\varphi=\df{\pi}6,\ \varphi=\df{\pi}4,\ r=2ir=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+В полярных координатах область 
+\begin_inset Formula $D$
+\end_inset
+
+ превращается в область 
+\begin_inset Formula $D'$
+\end_inset
+
+ : 
+\begin_inset Formula $\varphi\in\left[\df{\pi}6,\df{\pi}4\right],\ r\in\left[2,3\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $D'$
+\end_inset
+
+ - прямоугольник.
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 14
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $I=\oui{\df{\pi}6}{\df{\pi}4}d\varphi\oui 23f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2) 
+\emph default
+Вычислить двойной интеграл: 
+\begin_inset Formula $I=\un{\dint}Dx\um dx\um dy,\ D:\left\{ x^{2}+y^{2}-2\um x=0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\dd D\ :\ x^{2}+y^{2}-2\um x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(x-1\right)^{2}+y^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 15
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=r\um\cos\varphi\\
+y=r\um\sin\varphi
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+на 
+\begin_inset Formula $\dd D\ :\ r^{2}-2\um\cos\varphi\um r=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $r\um\left(r-2\um\cos\varphi\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left[\begin{array}{c}
+r_{1}=0\\
+r_{2}=2\um\cos\varphi
+\end{array}\right.\ D':\ \varphi\in\left[-\df{\pi}2;\df{\pi}2\right],\ r\in$
+\end_inset
+
+
+\begin_inset Formula $\left[0;2\um\cos\varphi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 16
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $I=\oui{-\df{\pi}2}{\df{\pi}2}d\varphi\oui 0{2\um\cos\varphi}r\um\cos\varphi\um r\um dr=\oui{-\df{\pi}2}{\df{\pi}2}\left(\df{r^{3}}3\um\cos\varphi\right)|_{0}^{2\cos\varphi}d\varphi=\df 83\oui{-\df{\pi}2}{\df{\pi}2}\cos^{4}\varphi\um d\varphi=\tr=2\um\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Замена переменных в двойном интеграле
+\end_layout
+
+\begin_layout Standard
+Пусть функции 
+\begin_inset Formula $\begin{cases}
+x=x\left(u,v\right)\\
+y=y\left(u,v\right)
+\end{cases}$
+\end_inset
+
+ взаимно однозначно отобдражают область 
+\begin_inset Formula $\left(u,v\right)\in D'$
+\end_inset
+
+ в область 
+\begin_inset Formula $\left(x,y\right)\in D$
+\end_inset
+
+, дифференцируемы на 
+\begin_inset Formula $D'$
+\end_inset
+
+ и 
+\begin_inset Formula $\dd D'\longleftrightarrow\dd D$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 17+18
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{p_{1}',p_{2}',p_{3}',p_{4}'}=\D S'=\D u\um\D v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D S=S_{p_{1}p_{2}p_{3}p_{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{1}\left(x_{1},y_{1}\right),\ x_{1}=x\left(u,v\right),\ y_{1}=y\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{2}\left(x_{2},y_{2}\right),\ x_{2}=x\left(u+\D u,v\right),\ y_{2}=y\left(u+\D u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{3}\left(x_{3},y_{3}\right),\ x_{3}=x\left(u+\D u,v+\D v\right),\ y_{3}=y\left(u+\D u,v+\D v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{4}\left(x_{4},y_{4}\right),\ x_{4}=x\left(u,v+\D v\right),y_{4}=y\left(u,v+\D v\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Будем считать 
+\begin_inset Formula $\D u$
+\end_inset
+
+ и 
+\begin_inset Formula $\D v$
+\end_inset
+
+ достаточно малыми, а линии 
+\begin_inset Formula $p_{1}p_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{3}p_{4}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{1}p_{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{2}p_{3}$
+\end_inset
+
+ - попарно паралельны.
+ Заменяем приращение диференцируемых функций диференциалом, отбрасываем
+ бесконечно малые высших порядков, относительно
+\begin_inset Formula $\D u$
+\end_inset
+
+ и 
+\begin_inset Formula $\D v$
+\end_inset
+
+, получим 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{1}=x\left(u,v\right),\ y_{1}=y\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{2}=x\left(u+\D u,v\right)=x\left(u,v\right)+\df{\dd x\left(u,v\right)}{\dd u}\um\D u$
+\end_inset
+
+ - часный дифференциаль в точкее 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ по переменной 
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{2}=y\left(u,v\right)+\df{\dd y\left(u,v\right)}{\dd u}\um\D u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{3}=x\left(u,v\right)+\df{\dd x}{\dd u}\um\D u+\df{\dd x}{\dd v}\um\D v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{3}=y\left(u,v\right)+\df{\dd y}{\dd u}\um\D u+\df{\dd y}{\dd v}\um\D v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{4}=x\left(u,v\right)+\df{\dd x}{\dd v}\um\D v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{4}=y\left(u,v\right)+\df{\dd y}{\dd v}\um\D v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Площадь парелелограмма равна 
+\begin_inset Formula 
+\begin{eqnarray*}
+2S_{\D p_{1}p_{2}p_{3}} & = & 2\um\df 12\left|\left|\begin{array}{cc}
+x_{3}-x_{1} & x_{3}-x_{2}\\
+y_{3}-y_{1} & y_{3}-y_{2}
+\end{array}\right|\right|=\\
+ & = & \left|\left(x_{3}-x_{1}\right)\um\left(y_{3}-y_{2}\right)-\left(x_{3}-x_{2}\right)\left(y_{3}-y_{2}\right)\right|=\\
+ & = & \left|\left(\df{\dd x}{\dd u}\D u+\df{\dd x}{\dd v}\D v\right)\df{\dd y}{\dd v}\D v-\df{\dd x}{\dd v}\D v\left(\df{\dd y}{\dd u}\D u+\df{\dd y}{\dd v}\D v\right)\right|=\\
+ & = & \left|\df{\dd x}{\dd u}\df{\dd y}{\dd v}-\df{\dd x}{\dd v}\df{\dd y}{\dd u}\right|\D u\D v=\\
+ & = & \left|\begin{array}{cc}
+\df{\dd x}{\dd u} & \df{\dd x}{\dd v}\\
+\df{\dd y}{\dd u} & \df{\dd y}{\dd v}
+\end{array}\right|\D v\D u
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Величина 
+\begin_inset Formula $\left|I\right|=\left|\left|\begin{array}{cc}
+\df{\dd x}{\dd u} & \df{\dd x}{\dd v}\\
+\df{\dd y}{\dd u} & \df{\dd y}{\dd v}
+\end{array}\right|\right|$
+\end_inset
+
+ - определитель Якоби.
+ 
+\begin_inset Formula $\df{\dd\left(x,y\right)}{\dd\left(u,v\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\D S\approx\left|I\right|\um\D S'$
+\end_inset
+
+ , 
+\begin_inset Formula $\left|I\right|$
+\end_inset
+
+ - коофицент растяжения или сжатия малых прощадей при переходе от координат
+ 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ к координатам 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+(
+\begin_inset Formula $\D S'$
+\end_inset
+
+ к 
+\begin_inset Formula $\D S$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Так как при 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ul{\begin{array}{c}
+n\st\b\\
+\lambda\st0
+\end{array}}\df{\D S}{\D S'}=\left|I\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy$
+\end_inset
+
+ преобразуется в другой инттеграл 
+\begin_inset Formula $\un{\dint}{D'}f\left(x\left(u,v\right),y\left(u,v\right)\right)\um\left|I\right|\um du\um dv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\un{\dint}{D'}f_{1}\left(u,v\right)\um\left|I\right|\um du\um dv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(1) 
+\emph default
+Переход к полярным координатам:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=r\um\cos\varphi\\
+y=r\um\sin\varphi
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|I\right|=\left|\left|\begin{array}{cc}
+x_{r}' & x_{\varphi}'\\
+y_{r}' & y_{\varphi}'
+\end{array}\right|\right|=\left|\begin{array}{cc}
+\cos\varphi & -r\cos\varphi\\
+\sin\varphi & r\cos\varphi
+\end{array}\right|=r\cos^{2}\varphi+r\sin^{2}\varphi=r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Тоесть 
+\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy=\un{\dint}{D'}f_{1}\left(x,y\right)\um r\um dr\um d\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+(2)
+\emph default
+ Вычислить интеграл 
+\begin_inset Formula $J=\un{\dint}D\left(x+y\right)dxdy$
+\end_inset
+
+, где 
+\begin_inset Formula $D:\left\{ xy=a;\ xy=b;\ y=x;\ y=x-c;\ c>0,\ 0<a<b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 18
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Введем новые координаты:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u=xy;\ v=y-x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рис 19
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x=\df uy$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $v=y-\df uy$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $y^{2}-vy-u=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $y_{1,2}=\df{v\pm\sqrt{v^{2}+4u}}2=$
+\end_inset
+
+{
+\begin_inset Formula $u>0,\ y>0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $+$
+\end_inset
+
+}
+\begin_inset Formula $=\df{v+\sqrt{v^{2}-4u}}2=y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=\df{2u}{v+\sqrt{v^{2}-4u}}=\df{2u\left(v-\sqrt{v^{2}+4u}\right)}{v^{2}-v^{2}-4u}=\df{\sqrt{v^{2}+4u}-v}2=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \left|\begin{array}{cc}
+x_{u}' & x_{v}'\\
+y_{u}' & y_{v}'
+\end{array}\right|=\df 14\left|\begin{array}{cc}
+\df 4{2\sqrt{v^{2}+4u}} & \df{2v-1}{2\sqrt{v^{2}+4u}}\\
+\df 4{2\sqrt{v^{2}+4u}} & 1+\df{2v}{2\sqrt{v^{2}+4u}}
+\end{array}\right|=\\
+ & = & \df 14\df 2{\sqrt{v^{2}+4u}}\left(1+\df v{\sqrt{v^{2}+4u}}-\df v{\sqrt{v^{2}+4u}}+1\right)=\df 1{\sqrt{v^{2}+4u}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $J=\oui{-c}0dv\oui ab\sqrt{v^{2}+4u}\um\df 1{\sqrt{v^{2}+4u}}du=\oui{-c}0u|_{a}^{b}dv=\left(b-a\right)c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Приложения двойного интеграла
+\end_layout
+
+\begin_layout Paragraph
+Вычисление площадей плоских фигур
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 19
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как площадь фигуры 
+\begin_inset Formula $D\vkl E^{2}$
+\end_inset
+
+ чимленно равно обьему цилиндра с основанием 
+\begin_inset Formula $D$
+\end_inset
+
+, высота 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{D}=\un{\dint}D1dxdy=\un{\dint}Ddxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Механические приложения
+\end_layout
+
+\begin_layout Standard
+Если дана материальная пластина, заполняющая область 
+\begin_inset Formula $D$
+\end_inset
+
+ и на ней распределена плотность масс 
+\begin_inset Formula $\rho=\rho\left(x,y\right)$
+\end_inset
+
+, то разбивая область 
+\begin_inset Formula $D$
+\end_inset
+
+ линиями 
+\begin_inset Formula $x=x_{i},\ y=y_{j}$
+\end_inset
+
+ выбирая в полученных ячейках разбиения 
+\begin_inset Formula $D_{i,j}$
+\end_inset
+
+ произвольные точки 
+\begin_inset Formula $M_{i,j}\left(\xi_{i},\eta_{j}\right)$
+\end_inset
+
+, считая плотность 
+\begin_inset Formula $\rho$
+\end_inset
+
+ на ячейке 
+\begin_inset Formula $D_{i,j}$
+\end_inset
+
+ постоянной, равной 
+\begin_inset Formula $\rho\left(M_{i,j}\right)$
+\end_inset
+
+ и устремляя 
+\begin_inset Formula $\lambda=\max\ diam\ D_{i,j}\st0$
+\end_inset
+
+, то в пределе получим 
+\begin_inset Formula $M_{D}=\un{\dint}D\rho\left(x,y\right)dxdy=\ul{\lambda\st0}\ous{i=0}{n-1}\ous{j=0}{l-1}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}$
+\end_inset
+
+ в предположением, что 
+\begin_inset Formula $\rho\left(x,y\right)\in C\left(D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Аналогично определяются статические моменты относительно осей координат
+ 
+\begin_inset Formula $k_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y_{j}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy\rho\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{y}=\un{\dint}Dx\rho\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Моменты инерции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y^{2}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy^{2}\rho\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{y}=\un{\dint}Dx^{2}\rho\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{0}=I_{x}+I_{y}=\un{\dint}D\left(x^{2}+y^{2}\right)\rho\left(x,y\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Координаты центра масс
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{c}=\df{k_{y}}M=\df{\un{\dint}Dx\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{c}=\df{k_{x}}M=\df{\un{\dint}Dy\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
