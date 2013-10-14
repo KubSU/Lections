@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="рисунок2.svg">
+   sodipodi:docname="img26.svg">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -30,8 +30,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0286408"
-     inkscape:cx="317.88423"
-     inkscape:cy="270.02483"
+     inkscape:cx="325.77128"
+     inkscape:cy="350.86714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,14 +95,14 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="447.59033"
-       y="934.05634"
+       x="455.97034"
+       y="933.56342"
        id="text3065"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3067"
-         x="447.59033"
-         y="934.05634">x</tspan></text>
+         x="455.97034"
+         y="933.56342">x</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
