@@ -3539,5 +3539,1070 @@ mov z, al
  CBW
 \end_layout
 
+\begin_layout Standard
+Пусть требуеться выполнить:
+\end_layout
+
+\begin_layout LyX-Code
+ax:=ax+bl; 
+\end_layout
+
+\begin_layout LyX-Code
+add ax, bl
+\end_layout
+
+\begin_layout Standard
+В этой ситуации bl необходимо расширить до bx.
+ Если число трактуеть как беззнаковое : bl 20h -> bx 0020h.
+ Для чисел со знаком, нужно учитывать знак числа, если число отрицательное,
+ то левый байт нужно заполнять FF, то есть FF20h.
+ Можно сказать, что расширение со знаком, заключаеться в дублировании слева
+ знакового вида.
+ Команда CBW всегда выбирает al, результат записывает в ax.
+ Флаги не изменяються.
+\end_layout
+
+\begin_layout Section
+Переходы, циклы
+\end_layout
+
+\begin_layout Subsection
+Безусловный переход.
+ JMP
+\end_layout
+
+\begin_layout Standard
+Процессор выполняет команды машинной программы в том порядке, как они записаны
+ в памяти.
+ Выполнение любой команды начинаеться с того, что содержимое регистра IP
+ увеличиваеться на длину текущей команды.
+ И таким образом в регистре адресов команд, будет адресс следующей команды.
+ Если команда во время своего выполнения изменяет содержимое IP, то в результате
+ за данной командой необязательно будет выполнять следуюшая.
+ Такие команды называються команды перехода или команды передачи управления.
+ Команда перехода не изменяет регистор флагов.
+ Смотри пример в мануале.
+\end_layout
+
+\begin_layout Standard
+.......
+\end_layout
+
+\begin_layout Standard
+Встречая символьную команду перехода с меткой, ассемблер вычесляет разность
+ между адресом этой метки и адресом самой команды.
+ Если она не большая и помещаеться в байт, то ассемблер формирует команды
+ короткого перехода, которая занимает дав байта.
+ Если разность большая, то формируеться длинный переход знамающий 3 байта.
+ Однако такой переход ассемблер может сделать, если метка была описанна
+ до команды перехода, то есть если эта метка являеться ссылкой назад.
+ В случае, когда в переходе указана метка 
+\begin_inset Quotes eld
+\end_inset
+
+вперед
+\begin_inset Quotes erd
+\end_inset
+
+ то ассемблер не может знать какой сдесь переход, короткий или длинный и
+ поэтому на всякий случай формирует команду длинного перехода.
+ В ассемблера есть специальный оператор short.
+ Если указан оператор short но при этом ошиблись, компилятор нам скажет.
+ 
+\end_layout
+
+\begin_layout Subsection
+Косвенный переход.
+ 
+\end_layout
+
+\begin_layout Standard
+Это означает, что в команде перехода, указываеться не сам адресс перехода,
+ а то место где находиться адресс.
+ Это может быть регистр общего назначения или слово памяти.
+ Если jmp ax, это всегда трактуеться как косвенный переход.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+a dw l
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+jmp a; goto l
+\end_layout
+
+\begin_layout LyX-Code
+mov dx, a
+\end_layout
+
+\begin_layout LyX-Code
+jmp dx; goto l
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+l: .
+\end_layout
+
+\begin_layout Standard
+z-некоторое имя
+\end_layout
+
+\begin_layout LyX-Code
+jmp z
+\end_layout
+
+\begin_layout Standard
+если z-имя метка то проблем нет.
+ В случае, когда z ccлыка вперед, то есть это имя описываеться позже, то
+ ассемблер не будет знать какой это переход.
+ И поэтому формируеться команда прямого
+\backslash
+длинного перехода, если вдруг обнаруживаеться что z не метка, то фиксируеться
+ ошибка.
+ И чтобы ассемблер думаел что это слово нужно, Jmp word ptr z.
+ 
+\end_layout
+
+\begin_layout Section
+Команды сравнения и условного перехода.
+\end_layout
+
+\begin_layout Standard
+Условный переход обычно реализуеться в два шага.
+ Сначала сравниваються две велечины, в результаты чего соответсвуюшим образом
+ формируються флаги и затем выполняеться собственно переход в зависимости
+ от значения флагов.
+ Команда сравнения cmp анологична sub.
+ Но результат вычитания никуда не помещаеться, поэтому единственный и главный
+ эффект команды сравнения - это установка флагов, характеризующих разность.
+ Команд условного перехода много и все они записываються единообразно:
+\end_layout
+
+\begin_layout LyX-Code
+J* <label>
+\end_layout
+
+\begin_layout Standard
+Все команды условного перехода можно разедлить на три группы
+\end_layout
+
+\begin_layout Enumerate
+Входят команды, которые ставяться после команд сравнения
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В их мнемокодов с помощью опредленных букв описываеться исход сравнения
+ 
+\end_layout
+
+\begin_layout Itemize
+E-equal
+\end_layout
+
+\begin_layout Itemize
+N-not
+\end_layout
+
+\begin_layout Itemize
+G-greater
+\end_layout
+
+\begin_layout Itemize
+L-less
+\end_layout
+
+\begin_layout Itemize
+A-above
+\end_layout
+
+\begin_layout Itemize
+B-below
+\end_layout
+
+\begin_layout Standard
+Две системы обазначений для условий больше, меньше объясняються тем, что
+ после сравнения чисел со знаком и без знака, следует реагировать на разные
+ значения флагов.
+ JL передает только в том случае, когда SF!=OF.
+ Если сравниваваемые числа тратуютьяс как знаковые, то возможны две комбинации
+ флагов соответствующих условию: ор1<op2(op1-op2<0).
+\end_layout
+
+\begin_layout Itemize
+OF = 0, SF = 1
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если при вычитании не было переполнения, то SF фиксирует настоящий знак
+ разности и поэтому.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+OF = 1, SF = 0 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если произошло переполнение, то результатом будет противоположное значение,
+ чем у настоящей разности.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Допускается сочетание этих букв.
+\end_layout
+
+\begin_layout Standard
+Приведем названия всех комманд условного перехода.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+all
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1=op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ZF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JNE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1\neq op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ZF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+signed
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JL/JNGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1<op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF!=OF
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JLE/JMG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1\leq op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF!=OF or ZF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JG/JNLE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1>op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF=OF and ZF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JGE/JNL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1\geq op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF=OF
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+unsigned
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JB/JNAE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1<op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JBE/JNA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1\leq op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF=1 or ZF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JA/JNBE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1>op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF=0 and ZF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JAE/JNB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $op1\geq op2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Содержит те команды, которые реагируют на значения определенного флага.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JZ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ZF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JNZ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ZF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JNS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JNC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JNO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PF=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JNP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PF=0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+JCXZ <label>
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+if cx=0 then goto <label>
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Отметим общю особенность команд условного перехода: все они осуществляют
+ только короткий переход, то есть с их помощью можно передать управление
+ не более чем на 128 байтов вперед или назад.
+ Это примерно 30-40 команд.
+ Для реализации длинных условных переходов вынуждены привлекать команду
+ длинного безусловного перехода.
+ При далекой метки M, тогда:
+\end_layout
+
+\begin_layout LyX-Code
+if ax==bx then goto M
+\end_layout
+
+\begin_layout LyX-Code
+//делаем так
+\end_layout
+
+\begin_layout LyX-Code
+if ax<>bx then goto L
+\end_layout
+
+\begin_layout LyX-Code
+goto M
+\end_layout
+
+\begin_layout LyX-Code
+L:...
+\end_layout
+
+\begin_layout LyX-Code
+M:....
+\end_layout
+
+\begin_layout Standard
+Отметим, что в командах условного перехода оператор short использовать не
+ нужно.
+ 
+\end_layout
+
+\begin_layout Standard
+Пример: Вводиться некотрая последовательность чиселя, признак завершения
+ ввода 0.
+ Сколько чисел кратно 3.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+DATA SEGMENT 
+\end_layout
+
+\begin_layout LyX-Code
+	
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+a 			dw ?; simbol 	
+\end_layout
+
+\begin_layout LyX-Code
+k 			dw 0; kol 	
+\end_layout
+
+\begin_layout LyX-Code
+mod 		  db 5 	
+\end_layout
+
+\begin_layout LyX-Code
+messOut	   db  "Kol-vo %$" 	
+\end_layout
+
+\begin_layout LyX-Code
+messOut2	  db " = $"
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+DATA ENDS
+\end_layout
+
+\begin_layout LyX-Code
+Ваш код ==============================
+\end_layout
+
+\begin_layout LyX-Code
+l1:	
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inint a 	
+\end_layout
+
+\begin_layout LyX-Code
+cmp a, 0 		
+\end_layout
+
+\begin_layout LyX-Code
+je exit2 	
+\end_layout
+
+\begin_layout LyX-Code
+jg l3 	
+\end_layout
+
+\begin_layout LyX-Code
+neg a
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+l3:	
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov ax, a 	
+\end_layout
+
+\begin_layout LyX-Code
+div mod 	
+\end_layout
+
+\begin_layout LyX-Code
+cmp ah, 0 	
+\end_layout
+
+\begin_layout LyX-Code
+jne l2 	
+\end_layout
+
+\begin_layout LyX-Code
+inc k
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+l2: 	
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+jmp l1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+exit2: 	
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+lea dx, messOut 	
+\end_layout
+
+\begin_layout LyX-Code
+outstr 	
+\end_layout
+
+\begin_layout LyX-Code
+mov ah, 0 	
+\end_layout
+
+\begin_layout LyX-Code
+mov al, mod
+\end_layout
+
+\begin_layout LyX-Code
+outint ax 	
+\end_layout
+
+\begin_layout LyX-Code
+lea dx, messOut2 	
+\end_layout
+
+\begin_layout LyX-Code
+outstr 	
+\end_layout
+
+\begin_layout LyX-Code
+outint k 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Команды управления цикла
+\end_layout
+
 \end_body
 \end_document
