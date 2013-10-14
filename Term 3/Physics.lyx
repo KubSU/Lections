@@ -5057,10 +5057,639 @@ reference "eq:B"
 импульса
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\vec J_{i}=m_{i}\vec v_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Формулировка: 
+\emph default
+Импульс замкнутой систтемы материальных точек сохраняется.
+\end_layout
+
+\begin_layout Remark
+Внутренние силы могут быть непотенцильны.
+\end_layout
+
+\begin_layout Standard
+Уравнение движения замкнутой механической системы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m_{i}\dot{\vec{v_{i}}}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}},\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m_{i}\df{d\vec{v_{i}}}{dt}=\df{d\left(m_{i}\vec{v_{i}}\right)}{dt}=\df{d\vec{J_{i}}}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{J_{i}}}{dt}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}},\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}n\df{d\vec{J_{i}}}{dt}=\ous{i=1}n\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}},\ i=\overline{1,n}$
+\end_inset
+
+ - просумируем все уравнения системы.
+\end_layout
+
+\begin_layout Standard
+Поменяем порядок дифференцирования и сумммирования.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec J=\ous{i=1}n\vec{J_{i}}$
+\end_inset
+
+ - общий импульс системы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\ous{i=1}n\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}} & = & \vec{F_{1,1}}+\vec{F_{1,2}}+\vec{F_{1,3}}+\tr+\vec{F_{1,n}}+\\
+ & + & \vec{F_{2,1}}+\vec{F_{2,2}}+\vec{F_{2,3}}+\tr+\vec{F_{2,n}}+\\
+ & + & \tr+\\
+ & + & \vec{F_{n,1}}+\vec{F_{n,2}}+\vec{F_{n,3}}+\tr+\vec{F_{n,n}}=\\
+ & = & \left(\vec{F_{1,2}}+\vec{F_{2,1}}\right)+\tr+\left(\vec{F_{i,j}}+\vec{F_{j,i}}\right)+\tr+\left(\vec{F_{n,n-1}}+\vec{F_{n-1,n}}\right)=\\
+ & = & \left\{ \text{по закону Ньютона}\right\} =\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec J=\vec{J_{0}}$
+\end_inset
+
+ - постоянный вектор
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Импульс незамкнутой системы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m_{i}\dot{\vec{v_{i}}}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}}+\vec{F_{i}}^{\left(e\right)},\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{J_{i}}}{dt}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}}+\vec{F_{i}}^{\left(e\right)},\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}n\df{d\vec{J_{i}}}{dt}=\ous{i=1}n\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}}+\ous{i=1}n\vec{F_{i}}^{\left(e\right)},\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec J}{dt}=\vec K,\ \vec K=\ous{i=1}n\vec{F_{i}}^{\left(e\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Вектор 
+\begin_inset Formula $K$
+\end_inset
+
+ - главный вектор внешних сил.
+\end_layout
+
+\begin_layout Standard
+Главный вектор системы не равнодействующий, потомучто силы приложены к разным
+ точкам.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Закон сохранения 
 \emph on
 момента импульса
+\end_layout
+
+\begin_layout Theorem
+(О движении центра масс)
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec J=\ous{i=1}nm_{i}\vec{v_{i}}$
+\end_inset
+
+ - Эт задано в неподвижной системе отсчета 
+\begin_inset Formula $K$
+\end_inset
+
+, с центром в точке 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Давайте перейдем к какой нить другой системе отсчета 
+\begin_inset Formula $K'$
+\end_inset
+
+, с центром в точке 
+\begin_inset Formula $O'$
+\end_inset
+
+.
+ Так как обе системы отсчета инерциальны, то система 
+\begin_inset Formula $K'$
+\end_inset
+
+ должна двигаться поступательно, относительно системы 
+\begin_inset Formula $K$
+\end_inset
+
+, причем без ускорения.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec{r_{i}}=\vec{r_{i}}'+\vec{r_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec{v_{i}}=v_{i}'+\vec{v_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec{v_{0}}$
+\end_inset
+
+ - постоянный вектор, так как 
+\begin_inset Formula $K,K'$
+\end_inset
+
+ - инерциальны.
+\end_layout
+
+\begin_layout Theorem
+Перейдем от 
+\begin_inset Formula $K$
+\end_inset
+
+ к 
+\begin_inset Formula $K'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec J=\ous{i=1}nm_{i}\left(\vec{v_{i}}'+\vec{v_{0}}\right)=\ous{i=1}nm_{i}\vec{v_{i}}'+\vec{v_{0}}\ous{i=1}nm_{i}=\vec J'+\vec{v_{0}}\um M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\ous{i=1}nm_{i}=M$
+\end_inset
+
+ - масса всей системы.
+\end_layout
+
+\begin_layout Theorem
+Имеется такая система, в которой 
+\begin_inset Formula $\vec J'=0$
+\end_inset
+
+.
+ Такая система называется системой центра масс 
+\begin_inset Formula $K_{C}'$
+\end_inset
+
+, а центр этой системы - точку 
+\begin_inset Formula $C$
+\end_inset
+
+ - центром масс системы материальных точек.
+\end_layout
+
+\begin_layout Theorem
+В этом случае 
+\begin_inset Formula $\vec J=M\um\vec{v_{c}}$
+\end_inset
+
+, где 
+\begin_inset Formula $\vec{v_{c}}$
+\end_inset
+
+ - скорость центра масс механической системы.
+ Оно преобретает смысл поступательного движения.
+ Скорость центра массс в этом случае выспупает как скорость движения механическо
+й системы, как единогог целого.
+\end_layout
+
+\begin_layout Theorem
+Как найти центр масс?
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec{v_{C}}=\df{\vec J}M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\df{d\vec{r_{c}}}{dt}=\df{\ous{i=1}nm_{i}\df{d\vec{r_{i}}}{dt}}{\ous{i=1}nm_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\df d{dt}\left(\vec{r_{c}}\right)=\df d{dt}\left(\df{\ous{i=1}nm_{i}\df{d\vec{r_{i}}}{dt}}{\ous{i=1}nm_{i}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\vec{r_{c}}=\df{\ous{i=1}nm_{i}\df{d\vec{r_{i}}}{dt}}{\ous{i=1}nm_{i}}+\vec{const}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если мы рассмотрим системы центра масс (системы в начале координат, совпожающим
+ с центром масс), то 
+\begin_inset Formula $\vec{const}=\vec 0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $x_{c}=\df{\ous{i=1}nm_{i}\df{dx_{i}}{dt}}{\ous{i=1}nm_{i}},\ y_{c}=\df{\ous{i=1}nm_{i}\df{dy_{i}}{dt}}{\ous{i=1}nm_{i}},\ z_{c}=\df{\ous{i=1}nm_{i}\df{dz_{i}}{dt}}{\ous{i=1}nm_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Лирическое отступление: 
+\begin_inset Formula $x_{c}=\df{\int x\um\rho\left(x\right)\um dx}{\int\rho\left(x\right)\um dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\df{d\vec J}{dt}=\vec K$
+\end_inset
+
+ - переведем его в системы уентра масс.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $M\df{d\vec{v_{c}}}{dt}=\vec K$
+\end_inset
+
+ - это запись представляет собой теоремы о двиижегнии центра масс.
+\end_layout
+
+\begin_layout Theorem
+Центры масс механической системы движетося как некоторая фиктивная материальная
+ точка, в которой сосредоточена вся масса системы и к которой приложены
+ все внешние силы.
+ 
+\end_layout
+
+\begin_layout Theorem
+Чем эта формул хороша? Мы можем исключить поступательное движение системы.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Theorem
+(Кёнига)
+\end_layout
+
+\begin_layout Theorem
+Попробуем посчитать кинетическую энергию при переходе от 1ной стсемы координат
+ к другой.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\begin{eqnarray*}
+T & = & \ous{i=1}n\df{m_{i}\vec{v_{i}^{2}}}2=\ous{i=1}n\df{m_{i}\left(\vec{v_{i}}'+\vec{v_{c}}\right)^{2}}2=\\
+ & = & \ous{i=1}n\df{m_{i}\left(\vec{v_{i}}'\right)^{2}}2+\ous{i=1}nm_{i}\left(\vec{v_{i}}'\um\vec{v_{c}}\right)+\df{v_{c}^{2}}2\ous{i=1}nm_{i}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\ous{i=1}n\df{m_{i}\left(\vec{v_{i}}'\right)^{2}}2=T_{c}'$
+\end_inset
+
+ - кинетическая энергия относительно центра масс.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\ous{i=1}nm_{i}\left(\vec{v_{i}}'\um\vec{v_{c}}\right)=\left(\vec{v_{c}},\ous{i=1}nm_{i}\vec{v_{i}}'\right)=0$
+\end_inset
+
+ так как 
+\begin_inset Formula $\ous{i=1}nm_{i}\vec{v_{i}}'=0$
+\end_inset
+
+ как центр системы центра масс.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $T=T_{c}'+\df{Mv_{c}^{2}}2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+Кинетическую энергию механической системы можно представить в виде 2х слогаемых:
+ механической энергии ее поступательного движения (как единого целого, 
+\begin_inset Formula $\df{Mv_{c}^{2}}2$
+\end_inset
+
+) и кинетической энергии движения частриц системы относительно ее центра
+ масс (
+\begin_inset Formula $T_{c}'$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Закон сохранения 
+\emph on
+момента импульса
+\end_layout
+
+\begin_layout Standard
+Момент импульса 
+\emph on
+замкнутой
+\emph default
+ механической системы сохраняются.
+\end_layout
+
+\begin_layout Remark
+Внутренние силы могут быть не потенцильны.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mom_{0}\vec a=\vec r\x\vec a=\left[\vec r,\vec a\right]$
+\end_inset
+
+ - Вектор соеденяющий точеку О с точкой приложения вектора 
+\begin_inset Formula $\vec a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec M=\vec r\x\vec J$
+\end_inset
+
+ - момент импульса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec M=m\left(\vec r\x\vec v\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Мы берем уравнения двидения замкнутой механической системы точек.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m_{i}\df{dv_{i}}{dt}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{F_{i,j}},\ i=\overline{1,n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Внесем массу под зна дифференциала и умножим слева на радиус вектор.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r_{i}}\x\df{d\left(m_{i}\vec{v_{i}}\right)}{dt}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{r_{i}}\x\vec{F_{i,j}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\vec{r_{i}}\x\vec{J_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\df{d\vec{M_{i}}}{dt}=\df d{dt}\left(\vec{r_{i}}\x\vec{J_{i}}\right)=\df{d\vec{r_{i}}}{dt}\x\vec{J_{i}}+\vec{r_{i}}\x\df{d\vec{J_{i}}}{dt}=\left\{ \df{d\vec{r_{i}}}{dt}\x\vec{J_{i}}=\vec{v_{i}}\x m_{i}\vec{v_{i}}=0\right\} =\vec{r_{i}}\x\df{d\vec{J_{i}}}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec{M_{i}}}{dt}=\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{r_{i}}\x\vec{F_{i,j}},\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r_{i}}\x\vec{F_{i,j}}$
+\end_inset
+
+ - момент силы
+\end_layout
+
+\begin_layout Standard
+Складываем по всем 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}n\df{dM_{i}}{dt}=\ous{i=1}n\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{r_{i}}\x\vec{F_{i,j}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}n\ous{\begin{array}{c}
+j=1\\
+j\nr i
+\end{array}}n\vec{r_{i}}\x\vec{F_{i,j}}=\left(\vec{r_{1}}\x\vec{F_{1,2}}+\vec{r_{2}}\x\vec{F_{2,1}}\right)+\tr+\left(\vec{r_{i}}\x\vec{F_{i,j}}+\vec{r_{j}}\x\vec{F_{j,i}}\right)+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Таких пар будет 
+\begin_inset Formula $\df{n\um\left(n-1\right)}2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 3.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r_{i}}\x\vec{F_{i,j}}+\vec{r_{j}}\x\vec{F_{j,i}}=\vec{r_{i}}\x\vec{F_{i,j}}-\vec{r_{j}}\x\vec{F_{i,j}}=\left(\vec{r_{i}}-\vec{r_{j}}\right)\x\vec{F_{i,j}}=0$
+\end_inset
+
+ так как 
+\begin_inset Formula $\left(\vec{r_{i}}-\vec{r_{j}}\right)\parallel\vec{F_{i,j}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом 
+\begin_inset Formula $\df d{dt}\vec M=0$
+\end_inset
+
+, где 
+\begin_inset Formula $\vec M=\ous{i=1}n\vec{M_{i}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec M=\vec{M_{0}}$
+\end_inset
+
+ - постоянный вектор.
 \end_layout
 
 \begin_layout Part
