@@ -29,16 +29,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.97640185"
-     inkscape:cx="115.83454"
-     inkscape:cy="151.80033"
+     inkscape:zoom="2.7616815"
+     inkscape:cx="127.64196"
+     inkscape:cy="128.42718"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-smooth-nodes="true"
+     inkscape:object-nodes="false"
+     inkscape:snap-smooth-nodes="false"
      inkscape:window-width="1317"
      inkscape:window-height="744"
      inkscape:window-x="49"
@@ -174,8 +174,8 @@
        x="-282.60989"
        y="676.13818"
        transform="matrix(0.62400035,-0.78142406,0.78142406,0.62400035,0,0)"><tspan
-   id="tspan8929"
-   style="font-size:18px">линия выхода</tspan></text>
+         id="tspan8929"
+         style="font-size:18px">линия выхода</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 411.87277,597.90946 0,57.53457"
@@ -215,5 +215,12 @@
          id="tspan5175"
          x="269.35632"
          y="352.8551">y</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 143.86367,278.7732 4.25401,-12.18412 3.97134,12.18412"
+       id="path3010"
+       inkscape:connector-curvature="0"
+       transform="translate(263.97881,330.9801)"
+       sodipodi:nodetypes="ccc" />
   </g>
 </svg>

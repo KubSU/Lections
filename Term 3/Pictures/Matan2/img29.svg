@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="316.12448"
-   height="361.22101"
+   height="270.56931"
    id="svg6804"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -31,7 +31,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.0143204"
      inkscape:cx="203.49681"
-     inkscape:cy="143.6432"
+     inkscape:cy="139.74911"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,16 +69,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-236.4219,-290.34465)">
+     transform="translate(-236.4219,-377.10225)">
     <g
        id="g3792"
-       transform="translate(73.298219,-289.96784)">
+       transform="translate(73.298219,-203.21024)">
       <path
          transform="translate(0,552.36218)"
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path2997"
-         d="m 200.25774,388.17131 0,-346.147108"
+         d="m 200.25774,295.49842 0,-253.474218"
          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <path
          inkscape:connector-curvature="0"
@@ -166,13 +166,13 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="240.57776"
-       y="312.98215"
+       x="242.54951"
+       y="399.73975"
        id="text4859"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4861"
-         x="240.57776"
-         y="312.98215">y</tspan></text>
+         x="242.54951"
+         y="399.73975">y</tspan></text>
   </g>
 </svg>
