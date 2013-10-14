@@ -12845,24 +12845,9 @@ n\st\b\\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рисунок 2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "5cm"
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
