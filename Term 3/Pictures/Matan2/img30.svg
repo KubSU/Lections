@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="316.52255"
-   height="362.48056"
+   height="281.37057"
    id="svg6905"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -31,7 +31,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.69042038"
      inkscape:cx="131.28437"
-     inkscape:cy="60.540153"
+     inkscape:cy="54.746593"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,9 +39,9 @@
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-intersection-paths="true"
-     inkscape:window-width="1317"
-     inkscape:window-height="744"
-     inkscape:window-x="49"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -64,16 +64,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-281.2148,-343.58682)">
+     transform="translate(-281.2148,-418.90326)">
     <g
        id="g3792"
-       transform="translate(118.39552,-232.82499)">
+       transform="translate(118.39552,-158.95695)">
       <path
          transform="translate(0,552.36218)"
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path2997"
-         d="m 200.25774,385.5302 0,-343.505998"
+         d="m 200.25774,305.86859 0,-263.844388"
          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <path
          inkscape:connector-curvature="0"
@@ -203,13 +203,13 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="286.05759"
-       y="365.46182"
+       x="287.50598"
+       y="440.77826"
        id="text4959"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4961"
-         x="286.05759"
-         y="365.46182">y</tspan></text>
+         x="287.50598"
+         y="440.77826">y</tspan></text>
   </g>
 </svg>
