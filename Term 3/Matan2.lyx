@@ -6295,18 +6295,14 @@ x_{m}=q_{m}\left(t\right)
 placement h
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Pictures/Matan2/PrivateDifferential.svg
+	filename Pictures/Matan2/img13.svg
 	width 6cm
 
 \end_inset
