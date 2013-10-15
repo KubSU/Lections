@@ -13864,12 +13864,12 @@ status open
 
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 Суммирует по 
 \begin_inset Formula $k=\overline{0,m-1}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Proof
@@ -14980,6 +14980,790 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+15 октября 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Тройные интегралы
+\end_layout
+
+\begin_layout Subsubsection
+Задача о вычислении массы тела.
+ Определение тройного интеграла.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $V$
+\end_inset
+
+ - кубируемое тело в 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\rho=\rho\left(\vec M\right)=\rho\left(x,y,z\right)$
+\end_inset
+
+ - плотность распределенной массы на множестве 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 44.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разобьем тело 
+\begin_inset Formula $V$
+\end_inset
+
+ на 
+\begin_inset Formula $n$
+\end_inset
+
+ непересекающихся частей 
+\begin_inset Formula $V=V_{1}\ob\tr\ob V_{n}$
+\end_inset
+
+, выберем произвольно точки 
+\begin_inset Formula $\vec{M_{i}}\left(\xi_{i},\eta_{i},\zeta_{i}\right)\in V_{i}$
+\end_inset
+
+.
+ Предположим что 
+\begin_inset Formula $\rho\left(\vec M\right)\equiv\rho\left(\vec{M_{i}}\right)=const$
+\end_inset
+
+, обозначим 
+\begin_inset Formula $\D V_{i}$
+\end_inset
+
+ - обьем 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+.
+ Тогда масса тела 
+\begin_inset Formula $V$
+\end_inset
+
+ приближенна равна сумме: 
+\begin_inset Formula $M\approx\ous{i=1}nm_{i}=\ous{i=1}n\rho\left(\xi_{i},\eta_{i},\zeta_{i}\right)\um\D V_{i}=\sigma_{n}$
+\end_inset
+
+ - итнтегральная сумма.
+ Если 
+\begin_inset Formula $\lambda=\max diamV_{i}=\umax{M',M''\vkl V_{i}}\rho\left(M',M''\right)\st0$
+\end_inset
+
+ и 
+\begin_inset Formula $n\st0$
+\end_inset
+
+, то в пределен получим значение массы.
+ 
+\end_layout
+
+\begin_layout Definition
+Если при 
+\begin_inset Formula $n\st0,\ \lambda\st0$
+\end_inset
+
+ существует конечный предел последовательности последовательности интегральных
+ сумм 
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i}\eta_{i},\zeta_{i}\right)\um\D V_{i}$
+\end_inset
+
+, не зависящих от способа разбиения, от выбора точек 
+\begin_inset Formula $\vec{M_{i}}$
+\end_inset
+
+, то его называют тройным интегралом от функции 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ по обьему 
+\begin_inset Formula $V$
+\end_inset
+
+, и обозначают 
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}Vf\left(x,y,z\right)dxdydz=\ul{\begin{array}{c}
+n\st0\\
+\lambda\st0
+\end{array}}\ous{i=1}nf\left(\xi_{i},\eta_{i},\zeta_{i}\right)\um\D V_{i}$
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ называется интегрируемой по 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Суммы Дарбу.
+ Необходимое и достаточнное условия существувования тройного интеграла.
+\end_layout
+
+\begin_layout Standard
+Определение сумм Дарбу.
+ 
+\begin_inset Formula $s,S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства сумм Дарбу
+\end_layout
+
+\begin_layout Standard
+Необходимое и достаточнное условия существувования тройного интеграла.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Это дома
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Свойства тройного интеграла.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 1.
+ 
+\emph default
+Если 
+\begin_inset Formula $V=V_{1}\ob V_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $V_{1}\cap V_{2}=\textrm{Ø}$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ интегрируема на 
+\begin_inset Formula $V$
+\end_inset
+
+ 
+\begin_inset Formula $\st$
+\end_inset
+
+ интегрируема на 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V_{1}}f\left(x,y,z\right)dV+\un{\iiint}{V_{1}}f\left(x,y,z\right)dV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 2.
+
+\emph default
+ 
+\begin_inset Formula $\un{\iiint}Vk\um f\left(x,y,z\right)dV=k\um\un{\iiint}Vf\left(x,y,z\right)dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 3.
+
+\emph default
+ Если 
+\begin_inset Formula $f\left(\vec M\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(\vec M\right)$
+\end_inset
+
+ интегрируемы на 
+\begin_inset Formula $V$
+\end_inset
+
+, то тогда 
+\begin_inset Formula $\left(f\left(\vec M\right)\pm g\left(\vec M\right)\right)$
+\end_inset
+
+ также интегрируема на 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\un{\iiint}V\left(f\left(\vec M\right)\pm g\left(\vec M\right)\right)dV=\un{\iiint}Vf\left(\vec M\right)dV\pm\un{\iiint}Vg\left(\vec M\right)dV$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 4.
+ 
+\emph default
+Если 
+\begin_inset Formula $f\left(M\right)\mr g\left(M\right)$
+\end_inset
+
+ н 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+ интегрируемы, то 
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV\mr\un{\iiint}Vg\left(x,y,z\right)dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 5.
+
+\emph default
+ Еслир 
+\begin_inset Formula $f\left(\vec M\right)$
+\end_inset
+
+ интегирруема на 
+\begin_inset Formula $V$
+\end_inset
+
+ то и 
+\begin_inset Formula $\left|f\left(\vec M\right)\right|$
+\end_inset
+
+ - интегрируема на 
+\begin_inset Formula $V$
+\end_inset
+
+, и выполняется неравенство 
+\begin_inset Formula $\left|\un{\iiint}Vf\left(x,y,z\right)dV\right|\mr\un{\iiint}V\left|f\left(x,y,z\right)\right|dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 5.
+
+\emph default
+ Если 
+\begin_inset Formula $m\mr f\left(\vec M\right)\mr M$
+\end_inset
+
+ на 
+\begin_inset Formula $V$
+\end_inset
+
+, то 
+\begin_inset Formula $m\um V\mr\un{\iiint}Vf\left(x,y,z\right)dV\mr M\um V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ - обьем тела 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 7.
+ Теорема о среднем.
+
+\emph default
+ Если 
+\begin_inset Formula $m\mr f\left(\vec M\right)\mr M$
+\end_inset
+
+ на 
+\begin_inset Formula $V$
+\end_inset
+
+, и 
+\begin_inset Formula $f\left(\vec M\right)$
+\end_inset
+
+ -интегрируема, то 
+\begin_inset Formula $\exists\mu\in\left[m,M\right]\ \un{\iiint}Vf\left(x,y,z\right)dV=\mu\um V$
+\end_inset
+
+, если же функция 
+\begin_inset Formula $f\left(\vec M\right)$
+\end_inset
+
+ - непрерывна на 
+\begin_inset Formula $V$
+\end_inset
+
+, то тогда 
+\begin_inset Formula $\exists\vec c\in V\ \un{\iiint}Vf\left(x,y,z\right)dV=f\left(\vec c\right)\um V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление тройных интегралов по паралелепипеду
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $V=\left[a,b,c,d,e,f\right]$
+\end_inset
+
+ - паралелепипед.
+ 
+\begin_inset Formula $x\in\left[a,b\right],\ y\in\left[c,d\right],\ z\in\left[e,f\right]$
+\end_inset
+
+.
+ Обозначим область 
+\begin_inset Formula $D=\left[c,d,e,f\right]\vkl YoZ$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Theorem
+Если для функции 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ существует тройной интеграл опо области 
+\begin_inset Formula $V$
+\end_inset
+
+ от функции 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+(
+\begin_inset Formula $\exists\un{\iiint}Vf\left(x,y,z\right)dV$
+\end_inset
+
+), и 
+\begin_inset Formula $\forall x\in\left[a,b\right]\ \exists\un{\iint}Df\left(x,y,z\right)dydz$
+\end_inset
+
+, то существует интеграл 
+\begin_inset Formula $\oui abdx\un{\iint}Df\left(x,y,z\right)dydz=\un{\iiint}Vf\left(x,y,z\right)dV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 45
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим разбиения: 
+\begin_inset Formula $a=x_{0}<x_{1}<\tr<x_{i-1}<x_{i}<x_{i+1}<\tr<x_{n-1}<x_{n}=b$
+\end_inset
+
+, 
+\begin_inset Formula $c=y_{0}<\tr<y_{j}<\tr<y_{m}=d$
+\end_inset
+
+, 
+\begin_inset Formula $e=z_{0}<\tr<z_{k}<\tr<z_{l}=f$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ тело 
+\begin_inset Formula $V$
+\end_inset
+
+ разобьется на элементарные паралелепипеды: 
+\begin_inset Formula $V_{i,j,k}=\left[x_{i},x_{i+1},y_{i},y_{i+1},z_{i},z_{i+1}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 46
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $D_{j,k}=\left[y_{j},y_{j+1},z_{k},z_{k+1}\right]$
+\end_inset
+
+ - проэкция тела 
+\begin_inset Formula $V_{i,j,k}$
+\end_inset
+
+ на плоскость 
+\begin_inset Formula $YoZ$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $m_{i,j,k}=\un{\inf}{V_{i,j,k}}f\left(x,y,z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M_{i,j,k}=\un{\sup}{V_{i,j,k}}f\left(x,y,z\right)$
+\end_inset
+
+.
+ Тогда по свойству 6, 
+\begin_inset Formula $\forall x\in\left[x_{i},x_{i+1}\right]\ m_{i,j,k}\um\D y_{j}\um\D z_{k}\mr\un{\iint}{D_{j,k}}f\left(x,y,z\right)\um dy\um dz\mr M_{i,j,k}\um\D y_{j}\um\D z_{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $x$
+\end_inset
+
+ - фиксированиая переменная, 
+\begin_inset Formula $m_{i,j,k}\mr f\left(x,y,z\right)\mr M_{i,j,k}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $x=\xi_{i}\in\left[x_{i},x_{i+1}\right]$
+\end_inset
+
+, суммируя по 
+\begin_inset Formula $j=\overline{1,m-1}$
+\end_inset
+
+, по 
+\begin_inset Formula $k=\overline{0,l-1}$
+\end_inset
+
+, получим: 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D y_{j}\D z_{k}\mr I\left(\xi_{i}\right)=\un{\iint}Df\left(\xi_{i},y,z\right)dydz\mr\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D y_{j}\D z_{k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Умножим на 
+\begin_inset Formula $\D x_{i}$
+\end_inset
+
+ и просумиреем по 
+\begin_inset Formula $i=\overline{0,n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
+\end_inset
+
+ - нижняя сумма Дарбу для тройного интеграла
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
+\end_inset
+
+ - верхняя сумма Дарбу для тройного интеграла
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $s\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обе эти суммы стремятся к значению 
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}$
+\end_inset
+
+ - интегральная сумаа для функции
+\begin_inset Formula $I\left(x\right)$
+\end_inset
+
+, при 
+\begin_inset Formula $\lambda\st0,\ n\st\b$
+\end_inset
+
+ по теореме о 2х пределов, равна 
+\begin_inset Formula $\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}=\oui abI\left(x\right)dx=\oui ab\left(\un{\iint}Df\left(x,y,z\right)dudz\right)dx$
+\end_inset
+
+ .
+\backslash
+
+\end_layout
+
+\begin_layout Remark
+
+\emph on
+(1)
+\emph default
+ Так как
+\begin_inset Formula $\un{\iint}Df\left(x,y,z\right)dydz=\oui cddy\oui eff\left(x,y,z\right)dz$
+\end_inset
+
+, то 
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\oui abdx\oui cddy\oui eff\left(x,y,z\right)dz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+
+\emph on
+(2)
+\emph default
+ Тройной интеграл можно свести к повторному, вычисляя двойной интеграл от
+ однократного.
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 47
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Так как 
+\begin_inset Formula $Q=\left[a,b,c,d\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\un{\iint}Qdxdy\oui eff\left(x,y,z\right)dz=\oui abdx\oui cddy\oui eff\left(x,y,z\right)dz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление тройного интеграла по произвольной области
+\end_layout
+
+\begin_layout Standard
+Расчетные формулы выводятся аналогично случаю двойного интеграла 
+\begin_inset Formula $\un{\iint}Df\left(x,y\right)ddxdy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим основные случаи:
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $D\vkl XoY$
+\end_inset
+
+ - проэкция 
+\begin_inset Formula $V$
+\end_inset
+
+ на 
+\begin_inset Formula $XoY$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 48
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для люблой точки 
+\begin_inset Formula $\forall\left(x,y\right)\in D$
+\end_inset
+
+ прямая, проходяшая через точку 
+\begin_inset Formula $\bot XoY$
+\end_inset
+
+ имеет с границой 
+\begin_inset Formula $\dd V$
+\end_inset
+
+ две общие точки: 
+\begin_inset Formula $\left(x,y,z_{1}\left(x,y\right)\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x,y,z_{2}\left(x,y\right)\right)$
+\end_inset
+
+.
+ Поверхности 
+\begin_inset Formula $z=z_{1}\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z=z_{2}\left(x,y\right)$
+\end_inset
+
+ - певерхности входа и выхрода из 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\iiint}Vf\left(x,y,z\right)dV & = & \un{\iint}Ddxdy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz=\\
+ & = & \left\{ \text{Если область }D\text{ правильная по }y\right\} =\\
+ & = & \oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}dy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
