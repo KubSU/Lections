@@ -15754,7 +15754,10 @@ status open
 \begin_inset Formula 
 \begin{eqnarray*}
 \un{\iiint}Vf\left(x,y,z\right)dV & = & \un{\iint}Ddxdy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz=\\
- & = & \left\{ \text{Если область }D\text{ правильная по }y\right\} =\\
+ & = & \left\{ \begin{array}{c}
+D:x\in\left[a,b\right],\ y\in\left[y_{1}\left(x\right),y_{2}\left(x\right)\right]\\
+\text{Если область }D\text{ правильная по }y
+\end{array}\right\} =\\
  & = & \oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}dy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz
 \end{eqnarray*}
 
@@ -15764,6 +15767,639 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Пусть тело 
+\begin_inset Formula $V$
+\end_inset
+
+ заключено между плоскостями 
+\begin_inset Formula $x=a$
+\end_inset
+
+ и 
+\begin_inset Formula $x=b$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 49
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\iiint}Vf\left(x,y,z\right)dV & = & \oui abdx\un{\iint}{\dd x}f\left(x,y,z\right)dydz=\\
+ & = & \left\{ \begin{array}{c}
+\text{Пусть }\dd x\text{ правильная по оси }z\\
+y\in\left[y_{1}\left(x\right),y_{2}\left(x\right)\right]\\
+z\in\left[z_{1}\left(x,y\right),z_{2}\left(x,y\right)\right]
+\end{array}\right\} =\\
+ & = & \oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}dy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Вычислить тройной интеграл по обьему 
+\begin_inset Formula $V$
+\end_inset
+
+ от функциии 
+\begin_inset Formula $\un{\iiint}V\left(x+y+z\right)dV$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V:x=0,\ y=0,\ x+y+z=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 50
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Двойной по однократному
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Проэкция 
+\begin_inset Formula $V$
+\end_inset
+
+ на плоскость 
+\begin_inset Formula $XoY$
+\end_inset
+
+ это треугольник 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{1}\left(x,y\right)\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{2}\left(x,y\right)=1-x-y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \un{\iint}Ddxdy\oui 0{1-x-y}\left(x+y+z\right)dz=
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+ & = & \left\{ D:x\in\left[0,1\right]\ y\in\left[0,1-x\right]\right\} =\\
+ & = & \oui 01dx\oui 0{1-x}dy\oui 0{1-x-y}\left(x+y+z\right)dz=\\
+ & = & \oui 01dx\oui 0{1-x}\left(xz+yz+\df{z^{2}}2\right)|_{0}^{1-x-y}dy=\\
+ & = & \tr=\df 18
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Через поперечное сечение - однократный от двойного
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 51
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ - между плоскостями 
+\begin_inset Formula $x=0,\ x=1$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+ - внешнее интегрирование.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \oui 01dx\un{\iint}{\dd x}\left(x+y+z\right)dydz=\\
+ & = & \left\{ \dd x:y\in\left[0,1-x\right]\ \sl\ z\in\left[0;1-x-y\right]\right\} =\\
+ & = & \oui 01dx\oui 0{1-x}dy\oui 0{1-x-y}\left(x+y+z\right)dz=\\
+ & = & \tr=\df 18
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Вычисление тройных интегралов в цилиндрических координатах
+\end_layout
+
+\begin_layout Standard
+Аналогично случаю двойного интеграла, переход от декартовых координат 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ к новым 
+\begin_inset Formula $\left(u,v,w\right)$
+\end_inset
+
+ осуществляется по следующей формуле: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f\left(x\left(u,v,w\right),y\left(u,v,w\right),z\left(u,v,w\right)\right)\um\left|I\right|\um dudvdw$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $I=\left|\begin{array}{ccc}
+\df{\dd x}{\dd u} & \df{\dd x}{\dd v} & \df{\dd x}{\dd w}\\
+\df{\dd y}{\dd u} & \df{\dd y}{\dd v} & \df{\dd y}{\dd w}\\
+\df{\dd z}{\dd u} & \df{\dd z}{\dd v} & \df{\dd z}{\dd w}
+\end{array}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть точка 
+\begin_inset Formula $M\left(x,y,z\right)\in E^{3}$
+\end_inset
+
+, а 
+\begin_inset Formula $M_{0}\left(x,y\right)$
+\end_inset
+
+ - ее проэкция на 
+\begin_inset Formula $XoY$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $XoY$
+\end_inset
+
+ введем полярные кооординаты:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=r\cos\varphi\\
+y=r\sin\varphi
+\end{cases},\ r\in[0;+\b),\ \varphi\in[0;2\pi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 52
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $z=h,\ h\in\left(-\b;+\b\right)$
+\end_inset
+
+.
+ Тикам образлм каждай точка 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ однозначно определеяется координатами 
+\begin_inset Formula $\left(r,\varphi,h\right)$
+\end_inset
+
+ - цилиндрическими координатам.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=r_{0}=const$
+\end_inset
+
+ - цилиндр, радиуса 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=\varphi_{0}=const$
+\end_inset
+
+ - полуплоскость с границей - ось 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=h_{0}=const$
+\end_inset
+
+ - плоскость, паралельная 
+\begin_inset Formula $XoY,$
+\end_inset
+
+ пересекающай ось 
+\begin_inset Formula $oZ$
+\end_inset
+
+ в точке 
+\begin_inset Formula $x=y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\left|\begin{array}{ccc}
+x_{r}\pr & x_{\varphi}\pr & x_{h}\pr\\
+y_{r}\pr & y_{\varphi}\pr & y_{h}\pr\\
+z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
+\end{array}\right|=\left|\begin{array}{ccc}
+\cos\varphi & -r\um\sin\varphi & 0\\
+\sin\varphi & r\um\cos\varphi & 0\\
+0 & 0 & 1
+\end{array}\right|=\left(r\cos^{2}\varphi+r\sin^{2}\varphi\right)\um1=r$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f_{1}\left(r,\varphi,h\right)\um r\um drd\varphi dh=\oui{\varphi_{0}}{\varphi_{1}}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}d\varphi\oui{h_{1}\left(r,\varphi\right)}{h_{2}\left(r,\varphi\right)}f_{1}\left(r,\varphi,h\right)\um r\um dh$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Вычислить интеграл:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $J=\un{\iiint}VydV$
+\end_inset
+
+, где 
+\begin_inset Formula $V:y=0,y=\sqrt{2x-x^{2}},z=0,z=a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y=\sqrt{2x-x^{2}}\dsl\begin{cases}
+y\br0\\
+y^{2}=2x-x^{2}
+\end{cases}\dsl\begin{cases}
+y\br0\\
+\left(x+1\right)^{2}+y^{2}=1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 53+54
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Перейдем к цилиндрическим координатам
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=r\cos\varphi\\
+y=r\sin\varphi\\
+z=h
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D:x\in\left[0;2\right],\ y\in\left[0;\sqrt{2x-x^{2}}\right]$
+\end_inset
+
+ - в полярные координаты.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y^{2}+x^{2}=2x$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $r^{2}=2r\cos\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\varphi\in\left[0;\df{\pi}2\right],\ r\in\left[0;2\cos\varphi\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+J & = & \un{\iint}Ddxdy\oui 0aydz=\\
+ & = & \oui 0{\df{\pi}2}d\varphi\oui 0{2\cos\varphi}rdr\oui 0ar\sin\varphi dh=\\
+ & = & \oui 0{\df{\pi}2}d\varphi\oui 0{2\cos\varphi}r^{2}\sin\varphi dr=\\
+ & = & a\oui 0{\df{\pi}2}\df{r^{3}}3\sin\varphi|_{0}^{2\cos\varphi}d\varphi=\\
+ & = & \df a3\um8\um\oui 0{\df{\pi}2}\cos^{3}\varphi\sin\varphi d\varphi=\\
+ & = & \df{-8a}3\um\df{\cos^{4}}4|_{0}^{\df{\pi}2}=\df{2a}3
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 55
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\oui{\alpha}{\beta}\varphi\oui{r_{1}}{r_{2}}dr\oui abf_{1}\left(r,\varphi,h\right)\um r\um dh$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Вычисления в сферических координатах
+\end_layout
+
+\begin_layout Standard
+Рассмотрим в 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+ переход от декартовых координат 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ к сферическим 
+\begin_inset Formula $\left(\varphi,\psi,r\right)$
+\end_inset
+
+.
+ Пусть точка 
+\begin_inset Formula $M\left(x,y,z\right)\in E^{3}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $r$
+\end_inset
+
+ - длина радиус вектора точки 
+\begin_inset Formula $M$
+\end_inset
+
+ (
+\begin_inset Formula $r\br0$
+\end_inset
+
+), 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - угол между осью 
+\begin_inset Formula $oZ$
+\end_inset
+
+ (ее положительном направлении) и 
+\begin_inset Formula $\vec r$
+\end_inset
+
+ - полярный угол (
+\begin_inset Formula $\psi\in\left[0;\pi\right]$
+\end_inset
+
+).
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - это угол в плоскости 
+\begin_inset Formula $XoY$
+\end_inset
+
+ между осью 
+\begin_inset Formula $oX$
+\end_inset
+
+ и радщиус вектором точки 
+\begin_inset Formula $M_{0}\left(x,y,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рис 56
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi=\psi_{0}=const$
+\end_inset
+
+ - коническая поверхность
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=\varphi_{0}=consy$
+\end_inset
+
+ - полупроскость
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=r_{0}=const$
+\end_inset
+
+ - сфера радиуса 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=r\cos\varphi\sin\psi\\
+y=r\sin\varphi\sin\psi\\
+z=r\cos\psi
+\end{cases},\ r\br0,\ \varphi\in\left[0;2\pi\right],\ \psi\in\left[0;\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=r^{2}$
+\end_inset
+
+ - проверка
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \left|\begin{array}{ccc}
+x_{r}\pr & x_{\varphi}\pr & x_{h}\pr\\
+y_{r}\pr & y_{\varphi}\pr & y_{h}\pr\\
+z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
+\end{array}\right|=\\
+ & = & \left|\begin{array}{ccc}
+\cos\varphi\sin\psi & -r\sin\varphi\sin\psi & r\cos\varphi\cos\psi\\
+\sin\varphi\sin\psi & r\cos\varphi\sin\psi & r\sin\varphi\cos\psi\\
+\cos\psi & 0 & -r\sin\varphi
+\end{array}\right|=\\
+ & = & r^{2}\left(\cos\psi\left(-\sin^{2}\varphi\sin\psi\cos\psi-\cos^{2}\varphi\sin\psi\cos\psi\right)-\sin\psi\left(\cos^{2}\varphi\sin^{2}+\sin^{2}\varphi\sin^{2}\psi\right)\right)=\\
+ & = & -r^{2}\sin\psi
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|I\right|=r^{2}\sin\psi$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
