@@ -6190,18 +6190,14 @@ x_{m}=q_{m}\left(t\right)
 placement h
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Pictures/Matan2/PrivateDifferential.svg
+	filename ../Pictures/Matan2/img13.svg
 	width 6cm
 
 \end_inset
@@ -9463,13 +9459,6 @@ status open
 
 \begin_layout Proof
 \begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\sim\left|x-x_{0}\right|<a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
