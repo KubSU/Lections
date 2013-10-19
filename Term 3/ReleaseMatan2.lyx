@@ -27,7 +27,6 @@ theorems-starred
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
 \paperfontsize 12
 \spacing single
 \use_hyperref true
@@ -252,12 +251,6 @@ theorems-starred
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
-
-\begin_inset FormulaMacro
-\newcommand{\oudi}[2]{\underset{#1}{\overset{#2}{\iint}}}
-{\underset{#1}{\overset{#2}{\iint}}}
-\end_inset
-
  
 \begin_inset FormulaMacro
 \newcommand{\ppr}{\pr\pr}
@@ -290,7 +283,7 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\frac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
@@ -344,14 +337,14 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\DD}{\partial}
-{\partial}
+\newcommand{\DD}{\text{\emph{д}}}
+{\text{\emph{д}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dd}{\partial}
-{\partial}
+\newcommand{\dd}{\text{\emph{д}}}
+{\text{\emph{д}}}
 \end_inset
 
 
@@ -367,30 +360,6 @@ theorems-starred
 \end_inset
 
 
-\begin_inset FormulaMacro
-\newcommand{\vtr}{\vdots}
-{\vdots}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\ntr}{\ddots}
-{\ddots}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\ob}{\cup}
-{\cup}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\dint}{\iint}
-{\iint}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Title
@@ -398,12 +367,9 @@ theorems-starred
 \end_layout
 
 \begin_layout Section
-Числовые ряды.
-\end_layout
-
-\begin_layout Subsection
 Понятие числового ряда.
  Сходимость числового ряда.
+ Простейшие свойства числовых рядов.
 \end_layout
 
 \begin_layout Definition
@@ -411,10 +377,10 @@ theorems-starred
 \begin_inset Formula $\left\{ a_{n}\right\} $
 \end_inset
 
- и образуют выражение вида 
+ и образуем выражение вида: 
 \begin_inset Formula 
 \begin{equation}
-a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:1}
+a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:Ряд}
 \end{equation}
 
 \end_inset
@@ -422,18 +388,18 @@ a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:1}
 Выражение (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
 ) называется числовым рядом, а числа 
-\begin_inset Formula $a_{1},a_{2}\tr a_{n}\tr$
+\begin_inset Formula $a_{1},\, a_{2}\tr a_{n}\tr$
 \end_inset
 
  - членами ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -456,7 +422,7 @@ reference "eq:1"
 ой частичной суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -475,14 +441,14 @@ reference "eq:1"
 , то его называют суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
 ), а ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -494,7 +460,7 @@ reference "eq:1"
  Если предел бесконечен или не существует,то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -513,40 +479,8 @@ reference "eq:1"
 .
 \end_layout
 
-\begin_layout Example
-Исследовать на сходимость 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $1-1+1-1+1+\tr=\ous{n=1}{\b}\left(-1\right)^{n+1}$
-\end_inset
-
- Она не сходится.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
-\end_inset
-
- - исследовать на сходимость
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $S_{n}=a+a^{2}+a^{3}+\tr+a^{n}=\left\{ \begin{array}{c}
-b_{1}=a\\
-q=q
-\end{array}\right\} =\df{b_{1}\left(1-a^{4}\right)}{1-q}$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-Из определения суммы числового ряда вытекают свойства:
+\begin_layout Paragraph*
+Свойства числового ряда:
 \end_layout
 
 \begin_layout Enumerate
@@ -599,7 +533,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}\alpha\um a_{n}$
 \end_inset
 
- - сходится к 
+ сходится к 
 \begin_inset Formula $\alpha\um S$
 \end_inset
 
@@ -619,11 +553,11 @@ q=q
 \end_layout
 
 \begin_layout Definition
-Определение ряд 
+Ряд 
 \begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)$
 \end_inset
 
- называется суммой(разностью) рядов 
+ называется суммой (разностью) рядов 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -668,7 +602,12 @@ q=q
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Section
+Сходимость числового ряда при отбрасывании конечного числа его членов.
+ Свойство остатка числового сходящегося ряда.
+\end_layout
+
+\begin_layout Theorem
 Отбрасывание конечного числа первых членов числового ряда 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
@@ -676,7 +615,6 @@ q=q
  не влияет на его сходимость.
 \end_layout
 
-\begin_deeper
 \begin_layout Proof
 Пусть ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
@@ -691,138 +629,12 @@ q=q
 \begin_inset Formula $a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr$
 \end_inset
 
- .
+.
  Последовательность его частичных сумм: 
 \begin_inset Formula $\Sigma_{n}=a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr=S_{k+n}-S_{k}\ov{\st}{n\st\b}S-S_{k}$
 \end_inset
 
 .
- 
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection
-Критерий Коши сходимости числовых рядов.
-\end_layout
-
-\begin_layout Standard
-Так как сходимость числового ряда 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
-\end_inset
-
- равносильно сходимости числовых последовательностей, то применяя критерий
- Коши к последовательности 
-\begin_inset Formula $\left\{ S_{n}\right\} $
-\end_inset
-
- можно записать: 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Theorem
-(Критерий Коши) Ряд 
-\begin_inset Formula $\ous{n=1}{\b}$
-\end_inset
-
- - сходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Ряд 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
-\end_inset
-
- - сходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\left\{ S_{n}\right\} $
-\end_inset
-
- - сходиться 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
-\end_inset
-
- 
-\begin_inset Formula $\forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
-\end_inset
-
- 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
-\end_inset
-
- 
-\begin_inset Formula $\forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость следующий ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n\left(n+1\right)}=\df 12+\df 1{2\um3}+\tr+\df 1{n\left(n+1\right)}+\tr$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Example
-Так как 
-\begin_inset Formula $a_{n}=\df 1{n\left(n+1\right)}=\df 1n-\df 1{n+1}$
-\end_inset
-
-, то 
-\begin_inset Formula $S_{n}=\left(1-\df 12\right)+\left(\df 12-\df 13\right)+\left(\df 13-\df 14\right)+\tr+\left(\df 1{n-1}-\df 1n\right)+\left(\df 1n-\df 1{n+1}\right)+\tr\ov{\st}{n\st\b}1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-Гармонический ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr$
-\end_inset
-
-.
- Докажем его расходимость, то-есть выполняется следующее условие 
-\begin_inset Formula 
-\begin{eqnarray*}
-\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists p\in\N\ :\  & \left|\ous{k=n+1}{n+p}\df 1k\right|= & \df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
- & = & \df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N}>N\um\df 1{2N}=\df 12
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Остаток числового ряда.
- Необходимое условие сходимости числового ряда.
 \end_layout
 
 \begin_layout Definition
@@ -875,8 +687,8 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
  
 \end_layout
 
-\begin_layout Lemma
-(2, Необходимый признак сходимости числового ряда)
+\begin_layout Section
+Необходимое условие сходимости числового ряда.
 \end_layout
 
 \begin_layout Lemma
@@ -901,14 +713,14 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_inset
 
 , тогда 
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)\st S-S=0$
+\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)=\ul{n\st\b}S_{n}-\ul{n\st\b}S_{n-1}=S-S=0$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Remark
-Доказанный признак - достаточный признак расходимости: 
+Доказанный признак --- достаточный признак расходимости: 
 \begin_inset Formula $\ul{n\st\b}a_{n}\nr0$
 \end_inset
 
@@ -916,37 +728,123 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - расходится.
+ --- расходится.
 \end_layout
 
-\begin_layout Example
-Исследовать на сходимость 
-\begin_inset Formula $\ous{n=1}{\b}\df n{2n+1}$
+\begin_layout Section
+Критерий Коши сходимости числовых рядов.
+ Гармонический ряд.
+\end_layout
+
+\begin_layout Standard
+Так как сходимость числового ряда 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\df n{2n+1}=\df 12\nr0\ \sl\ $
+ равносильна сходимости числовых последовательностей, то применяя критерий
+ Коши к последовательности 
+\begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- расходится.
-\end_layout
+ можно записать: 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon
+\]
 
-\begin_layout Remark
-Необходимый признак не является достаточным.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1n$
 \end_inset
 
- - необходимость выполнена, но он расходится.
+
 \end_layout
 
-\begin_layout Subsection
-Сходимость знакоположительных рядов.
+\begin_layout Theorem
+(Критерий Коши) Ряд 
+\begin_inset Formula $\ous{n=1}{\b}$
+\end_inset
+
+ сходится тогда и только тогда, когда 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ --- сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ --- сходится 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\dsl
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Гармонический ряд 
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докажем его расходимость, то-есть выполняется следующее условие 
+\begin_inset Formula 
+\begin{eqnarray*}
+\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists p\in\N:\ \left|\ous{k=n+1}{n+p}\df 1k\right|=\\
+= & \df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p} & =\\
+= & \df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N} & >N\um\df 1{2N}=\df 12
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Необходимое и достаточное условие сходимости знакоположительных рядов.
 \end_layout
 
 \begin_layout Definition
@@ -961,12 +859,8 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 .
 \end_layout
 
-\begin_layout Subsubsection
-Необходимое и достаточное условие сходимости знакоположительных рядов.
-\end_layout
-
 \begin_layout Standard
-Рассматривается ряд
+Рассматривается ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n},\ a_{n}\br0$
 \end_inset
 
@@ -989,7 +883,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - сходится 
+ сходится 
 \begin_inset Formula $\dsl$
 \end_inset
 
@@ -997,11 +891,11 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограничена сверху ( 
-\begin_inset Formula $\exists M>0\ \forall n\in\N\ S_{n}\mr M$
+ ограничена сверху 
+\begin_inset Formula $(\exists M>0\ \forall n\in\N\ S_{n}\mr M)$
 \end_inset
 
- ) .
+.
 \end_layout
 
 \begin_layout Remark
@@ -1017,14 +911,14 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- не ограничена сверху ( 
-\begin_inset Formula $\forall M>0\ \exists n\in\N\ S_{n}\mr M$
+ не ограничена сверху 
+\begin_inset Formula $(\forall M>0\ \exists n\in\N\ S_{n}\mr M)$
 \end_inset
 
- ) .
+.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Section
 Признаки сравнения.
 \end_layout
 
@@ -1290,7 +1184,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:2}
+b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:*********************************}
 \end{equation}
 
 \end_inset
@@ -1306,7 +1200,7 @@ b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:
  тогда используя левую часть неравенства (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "eq:*********************************"
 
 \end_inset
 
@@ -1329,7 +1223,7 @@ reference "eq:2"
  то используя правую часть неравенства (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "eq:*********************************"
 
 \end_inset
 
@@ -1400,7 +1294,7 @@ reference "eq:2"
  (Это обобщенный гармонический ряд) 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Признак Даламбера
 \end_layout
 
@@ -1416,7 +1310,7 @@ reference "eq:2"
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -1668,7 +1562,7 @@ reference "eq:1"
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Признак Коши
 \end_layout
 
@@ -1680,7 +1574,7 @@ reference "eq:1"
 Пусть для ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -1762,7 +1656,7 @@ reference "eq:1"
  сходится то по признаку сравнения сходится и ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -1797,7 +1691,7 @@ reference "eq:1"
  следует по признаку сравнения расходимость ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "eq:Ряд"
 
 \end_inset
 
@@ -1846,7 +1740,7 @@ reference "eq:1"
  - ряд сходится.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Интегральный признак.
 \end_layout
 
@@ -1859,7 +1753,7 @@ reference "eq:1"
 \begin_inset Formula $y=f\left(x\right)>0$
 \end_inset
 
- непрерывна и монотонно убывает на промежутке 
+ непрерывна и монотонна убывает на промежутке 
 \begin_inset Formula $[1,+\b)$
 \end_inset
 
@@ -1953,7 +1847,7 @@ reference "eq:1"
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
+s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 \end{equation}
 
 \end_inset
@@ -2100,7 +1994,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 Обобщенный гармонический ряд.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Признак Раабе
 \end_layout
 
@@ -2167,7 +2061,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 Числовой ряд вида 
 \begin_inset Formula 
 \begin{equation}
-\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:4}
+\ous{n=1}{\b}\left(-1\right)^{n+1}a_{n},\ \left(a_{n}>0\right)\label{eq:1}
 \end{equation}
 
 \end_inset
@@ -2183,7 +2077,7 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 Если для знакочередующегося ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2210,7 +2104,7 @@ reference "eq:4"
 то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2221,7 +2115,7 @@ reference "eq:4"
 Рассмотрим последовательность частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2275,7 +2169,7 @@ reference "eq:4"
 Рассмотрим последовательность частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2297,7 +2191,7 @@ a_{2n}+1\st0
  ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2325,7 +2219,7 @@ reference "eq:4"
 Для остатка ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2345,7 +2239,7 @@ reference "eq:4"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2471,7 +2365,7 @@ reference "eq:4"
  
 \begin_inset Formula 
 \begin{equation}
-\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p-1}S_{k}\um\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}\label{eq:5}
+\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p-1}S_{k}\um\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}\label{eq:2}
 \end{equation}
 
 \end_inset
@@ -2499,7 +2393,7 @@ reference "eq:4"
 Ряд 
 \begin_inset Formula 
 \begin{equation}
-\ous{n=1}{\b}u_{n}v_{n}\label{eq:6}
+\ous{n=1}{\b}u_{n}v_{n}\label{eq:3}
 \end{equation}
 
 \end_inset
@@ -2533,7 +2427,7 @@ reference "eq:4"
 Согласно критерию Коши сходимости числового ряда ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:6"
+reference "eq:3"
 
 \end_inset
 
@@ -2574,7 +2468,7 @@ reference "eq:6"
 
 \begin_layout Proof
 Получим 
-\begin_inset Formula $\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\ref{eq:5}\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}$
+\begin_inset Formula $\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\ref{eq:2}\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}$
 \end_inset
 
 .
@@ -2684,7 +2578,7 @@ reference "eq:6"
  (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2704,7 +2598,7 @@ reference "eq:4"
 Пусть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2727,7 +2621,7 @@ reference "eq:4"
  - критерий Коши сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2766,7 +2660,7 @@ reference "eq:4"
 В ряде (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2774,7 +2668,7 @@ reference "eq:4"
  Получим новый ряд 
 \begin_inset Formula 
 \begin{equation}
-\ous{k=1}{\b}a_{k}'=a_{1}'+a_{2}'+\tr+a_{k}'+\tr\label{eq:7}
+\ous{k=1}{\b}a_{k}'=a_{1}'+a_{2}'+\tr+a_{k}'+\tr\label{eq:4}
 \end{equation}
 
 \end_inset
@@ -2787,14 +2681,14 @@ reference "eq:4"
  Вопрос: Сходится ли ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "eq:4"
 
 \end_inset
 
 ) при условии сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2805,14 +2699,14 @@ reference "eq:4"
 Если ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
 ) сходится абсолютно, то ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "eq:4"
 
 \end_inset
 
@@ -2828,7 +2722,7 @@ reference "eq:7"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -2845,7 +2739,7 @@ reference "eq:4"
 Для ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "eq:4"
 
 \end_inset
 
@@ -2902,14 +2796,14 @@ reference "eq:7"
 Так как ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
 ) в свою очередь получается перестановкой членов ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "eq:4"
 
 \end_inset
 
@@ -2929,7 +2823,7 @@ reference "eq:7"
 Ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -3024,7 +2918,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 Пусть (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -3051,7 +2945,7 @@ reference "eq:4"
 , то-есть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "eq:4"
 
 \end_inset
 
@@ -3180,7 +3074,7 @@ reference "eq:7"
 Пусть ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -3332,7 +3226,7 @@ reference "eq:4"
 Так как ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "eq:1"
 
 \end_inset
 
@@ -6269,42 +6163,6 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0col%
-width "50col%"
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img13.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Геометрический смысл частной производной
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Рассмотрим на примере функции двух переменных 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
@@ -6325,6 +6183,40 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Pictures/Matan2/img13.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6598,7 +6490,7 @@ status collapsed
  можно представить в виде 
 \begin_inset Formula 
 \begin{equation}
-\D u=A_{1}\D x_{1}+A_{2}\D x_{2}+\tr+A_{m}\D x_{m}+\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\label{eq:8}
+\D u=A_{1}\D x_{1}+A_{2}\D x_{2}+\tr+A_{m}\D x_{m}+\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\label{eq:5}
 \end{equation}
 
 \end_inset
@@ -6642,7 +6534,7 @@ status collapsed
 если имеет место представление 
 \begin_inset Formula 
 \begin{equation}
-\D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:9}
+\D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:6}
 \end{equation}
 
 \end_inset
@@ -6771,7 +6663,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 
 \begin_layout Proof
 \begin_inset Formula $\D_{x_{i}}u\left(M\right)=\left\{ \begin{array}{c}
-\ref{eq:8}\\
+\ref{eq:5}\\
 \D x_{i}\nr0\\
 \D x_{k}=0,\ k\nr i
 \end{array}\right\} =A_{i}\D x_{i}+\alpha_{i}\D x_{i},\ i=\overline{1,m}$
@@ -6808,7 +6700,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\D u=\ous{i=1}mf_{x_{i}}^{\left(M\right)}\D x_{i}+o\left(\rho\right)\label{eq:10}
+\D u=\ous{i=1}mf_{x_{i}}^{\left(M\right)}\D x_{i}+o\left(\rho\right)\label{eq:7}
 \end{equation}
 
 \end_inset
@@ -6841,7 +6733,7 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \D x_{1}\st0\\
 \tr\\
 \D x_{m}\st0
-\end{array}}=\left\{ \ref{eq:10}\right\} =0$
+\end{array}}=\left\{ \ref{eq:7}\right\} =0$
 \end_inset
 
 
@@ -7225,7 +7117,7 @@ status open
 x_{1}=\varphi_{1}\left(t_{1},\tr,t_{k}\right)\\
 \tr\\
 x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
-\end{cases}\label{eq:11}
+\end{cases}\label{eq:8}
 \end{equation}
 
 \end_inset
@@ -7265,7 +7157,7 @@ u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,
 \df{\dd f}{\dd t_{1}}=\df{\dd f}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{1}}+\df{\dd f}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{1}}+\tr+\df{\dd f}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{1}}\\
 \tr\\
 \df{\dd f}{\dd t_{k}}=\df{\dd f}{\dd x_{1}}\um\df{\dd x_{1}}{\dd t_{k}}+\df{\dd f}{\dd x_{2}}\um\df{\dd x_{2}}{\dd t_{k}}+\tr+\df{\dd f}{\dd x_{m}}\um\df{\dd x_{m}}{\dd t_{k}}
-\end{cases}\label{eq:12}
+\end{cases}\label{eq:9}
 \end{equation}
 
 \end_inset
@@ -7347,7 +7239,7 @@ status open
 , вычисляемые по формулам (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:12"
+reference "eq:9"
 
 \end_inset
 
@@ -7804,9 +7696,6 @@ z=z_{0}+l\um\cos\gamma
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -8374,7 +8263,7 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
  Аналогично 
 \begin_inset Formula 
 \begin{equation}
-\forall n\in\N\ \ d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:13}
+\forall n\in\N\ \ d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:1-1}
 \end{equation}
 
 \end_inset
@@ -8497,297 +8386,7 @@ d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\\
 status open
 
 \begin_layout Plain Layout
-Пропущено было.
- Дописываю 3.10.2013
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Формула Тейлора
-\end_layout
-
-\begin_layout Standard
-Напомним что для случая одной переменной имеет место разложение по формуле
- Тейлора.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\D F\left(t_{0}\right) & = & F\left(t_{0}+\D t\right)-F\left(t_{0}\right)=\\
- & = & F\pr\left(t_{0}\right)\um\D t+\df{F\ppr\left(t_{0}\right)}{2!}\um\D t^{2}+\tr+\df{F^{\left(n\right)}\left(t_{0}\right)}{n!}+\df{F^{\left(n+1\right)}\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!}=\\
- & = & dF\left(t_{0}\right)+\df{d^{2}F\left(t_{0}\right)}{2!}+\tr+\df{d^{n}F\left(t_{0}\right)}{n!}+\df{d^{n+1}F\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)
-\end{eqnarray*}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Theorem
-Пусть в некоторой окрестности точки 
-\begin_inset Formula $M_{0}\left(x_{0},y_{0}\right)$
-\end_inset
-
- функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- имеет непрерывные частные производные до 
-\begin_inset Formula $\left(n+1\right)$
-\end_inset
-
--го порядка.
- Тогда 
-\begin_inset Formula $\forall M\left(x_{0}+\D x,y_{0}+\D y\right)$
-\end_inset
-
- имеет место равенство:
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula 
-\begin{equation}
-\D f\left(x_{0},y_{0}\right)=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)\label{eq:14}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Положим 
-\begin_inset Formula $x=x_{0}+t\um\D x,\ y=y_{0}+t\um\D y,\ t\in\left(0,1\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $F\left(t\right)=f\left(x_{0}+t\um\D x,y_{0}+t\um\D y\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula 
-\begin{eqnarray*}
-\D f\left(x_{0},y_{0}\right) & = & f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=\\
- & = & F\left(1\right)-F\left(0\right)=\\
- & = & \D F\left(0\right)=\\
- & = & \left\{ \text{По формуле Тейлора для функций многих переменных}\right\} =\\
- & = & dF\left(0\right)+\df{d^{2}F\left(0\right)}{2!}+\tr+\df{d^{n}F\left(0\right)}{n!}+\df{d^{n+1}F\left(\Theta\right)}{\left(n+1\right)!}=\\
- & = & \left\{ \begin{array}{c}
-\text{Так как }x=x_{0}+t\um\D x,\ y=y_{0}+t\um\D y\\
-\text{линейно зависят от}\ t\ \sl\\
-\sl d\tr d^{k}\ \text{обладают инвариантностью формы}
-\end{array}\right\} =\\
- & = & (\ref{eq:14})=\\
- & = & df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Экстремумы функций многих переменных
-\end_layout
-
-\begin_layout Subsubsection
-Понятие функций многих переменных.
- Необходимое условие экстремума.
-\end_layout
-
-\begin_layout Standard
-Пусть функция 
-\begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
-\end_inset
-
- определена в области 
-\begin_inset Formula $D$
-\end_inset
-
- и точка 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
-\end_inset
-
- - внутренняя точка области 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Definition
-Точка 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- называется точкой строгого локального максимума (минимума) функции 
-\begin_inset Formula $u=f\left(x_{1},\tr x_{m}\right)$
-\end_inset
-
- существует такая выколотая окрестность точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, что 
-\begin_inset Formula $\forall M\in U_{\varepsilon}\left(M_{0}\right)$
-\end_inset
-
- 
-\begin_inset Formula $f\left(M\right)<f\left(M_{0}\right)\ \left(f\left(M\right)>f\left(M_{0}\right)\right)$
-\end_inset
-
-.
- Если в определении неравенства не строгие, то 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- - точка не строгого локального локального максимума (минимума).
-\end_layout
-
-\begin_layout Theorem
-(Необходимое условие локального экстремума)
-\end_layout
-
-\begin_layout Theorem
-Если точка 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
-\end_inset
-
- является точкой локального экстремума функции 
-\begin_inset Formula $u=f\left(\vec x\right)$
-\end_inset
-
- и существует частная производная 
-\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)$
-\end_inset
-
-, то 
-\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Пусть например тока 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
-\end_inset
-
- - это точка локального максимума.
- Возьмем 
-\begin_inset Formula $\forall i,\ i=\overline{1,m}$
-\end_inset
-
-, и зафиксируем все переменные кроме 
-\begin_inset Formula $x_{i}$
-\end_inset
-
-, то есть будем рассматривать точки вида 
-\begin_inset Formula $M\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right),\ x_{i}\in\R,\ M\in D\left(f\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Получим функцию одной переменной 
-\begin_inset Formula $x_{i}$
-\end_inset
-
- 
-\begin_inset Formula $:$
-\end_inset
-
- 
-\begin_inset Formula $f\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right)=g\left(x_{i}\right)$
-\end_inset
-
-.
- Так как 
-\begin_inset Formula $\forall x_{i}\in\left(x_{i}^{0}-\varepsilon,x_{i}^{0}+\varepsilon\right):f\left(M_{0}\right)=g\left(x_{i}^{0}\right)\br g\left(x_{i}\right)=f\left(M\right),\ M\in U_{\varepsilon}\left(M_{0}\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $x_{i}^{0}$
-\end_inset
-
- - точка локального максимума функции одной переменной 
-\begin_inset Formula $\sl$
-\end_inset
-
- по теореме Ферма 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $g\pr\left(x_{i}\right)=\df{\dd f\left(M_{0}\right)}{\dd x_{i}}=0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Remark
-Точки в которых выполняется условие 
-\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
-\end_inset
-
- называются критическими, стационарными, подозреваемыми на экстремум.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Remark
-Если 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- - критическая точка функции 
-\begin_inset Formula $f\left(x_{1},\tr,x_{m}\right)$
-\end_inset
-
-, то 
-\begin_inset Formula $\grad\left(M_{0}\right)=\left(\begin{array}{c}
-0\\
-\vtr\\
-0
-\end{array}\right)$
-\end_inset
-
-, 
-\begin_inset Formula $df\left(M_{0}\right)=\ous{i=1}m\df{\dd f\left(M_{0}\right)}{\dd x_{i}}\um x_{i}=0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Тут чуть дописать осталось
+пропущено
 \end_layout
 
 \end_inset
@@ -8809,7 +8408,6 @@ status open
 \end_layout
 
 \begin_layout Theorem
-(Достаточное условие локального экстремума)
 \begin_inset Formula $u=f\left(x,y\right),\ M_{0}\left(x_{0},y_{0}\right)$
 \end_inset
 
@@ -9064,7 +8662,7 @@ a_{2,1} & a_{2,2}
  
 \begin_inset Formula 
 \begin{equation}
-\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]>0,\ \forall\varphi\in\left[0,2\pi\right]\label{eq:15}
+\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]>0,\ \forall\varphi\in\left[0,2\pi\right]\label{eq:z1}
 \end{equation}
 
 \end_inset
@@ -9202,7 +8800,7 @@ a_{2,1} & a_{2,2}
 Рассмотрим (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:15"
+reference "eq:z1"
 
 \end_inset
 
@@ -9861,6540 +9459,6 @@ status open
 
 \begin_layout Proof
 \begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\sim\left|x-x_{0}\right|<a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-3.10.2013
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Так как 
-\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)$
-\end_inset
-
- функция одной переменной 
-\begin_inset Formula $g\left(y\right)=f\left(x,y\right)$
-\end_inset
-
- (Зафиксировали 
-\begin_inset Formula $x$
-\end_inset
-
- и при нем меняем 
-\begin_inset Formula $y$
-\end_inset
-
-) : 
-\begin_inset Formula $g\left(y_{0}-b\right)<0,\ g\left(y_{0}+b\right)>0$
-\end_inset
-
- и 
-\begin_inset Formula $g\left(y\right)$
-\end_inset
-
- - непрерывна на 
-\begin_inset Formula $\left[y_{0}-b,y_{0}+b\right]$
-\end_inset
-
-.
- То первой по теореме Больцано-Коши 
-\begin_inset Formula $\exists\overline{y}\ :\ g\left(\overline{y}\right)=f\left(x,\overline{y}\right)=0$
-\end_inset
-
-.
- А еще нам нужно доказать что 
-\begin_inset Formula $\overline{y}$
-\end_inset
-
- - единственная точка где 
-\begin_inset Formula $g\left(\overline{y}\right)=0$
-\end_inset
-
-.
- Так как при этом 
-\begin_inset Formula $g\pr\left(y\right)=f_{y}\pr\left(x,y\right)>0$
-\end_inset
-
- при 
-\begin_inset Formula $y\in\left(y_{0}-b,y_{0}+b\right)$
-\end_inset
-
-то 
-\begin_inset Formula $g\left(y\right)$
-\end_inset
-
- - монотонно возрастает на отрезке 
-\begin_inset Formula $\left[y_{0}-b,y_{0}+b\right]$
-\end_inset
-
-, а значит 
-\begin_inset Formula $\overline{y}$
-\end_inset
-
- - единственное решение уравнения 
-\begin_inset Formula $f\left(x,\overline{y}\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Corollary
-Мы получили что
-\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\ \exists!y=\psi\left(x\right)$
-\end_inset
-
-, такой что 
-\begin_inset Formula $f\left(x,\psi\left(x\right)\right)=0$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Proof
-Докажем дифференцируемость 
-\begin_inset Formula $\psi\pr\left(x\right)$
-\end_inset
-
- на интервале 
-\begin_inset Formula $\left(x_{0}-a,x_{0}+a\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Пусть 
-\begin_inset Formula $x\in\left(x_{0}-a,x_{0}+a\right)$
-\end_inset
-
- - произвольная точка.
- Придадим приращение 
-\begin_inset Formula $\D x$
-\end_inset
-
- 
-\begin_inset Formula $:$
-\end_inset
-
- 
-\begin_inset Formula $\left(x+\D x\right)\in\left(x_{0}-a,x_{0}+a\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D f=f\left(x+\D x,\psi\left(x+\D x\right)\right)-f\left(x,\psi\left(x\right)\right)=\left\{ \begin{array}{c}
-f\left(x,\psi\left(x\right)\right)=0\\
-f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
-\end{array}\right\} $
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-Так как частные производные функции 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - непрерывны на 
-\begin_inset Formula $\Pi$
-\end_inset
-
-, то функция 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - дифференцируема на 
-\begin_inset Formula $\Pi$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Используя дифференцируемость в точке 
-\begin_inset Formula $M\left(x,\psi\left(x\right)\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-\D f & = & A\um\D x+B\um\D y+\alpha\um\D x+\beta\um\D y=\left\{ \begin{array}{c}
-A\um\D x+B\um\D y\ -\ \text{главная часть}\\
-\alpha\um\D x+\beta\um\D y=o\left(\rho\right)
-\end{array}\right\} \\
- & = & f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\alpha\um\D x+\beta\um\D y
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+\alpha\um\D x=-\left(f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\beta\um\D y\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\df{\D y}{\D x}=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)+\alpha}{f_{y}\pr\left(x,\psi\left(x\right)\right)+\beta}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D x\st0\sl\D y\st0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\exists\ul{\D x\st0}\df{\D y}{\D x}\ddsl\psi\pr\left(x\right)=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)}{f_{y}\pr\left(x,\psi\left(x\right)\right)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x^{2}+y^{2}-1=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2}-1=0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y=\pm\sqrt{1-x^{2}}$
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Remark
-
-\emph on
-Вспомнить пример про эллипс!
-\end_layout
-
-\end_deeper
-\begin_layout Example
-\begin_inset Formula $-y_{x}\pr=-\df{f_{y}\pr}{f_{x}\pr}=\left\{ \begin{array}{c}
-f_{x}\pr=2\um x\\
-f_{y}\pr=2\um y
-\end{array}\right\} =-\df{2\um x}{2\um y}=-\df xy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\ne0\ \sl\ x\nr\pm1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{0}\left(\df 12;\df{\sqrt{3}}2\right)\ \sl\ $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\pr\left(\df 12\right)=-\df{\df 12}{\df{\sqrt{3}}2}=-\df 1{\sqrt{3}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{1}\left(\df 12;\df{\sqrt{3}}2\right)\ \sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\pr\left(\df 12\right)=-\df{\df 12}{-\df{\sqrt{3}}2}=\df 1{\sqrt{3}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $e^{y}-e^{x}+x\um y=0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Найти 
-\begin_inset Formula $y_{x}\pr$
-\end_inset
-
- в точке 
-\begin_inset Formula $M_{0}\left(0,0\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=e^{y}-e^{x}+x\um y,\ f\left(0,0\right)=0$
-\end_inset
-
- - вып
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{x}\pr=-e^{x}+y$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{y}\pr=e^{y}+x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y_{x}\pr=-\df{f_{x}\pr}{f_{y}\pr}=\df{e^{x}-y}{e^{y}+x}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\left(0\right)=1$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Subsubsection
-Дифференцирование функций многих переменных заданных неявно
-\end_layout
-
-\begin_layout Theorem
-(2)
-\end_layout
-
-\begin_layout Theorem
-Пусть в точке 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0},u^{0}\right)$
-\end_inset
-
- выполнено следующее уравнение: 
-\begin_inset Formula $F\left(x_{1},x_{2},\tr,x_{m},u\right)=0$
-\end_inset
-
-.
- Функция 
-\begin_inset Formula $F\left(\vec x,u\right)$
-\end_inset
-
- - непрерывна в окрестности точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-: 
-\begin_inset Formula $\Omega\vkl E^{m+1}$
-\end_inset
-
- вместе с частными производными 
-\begin_inset Formula $Fx_{i}\pr,\ i=\overline{1,m}$
-\end_inset
-
-, причем 
-\begin_inset Formula $F_{u}\pr\left(M_{0}\right)\nr0$
-\end_inset
-
-.
- Тогда в некоторой окрестности точки 
-\begin_inset Formula $N_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
-\end_inset
-
- определена однозначная функция 
-\begin_inset Formula $u=f\left(x_{1},x_{2},\tr,x_{m}\right)$
-\end_inset
-
-, причем дифференцируемая в точке 
-\begin_inset Formula $N_{0}$
-\end_inset
-
- и выполнены следующие равенства: 
-\begin_inset Formula $f_{x_{i}}\pr\left(N_{0}\right)=-\df{F_{x_{i}}\pr\left(M_{0}\right)}{F_{u}\pr\left(M_{0}\right)},\ i=\overline{1,m}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-В нашем курсе не рассматривается это доказательство.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u^{3}-2\um u^{2}\um x+u\um x\um y-2=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{0}\left(1,1,1\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr,u_{y}\pr=?$
-\end_inset
-
- в точке 
-\begin_inset Formula $N_{0}\left(1,1\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F\left(x,y,u\right)=u^{3}-2\um u^{2}\um x+u\um x\um y-2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{x}\pr=-2\um u^{2}+u\um y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{y}\pr=u\um x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{u}\pr=3\um u^{2}-4\um u\um x+x\um y=\left\{ \text{В точке }M_{0}\left(1,1,1\right)\right\} =0\ \sl\ $
-\end_inset
-
- Дифференцируемости нет 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr\left(1,1\right)=-\df{-2\um u^{2}+u\um y}{3\um u^{2}-4\um u\um x+x\um y}=\left\{ \text{Мы работаем в точке }M_{0}\left(1,1,1\right)\right\} =\df 10$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-Ну тут что то с примером у Малыхина не так пошло.
- Переделаем примерчик...
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u^{3}-2\um u^{2}\um x+u\um x\um y-2=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{0}\left(1,0,0\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr,u_{y}\pr=?$
-\end_inset
-
- в точке 
-\begin_inset Formula $N_{0}\left(1,0\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F\left(x,y,u\right)=u^{3}-2\um u^{2}\um x+u\um x\um y-2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{x}\pr=-2\um u^{2}+u\um y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{y}\pr=u\um x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{u}\pr=3\um u^{2}-4\um u\um x+x\um y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr\left(1,0\right)=-\df{-2\um u^{2}+u\um y}{3\um u^{2}-4\um u\um x+x\um y}=\left\{ \text{Мы работаем в точке }M_{0}\left(1,0,0\right)\right\} =0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Subsubsection
-Касательная плоскость и нормаль к поверхности.
-\end_layout
-
-\begin_layout Standard
-Пусть поверхность 
-\begin_inset Formula $S\vkl E^{3}$
-\end_inset
-
- задана неявно:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F\left(x,y,z\right)=0\label{eq:16}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Пусть 
-\begin_inset Formula $F\left(x_{0},y_{0},z_{0}\right)=0$
-\end_inset
-
- и в некоторой окрестности точки 
-\begin_inset Formula $M_{0}\left(x_{0},y_{0},z_{0}\right)$
-\end_inset
-
- частные производные 
-\begin_inset Formula $F_{x}\pr,F_{y}\pr,F_{z}\pr$
-\end_inset
-
- - непрерывны и не равны нулю одновременно в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, то есть 
-\begin_inset Formula $\grad F\left(M_{0}\right)=\left(F_{x}\pr\left(M_{0}\right),F_{y}\pr\left(M_{0}\right),F_{z}\pr\left(M_{0}\right)\right)$
-\end_inset
-
-.
- Пусть например 
-\begin_inset Formula $F_{z}\pr\left(M_{0}\right)\nr0$
-\end_inset
-
-.
- Тогда по теореме (2) существует окрестность точки 
-\begin_inset Formula $N_{0}\left(x_{0},y_{0}\right)$
-\end_inset
-
- в которой однозначно определена функция 
-\begin_inset Formula $z=f\left(x,y\right)$
-\end_inset
-
-.
- Графически она определяет некоторый кусок поверхности 
-\begin_inset Formula $S$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Уравнение касательной плоскости к куску 
-\begin_inset Formula $S$
-\end_inset
-
-, проходящий через точку 
-\begin_inset Formula $M_{0}\left(x_{0},y_{0},z_{0}\right):$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z-z_{0}=f_{x}\pr\left(N_{0}\right)\um\left(x-x_{0}\right)+f_{y}\pr\left(N_{0}\right)\um\left(y-y_{0}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Но так как функция задана неявно..
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{x}\pr\left(N_{0}\right)=-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{y}\pr\left(N_{0}\right)=-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z-z_{0}=\left(-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(x-x_{0}\right)+\left(-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(y-y_{0}\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:17}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:17"
-
-\end_inset
-
-) - уравнение касательной к плоскости в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\df{x-x_{0}}{F_{x}\pr\left(M_{0}\right)}=\df{y-y_{0}}{F_{y}\pr\left(M_{0}\right)}=\df{z-z_{0}}{F_{z}\pr\left(M_{0}\right)}\label{eq:18}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:18"
-
-\end_inset
-
-) - уравнение нормали.
-\end_layout
-
-\begin_layout Standard
-Если 
-\begin_inset Formula $F_{x}\pr\left(M_{0}\right)\nr0$
-\end_inset
-
- либо 
-\begin_inset Formula $F_{y}\pr\left(M_{0}\right)\nr0$
-\end_inset
-
- поверхность 
-\begin_inset Formula $S$
-\end_inset
-
- задается 
-\begin_inset Formula $x=x\left(y,z\right)$
-\end_inset
-
- либо 
-\begin_inset Formula $y=y\left(x,z\right)$
-\end_inset
-
- - неявные, однозначные функции.
- Уравнения получаются аналогичные (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:17"
-
-\end_inset
-
-,
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:18"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-В случае когда 
-\begin_inset Formula $\grad F\left(M_{0}\right)$
-\end_inset
-
- касательная плоскость к 
-\begin_inset Formula $S$
-\end_inset
-
- в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- может и не существовать
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $z^{2}-x^{2}-y^{2}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Точка 
-\begin_inset Formula $M_{0}\left(0,0,0\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{x}\pr=-2\um x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{y}\pr=-2\um y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{z}\pr=2\um z$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\grad F\left(M_{0}\right)=\left(\begin{array}{c}
-0\\
-0\\
-0
-\end{array}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Remark
-\begin_inset Formula $\forall\left(x,y,z\right)\in E^{3}\ z^{2}=x^{2}+y^{2},\ z=\pm\sqrt{x^{2}+y^{2}}$
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\left|x\right|=\left|z\right|$
-\end_inset
-
- - Конус.
-\end_layout
-
-\begin_layout Standard
-В любой точке 
-\begin_inset Formula $M'\left(x_{0},y_{0},z_{0}\right)$
-\end_inset
-
- отличной от точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- уравнение касательной к плоскости
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $-2\um x_{0}\um\left(x-x_{0}\right)-2\um y_{0}\um\left(y-y_{0}\right)+2\um z_{0}\left(z-z_{0}\right)=0$
-\end_inset
-
- - уравнение касательной.
-\end_layout
-
-\begin_layout Standard
-Можно провести бесконечное множество касательных плоскостей в точке 
-\begin_inset Formula $M_{0}\left(0,0,0\right)$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Subsubsection
-Система функций заданных неявно
-\end_layout
-
-\begin_layout Standard
-Пусть система функций 
-\begin_inset Formula $y_{1},\tr,y_{k}$
-\end_inset
-
- задана неявно:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-F_{1}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0\\
-\vtr\\
-F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
-\end{cases}\label{eq:19}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-То есть функции 
-\begin_inset Formula $y_{1},\tr,y_{k}$
-\end_inset
-
- - решения системы (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:19"
-
-\end_inset
-
-), 
-\begin_inset Formula $y_{j}=y_{j}\left(x_{1},\tr x_{m}\right),\ j=\overline{1,k}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Theorem
-Пусть система функций (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:19"
-
-\end_inset
-
-) удовлетворяет условиям:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Функции 
-\begin_inset Formula $F_{j}$
-\end_inset
-
- определены в некоторой окрестности 
-\begin_inset Formula $\Omega\vkl E^{m+k}$
-\end_inset
-
- точки 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},x_{2}^{0},\tr,x_{m}^{0},y_{1}^{0},\tr,y_{k}^{0}\right)$
-\end_inset
-
- и непрерывно дифференцируемы в этой окрестности.
-\end_layout
-
-\begin_layout Enumerate
-Якобиан(определитель Якоби) системы отличен от нуля.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\left|\begin{array}{cccc}
-\df{\dd F_{1}}{\dd y_{1}} & \df{\dd F_{1}}{\dd y_{2}} & \tr & \df{\dd F_{1}}{\dd y_{k}}\\
-\df{\dd F_{2}}{\dd y_{1}} & \df{\dd F_{2}}{\dd y_{2}} & \tr & \df{\dd F_{2}}{\dd y_{k}}\\
-\vtr & \vtr & \ntr & \vtr\\
-\df{\dd F_{k}}{\dd y_{1}} & \df{\dd F_{k}}{\dd y_{2}} & \tr & \df{\dd F_{k}}{\dd y_{k}}
-\end{array}\right|=\left|\df{\dd F}{\dd y}\right|=\left|\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\right|\nr0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Точка 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- удовлетворяет системе (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:19"
-
-\end_inset
-
-).
-\end_layout
-
-\end_deeper
-\begin_layout Theorem
-Тогда существует окрестность точки 
-\begin_inset Formula $M_{0}:$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $\D=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m};\ \left|y_{j}-y_{j}^{0}\right|<b,\ j=\overline{1,k}\right\} \vkl\Omega$
-\end_inset
-
- такая система определяет 
-\begin_inset Formula $y_{1},y_{2},\tr,y_{k}$
-\end_inset
-
- однозначно как непрерывно дифференцируемые функции на множестве
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $\D^{0}=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m}\right\} \vkl E^{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-В нашем курсе его не будет..
-\end_layout
-
-\begin_layout Remark
-Как находить частные производные? 
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-y_{1}=\psi_{1}\left(x_{1},\tr,x_{m}\right)\\
-\tr\\
-y_{k}=\psi_{k}\left(x_{1},\tr,x_{m}\right)
-\end{cases}\label{eq:20}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula $\df{dy_{j}}{dx_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-Обозначим 
-\begin_inset Formula $x=\left(x_{1},\tr,x_{m}\right)$
-\end_inset
-
-, тогда подстановка (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:20"
-
-\end_inset
-
-) в (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:19"
-
-\end_inset
-
-) дает:
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula 
-\[
-\begin{cases}
-F_{1}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\right)\equiv0\\
-\tr\\
-F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\right)\equiv0
-\end{cases}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-Дифференцируем по 
-\begin_inset Formula $x_{l}$
-\end_inset
-
- каждое тождество, получим:
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula 
-\[
-\begin{cases}
-\df{\dd F_{1}}{\dd x_{l}}+\df{\dd F_{1}}{\dd y_{1}}\um\df{\dd\psi_{1}}{\dd x_{l}}+\tr+\df{\dd F_{1}}{\dd y_{k}}\um\df{\dd\psi_{k}}{\dd x_{l}}=0\\
-\tr\\
-\df{\dd F_{k}}{\dd x_{l}}+\df{\dd F_{k}}{\dd y_{1}}\um\df{\dd\psi_{1}}{\dd x_{l}}+\tr+\df{\dd F_{k}}{\dd y_{k}}\um\df{\dd\psi_{k}}{\dd x_{l}}=0
-\end{cases}
-\]
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Remark
-Это линейная система, относительно неизвестных 
-\begin_inset Formula $\df{\dd\psi_{j}}{\dd x_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
-\end_inset
-
-.
- Она однозначно разрешима тогда и только тогда, когда ее определитель ---
- Якобиан: 
-\begin_inset Formula 
-\[
-\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\nr0
-\]
-
-\end_inset
-
-А решения этой системы выглядят следующим образом: 
-\begin_inset Formula 
-\[
-\begin{cases}
-\df{\dd y_{1}}{\dd x_{l}}=-\df{\dd\left(F_{1},F_{2},\tr,F_{k}\right)}{\dd\left(x_{l},y_{2},\tr,y_{k}\right)}\\
-\tr\\
-\df{\dd y_{k}}{\dd x_{l}}=-\df{\df{\dd\left(F_{1},F_{2},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k-1},x_{l}\right)}}{\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},y_{2},\tr,y_{k}\right)}}
-\end{cases}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Зависимость функций.
- Понятие.
-\end_layout
-
-\begin_layout Standard
-Пусть даны 
-\begin_inset Formula $k$
-\end_inset
-
- функций 
-\begin_inset Formula $m$
-\end_inset
-
- переменных 
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-u_{1}=\varphi_{1}\left(x_{1},\tr,x_{m}\right)\\
-\tr\\
-u_{k}=\varphi_{k}\left(x_{1},\tr,x_{m}\right)
-\end{cases}\label{eq:21}
-\end{equation}
-
-\end_inset
-
-, определенных в области 
-\begin_inset Formula $D\vkl E^{m}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Definition
-
-\emph on
-(1)
-\emph default
- Функция 
-\begin_inset Formula $u_{n}$
-\end_inset
-
- зависит от остальных функций системы (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:21"
-
-\end_inset
-
-) в области 
-\begin_inset Formula $D$
-\end_inset
-
-, если 
-\begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ k\br n$
-\end_inset
-
-, где 
-\begin_inset Formula $\Psi$
-\end_inset
-
- - некоторая функция 
-\begin_inset Formula $\left(k-1\right)$
-\end_inset
-
- аргументов.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Definition
-
-\emph on
-(2) 
-\emph default
-Система функций (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:21"
-
-\end_inset
-
-) называется зависимой в области 
-\begin_inset Formula $D$
-\end_inset
-
-, если одна из функций системы зависит от остальных.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Definition
-
-\emph on
-(3) 
-\emph default
-Если не существует функций 
-\begin_inset Formula $\Psi\left(t_{1},\tr,t_{k-1}\right)$
-\end_inset
-
-, что 
-\begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ n=\overline{1,k}$
-\end_inset
-
-, то функции называются независимыми на 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(1)
-\emph default
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-u_{1}=x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}\\
-u_{2}=x_{1}+x_{2}+x_{3}+x_{4}\\
-u_{3}=2\um x_{1}\um x_{2}+2\um x_{1}\um x_{3}+2\um x_{1}\um x_{4}+2\um x_{2}\um x_{3}+2\um x_{2}\um x_{4}+2\um x_{3}\um x_{4}
-\end{cases}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{3}=u_{2}^{2}-u_{1}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-u_{1}=x+y\\
-u_{2}=x-y
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $D\vkl E^{2},\ M_{0}\left(0,0\right)\in D$
-\end_inset
-
- - внутренняя точка области 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-Функция 
-\begin_inset Formula $u_{1}=y+x$
-\end_inset
-
- сохраняет постоянное значение, а именно 
-\begin_inset Formula $y_{1}=0$
-\end_inset
-
- на прямой 
-\begin_inset Formula $y=-x$
-\end_inset
-
-, а функция 
-\begin_inset Formula $u_{2}$
-\end_inset
-
- на этой прямой имеет вид 
-\begin_inset Formula $u_{2}=2\um x$
-\end_inset
-
- - данное выражение не является константой, следовательно 
-\begin_inset Formula $u_{2}=2\um x$
-\end_inset
-
- - не зависит от 
-\begin_inset Formula $u_{1}\equiv0$
-\end_inset
-
- на этой прямой.
-\end_layout
-
-\begin_layout Example
-Докажем теперь что 
-\begin_inset Formula $u_{1}$
-\end_inset
-
- не зависит от 
-\begin_inset Formula $u_{2}$
-\end_inset
-
-.
- На прямой 
-\begin_inset Formula $y=x$
-\end_inset
-
-, можем заметить что 
-\begin_inset Formula $u_{2}\equiv0$
-\end_inset
-
-, функция 
-\begin_inset Formula $u_{1}=2\um x$
-\end_inset
-
- на этой прямой это переменная, следовательно 
-\begin_inset Formula $u_{1}$
-\end_inset
-
- не зависит на прямой 
-\begin_inset Formula $y=x$
-\end_inset
-
- от 
-\begin_inset Formula $u_{2}$
-\end_inset
-
-, значит и на 
-\begin_inset Formula $D$
-\end_inset
-
- она не зависит, а значит что система независимая.
-\end_layout
-
-\begin_layout Theorem
-Пусть 
-\begin_inset Formula $k$
-\end_inset
-
- функций от 
-\begin_inset Formula $m$
-\end_inset
-
- переменных 
-\begin_inset Formula $\left(k\mr m\right)$
-\end_inset
-
-,определяемых системой (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:21"
-
-\end_inset
-
-) определены и дифференцируемы в окрестности точки 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
-\end_inset
-
-, если Якобиан от этих функций по каким либо 
-\begin_inset Formula $k$
-\end_inset
-
- переменным отличен от нуля в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, то система функций (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:21"
-
-\end_inset
-
-) не зависима в некоторой окрестности точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Пусть, не теряя общности отличен от нуля Якобиан по переменным 
-\begin_inset Formula $x_{1},x_{2},\tr,x_{k}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula 
-\begin{equation}
-\df{\dd\left(u_{1},u_{2},\tr,u_{k}\right)}{\dd\left(x_{1},\tr,x_{k}\right)}\nr0\label{eq:22}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Предположим противное, то есть 
-\begin_inset Formula $u_{1},\tr,u_{k}$
-\end_inset
-
- - зависимы в некоторой окрестности точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, например 
-\begin_inset Formula $u_{n}=\Psi\left(u_{1},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right)$
-\end_inset
-
- в окрестности точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- - сложная функция аргументов 
-\begin_inset Formula $x_{1},\tr,x_{m}$
-\end_inset
-
-, но дифференцируем по 
-\begin_inset Formula $x_{j},\ j=\overline{1,k}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\begin{cases}
-\df{\dd u_{n}}{\dd x_{1}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{1}}\\
-\df{\dd u_{n}}{\dd x_{2}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{2}}\\
-\tr\\
-\df{\dd u_{n}}{\dd x_{k}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{k}}
-\end{cases}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-Данное выражение означает, что вектор 
-\begin_inset Formula $\left(\begin{array}{c}
-\df{\dd u_{n}}{\dd x_{1}}\\
-\vtr\\
-\df{\dd u_{n}}{\dd x_{k}}
-\end{array}\right)$
-\end_inset
-
-, являющийся 
-\begin_inset Formula $n$
-\end_inset
-
--ной строкой определителя Якоби является линейной комбинацией остальных
- строк определителя, следовательно определитель Якоби равен нулю.
- Противоречие.
-\end_layout
-
-\begin_layout Subsubsection
-Условный экстремум.
- Понятие.
-\end_layout
-
-\begin_layout Example
-Найти экстремумы функции 
-\begin_inset Formula 
-\begin{equation}
-u=x^{2}+y^{2}\label{eq:23}
-\end{equation}
-
-\end_inset
-
- при условии 
-\begin_inset Formula 
-\begin{equation}
-x+y-1=0\label{eq:24}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Выразим 
-\begin_inset Formula $y=1-x$
-\end_inset
-
-, подставим его в 
-\begin_inset Formula $\tilde{u}=x^{2}+\left(1+x\right)^{2}=2\um x^{2}-2\um x+1$
-\end_inset
-
- - функция одной переменной.
-\end_layout
-
-\begin_layout Example
-Ее область определения 
-\begin_inset Formula $x\in\left(-\b,+\b\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Найдем ее экстремумы:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\tilde{u}\pr=4\um x-2=0\ \sl\ x=\df 12$
-\end_inset
-
- - критическая точка.
- Так как функция 
-\begin_inset Formula $\tilde{u}$
-\end_inset
-
-, переходя через точку 
-\begin_inset Formula $x=\df 12$
-\end_inset
-
- меняет знак с минуса на плюс, значить 
-\begin_inset Formula $x=\df 12$
-\end_inset
-
- - точка минимума.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\tilde{u}_{min}=\tilde{u}\left(\df 12\right)=\df 12$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-Заметим что глобальный экстремум (минимум) 
-\begin_inset Formula $M_{0}\left(0,0\right),\ f_{min}=f\left(0,0\right)=0$
-\end_inset
-
-.
- Полученный экстремум называется условным, так как необходимо учитывать
- дополнительное условие - условие связи (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:24"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-В общей постановке задача нахождения условного экстремума выглядит следующим
- образом:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-u=f\left(x_{1},\tr,x_{m},y_{1},\tr,y_{k}\right)\st extr\label{eq:25}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-F_{1}\left(x_{1},\tr,x_{m},y_{1},\tr,y_{k}\right)=0\\
-\tr\\
-F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr,y_{k}\right)=0
-\end{cases}\label{eq:26}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Функция 
-\begin_inset Formula $f\left(\vec x,\vec y\right)$
-\end_inset
-
- называется 
-\emph on
-целевой функцией
-\emph default
-, а условия (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-) называются 
-\emph on
-условиями связи
-\emph default
-.
-\end_layout
-
-\begin_layout Definition
-Говорят что функция (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:25"
-
-\end_inset
-
-) имеет условный максимум(минимум) в точке 
-\begin_inset Formula $M_{0}\left(\vec{x_{0}},\vec{y_{0}}\right)$
-\end_inset
-
-, координаты которой удовлетворяют условиям связи (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-), если существует окрестность 
-\begin_inset Formula $U\left(M_{0}\right)$
-\end_inset
-
- в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, в которой функция 
-\begin_inset Formula $f\left(\vec x,\vec y\right)$
-\end_inset
-
- принимает наибольшее(наименьшее) значение в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, среди всех точек, удовлетворяющих условиям (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-Предположим что функции 
-\begin_inset Formula $F_{j}$
-\end_inset
-
- дифференцируемы в 
-\begin_inset Formula $U\left(M_{0}\right)$
-\end_inset
-
- и непрерывно дифференцируемы в самой точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, и Якобиан 
-\begin_inset Formula 
-\begin{equation}
-\left|D\right|=\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\label{eq:27}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Тогда 
-\begin_inset Formula $\sl$
-\end_inset
-
- по теореме о системе неявных функций существует окрестность в точке 
-\begin_inset Formula $M_{0}'\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
-\end_inset
-
- в которой однозначно определены функции 
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-y_{1}=\varphi_{1}\left(x_{1},\tr,x_{m}\right)\\
-\tr\\
-y_{k}=\varphi_{k}\left(x_{1},\tr,x_{m}\right)
-\end{cases}\label{eq:28}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Они же являются решениями системы (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-).
- Подставив функции (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:28"
-
-\end_inset
-
-) в функцию (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:25"
-
-\end_inset
-
-) получим задачу на безусловный экстремум.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-u=f\left(x_{1},\tr,x_{m},\varphi_{1}\left(x_{1},\tr,x_{m}\right),\tr,\varphi_{k}\left(x_{1},\tr,x_{m}\right)\right)=\Phi\left(x_{1},\tr,x_{m}\right)\st extr\label{eq:29}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Вопрос: 
-\emph default
-Можно ли получить необходимые условия экстремума, не решая систему (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-)?
-\end_layout
-
-\begin_layout Standard
-Если 
-\begin_inset Formula $u$
-\end_inset
-
- в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
- это экстремум, то 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $du=\df{\dd\Phi}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd\Phi}{\dd x_{m}}\um dx_{m}=0$
-\end_inset
-
- для любого набора 
-\begin_inset Formula $dx_{i},\ i=\overline{1,m}$
-\end_inset
-
-.
- Так как дифференциал обладает свойством инвариантности формы, он может
- выглядеть так: (но только в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-du=\df{\dd f}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd f}{\dd x_{m}}\um dx_{m}+\df{\dd f}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd f}{\dd y_{k}}\um dy_{k}=0\label{eq:30}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Дифференцируя уравнения связи (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-) с учетом системы (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:28"
-
-\end_inset
-
-) получим систему следующую:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-\df{\dd F_{1}}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd F_{1}}{\dd x_{m}}\um dx_{m}+\df{\dd F_{1}}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd F_{1}}{\dd y_{k}}\um dy_{k}=0\\
-\tr\\
-\df{\dd F_{k}}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd F_{k}}{\dd x_{m}}\um dx_{m}+\df{\dd F_{k}}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd F_{k}}{\dd y_{k}}\um dy_{k}=0
-\end{cases}\label{eq:31}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Так как Якобиан отличен от нуля в точке 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-, то из системы (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:31"
-
-\end_inset
-
-) получим однозначно неизвестные 
-\begin_inset Formula $dy_{1},\tr,dy_{k}$
-\end_inset
-
-, зависящие линейно от 
-\begin_inset Formula $dx_{1},\tr,dx_{m}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-После их подстановки в (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:29"
-
-\end_inset
-
-) получим:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $A_{1}\um dx_{1}+\tr+A_{m}\um dx_{m}=0,\ \forall dx_{i},\ i=\overline{1,m}$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\begin{cases}
-A_{1}=0\\
-\vtr\\
-A_{m}=0
-\end{cases},\ \begin{cases}
-F_{1}=0\\
-\vtr\\
-F_{k}=0
-\end{cases}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Получили 
-\begin_inset Formula $\left(k+m\right)$
-\end_inset
-
- условий - необходимое условие экстремума задачи (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:25"
-
-\end_inset
-
-,
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-На практике удобно применять метод множителей Лагранжа.
-\end_layout
-
-\begin_layout Subsubsection
-Метод множителей Лагранжа
-\end_layout
-
-\begin_layout Standard
-Рассматривается функция Лагранжа 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $L\left(\vec x,\vec y,\vec{\lambda}\right)=f\left(\vec x,\vec y\right)+\lambda_{1}\um F\left(\vec x,\vec y\right)+\tr+\lambda_{k}\um F_{k}\left(\vec x,\vec y\right)$
-\end_inset
-
- Где 
-\begin_inset Formula $\lambda_{j},\ j=\overline{1,k}$
-\end_inset
-
- (пока) неизвестные множители Лагранжа.
-\end_layout
-
-\begin_layout Standard
-Считая выполненными условия (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-) и что функция 
-\begin_inset Formula $f\left(\vec x,\vec y\right)$
-\end_inset
-
- - дифференцируема выберем 
-\begin_inset Formula $\lambda_{j},\ j=\overline{1,k}$
-\end_inset
-
- из условий 
-\begin_inset Formula $\df{\dd L}{\dd y_{1}}=\df{\dd L}{\dd y_{2}}=\tr=\df{\dd L}{\dd y_{k}}=0$
-\end_inset
-
-.
- Это возможно так как система 
-\begin_inset Formula $\begin{cases}
-\df{\dd f}{\dd y_{1}}+\lambda_{1}\um\df{\dd F_{1}}{\dd y_{1}}+\tr+\lambda_{k}\um\df{\dd F_{k}}{\dd y_{1}}=0\\
-\vtr\\
-\df{\dd f}{\dd y_{k}}+\lambda_{1}\um\df{\dd F_{1}}{\dd y_{k}}+\tr+\lambda_{k}\um\df{\dd F_{k}}{\dd y_{k}}=0
-\end{cases}$
-\end_inset
-
- однозначно разрешима по условию 
-\begin_inset Formula $\df{d\left(F_{1},\tr,F_{k}\right)}{d\left(y_{1},\tr,y_{k}\right)}\nr0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Отсюда следует что 
-\begin_inset Formula $dL=0$
-\end_inset
-
-, то есть 
-\begin_inset Formula $\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}+\df{\dd L}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd L}{\dd y_{k}}\um dy_{k}=0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Примет вид: 
-\begin_inset Formula $\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}=0$
-\end_inset
-
-.
- 
-\begin_inset Formula $x_{i}$
-\end_inset
-
- - произвольное.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
-\df{\dd L}{\dd x_{1}}=0\\
-\vtr\\
-\df{\dd L}{\dd x_{m}}=0
-\end{cases}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Получили необходимые условия экстремума задачи (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:25"
-
-\end_inset
-
-,
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:26"
-
-\end_inset
-
-) 
-\begin_inset Formula $\begin{cases}
-L_{x_{1}}\pr=0\\
-\vtr\\
-L_{x_{m}}\pr=0\\
-L_{y_{1}}\pr=0\\
-\vtr\\
-L_{y_{k}}\pr=0\\
-F_{1}=0\\
-\vtr\\
-F_{k}=0
-\end{cases}$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Standard
-Достаточное условие экстремума:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $d^{2}L=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}+\df{\dd}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd}{\dd y_{k}}\um dy_{k}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $L>0\sl\min,\ L<0\sl\max$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-При исследование 
-\begin_inset Formula $d^{2}u$
-\end_inset
-
- на знак часто требуется дополнительное дифференцировать (взять дифференциал)
- условия связи - это позволяет получить соотношение между 
-\begin_inset Formula $dx_{1},\tr,dx_{m},dy_{1},\tr,d_{y_{k}}.$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(1)
-\end_layout
-
-\begin_layout Example
-
-\emph on
-\begin_inset Formula $\begin{cases}
-u=x^{2}-y^{2}\st extr\\
-2\um x-y-3=0
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $L\left(\vec x,\vec y,\vec{\lambda}\right)=x^{2}-y^{2}+\lambda\um\left(2\um x-y-3\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-необходимое условие экстремума.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $L_{x}\pr=\begin{cases}
-2\um x+2\um\lambda=0\\
-2\um y-\lambda=0\\
-2\um x-y-3=0
-\end{cases}\sl\begin{cases}
-x=-\lambda\\
-y=-\df{\lambda}2\\
--2\um\lambda+\df{\lambda}2=3
-\end{cases}\sl\begin{cases}
-x=2\\
-y=1\\
-\lambda=-2
-\end{cases}$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\sl\ \exists M_{0}\left(2;1\right)$
-\end_inset
-
- - критическая точка, отвечающая 
-\begin_inset Formula $\lambda=-2$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Достаточное условие экстремума
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $d^{2}L=L_{x^{2}}\ppr\um dx^{2}+2\um L_{xy}\ppr\um dx\um dy+L_{y^{2}}\ppr\um dy^{2}=2\um dx^{2}-2\um dy^{2}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Продифференцируем условие связи: 
-\begin_inset Formula $d\left(2\um x-y-3\right)=0$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $2\um dx=dy$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L=2\um dx^{2}-2\um4\um dx^{2}-6\um dx^{2}<0$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $U_{\max}=U\left(M_{0}\right)=U\left(2;1\right)=3$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-u=x^{2}+y^{2}+z^{2}\st extr\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1,\ a>b>c>0
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $L=x^{2}+y^{2}+z^{2}+\lambda\um\left(\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}-1\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Необходимое условие
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\begin{array}{c}
-L_{x}\pr=\\
-L_{y}\pr=\\
-L_{z}\pr=\\
-L_{\lambda}\pr=
-\end{array}\begin{cases}
-2\um x+\df{2\lambda x}{\lambda^{2}}=0\\
-2y+\df{2y\lambda}{\lambda^{2}}=0\\
-2z+\df{2\lambda z}{\lambda^{2}}=0\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1
-\end{cases}\dsl\begin{cases}
-x\left(1+\df 1{a^{2}}\right)=0\\
-y\left(1+\df{\lambda}{b^{2}}=0\right)\\
-z\left(1+\df{\lambda}{c^{2}}\right)=0\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1
-\end{cases}\dsl\begin{cases}
-\left[\begin{array}{c}
-x=0\\
-\lambda=-a^{2}
-\end{array}\right.\\
-\left[\begin{array}{c}
-z=0\\
-\lambda=-c^{2}
-\end{array}\right.\\
-\left[\begin{array}{c}
-y=0\\
-\lambda=-b^{2}
-\end{array}\right.\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1
-\end{cases}\dsl\left[\begin{array}{c}
-\begin{cases}
-\lambda=-a^{2}\\
-y=0\\
-z=0\\
-x=\pm a
-\end{cases}\\
-\begin{cases}
-\lambda=-b^{2}\\
-x=0\\
-z=0\\
-y=\pm b
-\end{cases}\\
-\begin{cases}
-\lambda=-c^{2}\\
-y=0\\
-x=0\\
-z=\pm c
-\end{cases}
-\end{array}\right.$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $M_{1}^{\pm}\left(\pm a;0;0\right),\ \lambda=-a^{2}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $M_{2}^{\pm}\left(0;\pm b;0\right),\ \lambda=-b^{2}$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $M_{3}^{\pm}\left(0;0;\pm c\right),\ \lambda=-c^{2}$
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Достаточное условие экстремума
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
- & = & L_{x^{2}}\ppr\um dx^{2}+L_{y^{2}}\ppr\um dy^{2}+L_{z^{2}}\ppr\um dz^{2}=\\
- & = & \left(2+\df{2\lambda}{a^{2}}\right)dx^{2}+\left(2+\df{2\lambda}{b^{2}}\right)dy^{2}+\left(2+\df{2\lambda}{c^{2}}\right)dz^{2}
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L\left(M_{1}^{\pm}\right)=2\left(1-1\right)dx^{2}+2\left(1-\df{a^{2}}{b^{2}}\right)dy^{2}+2\left(1-\df{a^{2}}{c^{2}}\right)dz^{2}<0\sl\max$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L\left(M_{2}^{\pm}\right)=2\left(1-\df{b^{2}}{a^{2}}\right)dx^{2}+2\left(1-1\right)dy^{2}+2\left(11+\df{b^{2}}{c^{2}}\right)dz^{2}$
-\end_inset
-
- - Знакопеременная форма
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d\left(\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1\right)=\df{2xdx}{a^{2}}+\df{2ydy}{b^{2}}+\df{2zdz}{c^{2}}=\left\{ \begin{array}{c}
-\df{2xdx}{a^{2}}=0\\
-\df{2ydy}{b^{2}}=0\\
-\df{2zdz}{c^{2}}=0
-\end{array}\right\} =0$
-\end_inset
-
- - тут все обнуляется.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L\left(M_{3}^{\pm}\right)=2\left(1-\df{c^{2}}{a^{2}}\right)dx^{2}+2\left(1-\df{c^{2}}{b^{2}}\right)dy^{2}+2\left(1-1\right)dz^{2}>0\sl\min$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Section
-Интегральное исчисления функций многих переменных
-\end_layout
-
-\begin_layout Subsection
-Двойные интегралы
-\end_layout
-
-\begin_layout Subsubsection
-Задача об объеме цилиндрического бруса
-\end_layout
-
-\begin_layout Standard
-Пусть 
-\begin_inset Formula $D\vkl E^{2}$
-\end_inset
-
- - квадрируемая область, а функция 
-\begin_inset Formula $u=f\left(x;y\right)$
-\end_inset
-
- определена на 
-\begin_inset Formula $D$
-\end_inset
-
-.
- Ставится задача нахождения объема цилиндрического бруса, ограниченного
- плоскостью 
-\begin_inset Formula $XoY$
-\end_inset
-
-, поверхностью 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- и поверхностью, составленной из перпендикуляров плоскости 
-\begin_inset Formula $XoY$
-\end_inset
-
-, проходящих через точки границы области 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Разобьем область 
-\begin_inset Formula $D$
-\end_inset
-
- спрямляемыми линиями на непересекающийся подобласти 
-\begin_inset Formula $D=D_{1}\ob D_{2}\ob\tr\ob D_{n}$
-\end_inset
-
-, 
-\begin_inset Formula $D_{i}\cap D_{j}=\textrm{Ø}\ j\nr i$
-\end_inset
-
-, 
-\begin_inset Formula $\forall i=\overline{1,n}$
-\end_inset
-
- выберем произвольную точку 
-\begin_inset Formula $M_{i}\left(\xi_{i},\nu_{i}\right)\in D_{i}$
-\end_inset
-
-, обозначим 
-\begin_inset Formula $\D S_{i}$
-\end_inset
-
- - площадь 
-\begin_inset Formula $D_{i}$
-\end_inset
-
-, 
-\begin_inset Formula $\lambda_{i}=\un{\sup}{M',M''\in D_{i}}\varrho\left(M',M''\right)$
-\end_inset
-
-, 
-\begin_inset Formula $\lambda=\un{\max}{i=\overline{1,n}}\lambda_{i}$
-\end_inset
-
- Тогда при достаточно больших 
-\begin_inset Formula $n$
-\end_inset
-
- и малых 
-\begin_inset Formula $\lambda$
-\end_inset
-
- конечная сумма 
-\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
-\end_inset
-
- приближенно равна объему нашего груза.
- 
-\begin_inset Formula $n\st\b,\ \lambda\st0$
-\end_inset
-
- погрешность приближения стремится к нулю.
- В пределе получаем объем груза.
-\end_layout
-
-\begin_layout Definition
-Если существует конечный предел при 
-\begin_inset Formula $n\st\b,\ \lambda\st0$
-\end_inset
-
- последовательности 
-\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
-\end_inset
-
-, не зависящая от способа разбиения области 
-\begin_inset Formula $D$
-\end_inset
-
- и набора точек 
-\begin_inset Formula $\left\{ M_{i}\right\} $
-\end_inset
-
-, то его называют двойным интегралом от функции 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- по области 
-\begin_inset Formula $D$
-\end_inset
-
-, обозначают: 
-\begin_inset Formula $\un{\iint}Df\left(x,y\right)\um dx\um dy\ \ddsl\ul{\begin{array}{c}
-n\st\b\\
-\lambda\st0
-\end{array}}\ous{i=1}nf\left(\xi_{i},\nu_{i}\right)\um\D S_{i}$
-\end_inset
-
-.
- А функция называется интегрируемой по области 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-Суммы Дарбу для двойного интеграла.
-\end_layout
-
-\begin_layout Standard
-Условия существования интегралов.
-\end_layout
-
-\begin_layout Lemma
-Функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
-, интегрируемая на области 
-\begin_inset Formula $D$
-\end_inset
-
- обязательно ограничена на области 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно разобрать.
- Переносим схему доказательства с аналогичной теоремы о одинарном интеграле.
-\end_layout
-
-\begin_layout Standard
-Пусть функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- ограничена, то есть 
-\begin_inset Formula $\exists m,M\in\R\ m\mr f\left(x,y\right)\mr M$
-\end_inset
-
- на 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Рассмотрим произвольное разбиение 
-\begin_inset Formula $D=\un{\ov{\ob}n}{i=1}D_{i}$
-\end_inset
-
-, обозначим 
-\begin_inset Formula $m_{i}=\un{\inf}{}f\left(x,y\right)$
-\end_inset
-
-, 
-\begin_inset Formula $M_{i}=\un{\sup}{}f\left(x,y\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Definition
-Суммы 
-\begin_inset Formula $s_{n}=\ous{i=1}nm_{i}\D S_{i},\ S_{n}=\ous{i=1}nM_{i}\D S_{i}$
-\end_inset
-
- называются нижней и верхней суммами Дарбу для функции 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Definition
-Легко доказать что 
-\begin_inset Formula $s_{n}\mr\sigma_{n}\mr S_{n}$
-\end_inset
-
- для любого разбиения и для любого набора точек 
-\begin_inset Formula $\left\{ M_{i}\right\} $
-\end_inset
-
-.
- Самим доказать надо.
-\end_layout
-
-\begin_layout Paragraph
-Свойства сумм Дарбу.
-\end_layout
-
-\begin_layout Theorem
-(1)
-\end_layout
-
-\begin_layout Theorem
-При добавлении в разбиение еще 1-ной спрямляемой линии нижние суммы Дарбу
- не убывают, а верхние суммы Дарбу не возрастают.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно..
-\end_layout
-
-\begin_layout Theorem
-(2)
-\end_layout
-
-\begin_layout Theorem
-Всякая нижняя сумма Дарбу 
-\begin_inset Formula $s'$
-\end_inset
-
- не превосходит всякой верхней суммы Дарбу 
-\begin_inset Formula $S''$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно..
-\end_layout
-
-\begin_layout Theorem
-(3)
-\end_layout
-
-\begin_layout Theorem
-Функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- интегрируемая на области 
-\begin_inset Formula $D$
-\end_inset
-
- тогда и только тогда, когда 
-\begin_inset Formula $\ul{\begin{array}{c}
-n\st\b\\
-\lambda\st0
-\end{array}}\left(S_{n}-s_{n}\right)=0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно..
-\end_layout
-
-\begin_layout Subsubsection
-Классы интегрируемых функций
-\end_layout
-
-\begin_layout Theorem
-(1)
-\end_layout
-
-\begin_layout Theorem
-Функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- непрерывна на области 
-\begin_inset Formula $D$
-\end_inset
-
- интегрируема на ней.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно..
-\end_layout
-
-\begin_layout Theorem
-Если ограниченная функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- имеет на области 
-\begin_inset Formula $D$
-\end_inset
-
- разрывы лишь на конечном множестве кривых площади 0, то 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- интегрируемая на 
-\begin_inset Formula $D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Subsubsection
-Свойства двойного интеграла
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 1.
- 
-\emph default
-Если область 
-\begin_inset Formula $D=D_{1}\ob D_{2},\ D_{1}\cap D_{2}=\textrm{Ø}$
-\end_inset
-
- и 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- интегрируемая на 
-\begin_inset Formula $D$
-\end_inset
-
- , то 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- интегрируема на 
-\begin_inset Formula $D_{1}$
-\end_inset
-
- и 
-\begin_inset Formula $D_{2}$
-\end_inset
-
-, причем 
-\begin_inset Formula $\un{\iint}Df\left(x,y\right)\um dx\um dy=\un{\iint}{D_{1}}f\left(x,y\right)\um dx\um dy+\un{\iint}{D_{2}}f\left(x,y\right)\um dx\um dy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 2.
- 
-\emph default
-Если 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- интегрируемая на 
-\begin_inset Formula $D$
-\end_inset
-
-, то 
-\begin_inset Formula $\forall k\in\R\ \un{\iint}Dk\um f\left(x,y\right)\um dx\um dy=k\um\un{\iint}Df\left(x,y\right)\um dx\um dy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 3.
- 
-\emph default
-Если 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- и 
-\begin_inset Formula $g\left(x,y\right)$
-\end_inset
-
- - интегрируемы на 
-\begin_inset Formula $D$
-\end_inset
-
-, то 
-\begin_inset Formula $f\left(x,y\right)\pm g\left(x,y\right)$
-\end_inset
-
- так же интегрируема на 
-\begin_inset Formula $D$
-\end_inset
-
- и верна формула: 
-\begin_inset Formula $\un{\iint}D\left(f\left(x,y\right)\pm g\left(x,y\right)\right)\um dx\um dy=\un{\iint}Df\left(x,y\right)\um dx\um dy\pm\un{\iint}Dg\left(x,y\right)\um dx\um dy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 4.
- 
-\emph default
-Если 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- и 
-\begin_inset Formula $g\left(x,y\right)$
-\end_inset
-
- интегрируемы на 
-\begin_inset Formula $D$
-\end_inset
-
- и выполняется условие 
-\begin_inset Formula $f\left(x,y\right)\mr g\left(x,y\right)$
-\end_inset
-
-, то 
-\begin_inset Formula $\un{\iint}Df\left(x,y\right)dxdy\mr\un{\iint}Dg\left(x,y\right)dxdy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 5.
- 
-\emph default
-Если 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - интегрируемы на 
-\begin_inset Formula $D$
-\end_inset
-
- и 
-\begin_inset Formula $\left|f\left(x,y\right)\right|$
-\end_inset
-
- - интегрируема на 
-\begin_inset Formula $D$
-\end_inset
-
-, то 
-\begin_inset Formula $\left|\un{\iint}df\left(x,y\right)dxdy\right|\mr\un{\iint}D\left|f\left(x,y\right)\right|dxdy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 6.
-
-\emph default
- Если 
-\begin_inset Formula $m\mr f\left(x,y\right)\mr M$
-\end_inset
-
-, 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - интегрируема на 
-\begin_inset Formula $D$
-\end_inset
-
-, то 
-\begin_inset Formula $m\um S_{D}\mr\un{\iint}Df\left(x,y\right)dxdy\mr M\um S_{D}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 7.
- 
-\emph default
-Если 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - интегрируемы на 
-\begin_inset Formula $D$
-\end_inset
-
- и 
-\begin_inset Formula $\left|f\left(x,y\right)\right|$
-\end_inset
-
- - интегрируема на 
-\begin_inset Formula $D$
-\end_inset
-
-, то 
-\begin_inset Formula $\exists\mu\in\left[m,M\right]\ \un{\iint}Df\left(x,y\right)dxdy=\mu\um S_{D}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
-\end_layout
-
-\begin_layout Subsubsection
-Приведение двойного интеграла к повторному.
-\end_layout
-
-\begin_layout Paragraph
-Случай прямоугольной области
-\end_layout
-
-\begin_layout Standard
-Пусть 
-\begin_inset Formula $D=\left\{ \Pi|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
-\end_inset
-
-.
- Функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- определена на 
-\begin_inset Formula $D$
-\end_inset
-
-, для удобства 
-\begin_inset Formula $f\left(x,y\right)\br0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img26.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Прямоугольная область 
-\begin_inset Formula $D$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Если вспомнить формулу объема тела через его поперечное сечение 
-\begin_inset Formula $V=\oui abQ\left(x\right)dx$
-\end_inset
-
-, где 
-\begin_inset Formula $Q\left(x\right)$
-\end_inset
-
- - площадь криволинейной трапеции, выражаемая интегралом.
- 
-\begin_inset Formula 
-\[
-Q\left(x\right)=\oui cdf\left(x,y\right)dy
-\]
-
-\end_inset
-
-В результате получим повторный интеграл 
-\begin_inset Formula 
-\[
-\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx=\oui abdx\oui cdf\left(x,y\right)dy
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Случай криволинейной области 
-\end_layout
-
-\begin_layout Standard
-Рассмотрим например область 
-\begin_inset Formula $D=\{\left(x,y\right)|\left(x,y\right)\in E^{2}$
-\end_inset
-
-, ограниченая прямыми 
-\begin_inset Formula $x=a,\ x=b$
-\end_inset
-
- и линиями 
-\begin_inset Formula $y=y_{1}\left(x\right)$
-\end_inset
-
- и 
-\begin_inset Formula $y=y_{2}\left(x\right)$
-\end_inset
-
-, 
-\begin_inset Formula $y_{1}\left(x\right)\mr y_{2}\left(x\right),$
-\end_inset
-
- при 
-\begin_inset Formula $x\in\left[a,b\right]$
-\end_inset
-
-
-\begin_inset Formula $\}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img27.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Криволинейная область
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Тогда 
-\begin_inset Formula $\forall x_{0}\in\left[a,b\right]$
-\end_inset
-
- площадь поперечного сечения цилендрического бруса равна:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Q\left(x_{0}\right)=\oui{y_{1}\left(x_{0}\right)}{y_{2}\left(x_{0}\right)}f\left(x_{0},y\right)dy
-\]
-
-\end_inset
-
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-V & = & \oui abQ\left(x\right)\um dx=\\
- & = & \oui ab\left(\oui{y_{1}\left(x_{0}\right)}{y_{2}\left(x_{0}\right)}f\left(x_{0},y\right)dy\right)dx=\\
- & = & \oui abdx\oui{y_{1}\left(x_{0}\right)}{y_{2}\left(x_{0}\right)}f\left(x_{0},y\right)dy
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Theorem
-Пусть:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Функция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- инт егрируема на области 
-\begin_inset Formula $D$
-\end_inset
-
-, олгртаниченой линиями 
-\begin_inset Formula $x=a,\ x=b,\ y=y_{1}\left(x\right),\ y=y_{2}\left(x\right)$
-\end_inset
-
- (
-\begin_inset Formula $\exists\un{\dint}Df\left(x,y\right)dxdy$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\forall x\in\left[a,b\right]$
-\end_inset
-
- 
-\begin_inset Formula $\exists\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)dy$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Theorem
-тогда существует повторный интегриал, равный двойному.
-\end_layout
-
-\begin_layout Proof
-Будем считать, что 
-\begin_inset Formula $y_{1}\left(x\right)$
-\end_inset
-
- и 
-\begin_inset Formula $y_{2}\left(x\right)$
-\end_inset
-
- непрерывны на 
-\begin_inset Formula $\left[a,b\right]$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img28.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Область 
-\begin_inset Formula $D$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Обозначим 
-\begin_inset Formula $c=\un{\min}{\left[a,b\right]}y_{1}\left(x\right),\ d=\un{\max}{\left[a,b\right]}y_{2}\left(x\right)$
-\end_inset
-
-.
- Поместим область 
-\begin_inset Formula $D$
-\end_inset
-
- в прямоугольник 
-\begin_inset Formula $\Pi=\left\{ \left(x,y\right)|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
-\end_inset
-
-.
- Рассмотрим следующую функцию двих переменных: 
-\begin_inset Formula 
-\[
-f^{*}\left(x,y\right)=\begin{cases}
-f\left(x,y\right), & \left(x,y\right)\in D\\
-0, & \left(x,y\right)\in\Pi\backslash D
-\end{cases}
-\]
-
-\end_inset
-
- 
-\begin_inset Formula $f^{*}\left(x,y\right)$
-\end_inset
-
- --- интегрируема на прямоугольнике 
-\begin_inset Formula $\Pi$
-\end_inset
-
-, так как 
-\begin_inset Formula $\un{\dint}Df^{*}\left(x,y\right)\um dxvdy=\un{\dint}Df\left(x,y\right)\um dx\um dy+\un{\dint}{\Pi\backslash D}0\um dx$
-\end_inset
-
-, 
-\begin_inset Formula $\un{\dint}{\Pi\backslash D}0\um dx=0$
-\end_inset
-
-.
- Далее 
-\begin_inset Formula 
-\begin{eqnarray*}
-\forall x & \in & \left[a,b\right]\ \oui cdf^{*}\left(x,y\right)\um dy=\oui c{y_{1}\left(x\right)}f^{*}\left(x,y\right)\um dy+\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f^{*}\left(x,y\right)\um dy+\oui{y_{2}\left(x\right)}df^{*}\left(x,y\right)\um dy=\\
- & = & \left\{ \begin{array}{c}
-\oui{y_{2}\left(x\right)}df^{*}\left(x,y\right)\um dy,\ \left(x,y\right)\in\Pi\backslash D\ \sl\ \oui{y_{2}\left(x\right)}df^{*}\left(x,y\right)\um dy=0\\
-\oui c{y_{1}\left(x\right)}f^{*}\left(x,y\right)\um dy,\ \left(x,y\right)\in\Pi\backslash D\ \sl\ \oui c{y_{1}\left(x\right)}f^{*}\left(x,y\right)\um dy=0\\
-\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f^{*}\left(x,y\right)\um dy,\ \left(x,y\right)\in G\ \sl\ \oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f^{*}\left(x,y\right)\um dy=\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)\um dy
-\end{array}\right\} =\\
- & = & \oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)\um dy
-\end{eqnarray*}
-
-\end_inset
-
- Существует предел 2)
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\exists\oui abdx\oui cdf^{*}\left(x,y\right)dy=\oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}f\left(x,y\right)dy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
-Область 
-\begin_inset Formula $D\vkl E^{2}$
-\end_inset
-
- называется правильной по 
-\begin_inset Formula $y$
-\end_inset
-
-, если всякая прямая 
-\begin_inset Formula $x=const$
-\end_inset
-
- пересекает границу 
-\begin_inset Formula $\dd D$
-\end_inset
-
- области 
-\begin_inset Formula $D$
-\end_inset
-
- не более чем в 2х точках.
-\end_layout
-
-\begin_layout Definition
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img29.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Область правильная по 
-\begin_inset Formula $y$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula $y_{1}\left(x\right)$
-\end_inset
-
- определяет одну огбщую точку (точку входа), а 
-\begin_inset Formula $y_{2}\left(x\right)$
-\end_inset
-
- - вторую (точку выхода), а графики функций 
-\begin_inset Formula $y_{1}\left(x\right)$
-\end_inset
-
-и 
-\begin_inset Formula $y_{2}\left(x\right)$
-\end_inset
-
- - линии входа и выхода соответственно.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img30.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Разбиение неправильной области на несколько правильных
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-Если область 
-\begin_inset Formula $D$
-\end_inset
-
- неправильная по 
-\begin_inset Formula $y$
-\end_inset
-
-, то несколькими прямыми вида 
-\begin_inset Formula $x=const$
-\end_inset
-
- область 
-\begin_inset Formula $D$
-\end_inset
-
- разбивает на несколько областей, правильных по 
-\begin_inset Formula $y$
-\end_inset
-
-, 
-\begin_inset Formula $D=\un{\ob}iD_{i}$
-\end_inset
-
-, причем 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\ous i{}\un{\dint}{D_{i}}f\left(x,y\right)\um dx\um dy$
-\end_inset
-
-.
- Аналогично, если область 
-\begin_inset Formula $D$
-\end_inset
-
- правилььная по 
-\begin_inset Formula $x$
-\end_inset
-
- (тоесть 
-\begin_inset Formula $\forall y\in\left[c,d\right]\ x\in\left[x_{1}\left(y\right),x_{2}\left(y\right)\right]$
-\end_inset
-
-, 
-\begin_inset Formula $x_{1}\left(y\right)$
-\end_inset
-
- - линия входа, 
-\begin_inset Formula $x_{2}\left(y\right)$
-\end_inset
-
- - линия выхода), то 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\oui cddy\oui{x_{1}\left(y\right)}{x_{2}\left(y\right)}f\left(x,y\right)\um dx\um dy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Definition
-Правильной называется область, правильная по 
-\begin_inset Formula $x$
-\end_inset
-
- и по 
-\begin_inset Formula $y$
-\end_inset
-
- одновременно.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img31.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Правильная область
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
- Расставить пределы интегрирования в разном порядке ддля интегралов 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
-\end_inset
-
-, где область 
-\begin_inset Formula $D$
-\end_inset
-
- ограничена следующими линиями: 
-\begin_inset Formula $y=x^{2},\ x=a,\ y=0,\ a>0$
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-По 
-\begin_inset Formula $x$
-\end_inset
-
- внешне, по 
-\begin_inset Formula $y$
-\end_inset
-
- внутреннее интегррирование: 
-\begin_inset Formula $x\in\left[0,a\right]$
-\end_inset
-
-, длиния входа 
-\begin_inset Formula $y=0$
-\end_inset
-
-, линия выхода 
-\begin_inset Formula $y=x^{2}$
-\end_inset
-
-.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Тут был прикол насчет свяклы и студентов
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $x\in\left[0,a\right]\ \sl\ y\in\left[0,x^{2}\right]$
-\end_inset
-
-.
- 
-\begin_inset Formula 
-\[
-I=\un{\dint}Df\left(x,y\right)dxdy=\oui 0adx\oui 0{x^{2}}f\left(x,y\right)dxdy
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img32.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-По 
-\begin_inset Formula $x$
-\end_inset
-
- внешнее, по 
-\begin_inset Formula $y$
-\end_inset
-
- внутреннее
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-По 
-\begin_inset Formula $x$
-\end_inset
-
- внутренне, по 
-\begin_inset Formula $y$
-\end_inset
-
- внешнее.
- 
-\begin_inset Formula $y\in\left[0,a^{2}\right]\ \sl\ x\in\left[\sqrt{y},a\right]$
-\end_inset
-
-.
- 
-\begin_inset Formula 
-\[
-I=\oui 0{a^{2}}dy\oui{\sqrt{y}}af\left(x,y\right)dx
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img33.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-По 
-\begin_inset Formula $x$
-\end_inset
-
- внутреннее, по 
-\begin_inset Formula $y$
-\end_inset
-
- внешнее
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Remark
-В случае если для линии входа или выхода нельзя указать единую аналитическую
- зависимость, осласть 
-\begin_inset Formula $D$
-\end_inset
-
- разбивают на подобласти.
-\end_layout
-
-\begin_layout Example
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-
-Вычислим 
-\begin_inset Formula $\un{\dint}Dx^{2}ydxdy$
-\end_inset
-
-, где 
-\begin_inset Formula $D:\left\{ y=0,\ y=2\um x^{3},\ x+y=3\right\} $
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img34.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-К примеру (2)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-При 
-\begin_inset Formula $x\in\left[0,3\right]$
-\end_inset
-
- линия входа 
-\begin_inset Formula $y=0$
-\end_inset
-
-.
- Линия выхода: при 
-\begin_inset Formula $x\in\left[0,1\right]\ \longleftrightarrow\ y=2\um x^{3}$
-\end_inset
-
-, при 
-\begin_inset Formula $x\in\left[1,3\right]\ \longleftrightarrow\ y=3-x$
-\end_inset
-
-.
- Прямой 
-\begin_inset Formula $x=1$
-\end_inset
-
- разбиваем на 
-\begin_inset Formula $D_{1}$
-\end_inset
-
- и 
-\begin_inset Formula $D_{2}$
-\end_inset
-
-.
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-\un{\dint}Dx^{2}ydxdy & = & \un{\dint}{D_{1}}x^{2}ydxdy+\un{\dint}{D_{2}}x^{2}ydxdy=\\
- & = & \oui 01dx\oui 0{2\um x^{3}}x^{2}ydy+\oui 13dx\oui 0{3-x}x^{2}ydy=\\
- & = & \oui 01x^{2}\um\df{y^{2}}2|_{0}^{2x^{3}}+\oui 13x^{2}\df{y^{2}}2|_{0}^{3}=\\
- & = & \df 12\oui 014x^{8}dx+\df 12\oui 13\left(9x^{2}-6x^{3}+x^{4}\right)dx=\\
- & = & \df 29+\df 12\left(\tr\right)\tr
-\end{eqnarray*}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Remark
-Мы пошли по сложному пути, есть путь полегче.
- Можно было расставлять пределы интегрирования, выходя из того, что 
-\begin_inset Formula $D$
-\end_inset
-
- правильная область по 
-\begin_inset Formula $x$
-\end_inset
-
-, а не длелить ее на 2 области.
-\end_layout
-
-\begin_layout Remark
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img35.svg
-	width 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-К примеру (2)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula $I=\oui 02dy\oui{\sqrt[3]{\df y2}}{3-y}x^{2}ydx=\tr$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Аналогично определятся повторный интеграл 
-\begin_inset Formula $\oui cddy\oui abf\left(x,y\right)dx=\oui cd\left(\oui abf\left(x,y\right)dx\right)dx$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Theorem
-Если 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Определена в прямоугольной области 
-\begin_inset Formula $D=\Pi=\left\{ \left(x,y\right)|x\in\left[a,b\right],\ y\in\left[c,d\right]\right\} $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\exists$
-\end_inset
-
- двойной интеграл 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\forall x\in\left[a,b\right]\ \exists$
-\end_inset
-
- интеграл 
-\begin_inset Formula $\oui abf\left(x,y\right)dx$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Theorem
-то существует повторный интеграл 
-\begin_inset Formula $\oui abdx\oui cdf\left(x,y\right)dy$
-\end_inset
-
-, равный двойному.
-\end_layout
-
-\begin_layout Proof
-Разобьем отрезки 
-\begin_inset Formula $\left[a,b\right],\ \left[c,d\right]:$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $a=x_{0}<x_{1}<\tr<x_{i}<x_{i+1}<\tr<x_{n}=b$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $c=y_{0}<y_{1}<\tr<y_{k}<y_{ik+1}<\tr<y_{m}=d$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Обозначим 
-\begin_inset Formula $D_{i,k}=\left\{ \left(x,y\right)|x\in\left[x_{i},x_{i+1}\right],\ y\in\left[y_{k},y_{k+1}\right]\right\} ,\ i=\overline{1,n-1},\ k=\overline{1,m-1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $D=\Pi=\un{\ob}{i,k}D_{i,k},\ \D x_{i}=x_{i+1}-x_{i},\ \D y_{k}=y_{k+1}-y_{k},\ m_{i,k}=\un{\inf}{D_{i,k}}f\left(x,y\right),\ M_{i,k}=\un{\sup}{D_{i,k}}f\left(x,y\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Выберем произвольные 
-\begin_inset Formula $\xi_{i}\in\left[x_{i},x_{i+1}\right]$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $m_{i,k}\um\D y_{k}\mr\oui{y_{k}}{y_{k+1}}f\left(\xi_{i},y\right)dy\mr M_{i,k}\um\D y_{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Суммирует по 
-\begin_inset Formula $k=\overline{0,m-1}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\mr\oui cdf\left(\xi_{i},y\right)dy\mr\ous{k=0}{m-1}M_{i,k}\um\D y_{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Умножая на 
-\begin_inset Formula $\D x_{i}$
-\end_inset
-
- и суммируя по 
-\begin_inset Formula $i=\overline{1,n-1}$
-\end_inset
-
- получается:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}\mr\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}\mr\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}=s_{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}=S_{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Это верхняя и нижняя суммы Дарбу для двойного интеграла.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $S_{n},\ s_{n}\ov{\st}{\begin{array}{c}
-n\st\b\\
-\lambda\st0
-\end{array}}\un{\iint}Df\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}$
-\end_inset
-
- - интегральная сумма для определенного интеграла 
-\begin_inset Formula 
-\[
-\oui abF\left(x\right)dx=\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula 
-\[
-\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx=\un{\dint}Df\left(x,y\right)dxdy
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Вычисление двойного интеграла в полярных координатах.
-\end_layout
-
-\begin_layout Standard
-В плоскоти 
-\begin_inset Formula $XoY$
-\end_inset
-
- введем полярные координаты 
-\begin_inset Formula 
-\[
-\begin{cases}
-x=r\um\cos\varphi\\
-y=r\um\sin\varphi
-\end{cases}
-\]
-
-\end_inset
-
-Пусть фунция 
-\begin_inset Formula $u=f\left(x,y\right)$
-\end_inset
-
- определена на множестве 
-\begin_inset Formula $D\vkl E^{2}$
-\end_inset
-
-, и существует двойной интеграл по этой области.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename Pictures/Matan2/img36.svg
-	width 8cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Вычисление двойного интеграла в полярных координатах.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Пусть в полярных координатах область 
-\begin_inset Formula $D$
-\end_inset
-
- заключена между лучами 
-\begin_inset Formula $\varphi=\alpha,\ \varphi=\beta$
-\end_inset
-
- или, проще говоря, 
-\begin_inset Formula $\varphi\in\left[\alpha,\beta\right]$
-\end_inset
-
-.
- Пусть 
-\begin_inset Formula $D$
-\end_inset
-
- правильная по 
-\begin_inset Formula $r$
-\end_inset
-
-, то есть 
-\begin_inset Formula $\forall\varphi_{0}\in\left[\alpha,\beta\right]$
-\end_inset
-
- луч 
-\begin_inset Formula $\varphi=\varphi_{0}$
-\end_inset
-
- пересекает 
-\begin_inset Formula $\dd D$
-\end_inset
-
- в 2-х точках: 
-\begin_inset Formula $r_{1}\left(\varphi_{0}\right),\ r_{2}\left(\varphi_{0}\right)$
-\end_inset
-
-.
- Предположим, что 
-\begin_inset Formula $r_{1}\left(\varphi\right)$
-\end_inset
-
- и 
-\begin_inset Formula $r_{2}\left(\varphi\right)$
-\end_inset
-
- непрерывны на 
-\begin_inset Formula $\left[\alpha,\beta\right]$
-\end_inset
-
-.
- Обозначим 
-\begin_inset Formula $a=\umin{\left[\alpha,\beta\right]}r_{2}\left(\varphi\right),\ b=\umax{\left[\alpha,\beta\right]}r_{2}\left(\varphi\right)$
-\end_inset
-
-.
- Рассмотрим разбиение: 
-\begin_inset Formula $\alpha=\varphi_{0}<\varphi_{1}<\tr<\varphi_{l}=\beta$
-\end_inset
-
-, 
-\begin_inset Formula $a<r_{0}<r_{1}<\tr<r_{n}=b$
-\end_inset
-
-.
- Получим полярную сетку, образованную лучами 
-\begin_inset Formula $\varphi=\varphi_{k},\ k=\overline{0,l-1}$
-\end_inset
-
- и дугами окружностей 
-\begin_inset Formula $r=r_{i},\ i=\overline{0,n-1}$
-\end_inset
-
-.
- Обозначим 
-\begin_inset Formula $D_{i,k}$
-\end_inset
-
- - область ограничиемая лучами 
-\begin_inset Formula $\varphi=\varphi_{k},\ \varphi=\varphi_{k+1}=\varphi_{k}+\D\varphi_{k}$
-\end_inset
-
- и дугами 
-\begin_inset Formula $r=r_{i}$
-\end_inset
-
- и 
-\begin_inset Formula $r=r_{i+1}=r_{i}+\D r_{i}$
-\end_inset
-
-.
- Её площадь 
-\begin_inset Formula 
-\begin{eqnarray*}
-\D S_{i,k} & = & \df{r_{i+1}^{2}\D\varphi_{k}}2-\df{r_{i}^{2}\um\D\varphi_{k}}2=\df{\D\varphi_{k}}2\left(r_{i+1}-r_{i}\right)\left(r_{i+1}+r_{i}\right)=\\
- & = & \df{\D\varphi_{k}}2\left(2r_{i}\um\D r_{i}+\left(\D r_{i}\right)^{2}\right)\approx\\
- & \approx & \left\{ \text{Отбрасываем бесконечно малые более высоких порядков}\right\} \approx\\
- & \approx & r_{i}\um\D r_{i}\um\D\varphi_{k}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\ous i{}\ous k{}f\left(\xi_{i,k},\eta_{i,k}\right)\um\D S_{i,k}\approx\ous i{}\ous k{}f\left(r_{i}\um\cos\varphi_{k},r_{i}\um\sin\varphi_{k}\right)\um r_{i}\um\D r_{i}\um\D\varphi_{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-При 
-\begin_inset Formula $\lambda=\umax{i,k}$
-\end_inset
-
- диаметра 
-\begin_inset Formula $D_{i,k}\st0,\ n\st\b,\ l\st\b$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Левая часть стремится к 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
-\end_inset
-
-, при этом 
-\begin_inset Formula $\max\D r_{i}\st0,\ \max\D\varphi_{k}\st0$
-\end_inset
-
-, и правая часть - это интегральная сумма для двойного интеграла 
-\begin_inset Formula $\un{\dint}Df\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr\um d\varphi$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\oui{\alpha}{\beta}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(1) 
-\emph default
-Перейти к полярным координатам в интеграле:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy,\ Di\varphi=\df{\pi}6,\ \varphi=\df{\pi}4,\ r=2ir=3$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 37
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-В полярных координатах область 
-\begin_inset Formula $D$
-\end_inset
-
- превращается в область 
-\begin_inset Formula $D'$
-\end_inset
-
- : 
-\begin_inset Formula $\varphi\in\left[\df{\pi}6,\df{\pi}4\right],\ r\in\left[2,3\right]$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $D'$
-\end_inset
-
- - прямоугольник.
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 38
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $I=\oui{\df{\pi}6}{\df{\pi}4}d\varphi\oui 23f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2) 
-\emph default
-Вычислить двойной интеграл: 
-\begin_inset Formula $I=\un{\dint}Dx\um dx\um dy,\ D:\left\{ x^{2}+y^{2}-2\um x=0\right\} $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\dd D\ :\ x^{2}+y^{2}-2\um x=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left(x-1\right)^{2}+y^{2}=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 39
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-x=r\um\cos\varphi\\
-y=r\um\sin\varphi
-\end{cases}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-на 
-\begin_inset Formula $\dd D\ :\ r^{2}-2\um\cos\varphi\um r=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $r\um\left(r-2\um\cos\varphi\right)=0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left[\begin{array}{c}
-r_{1}=0\\
-r_{2}=2\um\cos\varphi
-\end{array}\right.\ D':\ \varphi\in\left[-\df{\pi}2;\df{\pi}2\right],\ r\in$
-\end_inset
-
-
-\begin_inset Formula $\left[0;2\um\cos\varphi\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 40
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $I=\oui{-\df{\pi}2}{\df{\pi}2}d\varphi\oui 0{2\um\cos\varphi}r\um\cos\varphi\um r\um dr=\oui{-\df{\pi}2}{\df{\pi}2}\left(\df{r^{3}}3\um\cos\varphi\right)|_{0}^{2\cos\varphi}d\varphi=\df 83\oui{-\df{\pi}2}{\df{\pi}2}\cos^{4}\varphi\um d\varphi=\tr=2\um\pi$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Замена переменных в двойном интеграле
-\end_layout
-
-\begin_layout Standard
-Пусть функции 
-\begin_inset Formula $\begin{cases}
-x=x\left(u,v\right)\\
-y=y\left(u,v\right)
-\end{cases}$
-\end_inset
-
- взаимно однозначно отобдражают область 
-\begin_inset Formula $\left(u,v\right)\in D'$
-\end_inset
-
- в область 
-\begin_inset Formula $\left(x,y\right)\in D$
-\end_inset
-
-, дифференцируемы на 
-\begin_inset Formula $D'$
-\end_inset
-
- и 
-\begin_inset Formula $\dd D'\longleftrightarrow\dd D$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 41
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S_{p_{1}',p_{2}',p_{3}',p_{4}'}=\D S'=\D u\um\D v$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\D S=S_{p_{1}p_{2}p_{3}p_{4}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p_{1}\left(x_{1},y_{1}\right),\ x_{1}=x\left(u,v\right),\ y_{1}=y\left(u,v\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p_{2}\left(x_{2},y_{2}\right),\ x_{2}=x\left(u+\D u,v\right),\ y_{2}=y\left(u+\D u,v\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p_{3}\left(x_{3},y_{3}\right),\ x_{3}=x\left(u+\D u,v+\D v\right),\ y_{3}=y\left(u+\D u,v+\D v\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p_{4}\left(x_{4},y_{4}\right),\ x_{4}=x\left(u,v+\D v\right),y_{4}=y\left(u,v+\D v\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Будем считать 
-\begin_inset Formula $\D u$
-\end_inset
-
- и 
-\begin_inset Formula $\D v$
-\end_inset
-
- достаточно малыми, а линии 
-\begin_inset Formula $p_{1}p_{2}$
-\end_inset
-
- и 
-\begin_inset Formula $p_{3}p_{4}$
-\end_inset
-
-, 
-\begin_inset Formula $p_{1}p_{4}$
-\end_inset
-
- и 
-\begin_inset Formula $p_{2}p_{3}$
-\end_inset
-
- - попарно паралельны.
- Заменяем приращение диференцируемых функций диференциалом, отбрасываем
- бесконечно малые высших порядков, относительно
-\begin_inset Formula $\D u$
-\end_inset
-
- и 
-\begin_inset Formula $\D v$
-\end_inset
-
-, получим 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{1}=x\left(u,v\right),\ y_{1}=y\left(u,v\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{2}=x\left(u+\D u,v\right)=x\left(u,v\right)+\df{\dd x\left(u,v\right)}{\dd u}\um\D u$
-\end_inset
-
- - часный дифференциаль в точкее 
-\begin_inset Formula $\left(u,v\right)$
-\end_inset
-
- по переменной 
-\begin_inset Formula $u$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y_{2}=y\left(u,v\right)+\df{\dd y\left(u,v\right)}{\dd u}\um\D u$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{3}=x\left(u,v\right)+\df{\dd x}{\dd u}\um\D u+\df{\dd x}{\dd v}\um\D v$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y_{3}=y\left(u,v\right)+\df{\dd y}{\dd u}\um\D u+\df{\dd y}{\dd v}\um\D v$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{4}=x\left(u,v\right)+\df{\dd x}{\dd v}\um\D v$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y_{4}=y\left(u,v\right)+\df{\dd y}{\dd v}\um\D v$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Площадь парелелограмма равна 
-\begin_inset Formula 
-\begin{eqnarray*}
-2S_{\D p_{1}p_{2}p_{3}} & = & 2\um\df 12\left|\left|\begin{array}{cc}
-x_{3}-x_{1} & x_{3}-x_{2}\\
-y_{3}-y_{1} & y_{3}-y_{2}
-\end{array}\right|\right|=\\
- & = & \left|\left(x_{3}-x_{1}\right)\um\left(y_{3}-y_{2}\right)-\left(x_{3}-x_{2}\right)\left(y_{3}-y_{2}\right)\right|=\\
- & = & \left|\left(\df{\dd x}{\dd u}\D u+\df{\dd x}{\dd v}\D v\right)\df{\dd y}{\dd v}\D v-\df{\dd x}{\dd v}\D v\left(\df{\dd y}{\dd u}\D u+\df{\dd y}{\dd v}\D v\right)\right|=\\
- & = & \left|\df{\dd x}{\dd u}\df{\dd y}{\dd v}-\df{\dd x}{\dd v}\df{\dd y}{\dd u}\right|\D u\D v=\\
- & = & \left|\begin{array}{cc}
-\df{\dd x}{\dd u} & \df{\dd x}{\dd v}\\
-\df{\dd y}{\dd u} & \df{\dd y}{\dd v}
-\end{array}\right|\D v\D u
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Величина 
-\begin_inset Formula $\left|I\right|=\left|\left|\begin{array}{cc}
-\df{\dd x}{\dd u} & \df{\dd x}{\dd v}\\
-\df{\dd y}{\dd u} & \df{\dd y}{\dd v}
-\end{array}\right|\right|$
-\end_inset
-
- - определитель Якоби.
- 
-\begin_inset Formula $\df{\dd\left(x,y\right)}{\dd\left(u,v\right)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\D S\approx\left|I\right|\um\D S'$
-\end_inset
-
- , 
-\begin_inset Formula $\left|I\right|$
-\end_inset
-
- - коофицент растяжения или сжатия малых прощадей при переходе от координат
- 
-\begin_inset Formula $\left(u,v\right)$
-\end_inset
-
- к координатам 
-\begin_inset Formula $\left(x,y\right)$
-\end_inset
-
-(
-\begin_inset Formula $\D S'$
-\end_inset
-
- к 
-\begin_inset Formula $\D S$
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-Так как при 
-\begin_inset Formula $n\st\b,\ \lambda\st0$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\ul{\begin{array}{c}
-n\st\b\\
-\lambda\st0
-\end{array}}\df{\D S}{\D S'}=\left|I\right|$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy$
-\end_inset
-
- преобразуется в другой инттеграл 
-\begin_inset Formula $\un{\dint}{D'}f\left(x\left(u,v\right),y\left(u,v\right)\right)\um\left|I\right|\um du\um dv$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\un{\dint}{D'}f_{1}\left(u,v\right)\um\left|I\right|\um du\um dv$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(1) 
-\emph default
-Переход к полярным координатам:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-x=r\um\cos\varphi\\
-y=r\um\sin\varphi
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left|I\right|=\left|\left|\begin{array}{cc}
-x_{r}' & x_{\varphi}'\\
-y_{r}' & y_{\varphi}'
-\end{array}\right|\right|=\left|\begin{array}{cc}
-\cos\varphi & -r\cos\varphi\\
-\sin\varphi & r\cos\varphi
-\end{array}\right|=r\cos^{2}\varphi+r\sin^{2}\varphi=r$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Тоесть 
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy=\un{\dint}{D'}f_{1}\left(x,y\right)\um r\um dr\um d\varphi$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\emph default
- Вычислить интеграл 
-\begin_inset Formula $J=\un{\dint}D\left(x+y\right)dxdy$
-\end_inset
-
-, где 
-\begin_inset Formula $D:\left\{ xy=a;\ xy=b;\ y=x;\ y=x-c;\ c>0,\ 0<a<b\right\} $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 42
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Введем новые координаты:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u=xy;\ v=y-x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $x=\df uy$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $v=y-\df uy$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $y^{2}-vy-u=0$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $y_{1,2}=\df{v\pm\sqrt{v^{2}+4u}}2=$
-\end_inset
-
-{
-\begin_inset Formula $u>0,\ y>0$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $+$
-\end_inset
-
-}
-\begin_inset Formula $=\df{v+\sqrt{v^{2}-4u}}2=y$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x=\df{2u}{v+\sqrt{v^{2}-4u}}=\df{2u\left(v-\sqrt{v^{2}+4u}\right)}{v^{2}-v^{2}-4u}=\df{\sqrt{v^{2}+4u}-v}2=x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula 
-\begin{eqnarray*}
-I & = & \left|\begin{array}{cc}
-x_{u}' & x_{v}'\\
-y_{u}' & y_{v}'
-\end{array}\right|=\df 14\left|\begin{array}{cc}
-\df 4{2\sqrt{v^{2}+4u}} & \df{2v-1}{2\sqrt{v^{2}+4u}}\\
-\df 4{2\sqrt{v^{2}+4u}} & 1+\df{2v}{2\sqrt{v^{2}+4u}}
-\end{array}\right|=\\
- & = & \df 14\df 2{\sqrt{v^{2}+4u}}\left(1+\df v{\sqrt{v^{2}+4u}}-\df v{\sqrt{v^{2}+4u}}+1\right)=\df 1{\sqrt{v^{2}+4u}}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $J=\oui{-c}0dv\oui ab\sqrt{v^{2}+4u}\um\df 1{\sqrt{v^{2}+4u}}du=\oui{-c}0u|_{a}^{b}dv=\left(b-a\right)c$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Приложения двойного интеграла
-\end_layout
-
-\begin_layout Paragraph
-Вычисление площадей плоских фигур
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 43
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Так как площадь фигуры 
-\begin_inset Formula $D\vkl E^{2}$
-\end_inset
-
- чимленно равно обьему цилиндра с основанием 
-\begin_inset Formula $D$
-\end_inset
-
-, высота 1.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S_{D}=\un{\dint}D1dxdy=\un{\dint}Ddxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Механические приложения
-\end_layout
-
-\begin_layout Standard
-Если дана материальная пластина, заполняющая область 
-\begin_inset Formula $D$
-\end_inset
-
- и на ней распределена плотность масс 
-\begin_inset Formula $\rho=\rho\left(x,y\right)$
-\end_inset
-
-, то разбивая область 
-\begin_inset Formula $D$
-\end_inset
-
- линиями 
-\begin_inset Formula $x=x_{i},\ y=y_{j}$
-\end_inset
-
- выбирая в полученных ячейках разбиения 
-\begin_inset Formula $D_{i,j}$
-\end_inset
-
- произвольные точки 
-\begin_inset Formula $M_{i,j}\left(\xi_{i},\eta_{j}\right)$
-\end_inset
-
-, считая плотность 
-\begin_inset Formula $\rho$
-\end_inset
-
- на ячейке 
-\begin_inset Formula $D_{i,j}$
-\end_inset
-
- постоянной, равной 
-\begin_inset Formula $\rho\left(M_{i,j}\right)$
-\end_inset
-
- и устремляя 
-\begin_inset Formula $\lambda=\max\ diam\ D_{i,j}\st0$
-\end_inset
-
-, то в пределе получим 
-\begin_inset Formula $M_{D}=\un{\dint}D\rho\left(x,y\right)dxdy=\ul{\lambda\st0}\ous{i=0}{n-1}\ous{j=0}{l-1}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}$
-\end_inset
-
- в предположением, что 
-\begin_inset Formula $\rho\left(x,y\right)\in C\left(D\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Аналогично определяются статические моменты относительно осей координат
- 
-\begin_inset Formula $k_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y_{j}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy\rho\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $k_{y}=\un{\dint}Dx\rho\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Моменты инерции
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y^{2}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy^{2}\rho\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{y}=\un{\dint}Dx^{2}\rho\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{0}=I_{x}+I_{y}=\un{\dint}D\left(x^{2}+y^{2}\right)\rho\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Координаты центра масс
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{c}=\df{k_{y}}M=\df{\un{\dint}Dx\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y_{c}=\df{k_{x}}M=\df{\un{\dint}Dy\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-15 октября 2013
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Тройные интегралы
-\end_layout
-
-\begin_layout Subsubsection
-Задача о вычислении массы тела.
- Определение тройного интеграла.
-\end_layout
-
-\begin_layout Standard
-Пусть 
-\begin_inset Formula $V$
-\end_inset
-
- - кубируемое тело в 
-\begin_inset Formula $E^{3}$
-\end_inset
-
-, 
-\begin_inset Formula $\rho=\rho\left(\vec M\right)=\rho\left(x,y,z\right)$
-\end_inset
-
- - плотность распределенной массы на множестве 
-\begin_inset Formula $V$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 44.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Разобьем тело 
-\begin_inset Formula $V$
-\end_inset
-
- на 
-\begin_inset Formula $n$
-\end_inset
-
- непересекающихся частей 
-\begin_inset Formula $V=V_{1}\ob\tr\ob V_{n}$
-\end_inset
-
-, выберем произвольно точки 
-\begin_inset Formula $\vec{M_{i}}\left(\xi_{i},\eta_{i},\zeta_{i}\right)\in V_{i}$
-\end_inset
-
-.
- Предположим что 
-\begin_inset Formula $\rho\left(\vec M\right)\equiv\rho\left(\vec{M_{i}}\right)=const$
-\end_inset
-
-, обозначим 
-\begin_inset Formula $\D V_{i}$
-\end_inset
-
- - обьем 
-\begin_inset Formula $V_{i}$
-\end_inset
-
-.
- Тогда масса тела 
-\begin_inset Formula $V$
-\end_inset
-
- приближенна равна сумме: 
-\begin_inset Formula $M\approx\ous{i=1}nm_{i}=\ous{i=1}n\rho\left(\xi_{i},\eta_{i},\zeta_{i}\right)\um\D V_{i}=\sigma_{n}$
-\end_inset
-
- - итнтегральная сумма.
- Если 
-\begin_inset Formula $\lambda=\max diamV_{i}=\umax{M',M''\vkl V_{i}}\rho\left(M',M''\right)\st0$
-\end_inset
-
- и 
-\begin_inset Formula $n\st0$
-\end_inset
-
-, то в пределен получим значение массы.
- 
-\end_layout
-
-\begin_layout Definition
-Если при 
-\begin_inset Formula $n\st0,\ \lambda\st0$
-\end_inset
-
- существует конечный предел последовательности последовательности интегральных
- сумм 
-\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(\xi_{i}\eta_{i},\zeta_{i}\right)\um\D V_{i}$
-\end_inset
-
-, не зависящих от способа разбиения, от выбора точек 
-\begin_inset Formula $\vec{M_{i}}$
-\end_inset
-
-, то его называют тройным интегралом от функции 
-\begin_inset Formula $f\left(x,y,z\right)$
-\end_inset
-
- по обьему 
-\begin_inset Formula $V$
-\end_inset
-
-, и обозначают 
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}Vf\left(x,y,z\right)dxdydz=\ul{\begin{array}{c}
-n\st0\\
-\lambda\st0
-\end{array}}\ous{i=1}nf\left(\xi_{i},\eta_{i},\zeta_{i}\right)\um\D V_{i}$
-\end_inset
-
-.
- Функция 
-\begin_inset Formula $f\left(x,y,z\right)$
-\end_inset
-
- называется интегрируемой по 
-\begin_inset Formula $V$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-Суммы Дарбу.
- Необходимое и достаточнное условия существувования тройного интеграла.
-\end_layout
-
-\begin_layout Standard
-Определение сумм Дарбу.
- 
-\begin_inset Formula $s,S$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Свойства сумм Дарбу
-\end_layout
-
-\begin_layout Standard
-Необходимое и достаточнное условия существувования тройного интеграла.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Это дома
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Свойства тройного интеграла.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 1.
- 
-\emph default
-Если 
-\begin_inset Formula $V=V_{1}\ob V_{2}$
-\end_inset
-
- и 
-\begin_inset Formula $V_{1}\cap V_{2}=\textrm{Ø}$
-\end_inset
-
- и 
-\begin_inset Formula $f\left(x,y,z\right)$
-\end_inset
-
- интегрируема на 
-\begin_inset Formula $V$
-\end_inset
-
- 
-\begin_inset Formula $\st$
-\end_inset
-
- интегрируема на 
-\begin_inset Formula $V_{1}$
-\end_inset
-
- и 
-\begin_inset Formula $V_{2}$
-\end_inset
-
-, то 
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V_{1}}f\left(x,y,z\right)dV+\un{\iiint}{V_{1}}f\left(x,y,z\right)dV$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 2.
-
-\emph default
- 
-\begin_inset Formula $\un{\iiint}Vk\um f\left(x,y,z\right)dV=k\um\un{\iiint}Vf\left(x,y,z\right)dV$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 3.
-
-\emph default
- Если 
-\begin_inset Formula $f\left(\vec M\right)$
-\end_inset
-
- и 
-\begin_inset Formula $g\left(\vec M\right)$
-\end_inset
-
- интегрируемы на 
-\begin_inset Formula $V$
-\end_inset
-
-, то тогда 
-\begin_inset Formula $\left(f\left(\vec M\right)\pm g\left(\vec M\right)\right)$
-\end_inset
-
- также интегрируема на 
-\begin_inset Formula $V$
-\end_inset
-
-.
- 
-\begin_inset Formula $\un{\iiint}V\left(f\left(\vec M\right)\pm g\left(\vec M\right)\right)dV=\un{\iiint}Vf\left(\vec M\right)dV\pm\un{\iiint}Vg\left(\vec M\right)dV$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 4.
- 
-\emph default
-Если 
-\begin_inset Formula $f\left(M\right)\mr g\left(M\right)$
-\end_inset
-
- н 
-\begin_inset Formula $V$
-\end_inset
-
-, 
-\begin_inset Formula $f$
-\end_inset
-
- и 
-\begin_inset Formula $g$
-\end_inset
-
- интегрируемы, то 
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV\mr\un{\iiint}Vg\left(x,y,z\right)dV$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 5.
-
-\emph default
- Еслир 
-\begin_inset Formula $f\left(\vec M\right)$
-\end_inset
-
- интегирруема на 
-\begin_inset Formula $V$
-\end_inset
-
- то и 
-\begin_inset Formula $\left|f\left(\vec M\right)\right|$
-\end_inset
-
- - интегрируема на 
-\begin_inset Formula $V$
-\end_inset
-
-, и выполняется неравенство 
-\begin_inset Formula $\left|\un{\iiint}Vf\left(x,y,z\right)dV\right|\mr\un{\iiint}V\left|f\left(x,y,z\right)\right|dV$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 5.
-
-\emph default
- Если 
-\begin_inset Formula $m\mr f\left(\vec M\right)\mr M$
-\end_inset
-
- на 
-\begin_inset Formula $V$
-\end_inset
-
-, то 
-\begin_inset Formula $m\um V\mr\un{\iiint}Vf\left(x,y,z\right)dV\mr M\um V$
-\end_inset
-
-.
- 
-\begin_inset Formula $V$
-\end_inset
-
- - обьем тела 
-\begin_inset Formula $V$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Свойство 7.
- Теорема о среднем.
-
-\emph default
- Если 
-\begin_inset Formula $m\mr f\left(\vec M\right)\mr M$
-\end_inset
-
- на 
-\begin_inset Formula $V$
-\end_inset
-
-, и 
-\begin_inset Formula $f\left(\vec M\right)$
-\end_inset
-
- -интегрируема, то 
-\begin_inset Formula $\exists\mu\in\left[m,M\right]\ \un{\iiint}Vf\left(x,y,z\right)dV=\mu\um V$
-\end_inset
-
-, если же функция 
-\begin_inset Formula $f\left(\vec M\right)$
-\end_inset
-
- - непрерывна на 
-\begin_inset Formula $V$
-\end_inset
-
-, то тогда 
-\begin_inset Formula $\exists\vec c\in V\ \un{\iiint}Vf\left(x,y,z\right)dV=f\left(\vec c\right)\um V$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Вычисление тройных интегралов по паралелепипеду
-\end_layout
-
-\begin_layout Standard
-Обозначим 
-\begin_inset Formula $V=\left[a,b,c,d,e,f\right]$
-\end_inset
-
- - паралелепипед.
- 
-\begin_inset Formula $x\in\left[a,b\right],\ y\in\left[c,d\right],\ z\in\left[e,f\right]$
-\end_inset
-
-.
- Обозначим область 
-\begin_inset Formula $D=\left[c,d,e,f\right]\vkl YoZ$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Theorem
-Если для функции 
-\begin_inset Formula $f\left(x,y,z\right)$
-\end_inset
-
- существует тройной интеграл опо области 
-\begin_inset Formula $V$
-\end_inset
-
- от функции 
-\begin_inset Formula $f\left(x,y,z\right)$
-\end_inset
-
-(
-\begin_inset Formula $\exists\un{\iiint}Vf\left(x,y,z\right)dV$
-\end_inset
-
-), и 
-\begin_inset Formula $\forall x\in\left[a,b\right]\ \exists\un{\iint}Df\left(x,y,z\right)dydz$
-\end_inset
-
-, то существует интеграл 
-\begin_inset Formula $\oui abdx\un{\iint}Df\left(x,y,z\right)dydz=\un{\iiint}Vf\left(x,y,z\right)dV$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 45
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Рассмотрим разбиения: 
-\begin_inset Formula $a=x_{0}<x_{1}<\tr<x_{i-1}<x_{i}<x_{i+1}<\tr<x_{n-1}<x_{n}=b$
-\end_inset
-
-, 
-\begin_inset Formula $c=y_{0}<\tr<y_{j}<\tr<y_{m}=d$
-\end_inset
-
-, 
-\begin_inset Formula $e=z_{0}<\tr<z_{k}<\tr<z_{l}=f$
-\end_inset
-
-.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- тело 
-\begin_inset Formula $V$
-\end_inset
-
- разобьется на элементарные паралелепипеды: 
-\begin_inset Formula $V_{i,j,k}=\left[x_{i},x_{i+1},y_{i},y_{i+1},z_{i},z_{i+1}\right]$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 46
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $D_{j,k}=\left[y_{j},y_{j+1},z_{k},z_{k+1}\right]$
-\end_inset
-
- - проэкция тела 
-\begin_inset Formula $V_{i,j,k}$
-\end_inset
-
- на плоскость 
-\begin_inset Formula $YoZ$
-\end_inset
-
-.
- Положим 
-\begin_inset Formula $m_{i,j,k}=\un{\inf}{V_{i,j,k}}f\left(x,y,z\right)$
-\end_inset
-
-, 
-\begin_inset Formula $M_{i,j,k}=\un{\sup}{V_{i,j,k}}f\left(x,y,z\right)$
-\end_inset
-
-.
- Тогда по свойству 6, 
-\begin_inset Formula $\forall x\in\left[x_{i},x_{i+1}\right]\ m_{i,j,k}\um\D y_{j}\um\D z_{k}\mr\un{\iint}{D_{j,k}}f\left(x,y,z\right)\um dy\um dz\mr M_{i,j,k}\um\D y_{j}\um\D z_{k}$
-\end_inset
-
-, где 
-\begin_inset Formula $x$
-\end_inset
-
- - фиксированиая переменная, 
-\begin_inset Formula $m_{i,j,k}\mr f\left(x,y,z\right)\mr M_{i,j,k}$
-\end_inset
-
-.
- Тогда 
-\begin_inset Formula $x=\xi_{i}\in\left[x_{i},x_{i+1}\right]$
-\end_inset
-
-, суммируя по 
-\begin_inset Formula $j=\overline{1,m-1}$
-\end_inset
-
-, по 
-\begin_inset Formula $k=\overline{0,l-1}$
-\end_inset
-
-, получим: 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D y_{j}\D z_{k}\mr I\left(\xi_{i}\right)=\un{\iint}Df\left(\xi_{i},y,z\right)dydz\mr\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D y_{j}\D z_{k}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-Умножим на 
-\begin_inset Formula $\D x_{i}$
-\end_inset
-
- и просумиреем по 
-\begin_inset Formula $i=\overline{0,n-1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
-\end_inset
-
- - нижняя сумма Дарбу для тройного интеграла
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
-\end_inset
-
- - верхняя сумма Дарбу для тройного интеграла
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $s\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr S$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Обе эти суммы стремятся к значению 
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}$
-\end_inset
-
- - интегральная сумаа для функции
-\begin_inset Formula $I\left(x\right)$
-\end_inset
-
-, при 
-\begin_inset Formula $\lambda\st0,\ n\st\b$
-\end_inset
-
- по теореме о 2х пределов, равна 
-\begin_inset Formula $\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}=\oui abI\left(x\right)dx=\oui ab\left(\un{\iint}Df\left(x,y,z\right)dudz\right)dx$
-\end_inset
-
- .
-\backslash
-
-\end_layout
-
-\begin_layout Remark
-
-\emph on
-(1)
-\emph default
- Так как
-\begin_inset Formula $\un{\iint}Df\left(x,y,z\right)dydz=\oui cddy\oui eff\left(x,y,z\right)dz$
-\end_inset
-
-, то 
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\oui abdx\oui cddy\oui eff\left(x,y,z\right)dz$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Remark
-
-\emph on
-(2)
-\emph default
- Тройной интеграл можно свести к повторному, вычисляя двойной интеграл от
- однократного.
- 
-\end_layout
-
-\begin_layout Remark
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 47
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-Так как 
-\begin_inset Formula $Q=\left[a,b,c,d\right]$
-\end_inset
-
-, то 
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\un{\iint}Qdxdy\oui eff\left(x,y,z\right)dz=\oui abdx\oui cddy\oui eff\left(x,y,z\right)dz$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-Вычисление тройного интеграла по произвольной области
-\end_layout
-
-\begin_layout Standard
-Расчетные формулы выводятся аналогично случаю двойного интеграла 
-\begin_inset Formula $\un{\iint}Df\left(x,y\right)ddxdy$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Рассмотрим основные случаи:
-\end_layout
-
-\begin_layout Enumerate
-Пусть 
-\begin_inset Formula $D\vkl XoY$
-\end_inset
-
- - проэкция 
-\begin_inset Formula $V$
-\end_inset
-
- на 
-\begin_inset Formula $XoY$
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 48
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Для люблой точки 
-\begin_inset Formula $\forall\left(x,y\right)\in D$
-\end_inset
-
- прямая, проходяшая через точку 
-\begin_inset Formula $\bot XoY$
-\end_inset
-
- имеет с границой 
-\begin_inset Formula $\dd V$
-\end_inset
-
- две общие точки: 
-\begin_inset Formula $\left(x,y,z_{1}\left(x,y\right)\right)$
-\end_inset
-
- и 
-\begin_inset Formula $\left(x,y,z_{2}\left(x,y\right)\right)$
-\end_inset
-
-.
- Поверхности 
-\begin_inset Formula $z=z_{1}\left(x,y\right)$
-\end_inset
-
- и 
-\begin_inset Formula $z=z_{2}\left(x,y\right)$
-\end_inset
-
- - певерхности входа и выхрода из 
-\begin_inset Formula $V$
-\end_inset
-
-.
- Тогда 
-\begin_inset Formula 
-\begin{eqnarray*}
-\un{\iiint}Vf\left(x,y,z\right)dV & = & \un{\iint}Ddxdy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz=\\
- & = & \left\{ \begin{array}{c}
-D:x\in\left[a,b\right],\ y\in\left[y_{1}\left(x\right),y_{2}\left(x\right)\right]\\
-\text{Если область }D\text{ правильная по }y
-\end{array}\right\} =\\
- & = & \oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}dy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Пусть тело 
-\begin_inset Formula $V$
-\end_inset
-
- заключено между плоскостями 
-\begin_inset Formula $x=a$
-\end_inset
-
- и 
-\begin_inset Formula $x=b$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 49
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\un{\iiint}Vf\left(x,y,z\right)dV & = & \oui abdx\un{\iint}{\dd x}f\left(x,y,z\right)dydz=\\
- & = & \left\{ \begin{array}{c}
-\text{Пусть }\dd x\text{ правильная по оси }z\\
-y\in\left[y_{1}\left(x\right),y_{2}\left(x\right)\right]\\
-z\in\left[z_{1}\left(x,y\right),z_{2}\left(x,y\right)\right]
-\end{array}\right\} =\\
- & = & \oui abdx\oui{y_{1}\left(x\right)}{y_{2}\left(x\right)}dy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Example
-Вычислить тройной интеграл по обьему 
-\begin_inset Formula $V$
-\end_inset
-
- от функциии 
-\begin_inset Formula $\un{\iiint}V\left(x+y+z\right)dV$
-\end_inset
-
-.
- 
-\begin_inset Formula $V:x=0,\ y=0,\ x+y+z=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 50
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Двойной по однократному
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Проэкция 
-\begin_inset Formula $V$
-\end_inset
-
- на плоскость 
-\begin_inset Formula $XoY$
-\end_inset
-
- это треугольник 
-\begin_inset Formula $D$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z_{1}\left(x,y\right)\equiv0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z_{2}\left(x,y\right)=1-x-y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-I & = & \un{\iint}Ddxdy\oui 0{1-x-y}\left(x+y+z\right)dz=
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
- & = & \left\{ D:x\in\left[0,1\right]\ y\in\left[0,1-x\right]\right\} =\\
- & = & \oui 01dx\oui 0{1-x}dy\oui 0{1-x-y}\left(x+y+z\right)dz=\\
- & = & \oui 01dx\oui 0{1-x}\left(xz+yz+\df{z^{2}}2\right)|_{0}^{1-x-y}dy=\\
- & = & \tr=\df 18
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Через поперечное сечение - однократный от двойного
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 51
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $V$
-\end_inset
-
- - между плоскостями 
-\begin_inset Formula $x=0,\ x=1$
-\end_inset
-
-, тоесть 
-\begin_inset Formula $x\in\left[0,1\right]$
-\end_inset
-
- - внешнее интегрирование.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-I & = & \oui 01dx\un{\iint}{\dd x}\left(x+y+z\right)dydz=\\
- & = & \left\{ \dd x:y\in\left[0,1-x\right]\ \sl\ z\in\left[0;1-x-y\right]\right\} =\\
- & = & \oui 01dx\oui 0{1-x}dy\oui 0{1-x-y}\left(x+y+z\right)dz=\\
- & = & \tr=\df 18
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Subsubsection
-Вычисление тройных интегралов в цилиндрических координатах
-\end_layout
-
-\begin_layout Standard
-Аналогично случаю двойного интеграла, переход от декартовых координат 
-\begin_inset Formula $\left(x,y,z\right)$
-\end_inset
-
- к новым 
-\begin_inset Formula $\left(u,v,w\right)$
-\end_inset
-
- осуществляется по следующей формуле: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f\left(x\left(u,v,w\right),y\left(u,v,w\right),z\left(u,v,w\right)\right)\um\left|I\right|\um dudvdw$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-где 
-\begin_inset Formula $I=\left|\begin{array}{ccc}
-\df{\dd x}{\dd u} & \df{\dd x}{\dd v} & \df{\dd x}{\dd w}\\
-\df{\dd y}{\dd u} & \df{\dd y}{\dd v} & \df{\dd y}{\dd w}\\
-\df{\dd z}{\dd u} & \df{\dd z}{\dd v} & \df{\dd z}{\dd w}
-\end{array}\right|$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Пусть точка 
-\begin_inset Formula $M\left(x,y,z\right)\in E^{3}$
-\end_inset
-
-, а 
-\begin_inset Formula $M_{0}\left(x,y\right)$
-\end_inset
-
- - ее проэкция на 
-\begin_inset Formula $XoY$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-В 
-\begin_inset Formula $XoY$
-\end_inset
-
- введем полярные кооординаты:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
-x=r\cos\varphi\\
-y=r\sin\varphi
-\end{cases},\ r\in[0;+\b),\ \varphi\in[0;2\pi)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Рис 52
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Положим 
-\begin_inset Formula $z=h,\ h\in\left(-\b;+\b\right)$
-\end_inset
-
-.
- Тикам образлм каждай точка 
-\begin_inset Formula $\left(x,y,z\right)$
-\end_inset
-
- однозначно определеяется координатами 
-\begin_inset Formula $\left(r,\varphi,h\right)$
-\end_inset
-
- - цилиндрическими координатам.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $r=r_{0}=const$
-\end_inset
-
- - цилиндр, радиуса 
-\begin_inset Formula $r_{0}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\varphi=\varphi_{0}=const$
-\end_inset
-
- - полуплоскость с границей - ось 
-\begin_inset Formula $z$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $h=h_{0}=const$
-\end_inset
-
- - плоскость, паралельная 
-\begin_inset Formula $XoY,$
-\end_inset
-
- пересекающай ось 
-\begin_inset Formula $oZ$
-\end_inset
-
- в точке 
-\begin_inset Formula $x=y=0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I=\left|\begin{array}{ccc}
-x_{r}\pr & x_{\varphi}\pr & x_{h}\pr\\
-y_{r}\pr & y_{\varphi}\pr & y_{h}\pr\\
-z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
-\end{array}\right|=\left|\begin{array}{ccc}
-\cos\varphi & -r\um\sin\varphi & 0\\
-\sin\varphi & r\um\cos\varphi & 0\\
-0 & 0 & 1
-\end{array}\right|=\left(r\cos^{2}\varphi+r\sin^{2}\varphi\right)\um1=r$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f_{1}\left(r,\varphi,h\right)\um r\um drd\varphi dh=\oui{\varphi_{0}}{\varphi_{1}}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}d\varphi\oui{h_{1}\left(r,\varphi\right)}{h_{2}\left(r,\varphi\right)}f_{1}\left(r,\varphi,h\right)\um r\um dh$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Вычислить интеграл:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $J=\un{\iiint}VydV$
-\end_inset
-
-, где 
-\begin_inset Formula $V:y=0,y=\sqrt{2x-x^{2}},z=0,z=a$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y=\sqrt{2x-x^{2}}\dsl\begin{cases}
-y\br0\\
-y^{2}=2x-x^{2}
-\end{cases}\dsl\begin{cases}
-y\br0\\
-\left(x+1\right)^{2}+y^{2}=1
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hbc 53+54
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Перейдем к цилиндрическим координатам
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-x=r\cos\varphi\\
-y=r\sin\varphi\\
-z=h
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $D:x\in\left[0;2\right],\ y\in\left[0;\sqrt{2x-x^{2}}\right]$
-\end_inset
-
- - в полярные координаты.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y^{2}+x^{2}=2x$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $r^{2}=2r\cos\varphi$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\varphi\in\left[0;\df{\pi}2\right],\ r\in\left[0;2\cos\varphi\right]$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-J & = & \un{\iint}Ddxdy\oui 0aydz=\\
- & = & \oui 0{\df{\pi}2}d\varphi\oui 0{2\cos\varphi}rdr\oui 0ar\sin\varphi dh=\\
- & = & \oui 0{\df{\pi}2}d\varphi\oui 0{2\cos\varphi}r^{2}\sin\varphi dr=\\
- & = & a\oui 0{\df{\pi}2}\df{r^{3}}3\sin\varphi|_{0}^{2\cos\varphi}d\varphi=\\
- & = & \df a3\um8\um\oui 0{\df{\pi}2}\cos^{3}\varphi\sin\varphi d\varphi=\\
- & = & \df{-8a}3\um\df{\cos^{4}}4|_{0}^{\df{\pi}2}=\df{2a}3
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hbc 55
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\oui{\alpha}{\beta}\varphi\oui{r_{1}}{r_{2}}dr\oui abf_{1}\left(r,\varphi,h\right)\um r\um dh$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Subsubsection
-Вычисления в сферических координатах
-\end_layout
-
-\begin_layout Standard
-Рассмотрим в 
-\begin_inset Formula $E^{3}$
-\end_inset
-
- переход от декартовых координат 
-\begin_inset Formula $\left(x,y,z\right)$
-\end_inset
-
- к сферическим 
-\begin_inset Formula $\left(\varphi,\psi,r\right)$
-\end_inset
-
-.
- Пусть точка 
-\begin_inset Formula $M\left(x,y,z\right)\in E^{3}$
-\end_inset
-
-.
- Пусть 
-\begin_inset Formula $r$
-\end_inset
-
- - длина радиус вектора точки 
-\begin_inset Formula $M$
-\end_inset
-
- (
-\begin_inset Formula $r\br0$
-\end_inset
-
-), 
-\begin_inset Formula $\psi$
-\end_inset
-
- - угол между осью 
-\begin_inset Formula $oZ$
-\end_inset
-
- (ее положительном направлении) и 
-\begin_inset Formula $\vec r$
-\end_inset
-
- - полярный угол (
-\begin_inset Formula $\psi\in\left[0;\pi\right]$
-\end_inset
-
-).
- 
-\begin_inset Formula $\varphi$
-\end_inset
-
- - это угол в плоскости 
-\begin_inset Formula $XoY$
-\end_inset
-
- между осью 
-\begin_inset Formula $oX$
-\end_inset
-
- и радщиус вектором точки 
-\begin_inset Formula $M_{0}\left(x,y,0\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-рис 56
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\psi=\psi_{0}=const$
-\end_inset
-
- - коническая поверхность
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\varphi=\varphi_{0}=consy$
-\end_inset
-
- - полупроскость
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $r=r_{0}=const$
-\end_inset
-
- - сфера радиуса 
-\begin_inset Formula $r_{0}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
-x=r\cos\varphi\sin\psi\\
-y=r\sin\varphi\sin\psi\\
-z=r\cos\psi
-\end{cases},\ r\br0,\ \varphi\in\left[0;2\pi\right],\ \psi\in\left[0;\pi\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x^{2}+y^{2}+z^{2}=r^{2}$
-\end_inset
-
- - проверка
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-I & = & \left|\begin{array}{ccc}
-x_{r}\pr & x_{\varphi}\pr & x_{h}\pr\\
-y_{r}\pr & y_{\varphi}\pr & y_{h}\pr\\
-z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
-\end{array}\right|=\\
- & = & \left|\begin{array}{ccc}
-\cos\varphi\sin\psi & -r\sin\varphi\sin\psi & r\cos\varphi\cos\psi\\
-\sin\varphi\sin\psi & r\cos\varphi\sin\psi & r\sin\varphi\cos\psi\\
-\cos\psi & 0 & -r\sin\varphi
-\end{array}\right|=\\
- & = & r^{2}\left(\cos\psi\left(-\sin^{2}\varphi\sin\psi\cos\psi-\cos^{2}\varphi\sin\psi\cos\psi\right)-\sin\psi\left(\cos^{2}\varphi\sin^{2}+\sin^{2}\varphi\sin^{2}\psi\right)\right)=\\
- & = & -r^{2}\sin\psi
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left|I\right|=r^{2}\sin\psi$
 \end_inset
 
 

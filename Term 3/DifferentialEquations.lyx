@@ -354,6 +354,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
+{\df{#1^{#2}#3}{#1#4^{#2}}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -5285,6 +5291,1014 @@ f(x)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пропущено жёриком
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+18 октября 2013 года 1го века 2го тысячеления 1го милионолетия
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем расматривать уравнения нного порядка
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d^{n}y}{dx^{n}}=a_{n-1}\left(x\right)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{1}\left(x\right)\df{dy}{dx}+a_{0}\left(x\right)y+f\left(x\right)\label{eq:38}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+И уравнения Коши
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+y\left(x_{0}\right)=y_{0,0}\\
+\df{dy}{dx}\left(x_{0}\right)=y_{1,0}\\
+\vtr\\
+\df{d^{n-1}y}{dx^{n-1}}\left(x_{0}\right)=y_{n-1,0}
+\end{cases}\label{eq:39}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда справеллива теорема существования и единственности решения задачи
+ Окши для лингейнеог7о уравнения нного порядка.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{i}\left(x\right),\ i=\overline{1,n-1},\ f\left(x\right)$
+\end_inset
+
+ определены и непрерывны на 
+\begin_inset Formula $x\in\left(\alpha;\beta\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\forall x_{0}\in\left(\alpha;\beta\right)\ -\b<y_{i,0},+\b,\ i=\overline{0,n-1}$
+\end_inset
+
+, существует единственное решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:38"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:39"
+
+\end_inset
+
+), определенное на всем интервале 
+\begin_inset Formula $\left(\alpha;\beta\right)$
+\end_inset
+
+.
+ Эта теоррема является следствием из соответствующей теоремы существования
+ и единственности для линенных систем.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dY}{dx}=A\left(x\right)Y\left(x\right)+F\left(x\right)\\
+Y\left(x_{0}\right)=y^{\left(0\right)}
+\end{cases}\label{eq:40}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+y_{0,0}\\
+\vtr\\
+y_{n-1,0}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y\left(x\right)=\left(\begin{array}{c}
+y_{0}\left(x\right)\\
+\vtr\\
+y_{n-1}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ - соответствующай матрица
+\end_layout
+
+\begin_layout Subsection
+Свойства решений линейных однородных диференциальных уравнения n-ного порядка
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d^{n}y}{dx^{n}}=a_{n-1}\left(x\right)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{1}\left(x\right)\df{dy}{dx}+a_{0}\left(x\right)y+f\left(x\right)\label{eq:41}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим линейное однородное дифференциальное уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Функции 
+\begin_inset Formula $a_{i},\ i=\overline{1,n-1}$
+\end_inset
+
+ определены и непрерывны на интегвале 
+\begin_inset Formula $x\in\left(\alpha;\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(1) Пусть функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
+\end_inset
+
+ - решения уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+), тогда их линейная комбинация 
+\begin_inset Formula $y\left(x\right)=c_{1}y_{1}\left(x\right)+\tr+c_{m}y_{m}\left(x\right),\ c_{i}=const,\ i=\overline{1,m}$
+\end_inset
+
+ также будет решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y=\ous{k=1}mc_{k}y_{k}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+ & \df{d^{n}}{dx^{n}}\left(\ous{k=1}mc_{k}y_{k}\left(x\right)\right)-a_{n-1}\left(x\right)\df{d^{n-1}}{dx^{n-1}}\left(\ous{k=1}mc_{k}y_{k}\left(x\right)\right)-\tr-a_{0}\ous{k=1}mc_{k}y_{k}\left(x\right) & =\\
+= & \ous{k=1}mc_{k}\df{d^{n}y_{k}}{dx^{n}}-\ous{k=1}mc_{k}a_{n-1}\df{d^{n-1}y_{k}}{dx^{n-1}}-\tr-\ous{k=1}mc_{k}a_{0}y_{k} & =\\
+= & \ous{k=1}mc_{k}\left(\df{d^{n}y_{k}}{dx^{n}}-a_{n-1}\df{d^{n-1}y_{k}}{dx^{n-1}}-\tr-a_{0}y_{k}\right) & =\\
+= & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
+\end_inset
+
+ называбтся линейно зависимыми на интервале 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+, если существуют постоянные 
+\begin_inset Formula $c_{1},\tr,c_{m}$
+\end_inset
+
+, не все равные 0-лю, что линейная комбинация тождественно равна нулю всех
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ из 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Определителем Вронского, составленым по функциям 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
+\end_inset
+
+ называется определитель 
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+y_{1}\left(x\right) & \tr & y_{m}\left(x\right)\\
+\df{dy_{1}}{dx} & \tr & \df{dy_{n}}{dx}\\
+\vtr & \vtr & \vtr\\
+\df{d^{n-1}y_{1}}{dx^{n-1}} & \tr & \df{d^{n-1}y_{m}}{dx^{n-1}}
+\end{array}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(2) Если функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
+\end_inset
+
+ линейнео зависимы, то определитель Вронского составленеый по этим функциям
+ тождественно равен нулю.
+\end_layout
+
+\begin_layout Proof
+Пусть .., тогда найдутся постаянные 
+\begin_inset Formula $c_{1},\tr,c_{m}$
+\end_inset
+
+, не всет равные нулю, что 
+\begin_inset Formula $c_{1}y_{1}\left(x\right)+\tr+c_{m}y_{m}\left(x\right)\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Продейеренцируем это 
+\begin_inset Formula $n-1$
+\end_inset
+
+ раз.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c_{1}\dif dk{y_{1}}x+\tr+c_{m}\dif dkyx\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+А тогда столбцы определителя Вронского, построенного по этим функциям при
+ каждом 
+\begin_inset Formula $x$
+\end_inset
+
+ будуьот линейно зависимыми, ну а тогда по известной теореме алгебры определител
+ь тожлественно равен нулю
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+ Если функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ - решения однородного уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+) и определитель Вронского, составленный по этим функциям 
+\begin_inset Formula $W\left(x_{0}\right)=0$
+\end_inset
+
+ в тточке 
+\begin_inset Formula $x_{0}\in\left(\alpha;\beta\right)$
+\end_inset
+
+, то функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ - динейно зависимы.
+\end_layout
+
+\begin_layout Proof
+Из того что определитель вронскоро в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ равен нулю следует что его столбцы линейно зависимы\SpecialChar \@.
+ А поэтому найдутся
+ постоянные 
+\begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
+\end_inset
+
+, не все равные нулю, что линейная комбинация 
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1}\left(\begin{array}{c}
+y_{1}\left(x_{0}\right)\\
+\vtr\\
+\dif d{n-1}{y_{1}\left(x_{0}\right)}x
+\end{array}\right)+\tr+\alpha_{n}\left(\begin{array}{c}
+y_{n}\left(x\right)\\
+\vtr\\
+\dif d{n-1}{y_{n}\left(x_{0}\right)}x
+\end{array}\right)\label{eq:42}
+\end{equation}
+
+\end_inset
+
+ Затем с помощью этих- постоянных построем функцию 
+\begin_inset Formula $y\left(x\right)=\alpha_{1}y_{1}\left(x\right)+\tr+\alpha_{n}y_{n}\left(x\right)$
+\end_inset
+
+ Так как 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ - решения, то в силу теоремы 1, 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ будет решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+И в силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:42"
+
+\end_inset
+
+) 
+\begin_inset Formula $\begin{cases}
+y\left(x_{0}\right)=0\\
+\dif d{}{y\left(x_{0}\right)}x=0\\
+\vtr\\
+\dif d{n-1}{y\left(x_{0}\right)}x
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда мы имеет 2 функции 
+\begin_inset Formula $u\left(x\right)\equiv0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+, которые удовлетворяют уравнению (41) и нулевым начальным условиям.
+ А тогда в силу существования и единственности они совподают.
+ Это означает что решения 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ - линейно зависмы.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следвствие.
+
+\emph default
+ Если определитель Вронского, составленный по решениям линейного однородного
+ уравнения (41) обращается в ноль в некоторой точке из интервала 
+\begin_inset Formula $\left(\alpha;\beta\right)$
+\end_inset
+
+, то он тождественно равен нулю на этом интервале.
+\end_layout
+
+\begin_layout Proof
+Очевидно..
+\end_layout
+
+\begin_layout Remark
+Если функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr y_{n}\left(x\right)$
+\end_inset
+
+ не являются решенгиями уравнения (41) с непрерывными коофицентами, то утвержден
+ие, аналогичные выше сформцулированым (теорема 3 и следствия) для них в
+ общем случа не верны.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Д
+\backslash
+З 
+\emph default
+Самостоятельно привести пример функций для которых определитель вронского
+ тождественный ноль, но функции линейно не зависимы.
+\end_layout
+
+\begin_layout Definition
+Совокупность 
+\begin_inset Formula $n$
+\end_inset
+
+ динейно независимых решения линейного однородного уравнения (41) называется
+ фундаментальной системой решений этого уравнения.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+ Фундаментальная система решений уществует для любого линейног7о однородного
+ уравнения (41).
+\end_layout
+
+\begin_layout Proof
+Построем 
+\begin_inset Formula $n$
+\end_inset
+
+ решений уравненгия (41), как решения следующих задач Коши.
+ Возьмем 
+\begin_inset Formula $x_{0}\in\left(\alpha;\beta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y_{1}\left(x\right):\begin{cases}
+\left(41\right)\\
+y_{1}\left(x_{0}\right)=1\\
+\dif d{}{y_{1}\left(x_{0}\right)}x=0\\
+\vtr\\
+\dif d{n-1}{y_{1}\left(x_{0}\right)}x=0
+\end{cases},\ y_{2}\left(x\right):\begin{cases}
+(41)\\
+y_{2}\left(x_{0}\right)=1\\
+\dif d{}{y_{2}\left(x\right)}x=0\\
+\vtr\\
+\dif d{n-1}{y_{2}\left(x\right)}x=0
+\end{cases},\ \tr,\ y_{n}\left(x\right):\begin{cases}
+(41)\\
+y_{n}\left(x_{0}\right)=1\\
+\dif d{}{y_{n}\left(x\right)}x=0\\
+\vtr\\
+\dif d{n-1}{y_{n}\left(x\right)}x=0
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Составим определитель Вронского по этим функциям:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $W\left(x_{0}\right)=\left|\begin{array}{cccc}
+1 & 0 & \tr & 0\\
+0 & 1 & \tr & 0\\
+\vtr & \vtr & \ddots & \vtr\\
+0 & 0 & \tr & 1
+\end{array}\right|=1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Построенные решения 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ не могут быть линейно зависимы 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Они образую фундаментальную системы решений.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+Общее решения линейного однородного уравнения (41) есть линейная комбинация
+ с произвольными постоянными фундаментальной системы решений.
+\end_layout
+
+\begin_layout Proof
+Пусть фнкции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ обзазуют фундаментальную систему решений уравнения (41).
+ Составим по ним определителдь Вронского.
+ Возьмем 
+\begin_inset Formula $x_{0}\in\left(\alpha;\beta\right)$
+\end_inset
+
+ и рассмотрим составленный определитель Вронского в этой точке:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+y_{1}\left(x_{0}\right) & \tr & y_{m}\left(x_{0}\right)\\
+\df{dy_{1}\left(x_{0}\right)}{dx} & \tr & \df{dy_{n}\left(x_{0}\right)}{dx}\\
+\vtr & \vtr & \vtr\\
+\df{d^{n-1}y_{1}\left(x_{0}\right)}{dx^{n-1}} & \tr & \df{d^{n-1}y_{m}\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right|\nr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Столбцы этого определителя 
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}{c}
+y_{1}\left(x_{0}\right)\\
+\df{dy_{1}\left(x_{0}\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{1}\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+y_{m}\left(x_{0}\right)\\
+\df{dy_{n}\left(x_{0}\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{m}\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right)\label{eq:43}
+\end{equation}
+
+\end_inset
+
+линейно не зависимы, а тогда такие линейные вектора (43) образуют базис
+ в 
+\begin_inset Formula $\R^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+ПУсть Функция 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ какоето решения уравнгения (41).
+ Покажем, что его можно представить в виде линейной комбинации функций,
+ образуюзих фундаментальную систему решений
+\backslash
+Для этого рассмотрим вектор 
+\begin_inset Formula $\left(\begin{array}{c}
+y\left(x_{0}\right)\\
+\df{dy\left(x_{0}\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right)$
+\end_inset
+
+и разложим егог по базису (43), что будет верно равненство (44).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}{c}
+y\left(x_{0}\right)\\
+\df{dy\left(x_{0}\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right)=c_{1}\left(\begin{array}{c}
+y_{1}\left(x_{0}\right)\\
+\df{dy_{1}\left(x_{0}\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{1}\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right)+\tr+c_{n}\left(\begin{array}{c}
+y_{m}\left(x_{0}\right)\\
+\df{dy_{n}\left(x_{0}\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{m}\left(x_{0}\right)}{dx^{n-1}}
+\end{array}\right)\label{eq:44}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+С помощью постоянных построем 
+\begin_inset Formula $u\left(x\right)=c_{1}y_{1}\left(x\right)+\tr+c_{n}y_{n}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По теореме 1 она будет решением уравнения (41) и в силу (44)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+u\left(x_{0}\right)=y\left(x_{0}\right)\\
+\dif d{}{u\left(x_{0}\right)}x=\dif d{}{y\left(x_{0}\right)}x\\
+\vtr\\
+\dif d{n-1}{u\left(x_{0}\right)}x=\dif d{n-1}{y\left(x_{0}\right)}x
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом есть 2 решения, удовлетворяющие одним и тем же начальным условиям
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ эти функции совподают тождественно в силу теоремы существовании и единственност
+и.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Лиувилля
+\end_layout
+
+\end_inset
+
+Пусть функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ какое то решения уравнения (41), тогда определитель Вронского, составдленный
+ по этим функциям ьудет решением следубщего дифференциального уравнения.
+ 
+\begin_inset Formula $\df{dW}{dx}=a_{n-1}\left(x\right)W$
+\end_inset
+
+ , где 
+\begin_inset Formula $a_{n-1}\left(x\right)$
+\end_inset
+
+ -коофицент од 
+\begin_inset Formula $n-1$
+\end_inset
+
+ производной уравнения типа (41).
+\end_layout
+
+\begin_layout Proof
+Является следствием из теоремы Лиувиля для систем.
+\end_layout
+
+\begin_layout Proof
+Действительно, есть 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ решщенгия (41), то вектор-функция 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\df{dy_{1}\left(x\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{1}\left(x\right)}{dx^{n-1}}
+\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+y_{m}\left(x\right)\\
+\df{dy_{n}\left(x\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{m}\left(x\right)}{dx^{n-1}}
+\end{array}\right)$
+\end_inset
+
+ будут решениями соответствующей эквивалентной линейной однородной системы
+ вида: 
+\begin_inset Formula $\df{dY}{dx}=A\left(x\right)Y$
+\end_inset
+
+, где 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ тмеет вид 
+\begin_inset Formula $A\left(x\right)=\left(\begin{array}{ccccc}
+0 & 1 & 0 & \tr & 0\\
+0 & 0 & 1 & \tr & 0\\
+\vtr & \vtr & \vtr & \ddots & \vtr\\
+a_{0} & a_{1} & a_{2} & \tr & a_{n-1}
+\end{array}\right)$
+\end_inset
+
+Заметим что на главной диагонили может быть только 1н ненулевой элемент
+ 
+\begin_inset Formula $A_{n,n}\left(x\right)=a_{n-1}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Слуд матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ nравет 
+\begin_inset Formula $a_{n-1}\left(x\right)$
+\end_inset
+
+, а тогда определитель Вронского, построеный по функциям 
+\begin_inset Formula $\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\df{dy_{1}\left(x\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{1}\left(x\right)}{dx^{n-1}}
+\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+y_{m}\left(x\right)\\
+\df{dy_{n}\left(x\right)}{dx}\\
+\vtr\\
+\df{d^{n-1}y_{m}\left(x\right)}{dx^{n-1}}
+\end{array}\right)$
+\end_inset
+
+ совподает с определителем вронсткого, построенным по функциям 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
+\end_inset
+
+ и в силу теоремы Лиувилля для систем является решением вод этгого уравнения.
+\end_layout
+
+\begin_layout Subsection
+Понижения порядка линейного однородного уравнения
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
+\end_inset
+
+ - линейно не зависимые решения уравнения (41).
+ Покажем, как можно понизить погрядок 
+\begin_inset Formula $\left(m<n\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $m$
+\end_inset
+
+ , тоесть свести его к уранвению 
+\begin_inset Formula $\left(n-m\right)$
+\end_inset
+
+-го порядка.
+ Очевидно что 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ - тождественно не равна нулю.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists x_{0}\in\left(\alpha;\beta\right)\ y_{1}\left(x\right)\nr0$
+\end_inset
+
+ В силу непрерывности 
+\begin_inset Formula $y_{1}\left(x\right)\nr0$
+\end_inset
+
+ в 
+\begin_inset Formula $U_{x_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Решения будем искать в виде 
+\begin_inset Formula $y\left(x\right)=y_{1}\left(x\right)z\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ - новая неизвестная функция.
+ Подставим 
+\begin_inset Formula $y\left(x\right)=y_{1}\left(x\right)z\left(x\right)$
+\end_inset
+
+ в (41), получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}z}{\sim}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ov{a_{i}}{\sim}$
+\end_inset
+
+ - ффункции, которые выражаются через 
+\begin_inset Formula $a_{i},\ y_{1}\left(x\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ решение уравнения (41), то 
+\begin_inset Formula $z\left(x\right)\equiv1$
+\end_inset
+
+, будет решением уравнения 
+\begin_inset Formula $\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}z}{\sim}$
+\end_inset
+
+.
+ ПОдставим 
+\begin_inset Formula $z\left(x\right)\equiv1$
+\end_inset
+
+ в 
+\begin_inset Formula $\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}}{\sim}z$
+\end_inset
+
+ получим 
+\begin_inset Formula $\ov{a_{0}}{\sim}\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{i}\left(x\right)=\df{y_{i+1}\left(x\right)}{y_{1}\left(x\right)},\ i=\overline{1,m-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u\left(x\right)=\df{dz}{dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif d{n-1}ux=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-2}ux+\tr+\ov{a_{1}}{\sim}\left(x\right)u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда функции 
+\begin_inset Formula $u_{i}=\df d{dx}\left(\df{y_{i+1}}{y_{1}}\right),\ i=\overline{1,m-1}$
+\end_inset
+
+ будут решениями уравнения 
+\begin_inset Formula $\dif d{n-1}ux=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-2}ux+\tr+\ov{a_{1}}{\sim}\left(x\right)u$
+\end_inset
+
+ и они будут линекйн6о не зависимые.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}{m-1}c_{i}\df d{dx}\left(\df{y_{i+1}}{y_{1}}\right)\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}{m-1}\left(\df{y_{i+1}}{y_{1}}\right)\equiv C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ Противореяие
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ Фкнкции линейно не зависимы
+\end_layout
+
+\begin_layout Standard
+и так далее получим уарвнения 
+\begin_inset Formula $\left(n-m\right)$
+\end_inset
+
+-го порядка.
 \end_layout
 
 \end_body
