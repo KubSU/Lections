@@ -14191,11 +14191,34 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 37
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img37.svg
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Переход к полярным координатам.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14228,11 +14251,34 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 38
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img38.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14282,11 +14328,34 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 39
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img39.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14334,11 +14403,34 @@ r_{2}=2\um\cos\varphi
 \end_layout
 
 \begin_layout Example
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 40
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img40.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14389,11 +14481,34 @@ y=y\left(u,v\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 41
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img41.svg
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14708,11 +14823,34 @@ y_{r}' & y_{\varphi}'
 \end_layout
 
 \begin_layout Example
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 42
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img42.svg
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14834,11 +14972,34 @@ y_{u}' & y_{v}'
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 43
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img43.svg
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15024,11 +15185,34 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 44.
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img44.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15434,11 +15618,34 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 45
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img45.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15476,11 +15683,34 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 46
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img46.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15645,11 +15875,34 @@ status open
 \end_layout
 
 \begin_layout Remark
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 47
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img47.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15703,11 +15956,34 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 48
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img48.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15785,11 +16061,34 @@ D:x\in\left[a,b\right],\ y\in\left[y_{1}\left(x\right),y_{2}\left(x\right)\right
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 49
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img49.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -15832,12 +16131,30 @@ z\in\left[z_{1}\left(x,y\right),z_{2}\left(x,y\right)\right]
 
 \end_layout
 
-\begin_layout Example
-\begin_inset Note Note
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 50
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img50.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -15845,7 +16162,11 @@ status open
 
 \end_layout
 
-\begin_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 Двойной по однократному
 \end_layout
@@ -15907,18 +16228,40 @@ I & = & \un{\iint}Ddxdy\oui 0{1-x-y}\left(x+y+z\right)dz=
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Через поперечное сечение - однократный от двойного
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 51
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img51.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -16027,11 +16370,34 @@ y=r\sin\varphi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 52
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img52.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -16147,12 +16513,99 @@ y\br0\\
 
 \end_layout
 
-\begin_layout Example
-\begin_inset Note Note
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Hbc 53+54
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img53.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Pictures/Matan2/img54.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
