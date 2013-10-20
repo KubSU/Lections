@@ -5222,11 +5222,32 @@ j\nr i
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 1.
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img1.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5708,11 +5729,32 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 4
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img4.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5772,11 +5814,32 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 5
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img5.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5980,11 +6043,32 @@ j\ne i
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 6
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img6.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6077,12 +6161,33 @@ F_{x} & F_{y} & F_{z}
 Скажем точка движется по вертикале в поле тяжести земли.
 \end_layout
 
-\begin_layout Example
-\begin_inset Note Note
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 7
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img7.svg
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
