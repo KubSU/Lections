@@ -337,8 +337,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\v}[1]{\vec{#1}}
-{\vec{#1}}
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
 \end_inset
 
 
@@ -6323,6 +6323,494 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+21 октября 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Группа вопросов, в которые включает в себя каественный анализ
+\end_layout
+
+\begin_layout Enumerate
+При каких значениях полной энергиях 
+\begin_inset Formula $E$
+\end_inset
+
+ в поле 
+\begin_inset Formula $U\left(x\right)$
+\end_inset
+
+ (потенциальная энергия силового поля) впринципе возможно движение.
+\end_layout
+
+\begin_layout Enumerate
+В каких областях изменения независимого переменного возможно движение.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Области в которых возможно движение системы называются разрешенными областями.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Какой характер имеет движение в каждой из разрешенных областей.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Enumerate
+Ответ:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E=T+U\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Полная энергия системы вдруг окажется 
+\begin_inset Formula $E\mr U_{1}$
+\end_inset
+
+.
+ Что тогда? Тогда движение в системе быть не может.
+ 
+\end_layout
+
+\begin_layout Standard
+Чтобы движение возникло нужно чтобы 
+\begin_inset Formula $E>U_{1}=U\left(+\b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ответ:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $U_{1}<E<U_{min}$
+\end_inset
+
+ тогда движение может происходить только в 
+\begin_inset Formula $+\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $U_{min}<E<U_{max}$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\left(x_{1};x_{2}\right),\ x\in\left(x_{3};+\b\right)$
+\end_inset
+
+.
+ От 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ до 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ точка совершает колебательное движение.
+ Это область носит название потенциальная яма.
+ Область 
+\begin_inset Formula $\left(x_{2};x_{3}\right)$
+\end_inset
+
+ --- потенциальный барьер, и без дополнительной энергии тело не может перескочит
+ь через его.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $E>U_{max}$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\left(x_{0};+\b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Corollary
+Любая свободная систнма стремится к минимуму потенциальной энергии.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим взаимодействие например 2х материальных тел.
+\end_layout
+
+\begin_layout Enumerate
+Абсолютно не упругий удар.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Им называется такое взаимодействие тел, при котором после взаимодействия
+ взаимодействующие тела становятся единым телом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v_{1}},\ \vec{v_{2}},\ m_{1},\ m_{2}\st\vec U,\ \left(m_{1}+m_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v_{1}}\um m_{1}+\vec{v_{2}}m_{2}=\vec U\left(m_{1}+m_{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{U_{2}}=\df{\vec{v_{1}}\um m_{1}+\vec{v_{2}}m_{2}}{m_{1}+m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}=\df{m_{1}v_{1}^{2}}2+\df{m_{2}v_{2}^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}=\df{\left(m_{1}+m_{2}\right)U^{2}}2=\df{v_{1}^{2}m_{1}^{2}+2m_{1}m_{2}\vec{v_{1}}\vec{v_{2}}+v_{2}^{2}m_{2}^{2}}{2\left(m_{1}+m_{2}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\D T & = & T_{2}-T_{1}=\\
+ & = & \df 12\df{v_{1}^{2}m_{1}^{2}+2m_{1}m_{2}\vec{v_{1}}\vec{v_{2}}+v_{2}^{2}m_{2}^{2}-m_{1}^{2}v_{1}^{2}-m_{1}m_{2}v_{1}^{2}-m_{1}m_{2}v_{2}^{2}-m_{2}^{2}v_{2}^{2}}{m_{1}+m_{2}}=\\
+ & = & \df 12\df{m_{1}m_{2}}{m_{1}+m_{2}}\left(-v_{1}^{2}+2\vec{v_{1}}\vec{v_{2}}-v_{2}^{2}\right)=\\
+ & = & -\df 12\df{m_{1}m_{2}}{m_{1}+m_{2}}\left(\vec{v_{1}}-\vec{v_{2}}\right)^{2}\mr0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\df{m_{1}m_{2}}{m_{1}+m_{2}}$
+\end_inset
+
+ --- приведенная масса системы.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Абсолютно упругий удар.
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Это такое взаимодействие тел, при котором не происходит потерь энергии.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пример --- 2 тела сталкиваются (взаимодействуют).
+ При абсолюьно упругом ударе происходит: кинетическая энергия переходит
+ в потенциальную.
+ Абсолютно упругого удара не существует.
+ Ими мы считаем если потери энергии при взаимодействии намного меньше чем
+ общая энергия системы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v_{1}},\ \vec{v_{2}},\ m_{1},\ m_{2}\st\vec{u_{1}},\ \vec{u_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+m_{1}\vec{v_{1}}+m_{2}\vec{v_{2}}=m_{1}\vec{u_{1}}+m_{2}\vec{u_{2}}\\
+\df{m_{1}v_{1}^{2}}2+\df{m_{2}v_{2}^{2}}2=\df{m_{1}u_{1}^{2}}2+\df{m_{2}u_{2}^{2}}2
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+m_{1}\left(\vec{v_{1}}-\vec{u_{1}}\right)=m_{2}\left(\vec{u_{2}}-\vec{v_{2}}\right)\\
+\df{m_{1}}2\left(v_{1}^{2}-u_{1}^{2}\right)=\df{m_{2}}2\left(u_{2}^{2}-v_{2}^{2}\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+m_{1}\left(\vec{v_{1}}-\vec{u_{1}}\right)=m_{2}\left(\vec{u_{2}}-\vec{v_{2}}\right)\\
+\vec{v_{1}}+\vec{u_{1}}=\vec{v_{2}}+\vec{u_{2}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Закон всемирного тяготения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 11
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+За время 
+\begin_inset Formula $\D t$
+\end_inset
+
+ частица переместиласть на 
+\begin_inset Formula $\D\vec r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D t\um\vec v=\D\vec r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\vec r$
+\end_inset
+
+=
+\begin_inset Formula $\vec vdt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Давайте попробуем посчитать площадь фигуры.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 12\vec r\um\D\vec r\um\sin\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D S=\df 12r\um\D r\um\sin\alpha=\df 12\um r\um v\um\sin\alpha\um\D t$
+\end_inset
+
+ --- Это похоже на векторное произведение.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dS=\df 12\um\left(r\um u\um\sin\alpha\right)\um dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dS}{st}=\df 12\um r\um v\um\sin\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Но так как справа вектор, то слева тоже должен быть вектор.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\vec S}{st}=\df 12\vec r\x\vec v$
+\end_inset
+
+ --- Секториальная скорость --- Cкорость изменения этой площади с течением
+ времени, которая описывается радиус вектором точки --- Это площадь описываемая
+ радус вектором в еденицу времени.
+\end_layout
+
+\begin_layout Standard
+Ее вектор направлен перпендикулярно плоскости, в которой лежит треугольник,
+ от которого мы берем площадь.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим момент импульса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v M=m\v r\x\v v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v M=2m\df{d\v S}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когда на точку действует внешняя сила: 
+\begin_inset Formula $\df{dM}{dt}=\v N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 12
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=\v r\x\v{F^{\left(e\right)}}=0$
+\end_inset
+
+ --- момент силы относительно точки 
+\begin_inset Formula $O$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Мы получаем что при движении точки в поле центральных сил момент сил сохраняется.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v N$
+\end_inset
+
+ --- постоянный вектор.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\df{d\v S}{dt}$
+\end_inset
+
+ - постоянный.
+\end_layout
+
+\begin_layout Standard
+Мы доказали теорему площадей.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Теорема площадей
+\end_layout
+
+\end_inset
+
+Траэктория материальной точки в поле центральных сих есть плоская кривая.
+\end_layout
+
+\begin_layout Theorem
+За равные промежутки времени радиус вектор материальной точки описывает
+ равные площади.
+\end_layout
+
+\begin_layout Theorem
+Справедлива и обратная теорема.
 \end_layout
 
 \begin_layout Section
