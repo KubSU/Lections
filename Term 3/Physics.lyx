@@ -30,6 +30,7 @@ theorems-starred
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing single
 \use_hyperref true
@@ -6052,7 +6053,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Pictures/Physics/img6.svg
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -6161,7 +6162,7 @@ F_{x} & F_{y} & F_{z}
 Скажем точка движется по вертикале в поле тяжести земли.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Example
 \begin_inset Float figure
 wide false
 sideways false
@@ -6171,7 +6172,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Pictures/Physics/img7.svg
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -6211,11 +6212,26 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Note Note
-status open
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
-Рис 8
+\align center
+8
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6374,16 +6390,38 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Ответ:
+Ответ: 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 9
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img9.svg
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6423,11 +6461,33 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 10
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img10.svg
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6625,11 +6685,32 @@ m_{1}\left(\vec{v_{1}}-\vec{u_{1}}\right)=m_{2}\left(\vec{u_{2}}-\vec{v_{2}}\rig
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Рис 11
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img11.svg
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6744,11 +6825,32 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Hbc 12
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/img12.svg
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6811,6 +6913,13 @@ status open
 
 \begin_layout Theorem
 Справедлива и обратная теорема.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
