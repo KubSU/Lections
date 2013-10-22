@@ -16854,6 +16854,874 @@ z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\un{\iiint}Vf_{1}\left(r,\varphi,\psi\right)\um r^{2}\sin\varphi drd\varphi d\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $J=\un{\iiint}V\left(z+2\right)dxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $V:\left.\begin{cases}
+x^{2}+y^{2}+z^{2}=R_{1}^{2}\\
+x^{2}+y^{2}+z^{2}=R_{2}^{2}
+\end{cases}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 57
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\varphi\in\left[0;2\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\psi\in\left[0;\df{\pi}2\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $r\in\left[r_{1};r_{2}\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 58
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $J=\oui 0{2\pi}d\varphi\oui 0{\df{\pi}2}d\psi\oui{r_{1}}{r_{2}}\left(r\cos\psi+2\right)\um r^{2}\sin\psi dr=\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Существует другой подход при переходе к сферическим координатам.
+\end_layout
+
+\begin_layout Standard
+Угол 
+\begin_inset Formula $\psi$
+\end_inset
+
+ узмеряется не от полюса к полюсу, а от экватора к полюсам.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+hbc 59
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi\in\left[-\df{\pi}2;\df{\pi}2\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=r\cos\varphi\cos\psi\\
+y=r\sin\varphi\cos\psi\\
+z=r\sin\psi
+\end{cases},\ \varphi\in\left[0;2\pi\right],\ r\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Приложение тройных интегралов
+\end_layout
+
+\begin_layout Paragraph
+Вычисление обьемов
+\end_layout
+
+\begin_layout Standard
+Из определения тройного интеграла следует что обьем кубироемого тела 
+\begin_inset Formula $\left(V\right)$
+\end_inset
+
+вычисляется по формуле 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\un{\iiint}V1dV=\un{\iiint}Vdxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Вычислить обьем тела, ограниченными следующими поверхностями.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $V:\begin{cases}
+64\mr x^{2}+y^{2}+z^{2}\mr196\\
+z=\mr\sqrt{\df{x^{2}+y^{2}}3} & ,\ \df x{\sqrt{2}}\mr y\mr0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Шаровой слой: 
+\begin_inset Formula $8\mr r\mr14$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 60
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\varphi\in\left[\pi;\df{7\pi}6\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $z=\mr\sqrt{\df{x^{2}+y^{2}}3}$
+\end_inset
+
+ --- фигура вращения 
+\begin_inset Formula $\left(x^{2}+y^{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $y=0\ \sl$
+\end_inset
+
+ 
+\begin_inset Formula $z\mr\df{\left|x\right|}{\sqrt{3}}$
+\end_inset
+
+ --- след фигуры 
+\begin_inset Formula $V$
+\end_inset
+
+ в плоскости
+\begin_inset Formula $XoY$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+hbc 61
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рис 62
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Итак, 
+\begin_inset Formula $V=\oui{\pi}{\df{7\pi}6}d\varphi\oui{\df{\pi}3}{\pi}d\psi\oui 8{14}r^{2}\sin\psi dr=\oui{\pi}{\df{7\pi}6}d\varphi\oui{\df{\pi}3}{\pi}d\psi\sin\psi\df{r^{3}}3|_{8}^{14}=\df{14^{3}-8^{3}}3\um\cos\psi|_{\df{\pi}3}^{\pi}\df{\pi}6=\tr$
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Механические приложения
+\end_layout
+
+\begin_layout Standard
+Аналогично случаю двойного интеграла
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M=\un{\iiint}V\rho\left(x,y,z\right)dxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Масса тела с распредененной плостностью 
+\begin_inset Formula $\rho\left(x,y,z\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Координаты центра тяжести 
+\begin_inset Formula $x_{c}=\df{K_{x}}M,\ y_{c}=\df{K_{y}}M,\ z_{c}=\df{K_{z}}M$
+\end_inset
+
+, где 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{x}=\un{\iiint}V\rho\um xdxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{y}=\un{\iiint}V\rho\um ydxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{z}=\un{\iiint}V\rho\um zdxdydz$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Моменты инерции относителщьно координатных плоскостей:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{xy}-\un{\iiiint}V\rho z^{2}dxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{xz}-\un{\iiiint}V\rho y^{2}dxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{yz}-\un{\iiiint}V\rho x^{2}dxdydz$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Относительно центра координат:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{0}=I_{xy}+I_{xz}+I_{yz}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Криволинейные интегралы
+\end_layout
+
+\begin_layout Subsubsection
+Криволинейные интегралы первого рода.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $L=\ov{AB}{\smile}$
+\end_inset
+
+ --- спрямляемая кривая, 
+\begin_inset Formula $\rho\left(M\right)$
+\end_inset
+
+ --- линейная плотность, распределеннная на кривой 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Решим задачу нахождения ее массы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рис 63
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разобьем 
+\begin_inset Formula $\ov{AB}{\smile}$
+\end_inset
+
+ точками 
+\begin_inset Formula $A_{0}=A,\ A_{1},\ A_{2},\ \tr,\ A_{i},\ A_{i+1},\ A_{n}=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\D i$
+\end_inset
+
+ --- длинна отрезка 
+\begin_inset Formula $A_{i}A_{i+1}$
+\end_inset
+
+ ломаной 
+\begin_inset Formula $A_{0}A_{1}\tr A_{n}$
+\end_inset
+
+.
+ Выберем на дуге 
+\begin_inset Formula $\ov{A_{i}A_{i+1}}{\smile}$
+\end_inset
+
+ произвольную точку 
+\begin_inset Formula $M_{i}\left(\xi_{i},\eta_{i}\right),\ i=\overline{0,n-1}$
+\end_inset
+
+.
+ Если положить, что 
+\begin_inset Formula $\forall M\in A_{i}A_{i+1}\ \rho\left(M\right)=\rho\left(M_{i}\right)$
+\end_inset
+
+, то масса участка 
+\begin_inset Formula $A_{i}A_{i+1}$
+\end_inset
+
+ равная приближенно следующему значению: 
+\begin_inset Formula $m_{i}\approx\rho\left(M_{i}\right)\D i,$
+\end_inset
+
+ а для массы 
+\begin_inset Formula $L$
+\end_inset
+
+ мы можем сказать, что 
+\begin_inset Formula $m\approx\ous{i=0}{n-1}\rho\left(M_{i}\right)\D i$
+\end_inset
+
+.Обозначим 
+\begin_inset Formula $\lambda=\un{\max}i\D i$
+\end_inset
+
+.
+ В пределе при 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+ приближенное неравенство становится точным.
+\end_layout
+
+\begin_layout Definition
+Если функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ определена на кривой 
+\begin_inset Formula $L=\ov{AB}{\smile}$
+\end_inset
+
+ и существует предел последовательности 
+\begin_inset Formula $\sigma_{n}=\ous{i=0}{n-1}f\left(\xi_{i},\eta_{i}\right)\D i$
+\end_inset
+
+ при 
+\begin_inset Formula $n\st\b,\ \lambda\st0,\ $
+\end_inset
+
+ не зависящих от способа разбиения и выбьора точек 
+\begin_inset Formula $\v{M_{i}}$
+\end_inset
+
+ внутри ячеек разбиения, то его значение называется интегралом первого рода
+ от функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ по кривой 
+\begin_inset Formula $L$
+\end_inset
+
+ и обозначается: 
+\begin_inset Formula $I=\un{\int}Lf\left(\vec M\right)dl=\un{\int}{AB}f\left(x,y\right)dL=\un{\int}{AB}f\left(\vec M\right)dL=\un{\int}Lf\left(x,y\right)dL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Из определение слудует что значение интеграла 
+\begin_inset Formula $I$
+\end_inset
+
+ не зависит от направления интегрирования.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\un{\int}{AB}f\left(\vec M\right)dL=\un{\int}{BA}f\left(\vec M\right)dL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $L$
+\end_inset
+
+ --- пространственная кривая, интегарл определяется аналогимчно, и записывется
+ 
+\begin_inset Formula $I=\un{\int}{AB}f\left(x,y,z\right)dL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Сведение криволинейного интеграла первого рода к определенному интегралу.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рси 64
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ определена на крирвой 
+\begin_inset Formula $L=AB$
+\end_inset
+
+.
+ Возьмем произвольную точку 
+\begin_inset Formula $M\in AB$
+\end_inset
+
+.
+ Она однозначно определяет длину дуги 
+\begin_inset Formula $S=AM$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Можно 
+\begin_inset Formula $x,y$
+\end_inset
+
+ задать параметрически.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=x\left(s\right)\\
+y=y\left(s\right)
+\end{cases},\ 0\mr s\mr S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\left|\ov{AB}{\smile}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь 
+\begin_inset Formula $f\left(x,y\right)=f\left(x\left(s\right),y\left(s\right)\right)=f\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим разбиение 
+\begin_inset Formula $0=s_{0}<s_{1}<\tr<s_{i}<s_{i+1}<\tr<s_{n}=S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{i}=\left|AA_{i}\right|,\ i=\overline{0,n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D i=S_{i+1}-S_{i}=\left|AA_{i}\right|$
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+hbc 65
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ Интегральная сумма 
+\begin_inset Formula $\ous{i=0}{n-1}f\left(\vec{M_{i}}\right)\D i=\ous{i=0}{n-1}f\left(x\left(\overline{s_{i}}\right),y\left(\overline{s_{i}}\right)\right)\D s_{i}$
+\end_inset
+
+ --- интегральная сумма дляопределнного интеграла 
+\begin_inset Formula $\oui 0sf\left(x\left(s\right),y\left(s\right)\right)ds$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ предельным переходлм при 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+ получим 
+\begin_inset Formula 
+\[
+\un{\int}{AB}f\left(\v M\right)dL=\oui 0sf\left(x\left(s\right),y\left(s\right)\right)dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если,в часности 
+\begin_inset Formula $L$
+\end_inset
+
+ задано параметрически:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=x\left(t\right)\\
+y=y\left(t\right)
+\end{cases},\ t\in\left[\alpha;\beta\right],$
+\end_inset
+
+ то 
+\begin_inset Formula $dS=s\pr\left(t\right)dt=\sqrt{x^{2}\left(t\right)+y^{2}\left(t\right)}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\oui{\alpha}{\beta}f\left(x\left(t\right),y\left(t\right)\right)\sqrt{x^{2}\pr\left(t\right)+y^{2}\pr\left(t\right)}dt
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Еслит при этом 
+\begin_inset Formula $L$
+\end_inset
+
+ задана явно: 
+\begin_inset Formula $y=y\left(x\right),\ x\in\left[\alpha,\beta\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\oui{\alpha}{\beta}f\left(x,y\left(x\right)\right)\sqrt{1+y^{2}\pr\left(x\right)}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\un{\int}{\gamma}xdl,\ \gamma:AB$
+\end_inset
+
+ --- отрезок, 
+\begin_inset Formula $A\left(0;0\right),\ B\left(1;2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 66
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\gamma:y=2x,\ x\in\left[0;1\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sqrt{1+y^{2}\pr}=\sqrt{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\oui 61\sqrt{5}xdx=\df{\sqrt{5}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $I=\oui{\gamma}{}\sqrt{x^{2}+y^{2}}dl$
+\end_inset
+
+ 
+\begin_inset Formula $\gamma:x^{2}+y^{2}=ax,\ a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(x-\df a2\right)^{2}+y^{2}=\left(\df a2\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=r\cos\varphi\\
+y=r\sin\varphi
+\end{cases},\ \varphi\in\left[-\df{\pi}2;\df{\pi}2\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $r^{2}=ar\cos\varphi\ \sl\ r=0$
+\end_inset
+
+ или 
+\begin_inset Formula $t=\arccos\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=a\cos^{2}\varphi\\
+y=a\sin\varphi\cos\varphi=\df{a\sin^{2}\varphi}2
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sqrt{x^{2}\pr+y^{2}\pr}=\sqrt{a^{2}\sin^{2}2\varphi+a^{2}\cos^{2}2\varphi}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\oui{-\df{\pi}2}{\df{\pi}2}a\cos\varphi d\varphi=2a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
