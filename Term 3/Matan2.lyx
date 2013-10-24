@@ -326,8 +326,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\v}[1]{\vec{#1}}
-{\vec{#1}}
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
 \end_inset
 
 
@@ -388,6 +388,18 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\dint}{\iint}
 {\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\underset{#1}{\int}}
+{\underset{#1}{\int}}
 \end_inset
 
 
@@ -17392,6 +17404,10 @@ status open
 \end_layout
 
 \begin_layout Standard
+Сокращенно КИПР.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -17717,6 +17733,812 @@ y=a\sin\varphi\cos\varphi=\df{a\sin^{2}\varphi}2
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Date: 24 okt 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $I=\un{\iiint}{\text{Г}}ydl,\ \text{Г}:\begin{cases}
+x=a\left(t-\sin t\right)\\
+y=a\left(1-\cos t\right)
+\end{cases},\ t\in\left[0;2\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 67
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \oui 0{2\pi}a\left(1-\cos t\right)\um\sqrt{a^{2}\left(1-\cos^{2}t\right)+a^{2}\sin^{2}t}dt=\\
+ & = & a^{2}\oui 0{2\pi}2\sin^{2}\df t2\sqrt{2-2\cos t}dt=\\
+ & = & \left\{ \sqrt{2-2\cos t}=\sqrt{2}\um\sqrt{1-\cos t}\right\} =\\
+ & = & a^{2}2\sqrt{2}\oui 0{2\pi}\sqrt{2\sin^{2}\df t2}\sin^{2}\df t2dt=\\
+ & = & 4a^{2}\oui 0{2\pi}\left|\sin\df t2\right|\um\sin^{2}\df t2dt=\\
+ & = & 4a^{2}\oui 0{2\pi}\sin\df t2\sin^{2}\df t2dt=\\
+ & = & -2\um4a^{2}\oui 0{2\pi}\left(1-\cos^{2}\df t2\right)d\cos\df t2=\\
+ & = & -8a^{2}\left(\cos\df t2-\df{\cos^{3}\df t2}3\right)|_{0}^{2\pi}=\\
+ & = & -8a^{2}\left(\tr\right)\tr
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Криволинейный интеграл втоорого рода.
+ Физический смысл.
+ Определение.
+\end_layout
+
+\begin_layout Standard
+Сокращенно КИВР.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $L=\ov{AB}{\smile}$
+\end_inset
+
+ --- кривая, спрямляемая кривая в пространтсве 
+\begin_inset Formula $E^{2}$
+\end_inset
+
+.
+ И к каждой точке 
+\begin_inset Formula $M\left(x,y\right)\vkl L$
+\end_inset
+
+ приложена сила: 
+\begin_inset Formula $\v F\left(x,y\right)=P\left(x,y\right)\um\v i+Q\left(x,y\right)\um\v j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 68
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Стоит задача найти работу, каторую совершает сила 
+\begin_inset Formula $\v F\left(x,y\right)$
+\end_inset
+
+ при перемешении из точки 
+\begin_inset Formula $A$
+\end_inset
+
+ в точку 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Разобьем дугу 
+\begin_inset Formula $\ov{AB}{\smile}$
+\end_inset
+
+ точками 
+\begin_inset Formula $A_{0}=A,\ A_{1},\tr,A_{i},A_{i+1},\tr,A_{n-1},A_{n}=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+На дуге 
+\begin_inset Formula $\ov{A_{i}A_{i+1}}{\smile},\ i=\overline{0,n-1}$
+\end_inset
+
+ выберем произвольлную точку 
+\begin_inset Formula $M_{i}\left(\xi_{i},\eta_{i}\right)$
+\end_inset
+
+ и будем считать что 
+\begin_inset Formula $\forall M\left(x,y\right)\in\ov{A_{i}A_{i+1}}{\smile}$
+\end_inset
+
+ и будем считать что в каждой точке этой дуги сила одинакова.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 69
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для любой точки справедливо: 
+\begin_inset Formula $\v F\left(M\right)=\v F\left(M_{i}\right)$
+\end_inset
+
+, а саму дугу будем считать совподающей (с погрешностью конечно) с направленым
+ отрезком 
+\begin_inset Formula $A_{i}A_{i+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{\D s}=\D x_{i}\um\v i+\D y\um\v j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 70
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда элементарная работа, которую совершает сила 
+\begin_inset Formula $\v F$
+\end_inset
+
+ при перемешении из точки 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ в точку 
+\begin_inset Formula $A_{i+1}$
+\end_inset
+
+ приблизительно равна: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\omega_{i} & \approx & \left\{ A=F\um S\right\} \approx\\
+ & \approx & \pro_{\v{\D s}}\left(\v F\left(M_{i}\right)\right)\um\left|\D s_{i}\right|=\\
+ & = & \left\{ \pro_{\v{\D s_{i}}}\left(F_{i}\right)=F_{i}\cos\alpha\right\} =\\
+ & = & \left|F_{i}\right|\um\cos\alpha_{i}\left|\D S_{i}\right|=\\
+ & = & \left(\v F\left(M_{i}\right),\v{\D s_{i}}\right)=\\
+ & = & P\left(\xi_{i},\eta_{i}\right)\D x_{i}+Q\left(\xi_{i},\eta_{i}\right)\D y_{i}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вся работа вдоль 
+\begin_inset Formula $\ov{AB}{\smile}$
+\end_inset
+
+ --- сумма: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\ous{i=0}{n-1}\omega_{i}=\ous{i=0}{n-1}\left(P\left(\xi_{i},\eta_{i}\right)\D x_{i}+Q\left(\xi_{i},\eta_{i}\right)\D y_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Придельным переходмо при 
+\begin_inset Formula $\lambda=\un{\max}i\sqrt{\D x_{i}^{2}+\D y_{i}^{2}}\st0,\ n\st\b$
+\end_inset
+
+ получим точное значение работы.
+\end_layout
+
+\begin_layout Definition
+Если существует при 
+\begin_inset Formula $n\st\b,\ \lambda\un{\max}i\D x_{i}\st0$
+\end_inset
+
+ (
+\begin_inset Formula $\lambda=\un{\max}i\D y_{i}\st0$
+\end_inset
+
+) конечный предел последовательности: 
+\begin_inset Formula $\sigma_{n}=\ous{i=0}{n-1}P\left(\xi_{i},\eta_{i}\right)\D x_{i}$
+\end_inset
+
+ (
+\begin_inset Formula $\sigma_{n}=\ous{i=0}{n-1}Q\left(\xi_{i},\eta_{i}\right)\D y_{i}$
+\end_inset
+
+), не зависящий от способа разбиения 
+\begin_inset Formula $\left\{ A_{i}\right\} $
+\end_inset
+
+и выбора точем 
+\begin_inset Formula $\left\{ M_{i}\right\} $
+\end_inset
+
+ то его называют криволинейным интегралом второго рода по кривой 
+\begin_inset Formula $L$
+\end_inset
+
+ и обозначают: 
+\begin_inset Formula $\oui L{}P\left(x,y\right)dx\ \left(\oui L{}Q\left(x,y\right)dy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+В общес случае криволинейный интеграл второго рода записывается так:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $I=\ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui{AB}\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Существование и вычисление криволинейного интеграла вторго рода.
+\end_layout
+
+\begin_layout Theorem
+Пусть спрямляемая кривая задана параметрически:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\begin{cases}
+x=\varphi\left(t\right)\\
+y=\psi\left(t\right)
+\end{cases},\ t\in\left[\alpha,\beta\right],\ \begin{array}{c}
+A\left(\varphi\left(\alpha\right),\psi\left(\alpha\right)\right)\\
+B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
+\end{array},\ \begin{array}{c}
+\psi\left(t\right)\in C\left[\alpha,\beta\right]\ \left(\text{непрерывна на }\left[\alpha,\beta\right]\right)\\
+\varphi\left(t\right)\in C^{1}\left[\alpha,\beta\right]\ \left(\text{непрерывна с 1й производной}\right)
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ --- непрерывна на 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Тогджа КИВР 
+\begin_inset Formula $\ui{AB}f\left(x,y\right)dx$
+\end_inset
+
+ существует и справедливо равенство:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\begin{equation}
+\ui{AB}f\left(x,y\right)dx=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt\label{eq:32}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Разобьем 
+\begin_inset Formula $\left[\alpha;\beta\right]$
+\end_inset
+
+ точками 
+\begin_inset Formula $t_{i},\ i=\overline{0,n}$
+\end_inset
+
+ --- ему однозначно соотвествует разбиение 
+\begin_inset Formula $\left\{ A_{i}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $A_{i}\left(\varphi\left(t_{i}\right),\psi\left(t_{i}\right)\right)$
+\end_inset
+
+.
+ Тогда интегральная сумма для интегралов в левой части равенства (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:32"
+
+\end_inset
+
+) выглядит так:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma_{n} & = & \ous{i=0}{n-1}f\left(\xi_{i},\eta_{i}\right)\D x_{i}=\\
+ & = & \left\{ \begin{array}{c}
+\D x_{i}=\\
+=\varphi\left(t_{i+1}\right)-\varphi\left(t_{i}\right)=\\
+=\oui{t_{i}}{t_{i+1}}\varphi\pr\left(t\right)dt
+\end{array}\right\} =\\
+ & = & \ous{i=0}{n-1}f\left(\xi_{i},\eta_{i}\right)\D x_{i}\oui{t_{i}}{t_{i+1}}\varphi\pr\left(t\right)dt
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Инеграл в правой части (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:32"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt=\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Оценим модуль разности:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 71, 72
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\sigma_{n}-I\right| & = & \left|\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}\left[f\left(\xi_{i},\eta_{i}\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right]\varphi\pr\left(t\right)dt\right|\mr\\
+ & \mr & \ous{i=0}{n-1}\left|\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t_{i}\right),\psi\left(t_{i}\right)\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right|\um\left|\varphi\pr\left(t\right)\right|dt\mr\\
+ & \mr & \left\{ \begin{array}{c}
+\varphi\pr\left(t\right)\ -\ \text{непрерывна}\ \sl\\
+\ \text{ограничена на}\ \left[\alpha;\beta\right]\ \sl\\
+\exists K>0\ \left|\varphi\pr\left(t\right)\right|\mr K\ \forall t\in\left[\alpha;\beta\right]\\
+\text{Так как}\ f\left(x,y\right)\ \text{непрерывна на }L,\\
+\text{то}\ f\left(\varphi\left(t\right),\psi\left(t\right)\right)\ -\ \text{непрерывная}\\
+\text{сложная функция на }\left[\alpha;\beta\right]\sl\\
+\text{колебания}\ \omega_{i}=M_{i}-m_{i}\ \text{функции}\\
+f\left(\varphi\left(t\right),\psi\left(t\right)\right)\ \text{на отрезке }\left[t_{i};t_{i+1}\right]\\
+\text{можно сделать меньше чем}\ \df{\varepsilon}{K\left(\beta-\alpha\right)},\\
+\text{если}\ \D t_{i}\ \text{достаточно мало. Поэтому}\\
+\exists\delta=\delta\left(\varepsilon\right):\ \lambda=\max\D t_{i}<\delta_{i}\sl\omega_{i}<\df{\varepsilon}{K\left(\beta-\alpha\right)}\\
+\sl\left|\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t_{i}\right),\psi\left(t_{i}\right)\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right|\mr\omega_{i}<\df{\varepsilon}{K\left(\beta-\alpha\right)}
+\end{array}\right\} \mr\\
+ & \mr & k\df{\varepsilon}{K\left(\beta-\alpha\right)}\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}dt=\\
+ & = & \left\{ \ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}dt=\beta-\alpha\right\} =\\
+ & = & \varepsilon
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Значение КИВР заивисит от напрaвления кривой 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\ui{BA}P\left(x,y\right)dx=-\ui{AB}P\left(x,y\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\ui{BA}Q\left(x,y\right)dy=-\ui{AB}Q\left(x,y\right)dy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если в теореме положить 
+\begin_inset Formula $\varphi\left(t\right)\in C\left[\alpha;\beta\right],\ \psi\left(t\right)\in C^{1}\left[\alpha;\beta\right]$
+\end_inset
+
+ то тогда интеграл тоже вычисляется:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\ui{AB}f\left(x,y\right)dy=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\psi\pr\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+В общем случае, если 
+\begin_inset Formula $\varphi\left(t\right),\psi\left(t\right)\in C^{1}\left[\alpha;\beta\right]$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}\left(P\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)\psi\pr\left(t\right)dt\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $AB$
+\end_inset
+
+ задана не явно: 
+\begin_inset Formula $y=y\left(x\right),\ x\in\left[a;b\right],\ y\left(x\right)\in C^{1}\left[a;b\right]$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}P\left(x,y\left(x\right)\right)+Q\left(x,y\left(x\right)\right)y\pr\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $L$
+\end_inset
+
+ --- отрезок прямой, паралельной оси 
+\begin_inset Formula $Oy$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 73
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Тогда обязательно выполняется:
+\begin_inset Formula $\ui{AB}P\left(x,y\right)dx=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Обратьно, если параленьно 
+\begin_inset Formula $Ox$
+\end_inset
+
+, то 
+\begin_inset Formula $dy=0\ \sl\ \ui{AB}Q\left(x,y\right)dy=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+Для случая пространственной кривой:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $L:\begin{cases}
+x=\varphi\left(t\right)\\
+y=\psi\left(t\right)\\
+z=\chi\left(t\right)
+\end{cases},\ t\in\left[\alpha;\beta\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula 
+\begin{eqnarray*}
+\ui{AB}P\left(x,y,z\right)dx+Q\left(x,y,z\right)dy+R\left(x,y,z\right)dz & = & \oui{\alpha}{\beta}(P\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\varphi\pr\left(t\right)+\\
+ & + & Q\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\psi\pr\left(t\right)+\\
+ & = & R\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\chi\pr\left(t\right))dt
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Вычислить КИВР:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\ui{AB}xdy-ydx,\ \text{Г}:\ov{AB}{\smile},\ A\left(0;0\right),\ B\left(1;2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ov{AB}{\smile}$
+\end_inset
+
+ --- кусок параболы 
+\begin_inset Formula $y=2x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Г:
+\begin_inset Formula $y=2x^{2},\ y\in\left[0;1\right]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{Г}\um ABC$
+\end_inset
+
+ --- ломаная 
+\begin_inset Formula $C\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+74
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Г}=\text{Г}_{1}\ob\text{Г}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ui{\text{Г}}=\mbox{\ui{\text{Г}_{1}}+\ui{\text{Г}_{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Г}_{1}:y\equiv0;\ dy=0;\ dx=dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ui{\text{Г}_{1}}xdy-ydx=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Г}_{2}:x\equiv0;\ dx=0;\ y=y,\ y\in\left[0;1\right],\ dy=dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $\ui{\text{Г}_{2}}xdy-ydx=\oui 021dy=2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout --Separator--
 
 \end_layout
