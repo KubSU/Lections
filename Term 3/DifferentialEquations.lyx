@@ -5,14 +5,17 @@
 \textclass article
 \begin_preamble
 \usepackage{indentfirst}
+\numberwithin{equation}{section}
+\setlength{\mathindent}{15mm}
 \end_preamble
+\options fleqn
 \use_default_options true
 \begin_modules
 theorems-starred
 \end_modules
 \maintain_unincluded_children false
 \language russian
-\language_package default
+\language_package babel
 \inputencoding auto
 \fontencoding global
 \font_roman default
@@ -26,7 +29,7 @@ theorems-starred
 \font_tt_scale 100
 
 \graphics default
-\default_output_format default
+\default_output_format pdf2
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -52,7 +55,7 @@ theorems-starred
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
-\suppress_date false
+\suppress_date true
 \use_refstyle 1
 \boxbgcolor #55ff00
 \index Index
@@ -253,7 +256,7 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
+\newcommand{\oui}[2]{\int\limits_{#1}^{#2}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
@@ -470,7 +473,7 @@ theorems-starred
  вида 
 \begin_inset Formula 
 \begin{equation}
-F\left(x,y\left(x\right),\df{dx}{dy},\tr,\df{d^{n}y}{dx^{n}}\right)=0\label{eq:1}
+F\left(x,y\left(x\right),\df{dx}{dy},\tr,\df{d^{n}y}{dx^{n}}\right)=0\label{1:1}
 \end{equation}
 
 \end_inset
@@ -513,7 +516,7 @@ F\left(x,y\left(x\right),\df{dx}{dy},\tr,\df{d^{n}y}{dx^{n}}\right)=0\label{eq:1
  называется решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "1:1"
 
 \end_inset
 
@@ -524,10 +527,10 @@ reference "eq:1"
 
 \begin_layout Standard
 Если дифференциальные уравнения разрешено относительно старшей производной,
- то-есть записано в виде 
+ то-есть записано в виде: 
 \begin_inset Formula 
 \begin{equation}
-\df{d^{n}y}{dx^{n}}=f\left(x,y\left(x\right),\df{dy}{dx},\tr,\df{d^{n-1}y}{dx^{n-1}}\right)\label{eq:2}
+\df{d^{n}y}{dx^{n}}=f\left(x,y\left(x\right),\df{dy}{dx},\tr,\df{d^{n-1}y}{dx^{n-1}}\right)\label{1:2}
 \end{equation}
 
 \end_inset
@@ -536,32 +539,41 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Standard
-Наряду с 1-им дифференциальным уравнением будем рассматривать системы обыкновенн
-ых дифференциальных уравнений, например системы вида 
+Наряду с одним дифференциальным уравнением будем рассматривать системы обыкновен
+ных дифференциальных уравнений, например системы вида: 
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
 \df{dy_{1}}{dx}=f_{1}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)\\
 \tr\\
 \df{dy_{n}}{dx}=f_{n}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)
-\end{cases}\label{eq:3}
+\end{cases}\label{1:3}
 \end{equation}
 
 \end_inset
 
- где 
+
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $f_{1}\tr f_{n}$
 \end_inset
 
  --- известные функции своих аргументов, 
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $x$
 \end_inset
 
  --- независимая переменная, 
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $y_{1}\left(x\right)\tr y_{n}\left(x\right)$
 \end_inset
 
- --- неизвестные функции своих переменных.
+ --- неизвестные функции своих аргументов.
 \end_layout
 
 \begin_layout Standard
@@ -572,7 +584,7 @@ reference "eq:1"
 -ого порядка (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "1:2"
 
 \end_inset
 
@@ -580,32 +592,33 @@ reference "eq:2"
 \end_layout
 
 \begin_layout Standard
-Например 
-\begin_inset Formula $y_{1}\left(x\right)=y\left(x\right)$
+Например, положим 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}\left(x\right)=y\left(x\right),\, y_{2}\left(x\right)=\df{dy}{dx},\,\tr,\, y_{n}\left(x\right)=\df{d^{n-1}y}{dx^{n-1}}
+\]
+
 \end_inset
 
-, 
-\begin_inset Formula $y_{2}\left(x\right)=\df{dy}{dx}$
-\end_inset
 
-, 
-\begin_inset Formula $\tr$
-\end_inset
+\end_layout
 
-, 
-\begin_inset Formula $y_{n}\left(x\right)=\df{d^{n-1}y}{dx^{n-1}}$
-\end_inset
+\begin_layout Standard
+Дифференцируя получаем 
+\end_layout
 
-.
- Дифференцируя получаем 
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
-\df{dy_{1}}{dx} & =y_{2}\\
-\df{dy_{2}}{dx} & =y_{3}\\
-\tr & \dots\\
-\df{dy_{n}}{dx} & =f\left(x,y_{1}\left(x\right)\tr y_{n}\left(x\right)\right)
-\end{cases}\label{eq:4}
+\df{dy_{1}}{dx}=y_{2}\left(x\right)\\
+\df{dy_{2}}{dx}=y_{3}\left(x\right)\\
+\tr\\
+\df{dy_{n}}{dx}=f\left(x,y_{1}\left(x\right)\tr y_{n}\left(x\right)\right)
+\end{cases}\label{1:4}
 \end{equation}
 
 \end_inset
@@ -613,14 +626,14 @@ reference "eq:2"
 Уравнение (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "1:2"
 
 \end_inset
 
 ) и система (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "1:4"
 
 \end_inset
 
@@ -632,7 +645,7 @@ reference "eq:4"
  является решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "1:2"
 
 \end_inset
 
@@ -655,7 +668,7 @@ reference "eq:2"
  будут решениями системы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "1:4"
 
 \end_inset
 
@@ -667,7 +680,7 @@ reference "eq:4"
  удовлетворяют системе (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "1:4"
 
 \end_inset
 
@@ -678,7 +691,7 @@ reference "eq:4"
  будет решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "1:2"
 
 \end_inset
 
@@ -686,7 +699,7 @@ reference "eq:2"
  Решением системы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:3"
+reference "1:3"
 
 \end_inset
 
@@ -698,7 +711,7 @@ reference "eq:3"
  Тогда решение системы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:3"
+reference "1:3"
 
 \end_inset
 
@@ -731,21 +744,28 @@ reference "eq:3"
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{dy_{1}}{dx}=f_{1}\left(x,y_{1},y_{2}\right)\\
 \df{dy_{2}}{dx}=f_{2}\left(x,y_{1},y_{2}\right)
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-.
- Решениями будут 
-\begin_inset Formula $\begin{array}{c}
+Решениями будут 
+\begin_inset Formula 
+\[
+\begin{array}{c}
 y_{1}\left(x\right)=\varphi_{1}\left(x\right)\\
 y_{2}\left(x\right)=\varphi_{2}\left(x\right)
-\end{array}$
+\end{array}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout --Separator--
@@ -753,11 +773,14 @@ y_{2}\left(x\right)=\varphi_{2}\left(x\right)
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\df{dy}{dx}=2x$
+\begin_inset Formula 
+\[
+\df{dy}{dx}=2x
+\]
+
 \end_inset
 
-.
- Решением будет 
+Решением будет 
 \begin_inset Formula $y=x^{2}+c$
 \end_inset
 
@@ -767,9 +790,9 @@ y_{2}\left(x\right)=\varphi_{2}\left(x\right)
 \begin_layout Standard
 Дифференциальные уравнения имеют бесконечно много решений.
  Чтобы выделить единственное решение, нужно задавать дополнительные условия.
- Если дополнительные условия задаются в 1ой точке, то они называются начальными
+ Если дополнительные условия задаются в 1-ой точке, то они называются начальными
  условиями или условиями Коши.
- Если дополнительные условия задаются более чем в 1ой точке, то они называются
+ Если дополнительные условия задаются более чем в 1-ой точке, то они называются
  граничными или краевыми условиями.
  Дифференциальные уравнения вместе с начальными условиями называют задачей
  Коши или начальной задачей.
@@ -782,38 +805,45 @@ y_{2}\left(x\right)=\varphi_{2}\left(x\right)
 Для (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2"
+reference "1:2"
 
 \end_inset
 
 ) начальные условия : 
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 y\left(x_{0}\right) & =y_{1,0}\\
-\tr & \dots\\
+\tr\\
 \df{d^{n-1}y\left(x_{0}\right)}{dx^{n-1}} & =y_{n,0}
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-.
- 
+
 \end_layout
 
 \begin_layout Standard
 Для системы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:4"
+reference "1:4"
 
 \end_inset
 
 ) начальные условия : 
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 y_{1}\left(x_{0}\right) & =y_{1,0}\\
 y_{n}\left(x_{0}\right) & =y_{n,0}
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Definition
@@ -828,7 +858,7 @@ y_{n}\left(x_{0}\right) & =y_{n,0}
  - произвольные постоянные, называется общим решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "1:1"
 
 \end_inset
 
@@ -839,7 +869,7 @@ reference "eq:1"
  из него можно получить любое решение уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:1"
+reference "1:1"
 
 \end_inset
 
@@ -847,11 +877,14 @@ reference "eq:1"
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\df{d^{2}y}{dx^{2}}=1$
+\begin_inset Formula 
+\[
+\df{d^{2}y}{dx^{2}}=1
+\]
+
 \end_inset
 
-.
- Общее решение : 
+Общее решение : 
 \begin_inset Formula $y=\df{x^{2}}2+c_{1}x+c_{2}$
 \end_inset
 
@@ -866,49 +899,85 @@ reference "eq:1"
 Уравнения с разделяющимися переменными
 \end_layout
 
-\begin_layout Standard
-Это уравнение вида 
+\begin_layout Definition
+Уравнение с разделяющимися переменными --- это уравнение вида: 
 \begin_inset Formula 
 \begin{equation}
-\df{dy}{dx}=f_{1}\left(x\right)f_{2}\left(y\right)\label{eq:5}
+\df{dy}{dx}=f_{1}\left(x\right)f_{2}\left(y\right)\label{1:5}
 \end{equation}
 
 \end_inset
 
- где 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
 \begin_inset Formula $f_{1},\ f_{2}$
 \end_inset
 
- --- известные функции своих переменных, 
+ --- известные функции своих переменных,
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
  --- искомая функция.
 \end_layout
 
+\end_deeper
+\begin_layout Paragraph
+Решение
+\end_layout
+
 \begin_layout Standard
-Как оно решается? Сначала находим решение уравнения 
+Сначала находим решение уравнения 
 \begin_inset Formula $f_{2}\left(y\right)=0$
 \end_inset
 
 .
- Далее нам нужно найти другие решения, так как 
+ Далее нам нужно найти другие решения: так как 
 \begin_inset Formula $f_{2}$
 \end_inset
 
- уже не обращается в 0, и поэтому можно на него делить 
-\begin_inset Formula $\df 1{f_{2}\left(y\right)}\um\df{dy}{dx}=f_{1}\left(x\right)$
+ уже не обращается в 
+\begin_inset Formula $0$
 \end_inset
 
-.
+, разделим на него: 
+\begin_inset Formula 
+\[
+\df 1{f_{2}\left(y\right)}\um\df{dy}{dx}=f_{1}\left(x\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\int\df 1{f_{2}\left(y\right)}\um\df{dy}{dx}dx=\int f_{1}\left(x\right)dx$
+Проинтегрируем, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\df 1{f_{2}\left(y\right)}\um\df{dy}{dx}dx=\int f_{1}\left(x\right)dx
+\]
+
 \end_inset
 
- и 
-\begin_inset Formula $\int\df{dy}{f_{2}\left(y\right)}=\int f_{1}\left(x\right)dx$
+
+\end_layout
+
+\begin_layout Standard
+Приведем подобные: 
+\begin_inset Formula 
+\[
+\int\df{dy}{f_{2}\left(y\right)}=\int f_{1}\left(x\right)dx
+\]
+
 \end_inset
 
  
@@ -918,8 +987,11 @@ reference "eq:1"
 Однородные уравнения
 \end_layout
 
-\begin_layout Standard
-Однородным уравнением называется уравнения вида 
+\begin_layout Definition
+Однородным уравнением называется уравнения вида:
+\end_layout
+
+\begin_layout Definition
 \begin_inset Formula 
 \begin{equation}
 \df{dy}{dx}=f\left(\df yx\right)\label{eq:6}
@@ -927,60 +999,97 @@ reference "eq:1"
 
 \end_inset
 
- где 
+
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $f$
 \end_inset
 
- --- это известная функция.
+ --- это известная функция своего аргумента.
+\end_layout
+
+\begin_layout Paragraph
+Решение
 \end_layout
 
 \begin_layout Standard
-Они решаются с помощью замены 
-\begin_inset Formula $z\left(x\right)=\df yz$
+С помощью замены 
+\begin_inset Formula $x=\df yz$
 \end_inset
 
 , тогда: 
 \begin_inset Formula $y=z\um x$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+.
+ Продифференцируем: 
 \begin_inset Formula $\df{dy}{dx}=\df{dz}{dx}\um x+z$
 \end_inset
 
+.
  
-\begin_inset Formula $\sl$
+\end_layout
+
+\begin_layout Standard
+Подставим в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+
 \end_inset
 
- 
-\begin_inset Formula $x\um\df{dz}{dx}+z=f\left(z\right)$
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\um\df{dz}{dx}+z=f\left(z\right)\,\sl\, x\df{dz}{dx}=f\left(z\right)-z
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+f\left(z\right)-z & = & 0\\
+\df{dz}{dx}\um\df 1{f\left(z\right)-z} & = & \df 1x
+\end{array}\right.
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $x\df{dz}{dx}=f\left(z\right)-z$
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+f\left(z\right)-z & = & 0\\
+\int\df{dz}{dx}\um\df 1{f\left(z\right)-z}dx & = & \int\df 1x
+\end{array}\right.
+\]
+
 \end_inset
 
-; 
-\begin_inset Formula $f\left(z\right)-z=0$
-\end_inset
 
-; 
-\begin_inset Formula $\df{dz}{dx}\um\df 1{f\left(z\right)-z}=\df 1x$
-\end_inset
+\end_layout
 
-; 
-\begin_inset Formula $\int\df{dz}{dx}\um\df 1{f\left(z\right)-z}dx=\int\df 1xdx$
-\end_inset
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+f\left(z\right)-z & = & 0\\
+\int\df{dz}{f\left(z\right)-z} & = & \ln\left|x\right|
+\end{array}\right.
+\]
 
-; 
-\begin_inset Formula $\int\df{dz}{f\left(z\right)-z}=\ln\left|x\right|$
 \end_inset
 
 
@@ -990,11 +1099,11 @@ reference "eq:1"
 Линейные уравнения 1-го порядка
 \end_layout
 
-\begin_layout Standard
-Линейным уравнением 1-го порядка называется уравнение вида 
+\begin_layout Definition
+Линейным уравнением 1-го порядка называется уравнение вида: 
 \begin_inset Formula 
 \begin{equation}
-\df{dy}{dx}=a\left(x\right)y+b\left(x\right)\label{eq:7}
+\df{dy}{dx}=a\left(x\right)y+b\left(x\right)\label{1:7}
 \end{equation}
 
 \end_inset
@@ -1002,10 +1111,10 @@ reference "eq:1"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 \begin_inset Formula 
 \begin{equation}
-y\left(x_{0}\right)=y_{0}\label{eq:8}
+y\left(x_{0}\right)=y_{0}\label{1:8}
 \end{equation}
 
 \end_inset
@@ -1013,8 +1122,8 @@ y\left(x_{0}\right)=y_{0}\label{eq:8}
 
 \end_layout
 
-\begin_layout Standard
-где 
+\begin_deeper
+\begin_layout Description
 \begin_inset Formula $a\left(x\right)$
 \end_inset
 
@@ -1023,7 +1132,12 @@ y\left(x_{0}\right)=y_{0}\label{eq:8}
 \end_inset
 
  --- известные функции.
- Если в этом уравнении 
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если в этом уравнении 
 \begin_inset Formula $b\left(x\right)\equiv0$
 \end_inset
 
@@ -1049,25 +1163,21 @@ y\left(x_{0}\right)=y_{0}\label{eq:8}
 \end_inset
 
  и любого 
-\begin_inset Formula $-\b<y_{0},+\b$
+\begin_inset Formula $-\b<y_{0}<+\b$
 \end_inset
 
- существует единственное решение задачи Коши 
-\begin_inset Formula $y\left(x_{0}\right)=y_{0}$
+ существует единственное решение задачи Коши (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1:8"
+
 \end_inset
 
-, определенного на всем интервале 
+), определенное на всем интервале 
 \begin_inset Formula $\left(\alpha,\beta\right)$
 \end_inset
 
-, (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:8"
-
-\end_inset
-
-) --- задача Коши.
+.
 \end_layout
 
 \begin_layout Proof
@@ -1079,60 +1189,66 @@ reference "eq:8"
 
 \end_inset
 
-.
- И получим решение задачи Коши для этого уравнения.
+И получим решение задачи Коши для этого уравнения.
  
 \begin_inset Formula $y\left(x\right)\equiv0$
 \end_inset
 
- - решение.
+ --- решение.
  Найдем другие решения.
- Пусть в некоторой точке решение не равно нулю, тогда в силу непрерывности
+\end_layout
+
+\begin_layout Proof
+Пусть в некоторой точке решение не равно нулю, тогда в силу непрерывности
  оно отлично от нуля и в некоторой ее окрестности.
  
 \end_layout
 
 \begin_layout Proof
-Разделим на y : 
-\begin_inset Formula $\df 1y\um\df{dy}{dx}=a\left(x\right)$
+Разделим на 
+\begin_inset Formula $y$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\df 1y\um\df{dy}{dx}=a\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Проинтегрируем:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui{x_{0}}x\df 1y\um\df{dy}{dx}dx & = & \oui{x_{0}}xa\left(\xi\right)d\xi\\
+\ln\left|y\right|\Big|_{x_{0}}^{x} & = & \oui{x_{0}}xa\left(\xi\right)d\xi\\
+\ln\left|y\left(x\right)\right| & = & \ln\left|y_{0}\right|+\oui{x_{0}}xa\left(\xi\right)d\xi
+\end{eqnarray*}
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\oui{x_{0}}x\df 1y\um\df{dy}{dx}dx=\oui{x_{0}}xa\left(\xi\right)d\xi$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ln\left|y\right||_{x_{0}}^{x}=\oui{x_{0}}xa\left(\xi\right)d\xi$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ln\left|y\left(x\right)\right|=\ln\left|y\right|+\oui{x_{0}}xa\left(\xi\right)d\xi$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-Тогда так как
+Тогда, так как 
 \begin_inset Formula $u=\ln e^{u}$
 \end_inset
 
- получаем..
+ получаем:
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-y\left(x\right)=y_{0}\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:10}
+y\left(x\right)=y_{0}\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:10}
 \end{equation}
 
 \end_inset
@@ -1144,7 +1260,7 @@ y\left(x\right)=y_{0}\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:10"
+reference "1:10"
 
 \end_inset
 
@@ -1158,7 +1274,7 @@ reference "eq:9"
 ,
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:8"
+reference "1:8"
 
 \end_inset
 
@@ -1176,14 +1292,14 @@ reference "eq:9"
 ,
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:8"
+reference "1:8"
 
 \end_inset
 
 ) вытекает из способа получения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:10"
+reference "1:10"
 
 \end_inset
 
@@ -1193,7 +1309,7 @@ reference "eq:10"
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:11}
+y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:11}
 \end{equation}
 
 \end_inset
@@ -1205,11 +1321,11 @@ y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:11"
+reference "1:11"
 
 \end_inset
 
-) - Общее решение уравнения (
+) --- Общее решение уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:9"
@@ -1225,19 +1341,30 @@ reference "eq:9"
 \end_inset
 
  уравнение выглядит так: 
-\begin_inset Formula $y\left(x\right)=u\left(x_{0}\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)$
+\begin_inset Formula 
+\begin{eqnarray*}
+y\left(x\right) & = & u\left(x_{0}\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)
+\end{eqnarray*}
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
-Перейдем к неоднородному уравнению 7.
+Перейдем к неоднородному уравнению (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1:7"
+
+\end_inset
+
+).
  Для нахождения решения неоднородного уравнения применим метод вариации
  произвольной постоянной, то-есть решения будим искать в виде: 
 \begin_inset Formula 
 \begin{equation}
-y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{eq:12}
+y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:12}
 \end{equation}
 
 \end_inset
@@ -1246,21 +1373,21 @@ y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\ri
 \begin_inset Formula $z\left(x\right)$
 \end_inset
 
- - новая неизвестная функции.
+ --- новая неизвестная функции.
 \end_layout
 
 \begin_layout Proof
 Подставим (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:12"
+reference "1:12"
 
 \end_inset
 
 ) в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "1:7"
 
 \end_inset
 
@@ -1268,7 +1395,8 @@ reference "eq:7"
  
 \begin_inset Formula 
 \begin{eqnarray*}
-z\pr\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\um a\left(x\right) & = & a\left(x\right)\um z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+b\left(x\right)
+z\pr\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\um a\left(x\right)=\\
+=a\left(x\right)\um z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+b\left(x\right)
 \end{eqnarray*}
 
 \end_inset
@@ -1280,14 +1408,14 @@ z\pr\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+z\left(x
 Тогда чтобы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:12"
+reference "1:12"
 
 \end_inset
 
 ) было решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "1:7"
 
 \end_inset
 
@@ -1295,22 +1423,25 @@ reference "eq:7"
 \begin_inset Formula $z\left(x\right)$
 \end_inset
 
- было решением уравнения 
-\begin_inset Formula $\df{dz}{dx}=b\left(x\right)\um\exp\left(-\oui{x_{0}}xa\left(\xi\right)d\xi\right)$
+ было решением уравнения: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{dz}{dx} & = & b\left(x\right)\um\exp\left(-\oui{x_{0}}xa\left(\xi\right)d\xi\right)
+\end{eqnarray*}
+
 \end_inset
 
-.
- Заметим что для того, чтобы (
+Заметим что для того, чтобы (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:12"
+reference "1:12"
 
 \end_inset
 
 ) удовлетворяла условиям (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:8"
+reference "1:8"
 
 \end_inset
 
@@ -1331,33 +1462,36 @@ reference "eq:8"
 \begin_inset Formula $z\left(x_{0}\right)=y_{0}$
 \end_inset
 
-, получим 
-\begin_inset Formula $z\left(x\right)=y_{0}+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta$
+, получим: 
+\begin_inset Formula 
+\[
+z\left(x\right)=y_{0}+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta
+\]
+
 \end_inset
 
-.
- Подставим 
-\begin_inset Formula $z\left(x\right)$
+Подставим 
+\begin_inset Formula $z\left(x\ln\left|y_{0}\right|+\oui{x_{0}}xa\left(\xi\right)d\xi\right)$
 \end_inset
 
  в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:12"
+reference "1:12"
 
 \end_inset
 
-), получим что решения задачи (
+), получим что решение задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "1:7"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:8"
+reference "1:8"
 
 \end_inset
 
@@ -1373,27 +1507,26 @@ y\left(x\right) & = & y_{0}\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)
 \end_layout
 
 \begin_layout Proof
-То что это решение проверяется непосредственно подстановкой.
+То что это решение, проверяется непосредственной подстановкой.
 \end_layout
 
 \begin_layout Proof
-Покажем что решения задачи (
+Покажем что решение задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "1:7"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:8"
+reference "1:8"
 
 \end_inset
 
 ) единственное.
- предположим противное.
- Существует 2 решения 
+ Предположим противное: существует 2 решения 
 \begin_inset Formula $y_{1}\left(x\right)$
 \end_inset
 
@@ -1405,53 +1538,72 @@ reference "eq:8"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\begin{cases}
-\df{dy_{1}}{dx}=a\left(x\right)y_{1}+b\left(x\right)\\
-y_{1}\left(x_{0}\right)=y_{0}
-\end{cases}$
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dy_{1}}{dx} & =a\left(x\right)y_{1}+b\left(x\right)\\
+y_{1}\left(x_{0}\right) & =y_{0}
+\end{cases}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\begin{cases}
-\df{dy_{2}}{dx}=a\left(x\right)y_{2}+b\left(x\right)\\
-y_{2}\left(x_{0}\right)=y_{0}
-\end{cases}$
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dy_{2}}{dx} & =a\left(x\right)y_{2}+b\left(x\right)\\
+y_{2}\left(x_{0}\right) & =y_{0}
+\end{cases}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $u\left(x\right)=y_{1}-y_{2}$
+\begin_inset Formula 
+\[
+u\left(x\right)=y_{1}-y_{2}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-Тогда вычтем из верхнего нижнее.
- 
+Тогда вычтем из верхнего нижнее:
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\df{du}{dx}=a\left(x\right)u\left(x\right)$
+\begin_inset Formula 
+\[
+\df{du}{dx}=a\left(x\right)u\left(x\right)
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-Вычтем по-другому, и получим..
+Вычтем по-другому, и получим:
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{du}{dx} & =a\left(x\right)u\left(x\right)\\
 u\left(x_{0}\right) & =0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
@@ -1467,13 +1619,13 @@ u\left(x_{0}\right) & =0
 \end_layout
 
 \begin_layout Proof
-Этой задачи Коши ест решение 
+У этой задачи Коши есть решение 
 \begin_inset Formula $u\left(x\right)\equiv0$
 \end_inset
 
 .
- Но так по доказанному выше задача Коши для однородных уравнений имеет единствен
-ное решение, то кроме 
+ Но так как по доказанному выше задача Коши для однородных уравнений имеет
+ единственное решение, то кроме 
 \begin_inset Formula $u\left(x\right)\equiv0$
 \end_inset
 
@@ -1489,20 +1641,20 @@ u\left(x_{0}\right) & =0
 \end_layout
 
 \begin_layout Proof
-Заметим что общее решения уравнения (
+Заметим что общее решение уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "1:7"
 
 \end_inset
 
-) имеет вод такой вод вид:
+) имеет такой вид:
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
-y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta\label{eq:14}
+y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta\label{1:14}
 \end{equation}
 
 \end_inset
@@ -1514,21 +1666,21 @@ y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0
 Общее решение неоднородного уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:7"
+reference "1:7"
 
 \end_inset
 
 ) есть сумма общего решения однородного(1-е слагаемое в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:14"
+reference "1:14"
 
 \end_inset
 
 )) и частного решения неоднородного(2-е слагаемое в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:14"
+reference "1:14"
 
 \end_inset
 
