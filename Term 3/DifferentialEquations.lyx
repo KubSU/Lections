@@ -6301,5 +6301,654 @@ y_{m}\left(x\right)\\
 -го порядка.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+25.10.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Метод вариации произвольных постоянных для линейных уравнений n-ного порядка
+\end_layout
+
+\begin_layout Standard
+Будем рассматриватть уравнение 
+\begin_inset Formula $\dif dnyx=a_{n-1}\left(x\right)\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a_{0}y+f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем предпологать что общее решение однородного уравнения известно.
+ ПРоставим в сообтветсвие уравнению (1) эквивалентную систему:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+y_{0}=y\\
+y_{1}=\df{dy}{dx}\\
+\vtr\\
+y_{n-1}=\dif d{n-1}yx
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy_{0}}{dx}=y_{1}\\
+\df{dy_{2}}{dx}=y_{2}\\
+\vtr\\
+\df{dy_{n-1}}{dx}=a_{n-1}y_{n-1}+\tr=a_{1}y_{1}+a_{0}y_{0}+f\left(x\right)
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть функции 
+\begin_inset Formula $z_{1}\left(x\right),\tr,z_{n}\left(x\right)$
+\end_inset
+
+ образуют фундаментальную систему решгений соответсвубщего обдородного уравнения
+ (1).
+ Тогда ветор-функции 
+\begin_inset Formula $\left(\begin{array}{c}
+z_{1}\left(x\right)\\
+\dif d{}{z_{1}\left(x\right)}x\\
+\dif d2{z_{1}\left(x\right)}x\\
+\vtr\\
+\dif d{n-1}{z_{1}\left(x\right)}x
+\end{array}\right),\tr,\left(\begin{array}{c}
+z_{n}\left(x\right)\\
+\dif d{}{z_{n}\left(x\right)}x\\
+\dif d2{z_{n}\left(x\right)}x\\
+\vtr\\
+\dif d{n-1}{z_{n}\left(x\right)}x
+\end{array}\right)$
+\end_inset
+
+ будут образовывать фундаментальную ссистему решений соответствующей однородной
+ системы.
+ Применим метод вариации произвольных постоянных для поиска часных решений
+ системы (2).
+ 
+\end_layout
+
+\begin_layout Standard
+Решение будем искать в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{c}
+y_{0}\\
+y_{1}\\
+\vtr\\
+y_{n}
+\end{array}\right)=c_{1}\left(x\right)\um\left(\begin{array}{c}
+z_{1}\left(x\right)\\
+\dif d{}{z_{1}\left(x\right)}x\\
+\dif d2{z_{1}\left(x\right)}x\\
+\vtr\\
+\dif d{n-1}{z_{1}\left(x\right)}x
+\end{array}\right)+\tr+c_{n}\left(x\right)\um\left(\begin{array}{c}
+z_{n}\left(x\right)\\
+\dif d{}{z_{n}\left(x\right)}x\\
+\dif d2{z_{n}\left(x\right)}x\\
+\vtr\\
+\dif d{n-1}{z_{n}\left(x\right)}x
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Где 
+\begin_inset Formula $c_{1}\left(x\right),\tr,c_{n}\left(x\right)$
+\end_inset
+
+ --- неизвестные функции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+y_{0}\left(x\right)=\ous{k=1}nc_{k}\left(x\right)z_{k}\left(x\right)\\
+y_{1}\left(x\right)=\ous{k=1}nc_{k}\left(x\right)\dif d{}{z_{k}\left(x\right)}x\\
+\vtr\\
+y_{n-1}\left(x\right)=\ous{k=1}nc_{k}\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\ous{k=1}nc_{k}\pr\left(x\right)z_{k}\left(x\right)+\ous{k=1}nc_{k}\df{dz_{k}\left(x\right)}{dx}=\ous{k=1}nc_{k}\left(x\right)\df{dz_{k}\left(x\right)}{dx}\\
+\ous{k=1}nc_{k}\pr\df{dz_{k}\left(x\right)}{dx}+\ous{k=1}nc_{k}\dif d2{z_{k}\left(x\right)}x=\ous{k=1}nc_{k}\dif d2{z_{k}\left(x\right)}x\\
+\vtr\\
+\ous{k=1}nc_{k}\pr\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x+\ous{k=1}nc_{k}\left(x\right)\dif dn{z_{k}\left(X\right)}x=a_{n-1}\ous{k=1}nc_{k}\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x+\tr+a_{0}\ous{k=1}nc_{k}\left(x\right)z_{k}\left(x\right)+f\left(x\right)
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\ous{k=1}nc_{k}\left(x\right)\left(\dif dn{z_{k}\left(x\right)}x-a_{n-1}\dif d{n-1}{z_{k}\left(x\right)}x-\tr-a_{0}z_{k}\left(x\right)\right) & = & \left\{ \forall k\ \left(\dif dn{z_{k}\left(x\right)}x-a_{n-1}\dif d{n-1}{z_{k}\left(x\right)}x-\tr-a_{0}z_{k}\left(x\right)\right)=0\right\} =\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+c_{1}\pr\left(x\right)z_{1}\left(x\right)+\tr+c_{n}\pr\left(x\right)z_{n}\left(x\right)=0\\
+c_{1}\pr\left(x\right)\df{dz_{1}\left(x\right)}{dx}+\tr+c_{n}\pr\left(x\right)\df{dz_{n}\left(x\right)}{dx}=0\\
+\vtr\\
+c_{1}\pr\left(x\right)\dif d{n-2}{z_{1}\left(x\right)}x+\tr+c_{n}\pr\left(x\right)\dif d{n-2}{z_{n}\left(x\right)}x=0\\
+c_{1}\pr\left(x\right)\dif d{n-1}{z_{1}\left(x\right)}x+\tr+c_{n}\pr\left(x\right)\dif d{n-1}{z_{n}\left(x\right)}x=f\left(x\right)
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это является линейной алгебраической системой относительно 
+\begin_inset Formula $c_{1}\pr\left(x\right),\tr,c_{n}\pr\left(x\right)$
+\end_inset
+
+.
+ Решения можно найти всегда.
+ Очевидног, что функция 
+\begin_inset Formula $y_{0}\left(x\right)=c_{1}\left(x\right)\um z_{1}\left(x\right)+\tr+c_{n}\left(x\right)z_{n}\left(x\right)$
+\end_inset
+
+ бьудет решщением уравнения (1).
+ Это и есть часное решение уравнения (1).
+ 
+\end_layout
+
+\begin_layout Subsection
+Линейные однородные уравнения с постоянными коофицентами
+\end_layout
+
+\begin_layout Standard
+Рассмотрим слудующие линейные однородные укравнения 
+\begin_inset Formula 
+\begin{equation}
+L\left(x\right)\equiv\dif dnyx-\left(a_{n-1}\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a_{0}y\right)=0\label{eq:100}
+\end{equation}
+
+\end_inset
+
+, где 
+\begin_inset Formula $a_{i}=const,\ i=\overline{0,n-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Бдуцем искать решение уравнения (4) в виде 
+\begin_inset Formula $y\left(x\right)=e^{\lambda x},\ $
+\end_inset
+
+ где 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ --- неизвестная постоянная.
+ Подставим 
+\begin_inset Formula $e^{\lambda x}$
+\end_inset
+
+ в елвую часть, заметим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif dk{}x\left(e^{\lambda x}\right)=\lambda^{k}e^{\lambda x}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left(e^{\lambda x}\right)=e^{\lambda x}\left(\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+тогадж, чтобы функция 
+\begin_inset Formula $e^{\lambda x}$
+\end_inset
+
+ была решением (4) необходимо и достаточно, чтобы 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ была корнем уравнения 
+\begin_inset Formula $P\left(\lambda\right)\equiv\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Этот многочелен называют характеристическим многочленом уравнения(4), а
+ нулю многочелена называютхарактеристическими числами уравнения (4).
+\end_layout
+
+\begin_layout Standard
+Пусть все характеристические числа различные, тоесть уравнение(5) имеет
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ различных нулей(корней, 
+\begin_inset Formula $\lambda_{1},\tr,\lambda_{n}$
+\end_inset
+
+).
+ Тогда функции 
+\begin_inset Formula $e^{\lambda_{1}x},\tr,e^{\lambda_{n}x}$
+\end_inset
+
+ будут решениями уравнения (4).
+ Они линейно не зависимы.
+ Покажем это, составив определитель Вронского:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+e^{\lambda_{1}} & \tr & e^{\lambda_{n}x}\\
+\lambda_{1}e^{\lambda_{1}x} & \tr & \lambda_{n}e^{\lambda_{n}x}\\
+\vtr & \vtr & \vtr\\
+\lambda_{1}^{n-1}e^{\lambda_{1}x} & \tr & \lambda_{n}^{n-1}e^{\lambda_{n}x}
+\end{array}\right|=e^{\lambda_{1}x}\um e^{\lambda_{2}}\um\tr\um e^{\lambda_{n}x}\left|\begin{array}{ccc}
+1 & \tr & 1\\
+\lambda_{1} & \tr & \lambda_{n}\\
+\vtr & \vtr & \vtr\\
+\lambda_{1}^{n-1} & \tr & \lambda_{n}^{n-1}
+\end{array}\right|\nr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Следовательно общее решения уравнения (4) будет равняться 
+\begin_inset Formula $y\left(x\right)=c_{1}e^{\lambda_{1}x}+\tr+c_{n}e^{\lambda_{n}x}$
+\end_inset
+
+, где 
+\begin_inset Formula $c_{1},\tr,c_{n}$
+\end_inset
+
+ --- произвольные постоянные.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ в уравнении (4) вещественные постоянные, а характеристические числа по
+ прежнему различны, но среди них есть как вещественные, так и комплексные.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\lambda=a+bi$
+\end_inset
+
+ --- комплексное характеристическое число уравнения (4), тогда 
+\begin_inset Formula $\overline{\lambda}=a-bi$
+\end_inset
+
+ тоже будет характеристическим числом.
+ Функция 
+\begin_inset Formula $e^{\left(a+bi\right)x}$
+\end_inset
+
+ ьудет решение уравнения (4).
+ Тогда его вещественное и мнимая части также будут решением уравнения (4).
+ (Покажем это: Пусть 
+\begin_inset Formula $y\left(x\right)=u\left(x\right)+iv\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(u+iv\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(u\right)+iL\left(v\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(u\right)=0,\ L\left(v\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $e^{\left(a+bi\right)x}=e^{ax}\left(\cos bx+i\sin bx\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $e^{ax}\cos bx,\ e^{ax}\sin bx$
+\end_inset
+
+ --- Эти функции линейно не зависимы (Предположим что они линейно зависимы,
+ тогда 
+\begin_inset Formula $\forall x\ c_{1}e^{ax}\cos bx+c_{2}e^{ax}\sin bx=0$
+\end_inset
+
+, в часности для 
+\begin_inset Formula $x=0$
+\end_inset
+
+, 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $c_{1}=0,\ c_{1}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ противоречие)) Сопряженное характеристичесное число дает такое решение:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{\left(a-bi\right)x}=e^{ax}\left(\cos bx-i\sin bx\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{ax}\cos bx,\ -e^{ax}\sin bx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тоесть вешественная частиь совподает с вещенственной частью .., а мнимой получаетс
+я умножением на -1 соответствующей мнимой части.
+\end_layout
+
+\begin_layout Standard
+Тоесть, комплексно сопряженное характеристическое число, не пораждает новых
+ линейно не зависимых, с уже построеными решениями уравнения (4).
+\end_layout
+
+\begin_layout Standard
+Тогда каждому вещественному характеристическому числу 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ поставим в соответствие 
+\begin_inset Formula $e^{\lambda_{k}x}$
+\end_inset
+
+, а каждой паре комплексных сопряженных характеристических чисел 
+\begin_inset Formula $a\pm bi$
+\end_inset
+
+ поставим в соотвествие 2 решения: 
+\begin_inset Formula $e^{ax}\cos bx,\ e^{ax}\sin bx$
+\end_inset
+
+.
+ В результате получим 
+\begin_inset Formula $n$
+\end_inset
+
+ решений уравнения (4).
+ Они будут линейно не зависимыми.
+ Так как предполагаем противное, и заменяя 
+\begin_inset Formula $\cos bx=\df{e^{ibx}-e^{-idx}}2$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin bx=\df{e^{ibx}-e^{-ibx}}{2i}$
+\end_inset
+
+ мы получим, что будут линейно зависимы функции 
+\begin_inset Formula $e^{\lambda_{1}x},\tr,e^{\lambda_{n}x}$
+\end_inset
+
+ пр различных 
+\begin_inset Formula $\lambda_{1},\tr,\lambda_{n}$
+\end_inset
+
+, что противоречит показанному выше.
+ Ну а тогда линейная комбинация с произвольными постоянными, построеных
+ решений будет общим решение уравнения (4).
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О линейной независимости функций вида 
+\begin_inset Formula $x^{k}e^{\lambda_{j}x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $\lambda_{1},\tr,\lambda_{m}$
+\end_inset
+
+ попарно различные вещественные или комплексные числа.
+ Тогда функции 
+\begin_inset Formula $\begin{array}{c}
+e^{\lambda_{1}x},xe^{\lambda_{1}x},\tr,x^{n_{1}}e^{\lambda_{1}x}\\
+e^{\lambda_{2}x},xe^{\lambda_{2}x},\tr,x^{n_{2}\lambda_{2}x}\\
+\vtr\\
+\\
+\end{array}$
+\end_inset
+
+ , где 
+\begin_inset Formula $n_{1}\tr n_{m}$
+\end_inset
+
+ --- неотрицательные целые постоянные, что эти фунцкии линейно независимые
+ 
+\begin_inset Formula $\left(-\b;+\b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Предположим противное: что эти функции линейно зависимы.
+ Тоггда найдутся постоянные, не все равные 0лю, что их линейная комбинация
+ тождественно равна нулю.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\alpha_{0}^{\left(1\right)}e^{\lambda_{1}x}+\alpha_{1}^{\left(1\right)}xe^{\lambda_{1}x}+\tr+\alpha_{n_{1}}^{\left(1\right)}x^{n_{1}}e^{\lambda_{1}x}+$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $+\alpha_{0}^{\left(2\right)}e^{\lambda_{2}x}+\alpha_{1}^{\left(2\right)}xe^{\lambda_{2}x}+\tr+\alpha_{n_{2}}^{\left(2\right)}x^{n_{2}}e^{\lambda_{2}x}+\tr+$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $+\alpha_{0}^{\left(m\right)}e^{\lambda_{m}x}+\alpha_{1}^{\left(m\right)}xe^{\lambda_{m}x}+\tr+\alpha_{n_{m}}^{\left(m\right)}x^{n_{m}}e^{\lambda_{m}x}\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Причем, есть хотябы один 
+\begin_inset Formula $\alpha_{j}^{\left(k\right)}\nr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{k=1}mP_{n_{k}}\left(x\right)e^{\lambda_{k}x}\equiv0(6)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Где 
+\begin_inset Formula $P_{n_{k}}\left(x\right)$
+\end_inset
+
+ --- многочлен по 
+\begin_inset Formula $x$
+\end_inset
+
+ степени 
+\begin_inset Formula $k$
+\end_inset
+
+, причем хотябы 1 из этих многочленом отличен от тождественного нуля.
+ Без ограничения общности будем считать, что многочлен 
+\begin_inset Formula $P_{n_{k}}\left(x\right)$
+\end_inset
+
+ тождественно не равен нулю.
+ Умножем (6) на 
+\begin_inset Formula $e^{-\lambda_{1}x}$
+\end_inset
+
+, получим: 
+\begin_inset Formula $P_{n_{1}}\left(x\right)+\ous{k=2}mP_{n_{k}}\left(x\right)e^{\left(\lambda_{k}-\lambda_{1}\right)x}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{k}-\lambda_{1}\nr0,\ k=\overline{2,m}$
+\end_inset
+
+.
+ Продеференцируем это тождество 
+\begin_inset Formula $\left(n_{1}+1\right)$
+\end_inset
+
+ раз.
+ После диференцирования полуим 
+\begin_inset Formula $\ous{k=2}mP_{n_{k}}^{\left(1\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{1}\right)x}\equiv0$
+\end_inset
+
+, причем 
+\begin_inset Formula $P_{n_{k}}^{\left(1\right)}\left(x\right)\equiv0$
+\end_inset
+
+.
+ Умножим тождество (8) на 
+\begin_inset Formula $e^{\left(\lambda_{1}-\lambda_{2}\right)x}$
+\end_inset
+
+, получим: 
+\begin_inset Formula $P_{n_{2}}^{\left(1\right)}\left(x\right)+\ous{k=3}mP_{n_{k}}^{\left(1\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{2}\right)x}\equiv0$
+\end_inset
+
+ Продеференцируем это тождество 
+\begin_inset Formula $\left(n_{2}+1\right)$
+\end_inset
+
+ раз, тогда получим 
+\begin_inset Formula $\ous{k=3}mP_{n_{k}}^{\left(2\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{2}\right)x}\equiv0$
+\end_inset
+
+ и так далее...получим 
+\begin_inset Formula $P_{n_{m}}^{\left(m-1\right)}\left(x\right)e^{\left(\lambda_{m}-\lambda_{m-1}\right)x}\equiv0$
+\end_inset
+
+, причем 
+\begin_inset Formula $P_{n_{m}}^{\left(m-1\right)}\left(x\right)$
+\end_inset
+
+ отличен от тождественного нуля.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ противоречие, еоторое и доказывает лемму, тоесть линейную независимость
+ функций.
+\end_layout
+
+\begin_layout Subsection
+Случай кратных характеристических чисел.
+\end_layout
+
 \end_body
 \end_document
