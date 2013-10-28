@@ -4604,5 +4604,1538 @@ outint k
 Команды управления цикла
 \end_layout
 
+\begin_layout Standard
+С помощью команд перехода можно реализовать любые ответвления и циклы.
+\end_layout
+
+\begin_layout LyX-Code
+if x>0 then s1 else s2
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+cmp x, 0
+\end_layout
+
+\begin_layout LyX-Code
+jle L2
+\end_layout
+
+\begin_layout LyX-Code
+s1
+\end_layout
+
+\begin_layout LyX-Code
+jmp L1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+L2:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+s2
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+//-----------------
+\end_layout
+
+\begin_layout LyX-Code
+while x>0 do S
+\end_layout
+
+\begin_layout LyX-Code
+beg:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+cmp x, 0
+\end_layout
+
+\begin_layout LyX-Code
+jle fin
+\end_layout
+
+\begin_layout LyX-Code
+S
+\end_layout
+
+\begin_layout LyX-Code
+jmp beg
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+fin:
+\end_layout
+
+\begin_layout LyX-Code
+//-----------
+\end_layout
+
+\begin_layout LyX-Code
+repeat S until x>0
+\end_layout
+
+\begin_layout LyX-Code
+beg:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+S
+\end_layout
+
+\begin_layout LyX-Code
+cmp x,0
+\end_layout
+
+\begin_layout LyX-Code
+jle beg
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Часто на практике встречаються циклы с заранее известным количеством повторений(
+for).
+\end_layout
+
+\begin_layout Subsection
+Команда Loop
+\end_layout
+
+\begin_layout LyX-Code
+Loop <метка>
+\end_layout
+
+\begin_layout Standard
+Описать выполенние этой программы можно так:
+\end_layout
+
+\begin_layout LyX-Code
+cx:=N
+\end_layout
+
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+тело цикла
+\end_layout
+
+\begin_layout LyX-Code
+dec cx
+\end_layout
+
+\begin_layout LyX-Code
+if cx<>0 then goto L;
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Реализовать повторений некоторой группы команд N разможно так:
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, N
+\end_layout
+
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+тело цикла
+\end_layout
+
+\begin_layout LyX-Code
+loop L
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Особенности команды Loop:
+\end_layout
+
+\begin_layout Enumerate
+Счетчик цикла обязательно регистр cx
+\end_layout
+
+\begin_layout Enumerate
+Начальное значение cx, должно быть присвоено до цикла
+\end_layout
+
+\begin_layout Enumerate
+Так Loop ставить в конце цикла, то тело выполниться хотябы одын раз, поэтому
+ для N=0 это схема не потходит.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Если возможен вариант число повторений может быть равное 0, то при N=0 нужно
+ сделать обход цикла
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov cx, N
+\end_layout
+
+\begin_layout LyX-Code
+JCXZ L1
+\end_layout
+
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+тело цикла
+\end_layout
+
+\begin_layout LyX-Code
+loop L
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Как и команда условного перехода, Loop делает только короткий переход, поэтому
+ цело цикла не должно првышать 128 байтов.
+ 
+\end_layout
+
+\begin_layout Standard
+Пример(x^y):
+\end_layout
+
+\begin_layout LyX-Code
+x db ? ;0..6
+\end_layout
+
+\begin_layout LyX-Code
+y db ? ;0..6
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, 1
+\end_layout
+
+\begin_layout LyX-Code
+mov cl, y
+\end_layout
+
+\begin_layout LyX-Code
+mov ch, 0
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 1
+\end_layout
+
+\begin_layout LyX-Code
+jcxz L1
+\end_layout
+
+\begin_layout LyX-Code
+mov bl, x
+\end_layout
+
+\begin_layout LyX-Code
+mov bh, 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mul bx
+\end_layout
+
+\begin_layout LyX-Code
+loop L
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+outint bx
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Пример(найти сумму положительных чисел последовательности):
+\end_layout
+
+\begin_layout LyX-Code
+a dw ?
+\end_layout
+
+\begin_layout LyX-Code
+s dw 0
+\end_layout
+
+\begin_layout LyX-Code
+n dw ?
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+inint n
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inint a
+\end_layout
+
+\begin_layout LyX-Code
+cmp a,0
+\end_layout
+
+\begin_layout LyX-Code
+jle L2
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, a
+\end_layout
+
+\begin_layout LyX-Code
+add s, ax
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L2: loop L1
+\end_layout
+
+\begin_layout LyX-Code
+outint s
+\end_layout
+
+\begin_layout Subsection
+Команды Loope and Loopne
+\end_layout
+
+\begin_layout Standard
+Эти команды очень похожи на команду Loop, то есть cх содержит количество
+ повторений, однако они допускают и досрочный выход из цикла
+\end_layout
+
+\begin_layout Standard
+Выполнение команды Loope можно поисать так:
+\end_layout
+
+\begin_layout LyX-Code
+cx:=n
+\end_layout
+
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+тело цикла
+\end_layout
+
+\begin_layout LyX-Code
+cx:=cx-1;
+\end_layout
+
+\begin_layout LyX-Code
+if (cx<>0) and(zf=1) then goto L; когда результат равен 0 мы переходим на
+ L
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Выполнение команды LoopNe можно поисать так:
+\end_layout
+
+\begin_layout LyX-Code
+cx:=n
+\end_layout
+
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+тело цикла
+\end_layout
+
+\begin_layout LyX-Code
+cx:=cx-1;когда результат равен  мы переходим на L
+\end_layout
+
+\begin_layout LyX-Code
+if (cx<>0) and(zf=0) then goto L;
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Перед командой Loope помещаеться команда изменяющая флаг zf(Обычно cmp).
+ Команда Loope посторяет цикл cx раз, но только если предыдушая команда
+ фиксирует равенство сравниваемых велечин.
+ По какой именно причене произошел выход из цикла, по zf=0 or cx=0 нужно
+ проверять после цикла, причем проверять следует флаг z по команде jz/je
+ or jnz/jne.
+ Часто команда Loope используеться для поиска первого эллемента некоторой
+ последовательности отличного от заданной велечины.
+\end_layout
+
+\begin_layout Standard
+Пример
+\end_layout
+
+\begin_layout LyX-Code
+n db ?
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+inint dx
+\end_layout
+
+\begin_layout LyX-Code
+mov n, dl
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, dx
+\end_layout
+
+\begin_layout LyX-Code
+sun cx, 2
+\end_layout
+
+\begin_layout LyX-Code
+mov bl, 1
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+dv:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inc bl
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, dx
+\end_layout
+
+\begin_layout LyX-Code
+div bl
+\end_layout
+
+\begin_layout LyX-Code
+cmp ah, 0
+\end_layout
+
+\begin_layout LyX-Code
+loopne dv
+\end_layout
+
+\begin_layout LyX-Code
+je dv1
+\end_layout
+
+\begin_layout LyX-Code
+mov bl, 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+dv1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov bh, 0
+\end_layout
+
+\begin_layout LyX-Code
+outint bx
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Это не лучший авриант поиска простого числа.
+ 
+\end_layout
+
+\begin_layout Section
+Программирование вложенных циклов
+\end_layout
+
+\begin_layout Standard
+Очевидно, что вложенные циклы типа while or repeat программируються на ассемблер
+е без принципиальных сложностей в соответсвии с рассмотренными выше стандартными
+ макеты.
+ При использовани вложенных циклов с использовании команды loop необходимо
+ перед входом во вложенный цикл позаботиться о сохранения переменной cx
+ а после выходы из цикла востановить.
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\begin_layout LyX-Code
+l2:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov r, cx
+\end_layout
+
+\begin_layout LyX-Code
+mov cx,m
+\end_layout
+
+\begin_layout LyX-Code
+l1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+....
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+loop l1
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, r
+\end_layout
+
+\begin_layout LyX-Code
+loop l2
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Section
+Циклы с переадрисацией
+\end_layout
+
+\begin_layout Standard
+Циклы в теле которых используються команды с изменяющимеся исполнтелями
+ адресами - это циклы с переадрисацией.
+ Изменения исполнительного адреса возможно с использованием регистров модификато
+ров: BX,BP,SI,DI
+\end_layout
+
+\begin_layout Standard
+Пусть имееться одномерный массив состоящий из 100 элементов размером слово:
+\end_layout
+
+\begin_layout LyX-Code
+x dw 100dup(?)
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x+198
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Доступ к эллементу массива формируеться из некоторой постоянной части х
+ и 
+\begin_inset Quotes eld
+\end_inset
+
+перменной части
+\begin_inset Quotes erd
+\end_inset
+
+ --- индекса.
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, x[bx]
+\end_layout
+
+\begin_layout LyX-Code
+т.е это x+[bx]
+\end_layout
+
+\begin_layout Standard
+Пример(получить сумму эллементов массив)
+\end_layout
+
+\begin_layout LyX-Code
+x dw 100dup(?)
+\end_layout
+
+\begin_layout LyX-Code
+s dw 0
+\end_layout
+
+\begin_layout LyX-Code
+....
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov cx, 100
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add ax,x[bx]
+\end_layout
+
+\begin_layout LyX-Code
+add bx,2
+\end_layout
+
+\begin_layout LyX-Code
+loop L1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+mov s, ax
+\end_layout
+
+\begin_layout Standard
+В случае когда эллементы x байты то bx увеличиваем на 1 ибо байт
+\end_layout
+
+\begin_layout Standard
+Пример(в массиве а состоящий из N эллеметов найти количесвто положительных
+ c четными номерами)
+\end_layout
+
+\begin_layout LyX-Code
+a dw 100dup(?)
+\end_layout
+
+\begin_layout LyX-Code
+n dw ?
+\end_layout
+
+\begin_layout LyX-Code
+k dw 0
+\end_layout
+
+\begin_layout LyX-Code
+dva dw 2
+\end_layout
+
+\begin_layout LyX-Code
+....
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inint n
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\begin_layout LyX-Code
+mov si, 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inint a[si]
+\end_layout
+
+\begin_layout LyX-Code
+add si,2
+\end_layout
+
+\begin_layout LyX-Code
+loop l1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+mov ax, n
+\end_layout
+
+\begin_layout LyX-Code
+div dva
+\end_layout
+
+\begin_layout LyX-Code
+mov cl, al
+\end_layout
+
+\begin_layout LyX-Code
+mov ch, 0
+\end_layout
+
+\begin_layout LyX-Code
+mov si, 2
+\end_layout
+
+\begin_layout LyX-Code
+L2:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+cmp a[si],0
+\end_layout
+
+\begin_layout LyX-Code
+jl L3
+\end_layout
+
+\begin_layout LyX-Code
+int k
+\end_layout
+
+\begin_layout LyX-Code
+L3:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add si, 4
+\end_layout
+
+\begin_layout LyX-Code
+loop L2
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Пример(дан массив из n эллементов, если массив не упорядочен по возрастанию
+ своих эллементов то все эллементы кратные 3 заменить 0)
+\end_layout
+
+\begin_layout LyX-Code
+a dw 100dup(?)
+\end_layout
+
+\begin_layout LyX-Code
+n dw ?
+\end_layout
+
+\begin_layout LyX-Code
+f dw 0
+\end_layout
+
+\begin_layout LyX-Code
+tri dw 2
+\end_layout
+
+\begin_layout LyX-Code
+....
+\end_layout
+
+\begin_layout LyX-Code
+inint n
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\begin_layout LyX-Code
+mov si, 0
+\end_layout
+
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inint a[si]
+\end_layout
+
+\begin_layout LyX-Code
+add si,2
+\end_layout
+
+\begin_layout LyX-Code
+loop l1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+mov cx, n;проверка упорядоченности
+\end_layout
+
+\begin_layout LyX-Code
+dec cx
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\begin_layout LyX-Code
+L2:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov ax, a[bx]
+\end_layout
+
+\begin_layout LyX-Code
+cmp ax, a[bx+2]
+\end_layout
+
+\begin_layout LyX-Code
+jl L3
+\end_layout
+
+\begin_layout LyX-Code
+mov f, 0
+\end_layout
+
+\begin_layout LyX-Code
+jmp L4
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L3:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add bx, 2
+\end_layout
+
+\begin_layout LyX-Code
+loop L2
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L4:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+cmp f, 1
+\end_layout
+
+\begin_layout LyX-Code
+je L9
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\begin_layout LyX-Code
+L5:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov ax, a[bx]
+\end_layout
+
+\begin_layout LyX-Code
+mov dx, 0
+\end_layout
+
+\begin_layout LyX-Code
+div tri
+\end_layout
+
+\begin_layout LyX-Code
+cmp dx, 0
+\end_layout
+
+\begin_layout LyX-Code
+jne L6
+\end_layout
+
+\begin_layout LyX-Code
+mov a[bx], 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L6:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add bx, 2
+\end_layout
+
+\begin_layout LyX-Code
+loop L5
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+вывод
+\end_layout
+
+\begin_layout Section
+Обработка двумерных массивов
+\end_layout
+
+\begin_layout Standard
+Обработка двумерных массивов в ассемблере можно использовать модификацию
+ адреса по двум регистрам BX|BP or SI|DI.
+ Причем один из них должен быть регистром.
+ Модифицировать по парам BX|BP or SI|DI нельзя.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mov ax, a[bx][si]
+\end_layout
+
+\begin_layout LyX-Code
+Аисп=а+[bx]+[si]
+\end_layout
+
+\begin_layout Standard
+Компиляторы большинства языков программирования размешает двумерные массивы
+ по строкам
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[\begin{array}{ccc}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}
+\end{array}\right]=a_{11}a_{12}a_{13}a_{21}a_{22}a_{23}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cпособ размещения эллементов двурменого массива по строкам или по столбцам
+ и соответсвующая их обработка определяеться программистом.
+\end_layout
+
+\begin_layout Standard
+Пусть есть произвольная матрица NxM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[\begin{array}{ccccc}
+a_{11} & a_{12} & a_{13} & .. & a_{1n}\\
+a_{21} & a_{22} & a_{23} & .. & a_{2n}\\
+.. & ..\\
+a_{m1} & a_{m2} & a_{m3} & .. & a_{mn}
+\end{array}\right]=|a_{11}\, a_{12}\, a_{13}\dots a_{1n}|a_{22}a_{23}\dots a_{2n}|a_{ij}^{K}|\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=(i-1)*N+j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обратную задачу по номеру k определить индексы i and j я сделаю самостоятельно.
+\end_layout
+
+\begin_layout Standard
+Пример(дана матрица А размеров 10х20 каждый эллемент размером байт, найти
+ сумму эллементов матрицы)
+\end_layout
+
+\begin_layout LyX-Code
+a db 10dup(20dup(?))
+\end_layout
+
+\begin_layout LyX-Code
+s dw 0
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov ax, 0;sum
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, 200
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add al, a[bx]
+\end_layout
+
+\begin_layout LyX-Code
+inc bx
+\end_layout
+
+\begin_layout LyX-Code
+loop L1
+\end_layout
+
+\begin_layout LyX-Code
+mov s, ax
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Пример(найти сумму диагональных эллементов матрицы А размером 10х10)
+\end_layout
+
+\begin_layout LyX-Code
+a db 10dup(10dup(?))
+\end_layout
+
+\begin_layout LyX-Code
+s dw 0
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov ax, 0;sum
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, 10
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add al, a[bx]
+\end_layout
+
+\begin_layout LyX-Code
+add bx, 11
+\end_layout
+
+\begin_layout LyX-Code
+loop L1
+\end_layout
+
+\begin_layout LyX-Code
+mov s, ax
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Отметим что решение этих двух задач практически не отличаеться от задач
+ на обработку одномерных массивов, используеться один регистр модификатор.
+ 
+\end_layout
+
+\begin_layout Standard
+Пример(дана матрица А 10х20, найти кол-во строк в которых первый эллемент
+ строки встречаеться еще один раз)
+\end_layout
+
+\begin_layout LyX-Code
+a db 10dup(20dup(?))
+\end_layout
+
+\begin_layout LyX-Code
+s dw 0
+\end_layout
+
+\begin_layout LyX-Code
+comment @
+\end_layout
+
+\begin_layout LyX-Code
+al-кол-во строк
+\end_layout
+
+\begin_layout LyX-Code
+ah-первый эллемент строки
+\end_layout
+
+\begin_layout LyX-Code
+bx-индекс строки
+\end_layout
+
+\begin_layout LyX-Code
+si-индекс столбца
+\end_layout
+
+\begin_layout LyX-Code
+cx-счетчик цикла
+\end_layout
+
+\begin_layout LyX-Code
+dx-для хранения сх
+\end_layout
+
+\begin_layout LyX-Code
+@
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov al,0
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, 10
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov ah, a[bx];first ellement
+\end_layout
+
+\begin_layout LyX-Code
+mov dx,cx
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, 19
+\end_layout
+
+\begin_layout LyX-Code
+mov si, 0
+\end_layout
+
+\begin_layout LyX-Code
+L1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+add si, 1
+\end_layout
+
+\begin_layout LyX-Code
+cmp a[bx][si], ah
+\end_layout
+
+\begin_layout LyX-Code
+loopne L1; цикл пока 
+\begin_inset Formula $a_{ij}<>ah\leqslant19$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+jne L2
+\end_layout
+
+\begin_layout LyX-Code
+inc al
+\end_layout
+
+\begin_layout LyX-Code
+L2:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov cx, dx
+\end_layout
+
+\begin_layout LyX-Code
+add bx, 20
+\end_layout
+
+\begin_layout LyX-Code
+loop L
+\end_layout
+
+\begin_layout LyX-Code
+mov ah, 0
+\end_layout
+
+\begin_layout LyX-Code
+mov s, ax
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Есть возможност организации доступа к эллементам матрицы по индексам, которые
+ можно писать так
+\end_layout
+
+\begin_layout LyX-Code
+L:=1
+\end_layout
+
+\begin_layout LyX-Code
+for i:=1 ti M do
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+fro j:=1 to N do
+\end_layout
+
+\begin_layout LyX-Code
+begin
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+r:=i*10+j;
+\end_layout
+
+\begin_layout LyX-Code
+k:=(i-1)*n+j
+\end_layout
+
+\begin_layout LyX-Code
+mov a[(k-1)*l],r
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+end;h
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Пример(Дана матрица А NxN каждый эллемент размер слово обнулить эллменты
+ лежайшие ниже главной диагонали)
+\end_layout
+
+\begin_layout LyX-Code
+a dw 100dup(?)
+\end_layout
+
+\begin_layout LyX-Code
+n dw ?
+\end_layout
+
+\begin_layout LyX-Code
+i dw ?
+\end_layout
+
+\begin_layout LyX-Code
+;---------
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\begin_layout LyX-Code
+mov bx, 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L5: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+push cx
+\end_layout
+
+\begin_layout LyX-Code
+mov di,0
+\end_layout
+
+\begin_layout LyX-Code
+mov cx, n
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+L6: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+inint a[bx][di]
+\end_layout
+
+\begin_layout LyX-Code
+add di, 2
+\end_layout
+
+\begin_layout LyX-Code
+loop L6
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+pop cx
+\end_layout
+
+\begin_layout LyX-Code
+add bx, n
+\end_layout
+
+\begin_layout LyX-Code
+add bx, n
+\end_layout
+
+\begin_layout LyX-Code
+loop L5
+\end_layout
+
 \end_body
 \end_document
