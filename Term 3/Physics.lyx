@@ -7265,7 +7265,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Рис 3
+Рис 13
 \end_layout
 
 \end_inset
@@ -7438,6 +7438,364 @@ status open
 \end_inset
 
  --- не придумали название для этого слогаемого.
+\end_layout
+
+\begin_layout Subsection
+Динамика твердого тела
+\end_layout
+
+\begin_layout Subsubsection
+Импульс твердого тела
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v J=\ous{i=1}nm_{i}\v{v_{i}}=\v{v_{c}}\um M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Не относительно центра масс: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\v J & = & \ous{i=1}nm_{i}\v{v_{i}}=\\
+ & = & \ous{i=1}n\v{v_{0}}m_{i}+\ous{i=1}nm_{i}\vec{\omega}\x\v{r_{c}'}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{v_{i}}=\v{v_{0}}+\v{v_{i}'}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\v{r_{i}}}{dt}=\v{\omega}\x\v{r_{i}}$
+\end_inset
+
+ --- скорость в системе, связаной с подвижной системе отсчета.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+ & = & \v{v_{0}}\x\um M+\v{\omega}\x\ous{i=1}nm_{i}\v{r_{i}'}=\\
+ & = & \left\{ \df{\sum m_{i}r_{i}'}{\sum m_{i}}=R_{o}\right\} =\\
+ & = & \v{v_{0}}\um M+\v{\omega}\x M\v{R_{o}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\v J=\ous{i=1}nm_{i}\v{v_{i}}=\ous{i=1}n\rho_{i}\D V_{i}\v{v_{i}}=\un{\iiint}V\rho_{i}\um\v{v_{i}}\um dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Кинетическая энергия твердого тела
+\end_layout
+
+\begin_layout Standard
+Если вернуться к теореме Кенига...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+T & = & \ous{i=1}n\df{m_{i}v_{i}^{2}}2=\\
+ & = & \left\{ \v{v_{i}}=\v{v_{c}}+\v{v_{i}'}\right\} =\\
+ & = & \df{v_{c}^{2}\um M}2+\ous{i=1}n\df{m_{i}\left(\v{v_{i}'}\right)^{2}}2=\\
+ & = & \left\{ \v{v_{i}'}=\v{\omega}\x\v{r_{i}'}\right\} =\\
+ & = & \df{v_{c}^{2}M}2+\df 12\ous{i=1}nm_{i}\left(\v{\omega}\x\v{r_{i}'}\right)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{\text{вр}}=\df 12\ous{i=1}nm_{i}\left(\v{\omega}\x\v{r_{i}'}\right)^{2}$
+\end_inset
+
+ --- вращательная энергия твердого тела
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{\omega}=\left(\omega_{x},\omega_{y},\omega_{z}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{i}'=\left(x,y,z\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\v{\omega}\x\v{r_{i}'}\right)^{2} & = & \left(\left|\v{\omega}\right|\um\left|\v{r_{i}'}\right|\um\sin\alpha\right)^{2}=\\
+ & = & \left|\v{\omega}\right|^{2}\left|\v{r_{i}'}\right|^{2}-\left(\v{\omega};\v{r_{i}}\right)^{2}=\\
+ & = & \left\{ \begin{array}{c}
+\left|\v{\omega}\right|^{2}=\omega_{x}^{2}+\omega_{y}^{2}+\omega_{z}^{2}\\
+\left|\v r\right|^{2}=r_{x}^{2}+r_{y}^{2}+r_{z}^{2}\\
+\left(\v{\omega};\v{r_{i}'}\right)^{2}=\omega_{x}^{2}x^{2}+\omega_{y}^{2}y^{2}+\omega_{z}^{2}z^{2}+\\
++2\omega_{x}\omega_{y}xy+2\omega_{y}\omega_{z}yz+2\omega_{z}\omega_{x}zx
+\end{array}\right\} =\\
+ & = & \omega_{x}^{2}\left(y^{2}+z^{2}\right)+\omega_{y}^{2}\left(x^{2}+z^{2}\right)+\omega_{z}^{2}\left(y^{2}+x^{2}\right)-\\
+ & - & 2\omega_{x}\omega_{y}xy+2\omega_{y}\omega_{z}yz+2\omega_{z}\omega_{x}zx=
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{\text{вр}}=\df 12\left(I_{xx}\omega_{x}^{2}+I_{yy}\omega_{y}^{2}+I_{zz}\omega_{z}^{2}\right)+2I_{xy}\omega_{x}\omega_{y}+2I_{yz}\omega_{y}\omega_{z}+2I_{xz}\omega_{x}\omega_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Где:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{xx}=\ous{i=1}n$
+\end_inset
+
+
+\begin_inset Formula $\left(y_{i}^{2}+z_{i}^{2}\right)m_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{yy}=\ous{i=1}n\left(x_{i}^{2}+z_{i}^{2}\right)m_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{zz}=\ous{i=1}n\left(x_{i}^{2}+y_{i}^{2}\right)m_{i}$
+\end_inset
+
+ --- Осевые оменты инерции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{xy}=-\ous{i=1}nx_{i}y_{i}m_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{xy}=-\ous{i=1}nx_{i}z_{i}m_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{yz}=-\ous{i=1}ny_{i}z_{i}m_{i}$
+\end_inset
+
+ --- Центробежные моменты инерции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\left(\begin{array}{ccc}
+I_{xx} & I_{xy} & I_{xz}\\
+I_{yz} & I_{yy} & I_{yz}\\
+I_{zx} & I_{zy} & I_{zz}
+\end{array}\right)$
+\end_inset
+
+ --- тензор инерции --- матрица инерции
+\end_layout
+
+\begin_layout Standard
+Тензор можно привести к каноническом у виду, тогда матрица примет вод такой
+ вид: 
+\begin_inset Formula $I=\left(\begin{array}{ccc}
+I_{xx}^{*} & 0 & 0\\
+0 & I_{yy}^{*} & 0\\
+0 & 0 & I_{zz}^{*}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда: 
+\begin_inset Formula $T_{\text{вр}}=\df 12\left(I_{xx}^{*}\omega_{x}^{2}+I_{yy}^{*}\omega_{y}^{2}+I_{zz}^{*}\omega_{z}^{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{xx}^{*}=I_{1};\ I_{yy}^{*}=I_{2};\ I_{zz}^{*}=I_{3}$
+\end_inset
+
+ --- Главные моменты инерции, а оси, относительно которых они вычислены,
+ называются главными осями инерции.
+ То что мы сделали с матрицей называется приведенгие к главным осям.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{xx}^{*}=I_{1};\ I_{yy}^{*}=I_{2};\ I_{zz}^{*}=I_{3}$
+\end_inset
+
+ --- Характеристические числа матрицы 
+\begin_inset Formula $\left|\begin{array}{ccc}
+I_{xx}-I & I_{xy} & I_{xz}\\
+I_{yz} & I_{yy}-I & I_{yz}\\
+I_{zx} & I_{zy} & I_{zz}-I
+\end{array}\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В случае вращения относителдьно неподвижной оси и в случае качения по поверхност
+и:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{\text{вр}}=\df 12I_{zz}\omega^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Только в случае качения будет еще и поступательтная
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\df{Mv^{2}}2+\df{I\omega^{2}}2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Формула Штейнера: 
+\begin_inset Formula $J=J^{*}+a^{2}M$
+\end_inset
+
+.
+ Она нудна для пересчета момента инерции при переходе от системы центра
+ масс к другой системе, тоесть при смещении оси на 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Момент импульса твердого тела
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v M=\v{R_{c}}\x\v J+\v{M_{c}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Момент импульса твердого тела (
+\begin_inset Formula $\v M$
+\end_inset
+
+) = момент импульса поступательного движения (
+\begin_inset Formula $\v{R_{c}}\x\v J$
+\end_inset
+
+) + собственный механический момент (
+\begin_inset Formula $\v{M_{c}}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\v{M_{c}} & = & \ous{i=1}n\v{r_{i}'}\x\left(m_{i}\v{v_{i}'}\right)=\\
+ & = & \ous{i=1}nm_{i}\um\v{r_{i}'}\x\left(\v{\omega}\x\v{r_{i}}\right)=\\
+ & = & \left\{ \v a\x\left(\v b\x\v c\right)=\v b\left(\v a;\v c\right)-\v c\left(\v a;\v b\right)\right\} =\\
+ & = & \ous{i=1}nm_{i}\left(\v{r_{i}'}^{2}\v{\omega}-\left(\v{r_{i}'};\v{\omega}\right)\um\v{r_{i}'}\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Возьмем покомпонентно:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+M_{C_{x}} & = & \ous{i=1}n\left(m_{i}\left(x_{i}^{2}+y_{i}^{2}+z_{i}^{2}\right)\omega_{x}-\left(x_{i}\omega_{x}+y_{i}\omega_{y}+z_{i}\omega_{z}\right)x\right)=\\
+ & =- & \ous{i=1}nm_{i}\left(y_{i}^{2}+z_{i}^{2}\right)-\ous{i=1}nm_{i}y_{i}x_{i}\omega_{y}-\ous{i=1}nm_{i}z_{i}x_{i}\omega_{z}=\\
+ & = & \left\{ \begin{array}{c}
+-\ous{i=1}nm_{i}\left(y_{i}^{2}+z_{i}^{2}\right)=I_{xx}\\
+-\ous{i=1}nm_{i}y_{i}x_{i}\omega_{y}=I_{xy}\\
+-\ous{i=1}nm_{i}z_{i}x_{i}\omega_{z}=I_{xz}
+\end{array}\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{M_{C_{x}}}=I_{xx}\omega_{x}+I_{xy}\omega_{y}+I_{xz}\omega_{z}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{M_{C_{y}}}=I_{xy}\omega_{x}+I_{yy}\omega_{y}+I_{yz}\omega_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{M_{C_{z}}}=I_{xz}\omega_{x}+I_{xy}\omega_{y}+I_{zz}\omega_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\v{M_{c}}=I\um\v{\omega}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
