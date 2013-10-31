@@ -18483,7 +18483,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-74
+рис 74
 \end_layout
 
 \end_inset
@@ -18539,6 +18539,838 @@ status open
 
 \end_deeper
 \end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Subsubsection
+Ориентация замкнутого контура.
+ Формула Грида.
+\end_layout
+
+\begin_layout Standard
+Пусть область 
+\begin_inset Formula $D$
+\end_inset
+
+ квадрируема, 
+\begin_inset Formula $L=\dd D$
+\end_inset
+
+ (Граница области 
+\begin_inset Formula $D$
+\end_inset
+
+) --- замкнутый контур.
+\end_layout
+
+\begin_layout Definition
+Замкнутый контур 
+\begin_inset Formula $L=\dd D$
+\end_inset
+
+ называется положительно ориентированым, если при обходе контура 
+\begin_inset Formula $L$
+\end_inset
+
+ область 
+\begin_inset Formula $D$
+\end_inset
+
+ остается слева.
+\end_layout
+
+\begin_layout Remark
+При противоположном направлении контура 
+\begin_inset Formula $L$
+\end_inset
+
+ ориентация контура отрицательна, и обозначается 
+\begin_inset Formula $L^{-}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть область 
+\begin_inset Formula $D$
+\end_inset
+
+ --- правильная по 
+\begin_inset Formula $y$
+\end_inset
+
+, ограничена линиями 
+\begin_inset Formula $x=a,\ x=b,\ y=y_{1}\left(x\right),\ y=y_{0}\left(x\right),\ y_{1}\left(x\right)\br y_{0}\left(x\right),\ x\in\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 75
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ определена и непрерывна в области 
+\begin_inset Formula $D$
+\end_inset
+
+ вместе с часной производной 
+\begin_inset Formula $P_{y}\pr\left(x,y\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\iint}D\df{\dd P\left(x,y\right)}{\dd y}dxdy & = & \oui abdx\oui{y_{0}\left(x\right)}{y_{1}\left(x\right)}P_{y}\pr\left(x,y\right)=\\
+ & = & \left\{ \text{По формуле Ньютона-Лейбница}\right\} =\\
+ & = & \oui abP\left(x,y\right)|_{y_{0}\left(x\right)}^{y_{1}\left(x\right)}dx=\\
+ & = & \oui abP\left(x,y_{1}\left(x\right)\right)dx-\oui abP\left(x,y_{0}\left(x\right)\right)dx=\\
+ & = & \left\{ \begin{array}{c}
+\left(x,y_{1}\left(x\right)\right)\in BC\\
+\left(x,y_{0}\left(x\right)\right)\in AD
+\end{array}\right\} =\\
+ & = & \ui{BC}P\left(x,y\right)dx-\ui{AD}P\left(x,y\right)dx=\\
+ & = & -\left(\ui{AD}P\left(x,y\right)dx+\ui{DC}P\left(x,y\right)dx+\ui{CB}P\left(x,y\right)dx+\ui{BA}P\left(x,y\right)dx\right)=\\
+ & = & \left\{ \begin{array}{c}
+\ui{BA}P\left(x,y\right)dx=\left\{ dx=0\right\} =0\\
+\ui{DC}P\left(x,y\right)dx=\left\{ dx=0\right\} =0
+\end{array}\right\} =\\
+ & = & -\un{\oint}LP\left(x,y\right)dx=\left\{ L=ADCB=\dd D\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Рассматривая область 
+\begin_inset Formula $D$
+\end_inset
+
+ правильной по 
+\begin_inset Formula $x$
+\end_inset
+
+, а функци 
+\begin_inset Formula $Q\left(x,y\right)$
+\end_inset
+
+ непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+ вместе с часной производной 
+\begin_inset Formula $Q_{x}\pr\left(x,y\right)$
+\end_inset
+
+, то 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 76
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\iint}D\df{\dd Q\left(x,y\right)}{\dd x}dxdy=\un{\oint}LQ\left(x,y\right)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В общем случае для односвязной области 
+\begin_inset Formula $D$
+\end_inset
+
+ (область односвязная, если граница 
+\begin_inset Formula $\dd D=L$
+\end_inset
+
+ --- связное множество) справедлива формула Грина:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\iint}D\left(Q_{x}\pr\left(x,y\right)-P_{y}\pr\left(x,y\right)\right)dxdy=\un{\oint}LP\left(x,y\right)dx+Q\left(x,y\right)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление площадей плоских фигур при помощи формулы Грина
+\end_layout
+
+\begin_layout Standard
+Так как площадь квадрируемой фигуры 
+\begin_inset Formula $D$
+\end_inset
+
+ выражается интегралом 
+\begin_inset Formula $S_{D}=\un{\iint}D1\um dx\um dy$
+\end_inset
+
+, то выбрав функции 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x,y\right)$
+\end_inset
+
+ так, что 
+\begin_inset Formula $\df{\dd Q}{\dd x}-\df{\dd P}{\dd x}\equiv1$
+\end_inset
+
+ на 
+\begin_inset Formula $P$
+\end_inset
+
+, то используя формулу Грина, можно вычислить пложадь фигуры 
+\begin_inset Formula $S_{D}$
+\end_inset
+
+ с помощью криволинейногго интеграла второго рода.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим часный случаи:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q\left(x,y\right)=x,\ P\left(x,y\right)\equiv0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S_{D}=\un{\oint}Lxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(x,y\right)=-y,\ Q\left(x,y\right)\equiv0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S_{D}=-\un{\oint}Lydx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q\left(x,y\right)=\df x2,\ P\left(x,y\right)=-\df y2$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S_{D}=\df 12\un{\oint}Lxdy-ydx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Вычислиь площадь эллипса.
+ 
+\begin_inset Formula $\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}\mr1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $L=\dd D:\begin{cases}
+x=a\cos t\\
+y=b\sin t
+\end{cases},\ t\in\left[0;2\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 77
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Воспользуемся формулой (3), получим:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{D} & = & \df 12\un{\oint}Lxdy-ydx=\\
+ & = & \df 12\oui 0{2\pi}\left(a\cos t\left(b\cos t\right)-b\sin t\left(-a\sin t\right)\right)dt=\\
+ & = & \df{ab}2\oui 0{2\pi}1dt=\pi ab
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Условия независимости криволинейного интеграла второго рода от пути интегрирован
+ия
+\end_layout
+
+\begin_layout Standard
+Пусть функции 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x,y\right)$
+\end_inset
+
+ непрерывны в связной области 
+\begin_inset Formula $D$
+\end_inset
+
+, и 
+\begin_inset Formula $AB$
+\end_inset
+
+ --- произвольный контур в области 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 78
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим К.И.В.Р.
+ 
+\begin_inset Formula $\un{\iint}{AB}Pdx+Qdy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Сформуцлируем условие, при которых значение интеграла зависит только от
+ выбора точек 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+, и не зависти от пути из 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что выражение 
+\begin_inset Formula $Pdx+Qdy$
+\end_inset
+
+ является полным дифференциалом от функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $P=\df{\dd f}{\dd x}$
+\end_inset
+
+ и 
+\begin_inset Formula $Q=\df{\dd f}{\dd y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Криволинейный интеграл второго рода 
+\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\end_inset
+
+ не зависит от пути интегрирования тогда и только тогда, когда дифференциальное
+ выражение 
+\begin_inset Formula $Pdx+Qdy$
+\end_inset
+
+ является полным диференциалом от некоторой функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем необходимость (
+\begin_inset Formula $\sl$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\end_inset
+
+ не зависит от пути из 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $B$
+\end_inset
+
+, всюду в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+hbc 79
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula $\forall A\left(x_{0},;y_{0}\right),B\left(x;y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\ui{AB}Pdx+Qdy=\oui{\left(x_{0},y_{0}\right)}{\left(x,y\right)}Pdx+Qdy$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Если зафиксировать 
+\begin_inset Formula $A\left(x_{0};y_{0}\right)$
+\end_inset
+
+, то КИВР --- это интеграл с переменным верхним пределом: 
+\begin_inset Formula $f\left(x,y\right)=\oui{\left(x_{0},y_{0}\right)}{\left(x,y\right)}Pdx+Qdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рис 80
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\D x$
+\end_inset
+
+ --- приращение аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+, точка 
+\begin_inset Formula $C\left(x+\D x;y\right)$
+\end_inset
+
+ тогда 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ получит приращение:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\D_{x}F\left(x,y\right) & = & F\left(x+\D x,y\right)-F\left(x,y\right)=\ui{AC}-\ui{AB}=\left\{ \text{по адитивности КИВРа}\right\} =\\
+ & = & \oui{\left(x;y\right)}{\left(x+\D x;y\right)}Pdx+Qdy=\\
+ & = & \left\{ Qdy=0\right\} =\\
+ & = & \oui{\left(x;y\right)}{\left(x+\D x;y\right)}Pdx=\\
+ & = & \left\{ \begin{array}{c}
+x=x\\
+x\in\left[x;x+\D x\right]
+\end{array}\right\} =\\
+ & = & \oui x{x+\D x}P\left(x,y\right)dx=\\
+ & = & \left\{ \begin{array}{c}
+\text{Теорема о среднем}\\
+\exists\Theta\in\left[0;1\right]
+\end{array}\right\} =\\
+ & = & P\left(x+\Theta\D x,y\right)\D x
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\D_{x}f\left(x,y\right)}{\D x}=P\left(x+\Theta\D x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+В пределе получается 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ так как 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ А значит и слева 
+\begin_inset Formula $\df{\dd f\left(x,y\right)}{\dd x}=P\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично 
+\begin_inset Formula $\df{\dd f\left(x,y\right)}{\dd y}=Q\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Достаточность (
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $Pdx+Qdy=df\left(x,y\right)$
+\end_inset
+
+.
+ тоесть 
+\begin_inset Formula $\df{\dd f\left(x,y\right)}{\dd x}=P\left(x,y\right),\ \df{\dd f\left(x,y\right)}{\dd y}=Q\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ --- произвольные точки, и 
+\begin_inset Formula $L=\ov{AB}{\smile}\vkl D$
+\end_inset
+
+ --- кривая, соединяющая 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+, допускающее параметрическое представление:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+x=x\left(t\right)\\
+y=y\left(t\right)
+\end{cases},\ t\in\left[\alpha;\beta\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\left(x\left(\alpha\right);y\left(\alpha\right)\right);\ B\left(x\left(\beta\right);y\left(\beta\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Получим 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ui LPdx+Qdy & = & \left\{ \begin{array}{c}
+Pdx=x\pr\left(t\right)dt\\
+Qdy=y\pr\left(t\right)dt
+\end{array}\right\} =\\
+ & = & \oui{\alpha}{\beta}\left(P\left(x\left(t\right),y\left(t\right)\right)x\pr\left(t\right)+Q\left(x\left(t\right),y\left(t\right)\right)y\pr\left(t\right)\right)dt=\\
+ & = & \left\{ \begin{array}{c}
+P\left(x\left(t\right),y\left(t\right)\right)=\df{\dd f\left(x\left(t\right),y\left(t\right)\right)}{\dd x}\\
+x\pr\left(t\right)=\df{dx\left(t\right)}{dt}\\
+Q\left(x\left(t\right),y\left(t\right)\right)=\df{\dd f\left(x\left(t\right),y\left(t\right)\right)}{\dd y}\\
+y\pr\left(t\right)=\df{dy\left(t\right)}{dt}
+\end{array}\right\} =\\
+ & = & \oui{\alpha}{\beta}\df d{dt}\left(f\left(x\left(t\right),y\left(t\right)\right)\right)dt=\\
+ & = & \oui{\alpha}{\beta}df\left(x\left(t\right),y\left(t\right)\right)=f\left(x\left(t\right),y\left(t\right)\right)|_{\alpha}^{\beta}=f\left(B\right)-f\left(A\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Признак полного диференциала.
+ Нахождение первообразной для случая прамоугольной области.
+\end_layout
+
+\begin_layout Standard
+Пусть в области 
+\begin_inset Formula $D$
+\end_inset
+
+ непрерывны часные производные 
+\begin_inset Formula $Q_{x}\pr$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{y}\pr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Выражение 
+\begin_inset Formula $Pdx+Qdy$
+\end_inset
+
+ является полным диференциалом тогда и только тогда, когда 
+\begin_inset Formula $\df{\dd P}{\dd y}=\df{\dd Q}{\dd x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Pdx+Qdy=\df{\dd f}{\dd x}dx+\df{\dd f}{\dd y}dy$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\df{\dd^{2}f}{\dd x\dd y}=\df{\dd^{2}f}{\dd x\dd y}$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\df{\dd P}{\dd y}=\df{\dd Q}{\dd x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Пусть 
+\begin_inset Formula $\df{\dd P}{\dd y}=\df{\dd Q}{\dd x}$
+\end_inset
+
+ выполняется на всей области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Найдем первообразную 
+\begin_inset Formula $\Phi\left(x,y\right)=F\left(x,y\right)+c$
+\end_inset
+
+, где 
+\begin_inset Formula $c$
+\end_inset
+
+ --- константа.
+ Для случая прямоугольной области 
+\begin_inset Formula $D=\left[a;b;c;d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 81
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $F_{x}\pr=P;\ F_{y}\pr=Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим контур 
+\begin_inset Formula $ACB$
+\end_inset
+
+, где 
+\begin_inset Formula $A\left(x_{0};y_{0}\right),\ C\left(x_{0};y\right),\ B\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+F\left(x,y\right)-F\left(x_{0},y_{0}\right) & = & F\left(B\right)-F\left(A\right)=\\
+ & = & \ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\\
+ & = & \ui{AC}+\ui{CB}=\\
+ & = & \left\{ \begin{array}{c}
+AC:\begin{cases}
+x\equiv x_{1}-const & ,dx=0\\
+y=y\in\left[y_{0},y\right]
+\end{cases}\\
+CB:\begin{cases}
+y\equiv y_{1}-const & ,dy=0\\
+x=x\in\left[x_{0};x\right]
+\end{cases}
+\end{array}\right\} =\\
+ & = & \oui{y_{0}}yQ\left(x_{1},y\right)dy+\oui{x_{0}}xP\left(x,y_{1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ Первообразная 
+\begin_inset Formula $\Phi\left(x,y\right)=\oui{y_{0}}yQ\left(x_{1},y\right)dy+\oui{x_{0}}xP\left(x,y_{1}\right)+c$
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout --Separator--
 
 \end_layout
