@@ -256,7 +256,7 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\int\limits_{#1}^{#2}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
@@ -360,6 +360,12 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
 {\df{#1^{#2}#3}{#1#4^{#2}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kr}{\equiv}
+{\equiv}
 \end_inset
 
 
@@ -6961,7 +6967,7 @@ status open
 e^{\lambda_{1}x},xe^{\lambda_{1}x},\tr,x^{n_{1}}e^{\lambda_{1}x}\\
 e^{\lambda_{2}x},xe^{\lambda_{2}x},\tr,x^{n_{2}\lambda_{2}x}\\
 \vtr\\
-\\
+e^{\lambda_{m}x},xe^{\lambda_{m}x},\tr,x^{n_{m}\lambda_{m}x}
 \end{array}$
 \end_inset
 
@@ -7032,7 +7038,7 @@ e^{\lambda_{2}x},xe^{\lambda_{2}x},\tr,x^{n_{2}\lambda_{2}x}\\
 \begin_inset Formula $k$
 \end_inset
 
-, причем хотябы 1 из этих многочленом отличен от тождественного нуля.
+, причем хотябы один из этих многочленом отличен от тождественного нуля.
  Без ограничения общности будем считать, что многочлен 
 \begin_inset Formula $P_{n_{k}}\left(x\right)$
 \end_inset
@@ -7099,7 +7105,846 @@ e^{\lambda_{2}x},xe^{\lambda_{2}x},\tr,x^{n_{2}\lambda_{2}x}\\
 \end_layout
 
 \begin_layout Subsection
-Случай кратных характеристических чисел.
+Случай кратных характеристических чисел
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1.11.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Мы рассматриваем линейное уравнение с постоянными коофицентами 
+\begin_inset Formula 
+\begin{equation}
+L\left(y\right)=\dif dnyx-a_{n-1}\dif d{n-1}yx-\tr-a_{1}\df{dy}{dx}-a_{0}y,\ a_{i}=const,\ i=\overline{0,n-1}\label{eq:46}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Этому уравнению мы ставим с соответствие 
+\begin_inset Formula 
+\begin{equation}
+P\left(\lambda\right)=\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}=0\label{eq:47}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ будет 
+\begin_inset Formula $k$
+\end_inset
+
+-кратным характеристическим числом.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ является корнем не только самого многочлена (5), но и корнем всех его производн
+ых по 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ до 
+\begin_inset Formula $\left(k-1\right)$
+\end_inset
+
+-го порядка.
+ 
+\begin_inset Formula 
+\begin{equation}
+P\left(\lambda_{1}\right)=\df{dP\left(\lambda_{1}\right)}{d\lambda}=\tr=\dif d{k-1}{P\left(\lambda_{1}\right)}{\lambda}\label{eq:t9}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif dk{P\left(\lambda_{1}\right)}{\lambda}\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L\left(e^{\lambda x}\right)\equiv P\left(\lambda\right)e^{\lambda x}\label{eq:t10.1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Продеферинцируем это тождество 
+\begin_inset Formula $m$
+\end_inset
+
+ раз по 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif{\dd}m{}{\lambda}\left(L\left(e^{\lambda x}\right)\right)\equiv\dif{\dd}m{}{\lambda}\left(P\left(\lambda\right)e^{\lambda x}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif{\dd}m{}{\lambda}\left(L\left(e^{\lambda x}\right)\right)=L\left(\dif{\dd}m{}{\lambda}e^{\lambda x}\right)=L\left(x^{m}e^{\lambda x}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Воспользуемся формулой Лейбница по дифиренцировании произведения.
+\end_layout
+
+\begin_layout Standard
+Пусть будет 2 функции 
+\begin_inset Formula $u\left(\lambda\right),\ v\left(\lambda\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\dif dm{\left(u\left(\lambda\right)v\left(\lambda\right)\right)}{\lambda}=\ous{j=0}mC_{m}^{j}\dif dju{\lambda}\um\dif d{m-j}v{\lambda}$
+\end_inset
+
+.
+ При этом 
+\begin_inset Formula $C_{m}^{0}=1$
+\end_inset
+
+ и 0я производная от функции это сама функция.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dif{\dd}m{\left(P\left(\lambda\right)e^{\lambda x}\right)}{\lambda}=\ous{j=0}mC_{m}^{j}\dif dj{P\left(\lambda\right)}{\lambda}\um x^{m-j}e^{\lambda x}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L\left(x^{m}e^{\lambda x}\right)\equiv\ous{j=0}mC_{m}^{j}\dif dj{P\left(\lambda\right)}{\lambda}\um x^{m-j}e^{\lambda x}\label{eq:t10.2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим тождество (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t10.2"
+
+\end_inset
+
+) при 
+\begin_inset Formula $\lambda=\lambda_{1}$
+\end_inset
+
+, тогда в силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t9"
+
+\end_inset
+
+) получим, что 
+\begin_inset Formula $L\left(x^{m}e^{\lambda_{1}x}\right)=0$
+\end_inset
+
+ при 
+\begin_inset Formula $m=0,1,\tr,k-1$
+\end_inset
+
+.
+ Тогда выражения 
+\begin_inset Formula $e^{\lambda_{1}x},xe^{\lambda_{1}x},\tr,x^{k-1}e^{\lambda_{1}x}$
+\end_inset
+
+ являются решениями уравнения (4).
+ В силу Леммы они линейно не зависимы.
+ Тогда ставя в соответствии каждому характеристическому числу такого вида
+ получим 
+\begin_inset Formula $n$
+\end_inset
+
+ решений уравнения (4).
+ По лемме они линейно независимы.
+ Тоесть образуют фундаментальную систему решений.
+ А общим решением будет линейная коибинация решений системы с произвольными
+ постоянными.
+\end_layout
+
+\begin_layout Standard
+Пусть коофиценты уравнения (4) 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ --- вещественные, 
+\begin_inset Formula $i=\overline{0,n-1}$
+\end_inset
+
+, тогда общее решение нужно стоить вещественное, но корни могут быть также
+ комплексными.
+ Пусть 
+\begin_inset Formula $\lambda=a+bi,\ b\nr0$
+\end_inset
+
+ --- 
+\begin_inset Formula $k$
+\end_inset
+
+-кратное характеристическое число уравнения (4).
+ Тогда 
+\begin_inset Formula $\overline{\lambda}=a-bi$
+\end_inset
+
+ --- комплексно-сопряженное тоже будет 
+\begin_inset Formula $k$
+\end_inset
+
+-кратным характеристическим числом.
+ В силу показанного выше, функции 
+\begin_inset Formula $e^{\left(a+bi\right)x},xe^{\left(a+bi\right)x},\tr,x^{k-1}e^{\left(a+bi\right)x}$
+\end_inset
+
+ будут решениями уравнения (4).
+ Их вещественные и мнимые части 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+e^{ax}\cos bx,xe^{ax}\cos bx,\tr,x^{k-1}e^{ax}\cos bx\\
+e^{ax}\sin bx,xe^{ax}\sin bx,\tr,x^{k-1}e^{ax}\sin bx
+\end{array}\label{eq:t12}
+\end{equation}
+
+\end_inset
+
+ будут решениями уравнения (4).
+ Функции (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t12"
+
+\end_inset
+
+) линейно не зависимы (доказывается от противного, предпологая противное,
+ и заменяя 
+\begin_inset Formula $\cos bx=\df{e^{iibx}+e^{-ibx}}2$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin bx=\df{e^{ibx}-e^{-ibx}}2$
+\end_inset
+
+ в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t12"
+
+\end_inset
+
+) мы получилибы, что були бы линейно зависимыми функциии 
+\begin_inset Formula $x^{l}e^{\lambda_{j}x}$
+\end_inset
+
+, что является противоречием).
+ Kомплексно сопряженное характеристическое число 
+\begin_inset Formula $a-bi$
+\end_inset
+
+ не пораждает новых, линейно независимых с (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t12"
+
+\end_inset
+
+) решений уравнения (4).
+ Тогда паре комплексно сопряженных чисел мы поставим в соответствии 
+\begin_inset Formula $2k$
+\end_inset
+
+ вещественных решений.
+ В случае уравненгия (4) с вещественными коофицентами фундаметтальная система
+ решений строиться следующим образом: Каждому простому вещественному характерист
+ическиму числу 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ ставим всоответствие решение 
+\begin_inset Formula $e^{\lambda_{1}x}$
+\end_inset
+
+.
+ Каждому 
+\begin_inset Formula $k$
+\end_inset
+
+-кратному вещественному зарактеристическому числу ставим в соотвествии 
+\begin_inset Formula $k$
+\end_inset
+
+ решений.
+ Каждой паре простых характеристических чисел 
+\begin_inset Formula $a\pm bi$
+\end_inset
+
+ ставим 2 решения вида 
+\begin_inset Formula $e^{ax}\cos bx$
+\end_inset
+
+, 
+\begin_inset Formula $a^{ax}\sin bx$
+\end_inset
+
+ , а каждой паре 
+\begin_inset Formula $k$
+\end_inset
+
+ - кратных комплексно сопряженным характеристических числа 
+\begin_inset Formula $a\pm bi$
+\end_inset
+
+ ставим с соответствие 
+\begin_inset Formula $2k$
+\end_inset
+
+ решений вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t12"
+
+\end_inset
+
+).
+ В результате получаем 
+\begin_inset Formula $n$
+\end_inset
+
+ вещественных решений уравнения (4).
+ Они линейно независимы (доказывается от противного).
+ Мы показали как простоить общее решения укравнения с постоянными коофицентами.
+\end_layout
+
+\begin_layout Subsection
+Линейные неоднородные уравнения с постоянными коофицентами
+\end_layout
+
+\begin_layout Standard
+Рассмотрим линейное неоднородное уравнение 
+\begin_inset Formula 
+\begin{equation}
+L\left(y\right)\equiv\dif dnyx+a_{1}\dif d{n-1}yx+\tr+a_{n-1}\df{dy}{dx}-a_{n}y=f\left(x\right),\ a_{i}=cosnt.\ i=\overline{1,n}\label{eq:j1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P\left(\lambda\right)\kr\lambda^{n}+a_{1}\lambda^{n-1}+\tr+a_{n-1}\lambda+a_{n}=0\label{eq:j2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чтобы постоить общее решение уравнения нужно найти его часное решение.
+ В случае произвольной правой часни 
+\begin_inset Formula $L\left(x\right)$
+\end_inset
+
+ часное решение неоднородного уравнения можно находить методом вариации
+ произвольных постоянных (смотри случай уравненийт с переменными коофицентами).
+ Когда 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ является суммой и/или произведением многочленов, експонент, синусов и косинусов
+, то чаные решения неодннородного уравнения можно находить методом неопределенны
+х коофицентов.
+ Покажем этот метод.
+\end_layout
+
+\begin_layout Standard
+Заметим, что если правая часть (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) 
+\begin_inset Formula $f\left(x\right)=f_{1}\left(x\right)+f_{2}\left(x\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ --- решение уравнения 
+\begin_inset Formula $L\left(y_{1}\right)=f_{1}$
+\end_inset
+
+, а 
+\begin_inset Formula $y_{2}\ :\ L\left(y_{2}\right)=f_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $y_{1}\left(x\right)+y_{2}\left(x\right)$
+\end_inset
+
+ будет решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) 
+\begin_inset Formula $y_{1}\left(x\right)+y_{2}\left(x\right)\ :\ f\left(x\right)=f_{1}\left(x\right)+f_{2}\left(x\right)$
+\end_inset
+
+.
+ Неодходимость такого разбиеныя будет вытикать из последующих рассуэдений.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ в уравнеии (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) имeет вид 
+\begin_inset Formula $f\left(x\right)=P_{m}\left(x\right)e^{\alpha x}$
+\end_inset
+
+, где 
+\begin_inset Formula $P_{m}\left(x\right)$
+\end_inset
+
+ --- многочлен степени 
+\begin_inset Formula $m$
+\end_inset
+
+ с вещественными и комплексными коофицентами 
+\begin_inset Formula $P_{m}\left(x\right)=p_{0}x^{m}+p_{1}x^{m-1}+\tr+p_{m-1}x+p_{m}$
+\end_inset
+
+, а 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ --- вещественна я или комплексная постоянная.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не является корнем характеристического многочлена, тоесть 
+\begin_inset Formula 
+\begin{equation}
+P\left(\alpha\right)\nr0\label{eq:j3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда часное решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) можно найти в виде: 
+\begin_inset Formula 
+\begin{equation}
+y_{1}\left(x\right)=Q_{m}\left(x\right)e^{\alpha x}\label{eq:j4}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $Q_{m}\left(x\right)$
+\end_inset
+
+ --- многочлен степени 
+\begin_inset Formula $m$
+\end_inset
+
+ вида 
+\begin_inset Formula $Q_{m}\left(x\right)=q_{0}x^{m}+q_{1}x^{m-1}+\tr+q_{m-1}x+q_{m}$
+\end_inset
+
+ с неизвестными коофицентами, которые находятся подстановкой (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j4"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) и приравнивая коофицентов при одинаковых степенях 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Покажем что 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ находятся однозначно, что часное решение вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j4"
+
+\end_inset
+
+) существует.
+\end_layout
+
+\begin_layout Standard
+Когда 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не является корнем характеристического многочлена, то этот случай называется
+ нерезонансным, обратный случай называется резонансным.
+\end_layout
+
+\begin_layout Standard
+Подставим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j4"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L\left(Q_{m}\left(x\right)e^{\alpha x}\right) & = & L\left(\left(q_{0}x^{m}+q_{1}x^{m-1}+\tr+q_{m}\right)e^{\alpha x}\right)=\\
+ & = & q_{0}L\left(x^{m}e^{\alpha x}\right)+q_{1}L\left(x^{m-1}e^{\alpha x}\right)+\tr+q_{m}L\left(e^{\alpha x}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся равенствами (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t10.1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t10.2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L\left(Q_{m}\left(x\right)e^{\alpha x}\right) & = & q_{0}\ous{j=0}mC_{m}^{j}\dif dj{P\left(\alpha\right)}{\lambda}\um x^{m-j}e^{\alpha x}+\\
+ & + & q_{1}\ous{j=0}{m-1}C_{m-1}^{j}\dif dj{P\left(\alpha\right)}{\lambda}\um x^{m-1-j}e^{\alpha x}+\\
+ & + & \tr+q_{m}P\left(\alpha\right)e^{\alpha x}=\\
+ & = & \left(p_{0}x^{m}+p_{1}x^{m-1}+\tr+p_{m}\right)e^{\alpha x}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сократим на 
+\begin_inset Formula $e^{\alpha x}$
+\end_inset
+
+ и прирпвняем коофиценты при одинаковых степенях 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+x^{m}\ :\ q_{0}P\left(\alpha\right)=p_{0}\\
+x^{m-1}\ :\ q_{0}C_{m}^{1}\df{dP\left(\alpha\right)}{d\lambda}+q_{1}P\left(\alpha\right)=p_{1}\\
+\vtr\\
+x^{0}\ :\ q_{0}C_{m}^{m}\dif dm{P\left(\alpha\right)}{\lambda}+q_{1}C_{m-1}^{m-1}\dif d{m-1}{P\left(\alpha\right)}{\lambda}+\tr+q_{m}P\left(\alpha\right)=P_{m}
+\end{array}\label{eq:j5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j3"
+
+\end_inset
+
+) из (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+)-го уравнения 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ находится однозначно.
+ Найденое 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ подставим во (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j2"
+
+\end_inset
+
+)-е уравнение, и найдем 
+\begin_inset Formula $q_{1}.$
+\end_inset
+
+ И так далее, из постеднего найдем 
+\begin_inset Formula $q_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Резонансный случай.
+ Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+является 
+\begin_inset Formula $k$
+\end_inset
+
+ кратным корнем характеристического многочлена.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P\left(\alpha\right)=\df{dP\left(\alpha\right)}{d\lambda}=\tr=\dif d{k-1}{P\left(\alpha\right)}{\lambda}=0,\ \dif dk{P\left(\alpha\right)}{\lambda}\nr0\label{eq:j6}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда часное решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ существует в виде: 
+\begin_inset Formula 
+\begin{equation}
+y_{1}\left(x\right)=x^{k}Q_{m}\left(x\right)e^{\alpha x}\label{eq:j7}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $Q_{m}\left(x\right)=\ous{s=0}mq_{s}x^{m-s}$
+\end_inset
+
+ --- многочлен степени 
+\begin_inset Formula $m$
+\end_inset
+
+ с неизвестными коофицентами, которые находятся подстановкой (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j7"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) и приравнивание коофицентов при одинаковых степенях 
+\begin_inset Formula $x$
+\end_inset
+
+ .
+ Покажем что 
+\begin_inset Formula $q_{s}$
+\end_inset
+
+ находятся однознаячно.
+ Для этого подставим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j7"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j1"
+
+\end_inset
+
+) получим...
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Колоквиум
+\end_layout
+
+\begin_layout Standard
+Будут 2 теоритических вопроса и 2 задачи.
+\end_layout
+
+\begin_layout Standard
+Одно теоритическое задание нужно делать с доказательством, одно нет.
+\end_layout
+
+\begin_layout Standard
+Если набрал по итогам от 51 до 100 - то атестован.
+\end_layout
+
+\begin_layout Section
+Сессия
+\end_layout
+
+\begin_layout Enumerate
+Нету ограничений на количество задолжностей.
+\end_layout
+
+\begin_layout Enumerate
+Разрешается по каждому предмету не более 2х пересдач
+\end_layout
+
+\begin_layout Enumerate
+Отчислений по окончанию зимней сессии не будет
+\end_layout
+
+\begin_layout Enumerate
+В течении 4х недель после сессии будут пересдачи(одна преподавателю, а другая
+ комиссии).
+\end_layout
+
+\begin_layout Enumerate
+После этого если у кого нить есть одна задолжность, то он подлежит отчислению,
+ или если он нее сдал комиссию.
 \end_layout
 
 \end_body
