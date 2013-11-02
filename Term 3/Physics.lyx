@@ -64,8 +64,8 @@ theorems-starred
 \topmargin 2cm
 \rightmargin 2cm
 \bottommargin 2cm
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 5
+\tocdepth 5
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -7796,6 +7796,661 @@ M_{C_{x}} & = & \ous{i=1}n\left(m_{i}\left(x_{i}^{2}+y_{i}^{2}+z_{i}^{2}\right)\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Уравнение движение твердого тела
+\end_layout
+
+\begin_layout Standard
+Оно имеет 6 степеней свободы.
+ Нужно 6 координат (6 уравнений, скалярных, или 2 векторных).
+ Мы выбераем координаты полюса и углы Эйлера.
+ Вместо полюса мы можем взять координаты цента масс.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\df{d\v{v_{c}}}{dt}=\v K,\ $
+\end_inset
+
+где 
+\begin_inset Formula $\v K=\ous{i=1}n\v{F_{i}^{\left(e\right)}}$
+\end_inset
+
+ --- сумма всех внешних сил.
+\end_layout
+
+\begin_layout Standard
+Но нам нужно еще задать вращение.
+\end_layout
+
+\begin_layout Standard
+Для момента импульса незамкнутой системы: 
+\begin_inset Formula $\df{d\v M}{dt}=\v N,\ $
+\end_inset
+
+где 
+\begin_inset Formula $\v N=\ous{i=1}n\v{r_{i}}\x\v{F_{i}^{\left(e\right)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вспомним что 
+\begin_inset Formula $\v M=I\v{\omega}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ --- константа, отвечающая за инерциальные свойства твердого тела.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I\df{d\v{\omega}}{dt}=\v N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Элементы механики сплошной среды
+\end_layout
+
+\begin_layout Subsubsection
+Деформируемое твердое тело
+\end_layout
+
+\begin_layout Paragraph
+Деформации и напряжения
+\end_layout
+
+\begin_layout Definition
+Деформация --- изменения формы и обьема твердого тела.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Деформация называется упругой, если после прекращения действия внешних сил
+ тело принимает прежние размеры и форму.
+\end_layout
+
+\begin_layout Remark
+Упругой деформации не бываетя
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Деформации, которые сохраняются в твердом теле называются пластическими.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+Деформации --- изгиб, кручение, сдвиг, кручение и так далее...
+\end_layout
+
+\begin_layout Standard
+Как оказалось, при детальном изучении, любой вид деформации сводится к 2м
+ --- деформации растяжения и сжатия и деформация сдвига, все остальное это
+ их комбинация.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 14
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Берем мы такие стержень, и растягиваем его в разные стороны двумя силами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D l>0$
+\end_inset
+
+ --- растяжение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D l<0$
+\end_inset
+
+ --- сжатие
+\end_layout
+
+\begin_layout Standard
+Рассматриваем не силы, а напряжения, возникающие внутри тела.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{\sigma}=\df{\v F}s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если сила направлена по нормали к поверхности, то напряжение называется
+ нормальным.
+ Если сила направлена по косательной к поверхности, то напряжение называется
+ тангенциальным.
+ 
+\end_layout
+
+\begin_layout Standard
+Количественнной мерой, характеризуюжая степень деформации называется относительн
+ая деформация.
+\end_layout
+
+\begin_layout Standard
+В качестве 
+\begin_inset Formula $\varepsilon=\df{\D l}l$
+\end_inset
+
+ --- степень деформации.
+\end_layout
+
+\begin_layout Standard
+При любом растедении и сжатие есть поперечная степень сжатия 
+\begin_inset Formula $\varepsilon'=\df{\D d}d$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ --- диаметр сечения.
+\end_layout
+
+\begin_layout Standard
+И между этими величинами есть соотношение, определяемое материалом.
+\end_layout
+
+\begin_layout Standard
+Записывается оно так: 
+\begin_inset Formula $\varepsilon'=-\nu\um\varepsilon$
+\end_inset
+
+, где 
+\begin_inset Formula $\nu\mr\df 12$
+\end_inset
+
+ --- коофицент Пуассона
+\end_layout
+
+\begin_layout Standard
+Если расматриватьт упругую деформацию, то есть соотношение между 
+\begin_inset Formula $\v{\sigma}=\df{\v F}s$
+\end_inset
+
+ и 
+\begin_inset Formula $\varepsilon=\df{\D l}l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Оно записывается так 
+\begin_inset Formula $\sigma=E\um\varepsilon$
+\end_inset
+
+, где 
+\begin_inset Formula $E$
+\end_inset
+
+ --- коэфицент пропорционольности, определяющийся свойствами материала,
+ и называется модулем Юнга.
+\end_layout
+
+\begin_layout Standard
+По сути 
+\begin_inset Formula $\sigma=E\um\varepsilon$
+\end_inset
+
+ это закон Гука.
+ Этому закону тела подчиняются до определенного предела, но у кажого тела
+ этот предел разный.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 15
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это примерный график.
+ Это зависимость деформации от напряжения.
+\end_layout
+
+\begin_layout Itemize
+до 
+\begin_inset Formula $\sigma_{\text{пр}}$
+\end_inset
+
+ --- область выполнения закона Гука
+\end_layout
+
+\begin_layout Itemize
+до 
+\begin_inset Formula $\sigma_{\text{упр}}$
+\end_inset
+
+ --- предел упругости
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[b;c\right]$
+\end_inset
+
+ --- область пластической деформации, остается остаточная деформация 
+\begin_inset Formula $\left[0;F\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+ --- предел тякучасти
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left[d,E\right]$
+\end_inset
+
+ --- необратимые разружения
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[d;+\b\right]$
+\end_inset
+
+ --- предел расзушения.
+ Дальше уже идет пунктир потому что дальше в результате воздействия сил
+ тела может и не быть уже.
+\end_layout
+
+\begin_layout Paragraph
+Напряжение и деформация при сдвиге
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 16
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для того чтобы тело не вражалось мы прикладываем еще 2 силы дополнительно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 17
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чем можно характеризовать степень деформации? Ее можно охарактеризовать
+ углом 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ В данном случае он равен 
+\begin_inset Formula $\gamma=\df{\gamma}2$
+\end_inset
+
+ --- это деформация сдвига.
+\end_layout
+
+\begin_layout Standard
+Между 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ и 
+\begin_inset Formula $\tau$
+\end_inset
+
+ существует определенное соотношение: 
+\begin_inset Formula $\tau=G\um\gamma$
+\end_inset
+
+, где 
+\begin_inset Formula $G$
+\end_inset
+
+ --- модуль сдвига.
+\end_layout
+
+\begin_layout Standard
+Оказывается что 
+\begin_inset Formula $\nu,\ E,\ G$
+\end_inset
+
+ --- зависимые.
+ Например 
+\begin_inset Formula $G=\df E{2\left(1+\nu\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Характер зависимости 
+\begin_inset Formula $\tau=G\um\gamma$
+\end_inset
+
+ аналогичен характеру зависимости деформации от напряжения.
+\end_layout
+
+\begin_layout Standard
+В твердом теле деформации в разных точках происходят в разных направлениях
+ и определяются 21м коофицентом.
+ В анизотропном случае хватает 6ти.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 18
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Напрядение, которое действует на этой плоскости можно связать с Тензором
+ напрядения: 
+\begin_inset Formula $\Gamma=\left(\begin{array}{ccc}
+\sigma_{xx} & \tau_{xy} & \tau_{xz}\\
+\tau_{yx} & \sigma_{yy} & \tau_{yz}\\
+\tau_{zx} & \tau_{zy} & \sigma_{zz}
+\end{array}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\begin{array}{c}
+\tau_{xy}=\tau_{yx}\\
+\tau_{yz}=\tau_{zy}\\
+\tau_{xz}=\tau_{zx}
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{\sigma}=\Gamma\um\v n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Первый индекс --- ось, в направлении которой действует напряжение.
+ Второй --- площадка, к каторой оно приложено.
+\end_layout
+
+\begin_layout Standard
+Этот Тензор можно привети к деагональному виду.
+\end_layout
+
+\begin_layout Standard
+Можно рассматривать еще и Тензор деформации.
+\end_layout
+
+\begin_layout Standard
+Тензор деформации --- 
+\begin_inset Formula $B_{c}=\left(\begin{array}{ccc}
+\varepsilon_{x} & \df 12\gamma_{xy} & \df 12\gamma_{xz}\\
+\df 12\gamma_{xy} & \varepsilon_{y} & \df 12\gamma_{yz}\\
+\df 12\gamma_{xz} & \df 12\gamma_{yz} & \varepsilon_{z}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Закон Гука в общем виде.
+\end_layout
+
+\begin_layout Standard
+Выглядит оно так: 
+\begin_inset Formula $B_{c}=\df{1+\nu}E\Gamma\df{\nu\left(\sigma_{xx}+\sigma_{yy}+\sigma_{zz}\right)}EI$
+\end_inset
+
+, где 
+\begin_inset Formula $I$
+\end_inset
+
+ --- еденичная матрица, 
+\begin_inset Formula $\left(\sigma_{xx}+\sigma_{yy}+\sigma_{zz}\right)$
+\end_inset
+
+ --- называется 
+\begin_inset Formula $3\sigma$
+\end_inset
+
+ --- трисигма.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma=\df E{1+\nu}\left(B_{c}+\df{\nu\left(\varepsilon_{x}+\varepsilon_{y}+\varepsilon_{z}\right)}{1-2\nu}I\right)$
+\end_inset
+
+ --- Обратная зависимость, которая здесь определяется.
+\end_layout
+
+\begin_layout Subsubsection
+Механика жидкости
+\end_layout
+
+\begin_layout Standard
+А подразумевается механика газа, так как они похожи и местами совподают.
+ Вместе все это это механика сплошной среды.
+\end_layout
+
+\begin_layout Definition
+Несжимаемая жидкость --- жидкость, плотность каторой во всех точках одинакова
+ ине изменяется со временем.
+\end_layout
+
+\begin_layout Standard
+В жидкости так как и в твердом теле под дейсмтвием внешних сил возникает
+ внутренее усилие.
+ Но они существенно отличаются.
+ В жидкостяж по любому направлению они одинакомы, и направлены по нормали
+ к поверхности.
+ Они называется не напряжением, а давлением: 
+\begin_inset Formula $p=\df FS$
+\end_inset
+
+ (сила деленная на площадь).
+ Это давление подчиняется закону Паская: 
+\emph on
+давление в любом месте покоющейся жидкости одинакого по всем направлениям
+ и одинакого передается по всему обьему занятому покоящейся жидкостью
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 19
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим несжимаемую жидкость и гидрастатическое давление.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 20
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $mg=\rho\um h\um S\um g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=\df FS=\rho\um g\um h$
+\end_inset
+
+ --- гидростатичесое давление
+\end_layout
+
+\begin_layout Standard
+Закон Архимеда: 
+\emph on
+на тело, погруженного в жидкость действует выталкивающая сила, равная весу
+ вытесненной этим телом жидкости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{A}=g\um\rho_{\text{ж}}\um V_{\text{т}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Этот закон действует не толшько в жидкостях, но и в газе.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 21
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{1}=\rho gh,\ p_{2}=\rho gh_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{1}=p_{1}S,\ F_{2}=p_{2}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{A}=F_{2}-F_{1}=\rho_{\text{ж}}gh_{2}S-\rho_{\text{ж}}gh_{1}S=g\rho_{\text{ж}}S\left(h_{2}-h_{1}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это все про покоющеюся жидкость.
+ Щас поговорим и тячением жидкости.
+\end_layout
+
+\begin_layout Definition
+Совокупность часниц движущейся жидкости называется потоком.
+\end_layout
+
+\begin_layout Standard
+Графически движение жидкости изображается с помощью линий тока, которые
+ проводятся так, что касательная к ним совподает по направлению с вектором
+ скорости жидкости в соответствующих точках пространства.
+\end_layout
+
+\begin_layout Definition
+Часть жидкости, ограниченномй линеями тока, называют трубкой тока.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Течеение жидкости называют стационарным, если форма и расположение линий
+ тока, а так же значение скоростей в каждой ее точке, со временем не меняется.
 \end_layout
 
 \begin_layout Standard
