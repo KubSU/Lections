@@ -8453,6 +8453,386 @@ status open
  тока, а так же значение скоростей в каждой ее точке, со временем не меняется.
 \end_layout
 
+\begin_layout Subsection
+Уравнение неразрывности
+\end_layout
+
+\begin_layout Standard
+Рассмотрим некоторую трубку тока.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 22
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 2 её сечения.
+ Одно площадью 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+, а другую площадью 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+.
+ Обьем жидкости меняться не должен в трубке.
+ Входят они со скоростью 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и выходят со скоростью 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+.
+ Возьмем 
+\begin_inset Formula $\D t$
+\end_inset
+
+.
+ Количество жидкости (обьем), которые входят в трубку тока равно:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{1}\um\D t\um S_{1}$
+\end_inset
+
+--- Входяшая жидкость
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{2}\D t\um S_{2}$
+\end_inset
+
+ --- Выходящаая жидкость
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{1}S_{1}=v_{2}S_{2}$
+\end_inset
+
+ --- уравнение неразрывности для станцианарной несжимаемой жидкости, получено
+ приравниванием двух преведущих уравнений.
+ Оно есть и для существует и для сжимаемой жидкости.
+\end_layout
+
+\begin_layout Subsection
+Основной закон динамики для частиц идеальной жидкости
+\end_layout
+
+\begin_layout Definition
+Жидкость называется идеальной если силами внутреннего трения можно принебречь.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 23
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выбераем маленький кубик внутри жидкости.
+ Начало координат --- точка 
+\begin_inset Formula $M$
+\end_inset
+
+, движение которой мы будем рассматривать.
+ Снизу есть давление 
+\begin_inset Formula $P$
+\end_inset
+
+, сверху тоже давление 
+\begin_inset Formula $P+dP$
+\end_inset
+
+.
+ М для этого кубика составим уравнение движение.
+ На кубик действует еще сила тяжестви.
+ Будем считать что 
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- плотность жидкости в кубике.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=dx\um dy\um dz$
+\end_inset
+
+ --- Обьем куба
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=\rho\um dx\um dy\um dz$
+\end_inset
+
+ --- Масса куба
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{dv_{z}}{dt}\um m\um dx\um dy\um dz & = & P\um dx\um dy-\left(P+dP\right)\um dx\um dy-\rho\um g\um dx\um dy\um dz=\\
+ & = & \left\{ P\um dx\um dy-\left(P+dP\right)\um dx\um dy=-\df{dP\um dx\um dy\um dz}{dz}\right\} =\\
+ & = & \df{dv_{z}}{dt}\um\rho\um dx\um dy\um dz=\\
+ & = & -\df{\dd P}{\dd z}\um dx\um dy\um dz-\rho gdxdydz=
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\df{dv_{z}}{dt}=-\df{\dd P}{\dd z}-\rho\um g$
+\end_inset
+
+ --- получили во такое
+\end_layout
+
+\begin_layout Standard
+Аналогично для 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, с учетом того что по этим осям не действует сила тяжести: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\df{dv_{x}}{dt}=-\df{\dd P}{\dd z}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\df{dv_{y}}{dt}=-\df{\dd P}{\dd z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим векторное соотнгошение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\df{d\v v}{dt}=-\grad P+\rho\v g$
+\end_inset
+
+ --- Основной закон гидродинамики для идеальной жидкости, в которой мы не
+ рассматриваем внутреннее трение.
+\end_layout
+
+\begin_layout Subsection
+Станционарный поток
+\end_layout
+
+\begin_layout Standard
+Рассмотрим станционарный поток.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 24
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\left(S\right),\ P\left(S\right),\ \rho\left(S\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dS=v\um dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dv=\df{dv}{dS}\um dS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dv}{dt}=\df{dv}{dx}\df{dS}{dt}=\df{dv}{dS}\um v=\df d{dS}\left(\df{v^{2}}2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\grad P\st\df{dP}{dS}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\v g\st\rho\um g\um\cos\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\alpha-\df{dh}{dS}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\um\v g\st\rho\um g\um\cos\alpha=-\rho\um g\um\df{dh}{dS}=\df{d\left(\rho gh\right)}{dS}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Подставляем в уравнение движение.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df d{dS}\left(\df{\rho\um v^{2}}2\right)=-\df{dP}{dS}-\df{d\left(\rho\um g\um h\right)}{dS}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df d{dS}\left(\df{\rho\um v^{2}}2+P+\rho\um g\um h\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\rho\um v^{2}}2+P+\rho\um g\um h=const$
+\end_inset
+
+ --- Уравнение Бернулли
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\rho\um v^{2}}2$
+\end_inset
+
+ --- динамическое давление
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P$
+\end_inset
+
+ --- некое внешнее давление
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\um g\um h$
+\end_inset
+
+ --- гидростатическое дваление
+\end_layout
+
+\begin_layout Example
+Рассмотрим пример
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 25
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{\rho\um v_{1}^{2}}2+P_{1}+\rho\um g\um h_{1}=\df{\rho\um v_{2}^{2}}2+P_{2}+\rho\um g\um h_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{1}=P_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{1}>>S_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Тогда в силу уравнения неразрывности следует, что 
+\begin_inset Formula $v_{1}<<v_{2}$
+\end_inset
+
+ и тогда величиной 
+\begin_inset Formula $\df{v_{1}^{2}}2$
+\end_inset
+
+ можно принебречь.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\rho\um g\um h_{1}=\rho\um g\um h_{2}+\df{\rho\um v_{2}^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $v_{2}=\sqrt{2\um g\um\left(h_{1}-h_{2}\right)}=\sqrt{2\um g\um h}$
+\end_inset
+
+ --- формула Торичелли
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset

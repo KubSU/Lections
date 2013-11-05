@@ -19365,10 +19365,923 @@ x=x\in\left[x_{0};x\right]
 \end_inset
 
  Первообразная 
-\begin_inset Formula $\Phi\left(x,y\right)=\oui{y_{0}}yQ\left(x_{1},y\right)dy+\oui{x_{0}}xP\left(x,y_{1}\right)+c$
+\begin_inset Formula $\Phi\left(x,y\right)=\oui{y_{0}}yQ\left(x_{1},y\right)dy+\oui{x_{0}}xP\left(x,y_{1}\right)dx+C$
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
+Аналогично можно получить:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi\left(x.y\right)=\oui{x_{0}}xP\left(x,y_{0}\right)dx+\oui{y_{0}}yQ\left(x,y\right)dy+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Найти первообразную по полному диференциалу.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(x+y\right)dx+\left(x-y\right)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Убеждаемся и проверяем что это полный дифференциал:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P\left(x,y\right)=x+y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{y}\pr=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $Q\left(x,y\right)=x-y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $Q_{x}\pr=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Убедились...
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 82
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\Phi\left(x,y\right)=\oui 0y\left(x-y\right)dy+\oui 0x\left(x+y\right)dx+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(x_{0},y_{0}\right)=\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\Phi\left(x,y\right)=-\df{y^{2}}2|_{0}^{y}+\left(\df{x^{2}}2+yx\right)|_{0}^{x}+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Для случая 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+, когда 
+\begin_inset Formula $d\Phi\left(x,y,z\right)=P\left(x,y,z\right)dx+Q\left(x,y,z\right)dy+R\left(x,ymz\right)dz$
+\end_inset
+
+ находжения 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ аналогимчно (на самостоятельное изучение).
+\end_layout
+
+\begin_layout Subsubsection
+Интегралы по замкнутому контуру
+\end_layout
+
+\begin_layout Theorem
+Интеграл 
+\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\end_inset
+
+, где 
+\begin_inset Formula $AB\in D$
+\end_inset
+
+ --- произвольная не зависит от пути интегрирования 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ интеграл по любому замкнутому контуру 
+\begin_inset Formula $L\vkl D$
+\end_inset
+
+ равен нулю.
+\end_layout
+
+\begin_layout Proof
+Доказать двудя способоми..
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Способ.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\end_inset
+
+ не зависит от пути интегрирования.
+ Рассмотримм производную.
+\end_layout
+
+\begin_layout Standard
+На контуре 
+\begin_inset Formula $L$
+\end_inset
+
+ возьмем 2 произвольные точки.
+ Получим 2 пути, 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ --- 
+\begin_inset Formula $ACB$
+\end_inset
+
+, 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ ---
+\begin_inset Formula $ADB$
+\end_inset
+
+, причем 
+\begin_inset Formula $\ui{L_{1}}Pdx+Qdy+\ui{L_{2}}Pdx+Qdy$
+\end_inset
+
+.
+ Так как интеграл по всему контуру 
+\begin_inset Formula $L$
+\end_inset
+
+ --- 
+\begin_inset Formula $\ui L=\ui{L_{1}\ob L_{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\un{\oint}LPdx+Qdy=0$
+\end_inset
+
+ для любього замкнутого контура 
+\begin_inset Formula $L\vkl D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A,B\in D$
+\end_inset
+
+ --- произвольные точки.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим дваразных пути: 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+из 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $0=\un{\oint}LPdx+Qdy=\un{\oint}{L_{1}\ob L_{2}}Pdx+Qdy\tr$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Способ.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Интеграл по 
+\begin_inset Formula $\ov{AB}{\smile}$
+\end_inset
+
+ не зависит от пути интегрирования 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\df{\dd Q}{\dd x}\equiv\df{\dd P}{\dd y}$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для лубого замкнутого контура 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, ограничевающего некоторую область 
+\begin_inset Formula $K\vkl D$
+\end_inset
+
+ по формуле грина, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}K\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy=\un{\oint}{\gamma}Pdx+Qdy$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+в
+\end_layout
+
+\begin_layout Theorem
+Если функции 
+\begin_inset Formula $P\left(x,y\right),Q\left(x,y\right)$
+\end_inset
+
+ непрерывные вместе с часными производными
+\begin_inset Formula $P_{y}\pr,Q_{x}\pr$
+\end_inset
+
+ в многгосвязной области 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy=\ui{\gamma}Pdx+Qdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Где 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ --- полная граница области 
+\begin_inset Formula $D$
+\end_inset
+
+, положительно ориентирована относительно 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Ограничемся случаем трехсвязной области, с границей 
+\begin_inset Formula $\gamma_{0}\ob\gamma_{1}\ob\gamma_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Воспользуемся методом перемычек.
+ Проведем разрезы области 
+\begin_inset Formula $D$
+\end_inset
+
+ от 
+\begin_inset Formula $\gamma_{0}$
+\end_inset
+
+ к 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+ --- перемочки 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для полученой односвязной области обход по ее границе:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\gamma_{0}\ob l_{1}^{+}\ob l_{1}^{-}\ob\gamma_{1}\ob l_{2}^{+}\ob l_{2}^{-}\ob\gamma_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как при интегрировании по этому контуру слогаемые по 
+\begin_inset Formula $l_{1}^{+},l_{1}^{-}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{2}^{+},l_{2}^{-}$
+\end_inset
+
+ взаимно сокращаются, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy & = & \ui{\gamma_{0}\ob l_{1}^{+}\ob l_{1}^{-}\ob\gamma_{1}\ob l_{2}^{+}\ob l_{2}^{-}\ob\gamma_{2}}Pdx+Qdy=\\
+ & = & \ui{\gamma_{0}}+\ui{\gamma_{1}}+\ui{\gamma_{2}}=\ui{\gamma_{1}\ob\gamma_{2}\ob\gamma_{3}}Pdx+Qdy
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Поверхностный интеграл первого рода
+\end_layout
+
+\begin_layout Subsubsection
+ПИПР.
+ Понятие.
+ Основные свойства
+\end_layout
+
+\begin_layout Standard
+Рассмотривается поверхности 
+\begin_inset Formula $S\vkl E^{3}$
+\end_inset
+
+, площади 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 83
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В каждой точке 
+\begin_inset Formula $M\left(x,y,z\right)\in S$
+\end_inset
+
+ определена функция 
+\begin_inset Formula $u=f\left(x,y,z\right)$
+\end_inset
+
+.Разобьем поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $n$
+\end_inset
+
+ частей, обозщначим их 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ площади 
+\begin_inset Formula $\D S_{i},\ i=\overline{1,n}$
+\end_inset
+
+.
+ Возьмем произвольную точку 
+\begin_inset Formula $M_{i}\left(x_{i},y_{i}z_{i}\right)\vkl S_{i},\ i=\overline{1,n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\lambda_{i}=diamS_{i}=\un{\sup}{K,T\in S_{i}}\rho\left(K,T\right);$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda=\un{\max}{i=\overline{1,n}}\lambda_{i}$
+\end_inset
+
+.
+ Конечная сумма 
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(x_{i}my_{i},z_{i}\right)\D S_{i}$
+\end_inset
+
+ --- интегральная сумма для 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ по поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Если при 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+ существует конечный предел последовательнсти 
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(x_{i}my_{i},z_{i}\right)\D S_{i}$
+\end_inset
+
+ не зависящий от способо разбиения 
+\begin_inset Formula $\left\{ S_{i}\right\} $
+\end_inset
+
+ и выбора 
+\begin_inset Formula $\left\{ M_{i}\right\} $
+\end_inset
+
+, то его называют поверхностным интегралом первого рода от функции 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ по поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ и обозначают:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\un{\iint}Sf\left(x,y,z\right)dS=\ul{\begin{array}{c}
+n\st\b\\
+\lambda\st0
+\end{array}}\ous{i=1}nf\left(x_{i},y_{ui},z_{i}\right)\D S_{i}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Основные свойства
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\un{\iint}SKf\left(x,y,z\right)dS=K\un{\iint}Sf\left(x,y,z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\un{\iint}S\left(f\pm g\right)dS=\un{\iint}SfdS\pm\un{\iint}SgdS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $S=S_{1}\ob S_{2}$
+\end_inset
+
+, то 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}SfdS=\un{\iint}{S_{1}}fdS+\un{\iint}{S_{2}}fdS$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x,y,z\right)\mr g\left(x,y,z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $S,$
+\end_inset
+
+ то 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dS\mr\un{\iint}Sg\left(x,y,z\right)dS$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\un{\iint}SdS=S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\un{\iint}SfdS\right|\mr\un{\iint}S\left|f\right|dS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Теорема о среднем.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $S$
+\end_inset
+
+, то существует 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0},z_{0}\right)\in S$
+\end_inset
+
+, такая что
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dS=f\left(x_{0},y_{0},z_{0}\right)\um S$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+2
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $D_{xy}\vkl XoY$
+\end_inset
+
+ проэкция области 
+\begin_inset Formula $S$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $XoY$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ --- гладкая, тоесть в каждой точке можно провести касательную плоскость
+ к 
+\begin_inset Formula $S$
+\end_inset
+
+, и каждая прямая, поралельная оси 
+\begin_inset Formula $Oz$
+\end_inset
+
+, пересекает 
+\begin_inset Formula $S$
+\end_inset
+
+ не бдолее чем в одной точке 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 84
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ можно явно задать 
+\begin_inset Formula $z=\varphi\left(x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим разбиение 
+\begin_inset Formula $\left\{ S_{i}\right\} ,\ i=\overline{1,n}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ --- проэкция 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ на 
+\begin_inset Formula $XoY$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $M_{i}\left(x_{i},y_{i},z_{i}\right),N_{i}\left(x_{i},y_{i},z_{i}\right)$
+\end_inset
+
+ --- точки.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+ --- кусоке плоскости, касающейся поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+, проэкция которого на 
+\begin_inset Formula $XoY$
+\end_inset
+
+ --- это область 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+.
+ С точностью до бесконечно малых высших порядков юудем считать, что площадь
+ куска 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ примерно равна площади куска поверхности 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ : 
+\begin_inset Formula $\D T_{i}\approx\D S_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\gamma_{i}$
+\end_inset
+
+ --- угол между плоскостью 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+ и плоскостью 
+\begin_inset Formula $XoY$
+\end_inset
+
+ --- угол между их нормалями 
+\begin_inset Formula $\v{n_{i}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\v k$
+\end_inset
+
+, причем 
+\begin_inset Formula $\D T_{i}\cos\gamma_{i}=\D D_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Уpавнение 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+: 
+\begin_inset Formula $z_{x}\pr\left(N_{i}\right)\left(x-x_{i}\right)+z_{y}\pr\left(N_{i}\right)\left(y-y_{i}\right)-\left(z-z_{i}\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{n_{i}}=\v{\left(-z_{x}\pr\left(N_{i}\right);-z_{y}\pr\left(N_{i}\right);1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v k=\v{\left(0;0;1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\gamma_{i}=\df{\v k\um\v{n_{i}}}{\left|\v k\right|\um\left|\v{n_{i}}\right|}=\df 1{\sqrt{\left(z_{x}\pr\left(N_{i}\right)\right)^{2}+\left(z_{y}\pr\left(N_{I}\right)\right)^{2}+1}}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D T_{i}=\sqrt{\left(z_{x}\pr\left(N_{i}\right)\right)^{2}+\left(z_{y}\pr\left(N_{I}\right)\right)^{2}+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Для интегральных сумм получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(N_{i}\right)\um\D S_{i}\approx\ous{i=1}nf\left(N_{i}\right)\sqrt{\left(z_{x}\pr\left(N_{i}\right)\right)^{2}+\left(z_{y}\pr\left(N_{I}\right)\right)^{2}+1}\D D_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}nf\left(N_{i}\right)\um\D S_{i}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\st\b,\lambda\st0$
+\end_inset
+
+ принимает вид 
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dS$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}nf\left(N_{i}\right)\sqrt{\left(z_{x}\pr\left(N_{i}\right)\right)^{2}+\left(z_{y}\pr\left(N_{I}\right)\right)^{2}+1}\D D_{i}$
+\end_inset
+
+ --- интегральная сумма для двойного интеграла, при 
+\begin_inset Formula $n\st\b,\lambda\st0$
+\end_inset
+
+ принимает вид 
+\begin_inset Formula $\un{\iint}Df\left(x,y,\varphi\left(x,y\right)\right)\sqrt{\left(\varphi_{x}\pr\left(x,y\right)\right)^{2}+\left(\varphi_{y}\pr\left(x,y\right)\right)^{2}+1}dxdy$
+\end_inset
+
+
 \end_layout
 
 \begin_layout --Separator--
