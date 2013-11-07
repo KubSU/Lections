@@ -20031,7 +20031,7 @@ n\st\b\\
 
 \end_deeper
 \begin_layout Subsubsection
-2
+Вычисление ПИПР
 \end_layout
 
 \begin_layout Standard
@@ -20278,12 +20278,818 @@ status open
 \end_inset
 
  принимает вид 
-\begin_inset Formula $\un{\iint}Df\left(x,y,\varphi\left(x,y\right)\right)\sqrt{\left(\varphi_{x}\pr\left(x,y\right)\right)^{2}+\left(\varphi_{y}\pr\left(x,y\right)\right)^{2}+1}dxdy$
+\begin_inset Formula $\un{\iint}{D_{xy}}f\left(x,y,\varphi\left(x,y\right)\right)\sqrt{\left(\varphi_{x}\pr\left(x,y\right)\right)^{2}+\left(\varphi_{y}\pr\left(x,y\right)\right)^{2}+1}dxdy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Аналогично, если 
+\begin_inset Formula $S$
+\end_inset
+
+ задается явно: 
+\begin_inset Formula $x=\chi\left(y,z\right),\ \left(y,z\right)\in D_{yz}$
+\end_inset
+
+ --- проэкция 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $YoZ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi\left(y,z\right)$
+\end_inset
+
+ --- дифференцируема, 
+\begin_inset Formula $\chi_{y}\pr,\ \chi_{z}\pr$
+\end_inset
+
+ --- непрерывны
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dS=\un{\iint}{D_{yz}}f\left(\chi\left(y,z\right),y,z\right)\sqrt{\left(\chi_{y}^{2}\left(y,z\right)\right)\pr+\left(\chi_{z}^{2}\left(y,z\right)\right)\pr+1}dydz$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S\ :\ y=\psi\left(x,z\right),\ \left(x,z\right)\in D_{xz}$
+\end_inset
+
+ --- проэкция 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $XoY$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+Если 
+\begin_inset Formula $\psi_{x}\pr,\psi_{z}\pr$
+\end_inset
+
+ --- непрерывны, то
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dS=\un{\iint}{D_{xz}}f\left(x,\psi\left(x,z\right),z\right)\sqrt{\left(\psi_{x}^{2}\left(x,z\right)\right)\pr+\left(\psi_{z}^{2}\left(x,z\right)\right)\pr+1}dxxdz$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Вычислить: 
+\begin_inset Formula $I=\un{\iint}S\df{dS}{\left(1+x+z\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\,:\, x+y+z=1,\ x,y,z\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 85
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\,:\, z=1-x-y=z\left(x,y\right)=\varphi\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D_{xy}\,;\, x\in\left[0;\,1\right],\, y\in\left[0;\,1-x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sqrt{\left(\varphi_{x}\pr\right)^{2}+\left(\varphi_{y}\pr\right)^{2}+1}=\sqrt{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \oui 01dx\oui 0{1-x}\df{\sqrt{3}dy}{\left(1+x+1-x-y\right)^{2}}=\\
+ & = & \sqrt{3}\oui 01dx\oui 0{1-x}\df{dy}{\left(2-y\right)^{2}}=\\
+ & = & \sqrt{3}\oui 01\left(\df 1{2-y}\right)|_{0}^{1-x}dx=\\
+ & = & \sqrt{3}\left[\df 1{1+x}-\df 12\right]dx=\\
+ & = & \sqrt{3}\left(\ln\left(1+x\right)-\df x2\right)|_{0}^{1}=\\
+ & = & \sqrt{3}\left(\ln2-\df 12\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Вычислить интеграл: 
+\begin_inset Formula $I=\un{\iint}Sx\left(y+z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\,:\,\left\{ x=\sqrt{1-y^{2}},\ 2\br z\br0\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+hbc 86
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Проэктируем именно на 
+\begin_inset Formula $YoZ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D_{yz}$
+\end_inset
+
+ --- проэкция 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $YoZ$
+\end_inset
+
+ --- 
+\begin_inset Formula $y\in\left[-1;\,1\right],\, z\in\left[0;\,2\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=\sqrt{1-y^{2}}=\chi\left(y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\sqrt{\left(\chi_{y}\pr\right)^{2}+\left(\chi_{z}\pr\right)^{2}+1} & = & \left\{ \left(\chi_{z}\pr\right)^{2}=0\right\} =\\
+ & = & \sqrt{\left(-\df y{\sqrt{1-y^{2}}}\right)^{2}+1}=\\
+ & = & \sqrt{\df{y^{2}}{1-y^{2}}+1}=\\
+ & = & \df 1{\sqrt{1-y^{2}}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\oui{-1}1dy\oui 02\sqrt{1-y^{2}}\left(y+z\right)\df{dz}{\sqrt{1-y^{2}}}=\tr=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Приложения поверхностных интегралов первого рода
+\end_layout
+
+\begin_layout Paragraph
+Вычисление площадей поверхностей
+\end_layout
+
+\begin_layout Standard
+В общем случае: 
+\begin_inset Formula 
+\begin{eqnarray*}
+S & = & \un{\iint}S1\um dS=\left\{ \begin{array}{c}
+S\,:\, z=\varphi\left(x,y\right)\\
+\left(x;y\right)\in D_{xy}
+\end{array}\right\} =\\
+ & = & \un{\iint}{D_{xy}}\sqrt{\left(\varphi_{x}\pr\right)^{2}+\left(\varphi_{y}\pr\right)^{2}}dxdy
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Механические приложения
+\end_layout
+
+\begin_layout Standard
+Если на 
+\begin_inset Formula $S$
+\end_inset
+
+ распределена плотность масс, то по закону 
+\begin_inset Formula $\rho=\rho\left(x,y,z\right)$
+\end_inset
+
+, то масса метериальной поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ вычисляется по формуле:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M=\un{\iint}S\rho\left(x,y,z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Статические моменты относительно координатных плоскостей:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{xy}=\un{\iint}Sz\um\rho\left(x,y,z\right)dS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{xz}=\un{\iint}Sy\um\rho\left(x,y,z\right)dS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{yz}=\un{\iint}Sx\um\rho\left(x,y,z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Моменты инерции относительно координатных осей:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{x}=\un{\iint}S\left(y^{2}+z^{2}\right)\rho\left(x,y,z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{y}=\un{\iint}S\left(x^{2}+z^{2}\right)\rho\left(x,y,z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{z}=\un{\iint}S\left(x^{2}+y^{2}\right)\rho\left(x,y,z\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Координаты центра тяжести 
+\begin_inset Formula $\left(x_{c},\, y_{c};\, z_{c}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{c}=\df{S_{yz}}M,\: y_{c}=\df{S_{xz}}M,\, z_{c}=\df{S_{xy}}M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Поверхностные интегралы второго рода
+\end_layout
+
+\begin_layout Subsubsection
+Сторона тповенхности.
+ Ориентация пространства
+\end_layout
+
+\begin_layout Standard
+Рассмотрим в пространстве 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+ ограниченную поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+, с границе 
+\begin_inset Formula $\dd S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ --- гладкая, а 
+\begin_inset Formula $M_{0}\in S$
+\end_inset
+
+ --- произвольная точка.
+ В точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ востановиим нормаль к поверхности (выбераем одно их двух направлений).
+\end_layout
+
+\begin_layout Definition
+Для любого замннутого контура 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, содержашегося в 
+\begin_inset Formula $S$
+\end_inset
+
+, проходящего черех точку при непрерынвом движении по 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ направление вектора 
+\begin_inset Formula $\v n$
+\end_inset
+
+ не изменяется в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ --- произвольная точка в 
+\begin_inset Formula $S$
+\end_inset
+
+, то 
+\begin_inset Formula $S$
+\end_inset
+
+ называется двустаронней поверхностью, а направление нормали 
+\begin_inset Formula $\v n$
+\end_inset
+
+ указывает на выбранную сторону поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Если для каждой точки 
+\begin_inset Formula $M_{0}\in S$
+\end_inset
+
+, при движении по замкнутому контуру 
+\begin_inset Formula $\gamma\vkl S,\ M_{0}\in\gamma$
+\end_inset
+
+, направление нормали 
+\begin_inset Formula $\v n$
+\end_inset
+
+ изменится на противоположное, то поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+ называется односторонней.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 87
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем будем рассматривать только двусторонние поверхзности
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ --- замкнутый контур на выбранной стороне поверхногсти 
+\begin_inset Formula $S$
+\end_inset
+
+, контур 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ называется положительно ориентированым относительно выбранной стороны,
+ если наблюдатель, находящийся в вершине вектора 
+\begin_inset Formula $\v n$
+\end_inset
+
+, видит движение по контуру 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ против часовой стрелки.
+\end_layout
+
+\begin_layout Subsubsection
+ПИВР.
+ Понятие.
+ Основные свойстванепрер
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ограниченную гладкую двустороннюю поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ а пространстве 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+, на которой определена непрерывная функция 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+.
+ Разобъем 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $n$
+\end_inset
+
+ частей 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+, площади 
+\begin_inset Formula $\Delta S_{i}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\Delta_{i}$
+\end_inset
+
+ --- проекция 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ на плоскость 
+\begin_inset Formula $XoY$
+\end_inset
+
+, площади 
+\begin_inset Formula $\Delta_{i}^{xy}$
+\end_inset
+
+, взятой со знаком 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+, если 
+\begin_inset Formula $\gamma<\frac{\pi}{2}$
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+, если 
+\begin_inset Formula $\gamma>\df{\pi}2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Рассмотиримм конечную сумму 
+\begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy},\ M_{i}\left(x_{i};\, y_{i};\, z_{i}\right)\in S_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\lambda=\un{\max}i\, diam\, S_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Где 
+\begin_inset Formula $\D_{i}^{xy}$
+\end_inset
+
+ --- со знаком 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+, если 
+\begin_inset Formula $\beta<\df{\pi}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D_{i}^{yz}$
+\end_inset
+
+ --- 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+, если 
+\begin_inset Formula $\beta>\df{\pi}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D_{i}^{yz}$
+\end_inset
+
+ --- 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+, если 
+\begin_inset Formula $\alpha>\df{\pi}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если при 
+\begin_inset Formula $\lambda\st0,\ n\st\b$
+\end_inset
+
+ существует конечный предел последовательности 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+, не зависящих от способа разбиения и выбора точек 
+\begin_inset Formula $\left\{ M_{i}\right\} $
+\end_inset
+
+, то его называют поверхностным интегралом второго рода от функци 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ по поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ и обозначают 
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dxdy$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dxdy=\ul{\begin{array}{c}
+\lambda\st0\\
+n\st\b
+\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аналогично определяются интегралы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dxdz=\ul{\begin{array}{c}
+\lambda\st0\\
+n\st\b
+\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xz}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dydz=\ul{\begin{array}{c}
+\lambda\st0\\
+n\st\b
+\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{yz}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В общем случае ПИВР имеет слудующий вид:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\iint}SP\left(x,y,z\right)dydz+Q\left(x,y,z\right)dxdz+R\left(x,y,z\right)dxdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Свойства ПИВР
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $S^{-}$
+\end_inset
+
+ и 
+\begin_inset Formula $S^{+}$
+\end_inset
+
+ разные стороны поверхности 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}{S^{-}}f\left(x,y,z\right)dxdy=-\un{\iint}{S^{+}}f\left(x,y,z\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\un{\iint}S\left(f\pm g\right)=\un{\iint}Sf\pm\un{\iint}Sg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\un{\iint}Sk\um f\left(x,y,z\right)=k\um\un{\iint}Sf\left(x,y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\un{\iint}{S_{1}\ob S_{2}}=\un{\iint}{S_{1}}+\un{\iint}{S_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $S_{1},\ S_{2},\ S_{3}$
+\end_inset
+
+ --- цилиндрические поверхности, с образующими, паралльные осям 
+\begin_inset Formula $Ox,\ Oy,\ Oz$
+\end_inset
+
+, то 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\iint}{S_{1}}P\left(x,y,z\right)dydz=\un{\iint}{S_{2}}Q\left(x,y,z\right)dxdz=\un{\iint}{S_{3}}R\left(x,y,z\right)dxdy=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout --Separator--
 
 \end_layout
