@@ -7881,12 +7881,12 @@ reference "eq:j1"
 \begin_inset Formula $x$
 \end_inset
 
- .
+.
  Покажем что 
 \begin_inset Formula $q_{s}$
 \end_inset
 
- находятся однознаячно.
+ сущестует.
  Для этого подставим (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7901,10 +7901,572 @@ reference "eq:j1"
 
 \end_inset
 
-) получим...
+) получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L\left(e^{\alpha x}\right)=P\left(\alpha\right)e^{\alpha x}\ \text{и}L\left(x^{m}e^{\alpha x}\right)=\ous{j=0}mC_{m}^{j}\df{d^{j}P\left(\alpha\right)}{d\lambda}x^{m-j}e^{\alpha x}\label{eq:j8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L\left(x^{k}Q_{m}\left(x\right)e^{\alpha x}\right) & = & L\left(\ous{s=0}mq_{s}x^{m+k-s}e^{\alpha x}\right)=\\
+ & = & \left\{ \text{Так как оператор линейный}\right\} =\\
+ & = & \ous{s=0}mq_{s}L\left(m^{m+k-s}e^{\alpha x}\right)=\\
+ & = & \left\{ \text{По равенствам \ref{eq:j8}}\right\} =\\
+ & = & \ous{s=0}mq_{s}\ous{j=0}{m+k-s}C_{m+k-s}^{j}\dif dj{P\left(\alpha\right)}{\lambda}\um x^{m+k-s-j}e^{\alpha x}=\\
+ & = & \left\{ \text{В силу \ref{eq:j6}}\right\} =\\
+ & = & \ous{s=0}mq_{s}\ous{j=k}{m+k-s}C_{m+k-s}^{j}\dif dj{P\left(\alpha\right)}{\lambda}\um x^{m+k-s-j}e^{\alpha x}=\\
+ & = & \left\{ \begin{array}{c}
+\text{Заменим переменную по которой}\\
+\text{производится}\text{сумирование}\\
+l=j-k\\
+j=l+k
+\end{array}\right\} =\\
+ & = & \ous{s=0}mq_{s}\ous{l=0}{m-s}C_{m+k-s}^{l+k}\dif d{l+k}{P\left(\alpha\right)}{\lambda}x^{m-s-l}e^{\alpha x}\\
+ & = & \ous{s=0}mP_{s}x^{m-s}e^{\alpha x}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сократим на 
+\begin_inset Formula $e^{\alpha x}$
+\end_inset
+
+ и приравняем коофиценты при равных степенях 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+x^{m}:\ q_{0}C_{k+m}^{k}\dif dk{P\left(\alpha\right)}{\lambda}=P_{0}\\
+x^{m-1}:\ q_{0}C_{m+k}^{k+1}\dif d{k+1}{P\left(\alpha\right)}{\lambda}+q_{1}C_{m+k+1}^{k}\dif dk{P\left(\alpha\right)}{\lambda}=P_{1}\\
+\vtr\\
+x^{0}:\ \ous{s=0}mq_{s}C_{m+k-s}^{k+m-s}\dif d{m+k-s}{P\left(\alpha\right)}{\lambda}=\ous{s=0}{m-1}q_{s}C_{m+k-s}^{k+m-s}\dif d{m+k-s}{P\left(\alpha\right)}{\lambda}+q_{m}C_{k}^{k}\dif dk{P\left(\alpha\right)}{\lambda}=P_{m}
+\end{cases}\label{eq:j9}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j6"
+
+\end_inset
+
+) из 1го уравннения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:j9"
+
+\end_inset
+
+) 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ находится однозначно, из второго 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ однозначно, и так делее, из последнего 
+\begin_inset Formula $q_{m}$
+\end_inset
+
+ однозначно.
+ 
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Случай вещественных коофицентов
+\end_layout
+
+\begin_layout Standard
+Пусть коофиценты уравнения (1) 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ --- вещественные, 
+\begin_inset Formula $k=\overline{1,n}$
+\end_inset
+
+, а правая часть имеет вид 
+\begin_inset Formula $f\left(x\right)=e^{\alpha x}\left(P_{m}^{\left(1\right)}\left(x\right)\cos\beta x+P_{m}^{\left(2\right)}\left(x\right)\sin\beta x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $P_{m}^{\left(1\right)}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{m}^{\left(2\right)}\left(x\right)$
+\end_inset
+
+ --- многочлены степени 
+\begin_inset Formula $m$
+\end_inset
+
+ с вещественными коофицентами, а 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ --- вещественные постоянные.
+ Покажем что в этом случае часное решение уранвения (1) существует в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}\left(x\right)=x^{k}e^{\alpha x}\left(Q_{m}^{\left(1\right)}\left(x\right)\cos\beta x+Q_{m}^{\left(1\right)}\left(x\right)\sin\beta x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Где 
+\begin_inset Formula $Q_{m}^{\left(1\right)}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q_{m}^{\left(2\right)}\left(x\right)$
+\end_inset
+
+ -- многочлены степени 
+\begin_inset Formula $m$
+\end_inset
+
+ с неизвесными коофицентами, которые находятся подстановкой (10) в (1) и
+ приравниваниях коофицентов при поодобных слогаемых.
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ --- число, равное нулю, если 
+\begin_inset Formula $\alpha\pm\beta i$
+\end_inset
+
+ не является корнем характеристического многочлена, если 
+\begin_inset Formula $\alpha\pm\beta i$
+\end_inset
+
+ --- корень характеристического многочелена, то число 
+\begin_inset Formula $k$
+\end_inset
+
+ равно его кратности.
+\end_layout
+
+\begin_layout Standard
+Преобразуем правую часть:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(x\right) & = & e^{\alpha x}\left(P_{m}^{\left(1\right)}\left(x\right)\cos\beta x+P_{m}^{\left(2\right)}\left(x\right)\sin\beta x\right)=\\
+ & = & e^{\alpha x}\left(P_{m}^{\left(1\right)}\left(x\right)\df{e^{i\beta x}+e^{-i\beta x}}2+P_{m}^{\left(2\right)}\df{e^{i\beta x}-e^{-i\beta x}}{2i}\right)=\\
+ & = & e^{\left(\alpha+\beta i\right)x}\df{P_{m}^{\left(1\right)}\left(x\right)-iP_{m}^{\left(2\right)}\left(x\right)}2+e^{\left(\alpha+\beta i\right)x}\df{P_{m}^{\left(1\right)}\left(x\right)+iP_{m}^{\left(2\right)}\left(x\right)}2
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Заметим что правая часть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ является суммой двух комплексно-сопряженных слогаемых.
+\end_layout
+
+\begin_layout Standard
+Так как коофиценты уравнения (1) вещественные, то в случае комплексно сопряженны
+х правых частей решения так - же будут комплексно сопряженными.
+ По доказанному выше уравнение (1) для первого слогаемого правой части ьудет
+ иметь решения вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}\left(x\right)=x^{k}e^{\left(\alpha+\beta i\right)x}\left(\df{Q_{m}^{\left(1\right)}\left(x\right)-iQ_{m}^{\left(2\right)}\left(x\right)}2\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $\overline{y_{1}}$
+\end_inset
+
+ будет решением уравнение (1), с правой частью, равной второму слогаемому,
+ а тогда 
+\begin_inset Formula $y_{1}\left(x\right)+\overline{y_{1}}\left(x\right)$
+\end_inset
+
+ будет решением уравнениея (1) с правой частью 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Преобразуем эту сумму: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{1}\left(x\right)+\overline{y_{1}}\left(x\right)+x^{k}e^{\left(\alpha-\beta i\right)x}\df{Q_{m}^{\left(1\right)}\left(x\right)+iQ_{m}^{\left(2\right)}\left(x\right)}2 & = & x^{k}e^{\alpha x}\left(\cos\beta x+i\sin\beta x\right)\df{Q_{m}^{\left(1\right)}\left(x\right)-iQ_{m}^{\left(2\right)}\left(x\right)}2+\\
+ & + & x^{k}e^{\alpha x}\left(\cos\beta x-i\sin\beta x\right)\df{Q_{m}^{\left(1\right)}\left(x\right)+iQ_{m}^{\left(2\right)}\left(x\right)}2=\\
+ & = & x^{k}e^{\alpha x}\left(Q_{m}^{\left(1\right)}\left(x\right)\cos\beta x+Q_{m}^{\left(2\right)}\left(x\right)\sin\beta x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Мы показали что решение уравнения (1) в виде (10) сущестует.
+\end_layout
+
+\begin_layout Subsection
+Свойства нулей линейных однородных дифференциальных уравнений второго порядка.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим линейное однородное диференциальное уравнение второго порядка
+ вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d^{2}y}{dx^{2}}+a_{1}\left(x\right)\df{dy}{dx}+a_{2}\left(x\right)y=0\label{eq:d1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем предполагать что коофиценты 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ задано на некотором промежутке 
+\begin_inset Formula $I\vkl\R$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a_{2}\left(x\right)$
+\end_inset
+
+ --- непрерывная функция на 
+\begin_inset Formula $I$
+\end_inset
+
+, а 
+\begin_inset Formula $a_{1}\left(x\right)$
+\end_inset
+
+ --- непрерывна диференцируема на 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ На будет интересовать решения этого уравнгения, отличные от тождественного
+ нуля.
+ Точка 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, в которой решение уравнения обращается в ноль, бьудем называть нулем нетривиал
+ьного решения.
+ Нас будет интересовать совйства нулей решений уравнения (1).
+ Заменой переменных в уравнении (1) можно убрать слогаемое с первой производной,
+ покажем это:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=u\left(x\right)z\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ --- новая неизвестная функция, a 
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ выберем из условия, чтобы в новом уравнениии небыло первой производной.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u\ppr z+zu\pr z\pr+uz\ppr+a_{1}\left(u\pr z+uz\pr\right)+a_{2}uz=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $uz\ppr+\left(2u\pr+a_{1}u\right)z\pr+z\left(u\ppr+a_{1}u\pr+a_{2}u\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В качестве 
+\begin_inset Formula $u$
+\end_inset
+
+ возьмем решение уравнения:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{du}{dx} & = & -\df{a_{1}}2u\\
+\oui{x_{0}}x\df{du}u & = & -\oui{x_{0}}x\df{a_{1}}2dx\\
+\ln\left|u\right| & = & \ln c-\oui{x_{0}}x\df{a_{1}\left(\xi\right)}2d\xi\\
+u\left(x\right) & = & \exp\left(-\oui{x_{0}}x\df{a_{1}\left(\xi\right)}2d\xi\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+z\ppr+qz=0\label{eq:d2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(x\right)=a_{2}-\df{a_{1}^{2}}2-\df{a_{1}^{1}}2+\df{a^{2}}4=a_{2}-\df{a_{1}^{2}}4-\df{a_{1}^{1}}2$
+\end_inset
+
+ --- неизвестная зананная непрерывная функция на 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как нули у функции 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ одинаковые, то в дальнейше будем рассматривать вида (2).
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Всякий 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ любого нетривиального решения уравнения (2) является простым, тоесть если
+ 
+\begin_inset Formula $z\left(x_{0}\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $z\pr\left(x_{0}\right)\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Предположим, что 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ --- кратный ноль решения уравнения (2), тоесть 
+\begin_inset Formula $z\left(x_{0}\right)=z\pr\left(x\right)=0$
+\end_inset
+
+.
+ Тогда в силу теоремы о существовании и единственности, будет следовать,
+ что 
+\begin_inset Formula $z\left(x\right)\equiv0$
+\end_inset
+
+.
+ А это противоречит условиям.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Нули любого нетривиального регшения уравнения (2) не имеют конечной предльной
+ точки на множестве 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Допустим противное.
+ Пусть существует последовательность 
+\begin_inset Formula $x_{1},x_{2},\tr$
+\end_inset
+
+, предел которой 
+\begin_inset Formula $\ul{k\st\b}x_{k}=x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(x_{k}\right)=0$
+\end_inset
+
+.
+ Тогда в силу непрерывной деференцируемости 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ получаем:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{k\st\b}z\left(x_{k}\right)=z\left(x_{0}\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $z\pr\left(x_{0}\right)=\ul{k\st+\b}\df{z\left(x_{k}\right)-z\left(x_{0}\right)}{x_{k}-x_{0}}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+В силу теоремы и существавании и единственности, следует что 
+\begin_inset Formula $z\left(x\right)\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 1.
+ 
+\emph default
+Любое нтривиальное решение уравнгения (2) имеет на каждом ограниченом промежутке
+ 
+\begin_inset Formula $\left[\alpha;\beta\right]\vkl I$
+\end_inset
+
+ не более конечного числа нулей.
+\end_layout
+
+\begin_layout Proof
+Допустим противное, что на 
+\begin_inset Formula $\left[\alpha;\beta\right]\vkl I$
+\end_inset
+
+ существует 
+\begin_inset Formula $x_{1},x_{2},\tr$
+\end_inset
+
+ , такие что 
+\begin_inset Formula $z\left(x_{k}\right)=0$
+\end_inset
+
+.
+ Тогда в силу теоремы Больцана-Вейштрасса найдется сходящаяся подпоследовательно
+сть подпоследовательность 
+\begin_inset Formula $x_{n},x_{n_{2}},\tr\st x_{0}\in\left[\alpha;\beta\right]$
+\end_inset
+
+, что протеворечит 
+\emph on
+Лемме №2.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Штурма
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Колоквиум
 \end_layout
