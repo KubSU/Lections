@@ -9133,7 +9133,1105 @@ status open
 \end_layout
 
 \begin_layout Part
-Термодинамика
+Термодинамика и молекулярная физика.
+\end_layout
+
+\begin_layout Section*
+Введение
+\end_layout
+
+\begin_layout Definition
+Термодинамика и молекулярная физика --- разделы физики в которых изучаются
+ макроскопические процессы в телах, связанные с огромным числом содержащихся
+ в телах атомов и молекул.
+\end_layout
+
+\begin_layout Standard
+Молекулярная физика основана на статистическом методе.
+ Изучает: строение и свойства вещества исходя из молекулярно-кинетических
+ представлений, основанных на том, что тела состоят из молекул, которые
+ находятся в непрерывном, хаотическом движении.
+\end_layout
+
+\begin_layout Definition
+Молекула --- мельчайшая частица вещества, сохраняющая все его основные химически
+е свойства.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Термодинамика --- раздел физики изучающий общие свойства микроскопических
+ тел, находящихся в состоянии термодинамического равновесия и процессы перехода
+ между ними.
+\end_layout
+
+\begin_layout Standard
+Термодинамика имеет дело с термодинамической системой.
+ Главным в термодинамике является определение ее состояния.
+ Состояние задается термодинамическими параметрами --- совокупностью физических
+ величин, характеризующих свойство термодинамической системы.
+\end_layout
+
+\begin_layout Standard
+Параметры: давление (P), объем (V), температура (T).
+ В некоторых случаях используют плотность (
+\begin_inset Formula $\rho$
+\end_inset
+
+) вместо объема.
+ 
+\end_layout
+
+\begin_layout Definition
+Равновесное состояние --- состояние при котором все параметры системы имеют
+ определенные значения, остающиеся при неизменных внешних условиях постоянными
+ сколь угодно долго.
+\end_layout
+
+\begin_layout Standard
+Любой процесс прехода из одного состояния в другое, связан с нарушением
+ равновесия системы.
+\end_layout
+
+\begin_layout Subsection*
+Темпреатура
+\end_layout
+
+\begin_layout Standard
+Если 2 тела при соприкосновении не обмениваются энергией путем теплопередачи
+ (находятся в состоянии термодинамического равновесия), то этим телам присваивае
+тся одинаковая температура.
+ Если же обмен происходит, то тело, которое отдает энергию имеет температуру
+ большую, чем то, которое принимает.
+\end_layout
+
+\begin_layout Standard
+2 шкалы измерения: 
+\end_layout
+
+\begin_layout Itemize
+Цельсия --- международная практическая шкала.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+0C --- температура замерзания чистой воды.
+\end_layout
+
+\begin_layout Standard
+100C --- температура кипения чистой воды.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Кельвина
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+1C = 1K
+\end_layout
+
+\begin_layout Standard
+Реферная точка --- точка в которой пар, жидкость и тело воды находятся в
+ равновесии (это происходит при очень низком давлении).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $tC=T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=tC+273.15$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Молекулярно кинетическая теория
+\end_layout
+
+\begin_layout Paragraph*
+Основывается на 3-х базовых положениях:
+\end_layout
+
+\begin_layout Itemize
+Всякое тело в природе находящееся в твердом, жидком или газообразном состоянии
+ состоит из огромного числа молекул, находящихся на некотором расстоянии
+ друг от друга.
+\end_layout
+
+\begin_layout Itemize
+Молекулы всех тел находятся в постоянном, непрерывном и беспорядочном движении
+ (тепловое движение).
+\end_layout
+
+\begin_layout Itemize
+Молекулы разных веществ по разному взаимодействуют между собой.
+ Взаимодействие существенно зависит от типа молекул и расстояния между ними.
+\end_layout
+
+\begin_layout Standard
+Любая молекула обладает кинетической энергией (
+\begin_inset Formula $\varepsilon_{\text{кин}}$
+\end_inset
+
+) и потенциальной (
+\begin_inset Formula $u_{\text{пот}}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Молекулярный (атомный) вес вещества 
+\begin_inset Formula $[M]$
+\end_inset
+
+ --- отношение массы молекулы этого вещества к 
+\begin_inset Formula $\frac{1}{12}$
+\end_inset
+
+ массы молекулы углерода 
+\begin_inset Formula $C^{12}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Кило-моль (в граммах --- моль) --- количество данного вещества, масса которого
+ выраженая в килограммах численно равна молекулярному весу.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Молярная масса --- масса 1 моль.
+\end_layout
+
+\begin_layout Subsection
+Закон Авогадро
+\end_layout
+
+\begin_layout Claim
+Кмоли всех веществ содержат одно и то-же число молекул.
+\end_layout
+
+\begin_layout Definition
+Число Авогадро: 
+\begin_inset Formula $N_{A}=6,023\um10^{26}\frac{1}{\text{Кмоль}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+В равных объемах газов при равных темпреатурах и давлениях содержится равное
+ число молекул.
+ В частности Кмоль любого газа при нормальном давлении (
+\begin_inset Formula $1.01\um10^{5}\text{Па}$
+\end_inset
+
+) и нормальной температуре (
+\begin_inset Formula $273.15K$
+\end_inset
+
+) занимает объем 
+\begin_inset Formula $22,4\text{м}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Идеальный газ
+\end_layout
+
+\begin_layout Itemize
+Собственный объем молекул газа много меньше объема занимаемого сосуда.
+\end_layout
+
+\begin_layout Itemize
+Между молекулами газа отсутствуют силы взаимодействия.
+ 
+\begin_inset Formula $u_{\text{вз}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Столкновения молекул газа между собой и со стенками сосуда абсолютно упругие.
+\end_layout
+
+\begin_layout Standard
+Функция состояния: 
+\begin_inset Formula $F\left(P,\, V,\, T\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Опытные газовые законы
+\end_layout
+
+\begin_layout Subsubsection
+Закон Бойля--Мариота
+\end_layout
+
+\begin_layout Standard
+Для данной массы газа при постоянной температуре произведение давления газа
+ на его объем --- величина постоянная.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\um V=const
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 26
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Законы Гей-Люссака
+\end_layout
+
+\begin_layout Paragraph
+Первый закон
+\end_layout
+
+\begin_layout Standard
+Объем данной массы газа при постоянном давлении изменяется линейно с температуро
+й.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=V_{0}(1+\alpha t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 27
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Второй закон
+\end_layout
+
+\begin_layout Standard
+Давление данной массы газа при постоянном объеме меняется линейно с температурой.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset Formula 
+\[
+P=P_{0}\left(1+\alpha t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $\alpha=\df 1{273.15}=\df 1{T_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 28
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Процесс протекающий при постоянном объеме называется изохорическим, соответствую
+щий график --- изохорой.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Процесс протекающий при постоянном давлении называется изобарическим, соответств
+ующий график --- изобарой.
+\end_layout
+
+\begin_layout Standard
+Законы Бойля--Мариота и Гей-Люсака можно объединить, что сначала сделал
+ Клайперон, а затем улучшил Менделеев.
+\end_layout
+
+\begin_layout Subsubsection
+Закон Менделеева -- Клайперона (Закон состояния идеального газа)
+\end_layout
+
+\begin_layout Standard
+Часто для изображение процессов термодинамики применяют PV-диаграмму.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 29
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{1}V_{1}=P'V_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Согласно закону Гей-Люсака, получим 
+\begin_inset Formula $\df{P'}{T_{1}}=\df{P_{2}}{T_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{P_{1}V_{1}}{T_{1}V_{2}}=\df{P_{2}}{T_{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{P_{1}V_{1}}{T_{1}}=\df{P_{2}V_{2}}{T_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим закон Клаперона --- 
+\begin_inset Formula $\df{PV}T=B$
+\end_inset
+
+ --- 
+\begin_inset Formula $B=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Закон справедлив для любого идеального газа, но для каждого газа константа
+ своя.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{m}$
+\end_inset
+
+ --- молярный обьем --- обьем одного моля.
+\end_layout
+
+\begin_layout Standard
+Так как количество молекул не меняется в одном моле, поэтому 
+\begin_inset Formula $V_{m}$
+\end_inset
+
+ должно быть одинакого для каждого газа.
+\end_layout
+
+\begin_layout Standard
+Менделеев улучшил закон Клаперона, и получил 
+\begin_inset Formula $\df{PV_{m}}T=R$
+\end_inset
+
+ или 
+\begin_inset Formula $PV_{m}=RT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu$
+\end_inset
+
+ --- количество вещества
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{m}=\df V{\nu}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu=\df m{\mu}$
+\end_inset
+
+, 
+\begin_inset Formula $\mu$
+\end_inset
+
+ --- молярная масса
+\end_layout
+
+\begin_layout Standard
+Когда мы все это подставим, то получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PV=\df m{\mu}RT
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $R=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как у нас все газы занимают одно количество обьема под один моль, то
+ константа 
+\begin_inset Formula $R$
+\end_inset
+
+ одинаковая для всех шазов.
+ Мы можем ее вычислить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{0}V_{m0}=RT_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\df{P_{0}V_{m0}}{T_{0}}=\df{1.01\um10^{5}\um22.4}{275.15}=8.31\um10^{3}$
+\end_inset
+
+ --- универсальная газовая постоянная
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[R\right]=\df{\df{\text{Ньютон}}{\text{метр}^{2}}\um\df{\text{метр}^{3}}{\text{Кмоль}}}{\text{Кельвин}}=\df{\text{Ждоуль}}{\text{Кмоль}\um\text{Кельвин}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Основное уравнение молекулярно--кинетической теории газа
+\end_layout
+
+\begin_layout Standard
+Давление в сосуде --- удары молекул о стенки сосуда.
+ Ударение в деальном газе --- абсолютно усругие.
+ Энергия у молекулы не меняется, а меняется импульс и скорость.
+ Средняя (кинетическая) энергия в сосуде постоянна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon_{i}=\df 12m_{i}v_{i}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать через средние величины, сложим и разделим на число молекул.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N$
+\end_inset
+
+ --- общее число молекул газа
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \text{Идентификатор}\right\rangle $
+\end_inset
+
+ --- Так будем обозначать среднее значение идентификотора.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N=\df m{2N}\ous{i=1}Nv_{i}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle v^{2}\right\rangle =\df{\ous{i=1}Nv_{i}^{2}}N$
+\end_inset
+
+ --- средний квадрат скорости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{\left\langle v^{2}\right\rangle }=v_{\text{ср кв}}$
+\end_inset
+
+ --- средне--квадратичная скорость
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle v\right\rangle =\df 1N\ous{i=1}N\left|v_{i}\right|$
+\end_inset
+
+ --- средняя скорость
+\end_layout
+
+\begin_layout Standard
+Если сосуд не двигается, то 
+\begin_inset Formula $\left\langle \v v\right\rangle =\v 0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle v^{2}\right\rangle >\left\langle v\right\rangle ^{2}$
+\end_inset
+
+, или равно при 
+\begin_inset Formula $T=0\, K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Переходим к основному уравнению молекулярно--кинетической теории.
+\end_layout
+
+\begin_layout Standard
+Будем считать что молекулю двигаются только паралельно осям координат.
+ Будем рассматривать изотропное пространство.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 30
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 13N$
+\end_inset
+
+ --- количество молекул, двигающихся паралельно одной из осей
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 16N$
+\end_inset
+
+ --- двигаются в одну сторону паралельно одной оси
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v$
+\end_inset
+
+ --- скорость молекулы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $mv$
+\end_inset
+
+ --- импульс
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D J'=\left(-mv\right)-mv=-2mv$
+\end_inset
+
+ --- импульс при стодкновении молекулы 
+\end_layout
+
+\begin_layout Standard
+Импульс стенки возрастает на 
+\begin_inset Formula $2mv$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D t$
+\end_inset
+
+ --- промежуток времени
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D S$
+\end_inset
+
+ --- площадь стенки
+\end_layout
+
+\begin_layout Standard
+Молекулы, которые могут удариться о стенку находлятся в обьеме 
+\begin_inset Formula $v\um\D t\um\D S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Внесем еще 1ну величину, 
+\begin_inset Formula $n$
+\end_inset
+
+ --- концентрация молекул, 
+\begin_inset Formula $n=\df NV$
+\end_inset
+
+ --- число молекул в еденице обьема
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N$
+\end_inset
+
+ --- число молекул, которые могут удариться об стенку
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N=\df 16v\um\D t\um\D S\um n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+За время 
+\begin_inset Formula $\D t$
+\end_inset
+
+ стенка получает импульс 
+\begin_inset Formula $\D J=\df 16\um v\um\D t\um\D S\um n\um2\um m\um v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вспомним механику: 
+\begin_inset Formula $\df{dJ}{dt}=F$
+\end_inset
+
+ --- переходим к силе через дифференцирование
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\D J}{\D t}=F$
+\end_inset
+
+ --- средняя сила, действующая на стенку ха время 
+\begin_inset Formula $\D t$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D J=F\D t$
+\end_inset
+
+ --- средний импульс стенки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=\df 13\um v^{2}\um n\um m\um\D S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+От силы перейдем к давлению.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P=\df F{\D S}=\df 13\um v^{2}\um m\um n=\df 23\df{\left\langle v^{2}\right\rangle m}2n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\left\langle v^{2}\right\rangle m}2$
+\end_inset
+
+ --- средняя энергия одной молекулы
+\end_layout
+
+\begin_layout Definition
+Oсновное уравнение молекулярно--кинетической теории.
+ (Только для одноатомного газа, или у газа, где отсутствует вращение)
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+P=\df 23n\left\langle \varepsilon\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Точный статистический вывод дает тот же самый результат.
+\end_layout
+
+\begin_layout Standard
+Сделаем несколько преобразований.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=\df 23nV\left\langle \varepsilon\right\rangle =\df 23N\left\langle \epsilon\right\rangle =\df 23E$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ --- полная энергия идеального газа
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=\df 23E$
+\end_inset
+
+ --- на уровнеобщего состояния газа целиком
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df m{\mu}RN=\df 23E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu RT=\df 23E$
+\end_inset
+
+ --- по этой формуле измеряют температуру космоса
+\end_layout
+
+\begin_layout Standard
+Для одного киломоля мы получим вод такую формулу 
+\begin_inset Formula $PV_{m}=\df 23N_{A}\left\langle \varepsilon\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $TR=\df 23N_{A}\left\langle \varepsilon\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle \varepsilon\right\rangle =\df 32kT
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=\df R{N_{A}}=1.38\um10^{-23}\,\df{\text{Дж}}K$
+\end_inset
+
+ --- постоянная Больцмана
+\end_layout
+
+\begin_layout Standard
+Коофицент 
+\begin_inset Formula $\df 32$
+\end_inset
+
+ характерен только для одноатомных молекул или для тех молекул, у которых
+ отсутствует вращательное движение.
+\end_layout
+
+\begin_layout Standard
+Подставим в основное уравнение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=n\um k\um T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эта формула помогает перейти от газа к смеси газов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ --- концентрация 
+\begin_inset Formula $i$
+\end_inset
+
+-тог компонены газа
+\end_layout
+
+\begin_layout Standard
+Пусть смесь состоит из смеси газов, 
+\begin_inset Formula $s$
+\end_inset
+
+ газов смешали.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=\ous{i=1}sn_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P=kT\ous{i=1}sn_{i}=\ous{i=1}skTn_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Средняя энергия для любого газа не зависит от типа молекул.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{i}=n_{i}kT$
+\end_inset
+
+ --- парциальное давление --- давление 
+\begin_inset Formula $i$
+\end_inset
+
+-ой компоненты газа, при условии, что остальные компоненты отсутствуют.
+ В результате получим закон Дальтона:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P=\ous{i=1}sP_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Распределение молекул газа по скоростям
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{m\left\langle v^{2}\right\rangle }2=\df 32kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{\text{ср кв}}=\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=\df R{N_{A}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N_{A}m=\mu$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{\text{ср кв}}=\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}=\sqrt{\df{3RT}{\mu}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возьмем шкалу скоростей 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 31
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N\left(v_{i}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(v_{i};v_{i}+\D v\right)$
+\end_inset
+
+ --- число малекул в диапозоне
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\left(v_{i}\right)=\df{\D N\left(v_{i}\right)}{\D v}$
+\end_inset
+
+ --- плотность распределение молекл по скорости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(v_{i}\right)=\df{\D N\left(v_{i}\right)}{N\um\D v}$
+\end_inset
+
+ --- относительное --- распределение молекул газа по скорости --- функция
+ распределения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(v\right)=\df 1N\ul{\D v\to0}\df{\D N\left(v\right)}{\D v}$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
