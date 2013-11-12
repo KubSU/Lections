@@ -20976,10 +20976,14 @@ Hbc 87
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dxdy=\ul{\begin{array}{c}
+\begin_inset Formula 
+\[
+\un{\iint}Sf\left(x,y,z\right)dxdy=\ul{\begin{array}{c}
 \lambda\st0\\
 n\st\b
-\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}$
+\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}
+\]
+
 \end_inset
 
 
@@ -20990,20 +20994,28 @@ n\st\b
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dxdz=\ul{\begin{array}{c}
+\begin_inset Formula 
+\[
+\un{\iint}Sf\left(x,y,z\right)dxdz=\ul{\begin{array}{c}
 \lambda\st0\\
 n\st\b
-\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xz}$
+\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xz}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\un{\iint}Sf\left(x,y,z\right)dydz=\ul{\begin{array}{c}
+\begin_inset Formula 
+\[
+\un{\iint}Sf\left(x,y,z\right)dydz=\ul{\begin{array}{c}
 \lambda\st0\\
 n\st\b
-\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{yz}$
+\end{array}}\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{yz}
+\]
+
 \end_inset
 
 
@@ -21092,6 +21104,673 @@ n\st\b
 \end_deeper
 \begin_layout --Separator--
 
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление ПИВР
+\end_layout
+
+\begin_layout Standard
+Сводится к вычислению двойного интегралаю
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $R\left(x,y,z\right)$
+\end_inset
+
+ определена на поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+, заданой явно 
+\begin_inset Formula $z=\varphi\left(x,y\right)$
+\end_inset
+
+.
+ Причем 
+\begin_inset Formula $\left(x;y\right)\vkl D_{x,y}$
+\end_inset
+
+ --- проэкция 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $XoY$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 88
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выберем ту сторону поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+, которая определяется условием
+\begin_inset Formula $\gamma<\df{\pi}2$
+\end_inset
+
+, где 
+\begin_inset Formula $\gamma=\left(\hat{\v n,\v k}\right)$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\cos\gamma>0$
+\end_inset
+
+, сдедовательно при разбиении самой поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ на части 
+\begin_inset Formula $S_{i},\ i=\overline{1,n}$
+\end_inset
+
+ их проэкции 
+\begin_inset Formula $\D_{i}^{xy}$
+\end_inset
+
+ берутся со знаком 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Следовательно интегральноая сумма:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma_{n} & = & \ous{i=1}nR\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}=\\
+ & = & \ous{i=1}nR\left(x_{i},y_{i},\varphi\left(x_{i},y_{i}\right)\right)\D_{i}^{xy}
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это интегральная сумма для двойного интеграла.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}nR\left(x_{i},y_{i},\varphi\left(x_{i},y_{i}\right)\right)\D_{i}^{xy}\ov{\st}{n\st\b,\lambda\st0}\un{\iint}{D_{xy}}R\left(x,y,\varphi\left(x,y\right)\right)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=1}nR\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}=\un{\iiint}{}R\left(x,y,z\right)d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\cos\gamma<0$
+\end_inset
+
+, то в равенстве получином перед интегралом будет знак 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\un{\iint}SPdydz+Qdxdz+Rdxdy & = & \left\{ \begin{array}{c}
+Rdxdy\ -\ \alpha\\
+Qdxdz\ -\ \beta\\
+Rdxdy\ -\ \gamma
+\end{array}\right\} =\label{eq:33}\\
+ & = & \pm\un{\iint}{D_{yz}}P\left(\chi\left(y,z\right),y,z\right)dydz\pm\nonumber \\
+ & \pm & \un{\iint}{D_{xz}}Q\left(x,\psi\left(x,z\right),z\right)dxdz\pm\\
+ & \pm & \un{\iint}{D_{xy}}R\left(x,y,\varphi\left(x,y\right)\right)dxdy
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Причем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{yz}:"+"\ -\ \cos\alpha>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{yz}:"-"\ -\ \cos\alpha<0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{xz}:"+"\ -\ \cos\beta>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{xz}:"-"\ -\ \cos\beta<0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{xy}:"+"\ -\ \cos\beta>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{xy}:"-"\ -\ \cos\beta<0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\pm dxdy=\cos\gamma dS$
+\end_inset
+
+, 
+\begin_inset Formula $\pm dxdz=\cos\beta dS$
+\end_inset
+
+, 
+\begin_inset Formula $\pm dy=\cos\alpha dS$
+\end_inset
+
+, то можно записать другую формулу:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\iint}SPdydz+Qdxdz+Rdxdy=\un{\iint}S\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Вычислить: 
+\begin_inset Formula $I=\un{\iint}S-xdydz+zdxdz+5dxdy$
+\end_inset
+
+, где 
+\begin_inset Formula $S$
+\end_inset
+
+ --- верхняя сторона поверхностей: 
+\begin_inset Formula $2x-3y+z=6$
+\end_inset
+
+, причем 
+\begin_inset Formula $\left(x\br0,y\mr0,z\br0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+рис 89
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\cos\gamma>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\cos\beta<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\cos\alpha>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $n=\pm\left(2,-3,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+По формуле (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:33"
+
+\end_inset
+
+) получим:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{3y}2-\df z2+3=\chi\left(y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+I & = & \un{\iint}{D_{yz}}\left(-\df{3y}2+\df z2-3\right)dydz-\un{\iint}{D_{xz}}zdxdz+5\un{\iint}{D_{xy}}dxdy=\\
+ & = & \oui{-2}0dy\oui 0{6+3y}\left(-\df{3y}2+\df z2-3\right)\um dz-\oui 03dx\oui 0{6-2x}z\um dz+5\um\df 12\um2\um3=\\
+ & = & -9
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Формула Гасса--Острогацкого
+\end_layout
+
+\begin_layout Standard
+Связь между ПИВР на замкнутой поверхности и тройным интегралом по обьему,
+ ограниченному этой поверхностью, устанавливает следующая таорема.
+\end_layout
+
+\begin_layout Theorem
+Если функции 
+\begin_inset Formula $P\left(x,y,z\right),\, Q\left(x,y,z\right),\, R\left(x,y,z\right)$
+\end_inset
+
+ --- непрерывны вместе с часными производными первого порядка в области
+ 
+\begin_inset Formula $V\vkl E^{3}$
+\end_inset
+
+, то:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\begin{equation}
+\un{\iiint}V\left(\df{\dd P}{\dd x}+\df{\dd Q}{\dd y}+\df{\dd R}{\dd z}\right)dxdydz=\un{\oiint}SPdydz+Qdxdz+Rdxdy\label{eq:34}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Где поверхностный интеграл берется по внешней стороне поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим случай, когда поверхность 
+\begin_inset Formula $S=S_{1}\ob S_{2}\ob S_{3}$
+\end_inset
+
+, где 
+\begin_inset Formula $S_{1}:\, z=z_{1}\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $S_{2}:\, z=z_{2}\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+--- цилиндрическая поверхность с образующими 
+\begin_inset Formula $||Oz$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 90
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula 
+\begin{eqnarray}
+\un{\iiint}V\df{\dd R}{\dd z}dxdydz & = & \un{\iint}Ddxdy\oui{r_{1}(x,y)}{r_{2}(x,y)}\df{\dd R}{\dd z}dz=\nonumber \\
+ & = & \un{\iint}DR\left(x,y,z_{2}\left(x,y\right)\right)dxdy-\un{\iint}DR\left(x,y,z_{1}\left(x,y\right)\right)dxdy=\nonumber \\
+ & = & \un{\iint}{S_{2}}R\left(x,y,z\right)dxdy+\un{\iint}{S_{1}}R\left(x,y,z\right)dxdy+\un{\iint}{S_{3}}R\left(x,y,z\right)dxdy=\nonumber \\
+ & = & \un{\oiint}SR\left(x,y,z\right)dxdy\label{eq:35}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим, что равенство (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:35"
+
+\end_inset
+
+) справедливо для тел 
+\begin_inset Formula $V$
+\end_inset
+
+ сложной формы.
+ При помощи разбиения 
+\begin_inset Formula $V=V_{1}\ob V_{2}\ob\tr\ob V_{n}$
+\end_inset
+
+ плоскостями, параллельными координатным плоскостям.
+ При этом повенрхностные интегралы по сторонам сечений взаимно сокращаются.
+\end_layout
+
+\begin_layout Example
+Вычислить:
+\begin_inset Formula 
+\[
+I=\un{\oiint}S-xdydz+zdxdz+5dxdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+где S --- внешняя сторона пирамиды:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\begin{cases}
+2x-3y+z & =6\\
+x & =0\\
+y & =0\\
+z & =0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\un{\iiint}V\left(P'_{x}+Q'_{y}+R'_{z}\right)dxdydz=\un{\oiint}SPdydz+Qdxdz+Rdxdy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{x}\pr+Q_{y}\pr+R_{z}\pr=\left\{ \begin{array}{c}
+P=-x\\
+Q=-z\\
+R=5
+\end{array}\right\} $
+\end_inset
+
+=-1 
+\end_layout
+
+\begin_layout Subsection
+Элементы теории поля 
+\end_layout
+
+\begin_layout Subsubsection
+Скалярные поля и их осноыные характеристики
+\end_layout
+
+\begin_layout Definition
+Станционарные скалярные поля называются пространством 
+\begin_inset Formula $\R^{3}$
+\end_inset
+
+ или область 
+\begin_inset Formula $D\vkl\R^{3}$
+\end_inset
+
+ в которой определена скалярная числовая функция.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $u=u\left(M\right)=u\left(x_{1},x_{2},x_{3}\right)=u\left(\v r\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Где 
+\begin_inset Formula $\v r=x_{1}\v i+x_{2}\v j+x_{3}\v k$
+\end_inset
+
+ --- ридиус-вектор точки 
+\begin_inset Formula $M\left(x_{1};x_{2}lx_{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $u\left(M\right)$
+\end_inset
+
+ называется потенциалом скалярного поля
+\end_layout
+
+\begin_layout Standard
+Осноыные характеристики скалярных полей: поверхности (лиинии) уровня, производна
+я по направлению, градиент.
+\end_layout
+
+\begin_layout Subsubsection
+Векторные поля и характеристики 
+\end_layout
+
+\begin_layout Definition
+Стационарным векторным полем называется пространство 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+ или его часть 
+\begin_inset Formula $D\vkl\R^{m}$
+\end_inset
+
+, в каждой точке которого определена вектор-функция:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\v a=\v a\left(M\right)=\v a\left(x_{1},x_{2},\tr,x_{m}\right)=\v a\left(\v r\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Где 
+\begin_inset Formula $\v r$
+\end_inset
+
+ --- радиус вектор точки 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Примеры векторных полей:
+\end_layout
+
+\begin_layout Enumerate
+Поле скоростей движущейся жидкости
+\end_layout
+
+\begin_layout Enumerate
+Гравитационное поле
+\end_layout
+
+\begin_layout Enumerate
+Электростатическое поле
+\end_layout
+
+\begin_layout Enumerate
+Поле градиентов скалярного поля
+\end_layout
+
+\begin_layout Enumerate
+Магнитное поле
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $\R^{3}$
+\end_inset
+
+ векторное поле определяется так
+\begin_inset Formula $\v a=\v a\left(M\right)=P\left(x,y,z\right)\v i+Q\left(x,y,z\right)\v j+R\left(x,y,z\right)\v k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если функции 
+\begin_inset Formula $P,\, Q,\, R$
+\end_inset
+
+ непрерывны или дифференцируемы,то поле 
+\begin_inset Formula $\v a$
+\end_inset
+
+ называется непрерывным или дифференцируемым.
+\end_layout
+
+\begin_layout Standard
+Основные характеристики векторных полей: векторные линии, поток, дивергенция,
+ циркуляция, ротор.
+\end_layout
+
+\begin_layout Standard
+Примеры векторных линий:
+\end_layout
+
+\begin_layout Enumerate
+Линии тока движущейся жидкости
+\end_layout
+
+\begin_layout Enumerate
+Силовые линии в электро-статическом поле
+\end_layout
+
+\begin_layout Enumerate
+В магнитном поле это линии, соединяющие полюса
+\end_layout
+
+\begin_layout Standard
+Пуст 
+\begin_inset Formula $\v a\left(\v r\right)$
+\end_inset
+
+ --- векторное поле в 
+\begin_inset Formula $V\vkl\R^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Векторной трубкой называется поверхность, образованная векторными линиями
+ поля 
+\begin_inset Formula $\v a\left(\v r\right)$
+\end_inset
+
+, проходящими через точки некоторой замкнутой кривой, не являющейся векторной
+ линией.
 \end_layout
 
 \begin_layout Standard
