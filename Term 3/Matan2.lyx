@@ -21266,42 +21266,42 @@ Rdxdy\ -\ \gamma
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D_{yz}:"+"\ -\ \cos\alpha>0$
+\begin_inset Formula $D_{yz}:\ \text{«+»}\ -\ \cos\alpha>0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D_{yz}:"-"\ -\ \cos\alpha<0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D_{xz}:"+"\ -\ \cos\beta>0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D_{xz}:"-"\ -\ \cos\beta<0$
+\begin_inset Formula $D_{yz}:\ \text{«-»}\ -\ \cos\alpha<0$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D_{xy}:"+"\ -\ \cos\beta>0$
+\begin_inset Formula $D_{xz}:\ \text{«+»}\ -\ \cos\beta>0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D_{xy}:"-"\ -\ \cos\beta<0$
+\begin_inset Formula $D_{xz}:\ \text{«-»}\ -\ \cos\beta<0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{xy}:\ \text{«+»}\ -\ \cos\beta>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{xy}:\ \text{«-»}\ -\ \cos\beta<0$
 \end_inset
 
  
