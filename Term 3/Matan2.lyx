@@ -21774,6 +21774,752 @@ R=5
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+14 ноября 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Поток векторного поля
+\end_layout
+
+\begin_layout Standard
+Пусть векторное поле 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ в области 
+\begin_inset Formula $V\vkl\R^{3}$
+\end_inset
+
+ определяет поле скоростей движущейся несжимаемой жидкости и 
+\begin_inset Formula $S$
+\end_inset
+
+ --- двустаронняя поверхность в 
+\begin_inset Formula $V$
+\end_inset
+
+, незамкнутая.
+ Вычислим величину 
+\begin_inset Formula $W$
+\end_inset
+
+ --- количество жидкости, протекающей за еденицу времени через поверхность
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ в направлении нормали 
+\begin_inset Formula $\v n$
+\end_inset
+
+ (
+\begin_inset Formula $\v n$
+\end_inset
+
+ --- еденичный вектор, перпендикулярный к 
+\begin_inset Formula $S$
+\end_inset
+
+ и определяющий выбранную сторону 
+\begin_inset Formula $S$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Разобьем поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+ на участки 
+\begin_inset Formula $\left\{ S_{i}\right\} ,\ i=\overline{1,n}$
+\end_inset
+
+, площади 
+\begin_inset Formula $\D S_{i}$
+\end_inset
+
+.
+ Выберем произвольно точку 
+\begin_inset Formula $M_{i}\left(x_{i};y_{i};z_{i}\right)\in S_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $i=\overline{1,n}$
+\end_inset
+
+ и будем считать площадку 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ плоской, 
+\begin_inset Formula $\v a\left(M\right)=\v a\left(M_{i}\right),\ \forall M\in S_{i}$
+\end_inset
+
+и 
+\begin_inset Formula $\v n\left(M\right)=\v n\left(M_{i}\right),\ \forall M\in S_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda=\umax i\lambda_{i}=\umax i\, diam\, S_{i}$
+\end_inset
+
+.
+ Тогда количество жидкости, протекающей через сторону поверхности 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+, определяемой 
+\begin_inset Formula $\v n\left(M_{i}\right)$
+\end_inset
+
+, приближенно равно 
+\begin_inset Formula $\D W_{i}$
+\end_inset
+
+ --- обьему цилиндра с основанием 
+\begin_inset Formula $\D S_{i}$
+\end_inset
+
+, образующими, равными длине вектора 
+\begin_inset Formula $\v a\left(M_{i}\right)$
+\end_inset
+
+ с высотой 
+\begin_inset Formula $H_{i}=\left|\v a\right|\um\cos\left(\v n,\v a\right)=\left(\v a,\v n\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D W_{i}\approx\text{проэкция}_{\v n\left(M_{i}\right)}\v a\left(M_{i}\right)=\left(\v a\left(M_{i}\right),\v n\left(M_{i}\right)\right)\um\D S_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Весь поток 
+\begin_inset Formula $W\approx\ous{i=1}n\left(\v a\left(M_{i}\right),\v n\left(M_{i}\right)\right)\um\D S_{i}$
+\end_inset
+
+ --- интегрального сумма для ПИПР.
+\end_layout
+
+\begin_layout Standard
+В пределе при 
+\begin_inset Formula $\lambda\st0,\ n\st\b$
+\end_inset
+
+ получим 
+\begin_inset Formula 
+\begin{eqnarray*}
+W & = & \un{\iint}S\left(\v a,\v n\right)dS=\\
+ & = & \left\{ \begin{array}{c}
+\v a=P\v i+Q\v j+R\v k\\
+\v n=\cos\alpha\v i+\cos\beta\v j+\cos\gamma\v k
+\end{array}\right\} =\\
+ & = & \un{\iint}S\left(P\cos\alpha+Q\cos\beta+R\cos\beta\right)=\\
+ & = & \left\{ \begin{array}{c}
+\cos\alpha dS=dydz\\
+\cos\beta dS=dxdz\\
+\cos\gamma dS=dxdy
+\end{array}\right\} =\\
+ & = & \un{\iint}SPdydz+Qdxdz+Rdxdy
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Потоком векторного поля 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ через выбранную сторону поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ называется интеграл 
+\begin_inset Formula $\Pi=\un{\iint}S\left(\v a\left(M\right),\v n\left(M\right)\right)dS$
+\end_inset
+
+, где 
+\begin_inset Formula $\v n\left(M\right)$
+\end_inset
+
+ --- нормальный вектор к 
+\begin_inset Formula $S$
+\end_inset
+
+, ориентированый в соответствии с выбранной стораной поверхности 
+\end_layout
+
+\begin_layout Subsubsection
+Поток через замкнутую поверхность
+\end_layout
+
+\begin_layout Standard
+Пусть замкнутая поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+ помещена в векторное поле 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 91
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $S=S_{1}\ob S_{2}$
+\end_inset
+
+, причем через 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+жидкость втикает, а через 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ --- вытикает.
+\end_layout
+
+\begin_layout Standard
+Поток 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ жидкости через внешнююсторону поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ равен: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi & = & \Pi_{1}+\Pi_{2}=\un{\oiint}S\left(\v a\left(M\right),\v n\left(M\right)\right)dS=\\
+ & = & \un{\iint}{S_{1}}\left(\v a\left(M\right),\v n\left(M\right)\right)dS+\un{\iint}{S_{2}}\left(\v a\left(M\right),\v n\left(M\right)\right)dS
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что 
+\begin_inset Formula $\Pi_{1}<0$
+\end_inset
+
+, так как 
+\begin_inset Formula $\hat{\left(\v n,\v a\right)}>\df{\pi}2,\ \cos\hat{\left(\v n,\v a\right)}$
+\end_inset
+
+, а 
+\begin_inset Formula $\Pi_{2}>0$
+\end_inset
+
+ так как 
+\begin_inset Formula $\hat{\left(\v n,\v a\right)}<\df{\pi}2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{1}$
+\end_inset
+
+ --- количество жидкости, поступившей в 
+\begin_inset Formula $V$
+\end_inset
+
+, ограниченой
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{2}$
+\end_inset
+
+ --- количество жидкости, выходящей из 
+\begin_inset Formula $V$
+\end_inset
+
+ за еденицу времени
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\Pi>0$
+\end_inset
+
+ то это означает, что в 
+\begin_inset Formula $V$
+\end_inset
+
+ есть источники, а если 
+\begin_inset Formula $\Pi<0$
+\end_inset
+
+, то в если стоки, а если 
+\begin_inset Formula $\Pi=0$
+\end_inset
+
+ то сумарная можность источников равна сумарной мощности приемников.
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление потоков 
+\end_layout
+
+\begin_layout Standard
+Пусть поверхность 
+\begin_inset Formula $S$
+\end_inset
+
+ не замкнута и однозначно проэктируется на плоскость 
+\begin_inset Formula $XoY$
+\end_inset
+
+, 
+\begin_inset Formula $D=D_{xy}$
+\end_inset
+
+ --- проэкция 
+\begin_inset Formula $S$
+\end_inset
+
+ на 
+\begin_inset Formula $XoY$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Поверхность 
+\begin_inset Formula $S\,:\, z=f\left(x,y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $dS=\df{dxdy}{\left|\cos\gamma\right|}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\Pi=\un{\iint}S\left(\v n,\v a\right)dS=\un{\iint}{D_{xy}}\df{\left(\v n,\v a\right)dxdy}{\left|\cos\gamma\right|}$
+\end_inset
+
+ (Надо убитывать при этом что 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Заметим, что уравнение поверхзности 
+\begin_inset Formula $S\,:\, z-f\left(x,y\right)=0$
+\end_inset
+
+ это уравнение эквипотенциальной поверхности (поверхность уровня) функции
+ трех переменных.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=z-f\left(x,y\right)=U\left(x,y,z\right)=0$
+\end_inset
+
+ --- поверхность нулевого уровня.
+\end_layout
+
+\begin_layout Standard
+Так как градиент 
+\begin_inset Formula $U$
+\end_inset
+
+ ортогонален поверхности уровня, а значит поверрхности 
+\begin_inset Formula $S$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v n=\pm\df{\grad U}{\left|\grad U\right|}=\pm\df{U_{x}\pr\v i+U_{y}\pr\v j+U_{z}\pr\v k}{\sqrt{\left(U_{x}\pr\right)^{2}+\left(U_{y}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\gamma=\pm\df{U_{z}\pr}{\sqrt{\left(U_{x}\pr\right)^{2}+\left(U_{y}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}}}=\pm\df 1{\sqrt{\left(U_{x}\pr\right)^{2}+\left(U_{y}\pr\right)^{2}+1}}$
+\end_inset
+
+, где 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+ берется, если 
+\begin_inset Formula $\gamma<\df{\pi}2$
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+ если 
+\begin_inset Formula $\gamma>\df{\pi}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Другие случаи:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi=\un{\iint}{D_{yz}}\df{\left(\v a,\v n\right)dydz}{\left|\cos\alpha\right|}$
+\end_inset
+
+ но 
+\begin_inset Formula $x=\varphi\left(y,z\right)$
+\end_inset
+
+ --- проэетируя на 
+\begin_inset Formula $YoZ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi=\un{\iint}{D_{xz}}\df{\left(\v a,\v n\right)dxdz}{\left|\cos\beta\right|}$
+\end_inset
+
+ но 
+\begin_inset Formula $y=\psi\left(x,z\right)$
+\end_inset
+
+ --- проэетируя на 
+\begin_inset Formula $XoZ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Вычислить поток векторного поля 
+\begin_inset Formula $\v a=y^{2}\v j+z\v k$
+\end_inset
+
+ через часть поверхности 
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+, отвекаемую плоскостью 
+\begin_inset Formula $z=2$
+\end_inset
+
+ в направлении внешней нормали.
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 92
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D_{xy}\,:\, x^{2}+y^{2}\mr2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $U\,:\, z-x^{2}-y^{2}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $U_{x}\pr=-2x,\ U_{y}\pr=-2y,\ U_{z}\pr=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\v n=\pm\df{-2x\v i-2y\v j+\v k}{\sqrt{4x^{2}+4y^{2}+1}}$
+\end_inset
+
+ Так как 
+\begin_inset Formula $\gamma>\df{\pi}2$
+\end_inset
+
+, то выбераем перед 
+\begin_inset Formula $\v n$
+\end_inset
+
+ знак 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\cos\gamma=-\df 1{\sqrt{4x^{2}+4y^{2}+1}}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $dS=\df{dxdy}{\left|\cos\gamma\right|}=\sqrt{4x^{2}+4y^{2}+1}dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi & = & \un{\iint}{D_{xy}}\df{\left(\v a,\v n\right)dxdy}{\left|\cos\gamma\right|}=\un{\iint}{D_{xy}}\df{\left(0+2y^{3}-z\right)}{\sqrt{4x^{2}+4y^{2}+1}}\sqrt{4x^{2}+4y^{2}+1}dxdy=\\
+ & = & \left\{ r,\varphi\right\} =\oui 0{2\pi}d\varphi\oui 0{\sqrt{2}}\left(2r^{3}\sin^{3}-r^{2}\right)rdr=\tr=-2\pi
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Дивергенрция векторного поля
+\end_layout
+
+\begin_layout Standard
+В векторном поле 
+\begin_inset Formula $\v a=\v a\left(M\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M\in V$
+\end_inset
+
+ выберем произвольную точку 
+\begin_inset Formula $M\in\D V\vkl V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\D S$
+\end_inset
+
+ --- граница обьема 
+\begin_inset Formula $\D V$
+\end_inset
+
+, закнутая.
+ Рассмотрим отношение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{\un{\oiint}S\left(\v a,\v n\right)dS}{\D V}\label{eq:36}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Оно называется средним расходом жидкости через 
+\begin_inset Formula $\D S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $\D V\st0$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\D S\st M\right)$
+\end_inset
+
+ получим расход жидкости в точке 
+\begin_inset Formula $M$
+\end_inset
+
+ за еденицу времени.
+\end_layout
+
+\begin_layout Definition
+Дивергенцией векторного поля 
+\begin_inset Formula $\v a$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+ или расходимостью, обозначиаемой 
+\begin_inset Formula $div\,\v a\left(M\right)$
+\end_inset
+
+, называется скалярная величина, равная пределу отношения потока через замкнутую
+ поверхность 
+\begin_inset Formula $\D S$
+\end_inset
+
+ к величине 
+\begin_inset Formula $\D V$
+\end_inset
+
+ обьема, ограничиемого этой поверхностью при 
+\begin_inset Formula $\D V\st0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $div\,\v a\left(M\right)=\ul{\begin{array}{c}
+\D V\st0\\
+\D V\st M
+\end{array}}\df{\un{\oiint}S\left(\v a,\v n\right)dS}{\D V}$
+\end_inset
+
+, где 
+\begin_inset Formula $\v n$
+\end_inset
+
+ --- внешняя нормаль поверхности.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ непрерывна в области 
+\begin_inset Formula $V$
+\end_inset
+
+, то при 
+\begin_inset Formula $\D V\st0$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\D S\st M\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{\begin{array}{c}
+\D V\st0\\
+\D V\st M
+\end{array}}\df{\un{\iiint}{\D V}\left(\v a,\v n\right)dxdydz}{\D V}=f\left(M\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{\un{\iiint}{\D V}\left(\v a,\v n\right)dxdydz}{\D V}=\left\{ \text{по теореме с среднем \exists M_{1}\in\D V }\right\} =\df{f\left(M_{1}\right)\D V}{\D V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
