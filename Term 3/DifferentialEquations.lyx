@@ -8454,18 +8454,898 @@ status open
 Лемме №2.
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument
+\begin_layout Standard
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Штурма
+15 ноября 2013
 \end_layout
 
 \end_inset
 
 
-\begin_inset Formula $ $
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Сравнение Штурма
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $y\ppr+q\left(x\right)=0$
+\end_inset
+
+ -(kk1).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $z\ppr+Q\left(x\right)z=0$
+\end_inset
+
+ -(kk2).
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $q\left(x\right),Q\left(x\right)$
+\end_inset
+
+ непрерывны на промежутке 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $q\left(x\right)\mr Q\left(x\right)$
+\end_inset
+
+ когда 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+ И пусть 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ какоето нетривиальное решение уравнения (kk1), а 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ какоето нетривиальное решение уравнения (kk2).
+ Если 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ пренадлежащие 
+\begin_inset Formula $I$
+\end_inset
+
+--- последовательные нули 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ (
+\begin_inset Formula $y\left(x_{1}\right)=y\left(x_{2}\right)=0$
+\end_inset
+
+).
+ Тогда найдется 
+\begin_inset Formula $x_{0}\in\left(x_{1},x_{2}\right)$
+\end_inset
+
+, в котором 
+\begin_inset Formula $z\left(x_{0}\right)=0$
+\end_inset
+
+, либо 
+\begin_inset Formula $z\left(x_{1}\right)=z\left(x_{2}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ --- последовательные нули решения 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Тогда, поскольку они последовательные, внутри 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ не обращается в 0 (знакопостоянная).
+ Без ограничения общности будем считать, что для 
+\begin_inset Formula $\forall x\in\left(x_{1};x_{2}\right)\ y\left(x\right)>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y\pr\left(x_{1}\right)=\ul{x\st x_{1}+0}\df{y\left(x\right)-y\left(x_{1}\right)}{x-x_{1}}\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y\pr\left(x_{2}\right)=\ul{x\st x_{2}-0}\df{y\left(x\right)-y\left(x_{2}\right)}{x-x_{2}}\mr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но в силу 
+\emph on
+Леммы (1) 
+\emph default
+
+\begin_inset Formula $y\pr\left(x_{1}\right)\nr0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\pr\left(x_{2}\right)\nr0$
+\end_inset
+
+, следовательно мы показали, что 
+\begin_inset Formula $y\pr\left(x_{1}\right)>0,$
+\end_inset
+
+ а 
+\begin_inset Formula $y\pr\left(x_{2}\right)<0$
+\end_inset
+
+.
+ Умножим уравнение (kk1) на 
+\begin_inset Formula $z$
+\end_inset
+
+, а уравнение (kk2) на 
+\begin_inset Formula $y$
+\end_inset
+
+, и вычтем одно из другое.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y\ppr z-yz\ppr=\left(Q\left(x\right)-q\left(x\right)\right)yz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(y\pr z-yz\pr\right)\pr=\left(Q\left(x\right)-q\left(x\right)\right)yz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Проинтегрируем: 
+\begin_inset Formula $\left(y\pr z-yz\pr\right)|_{x_{1}}^{x_{2}}=\oui{x_{1}}{x_{2}}\left(Q\left(x\right)-q\left(x\right)\right)y\left(x\right)z\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+y\pr\left(x_{2}\right)z\left(x_{2}\right)-y\pr\left(x_{1}\right)z\left(x_{1}\right)=\oui{x_{1}}{x_{2}}\left(Q\left(x\right)-q\left(x\right)\right)y\left(x\right)z\left(x\right)dx\label{eq:kk3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Предположим противное, что утверждение теоремы не верно, это значит, что
+ нету нулей у функции 
+\begin_inset Formula $z$
+\end_inset
+
+ внутри.
+ И на 
+\begin_inset Formula $\left(x_{1};x_{2}\right)$
+\end_inset
+
+ --- функция знакуопостоянна.
+ Снова без ограничения общности можно считать, что 
+\begin_inset Formula $z\left(x\right)>0$
+\end_inset
+
+.
+ Если это не так, то мы рассмотрим функцию 
+\begin_inset Formula $-z\left(x\right)$
+\end_inset
+
+ вместо 
+\begin_inset Formula $z$
+\end_inset
+
+, которая будет больше нуля, сохраняя нули 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теорема не верна, тогда возможен оджин из следующих случаев:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z\left(x\right)>0,\ \forall x\in\left[x_{1};x_{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z\left(x\right)>0,\ \forall x\in(x_{1};x_{2}],\ z\left(x_{1}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z\left(x\right)>0,\ \forall x\in[x_{1};x_{2}),\ z\left(x_{2}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+В каждом из этих случаев левая часть выражения (kk3) отрицательная (строго
+ меньше нуля), а правая часть в равенстве (kk3) больше лтбо равна нуля.
+ Это противоречие.
+ Следовательно, теорме Штурша доказана.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $z\left(x_{1}\right)=z\left(x_{2}\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(x\right)\nr0$
+\end_inset
+
+ когда 
+\begin_inset Formula $x\in\left(x_{1};x_{2}\right),$
+\end_inset
+
+то для 
+\begin_inset Formula $x\in\left[x_{1};x_{2}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $q\left(x\right)\equiv Q\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(x\right)=cz\left(x\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $q\left(x\right)\equiv Q\left(x\right)$
+\end_inset
+
+ то 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ являются решением одного и тогоже дифференциального уравнения.
+ Следовательно эти функци линейно зависимы.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\exists\widetilde{x}\in\left(x_{1};x_{2}\right)\ q\left(\widetilde{x}\right)<Q\left(\widetilde{x}\right)$
+\end_inset
+
+, то всегда существует точка 
+\begin_inset Formula $x_{0}\in\left(x_{1};x_{2}\right)$
+\end_inset
+
+, в которой 
+\begin_inset Formula $z\left(x_{0}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следвстие (1).
+
+\emph default
+ Если в уравнении (kk1) 
+\begin_inset Formula $q\left(x\right)\mr0$
+\end_inset
+
+ на 
+\begin_inset Formula $I$
+\end_inset
+
+, то всякая нетривиальная решение уравнения (kk1) имеет не более одного
+ нуля.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $q\left(x\right)<0$
+\end_inset
+
+ если решение уравнения 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+.
+ имеющая 2 нуля 
+\begin_inset Formula $y\left(x_{1}\right)=y\left(x_{2}\right)=0$
+\end_inset
+
+.
+ Тиогда рассмотрим уравнение (kk2) вида 
+\begin_inset Formula $z\ppr+0\um z=0$
+\end_inset
+
+ и любое решение жтогго уравнения должно иметть на промежутке 
+\begin_inset Formula $\left[x_{1};x_{2}\right]$
+\end_inset
+
+ хотябы один ноль.
+ Это противоречит тому, что э у этого уравнгенире есть решение 
+\begin_inset Formula $z\equiv1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие (2).
+ 
+\emph default
+Пусть 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ --- два линейно независимых решения уравнения (kk1).
+ Если 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ --- последовательные нули функции 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ имеет на интервале 
+\begin_inset Formula $\left[x_{1};x_{2}\right]$
+\end_inset
+
+ в точности один ноль.
+ Тоесть нули 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ чередуются.
+\end_layout
+
+\begin_layout Proof
+Покажем что 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ не имеют общих нулей.
+ Построеный определитель вронского пофункциям 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ равен нлю (
+\begin_inset Formula $W=0$
+\end_inset
+
+).
+ Сдедовательно решение 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ будет имиеть ноль внутри 
+\begin_inset Formula $\left[x_{1};x_{2}\right]$
+\end_inset
+
+, причем он будет единственным.
+ Допустим противное: что их 2.
+ Если 
+\begin_inset Formula $\widetilde{x}\in\left(x_{1};x_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $y_{2}\left(x_{0}\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}\left(\widetilde{x}\right)=0$
+\end_inset
+
+ причем 
+\begin_inset Formula $\widetilde{x}>x_{0}$
+\end_inset
+
+.
+ Тогда в силу теоремы штурма, 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ должно иметь хотябы один ноль на промежутке 
+\begin_inset Formula $\left[x_{0};\widetilde{x}\right]$
+\end_inset
+
+, а это противоречит тому, что 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ --- последовательные нули.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие (3).
+
+\emph default
+ Если некоторое нетривиельное решения уравнения (kk1) имеет бесконечное
+ число нулей то любое нетривиальнрое решение уравнения (kk1) будет иметь
+ бесконечное число нулей.
+\end_layout
+
+\begin_layout Proof
+Следует из 
+\emph on
+следствия (2).
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие (4).
+ 
+\emph default
+
+\begin_inset Formula $0<m\mr q\left(x\right)\mr M<+\b$
+\end_inset
+
+, 
+\begin_inset Formula $m<M$
+\end_inset
+
+ .
+ Тогда расстояние между соседними нулями любого нетривиального решения уравнения
+ (kk1): 
+\begin_inset Formula $\df{\pi}{\sqrt{M}}\mr J_{x,x_{2}}\mr\df{\pi}{\sqrt{m}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим уравнение вида: 
+\begin_inset Formula 
+\begin{equation}
+U\left(x\right)+mu=0\label{eq:kk4}
+\end{equation}
+
+\end_inset
+
+ Тогда найдем его решение 
+\begin_inset Formula $\lambda^{2}+m=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\lambda=\pm i\sqrt{m}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $u\left(x\right)=c_{1}\cos\sqrt{m}x+c_{2}\sin\sqrt{m}x$
+\end_inset
+
+.
+ Нетрудно видеть, что 
+\begin_inset Formula $u\left(x\right)=\sin\left(\varphi+\sqrt{m}x\right)$
+\end_inset
+
+ при любом постоянном 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ является рнешением уравнения (kk4).
+ тогда нулями этого решения 
+\begin_inset Formula $\varphi+\sqrt{m}x=\pi k$
+\end_inset
+
+, тоесть нули 
+\begin_inset Formula $x_{k}=\df{\pi k}{\sqrt{m}}-\df{\varphi}{\sqrt{m}}$
+\end_inset
+
+.
+ Тогда расстояние между двумя сосседними решениями будет 
+\begin_inset Formula $\left|x_{k+1}-x_{k}\right|=\df{\pi}{\sqrt{m}}.$
+\end_inset
+
+ Предположим противное, что доказываемое следствие не верно.
+ Это значит что найдется решение уравнения 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ уравнения (kk1) и 
+\begin_inset Formula $\overline{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overline{x_{2}}$
+\end_inset
+
+ --- соседние нули этого решения, так что 
+\begin_inset Formula $\left|\overline{x_{1}}-\overline{x_{2}}\right|>\df{\pi}{\sqrt{m}}$
+\end_inset
+
+.
+ Следовательно найдутся 2 числа 
+\begin_inset Formula $\hat{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\hat{x_{2}}$
+\end_inset
+
+ пренадлежащие 
+\begin_inset Formula $\left(\overline{x_{1}};\overline{x_{2}}\right).$
+\end_inset
+
+А тогда 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ можно подобрать так, чтобы 
+\begin_inset Formula $\hat{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\hat{x_{2}}$
+\end_inset
+
+ былибы нулями 
+\begin_inset Formula $\sin\left(\varphi+\sqrt{m}x\right)$
+\end_inset
+
+.
+ А тогда, в силу теоремы штурма, так как 
+\begin_inset Formula $q\left(x\right)\br m$
+\end_inset
+
+ на интервале 
+\begin_inset Formula $\left[\hat{x_{1}};\hat{x_{2}}\right]$
+\end_inset
+
+ должен найтись хотябы один ноль решения, а эти противоречит тому,, что
+ 
+\begin_inset Formula $\overline{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overline{x_{2}}$
+\end_inset
+
+ последовательные нули.
+ Следоваетльно предположение не верно.
+ 
+\end_layout
+
+\begin_layout Proof
+Аналогично доказывается и левое неравенство.
+ Для этогго рпассмотрим уравнение: 
+\begin_inset Formula $z\ppr+Mz=0$
+\end_inset
+
+.
+ У него есть решение 
+\begin_inset Formula $z=\sin\left(\varphi+\sqrt{M}x\right)$
+\end_inset
+
+, нулями которогоя являются 
+\begin_inset Formula $x_{k}=\df{\pi k}{\sqrt{M}}-\df{\varphi}{\sqrt{M}}.$
+\end_inset
+
+ А расстояние между соседними нулями 
+\begin_inset Formula $\left|x_{k+1}-x_{k}\right|=\df{\pi}{\sqrt{M}}.$
+\end_inset
+
+ Предположим противное теперь, что существует решение уравнения (kk1), для
+ которого 
+\begin_inset Formula $\overline{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overline{x_{2}}$
+\end_inset
+
+ являются последовательными нулями, расстояние между котороми меньше чем
+ 
+\begin_inset Formula $\left|\overline{x_{1}}-\overline{x_{2}}\right|<\df{\pi}{\sqrt{M}}$
+\end_inset
+
+.
+ А тиогда найдутся 
+\begin_inset Formula $\hat{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\hat{x_{2}}$
+\end_inset
+
+, расстояние между которыми равняется в тоности 
+\begin_inset Formula $\left|\hat{x_{1}}-\hat{x_{2}}\right|=\df{\pi}{\sqrt{M}}$
+\end_inset
+
+.
+ Причем 
+\begin_inset Formula $\hat{x_{1}}<\overline{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\hat{x_{2}}>\overline{x_{2}}$
+\end_inset
+
+.
+ А тогда 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ можно выбрать так, что 
+\begin_inset Formula $\hat{x_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\hat{x_{2}}$
+\end_inset
+
+ ,будут соседними нулямим решения 
+\begin_inset Formula $z=\sin\left(\varphi+\sqrt{M}x\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $q\left(x\right)\mr M$
+\end_inset
+
+, то в силу теоремы Штурма, на промежутке 
+\begin_inset Formula $\left[\overline{x_{1}};\overline{x_{2}}\right]$
+\end_inset
+
+ должен найтись хотябы один ноль 
+\begin_inset Formula $z=\sin\left(\varphi+\sqrt{M}x\right)$
+\end_inset
+
+.
+ Ну а это противоречие, что они соседнии нули.
+ Следвие доказано.
+\end_layout
+
+\begin_layout Subsection
+Решение линейных дифференциальных уравнений с помощью степенных рядов.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим такое линейное однородное дифференциальное уравнение с переменными
+ коофицентами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{2}\left(x\right)$
+\end_inset
+
+ являются вещественными аналиническми функциями.
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ называется аналитической в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, если в некоторой окресности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ она представима в виде сходящегося ряда 
+\begin_inset Formula $u\left(x\right)=\ous{k=0}{\b}c_{k}\left(x-x_{0}\right)^{k},\ c_{k}=const$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда решение уравнения (uu1) можно находить в виде степеннгого ряда по
+ 
+\begin_inset Formula $\left(x-x_{0}\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $y\left(x\right)=\ous{i=1}{\b}c_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение Эйери 
+\begin_inset Formula $y\ppr+xy=0$
+\end_inset
+
+.
+ Покажем как оно пораждает новые функции и как находить решение в виде степенных
+ рядов.
+ Будем искать решение уравнения (uu2) в виде степенного ряда 
+\begin_inset Formula $y=\ous{k=0}{\b}c_{k}x^{k}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $y\pr\left(x\right)=\ous{k=1}{\b}kc_{k}x^{k-1}$
+\end_inset
+
+.
+ А 
+\begin_inset Formula $y\ppr=\ous{k=2}{\b}k\left(k-1\right)c_{k}x^{k-2}$
+\end_inset
+
+ .
+ Подставим и получим: 
+\begin_inset Formula $\ous{k=2}{\b}k\left(k-1\right)c_{k}x^{k-2}+\ous{k=0}{\b}c_{k}x^{k+1}=0$
+\end_inset
+
+.
+ Сделаем замену 
+\begin_inset Formula $n=k-2$
+\end_inset
+
+, 
+\begin_inset Formula $k=n+2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\ous{n=0}{\b}\left(n+2\right)\left(n+1\right)c_{n+2}x^{n}+\ous{n=1}{\b}c_{n-1}x^{n}=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $2\um1\um c_{2}+\ous{n=1}{\b}\left(\left(n+2\right)\left(n+1\right)c_{n+2}+c_{n-1}\right)x^{n}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{2}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{n+2}=-\df{c_{n-1}}{\left(n+2\right)\left(n+1\right)}$
 \end_inset
 
 
