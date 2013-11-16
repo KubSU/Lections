@@ -10235,6 +10235,278 @@ Hbc 31
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\sum\Delta N(v) & = & \sum Nf(v)\Delta v=N
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum f(v)\Delta v=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Устремляя 
+\begin_inset Formula $\Delta v\to0$
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oiu 0{\infty}f(v)dv=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При разных 
+\begin_inset Formula $v$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\to0$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(v)\sim v^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $v\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(v)\sim e^{-\df{mv^{2}}{2kt}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $v\in(0;\infty)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(v)=4\pi\left(\df m{2\pi kT}\right)^{\frac{3}{2}}v^{2}exp\left(-\frac{mv^{2}}{2kT}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Наиболее вероятная скорость:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{\text{вер}}=\sqrt{\df{2kT}m}=\sqrt{\df{2RT}{\mu}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Причем выполняется соотношение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найдем 
+\begin_inset Formula $\left\langle v\right\rangle $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle v\right\rangle  & = & \df 1N\un{\sum}i\Delta N(v_{i})\um v_{i}\\
+ & = & \un{\sum}if(v_{i})\Delta v\um v_{i}\\
+ & = & \oui 0{\infty}f\left(v\right)\um vdv\\
+ & = & \sqrt{\df{8kT}{\pi m}}=\sqrt{\df{8RT}{\pi\mu}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Раз установившееся максвеловское распределение скоростей молекул в дальнейшем
+ сохраняется, более того: в результате взаимодействия между молекулами,
+ каким бы нибыло исходное распеределение скоростей молекул, в конце концов
+ устанавливается максвеловское распределение.
+\end_layout
+
+\begin_layout Subsection
+Опыт Штерна
+\end_layout
+
+\begin_layout Standard
+Были взяты два коаксиальных цилиндра.
+ Внутри протянута вольфрамовая нить, на которую нанесено серебро.
+ Подается напряжение на нить.
+ Вольфрам метал тугоплавкий, в отличие от серебра, которое начинает испаряться.
+ Цилиндры могут вращаться.
+ Когда они не вращаются, то серебро осядет напротив прорези.
+\end_layout
+
+\begin_layout Standard
+Пусть расстояние между цилиндрами равно 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ начнем вращать циллиндры с угловой скоростью 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+.......
+\end_layout
+
+\begin_layout Subsection
+Барометрическая формула распределения Больцмана.
+\end_layout
+
+\begin_layout Standard
+Сделаем следующие допущения:
+\end_layout
+
+\begin_layout Enumerate
+Будем считать, что 
+\begin_inset Formula $g$
+\end_inset
+
+ не зависит от высоты.
+\end_layout
+
+\begin_layout Enumerate
+Будем считать воздух идеальным газом (что в общем так и есть).
+ При этом будем считать, что воздух состоит из одинаковых волекул, массой
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu\approx29\frac{\text{г}}{\mathit{\text{моль}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Будем считать, что темпрература с высотой не меняется: 
+\begin_inset Formula $t=const$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Найдем силу тяжести, действующую на цилиндр воздуха:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{\text{т}}=m_{0}g\um nS\Delta h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Т.к.
+ 
+\begin_inset Formula $\sum\vec F=0$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+-m_{0}g\um nS\Delta h+pS-(p+\Delta p)S & = & 0\\
+-m_{0}g\um n\Delta h-\Delta p & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+............................
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
