@@ -3,6 +3,12 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\numberwithin{equation}{section}
+\setlength{\mathindent}{15mm}
+\end_preamble
+\options fleqn
 \use_default_options true
 \begin_modules
 theorems-starred
@@ -50,7 +56,7 @@ theorems-starred
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
-\suppress_date false
+\suppress_date true
 \use_refstyle 1
 \boxbgcolor #55ff00
 \index Index
@@ -61,8 +67,8 @@ theorems-starred
 \topmargin 2cm
 \rightmargin 2cm
 \bottommargin 2cm
-\secnumdepth 5
-\tocdepth 5
+\secnumdepth 3
+\tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -188,8 +194,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\st}{\longrightarrow}
-{\longrightarrow}
+\newcommand{\st}{\to}
+{\to}
 \end_inset
 
 
@@ -224,8 +230,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
-{\un{\ov{\Sigma}{#2}}{#1}}
+\newcommand{\ous}[2]{\un{\ov{\sum}{#2}}{#1}}
+{\un{\ov{\sum}{#2}}{#1}}
 \end_inset
 
 
@@ -2226,7 +2232,7 @@ reference "eq:4"
 
 \end_inset
 
-) обязательно сходится.
+) сходится.
 \end_layout
 
 \begin_layout Proof
@@ -2238,28 +2244,32 @@ reference "eq:4"
 \end_inset
 
 ) с четными номерами: 
-\begin_inset Formula $S_{2n}=a_{1}-a_{2}+a_{3}-a_{4}+\tr+a_{2n-1}-a_{2n}=\left(a_{1}-a_{2}\right)+\left(a_{3}-a_{4}\right)+\tr+\left(a_{2n-1}-a_{2n}\right)$
+\begin_inset Formula 
+\begin{align*}
+S_{2n} & =a_{1}-a_{2}+a_{3}-a_{4}+\tr+a_{2n-1}-a_{2n}\\
+ & =\left(a_{1}-a_{2}\right)+\left(a_{3}-a_{4}\right)+\tr+\left(a_{2n-1}-a_{2n}\right)
+\end{align*}
+
 \end_inset
 
- У нас 
+Получим 
 \begin_inset Formula $n$
 \end_inset
 
- скобок и каждая скобка положительна.
- С другой стороны 
-\begin_inset Formula $S_{2n}=a_{1}-\left(a_{2}-a_{3}\right)-\left(a_{4}-a_{5}\right)-\tr-\left(\tr\right)-a_{2n}$
+ скобок, причем каждая скобка положительна.
+ С другой стороны: 
+\begin_inset Formula 
+\begin{align*}
+S_{2n} & =a_{1}-\left(a_{2}-a_{3}\right)-\left(a_{4}-a_{5}\right)-\tr-\left(\tr\right)-a_{2n}
+\end{align*}
+
 \end_inset
 
-.
- 
-\begin_inset Formula $\sl$
+Следовательно: 
+\begin_inset Formula $0<S_{2n}<a_{1}$
 \end_inset
 
- 
-\begin_inset Formula $a_{1}>S_{2n}>0,\ $
-\end_inset
-
-причем 
+, причем 
 \begin_inset Formula $S_{2n}$
 \end_inset
 
@@ -2268,15 +2278,12 @@ reference "eq:4"
 \end_inset
 
 .
- 
-\begin_inset Formula $\sl S_{2n}$
+ Значит 
+\begin_inset Formula $S_{2n}$
 \end_inset
 
- - возрастающая и ограниченная 
-\begin_inset Formula $\sl$
-\end_inset
-
- по Теореме о сходимости монотонных последовательностей 
+ --- возрастающая и ограниченная последовательность, тогда по теореме о
+ сходимости монотонных последовательностей 
 \begin_inset Formula $\exists\ul{n\st\b}S_{2n}=S$
 \end_inset
 
@@ -2284,7 +2291,7 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Proof
-Рассмотрим последовательность частичных сумм ряда (
+Рассмотрим предел последовательности частичных сумм ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:4"
@@ -2292,10 +2299,15 @@ reference "eq:4"
 \end_inset
 
 ) с нечетными номерами: 
-\begin_inset Formula $\ul{n\st\b}S_{2n+1}=\ul{n\st\b}\left(S_{2n}+a_{2n+1}\right)=\left\{ \begin{array}{c}
+\begin_inset Formula 
+\begin{align*}
+\ul{n\st\b}S_{2n+1} & =\ul{n\st\b}\left(S_{2n}+a_{2n+1}\right)\\
+ & =\left\{ \begin{array}{c}
 S_{2n}\st S\\
 a_{2n}+1\st0
-\end{array}\right\} =S.$
+\end{array}\right\} =S.
+\end{align*}
+
 \end_inset
 
 
@@ -2303,10 +2315,10 @@ a_{2n}+1\st0
 
 \begin_layout Proof
 То есть 
-\begin_inset Formula $\ul{n\st\b}S_{2n}=\ul{n\st\b}S_{2n+1}=S\ \sl\ $
+\begin_inset Formula $\ul{n\st\b}S_{2n}=\ul{n\st\b}S_{2n+1}=S$
 \end_inset
 
- ряд (
+, следовательно ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:4"
@@ -2341,16 +2353,19 @@ reference "eq:4"
 
 \end_inset
 
-) имеет место следующая формула 
-\begin_inset Formula $R_{n}=S-S_{n}=\left(-1\right)^{n+2}\um\left(a_{n+1}-a_{n+2}+\tr\right)$
+) имеет место следующая формула: 
+\begin_inset Formula 
+\[
+R_{n}=S-S_{n}=\left(-1\right)^{n+2}\um\left(a_{n+1}-a_{n+2}+\tr\right)
+\]
+
 \end_inset
 
- - в скобке знакочередующийся ряд.
- 
+ Причем 
 \begin_inset Formula $\left|R_{n}\right|\mr a_{n+1}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Definition
@@ -2361,113 +2376,28 @@ reference "eq:4"
 
 \end_inset
 
-) удовлетворяющий условиям теоремы называется рядом Лейбница.
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость 
-\begin_inset Formula $\ous{n=2}{\b}\df{\left(-1\right)^{n}}{\ln n}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{n}=\df 1{\ln n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Поверим выполнение условий признака Лейбница.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $a_{n+1}=\df 1{\ln n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\df 1{\ln n}=0$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Example
-Перед нами ряд Лейбница.
- Он сходится.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=2}{\b}\df{\left(-1\right)^{n}\um\ln n}n$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{n}=\df{\ln n}n$
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Монотонность.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $f\pr=\left(\df{\ln x}x\right)\pr=\df{\df 1x\um x-\ln x}{x^{2}}=\df{1-\ln x}{x^{2}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Убывание начиная с номера 3.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset Formula $\ul{n\st\b}\df{\ln n}n=0$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Example
-Так как отбрасывание конечного числа членов не влияет на сходимость последовател
-ьности то это ряд Лейбница и он сходится.
+), удовлетворяющий условиям теоремы называется рядом Лейбница.
 \end_layout
 
 \begin_layout Paragraph
-Признак Абеля - Дирихле.
+Признак Абеля--Дирихле.
 \end_layout
 
-\begin_layout Example
-Рассматривается произвольный ( в общем случае - знакопеременный ) ряд 
+\begin_layout Standard
+Рассматривается произвольный (в общем случае --- знакопеременный) ряд 
 \begin_inset Formula $\ous{n-1}{\b}a_{n}$
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Example
-Пусть даны 2 последовательности
-\begin_inset Formula $\left\{ u_{n}\right\} ,\ \left\{ v_{n}\right\} $
+\begin_layout Standard
+Пусть даны две последовательности 
+\begin_inset Formula $\left\{ u_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ v_{n}\right\} $
 \end_inset
 
 .
@@ -2478,7 +2408,7 @@ reference "eq:4"
 .
  Тогда выполняется 
 \emph on
-Тождество Абеля
+Тождество Абеля:
 \emph default
  
 \begin_inset Formula 
@@ -2496,19 +2426,34 @@ reference "eq:4"
 \begin_inset Formula $u_{k}=S_{k}-S_{k-1}$
 \end_inset
 
-, то берем сумму 
-\begin_inset Formula $\ous{k=n}{n+p}u_{k}v_{k}=\ous{k=n}{n+p}S_{k}\um v_{k}-\ous{k=n}{n+p}S_{k-1}v_{k}=\ous{k=n}{n+p}S_{k}\um v_{k}-\ous{k=n-1}{n+p-1}S_{k}\um v_{k+1}=\ous{k=n}{n+p-1}S_{k}\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}$
+, то берем сумму: 
+\begin_inset Formula 
+\begin{align*}
+\ous{k=n}{n+p}u_{k}v_{k} & =\ous{k=n}{n+p}S_{k}\um v_{k}-\ous{k=n}{n+p}S_{k-1}v_{k}=\\
+ & =\ous{k=n}{n+p}S_{k}\um v_{k}-\ous{k=n-1}{n+p-1}S_{k}\um v_{k+1}=\\
+ & =\ous{k=n}{n+p-1}S_{k}\left(v_{k}-v_{k+1}\right)+S_{n+p}\um v_{n+p}-S_{n-1}\um v_{n}
+\end{align*}
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Theorem
-(Признак Абеля--Дирихле)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Абеля--Дирихле
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
-Ряд 
+Произвольный ряд: 
 \begin_inset Formula 
 \begin{equation}
 \ous{n=1}{\b}u_{n}v_{n}\label{eq:6}
@@ -2522,7 +2467,7 @@ reference "eq:4"
 \begin_deeper
 \begin_layout Enumerate
 Последовательность 
-\begin_inset Formula $\left\{ v_{k}\right\} $
+\begin_inset Formula $\left\{ v_{n}\right\} $
 \end_inset
 
  не возрастает и 
@@ -2549,24 +2494,23 @@ reference "eq:6"
 
 \end_inset
 
-) 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n}{n+p}u_{k}v_{k}\right|<\varepsilon$
+) удовлетворяет условиям: 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|\ous{k=n}{n+p}u_{k}v_{k}\right|<\varepsilon
+\]
+
 \end_inset
 
-.
- 
+
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- - ограничена 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\exists M>0\ \forall n\in\N\ \left|S_{n}\right|<M$
+ --- ограничена, значит 
+\begin_inset Formula $\exists M>0\quad\forall n\in\N\quad\left|S_{n}\right|<M$
 \end_inset
 
  
@@ -2577,111 +2521,62 @@ reference "eq:6"
 \begin_inset Formula $\ul{n\st\b}v_{n}=0$
 \end_inset
 
-, то 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ 0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}?$
+, то:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N\quad\forall n\br N\quad0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}a
+\]
+
 \end_inset
 
- Пока не знаем на что делить но сейчас узнаем и напишем.
+
 \end_layout
 
 \begin_layout Proof
-Получим 
-\begin_inset Formula $\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\ref{eq:5}\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}$
+Найдем 
+\begin_inset Formula $a$
 \end_inset
 
-.
- 
+:
+\begin_inset Formula 
+\[
+\left|\ous{k=n}{n+p}u_{k}v_{k}\right|\mr\left\{ \text{по}\left(\ref{eq:5}\right)\right\} \mr\ous{k=n}{n+p-1}\left|S_{k}\right|\um\left(v_{k}-v_{k+1}\right)+\left|S_{n+p}\right|\um v_{n+p}+\left|S_{n-1}\right|\um v_{n}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
-Каждое слагаемое (а их 3) меньше чем 
+Каждое слагаемое меньше чем 
 \begin_inset Formula $M$
 \end_inset
 
-.
+, значит:
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $<M\um\left(\ous{k=n}{n+p-1}\left(v_{k}-v_{k+1}\right)+v_{n+p}+v_{n}\right)=M\um2\um v_{n}<\varepsilon$
-\end_inset
+\begin_inset Formula 
+\[
+0<M\um\left(\ous{k=n}{n+p-1}\left(v_{k}-v_{k+1}\right)+v_{n+p}+v_{n}\right)=M\um2\um v_{n}<\varepsilon
+\]
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ 0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}{2M}$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Теорема доказана.
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость следующий ряд:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $1+\df 12-\df 23+\df 14+\df 15-\df 26+\tr+\df 1{3n-2}+\df 1{3n-1}-\df 2{3n}+\tr$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Решение.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $v_{n}=\df 1n$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $u_{n}:1,1,-2,1,1,-2,\tr$
+\begin_layout Proof
+Откуда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N\quad\forall n\br N\quad0<\left|v_{n}\right|=v_{n}<\df{\varepsilon}{2M}
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $\left\{ v_{n}\right\} -$
-\end_inset
-
- не возрастает.
- 
-\begin_inset Formula $\ul{n\st\b}\df 1n=0$
-\end_inset
-
- - выполняется.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $S_{n}:1,2,0,1,2,0,1,2,0\tr$
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\begin_layout Example
-\begin_inset Formula $M=2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left|S_{n}\right|\mr2$
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Subsubsection
