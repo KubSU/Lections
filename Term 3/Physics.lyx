@@ -230,8 +230,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
-{\un{\ov{\Sigma}{#2}}{#1}}
+\newcommand{\ous}[2]{\un{\ov{\sum}{#2}}{#1}}
+{\un{\ov{\sum}{#2}}{#1}}
 \end_inset
 
 
@@ -10504,6 +10504,546 @@ F_{\text{т}}=m_{0}g\um nS\Delta h
 
 \begin_layout Standard
 ............................
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+18.
+ 11.
+ 13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=P_{0}\um exp\left(-\df{mgh}{kT}\right)=P_{0}\um exp\left(-\df{\mu gh}{RT}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Больцман предположил, что в любом потенциальном поле сил, это соотношение
+ верно.
+ Обозначим: 
+\begin_inset Formula $U\left(h\right)=mgh$
+\end_inset
+
+; 
+\begin_inset Formula $p=nkT$
+\end_inset
+
+; 
+\begin_inset Formula $P_{0}=n_{0}kT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда справедлива 
+\emph on
+формула Больцмана:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Число столкновений и длина свободного пробега молекулы в газе.
+\end_layout
+
+\begin_layout Definition
+Эффективный диаметр молекулы 
+\begin_inset Formula $\left(d\right)$
+\end_inset
+
+ --- минимальное расстояние на которое сближаются центры молекул газа при
+ столкновении.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Эффективным сечением молекулы называется величина равная 
+\begin_inset Formula $\sigma=\pi d^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Длина свободного пробега 
+\begin_inset Formula $\left(l_{i}\right)$
+\end_inset
+
+ --- расстояние меду двумя последовательными столкновениями молекулы.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Средняя длина свободного пробега молекулы:
+\begin_inset Formula 
+\[
+\left\langle l\right\rangle =\df 1N\ous{i=1}Nl_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найдем среднюю длину свободного пробега.
+\end_layout
+
+\begin_layout Standard
+Возьмем два вектора: 
+\begin_inset Formula $\vec{v_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{v_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда: 
+\begin_inset Formula $\vec{v_{1}}=\vec{v_{2}}+\vec{v_{\text{отн}}}$
+\end_inset
+
+.
+ Выразим 
+\begin_inset Formula $\vec{v_{\text{отн}}}=\vec{v_{1}}-\vec{v_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Используя теорему косинусов:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle v_{\text{отн}}^{2}\right\rangle  & = & \left\langle v_{1}^{2}\right\rangle +\left\langle v_{2}^{2}\right\rangle -2\left\langle v_{1}v_{2}\cos\Theta\right\rangle =\\
+ & = & 2\left\langle v^{2}\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{\text{ср.кв.отн}}=\sqrt{2}v_{\text{ср.кв}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем считать количество столкновений за 
+\begin_inset Formula $t=1\text{с}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда высота цилиндра: 
+\begin_inset Formula $h=v_{\text{ср.кв.отн.}}\um1\text{с}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А объем цилиндра 
+\begin_inset Formula $V=\sigma\um h=\pi d^{2}v_{cp.kv.otn}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Число сталкновений 
+\begin_inset Formula $K=n\um V=n\pi d^{2}v_{cp.kv.otn}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Общая длинна расстояния, которая проходит молекула за одну секунду 
+\begin_inset Formula $L=v_{cp.kv}\um1sec$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Средняя длина пробега молекулы: 
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle l\right\rangle  & = & \df LK=\df{v_{\text{ср.кв.}}}{\pi nd^{2}v_{\text{ср.кв.отн.}}}=\nonumber \\
+ & = & \df 1{\sqrt{2}\pi nd^{2}}=\nonumber \\
+ & = & \df 1{\sqrt{2}n\sigma}=\label{eq:xxx}\\
+ & = & \df{kt}{\sqrt{2}p\sigma}\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Посчитаем эту величину:
+\end_layout
+
+\begin_layout Itemize
+Нормальные условия
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d\sim10^{-10}\text{м}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Один моль газа.
+\end_layout
+
+\begin_layout Standard
+Тогда:
+\begin_inset Formula 
+\[
+n=\df{N_{A}}{V_{m}}=\df{6,02\um10^{26}\frac{1}{\text{к моль}}}{22,4\frac{\text{м}^{3}}{\text{к моль}}}=2,7\um10^{25}\frac{1}{\text{м}^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эта величина называется числом Лошмидта.
+\end_layout
+
+\begin_layout Standard
+Тогда подставив его в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:xxx"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\left\langle l\right\rangle \approx2\um10^{-7}\text{м}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...................
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=const$
+\end_inset
+
+ значит: 
+\begin_inset Formula $\left\langle l\right\rangle P=const$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь зафиксируем давление: 
+\begin_inset Formula $P=const$
+\end_inset
+
+, значит: 
+\begin_inset Formula $\left\langle l\right\rangle \sim T$
+\end_inset
+
+, но не все так просто:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle l\right\rangle =\left\langle l_{\infty}\right\rangle \um\df T{T+C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где С --- константа для данного газа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle l_{\infty}\right\rangle $
+\end_inset
+
+--- средняя длина пробега при 
+\begin_inset Formula $T\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Вакуум
+\end_layout
+
+\begin_layout Standard
+L --- размер сосуда.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Вакуум --- состояние газа, при котором средняя длина свободного пробега
+ соизмерима или больше характерного линейного размера сосуда.
+\end_layout
+
+\begin_layout Standard
+Различают 3 случая:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\langle l\right\rangle \mr L$
+\end_inset
+
+ --- низкий вакуум
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\langle l\right\rangle >L$
+\end_inset
+
+ --- высокий вакуум
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\langle l\right\rangle \gg L$
+\end_inset
+
+ --- сверхвысокий вакуум
+\end_layout
+
+\begin_layout Standard
+Газ в состоянии сверхвысокого вакуума называется ультраразряженым.
+ 
+\end_layout
+
+\begin_layout Definition
+Физический факуум --- когда вообще нету молекул.
+\end_layout
+
+\begin_layout Subsection
+Явления переноса в термодинамически неравновесных системах.
+\end_layout
+
+\begin_layout Itemize
+Явление теплопроводности (перенос энергии).
+\end_layout
+
+\begin_layout Itemize
+Явление диффузии (перенос массы).
+\end_layout
+
+\begin_layout Itemize
+Явление вязкого трения (перенос импульса).
+\end_layout
+
+\begin_layout Subsubsection
+Явление вязкого трения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u$
+\end_inset
+
+ --- скорость направленного движения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+--- площадь соприкосновения слоев, 
+\begin_inset Formula $\eta$
+\end_inset
+
+ --- коэффициент вязкости, 
+\begin_inset Formula $\frac{du}{dz}$
+\end_inset
+
+ --- скорость изменения скорости вдоль оси 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=\eta\df{du}{dz}\um S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.............
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\v{J_{'}^{'}}=N\um m\um\v{U_{1}}$
+\end_inset
+
+ --- которые вышли из первого стоя
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\v{J_{'}^{''}}=N\um m\um\v{U_{2}}$
+\end_inset
+
+ --- которые пришли ....
+\end_layout
+
+\begin_layout Standard
+Попасть в нижний слой могут те молекулы, которые расположены на расстоянии
+ 
+\begin_inset Formula $\D t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=\df 16\left\langle v\right\rangle \D t\um S\um n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Таким образом мы можем посчитать, как изменилося импукльс первого слоя за
+ 
+\begin_inset Formula $\D t$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\v{J_{1}}=\D\v{J_{'}^{''}}-\D\v{J_{'}^{'}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\v{J_{1}}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)\D t\um S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Делим на 
+\begin_inset Formula $\D t$
+\end_inset
+
+ и получаем силу, и устремляем к нулю
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
