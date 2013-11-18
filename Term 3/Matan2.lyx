@@ -2554,9 +2554,6 @@ reference "eq:6"
 \end_inset
 
 , значит:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 0<M\um\left(\ous{k=n}{n+p-1}\left(v_{k}-v_{k+1}\right)+v_{n+p}+v_{n}\right)=M\um2\um v_{n}<\varepsilon
@@ -2615,23 +2612,19 @@ reference "eq:4"
 
 \end_inset
 
-) сходится абсолютно 
-\begin_inset Formula $\sl$
+) сходится абсолютно, тогда (по критерию Коши):
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N\quad\forall n\br N\quad\forall p\in\N\quad\left|\ous{k=n}{n+p}a_{k}\right|\mr\ous{k=n}{n+p}\left|a_{k}\right|<\varepsilon
+\]
+
 \end_inset
 
- (по критерию Коши) 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n}{n+p}a_{k}\right|\mr\ous{k=n}{n+p}\left|a_{k}\right|<\varepsilon$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ Значит: 
 \begin_inset Formula $\left|\ous{k=n}{n+p}a_{k}\right|<\varepsilon$
 \end_inset
 
- - критерий Коши сходимости ряда (
+ --- критерий Коши сходимости знакоположительного ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:4"
@@ -2645,24 +2638,9 @@ reference "eq:4"
 Обратное утверждение не верно.
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{\left(-1\right)^{n}}n$
-\end_inset
-
- - знакочередующийся ряд - ряд Лейбница, так как 
-\begin_inset Formula $a_{n}=\df 1n,\ \left\{ a_{n}\right\} \searrow\ \ul{n\st\b}a_{n}=0$
-\end_inset
-
-, а ряд модулей 
-\begin_inset Formula $\ous{n=1}{\b}\df 1n$
-\end_inset
-
- - гармонический ряд, который сходится.
-\end_layout
-
 \begin_layout Definition
-Если числовой ряд сходится, но не сходится абсолютно то его называют не
- абсолютно сходящимся (условно сходящимся) числовым рядом.
+Если числовой ряд сходится, но не сходится абсолютно, то его называют неабсолютн
+о сходящимся (условно сходящимся) числовым рядом.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2677,8 +2655,7 @@ reference "eq:4"
 
 \end_inset
 
-) произвольно переставим члены ряда.
- Получим новый ряд 
+) произвольно переставим члены, получим новый ряд:
 \begin_inset Formula 
 \begin{equation}
 \ous{k=1}{\b}a_{k}'=a_{1}'+a_{2}'+\tr+a_{k}'+\tr\label{eq:7}
@@ -2686,12 +2663,16 @@ reference "eq:4"
 
 \end_inset
 
- где 
+ Где 
 \begin_inset Formula $a_{k}'=a_{n_{k}}$
 \end_inset
 
 .
- Вопрос: Сходится ли ряд (
+ 
+\end_layout
+
+\begin_layout Problem*
+Определить сходится ли ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:7"
@@ -2744,7 +2725,7 @@ reference "eq:4"
 \begin_inset Formula $\ous{k=1}{\b}a_{k}=\ous{k=1}{\b}\left|a_{k}\right|=S$
 \end_inset
 
- - сумма этого ряда.
+ --- сумма этого ряда.
 \end_layout
 
 \begin_deeper
@@ -2761,17 +2742,13 @@ reference "eq:7"
 \end_inset
 
 -ю частичную сумму:
-\end_layout
+\begin_inset Formula 
+\begin{align*}
+S_{k}' & =a_{1}'+a_{2}'+a_{3}'+\tr+a_{k}'=a_{n_{1}}+a_{n_{2}}+a_{n_{3}}+\tr+a_{n_{k}}\mr\\
+ & \mr\left\{ m_{k}=\max\left\{ n_{1},n_{2},\tr,n_{k}\right\} \right\} \mr a_{1}+a_{2}+\tr+a_{m_{k}}=\\
+ & =S_{m_{k}}\mr S
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $S_{k}'=a_{1}'+a_{2}'+a_{3}'+\tr+a_{k}'=a_{n_{1}}+a_{n_{2}}+a_{n_{3}}+\tr+a_{n_{k}}\mr\left\{ m_{k}=\max\left\{ n_{1},n_{2},\tr,n_{k}\right\} \right\} \mr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\mr a_{1}+a_{2}+\tr+a_{m_{k}}=S_{m_{k}}\mr S$
 \end_inset
 
 
@@ -2782,18 +2759,11 @@ reference "eq:7"
 \begin_inset Formula $\left\{ S_{k}'\right\} $
 \end_inset
 
- - последовательность не убывает и ограничена сверху числом 
+ не убывает и ограничена сверху числом 
 \begin_inset Formula $S$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- (по теореме о сходимости монотонных последовательностей) 
-\begin_inset Formula $\sl$
-\end_inset
-
+, следовательно (по теореме о сходимости монотонных последовательностей)
  
 \begin_inset Formula $\exists\ul{k\st\b}S_{k}'=S'$
 \end_inset
@@ -2824,7 +2794,7 @@ reference "eq:7"
 \begin_inset Formula $S\mr S'$
 \end_inset
 
-, таким образом сразу-же получается 
+, таким образом 
 \begin_inset Formula $S=S'$
 \end_inset
 
@@ -2863,7 +2833,7 @@ reference "eq:4"
 \begin_inset Formula $Q_{n}=q_{1}+q_{2}+\tr+q_{n}$
 \end_inset
 
- - частичные суммы рядов 
+ --- частичные суммы рядов 
 \begin_inset Formula $\ous{k=1}{\b}p_{k}$
 \end_inset
 
@@ -2876,22 +2846,18 @@ reference "eq:4"
 \begin_inset Formula $P_{n}+Q_{n}\mr\ous{k=1}{\b}\left|a_{k}\right|$
 \end_inset
 
-, то 
-\begin_inset Formula $\begin{array}{c}
+, то
+\begin_inset Formula 
+\[
+\begin{array}{c}
 P_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b\\
 Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
-\end{array}$
+\end{array}\qquad\forall n\in\N
+\]
+
 \end_inset
 
-
-\begin_inset Formula $\forall n\in\N$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ Следовательно
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
 
@@ -2899,11 +2865,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 \begin_inset Formula $\left\{ q_{n}\right\} $
 \end_inset
 
- сходящиеся последовательности 
-\begin_inset Formula $\sl$
-\end_inset
-
- ряды 
+ сходящиеся последовательности, значит ряды 
 \begin_inset Formula $A=\ous{k=1}{\b}p_{k}$
 \end_inset
 
@@ -2912,15 +2874,17 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 \end_inset
 
  сходятся к конечным суммам.
- 
-\begin_inset Formula $\sl$
+ Тогда при любой перестановке получим:
+\begin_inset Formula 
+\begin{align*}
+\ous{k=1}{\b}a_{k}' & =\ul{n\st\b}\left(P_{n}-Q_{n}\right)=\\
+ & =\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=\\
+ & =A-B=C
+\end{align*}
+
 \end_inset
 
- при любой перестановке получим 
-\begin_inset Formula $\ous{k=1}{\b}a_{k}'=\ul{n\st\b}\left(P_{n}-Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=A-B=C$
-\end_inset
 
- - сумма.
 \end_layout
 
 \begin_layout Standard
@@ -2935,23 +2899,12 @@ reference "eq:4"
 
 \end_inset
 
-) сходится абсолютно 
-\begin_inset Formula $\sl$
-\end_inset
-
- сходится ряд из модулей 
+) сходится абсолютно, тогда сходится ряд из модулей 
 \begin_inset Formula $\ous{k=1}{\b}\left|a_{k}\right|$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- (смотри 1й случай) 
-\begin_inset Formula $\sl$
-\end_inset
-
- сходится ряд 
+ .
+ Используя первый случай: сходится ряд 
 \begin_inset Formula $\ous{n=1}{\b}\left|a_{n}'\right|$
 \end_inset
 
