@@ -21443,11 +21443,11 @@ R=5
 =-1 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Элементы теории поля 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Скалярные поля и их осноыные характеристики
 \end_layout
 
@@ -21495,7 +21495,7 @@ R=5
 я по направлению, градиент.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Векторные поля и характеристики 
 \end_layout
 
@@ -21634,7 +21634,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Поток векторного поля
 \end_layout
 
@@ -21817,7 +21817,7 @@ W & = & \un{\iint}S\left(\v a,\v n\right)dS=\\
 , ориентированый в соответствии с выбранной стораной поверхности 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Поток через замкнутую поверхность
 \end_layout
 
@@ -21949,7 +21949,7 @@ Hbc 91
  то сумарная можность источников равна сумарной мощности приемников.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Вычисление потоков 
 \end_layout
 
@@ -22216,7 +22216,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Дивергенрция векторного поля
 \end_layout
 
@@ -22313,7 +22313,7 @@ status open
 \begin_layout Definition
 \begin_inset Formula $div\,\v a\left(M\right)=\ul{\begin{array}{c}
 \D V\st0\\
-\D V\st M
+\D S\st M
 \end{array}}\df{\un{\oiint}S\left(\v a,\v n\right)dS}{\D V}$
 \end_inset
 
@@ -22322,6 +22322,10 @@ status open
 \end_inset
 
  --- внешняя нормаль поверхности.
+\end_layout
+
+\begin_layout Remark
+Её еще называют расходимостью в точке.
 \end_layout
 
 \begin_layout Lemma
@@ -22353,7 +22357,7 @@ status open
  
 \begin_inset Formula $\ul{\begin{array}{c}
 \D V\st0\\
-\D V\st M
+\D S\st M
 \end{array}}\df{\un{\iiint}{\D V}\left(\v a,\v n\right)dxdydz}{\D V}=f\left(M\right)$
 \end_inset
 
@@ -22361,7 +22365,456 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\df{\un{\iiint}{\D V}\left(\v a,\v n\right)dxdydz}{\D V}=\left\{ \text{по теореме с среднем \exists M_{1}\in\D V }\right\} =\df{f\left(M_{1}\right)\D V}{\D V}$
+\begin_inset Formula $\df{\un{\iiint}{\D V}\left(\v a,\v n\right)dxdydz}{\D V}=\left\{ \text{По теореме с среднем \exists M_{1}\in\D V }\right\} =\df{f\left(M_{1}\right)\D V}{\D V}=f\left(M_{1}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Оказывается 
+\begin_inset Formula $div\,\v a\left(M\right)=\df{\dd P\left(M\right)}{\dd x}+\df{\dd Q\left(M\right)}{\dd y}+\df{\dd R\left(M\right)}{\dd z}$
+\end_inset
+
+ --- расчетная формула для подсчета дивергенции.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+div\,\v a\left(M\right) & = & \ul{\begin{array}{c}
+\D V\st0\\
+\D S\st M
+\end{array}}\df{\un{\oiint}S\left(\v a,\v n\right)dS}{\D V}=\\
+ & = & \left\{ \text{По формуле Гаусса Острогатского}\right\} =\\
+ & = & \ul{\begin{array}{c}
+\D V\st0\\
+\D S\st M
+\end{array}}\df{\un{\oiint}S\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dS}{\D V}=\\
+ & = & \ul{\begin{array}{c}
+\D V\st0\\
+\D S\st M
+\end{array}}\df{\un{\iiint}{\D V}\left(\df{\dd P}{\dd x}+\df{\dd Q}{\dd y}+\df{\dd R}{\dd z}\right)dS}{\D V}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $div\,\v a\left(M\right)>0\ \forall M$
+\end_inset
+
+ --- источник в каждок точке области.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $div\,\v a\left(M\right)<0\ \forall M$
+\end_inset
+
+ --- сток в каждок точке области.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $div\,\v a\left(M\right)=0\ \forall M$
+\end_inset
+
+ --- бездевергентная область
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Векторное поле 
+\begin_inset Formula $\v a=y^{2}\um\v i-\left(x^{2}+y^{2}\right)\v j+z\left(3y^{2}+x\right)\v k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Нужно найти 
+\begin_inset Formula $div\,\v aP\left(P_{i}\right)=?,\ P_{1}\left(-2;1;-2\right);\ P_{2}\left(7;0;1\right);\ P_{3}\left(0;1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+div\,\v a\left(M\right) & = & P_{x}\pr+Q_{y}\pr+R_{z}\pr=\\
+ & = & 0-2y+3y^{2}+x=\\
+ & = & x+3y^{2}-2y
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $div\,\v a\left(-2;1;-2\right)=-2+3-2=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+В остальных точках дивергенция считается анологично.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Переформулируем теорему Гаусса-Острогатсткого в терминах теорий поля
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\oiint}S\left(\v a,\v n\right)dS= & = & \un{\oiint}S\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dS=\\
+ & = & \un{\iiint}V\left(\df{\dd P}{\dd x}+\df{\dd Q}{\dd y}+\df{\dd R}{\dd z}\right)dV=\\
+ & = & \left\{ \df{\dd P}{\dd x}+\df{\dd Q}{\dd y}+\df{\dd R}{\dd z}=div\,\v a\left(M\right)\right\} =\\
+ & = & \un{\iiint}Vdiv\,\v a\left(M\right)dV
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Поток веторного поля 
+\begin_inset Formula $\v a$
+\end_inset
+
+ через внешнюю сторону замктутой поверхности 
+\begin_inset Formula $S$
+\end_inset
+
+ равной суммарной мощности источников векторного поля 
+\begin_inset Formula $\v a$
+\end_inset
+
+ в области 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Найти поток векторного поля 
+\begin_inset Formula $\v a=2xy\v i+2xy\v j+z^{2}\v k$
+\end_inset
+
+ через замнутую поверхность 
+\begin_inset Formula $S:\left\{ x^{2}+y^{2}+z^{2}=\sqrt{2},\, z=0,\, z\br0\right\} $
+\end_inset
+
+ в направлении внешней нормали.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi & = & \un{\oiint}S\left(\v a,\v n\right)dS=\\
+ & = & \left\{ \text{По формуле Гаусса-Острогатсткого}\right\} =\\
+ & = & \un{\iiint}V\left(P_{x}\pr+Q_{y}\pr+R_{z}\pr\right)dV=\\
+ & = & \left\{ \begin{array}{c}
+P_{x}\pr=2y\\
+Q_{y}\pr=2x\\
+R_{z}\pr=2z
+\end{array}\right\} =\\
+ & = & \left\{ \begin{array}{c}
+\text{Переходим к сферическим координатам}\\
+\varphi\in\left[0;2\pi\right]\\
+\psi\in\left[0;\df{\pi}2\right]\\
+r\in\left[0;\sqrt[4]{2}\right]\\
+I=r^{2}\sin\psi
+\end{array}\right\} =\\
+ & = & 2\oui 0{2\pi}d\varphi\oui 0{\df{\pi}2}d\psi\oui 0{\sqrt[4]{2}}\left(r\sin\psi\sin\varphi+r\sin\psi\cos\varphi+r\cos\psi\right)r^{2}\sin\varphi dP=\\
+ & = & \tr
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Циркуляция векторного поля.
+ ПОнятие.
+ Физические свойства
+\end_layout
+
+\begin_layout Standard
+Рассмотрим область 
+\begin_inset Formula $V\vkl\R^{3}$
+\end_inset
+
+, линию 
+\begin_inset Formula $L\vkl V$
+\end_inset
+
+ и векторное поле 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ определено по крайней мере на 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $\v a=P\v i+Q\v j+R\v k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\v{\tau}\left(M\right)$
+\end_inset
+
+ --- еденичный вектор касательной к 
+\begin_inset Formula $L$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\v{\tau}=\cos\alpha\v i+\cos\beta\v j+\cos\gamma\v k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Напомним, что для диференциала дуги выполняется равенство: 
+\begin_inset Formula $dL\,:\,\begin{cases}
+\cos\alpha dl=dx\\
+\cos\beta dl=dy\\
+\cos\gamma dl=dz
+\end{cases}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+КИВР: 
+\begin_inset Formula $\ui LPdx+Qdy+Rdz=\ui L\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL$
+\end_inset
+
+ :КИПР.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ui L\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL=\ui L\left(\v a\left(M\right),\v{\tau}\left(M\right)\right)dl$
+\end_inset
+
+ --- Скалярная форма для криволинейного интеграла второго рода.
+\end_layout
+
+\begin_layout Standard
+Итак выражаем работу векторного поля 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ при перемещении вдоль ориентированой кривой 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Данный криволинейный интеграл второго рода называется еще линейным интегралом.
+\end_layout
+
+\begin_layout Definition
+Циркуляцией 
+\begin_inset Formula $C$
+\end_inset
+
+ векторного поля 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ вдоль замкнутой ориентированой кривой 
+\begin_inset Formula $L$
+\end_inset
+
+ называется число, равное 
+\begin_inset Formula 
+\[
+C=\un{\oint}L\left(\v a,\v{\tau}\right)dL=\un{\oint}LPdx+Qdy+Rdz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Физический смысл циркуляции
+\end_layout
+
+\begin_layout Standard
+Поместим в векторное поле 
+\begin_inset Formula $\v a$
+\end_inset
+
+ круглую пластинку 
+\begin_inset Formula $S$
+\end_inset
+
+ с лопастями на её границе 
+\begin_inset Formula $\dd S=L$
+\end_inset
+
+.
+ Плоскость лопастей перпедикулярна кривой 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Вращательный момент поля 
+\begin_inset Formula $\v a$
+\end_inset
+
+ в каждой точке 
+\begin_inset Formula $M\in L$
+\end_inset
+
+ характеризуется проэкцией векторного поля 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ на вектор 
+\begin_inset Formula $\v{\tau}\left(M\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\v a,\v{\tau}\right)=\left|\v a\right|\left|\v{\tau}\right|\um\cos\left(\hat{\v a,\v{\tau}}\right)=\left\{ \left|\v{\tau}\right|=1\right\} =\text{Пр}_{\v{\tau}\left(M\right)}\v a\left(M\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сумирование всех вращательных моментов приводит к понятию циркуляции вектора
+ 
+\begin_inset Formula $\v a$
+\end_inset
+
+ вдоль контура 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Модуль циркуляции 
+\begin_inset Formula $\left|C\right|$
+\end_inset
+
+ --- угловая скорость вращения пластинки вокруг своей оси.
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Нафти циркуляцию векторного поля 
+\begin_inset Formula $\v a=\v a\left(x,y,z\right)=xy\v i+yz\v j+zx\v k$
+\end_inset
+
+ вдоль контура 
+\begin_inset Formula $L\,:\,\begin{cases}
+x^{2}+y^{2}=1\\
+x+y+z=1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Когда дается кривая в пространстве, её нужно параметризовать.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=\cos t\\
+y=\sin t\\
+z=1-\cos t-\sin t
+\end{cases},\ t\in\left[0;2\pi\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+C & = & \un{\oint}LPdx+Qdy+Rdz=\\
+ & = & \left\{ \begin{array}{c}
+dx=-\sin tdt\\
+dy=\cos tdt\\
+dz=\left(\sin t-\cos t\right)dt\\
+P=xy=\sin t\cos t
+\end{array}\right\} =\\
+ & = & \oui 0{2\pi}\left(\sin t\cos t\left(-\sin t\right)+\sin t\left(1-\cos t-\sin t\right)\cos t+\cos t\left(1-\cos t-\sin t\right)\left(\sin t-\cos t\right)\right)dt=\\
+ & = & -
+\end{eqnarray*}
+
 \end_inset
 
 
