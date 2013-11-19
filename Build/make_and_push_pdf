@@ -1,0 +1,27 @@
+#!/bin/sh
+
+find ../ -name '*.pdf' |
+while read fname; do
+	echo "Cleaning: ${fname}";
+	rm "${fname}";
+done
+
+find ../Term\ 3/ -type f -name '*.lyx' |
+while read filename; do
+	echo "Generating pdf: ${filename}";
+	lyx -e pdf2 "${filename}";
+done
+
+mkdir pdf3
+
+find ../Term\ 3/ -name '*.pdf' |
+while read fname; do
+	echo "Pushing: ${fname}";
+	mv "${fname}" pdf3/;
+done
+
+echo "Connecting and pushing..."
+
+lftp -f push.scr
+
+echo "All was successfully pushed!"
