@@ -2624,7 +2624,7 @@ reference "eq:4"
 \begin_inset Formula $\left|\ous{k=n}{n+p}a_{k}\right|<\varepsilon$
 \end_inset
 
- --- критерий Коши сходимости знакоположительного ряда (
+ --- критерий Коши сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:4"
@@ -2823,8 +2823,7 @@ reference "eq:4"
 \begin_inset Formula $q_{1},q_{2},\tr,q_{n},\tr$
 \end_inset
 
- .
- ......
+, которые расположены в порядке их следования в исходном ряде.
  Обозначим 
 \begin_inset Formula $P_{n}=p_{1}+p_{2}+\tr+p_{n}$
 \end_inset
@@ -2857,7 +2856,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 
 \end_inset
 
- Следовательно
+Cледовательно
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
 
@@ -2884,10 +2883,6 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Докажем абсолютную сходимость.
 \end_layout
 
