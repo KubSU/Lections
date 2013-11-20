@@ -2919,107 +2919,95 @@ reference "eq:7"
 Перестановка членов условно сходящегося ряда.
 \end_layout
 
-\begin_layout Standard
-Рассмотрим пример - знакочередующийся ряд.
-\end_layout
-
 \begin_layout Example
-\begin_inset Formula $\ous{k=1}{\b}\df{\left(-1\right)^{n}}n=1-\df 12+\df 13-\df 14+\df 15+\tr$
+Рассмотрим знакочередующийся ряд:
+\begin_inset Formula 
+\[
+\ous{k=1}{\b}\df{\left(-1\right)^{n}}n=1-\df 12+\df 13-\df 14+\df 15+\tr
+\]
+
 \end_inset
 
- - сходящийся ряд Лейбница.
+Это ряд Лейбница.
  Обозначим его сумму 
 \begin_inset Formula $S$
 \end_inset
 
 .
- Заметим что 
-\begin_inset Formula $\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+\tr+\dfrac{\left(-1\right)^{n-1}}{n}\um x^{n}+\tr$
+ Заметим что:
+\begin_inset Formula 
+\[
+\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+\tr+\dfrac{\left(-1\right)^{n-1}}{n}\um x^{n}+\tr
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+Следовательно: 
 \begin_inset Formula $S=\ln2$
 \end_inset
 
 .
-\end_layout
+ Абсолютной сходимости нет, значит ряд сходится условно.
+ Переставим члены ряда:
+\begin_inset Formula 
+\[
+\left(1-\df 12-\df 14\right)+\left(\df 13-\df 16-\df 18\right)+\tr+\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)+\tr
+\]
 
-\begin_layout Example
-Абсолютной сходимости нет 
-\begin_inset Formula $\sl$
 \end_inset
 
- ряд сходится условно.
-\end_layout
-
-\begin_layout Example
-Переставим члены ряда:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left(1-\df 12-\df 14\right)+\left(\df 13-\df 16-\df 18\right)+\tr+\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)+\tr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
 Рассмотрим частичные суммы:
-\end_layout
+\begin_inset Formula 
+\begin{align*}
+S_{3m}' & =\ous{k=1}m\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)=\\
+ & =\df 12\um\ous{k=1}m\left(\df 1{2k-1}-\df 1{2k}\right)=\\
+ & =\df 12\left(1-\df 12+\df 13-\df 14+\tr+\df 1{2m-1}-\df 1{2m}\right)\overset{m\st\b}{\st}\df S2\\
+S_{3m-1}' & =S_{3m}'+\df 1{4m}\overset{m\st\b}{\st}\df S2\\
+S_{3m-2}' & =S_{3m-1}'+\df 1{4m-2}\overset{m\st\b}{\st}\df S2
+\end{align*}
 
-\begin_layout Example
-\begin_inset Formula $S_{3m}'=\ous{k=1}m\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)=\df 12\um\ous{k=1}m\left(\df 1{2k-1}-\df 1{2k}\right)=\df 12\left(1-\df 12+\df 13-\df 14+\tr+\df 1{2m-1}-\df 1{2m}\right)\overset{m\st\b}{\st}\df S2$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $S_{3m-1}'=S_{3m}'+\df 1{4m}\overset{m\st\b}{\st}\df S2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $S_{3m-2}'=S_{3m-1}'+\df 1{4m-2}\overset{m\st\b}{\st}\df S2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
 Таким образом 
 \begin_inset Formula $\ul{m\st\b}S_{3m}'=\ul{m\st\b}S_{3m-1}'=\ul{m\st\b}S_{3m-2}'=\df S2$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Сумма 
-\begin_inset Formula $\ous{k=1}{\b}a_{k}'=\df S2=\df{\ln2}2\nr S=\ln2$
-\end_inset
-
 .
+ Значит:
+\begin_inset Formula 
+\[
+\ous{k=1}{\b}a_{k}'=\df S2=\df{\ln2}2\nr S=\ln2
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
 
 \emph on
-(Римана)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Римана
 \end_layout
 
-\begin_layout Theorem
-Если 
-\begin_inset Formula $\ous{k=1}{\b}a_{n}$
 \end_inset
 
- сходится условно, то 
+
+\emph default
+ Если ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+) сходится условно, то 
 \begin_inset Formula $\forall B\in\R$
 \end_inset
 
@@ -3044,7 +3032,7 @@ reference "eq:4"
 \end_inset
 
 .
- Рассмотрим 2 последовательности 
+ Рассмотрим две последовательности 
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
 
@@ -3052,8 +3040,8 @@ reference "eq:4"
 \begin_inset Formula $\left\{ q_{n}\right\} $
 \end_inset
 
-, которые были рассмотрены в доказательстве предыдущей теореме.
- Получим 2 знакоположительных ряда 
+, которые были рассмотрены в доказательстве предыдущей теоремы.
+ Получим 2 знакоположительных ряда: 
 \begin_inset Formula $\ous{n=1}{\b}p_{n}$
 \end_inset
 
@@ -3066,18 +3054,22 @@ reference "eq:4"
 \begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|=\b$
 \end_inset
 
-, то 
-\begin_inset Formula $\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ous{n=1}{\b}\left|a_{n}\right|=\b$
+, то:
+\begin_inset Formula 
+\[
+\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ous{n=1}{\b}\left|a_{n}\right|=\b
+\]
+
 \end_inset
 
- и 
-\begin_inset Formula $\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=\ul{n\st\b}\ous{n=1}{\b}q_{n}+\ul{n\st\b}\ous{n=1}{\b}p_{n}=\ous{n=1}{\b}p_{n}+\ous{n=1}{\b}q_{n}$
+ В то же время:
+\begin_inset Formula 
+\[
+\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=\ul{n\st\b}\ous{n=1}{\b}q_{n}+\ul{n\st\b}\ous{n=1}{\b}p_{n}=\ous{n=1}{\b}p_{n}+\ous{n=1}{\b}q_{n}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
 Так как 
 \begin_inset Formula $S=\ul{n\st\b}\left(P_{n}-Q_{n}\right)$
 \end_inset
@@ -3112,10 +3104,11 @@ reference "eq:4"
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{1}}-B\right|<p_{k_{1}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{1}}-B\right|<p_{k_{1}}$
 \end_inset
 
  
@@ -3130,10 +3123,11 @@ reference "eq:4"
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{1}+m_{1}}-B\right|>q_{m_{1}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{1}+m_{1}}-B\right|>q_{m_{1}}$
 \end_inset
 
 
@@ -3148,10 +3142,11 @@ reference "eq:4"
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{2}+m_{1}}'-B\right|<p_{k_{2}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{2}+m_{1}}'-B\right|<p_{k_{2}}$
 \end_inset
 
 
@@ -3166,10 +3161,11 @@ reference "eq:4"
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{2}+m_{2}}-B\right|>q_{m_{2}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{2}+m_{2}}-B\right|>q_{m_{2}}$
 \end_inset
 
 
