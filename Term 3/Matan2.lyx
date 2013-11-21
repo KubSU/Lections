@@ -22812,9 +22812,663 @@ dz=\left(\sin t-\cos t\right)dt\\
 P=xy=\sin t\cos t
 \end{array}\right\} =\\
  & = & \oui 0{2\pi}\left(\sin t\cos t\left(-\sin t\right)+\sin t\left(1-\cos t-\sin t\right)\cos t+\cos t\left(1-\cos t-\sin t\right)\left(\sin t-\cos t\right)\right)dt=\\
- & = & -
+ & = & -\pi
 \end{eqnarray*}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+21 november 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ротор векторного поля
+\end_layout
+
+\begin_layout Standard
+Локальный характеристикой векторного поля, связанной с вращательной его
+ способностью, является ротор (вихрь).
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала плоское векторное поле: 
+\begin_inset Formula $\v a=\v a\left(M\right),\ M\in D\vkl\R^{2}$
+\end_inset
+
+ и произвольный замкнутый контур 
+\begin_inset Formula $L\vkl D$
+\end_inset
+
+, окружающий точку 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, область 
+\begin_inset Formula $S$
+\end_inset
+
+ внутри контура имеет площадь 
+\begin_inset Formula $\D S$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Путь 
+\begin_inset Formula $\v n$
+\end_inset
+
+, равный 
+\begin_inset Formula $\v n=\v n\left(M_{0}\right)$
+\end_inset
+
+.
+ Контур 
+\begin_inset Formula $L$
+\end_inset
+
+ положительно ориентирован относстельно выбранной стороны 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Рассмотрим следующую величину:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\un{\oint}L\left(\v a,\v{\tau}\right)dl}{\D S}$
+\end_inset
+
+ --- средняя циркуляция на 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Циркуляцией векторного поля 
+\begin_inset Formula $\v a$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ называется: 
+\begin_inset Formula $\ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\un{\oint}L\left(\v a,\v{\tau}\right)dl}{\D S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим случай 3-х-мерного пространства.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v a=\v a\left(M\right)$
+\end_inset
+
+ --- пространственное векторное поле, 
+\begin_inset Formula $M\in V\vkl\R^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В этом случае рассматривают вращательную способность векторного поля 
+\begin_inset Formula $\v a$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}\in V$
+\end_inset
+
+ вдоль некоторого направления 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Для этого через точку 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+проведем плоскость , перпендикулярную 
+\begin_inset Formula $\v N$
+\end_inset
+
+, в ней выберем контур 
+\begin_inset Formula $L$
+\end_inset
+
+, ограничевающий 
+\begin_inset Formula $S$
+\end_inset
+
+ площадью 
+\begin_inset Formula $\D S$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ --- положительно ориентирован.
+\end_layout
+
+\begin_layout Standard
+Ротором (вихрем) векторного поля 
+\begin_inset Formula $\v a\left(M\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ называается вектор, обозначаемый 
+\begin_inset Formula $rot\,\v a\left(M_{0}\right)$
+\end_inset
+
+, проэкция которого на любое направление 
+\begin_inset Formula $\v N$
+\end_inset
+
+ равна 
+\begin_inset Formula 
+\begin{equation}
+\text{Пр}_{\v N}\, rot\,\v a\left(M_{0}\right)=\ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\un{\oint}L\left(\v a,\v{\tau}\right)dl}{\D S}\label{eq:39}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если векторное поле 
+\begin_inset Formula $\v a=P\v i+Q\v j+R\v k$
+\end_inset
+
+ --- непрерывно дифференцируемо, то 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+rot\,\v a\left(M\right)=\left|\begin{array}{ccc}
+\v i & \v j & \v k\\
+\df{\dd}{\dd x} & \df{\dd}{\dd y} & \df{\dd}{\dd z}\\
+P & Q & R
+\end{array}\right|=\left(\df{\dd R}{\dd y}-\df{\dd Q}{\dd z}\right)\v i+\left(\df{\dd P}{\dd z}-\df{\dd R}{\dd x}\right)\v j+\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)\v k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Используя формулу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:39"
+
+\end_inset
+
+) найдем например проэкцию вектора 
+\begin_inset Formula $rot\,\v a\left(M_{0}\right)$
+\end_inset
+
+ на направление 
+\begin_inset Formula $\v N=\left(0;0;1\right)$
+\end_inset
+
+, тоесть на ось 
+\begin_inset Formula $Oz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Возьмем 
+\begin_inset Formula $M_{0}\in V$
+\end_inset
+
+, 
+\begin_inset Formula $\v N=\left(0;0;1\right)$
+\end_inset
+
+ и через точку 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ проведем плоскость, перпендикулярную оси 
+\begin_inset Formula $Oz$
+\end_inset
+
+, на плоскости выберем замкнутый контур 
+\begin_inset Formula $L$
+\end_inset
+
+, положительно ориентированый относительно направления 
+\begin_inset Formula $\v N$
+\end_inset
+
+, ограничевающий область 
+\begin_inset Formula $S$
+\end_inset
+
+ площади 
+\begin_inset Formula $\D S$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{Пр}_{\v N}\, rot\,\v a\left(M_{0}\right) & = & \ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\un{\oint}L\left(\v a,\v{\tau}\right)dl}{\D S}=\\
+ & = & \ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\un{\oint}LPdx+Qdy+Rdz}{\D S}=\\
+ & = & \left\{ dz=0\right\} =\\
+ & = & \ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\un{\oint}LPdx+Qdy}{\D S}=\\
+ & = & \left\{ \begin{array}{c}
+\text{Формура Грина}\\
+\un{\oint}LPdx+Qdy=\\
+=\un{\iint}S\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy
+\end{array}\right\} =\\
+ & = & \ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\un{\iint}S\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy}{\D S}=\\
+ & = & \left\{ \begin{array}{c}
+\text{Теорема о среднем}\\
+\exists M_{1}
+\end{array}\right\} =\\
+ & = & \ul{\begin{array}{c}
+\D S\to0\\
+L\to M_{0}
+\end{array}}\df{\left(Q_{x}\pr\left(M_{1}\right)-P_{y}\pr\left(M_{1}\right)\right)\D S}{\D S}=\\
+ & = & \left\{ \begin{array}{c}
+L\to M_{0}\\
+M_{1}\to M_{0}\\
+Q_{x}\pr,\, P_{y}\pr\,-\\
+-\,\text{непрерывны}
+\end{array}\right\} =\\
+ & = & Q_{x}\pr\left(M_{0}\right)-P_{y}\pr\left(M_{0}\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Аналогично доказывается остальное:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\text{Пр}_{\v i}\, rot\,\v a\left(M_{0}\right)=R_{y}\pr-Q_{z}\pr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\text{Пр}_{\v j}\, rot\,\v a\left(M_{0}\right)=P_{z}\pr-R_{x}\pr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Поле с постоянной завехренностью
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\v a\left(M\right)=x\um\v j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $rot\,\left(x\um\v j\right)=\left|\begin{array}{ccc}
+\v i & \v j & \v k\\
+\df{\dd}{\dd x} & \df{\dd}{\dd y} & \df{\dd}{\dd z}\\
+P & Q & R
+\end{array}\right|=\left(\df{\dd R}{\dd y}-\df{\dd Q}{\dd z}\right)\v i+\left(\df{\dd P}{\dd z}-\df{\dd R}{\dd x}\right)\v j+\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)\v k=\v k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Формула Стокса
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ --- двустороняя поверхность, 
+\begin_inset Formula $L$
+\end_inset
+
+ --- замкнутый контур, ограничевающий 
+\begin_inset Formula $S$
+\end_inset
+
+, положительно ориентированый относительно выбранной стороны 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ взаимно обносзанчно проэктируется на 
+\begin_inset Formula $\dd=\dd_{xy}=XoY$
+\end_inset
+
+, а 
+\begin_inset Formula $L$
+\end_inset
+
+ проэктируется на 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ , тоесть 
+\begin_inset Formula $S$
+\end_inset
+
+ определяесят явно: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z-f\left(x,y\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\oint}LP\left(x,y,z\right)dx & = & \un{\oint}{\Gamma}P\left(x,y,f\left(x,y\right)\right)dx=\\
+ & = & \left\{ \begin{array}{c}
+\text{Формура Грина}\\
+\un{\oint}{\Gamma}Pdx+Qdy=\\
+=\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy
+\end{array}\right\} =\\
+ & = & -\un{\iint}DP_{y}\pr\left(x,y,f\left(x,y\right)\right)dxdy=\\
+ & = & -\un{\iint}D\left(\df{\dd P}{\dd y}+\df{\dd P}{\dd z}\um\df{\dd z}{\dd y}\right)dxdy=\\
+ & = & \left\{ \begin{array}{c}
+\v n=\left(\cos\alpha;\cos\beta;\cos\gamma\right)\\
+\cos\gamma>0\\
+\cos\alpha=\df{-f_{x}\pr}{\sqrt{\left(f_{x}\pr\right)^{2}+\left(f_{y}\pr\right)^{2}+1}}\\
+\cos\beta=\df{-f_{y}\pr}{\sqrt{\left(f_{x}\pr\right)^{2}+\left(f_{y}\pr\right)^{2}+1}}\\
+\cos\gamma=\df 1{\sqrt{\left(f_{x}\pr\right)^{2}+\left(f_{y}\pr\right)^{2}+1}}\\
+\df{\dd z}{\dd y}=\df{\dd f}{\dd y}=-\df{\cos\beta}{\cos\gamma}
+\end{array}\right\} =\\
+ & = & -\un{\iint}D\left(\df{\dd P}{\dd y}-\df{\dd P}{\dd z}\um\df{\cos\beta}{\cos\gamma}\right)dxdy=\\
+ & = & \left\{ \begin{array}{c}
+\df{dxdy}{\cos\gamma}=dS\end{array}\right\} =\\
+ & = & \un{\iint}S\left(\df{\dd P}{\dd z}\cos\beta-\df{\dd P}{\dd y}\cos\gamma\right)dS
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Итак: 
+\begin_inset Formula 
+\[
+\un{\oint}LP\left(x,y,z\right)dx=\un{\iint}S\left(\df{\dd P}{\dd z}\cos\beta-\df{\dd P}{\dd y}\cos\gamma\right)dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аналогично, если 
+\begin_inset Formula $S$
+\end_inset
+
+ однозначно проэктируется на плоскости 
+\begin_inset Formula $XoZ,\, YoZ$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\oint}LQ\left(x,y,z\right)dy=\un{\iint}S\left(Q_{x}\pr\cos\gamma-Q_{z}\pr\cos\alpha\right)dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\oint}LR\left(x,y,z\right)dz=\un{\iint}S\left(R_{y}\pr\cos\alpha-R_{x}\pr\cos\beta\right)dS
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\un{\oint}LPdx+Qdy+Rdz & = & \un{\iint}S\left(\left(Q_{x}\pr-P_{y}\pr\right)\cos\gamma+\left(P_{z}\pr-R_{x}\pr\right)\cos\beta+\left(R_{y}\pr-Q_{z}\pr\right)\cos\alpha\right)dS=\nonumber \\
+ & = & \un{\iint}S\left(Q_{x}\pr-P_{y}\pr\right)dxdy+\left(P_{z}\pr-R_{x}\pr\right)dxdz+\left(R_{y}\pr-Q_{z}\pr\right)dydz\label{eq:40}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это была формула Стокса.
+\end_layout
+
+\begin_layout Standard
+Итак доказана следующая теорема:
+\end_layout
+
+\begin_layout Theorem
+Если векторное поле 
+\begin_inset Formula $\v a=P\v i+Q\v j+R\v k$
+\end_inset
+
+ --- непрерывно дифференцируема в 
+\begin_inset Formula $V\vkl\R^{3}$
+\end_inset
+
+, сторона поверхности 
+\begin_inset Formula $S\vkl V$
+\end_inset
+
+ операется на замкнутый контур 
+\begin_inset Formula $L$
+\end_inset
+
+, положительно ориентированый относительтно выбранной стороны 
+\begin_inset Formula $S$
+\end_inset
+
+, то справедлива формула Стокса (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:40"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Remark
+Заметим что в формуле (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:40"
+
+\end_inset
+
+): 
+\begin_inset Formula $\un{\oint}LPdx+Qdy+Rdz=\un{\oint}L\left(\v a;\v{\tau}\right)dL$
+\end_inset
+
+ --- циркуляция векторного поля по 
+\begin_inset Formula $L$
+\end_inset
+
+, а правая часть 
+\begin_inset Formula $\un{\iint}S\left(rot\,\v a;\v n\right)dS$
+\end_inset
+
+ --- поток ротора через выбранную сторону поверхности 
+\begin_inset Formula $S.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+В терминах теории поля
+\end_layout
+
+\end_inset
+
+Циркуляция векторного поля 
+\begin_inset Formula $\v a=P\v i+Q\v j+R\v k$
+\end_inset
+
+ по замкнутому контуру равна потоку ротору этого поля через сторону 
+\begin_inset Formula $S$
+\end_inset
+
+, опирающуюся на контур 
+\begin_inset Formula $L$
+\end_inset
+
+, положительно ориентированый относительно выбранной стороны.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\un{\oint}L\left(\v a;\v{\tau}\right)dL=\un{\iint}S\left(rot\,\v a;\v n\right)dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Вычислить циркуляцию вектора 
+\begin_inset Formula $\v a=y\v i+x^{2}\v j-z\v k$
+\end_inset
+
+ по контуру: 
+\begin_inset Formula $\begin{cases}
+x^{2}+y^{2}=4\\
+z=3
+\end{cases}$
+\end_inset
+
+ непосредственно и с помощью формулы Стокса.
+\end_layout
+
+\begin_layout Example
+Параметризуем 
+\begin_inset Formula $L\,:\,\begin{cases}
+x=2\cos t, & dx=-2\sin ydt\\
+y=2\sin t, & dy=2\cos tdt\\
+z=3, & dz=0
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $C=\un{\oint}LPdx+Qdy+Rdz=\left\{ \begin{array}{c}
+P=y\\
+Q=x^{2}\\
+R=-z\\
+dz=0
+\end{array}\right\} =\oui 0{2\pi}\left(2\sin t\left(-2\sin t\right)+4\cos^{2}t\left(2\cos t\right)\right)dt=\tr=-4\pi$
 \end_inset
 
 
