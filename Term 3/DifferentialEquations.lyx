@@ -9277,8 +9277,14 @@ y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
 \end_layout
 
 \begin_layout Standard
-Тогда решение уравнения (uu1) можно находить в виде степеннгого ряда по
- 
+Тогда решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:uu1"
+
+\end_inset
+
+) можно находить в виде степеннгого ряда по 
 \begin_inset Formula $\left(x-x_{0}\right)$
 \end_inset
 
@@ -9289,15 +9295,37 @@ y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
  
 \end_layout
 
+\begin_layout Subsubsection
+Уравнение Эйери 
+\end_layout
+
 \begin_layout Standard
-Рассмотрим уравнение Эйери 
-\begin_inset Formula $y\ppr+xy=0$
+Рассмотрим уравнение Эйери:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y\ppr+xy=0\label{eq:hh2}
+\end{equation}
+
 \end_inset
 
 .
- Покажем как оно пораждает новые функции и как находить решение в виде степенных
+ 
+\end_layout
+
+\begin_layout Standard
+Покажем как оно пораждает новые функции и как находить решение в виде степенных
  рядов.
- Будем искать решение уравнения (uu2) в виде степенного ряда 
+ Будем искать решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh2"
+
+\end_inset
+
+) в виде степенного ряда 
 \begin_inset Formula $y=\ous{k=0}{\b}c_{k}x^{k}$
 \end_inset
 
@@ -9348,9 +9376,841 @@ y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
 \begin_inset Formula $c_{n+2}=-\df{c_{n-1}}{\left(n+2\right)\left(n+1\right)}$
 \end_inset
 
+ 
+\begin_inset Formula $n\br1$
+\end_inset
+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $n=1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $c_{3}==\df{-c_{0}}{3\um2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=2$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $c_{4}=\df{-c_{1}}{4\um3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{5}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{3m}=\df{\left(-1\right)^{m}c_{0}}{3m\left(3m-1\right)\left(3m-3\right)\left(3m-4\right)\tr3\um2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{3m+1}=\df{\left(-1\right)^{m}c_{1}}{\left(3m+1\right)3m\left(3m-2\right)\left(3m-3\right)\tr4\um3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{3m+2}=0,\ m\br1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Сдесь коофиценты 
+\begin_inset Formula $c_{0},c_{1}$
+\end_inset
+
+ --- произвольные.
+ Положим 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ равное еденице, а 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ равное нулю.
+ Это обзачает что 
+\begin_inset Formula $y\left(0\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $y\pr\left(0\right)=0$
+\end_inset
+
+.
+ Тогда решение 
+\begin_inset Formula 
+\begin{equation}
+y_{1}\left(x\right)=\ous{m=0}{\b}\df{\left(-1\right)^{m}x^{3m}}{3m\left(3m-1\right)\left(3m-3\right)\left(3m-4\right)\tr\left(3\um2\right)}\label{eq:hh3}
+\end{equation}
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $c_{0}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{1}=1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $y\left(0\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\pr\left(0\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{2}\left(x\right)=\df{\left(-1\right)^{m}x^{3m+1}}{\left(3m+1\right)3m\left(3m-2\right)\left(3m-3\right)\tr4\um3}\label{eq:hh4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По признаку Даламбера можно доказать сходимость рядов (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh3"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh4"
+
+\end_inset
+
+) для 
+\begin_inset Formula $x\in\left(-\b;+\b\right).$
+\end_inset
+
+ После этого подставим в исходное равенство, и получим, что это и есть решение
+ уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh2"
+
+\end_inset
+
+).
+ Функции 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+, опредлеляемы е равенствами (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh3"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh4"
+
+\end_inset
+
+) лимнейн6о не зависимы (доказывается по определителю Вронского).
+ А тогда общим рещшение урпавнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh2"
+
+\end_inset
+
+) будет 
+\begin_inset Formula $y\left(x\right)=c_{1}y_{1}\left(x\right)+c_{2}y_{2}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $c_{1},c_{2}$
+\end_inset
+
+ --- произвольные постоянные.
+\end_layout
+
+\begin_layout Claim
+Если в линейном неоднородном уравнениии 
+\begin_inset Formula $y\ppr+a_{1}\left(x\right)y\pr\left(x\right)+a_{2}\left(x\right)y=f\left(x\right),$
+\end_inset
+
+ где 
+\begin_inset Formula $a_{1}\left(x\right),\, a_{2}\left(x\right),\, f\left(x\right)$
+\end_inset
+
+ --- действительные аналитические функции в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, то его общее решение может быть получено методом неопределенных коофицентов,
+ аналогично тому, как эхто делалось для уравнениия (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hh2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Зависимость решений от начальных значений и паратров
+\end_layout
+
+\begin_layout Standard
+Рассмотрим задачу Коши для одного джифференциального уравнения:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dy}{dx}=f\left(x,y\right)\\
+y\left(x_{0}\right)=y_{0}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Встает вопрос как при изменении 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ будет меняться решение этого уравнения.
+ Важно чтобы при небольшом изменении 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ решение изменялось маленько не сильно.
+\end_layout
+
+\begin_layout Standard
+Заметим, что изучение зависимости решения дифференциального уравнения от
+ начальных данных можно свести к изучению зависимости решения диференциального
+ уравнения, от параметров, входящих в правую часть.
+\end_layout
+
+\begin_layout Standard
+Обозначим через 
+\begin_inset Formula $y\left(x,x_{0},y_{0}\right)$
+\end_inset
+
+ --- решение этой задачи Коши.
+\end_layout
+
+\begin_layout Standard
+Введем новую неизвестную функцию 
+\begin_inset Formula $z=y\left(x,x_{0},y_{0}\right)-y_{0}$
+\end_inset
+
+ и новую независимую переменную 
+\begin_inset Formula $t=x-x_{0}$
+\end_inset
+
+.
+ Торгда начальным значением 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+ будут соотвествовать значения 
+\begin_inset Formula $t=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z\left(t\right)=y\left(x_{0}+t,x_{0},y_{0}\right)-y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy}{dx}=\df{dz}{dt},\ \df{dt}{dx}=\df{dz}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dz}{dt}=f\left(x_{0}+t,z+y_{0}\right)\\
+z\left(0\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Справедливо и обратное: иучение зависимости решения дифференциальногоь уравнения
+ от параметров в правой части можно свести к изучению решения дифференциального
+ уравнения от начальных условий.
+\end_layout
+
+\begin_layout Standard
+Ну действительно, пусть: 
+\begin_inset Formula $\begin{cases}
+\df{dy}{dx}=f\left(x,y,\mu\right)\\
+y\left(x_{0}\right)=y_{0}
+\end{cases}$
+\end_inset
+
+ .
+ Нам интересно, как от параметра 
+\begin_inset Formula $\mu$
+\end_inset
+
+ зависит решение этой задачи Коши.
+ Тогда к уравнению 
+\begin_inset Formula $\df{dy}{dx}=f\left(x,y,\mu\right)$
+\end_inset
+
+ мы допишем 
+\begin_inset Formula $\df{d\mu}{dx}=0$
+\end_inset
+
+, а к начальному условию допишем 
+\begin_inset Formula $\mu\left(x_{0}\right)=\mu_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Рассмотрим область 
+\begin_inset Formula $G$
+\end_inset
+
+ переменных 
+\begin_inset Formula $\left(x_{1}\tr x_{n},\ z_{1}\tr z_{m}\right)\in G\vkl\R^{n+m}$
+\end_inset
+
+.
+ Будем говорить, что область 
+\begin_inset Formula $G$
+\end_inset
+
+ выпукла по переменным 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+, если 
+\begin_inset Formula $\forall\left(x_{1}\tr x_{n},z_{1}\tr z_{m}\right),\,\left(y_{1}\tr y_{n},\, z_{1}\tr z_{m}\right)\in G$
+\end_inset
+
+, пренадлежит 
+\begin_inset Formula $G$
+\end_inset
+
+ и весь отрезок прямой, соединяющей эти точки.
+ тоесть пренаднежат точки 
+\begin_inset Formula $\left(x_{1}+\alpha\left(y_{1}-x_{1}\right),\tr,x_{n}+\alpha\left(y_{n}-x_{n}\right),z_{1},\tr z_{n}\right)\in G,\ \forall\alpha\in\left[0;1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Адамара (Французский математик)
+\end_layout
+
+\end_inset
+
+ Пусть функция 
+\begin_inset Formula $F\left(x_{1},\tr,x_{n},z_{1},\tr,z_{m}\right)$
+\end_inset
+
+ имеет в некоторой выпуклой по переменным 
+\begin_inset Formula $\left(x_{1},\tr x_{n}\right),\,\left(y_{1},\tr,y_{n}\right)$
+\end_inset
+
+ области 
+\begin_inset Formula $G$
+\end_inset
+
+ пространства 
+\begin_inset Formula $G\vkl\R^{n+m}$
+\end_inset
+
+непрерывные производные по 
+\begin_inset Formula $\left(x_{1},\tr,x_{n}\right)$
+\end_inset
+
+ до 
+\begin_inset Formula $p-$
+\end_inset
+
+го порядка, 
+\begin_inset Formula $p>0$
+\end_inset
+
+.
+ Тогда найдутс 
+\begin_inset Formula $n$
+\end_inset
+
+ функций 
+\begin_inset Formula $\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right),\ i=\overline{1,n}$
+\end_inset
+
+.
+ Имеющие непрерывные производнеые по 
+\begin_inset Formula $x_{1},\tr x_{n},y_{1},\tr,y_{n}$
+\end_inset
+
+ до 
+\begin_inset Formula $p-1$
+\end_inset
+
+ го порядка, то справедливо равенство:
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n}z_{1},\tr,z_{m}\right)=\ous{i=1}n\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)\left(y_{i}-x_{i}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Верно равненство 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Это аналог 
+\begin_inset Formula $y\left(b\right)-y\left(a\right)=\oui ab\df{dy}{dt}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $\xi_{i}=x_{i}+t\left(y_{i}-x_{i}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $i=\overline{1,n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда по правилу дифференцирования сложной функции получим, что 
+\begin_inset Formula $\df{dF}{dt}=\ous{i=1}n\df{\dd F}{\dd\xi_{i}}\um\df{\dd\xi_{i}}{\dd t}=\ous{i=1}n\df{\dd F}{\dd\xi_{i}}\left(y_{i}-x_{i}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}=\ous{i=1}n\oui 01\df{\dd F}{\dd\xi_{i}}dt\left(y_{i}-x_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим через 
+\begin_inset Formula $\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{\dd F}{\dd\xi_{i}}dt,\ i=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Осталось сказать, что функции 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ удовлетворяют условиям леммы, тоесть функции 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ будут иметь непрерывные производные до 
+\begin_inset Formula $\left(p-1\right)-$
+\end_inset
+
+го порядка по переменным 
+\begin_inset Formula $\left(x_{1},\tr x_{n}\right),\,\left(y_{1},\tr,y_{n}\right)$
+\end_inset
+
+.
+ Чтд.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим диференциальное уравнение 
+\begin_inset Formula $\begin{cases}
+\df{dy}{dx}=f\left(x,y,\mu_{1},\tr,\mu_{n}\right)\\
+y\left(x_{0}\right)=y_{0}
+\end{cases}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\overline{G_{xy}}\vkl\R^{2}$
+\end_inset
+
+ --- некоторая замкнутая область пространства 
+\begin_inset Formula $\R^{2}$
+\end_inset
+
+ переменных 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $G\left\{ \left(x,y,\mu_{1},\tr,\mu_{n}\right)|\left(x,y\right)\in\overline{G_{xy}},\,\left|\mu_{i}\right|<\mu_{i}^{\left(0\right)}\right\} ,\,\mu_{i}^{\left(0\right)}>0,\ i=\overline{1,n}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О непрерывной зависимости и дифференцируемости по параметрам
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+(О непрерывности)
+\emph default
+ Если функця 
+\begin_inset Formula $f\left(x,y,\mu_{1},\tr,\mu_{n}\right)$
+\end_inset
+
+ непрерывна в 
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ по совокупности всех своих аргументов, ограничена, и удовлетворяет в этой
+ обьласти 
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ условию Липшица по 
+\begin_inset Formula $y$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\left|f\left(x,y_{2},\mu_{1},\tr,\mu_{n}\right)-f\left(x,y_{1},\mu_{1},\tr,\mu_{n}\right)\right|\mr K\left|y_{2}-y_{1}\right|$
+\end_inset
+
+, где 
+\begin_inset Formula $K$
+\end_inset
+
+ не зависиь от 
+\begin_inset Formula $x,y,\mu_{i},\, iu=\overline{1,n}$
+\end_inset
+
+.
+ То для любой точки 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+, лежащей внутри 
+\begin_inset Formula $\overline{G_{xy}}$
+\end_inset
+
+ найдется отрезок 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, содержащий 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ внутри, на котором существует решение задачи Коши (1), непрерывное по совокупно
+сти пееменных 
+\begin_inset Formula $\left(x,\mu_{1},\tr,\mu_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+(Диференцируемости) 
+\emph default
+Если 
+\begin_inset Formula $f$
+\end_inset
+
+ и её производные до 
+\begin_inset Formula $p-$
+\end_inset
+
+го порядка по 
+\begin_inset Formula $y$
+\end_inset
+
+ и всем 
+\begin_inset Formula $\mu_{i}$
+\end_inset
+
+ внутри 
+\begin_inset Formula $\overline{G}$
+\end_inset
+
+ непрерывны по совокупности аргументов 
+\begin_inset Formula $\left(x,y,\mu_{1},\tr,\mu_{n}\right)$
+\end_inset
+
+ и ограничены, то решение 
+\begin_inset Formula $y\left(x,\mu_{1},\tr,\mu_{n}\right)$
+\end_inset
+
+ имеет по параметрам 
+\begin_inset Formula $\mu_{i}$
+\end_inset
+
+ непрерывные по совокупности переменных производные также до 
+\begin_inset Formula $p$
+\end_inset
+
+-го порядка, когда 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+, а 
+\begin_inset Formula $\left|\mu_{i}\right|<\mu_{i}^{\left(0\right)}$
+\end_inset
+
+.
+ Где 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ --- обрезок из пункта 1.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Будем рассматривать при 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy}{dx}=f\left(x,y,\mu\right)\\
+y\left(x_{0}\right)=y_{0}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда построим последовательность функций:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{1}\left(x,\mu\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{0}\left(\xi\right),\mu\right)d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{k+1}\left(x,\mu\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{k}\left(\xi\right),\mu\right)d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Где 
+\begin_inset Formula $\varphi_{0}\left(\xi\right)$
+\end_inset
+
+ --- произвольная непрерывная функция на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Потом все делаем методом последовательных прибличений.
+\end_layout
+
+\begin_layout Standard
+А тогда по теореме о существовании и единственности Перара у задачи Коши
+ будет существовать решение на отрезке 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ Вод это отрезок 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ возьмем для дальнейшихрассмотрений.
+ У нас по условию ограничено, тогда найдется 
+\begin_inset Formula $M$
+\end_inset
+
+, такая что 
+\begin_inset Formula $\left|f\left(x,y,\mu\right)\right|\mr M$
+\end_inset
+
+.
+ Ну а тошда точно также рассмиатриваем ряд ь
+\begin_inset Formula $\varphi_{0}+\left(\varphi_{1}-\varphi_{0}\right)+\tr+\left(\varphi_{k+1}-\varphi_{k}\right)+\tr$
+\end_inset
+
+ и получаем оценку 
+\begin_inset Formula $\left|\varphi_{k+1}-\varphi_{k}\right|\mr\df{2CK^{k-1}x^{k-1}}{\left(k-1\right)!}$
+\end_inset
+
+ --- эта оценка равномерная по 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ Следовательно соответствуюший ряд будет сходиться равномерно по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+, а тогда предельная функция 
+\begin_inset Formula $\varphi\left(x,\mu\right)$
+\end_inset
+
+ непрерывна по совокупности аргументов.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 Колоквиум
 \end_layout
