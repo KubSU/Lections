@@ -11043,7 +11043,559 @@ f=\eta\df{du}{dz}\um S
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+23 ноября 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}=U\left(z+\left\langle l\right\rangle \right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{2}=U\left(z-\left\langle l\right\rangle \right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Раз длинна свободного пробера маленькая, тто мы можем применить формулу
+ Тейлора (из мат анализа)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}=U\left(z+\left\langle l\right\rangle \right)=u\left(z\right)+\df{du\left(z\right)}{dz}\left\langle l\right\rangle +\df{d^{2}u\left(z\right)}{dz}\df{\left\langle l\right\rangle ^{2}}{2!}+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\left\langle l\right\rangle $
+\end_inset
+
+ очень мало, то ограничемся всего лишь 2мя слагаемыми:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}=u\left(z\right)-\df{du}{dz}\left\langle l\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}=-\df 16mn\left\langle v\right\rangle 2\df{du}{dz}\left\langle l\right\rangle S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Учитывая что это 
+\begin_inset Formula $f$
+\end_inset
+
+ --- сила взаимодействия между слоями на площадке 
+\begin_inset Formula $S$
+\end_inset
+
+, то ее знак можно опустить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle \df{du}{dz}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сравним с поученой эксперементально: 
+\begin_inset Formula $f=\nu\df{du}{dz}S$
+\end_inset
+
+, 
+\begin_inset Formula $\nu=mn\left\langle v\right\rangle \left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu=\df 13mn\sqrt{\df{8kT}{3m}}\df 1{\sqrt{2}\sigma n}\sim\df{\sqrt{T}\sqrt{m}}{\sigma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Коофицент вязкости не зависит от концентрации молекул, и таким образом и
+ от давления.
+\end_layout
+
+\begin_layout Subsection
+Тепропроводность газом
+\end_layout
+
+\begin_layout Standard
+Теплопроводность --- это перенос энергии.
+\end_layout
+
+\begin_layout Standard
+Опытным путем было установлено, то что за еденицу времени черезт площадку
+ с проходит 
+\begin_inset Formula $q=-\df{dT}{dz}S$
+\end_inset
+
+ количество тепла.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=q\um t$
+\end_inset
+
+ --- тепло, прошедшее через площадку за время 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda$
+\end_inset
+
+ --- коофицент теплопроводностии
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\lambda\right]=\df{\text{Дж}}{\text{К}\x\text{М}\x\text{с}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попробуем обьяснить эту формулу основываясь на молекулярно кинетическую
+ теорию.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+НРис 33
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{1}\right\rangle =\df 32\um k\um T_{1}$
+\end_inset
+
+ --- энергия 1го слоя
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{2}\right\rangle =\df 32\um k\um T_{2}$
+\end_inset
+
+ --- энергия 2го слоя
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N=\df 16\um\left\langle v\right\rangle \um\D t\um S\um n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Количество молекул перешедших из 1го слоя во 2й и обратно одинакого.
+ Посчитаем энергию:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D E=-\D N\left\langle \varepsilon_{1}\right\rangle +\D N\left\langle \varepsilon_{2}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta E=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)\D tS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=\df{\D E}{\D t}=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)S=\df 16\left\langle v\right\rangle n\df 32k\left(T_{2}-T_{1}\right)S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}=T\left(z+\left\langle l\right\rangle \right)\approx T\left(z\right)+\df{dT}{dz}\um\left\langle l\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}=T\left(z-\left\langle l\right\rangle \right)\approx T\left(z\right)-\df{dT}{dz}\um\left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle n\df 32k\df{dT}{dz}S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Сопоставляем с полученой эксперементально и убеждаемся что все правильно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k=\\
+ & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k\df{mN_{A}}{mN_{A}}=\\
+ & = & \left\{ \begin{array}{c}
+kN_{A}=R\\
+n\um m=\rho\\
+mN_{A}=\mu
+\end{array}\right\} =\\
+ & = & \df 13\rho\df{3R}{2\mu}\left\langle v\right\rangle \left\langle l\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{v}=\df 32\df R{\mu}$
+\end_inset
+
+ --- удельная теплоемкость.
+ 
+\begin_inset Formula $\df 32$
+\end_inset
+
+ --- зависит от количества атомов в молекул (это тдля одноатомных).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle c_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=c_{v}\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=\df 13n\sqrt{\df{8kT}{\pi m}}\df 1{\sqrt{2}\sigma n}\df 32k\sim\df{\sqrt{T}}{\sigma\sqrt{m}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Дифузия газов
+\end_layout
+
+\begin_layout Standard
+Будем считать чтодавление и концентрация молекул по обьему одна и та же.
+\end_layout
+
+\begin_layout Standard
+Пусть смесь состоит только из 2х газов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 34
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}'+n_{1}''=n_{2}'+n_{2}''=n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это явление дифузии.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K$
+\end_inset
+
+ --- количество молекул, проходящие через площадку 
+\begin_inset Formula $S$
+\end_inset
+
+ в еденицу времени
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K'=-D\df{dn'}{dz}S$
+\end_inset
+
+ --- была получена эксперементально
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ --- коофицент дифузии.
+\end_layout
+
+\begin_layout Standard
+Попробуем эту формулу получить основываясь на молекулярно кинетической теории.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N=\df 16\left\langle v\right\rangle \D tnS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N'=-\D N_{1}'+\D N_{2}'=\df 16\left\langle v\right\rangle \left(n_{2}-n_{1}\right)\D tS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Накую величину изменилось количество молекул где то там...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K=\df{\D N'}{\D t}=\df 16\left\langle v\right\rangle \left(n_{2}'-n_{1}'\right)S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n'\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}'=n'\left(z+\left\langle l\right\rangle \right)\approx n'\left(z\right)+\df{dn'}{dz}\left\langle l\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}'=n'\left(z-\left\langle l\right\rangle \right)\approx n'\left(z\right)-\df{dn}{dz}\left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\left\langle l\right\rangle $
+\end_inset
+
+ маленькое, пренебрегаем степенями большими
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K'=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle \df{dn'}{dz}S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\df 13\left\langle v\right\rangle \left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu=\rho\um D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\df 13\sqrt{\df{8kT}{\pi m}}\df 1{\sigma n\sqrt{2}}\sim\df{\sqrt{T}}{\sqrt{m}n\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K''=-D\df{dn''}{dz}S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M'=-D\df{d\rho'}{dz}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Первое начало термодинамики
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вн}}=E_{\text{кин}}+E_{\text{вд}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=E_{\text{кин}}$
+\end_inset
+
+ --- в газах
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=E_{\text{кин}}=N\df 32kT=\nu\df 32RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрм, если газ получает некоторую энергию извне, в виде температьуры.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Условимся, что если газ получет тепо, то 
+\begin_inset Formula $Q>0$
+\end_inset
+
+,если отдает, то 
+\begin_inset Formula $Q<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Точно также условимся с работой.
+ Если газ совершает рабьоту над внешними телаами, то это робота положительная,
+ а если соверщается на гахом, то эта робота отрицательная.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=Q$
+\end_inset
+
+ --- изменение внутренней энергии
+\end_layout
+
+\begin_layout Standard
+Если газ в это время будет совершать работу, то его енергия будет уменьшаться.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=Q-A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=$
+\end_inset
+
+Тепло, поступающее в газ идет на изменение его внутренней энергии и на соверщени
+е газом работиы над внешними телами.
 \end_layout
 
 \begin_layout Standard
