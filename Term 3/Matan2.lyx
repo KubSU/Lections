@@ -834,7 +834,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-Числовой ряд 
+Числовой ряд
 \begin_inset Formula 
 \[
 r_{n}=a_{n+1}+a_{n+2}+\tr
@@ -861,7 +861,16 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Lemma
-(1) Ряд 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ Ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -877,14 +886,27 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\ous{n=1}{\b}a_{n}=\ul{n\st\b}S_{n}=S\ \dsl\ \ul{n\st\b}\left(S-S_{n}\right)=\ul{n\st\b}r_{n}=0$
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}a_{n}=\ul{n\st\b}S_{n}=S\ \dsl\ \ul{n\st\b}\left(S-S_{n}\right)=\ul{n\st\b}r_{n}=0
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Lemma
-(2, Необходимый признак сходимости числового ряда)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2, Необходимый признак сходимости числового ряда
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Lemma
@@ -901,22 +923,22 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 
 \begin_layout Proof
 Пусть 
-\begin_inset Formula $S$
-\end_inset
-
- - сумма ряда 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\begin_inset Formula $\ous{n=1}{\b}a_{n}=S$
 \end_inset
 
 , тогда 
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)\st S-S=0$
+\begin_inset Formula 
+\[
+\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)\Rightarrow S-S=0
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Remark
-Доказанный признак - достаточный признак расходимости: 
+Доказанный признак --- достаточный признак расходимости: если 
 \begin_inset Formula $\ul{n\st\b}a_{n}\nr0$
 \end_inset
 
@@ -924,33 +946,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - расходится.
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость 
-\begin_inset Formula $\ous{n=1}{\b}\df n{2n+1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\df n{2n+1}=\df 12\nr0\ \sl\ $
-\end_inset
-
- расходится.
-\end_layout
-
-\begin_layout Remark
-Необходимый признак не является достаточным.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1n$
-\end_inset
-
- - необходимость выполнена, но он расходится.
+ --- расходится.
 \end_layout
 
 \begin_layout Subsection
