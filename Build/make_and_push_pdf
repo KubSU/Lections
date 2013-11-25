@@ -1,5 +1,10 @@
 #!/bin/sh
 
+cd ../
+git checkout develop
+git pull
+cd Build/
+
 find ../ -name '*.pdf' |
 while read fname; do
 	echo "Cleaning: ${fname}";
