@@ -730,24 +730,37 @@ a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- можно записать: 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
+ можно записать:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|S_{n+p}-S_{n}\right|<\varepsilon
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
-(Критерий Коши) Ряд 
-\begin_inset Formula $\ous{n=1}{\b}$
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
+\end_layout
+
 \end_inset
 
- - сходится 
-\begin_inset Formula $\dsl$
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
+ --- сходится тогда и только тогда, когда
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon
+\]
+
 \end_inset
 
 
@@ -758,77 +771,57 @@ a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - сходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
+ --- сходится, значит 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- - сходиться 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
-\end_inset
-
- 
-\begin_inset Formula $\forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
-\end_inset
-
- 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
-\end_inset
-
- 
-\begin_inset Formula $\forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость следующий ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n\left(n+1\right)}=\df 12+\df 1{2\um3}+\tr+\df 1{n\left(n+1\right)}+\tr$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Example
-Так как 
-\begin_inset Formula $a_{n}=\df 1{n\left(n+1\right)}=\df 1n-\df 1{n+1}$
-\end_inset
-
-, то 
-\begin_inset Formula $S_{n}=\left(1-\df 12\right)+\left(\df 12-\df 13\right)+\left(\df 13-\df 14\right)+\tr+\left(\df 1{n-1}-\df 1n\right)+\left(\df 1n-\df 1{n+1}\right)+\tr\ov{\st}{n\st\b}1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-Гармонический ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr$
-\end_inset
-
-.
- Докажем его расходимость, то-есть выполняется следующее условие 
+ --- сходиться, а тогда:
 \begin_inset Formula 
-\begin{eqnarray*}
-\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists p\in\N\ :\  & \left|\ous{k=n+1}{n+p}\df 1k\right|= & \df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
- & = & \df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N}>N\um\df 1{2N}=\df 12
-\end{eqnarray*}
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|S_{n+p}-S_{n}\right|<\varepsilon
+\]
+
+\end_inset
+
+Что равносильно: 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим гармонический ряд: 
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr
+\]
+
+\end_inset
+
+Докажем его расходимость, то-есть выполняется следующее условие:
+\begin_inset Formula 
+\[
+\exists\varepsilon>0\quad\forall N\quad\exists n\br N\quad\exists p\in\N\quad\left|\ous{k=n+1}{n+p}\df 1k\right|>\varepsilon
+\]
+
+\end_inset
+
+Найдем 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\left|\ous{k=n+1}{n+p}\df 1k\right| & =\df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
+ & =\df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N}>\\
+ & >N\um\df 1{2N}=\df 12
+\end{align*}
 
 \end_inset
 
