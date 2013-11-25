@@ -1244,11 +1244,16 @@ reference "eq:2"
 \end_layout
 
 \begin_layout Theorem
-Признак Даламбера.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Даламбера
 \end_layout
 
-\begin_layout Theorem
-Если для ряда 
+\end_inset
+
+ Если для ряда 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1263,7 +1268,7 @@ reference "eq:1"
 \begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L$
 \end_inset
 
-
+, то:
 \end_layout
 
 \begin_deeper
@@ -1272,7 +1277,7 @@ reference "eq:1"
 \begin_inset Formula $L<1$
 \end_inset
 
- ряд сходится 
+ ряд сходится
 \end_layout
 
 \begin_layout Enumerate
@@ -1280,7 +1285,7 @@ reference "eq:1"
 \begin_inset Formula $L>1$
 \end_inset
 
- ряд сходится 
+ ряд рассходится 
 \end_layout
 
 \begin_layout Enumerate
@@ -1293,30 +1298,34 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
-
+Рассмотрим два случая:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L<1$
 \end_inset
 
- 
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L\ \dsl\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ L-\varepsilon<\df{a_{n+1}}{a_{n}}<L+\varepsilon$
+Пусть 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L$
 \end_inset
 
+, тогда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad L-\varepsilon<\df{a_{n+1}}{a_{n}}<L+\varepsilon
+\]
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-\begin_inset Formula $a_{n}\left(L-\varepsilon\right)<a_{n+1}<a_{n}\left(L+\varepsilon\right)\ \forall n\br N$
+Тогда верно: 
+\begin_inset Formula $a_{n}\left(L-\varepsilon\right)<a_{n+1}<a_{n}\left(L+\varepsilon\right)\quad\forall n\br N$
 \end_inset
 
 
@@ -1327,47 +1336,26 @@ reference "eq:1"
 \begin_inset Formula $L<1$
 \end_inset
 
- то существует такое 
-\begin_inset Formula $\varepsilon>0$
+ то 
+\begin_inset Formula $\exists\varepsilon>0$
 \end_inset
 
- такое маленькое, что 
+ такое, что 
 \begin_inset Formula $0<L+\varepsilon=q<1$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
+, а тогда:
+\begin_inset Formula 
+\begin{align*}
+a_{N+1} & <a_{N}\um q\\
+a_{N+2} & <a_{N+1}\um q<a_{N}\um q^{2}\\
+\dots & \dots\\
+a_{N+K} & <a_{N}\um q^{K},\quad K=\overline{1,\infty}
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+1}<a_{N}\um q$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+2}<a_{N+1}\um q<a_{N}\um q^{2}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\tr$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+K}<a_{N}\um q^{K},\ K=1,2,3,4,5,6,7\tr$
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -1375,24 +1363,16 @@ reference "eq:1"
 \begin_inset Formula $\ous{K=1}{\b}a_{N}\um q^{K}=a_{N}\um\ous{K=1}{\b}q^{K}$
 \end_inset
 
- - сходящая геометрическая прогрессия(
-\begin_inset Formula $q<1$
+ --- сходящая геометрическая прогрессия 
+\begin_inset Formula $(q<1)$
 \end_inset
 
-).
-\end_layout
-
-\begin_layout Standard
-То ряд 
+, то ряд 
 \begin_inset Formula $\ous{K=1}{\b}a_{N+K}=\ous{n=N+1}{\b}a_{n}$
 \end_inset
 
- - сходится.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Сходится 
+ --- сходится.
+ А значит и сходится 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1460,62 +1440,20 @@ reference "eq:1"
 
 \end_deeper
 \end_deeper
-\begin_layout Example
-(1) Исследовать на сходимость.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{n!}{n^{n}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{n}=\df{n!}{n^{n}}\ov{\st}{n\st\b}0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df{\left(n+1\right)!}{\left(n+1\right)^{n+1}}\um\df{n^{n}}{n!}=\ul{n\st\b}\df 1{\left(\df{n+1}n\right)^{n}}=\ul{n\st\b}\df 1{\left(1+\df 1n\right)^{n}}=\df 1e<1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-(2) Исследовать на сходимость
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{2^{n}}{n^{4}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df{2^{n+1}}{\left(n+1\right)^{4}}\um\df{n^{4}}{2^{n}}=2>1$
-\end_inset
-
- 
-\end_layout
-
 \begin_layout Subsubsection
 Признак Коши
 \end_layout
 
 \begin_layout Theorem
-(5) Признак Коши.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5, Признак Коши
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Пусть для ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1527,7 +1465,7 @@ reference "eq:1"
 \begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L$
 \end_inset
 
- 
+, тогда:
 \end_layout
 
 \begin_deeper
@@ -1557,26 +1495,33 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
- 
+Рассмотрим два случая:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L<1$
 \end_inset
 
- 
+: 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L\ \dsl\ \forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ L-\varepsilon<\sqrt[n]{a_{n}}L+\varepsilon$
+Пусть 
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L$
 \end_inset
 
- 
+, тогда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad L-\varepsilon<\sqrt[n]{a_{n}}<L+\varepsilon
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
