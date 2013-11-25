@@ -3011,8 +3011,8 @@ reference "eq:4"
 \begin_inset Formula $\forall B\in\R$
 \end_inset
 
- то можно переставить члены ряда так, то полученный ряд будет сходиться
- к 
+ можно переставить члены ряда так, что полученный ряд будет сходиться к
+ 
 \begin_inset Formula $B$
 \end_inset
 
@@ -3083,11 +3083,11 @@ reference "eq:4"
 \begin_inset Formula $\ul{n\st\b}\ous{k=1}np_{n}=\ous{n=1}{\b}p_{n}$
 \end_inset
 
- конечная , то и 
+ --- конечная, то и 
 \begin_inset Formula $\ul{n\st\b}\left(S+Q_{n}\right)=S+\ous{n=1}{\b}q_{n}$
 \end_inset
 
- - также конечная.
+ --- также конечная.
 \end_layout
 
 \begin_layout Proof
@@ -3095,11 +3095,11 @@ reference "eq:4"
 \begin_inset Formula $B\in\R$
 \end_inset
 
- - произвольное число, тогда 
+ --- произвольное число, тогда 
 \begin_inset Formula $\exists k_{1}$
 \end_inset
 
-, что 
+, такое что: 
 \begin_inset Formula $p_{1}+p_{2}+\tr+p_{k_{1}}\br B$
 \end_inset
 
@@ -3115,10 +3115,11 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Proof
+Следовательно 
 \begin_inset Formula $\exists m_{1}$
 \end_inset
 
- такое что 
+ такое что: 
 \begin_inset Formula $p_{1}+\tr+p_{k_{1}}-q_{1}-q_{2}-\tr-q_{m_{1}}\mr B$
 \end_inset
 
@@ -3134,10 +3135,11 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Proof
+Аналогично 
 \begin_inset Formula $\exists k_{2}$
 \end_inset
 
- такое что 
+ такое что: 
 \begin_inset Formula $S_{k_{1}+m_{1}}'+p_{k_{1}+1}+p_{k_{1}+2}+\tr+p_{k_{2}}\br B$
 \end_inset
 
@@ -3172,11 +3174,8 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Proof
-И так далее...
-\end_layout
-
-\begin_layout Proof
-В полученном ряде участвуют все члены исходного ряда.
+И так далее.
+ В полученном ряде участвуют все члены исходного ряда.
 \end_layout
 
 \begin_layout Proof
@@ -3191,11 +3190,7 @@ reference "eq:4"
 \begin_inset Formula $\ul{n\st\b}a_{n}=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, следовательно 
 \begin_inset Formula $\ul{n\st\b}p_{k_{n}}=0$
 \end_inset
 
@@ -3213,7 +3208,7 @@ reference "eq:4"
 \begin_inset Formula $S_{k_{2}+m_{2}}'$
 \end_inset
 
- - убывает), то 
+ --- убывает), то 
 \begin_inset Formula $\exists\ul{n\st\b}S_{n}'=B$
 \end_inset
 
