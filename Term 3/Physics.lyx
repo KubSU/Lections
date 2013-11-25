@@ -11599,13 +11599,685 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+25 ноября 2013
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Subsection
+Теплоемкость газа.
+ (Одноатомного и многоатомного газа)
+\end_layout
+
+\begin_layout Definition
+Теплоемкостью какого либа тела, называется величина, равная колическтву
+ тепла, которое необходимо сообщить телу, чтобы поднять его температуру
+ на 1 градус.
+\end_layout
+
+\begin_layout Standard
+Если мы для какогото тела поднимает его температуру на 
+\begin_inset Formula $\D T$
+\end_inset
+
+, а тепрература тела повышается на 
+\begin_inset Formula $\D Q$
+\end_inset
+
+, то теплоемкостью можно называьт 
+\begin_inset Formula $C_{T}=\df{\D Q}{\D T}=\left[\df{\text{Джоуль}}{\text{Кельвин}}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Теплоемкость еденицы массы вещества называется удельной теплоемкостью.
+ Обозначается 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ В системе 
+\begin_inset Formula $\left[c\right]$
+\end_inset
+
+ измеряется в 
+\begin_inset Formula $\df{\text{Джоуль}}{\text{Кельвин}\x\text{Килограмм}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Теплоемкость одного киломоля вещества называется молярной теплоемкостью.
+ Обозначается 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left[C\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Киломоль}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=\df C{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим такую ситуацию.
+ Будем нагревать газ в замкнутом обьеме (
+\begin_inset Formula $V=const$
+\end_inset
+
+).
+ Газ не расширяется и не совершает работу (
+\begin_inset Formula $A=0$
+\end_inset
+
+), и тогда вся энергия пойдет на увеличение температуры.
+ 
+\begin_inset Formula $Q=\D U$
+\end_inset
+
+.
+ Мы уже знгаем что 
+\begin_inset Formula $U=\df 32\um R\um T$
+\end_inset
+
+ для одного моля.
+ 
+\begin_inset Formula $\D U=\df 32\nu R\D T$
+\end_inset
+
+.
+ Согласно этому примеру, еслши мы берем 
+\begin_inset Formula $\nu=1\,\text{КМоль}$
+\end_inset
+
+, то 
+\begin_inset Formula $C_{V}=\df Q{\D T}=\df{\D U}{\D T}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Теперь, если мы возьмем ситуацию, что обьем изменяется (Нагрев при постоянном
+ давлении) (
+\begin_inset Formula $P-const$
+\end_inset
+
+).
+ 
+\begin_inset Formula $Q=\D U+A$
+\end_inset
+
+ Вод тут будет такое равенство.
+ 
+\begin_inset Formula $C_{P}=\df Q{\D T}=\df{\D U}{\D T}+\df A{\D T}=C_{V}+\df A{\D T}>C_{V}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+При разных условиях теплоемкость газов разная.
+\end_layout
+
+\begin_layout Standard
+При движении поршня на 
+\begin_inset Formula $\D h$
+\end_inset
+
+, 
+\begin_inset Formula $A=F\D h=P\um S\um\D h=P\D V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{P}=C_{V}+\df{P\D V}{\D T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV_{1}=RT_{1}$
+\end_inset
+
+.
+ Потом мы нагрели получилось: 
+\begin_inset Formula $PV_{2}=RT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В итоге получим:
+\begin_inset Formula $P\D V=R\D T$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Подставим: 
+\begin_inset Formula $C_{P}=C_{V}+\df{P\D V}{\D T}=C_{V}+\df{R\D T}{\D T}=C_{V}+R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{P}=C_{V}+R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это формура Майэра.
+\end_layout
+
+\begin_layout Standard
+Универсальная газовая постоянная 
+\begin_inset Formula $R$
+\end_inset
+
+ численно рава работе расширения обного киломоля идеального газа при его
+ нагревании на один градус в условиях постоянного давления.
+\end_layout
+
+\begin_layout Standard
+Берем 
+\begin_inset Formula $\nu=1\,\text{КМоль}$
+\end_inset
+
+, 
+\begin_inset Formula $\D U=\df 32R\D T$
+\end_inset
+
+, то тогда 
+\begin_inset Formula $C_{V}=\df 32R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если мы берем 
+\begin_inset Formula $C_{V}=\df Q{\D T}$
+\end_inset
+
+ и если 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ зависит от пемпературы, то тогда устремляем 
+\begin_inset Formula $\D T\to\b$
+\end_inset
+
+.
+ И придем к формуле 
+\begin_inset Formula $C_{V}=\df{du}{dT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При некоторых условиях коофицент 
+\begin_inset Formula $\df 32$
+\end_inset
+
+ будет меняться, даже для одного и того же газа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{V}=\df 32R$
+\end_inset
+
+ --- такой теплокмкостью обладают газы 
+\begin_inset Formula $He,\, Ne,\, Ar,\tr$
+\end_inset
+
+.
+ (Восьмой столбец таблицы Минделеева) У них все элексроны заполнены.
+ Их называют благородными газами.
+ Для них 
+\begin_inset Formula $C_{V}=12,5\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для 
+\begin_inset Formula $N_{2},\, O_{2}$
+\end_inset
+
+ --- 
+\begin_inset Formula $C_{V}=20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для 
+\begin_inset Formula $NH_{3},\, CH_{4}$
+\end_inset
+
+ --- 
+\begin_inset Formula $C_{V}=25,0\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT=\df{m\left\langle v^{2}\right\rangle }2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v^{2}=v_{x}^{2}+v_{y}^{2}+v_{z}^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df{m\left\langle v_{x}^{2}\right\rangle }2+\df{m\left\langle v_{y}^{2}\right\rangle }2+\df{m\left\langle v_{z}^{2}\right\rangle }2=\df 12kT+\df 12kT+\df 12kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для одноатомного газа (
+\begin_inset Formula $He,\, Ne$
+\end_inset
+
+), для ни= 
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это было для одноатомного газа, у которго 3 степени свободы.
+\end_layout
+
+\begin_layout Standard
+Больцман предположил, что на любую степень своботы приходится 
+\begin_inset Formula $\df 12kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{\text{вр}}=\df{I\um\omega^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{\text{вр}}\right\rangle =\df{I\um\left\langle \omega^{2}\right\rangle }2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать молекулу многоатомного газа.
+ При хаотическом движении любое поступательное движение может перейти во
+ вращательное и наоборот.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N_{2},\, O_{2}$
+\end_inset
+
+ --- 5 степеней свободы.
+ Тогда 
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+2\left(\df 12kT\right)=\df 52kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь перейдем во внутреннюю энергию газов, то там 
+\begin_inset Formula $U=\df 52RT$
+\end_inset
+
+, 
+\begin_inset Formula $C_{V}=\df 52R\approx20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $NH_{3},\, CH_{4},\, H_{2}O$
+\end_inset
+
+ --- 6 степеней свободы.
+\end_layout
+
+\begin_layout Standard
+Для них 
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+3\left(\df 12kT\right)=\df 62kT=3kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если посчитать, то всё сходится.
+\end_layout
+
+\begin_layout Standard
+Но есть некоторые исключения.
+ Дело в том, что некоторые газы, например 
+\begin_inset Formula $CO_{2}$
+\end_inset
+
+, у него структура линейная, и у него 5 степеней свободы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 35
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Почему это так? Все таки молукула, этот не твердое тело.
+ При очень нихких температурах у них нету вращательного движения, и гворят,
+ что она вымерзает.
+ Тоесть если 
+\begin_inset Formula $\widetilde{\varepsilon_{\text{вр}}}>\df 12kT+\df 12kT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Примерно при 
+\begin_inset Formula $T=100\, K$
+\end_inset
+
+ и меньше вымерзают вращательные степени свободы.
+\end_layout
+
+\begin_layout Standard
+С ростом температуры у отдельных молекул начинает проявляться колебательная
+ степень свободы, связанная с движением атомов в молекуле.
+ В этом дуижении участвуют два вида энергии --- этергия движения атомов
+ и потенциальная энергия связи в атомах.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{\text{кол}}\right\rangle =\left\langle \varepsilon_{AT}\right\rangle +\left\langle U_{AT}\right\rangle =\df 12kT+\df 12kT=kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT>\tilde{\varepsilon}_{\text{кол}}$
+\end_inset
+
+\SpecialChar \@.
+ На нее приходится 
+\begin_inset Formula $\df 22kT$
+\end_inset
+
+.
+ По отдельности на каждый вид энергии.
+\end_layout
+
+\begin_layout Standard
+На 2500 молекулы распадаются, и вся энергия идет на распад молекул на атомы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tilde{\varepsilon}_{\text{св}}\approx kT$
+\end_inset
+
+ --- 2500 K
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon_{\text{эл}}\approx kT$
+\end_inset
+
+ --- примерно 3000 K
+\end_layout
+
+\begin_layout Standard
+После 3000 электроны покидают молекулы газа, и он превращается в плазму.
+\end_layout
+
+\begin_layout Subsection
+Процессы и циклы с газами
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=\nu RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если я знаю значения 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+, то можно найти 
+\begin_inset Formula $T.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\df 1{\nu R}PV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $PV$
+\end_inset
+
+ диаграмму.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 36
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Какие же энергетические преобразования происходят еще.
+\end_layout
+
+\begin_layout Standard
+При постоянном лавлении 
+\begin_inset Formula $A=p\um\D V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Изохарический процесс.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $V=const$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $A=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\D U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{V}=\df i2R$
+\end_inset
+
+, где 
+\begin_inset Formula $i$
+\end_inset
+
+--- число степеней свободы молекул.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изобaрический процесс
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $P=const$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $A=P\um\D V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\D U+A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{P}=\df{i+2}2R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=P\left(V_{2}-V_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изотермический процесс
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
