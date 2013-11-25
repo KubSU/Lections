@@ -429,7 +429,7 @@ theorems-starred
 \begin_inset Formula $\left\{ a_{n}\right\} $
 \end_inset
 
- и образуют выражение вида 
+ и образуем выражение вида: 
 \begin_inset Formula 
 \begin{equation}
 a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:1}
@@ -448,7 +448,7 @@ reference "eq:1"
 \begin_inset Formula $a_{1},a_{2}\tr a_{n}\tr$
 \end_inset
 
- - членами ряда (
+ --- членами ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1"
@@ -468,10 +468,10 @@ reference "eq:1"
 \end_inset
 
  называется 
-\begin_inset Formula $n-$
+\begin_inset Formula $n$
 \end_inset
 
-ой частичной суммой ряда (
+-ой частичной суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1"
@@ -521,48 +521,28 @@ reference "eq:1"
 
 \begin_layout Remark
 Так как 
-\begin_inset Formula $S_{1}=a_{1},\ S_{2}=S_{1}+a_{2}\ \sl\ a_{2}=S_{2}-S_{1}\ \sl\ a_{n}=S_{n}-S_{n-1}$
+\begin_inset Formula $S_{1}=a_{1}$
 \end_inset
 
- то устанавливается однозначное соответствие 
+ и 
+\begin_inset Formula $S_{2}=S_{1}+a_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{2}=S_{2}-S_{1}$
+\end_inset
+
+, аналогично 
+\begin_inset Formula $a_{n}=S_{n}-S_{n-1}$
+\end_inset
+
+, а значит устанавливается однозначное соответствие 
 \begin_inset Formula $\left\{ a_{n}\right\} \longleftrightarrow\left\{ S_{n}\right\} $
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Example
-Исследовать на сходимость 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $1-1+1-1+1+\tr=\ous{n=1}{\b}\left(-1\right)^{n+1}$
-\end_inset
-
- Она не сходится.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
-\end_inset
-
- - исследовать на сходимость
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $S_{n}=a+a^{2}+a^{3}+\tr+a^{n}=\left\{ \begin{array}{c}
-b_{1}=a\\
-q=q
-\end{array}\right\} =\df{b_{1}\left(1-a^{4}\right)}{1-q}$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Standard
 Из определения суммы числового ряда вытекают свойства:
 \end_layout
@@ -589,11 +569,14 @@ q=q
 
 \begin_deeper
 \begin_layout Proof
-Рассмотрим последовательность частичных сумм нового ряда.
-\end_layout
+Рассмотрим последовательность частичных сумм нового ряда:
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{n+1} & =A+a_{1}+a_{2}+\tr+a_{n}=\\
+ & =\left\{ a_{1}+a_{2}+\tr+a_{n}=S_{n}\right\} =\\
+ & =A+S_{n}\ov{\st}{n\st\b}A+S
+\end{align*}
 
-\begin_layout Proof
-\begin_inset Formula $\Sigma_{n+1}=A+a_{1}+a_{2}+\tr+a_{n}=\left\{ a_{1}+a_{2}+\tr+a_{n}=S_{n}\right\} =A+S_{n}\ov{\st}{n\st\b}A+S$
 \end_inset
 
  так как 
@@ -605,7 +588,7 @@ q=q
 
 \end_deeper
 \begin_layout Enumerate
-Если ряд сумма 
+Если ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -617,7 +600,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}\alpha\um a_{n}$
 \end_inset
 
- - сходится к 
+ сходится к 
 \begin_inset Formula $\alpha\um S$
 \end_inset
 
@@ -625,12 +608,16 @@ q=q
 \begin_inset Formula $\alpha\in\R$
 \end_inset
 
- произвольное.
+ --- произвольное.
 \end_layout
 
 \begin_deeper
 \begin_layout Proof
-\begin_inset Formula $\ous{n=1}{}$
+\begin_inset Formula 
+\[
+\ous{n=1}{\infty}\alpha\um a_{n}=\alpha\um\ous{n=1}{\infty}a_{n}=\alpha\um S
+\]
+
 \end_inset
 
 
@@ -662,27 +649,31 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- сходятся, то ряды 
+ сходятся, то ряд 
 \begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)$
 \end_inset
 
- тоже сходятся, причем выполняется следующее равенство: 
-\begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)=$
+ тоже сходится, причем выполняется следующее равенство:
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)=\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}
+\]
+
 \end_inset
 
 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}$
-\end_inset
-
-.
 \end_layout
 
 \begin_deeper
 \begin_layout Proof
-\begin_inset Formula $\Sigma_{n}=\ous{k=1}n\left(a_{k}\pm b_{k}\right)=\ous{k=1}na_{n}\pm\ous{k=1}nb_{n}\ov{\st}{n\st\b}\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}$
+\begin_inset Formula 
+\[
+\Sigma_{n}=\ous{k=1}n\left(a_{k}\pm b_{k}\right)=\ous{k=1}na_{n}\pm\ous{k=1}nb_{n}\ov{\st}{n\st\b}\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \end_deeper
@@ -700,22 +691,28 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - сходится.
+ сходится.
  Отбросим 
 \begin_inset Formula $k$
 \end_inset
 
  первых слагаемых ряда, получим следующий ряд: 
-\begin_inset Formula $a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr$
+\begin_inset Formula 
+\[
+a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr
+\]
+
 \end_inset
 
- .
- Последовательность его частичных сумм: 
-\begin_inset Formula $\Sigma_{n}=a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr=S_{k+n}-S_{k}\ov{\st}{n\st\b}S-S_{k}$
+Рассмотрим последовательность его частичных сумм:
+\begin_inset Formula 
+\[
+\Sigma_{n}=a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr=S_{k+n}-S_{k}\ov{\st}{n\st\b}S-S_{k}
+\]
+
 \end_inset
 
-.
- 
+
 \end_layout
 
 \end_deeper
@@ -728,7 +725,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- равносильно сходимости числовых последовательностей, то применяя критерий
+ равносильна сходимости числовых последовательностей, то применяя критерий
  Коши к последовательности 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
