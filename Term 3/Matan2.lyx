@@ -23450,7 +23450,8 @@ z=3
  непосредственно и с помощью формулы Стокса.
 \end_layout
 
-\begin_layout Example
+\begin_deeper
+\begin_layout Enumerate
 Параметризуем 
 \begin_inset Formula $L\,:\,\begin{cases}
 x=2\cos t, & dx=-2\sin ydt\\
@@ -23462,7 +23463,8 @@ z=3, & dz=0
 .
 \end_layout
 
-\begin_layout Example
+\begin_deeper
+\begin_layout Standard
 \begin_inset Formula $C=\un{\oint}LPdx+Qdy+Rdz=\left\{ \begin{array}{c}
 P=y\\
 Q=x^{2}\\
@@ -23474,6 +23476,759 @@ dz=0
 
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+C & = & \un{\oint}L\left(\v a,\v{\tau}\right)dl=\left\{ \begin{array}{c}
+\text{Выберем поверхность }S\text{ операющуюся на контур }L\\
+-\ \text{круг}:\begin{cases}
+z=3\\
+x^{2}+y^{2}\mr4
+\end{cases},\ \v n=\left(0;0;1\right)
+\end{array}\right\} =\\
+ & = & \un{\iint}S\left(rot\,\v a,\v n\right)dS=\\
+ & = & \left\{ rot\,\v a=\left|\begin{array}{ccc}
+\v i & \v j & \v k\\
+\df{\dd}{\dd x} & \df{\dd}{\dd y} & \df{\dd}{\dd z}\\
+y & x^{2} & -z
+\end{array}\right|\right\} =\\
+ & = & 0\um\v i+0\um\v j+\left(2x-1\right)\um\v k=\\
+ & = & \left(2x-1\right)\um\v k=\\
+ & = & \left(\begin{array}{c}
+0\\
+0\\
+2x-1
+\end{array}\right)=\\
+ & = & \un{\iint}S\left(2x-1\right)dS=\\
+ & = & \un{\iint}{x^{2}+y^{2}\mr4}\left(2x-1\right)dxdy=\\
+ & = & \oui 0{2\pi}d\varphi\oui 02\left(2r\cos\varphi-1\right)rdr=\\
+ & = & \oui 0{2\pi}\left(\df{2r^{3}}3\cos\varphi-\df{r^{2}}2\right)|_{0}^{2}d\varphi=\\
+ & = & \oui 0{2\pi}\left(\df{16}3\cos\varphi-2\right)d\varphi=\\
+ & = & \left(\df{16\sin\varphi}3-2\varphi\right)|_{0}^{2\pi}=-4\pi
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Функциональные последовательности и ряды
+\end_layout
+
+\begin_layout Subsection
+Функциональные последовательности
+\end_layout
+
+\begin_layout Subsubsection
+Понятие функциональных последовательностей.
+ Примеры.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $X\in\R$
+\end_inset
+
+ --- множество на вещественной прямой.
+ 
+\end_layout
+
+\begin_layout Definition
+Если каждому натуральному 
+\begin_inset Formula $n$
+\end_inset
+
+ ставится в соответствии определенные функции 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, то говорят, что на множестве 
+\begin_inset Formula $X$
+\end_inset
+
+ задано функциональная последовательность.
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=\df xn$
+\end_inset
+
+, 
+\begin_inset Formula $X=\R$
+\end_inset
+
+ --- бесконечное количество опредлеленных функций с номерами от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=\df{\sin nx}{n^{2}},\ X\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=\sqrt{\log_{2}\left(x^{2}-1\right)n},\ X\,:\,\left|x\right|>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Сходимость функциональных последовательностей
+\end_layout
+
+\begin_layout Standard
+Пусть функциональная последовательность 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ определена на мнодестве 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Функциональная последовательность 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ наывается сходящейся в точке 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+, если числовая последовательность 
+\begin_inset Formula $\left\{ f_{n}\left(x_{0}\right)\right\} $
+\end_inset
+
+ --- сходится.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{n}\left(x\right)=x^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x_{0}=\df 12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{0}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{0}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}\left(\df 12\right)=\left(\df 12\right)^{n}\ov{\st}{n\st\b}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}\left(1\right)=\left(1\right)^{n}\ov{\st}{n\st\b}1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}\left(2\right)=\left(2\right)^{n}$
+\end_inset
+
+ --- расходится
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D\subseteq X$
+\end_inset
+
+ называется областью сходимости фйункциональной последжовательности 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+, если 
+\begin_inset Formula $D$
+\end_inset
+
+ --- множество тех точек из 
+\begin_inset Formula $X$
+\end_inset
+
+, в который функциональная последовательность 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ --- сходится.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{n}\left(x\right)=x^{n}$
+\end_inset
+
+ --- сходится 
+\begin_inset Formula $\forall x\in(-1;1]=D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\forall x\in D\quad\exists\ul{n\to\b}f_{n}\left(x\right)$
+\end_inset
+
+, то его обозначим 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и назовем предельной функцией функциональной последовательности 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ на области 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=x^{n},\quad D=\left[0;1\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\forall x\in[0;1)\quad f_{n}\left(x\right)=x^{n}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=1\quad f_{n}\left(x\right)\to1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Предельтная функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ определяется следущщим образом: 
+\begin_inset Formula $\begin{cases}
+0, & 0\mr x<1\\
+1, & x=1
+\end{cases}$
+\end_inset
+
+ --- разрывная функция
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=\sqrt{x^{2}+\df 1{n^{2}}},\quad D=\R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\forall x\in\R\quad\sqrt{x^{2}+\df 1{n^{2}}}\ov{\st}{n\st\b}\left|x\right|=f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Используя определение предела числовой последовательности можно записать:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\in D\quad\ul{n\st\b}f_{n}\left(x\right)=f\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\,:\quad\forall\varepsilon>0\quad\exists N=N\left(\varepsilon,x\right)\quad\forall n\br N\quad\left|f_{n}\left(x\right)-f\left(x\right)\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Такую сходимость на области 
+\begin_inset Formula $D$
+\end_inset
+
+ называют поточечьной сходимостью последовательности 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ к 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left|f_{n}\left(x\right)-f\left(x\right)\right|=\sqrt{x^{2}+\df 1{n^{2}}}-\sqrt{x^{2}}=\df{\df 1{n^{2}}}{\sqrt{x^{2}+\df 1{n^{2}}}+\sqrt{x^{2}}}\mr\df 1n\quad\forall x\in\R$
+\end_inset
+
+ --- равномерная (не зависящая от 
+\begin_inset Formula $x$
+\end_inset
+
+) оценка разности функциональной последовательности и предельной функции
+ этой последовательности.
+\end_layout
+
+\begin_layout Example
+А в примере 1 равномерной оценки получить не удается.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f_{n}\left(x\right)=x^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+При достаточно больших 
+\begin_inset Formula $n$
+\end_inset
+
+ разность 
+\begin_inset Formula $\left|f_{n}\left(x\right)-f\left(x\right)\right|=\left|x^{n}-0\right|=x^{n}$
+\end_inset
+
+ не может быть сделана меньше любого напередзаданного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ для всех 
+\begin_inset Formula $x\in[0;1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Действительно если положить например 
+\begin_inset Formula $\varepsilon=\df 12$
+\end_inset
+
+ и взять 
+\begin_inset Formula $x_{n}=\df 1{\sqrt[n]{2}}$
+\end_inset
+
+, то получим:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|f_{n}\left(x_{n}\right)-f\left(x_{n}\right)\right|=\df 12\br\varepsilon=\df 12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+или 
+\begin_inset Formula $\exists\varepsilon=\df 12\quad\exists x_{n}=\df 1{\sqrt[n]{2}}\quad\left|f_{n}\left(x_{n}\right)-f\left(x_{n}\right)\right|=\df 12\br\varepsilon=\df 12$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Поточечьная сходимость есть, но равномерной нету.
+\end_layout
+
+\begin_layout Subsubsection
+Равномерная сходимость функциональных последовательностей
+\end_layout
+
+\begin_layout Definition
+Говорят, что функциональная последовательностьт 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\begin{equation}
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\left|f_{n}\left(x\right)-f\left(x\right)\right|<\varepsilon\quad\forall x\in D\label{eq:r1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+При этом записывют: 
+\begin_inset Formula $f_{n}\left(x\right)\rightrightarrows f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Геометрический смысл 
+\begin_inset Formula $\rightrightarrows$
+\end_inset
+
+ : 
+\begin_inset Formula $-\varepsilon<f_{n}\left(x\right)-f\left(x\right)<\varepsilon\quad f\left(x\right)-\varepsilon<f_{n}\left(x\right)<f\left(x\right)+\varepsilon\quad\forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|f_{n}\left(x\right)-f\left(x\right)\right|<\varepsilon\quad\forall x\in D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\sup\left|f_{n}\left(x\right)-f\left(x\right)\right|\mr\varepsilon\quad x\in D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Только в обратную не всегда, и надо брать 
+\begin_inset Formula $\df{\varepsilon}2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=\df{\sin nx}n$
+\end_inset
+
+ --- исследовать на равномерную сходимость.
+\end_layout
+
+\begin_layout Example
+Так как из равномерной сходимости следует поточечьная (!).
+ 
+\end_layout
+
+\begin_layout Example
+Найдем поточечьный предел 
+\begin_inset Formula $\forall x\in\R\quad\ul{n\st\b}\df{\sin nx}n=\left\{ \begin{array}{c}
+\sin nx-\text{ограниченая}\\
+\df 1n-\text{бесконечно малая}
+\end{array}\right\} =0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ --- предельная функция 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|f_{n}\left(x\right)-f\left(x\right)\right|=\left|\df{\sin nx}n-0\right|\mr\df 1n<\varepsilon\quad\forall x\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 1N<\varepsilon;\quad N>\df 1{\varepsilon}\ \sl\ N=\left[\df 1{\varepsilon}+1\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f_{n}\left(x\right)=x^{n}-x^{2n},\quad D=\left[0;1\right]$
+\end_inset
+
+ --- исследоватть на равномерную сходимость
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Поточечьная: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f_{n}\left(x\right)=x^{n}-x^{2n}\st\begin{cases}
+0, & x=1\\
+0, & 0\mr x<1
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ --- предельтная фукция 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Равномерная сходимость:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Заметим, что (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:r1"
+
+\end_inset
+
+) означает что 
+\begin_inset Formula $\ul{n\st\b}\un{\sup}D\left|f_{n}\left(x\right)-f\left(x\right)\right|=0$
+\end_inset
+
+ --- Гаометрически, это означает, что максимум отклонения должен стремитьося
+ к 0, чтобы была равномерная сходимость.
+\end_layout
+
+\begin_layout Standard
+В нашем случае:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|f_{n}\left(x\right)-f\left(x\right)\right|=\left|x^{n}-x^{2n}\right|=x^{n}-x^{2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найдем максимум это функции на отрезке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+ с помощью производной
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(x^{n}-x^{2n}\right)\pr=nx^{n-1}-2nx^{2n-1}=nx^{n-1}\left(1-2x^{n}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\begin{array}{c}
+x=0\\
+x=\df 1{\sqrt[n]{2}}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\max\left(x^{n}-x^{2n}\right)=\left(\df 1{\sqrt[n]{2}}\right)^{n}-\left(\df 1{\sqrt[n]{2}}\right)^{n}=\df 12-\df 14=\df 12$
+\end_inset
+
+ не стремится к 0 при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
