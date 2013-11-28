@@ -24229,13 +24229,890 @@ x=\df 1{\sqrt[n]{2}}
 
 \end_deeper
 \end_deeper
+\begin_layout Subsubsection
+Критерий Коши равномерной сходимости функциональной последовательности
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши для поточечьной сходимости
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Функциональная последовательность 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ сходится поточечьно на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\forall x\in D\ \forall\varepsilon>0\ \exists N=N\left(\varepsilon,x\right)\ \forall n\br N\ \forall p\in\N\ \left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|<\varepsilon$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Доказательство следует из того, что 
+\begin_inset Formula $\forall x_{0}\in X$
+\end_inset
+
+ сходимость числовой последовательности 
+\begin_inset Formula $\left\{ f_{n}\left(x_{0}\right)\right\} $
+\end_inset
+
+ равносильно ее фундаментальности.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши равноммерной сходимости функциональной последовательности
+\end_layout
+
+\end_inset
+
+ Числовая последовательнсоть 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ схождится равнмерно на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Докажем необходимость
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} \rightrightarrows f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|f_{n}\left(x\right)-f\left(x\right)\right|<\df{\varepsilon}2\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall p\in\N\ \left(n+p>N\right)\quad\left|f_{n+p}\left(x\right)-f\left(x\right)\right|<\df{\varepsilon}2\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|=\left|\left(f_{n+p}\left(x\right)-f\left(x\right)\right)+\left(f\left(x\right)-f_{n}\left(x\right)\right)\right|\mr\left|f_{n+p}\left(x\right)-f\left(x\right)\right|+\left|f_{n}\left(x\right)-f\left(x\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|f_{n+p}\left(x\right)-f\left(x\right)\right|<\df{\varepsilon}2;\quad\left|f_{n}\left(x\right)-f\left(x\right)\right|<\df{\varepsilon}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это равномерная фундаментальность.
+ Она эквивалентна равномерной сходимости.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Докажем достаточность.последовательность 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ равномерно фундаментальна.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|<\df{\varepsilon}2\ \forall x\in D\label{eq:f1}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Следовательно эта последовательностть сходится поточечьно фундаментально.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ сходится поточечьно на 
+\begin_inset Formula $D$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\in D\ \ul{n\to\b}f_{n}\left(x\right)=f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докажем что 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Из утверждения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:f1"
+
+\end_inset
+
+): 
+\begin_inset Formula $f_{n}\left(x\right)-\df{\varepsilon}2<f_{n+p}\left(x\right)<f_{n}\left(x\right)+\df{\varepsilon}2\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $p\to\b$
+\end_inset
+
+ предельным переходом получим: 
+\begin_inset Formula $f_{n}\left(x\right)-\df{\varepsilon}2\mr f\left(x\right)\mr f_{n}\left(x\right)+\df{\varepsilon}2\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|f\left(x\right)-f_{n}\left(x\right)\right|\mr\df{\varepsilon}2<\varepsilon\ \forall x\in D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|f_{n}\left(x\right)-f\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Теорема о непрерывности предела равномерно сходящейся функциональной последовате
+льности.
+\end_layout
+
+\begin_layout Theorem
+Если последовательность 
+\begin_inset Formula $f_{n}\left(x\right)\rightrightarrows f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ и функции 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то оказывается, что в этом случае предельная функция обязательно будет
+ непрерывной.
+\end_layout
+
+\begin_layout Proof
+Пусть точка 
+\begin_inset Formula $x_{0}\in\left[a;b\right]$
+\end_inset
+
+ произвольная, 
+\begin_inset Formula $\D x$
+\end_inset
+
+ --- её приражение, причем 
+\begin_inset Formula $x_{0}+\D x\in\left[a;b\right]$
+\end_inset
+
+.
+ Докажем, что 
+\begin_inset Formula $\ul{\D x\to0}\D f=0,$
+\end_inset
+
+ где 
+\begin_inset Formula $\D f=f\left(x_{0}+\D x\right)-f\left(x_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то последовательность 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ --- сходится поточечьно к 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \begin{array}{c}
+\left|f_{n}\left(x_{0}\right)-f\left(x_{0}\right)\right|<\df{\varepsilon}3\\
+\left|f_{n}\left(x_{0}+\D x\right)-f\left(x_{0}+\D x\right)\right|<\df{\varepsilon}3
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как функция 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ непрерывна на всем 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то для выбранного 
+\begin_inset Formula $\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,x_{0}\right)\ \left|\D x\right|<\delta\sl\left|f_{n}\left(x_{0}+\D x\right)-f_{n}\left(x_{0}\right)\right|<\df{\varepsilon}3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Следовательно: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|f\left(x_{0}+\D x\right)-f\left(x_{0}\right)\right| & = & \left|\left(f\left(x_{0}+\D x\right)-f_{n}\left(x_{0}+\D x\right)\right)+\left(f_{n}\left(x_{0}+\D x\right)-f_{n}\left(x_{0}\right)\right)+\left(f_{n}\left(x_{0}\right)-f\left(x_{0}\right)\right)\right|\mr\\
+ & \mr & \left|f\left(x_{0}+\D x\right)-f_{n}\left(x_{0}+\D x\right)\right|+\left|f_{n}\left(x_{0}+\D x\right)-f_{n}\left(x_{0}\right)\right|+\left|f_{n}\left(x_{0}\right)-f\left(x_{0}\right)\right|<\varepsilon
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall x_{0}\in\left[a;b\right]\ \forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,x_{0}\right)>0\ \forall x\in\left[a;b\right]\ \left|x-x_{0}\right|<\delta\sl\left|f\left(x\right)-f\left(x_{0}\right)\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Сходимость функциональных рядов
+\end_layout
+
+\begin_layout Subsubsection
+Понятие функционального ряда.
+ Сходимость функционального ряда.
+\end_layout
+
+\begin_layout Definition
+Пусть функциональная последовательность 
+\begin_inset Formula $\left\{ U_{n}\left(x\right)\right\} $
+\end_inset
+
+ определена на множестве 
+\begin_inset Formula $X\subseteq\R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Вырадение вида 
+\begin_inset Formula 
+\begin{equation}
+u_{1}\left(x\right)+u_{2}\left(x\right)+\tr+u_{n}\left(x\right)+\tr=\ous{n=1}{\b}u_{n}\left(x\right)\label{eq:rr1}
+\end{equation}
+
+\end_inset
+
+ называется функциональным рядом, определенным на 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $u_{n}\left(x\right)$
+\end_inset
+
+ называется 
+\begin_inset Formula $n$
+\end_inset
+
+-ным чледом функционального ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Definition
+Конечная сумма 
+\begin_inset Formula 
+\begin{equation}
+S_{n}\left(x\right)=\ous{k=1}nu_{k}\left(x\right)\label{eq:rr2}
+\end{equation}
+
+\end_inset
+
+ называется 
+\begin_inset Formula $n$
+\end_inset
+
+-ной частичногй суммой ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+) называется сходящимся на 
+\begin_inset Formula $D\subseteq X$
+\end_inset
+
+ если функциональная последовательность 
+\begin_inset Formula $S_{n}\left(x\right)$
+\end_inset
+
+ сходится поточечьно на области 
+\begin_inset Formula $D$
+\end_inset
+
+ к некоторой функции, обозначаемой 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\ul{n\st\b}S_{n}\left(x\right)=S\left(x\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ называется суммой ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $D$
+\end_inset
+
+ --- область сходимости ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $r_{n}\left(x\right)=S\left(x\right)-S_{n}\left(x\right)=\ous{k=n+1}{\b}u_{k}\left(x\right)$
+\end_inset
+
+ называется 
+\begin_inset Formula $n$
+\end_inset
+
+- ным остатком ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Lemma
+Функциональный ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+) сзодится на области 
+\begin_inset Formula $D$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\ul{n\st\b}r_{n}\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Здесь всё легко.
+ Сами.
+\end_layout
+
+\begin_layout Definition
+Функциональный ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr1"
+
+\end_inset
+
+) называется абсолютно сходящимся на области 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+, если сходится функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}\left|u_{n}\left(x\right)\right|\ \forall x\in D_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Абсолютная сходимость равносильна простой сходимости если 
+\begin_inset Formula $u_{n}\left(x\right)\br0$
+\end_inset
+
+ (
+\begin_inset Formula $D=D_{1}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Example
+Найти область сходимости функционального ряда 
+\begin_inset Formula $x^{2}+\df{x^{2}}{1+x^{2}}+\tr\df{x^{2}}{\left(1-x^{2}\right)^{n-1}}+\tr=\ous{n=1}{\b}\df{x^{2}}{\left(1+x^{2}\right)^{n-1}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $\left|u_{n}\left(x\right)\right|=u_{n}\left(x\right)$
+\end_inset
+
+, то сходимость ряда абсолютная, 
+\begin_inset Formula $D_{1}=D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=0\ \sl\ u_{n}\left(0\right)=0\ S_{n}\left(0\right)=0\ov{\st}{n\st\b}S\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x\nr0\ \sl$
+\end_inset
+
+ исследуемый ряд --- сумма бксконечно убывающей геометрической прогресии.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $b_{1}=x^{2},\ q=\df 1{1+x^{2}}$
+\end_inset
+
+.
+ Его сумма 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ будет равна 
+\begin_inset Formula $\df{b_{1}}{1-q}=\df{x^{2}}{1-\df 1{1-x^{2}}}=1+x^{2}\ \forall x\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Полученная функция является прерывной, поэтому нету равномерной сходимости.
+\end_layout
+
+\begin_layout Standard
+Для определения области 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ обычно используют признаки сходимсоти хнакоположительный числовых рядов.
+\end_layout
+
+\begin_layout Example
+Найти 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ для ряда: 
+\begin_inset Formula $1+x+x^{2}+\tr+x^{n}+\tr=\ous{n=1}{\b}x^{n-1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Найдем 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ по признаку Даланбера.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\left|x\right|^{n-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|u_{n+1}\left(x\right)\right|=\left|x\right|^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|u_{n}\left(x\right)\right|=\left|x\right|^{n-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{n\st\b}\df{\left|u_{n+1}\left(x\right)\right|}{\left|u_{n}\left(x\right)\right|}=\ul{n\st\b}\left|x\right|=\left|x\right|<1$
+\end_inset
+
+ --- достаточноу условие сходимости 
+\end_layout
+
+\begin_layout Example
+Но в некоторых точках необходимы дополнительные исследования.
+\end_layout
+
+\begin_layout Example
+Если 
+\begin_inset Formula $x=\pm1$
+\end_inset
+
+ --- расходится по необходимому признаку сходимости чсилового ряда.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl\quad D_{1}=\left(-1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Равномерная сходимость функциональных рядов
+\end_layout
+
+\begin_layout Definition
+Функциональный ряд называется равномернео сходящимся на области 
+\begin_inset Formula $D$
+\end_inset
+
+, если последовательность частичных сумм 
+\begin_inset Formula $S_{n}\left(x\right)=\ous{k=1}nu_{k}\left(x\right)$
+\end_inset
+
+ сходится равномерно на области 
+\begin_inset Formula $D$
+\end_inset
+
+ к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|S\left(x\right)-S_{n}\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\left|S\left(x\right)-S_{n}\left(x\right)\right|<\varepsilon\ \forall x\in D\ \dsl\ \left|r_{n}\left(x\right)<\varepsilon\right|\ \forall x\in D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\un{\sup}{x\in D}\left|r_{n}\left(x\right)\right|\mr\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Исследовать на равномерную сходимость.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df x{\left(nx+1\right)\left(nx+x+1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Решение:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S_{n}\left(x\right)=\ous{k=1}n\left(\df 1{kx+1}-\df 1{kx+x+1}\right)=\left(\df 1{x+1}-\df 1{x+x+1}\right)+\left(\df 1{2x+1}-\df 1{3x+1}\right)+\tr+\left(\df 1{kx+1}-\df 1{\left(n+1\right)x+1}\right)=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $=\df 1{x+1}-\df 1{\left(n+1\right)x+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D=\left(0;\b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\left(\alpha;\b\right),\ \alpha>0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $S\left(x\right)=\ul{n\st\b}S_{n}\left(x\right)=\df 1{x+1},\ x\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $r_{n}\left(x\right)=S\left(x\right)-S_{n}\left(x\right)=\df 1{\left(n+1\right)x+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\un{\sup}{\left(0;+\b\right)}\left|r_{n}\left(x\right)\right|=\un{\sup}{\left(0;+\b\right)}\df 1{\left(n+1\right)x+1}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если 
+\begin_inset Formula $x$
+\end_inset
+
+ достаточно близко к 0, то 
+\begin_inset Formula $x\st0+0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ непрерывность не выполняется не при каких 
+\begin_inset Formula $n$
+\end_inset
+
+, если например 
+\begin_inset Formula $\varepsilon=\df 12$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $0<\alpha<x<\b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\un{\sup}{\left(\alpha;+\b\right)}\df 1{\left(n+1\right)x+1}=\df 1{\left(n+1\right)\alpha+1}\ov{\st}{n\st\b}0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ Есть равномерная сходимость.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
 \end_inset
 
-
+ 
 \end_layout
 
 \end_body
