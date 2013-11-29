@@ -86,325 +86,325 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\sl}{\Longrightarrow}
+\newcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dsl}{\Longleftrightarrow}
+\newcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tr}{\ldots}
+\newcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\nr}{\neq}
+\newcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\um}{\cdot}
+\newcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pr}{\prime}
+\newcommand{\pr}{\prime}
 {\prime}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tg}{\text{tg}}
+\newcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tan}{\tg}
+\newcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arctg}{\text{arctg}}
+\newcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arcctg}{\text{arcctg}}
+\newcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\N}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Z}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Q}{\text{Q}}
+\newcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sh}{\text{sh}}
+\newcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ch}{\text{ch}}
+\newcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\th}{\text{th}}
+\newcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\st}{\to}
+\newcommand{\st}{\to}
 {\to}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sinx}{\sin\left(x\right)}
+\newcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\cosx}{\cos\left(x\right)}
+\newcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\fx}{f\left(x\right)}
+\newcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\un}[2]{\underset{#2}{#1}}
+\newcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\lim\limits _{#1}}
+\newcommand{\ul}[1]{\lim\limits _{#1}}
 {\lim\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\max\limits _{#1}}
+\newcommand{\umax}[1]{\max\limits _{#1}}
 {\max\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\min\limits _{#1}}
+\newcommand{\umin}[1]{\min\limits _{#1}}
 {\min\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
 {\iint\limits _{#1}^{#2}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{\pr\pr}
+\newcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{\ppr\pr}
+\newcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\v}[1]{\overrightarrow{#1}}
+\newcommand{\v}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mom}{\text{mom}}
+\newcommand{\mom}{\text{mom}}
 {\text{mom}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\x}{\times}
+\newcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\DD}{\partial}
+\newcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dd}{\partial}
+\newcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\grad}{\text{grad}}
+\newcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ctg}{\text{ctg}}
+\newcommand{\ctg}{\text{ctg}}
 {\text{ctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vtr}{\vdots}
+\newcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ntr}{\ddots}
+\newcommand{\ntr}{\ddots}
 {\ddots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ob}{\cup}
+\newcommand{\ob}{\cup}
 {\cup}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dint}{\iint}
+\newcommand{\dint}{\iint}
 {\iint}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pro}{\text{Пр}}
+\newcommand{\pro}{\text{Пр}}
 {\text{Пр}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ui}[1]{\int\limits _{#1}}
+\newcommand{\ui}[1]{\int\limits _{#1}}
 {\int\limits _{#1}}
 \end_inset
 
@@ -1178,11 +1178,11 @@ status open
 
 \begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray}
--\varepsilon< & \df{a_{n}}{b_{n}}-L & <\varepsilon\nonumber \\
--\varepsilon+L< & \df{a_{n}}{b_{n}} & <\varepsilon+L\nonumber \\
-b_{n}\left(-\varepsilon+L\right)< & a_{n} & <b_{n}\left(\varepsilon+L\right)\label{eq:2}
-\end{eqnarray}
+\begin{alignat}{2}
+-\varepsilon< & \df{a_{n}}{b_{n}} & -L & <\varepsilon\nonumber \\
+-\varepsilon+L< & \df{a_{n}}{b_{n}} &  & <\varepsilon+L\nonumber \\
+b_{n}\left(-\varepsilon+L\right)< & a_{n} &  & <b_{n}\left(\varepsilon+L\right)\label{eq:2}
+\end{alignat}
 
 \end_inset
 
@@ -1381,15 +1381,21 @@ a_{N+K} & <a_{N}\um q^{K},\quad K=\overline{1,\infty}
 
 \end_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L>1$
 \end_inset
 
-
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\exists\varepsilon>0\ 1<L-\varepsilon=q<L$
+Пусть 
+\begin_inset Formula $\exists\varepsilon>0$
+\end_inset
+
+, такой что:
+\begin_inset Formula $1<L-\varepsilon=q<L$
 \end_inset
 
 
@@ -1397,42 +1403,29 @@ a_{N+K} & <a_{N}\um q^{K},\quad K=\overline{1,\infty}
 
 \begin_layout Standard
 Так как 
-\begin_inset Formula $a_{n}\um q<a_{n+1}\ \forall n\br N$
+\begin_inset Formula $a_{n}\um q<a_{n+1}\quad\forall n\br N,$
 \end_inset
 
- 
+ то: 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{N+1}>q\um a_{N}>a_{N}$
-\end_inset
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{N+1}> & q\um a_{N} & >a_{N}\\
+a_{N+2}> & a_{N}\um q^{2} & >a_{N}\\
+\tr & \tr\\
+a_{N+k}> & a_{N} & >0\quad\forall N\br n
+\end{eqnarray*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+2}>a_{N}\um q^{2}>a_{N}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\tr$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{N+k}>a_{N}>0\ \forall N\br n$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl\ \ul{k\st\b}a_{N+k}\nr0$
+Тогда: 
+\begin_inset Formula $\ul{k\st\b}a_{N+k}\nr0$
 \end_inset
 
 .
