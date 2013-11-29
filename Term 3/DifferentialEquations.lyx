@@ -10106,14 +10106,18 @@ status open
 \begin_inset Formula $n=1$
 \end_inset
 
-.
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
 \df{dy}{dx}=f\left(x,y,\mu\right)\\
 y\left(x_{0}\right)=y_{0}
-\end{cases}$
+\end{cases}\label{eq:yy1}
+\end{equation}
+
 \end_inset
 
 
@@ -10210,25 +10214,787 @@ y\left(x_{0}\right)=y_{0}
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $\varphi\left(x,\mu\right)$
+\end_inset
+
+ при некотором 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $p=1$
+\end_inset
+
+, тогда мы зафиксируем
+\begin_inset Formula $\mu$
+\end_inset
+
+ , 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+ Тогда рассмотрим решение 
+\begin_inset Formula $\varphi\left(x,\mu+\D\mu\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\varphi\left(x,\mu+\D\mu\right)}{dx}=f\left(x,\varphi\left(x,\mu+\D\mu\right),\mu+\D\mu\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(x_{0},\mu+\D\mu\right)=y_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\varphi\left(x,\mu\right)}{dx}=f\left(x,\varphi\left(x,\mu\right),\mu\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(x_{0},\mu\right)=y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вычтем их верхнего равенства нижнее, тогда мы можем записать:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\left(\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)\right)}{dx}=f\left(x,\varphi\left(x,\mu+\D\mu\right),\mu+\D\mu\right)-f\left(x,\varphi\left(x,\mu\right),\mu\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\varphi=\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Применим к правой части равенства лемму Адамара, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\varphi}{dx}=\D\varphi\um\Phi_{1}+\D\mu\um\Phi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\varphi\left(x_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi_{1}\left(x,\varphi\left(x,\mu+\D\mu\right),\varphi\left(x,\mu\right),\mu+\D\mu,\mu\right)=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\oui 01\df{\dd f\left(x,\varphi\left(x,\mu\right)+t\D\mu\right)}{\dd\left(\varphi\left(x,\mu\right)+t\D\varphi\right)}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi_{2}\left(x,\varphi\left(x,\mu+\D\mu\right),\varphi\left(x,\mu\right),\mu+\D\mu,\mu\right)=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\oui 01\df{\dd f\left(x,\varphi\left(x,\mu\right)+t\D\mu,\mu+t\D\mu\right)}{\dd\left(\mu+t\D\mu\right)}dt$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+В силу лемма Адамара эти функции непрерывны по совокупности своих переменных.
+\end_layout
+
+\begin_layout Standard
+В силу пункта 1го доказываемой теоремы, функция 
+\begin_inset Formula $\varphi\left(x,\mu\right)$
+\end_inset
+
+ непрерывна по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+, следовательно функция 
+\begin_inset Formula $\varphi\left(x,\mu+\D\mu\right)$
+\end_inset
+
+ будет непрерывна по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\mu+\D\mu\right)$
+\end_inset
+
+, когда 
+\begin_inset Formula $\D\mu$
+\end_inset
+
+ достаточно мало, а тогда функции 
+\begin_inset Formula $\Phi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Phi_{2}$
+\end_inset
+
+ непрерывны по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $\D\mu$
+\end_inset
+
+ как суперпозиция непрерывных функций.
+\end_layout
+
+\begin_layout Standard
+Разделим 
+\begin_inset Formula $\df{d\varphi}{dx}=\D\varphi\um\Phi_{1}+\D\mu\um\Phi_{2}$
+\end_inset
+
+ на 
+\begin_inset Formula $\D\mu$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df d{dx}\left(\df{\D\varphi}{\D\mu}\right)=\df{\D\varphi}{\D\mu}\Phi_{1}+\Phi_{2}\\
+\df{\D\varphi\left(x_{0}\right)}{\D\mu}=\df{\varphi\left(x_{0},\mu+\D\mu\right)-\varphi\left(x_{0},\mu\right)}{\D\mu}=\df{y_{0}-y_{0}}{\D\mu}=0
+\end{cases}\label{eq:yy5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D\mu\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А 
+\begin_inset Formula $\df{\D\varphi}{\D\mu}$
+\end_inset
+
+ при 
+\begin_inset Formula $\D\mu=0$
+\end_inset
+
+ определим как решение следующей задачи Коши.
+\end_layout
+
+\begin_layout Standard
+Теперь 
+\begin_inset Formula $\Phi_{1}\left(x,\D\mu\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\Phi_{2}\left(x,\D\mu\right)$
+\end_inset
+
+ зависят от таких переменных,тоесть получим что тоо типа этого:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{d\psi\left(x,\D\mu\right)}{dx}=\psi\left(x,\D\mu\right)\Phi_{1}+\Phi_{2}\\
+\psi\left(x,\D\mu\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Условия пункта 1го выполнены для этой задачи Коши.
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $\psi\left(x,\D\mu\right)$
+\end_inset
+
+ (тоесть 
+\begin_inset Formula $\df{\D\varphi}{\D\mu}$
+\end_inset
+
+) --- непрерывна по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $\D\mu$
+\end_inset
+
+, когда 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\D\mu\right|<\delta$
+\end_inset
+
+.
+ Но так как она непрерывна, она определена и при 
+\begin_inset Formula $\D\mu=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь и положим
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ul{\D\mu\st0}\df{\D\varphi}{\D\mu}=\df{\dd\varphi\left(x,\mu\right)}{\dd\mu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тоесть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ дифиренцираема по 
+\begin_inset Formula $\mu$
+\end_inset
+
+ в точке 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что при 
+\begin_inset Formula $\D\mu\st0$
+\end_inset
+
+ : 
+\begin_inset Formula $\D\varphi\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi_{1}\left(x,\D\mu\right)\ov{\st}{\D\mu\st0}\df{\dd f}{\dd\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi_{2}\left(x,\D\mu\right)\ov{\st}{\D\mu\st0}\df{\dd f}{\dd\mu}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда в (5) переходя к пределу при 
+\begin_inset Formula $\D\mu\st0$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df d{dx}\left(\df{d\varphi}{d\mu}\right)=\df{\dd\varphi}{\dd\mu}\um\df{\dd f}{\dd\varphi}+\df{\dd f}{\dd\mu}\\
+\df{\dd\varphi}{\dd\mu}\left(x_{0}\right)=0
+\end{cases}\label{eq:yy6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тоесть мы доказалисуществование производной, и 
+\begin_inset Formula $\df{\dd\varphi\left(x,\mu\right)}{\dd\mu}$
+\end_inset
+
+ является рещшением задачи (6).
+ Заметим, что для дифференциального уравнения выполнены условия пункта 1го
+ длоказываетмой теоремы.
+\end_layout
+
+\begin_layout Standard
+Тоесть теорема доказана, при 
+\begin_inset Formula $p=1$
+\end_inset
+
+.
+ Если теперь ффункция 
+\begin_inset Formula $f$
+\end_inset
+
+ имеет непрерывные производные по 
+\begin_inset Formula $y$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+ до 
+\begin_inset Formula $p-$
+\end_inset
+
+го порядка, 
+\begin_inset Formula $p\br2$
+\end_inset
+
+, то применяя к уравнению (6) теже рассуждения, чтто и для уравнения (1)
+ и взяв в качестве 
+\begin_inset Formula $\df{\dd\varphi}{\dd\mu}$
+\end_inset
+
+ вместо 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ докажем существование 
+\begin_inset Formula $\df{\dd^{2}\varphi}{d\mu^{2}}$
+\end_inset
+
+ и непрерывность ее по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ И так далее для остальных 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
 \end_deeper
-\begin_layout Section
-Колоквиум
+\end_deeper
+\begin_layout Standard
+
+\emph on
+Следствие.
+ 
 \end_layout
 
 \begin_layout Standard
-Будут 2 теоритических вопроса и 2 задачи.
+Рассмотрим
 \end_layout
 
 \begin_layout Standard
-Одно теоритическое задание нужно делать с доказательством, одно нет.
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dy}{dx}=f\left(x,y\right)\\
+y\left(x_{0}=y_{0}\right)
+\end{cases}\label{eq:yy7}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Если набрал по итогам от 51 до 100 - то атестован.
+И еще рассмотрим функцию 
+\begin_inset Formula $y\left(x,x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ имеет по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ непрерыные производные до 
+\begin_inset Formula $p$
+\end_inset
+
+-го порядка, то функция 
+\begin_inset Formula $y\left(x,x_{0},y_{0}\right)$
+\end_inset
+
+, являющаяся решением задачи (7) имеет непрерывные производные по 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ так-же до 
+\begin_inset Formula $p-$
+\end_inset
+
+го порядка, 
+\begin_inset Formula $p\br1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dz}{dt}=f\left(t+x_{0},z+y_{0}\right)\\
+z\left(0\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z\left(t,x_{0},y_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df d{dx}\left(\df{\dd y}{\dd y_{0}}\right)=\df{\dd f}{\dd y}\df{\dd y}{\dd y_{0}}\\
+\df{\dd y}{\dd y_{0}}\left(x_{0}\right)=1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df d{dx}\left(\df{\dd y}{\dd x_{0}}\right)=\df{\dd f}{\dd y}\df{\dd y}{\dd x_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для того чтобы получить начальные условия для этого уравнения нужно задачу
+ (7) заменить эквивалентным интегральным уравнением и продереренцириуем
+ это равненство по 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x,x_{0},y_{0}\right)=y_{0}+f\left(\xi,y\left(\xi,x_{0},y_{0}\right)\right)d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V\left(x\right)=\oui{\varphi_{1}\left(x\right)}{\varphi_{2}\left(x\right)}U\left(\xi,x\right)d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если функции 
+\begin_inset Formula $U,\,\varphi_{1},\,\varphi_{2}$
+\end_inset
+
+ диференцируемы пло 
+\begin_inset Formula $x$
+\end_inset
+
+ то и 
+\begin_inset Formula $V$
+\end_inset
+
+ также диференцируема по 
+\begin_inset Formula $x$
+\end_inset
+
+, и
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dV}{dx}=U\left(\varphi_{2}\left(x\right),x\right)\um\df{d\varphi_{2}}{dx}-U\left(\varphi_{1}\left(x\right),x\right)\df{d\varphi_{2}}{dx}+\oui{\varphi_{1}\left(x\right)}{\varphi_{2}\left(x\right)}\df{dU\left(\xi,x\right)}{dx}d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd y\left(x,x_{0},y_{0}\right)}{\dd x_{0}}=-f\left(x_{0},y\left(x_{0},x_{0},y_{0}\right)\right)+\oui{x_{0}}x\df{\dd f}{\dd y}\df{\dd y}{\dd x_{0}}d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd y}{\dd x_{0}}\left(x_{0}\right)=-f\left(x_{0},y_{0}\right)$
+\end_inset
+
+ --- вод это начальное условие для нашего диференциального уравнения.
+\end_layout
+
+\begin_layout Subsection
+Системы с постоянными коэффициентами 
+\end_layout
+
+\begin_layout Standard
+Мы будем рассматрипвать сейчас системы вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy_{1}}{dx}=a_{11}y_{1}+a_{12}y_{2}+\tr+a_{1n}y_{n}\\
+\tr\\
+\df{dy_{n}}{dx}=a_{n1}y_{1}+a_{n2}y_{2}+\tr+a_{nn}y_{n}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{i,j}=const,\quad i,j=\overline{1,n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\vtr\\
+y_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(\begin{array}{ccc}
+a_{11} & \tr & a_{1n}\\
+\vtr & \tr & \vtr\\
+a_{n1} & \tr & a_{nn}
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy}{dx}=Ay$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\lambda$
+\end_inset
+
+ называется собственным значением матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ если существует вектор 
+\begin_inset Formula $h\nr0$
+\end_inset
+
+, такой что 
+\begin_inset Formula $Ah=\lambda h$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $h$
+\end_inset
+
+ называется собственным вектором, соотвествующим собственному значению 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(A-\lambda E\right)h=0$
+\end_inset
+
+ --- однородная система.
+\end_layout
+
+\begin_layout Standard
+Чтобюы она имела ненулевое решение, нужно чтобы матрица была вырожденной,
+ тоесть когда определитель равен нулю.
+ Это так называетмое (характеристическое) уравнение для нахождения собмственных
+ значений матрици А.
+ (Уравнение 
+\begin_inset Formula $n$
+\end_inset
+
+-го порядка по 
+\begin_inset Formula $\lambda$
+\end_inset
+
+) Ну а тогда в силу основной теормы алгебры в поле комплексных чисел это
+ уравннения имеет 
+\begin_inset Formula $n$
+\end_inset
+
+ корней с учетом их кратности.
+ 
+\end_layout
+
+\begin_layout Standard
+Одному собственному значению соответствиует бесконечно много собственных
+ векторов.
+ ПОжэтому всегда ведуд речь о линейно независимых собственных векторах.
+ Если собственное значение простое, то ему соотвествует один вобственный
+ вектор (с учетом их линейности).
+\end_layout
+
+\begin_layout Standard
+Собственные вектора, соответствующие различным собственным значениям так-же
+ линейно независимы, а если собственное значениме 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ кратности 
+\begin_inset Formula $k$
+\end_inset
+
+, то ему может соответствовать от 1го до 
+\begin_inset Formula $k$
+\end_inset
+
+ линейно независимых собственных векторов.
+ 
+\end_layout
+
+\begin_layout Definition
+Матрица 
+\begin_inset Formula $\un A{nxn}$
+\end_inset
+
+ называется матрицей простой структуры, если у нее есть 
+\begin_inset Formula $n$
+\end_inset
+
+ линейно независимых собственных векторов.
+ (мы можем выбрать безис из линейно независимых собственных векторов).
 \end_layout
 
 \begin_layout Section
 Сессия
+\end_layout
+
+\begin_layout Standard
+Будет 2 задачи и 1н теоритический вопрос.
+ 
+\end_layout
+
+\begin_layout Standard
+По минимальному (на 3) знать формурировки (без доказательств) и решить 1ну
+ задачу.
+\end_layout
+
+\begin_layout Standard
+Если не решил не 1й задачи то 2 сразу.
+\end_layout
+
+\begin_layout Standard
+Нада знать определение фундаментальной системы решений ОБЯЗАТЕЛЬНО.
+ Он расстроится и поставит лебедя.
 \end_layout
 
 \begin_layout Enumerate
