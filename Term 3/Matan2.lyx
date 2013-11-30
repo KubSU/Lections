@@ -1579,55 +1579,20 @@ reference "eq:1"
 
 \end_deeper
 \end_deeper
-\begin_layout Example
-(1) Исследовать на сходимость
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\left(\df{2n}{n+1}\right)^{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\sqrt[n]{\left(\df{2n}{n+1}\right)^{n}}=\ul{n\st\b}\df{2n}{n+1}=2>1$
-\end_inset
-
- Ряд расходится.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-(2) Исследовать на сходимость.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{2^{n}\um n^{n^{2}}}{\left(n+1\right)^{n^{2}}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=\ul{n\st\b}\df{2\um n^{n}}{\left(n+1\right)^{n}}=\ul{n\st\b}\df 2{\left(1+\df 1n\right)^{n}}=\df 2e<1$
-\end_inset
-
- - ряд сходится.
-\end_layout
-
 \begin_layout Subsubsection
 Интегральный признак.
 \end_layout
 
 \begin_layout Theorem
-(6) Интегральный признак.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+6, Интегральный признак
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Если функция 
 \begin_inset Formula $y=f\left(x\right)>0$
 \end_inset
@@ -1640,7 +1605,7 @@ reference "eq:1"
 \begin_inset Formula $a_{n}=f\left(n\right)$
 \end_inset
 
- то ряд 
+, то ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1649,89 +1614,78 @@ reference "eq:1"
 \end_inset
 
  сходятся и расходятся одновременно, причем выполняется неравенство: 
-\begin_inset Formula $\oui 1{\b}\fx dx\mr\ous{n=1}{\b}a_{n}\mr\oui 1{\b}\fx dx+a_{1}$
-\end_inset
+\begin_inset Formula 
+\[
+\oui 1{\b}\fx dx\mr\ous{n=1}{\b}a_{n}\mr\oui 1{\b}\fx dx+a_{1}
+\]
 
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\forall k\in\N\ \forall x\in\left[k,k+1\right]\ f\left(k+1\right)\mr\fx\mr f\left(k\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
+Пусть
+\begin_inset Formula 
+\[
+\forall k\in\N\quad\forall x\in\left[k,k+1\right]\quad f\left(k+1\right)\mr\fx\mr f\left(k\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
 \begin_inset Formula $a_{k+1}\mr f\left(x\right)\mr a_{k}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Проинтегрируем неравенство по отрезку 
+.
+ Проинтегрируем неравенство по отрезку 
 \begin_inset Formula $\left[k,k+1\right]$
 \end_inset
 
-: 
-\begin_inset Formula $\oui k{k+1}f\left(k+1\right)dx\mr\oui k{k+1}f\left(x\right)dx\mr\oui k{k+1}f\left(k\right)dx$
+, получим: 
+\begin_inset Formula 
+\[
+\oui k{k+1}f\left(k+1\right)dx\mr\oui k{k+1}f\left(x\right)dx\mr\oui k{k+1}f\left(k\right)dx
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $a_{k+1}\mr\oui k{k+1}f\left(x\right)dx\mr a_{k}$
+Значит верны неравенства:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{2}\mr & \oui 12f\left(x\right)dx & \mr a_{1}\\
+a_{3}\mr & \oui 23\fx dx & \mr a_{2}\\
+\tr & \tr\\
+a_{k+1}\mr & \oui k{k+1}\fx dx & \mr a_{k}
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $a_{2}\mr\oui 12f\left(x\right)dx\mr a_{1}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $a_{3}\mr\oui 23\fx dx\mr a_{2}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\tr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $a_{n+1}\mr\oui k{k+1}\fx dx\mr a_{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\sl$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
+А тогда:
 \begin_inset Formula 
 \begin{equation}
-s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
+S_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Откуда возможны 2 случая:
 \end_layout
 
 \begin_deeper
@@ -1744,75 +1698,57 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \begin_inset Formula $I$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+, тогда 
+\begin_inset Formula $\oui 1{n+1}\fx dx<\oui 1{\b}\fx dx=I$
 \end_inset
 
- 
-\begin_inset Formula $\oui 1{n+1}\fx dx<\oui 1{\b}\fx dx=I\ \sl\oui 1{n+1}\fx dx<I$
+, или 
+\begin_inset Formula $\oui 1{n+1}\fx dx<I$
 \end_inset
 
+.
+ А тогда:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{n+1}-a_{1} & < & I\\
+S_{n+1} & < & I+a_{1}\quad\forall n\in\N
+\end{eqnarray*}
 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\sl\ S_{n+1}-a_{1}<I\ \sl\ S_{n+1}<I+a_{1}\ \forall n\in\N\ \sl$
 \end_inset
 
- Все суммы 
+Следовательно все суммы 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограничены в совокупности сверху.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- По теореме 1 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ ограничены в совокупности сверху и по теореме 1: 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- сходится
+ сходится.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Если сходится ряд 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}\ \sl\ $
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- все суммы 
+, то все суммы 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограничены в совокупности 
-\begin_inset Formula $\sl$
+ ограничены в совокупности, следовательно
+\begin_inset Formula 
+\[
+F_{n}=\oui 1{n+1}\fx dx
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $F_{n}=\oui 1{n+1}\fx dx$
-\end_inset
-
- возрастает и ограничена 
+ возрастает и ограничена последовательностью 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- сходится 
+, а значит сходится интеграл 
 \begin_inset Formula $\oui 1{\b}\fx dx$
 \end_inset
 
@@ -1820,57 +1756,23 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Remark
 В случае сходимости предельным переходом в неравенстве 
 \begin_inset Formula $n\st\b$
 \end_inset
 
- 
+ и получим:
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $S-a_{1}\mr\oui 1{\b}\fx dx\mr S$
-\end_inset
+\begin_inset Formula 
+\[
+S-a_{1}\mr\oui 1{\b}\fx dx\mr S
+\]
 
- 
-\end_layout
-
-\begin_layout Example
-(1) Исследовать на сходимость следующий ряд.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{p}}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x\right)=\df 1{x^{p}}>0,\searrow$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\oui 1{\b}\fx dx=\oui 1{\b}\df{dx}{x^{p}}$
-\end_inset
-
- --- сходится при 
-\begin_inset Formula $p>1$
-\end_inset
-
-, расходится при 
-\begin_inset Formula $p\mr1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-Обобщенный гармонический ряд.
 \end_layout
 
 \begin_layout Subsubsection
