@@ -12275,9 +12275,505 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Formula $T=const$
+\end_inset
+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $PV=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{1}V_{1}=P_{2}V_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=P\left(V\right)dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{12}=\oui{V_{1}}{V_{2}}P\left(V\right)dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=\nu RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(V\right)=\df{\nu RT}V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\oui{V_{1}}{V_{2}}\df{\nu RT}VdV=\nu RT\oui{V_{1}}{V_{2}}\df{dV}V=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{T}=\df Q{\D T}=\b$
+\end_inset
+
+ 
+\end_layout
+
 \end_deeper
+\begin_layout Enumerate
+Адиоботический процесс
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Процесс, протекающий без теплообмета с внешней средой.
+ Система доджна быть теплоизолирована.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=A+\D U$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=-A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{Q}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=PdV$
+\end_inset
+
+; 
+\begin_inset Formula $dU=-\delta A$
+\end_inset
+
+; 
+\begin_inset Formula $\nu=1\ \text{КМоль}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=\df 32RT\nu$
+\end_inset
+
+; 
+\begin_inset Formula $U=\df i2RT\nu$
+\end_inset
+
+; 
+\begin_inset Formula $C_{V}=\df i2R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dU=C_{V}dT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $DdV+C_{V}dT=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\begin{array}{c}
+PdV+C_{V}dT=0\\
+PdV+VdP-RdT=0
+\end{array}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Первое домножаем на 
+\begin_inset Formula $R$
+\end_inset
+
+, второе на 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ и складываем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RPdV+C_{V}PdV+C_{V}VdP=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(R+C_{V}\right)PdV+C_{V}VdP=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда по формуле Майера:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma PdV+VdP=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решая это уравнение получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+P & = & B\um V^{-\gamma};\quad B=const\nonumber \\
+P\um V^{\gamma} & = & const\label{eq:Адиабат}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Адиабат"
+
+\end_inset
+
+) называют уравнением Адиабата, где: 
+\begin_inset Formula 
+\[
+\gamma=\df{C_{P}}{C_{V}}=\df{R+C_{V}}{C_{V}}=\df{R+\frac{i}{2}R}{\frac{i}{2}R}=\df{i+2}i>1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Адиабата круче изотермы.
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+Процессы, протекающие при постоянной теплоемкости называются политропными.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=cosnt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV^{n}=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=\df{C_{p}-C}{C-C_{V}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=0$
+\end_inset
+
+, то процесс адиабатический.
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=C_{P}$
+\end_inset
+
+, то 
+\begin_inset Formula $n=0$
+\end_inset
+
+, следовательно процесс изобарический.
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=\infty$
+\end_inset
+
+, то 
+\begin_inset Formula $n=1$
+\end_inset
+
+, следовательно процесс изотермический.
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=C_{V}$
+\end_inset
+
+, то 
+\begin_inset Formula $n=\infty$
+\end_inset
+
+, следовательно 
+\end_layout
+
+\begin_layout Subsection
+Циклы в газах.
+\end_layout
+
+\begin_layout Definition
+Замкнутым циклом (круговым процессом) называется процесс, при котором система
+ пройдя через ряд состояний возвращается в исходное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 37
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При подсчете работы находится: 
+\begin_inset Formula $A_{123}>0$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{341}<0$
+\end_inset
+
+, причем 
+\begin_inset Formula $A_{341}=-A_{143}$
+\end_inset
+
+, а значит: 
+\begin_inset Formula 
+\[
+A=A_{123}-A_{143}=A_{123}+A_{341}=\oint\limits _{12341}P\left(V\right)dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta U=0$
+\end_inset
+
+, а тогда 
+\begin_inset Formula $Q=A$
+\end_inset
+
+ и 
+\begin_inset Formula $Q=Q_{1}-Q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Периодически действующий двигатель, совершающий работу за счет поступающего
+ извне тепла называется тепловой машиной.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Цикл, идущий по часовой стрелке называется прямым циклом.
+\end_layout
+
+\begin_layout Remark
+Любая тепловая машина работает по прямому циклу.
+\end_layout
+
+\begin_layout Definition
+Машина, работающая на обратном цикле, называется холодильной машиной.
+\end_layout
+
+\begin_layout Standard
+Тепловая машина характеризуется коэффициентом полезного действия: 
+\begin_inset Formula 
+\[
+\eta=\df A{Q_{1}}=\df{Q_{1}-Q_{2}}{Q_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Второе начало термодинамики
+\end_layout
+
+\begin_layout Claim
+Невозможен вечный двигатель первого рода.
+\end_layout
+
+\begin_layout Subsection
+Процессы обратимые и необратимые
+\end_layout
+
+\begin_layout Definition
+Обратимым процессом называется такой процесс, который может быть проведен
+ в обратном направлении таким образом, что система будет проходить через
+ те-же состояния что и в прямом ходе, но вв обратном порядке.
+ 
+\end_layout
+
+\begin_layout Claim
+Чисто механический процесс всегда обратим.
+\end_layout
+
+\begin_layout Standard
+Для обратимости процесса необходимо:
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+\delta A & \delta Q\\
+\delta A' & \delta Q'
+\end{array}\quad\text{Причем: }\begin{array}{c}
+\delta A=-\delta A'\\
+\delta Q=-\delta Q'
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Вопрос об обратимости процесса
+\end_layout
+
+\end_inset
+
+Нельзя ли при помощи каких либо процессов или механизмов добиться того,
+ чтобы участвовавшие в них тела можно было вернуть в исходное состояние
+ без того, чтобы в окружающей среде возникли какие либо другие изменения.
+\end_layout
+
+\begin_layout Subsubsection
+Расширение газа в пустоту
+\end_layout
+
+\begin_layout Standard
+Процесс связанный с расширением газа в пустоту не обратим.
+\end_layout
+
 \end_body
 \end_document
