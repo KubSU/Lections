@@ -230,38 +230,38 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\un{\ov{\sum}{#2}}{#1}}
-{\un{\ov{\sum}{#2}}{#1}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ul}[1]{\underset{#1}{\lim}}
-{\underset{#1}{\lim}}
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umax}[1]{\underset{#1}{\max}}
-{\underset{#1}{\max}}
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umin}[1]{\underset{#1}{\min}}
-{\underset{#1}{\min}}
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
-{\underset{#1}{\overset{#2}{\int}}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oudi}[2]{\underset{#1}{\overset{#2}{\iint}}}
-{\underset{#1}{\overset{#2}{\iint}}}
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
 \end_inset
 
  
@@ -290,8 +290,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\oiu}[2]{\oui{#1}{#2}}
-{\oui{#1}{#2}}
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
 \end_inset
 
 
@@ -404,8 +404,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\ui}[1]{\underset{#1}{\int}}
-{\underset{#1}{\int}}
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
 \end_inset
 
 
@@ -429,7 +429,7 @@ theorems-starred
 \begin_inset Formula $\left\{ a_{n}\right\} $
 \end_inset
 
- и образуют выражение вида 
+ и образуем выражение вида: 
 \begin_inset Formula 
 \begin{equation}
 a_{1}+a_{2}+\tr+a_{n}+\tr=\ous{n=1}{\b}a_{n}\label{eq:1}
@@ -448,7 +448,7 @@ reference "eq:1"
 \begin_inset Formula $a_{1},a_{2}\tr a_{n}\tr$
 \end_inset
 
- - членами ряда (
+ --- членами ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1"
@@ -468,10 +468,10 @@ reference "eq:1"
 \end_inset
 
  называется 
-\begin_inset Formula $n-$
+\begin_inset Formula $n$
 \end_inset
 
-ой частичной суммой ряда (
+-ой частичной суммой ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1"
@@ -521,48 +521,28 @@ reference "eq:1"
 
 \begin_layout Remark
 Так как 
-\begin_inset Formula $S_{1}=a_{1},\ S_{2}=S_{1}+a_{2}\ \sl\ a_{2}=S_{2}-S_{1}\ \sl\ a_{n}=S_{n}-S_{n-1}$
+\begin_inset Formula $S_{1}=a_{1}$
 \end_inset
 
- то устанавливается однозначное соответствие 
+ и 
+\begin_inset Formula $S_{2}=S_{1}+a_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{2}=S_{2}-S_{1}$
+\end_inset
+
+, аналогично 
+\begin_inset Formula $a_{n}=S_{n}-S_{n-1}$
+\end_inset
+
+, а значит устанавливается однозначное соответствие 
 \begin_inset Formula $\left\{ a_{n}\right\} \longleftrightarrow\left\{ S_{n}\right\} $
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Example
-Исследовать на сходимость 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $1-1+1-1+1+\tr=\ous{n=1}{\b}\left(-1\right)^{n+1}$
-\end_inset
-
- Она не сходится.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
-\end_inset
-
- - исследовать на сходимость
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $S_{n}=a+a^{2}+a^{3}+\tr+a^{n}=\left\{ \begin{array}{c}
-b_{1}=a\\
-q=q
-\end{array}\right\} =\df{b_{1}\left(1-a^{4}\right)}{1-q}$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Standard
 Из определения суммы числового ряда вытекают свойства:
 \end_layout
@@ -589,11 +569,14 @@ q=q
 
 \begin_deeper
 \begin_layout Proof
-Рассмотрим последовательность частичных сумм нового ряда.
-\end_layout
+Рассмотрим последовательность частичных сумм нового ряда:
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{n+1} & =A+a_{1}+a_{2}+\tr+a_{n}=\\
+ & =\left\{ a_{1}+a_{2}+\tr+a_{n}=S_{n}\right\} =\\
+ & =A+S_{n}\ov{\st}{n\st\b}A+S
+\end{align*}
 
-\begin_layout Proof
-\begin_inset Formula $\Sigma_{n+1}=A+a_{1}+a_{2}+\tr+a_{n}=\left\{ a_{1}+a_{2}+\tr+a_{n}=S_{n}\right\} =A+S_{n}\ov{\st}{n\st\b}A+S$
 \end_inset
 
  так как 
@@ -605,7 +588,7 @@ q=q
 
 \end_deeper
 \begin_layout Enumerate
-Если ряд сумма 
+Если ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -617,7 +600,7 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}\alpha\um a_{n}$
 \end_inset
 
- - сходится к 
+ сходится к 
 \begin_inset Formula $\alpha\um S$
 \end_inset
 
@@ -625,12 +608,16 @@ q=q
 \begin_inset Formula $\alpha\in\R$
 \end_inset
 
- произвольное.
+ --- произвольное.
 \end_layout
 
 \begin_deeper
 \begin_layout Proof
-\begin_inset Formula $\ous{n=1}{}$
+\begin_inset Formula 
+\[
+\ous{n=1}{\infty}\alpha\um a_{n}=\alpha\um\ous{n=1}{\infty}a_{n}=\alpha\um S
+\]
+
 \end_inset
 
 
@@ -662,27 +649,31 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- сходятся, то ряды 
+ сходятся, то ряд 
 \begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)$
 \end_inset
 
- тоже сходятся, причем выполняется следующее равенство: 
-\begin_inset Formula $\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)=$
+ тоже сходится, причем выполняется следующее равенство:
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}\left(a_{n}\pm b_{n}\right)=\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}
+\]
+
 \end_inset
 
 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}$
-\end_inset
-
-.
 \end_layout
 
 \begin_deeper
 \begin_layout Proof
-\begin_inset Formula $\Sigma_{n}=\ous{k=1}n\left(a_{k}\pm b_{k}\right)=\ous{k=1}na_{n}\pm\ous{k=1}nb_{n}\ov{\st}{n\st\b}\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}$
+\begin_inset Formula 
+\[
+\Sigma_{n}=\ous{k=1}n\left(a_{k}\pm b_{k}\right)=\ous{k=1}na_{n}\pm\ous{k=1}nb_{n}\ov{\st}{n\st\b}\ous{n=1}{\b}a_{n}+\ous{n=1}{\b}b_{n}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \end_deeper
@@ -700,22 +691,28 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - сходится.
+ сходится.
  Отбросим 
 \begin_inset Formula $k$
 \end_inset
 
  первых слагаемых ряда, получим следующий ряд: 
-\begin_inset Formula $a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr$
+\begin_inset Formula 
+\[
+a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr
+\]
+
 \end_inset
 
- .
- Последовательность его частичных сумм: 
-\begin_inset Formula $\Sigma_{n}=a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr=S_{k+n}-S_{k}\ov{\st}{n\st\b}S-S_{k}$
+Рассмотрим последовательность его частичных сумм:
+\begin_inset Formula 
+\[
+\Sigma_{n}=a_{k+1}+a_{k+2}+\tr+a_{k+n}+\tr=S_{k+n}-S_{k}\ov{\st}{n\st\b}S-S_{k}
+\]
+
 \end_inset
 
-.
- 
+
 \end_layout
 
 \end_deeper
@@ -728,29 +725,42 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- равносильно сходимости числовых последовательностей, то применяя критерий
+ равносильна сходимости числовых последовательностей, то применяя критерий
  Коши к последовательности 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- можно записать: 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
+ можно записать:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|S_{n+p}-S_{n}\right|<\varepsilon
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
-(Критерий Коши) Ряд 
-\begin_inset Formula $\ous{n=1}{\b}$
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
+\end_layout
+
 \end_inset
 
- - сходится 
-\begin_inset Formula $\dsl$
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
+ --- сходится тогда и только тогда, когда
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon
+\]
+
 \end_inset
 
 
@@ -761,77 +771,57 @@ q=q
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - сходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
+ --- сходится, значит 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- - сходиться 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
-\end_inset
-
- 
-\begin_inset Formula $\forall p\in\N\ \left|S_{n+p}-S_{n}\right|<\varepsilon$
-\end_inset
-
- 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ $
-\end_inset
-
- 
-\begin_inset Formula $\forall p\in\N\ \left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость следующий ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n\left(n+1\right)}=\df 12+\df 1{2\um3}+\tr+\df 1{n\left(n+1\right)}+\tr$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Example
-Так как 
-\begin_inset Formula $a_{n}=\df 1{n\left(n+1\right)}=\df 1n-\df 1{n+1}$
-\end_inset
-
-, то 
-\begin_inset Formula $S_{n}=\left(1-\df 12\right)+\left(\df 12-\df 13\right)+\left(\df 13-\df 14\right)+\tr+\left(\df 1{n-1}-\df 1n\right)+\left(\df 1n-\df 1{n+1}\right)+\tr\ov{\st}{n\st\b}1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-Гармонический ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr$
-\end_inset
-
-.
- Докажем его расходимость, то-есть выполняется следующее условие 
+ --- сходиться, а тогда:
 \begin_inset Formula 
-\begin{eqnarray*}
-\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists p\in\N\ :\  & \left|\ous{k=n+1}{n+p}\df 1k\right|= & \df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
- & = & \df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N}>N\um\df 1{2N}=\df 12
-\end{eqnarray*}
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|S_{n+p}-S_{n}\right|<\varepsilon
+\]
+
+\end_inset
+
+Что равносильно: 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\left|\ous{k=n+1}{n+p}a_{k}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим гармонический ряд: 
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}\df 1n=1+\df 12+\df 13+\df 14+\df 15+\tr+\df 1n+\tr
+\]
+
+\end_inset
+
+Докажем его расходимость, то-есть выполняется следующее условие:
+\begin_inset Formula 
+\[
+\exists\varepsilon>0\quad\forall N\quad\exists n\br N\quad\exists p\in\N\quad\left|\ous{k=n+1}{n+p}\df 1k\right|>\varepsilon
+\]
+
+\end_inset
+
+Найдем 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\left|\ous{k=n+1}{n+p}\df 1k\right| & =\df 1{n+1}+\df 1{n+2}+\tr+\df 1{n+p}=\\
+ & =\df 1{N+1}+\df 1{N+2}+\tr+\df 1{N+N}>\\
+ & >N\um\df 1{2N}=\df 12
+\end{align*}
 
 \end_inset
 
@@ -844,7 +834,7 @@ q=q
 \end_layout
 
 \begin_layout Definition
-Числовой ряд 
+Числовой ряд
 \begin_inset Formula 
 \[
 r_{n}=a_{n+1}+a_{n+2}+\tr
@@ -871,7 +861,16 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Lemma
-(1) Ряд 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ Ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -887,14 +886,27 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\ous{n=1}{\b}a_{n}=\ul{n\st\b}S_{n}=S\ \dsl\ \ul{n\st\b}\left(S-S_{n}\right)=\ul{n\st\b}r_{n}=0$
+\begin_inset Formula 
+\[
+\ous{n=1}{\b}a_{n}=\ul{n\st\b}S_{n}=S\ \dsl\ \ul{n\st\b}\left(S-S_{n}\right)=\ul{n\st\b}r_{n}=0
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Lemma
-(2, Необходимый признак сходимости числового ряда)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2, Необходимый признак сходимости числового ряда
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Lemma
@@ -911,22 +923,22 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 
 \begin_layout Proof
 Пусть 
-\begin_inset Formula $S$
-\end_inset
-
- - сумма ряда 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\begin_inset Formula $\ous{n=1}{\b}a_{n}=S$
 \end_inset
 
 , тогда 
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)\st S-S=0$
+\begin_inset Formula 
+\[
+\ul{n\st\b}a_{n}=\ul{n\st\b}\left(S_{n}-S_{n-1}\right)\Rightarrow S-S=0
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Remark
-Доказанный признак - достаточный признак расходимости: 
+Доказанный признак --- достаточный признак расходимости: если 
 \begin_inset Formula $\ul{n\st\b}a_{n}\nr0$
 \end_inset
 
@@ -934,33 +946,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - расходится.
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость 
-\begin_inset Formula $\ous{n=1}{\b}\df n{2n+1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}a_{n}=\ul{n\st\b}\df n{2n+1}=\df 12\nr0\ \sl\ $
-\end_inset
-
- расходится.
-\end_layout
-
-\begin_layout Remark
-Необходимый признак не является достаточным.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1n$
-\end_inset
-
- - необходимость выполнена, но он расходится.
+ --- расходится.
 \end_layout
 
 \begin_layout Subsection
@@ -985,41 +971,54 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 
 \begin_layout Standard
 Рассматривается ряд
-\begin_inset Formula $\ous{n=1}{\b}a_{n},\ a_{n}\br0$
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}\br0$
 \end_inset
 
 .
  Заметим что 
-\begin_inset Formula $S_{n+1}=S_{n}+a_{n+1}\ \sl\ S_{n+1}\br S_{n}\ \forall n\in\N\ \sl\ \left\{ S_{n}\right\} $
+\begin_inset Formula $S_{n+1}=S_{n}+a_{n+1}$
 \end_inset
 
- не убывает.
- 
-\begin_inset Formula $\sl$
+, значит: 
+\begin_inset Formula $S_{n+1}\br S_{n}\quad\forall n\in\N$
 \end_inset
 
- по теореме о сходимости монотонной последовательности получим следующую
- теорему.
-\end_layout
-
-\begin_layout Theorem
-(1) Знакоположительный ряд 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}$
-\end_inset
-
- - сходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- последовательность 
+, откуда последовательность 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограничена сверху ( 
-\begin_inset Formula $\exists M>0\ \forall n\in\N\ S_{n}\mr M$
+ не убывает.
+ Следовательно по теореме о сходимости монотонной последовательности получим
+ следующую теорему.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
 \end_inset
 
- ) .
+Знакоположительный ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ --- сходится тогда и только тогда, когда последовательность 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ ограничена сверху 
+\begin_inset Formula $(\exists M>0\quad\forall n\in\N\quad S_{n}\mr M)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Remark
@@ -1027,19 +1026,15 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n},\ a_{n}\br0$
 \end_inset
 
- - расходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- последовательность 
+ --- расходится тогда и только тогда, когда последовательность 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- не ограничена сверху ( 
-\begin_inset Formula $\forall M>0\ \exists n\in\N\ S_{n}\mr M$
+ не ограничена сверху 
+\begin_inset Formula $(\forall M>0\quad\exists n\in\N\quad S_{n}\mr M)$
 \end_inset
 
- ) .
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1047,7 +1042,16 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Theorem
-(2) (Признак сравнения) Пусть ряды 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2, Признак сравнения
+\end_layout
+
+\end_inset
+
+Пусть ряды 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1055,11 +1059,11 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- - знакоположительны, если 
-\begin_inset Formula $\exists n_{0}\ \forall n\br n_{0}\ a_{n}\mr b_{n}$
+ --- знакоположительные, если 
+\begin_inset Formula $\exists n_{0}\quad\forall n\br n_{0}\quad a_{n}\mr b_{n}$
 \end_inset
 
- то
+ то:
 \end_layout
 
 \begin_deeper
@@ -1072,7 +1076,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -1091,7 +1095,7 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_layout Proof
 Так как отбрасывание конечного числа членов ряда не влияет на сходимость,
  в дальнейшем будем считать 
-\begin_inset Formula $a_{n}\mr b_{n}\ \forall n\in\N$
+\begin_inset Formula $a_{n}\mr b_{n}\quad\forall n\in\N$
 \end_inset
 
 .
@@ -1100,59 +1104,34 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \begin_deeper
 \begin_layout Enumerate
 Пусть ряд 
-\begin_inset Formula $\ous{n=1}{\b}n_{n}$
-\end_inset
-
- - сходится 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\ous{k=1}na_{k}\mr\ous{k=1}nb_{k}\mr M$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
-По теореме 1 
-\begin_inset Formula $\sl$
-\end_inset
-
- Ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - сходится.
+ --- сходится, тогда 
+\begin_inset Formula $\ous{k=1}na_{k}\mr\ous{k=1}nb_{k}\mr M$
+\end_inset
+
+.
+ Тогда по теореме 1 ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ --- сходится.
  Так как все его частичные суммы ограничены в совокупности.
 \end_layout
 
 \begin_layout Enumerate
-Пусть 
+Пусть ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- - расходится 
-\begin_inset Formula $\sl$
-\end_inset
-
- частичные суммы ряда его не ограничены 
-\begin_inset Formula $\sl$
-\end_inset
-
- то и частичные суммы 
+ --- расходится, тогда его частичные суммы не ограничены, значит частичные
+ суммы ряда 
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- не ограничены 
-\begin_inset Formula $\sl$
-\end_inset
-
- По теореме 1 
-\begin_inset Formula $\sl$
-\end_inset
-
- ряд 
+ тоже не ограничены.
+ Тогда по теореме 1 ряд 
 \begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
@@ -1160,111 +1139,16 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \end_deeper
-\begin_layout Example
-Исследовать на сходимость 
-\begin_inset Formula $\ous{n=1}{\b}\df{5+\left(-1\right)^{n}\um3}{2^{n+3}}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $0\mr a_{n}=\df{5+\left(-1\right)^{n}\um3}{2^{n+3}}\ov{\st}{n\st\b}0$
-\end_inset
-
- - необходимость выполняется.
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df{5+\left(-1\right)^{n}\um3}{2^{n+3}}\mr\df 8{2^{n+1}}=\df 1{2^{n}}=b_{n}$
-\end_inset
-
- 
-\backslash
-
-\end_layout
-
-\begin_layout Example
-Так как 
-\begin_inset Formula $b_{n}$
-\end_inset
-
- сходится, то и исходная сумма тоже сходится.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{n+1}{n^{2}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Необходимое условие 
-\begin_inset Formula $\ul{n\st\b}\df{n+1}{n^{2}}=0$
-\end_inset
-
- выполнено.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{n}=\df{n+1}{n^{2}}\br\df n{n^{2}}=\df 1n=b_{n}$
-\end_inset
-
- - 
-\begin_inset Formula $b_{n}$
-\end_inset
-
- -расходится, то и 
-\begin_inset Formula $\ous{n=1}{\b}\df{n+1}{n^{2}}$
-\end_inset
-
- расходится.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{n}}$
-\end_inset
-
- - сходится (
-\begin_inset Formula $\df 1{2^{n}}$
-\end_inset
-
- ).
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=2}{\b}\df 1{\ln n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df 1{\ln n}>\df 1n\ \sl\ $
-\end_inset
-
- расходится.
-\end_layout
-
 \begin_layout Theorem
-(3) Признак сходимости.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3, Признак сходимости
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Если существует конечный предел 
 \begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=L>0$
 \end_inset
@@ -1281,25 +1165,12 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 \end_layout
 
 \begin_layout Proof
-Из определения:
-\end_layout
+Из определения следует:
+\begin_inset Formula 
+\[
+\ul{n\st\b}\df{a_{n}}{b_{n}}=L\quad\dsl\quad\forall\varepsilon>0\quad\exists N\quad\forall n\br N\quad\left|\df{a_{n}}{b_{n}}-L\right|<\varepsilon
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=L\ \dsl\ \forall\varepsilon>0\ \exists N\ \forall n\br N\ \left|\df{a_{n}}{b_{n}}-L\right|<\varepsilon$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $-\varepsilon<\df{a_{n}}{b_{n}}-L<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $-\varepsilon+L<\df{a_{n}}{b_{n}}<\varepsilon+L$
 \end_inset
 
 
@@ -1307,9 +1178,11 @@ r_{n}=a_{n+1}+a_{n+2}+\tr
 
 \begin_layout Proof
 \begin_inset Formula 
-\begin{equation}
-b_{n}\left(-\varepsilon+L\right)<a_{n}<b_{n}\left(\varepsilon+L\right)\label{eq:2}
-\end{equation}
+\begin{alignat}{2}
+-\varepsilon< & \df{a_{n}}{b_{n}} & -L & <\varepsilon\nonumber \\
+-\varepsilon+L< & \df{a_{n}}{b_{n}} &  & <\varepsilon+L\nonumber \\
+b_{n}\left(-\varepsilon+L\right)< & a_{n} &  & <b_{n}\left(\varepsilon+L\right)\label{eq:2}
+\end{alignat}
 
 \end_inset
 
@@ -1332,19 +1205,19 @@ reference "eq:2"
 \begin_inset Formula $\ous{n=1}{\b}b_{n}\left(L-\varepsilon\right)=\left(L-\varepsilon\right)\ous{n=1}{\b}b_{n}$
 \end_inset
 
- следовательно ряд 
-\begin_inset Formula $\ous{n=1}{\b}$
-\end_inset
-
- сходится.
+.
 \end_layout
 
 \begin_layout Proof
 Если сходится ряд 
-\begin_inset Formula $\ous{n=1}{\b}b_{n}\ \sl\ous{n=1}{\b}b_{n}\left(L-\varepsilon\right)$
+\begin_inset Formula $\ous{n=1}{\b}b_{n}$
 \end_inset
 
- то используя правую часть неравенства (
+, то сходится и ряд 
+\begin_inset Formula $\ous{n=1}{\b}b_{n}\left(L-\varepsilon\right)$
+\end_inset
+
+, а тогда используя правую часть неравенства (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:2"
@@ -1366,68 +1239,21 @@ reference "eq:2"
  существенно.
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{2}}$
-\end_inset
-
- и 
-\begin_inset Formula $\ous{n=1}{\b}\df 1n$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df{a_{n}}{b_{n}}=\df{\df 1{n^{2}}}{\df 1n}=\df 1n\ov{\st}{n\st\b}0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Не работает.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость такой ряд 
-\begin_inset Formula $\ous{n=1}{\b}\df{\sin\df 1{\sqrt{n}}}{n+1}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{n}=\df{\sin\df 1{\sqrt{n}}}{n+1}\sim\df{\df 1{\sqrt{n}}}n=\df 1{n^{\df 32}}=b_{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\df{a_{n}}{b_{n}}=1,\ \ous{n=1}{\b}\df 1{n^{\alpha}}$
-\end_inset
-
- сходится к 
-\begin_inset Formula $\alpha>0$
-\end_inset
-
- (Это обобщенный гармонический ряд) 
-\end_layout
-
 \begin_layout Subsubsection
 Признак Даламбера
 \end_layout
 
 \begin_layout Theorem
-Признак Даламбера.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Даламбера
 \end_layout
 
-\begin_layout Theorem
-Если для ряда 
+\end_inset
+
+ Если для ряда 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1442,7 +1268,7 @@ reference "eq:1"
 \begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L$
 \end_inset
 
-
+, то:
 \end_layout
 
 \begin_deeper
@@ -1451,7 +1277,7 @@ reference "eq:1"
 \begin_inset Formula $L<1$
 \end_inset
 
- ряд сходится 
+ ряд сходится
 \end_layout
 
 \begin_layout Enumerate
@@ -1459,7 +1285,7 @@ reference "eq:1"
 \begin_inset Formula $L>1$
 \end_inset
 
- ряд сходится 
+ ряд рассходится 
 \end_layout
 
 \begin_layout Enumerate
@@ -1472,30 +1298,34 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
-
+Рассмотрим два случая:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L<1$
 \end_inset
 
- 
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L\ \dsl\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ L-\varepsilon<\df{a_{n+1}}{a_{n}}<L+\varepsilon$
+Пусть 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=L$
 \end_inset
 
+, тогда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad L-\varepsilon<\df{a_{n+1}}{a_{n}}<L+\varepsilon
+\]
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-\begin_inset Formula $a_{n}\left(L-\varepsilon\right)<a_{n+1}<a_{n}\left(L+\varepsilon\right)\ \forall n\br N$
+Тогда верно: 
+\begin_inset Formula $a_{n}\left(L-\varepsilon\right)<a_{n+1}<a_{n}\left(L+\varepsilon\right)\quad\forall n\br N$
 \end_inset
 
 
@@ -1506,47 +1336,26 @@ reference "eq:1"
 \begin_inset Formula $L<1$
 \end_inset
 
- то существует такое 
-\begin_inset Formula $\varepsilon>0$
+ то 
+\begin_inset Formula $\exists\varepsilon>0$
 \end_inset
 
- такое маленькое, что 
+ такое, что 
 \begin_inset Formula $0<L+\varepsilon=q<1$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
+, а тогда:
+\begin_inset Formula 
+\begin{align*}
+a_{N+1} & <a_{N}\um q\\
+a_{N+2} & <a_{N+1}\um q<a_{N}\um q^{2}\\
+\dots & \dots\\
+a_{N+K} & <a_{N}\um q^{K},\quad K=\overline{1,\infty}
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+1}<a_{N}\um q$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+2}<a_{N+1}\um q<a_{N}\um q^{2}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\tr$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+K}<a_{N}\um q^{K},\ K=1,2,3,4,5,6,7\tr$
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -1554,24 +1363,16 @@ reference "eq:1"
 \begin_inset Formula $\ous{K=1}{\b}a_{N}\um q^{K}=a_{N}\um\ous{K=1}{\b}q^{K}$
 \end_inset
 
- - сходящая геометрическая прогрессия(
-\begin_inset Formula $q<1$
+ --- сходящая геометрическая прогрессия 
+\begin_inset Formula $(q<1)$
 \end_inset
 
-).
-\end_layout
-
-\begin_layout Standard
-То ряд 
+, то ряд 
 \begin_inset Formula $\ous{K=1}{\b}a_{N+K}=\ous{n=N+1}{\b}a_{n}$
 \end_inset
 
- - сходится.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Сходится 
+ --- сходится.
+ А значит и сходится 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1580,15 +1381,21 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L>1$
 \end_inset
 
-
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\exists\varepsilon>0\ 1<L-\varepsilon=q<L$
+Пусть 
+\begin_inset Formula $\exists\varepsilon>0$
+\end_inset
+
+, такой что:
+\begin_inset Formula $1<L-\varepsilon=q<L$
 \end_inset
 
 
@@ -1596,42 +1403,29 @@ reference "eq:1"
 
 \begin_layout Standard
 Так как 
-\begin_inset Formula $a_{n}\um q<a_{n+1}\ \forall n\br N$
+\begin_inset Formula $a_{n}\um q<a_{n+1}\quad\forall n\br N,$
 \end_inset
 
- 
+ то: 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{N+1}>q\um a_{N}>a_{N}$
-\end_inset
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{N+1}> & q\um a_{N} & >a_{N}\\
+a_{N+2}> & a_{N}\um q^{2} & >a_{N}\\
+\tr & \tr\\
+a_{N+k}> & a_{N} & >0\quad\forall N\br n
+\end{eqnarray*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{N+2}>a_{N}\um q^{2}>a_{N}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\tr$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{N+k}>a_{N}>0\ \forall N\br n$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl\ \ul{k\st\b}a_{N+k}\nr0$
+Тогда: 
+\begin_inset Formula $\ul{k\st\b}a_{N+k}\nr0$
 \end_inset
 
 .
@@ -1639,62 +1433,20 @@ reference "eq:1"
 
 \end_deeper
 \end_deeper
-\begin_layout Example
-(1) Исследовать на сходимость.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{n!}{n^{n}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{n}=\df{n!}{n^{n}}\ov{\st}{n\st\b}0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df{\left(n+1\right)!}{\left(n+1\right)^{n+1}}\um\df{n^{n}}{n!}=\ul{n\st\b}\df 1{\left(\df{n+1}n\right)^{n}}=\ul{n\st\b}\df 1{\left(1+\df 1n\right)^{n}}=\df 1e<1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-(2) Исследовать на сходимость
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{2^{n}}{n^{4}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df{2^{n+1}}{\left(n+1\right)^{4}}\um\df{n^{4}}{2^{n}}=2>1$
-\end_inset
-
- 
-\end_layout
-
 \begin_layout Subsubsection
 Признак Коши
 \end_layout
 
 \begin_layout Theorem
-(5) Признак Коши.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5, Признак Коши
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Пусть для ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1706,7 +1458,7 @@ reference "eq:1"
 \begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L$
 \end_inset
 
- 
+, тогда:
 \end_layout
 
 \begin_deeper
@@ -1736,40 +1488,41 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
- 
+Рассмотрим два случая:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L<1$
 \end_inset
 
- 
+: 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L\ \dsl\ \forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ L-\varepsilon<\sqrt[n]{a_{n}}L+\varepsilon$
+Пусть 
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=L$
 \end_inset
 
- 
-\end_layout
+, тогда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad L-\varepsilon<\sqrt[n]{a_{n}}<L+\varepsilon
+\]
 
-\begin_layout Standard
+\end_inset
+
+Откуда: 
 \begin_inset Formula $\left(L-\varepsilon\right)^{n}<a_{n}<\left(L+\varepsilon\right)^{n}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+, причем 
 \begin_inset Formula $0<L+\varepsilon=q<1$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -1789,22 +1542,24 @@ reference "eq:1"
 
 \end_deeper
 \begin_layout Enumerate
+Рассмотрим 
 \begin_inset Formula $L>1$
 \end_inset
 
- 
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\exists\varepsilon>0\ q=L-\varepsilon>1$
+Пусть 
+\begin_inset Formula $\exists\varepsilon>0$
 \end_inset
 
- 
-\end_layout
+, тогда 
+\begin_inset Formula $q=L-\varepsilon>1$
+\end_inset
 
-\begin_layout Standard
-Используя другую часть неравенства 
+, значит используя другую часть неравенства 
 \begin_inset Formula $q^{n}<a_{n}\ \forall n\br N$
 \end_inset
 
@@ -1812,7 +1567,7 @@ reference "eq:1"
 \begin_inset Formula $\ous{n=1}{\b}a^{n}$
 \end_inset
 
- следует по признаку сравнения расходимость ряда (
+ по признаку сравнения расходимость ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1"
@@ -1824,55 +1579,20 @@ reference "eq:1"
 
 \end_deeper
 \end_deeper
-\begin_layout Example
-(1) Исследовать на сходимость
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\left(\df{2n}{n+1}\right)^{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\sqrt[n]{\left(\df{2n}{n+1}\right)^{n}}=\ul{n\st\b}\df{2n}{n+1}=2>1$
-\end_inset
-
- Ряд расходится.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-(2) Исследовать на сходимость.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df{2^{n}\um n^{n^{2}}}{\left(n+1\right)^{n^{2}}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{n\st\b}\sqrt[n]{a_{n}}=\ul{n\st\b}\df{2\um n^{n}}{\left(n+1\right)^{n}}=\ul{n\st\b}\df 2{\left(1+\df 1n\right)^{n}}=\df 2e<1$
-\end_inset
-
- - ряд сходится.
-\end_layout
-
 \begin_layout Subsubsection
 Интегральный признак.
 \end_layout
 
 \begin_layout Theorem
-(6) Интегральный признак.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+6, Интегральный признак
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Если функция 
 \begin_inset Formula $y=f\left(x\right)>0$
 \end_inset
@@ -1885,7 +1605,7 @@ reference "eq:1"
 \begin_inset Formula $a_{n}=f\left(n\right)$
 \end_inset
 
- то ряд 
+, то ряд 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
@@ -1894,89 +1614,78 @@ reference "eq:1"
 \end_inset
 
  сходятся и расходятся одновременно, причем выполняется неравенство: 
-\begin_inset Formula $\oui 1{\b}\fx dx\mr\ous{n=1}{\b}a_{n}\mr\oui 1{\b}\fx dx+a_{1}$
-\end_inset
+\begin_inset Formula 
+\[
+\oui 1{\b}\fx dx\mr\ous{n=1}{\b}a_{n}\mr\oui 1{\b}\fx dx+a_{1}
+\]
 
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\forall k\in\N\ \forall x\in\left[k,k+1\right]\ f\left(k+1\right)\mr\fx\mr f\left(k\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
+Пусть
+\begin_inset Formula 
+\[
+\forall k\in\N\quad\forall x\in\left[k,k+1\right]\quad f\left(k+1\right)\mr\fx\mr f\left(k\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
 \begin_inset Formula $a_{k+1}\mr f\left(x\right)\mr a_{k}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Проинтегрируем неравенство по отрезку 
+.
+ Проинтегрируем неравенство по отрезку 
 \begin_inset Formula $\left[k,k+1\right]$
 \end_inset
 
-: 
-\begin_inset Formula $\oui k{k+1}f\left(k+1\right)dx\mr\oui k{k+1}f\left(x\right)dx\mr\oui k{k+1}f\left(k\right)dx$
+, получим: 
+\begin_inset Formula 
+\[
+\oui k{k+1}f\left(k+1\right)dx\mr\oui k{k+1}f\left(x\right)dx\mr\oui k{k+1}f\left(k\right)dx
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $a_{k+1}\mr\oui k{k+1}f\left(x\right)dx\mr a_{k}$
+Значит верны неравенства:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{2}\mr & \oui 12f\left(x\right)dx & \mr a_{1}\\
+a_{3}\mr & \oui 23\fx dx & \mr a_{2}\\
+\tr & \tr\\
+a_{k+1}\mr & \oui k{k+1}\fx dx & \mr a_{k}
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $a_{2}\mr\oui 12f\left(x\right)dx\mr a_{1}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $a_{3}\mr\oui 23\fx dx\mr a_{2}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\tr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $a_{n+1}\mr\oui k{k+1}\fx dx\mr a_{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\sl$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
+А тогда:
 \begin_inset Formula 
 \begin{equation}
-s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
+S_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Откуда возможны 2 случая:
 \end_layout
 
 \begin_deeper
@@ -1989,75 +1698,57 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \begin_inset Formula $I$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+, тогда 
+\begin_inset Formula $\oui 1{n+1}\fx dx<\oui 1{\b}\fx dx=I$
 \end_inset
 
- 
-\begin_inset Formula $\oui 1{n+1}\fx dx<\oui 1{\b}\fx dx=I\ \sl\oui 1{n+1}\fx dx<I$
+, или 
+\begin_inset Formula $\oui 1{n+1}\fx dx<I$
 \end_inset
 
+.
+ А тогда:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{n+1}-a_{1} & < & I\\
+S_{n+1} & < & I+a_{1}\quad\forall n\in\N
+\end{eqnarray*}
 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\sl\ S_{n+1}-a_{1}<I\ \sl\ S_{n+1}<I+a_{1}\ \forall n\in\N\ \sl$
 \end_inset
 
- Все суммы 
+Следовательно все суммы 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограничены в совокупности сверху.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- По теореме 1 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ ограничены в совокупности сверху и по теореме 1: 
 \begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- сходится
+ сходится.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Если сходится ряд 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}\ \sl\ $
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
 \end_inset
 
- все суммы 
+, то все суммы 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- ограничены в совокупности 
-\begin_inset Formula $\sl$
+ ограничены в совокупности, следовательно
+\begin_inset Formula 
+\[
+F_{n}=\oui 1{n+1}\fx dx
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $F_{n}=\oui 1{n+1}\fx dx$
-\end_inset
-
- возрастает и ограничена 
+ возрастает и ограничена последовательностью 
 \begin_inset Formula $\left\{ S_{n}\right\} $
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- сходится 
+, а значит сходится интеграл 
 \begin_inset Formula $\oui 1{\b}\fx dx$
 \end_inset
 
@@ -2065,57 +1756,20 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Remark
 В случае сходимости предельным переходом в неравенстве 
 \begin_inset Formula $n\st\b$
 \end_inset
 
- 
-\end_layout
+ и получим:
+\begin_inset Formula 
+\[
+S-a_{1}\mr\oui 1{\b}\fx dx\mr S
+\]
 
-\begin_layout Remark
-\begin_inset Formula $S-a_{1}\mr\oui 1{\b}\fx dx\mr S$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-(1) Исследовать на сходимость следующий ряд.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{p}}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x\right)=\df 1{x^{p}}>0,\searrow$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\oui 1{\b}\fx dx=\oui 1{\b}\df{dx}{x^{p}}$
-\end_inset
-
- --- сходится при 
-\begin_inset Formula $p>1$
-\end_inset
-
-, расходится при 
-\begin_inset Formula $p\mr1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-Обобщенный гармонический ряд.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2124,14 +1778,18 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 
 \begin_layout Theorem
 Если для ряда 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}(a_{n}>0)$
+\begin_inset Formula $\ous{n=1}{\b}a_{n}\quad(a_{n}>0)$
 \end_inset
 
  выполнено условие 
-\begin_inset Formula $\exists\ul{n\st\b}n\left(\dfrac{a_{n}}{a_{n+1}}-1\right)=L$
+\begin_inset Formula 
+\[
+\exists\ul{n\st\b}n\left(\dfrac{a_{n}}{a_{n+1}}-1\right)=L
+\]
+
 \end_inset
 
-, то при 
+то при 
 \begin_inset Formula $L>1$
 \end_inset
 
@@ -2140,33 +1798,6 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:3}
 \end_inset
 
  ряд расходится.
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость знакоположительный ряд.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df 12+\df 12\um\df 34+\tr+\df{1\um3\um\tr\um\left(2n-1\right)}{2\um4\um\tr\um\left(2n\right)}=\ous{n=1}{\b}\df{\left(2n-1\right)!!}{\left(2n\right)!!}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-По Даламберу: 
-\begin_inset Formula $\ul{n\st\b}\df{a_{n}+1}{a_{n}}=\ul{n\st\b}\df{2n+1}{2n+2}=1$
-\end_inset
-
- - требуется дополнительное исследование.
-\end_layout
-
-\begin_layout Example
-По Раабе: 
-\begin_inset Formula $\ul{n\st\b}n\left(\df{a_{n}}{a_{n+1}}-1\right)=\ul{n\st\b}n\left(\df{2n+2}{2n+1}-1\right)=\ul{n\st\b}n\um\df 1{2n+1}=\df 12<1$
-\end_inset
-
- - ряд расходится.
 \end_layout
 
 \begin_layout Subsection
@@ -2624,7 +2255,7 @@ reference "eq:4"
 \begin_inset Formula $\left|\ous{k=n}{n+p}a_{k}\right|<\varepsilon$
 \end_inset
 
- --- критерий Коши сходимости знакоположительного ряда (
+ --- критерий Коши сходимости ряда (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:4"
@@ -2823,8 +2454,7 @@ reference "eq:4"
 \begin_inset Formula $q_{1},q_{2},\tr,q_{n},\tr$
 \end_inset
 
- .
- ......
+, которые расположены в порядке их следования в исходном ряде.
  Обозначим 
 \begin_inset Formula $P_{n}=p_{1}+p_{2}+\tr+p_{n}$
 \end_inset
@@ -2857,7 +2487,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 
 \end_inset
 
- Следовательно
+Cледовательно
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
 
@@ -2884,10 +2514,6 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Докажем абсолютную сходимость.
 \end_layout
 
@@ -2924,112 +2550,100 @@ reference "eq:7"
 Перестановка членов условно сходящегося ряда.
 \end_layout
 
-\begin_layout Standard
-Рассмотрим пример - знакочередующийся ряд.
-\end_layout
-
 \begin_layout Example
-\begin_inset Formula $\ous{k=1}{\b}\df{\left(-1\right)^{n}}n=1-\df 12+\df 13-\df 14+\df 15+\tr$
+Рассмотрим знакочередующийся ряд:
+\begin_inset Formula 
+\[
+\ous{k=1}{\b}\df{\left(-1\right)^{n}}n=1-\df 12+\df 13-\df 14+\df 15+\tr
+\]
+
 \end_inset
 
- - сходящийся ряд Лейбница.
+Это ряд Лейбница.
  Обозначим его сумму 
 \begin_inset Formula $S$
 \end_inset
 
 .
- Заметим что 
-\begin_inset Formula $\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+\tr+\dfrac{\left(-1\right)^{n-1}}{n}\um x^{n}+\tr$
+ Заметим что:
+\begin_inset Formula 
+\[
+\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+\tr+\dfrac{\left(-1\right)^{n-1}}{n}\um x^{n}+\tr
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+Следовательно: 
 \begin_inset Formula $S=\ln2$
 \end_inset
 
 .
-\end_layout
+ Абсолютной сходимости нет, значит ряд сходится условно.
+ Переставим члены ряда:
+\begin_inset Formula 
+\[
+\left(1-\df 12-\df 14\right)+\left(\df 13-\df 16-\df 18\right)+\tr+\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)+\tr
+\]
 
-\begin_layout Example
-Абсолютной сходимости нет 
-\begin_inset Formula $\sl$
 \end_inset
 
- ряд сходится условно.
-\end_layout
-
-\begin_layout Example
-Переставим члены ряда:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left(1-\df 12-\df 14\right)+\left(\df 13-\df 16-\df 18\right)+\tr+\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)+\tr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
 Рассмотрим частичные суммы:
-\end_layout
+\begin_inset Formula 
+\begin{align*}
+S_{3m}' & =\ous{k=1}m\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)=\\
+ & =\df 12\um\ous{k=1}m\left(\df 1{2k-1}-\df 1{2k}\right)=\\
+ & =\df 12\left(1-\df 12+\df 13-\df 14+\tr+\df 1{2m-1}-\df 1{2m}\right)\overset{m\st\b}{\st}\df S2\\
+S_{3m-1}' & =S_{3m}'+\df 1{4m}\overset{m\st\b}{\st}\df S2\\
+S_{3m-2}' & =S_{3m-1}'+\df 1{4m-2}\overset{m\st\b}{\st}\df S2
+\end{align*}
 
-\begin_layout Example
-\begin_inset Formula $S_{3m}'=\ous{k=1}m\left(\df 1{2k-1}-\df 1{4k-2}-\df 1{4k}\right)=\df 12\um\ous{k=1}m\left(\df 1{2k-1}-\df 1{2k}\right)=\df 12\left(1-\df 12+\df 13-\df 14+\tr+\df 1{2m-1}-\df 1{2m}\right)\overset{m\st\b}{\st}\df S2$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $S_{3m-1}'=S_{3m}'+\df 1{4m}\overset{m\st\b}{\st}\df S2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $S_{3m-2}'=S_{3m-1}'+\df 1{4m-2}\overset{m\st\b}{\st}\df S2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
 Таким образом 
 \begin_inset Formula $\ul{m\st\b}S_{3m}'=\ul{m\st\b}S_{3m-1}'=\ul{m\st\b}S_{3m-2}'=\df S2$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Сумма 
-\begin_inset Formula $\ous{k=1}{\b}a_{k}'=\df S2=\df{\ln2}2\nr S=\ln2$
-\end_inset
-
 .
+ Значит:
+\begin_inset Formula 
+\[
+\ous{k=1}{\b}a_{k}'=\df S2=\df{\ln2}2\nr S=\ln2
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
 
 \emph on
-(Римана)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Римана
 \end_layout
 
-\begin_layout Theorem
-Если 
-\begin_inset Formula $\ous{k=1}{\b}a_{n}$
 \end_inset
 
- сходится условно, то 
+
+\emph default
+ Если ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+) сходится условно, то 
 \begin_inset Formula $\forall B\in\R$
 \end_inset
 
- то можно переставить члены ряда так, то полученный ряд будет сходиться
- к 
+ можно переставить члены ряда так, что полученный ряд будет сходиться к
+ 
 \begin_inset Formula $B$
 \end_inset
 
@@ -3049,7 +2663,7 @@ reference "eq:4"
 \end_inset
 
 .
- Рассмотрим 2 последовательности 
+ Рассмотрим две последовательности 
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
 
@@ -3057,8 +2671,8 @@ reference "eq:4"
 \begin_inset Formula $\left\{ q_{n}\right\} $
 \end_inset
 
-, которые были рассмотрены в доказательстве предыдущей теореме.
- Получим 2 знакоположительных ряда 
+, которые были рассмотрены в доказательстве предыдущей теоремы.
+ Получим 2 знакоположительных ряда: 
 \begin_inset Formula $\ous{n=1}{\b}p_{n}$
 \end_inset
 
@@ -3071,18 +2685,22 @@ reference "eq:4"
 \begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|=\b$
 \end_inset
 
-, то 
-\begin_inset Formula $\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ous{n=1}{\b}\left|a_{n}\right|=\b$
+, то:
+\begin_inset Formula 
+\[
+\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ous{n=1}{\b}\left|a_{n}\right|=\b
+\]
+
 \end_inset
 
- и 
-\begin_inset Formula $\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=\ul{n\st\b}\ous{n=1}{\b}q_{n}+\ul{n\st\b}\ous{n=1}{\b}p_{n}=\ous{n=1}{\b}p_{n}+\ous{n=1}{\b}q_{n}$
+ В то же время:
+\begin_inset Formula 
+\[
+\ul{n\st\b}\left(P_{n}+Q_{n}\right)=\ul{n\st\b}P_{n}-\ul{n\st\b}Q_{n}=\ul{n\st\b}\ous{n=1}{\b}q_{n}+\ul{n\st\b}\ous{n=1}{\b}p_{n}=\ous{n=1}{\b}p_{n}+\ous{n=1}{\b}q_{n}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
 Так как 
 \begin_inset Formula $S=\ul{n\st\b}\left(P_{n}-Q_{n}\right)$
 \end_inset
@@ -3096,11 +2714,11 @@ reference "eq:4"
 \begin_inset Formula $\ul{n\st\b}\ous{k=1}np_{n}=\ous{n=1}{\b}p_{n}$
 \end_inset
 
- конечная , то и 
+ --- конечная, то и 
 \begin_inset Formula $\ul{n\st\b}\left(S+Q_{n}\right)=S+\ous{n=1}{\b}q_{n}$
 \end_inset
 
- - также конечная.
+ --- также конечная.
 \end_layout
 
 \begin_layout Proof
@@ -3108,55 +2726,60 @@ reference "eq:4"
 \begin_inset Formula $B\in\R$
 \end_inset
 
- - произвольное число, тогда 
+ --- произвольное число, тогда 
 \begin_inset Formula $\exists k_{1}$
 \end_inset
 
-, что 
+, такое что: 
 \begin_inset Formula $p_{1}+p_{2}+\tr+p_{k_{1}}\br B$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{1}}-B\right|<p_{k_{1}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{1}}-B\right|<p_{k_{1}}$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Proof
+Следовательно 
 \begin_inset Formula $\exists m_{1}$
 \end_inset
 
- такое что 
+ такое что: 
 \begin_inset Formula $p_{1}+\tr+p_{k_{1}}-q_{1}-q_{2}-\tr-q_{m_{1}}\mr B$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{1}+m_{1}}-B\right|>q_{m_{1}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{1}+m_{1}}-B\right|>q_{m_{1}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
+Аналогично 
 \begin_inset Formula $\exists k_{2}$
 \end_inset
 
- такое что 
+ такое что: 
 \begin_inset Formula $S_{k_{1}+m_{1}}'+p_{k_{1}+1}+p_{k_{1}+2}+\tr+p_{k_{2}}\br B$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{2}+m_{1}}'-B\right|<p_{k_{2}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{2}+m_{1}}'-B\right|<p_{k_{2}}$
 \end_inset
 
 
@@ -3171,21 +2794,19 @@ reference "eq:4"
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|S_{k_{2}+m_{2}}-B\right|>q_{m_{2}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\left|S_{k_{2}+m_{2}}-B\right|>q_{m_{2}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-И так далее...
-\end_layout
-
-\begin_layout Proof
-В полученном ряде участвуют все члены исходного ряда.
+И так далее.
+ В полученном ряде участвуют все члены исходного ряда.
 \end_layout
 
 \begin_layout Proof
@@ -3200,11 +2821,7 @@ reference "eq:4"
 \begin_inset Formula $\ul{n\st\b}a_{n}=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, следовательно 
 \begin_inset Formula $\ul{n\st\b}p_{k_{n}}=0$
 \end_inset
 
@@ -3222,7 +2839,7 @@ reference "eq:4"
 \begin_inset Formula $S_{k_{2}+m_{2}}'$
 \end_inset
 
- - убывает), то 
+ --- убывает), то 
 \begin_inset Formula $\exists\ul{n\st\b}S_{n}'=B$
 \end_inset
 
