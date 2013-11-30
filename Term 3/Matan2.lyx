@@ -3718,14 +3718,22 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_inset
 
  если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \rho\left(x_{n},x\right)<\varepsilon$
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\rho\left(x_{n},x\right)<\varepsilon
+\]
+
 \end_inset
 
  или 
-\begin_inset Formula $\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\varepsilon$
+\begin_inset Formula 
+\[
+\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\varepsilon
+\]
+
 \end_inset
 
-, записывают при этом 
+записывают при этом 
 \begin_inset Formula $\ul{n\st\b}x_{n}=x$
 \end_inset
 
@@ -3750,22 +3758,22 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Lemma
-\begin_inset Formula $\ul{n\st\b}x_{n}=x\ \dsl x_{i}^{\left(n\right)}\st x_{i}$
+\begin_inset Formula $\ul{n\st\b}x_{n}=x$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $x_{i}^{\left(n\right)}\st x_{i}$
 \end_inset
 
  при 
-\begin_inset Formula $n\st\b$
+\begin_inset Formula $n\st\b\quad\forall i=\overline{1,m}$
 \end_inset
 
- 
-\begin_inset Formula $\forall i=\overline{1,m}$
-\end_inset
-
-, то-есть сходимость в 
+, то есть сходимость в 
 \begin_inset Formula $E^{m}$
 \end_inset
 
- - покоординатная!
+ --- по координатная.
 \end_layout
 
 \begin_layout Proof
@@ -3774,16 +3782,21 @@ x_{m} & =\varphi_{m}\left(t\right)
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\Longrightarrow$
-\end_inset
-
-
+Необходимость
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
 Пусть 
-\begin_inset Formula $\ul{n\st\b}x_{n}=x\ \sl\ \forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \rho\left(x_{n},x\right)<\varepsilon=\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\varepsilon$
+\begin_inset Formula $\ul{n\st\b}x_{n}=x$
+\end_inset
+
+, тогда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\rho\left(x_{n},x\right)<\varepsilon=\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\varepsilon
+\]
+
 \end_inset
 
 
@@ -3791,44 +3804,41 @@ x_{m} & =\varphi_{m}\left(t\right)
 
 \begin_layout Standard
 Так как 
-\begin_inset Formula $\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}\br\forall\left|x_{i}^{\left(n\right)}-x_{i}\right|,\ i=\overline{1,m}$
+\begin_inset Formula $\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}\br\forall\left|x_{i}^{\left(n\right)}-x_{i}\right|,\quad i=\overline{1,m}$
 \end_inset
 
 , то 
 \begin_inset Formula $\left|x_{i}^{\left(n\right)}-x_{i}\right|<\varepsilon$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+, значит 
+\begin_inset Formula 
+\[
+\ul{n\st\b}x_{i}^{\left(n\right)}=x_{i}\quad\forall i=\overline{1,m}
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\ul{n\st\b}x_{i}^{\left(n\right)}=x_{i}\ \forall i=\overline{1,m}$
-\end_inset
 
-.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Пусть есть координатная сходимость, то-есть 
-\begin_inset Formula $x_{i}^{\left(n\right)}\overset{n\st\b}{\st}x_{i}$
-\end_inset
-
-, 
-\begin_inset Formula $\forall i=\overline{1,m}$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+Достаточность
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\forall\varepsilon>0\ \exists N_{i}=N_{i}\left(\varepsilon\right)\ \forall n\br N_{i}\ \left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}?,\ \forall i=\overline{1,m}$
+Пусть есть координатная сходимость, то есть 
+\begin_inset Formula $x_{i}^{\left(n\right)}\overset{n\st\b}{\st}x_{i}\quad\forall i=\overline{1,m}$
+\end_inset
+
+, тогда
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N_{i}=N_{i}\left(\varepsilon\right)\quad\forall n\br N_{i}\quad\left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}?,\quad\forall i=\overline{1,m}
+\]
+
 \end_inset
 
  Сейчас разберемся что там написано вместо 
@@ -3839,22 +3849,24 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sl$
+\begin_inset Formula 
+\[
+\forall n\br N=\max\left\{ N_{1}\tr N_{m}\right\} :\quad\left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}{\sqrt{m}},\quad\forall i=\overline{1,m}
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\forall n\br N=\max\left\{ N_{1}\tr N_{m}\right\} :\left|x_{i}^{\left(n\right)}-x_{i}\right|<\df{\varepsilon}{\sqrt{m}},\ \forall i=\overline{1,m}$
+ Следовательно:
+\begin_inset Formula 
+\begin{eqnarray*}
+\rho\left(x_{n},x\right) & = & \sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\\
+ & < & \left|\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}<\df{\varepsilon^{2}}m\right|<\\
+ & < & \df{\varepsilon}{\sqrt{m}}\um\sqrt{m},\quad i=\overline{1,m}
+\end{eqnarray*}
+
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
 
- 
-\begin_inset Formula $\rho\left(x_{n},x\right)=\sqrt{\ous{i=1}m\left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}}<\left\{ \left(x_{i}^{\left(n\right)}-x_{i}\right)^{2}<\df{\varepsilon^{2}}m\right\} <\df{\varepsilon}{\sqrt{m}}\um\sqrt{m},\ i=\overline{1,m}$
-\end_inset
-
-.
 \end_layout
 
 \end_deeper
@@ -3864,11 +3876,15 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ X_{n}\right\} \subset E^{m}$
 \end_inset
 
- называется фундаментальной, если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \rho\left(x_{n+p},x_{n}\right)<\varepsilon$
+ называется фундаментальной, если:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N=N\left(\varepsilon\right)\quad\forall n\br N\quad\forall p\in\N\quad\rho\left(x_{n+p},x_{n}\right)<\varepsilon
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Theorem
