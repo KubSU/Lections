@@ -1285,7 +1285,7 @@ reference "eq:1"
 \begin_inset Formula $L>1$
 \end_inset
 
- ряд рассходится 
+ ряд расходится 
 \end_layout
 
 \begin_layout Enumerate
@@ -1960,8 +1960,7 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Remark
-Т.к.
- 
+Так как 
 \begin_inset Formula $S_{2n}<a_{1}$
 \end_inset
 
@@ -2270,8 +2269,8 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Definition
-Если числовой ряд сходится, но не сходится абсолютно, то его называют неабсолютн
-о сходящимся (условно сходящимся) числовым рядом.
+Если числовой ряд сходится, но не сходится абсолютно, то его называют не
+ абсолютно сходящимся (условно сходящимся) числовым рядом.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2487,7 +2486,7 @@ Q_{k}\mr\ous{k=1}{\b}\left|a_{k}\right|=T<\b
 
 \end_inset
 
-Cледовательно
+Следовательно
 \begin_inset Formula $\left\{ p_{n}\right\} $
 \end_inset
 
@@ -2888,7 +2887,7 @@ reference "eq:4"
 \begin_inset Formula $y$
 \end_inset
 
- координатами точки 
+ --- координатами точки 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2913,11 +2912,15 @@ reference "eq:4"
 \begin_inset Formula $M''\left(x'',y''\right)$
 \end_inset
 
- по формуле 
-\begin_inset Formula $\rho\left(M',M''\right)=\sqrt{\left(x'-x''\right)^{2}+\left(y'-y''\right)^{2}}$
+ по формуле:
+\begin_inset Formula 
+\[
+\rho\left(M',M''\right)=\sqrt{\left(x'-x''\right)^{2}+\left(y'-y''\right)^{2}}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout --Separator--
@@ -2930,7 +2933,11 @@ reference "eq:4"
 \end_inset
 
  вещественных чисел 
-\begin_inset Formula $x,\ y$
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
 \end_inset
 
  и 
@@ -2958,7 +2965,7 @@ reference "eq:4"
 \begin_inset Formula $x,\ y,\ z$
 \end_inset
 
- - координатами точки.
+ --- координатами точки.
  
 \end_layout
 
@@ -2980,11 +2987,15 @@ reference "eq:4"
 \begin_inset Formula $M''\left(x'',y'',z''\right)$
 \end_inset
 
- по следующей формуле 
-\begin_inset Formula $\rho\left(M',M''\right)=\sqrt{\left(x'-x''\right)^{2}+\left(y'-y''\right)^{2}+\left(z'-z''\right)^{2}}$
+ по следующей формуле:
+\begin_inset Formula 
+\[
+\rho\left(M',M''\right)=\sqrt{\left(x'-x''\right)^{2}+\left(y'-y''\right)^{2}+\left(z'-z''\right)^{2}}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3000,7 +3011,7 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Definition
-Круг радиуса 
+Кругом радиуса 
 \begin_inset Formula $r$
 \end_inset
 
@@ -3008,11 +3019,15 @@ reference "eq:4"
 \begin_inset Formula $M\left(x_{0},y_{0}\right)$
 \end_inset
 
- это 
-\begin_inset Formula $\overline{S}_{R}\left(M\right)=\left\{ N\left(x,y\right)|\rho\left(N,M\right)\mr R\right\} $
+ называется множество:
+\begin_inset Formula 
+\[
+\overline{S}_{R}\left(M\right)=\left\{ N\left(x,y\right)|\rho\left(N,M\right)\mr R\right\} 
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout --Separator--
@@ -3020,7 +3035,7 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Definition
-Окружность радиуса 
+Окружностью радиуса 
 \begin_inset Formula $R$
 \end_inset
 
@@ -3028,11 +3043,15 @@ reference "eq:4"
 \begin_inset Formula $M\left(x_{0},y_{0}\right)$
 \end_inset
 
- это 
-\begin_inset Formula $\text{С}_{R}\left(M\right)=\left\{ N\left(x,y\right)|\rho\left(N,M\right)=R\right\} $
+ называется множество:
+\begin_inset Formula 
+\[
+\text{С}_{R}\left(M\right)=\left\{ N\left(x,y\right)|\rho\left(N,M\right)=R\right\} 
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Remark
@@ -3052,11 +3071,15 @@ reference "eq:4"
 \begin_inset Formula $M\left(x_{0},y_{0}\right)$
 \end_inset
 
- называется множество 
-\begin_inset Formula $\text{П}\left(M\right)=\left\{ N\left(x,y\right)|\begin{cases}
+ называется множество: 
+\begin_inset Formula 
+\[
+\text{П}\left(M\right)=\left\{ N\left(x,y\right)\left|\begin{array}{c}
 \left|x-x_{0}\right|\mr d_{1}\\
 \left|y-y_{0}\right|\mr d_{2}
-\end{cases},d_{1},d_{2}>0\right\} $
+\end{array},\quad d_{1},d_{2}>0\right.\right\} 
+\]
+
 \end_inset
 
 
@@ -3067,7 +3090,7 @@ reference "eq:4"
 \end_layout
 
 \begin_layout Definition
-Шар с центром в точке 
+Шаром с центром в точке 
 \begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
@@ -3075,15 +3098,19 @@ reference "eq:4"
 \begin_inset Formula $R$
 \end_inset
 
- называется множество 
-\begin_inset Formula $\overline{S_{R}}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)\mr R\right\} $
+ называется множество: 
+\begin_inset Formula 
+\[
+\overline{S_{R}}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)\mr R\right\} 
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Remark
-Открытый шар - 
+Открытый шар --- 
 \begin_inset Formula $S_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)<R\right\} $
 \end_inset
 
@@ -3099,18 +3126,23 @@ reference "eq:4"
 \begin_inset Formula $R$
 \end_inset
 
- называется множество 
-\begin_inset Formula $C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\} $
+ называется множество:
+\begin_inset Formula 
+\[
+C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\} 
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Remark
+Причем верно: 
 \begin_inset Formula $\overline{S_{R}}\left(M\right)=S_{R}\left(M\right)\cup C_{R}\left(M\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Definition
