@@ -1762,9 +1762,6 @@ F_{n}=\oui 1{n+1}\fx dx
 \end_inset
 
  и получим:
-\end_layout
-
-\begin_layout Remark
 \begin_inset Formula 
 \[
 S-a_{1}\mr\oui 1{\b}\fx dx\mr S
@@ -1781,14 +1778,18 @@ S-a_{1}\mr\oui 1{\b}\fx dx\mr S
 
 \begin_layout Theorem
 Если для ряда 
-\begin_inset Formula $\ous{n=1}{\b}a_{n}(a_{n}>0)$
+\begin_inset Formula $\ous{n=1}{\b}a_{n}\quad(a_{n}>0)$
 \end_inset
 
  выполнено условие 
-\begin_inset Formula $\exists\ul{n\st\b}n\left(\dfrac{a_{n}}{a_{n+1}}-1\right)=L$
+\begin_inset Formula 
+\[
+\exists\ul{n\st\b}n\left(\dfrac{a_{n}}{a_{n+1}}-1\right)=L
+\]
+
 \end_inset
 
-, то при 
+то при 
 \begin_inset Formula $L>1$
 \end_inset
 
@@ -1797,33 +1798,6 @@ S-a_{1}\mr\oui 1{\b}\fx dx\mr S
 \end_inset
 
  ряд расходится.
-\end_layout
-
-\begin_layout Example
-Исследовать на сходимость знакоположительный ряд.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df 12+\df 12\um\df 34+\tr+\df{1\um3\um\tr\um\left(2n-1\right)}{2\um4\um\tr\um\left(2n\right)}=\ous{n=1}{\b}\df{\left(2n-1\right)!!}{\left(2n\right)!!}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-По Даламберу: 
-\begin_inset Formula $\ul{n\st\b}\df{a_{n}+1}{a_{n}}=\ul{n\st\b}\df{2n+1}{2n+2}=1$
-\end_inset
-
- - требуется дополнительное исследование.
-\end_layout
-
-\begin_layout Example
-По Раабе: 
-\begin_inset Formula $\ul{n\st\b}n\left(\df{a_{n}}{a_{n+1}}-1\right)=\ul{n\st\b}n\left(\df{2n+2}{2n+1}-1\right)=\ul{n\st\b}n\um\df 1{2n+1}=\df 12<1$
-\end_inset
-
- - ряд расходится.
 \end_layout
 
 \begin_layout Subsection
