@@ -3146,12 +3146,20 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \end_layout
 
 \begin_layout Definition
-Параллелепипед 
-\begin_inset Formula $\text{П}\left(M\right)=\left\{ N\left(x,y,z\right)|\begin{cases}
+Параллелепипедом с центром в точке 
+\begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ называется множество:
+\begin_inset Formula 
+\[
+\text{П}\left(M\right)=\left\{ N\left(x,y,z\right)\left|\begin{array}{c}
 \left|x-x_{0}\right|\mr d_{1}\\
 \left|y-y_{0}\right|\mr d_{2}\\
 \left|z-z_{0}\right|\mr d_{3}
-\end{cases},\ d_{1},d_{2},d_{3}>0\right\} $
+\end{array},\quad d_{1},d_{2},d_{3}>0\right.\right\} 
+\]
+
 \end_inset
 
  
@@ -3172,7 +3180,7 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M\left(x,y\right)\in D\subset E^{2}$
 \end_inset
 
- можно поставить в соответствии определенное значение 
+ можно поставить в соответствие определенное значение 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
@@ -3180,7 +3188,7 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $D$
 \end_inset
 
- определена функция 2х переменных 
+ определена функция 2-х переменных 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
@@ -3188,8 +3196,8 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \end_layout
 
 \begin_layout Remark
-Функцию 2х переменных можно изобразить графически как поверхность в пространстве
- 
+Функцию 2-х переменных можно изобразить графически как поверхность в пространств
+е 
 \begin_inset Formula $E^{3}$
 \end_inset
 
@@ -3240,91 +3248,12 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 .
 \end_layout
 
-\begin_layout Example
-Рассмотрим несколько примеров.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $u=x^{2}+y^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $D\left(f\right)=E^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $E\left(f\right)=R+=[0,+\b)$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset Formula $u=\sqrt{9-x^{2}-y^{2}}$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $D\left(f\right)=\overline{S_{3}}\left(0,0\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $E\left(f\right)=\left[0,3\right]$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset Formula $u=\ln\left(x-y+z\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $D\left(f\right)\ :\ x-y+z>0\ \sl\ z>y-z$
-\end_inset
-
- - полупространство в 
-\begin_inset Formula $E^{3}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $E\left(f\right)=\left(-\b,+\b\right)$
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Subsubsection
 Понятие 
 \begin_inset Formula $n$
 \end_inset
 
--мерного координатного и Евклидового пространства.
+-мерного координатного и Евклидового пространств.
 \end_layout
 
 \begin_layout Definition
@@ -3348,11 +3277,11 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M\in A^{m}$
 \end_inset
 
- - точка пространства 
+ --- точка пространства 
 \begin_inset Formula $A^{m}$
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Remark
@@ -3368,8 +3297,12 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $N\left(y_{1}\tr y_{m}\right)$
 \end_inset
 
- по формуле 
-\begin_inset Formula $\rho\left(M,N\right)=\sqrt{\ous{i=1}m\left(x_{i}-y_{i}\right)^{2}}$
+ по формуле:
+\begin_inset Formula 
+\[
+\rho\left(M,N\right)=\sqrt{\ous{i=1}m\left(x_{i}-y_{i}\right)^{2}}
+\]
+
 \end_inset
 
  то его называют евклидовым 
@@ -3403,8 +3336,12 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M\in E^{m}$
 \end_inset
 
- это 
-\begin_inset Formula $\overline{S_{R}}\left(M\right)=\left\{ N\in E^{m}|\rho\left(N,M\right)\mr R\right\} $
+ это: 
+\begin_inset Formula 
+\[
+\overline{S_{R}}\left(M\right)=\left\{ N\in E^{m}\left|\rho\left(N,M\right)\mr R\right.\right\} 
+\]
+
 \end_inset
 
 
@@ -3415,8 +3352,12 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $n$
 \end_inset
 
--мерный шар это 
-\begin_inset Formula $S_{R}\left(M\right)=\left\{ N\in E^{m}|\rho\left(N,M\right)\mr R\right\} $
+-мерный шар это: 
+\begin_inset Formula 
+\[
+S_{R}\left(M\right)=\left\{ N\in E^{m}\left|\rho\left(N,M\right)\mr R\right.\right\} 
+\]
+
 \end_inset
 
 
@@ -3434,8 +3375,12 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M\in E^{m}$
 \end_inset
 
- это 
-\begin_inset Formula $C_{R}\left(M\right)=\left\{ N\in E^{m}|\rho\left(N,M\right)=R\right\} $
+ это: 
+\begin_inset Formula 
+\[
+C_{R}\left(M\right)=\left\{ N\in E^{m}\left|\rho\left(N,M\right)=R\right.\right\} 
+\]
+
 \end_inset
 
 
@@ -3456,8 +3401,12 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M\in E^{m}$
 \end_inset
 
- это 
-\begin_inset Formula $\text{П}\left(M\right)=\left\{ N\in E^{m}|\left|a_{i}-x_{i}\right|\mr d_{i},\ i=\overline{1,m},\ d_{i}>0\right\} $
+ это: 
+\begin_inset Formula 
+\[
+\text{П}\left(M\right)=\left\{ N\in E^{m}\left|\left|a_{i}-x_{i}\right|\mr d_{i},\quad i=\overline{1,m},\quad d_{i}>0\right.\right\} 
+\]
+
 \end_inset
 
 
@@ -3485,7 +3434,7 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $\varepsilon$
 \end_inset
 
--окрестностью точки 
+--окрестностью точки 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3497,7 +3446,7 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $\varepsilon$
 \end_inset
 
--окрестности точки 
+--окрестности точки 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3510,7 +3459,11 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \end_inset
 
 : 
-\begin_inset Formula $\text{П}_{2\um\df{\varepsilon}{\sqrt{m}}}\left(M\right)\subset S_{\varepsilon}\left(M\right)\subset\text{П}_{2\varepsilon}\left(M\right)\subset\tr$
+\begin_inset Formula 
+\[
+\text{П}_{2\um\frac{\epsilon}{\sqrt{m}}}\left(M\right)\subset S_{\varepsilon}\left(M\right)\subset\text{П}_{2\varepsilon}\left(M\right)\subset\tr
+\]
+
 \end_inset
 
  
@@ -3521,7 +3474,7 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M$
 \end_inset
 
- - внутренняя точка множества 
+ --- внутренняя точка множества 
 \begin_inset Formula $D\in E^{m}$
 \end_inset
 
@@ -3536,34 +3489,8 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
  вместе со своей окрестностью.
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $D=\left\{ M\left(x,y\right)|x^{2}+y^{2}\mr1\right\} $
-\end_inset
+\begin_layout --Separator--
 
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{1}\left(\df 12;0\right)$
-\end_inset
-
- - внутренняя точка, так как мы можем указать окрестность ее 
-\begin_inset Formula $\exists S_{\df 14}\left(M_{1}\right)\subset D$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{2}\left(1;0\right)$
-\end_inset
-
- - не внутренняя точка, так как мы не можем указать такую окрестность, которая
- содержится во множестве 
-\begin_inset Formula $D$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Definition
@@ -3586,29 +3513,8 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 .
 \end_layout
 
-\begin_layout Example
+\begin_layout --Separator--
 
-\emph on
-(Относится к предыдущему примеру)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{2}$
-\end_inset
-
- - граничная точка
-\end_layout
-
-\begin_layout Remark
-Если взять 
-\begin_inset Formula $D=\left\{ M\left(x,y\right)|x^{2}+y^{2}<1\right\} $
-\end_inset
-
-, то 
-\begin_inset Formula $M_{2}$
-\end_inset
-
- все равно останется граничной точкой.
 \end_layout
 
 \begin_layout Definition
@@ -3616,28 +3522,11 @@ C_{R}\left(M\right)=\left\{ N\left(x,y,z\right)|\rho\left(N,M\right)=R\right\}
 \begin_inset Formula $M\subset D$
 \end_inset
 
- называется открытым множеством, если все его точки - внутренние.
+ называется открытым множеством, если все его точки --- внутренние.
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $D_{1}=\left\{ \left(x,y\right)|x^{2}+y^{2}<9\right\} $
-\end_inset
+\begin_layout --Separator--
 
- --- открытое множество
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $D_{2}=\left\{ \left(x,y\right)|\begin{cases}
-x^{2}+y^{2}<9 & ,x>0\\
-x^{2}+y^{2}\mr9 & ,x\mr0
-\end{cases}\right\} $
-\end_inset
-
- - у этого множества есть граничные точки 
-\begin_inset Formula $\sl$
-\end_inset
-
- оно не открытое
 \end_layout
 
 \begin_layout Definition
@@ -3648,14 +3537,8 @@ x^{2}+y^{2}\mr9 & ,x\mr0
  называется замкнутым, если оно содержит все свои граничные точки.
 \end_layout
 
-\begin_layout Example
+\begin_layout --Separator--
 
-\emph on
-(Относится к предыдущему примеру)
-\end_layout
-
-\begin_layout Example
-В этом примере нету замкнутых множеств.
 \end_layout
 
 \begin_layout Definition
@@ -3664,10 +3547,10 @@ x^{2}+y^{2}\mr9 & ,x\mr0
 \end_inset
 
  называется ограниченным, если 
-\begin_inset Formula $\exists K>0\ \forall M\in D\ \rho\left(O,M\right)<K$
+\begin_inset Formula $\exists K>0\quad\forall M\in D\quad\rho\left(O,M\right)<K$
 \end_inset
 
-, иначе говоря что область 
+, иначе говоря область 
 \begin_inset Formula $D\subset S_{K}\left(O\right)$
 \end_inset
 
@@ -3699,16 +3582,20 @@ x^{2}+y^{2}\mr9 & ,x\mr0
 \begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
- удовлетворяют системе 
-\begin_inset Formula $\begin{cases}
+ удовлетворяют системе:
+\begin_inset Formula 
+\[
+\begin{cases}
 x_{1} & =\varphi_{1}\left(t\right)\\
 x_{2} & =\varphi_{2}\left(t\right)\\
 \tr & \dots\\
 x_{m} & =\varphi_{m}\left(t\right)
-\end{cases},\ t\in\left[\alpha,\beta\right]$
+\end{cases},\quad t\in\left[\alpha,\beta\right]
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Remark
