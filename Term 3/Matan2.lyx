@@ -4480,18 +4480,18 @@ status open
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
-, определенную в окрестности точки 
+, определенную в выколотой окрестности точки 
 \begin_inset Formula $A\left(x_{0},y_{0}\right)$
 \end_inset
 
-(выколотой).
+.
  Прямоугольная окрестность:
-\begin_inset Formula $\left|x-x_{0}\right|<\delta,\ \left|y-y_{0}\right|<\delta$
+\begin_inset Formula $\left|x-x_{0}\right|<\delta,\quad\left|y-y_{0}\right|<\delta$
 \end_inset
 
 .
  Если 
-\begin_inset Formula $\forall y\ :\ 0<\left|y-y_{0}\right|<\delta$
+\begin_inset Formula $\forall y:\quad0<\left|y-y_{0}\right|<\delta$
 \end_inset
 
  существует предел 
@@ -4502,11 +4502,15 @@ status open
 \begin_inset Formula $\ul{y\st y_{0}}\varphi\left(y\right)=b$
 \end_inset
 
-, то выражение 
-\begin_inset Formula $\ul{y\st y_{0}}\left(\ul{x\st x_{0}}f\left(x,y\right)\right)=b$
+, то выражение
+\begin_inset Formula 
+\[
+\ul{y\st y_{0}}\left(\ul{x\st x_{0}}f\left(x,y\right)\right)=b
+\]
+
 \end_inset
 
- называется повторным пределом функции 
+называется повторным пределом функции 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -4519,131 +4523,31 @@ status open
 \begin_inset Formula $y$
 \end_inset
 
- - внешний предел, по 
+ --- внешний предел, по 
 \begin_inset Formula $x$
 \end_inset
 
- - внутренний).
+ --- внутренний).
  Аналогично определяется другой предел: 
-\begin_inset Formula $\ul{x\st x_{0}}\ul{y\st y_{0}}f\left(x,y\right)=\ul{x\st x_{0}}\left(\ul{y\st y_{0}}f\left(x,y\right)\right)$
+\begin_inset Formula 
+\[
+\ul{x\st x_{0}}\ul{y\st y_{0}}f\left(x,y\right)=\ul{x\st x_{0}}\left(\ul{y\st y_{0}}f\left(x,y\right)\right)
+\]
+
 \end_inset
 
-.
- 
+Где 
 \begin_inset Formula $\ul{y\st y_{0}}f\left(x,y\right)=\varphi\left(x\right)$
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Example
-
-\emph on
-(1) 
-\begin_inset Formula $f\left(x,y\right)=\df{x-y+x^{2}+y^{2}}{x+y}$
-\end_inset
-
- 
-\begin_inset Formula $A\left(0,0\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\varphi\left(y\right)=\ul{x\st0}\df{x-y+x^{2}+y^{2}}{x+y}=\df{-y+y^{2}}y=y-1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{y\st0}\varphi\left(y\right)=-1=\ul{x\st0}\ul{y\st0}f\left(x,y\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\psi\left(x\right)=\ul{y\st0}\df{x-y+x^{2}+y^{2}}{x+y}=x+1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{x\st0}\psi\left(x\right)=1=\ul{y\st0}\ul{x\st0}f\left(x,y\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2) 
-\begin_inset Formula $f\left(x,y\right)=\df{x\um\sin\df 1x+y}{x+y}$
-\end_inset
-
- в точке 
-\begin_inset Formula $A\left(0,0\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{y\st0}\ul{x\st0}f\left(x,y\right)=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{x\st0}\ul{y\st0}f\left(x,y\right)=\ul{x\st0}\sin\df 1x$
-\end_inset
-
- - не существует.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(3) 
-\begin_inset Formula $f\left(x,y\right)=x\um\sin\df 1y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{y\st0}\ul{x\st0}f\left(x,y\right)=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{x\st0}\ul{y\st0}f\left(x,y\right)$
-\end_inset
-
- - не существует.
-\end_layout
-
 \begin_layout Remark
 Предел функции в точке 
-\begin_inset Formula $\ul{\begin{array}{c}
-x\st x_{0}\\
+\begin_inset Formula $\ul{\begin{smallmatrix}x\st x_{0}\\
 y\st y_{0}
-\end{array}}f\left(x,y\right)$
+\end{smallmatrix}}f\left(x,y\right)$
 \end_inset
 
  будем называть двойным пределом.
@@ -4656,20 +4560,19 @@ y\st y_{0}
 \begin_deeper
 \begin_layout Enumerate
 Существует конечный или бесконечный предел 
-\begin_inset Formula $\ul{\begin{array}{c}
-x\st a\\
+\begin_inset Formula $\ul{\begin{smallmatrix}x\st a\\
 y\st b
-\end{array}}f\left(x,y\right)=A$
+\end{smallmatrix}}f\left(x,y\right)=A$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\forall y\in Y\ \exists$
+\begin_inset Formula $\forall y\in Y$
 \end_inset
 
- конечный предел 
+ существует конечный предел 
 \begin_inset Formula $\varphi\left(y\right)=\ul{x\st a}f\left(x,y\right)$
 \end_inset
 
@@ -4690,7 +4593,7 @@ y\st b
 \begin_inset Formula $a,b,A$
 \end_inset
 
- - конечные числа..
+ --- конечные числа.
 \end_layout
 
 \begin_layout Proof
@@ -4701,28 +4604,21 @@ y\st b
 \end{array}}f\left(x,y\right)=A$
 \end_inset
 
- 
-\begin_inset Formula $:$
+: 
+\begin_inset Formula 
+\begin{multline*}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon,\left(a,b\right)\right)>0\quad\forall\left(x,y\right)\in D\left(f\right)\quad\left(\left|x-a\right|<\delta\right)\&\left(\left|y-b\right|<\delta\right)\quad\Rightarrow\\
+\Rightarrow\quad\left|f\left(x,y\right)-A\right|<\df{\varepsilon}2
+\end{multline*}
+
 \end_inset
 
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,\left(a,b\right)\right)>0\ \forall\left(x,y\right)\in D\left(f\right)\ \left(\left|x-a\right|<\delta\right)\&\left(\left|y-b\right|<\delta\right)$
-\end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\left|f\left(x,y\right)-A\right|<\df{\varepsilon}2$
-\end_inset
-
- .
 \end_layout
 
 \begin_layout Proof
 Зафиксируем 
-\begin_inset Formula $\forall y\ \left|y-b\right|<\delta$
+\begin_inset Formula $\forall y\quad\left|y-b\right|<\delta$
 \end_inset
 
  и перейдем в неравенстве 
@@ -4734,37 +4630,15 @@ y\st b
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
+ 
 \begin_inset Formula $\left|\varphi\left(y\right)-A\right|\mr\df{\varepsilon}2<\varepsilon$
 \end_inset
 
- то-есть предел 
+, то есть предел 
 \begin_inset Formula $\ul{y\st b}\varphi\left(y\right)=A$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(4) 
-\begin_inset Formula $\ul{\begin{array}{c}
-x\st0\\
-y\st0
-\end{array}}\df{xy}{x^{2}+y^{2}}$
-\end_inset
-
- - не существует.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{x\st0}\ul{y\st0}\df{xy}{x^{2}+y^{2}}=\ul{y\st0}\ul{x\st0}\df{xy}{x^{2}+y^{2}}=0$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
