@@ -4079,16 +4079,19 @@ status open
 \begin_inset Formula $D$
 \end_inset
 
- .
- 
-\begin_inset Formula $\forall\varepsilon>0\ \exists N\in D\ 0<\rho\left(M,N\right)<\varepsilon$
+, такая что: 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists N\in D\quad0<\rho\left(M,N\right)<\varepsilon
+\]
+
 \end_inset
 
  где 
 \begin_inset Formula $N\in U_{\varepsilon}\left(M\right)=S_{\varepsilon}\left(M\right)\backslash M$
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Lemma
@@ -4100,15 +4103,15 @@ status open
 \begin_inset Formula $D\vkl E^{m}$
 \end_inset
 
- 
-\begin_inset Formula $\dsl$
+ тогда и только тогда, когда 
+\begin_inset Formula 
+\[
+\exists\left\{ x_{n}\right\} \vkl D\quad x_{n}\nr M\quad\forall n\in\N\quad\ul{n\st\b}x_{n}=M
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\exists\left\{ x_{n}\right\} \vkl D,\ x_{n}\nr M\ \forall n\in\N\ \ul{n\st\b}x_{n}=M$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout Definition
@@ -4121,7 +4124,7 @@ status open
 \end_inset
 
  и обозначается 
-\begin_inset Formula $D\pr$
+\begin_inset Formula $D'$
 \end_inset
 
 .
