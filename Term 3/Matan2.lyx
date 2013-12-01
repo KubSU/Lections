@@ -4646,13 +4646,24 @@ y\st b
 \end_layout
 
 \begin_layout Subsubsection
-Определение
+Определения
 \end_layout
 
 \begin_layout Definition
 
 \emph on
-(1) Функция 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+1
+\end_layout
+
+\end_inset
+
+Функция 
 \begin_inset Formula $u=f\left(x_{1},x_{2}\tr x_{n}\right)$
 \end_inset
 
@@ -4665,14 +4676,13 @@ y\st b
 \end_inset
 
 , если 
-\begin_inset Formula $\ul{\begin{array}{c}
-x_{1}\st a_{1}\\
+\begin_inset Formula $\ul{\begin{smallmatrix}x_{1}\st a_{1}\\
 \tr\\
 x_{n}\st a_{n}
-\end{array}}f\left(x_{1}\tr x_{n}\right)=f\left(a_{1}\tr a_{n}\right)$
+\end{smallmatrix}}f\left(x_{1}\tr x_{n}\right)=f\left(a_{1}\tr a_{n}\right)$
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout --Separator--
@@ -4682,7 +4692,18 @@ x_{n}\st a_{n}
 \begin_layout Definition
 
 \emph on
-(2) Функция 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+2, по Коши
+\end_layout
+
+\end_inset
+
+Функция 
 \begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
@@ -4690,12 +4711,22 @@ x_{n}\st a_{n}
 \begin_inset Formula $A\left(a_{1}\tr a_{n}\right)$
 \end_inset
 
- если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec x=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \rho\left(\vec x,A\right)<\delta\ \sl\ \left|f\left(\vec x\right)-f\left(A\right)\right|<\varepsilon$
+ если
+\begin_inset Formula 
+\begin{multline*}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon,A\right)>0\quad\forall\vec x=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\quad\rho\left(\vec x,A\right)<\delta\quad\Rightarrow\\
+\Rightarrow\quad\left|f\left(\vec x\right)-f\left(A\right)\right|<\varepsilon
+\end{multline*}
+
 \end_inset
 
- или 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall\vec x=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\ \left(\left|x_{1}-a_{1}\right|<\delta\right)\&\tr\&\left(\left|x_{n}-a_{n}\right|<\delta\right)\ \sl\ \left|f\left(\vec x\right)-f\left(A\right)\right|<\varepsilon$
+или
+\begin_inset Formula 
+\begin{multline*}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon,A\right)>0\quad\forall\vec x=\left(x_{1}\tr x_{n}\right)\in D\left(f\right)\\
+\left(\left|x_{1}-a_{1}\right|<\delta\right)\&\tr\&\left(\left|x_{n}-a_{n}\right|<\delta\right)\quad\Rightarrow\quad\left|f\left(\vec x\right)-f\left(A\right)\right|<\varepsilon
+\end{multline*}
+
 \end_inset
 
 
@@ -4708,7 +4739,18 @@ x_{n}\st a_{n}
 \begin_layout Definition
 
 \emph on
-(3) (По Гейне)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+3, по Гейне
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -4720,11 +4762,11 @@ x_{n}\st a_{n}
 \end_layout
 
 \begin_layout Definition
-Обозначения: 
-\begin_inset Formula $x_{1}-a_{1}=\D x_{1},\tr x_{n}-a_{n}=\D x_{n}$
+Обозначим 
+\begin_inset Formula $x_{1}-a_{1}=\D x_{1},\;\tr\; x_{n}-a_{n}=\D x_{n}$
 \end_inset
 
- - приращения координат точки 
+ --- приращения координат точки 
 \begin_inset Formula $A$
 \end_inset
 
@@ -4756,7 +4798,7 @@ x_{n}\st a_{n}
 \begin_inset Formula $a_{1}\tr a_{n}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout --Separator--
@@ -4766,12 +4808,22 @@ x_{n}\st a_{n}
 \begin_layout Definition
 
 \emph on
-(4) 
-\begin_inset Formula $\ul{\begin{array}{c}
-\D x_{1}\st0\\
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+4
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\ul{\begin{smallmatrix}\Delta x_{1}\st0\\
 \tr\\
-\D x_{n}\st0
-\end{array}}\D f\left(A\right)=0$
+\Delta x_{2}\st0
+\end{smallmatrix}}\D f\left(A\right)=0$
 \end_inset
 
 
@@ -4794,7 +4846,16 @@ x_{n}\st a_{n}
 \end_layout
 
 \begin_layout Theorem
-(1) Если функции 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если функции 
 \begin_inset Formula $f\left(\vec M\right)$
 \end_inset
 
@@ -4807,92 +4868,18 @@ x_{n}\st a_{n}
 \end_inset
 
 , то функции 
-\begin_inset Formula $f\left(\vec M\right)\pm g\left(\vec M\right)$
+\begin_inset Formula 
+\[
+f\left(\vec M\right)\pm g\left(\vec M\right),\qquad f\left(\vec M\right)\um g\left(\vec M\right),\qquad\df{f\left(\vec M\right)}{g\left(\vec M\right)},\ \left(f\left(\vec A\right)\nr0\right)
+\]
+
 \end_inset
 
-, 
-\begin_inset Formula $f\left(\vec M\right)\um g\left(\vec M\right)$
-\end_inset
-
-, 
-\begin_inset Formula $\df{f\left(\vec M\right)}{g\left(\vec M\right)},\ \left(f\left(\vec A\right)\nr0\right)$
-\end_inset
-
- - непрерывны.
+ так-же непрерывны.
 \end_layout
 
 \begin_layout Proof
 Сами с помощью арифметических свойств пределов.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u=\begin{cases}
-\df{x^{2}y}{x^{4}+y^{2}} & ,\left(x,y\right)\nr\left(0,0\right)\\
-0 & ,\left(x,y\right)=\left(0,0\right)
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Возможная точка разрыва - точка 
-\begin_inset Formula $\left(0,0\right)$
-\end_inset
-
- - исследуем.
-\end_layout
-
-\begin_layout Example
-Рассмотрим семейство прямых 
-\begin_inset Formula $y=kx,\ x\st0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M\left(x,y\right)=M\left(x,kx\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(M\right)=\df{kx^{3}}{x^{4}+k^{2}x^{2}}=\df{kx}{x^{2}+k^{2}}\ov{\st}{x\st0}0=f\left(0,0\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Рассмотрим параболу 
-\begin_inset Formula $y=x^{2},\ x\st0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $N\left(x,y^{2}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(N\right)=\df{x^{4}}{2x^{4}}\ov{\st}{x\st0}\df 12\nr f\left(0,0\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Таким образом 
-\begin_inset Formula $O\left(0,0\right)$
-\end_inset
-
- - точка разрыва.
 \end_layout
 
 \begin_layout Standard
@@ -4905,14 +4892,18 @@ x_{n}\st a_{n}
 \end_inset
 
  определяются системой: 
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x_{1}=\varphi_{1}\left(t_{1}\tr t_{k}\right)\\
 \tr\\
 x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-, то-есть каждой точке 
+то есть каждой точке 
 \begin_inset Formula $\vec T\left(t_{1}\tr t_{k}\right)\in E^{k}$
 \end_inset
 
@@ -4924,7 +4915,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \begin_inset Formula $E^{n}$
 \end_inset
 
-и при подстановке в функцию 
+ и при подстановке в функцию 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
 \end_inset
 
@@ -4932,7 +4923,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1}\tr t_{k}\right),\tr\varphi_{n}\left(t_{1}\tr t_{k}\right)\right)=g\left(t_{1}\tr t_{k}\right)$
 \end_inset
 
- - сложная функция аргументов 
+ --- сложная функция аргументов 
 \begin_inset Formula $t_{1}\tr t_{k}$
 \end_inset
 
@@ -4940,12 +4931,21 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_layout
 
 \begin_layout Theorem
-(2) (О непрерывности сложной функции)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2, о непрерывности сложной функции
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Если функции 
-\begin_inset Formula $x_{i}=\varphi_{i}\left(t_{1}\tr t_{k}\right),\ i=\overline{1,n}$
+\begin_inset Formula 
+\[
+x_{i}=\varphi_{i}\left(t_{1}\tr t_{k}\right),\quad i=\overline{1,n}
+\]
+
 \end_inset
 
  непрерывны в точке 
@@ -4965,7 +4965,11 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_inset
 
 , то сложная функция 
-\begin_inset Formula $u=f\left(\varphi_{1}\left(t_{1}\tr t_{k}\right),\tr\varphi_{n}\left(t_{1}\tr t_{k}\right)\right)$
+\begin_inset Formula 
+\[
+u=f\left(\varphi_{1}\left(t_{1}\tr t_{k}\right),\tr\varphi_{n}\left(t_{1}\tr t_{k}\right)\right)
+\]
+
 \end_inset
 
  по переменным 
@@ -4979,43 +4983,20 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 .
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $u=\sin\left(x^{2}-y^{2}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x=t_{1}+t_{2}-t_{3}^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y=t_{1}\um t_{2}\um t_{3}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u=\sin\left(\left(t_{1}+t_{2}-t_{3}^{2}\right)^{2}-\left(t_{1}\um t_{2}\um t_{3}\right)^{2}\right)$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Proof
 Сами...
 \end_layout
 
 \begin_layout Theorem
-(3) (О устойчивости знака)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3, об устойчивости знака
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Пусть функция 
 \begin_inset Formula $u=f\left(\vec M\right)$
 \end_inset
@@ -5029,7 +5010,7 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \begin_inset Formula $\vec A$
 \end_inset
 
- - внутренняя точка области 
+ --- внутренняя точка области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -5053,10 +5034,15 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_layout
 
 \begin_layout Theorem
-(4) (О прохождении непрерывной функции через промежуточное значение)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4, о прохождении непрерывной функции через промежуточное значение
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Если функция 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
@@ -5110,67 +5096,60 @@ x_{n}=\varphi_{n}\left(t_{1}\tr t_{k}\right)
 \end_inset
 
  определяется так 
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x_{1}=q_{1}\left(t\right)\\
-\tr\\
+\tr & ,t\in\left[\alpha,\beta\right]\\
 x_{m}=q_{m}\left(t\right)
-\end{cases},\ t\in\left[\alpha,\beta\right]$
+\end{cases}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
+Возьмем точки 
 \begin_inset Formula $A\left(\varphi_{1}\left(\alpha\right),\tr,\varphi_{m}\left(\alpha\right)\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
+ и 
 \begin_inset Formula $B\left(\varphi_{1}\left(\beta\right),\tr,\varphi_{m}\left(\beta\right)\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Тогда получим на 
+.
+ Получим на 
 \begin_inset Formula $l$
 \end_inset
 
- функцию
-\end_layout
+ функцию:
+\begin_inset Formula 
+\[
+u=f\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)=g\left(t\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $u=f\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)=g\left(t\right)$
 \end_inset
 
- - функция одной переменной.
- Переменной 
+
+\begin_inset Formula $g\left(t\right)$
+\end_inset
+
+ --- функция одной переменной 
 \begin_inset Formula $t\in\left[\alpha,\beta\right]$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $g\left(t\right)$
-\end_inset
-
- - непрерывна на отрезке 
+ Она непрерывна на отрезке 
 \begin_inset Formula $\left[\alpha,\beta\right]$
 \end_inset
 
  
 \emph on
-(По теореме (2) (О непрерывности сложной функции))
+(по теореме 2)
 \emph default
 .
 \end_layout
 
 \begin_layout Proof
-По второй теореме Больцано-Коши 
+Тогда по второй теореме Больцано--Коши 
 \begin_inset Formula $\forall c$
 \end_inset
 
@@ -5186,14 +5165,14 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $t\in\left[\alpha,\beta\right]$
 \end_inset
 
- такое что 
-\begin_inset Formula $g\left(t\right)=f\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)=c$
+ такое что:
+\begin_inset Formula 
+\[
+g\left(t\right)=f\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)=c
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
 Так как точка 
 \begin_inset Formula $\left(\varphi_{1}\left(t\right),\tr,\varphi_{m}\left(t\right)\right)\in l$
 \end_inset
@@ -5206,7 +5185,16 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Theorem
-(5) (Первая теорема Вейерштрассе)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5, Первая теорема Вейерштрасса
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -5222,27 +5210,23 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Proof
-От противного.
- Пусть 
+Предположим противное: пусть 
 \begin_inset Formula $f\left(\vec X\right)$
 \end_inset
 
- - не ограничена на 
+ не ограничена на 
 \begin_inset Formula $D$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+, тогда
+\begin_inset Formula 
+\[
+\forall n\in\N\quad\exists M_{n}\in D\quad\left|f\left(M_{n}\right)\right|>n
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Proof
-\begin_inset Formula $\forall n\in\N\ \exists M_{n}\in D\ \left|f\left(M_{n}\right)\right|>n$
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Proof
@@ -5251,25 +5235,30 @@ x_{m}=q_{m}\left(t\right)
 \end_inset
 
 .
- По теореме Больцано-Вейерштрассе можно извлечь сходящуюся под последовательност
-ь 
+ По теореме Больцано--Вейерштрасса из нее можно извлечь сходящуюся подпоследоват
+ельность 
 \begin_inset Formula $\left\{ M_{n_{k}}\right\} $
 \end_inset
 
- обозначающаяся 
+, причем 
 \begin_inset Formula $\ul{k\st\b}M_{n_{k}}=M$
 \end_inset
 
- - эта точка принадлежит, так как 
+.
+ Точка 
+\begin_inset Formula $M$
+\end_inset
+
+ точка принадлежит 
 \begin_inset Formula $D$
 \end_inset
 
- - замкнута.
- 
-\begin_inset Formula $\sl$
+, так как 
+\begin_inset Formula $D$
 \end_inset
 
- 
+ --- замкнута.
+ Следовательно значение 
 \begin_inset Formula $f\left(M\right)$
 \end_inset
 
@@ -5278,19 +5267,22 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Proof
-С другой стороны из 
-\begin_inset Formula $\forall n\in\N\ \exists M_{n}\in D\ \left|f\left(M_{n}\right)\right|>n$
+С другой стороны из утверждения
+\begin_inset Formula 
+\[
+\forall n\in\N\quad\exists M_{n}\in D\quad\left|f\left(M_{n}\right)\right|>n
+\]
+
 \end_inset
 
- следует что 
+следует что 
 \begin_inset Formula $\ul{k\st\b}f\left(M_{n_{k}}\right)=\b$
 \end_inset
 
 .
  
 \emph on
-Непрерывность по Гейне.
-
+Используя определение непрерывности по Гейне:
 \emph default
  
 \begin_inset Formula $f\left(M_{n_{k}}\right)=f\left(M\right)$
@@ -5300,7 +5292,16 @@ x_{m}=q_{m}\left(t\right)
 \end_layout
 
 \begin_layout Theorem
-(6) (Вторая теорема Вейерштрасса)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+6, Вторая теорема Вейерштрасса
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -5308,15 +5309,15 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $u=f\left(x_{1}\tr x_{n}\right)$
 \end_inset
 
- - непрерывная на ограниченном замкнутом множестве 
+, непрерывная на ограниченном замкнутом множестве 
 \begin_inset Formula $D\vkl E^{n}$
 \end_inset
 
-, достигает на них своих точных граней.
+, достигает на нем своих точных граней.
 \end_layout
 
 \begin_layout Proof
-(Без доказательства) Сами..
+Сами..
 \end_layout
 
 \begin_layout Definition
@@ -5329,14 +5330,27 @@ x_{m}=q_{m}\left(t\right)
 \end_inset
 
  называется равномерно непрерывной, если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)>0\ \forall x',x''\in D\ \rho\left(x',x''\right)<\delta\ \sl\ \left|f\left(x'\right)-f\left(x''\right)\right|<\varepsilon$
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)>0\quad\forall x',x''\in D\quad\rho\left(x',x''\right)<\delta\quad\Rightarrow\quad\left|f\left(x'\right)-f\left(x''\right)\right|<\varepsilon
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Theorem
-(7) (Теорема Кантора)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+7, Теорема Кантора
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -5344,7 +5358,7 @@ x_{m}=q_{m}\left(t\right)
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
- непрерывна на ограниченном замкнутом множестве 
+ непрерывная на ограниченном замкнутом множестве 
 \begin_inset Formula $D\vkl E^{m}$
 \end_inset
 
