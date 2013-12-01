@@ -3888,62 +3888,47 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Theorem
-(Критерий Коши)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Последовательность 
 \begin_inset Formula $\left\{ X_{n}\right\} \in E^{m}$
 \end_inset
 
- - сходится 
-\begin_inset Formula $\dsl$
-\end_inset
-
- 
+ сходится тогда и только тогда, когда 
 \begin_inset Formula $\left\{ X_{n}\right\} $
 \end_inset
 
- - фундаментальна.
+ --- фундаментальна.
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula $\left\{ X_{n}\right\} \in E^{m}$
 \end_inset
 
- - сходится 
+ --- сходится 
 \begin_inset Formula $\dsl$
 \end_inset
 
  по предыдущей лемме 
-\begin_inset Formula $\dsl$
+\begin_inset Formula $\forall i=\overline{1,m}\quad\left\{ X_{i}^{\left(A\right)}\right\} $
 \end_inset
 
- 
-\begin_inset Formula $\forall i=\overline{1,m}$
-\end_inset
-
- 
-\begin_inset Formula $\left\{ X_{i}^{\left(A\right)}\right\} $
-\end_inset
-
- - сходящаяся числовая последовательность 
+ --- сходящаяся числовая последовательность 
 \begin_inset Formula $\dsl$
 \end_inset
 
  по критерию коши для сходящихся последовательностей 
-\begin_inset Formula $\dsl$
+\begin_inset Formula $\forall i=\overline{1,m}\quad\left\{ X_{i}^{\left(A\right)}\right\} $
 \end_inset
 
- 
-\begin_inset Formula $\forall i=\overline{1,m}$
-\end_inset
-
- 
-\begin_inset Formula $\left\{ X_{i}^{\left(A\right)}\right\} $
-\end_inset
-
- - фундаментальны 
+ --- фундаментальны 
 \begin_inset Formula $\dsl$
 \end_inset
 
@@ -3951,7 +3936,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ X_{n}\right\} $
 \end_inset
 
- - покоординатная фундаментальность 
+ --- покоординатная фундаментальность 
 \begin_inset Formula $\dsl$
 \end_inset
 
@@ -3963,46 +3948,7 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\left\{ X_{n}\right\} $
 \end_inset
 
- - фундаментальна.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left\{ x_{n}\right\} \subset E^{2}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x_{n}=\left(\df 1n;\df{n+1}{n-2}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x_{1}^{\left(n\right)}=\df 1n\overset{n\st\b}{\st}0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x_{2}^{\left(n\right)}=\df{n+1}{n-2}\overset{n\st\b}{\st}1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\ul{n\st\b}x_{n}=M\left(0;1\right)$
-\end_inset
-
-
+ --- фундаментальна.
 \end_layout
 
 \begin_layout Definition
@@ -4014,14 +3960,19 @@ x_{m} & =\varphi_{m}\left(t\right)
 \begin_inset Formula $\exists K>0\ \rho\left(0,M_{n}\right)\mr K$
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Theorem
-(Больцано-Вейерштрассе)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Больцано--Вейерштрасса
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Из всякой ограниченной последовательности 
 \begin_inset Formula $\left\{ x_{n}\right\} \vkl E^{n}$
 \end_inset
@@ -4031,22 +3982,22 @@ x_{m} & =\varphi_{m}\left(t\right)
 
 \begin_layout Proof
 Пусть 
-\begin_inset Formula $\exists K>0\ \rho\left(0,x_{n}\right)\mr K$
+\begin_inset Formula $\exists K>0\quad\rho\left(0,x_{n}\right)\mr K$
 \end_inset
 
-, тогда 
-\begin_inset Formula $\forall i=\overline{1,m}$
+, тогда: 
+\begin_inset Formula 
+\[
+\forall i=\overline{1,m}\quad\left|x_{i}^{\left(n\right)}\right|\mr\sqrt{\ous{j=1}m\left(x_{j}^{n}\right)^{2}}=\rho\left(0,x_{n}\right)\mr K
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\left|x_{i}^{\left(n\right)}\right|\mr\sqrt{\ous{j=1}m\left(x_{j}^{n}\right)^{2}}=\rho\left(0,x_{n}\right)\mr K$
-\end_inset
-
- , то-есть 
+то есть 
 \begin_inset Formula $\left\{ x_{i}^{\left(n\right)}\right\} $
 \end_inset
 
- - ограниченная числовая последовательность 
+ --- ограниченная числовая последовательность 
 \begin_inset Formula $\forall i=\overline{1,m}$
 \end_inset
 
@@ -4055,48 +4006,60 @@ x_{m} & =\varphi_{m}\left(t\right)
 \end_layout
 
 \begin_layout Proof
-По теореме Б-В для числовых последовательностей 
-\begin_inset Formula $\left\{ x_{1}^{\left(n\right)}\right\} \supset\left\{ x_{1}^{\left(n_{k_{1}}\right)}\right\} -$
+По теореме Б--В для числовых последовательностей 
+\begin_inset Formula $\left\{ x_{1}^{\left(n\right)}\right\} \supset\left\{ x_{1}^{\left(n_{k_{1}}\right)}\right\} $
 \end_inset
 
- сходящаяся подпоследовательность.
- 
+ --- сходящаяся подпоследовательность, причем 
 \begin_inset Formula $\ul{n_{k_{1}}\st\b}x_{1}^{\left(n_{k_{1}}\right)}=a_{1}$
 \end_inset
 
 .
- Потом 
+\end_layout
+
+\begin_layout Proof
+Аналогично 
 \begin_inset Formula $\left\{ x_{2}^{\left(n_{k_{1}}\right)}\right\} \supset\left\{ x_{2}^{\left(n_{k_{2}}\right)}\right\} $
 \end_inset
 
- - сходящаяся.
- 
+ --- сходящаяся, причем 
 \begin_inset Formula $\ul{n_{k_{2}}\st\b}x_{2}^{\left(n_{k_{2}}\right)}=a_{2}$
 \end_inset
 
- На 
+.
+ 
+\end_layout
+
+\begin_layout Proof
+На 
 \begin_inset Formula $m$
 \end_inset
 
 -том шаге получим: 
-\begin_inset Formula $\left\{ x_{m}^{\left(n_{k_{m-1}}\right)}\right\} \supset\left\{ x_{m}^{\left(n_{k_{m}}\right)}\right\} \overset{n_{k_{m}}\st\b}{\st}a_{m}$
+\begin_inset Formula 
+\[
+\left\{ x_{m}^{\left(n_{k_{m-1}}\right)}\right\} \supset\left\{ x_{m}^{\left(n_{k_{m}}\right)}\right\} \overset{n_{k_{m}}\st\b}{\st}a_{m}
+\]
+
 \end_inset
 
-.
- Очевидно что 
+Очевидно что 
 \begin_inset Formula $X_{n_{k_{m}}}=\left(x_{1}^{n_{k_{m}}},x_{2}^{n_{k_{m}}},\tr,x_{m}^{n_{k_{m}}}\right)$
 \end_inset
 
- - сходящаяся последовательность, включенная в 
+ --- сходящаяся последовательность, включенная в 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
 
 .
- 
-\begin_inset Formula $\left\{ x_{n_{k_{m}}}\right\} \overset{n_{k_{m}}\st\b}{\st}A\left(a_{1},a_{2}\tr a_{m}\right)$
+\begin_inset Formula 
+\[
+\left\{ x_{n_{k_{m}}}\right\} \overset{n_{k_{m}}\st\b}{\st}A\left(a_{1},a_{2}\tr a_{m}\right)
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Definition
