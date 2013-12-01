@@ -4139,7 +4139,7 @@ status open
 \begin_inset Formula $D$
 \end_inset
 
- - замкнуто, если оно содержит все свои предельные точки.
+ --- замкнуто, если оно содержит все свои предельные точки.
 \end_layout
 
 \begin_layout --Separator--
@@ -4148,7 +4148,7 @@ status open
 
 \begin_layout Definition
 Множество 
-\begin_inset Formula $\overline{D}=D\cup D\pr$
+\begin_inset Formula $\overline{D}=D\cup D'$
 \end_inset
 
  называется замыканием множества 
@@ -4163,7 +4163,7 @@ status open
 \begin_inset Formula $\overline{D}$
 \end_inset
 
- - замкнутое множество.
+ --- замкнутое множество.
 \end_layout
 
 \begin_layout Subsection
@@ -4173,10 +4173,19 @@ status open
 \begin_layout Definition
 
 \emph on
-(Гейне)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Гейне
 \end_layout
 
-\begin_layout Definition
+\end_inset
+
+
+\emph default
 Число 
 \begin_inset Formula $b$
 \end_inset
@@ -4190,7 +4199,7 @@ status open
 \end_inset
 
  если 
-\begin_inset Formula $\forall\left\{ x_{n}\right\} \vkl D\left(f\right),\ x_{n}\nr A$
+\begin_inset Formula $\forall\left\{ x_{n}\right\} \vkl D\left(f\right),\quad x_{n}\nr A$
 \end_inset
 
  из сходимости 
@@ -4211,10 +4220,19 @@ status open
 \begin_layout Definition
 
 \emph on
-(Коши)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Коши
 \end_layout
 
-\begin_layout Definition
+\end_inset
+
+
+\emph default
 Число 
 \begin_inset Formula $b$
 \end_inset
@@ -4228,10 +4246,14 @@ status open
 \end_inset
 
 , если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall x\in D\left(f\right)\ 0<\rho\left(x,A\right)<\delta\sl\left|f\left(x\right)-b\right|<\varepsilon$
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon,A\right)>0\quad\forall x\in D\left(f\right)\quad0<\rho\left(x,A\right)<\delta\quad\sl\quad\left|f\left(x\right)-b\right|<\varepsilon
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -4249,7 +4271,7 @@ x_{m}\st a_{m}
 \end{array}}f\left(x_{1},x_{2}\tr x_{m}\right)=b$
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Theorem
@@ -4259,10 +4281,19 @@ x_{m}\st a_{m}
 \begin_layout Definition
 
 \emph on
-(Гейне)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Гейне
 \end_layout
 
-\begin_layout Definition
+\end_inset
+
+
+\emph default
 Число 
 \begin_inset Formula $b$
 \end_inset
@@ -4272,45 +4303,26 @@ x_{m}\st a_{m}
 \end_inset
 
  на бесконечности, если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\D=\D\left(\varepsilon\right)\ \forall M\in D\left(f\right)\ \rho\left(0,M\right)>\D\sl\left|f\left(M\right)-b\right|<\varepsilon$
-\end_inset
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\D=\D\left(\varepsilon\right)\quad\forall M\in D\left(f\right)\quad\rho\left(0,M\right)>\D\quad\sl\quad\left|f\left(M\right)-b\right|<\varepsilon
+\]
 
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=\df 1{x^{2}+y^{2}}\st0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left|f\left(x,y\right)-0\right|=\df 1{x^{2}+y^{2}}<\mbox{}<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\rho\left(0,M\right)=\sqrt{x^{2}+y^{2}}>\D\longleftrightarrow\df 1{\sqrt{x^{2}+y^{2}}}<\df 1{\D}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\D=\df 1{\sqrt{\varepsilon}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Lemma
-(Арифметические свойства пределов)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Арифметические свойства пределов
 \end_layout
 
-\begin_layout Lemma
+\end_inset
+
 Если 
 \begin_inset Formula $\ul{M\st A}f\left(M\right)=b$
 \end_inset
@@ -4338,7 +4350,7 @@ x_{m}\st a_{m}
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\ul{M\st A}\left(\df{f\left(M\right)}{g\left(M\right)}\right)=\df bc,\ c\nr0$
+\begin_inset Formula $\ul{M\st A}\left(\df{f\left(M\right)}{g\left(M\right)}\right)=\df bc,\quad c\nr0$
 \end_inset
 
 
@@ -4367,14 +4379,14 @@ x_{m}\st a_{m}
 \end_inset
 
 , то имеет место представление 
-\begin_inset Formula $f\left(M\right)=b+\alpha\left(M\right),\ $
+\begin_inset Formula $f\left(M\right)=b+\alpha\left(M\right)$
 \end_inset
 
- где 
+, где 
 \begin_inset Formula $\alpha\left(M\right)$
 \end_inset
 
- - бесконечно малая функция более высокого порядка при 
+ --- бесконечно малая функция более высокого порядка при 
 \begin_inset Formula $M\st A$
 \end_inset
 
@@ -4394,10 +4406,10 @@ x_{m}\st a_{m}
 \begin_inset Formula $\ul{M\st A}f\left(M\right)=\b$
 \end_inset
 
-, то-есть 
+, то есть: 
 \begin_inset Formula 
 \[
-\forall E>0\ \exists\delta=\delta\left(E,A\right)\ \forall M\in D\left(f\right)\ 0<\rho\left(A,M\right)<\delta\sl\left|f\left(M\right)\right|>E
+\forall E>0\quad\exists\delta=\delta\left(E,A\right)\quad\forall M\in D\left(f\right)\quad0<\rho\left(A,M\right)<\delta\quad\sl\quad\left|f\left(M\right)\right|>E
 \]
 
 \end_inset
@@ -4424,10 +4436,15 @@ x_{m}\st a_{m}
 \end_inset
 
 , если 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,A\right)>0\ \forall M',M''\in D\left(f\right)\ \left(0<\rho\left(A,M'\right)<\delta\right)\&\left(0<\rho\left(A,M''\right)<\delta\right)\sl\left|f\left(M'\right)-f\left(M''\right)\right|<\varepsilon$
+\begin_inset Formula 
+\begin{multline*}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon,A\right)>0\quad\forall M',M''\in D\left(f\right)\\
+\left(0<\rho\left(A,M'\right)<\delta\right)\;\&\;\left(0<\rho\left(A,M''\right)<\delta\right)\quad\Rightarrow\quad\left|f\left(M'\right)-f\left(M''\right)\right|<\varepsilon
+\end{multline*}
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
@@ -4439,11 +4456,7 @@ x_{m}\st a_{m}
 \begin_inset Formula $A$
 \end_inset
 
- 
-\begin_inset Formula $\dsl$
-\end_inset
-
- функция 
+ тогда и только тогда, когда функция 
 \begin_inset Formula $f\left(M\right)$
 \end_inset
 
@@ -4456,176 +4469,6 @@ x_{m}\st a_{m}
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(1)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{\begin{array}{c}
-x_{1}\st a_{1}\\
-\tr\\
-x_{m}\st a_{m}
-\end{array}}c\um x_{1}^{\alpha_{1}}\um x_{2}^{\alpha_{2}}\um\tr\um x_{m}^{\alpha_{m}}=\left\{ c,\alpha_{1}\tr\alpha_{m}\ -\ const\right\} =c\um a_{1}^{\alpha_{1}}\um\tr\um a_{m}^{\alpha_{m}}.$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-Для дробно рациональных функций аргументов 
-\begin_inset Formula $x_{1}\tr x_{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{\begin{array}{c}
-x_{1}\st a_{1}\\
-\tr\\
-x_{m}\st a_{m}
-\end{array}}Q\left(x_{1},x_{2}\tr x_{n}\right)=Q\left(a_{1}\tr a_{n}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(3)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=x^{y},\ x>0,\ y\in\R$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Пусть 
-\begin_inset Formula $a>0,\ b\in\R$
-\end_inset
-
- тогда 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{\begin{array}{c}
-x\st a\\
-y\st b
-\end{array}}x^{y}=\ul{\begin{array}{c}
-x\st a\\
-y\st b
-\end{array}}e^{y\um\ln x}=\left\{ \text{непрерывность}\ e^{t}\right\} =e^{\ul{\begin{array}{c}
-x\st a\\
-y\st b
-\end{array}}y\um\ln x}=$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $=\left\{ \begin{array}{c}
-\text{арифметические свойства пределов}\\
-\text{непрерывность}\ \ln t
-\end{array}\right\} =e^{b\um\ln b}=a^{b}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(4)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{\begin{array}{c}
-x\st0\\
-y\st0
-\end{array}}\df{x\um y}{x^{2}+y^{2}}=?$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Решать будим по Гейне.
- Рассмотрим последовательность:
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{n}'\left(\df 1n;\df 1n\right)\st0\left(0,0\right)\sl f\left(M_{n}'\right)=f\left(\df 1n,\df 1n\right)=\df{\df 1{n^{2}}}{2\um\df 1{n^{2}}}=\df 12\overset{n\st\b}{\st}\df 12$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M''\left(\df 1n,\df 2n\right)\st0\left(0,0\right)\sl f\left(M_{n}''\right)=f\left(\df 1n;\df 2n\right)=\df{\df 2{n^{2}}}{\df 1{n^{2}}+\df 4{n^{2}}}=\df 25\overset{n\st\b}{\st}\df 25$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df 12\nr\df 25\ \sl\ \overline{\exists}\ul{\begin{array}{c}
-x\st0\\
-y\st0
-\end{array}}\df{xy}{x^{2}+y^{2}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(5)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\ul{\begin{array}{c}
-x\st0\\
-y\st0
-\end{array}}\df{x^{2}y}{x^{2}+y^{2}}=\left\{ \df{xy}{x^{2}+y^{2}}\mr\df 12\right\} =0$
-\end_inset
-
- так как 
-\begin_inset Formula $\left|\df{x^{2}y}{x^{2}+y^{2}}\right|\mr\df 12\um\left|x\right|\overset{x\st0}{\st}0$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
