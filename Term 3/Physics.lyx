@@ -12273,11 +12273,812 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 Изотермический процесс
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+02.12.13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Процесс теплообмена
+\end_layout
+
+\begin_layout Standard
+Приаедем в соприкосновение 2 тела с разной температурой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\ov{\st}QT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 38
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попробуем обратить процесс.
+\end_layout
+
+\begin_layout Standard
+Возьмем газ между телами.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{1}<T_{2}$
+\end_inset
+
+
+\end_layout
+
 \begin_deeper
 \begin_layout Standard
+\begin_inset Formula $T-const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}\ov{\st}Q$
+\end_inset
+
+газ
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботический
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поднимаем температуру гназа чуть больше 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $T$
+\end_inset
+
+ растет и становится больше чем 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T-const$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+газ 
+\begin_inset Formula $\ov{\st}QT_{1}$
+\end_inset
+
 
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+Обратите внимание, что газ нагрелся.
+\end_layout
+
+\begin_layout Standard
+Есть 2 способа исправить:
+\end_layout
+
+\begin_layout Enumerate
+Отдать излишнее тепло во внешнею среду, но тогда там будут изменения.
+\end_layout
+
+\begin_layout Enumerate
+Адиоботически вернуть в тоже состояние, но тогда получится замкнутый циык,
+ и тогда над газом совершили работу, а работа то из внешней среды, и тогда
+ во внешней среде произошли изменения.
+\end_layout
+
+\begin_layout Subsection
+Изотермическое расширение или сжатие газа.
+\end_layout
+
+\begin_layout Standard
+Чисто изотермический процесс обратим.
+\end_layout
+
+\begin_layout Standard
+Все тепло, поступающее в газ, идет в работу.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q=\delta A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q'=\delta A'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q'=-\delta Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A'=-\delta A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Адиоботическое расширение или сжатие
+\end_layout
+
+\begin_layout Standard
+Оно тоже обратимо.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $Q=0$
+\end_inset
+
+, то 
+\begin_inset Formula $dU=-\delta A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Нужнопроводить этот процесс бесконечно быстро, чтобы не успевало тепло уходить.
+\end_layout
+
+\begin_layout Claim
+Реальные тепловые процессы всегда необратимы.
+\end_layout
+
+\begin_layout Section
+Второе начало термодинамики.
+\end_layout
+
+\begin_layout Definition
+Невозможны такие процессы, 
+\emph on
+единственным 
+\emph default
+результатом которых являлось бы переход тепла от тела менее нагретого, к
+ телу, более нагретому.
+\end_layout
+
+\begin_layout Standard
+Иначе бы можно было бы ставить чайник на лед, и он закипел бы.
+\end_layout
+
+\begin_layout Definition
+Невозможны такие процессы, 
+\emph on
+единственным 
+\emph default
+результатом которых было бы отнятие некоторого тепла у произвольного тела
+ и превращения этого тепла полностью в работу.
+\end_layout
+
+\begin_layout Standard
+или 
+\end_layout
+
+\begin_layout Definition
+Невозможен вечный двигатель 2го рода
+\end_layout
+
+\begin_layout Subsection
+Цикл Карно
+\end_layout
+
+\begin_layout Standard
+Карно --- Французский инженер
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 40
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Он решил создать обратимую тепловую машину.
+ (Из 2х по идее обратимых циклов)
+\end_layout
+
+\begin_layout Standard
+В этом цикле 4 этапа.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T_{1}=T$
+\end_inset
+
+---const
+\end_layout
+
+\begin_layout Standard
+Изотермическое расширение.
+\end_layout
+
+\begin_layout Standard
+Нагреватель отдает некоторое тепло газу.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботическое расширение
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\st T_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $T_{1}<T_{2}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изотермическое сжтие 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Газ отдате тепло 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ холодильнику.
+ (Чаще всего холодильник это оклужающая среда)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботическое сжатие
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возвращаем всю систему в исходное состояние.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В этом цикле совершается работа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=Q_{1}-Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ --- это тепло, которое берет холодильник (просто если это тепло, которое
+ отдал газ, то это слогаемое должно быть со знаком минус)
+\end_layout
+
+\begin_layout Theorem
+Две различны еобратимые тепловые машины, работающие с одними и теми же нагревати
+лем и холодильником имеют одинаковое КПД.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 41
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1M},\ Q_{2m},\ A_{M},\ \eta_{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1N},\ Q_{2N},\ A_{N},\ \eta_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1?}$
+\end_inset
+
+ --- тепло, которое забрали у нагревателя.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{2?}$
+\end_inset
+
+ --- тепло, которое отдали холодильнику.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{?}$
+\end_inset
+
+ --- работа
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\eta_{?}$
+\end_inset
+
+ --- КПД
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1M}=Q_{1N}=Q_{1}$
+\end_inset
+
+ --- выбрали такое цикл, когда
+\end_layout
+
+\begin_layout Proof
+Докажем от противного: пусть 
+\begin_inset Formula $\eta_{M}>\eta_{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{2M}<Q_{2N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{M}>A_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заставим эту машину работать по обратному циклу.
+ (над ней совершается работа 
+\begin_inset Formula $A_{N},$
+\end_inset
+
+и отдается темло нагревателю 
+\begin_inset Formula $Q_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $A_{M}>A_{N}$
+\end_inset
+
+, то мы можем взять часть работы от 
+\begin_inset Formula $M$
+\end_inset
+
+ и отдать 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ (Работу, которую нужно совершить над 
+\begin_inset Formula $N$
+\end_inset
+
+ заберем у 
+\begin_inset Formula $M$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+У машины 
+\begin_inset Formula $M$
+\end_inset
+
+ останется часть работы, которое можно использовать.
+ (
+\begin_inset Formula $A=A_{M}-A_{N}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+Расмотрим единую тепловую машину 
+\begin_inset Formula $\left(M-N\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Она забтрает у холодильника тепло 
+\begin_inset Formula $Q_{2}=Q_{N2}-Q_{M2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Получается нагреватель стоит ради мебели, а работа совершалаь.
+ Тоесть машина забрала тепло у холдодильника и полностью превратила его
+ в работу, что невозможно в силу 2го начала термодинамики.
+\end_layout
+
+\begin_layout Proof
+Предположение неверно, следовательно 
+\begin_inset Formula $\eta_{M}\mr\eta_{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично мжно доказать, что 
+\begin_inset Formula $\eta_{M}<\eta_{N}$
+\end_inset
+
+ тоже неверное, следорвательно остается их приравнять.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ --- необратимая машина, а 
+\begin_inset Formula $O$
+\end_inset
+
+ --- обратимая машина.
+ Они работают с одним и теми же холодилшьником и нагревателем, различие
+ только в том, что одна обратимая, а другая нет.
+ Аналогично можно показать, что неравенство 
+\begin_inset Formula $\eta_{H}>\eta_{O}$
+\end_inset
+
+, следовательно 
+\begin_inset Formula $\eta_{H}\mr\eta_{O}$
+\end_inset
+
+, но мы не можем опровергнуть 
+\begin_inset Formula $\eta_{H}<\eta_{O}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Как сделать из обратимой машины необратимую, присыпать песочку, добависть
+ трение.
+ И тогда КПД обратимой машины будет ментше чем необратимой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}Q=\eta$
+\end_inset
+
+ --- так вычисляется КПД.
+ Но для обратимой машыны можно подругому по идее.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как минус в формуле КПД поставлен явно, то 
+\begin_inset Formula $\ln\df{V_{3}}{V_{4}}$
+\end_inset
+
+, а не 
+\begin_inset Formula $\ln\df{V_{4}}{V_{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{2}V_{2}^{\gamma}=P_{3}V_{3}^{\gamma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{2}V_{2}=\nu RT_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{3}V_{3}=\nu RT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выражаем 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{3}$
+\end_inset
+
+, и подставляем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Откуда получаем уравнение адиобаты, связывающее обьем и температуру.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Аналогично из процесса 4-1 получаем 
+\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{4}}{V_{1}}\right)^{\gamma-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $\df{V_{3}}{V_{4}}=\df{V_{2}}{V_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{O}=\df{T_{1}-T_{2}}{T_{2}}$
+\end_inset
+
+ --- так вычисляется КПД для обратимых машин.
+\end_layout
+
+\begin_layout Remark
+Обратимая темловая машина называется идеальной тепловой машиной иногда.
+\end_layout
+
+\begin_layout Subsection
+Приведенное кол-во тепла.
+ Неравеснство Клаузиуса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}$
+\end_inset
+
+ --- действует для всех машин
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{T_{1}-T_{2}}{T_{1}}$
+\end_inset
+
+ --- действует только для обратимых.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если рассматривать только газ и рассматривать что газ отдает тепло со знаком
+ минус, то если брать это неравествтвво по отношению к одному телу, то мы
+ получим 
+\begin_inset Formula $\df{Q_{1}}{T_{1}}+\df{Q_{2}}{T_{2}}\mr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если газ контактирует не с 2мя а с 
+\begin_inset Formula $N$
+\end_inset
+
+ телами, то можно записать 
+\begin_inset Formula $\ous{i=1}N\df{Q_{i}}{T_{i}}\mr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это неравество Клаудиуса.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df QT$
+\end_inset
+
+ --- эту дробь Клаузиус называл прриваеденным колическвом тепла.
+\end_layout
+
+\begin_layout Subsection
+Энтропия
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
