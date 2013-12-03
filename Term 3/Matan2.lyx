@@ -24723,6 +24723,635 @@ reference "eq:rr1"
 
 \end_deeper
 \end_deeper
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
+\end_layout
+
+\end_inset
+
+Функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}u_{k}\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\left|\ous{k=n+1}{n+p}u_{k}\left(x\right)\right|=\left|S_{n+p}\left(x\right)-S_{n}\left(x\right)\right|$
+\end_inset
+
+, то утверждение этой теоремы эквивалентно равномерной фундаментальности
+ последователности 
+\begin_inset Formula $\left\{ S_{n}\left(x\right)\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Критерий Коши для функциональных последовательностей 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Исходный ряд сходится равноменро на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Вейерштрассе
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\forall x\in D\ \left|u_{n}\left(x\right)\right|\mr a_{n},\ n\in\N$
+\end_inset
+
+ и знакоположительный ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится, то ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится, то по Критерию Коши сходимости чсиловых рядов: 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \ous{k=n+1}{n+p}a_{k}<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\ous{k=n+1}{n+p}u_{k}\left(x\right)\right|\mr\ous{k=n+1}{n+p}\left|u_{k}\left(x\right)\right|\ov{\mr}{\text{По условию теоремы}}\ous{k=n+1}{n+p}a_{k}<\varepsilon\ \forall x\in D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Ряд по Критерию Коши сходится равномерно.
+\end_layout
+
+\begin_layout Remark
+Числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n},$
+\end_inset
+
+члены которого оценивают слогаемые функционального ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+, называется мажорантным рядом (можарантой).
+ Признак Вейерштрассе называют мажорантным признаком равномерной сходимости
+ функциональных рядов.
+\end_layout
+
+\begin_layout Example
+Исследовать на равномерную содимость следующий ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{\sin nx}{2^{n}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $\left|u_{n}\left(x\right)\right|=\df{\left|\sin nx\right|}{2^{n}}\mr\df 1{2^{n}}=a_{n}$
+\end_inset
+
+, а ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{2^{n}}$
+\end_inset
+
+ --- сходящаяся геометрическая прогрессия (сходится мажорантно) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Исходный ряд сходится равномерно на 
+\begin_inset Formula $\R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{x^{n}}{n!}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D=\left[-L;L\right],\ L>0$
+\end_inset
+
+ --- фиксированное число.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|u_{n}\left(x\right)\right|=\df{\left|x\right|^{n}}{n!}\mr\df{L^{n}}{n!}=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{L^{n}}{n!}$
+\end_inset
+
+ --- сходится по Даланберу: 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df L{n+1}=0<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+То исходный ряд сходится равномерно на 
+\begin_inset Formula $D=\left[-L;L\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D=\left(-\b;\b\right)$
+\end_inset
+
+ Докажем что нету равномерной сходимости
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тоесть 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall\br N\ \left|r_{n}\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отрицание: 
+\begin_inset Formula $\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists x\in D\ \left|r_{n}\left(x\right)\right|>\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon=1;\ n=N+1;\ x=N+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|r_{N+1}\right|=\ous{n=N+1}{\b}\df{\left(N+1\right)^{n}}{n!}=\df{\left(N+1\right)^{N+1}}{\left(N+1\right)!}+\df{\left(N+1\right)^{N+2}}{\left(N+2\right)!}+\tr>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Значит нету равномерной сходимотсти функционального ряда
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Функциональные свойства суммы ряда
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1, О непрерывности суммы функционального ряда
+\end_layout
+
+\end_inset
+
+Если на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+ функцилональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}n_{n}\left(x\right)$
+\end_inset
+
+, сходится равномерно и 
+\begin_inset Formula $u_{n}\left(x\right)$
+\end_inset
+
+ непрерывны на области 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, то сумма ряда так-же непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как ряд 
+\begin_inset Formula $u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно, то функциональная последовательность 
+\begin_inset Formula $\left\{ S_{n}\left(x\right)\right\} $
+\end_inset
+
+ так же сходится равномерно к сумме 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ ряда 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $S_{n}\left(x\right)$
+\end_inset
+
+ --- непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+, то по теореме о непрерывности пределаравномерно сходящейся функциональной
+ последователшьности действительно 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ --- непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{x^{2}}{\left(1+x^{2}\right)^{n-1}}=\begin{cases}
+0, & x=0\\
+x^{2}+1, & x\nr0
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ --- разрывно в точке 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+, следовательно на множестве 
+\begin_inset Formula $D=\left[-1;1\right]\ni\left\{ 0\right\} $
+\end_inset
+
+ нет равномерной сходимости ряда к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+ 
+\emph default
+В равномерно сходящемся ряде, составленом из непрерывных слогаемых, возможен
+ почеленный переход к пределу 
+\begin_inset Formula $\ul{x\st x_{0}}\ous{n=1}{\b}u_{n}\left(x\right)=\ous{n=1}{\b}\ul{x\st x_{0}}u_{n}\left(x\right)=\ous{n=1}{\b}u_{n}\left(x_{0}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Так как по 
+\emph on
+Теореме (1) 
+\emph default
+сумма 
+\begin_inset Formula $S\left(x\right)=\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\forall x_{0}\in D$
+\end_inset
+
+, то 
+\begin_inset Formula $\ul{x\st x_{0}}S\left(x\right)=S\left(x_{0}\right)=\ous{n=1}{\b}u_{n}\left(x_{0}\right)=\ous{n=1}{\b}\ul{x\st x_{0}}u_{n}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{x\st x_{0}}\ous{n=1}{\b}u_{n}\left(x\right)=\ul{x\st x_{0}}S\left(x\right)=S\left(x_{0}\right)=\ous{n=1}{\b}u_{n}\left(x_{0}\right)=\ous{n=1}{\b}\ul{x\st x_{0}}u_{n}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ous{n=1}{\b}\df{\cos nx}{10^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Ряд 
+\begin_inset Formula $u_{n}\left(x\right)=\df{\left|\cos nx\right|}{10^{n}}\mr\df 1{10^{n}}=a_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Числовой ряд: 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{10^{n}}$
+\end_inset
+
+ --- сходящаяся мажоранта 
+\begin_inset Formula $\forall x\in\R$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Исходный ряд сходится равномерно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|c_{n}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ous{n=1}{\b}\df{\cos nx}{10^{n}}=\ous{n=1}{\b}\df{\cos n}{10^{n}}\mr\ous{n=1}{\b}\df 1{10^{n}}=\df 19$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2, О почеленном интегрировании функционального ряда
+\end_layout
+
+\end_inset
+
+Если функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $u_{n}\left(x\right)\in C\left[a;b\right]$
+\end_inset
+
+, то функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ можно почеленно интегрировать полюбому отрезку 
+\begin_inset Formula $\left[x_{0};x\right]\subseteq\left[a;b\right]$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui{x_{0}}xS\left(t\right)dt & = & \oui{x_{0}}x\ous{n=1}{\b}u_{n}\left(t\right)dt=\\
+ & = & \ous{n=1}{\b}\oui{x_{0}}xu_{n}\left(t\right)dt
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Причем 
+\begin_inset Formula $\ous{n=1}{\b}\oui{x_{0}}xu_{n}\left(t\right)dt$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к сумме 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то по определению равномерной сходимости, можно записать: 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|S_{n}\left(x\right)-S\left(x\right)\right|<\df{\varepsilon}{b-a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Оценим 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\oui{x_{0}}xS\left(t\right)dt-\oui{x_{0}}xS_{n}\left(t\right)dt\right| & \mr & \left\{ \left|\oui{x_{0}}xS\left(t\right)st-\ous{k=1}n\oui{x_{0}}xu_{k}\left(t\right)dt\right|\dsl\left|\oui{x_{0}}xS\left(t\right)dt-\oui{x_{0}}xS_{n}\left(t\right)dt\right|\right\} \mr\\
+ & \mr & \oui{x_{0}}x\left|S\left(t\right)-S_{n}\left(t\right)\right|dt<\\
+ & < & \left\{ \left|S\left(t\right)-S_{n}\left(t\right)\right|<\df{\varepsilon}{b-a}\right\} <\\
+ & < & \df{\varepsilon}{b-a}\left(x-x_{0}\right)\mr\varepsilon
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Причем сходимость ряда, полученного почеленным интегрированием, равномерная.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость 
+\begin_inset Formula $\ous{n=1}{\b}\df 1n\arctg\df xn$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим функциональный ряд из производных:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(\df 1n\arctg\df xn\right)\pr=\df 1n\df 1{1+\df{x^{2}}{n^{2}}}\df 1n=\df 1{x^{2}+n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 1{x^{2}+1}+\df 1{x^{2}+4}+\df 1{x^{2}+16}+\tr+\df 1{x^{2}+n^{2}}+\tr=\ous{n=1}{\b}\df 1{x^{2}+n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{n}\left(x\right)=\df 1{x^{2}+n^{2}}\mr\df 1{n^{2}}=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{2}}$
+\end_inset
+
+ --- сходящаяся мажоранта, следовательно ряд из производных сходится равномерно
+ на любом множестве (на 
+\begin_inset Formula $\R$
+\end_inset
+
+), следовательно:
+\end_layout
+
+\begin_layout Example
+Интегриируя почеленно на 
+\begin_inset Formula $\left[0;x\right]$
+\end_inset
+
+ ряд их производных получим:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\oui 0x\df{dt}{t^{2}+n^{2}}=\ous{n=1}{\b}\df 1n\arctg\df tn|_{0}^{x}=\ous{n=1}{\b}\df 1narctg\df xn$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
