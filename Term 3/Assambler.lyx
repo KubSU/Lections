@@ -6153,22 +6153,27 @@ inline false
 status open
 
 \begin_layout Plain Layout
+
 Type 
 \end_layout
 
 \begin_layout Plain Layout
+
 	Base = L..K;
 \end_layout
 
 \begin_layout Plain Layout
+
 	SetB = Set of Base;
 \end_layout
 
 \begin_layout Plain Layout
+
 Var
 \end_layout
 
 \begin_layout Plain Layout
+
 	M: SetB;
 \end_layout
 
@@ -6569,6 +6574,643 @@ status open
 \begin_layout Plain Layout
 
 	SHL	AL,	CL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Стек
+\end_layout
+
+\begin_layout Subsection
+Определение и описание.
+\end_layout
+
+\begin_layout Definition
+Стек --- специально отведенная область памяти для хранения промежуточных
+ данных.
+ Работа с ним ведется по принципу LIFO.
+ 
+\end_layout
+
+\begin_layout Standard
+Эта обасть должна быть сегментом памяти (сегментом стека), тоесть ее размер
+ не должен превышать 64К и начальный адрес должен быть кратен 16.
+ На начало стека указывает регистр SS, на вершину SP.
+ При иллюстрации работы со стеком отведенная область заполняется снизу вверх.
+ При чтении из стека удаляется самый верхний элемент, поэтому низ стека
+ фиксирован, а вершина все время сдвигается.
+ В SP находится смещение относительно начала сегмента стека, и абсолютный
+ адрес вершины задается парой SS:SP.
+ Команды для работы со стеком используют только слова, обработка байтов
+ или двойных слов требует некоторых ухищрений.
+ Термин сегмент стека означает область памяти, которую потенциально могут
+ занять данные.
+ Собственно стек --- данные, которые в настоящий момент хранятся, причем
+ данные, адрес которых больше SP, считаются не относящимися к стеку.
+ Чтобы зарезервировать M байтов под стек необходимо описать соответствующий
+ сегмент.
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ST   SEGMENT   STACK
+\end_layout
+
+\begin_layout Plain Layout
+
+     DB        N DUP (?)
+\end_layout
+
+\begin_layout Plain Layout
+
+ST   ENDS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сегмент стека должен быть описан в программе, даже тогда, когда программа
+ сама его не использует.
+ Рекомендуемый размер стека --- 128 байт.
+\end_layout
+
+\begin_layout Subsection
+Стековые команды
+\end_layout
+
+\begin_layout Subsubsection
+Запись и чтение
+\end_layout
+
+\begin_layout LyX-Code
+PUSH op ;r16, sr, m16
+\end_layout
+
+\begin_layout Standard
+Выполнение этой команды можно описать как:
+\end_layout
+
+\begin_layout LyX-Code
+SP:= [SP] - 2;
+\end_layout
+
+\begin_layout LyX-Code
+[SP]:= op;
+\end_layout
+
+\begin_layout Standard
+Следующая команда
+\end_layout
+
+\begin_layout LyX-Code
+POP op;
+\end_layout
+
+\begin_layout Standard
+Извлекает слово из вершины стека, и помещает его по указанному операнду.
+ Выполнение этой команды можно описать как:
+\end_layout
+
+\begin_layout LyX-Code
+op:=[SP];
+\end_layout
+
+\begin_layout LyX-Code
+SP:=[SP] + 2;
+\end_layout
+
+\begin_layout Subsubsection
+Запись и чтение регистра флагов.
+\end_layout
+
+\begin_layout LyX-Code
+PUSHF
+\end_layout
+
+\begin_layout Standard
+По этой команде в стек записывается содержимое регистра флагов.
+\end_layout
+
+\begin_layout LyX-Code
+POPF
+\end_layout
+
+\begin_layout Standard
+По этой команде извлекается из стека и помещается в регистр флагов.
+\end_layout
+
+\begin_layout Standard
+Эти команды обычно используются для сохранения текущих состояний флагов
+ и последующего их восстановления.
+\end_layout
+
+\begin_layout Example
+Записать в AX значение флага TF (8 бит) не изменяя другие биты.
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PUSHF
+\end_layout
+
+\begin_layout Plain Layout
+
+PUSHF
+\end_layout
+
+\begin_layout Plain Layout
+
+POP	AX
+\end_layout
+
+\begin_layout Plain Layout
+
+MOV	CL,	8
+\end_layout
+
+\begin_layout Plain Layout
+
+SHR	AX,	CL
+\end_layout
+
+\begin_layout Plain Layout
+
+AND	AX,	1b
+\end_layout
+
+\begin_layout Plain Layout
+
+POPF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Запись и чтение РОН
+\end_layout
+
+\begin_layout Standard
+Это команды:
+\end_layout
+
+\begin_layout LyX-Code
+PUSHA
+\end_layout
+
+\begin_layout LyX-Code
+POPA
+\end_layout
+
+\begin_layout Standard
+Первая записывает в стек значение всех РОН: AX, CX, DX, BX, SP, BP, SI,
+ DI в указанном порядке.
+ В SP записывается значение до выполнения этой команды.
+\end_layout
+
+\begin_layout Standard
+Команда POPA считывает из стека 8 слов и помещает их в регистры в обратной
+ последовательности.
+ После команды регистр SP указывает на состояние стека после этого считывания.
+ 
+\end_layout
+
+\begin_layout Standard
+Команды PUSHA и POPA предназначены для работы с процедурами: для сохранения
+ значений регистров при входе в процедуру и восстановления при выходе.
+\end_layout
+
+\begin_layout Subsection
+Некоторые приемы работы со стеком.
+\end_layout
+
+\begin_layout Subsubsection
+Сохранение регистров
+\end_layout
+
+\begin_layout Standard
+Часто при организации вложенных циклов с использованием LOOP требуется сохранять
+ значение регистра CX.
+ Это можно делать следующим образом:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+	PUSH	CX
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	CX,	N
+\end_layout
+
+\begin_layout Plain Layout
+
+L:	...
+\end_layout
+
+\begin_layout Plain Layout
+
+	LOOP	L
+\end_layout
+
+\begin_layout Plain Layout
+
+	POP CX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Пересылка данных через стек
+\end_layout
+
+\begin_layout Standard
+Можно сделать так:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PUSH	Y
+\end_layout
+
+\begin_layout Plain Layout
+
+POP	X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Проверка на выход за пределы стека
+\end_layout
+
+\begin_layout Standard
+Команды PUSH и POP не осуществляют проверку на выход за пределы сегмента
+ стека.
+ Если стек пуст, а мы читаем из стека ошибки не будет, но получим неопределенное
+ значение.
+ Аналогично при записи в стек, когда он уже исчерпан, мы можем получить
+ фатальный результат.
+ Проверку на границы стека можно сделать так: 
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SP = 0 ? - стек пуст?
+\end_layout
+
+\begin_layout Plain Layout
+
+SP = N ? - стек полон?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Очистка и восстановление стека
+\end_layout
+
+\begin_layout Standard
+Очистка стека от N слов осуществляется так:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ADD	SP,	2*N
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Часто стек используется для передачи данных (например в процедуры) или выполнени
+е некоторых промежуточных операций.
+ Тогда можно поступить так:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MOV	AX,	SP
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+ Работа со стеком
+\end_layout
+
+\begin_layout Plain Layout
+
+MOV	SP,	AX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Процедуры
+\end_layout
+
+\begin_layout Subsection
+Дальние переходы
+\end_layout
+
+\begin_layout Standard
+Если программа состоит из нескольких сегментов кода и необходимо передать
+ управление из одного сегмента в другой, то для этого нужно изменять не
+ только IP (что делает JMP), но и CS.
+\end_layout
+
+\begin_layout Example
+Дальний переход:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+C1	SEGMENT
+\end_layout
+
+\begin_layout Plain Layout
+
+	ASSUME	CS:C1
+\end_layout
+
+\begin_layout Plain Layout
+
+START:	MOV	AX,	0
+\end_layout
+
+\begin_layout Plain Layout
+
+	JMP	FAR	PTR L
+\end_layout
+
+\begin_layout Plain Layout
+
+C1	ENDS
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+C2	SEGMENT
+\end_layout
+
+\begin_layout Plain Layout
+
+	ASSUME	CS:C2
+\end_layout
+
+\begin_layout Plain Layout
+
+L:	INC	BX
+\end_layout
+
+\begin_layout Plain Layout
+
+C2	ENDS
+\end_layout
+
+\begin_layout Plain Layout
+
+	END	START
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В начале каждого сегмента связывается CS с сегментом кода.
+ Выполенеие команды перехода сводится к изменению адреса...
+ Пара регистров CS:IP задает смещение данного сегмента.
+ Изменение только IP означает переход внутри сегмента такие переходы называются
+ близкими или внутрисегментными.
+ При необходимости дальних переходов (из сегмента C1 на метку L из сегмента
+ C2) должны изменяться и CS и IP.
+ Дальние переходы только безусловные, прямые или косвенные.
+ В языке ассемблера эти команды имеют тот-же мнемокод JMP, но испорльзуют
+ другие типы операндов.
+\end_layout
+
+\begin_layout Subsubsection
+Дальний прямой переход
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	FAR	PTR <Метка>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Параметр FAR говорит о том, что метка находится в другом сегментекоманд.
+ По этой команде в CS мпомещается начало того сегмента, где эта метка находится,
+ а в IP --- смещение этой метки внутри данного сегмента.
+\end_layout
+
+\begin_layout Subsubsection
+Дальний косвенный переход
+\end_layout
+
+\begin_layout Standard
+Здесь указано поле памяти DD, в котором указан абсолютный адрес перехода
+ в виде пары SEG:OFS, записанной в перевернутом виде.
+ Если в команде указано имя X, которое описано до этой команды, то проблем
+ не возникает, если же X описано позже, тодля правильной обработки ссылки
+ вперед при дальнем косвенном переходе необходимо явно указать, что имя
+ обозначает двойное слово:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	DWORD	PTR X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Прямой близкий длинный:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Прямой близкий короткий:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	SHORT	X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Дальний прямой:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	FAR	PTR X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Близкий косвенный:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	WORD	PTR X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Дальний косвенный:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+JMP	DWORD	PTR X
 \end_layout
 
 \end_inset
