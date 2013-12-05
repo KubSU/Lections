@@ -266,13 +266,13 @@ theorems-starred
 
  
 \begin_inset FormulaMacro
-\newcommand{\ppr}{\pr\pr}
+\newcommand{\ppr}{''}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pppr}{\ppr\pr}
+\newcommand{\pppr}{'''}
 {\ppr\pr}
 \end_inset
 
@@ -25350,6 +25350,625 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3, О почленном дифференцировании функционального ряда
+\end_layout
+
+\end_inset
+
+Если ряд (1), где u_n(x) --- непрерывно дифферненцируемы на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, сходится к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, и ряд 
+\begin_inset Formula $\ous{i=1}nu_{n}\pr\left(x\right)$
+\end_inset
+
+ --- сходится равномерно на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то исходный ряд сходится равномерно на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, и выполняется следующее равенство: 
+\begin_inset Formula $S\pr\left(x\right)=\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $\delta\left(x\right)=\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+ --- сумма равномернго сходится на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ По 
+\emph on
+тоереме 2 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+\begin_inset Formula $\forall\left[x_{0};x\right]\subseteq\left[a;b\right]$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\oui{x_{0}}xS\left(x\right)dx=\oui{x_{0}}x\ous{n=1}{\b}u_{n}\pr\left(x\right)=\ous{n=1}{\b}\oui{x_{0}}xu_{n}\pr\left(x\right)=\ous{n=1}{\b}\left(u_{n}\left(x\right)-u_{n}\left(x_{0}\right)\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Пользуясь арифметическими свойствани сходящихся рядлв можно записать: 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{n=1}{\b}\left(u_{n}\left(x\right)-u_{n}\left(x_{0}\right)\right)=S\left(x\right)-S\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $u_{n}\pr\left(x\right)$
+\end_inset
+
+ --- непрерывны на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, и ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $\delta\left(x\right)$
+\end_inset
+
+ --- непрерывна на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По теореме о дифферернцируемости интеграла с переменным верхним пределом,
+ получаем слкдующее:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\oui{x_{0}}x\delta\left(t\right)dt\right)_{X}'=\delta\left(x\right)=S\pr\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Равномерная сходимость исходного ряда следует из 
+\emph on
+теоремы 2 
+\emph default
+при почеленом интегрировании ряда 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Степенные ряды
+\end_layout
+
+\begin_layout Subsubsection
+Понятие степенного ряда.
+ Теорема Абеля.
+\end_layout
+
+\begin_layout Standard
+Функциональный ряд вида: 
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}a_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{n},x_{0}\in R,\quad x\in R$
+\end_inset
+
+ называется степенным рядом по степени 
+\begin_inset Formula $\left(x-x_{0}\right)$
+\end_inset
+
+.
+ Заменой 
+\begin_inset Formula $X=x-x_{0}$
+\end_inset
+
+ ряд (1) можно привести к виду: 
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}a_{n}\um x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ряд (2) сходится в т.
+ 
+\begin_inset Formula $x=0\;\left(S_{n}(0)=a_{0}\ov{\st}{n\st\infty}a_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если ряд (2) сходится в точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, то этот же самый ряд (2) сходится абсолютно на интервале 
+\begin_inset Formula $\left(-\left|x_{1}\right|;\left|x_{1}\right|\right)$
+\end_inset
+
+ и равномрено на любом отрезке вида 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $\left|x_{1}\right|>q>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть ряд (2) сходится в точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, следовательно сходится числовой ряд: 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x_{1}^{n}$
+\end_inset
+
+, следовательно по необходимому при знаку сходимости числового ряда 
+\begin_inset Formula $\left\{ a_{n}x_{1}^{n}\right\} $
+\end_inset
+
+ --- ограничена:
+\begin_inset Formula 
+\[
+\exists M>0\quad\forall n\in N\quad\left|a_{n}x_{1}^{n}\right|\mr M
+\]
+
+\end_inset
+
+ Рассмотрим произвольную точку 
+\begin_inset Formula $x:\;\left|x\right|<\left|x_{1}\right|$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left|a_{n}x^{n}\right|=\left|\df x{x_{1}}\right|^{n}\um\left|a_{n}x_{1}^{n}\right|=\left\{ \begin{array}{c}
+\left|a_{n}x_{1}^{n}\right|\mr M\\
+\left|\df x{x_{1}}\right|^{n}\mr1
+\end{array}\right\} \mr M\um\left|\df x{x_{1}}\right|^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\ous{n=1}{\b}M\left|\df x{x_{1}}\right|^{n}=M\ous{n=1}{\b}\left|\df x{x_{1}}\right|^{n}$
+\end_inset
+
+ --- сходится, то по признаку сравнения исходный ряд сходится абсолютно
+ в точке 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\left|x\right|\mr q<\left|x_{1}\right|$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left|a_{n}x^{n}\right|=\left|\df x{x_{1}}\right|^{n}\um\left|a_{n}x_{1}^{n}\right|\mr\left|\df q{x_{1}}\right|^{n}\um M=b_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Следовательно 
+\begin_inset Formula $\ous{n=0}{\infty}b_{n}$
+\end_inset
+
+ --- сходящаяся мажоранта для (2), а тогда ряд(2) сходится равномерно на
+ 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие (1)
+\end_layout
+
+\begin_layout Standard
+Если степенной ряд (2) расходится в точке 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, то он расходится на множестве 
+\begin_inset Formula $\left|x\right|>\left|x_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+От противного: пусть ряд (2) расходится в точке 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, но не расходится на 
+\begin_inset Formula $\left|x\right|>\left|x_{2}\right|$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\exists x_{3}:\quad\left|x_{3}\right|>\left|x_{2}\right|,$
+\end_inset
+
+такая что ряд (2) сходится в точке 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, тогда по теореме Абеля ряд (2) сходится абсолютно на 
+\begin_inset Formula $\left(-\left|x_{3}\right|;\left|x_{3}\right|\right)$
+\end_inset
+
+, а значит и в точке 
+\begin_inset Formula $x_{2}\in\left(-\left|x_{3}\right|;\left|x_{3}\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Радиус сходимости степенного ряда.
+\end_layout
+
+\begin_layout Standard
+Из теоремы Абеля следует: если степенной ряд 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x^{n}$
+\end_inset
+
+ сходится в некоторой конечной точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и расходится в некоторой конечной точке 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\exists R>0$
+\end_inset
+
+, что ряд 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x^{n}$
+\end_inset
+
+ сходится в интервале 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+, называемом интервалом сходимости ряда (2) и расходится на множестве 
+\begin_inset Formula $\left(-\infty;-R\right)\ob\left(R;+\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В точках 
+\begin_inset Formula $\pm R$
+\end_inset
+
+ требуется дополнительное исследование.
+\end_layout
+
+\begin_layout Remark
+Если ряд (2) сходится только в точке 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для находжения радиуса сходимости степенного ряда можно использовать т еормеу
+ Коши или Даламбера
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\exists\ul{n\st\b}\left|\df{a_{n+1}}{a_{n}}\right|=L$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $u_{n}\left(x\right)=a_{n}x^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{n+1}\left(x\right)=a_{n+1}x^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ul{n\st\b}\left|\df{a_{n+1}\left(x\right)}{a_{n}\left(x\right)}\right|=\ul{n\st\b}\left|\df{a_{n+1}}{a_{n}}\right|\um\left|x\right|=L\left|x\right|<1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x\right|<\df 1L$
+\end_inset
+
+ --- область сходимости 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\df 1L=\ul{n\st\b}\left|\df{a_{n}}{a_{n+1}}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\exists\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{\left|u_{n}\left(x\right)\right|}=\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|\um\left|x\right|^{n}}=\left|x\right|\um\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|}=\left|x\right|L<1$
+\end_inset
+
+ --- область сходимости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|x\right|<\df 1L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\df 1L=\df 1{\left|x\right|\um\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Найти 
+\begin_inset Formula $R:\;\ous{n=0}{\infty}n!x^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решение.
+ По Даламберу:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $R=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\infty}\df{\left(x-3\right)^{n}}{n\um5^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Решение.
+ Обозначим 
+\begin_inset Formula $t=x-3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Получим 
+\begin_inset Formula $\ous{n=1}{\b}\df{t^{n}}{n\um5^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $R=\df 1{\ul{n\st\b}\sqrt[n]{\df 1{n5^{n}}}}=\left\{ \sqrt[n]{n}\st1\right\} =5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left(t\right)<5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $-5<x-3<5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $-2<x<8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим точку 
+\begin_inset Formula $x=-2,\ x=8$
+\end_inset
+
+ --- требуется дополнительное исследоватние 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=-2$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ получим числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{\left(-5\right)^{n}}{n\um5^{n}}=\ous{n=1}{\b}\df{\left(-1\right)^{n}}n$
+\end_inset
+
+ --- сходится знакочередующийся ряд (Лейбница)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=8$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{5^{n}}{n\um5^{n}}=\ous{n=1}{\b}\df 1n$
+\end_inset
+
+ --- нет сходимости
+\end_layout
+
+\begin_layout Example
+Итал, ряд сходится абсолютно на 
+\begin_inset Formula $\left(-2;8\right)$
+\end_inset
+
+.
+ Сходится на 
+\begin_inset Formula $[-2;8)$
+\end_inset
+
+, и будет равномерно сходится на 
+\begin_inset Formula $\forall\left[a;b\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $-2<a<b<8$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
