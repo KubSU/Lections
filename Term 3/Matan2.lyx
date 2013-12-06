@@ -5378,12 +5378,14 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0col%
-width "50col%"
+\begin_inset Float figure
+wide false
+sideways false
 status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -5408,6 +5410,10 @@ status collapsed
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -5429,7 +5435,7 @@ status collapsed
 \begin_inset Formula $\left(x,y_{0}\right)$
 \end_inset
 
- - функция одной переменной 
+ --- функция одной переменной 
 \begin_inset Formula $x$
 \end_inset
 
@@ -5437,10 +5443,18 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f_{x}\pr\left(x,y_{0}\right)=\ul{\D x\st0}\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}=\ul{\D x\st0}\df{g\left(x_{0}+\D x\right)-g\left(x_{0}\right)}{\D x}=g\pr\left(x_{0}\right)$
+\begin_inset Formula 
+\[
+f_{x}\pr\left(x,y_{0}\right)=\ul{\D x\st0}\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}=\ul{\D x\st0}\df{g\left(x_{0}+\D x\right)-g\left(x_{0}\right)}{\D x}=g\pr\left(x_{0}\right)
+\]
+
 \end_inset
 
- - тангенс угла наклона касательной к графику 
+
+\begin_inset Formula $g'\left(x_{0}\right)$
+\end_inset
+
+ --- тангенс угла наклона касательной к графику 
 \begin_inset Formula $u=f\left(x,y_{0}\right)$
 \end_inset
 
@@ -5489,8 +5503,13 @@ status collapsed
 \begin_inset Formula $M$
 \end_inset
 
- : 
-\begin_inset Formula $\D_{x_{i}}f\left(M\right)=f\left(x_{1},x_{2}\tr x_{i-1},x_{i}+\D x_{i},x_{i+1},\tr x_{m}\right)-f\left(x_{1},x_{2}\tr x_{i-1},x_{i},x_{i+1},\tr x_{m}\right),\ i=\overline{1,m}$
+: 
+\begin_inset Formula 
+\begin{multline*}
+\D_{x_{i}}f\left(M\right)=f\left(x_{1},x_{2}\tr x_{i-1},x_{i}+\D x_{i},x_{i+1},\tr x_{m}\right)-\\
+-f\left(x_{1},x_{2}\tr x_{i-1},x_{i},x_{i+1},\tr x_{m}\right),\quad i=\overline{1,m}
+\end{multline*}
+
 \end_inset
 
  
@@ -5538,28 +5557,27 @@ status collapsed
 \end_layout
 
 \begin_layout Example
-Найти частные производные.
-\end_layout
-
-\begin_layout Example
+Найти частные производные: 
 \begin_inset Formula $u=\arctg\df xy$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+u_{x}\pr=\left\{ y=const\right\} =\df 1{1+\left(\df xy\right)^{2}}\um\left(\df xy\right)_{x}\pr=\df y{y^{2}+x^{2}}
+\]
 
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr=\left\{ y=const\right\} =\df 1{1+\left(\df xy\right)^{2}}\um\left(\df xy\right)_{x}\pr=\df y{y^{2}+x^{2}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+u_{y}\pr=\left\{ x=const\right\} =\df 1{1+\left(\df xy\right)^{2}}\um\left(\df xy\right)_{x}\pr=-\df x{x^{2}-y^{2}}
+\]
 
-\begin_layout Example
-\begin_inset Formula $u_{y}\pr=\left\{ x=const\right\} =\df 1{1+\left(\df xy\right)^{2}}\um\left(\df xy\right)_{x}\pr=-\df x{x^{2}-y^{2}}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout --Separator--
@@ -5567,28 +5585,32 @@ status collapsed
 \end_layout
 
 \begin_layout Example
+Найти частные производные: 
 \begin_inset Formula $u=x\um\sin\left(y\um z\right)+\ln\left(x+y-z\right)$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+u_{x}\pr=\left\{ z,y=const\right\} =\sin\left(y\um x\right)+\df 1{x+y-z}
+\]
 
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr=\left\{ z,y=const\right\} =\sin\left(y\um x\right)+\df 1{x+y-z}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+u_{y}\pr=x\um\cos\left(y\um z\right)\um z+\df 1{x+y-z}
+\]
 
-\begin_layout Example
-\begin_inset Formula $u_{y}\pr=x\um\cos\left(y\um z\right)\um z+\df 1{x+y-z}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+u_{z}\pr=x\um\cos\left(y\um z\right)\um y-\df 1{x+y-z}
+\]
 
-\begin_layout Example
-\begin_inset Formula $u_{z}\pr=x\um\cos\left(y\um z\right)\um y-\df 1{x+y-z}$
 \end_inset
 
 
@@ -5604,24 +5626,37 @@ status collapsed
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+Найти частные производные: 
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\begin{cases}
 \df{x\um y}{x^{2}+y^{2}} & ,\left(x,y\right)\nr\vec 0\\
 0 & ,\left(x,y\right)=\vec 0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{x}\pr\left(0,0\right)=\ul{\D x\st0}\df{f\left(\D x,0\right)-f\left(0,0\right)}{\D x}=\ul{\D x\st0}\df 0{\D x}=0$
+\begin_inset Formula 
+\[
+f_{x}\pr\left(0,0\right)=\ul{\D x\st0}\df{f\left(\D x,0\right)-f\left(0,0\right)}{\D x}=\ul{\D x\st0}\df 0{\D x}=0
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{y}\pr\left(0,0\right)=\ul{\D y\st0}\df{f\left(0,\D y\right)-f\left(0,0\right)}{\D y}=\tr=0$
+\begin_inset Formula 
+\[
+f_{y}\pr\left(0,0\right)=\ul{\D y\st0}\df{f\left(0,\D y\right)-f\left(0,0\right)}{\D y}=\tr=0
+\]
+
 \end_inset
 
 
@@ -5681,7 +5716,11 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\D u=\D f=f\left(x_{1}+\D x_{1},x_{2}+\D x_{2},\tr,x_{m}+\D x_{m}\right)-f\left(x_{1}\tr x_{m}\right)$
+\begin_inset Formula 
+\[
+\D u=\D f=f\left(x_{1}+\D x_{1},x_{2}+\D x_{2},\tr,x_{m}+\D x_{m}\right)-f\left(x_{1}\tr x_{m}\right)
+\]
+
 \end_inset
 
  
@@ -5690,7 +5729,18 @@ status collapsed
 \begin_layout Definition
 
 \emph on
-(1) 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+1
+\end_layout
+
+\end_inset
+
+ 
 \emph default
 Функция 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
@@ -5712,16 +5762,15 @@ status collapsed
 
 \end_inset
 
-, где 
+Где 
 \begin_inset Formula $\alpha_{i}\left(\D x_{1},\tr,\D x_{m}\right)$
 \end_inset
 
- - величина бесконечно малая при 
-\begin_inset Formula $\begin{array}{c}
-\D x_{1}\st0\\
+ --- величина бесконечно малая при 
+\begin_inset Formula $\begin{smallmatrix}\Delta x_{1}\st0\\
 \tr\\
-\D x_{m}\st0
-\end{array}$
+\Delta x_{m}\st0
+\end{smallmatrix}$
 \end_inset
 
 .
@@ -5738,9 +5787,20 @@ status collapsed
 \begin_layout Definition
 
 \emph on
-(2)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+2
+\end_layout
+
+\end_inset
+
+
 \emph default
- Функция 
+Функция 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
@@ -5748,7 +5808,7 @@ status collapsed
 \begin_inset Formula $M\left(x_{1}\tr x_{m}\right)$
 \end_inset
 
-если имеет место представление 
+, если имеет место представление: 
 \begin_inset Formula 
 \begin{equation}
 \D u=A_{1}\D x_{1}+\tr+A_{m}\D x_{m}+o\left(\rho\right)\label{eq:9}
@@ -5764,30 +5824,26 @@ status collapsed
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
- 
+Докажем в обе стороны:
 \end_layout
 
-\begin_layout Proof
-\begin_inset Formula $\left(\sl\right)$
-\end_inset
-
- 
+\begin_deeper
+\begin_layout Enumerate
+Определение (1) эквивалентно (2): 
 \end_layout
 
+\end_deeper
 \begin_layout Proof
 \begin_inset Formula 
-\begin{alignat*}{1}
-\left|\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\right| & \mr\\
- & \mr\left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho=\\
+\begin{align*}
+\left|\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\right|\mr\\
+\mr\left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho & =\\
  & =\left\{ \begin{array}{c}
 \df{\left|\D x_{i}\right|}{\rho}\mr1,\ i=\overline{1,m}\ -\ \text{ограниченая}\\
 \left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\st0
 \end{array}\right\} =\\
  & =\gamma\left(\rho\right)\um\rho
-\end{alignat*}
+\end{align*}
 
 \end_inset
 
