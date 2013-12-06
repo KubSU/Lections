@@ -6277,10 +6277,7 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Докажем дифференцируемость функции 
+ Докажем дифференцируемость функции 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
@@ -6309,53 +6306,104 @@ status open
 \begin_inset Formula $P\left(x_{0}+\D x,y_{0}\right)$
 \end_inset
 
-.
+, тогда приращение:
 \end_layout
 
 \begin_layout Proof
-Приращение 
 \begin_inset Formula 
-\begin{eqnarray*}
-\D u & = & f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=\\
- & = & \left(f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)\right)+\left(f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)\right)=\\
- & = & \left\{ \begin{array}{c}
-g\left(t\right)=f\left(x_{0}+\D x,t\right)\\
-f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)=\\
-=g\left(y_{0}+\D y\right)-g\left(y_{0}\right)=\\
-=\left\{ \text{по теореме Логранжа}\right\} =\\
-=g\pr\left(y_{0}+\Theta_{1}\um\D y\right)\um\D y,\ \Theta_{1}\in\left(0,1\right)=\\
-=f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y\\
-\text{Аналогично }\exists\Theta_{2}\in\left(0,1\right),\ \text{такая что}\\
-f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)=\\
-=f_{x}\pr\left(x_{0}+\Theta_{2}\D x_{1},y_{0}\right)\um\D x
-\end{array}\right\} =\\
- & = & f_{x}\pr\left(x_{0}+\Theta_{2}\um\D x,y_{0}\right)\um\D x+f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y=\\
- & = & \left\{ \begin{array}{c}
-\text{Так как \ensuremath{f_{x}\pr}и \ensuremath{f_{y}\pr}непрерывны в точке \ensuremath{M}, то}\\
-\text{по теореме о представлении непрерывной функции}\\
-f_{x}\pr\left(x_{0}+\Theta_{2}\um\D x,y_{0}\right)=f_{x}\pr\left(x_{0},y_{0}\right)+\alpha\\
-f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{y}\pr\left(x_{0},y_{0}\right)+\beta\\
-\text{где}\ \alpha,\beta\overset{\begin{array}{c}
-\D x\st0\\
-\D y\st0
-\end{array}}{\st}0
-\end{array}\right\} =\\
- & = & \left(f_{x}\pr\left(x_{0},y_{0}\right)+\alpha\right)\um\D x+\left(f_{y}\pr\left(x_{0},y_{0}\right)+\beta\right)\um\D y=\\
- & = & f_{x}\pr\left(M\right)\um\D x+f_{y}\pr\left(M\right)\um\D y+\alpha\um\D x+\beta\um\D y
-\end{eqnarray*}
+\begin{multline*}
+\D u=f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=\\
+=\left(f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)\right)+\left(f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)\right)
+\end{multline*}
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
+Обозначим за 
+\begin_inset Formula $g\left(t\right)=f\left(x_{0}+\D x,t\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Рекорд: Самый большой уравнение Васья!
+, тогда
+\begin_inset Formula 
+\[
+f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)=g\left(y_{0}+\D y\right)-g\left(y_{0}\right)
+\]
+
+\end_inset
+
+По теореме Лагранжа: 
+\begin_inset Formula $\exists\Theta_{1}\in\left(0,1\right)\quad g\pr\left(y_{0}+\Theta_{1}\um\D y\right)\um\D y$
+\end_inset
+
+, а тогда:
+\begin_inset Formula 
+\[
+f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y
+\]
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Proof
+Аналогично:
+\begin_inset Formula $\exists\Theta_{2}\in\left(0,1\right):\quad f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)=f_{x}\pr\left(x_{0}+\Theta_{2}\D x_{1},y_{0}\right)\um\D x$
+\end_inset
+
+, тогда выражение преобразуется в: 
+\begin_inset Formula 
+\[
+f_{x}\pr\left(x_{0}+\Theta_{2}\um\D x,y_{0}\right)\um\D x+f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $f_{x}'$
+\end_inset
+
+ и 
+\begin_inset Formula $f{}_{y}'$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $M$
+\end_inset
+
+, то по теореме о представлении непрерывной функции:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\begin{aligned}f_{x}\pr\left(x_{0}+\Theta_{2}\um\D x,y_{0}\right)=f_{x}\pr\left(x_{0},y_{0}\right)+\alpha\\
+f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{y}\pr\left(x_{0},y_{0}\right)+\beta
+\end{aligned}
+\qquad\alpha,\beta\ov{\st}{\begin{smallmatrix}\Delta x\st0\\
+\Delta y\st0
+\end{smallmatrix}}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда выражение преобразуется в:
+\begin_inset Formula 
+\begin{multline*}
+\left(f_{x}\pr\left(x_{0},y_{0}\right)+\alpha\right)\um\D x+\left(f_{y}\pr\left(x_{0},y_{0}\right)+\beta\right)\um\D y=\\
+=f_{x}\pr\left(M\right)\um\D x+f_{y}\pr\left(M\right)\um\D y+\alpha\um\D x+\beta\um\D y
+\end{multline*}
 
 \end_inset
 
