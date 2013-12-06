@@ -5832,18 +5832,16 @@ status open
 Определение (1) эквивалентно (2): 
 \end_layout
 
-\end_deeper
-\begin_layout Proof
+\begin_deeper
+\begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{multline*}
 \left|\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}\right|\mr\\
-\mr\left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho & =\\
- & =\left\{ \begin{array}{c}
-\df{\left|\D x_{i}\right|}{\rho}\mr1,\ i=\overline{1,m}\ -\ \text{ограниченая}\\
+\qquad\qquad\mr\left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\um\rho\\
+=\left|\begin{smallmatrix}\df{\left|\D x_{i}\right|}{\rho}\mr1,\ i=\overline{1,m}\ -\ \text{ограниченая}\\
 \left(\left|\alpha_{1}\right|\um\df{\left|\D x_{1}\right|}{\rho}+\left|\alpha_{2}\right|\um\df{\left|\D x_{2}\right|}{\rho}+\tr+\left|\alpha_{m}\right|\um\df{\left|\D x_{m}\right|}{\rho}\right)\st0
-\end{array}\right\} =\\
- & =\gamma\left(\rho\right)\um\rho
-\end{align*}
+\end{smallmatrix}\right|=\gamma\left(\rho\right)\um\rho
+\end{multline*}
 
 \end_inset
 
@@ -5858,34 +5856,41 @@ status open
 .
 \end_layout
 
-\begin_layout Proof
-\begin_inset Formula $\left(\Longleftarrow\right)$
-\end_inset
-
-
+\end_deeper
+\begin_layout Enumerate
+Определение (2) эквивалентно (1):
 \end_layout
 
-\begin_layout Proof
+\begin_deeper
+\begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df{o\left(\rho\right)}{\rho}\um\df{\D x_{1}^{2}+\tr+\D x_{m}^{2}}{\rho}=\\
- & = & \left(\df{o\left(\rho\right)}{\rho}\um\df{\D x_{1}}{\rho}\right)\um\D x_{1}+\tr+\left(\df{o\left(\rho\right)}{\rho}\um\df{\D x_{m}}{\rho}\right)\um\D x_{m}=\\
- & = & \left\{ \begin{array}{c}
+\begin{multline*}
+o\left(\rho\right)=\df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df{o\left(\rho\right)}{\rho}\um\df{\D x_{1}^{2}+\tr+\D x_{m}^{2}}{\rho}=\\
+\qquad=\left(\df{o\left(\rho\right)}{\rho}\um\df{\D x_{1}}{\rho}\right)\um\D x_{1}+\tr+\left(\df{o\left(\rho\right)}{\rho}\um\df{\D x_{m}}{\rho}\right)\um\D x_{m}=\\
+=\left|\begin{array}{c}
 \df{o\left(\rho\right)}{\rho}\ -\ \text{бесконечно малая}\\
 \df{\D x_{1}}{\rho}\mr1\ -\ \text{ограниченая}
-\end{array}\right\} =\\
- & = & \alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m},\ \text{где}\ \alpha_{i}\left(\D x_{1}\tr\D x_{m}\right)\st0\ \text{при}\ \begin{array}{c}
-\D x_{1}\st0\\
-\tr\\
-\D x_{m}\st0
-\end{array}
-\end{eqnarray*}
+\end{array}\right|=\alpha_{1}\D x_{1}+\tr+\alpha_{m}\D x_{m}
+\end{multline*}
 
 \end_inset
 
+Где 
+\begin_inset Formula $\alpha_{i}\left(\D x_{1}\tr\D x_{m}\right)\st0$
+\end_inset
 
+ при 
+\begin_inset Formula $\begin{smallmatrix}\Delta x_{1}\st0\\
+\tr\\
+\Delta x_{m}\st0
+\end{smallmatrix}$
+\end_inset
+
+.
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Definition
 Сумма 
 \begin_inset Formula $A_{1}\D x_{1}+\tr+A_{n}\D x_{n}$
@@ -5907,10 +5912,15 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \end_layout
 
 \begin_layout Theorem
-(1) 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Если функция 
 \begin_inset Formula $u=f\left(x_{1}\tr x_{m}\right)$
 \end_inset
@@ -5931,22 +5941,27 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \begin_inset Formula $\D_{x_{i}}u\left(M\right)$
 \end_inset
 
- :
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D_{x_{i}}u\left(M\right)=\left\{ \begin{array}{c}
+:
+\begin_inset Formula 
+\[
+\D_{x_{i}}u\left(M\right)=\left|\begin{array}{c}
 \ref{eq:8}\\
 \D x_{i}\nr0\\
 \D x_{k}=0,\ k\nr i
-\end{array}\right\} =A_{i}\D x_{i}+\alpha_{i}\D x_{i},\ i=\overline{1,m}$
+\end{array}\right|=A_{i}\D x_{i}+\alpha_{i}\D x_{i},\quad i=\overline{1,m}
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\ul{\D x_{i}\st0}\df{\D_{x_{i}}u}{\D x_{i}}=\ul{\D x_{i}\st0}\left(A_{i}+\alpha_{i}\right)=A_{i}=\df{\dd f\left(M\right)}{\dd x_{i}}$
+\begin_inset Formula 
+\[
+\ul{\D x_{i}\st0}\df{\D_{x_{i}}u}{\D x_{i}}=\ul{\D x_{i}\st0}\left(A_{i}+\alpha_{i}\right)=A_{i}=\df{\dd f\left(M\right)}{\dd x_{i}}
+\]
+
 \end_inset
 
  
@@ -5968,9 +5983,6 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \end_inset
 
  можно записать в виде:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \D u=\ous{i=1}mf_{x_{i}}^{\left(M\right)}\D x_{i}+o\left(\rho\right)\label{eq:10}
@@ -6002,11 +6014,14 @@ o\left(\rho\right) & = & \df{o\left(\rho\right)}{\rho}\um\df{\rho^{2}}{\rho}=\df
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\ul{\begin{array}{c}
-\D x_{1}\st0\\
+\begin_inset Formula 
+\[
+\ul{\begin{smallmatrix}\Delta x_{1}\st0\\
 \tr\\
-\D x_{m}\st0
-\end{array}}=\left\{ \ref{eq:10}\right\} =0$
+\Delta x_{2}\st0
+\end{smallmatrix}}=\left|\ref{eq:10}\right|=0
+\]
+
 \end_inset
 
 
@@ -6081,8 +6096,8 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
-Докажем, что из дифференцируемости функции 
+\begin_layout Claim
+Из дифференцируемости функции 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
@@ -6099,13 +6114,6 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Proof
@@ -6126,26 +6134,24 @@ status open
 \end_inset
 
 .
-\end_layout
+ Обозначим:
+\begin_inset Formula 
+\[
+\D x=x-x_{0},\quad\D y=y-y_{0},\quad\D u=f\left(x,y\right)-f\left(x_{0},y_{0}\right)
+\]
 
-\begin_layout Proof
-Обозначим 
-\begin_inset Formula $\D x=x-x_{0},\ \D y=y-y_{0},\ \D u=f\left(x,y\right)-f\left(x_{0},y_{0}\right)$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
 Условие дифференцируемости в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
  дает следующее:
-\end_layout
+\begin_inset Formula 
+\[
+\D u=u-u_{0}=A\left(x-x_{0}\right)+B\left(y-y_{0}\right)+o\left(\rho\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\D u=u-u_{0}=A\left(x-x_{0}\right)+B\left(y-y_{0}\right)+o\left(\rho\right)$
 \end_inset
 
 
@@ -6156,20 +6162,23 @@ status open
 \begin_inset Formula $u-u_{0}=A\left(x-x_{0}\right)+B\left(y-y_{0}\right)$
 \end_inset
 
- - уравнение плоскости в пространстве 
+ --- уравнение плоскости в пространстве 
 \begin_inset Formula $E^{3}$
 \end_inset
 
  с нормальным вектором 
-\begin_inset Formula $\vec n=\left(A,B,-1\right)\ \left(\bot\vec a\left(x-x_{0},y-y_{0},u-u_{0}\right)=\vec{NN_{0}}\right)$
+\begin_inset Formula $\vec n=\left(A,B,-1\right)$
 \end_inset
 
-.
- Точка 
+ 
+\begin_inset Formula $\left(\bot\vec a\left(x-x_{0},y-y_{0},u-u_{0}\right)=\vec{NN_{0}}\right)$
+\end_inset
+
+Точка 
 \begin_inset Formula $N$
 \end_inset
 
- - это пересечение 
+ --- пересечение 
 \begin_inset Formula $M_{1}N_{1}$
 \end_inset
 
@@ -6192,14 +6201,6 @@ status open
 .
 \end_layout
 
-\begin_deeper
-\begin_layout Proof
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
 \begin_layout Proof
 Для этого достаточно доказать что угол 
 \begin_inset Formula $\varphi=\widehat{\left(\vec n,\vec{N_{0}N}\right)}$
@@ -6218,27 +6219,21 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|\cos\varphi\right| & = & \df{\left|\left(\vec n,\vec{N_{0}N_{1}}\right)\right|}{\left|\vec n\right|\um\left|\vec{N_{0}N_{1}}\right|}=\\
- & = & \df{\left|A\um\D x+B\um\D y-\D u\right|}{\sqrt{A^{2}+B^{2}+1}\um\sqrt{\D x^{2}+\D y^{2}+\D u^{2}}}\mr\\
- & \mr & \left\{ \begin{array}{c}
-\sqrt{A^{2}+B^{2}+1}\ -\ \text{ограниченая и }\br1\\
+\begin{multline*}
+\left|\cos\varphi\right|=\df{\left|\left(\vec n,\vec{N_{0}N_{1}}\right)\right|}{\left|\vec n\right|\um\left|\vec{N_{0}N_{1}}\right|}=\df{\left|A\um\D x+B\um\D y-\D u\right|}{\sqrt{A^{2}+B^{2}+1}\um\sqrt{\D x^{2}+\D y^{2}+\D u^{2}}}\mr\\
+\mr\left|\begin{array}{c}
+\sqrt{A^{2}+B^{2}+1}\ \text{--- ограниченая и }\br1\\
 \sqrt{\D x^{2}+\D y^{2}+\D u^{2}}\br\rho\\
 \left|A\um\D x+B\um\D y-\D u\right|=o\left(\rho\right)
-\end{array}\right\} \mr\\
- & \mr & \left|\df{o\left(\rho\right)}{\rho}\right|\overset{\rho\st0}{\st}0
-\end{eqnarray*}
+\end{array}\right|\mr\left|\df{o\left(\rho\right)}{\rho}\right|\overset{\rho\st0}{\st}0
+\end{multline*}
 
 \end_inset
 
 
 \end_layout
 
-\end_deeper
 \begin_layout Subsubsection
 Достаточное условие дифференцируемости функции в точке
 \end_layout
