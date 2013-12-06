@@ -369,6 +369,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -10863,7 +10869,7 @@ y_{n}\left(x\right)
 \begin_layout Standard
 \begin_inset Formula $A=\left(\begin{array}{ccc}
 a_{11} & \tr & a_{1n}\\
-\vtr & \tr & \vtr\\
+\vtr & \ddots & \vtr\\
 a_{n1} & \tr & a_{nn}
 \end{array}\right)$
 \end_inset
@@ -10872,7 +10878,11 @@ a_{n1} & \tr & a_{nn}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\df{dy}{dx}=Ay$
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=A\um y\label{eq:m1}
+\end{equation}
+
 \end_inset
 
  
@@ -10963,7 +10973,7 @@ a_{n1} & \tr & a_{nn}
 
 \begin_layout Definition
 Матрица 
-\begin_inset Formula $\un A{nxn}$
+\begin_inset Formula $\un A{n\x n}$
 \end_inset
 
  называется матрицей простой структуры, если у нее есть 
@@ -10972,6 +10982,795 @@ a_{n1} & \tr & a_{nn}
 
  линейно независимых собственных векторов.
  (мы можем выбрать безис из линейно независимых собственных векторов).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О представления общего решения системы с матрице простой структуры
+\end_layout
+
+\end_inset
+
+Пусть матрица 
+\begin_inset Formula $\un A{n\x n}$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+) --- матрица простой структуры, а 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(n\right)}$
+\end_inset
+
+ --- линейно независимые собственные вектора матрици 
+\begin_inset Formula $\un A{n\x n}$
+\end_inset
+
+, соотвесттвующие собственным значениям 
+\begin_inset Formula $\lambda_{1},\tr,\lambda_{n}$
+\end_inset
+
+.
+ Обозначим через 
+\begin_inset Formula $y^{\left(k\right)}\left(x\right)=h^{\left(k\right)}e^{\lambda_{k}x},\ k=\overline{1,n}$
+\end_inset
+
+, тогда венктор функция 
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=c_{1}y^{\left(1\right)}+\tr+c_{n}y^{\left(n\right)}\label{eq:m2}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $c_{1},\tr,c_{n}$
+\end_inset
+
+ --- постоянные, является решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+) и любое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+) представимо в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ --- какое-то собственное значение матрици 
+\begin_inset Formula $\un A{n\x n}$
+\end_inset
+
+, а 
+\begin_inset Formula $h$
+\end_inset
+
+ --- соответствующий собственный вектор.
+ Покажем, что 
+\begin_inset Formula $y\left(x\right)=he^{\lambda x}$
+\end_inset
+
+ будет решщением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Proof
+Подставим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{dy}{dx}-Ay=h\lambda e^{\lambda x}-Ahe^{\lambda x}=h\lambda e^{\lambda x}-\lambda he^{\lambda x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда вектор функции 
+\begin_inset Formula $y^{\left(k\right)}\left(x\right)=h^{\left(k\right)}e^{\lambda k},\ k=\overline{1,n}$
+\end_inset
+
+ ьудут решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+) и по 
+\emph on
+Теореме 1
+\emph default
+ 
+\emph on
+(О свойствах решений линейных однородных систем)
+\emph default
+ вектор-функция (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m2"
+
+\end_inset
+
+) будет решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Докажем что любое решение можно так представить.
+\end_layout
+
+\begin_layout Proof
+Пусть вектор-функция 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ --- какое-то решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+).
+ Можем считать, что оно определено для всех 
+\begin_inset Formula $x\in\left(-\b;+\b\right)$
+\end_inset
+
+, в часности, определено и в точке 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как собственные вектора 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(n\right)}$
+\end_inset
+
+ линейно не зависимы, то они образуют базис в 
+\begin_inset Formula $n$
+\end_inset
+
+-мерном пространстве.
+ Разложим ветор 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+ по этому базису, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi\left(0\right)=c_{1}h^{\left(1\right)}+\tr+c_{n}h^{\left(n\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+С помощью постоянных 
+\begin_inset Formula $c_{1},\tr,c_{n}$
+\end_inset
+
+ построим вектор функцию 
+\begin_inset Formula $y\left(x\right)=c_{1}y^{\left(1\right)}\left(x\right)+\tr+c_{n}y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ .
+ ПО той-же 
+\emph on
+Tеореме 1
+\emph default
+ эта функция будет решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Заметим, что 
+\begin_inset Formula $y^{\left(k\right)}\left(0\right)=h^{\left(k\right)},\ k=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+тогда 
+\begin_inset Formula $y\left(0\right)=c_{1}h^{\left(1\right)}+\tr+c_{n}h^{\left(n\right)}=\varphi\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тоесть имеется 2 решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+) : 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+, удовлетворяющие одномуц и тому-же началльномц условию, а тогда в силу
+ 
+\emph on
+теоремы существования и единственности для линейных систем
+\emph default
+, получим, что они совподают тождественно.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi\left(x\right)\equiv y\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть матрица 
+\begin_inset Formula $\un A{n\x n}$
+\end_inset
+
+ --- вещественная простой структуры.
+ В общем случае могут быть как вещественные, так и комплексные собстыенные
+ числа.
+\end_layout
+
+\begin_layout Standard
+Тогда выберем собственные вектора 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(n\right)}$
+\end_inset
+
+ так, чтобы вектора соответствущие вещественным собственным значениям были
+ вещественные, а вектора, соответствующие комплексно-сопряженным собственным
+ значениям были бы комплексно-сопряженными.
+\end_layout
+
+\begin_layout Standard
+Тогда получим,, что решения 
+\begin_inset Formula $y^{\left(k\right)}\left(x\right),\ k=\overline{1,n}$
+\end_inset
+
+ соответствующие вещесттвенным вещественным собственным значениям будут
+ вещественными, а решения соответствующие комплексно-сопряженным собственным
+ значениям будут комплексно-сопряженными.
+\end_layout
+
+\begin_layout Claim
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О вещественности общего решения матрици простой структуры
+\end_layout
+
+\end_inset
+
+Решения вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m2"
+
+\end_inset
+
+) системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+) будет вещественным тогда и только тогда, когда постоянные 
+\begin_inset Formula $c_{1},\tr,c_{n}$
+\end_inset
+
+, стоящие при вещественных решениях
+\begin_inset Formula $y^{\left(k\right)}\left(x\right),\ k=\overline{1,n}$
+\end_inset
+
+ вещественные, а постоянные, стоящие при комплексно сопрященных комплексно
+ сопряженные.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\overline{y^{\left(1\right)}}\left(x\right)=y^{\left(2\right)}\left(x\right),\tr,\overline{y^{\left(2l-1\right)}}\left(x\right)=y^{\left(2l\right)}\left(x\right)$
+\end_inset
+
+ (комплексные) 
+\end_layout
+
+\begin_layout Proof
+и 
+\begin_inset Formula $\overline{y^{\left(2l+1\right)}}\left(x\right)=y^{\left(2l+1\right)}\left(x\right),\tr,\overline{y^{\left(n\right)}}\left(x\right)=y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ (вещественные).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Эти условия обозначим ex:m3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда запишем решения вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m2"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+y\left(x\right)=c_{1}y^{\left(1\right)}\left(x\right)+c_{2}y^{\left(2\right)}\left(x\right)+\tr+c_{2l-1}y^{\left(2l-1\right)}+c_{2l}y^{\left(2l\right)}\left(x\right)+\tr+c_{n}y^{\left(n\right)}\left(x\right)\label{eq:m4}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $c_{1},\tr,c_{n}$
+\end_inset
+
+ --- некоторые постоянные.
+\end_layout
+
+\begin_layout Proof
+Тогда в силу (m3):
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\overline{y}\left(x\right)=\overline{c_{1}}y^{\left(2\right)}\left(x\right)+\overline{c_{2}}y^{\left(1\right)}+\tr+\overline{c_{2l-1}}y^{\left(2l\right)}\left(x\right)+\overline{c_{2l}}y^{\left(2l-1\right)}\left(x\right)+\overline{c_{2l+1}}y^{\left(2l+1\right)}+\tr+\overline{c_{n}}y^{\left(n\right)}\left(x\right)\label{eq:m5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если теперь константы, стоящие при комплексно-сопряженных решениях -- комплексно
+-сопрященные, а при вещественны --- вещественные (Тоесть 
+\begin_inset Formula $\overline{c_{1}}=c_{2},\tr,\overline{c_{2l-1}}=c_{2l}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overline{c_{2l+1}}=c_{2l+1},\tr,\overline{c_{n}}=c_{n}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Обозначим их ex:m6
+\end_layout
+
+\end_inset
+
+) то мы получим, что 
+\begin_inset Formula $\overline{y}\left(x\right)=y\left(x\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+А от сюда и следует, что 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ --- вешественная.
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+Обратно:
+\end_layout
+
+\begin_layout Proof
+Пусть решения 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m4"
+
+\end_inset
+
+) --- вешественное.
+ Тогда 
+\begin_inset Formula $\overline{y}\left(x\right)=y\left(x\right)$
+\end_inset
+
+.
+ И вычитая из (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m4"
+
+\end_inset
+
+) (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m5"
+
+\end_inset
+
+) получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & \equiv & \left(c_{1}-\overline{c_{2}}\right)y^{\left(1\right)}\left(x\right)+\left(c_{2}-\overline{c_{1}}\right)y^{\left(2\right)}\left(x\right)+\tr+\left(c_{2l-1}-\overline{c_{2l}}\right)y^{\left(2l-1\right)}\left(x\right)+\left(c_{2l}-\overline{c_{2l-1}}\right)y^{\left(2l\right)}\left(x\right)+\\
+ & + & \left(c_{2l+1}-\overline{c_{2l+1}}\right)y^{\left(2l+1\right)}\left(x\right)+\tr+\left(c_{n}-\overline{c_{n}}\right)y^{\left(n\right)}\left(x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как вектор-функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ линейно не зависимы (Следует из тоого, что определитель Вронского в точке
+ 0 н6е равен нулю (столбцами его будут вектора 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(n\right)}$
+\end_inset
+
+)), то их линейная комбинация может быть равна нулю может быть только если
+ все множители, стоящие перед ними равны нулю, следовательно верно (m6).
+\end_layout
+
+\begin_layout Standard
+Из доказанного утверждения следует, что: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\alpha_{1}+i\alpha_{2}\right)\left(u\left(x\right)-iv\left(x\right)\right)+\left(\alpha_{1}-i\alpha_{2}\right)\left(u\left(x\right)-iv\left(x\right)\right)=2\alpha_{1}u\left(x\right)-2\alpha_{2}v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Каждая из пар (Смотреть (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m5"
+
+\end_inset
+
+)) привратится в линейную комбинацию с произвольными постоянными вещественным
+ и мниной части.
+ Поэтому, чтобы построить общее вещественное решение в случае вещественной
+ матрици 
+\begin_inset Formula $\un A{n\x n}$
+\end_inset
+
+ простой структуры нужно при каждом вещественном рещшении 
+\begin_inset Formula $y^{\left(k\right)}\left(x\right)$
+\end_inset
+
+ поставить произвольную вещественную постояннную, а для каждой пары комплексно-с
+опряженных решений взять линейную комбинацию их вещественной и мнимой частей.
+\end_layout
+
+\begin_layout Standard
+Таким обзазом для матриц простой структуры мы показали как найти решения.
+ Теперь переходим к общему случаю.
+\end_layout
+
+\begin_layout Definition
+Вектора 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(k\right)}$
+\end_inset
+
+ называют Жордановой цепочкой, соответствующею собственным значенияь 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, если:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\begin{array}{c}
+Ah^{\left(1\right)}=\lambda h^{\left(1\right)}\\
+Ah^{\left(2\right)}=\lambda h^{\left(2\right)}+h^{\left(1\right)}\\
+\vtr\\
+Ah^{\left(k\right)}+h^{\left(k-1\right)}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\left(\begin{array}{ccccc}
+\lambda & 1 & 0 & \tr & 0\\
+0 & \lambda & 1 & \tr & 0\\
+\vtr & \vtr & \vtr & \ddots & \vtr\\
+0 & 0 & 0 & \tr & \lambda
+\end{array}\right)$
+\end_inset
+
+ --- Жордановый блок
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Тогда любая квадратная матрица А может быть приведена к Жордановой форме,
+ тоесть найдется невырожденная матрица 
+\begin_inset Formula $T$
+\end_inset
+
+, такая что 
+\begin_inset Formula $T^{-1}AT=\left(\begin{array}{cccc}
+J_{1} & 0 & 0 & 0\\
+0 & J_{2} & 0 & 0\\
+0 & 0 & \ddots & 0\\
+0 & 0 & 0 & J_{S}
+\end{array}\right),$
+\end_inset
+
+где 
+\begin_inset Formula $J_{1},\tr,J_{S}$
+\end_inset
+
+ --- Дордановы блоки.
+ 
+\begin_inset Formula $J_{l}=\left(\begin{array}{ccccc}
+\lambda_{l} & 1 & 0 & \tr & 0\\
+0 & \lambda_{l} & 1 & \tr & 0\\
+\vtr & \vtr & \vtr & \ddots & \vtr\\
+0 & 0 & 0 & \tr & \lambda_{l}
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l=\overline{1,S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ --- размер первого Жордановогог блока
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ h^{\left(1\right)}\tr h^{\left(k_{1}\right)}\right\} ,\left\{ k^{\left(k_{1}\right)}\tr h^{\left(k_{1}+k_{2}\right)}\right\} ,\tr,\left\{ h^{\left(k_{1}+k_{2}+\tr+k_{S}+1\right)}\tr h^{\left(n\right)}\right\} $
+\end_inset
+
+ --- базис на основе собственным и присоедененных векторов.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(k\right)}$
+\end_inset
+
+ --- Жорданова цепочка, соотвенствующая собственному значению 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, тоесть выполнены 
+\begin_inset Formula $\begin{array}{c}
+Ah^{\left(1\right)}=\lambda h^{\left(1\right)}\\
+Ah^{\left(2\right)}=\lambda h^{\left(2\right)}+h^{\left(1\right)}\\
+\vtr\\
+Ah^{\left(k\right)}+h^{\left(k-1\right)}
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Построим вектор-функции 
+\begin_inset Formula $\omega^{\left(1\right)}\left(x\right)=h^{\left(1\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\omega^{\left(2\right)}\left(x\right)=xh^{\left(1\right)}+h^{\left(2\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\omega^{\left(3\right)}\left(x\right)=\df{x^{2}}2h^{\left(1\right)}+xh^{\left(2\right)}+h^{\left(3\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\tr$
+\end_inset
+
+, 
+\begin_inset Formula $\omega^{\left(r\right)}\left(x\right)=\df{x^{r-1}}{\left(r-1\right)!}h^{\left(1\right)}+\df{r^{r-2}}{\left(r-2\right)!}h^{\left(2\right)}+\tr+xh^{\left(r-1\right)}+h^{\left(r\right)}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Обозначим ex:m7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вектор-функции (m7) обладают свойством:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d\omega\left(x\right)}{dx}=\omega^{\left(r-1\right)}\left(x\right)\label{eq:m8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\omega^{\left(r\right)}\left(x\right)=\lambda\omega^{\left(r\right)}\left(x\right)+\omega^{\left(r-1\right)}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\omega^{\left(1\right)}\left(x\right)=Ah^{\left(1\right)}=\lambda h^{\left(1\right)}=\lambda\omega^{\left(1\right)}=\omega^{\left(0\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+A\omega^{\left(r\right)}\left(x\right) & = & A\df{x^{r-1}}{\left(r-1\right)!}h^{\left(1\right)}+A\df{x^{r-2}}{\left(r-2\right)!}h^{\left(2\right)}+\tr+Axh^{\left(r-1\right)}+Ah^{\left(2\right)}=\\
+ & = & \df{x^{r-1}}{\left(r-1\right)!}\lambda h^{\left(1\right)}+\df{x^{r-2}}{\left(r-2\right)!}\left(\lambda h^{\left(2\right)}+h^{\left(1\right)}\right)+\tr+\\
+ & + & x\left(\lambda h^{\left(r-1\right)}+h^{\left(r-2\right)}\right)+\lambda h^{\left(r\right)}+h^{\left(r-1\right)}=\\
+ & = & \lambda\left(\df{x^{r-1}}{\left(r-1\right)!}h^{\left(1\right)}+\tr+xh^{\left(r-1\right)}+h^{\left(2\right)}\right)+\\
+ & + & \df{x^{r-2}}{\left(r-2\right)!}h^{\left(1\right)}+\tr+xh^{\left(r-2\right)}+h^{\left(r-1\right)}=\\
+ & = & \lambda\omega^{\left(r\right)}\left(x\right)+\omega^{\left(r-1\right)}\left(x\right),\ r=\overline{2,k}
+\end{eqnarray*}
+
+\end_inset
+
+ Построим вектр-функции 
+\begin_inset Formula 
+\begin{equation}
+y^{\left(r\right)}\left(x\right)=\omega^{\left(r\right)}\left(x\right)e^{\lambda x},r=\overline{1,k}\label{eq:m9}
+\end{equation}
+
+\end_inset
+
+Вектор-функции (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m9"
+
+\end_inset
+
+) будут решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:m1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Подстави м в (1) и воспользуемся (8):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{dy^{\left(r\right)}\left(x\right)}{dx}-Ay^{\left(r\right)}\left(x\right) & = & \df d{dx}\left(\omega^{\left(r\right)}\left(x\right)e^{\lambda x}\right)=\\
+ & = & \df{d\omega^{\left(r\right)}\left(x\right)}{dx}e^{\lambda x}+\omega^{\left(r\right)}\left(x\right)\lambda e^{\lambda x}-\left(\lambda\omega^{\left(r\right)}\left(x\right)+\omega^{\left(r-1\right)}\left(x\right)\right)e^{\lambda x}=\\
+ & = & \omega^{\left(r-1\right)}\left(x\right)e^{\lambda x}+\omega^{\left(r\right)}\left(x\right)\lambda e^{\lambda x}-\lambda\omega^{\left(r\right)}\left(x\right)e^{\lambda x}-\omega^{\left(r-1\right)}\left(x\right)e^{\lambda x}=0
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
