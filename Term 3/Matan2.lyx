@@ -6424,9 +6424,6 @@ f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{y}\pr\left(x_{0},y_{0
 \end_inset
 
 , причем выполняется система уравнений:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -6438,20 +6435,17 @@ x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-То-есть функция 
+То есть функция 
 \begin_inset Formula $u=f\left(\vec x\right)$
 \end_inset
 
- - сложная функция аргументов 
+ --- сложная функция аргументов 
 \begin_inset Formula $t_{1},\tr,t_{m}$
 \end_inset
 
 .
- Оказывается что при некоторых условиях частные производные от функции 
+ Оказывается что при некоторых условиях частные производные от функции:
+ 
 \begin_inset Formula 
 \[
 u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,t_{k}\right)\right)
@@ -6482,6 +6476,7 @@ u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,
 \end_layout
 
 \begin_layout Example
+Вычислить производную: 
 \begin_inset Formula $f\left(x,y,z\right)=x^{2}+y\um\sin z$
 \end_inset
 
@@ -6489,18 +6484,28 @@ u=f\left(\varphi_{1}\left(t_{1},\tr,t_{k}\right),\tr,\varphi_{m}\left(t_{1},\tr,
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\begin{cases}
+Сделаем замену:
+\begin_inset Formula 
+\[
+\begin{cases}
 x=t^{3}\\
 y=2\um t\\
 z=t^{2}+1
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
+Тогда производная по 
+\begin_inset Formula $t$
+\end_inset
 
-\end_layout
+:
+\begin_inset Formula 
+\[
+f_{t}\pr=f\pr\left(t^{3},2\um t,t^{2}+1\right)=\df{df}{dt}=\df{\dd f}{\dd x}\um\df{dx}{dt}+\df{\DD f}{\dd y}\um\df{dy}{dt}+\df{\dd f}{\dd z}\um\df{dz}{dt}=2x\um3t^{2}+\sin z\um2+y\um\cos z\um2t
+\]
 
-\begin_layout Example
-\begin_inset Formula $f_{t}\pr=f\pr\left(t^{3},2\um t,t^{2}+1\right)=\df{df}{dt}=\df{\dd f}{\dd x}\um\df{dx}{dt}+\df{\DD f}{\dd y}\um\df{dy}{dt}+\df{\dd f}{\dd z}\um\df{dz}{dt}=2x\um3t^{2}+\sin z\um2+y\um\cos z\um2t$
 \end_inset
 
 
@@ -6536,11 +6541,15 @@ status open
 \begin_inset Formula $M\left(x_{1}\pr,\tr,x_{m}\pr\right)$
 \end_inset
 
-, где 
-\begin_inset Formula $x_{j}\pr=\varphi_{j}\left(t_{1}\pr,\tr,t_{k}\pr\right)$
+, где
+\begin_inset Formula 
+\[
+x_{j}\pr=\varphi_{j}\left(t_{1}\pr,\tr,t_{k}\pr\right)
+\]
+
 \end_inset
 
-, то существуют частные производные сложной функции 
+то существуют частные производные сложной функции 
 \begin_inset Formula $u$
 \end_inset
 
@@ -6561,7 +6570,7 @@ reference "eq:12"
 
 ).
  Причем частные производные 
-\begin_inset Formula $\df{\text{\emph{д}}u}{\DD x_{j}}$
+\begin_inset Formula $\frac{\DD u}{\DD x_{j}}$
 \end_inset
 
  вычисляются в точке 
@@ -6569,10 +6578,10 @@ reference "eq:12"
 \end_inset
 
 , а 
-\begin_inset Formula $\df{\dd x_{j}}{\dd t_{i}}$
+\begin_inset Formula $\frac{\DD x_{j}}{\DD t_{i}}$
 \end_inset
 
- в точке 
+ --- в точке 
 \begin_inset Formula $N$
 \end_inset
 
@@ -6580,29 +6589,30 @@ reference "eq:12"
 \end_layout
 
 \begin_layout Proof
-Рассмотрим следующий случай.
+Рассмотрим следующий случай:
 \end_layout
 
 \begin_layout Proof
+Пусть 
 \begin_inset Formula $u=f\left(x,y,z\right)$
 \end_inset
 
- 
+, причем
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x=x\left(t\right)\\
 y=y\left(t\right)\\
 z=z\left(t\right)
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-То-есть точка 
+То есть точка 
 \begin_inset Formula $N\left(t\right)$
 \end_inset
 
@@ -6618,21 +6628,18 @@ z=z\left(t\right)
 \begin_inset Formula $\D t$
 \end_inset
 
-, ему отвечает приращения 
+, ему отвечают приращения 
 \begin_inset Formula $\D x,\D y,\D z$
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+\D x=x\left(t+\D t\right)-x\left(t\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\D x=x\left(t+\D t\right)-x\left(t\right)$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 А также приращение 
 \begin_inset Formula $\D u$
 \end_inset
@@ -6683,7 +6690,7 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-В приделе при 
+В пределе при 
 \begin_inset Formula $\D t\st0$
 \end_inset
 
@@ -6691,50 +6698,45 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\df{\D x}{\D t}=\df{dx}{dt}=x\pr\left(t\right)$
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{\D x}{\D t} & = & \df{dx}{dt}=x'\left(t\right)\\
+\df{\D y}{\D t} & = & \df{dy}{dt}=y'\left(t\right)\\
+\df{\D z}{\D t} & = & \df{dz}{dt}=z'\left(t\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\alpha\um\df{\D x}{\D t}+\beta\um\df{\D y}{\D t}+\gamma\um\df{\D z}{\D t}\right)\st0
+\]
+
+\end_inset
+
+Тогда:
+\begin_inset Formula 
+\[
+\df{du}{dt}=\df{\dd u}{\dd x}\um\df{dx}{dt}+\df{\dd u}{\dd y}\um\df{dy}{dt}+\df{\dd u}{\dd z}\um\df{dz}{dt}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\df{\D y}{\D t}=\df{dy}{dt}=y\pr\left(t\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\df{\D z}{\D t}=\df{dz}{dt}=z\pr\left(t\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\left(\alpha\um\df{\D x}{\D t}+\beta\um\df{\D y}{\D t}+\gamma\um\df{\D z}{\D t}\right)\st0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\df{du}{dt}=\df{\dd u}{\dd x}\um\df{dx}{dt}+\df{\dd u}{\dd y}\um\df{dy}{dt}+\df{\dd u}{\dd z}\um\df{dz}{dt}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Рассмотрим другой случай.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\begin{cases}
+Рассмотрим другой случай:
+\begin_inset Formula 
+\[
+\begin{cases}
 x=\varphi\left(t,\tau\right)\\
 y=\psi\left(t,\tau\right)\\
 z=\chi\left(t,\tau\right)
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
@@ -6746,22 +6748,19 @@ z=\chi\left(t,\tau\right)
 \end_inset
 
 функция двух переменных.
- В этом случае фиксируя значения 
+ Тогда фиксируя значения 
 \begin_inset Formula $\tau$
 \end_inset
 
  мы получим сложную функцию одной переменной.
- И получится, аналогично случаю 1му следующее:
-\end_layout
+ И получится, аналогично случаю 1-му следующее:
+\begin_inset Formula 
+\[
+\df{\dd u}{\dd t}=\df{\dd u}{\dd x}\um\df{\dd x}{\dd t}+\df{\dd u}{\dd y}\um\df{\dd y}{\dd t}+\df{\dd u}{\dd z}\um\df{\dd z}{\dd t}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\df{\dd u}{\dd t}=\df{\dd u}{\dd x}\um\df{\dd x}{\dd t}+\df{\dd u}{\dd y}\um\df{\dd y}{\dd t}+\df{\dd u}{\dd z}\um\df{\dd z}{\dd t}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Аналогично делаем и для 
 \begin_inset Formula $\tau$
 \end_inset
