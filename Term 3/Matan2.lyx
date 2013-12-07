@@ -6773,15 +6773,15 @@ z=\chi\left(t,\tau\right)
 \end_layout
 
 \begin_layout Definition
-Дифференциал 
+Дифференциалом 
 \begin_inset Formula $du$
 \end_inset
 
- функций многих переменных 
+ функции многих переменных 
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
-в точке 
+ в точке 
 \begin_inset Formula $M\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
@@ -6813,28 +6813,31 @@ z=\chi\left(t,\tau\right)
 \begin_inset Formula $x_{1},\tr,x_{m}$
 \end_inset
 
- независимыми переменными, можно положить 
-\end_layout
+ независимыми переменными, можно положить:
+\begin_inset Formula 
+\[
+\D x_{i}=dx_{i},\ i=\overline{1,m}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\D x_{i}=dx_{i},\ i=\overline{1,m}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+A_{i}=f_{x_{i}}\pr\left(M\right),\ i=\overline{1,m}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $A_{i}=f_{x_{i}}\pr\left(M\right),\ i=\overline{1,m}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+du=u_{x_{1}}\pr\um dx_{1}+\tr+u_{x_{m}}\pr\um dx_{m}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $du=u_{x_{1}}\pr\um dx_{1}+\tr+u_{x_{m}}\pr\um dx_{m}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Paragraph
