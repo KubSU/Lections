@@ -12775,5 +12775,478 @@ status open
 Процесс связанный с расширением газа в пустоту не обратим.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+7 декабря 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Граници применения второго начала термодинамики
+\end_layout
+
+\begin_layout Definition
+Количество микросостояний 
+\begin_inset Formula $W$
+\end_inset
+
+, соответствующих данному макросостоянию носит название термодинамической
+ вероятностью.
+\end_layout
+
+\begin_layout Standard
+Представить количественно эту величину не очень то возможно.
+\end_layout
+
+\begin_layout Standard
+Эта величина позволяет характеризовать степень беспорядка в системе.
+ 
+\end_layout
+
+\begin_layout Standard
+Чем эта величина больше, тем больше беспорядка.
+\end_layout
+
+\begin_layout Standard
+Пусть есть система в которой есть 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+, тогда общая характеристика системы 
+\begin_inset Formula $W=W_{1}\um W_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=k\um\ln W
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ --- Энтропия 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+ --- Постоянная Больцмана
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=k\um\ln W=k\um\ln W_{1}+k\um\ln W_{2}=S_{1}+S_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W_{\text{Мех}}=1$
+\end_inset
+
+ --- Термодинамическая вероятность механической системы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{\text{Мех}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W$
+\end_inset
+
+ пропорциональна 
+\begin_inset Formula $V^{N}$
+\end_inset
+
+, где 
+\begin_inset Formula $N$
+\end_inset
+
+ --- количество молекул, или 
+\begin_inset Formula $W=b\um V^{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=k\um N\um\ln V+B,\ B=k\um\ln b
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D S=S_{2}-S_{1}=kN\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим газ в обьеме 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Увеличим обьем к 
+\begin_inset Formula $2V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\D S=kN\ln2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=A=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\D S & = & kN\ln\df{V_{2}}{V_{1}}=\\
+ & = & kN_{A}\nu\ln\df{V_{2}}{V_{1}}=\\
+ & = & \nu R\ln\df{V_{2}}{V_{1}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df QT=\D S$
+\end_inset
+
+ --- Эта формула только для обратимых процессов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}>T_{2},\ Q$
+\end_inset
+
+ переходит от 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ к 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, но температура не меняется
+\end_layout
+
+\begin_layout Standard
+Так как в рамках 1го тела у нас процесс изотермический, то мы можем записать:
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\D S & = & \D S_{1}+\D S_{2}=\\
+ & = & -\df Q{T_{1}}+\df Q{T_{2}}=\\
+ & = & Q\left(\df 1{T_{2}}-\df 1{T_{1}}\right)>0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $T_{1}\simeq T_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\D S=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В адиобатическом: 
+\begin_inset Formula $\D S=\D S_{\text{газа}}+\D S_{\text{мех}}=\left\{ \begin{array}{c}
+\D S_{\text{мех}}=0\\
+\D S_{\text{газа}}=0
+\end{array}\right\} =0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+В итоге мы приходим к еще 1ой математической формулировки второго начала
+ термодинамики:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\D S\br0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+При всех процессах, протекаюзих в макроскопической (термодинамической) системе,
+ система не может самопроизвольно переходить из более вероятного состояния
+ в менее вероятное состояние, тоесть энтропия системы не убывает.
+\end_layout
+
+\begin_layout Standard
+Это определение носит вероятностный характер.
+\end_layout
+
+\begin_layout Definition
+Наиболее вероянтой изменение энтропии системы является ее возрастание.
+\end_layout
+
+\begin_layout Standard
+Ограничения:
+\end_layout
+
+\begin_layout Enumerate
+Стеени свободы
+\end_layout
+
+\begin_layout Enumerate
+В сосуд поместим газ.
+ Температуры у сосуда и газа разные.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+За короткое время 
+\begin_inset Formula $U>>E_{\text{вз}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Системы, у которых выполнено условие 
+\begin_inset Formula $U>>E_{\text{вз}}$
+\end_inset
+
+называются почти изолированными.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{\text{вз}}$
+\end_inset
+
+ --- Энергия взаимодействия.
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ --- Внутренняя энергия газа
+\end_layout
+
+\begin_layout Standard
+Но если мы оставим этот сосут на долгое время
+\end_layout
+
+\begin_layout Standard
+Для открытых (как наша вселенная) системы этот закон несправедлив.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В 1906 Нернст занимался с квантовой электродинамикой.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Как-бы третье начало термидинамики
+\end_layout
+
+\end_inset
+
+При стремленнии температуры в абсолютному нулю энтропия любого тела так-же
+ стремится к нулю.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $S=\oui 0T\df{dQ}T=\oui 0T\df{C\left(T\right)dT}T$
+\end_inset
+
+ , где 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ --- теплоемкость.
+\end_layout
+
+\begin_layout Subsection
+Реальные газы
+\end_layout
+
+\begin_layout Standard
+Втреднем размер одной простой молекулы равен 
+\begin_inset Formula $d\sim10^{-10}$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\lambda\sim10^{-7}$
+\end_inset
+
+ На земле это так.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вз}}=0$
+\end_inset
+
+ --- так как мелекулы находятся на очень большом расстоянии
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r$
+\end_inset
+
+ --- расстояние между центрами молекул
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d$
+\end_inset
+
+ --- эфективный диаметр молекул
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r>>d$
+\end_inset
+
+ (
+\begin_inset Formula $r>10^{d}$
+\end_inset
+
+) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $U_{\text{вз}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А когда 
+\begin_inset Formula $r\sim2-3d$
+\end_inset
+
+, то тогда возникают силы притяжения (энергитической природы)
+\end_layout
+
+\begin_layout Standard
+А если 
+\begin_inset Formula $r\mr d$
+\end_inset
+
+ то возникают очень большие силы отталкивания.
+\end_layout
+
+\begin_layout Standard
+Принято считать, что если тебя с кому нить тянет, то это силы отрицательные,
+ если отталкивает, то сидлы положительные (с точке зрения физики).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Жорик сука распиздяй этот рисунок не хочет рисовать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v F=-\grad U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v F=-\df{\dd u}{\dd r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вз}}\left(\b\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $du=-Fdr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При сближении молекул энергия понижается.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
