@@ -8514,67 +8514,31 @@ reference "eq:15"
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}-1=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Тут ДОЛЖЕН быть рисунок эллипса.
- Жорик!
-\end_layout
+\begin_inset Formula 
+\[
+\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}-1=0
+\]
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-Оно определяет 2 однозначные функции 
+Это уравнение определяет 2 однозначные функции 
 \begin_inset Formula $y=\pm b\sqrt{1-\df{x^{2}}{a^{2}}}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y_{1}=b\sqrt{1-\df{x^{2}}{a^{2}}}$
-\end_inset
-
- - верхняя часть
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y_{2}=-b\sqrt{1-\df{x^{2}}{a^{2}}}$
-\end_inset
-
- - Нижняя часть
-\end_layout
-
-\begin_layout Example
-Не во всех точках можно определить функцию однозначно.
-\end_layout
-
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-В самой правой и левой нельзя во всех остальных можно
-\end_layout
-
-\end_inset
-
-
+, следовательно не во всех точках можно определить функцию однозначно.
 \end_layout
 
 \begin_layout Theorem
-(1)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -8586,7 +8550,7 @@ status open
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - определена в некоторой окрестности 
+ --- определена в некоторой окрестности 
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -8603,19 +8567,27 @@ status open
 \end_inset
 
 .
- Тогда существует прямоугольник: 
-\begin_inset Formula $\Pi=\left\{ \left(x,y\right)|\left|x-x_{0}\right|<a,\ \left|y-y_{0}\right|<b\right\} \vkl\Omega$
+ Тогда существует прямоугольник:
+\begin_inset Formula 
+\[
+\Pi=\left\{ \left(x,y\right)|\left|x-x_{0}\right|<a,\ \left|y-y_{0}\right|<b\right\} \vkl\Omega
+\]
+
 \end_inset
 
-, в котором множество решения уравнения 
+в котором множество решений уравнения 
 \begin_inset Formula $f\left(x,y\right)=0$
 \end_inset
 
- определяется непрерывно дифференцируемой функцией 
-\begin_inset Formula $y=\psi\left(x\right),\ x\in\left(x_{0}-a,x_{0}+a\right)$
+ определяется непрерывно дифференцируемой функцией:
+\begin_inset Formula 
+\[
+y=\psi\left(x\right),\quad x\in\left(x_{0}-a,x_{0}+a\right)
+\]
+
 \end_inset
 
-, причем 
+причем 
 \begin_inset Formula $\psi\pr\left(x\right)=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)}{f_{y}\pr\left(x,\psi\left(x\right)\right)}$
 \end_inset
 
@@ -8632,27 +8604,19 @@ status open
 \end_inset
 
 .
- Тогда для функции одной переменной 
-\begin_inset Formula $f\left(x_{0},y\right)=h\left(y\right)$
-\end_inset
+ Тогда для функции одной переменной: 
+\begin_inset Formula 
+\[
+f\left(x_{0},y\right)=h\left(y\right):\qquad h\pr\left(y\right)=f_{y}\pr\left(x_{0},y\right)
+\]
 
- : 
-\begin_inset Formula $h\pr\left(y\right)=f_{y}\pr\left(x_{0},y\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
 \end_inset
 
  Так как 
 \begin_inset Formula $h\pr\left(y_{0}\right)=f_{y}\pr\left(x_{0},y_{0}\right)>0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- В точке 
+, то в точке 
 \begin_inset Formula $y_{0}$
 \end_inset
 
@@ -8660,11 +8624,7 @@ status open
 \begin_inset Formula $h\left(y\right)$
 \end_inset
 
- возрастает 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ возрастает, следовательно 
 \begin_inset Formula $f\left(x_{0},y\right)$
 \end_inset
 
@@ -8672,7 +8632,7 @@ status open
 \begin_inset Formula $y$
 \end_inset
 
--ку в точке 
+ в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -8680,11 +8640,7 @@ status open
 \begin_inset Formula $f\left(M_{0}\right)=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, тогда 
 \begin_inset Formula $f\left(x_{0},y\right)<0$
 \end_inset
 
@@ -8692,7 +8648,7 @@ status open
 \begin_inset Formula $y<y_{0}$
 \end_inset
 
-, 
+, и 
 \begin_inset Formula $f\left(x_{0},y\right)>0$
 \end_inset
 
@@ -8704,90 +8660,56 @@ status open
 \begin_inset Formula $\exists b>0$
 \end_inset
 
- такое что 
-\begin_inset Formula $\forall y\in\left[y_{0}-b,y_{0}\right)$
+ такое что:
+\begin_inset Formula 
+\[
+\forall y\in\left[y_{0}-b,y_{0}\right)\quad f\left(x_{0},y\right)<0,\qquad\forall y\in\left(y_{0},y_{0}+b\right]\quad f\left(x_{0},y\right)>0
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $f\left(x_{0},y\right)<0$
-\end_inset
-
- , 
-\begin_inset Formula $\forall y\in\left(y_{0},y_{0}+b\right]$
-\end_inset
-
- 
-\begin_inset Formula $f\left(x_{0},y\right)>0$
-\end_inset
-
-.
- Так как 
+Так как 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- непрерывна и 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - отрицательна в точке 
+ --- непрерывна и отрицательна в точке 
 \begin_inset Formula $N\left(x_{0},y_{0}-b\right)$
 \end_inset
 
- и 
-\begin_inset Formula $f\left(x,y\right)$
-\end_inset
-
- - положительна в точке 
+, и положительна в точке 
 \begin_inset Formula $P\left(x_{0},y_{0}+b\right)$
 \end_inset
 
 .
  Так как она непрерывна, то по теореме о сохранении знака непрерывной функции,
- можем получить: 
-\end_layout
+ можем получить:
+\begin_inset Formula 
+\begin{align*}
+\exists a_{1}:\quad & f\left(x,y_{0}+b\right)>0\quad\forall x\in\left(x_{0}-a_{1},x_{0}+a_{1}\right)\\
+\exists a_{2}:\quad & f\left(x,y_{0}-b\right)<0\quad\forall x\in\left(x_{0}-a_{2},x_{0}+a_{2}\right)
+\end{align*}
 
-\begin_layout Proof
-\begin_inset Formula $\exists a_{1}\ :\ f\left(x,y_{0}+b\right)>0\ \forall x\in\left(x_{0}-a_{1},x_{0}+a_{1}\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\exists a_{2}\ :\ f\left(x,y_{0}-b\right)\ \forall x\in\left(x_{0}-a_{2},x_{0}+a_{2}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
 Обозначим 
 \begin_inset Formula $a=\min\left\{ a_{1},a_{2}\right\} $
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
+, тогда:
+\begin_inset Formula 
+\begin{align*}
+f\left(M\right)>0\quad & \forall M\left(x,y_{0}+b\right)\\
+f\left(M\right)<0\quad & \forall M\left(x,y_{0}-b\right)
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $f\left(M\right)>0\ \forall M\left(x,y_{0}+b\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $f\left(M\right)<0\ \forall M\left(x,y_{0}-b\right)$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\forall x\in\left(x_{0}-a,x_{0}+a\right)\sim\left|x-x_{0}\right|<a
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\sim\left|x-x_{0}\right|<a$
 \end_inset
 
 
@@ -8823,46 +8745,56 @@ status open
 \begin_inset Formula $y$
 \end_inset
 
-) : 
-\begin_inset Formula $g\left(y_{0}-b\right)<0,\ g\left(y_{0}+b\right)>0$
+): 
+\begin_inset Formula 
+\[
+g\left(y_{0}-b\right)<0,\qquad g\left(y_{0}+b\right)>0
+\]
+
 \end_inset
 
- и 
+и 
 \begin_inset Formula $g\left(y\right)$
 \end_inset
 
- - непрерывна на 
+ --- непрерывна на 
 \begin_inset Formula $\left[y_{0}-b,y_{0}+b\right]$
 \end_inset
 
-.
- То первой по теореме Больцано-Коши 
-\begin_inset Formula $\exists\overline{y}\ :\ g\left(\overline{y}\right)=f\left(x,\overline{y}\right)=0$
+, то по первой теореме Больцано -- Коши: 
+\begin_inset Formula 
+\[
+\exists\overline{y}:\quad g\left(\overline{y}\right)=f\left(x,\overline{y}\right)=0
+\]
+
 \end_inset
 
-.
- А еще нам нужно доказать что 
+
+\end_layout
+
+\begin_layout Proof
+Докажем, что 
 \begin_inset Formula $\overline{y}$
 \end_inset
 
- - единственная точка где 
+ --- единственная точка, где 
 \begin_inset Formula $g\left(\overline{y}\right)=0$
 \end_inset
 
 .
- Так как при этом 
-\begin_inset Formula $g\pr\left(y\right)=f_{y}\pr\left(x,y\right)>0$
+ Так как при этом: 
+\begin_inset Formula 
+\[
+g\pr\left(y\right)=f_{y}\pr\left(x,y\right)>:\qquad y\in\left(y_{0}-b,y_{0}+b\right)
+\]
+
 \end_inset
 
- при 
-\begin_inset Formula $y\in\left(y_{0}-b,y_{0}+b\right)$
-\end_inset
-
-то 
+То 
 \begin_inset Formula $g\left(y\right)$
 \end_inset
 
- - монотонно возрастает на отрезке 
+ --- монотонно возрастает на отрезке 
 \begin_inset Formula $\left[y_{0}-b,y_{0}+b\right]$
 \end_inset
 
@@ -8870,7 +8802,7 @@ status open
 \begin_inset Formula $\overline{y}$
 \end_inset
 
- - единственное решение уравнения 
+ --- единственное решение уравнения 
 \begin_inset Formula $f\left(x,\overline{y}\right)$
 \end_inset
 
@@ -8879,8 +8811,8 @@ status open
 
 \begin_deeper
 \begin_layout Corollary
-Мы получили что
-\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\ \exists!y=\psi\left(x\right)$
+Мы получили что 
+\begin_inset Formula $\forall x\in\left(x_{0}-a,x_{0}+a\right)\;\exists!y=\psi\left(x\right)$
 \end_inset
 
 , такой что 
@@ -8908,27 +8840,28 @@ status open
 \begin_inset Formula $x\in\left(x_{0}-a,x_{0}+a\right)$
 \end_inset
 
- - произвольная точка.
+ --- произвольная точка.
  Придадим приращение 
 \begin_inset Formula $\D x$
 \end_inset
 
- 
-\begin_inset Formula $:$
+: 
+\begin_inset Newline newline
 \end_inset
 
- 
+
 \begin_inset Formula $\left(x+\D x\right)\in\left(x_{0}-a,x_{0}+a\right)$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D f=f\left(x+\D x,\psi\left(x+\D x\right)\right)-f\left(x,\psi\left(x\right)\right)=\left\{ \begin{array}{c}
+, тогда:
+\begin_inset Formula 
+\[
+\D f=f\big(x+\D x,\psi\left(x+\D x\right)-f\left(x,\psi\left(x\right)\right)\big)=\left|\begin{array}{c}
 f\left(x,\psi\left(x\right)\right)=0\\
 f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
-\end{array}\right\} $
+\end{array}\right|
+\]
+
 \end_inset
 
  
@@ -8939,7 +8872,7 @@ f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - непрерывны на 
+ --- непрерывны на 
 \begin_inset Formula $\Pi$
 \end_inset
 
@@ -8947,31 +8880,22 @@ f\left(x+\D x,\psi\left(x+\D x\right)\right)=0
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - дифференцируема на 
+ --- дифференцируема на 
 \begin_inset Formula $\Pi$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Используя дифференцируемость в точке 
+, следовательно используя дифференцируемость в точке 
 \begin_inset Formula $M\left(x,\psi\left(x\right)\right)$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, получим:
 \begin_inset Formula 
-\begin{eqnarray*}
-\D f & = & A\um\D x+B\um\D y+\alpha\um\D x+\beta\um\D y=\left\{ \begin{array}{c}
-A\um\D x+B\um\D y\ -\ \text{главная часть}\\
+\begin{multline*}
+\D f=A\um\D x+B\um\D y+\alpha\um\D x+\beta\um\D y=\left|\begin{smallmatrix}A\um\D x+B\um\D y\ -\ \text{главная часть}\\
 \alpha\um\D x+\beta\um\D y=o\left(\rho\right)
-\end{array}\right\} \\
- & = & f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\alpha\um\D x+\beta\um\D y
-\end{eqnarray*}
+\end{smallmatrix}\right|=\\
+=f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\alpha\um\D x+\beta\um\D y
+\end{multline*}
 
 \end_inset
 
@@ -8979,169 +8903,34 @@ A\um\D x+B\um\D y\ -\ \text{главная часть}\\
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+\alpha\um\D x=-\left(f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\beta\um\D y\right)$
+\begin_inset Formula 
+\[
+f_{x}\pr\left(x,\psi\left(x\right)\right)\um\D x+\alpha\um\D x=-\left(f_{y}\pr\left(x,\psi\left(x\right)\right)\um\D y+\beta\um\D y\right)
+\]
+
+\end_inset
+
+Откуда:
+\begin_inset Formula 
+\[
+\df{\D y}{\D x}=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)+\alpha}{f_{y}\pr\left(x,\psi\left(x\right)\right)+\beta}
+\]
+
+\end_inset
+
+ Причем: 
+\begin_inset Formula $\D x\st0\;\then\;\D y\st0$
+\end_inset
+
+, значит:
+\begin_inset Formula 
+\[
+\exists\ul{\D x\st0}\df{\D y}{\D x}\quad\ddsl\quad\psi\pr\left(x\right)=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)}{f_{y}\pr\left(x,\psi\left(x\right)\right)}
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\df{\D y}{\D x}=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)+\alpha}{f_{y}\pr\left(x,\psi\left(x\right)\right)+\beta}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D x\st0\sl\D y\st0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\exists\ul{\D x\st0}\df{\D y}{\D x}\ddsl\psi\pr\left(x\right)=-\df{f_{x}\pr\left(x,\psi\left(x\right)\right)}{f_{y}\pr\left(x,\psi\left(x\right)\right)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x^{2}+y^{2}-1=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2}-1=0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y=\pm\sqrt{1-x^{2}}$
-\end_inset
-
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Remark
-
-\emph on
-Вспомнить пример про эллипс!
-\end_layout
-
-\end_deeper
-\begin_layout Example
-\begin_inset Formula $-y_{x}\pr=-\df{f_{y}\pr}{f_{x}\pr}=\left\{ \begin{array}{c}
-f_{x}\pr=2\um x\\
-f_{y}\pr=2\um y
-\end{array}\right\} =-\df{2\um x}{2\um y}=-\df xy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\ne0\ \sl\ x\nr\pm1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{0}\left(\df 12;\df{\sqrt{3}}2\right)\ \sl\ $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\pr\left(\df 12\right)=-\df{\df 12}{\df{\sqrt{3}}2}=-\df 1{\sqrt{3}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{1}\left(\df 12;\df{\sqrt{3}}2\right)\ \sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\pr\left(\df 12\right)=-\df{\df 12}{-\df{\sqrt{3}}2}=\df 1{\sqrt{3}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $e^{y}-e^{x}+x\um y=0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Найти 
-\begin_inset Formula $y_{x}\pr$
-\end_inset
-
- в точке 
-\begin_inset Formula $M_{0}\left(0,0\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=e^{y}-e^{x}+x\um y,\ f\left(0,0\right)=0$
-\end_inset
-
- - вып
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{x}\pr=-e^{x}+y$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{y}\pr=e^{y}+x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y_{x}\pr=-\df{f_{x}\pr}{f_{y}\pr}=\df{e^{x}-y}{e^{y}+x}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $y\left(0\right)=1$
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -9149,11 +8938,16 @@ f_{y}\pr=2\um y
 \end_layout
 
 \begin_layout Theorem
-(2)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
 \end_layout
 
-\begin_layout Theorem
-Пусть в точке 
+\end_inset
+
+ Пусть в точке 
 \begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0},u^{0}\right)$
 \end_inset
 
@@ -9166,7 +8960,7 @@ f_{y}\pr=2\um y
 \begin_inset Formula $F\left(\vec x,u\right)$
 \end_inset
 
- - непрерывна в окрестности точки 
+ --- непрерывна в окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -16945,7 +16739,7 @@ Hbc 70
 \end_layout
 
 \begin_layout Definition
-\begin_inset Formula $I=\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)$
+\begin_inset Formula $I=\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui{\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)}$
 \end_inset
 
 
@@ -17414,7 +17208,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\ui=\mbox{\ui+\ui}$
+\begin_inset Formula $\ui =\mbox{\ui +\ui{}}$
 \end_inset
 
 
@@ -17989,7 +17783,7 @@ status open
 \begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-\D_{x}F\left(x,y\right) & = & F\left(x+\D x,y\right)-F\left(x,y\right)=\ui-\ui=\left\{ \text{по адитивности КИВРа}\right\} =\\
+\D_{x}F\left(x,y\right) & = & F\left(x+\D x,y\right)-F\left(x,y\right)=\ui -\ui =\left\{ \text{по адитивности КИВРа}\right\} =\\
  & = & \oui{\left(x;y\right)}{\left(x+\D x;y\right)}Pdx+Qdy=\\
  & = & \left\{ Qdy=0\right\} =\\
  & = & \oui{\left(x;y\right)}{\left(x+\D x;y\right)}Pdx=\\
@@ -18256,7 +18050,7 @@ Hbc 81
 \begin{eqnarray*}
 F\left(x,y\right)-F\left(x_{0},y_{0}\right) & = & F\left(B\right)-F\left(A\right)=\\
  & = & \ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\\
- & = & \ui+\ui=\\
+ & = & \ui +\ui =\\
  & = & \left\{ \begin{array}{c}
 AC:\begin{cases}
 x\equiv x_{1}-const & ,dx=0\\
@@ -18477,7 +18271,7 @@ status open
 \end_inset
 
  --- 
-\begin_inset Formula $\ui=\ui$
+\begin_inset Formula $\ui =\ui{}$
 \end_inset
 
 
@@ -18706,7 +18500,7 @@ status open
 \begin_inset Formula 
 \begin{eqnarray*}
 \un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy & = & \ui Pdx+Qdy=\\
- & = & \ui+\ui+\ui=\ui Pdx+Qdy
+ & = & \ui +\ui +\ui =\ui Pdx+Qdy
 \end{eqnarray*}
 
 \end_inset
@@ -21706,7 +21500,7 @@ I=r^{2}\sin\psi
 
 \begin_layout Standard
 КИВР: 
-\begin_inset Formula $\ui Pdx+Qdy+Rdz=\ui\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL$
+\begin_inset Formula $\ui Pdx+Qdy+Rdz=\ui{\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)}dL$
 \end_inset
 
  :КИПР.
@@ -21714,7 +21508,7 @@ I=r^{2}\sin\psi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\ui\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL=\ui\left(\v a\left(M\right),\v{\tau}\left(M\right)\right)dl$
+\begin_inset Formula $\ui{\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)}dL=\ui{\left(\v a\left(M\right),\v{\tau}\left(M\right)\right)}dl$
 \end_inset
 
  --- Скалярная форма для криволинейного интеграла второго рода.
