@@ -86,326 +86,332 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\sl}{\Longrightarrow}
+\newcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dsl}{\Longleftrightarrow}
+\newcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tr}{\ldots}
+\newcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\nr}{\neq}
+\newcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\um}{\cdot}
+\newcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pr}{\prime}
-{\prime}
+\newcommand{\pr}{'}
+{'}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tg}{\text{tg}}
+\newcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tan}{\tg}
+\newcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arctg}{\text{arctg}}
+\newcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arcctg}{\text{arcctg}}
+\newcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\N}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Z}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Q}{\text{Q}}
+\newcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sh}{\text{sh}}
+\newcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ch}{\text{ch}}
+\newcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\th}{\text{th}}
+\newcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\st}{\to}
+\newcommand{\st}{\to}
 {\to}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sinx}{\sin\left(x\right)}
+\newcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\cosx}{\cos\left(x\right)}
+\newcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\fx}{f\left(x\right)}
+\newcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\un}[2]{\underset{#2}{#1}}
+\newcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\lim\limits _{#1}}
+\newcommand{\ul}[1]{\lim\limits _{#1}}
 {\lim\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\max\limits _{#1}}
+\newcommand{\umax}[1]{\max\limits _{#1}}
 {\max\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\min\limits _{#1}}
+\newcommand{\umin}[1]{\min\limits _{#1}}
 {\min\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
 {\iint\limits _{#1}^{#2}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{\pr\pr}
-{\pr\pr}
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{\ppr\pr}
-{\ppr\pr}
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\v}[1]{\overrightarrow{#1}}
+\newcommand{\v}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mom}{\text{mom}}
+\newcommand{\mom}{\text{mom}}
 {\text{mom}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\x}{\times}
+\newcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\DD}{\partial}
+\newcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dd}{\partial}
+\newcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\grad}{\text{grad}}
+\newcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ctg}{\text{ctg}}
+\newcommand{\ctg}{\text{ctg}}
 {\text{ctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vtr}{\vdots}
+\newcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ntr}{\ddots}
+\newcommand{\ntr}{\ddots}
 {\ddots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ob}{\cup}
+\newcommand{\ob}{\cup}
 {\cup}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dint}{\iint}
+\newcommand{\dint}{\iint}
 {\iint}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pro}{\text{Пр}}
+\newcommand{\pro}{\text{Пр}}
 {\text{Пр}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ui}[1]{\int\limits _{#1}}
+\newcommand{\ui}[1]{\int\limits _{#1}}
 {\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
 \end_inset
 
 
@@ -7251,7 +7257,7 @@ u_{xy}'',\quad u_{x^{2}}'',\quad u_{y^{2}}'',\quad u_{yx}''
 \begin_layout Definition
 \begin_inset Formula 
 \[
-\df{\dd^{2}f}{\dd x_{k}\dd x_{i}}=\df{\dd}{\dd x_{k}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}x_{k}}'',\quad i\nr k
+\df{\dd^{2}f}{\dd x_{k}\dd x_{i}}=\df{\dd}{\dd x_{k}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}x_{k}}^{\prime\prime},\quad i\nr k
 \]
 
 \end_inset
@@ -7259,7 +7265,7 @@ u_{xy}'',\quad u_{x^{2}}'',\quad u_{y^{2}}'',\quad u_{yx}''
 
 \begin_inset Formula 
 \[
-\df{\dd^{2}f}{\dd x_{i}^{2}}=\df{\dd}{\dd x_{i}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}^{2}}'',\quad i=\overline{1,m}
+\df{\dd^{2}f}{\dd x_{i}^{2}}=\df{\dd}{\dd x_{i}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}^{2}}^{\prime\prime},\quad i=\overline{1,m}
 \]
 
 \end_inset
@@ -7277,7 +7283,7 @@ status open
 
 \emph on
 Когда 
-\begin_inset Formula $f_{xy}\ppr\ne f_{yx}\ppr$
+\begin_inset Formula $f_{xy}^{\prime\prime}\ne f_{yx}^{\prime\prime}$
 \end_inset
 
 
@@ -7312,7 +7318,7 @@ y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{x}'\left(0,y\right)=-y$
+\begin_inset Formula $f_{x}^{\prime}\left(0,y\right)=-y$
 \end_inset
 
  
@@ -7320,7 +7326,7 @@ y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_inset
 
  
-\begin_inset Formula $f_{xy}\ppr\left(0,y\right)=-1$
+\begin_inset Formula $f_{xy}^{\prime\prime}\left(0,y\right)=-1$
 \end_inset
 
  
@@ -7328,14 +7334,14 @@ y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 
 \begin_layout Example
 В частности 
-\begin_inset Formula $f_{xy}\ppr\left(0,0\right)=-1$
+\begin_inset Formula $f_{xy}^{\prime\prime}\left(0,0\right)=-1$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{y}\pr=\begin{cases}
+\begin_inset Formula $f_{y}^{\prime}=\begin{cases}
 x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{2}}\right] & ,\left(x,y\right)\nr\left(0,0\right)\\
 0 & ,\left(x,y\right)=\left(0,0\right)
 \end{cases}$
@@ -7353,14 +7359,14 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 
 \begin_layout Example
 В частности 
-\begin_inset Formula $f_{yx}\ppr\left(0,0\right)=1$
+\begin_inset Formula $f_{yx}^{\prime\prime}\left(0,0\right)=1$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{xy}\ppr\left(0,0\right)\nr f_{yx}\ppr\left(0,0\right)$
+\begin_inset Formula $f_{xy}^{\prime\prime}\left(0,0\right)\nr f_{yx}^{\prime\prime}\left(0,0\right)$
 \end_inset
 
  
@@ -7600,9 +7606,9 @@ u_{x^{2}}''\um dx^{2}+2u_{xy}''\um dxdy+u_{y^{2}}''dy^{2}
 
 Что в символической записи:
 \begin_inset Formula 
-\begin{multline*}
+\[
 \left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u
-\end{multline*}
+\]
 
 \end_inset
 
@@ -7624,10 +7630,15 @@ u_{x^{2}}''\um dx^{2}+2u_{xy}''\um dxdy+u_{y^{2}}''dy^{2}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 
 \emph on
 В общем случае 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
@@ -7643,7 +7654,7 @@ d^{n}u=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}\rig
 
 
 \emph on
-Рассмотрим случай зависимых переменных.
+Рассмотрим случай зависимых переменных:
 \end_layout
 
 \begin_layout Standard
@@ -7664,10 +7675,7 @@ d^{n}u=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}\rig
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-В этом случае 
+ В этом случае 
 \begin_inset Formula $dx=\varphi'\left(t\right)\um dt\nr\D x$
 \end_inset
 
@@ -7684,21 +7692,18 @@ d^{n}u=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}\rig
 \begin_inset Formula $\psi\left(t\right)$
 \end_inset
 
- нелинейная.
+ --- нелинейная.
  Тогда 
-\begin_inset Formula $d^{2}x=d\left(\varphi\pr\left(t\right)\um dt\right)=\varphi\ppr\left(t\right)\um d\left(t^{2}\right)\nr0$
+\begin_inset Formula $d^{2}x=d\left(\varphi\pr\left(t\right)\um dt\right)=\varphi^{\prime\prime}\left(t\right)\um d\left(t^{2}\right)\nr0$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 d^{2}u & = & d\left(du\right)=d\left(u_{x}'\um dx+y_{y}'\um dy\right)=\\
- & = & \left\{ duv=du\um v=u\um dv\right\} =\\
+ & = & \left|duv=du\um v=u\um dv\right|=\\
  & = & d\left(u_{x}\pr\right)\um dx+u_{x}\pr\um d^{2}x+d\left(u_{y}\pr\right)\um dy+u_{y}\pr\um d^{2}y=\\
- & = & u_{x^{2}}\pr\um d\left(x^{2}\right)+u_{xy}\ppr\um dy\um dx+u_{x}\pr\um d\left(x^{2}\right)+u_{yx}\ppr\um dx\um dy+y_{y^{2}}\ppr\um d\left(y^{2}\right)+u_{y}\pr\um d^{2}y=\\
+ & = & u_{x^{2}}^{\prime}\um d\left(x^{2}\right)+u_{xy}^{\prime\prime}\um dy\um dx+u_{x}\pr\um d\left(x^{2}\right)+u_{yx}^{\prime\prime}\um dx\um dy+y_{y^{2}}^{\prime\prime}\um d\left(y^{2}\right)+u_{y}^{\prime\prime}\um d^{2}y=\\
  & = & \left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u+u_{x}\pr\um d^{2}x+y_{y}\pr\um d^{2}y
 \end{eqnarray*}
 
@@ -7708,22 +7713,20 @@ d^{2}u & = & d\left(du\right)=d\left(u_{x}'\um dx+y_{y}'\um dy\right)=\\
 \end_layout
 
 \begin_layout Remark
-В случае 
+В случае если 
 \begin_inset Formula $x_{i}=\varphi_{i}\left(t_{1},\tr,t_{k}\right)$
 \end_inset
 
- - линейная функция,
-\end_layout
+ --- линейная функция:
+\begin_inset Formula 
+\[
+x_{i}=a_{i}^{\left(1\right)}\um t_{1}+a_{i}^{\left(2\right)}t_{2}+\tr+a_{i}^{\left(k\right)}t_{k},\quad i=\overline{1,m}
+\]
 
-\begin_layout Remark
-\begin_inset Formula $x_{i}=a_{i}^{\left(1\right)}\um t_{1}+a_{i}^{\left(2\right)}t_{2}+\tr+a_{i}^{\left(k\right)}t_{k},\ i=\overline{1,m}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula $\sl dx_{i}=a_{i}^{\left(1\right)}\um dt_{1}+a_{i}^{\left(2\right)}\um dt_{2}+\tr+a_{i}^{\left(k\right)}\um dt_{k}=a_{i}^{\left(1\right)}\um\D t_{1}+a_{i}^{\left(2\right)}\um\D t_{2}+\tr+a_{i}^{\left(k\right)}\um\D t_{k}$
+ Тогда 
+\begin_inset Formula $dx_{i}=a_{i}^{\left(1\right)}\um dt_{1}+a_{i}^{\left(2\right)}\um dt_{2}+\tr+a_{i}^{\left(k\right)}\um dt_{k}=a_{i}^{\left(1\right)}\um\D t_{1}+a_{i}^{\left(2\right)}\um\D t_{2}+\tr+a_{i}^{\left(k\right)}\um\D t_{k}$
 \end_inset
 
 
@@ -7749,20 +7752,17 @@ status open
 
 \begin_layout Standard
 Напомним что для случая одной переменной имеет место разложение по формуле
- Тейлора.
-\end_layout
-
-\begin_layout Standard
+ Тейлора:
 \begin_inset Formula 
-\begin{eqnarray*}
-\D F\left(t_{0}\right) & = & F\left(t_{0}+\D t\right)-F\left(t_{0}\right)=\\
- & = & F\pr\left(t_{0}\right)\um\D t+\df{F\ppr\left(t_{0}\right)}{2!}\um\D t^{2}+\tr+\df{F^{\left(n\right)}\left(t_{0}\right)}{n!}+\df{F^{\left(n+1\right)}\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!}=\\
- & = & dF\left(t_{0}\right)+\df{d^{2}F\left(t_{0}\right)}{2!}+\tr+\df{d^{n}F\left(t_{0}\right)}{n!}+\df{d^{n+1}F\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)
-\end{eqnarray*}
+\begin{multline*}
+\D F\left(t_{0}\right)=F\left(t_{0}+\D t\right)-F\left(t_{0}\right)=\\
+\qquad=F\pr\left(t_{0}\right)\um\D t+\df{F^{\prime\prime}\left(t_{0}\right)}{2!}\um\D t^{2}+\tr+\df{F^{\left(n\right)}\left(t_{0}\right)}{n!}+\df{F^{\left(n+1\right)}\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!}=\\
+=dF\left(t_{0}\right)+\df{d^{2}F\left(t_{0}\right)}{2!}+\tr+\df{d^{n}F\left(t_{0}\right)}{n!}+\df{d^{n+1}F\left(t_{0}+\Theta\D t\right)}{\left(n+1\right)!},\quad\Theta\in\left(0,1\right)
+\end{multline*}
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Theorem
@@ -7784,13 +7784,11 @@ status open
 \end_inset
 
  имеет место равенство:
-\end_layout
-
-\begin_layout Theorem
 \begin_inset Formula 
-\begin{equation}
-\D f\left(x_{0},y_{0}\right)=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)\label{eq:14}
-\end{equation}
+\begin{multline}
+\D f\left(x_{0},y_{0}\right)=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\\
++\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\quad\Theta\in\left(0,1\right)\label{eq:14}
+\end{multline}
 
 \end_inset
 
@@ -7799,40 +7797,27 @@ status open
 
 \begin_layout Proof
 Положим 
-\begin_inset Formula $x=x_{0}+t\um\D x,\ y=y_{0}+t\um\D y,\ t\in\left(0,1\right)$
+\begin_inset Formula $x=x_{0}+t\um\D x,\quad y=y_{0}+t\um\D y,\quad t\in\left(0,1\right)$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, тогда 
 \begin_inset Formula $F\left(t\right)=f\left(x_{0}+t\um\D x,y_{0}+t\um\D y\right)$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
+, следовательно:
 \begin_inset Formula 
-\begin{eqnarray*}
-\D f\left(x_{0},y_{0}\right) & = & f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=\\
- & = & F\left(1\right)-F\left(0\right)=\\
- & = & \D F\left(0\right)=\\
- & = & \left\{ \text{По формуле Тейлора для функций многих переменных}\right\} =\\
- & = & dF\left(0\right)+\df{d^{2}F\left(0\right)}{2!}+\tr+\df{d^{n}F\left(0\right)}{n!}+\df{d^{n+1}F\left(\Theta\right)}{\left(n+1\right)!}=\\
- & = & \left\{ \begin{array}{c}
+\begin{multline*}
+\D f\left(x_{0},y_{0}\right)=f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)=F\left(1\right)-F\left(0\right)=\D F\left(0\right)=\\
+\qquad=\left|\text{По формуле Тейлора для функций многих переменных}\right|=\\
+\qquad\quad=dF\left(0\right)+\df{d^{2}F\left(0\right)}{2!}+\tr+\df{d^{n}F\left(0\right)}{n!}+\df{d^{n+1}F\left(\Theta\right)}{\left(n+1\right)!}=\\
+\qquad\qquad=\left\{ \begin{array}{c}
 \text{Так как }x=x_{0}+t\um\D x,\ y=y_{0}+t\um\D y\\
 \text{линейно зависят от}\ t\ \sl\\
 \sl d\tr d^{k}\ \text{обладают инвариантностью формы}
-\end{array}\right\} =\\
- & = & (\ref{eq:14})=\\
- & = & df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\ \Theta\in\left(0,1\right)
-\end{eqnarray*}
+\end{array}\right\} =(\ref{eq:14})=\\
+\qquad\qquad\quad=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0},y_{0}\right)}{2!}+\tr+\df{d^{n}f\left(x_{0},y_{0}\right)}{n!}+\\
++\df{d^{n+1}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}{\left(n+1\right)!},\quad\Theta\in\left(0,1\right)
+\end{multline*}
 
 \end_inset
 
@@ -7861,7 +7846,7 @@ status open
 \begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
 \end_inset
 
- - внутренняя точка области 
+ --- внутренняя точка области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -7877,28 +7862,36 @@ status open
 \begin_inset Formula $u=f\left(x_{1},\tr x_{m}\right)$
 \end_inset
 
- существует такая выколотая окрестность точки 
+ если существует такая выколотая окрестность точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
 , что 
-\begin_inset Formula $\forall M\in U_{\varepsilon}\left(M_{0}\right)$
+\begin_inset Formula 
+\[
+\forall M\in U_{\varepsilon}\left(M_{0}\right)\quad f\left(M\right)<f\left(M_{0}\right)\quad\left(f\left(M\right)>f\left(M_{0}\right)\right)
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $f\left(M\right)<f\left(M_{0}\right)\ \left(f\left(M\right)>f\left(M_{0}\right)\right)$
-\end_inset
-
-.
- Если в определении неравенства не строгие, то 
+Если в определении неравенства не строгие, то 
 \begin_inset Formula $M_{0}$
 \end_inset
 
- - точка не строгого локального локального максимума (минимума).
+ --- точка не строгого локального локального максимума (минимума).
 \end_layout
 
 \begin_layout Theorem
-(Необходимое условие локального экстремума)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Необходимое условие локального экстремума
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -7915,31 +7908,35 @@ status open
 \end_inset
 
 , то 
-\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
+\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\quad i=\overline{1,m}$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Proof
-Пусть например тока 
+Пусть например точка 
 \begin_inset Formula $M_{0}\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
 \end_inset
 
- - это точка локального максимума.
+ --- точка локального максимума.
  Возьмем 
-\begin_inset Formula $\forall i,\ i=\overline{1,m}$
+\begin_inset Formula $\forall i,\quad i=\overline{1,m}$
 \end_inset
 
 , и зафиксируем все переменные кроме 
 \begin_inset Formula $x_{i}$
 \end_inset
 
-, то есть будем рассматривать точки вида 
-\begin_inset Formula $M\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right),\ x_{i}\in\R,\ M\in D\left(f\right)$
+, то есть будем рассматривать точки вида: 
+\begin_inset Formula 
+\[
+M\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right),\quad x_{i}\in\R,\quad M\in D\left(f\right)
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -7947,45 +7944,38 @@ status open
 \begin_inset Formula $x_{i}$
 \end_inset
 
- 
-\begin_inset Formula $:$
-\end_inset
-
- 
+: 
 \begin_inset Formula $f\left(x_{1}^{0},\tr,x_{i-1}^{0},x_{i},x_{i+1}^{0},\tr,x_{m}^{0}\right)=g\left(x_{i}\right)$
 \end_inset
 
 .
- Так как 
-\begin_inset Formula $\forall x_{i}\in\left(x_{i}^{0}-\varepsilon,x_{i}^{0}+\varepsilon\right):f\left(M_{0}\right)=g\left(x_{i}^{0}\right)\br g\left(x_{i}\right)=f\left(M\right),\ M\in U_{\varepsilon}\left(M_{0}\right)$
+ Так как: 
+\begin_inset Formula 
+\[
+\forall x_{i}\in\left(x_{i}^{0}-\varepsilon,x_{i}^{0}+\varepsilon\right):\quad f\left(M_{0}\right)=g\left(x_{i}^{0}\right)\br g\left(x_{i}\right)=f\left(M\right),\quad M\in U_{\varepsilon}\left(M_{0}\right)
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ То 
 \begin_inset Formula $x_{i}^{0}$
 \end_inset
 
- - точка локального максимума функции одной переменной 
-\begin_inset Formula $\sl$
+ --- точка локального максимума функции одной переменной, а тогда по теореме
+ Ферма: 
+\begin_inset Formula 
+\[
+g\pr\left(x_{i}\right)=\df{\dd f\left(M_{0}\right)}{\dd x_{i}}=0
+\]
+
 \end_inset
 
- по теореме Ферма 
-\begin_inset Formula $\sl$
-\end_inset
 
- 
-\begin_inset Formula $g\pr\left(x_{i}\right)=\df{\dd f\left(M_{0}\right)}{\dd x_{i}}=0$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Remark
 Точки в которых выполняется условие 
-\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\ i=\overline{1,m}$
+\begin_inset Formula $f_{x_{i}}\pr\left(M_{0}\right)=0,\quad i=\overline{1,m}$
 \end_inset
 
  называются критическими, стационарными, подозреваемыми на экстремум.
@@ -8000,23 +7990,22 @@ status open
 \begin_inset Formula $M_{0}$
 \end_inset
 
- - критическая точка функции 
+ --- критическая точка функции 
 \begin_inset Formula $f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
 , то 
-\begin_inset Formula $\grad\left(M_{0}\right)=\left(\begin{array}{c}
-0\\
+\begin_inset Formula 
+\[
+\grad\left(M_{0}\right)=\left(\begin{smallmatrix}0\\
 \vtr\\
 0
-\end{array}\right)$
+\end{smallmatrix}\right),\qquad df\left(M_{0}\right)=\ous{i=1}m\df{\dd f\left(M_{0}\right)}{\dd x_{i}}\um x_{i}=0
+\]
+
 \end_inset
 
-, 
-\begin_inset Formula $df\left(M_{0}\right)=\ous{i=1}m\df{\dd f\left(M_{0}\right)}{\dd x_{i}}\um x_{i}=0$
-\end_inset
 
- 
 \end_layout
 
 \begin_layout Standard
@@ -8046,75 +8035,68 @@ status open
 \end_layout
 
 \begin_layout Theorem
-(Достаточное условие локального экстремума)
-\begin_inset Formula $u=f\left(x,y\right),\ M_{0}\left(x_{0},y_{0}\right)$
-\end_inset
+\begin_inset Argument
+status open
 
- 
+\begin_layout Plain Layout
+Достаточное условие локального экстремума
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Formula $A=\left(\begin{array}{cc}
-a_{1,1} & a_{1,2}\\
-a_{2,1} & a_{2,2}
-\end{array}\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $a_{1,1}=f_{x^{2}}\ppr\left(M_{0}\right)$
+ Возьмем функцию 
+\begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $a_{1,2}=f_{xy}\ppr\left(M_{0}\right)$
+ и точку 
+\begin_inset Formula $M_{0}\left(x_{0},y_{0}\right)$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $a_{2,2}=f_{y^{2}}\ppr\left(M_{0}\right)$
+.
+ Обозначим: 
+\begin_inset Formula $A=\left(\begin{smallmatrix}a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{smallmatrix}\right)$
 \end_inset
 
- 
+, где:
+\begin_inset Formula 
+\[
+a_{11}=f_{x^{2}}^{\prime\prime}\left(M_{0}\right),\qquad a_{12}=f_{xy}^{\prime\prime}\left(M_{0}\right),\qquad a_{22}=f_{y^{2}}^{\prime\prime}\left(M_{0}\right)
+\]
+
+\end_inset
+
+Тогда, если:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $a_{1,1}\um a_{2,2}-a_{1,2}^{2}>0$
+\begin_inset Formula $a_{11}\um a_{22}-a_{12}^{2}>0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Существует экстремум.
+, то существует экстремум.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
 Если 
-\begin_inset Formula $a_{1,1}>0$
+\begin_inset Formula $a_{11}>0$
 \end_inset
 
- - 
+ --- 
 \begin_inset Formula $\min$
 \end_inset
 
  
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Если 
-\begin_inset Formula $a_{1,1}<0$
+\begin_inset Formula $a_{11}<0$
 \end_inset
 
- - 
+ --- 
 \begin_inset Formula $\max$
 \end_inset
 
@@ -8123,67 +8105,44 @@ a_{2,1} & a_{2,2}
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $a_{1,1}\um a_{2,2}-a_{1,2}^{2}<0$
+\begin_inset Formula $a_{11}\um a_{22}-a_{12}^{2}<0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Не существует экстремума.
+ то не существует экстремума.
 \end_layout
 
 \end_deeper
 \begin_layout Proof
-По формуле Тейлора: 
+По формуле Тейлора:
 \begin_inset Formula 
-\begin{eqnarray*}
-\D f & = & f\left(x,y\right)-f\left(x_{0},y_{0}\right)=\\
- & = & df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}2,\ \Theta\in\left(0,1\right)=\\
- & = & \df 12\left(f_{x^{2}}\ppr\left(N\right)\um\D x^{2}+2f_{xy}\ppr\left(N\right)\D x\D y+f_{y^{2}}\ppr\left(N\right)\D y^{2}\right)
-\end{eqnarray*}
+\begin{multline*}
+\D f=f\left(x,y\right)-f\left(x_{0},y_{0}\right)=\\
+\qquad=df\left(x_{0},y_{0}\right)+\df{d^{2}f\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)}2,\quad\Theta\in\left(0,1\right)=\\
+=\df 12\left(f_{x^{2}}^{\prime\prime}\left(N\right)\um\D x^{2}+2f_{xy}^{\prime\prime}\left(N\right)\D x\D y+f_{y^{2}}^{\prime\prime}\left(N\right)\D y^{2}\right)
+\end{multline*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
+Где 
 \begin_inset Formula $N\left(x_{0}+\Theta\D x,y_{0}+\Theta\D y\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\mbox{Tак частные производные 2го порядка непрерывны в точке}M_{0}$
+Так как частные производные второго порядка непрерывны в точке 
+\begin_inset Formula $M_{0}$
 \end_inset
 
 , то
-\end_layout
+\begin_inset Formula 
+\[
+f_{x^{2}}^{\prime\prime}\left(N\right)=a_{11}+\alpha_{11}\qquad f_{xy}^{\prime\prime}\left(N\right)=a_{12}+\alpha_{12}\qquad f_{y^{2}}^{\prime\prime}\left(N\right)=a_{22}+\alpha_{22}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $f_{x^{2}}\ppr\left(N\right)=a_{1,1}+\alpha_{1,1}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $f_{xy}\ppr\left(N\right)=a_{1,2}+\alpha_{1,2}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $f_{y^{2}}\ppr\left(N\right)=a_{2,2}+\alpha_{2,2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
 Где 
 \begin_inset Formula $\alpha_{i,j}\st0$
 \end_inset
@@ -8197,53 +8156,45 @@ a_{2,1} & a_{2,2}
 \end_inset
 
 .
-\end_layout
+ Тогда:
+\begin_inset Formula 
+\[
+\D f=\df 12\left(a_{11}\D x^{2}+2a_{12}\D x\D y+a_{22}\D y^{2}+\alpha_{11}\D x^{2}+2\alpha_{12}\D x\D y+\alpha_{22}\D y^{2}\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\D f=\df 12\left(a_{1,1}\D x^{2}+2a_{1,2}\D x\D y+a_{2,2}\D y^{2}+\alpha_{1,1}\D x^{2}+2\alpha_{1,2}\D x\D y+\alpha_{2,2}\D y^{2}\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-Обозначим:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $x=\rho\sin\varphi$
+Обозначим: 
+\begin_inset Formula $x=\rho\sin\varphi\quad y=\rho\cos\varphi$
 \end_inset
 
- 
-\end_layout
+, тогда:
+\begin_inset Formula 
+\begin{multline*}
+\D f\df{\rho^{2}}2\big(a_{11}\cos^{2}\varphi+2a_{12}\cos\varphi\sin\varphi+a_{22}\sin^{2}\varphi+\\
++\alpha_{11}\cos^{2}\varphi+2\alpha_{12}\cos\varphi\sin\varphi+\alpha_{22}\sin^{2}\varphi\big)
+\end{multline*}
 
-\begin_layout Proof
-\begin_inset Formula $y=\rho\cos\varphi$
 \end_inset
 
- 
-\end_layout
+ Обозначим:
+\begin_inset Formula 
+\[
+\D_{1}=a_{11}\cos^{2}\varphi+2a_{12}\cos\varphi\sin\varphi+a_{22}\sin^{2}\varphi
+\]
 
-\begin_layout Proof
-Тогда:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D f\df{\rho^{2}}2\left(a_{1,1}\cos^{2}\varphi+2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi+\alpha_{1,1}\cos^{2}\varphi+2\alpha_{1,2}\cos\varphi\sin\varphi+\alpha_{2,2}\sin^{2}\varphi\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\D_{1}=a_{1,1}\cos^{2}\varphi+2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\D_{2}=\alpha_{11}\cos^{2}\varphi+2\alpha_{12}\cos\varphi\sin\varphi+\alpha_{22}\sin^{2}\varphi
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\D_{2}=\alpha_{1,1}\cos^{2}\varphi+2\alpha_{1,2}\cos\varphi\sin\varphi+\alpha_{2,2}\sin^{2}\varphi$
 \end_inset
 
 
@@ -8251,57 +8202,34 @@ a_{2,1} & a_{2,2}
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $a_{1,2}\um a_{2,2}-a_{1,2}^{2}>0$
+Пусть 
+\begin_inset Formula $a_{12}\um a_{22}-a_{12}^{2}>0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+ тогда: 
+\begin_inset Formula $a_{11}\um a_{22}>0$
 \end_inset
 
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $a_{1,1}a_{2,2}>0$
+, а значит: 
+\begin_inset Formula $a_{11}\nr0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
+, следовательно:
+\begin_inset Formula 
+\[
+\D_{1}=\df 1{a_{11}}\left[\left(a_{11}\cos\varphi+a_{12}\sin\varphi\right)^{2}+\left(a_{11}a_{22}-a_{12}^{2}\right)\sin^{2}\varphi\right]
+\]
 
- 
-\begin_inset Formula $a_{1,1}\nr0$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\D_{1}=\df 1{a_{1,1}}\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]$
-\end_inset
-
-
-\begin_inset Newline newline
 \end_inset
 
 Так как 
-\begin_inset Formula $\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}\br0,\ \left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)>0,\ \sin^{2}\varphi\br0$
+\begin_inset Formula $\left(a_{11}\cos\varphi+a_{12}\sin\varphi\right)^{2}\br0,\quad\left(a_{11}a_{22}-a_{12}^{2}\right)>0,\quad\sin^{2}\varphi\br0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, то: 
 \begin_inset Formula 
 \begin{equation}
-\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]>0,\ \forall\varphi\in\left[0,2\pi\right]\label{eq:15}
+\left[\left(a_{11}\cos\varphi+a_{12}\sin\varphi\right)^{2}+\left(a_{11}a_{22}-a_{12}^{2}\right)\sin^{2}\varphi\right]>0,\quad\forall\varphi\in\left[0,2\pi\right]\label{eq:15}
 \end{equation}
 
 \end_inset
@@ -8314,102 +8242,68 @@ a_{2,1} & a_{2,2}
 \begin_inset Formula $a_{1,1}$
 \end_inset
 
- совпадают, причем, по второй теореме Вейерштрасса, так как 
+ совпадают, причем по второй теореме Вейерштрасса, так как 
 \begin_inset Formula $\D_{1}$
 \end_inset
 
- - непрерывна на 
+ --- непрерывна на 
 \begin_inset Formula $\left[0,2\pi\right]$
 \end_inset
 
-, получим, что 
-\begin_inset Formula $\exists m>0$
+, получим, что: 
+\begin_inset Formula 
+\[
+\exists m>0:\quad0<m\mr\left|\D_{1}\right|\qquad(\exists\min\left|\D_{1}\right|=m>0,\quad\left[0,2\pi\right])
+\]
+
 \end_inset
 
-, что 
-\begin_inset Formula $\left|\D_{1}\right|\br m>0$
-\end_inset
-
-.
- (
-\begin_inset Formula $\exists\min\left|\D_{1}\right|=m>0$
-\end_inset
-
-, 
-\begin_inset Formula $\left[0,2\pi\right]$
-\end_inset
-
-).
- Так как при достаточно малых 
+Так как при достаточно малых 
 \begin_inset Formula $\rho$
 \end_inset
 
-, модуль 
-\begin_inset Formula $\D_{2}$
+,
+\begin_inset Formula 
+\[
+\left|\D_{2}\right|\mr\left|\alpha_{11}\right|+2\left|\alpha_{12}\right|+\left|\alpha_{22}\right|<m
+\]
+
 \end_inset
 
-, 
-\begin_inset Formula $\left|\D_{2}\right|\mr\left|\alpha_{1,1}\right|+2\left|\alpha_{1,2}\right|+\left|\alpha_{2,2}\right|<m$
-\end_inset
-
-, при достаточно малых 
-\begin_inset Formula $\rho$
-\end_inset
-
-.
- Следовательно 
+Следовательно 
 \begin_inset Formula $\D_{1}+\D_{2}$
 \end_inset
 
-, а значений 
+, а значит и 
 \begin_inset Formula $\D f$
 \end_inset
 
  сохраняет знак 
-\begin_inset Formula $a_{1,1}$
+\begin_inset Formula $a_{11}$
 \end_inset
 
-.
-\begin_inset Formula $\sl$
-\end_inset
-
-
+, тогда:
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Itemize
 При 
-\begin_inset Formula $a_{1,1}>0$
+\begin_inset Formula $a_{11}>0\quad\D f>0$
 \end_inset
 
- 
-\begin_inset Formula $\D f>0$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ существует 
 \begin_inset Formula $\min$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 При 
-\begin_inset Formula $a_{1,1}<0$
+\begin_inset Formula $a_{11}<0\quad\D f<0$
 \end_inset
 
- 
-\begin_inset Formula $\D f<0$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ существует 
 \begin_inset Formula $\max$
 \end_inset
 
@@ -8419,7 +8313,7 @@ a_{2,1} & a_{2,2}
 \end_deeper
 \begin_layout Enumerate
 Пусть 
-\begin_inset Formula $a_{1,1}a_{2,2}-a_{1,2}^{2}<0$
+\begin_inset Formula $a_{11}a_{22}-a_{12}^{2}<0$
 \end_inset
 
 
@@ -8428,7 +8322,7 @@ a_{2,1} & a_{2,2}
 \begin_deeper
 \begin_layout Enumerate
 Случай 
-\begin_inset Formula $a_{1,1}\ne0$
+\begin_inset Formula $a_{11}\ne0$
 \end_inset
 
 .
@@ -8448,40 +8342,38 @@ reference "eq:15"
 \end_inset
 
 .
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 При 
 \begin_inset Formula $\varphi=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+ получим:
+\begin_inset Formula 
+\[
+\left[\left(a_{11}\cos\varphi+a_{12}\sin\varphi\right)^{2}+\left(a_{11}a_{22}-a_{12}^{2}\right)\sin^{2}\varphi\right]=a_{11}^{2}>0
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]=a_{1,1}^{2}>0$
-\end_inset
-
-.
- Если же взять 
+Если же взять 
 \begin_inset Formula $\varphi=\varphi_{1}$
 \end_inset
 
  из условия 
-\begin_inset Formula $a_{1,1}\cos\varphi_{1}+a_{1,2}\sin\varphi_{1}=0$
+\begin_inset Formula $a_{11}\cos\varphi_{1}+a_{12}\sin\varphi_{1}=0\quad\then\quad\ctg\varphi_{1}=-\df{a_{12}}{a_{11}}$
 \end_inset
 
-, то-есть 
-\begin_inset Formula $\ctg\varphi_{1}=-\df{a_{1,2}}{a_{1,1}}.$
+, то получим выражение:
+\begin_inset Formula 
+\[
+\left[\left(a_{11}\cos\varphi+a_{12}\sin\varphi\right)^{2}+\left(a_{11}a_{22}-a_{12}^{2}\right)\sin^{2}\varphi\right]=\left(a_{11}a_{22}-a_{12}^{2}\right)\sin^{2}\varphi_{1}
+\]
+
 \end_inset
 
- То выражение 
-\begin_inset Formula $\left[\left(a_{1,1}\cos\varphi+a_{1,2}\sin\varphi\right)^{2}+\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi\right]=\left(a_{1,1}a_{2,2}-a_{1,2}^{2}\right)\sin^{2}\varphi_{1}$
-\end_inset
-
-.
- Так как при достаточно малых 
+Так как при достаточно малых 
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -8510,33 +8402,21 @@ reference "eq:15"
 \end_inset
 
 .
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Экстремума нет.
+ Следовательно экстремума нет.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 Случай 
-\begin_inset Formula $a_{1,1}=0$
+\begin_inset Formula $a_{11}=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
+.
+\begin_inset Formula 
+\[
+\D_{1}=2a_{12}\cos\varphi\sin\varphi+a_{22}\sin^{2}\varphi=\sin\varphi\left(2a_{12}\cos\varphi+a_{22}\sin\varphi\right)
+\]
 
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\D_{1}=2a_{1,2}\cos\varphi\sin\varphi+a_{2,2}\sin^{2}\varphi=\sin\varphi\left(2a_{1,2}\cos\varphi+a_{2,2}\sin\varphi\right)$
-\end_inset
-
-
-\begin_inset Newline newline
 \end_inset
 
 Тогда определим 
@@ -8544,32 +8424,23 @@ reference "eq:15"
 \end_inset
 
  так, чтобы 
-\begin_inset Formula $\left|a_{2,2}\right|\um\left|\sin\varphi_{1}\right|<2\um\left|a_{1,2}\right|\um\left|\cos\varphi_{1}\right|$
+\begin_inset Formula $\left|a_{22}\right|\um\left|\sin\varphi_{1}\right|<2\um\left|a_{12}\right|\um\left|\cos\varphi_{1}\right|$
 \end_inset
 
 , для того чтобы знак скобки 
-\begin_inset Formula $\left(2a_{1,2}\cos\varphi+a_{2,2}\sin\varphi\right)$
+\begin_inset Formula $\left(2a_{12}\cos\varphi+a_{22}\sin\varphi\right)$
 \end_inset
 
  не менялся никогда.
  
-\begin_inset Formula $\left|\ctg\varphi_{1}\right|>\df 12\left|\df{a_{2,2}}{a_{1,2}}\right|$
+\begin_inset Formula $\left|\ctg\varphi_{1}\right|>\frac{1}{2}\left|\frac{a_{22}}{a_{12}}\right|$
 \end_inset
 
- - такое 
+ --- такое 
 \begin_inset Formula $\varphi_{1}$
 \end_inset
 
- существует.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-При 
+ существует, тогда: при 
 \begin_inset Formula $\varphi=\varphi_{1}$
 \end_inset
 
@@ -8577,16 +8448,15 @@ reference "eq:15"
 \begin_inset Formula $\varphi=-\varphi_{1}$
 \end_inset
 
- 
+: 
+\begin_inset Formula $\D_{1}$
+\end_inset
+
+ и 
 \begin_inset Formula $\D_{2}$
 \end_inset
 
- 
-\begin_inset Formula $\D_{2}$
-\end_inset
-
- применяет значения разных знаков.
- Следовательно 
+ принимают значения разных знаков, следовательно 
 \begin_inset Formula $\D_{2}$
 \end_inset
 
@@ -8594,11 +8464,7 @@ reference "eq:15"
 \begin_inset Formula $\rho$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, тогда 
 \begin_inset Formula $\D f$
 \end_inset
 
@@ -8606,187 +8472,11 @@ reference "eq:15"
 \begin_inset Formula $M_{0}$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Экстремума нет.
+, следовательно экстремума нет.
 \end_layout
 
 \end_deeper
 \end_deeper
-\end_deeper
-\begin_layout Example
-\begin_inset Formula $u=x^{3}+3xy^{2}+39x-36y+26$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Находим критические точки.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula 
-\begin{eqnarray*}
-\begin{array}{c}
-f_{x}\pr=\\
-f_{y}\pr=
-\end{array}\begin{cases}
-3x^{2}+3y^{2}-39=0\\
-6xy-36=0
-\end{cases} & \sl & \begin{cases}
-x^{2}+\df{36}{x^{2}}-13\\
-y=\df 6x
-\end{cases}\dsl\\
- & \dsl & \left\{ \begin{array}{c}
-x^{4}-13x^{2}+36=0\\
-\left[\begin{array}{c}
-x^{2}=9\\
-x^{2}=4
-\end{array}\right.
-\end{array}\right\} \dsl\\
- & \dsl & \begin{cases}
-\left[\begin{array}{c}
-x^{2}=9\\
-x^{2}=4
-\end{array}\right.\\
-y=\df 6x
-\end{cases}\dsl\\
- & \dsl & \left[\begin{array}{c}
-\begin{cases}
-x=3\\
-y=2
-\end{cases}\\
-\begin{cases}
-x=-3\\
-y=-2
-\end{cases}\\
-\begin{cases}
-x=2\\
-y=3
-\end{cases}\\
-\begin{cases}
-x=-2\\
-y=-3
-\end{cases}
-\end{array}\right.
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{x^{2}}\ppr=6x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{xy}\ppr=f_{yx}\ppr=6y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $f_{y^{2}}\ppr=6x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $A=\left(\begin{array}{cc}
-6x & 6y\\
-6y & 6x
-\end{array}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{1}\left(3,2\right),\ M_{2}\left(-3,-2\right),\ M_{3}\left(2,3\right),\ M_{4}\left(-2,-3\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{1}\left(3,2\right)\sl$
-\end_inset
-
- 
-\begin_inset Formula $6\left(\begin{array}{cc}
-3 & 2\\
-2 & 3
-\end{array}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $a_{1,1}=18>0$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{\min}=\tr$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{2}\left(-3,-2\right)\ \sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left(\begin{array}{cc}
--18 & -12\\
--12 & -18
-\end{array}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\D_{2}=36\left(9-4\right)>0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\D_{1}=-18<0$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{\max}=u\left(-3,-2\right)=\tr$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Дифференцирование функций заданных неявно
 \end_layout
@@ -11262,13 +10952,13 @@ y=1\\
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $d^{2}L=L_{x^{2}}\ppr\um dx^{2}+2\um L_{xy}\ppr\um dx\um dy+L_{y^{2}}\ppr\um dy^{2}=2\um dx^{2}-2\um dy^{2}$
+\begin_inset Formula $d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy+L_{y^{2}}^{\prime\prime}\um dy^{2}=2\um dx^{2}-2\um dy^{2}$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Продифференцируем условие связи: 
 \begin_inset Formula $d\left(2\um x-y-3\right)=0$
 \end_inset
@@ -11427,8 +11117,8 @@ z=\pm c
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-d^{2}L & = & \left\{ L_{xy}\ppr=L_{xz}\ppr=L_{yz}\ppr\right\} =\\
- & = & L_{x^{2}}\ppr\um dx^{2}+L_{y^{2}}\ppr\um dy^{2}+L_{z^{2}}\ppr\um dz^{2}=\\
+d^{2}L & = & \left\{ L_{xy}^{\prime\prime}=L_{xz}^{\prime\prime}=L_{yz}^{\prime\prime}\right\} =\\
+ & = & L_{x^{2}}^{\prime\prime}\um dx^{2}+L_{y^{2}}^{\prime\prime}\um dy^{2}+L_{z^{2}}^{\prime\prime}\um dz^{2}=\\
  & = & \left(2+\df{2\lambda}{a^{2}}\right)dx^{2}+\left(2+\df{2\lambda}{b^{2}}\right)dy^{2}+\left(2+\df{2\lambda}{c^{2}}\right)dz^{2}
 \end{eqnarray*}
 
@@ -16795,7 +16485,7 @@ y=y\left(t\right)
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I=\oui{\alpha}{\beta}f\left(x\left(t\right),y\left(t\right)\right)\sqrt{x^{2}\pr\left(t\right)+y^{2}\pr\left(t\right)}dt
+I=\oui{\alpha}{\beta}f\left(x\left(t\right),y\left(t\right)\right)\sqrt{x^{2\prime}\left(t\right)+y^{2\prime}\left(t\right)}dt
 \]
 
 \end_inset
@@ -16818,7 +16508,7 @@ I=\oui{\alpha}{\beta}f\left(x\left(t\right),y\left(t\right)\right)\sqrt{x^{2}\pr
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I=\oui{\alpha}{\beta}f\left(x,y\left(x\right)\right)\sqrt{1+y^{2}\pr\left(x\right)}dx
+I=\oui{\alpha}{\beta}f\left(x,y\left(x\right)\right)\sqrt{1+y^{2\prime}\left(x\right)}dx
 \]
 
 \end_inset
@@ -16868,7 +16558,7 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\sqrt{1+y^{2}\pr}=\sqrt{5}$
+\begin_inset Formula $\sqrt{1+y^{2\prime}}=\sqrt{5}$
 \end_inset
 
 
@@ -16945,7 +16635,7 @@ y=a\sin\varphi\cos\varphi=\df{a\sin^{2}\varphi}2
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\sqrt{x^{2}\pr+y^{2}\pr}=\sqrt{a^{2}\sin^{2}2\varphi+a^{2}\cos^{2}2\varphi}=a$
+\begin_inset Formula $\sqrt{x^{2\prime}+y^{2\prime}}=\sqrt{a^{2}\sin^{2}2\varphi+a^{2}\cos^{2}2\varphi}=a$
 \end_inset
 
 
@@ -17255,7 +16945,7 @@ Hbc 70
 \end_layout
 
 \begin_layout Definition
-\begin_inset Formula $I=\ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui{AB}\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)$
+\begin_inset Formula $I=\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)$
 \end_inset
 
 
@@ -17298,7 +16988,7 @@ B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
 
 \begin_layout Theorem
 Тогджа КИВР 
-\begin_inset Formula $\ui{AB}f\left(x,y\right)dx$
+\begin_inset Formula $\ui f\left(x,y\right)dx$
 \end_inset
 
  существует и справедливо равенство:
@@ -17307,7 +16997,7 @@ B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
 \begin_layout Theorem
 \begin_inset Formula 
 \begin{equation}
-\ui{AB}f\left(x,y\right)dx=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt\label{eq:32}
+\ui f\left(x,y\right)dx=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt\label{eq:32}
 \end{equation}
 
 \end_inset
@@ -17442,14 +17132,14 @@ status open
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\ui{BA}P\left(x,y\right)dx=-\ui{AB}P\left(x,y\right)dx$
+\begin_inset Formula $\ui P\left(x,y\right)dx=-\ui P\left(x,y\right)dx$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\ui{BA}Q\left(x,y\right)dy=-\ui{AB}Q\left(x,y\right)dy$
+\begin_inset Formula $\ui Q\left(x,y\right)dy=-\ui Q\left(x,y\right)dy$
 \end_inset
 
  
@@ -17477,7 +17167,7 @@ status open
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\ui{AB}f\left(x,y\right)dy=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\psi\pr\left(t\right)dt$
+\begin_inset Formula $\ui f\left(x,y\right)dy=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\psi\pr\left(t\right)dt$
 \end_inset
 
 
@@ -17496,7 +17186,7 @@ status open
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}\left(P\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)\psi\pr\left(t\right)dt\right)$
+\begin_inset Formula $\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}\left(P\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)\psi\pr\left(t\right)dt\right)$
 \end_inset
 
 
@@ -17528,7 +17218,7 @@ status open
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $\ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}P\left(x,y\left(x\right)\right)+Q\left(x,y\left(x\right)\right)y\pr\left(x\right)dx$
+\begin_inset Formula $\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}P\left(x,y\left(x\right)\right)+Q\left(x,y\left(x\right)\right)y\pr\left(x\right)dx$
 \end_inset
 
 
@@ -17574,7 +17264,7 @@ status open
 
 \begin_layout Remark
 Тогда обязательно выполняется:
-\begin_inset Formula $\ui{AB}P\left(x,y\right)dx=0$
+\begin_inset Formula $\ui P\left(x,y\right)dx=0$
 \end_inset
 
 .
@@ -17586,7 +17276,7 @@ status open
 \end_inset
 
 , то 
-\begin_inset Formula $dy=0\ \sl\ \ui{AB}Q\left(x,y\right)dy=0$
+\begin_inset Formula $dy=0\ \sl\ \ui Q\left(x,y\right)dy=0$
 \end_inset
 
 
@@ -17623,7 +17313,7 @@ z=\chi\left(t\right)
 \begin_layout Remark
 \begin_inset Formula 
 \begin{eqnarray*}
-\ui{AB}P\left(x,y,z\right)dx+Q\left(x,y,z\right)dy+R\left(x,y,z\right)dz & = & \oui{\alpha}{\beta}(P\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\varphi\pr\left(t\right)+\\
+\ui P\left(x,y,z\right)dx+Q\left(x,y,z\right)dy+R\left(x,y,z\right)dz & = & \oui{\alpha}{\beta}(P\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\varphi\pr\left(t\right)+\\
  & + & Q\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\psi\pr\left(t\right)+\\
  & = & R\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\chi\pr\left(t\right))dt
 \end{eqnarray*}
@@ -17647,7 +17337,7 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $I=\ui{AB}xdy-ydx,\ \text{Г}:\ov{AB}{\smile},\ A\left(0;0\right),\ B\left(1;2\right)$
+\begin_inset Formula $I=\ui xdy-ydx,\ \text{Г}:\ov{AB}{\smile},\ A\left(0;0\right),\ B\left(1;2\right)$
 \end_inset
 
 
@@ -17724,7 +17414,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\ui{\text{Г}}=\mbox{\ui{\text{Г}_{1}}+\ui{\text{Г}_{2}}}$
+\begin_inset Formula $\ui=\mbox{\ui+\ui}$
 \end_inset
 
 
@@ -17738,7 +17428,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\ui{\text{Г}_{1}}xdy-ydx=0$
+\begin_inset Formula $\ui xdy-ydx=0$
 \end_inset
 
 
@@ -17756,7 +17446,7 @@ status open
 \end_inset
 
 
-\begin_inset Formula $\ui{\text{Г}_{2}}xdy-ydx=\oui 021dy=2$
+\begin_inset Formula $\ui xdy-ydx=\oui 021dy=2$
 \end_inset
 
 
@@ -17870,11 +17560,11 @@ status open
 \left(x,y_{1}\left(x\right)\right)\in BC\\
 \left(x,y_{0}\left(x\right)\right)\in AD
 \end{array}\right\} =\\
- & = & \ui{BC}P\left(x,y\right)dx-\ui{AD}P\left(x,y\right)dx=\\
- & = & -\left(\ui{AD}P\left(x,y\right)dx+\ui{DC}P\left(x,y\right)dx+\ui{CB}P\left(x,y\right)dx+\ui{BA}P\left(x,y\right)dx\right)=\\
+ & = & \ui P\left(x,y\right)dx-\ui P\left(x,y\right)dx=\\
+ & = & -\left(\ui P\left(x,y\right)dx+\ui P\left(x,y\right)dx+\ui P\left(x,y\right)dx+\ui P\left(x,y\right)dx\right)=\\
  & = & \left\{ \begin{array}{c}
-\ui{BA}P\left(x,y\right)dx=\left\{ dx=0\right\} =0\\
-\ui{DC}P\left(x,y\right)dx=\left\{ dx=0\right\} =0
+\ui P\left(x,y\right)dx=\left\{ dx=0\right\} =0\\
+\ui P\left(x,y\right)dx=\left\{ dx=0\right\} =0
 \end{array}\right\} =\\
  & = & -\un{\oint}LP\left(x,y\right)dx=\left\{ L=ADCB=\dd D\right\} 
 \end{eqnarray*}
@@ -18183,7 +17873,7 @@ Hbc 78
 
 \begin_layout Theorem
 Криволинейный интеграл второго рода 
-\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\begin_inset Formula $\ui Pdx+Qdy$
 \end_inset
 
  не зависит от пути интегрирования тогда и только тогда, когда дифференциальное
@@ -18208,7 +17898,7 @@ Hbc 78
 
 \begin_layout Proof
 Пусть 
-\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\begin_inset Formula $\ui Pdx+Qdy$
 \end_inset
 
  не зависит от пути из 
@@ -18245,7 +17935,7 @@ hbc 79
 \end_inset
 
  
-\begin_inset Formula $\ui{AB}Pdx+Qdy=\oui{\left(x_{0},y_{0}\right)}{\left(x,y\right)}Pdx+Qdy$
+\begin_inset Formula $\ui Pdx+Qdy=\oui{\left(x_{0},y_{0}\right)}{\left(x,y\right)}Pdx+Qdy$
 \end_inset
 
  
@@ -18299,7 +17989,7 @@ status open
 \begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-\D_{x}F\left(x,y\right) & = & F\left(x+\D x,y\right)-F\left(x,y\right)=\ui{AC}-\ui{AB}=\left\{ \text{по адитивности КИВРа}\right\} =\\
+\D_{x}F\left(x,y\right) & = & F\left(x+\D x,y\right)-F\left(x,y\right)=\ui-\ui=\left\{ \text{по адитивности КИВРа}\right\} =\\
  & = & \oui{\left(x;y\right)}{\left(x+\D x;y\right)}Pdx+Qdy=\\
  & = & \left\{ Qdy=0\right\} =\\
  & = & \oui{\left(x;y\right)}{\left(x+\D x;y\right)}Pdx=\\
@@ -18422,7 +18112,7 @@ y=y\left(t\right)
 Получим 
 \begin_inset Formula 
 \begin{eqnarray*}
-\ui LPdx+Qdy & = & \left\{ \begin{array}{c}
+\ui Pdx+Qdy & = & \left\{ \begin{array}{c}
 Pdx=x\pr\left(t\right)dt\\
 Qdy=y\pr\left(t\right)dt
 \end{array}\right\} =\\
@@ -18565,8 +18255,8 @@ Hbc 81
 \begin_inset Formula 
 \begin{eqnarray*}
 F\left(x,y\right)-F\left(x_{0},y_{0}\right) & = & F\left(B\right)-F\left(A\right)=\\
- & = & \ui{AB}P\left(x,y\right)dx+Q\left(x,y\right)dy=\\
- & = & \ui{AC}+\ui{CB}=\\
+ & = & \ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\\
+ & = & \ui+\ui=\\
  & = & \left\{ \begin{array}{c}
 AC:\begin{cases}
 x\equiv x_{1}-const & ,dx=0\\
@@ -18710,7 +18400,7 @@ status open
 
 \begin_layout Theorem
 Интеграл 
-\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\begin_inset Formula $\ui Pdx+Qdy$
 \end_inset
 
 , где 
@@ -18748,7 +18438,7 @@ status open
 \begin_deeper
 \begin_layout Standard
 Пусть 
-\begin_inset Formula $\ui{AB}Pdx+Qdy$
+\begin_inset Formula $\ui Pdx+Qdy$
 \end_inset
 
  не зависит от пути интегрирования.
@@ -18778,7 +18468,7 @@ status open
 \end_inset
 
 , причем 
-\begin_inset Formula $\ui{L_{1}}Pdx+Qdy+\ui{L_{2}}Pdx+Qdy$
+\begin_inset Formula $\ui Pdx+Qdy+\ui Pdx+Qdy$
 \end_inset
 
 .
@@ -18787,7 +18477,7 @@ status open
 \end_inset
 
  --- 
-\begin_inset Formula $\ui L=\ui{L_{1}\ob L_{2}}$
+\begin_inset Formula $\ui=\ui$
 \end_inset
 
 
@@ -18930,7 +18620,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Formula $\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy=\ui{\gamma}Pdx+Qdy$
+\begin_inset Formula $\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy=\ui Pdx+Qdy$
 \end_inset
 
 
@@ -19015,8 +18705,8 @@ status open
 \begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy & = & \ui{\gamma_{0}\ob l_{1}^{+}\ob l_{1}^{-}\ob\gamma_{1}\ob l_{2}^{+}\ob l_{2}^{-}\ob\gamma_{2}}Pdx+Qdy=\\
- & = & \ui{\gamma_{0}}+\ui{\gamma_{1}}+\ui{\gamma_{2}}=\ui{\gamma_{1}\ob\gamma_{2}\ob\gamma_{3}}Pdx+Qdy
+\un{\iint}D\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy & = & \ui Pdx+Qdy=\\
+ & = & \ui+\ui+\ui=\ui Pdx+Qdy
 \end{eqnarray*}
 
 \end_inset
@@ -22016,7 +21706,7 @@ I=r^{2}\sin\psi
 
 \begin_layout Standard
 КИВР: 
-\begin_inset Formula $\ui LPdx+Qdy+Rdz=\ui L\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL$
+\begin_inset Formula $\ui Pdx+Qdy+Rdz=\ui\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL$
 \end_inset
 
  :КИПР.
@@ -22024,7 +21714,7 @@ I=r^{2}\sin\psi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\ui L\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL=\ui L\left(\v a\left(M\right),\v{\tau}\left(M\right)\right)dl$
+\begin_inset Formula $\ui\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)dL=\ui\left(\v a\left(M\right),\v{\tau}\left(M\right)\right)dl$
 \end_inset
 
  --- Скалярная форма для криволинейного интеграла второго рода.
