@@ -13245,7 +13245,601 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+9.12.13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{min}$
+\end_inset
+
+ --- глубина потенциальной ямы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT<<\left|U_{min}\right|$
+\end_inset
+
+ --- твердое состояние вещнества
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT>>\left|U_{min}\right|$
+\end_inset
+
+ --- газообрахное состояние вещесмтва
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT\approx\left|U_{min}\right|$
+\end_inset
+
+ --- жидкое состояние вещества
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\nu$
+\end_inset
+
+ --- 1 киломоль, то 
+\begin_inset Formula $PV=RT$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\df{PV}{RT}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Стали смотреть, что происходит с давлением, и оказалося:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 38
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Часть внешнего давления уходит на энергию притяжение между молекулами (этим
+ обуславливается убывание).
+ А в водороде такие силы очень малы.
+ Поэтому пользоваться этой формулах при больших давлениях и/или малых температур
+ах невозможно (будет большая погрешность, так как газ не идеальный).
+\end_layout
+
+\begin_layout Standard
+Поэтому нужно учитывать 
+\begin_inset Formula $U_{min}$
+\end_inset
+
+.
+ Тогда для каждого газа будет своя формула (потому что разная формула молекул
+ и не только это).
+\end_layout
+
+\begin_layout Standard
+Выделим Менделеева.
+ Он рассматривал поверхностное натяжение (границу между жидкостью и газом
+ этой жидкости).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 39
+\end_layout
+
+\end_inset
+
+ Он браз закрытый сосуд.
+ В нее помежал некоторое количество воды.
+ Нагревал.
+ Когда он это делал, начинался переход молекул из жидкого состояния в газообразн
+ое, повышается давление и граница будет смешаться в сторону газа (вверх,
+ за счет линейного расширения газа), если воды много, а если воды мало,
+ то граница между газом и жидкостью начинает полсти вниз.
+ Ему заходелось найти ту границу, когда эта планка будет стоять на месте.
+ Путём огпытов, что он ее нашел такое стстояние, когда граница не двигается.
+ 
+\end_layout
+
+\begin_layout Standard
+Оказывается граница пропадает при определенной температуре (для каждой жидкости
+ и давления своя).
+ Он назвал эту температуру температурой 
+\emph on
+абсолютного кипения
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+А если сделать обратный эксперимент (не нагривать а остужать), то жидкость
+ конденсируется в капельки и опадает.
+\end_layout
+
+\begin_layout Subsection
+Реальные изотермы углекислого газа
+\end_layout
+
+\begin_layout Standard
+Эндрюс исследовал с углекислым газом.
+ И построил его изотермы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 40
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чем выше изотерма, там при большей температуре она проведена.
+\end_layout
+
+\begin_layout Standard
+Если говорить про большие температуры : они практически совподают с геперболой
+ (
+\begin_inset Formula $PV=const$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Давление насыщеного пара - когда ты повышаешь обьем, а давление не меняется
+ (оно зависит от температуры).
+\end_layout
+
+\begin_layout Standard
+При некоторой температуре невозможно добится увеличением обьема переход
+ жидкости в газообразное состояние.
+\end_layout
+
+\begin_layout Standard
+Пунктирная кривая обганичевает линию перезода от газа в жидкость, и ее так
+ и называют --- 
+\emph on
+пограничной кривой.
+\end_layout
+
+\begin_layout Standard
+То что выше критической изотермы мы будет называть 
+\emph on
+газом
+\emph default
+.
+ Нижи критической изотермы и правее пограничной кривой будем назыапать 
+\emph on
+жидкостью
+\emph default
+.
+ То что ниже критической изотермы и правее пограничной кривой назовем 
+\emph on
+паром
+\emph default
+.
+ А внутри пограничной кривой назывем 
+\emph on
+насыщенным паром
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Уравнение состояние реального газа
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(\beta,V,T\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+На самом деле сложно его записать из за того, что силы взаимодействия разные
+ в разных газах.
+ Но есть хорошие приближения.
+ Одно из них было полчено голандским ученым 
+\emph on
+Ван дер Ваальс.
+ 
+\emph default
+Что он сделал? Он взял уравнение Менделеева-Клаперона.
+ Он учел, что 
+\begin_inset Formula $U_{\text{вз}}\nr0$
+\end_inset
+
+, но при этом учтены только силы притяжения, а силы отталкивания заменены
+ жесткой границей.
+ Возникает поняние 
+\emph on
+недопустимого обьема 
+\emph default
+--- когда молекула не может попасять в какую-то точку (она занята другой
+ молекулой).
+ И еще одна поправка на внутренее давление (давление уменьшается).
+\end_layout
+
+\begin_layout Enumerate
+Поправка на 
+\emph on
+недопустимый обьем
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ --- диаметр молекулы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 41
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Центры молекул не могут находится на растоянии, меньше чем диаметр этой
+ молекулы.
+\end_layout
+
+\begin_layout Standard
+Обьем этого места (обьм шара) 
+\begin_inset Formula $\df 43\pi d^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Но в газе очень много молекул.
+\end_layout
+
+\begin_layout Standard
+Сколько различных пар мы можем состовить? Ответ: 
+\begin_inset Formula $C_{N}^{2}=\df{N\left(N-1\right)}2\approx\df{N^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 43\pi d^{3}\df{N^{2}}2$
+\end_inset
+
+ --- получим такую формулу --- недопустимый обьем для всех молккул
+\end_layout
+
+\begin_layout Standard
+Тут мы считаем для всех молекул.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b$
+\end_inset
+
+ --- недопустимый обьем так обозначается
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b=\df N6\um4\pi d^{3}=4N\df{\pi d^{3}}6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\pi d^{3}}6$
+\end_inset
+
+ --- обьем одной молекулы
+\end_layout
+
+\begin_layout Standard
+Уравнение Менделеева-Клаперона c этой поправкой будет выгрядить так: 
+\begin_inset Formula $P\left(V-b\right)=\nu RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b=4N_{A}\df{\pi d^{3}}6\sim\nu$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Стенка, о которую бьются молекулы (они определяют давление)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+О стенку могут биться только те молекулы, которые находятся на рассмотянии
+ длиннц свободного пробега.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle l\right\rangle $
+\end_inset
+
+ --- длинна свободного пробега
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+ --- концентрация молекул
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 42
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Учитывая силы притяжения, получается что на эти молекулы (внутри этого слоя,
+ между стенкой и длинной свободного пробега от стенку) действуют только
+ молекулы соседнего слоя.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P'$
+\end_inset
+
+ --- внутреннее давление (уменьшает давление, которое газ оказывается на
+ стенку)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P'\sim n^{2}=\left(\df NV\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Введем коофицент пропорциональности: 
+\begin_inset Formula $P'=\alpha\df{N^{2}}{V^{2}}=\df{a^{2}}{V^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\sim\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Внесем еще и эту поправку: 
+\begin_inset Formula $P=\df{\nu RT}{V-b}-P'$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\fbox{\left(P+\df{a^{2}}{V^{2}}\right)\um\left(V-b\right)=\nu RT}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это уравнение Ван дер Вальса.
+\end_layout
+
+\begin_layout Standard
+Зпишем это уравнение в форме 
+\begin_inset Formula $F\left(\beta,V,T\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV^{3}-\left(Pb+\nu RT\right)V^{2}+a^{2}V-a^{2}b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если рассматривать его относительно 
+\begin_inset Formula $V$
+\end_inset
+
+ --- это многочлен 3й степени.
+ Корней у него максимум 3 корня.
+\end_layout
+
+\begin_layout Standard
+Построим график этой функции.
+ Назовём его изотермой вандервальса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 43
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При высокой температуре 
+\begin_inset Formula $\df{a^{2}}{v^{2}}<<RT$
+\end_inset
+
+, и тогда мы можем пренебречь 
+\begin_inset Formula $\df{a^{2}}{v^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В этом случае мы получим гиперболу, просто смещенную чуть чуть.
+\end_layout
+
+\begin_layout Standard
+Если сравнивать реальные изотермы и график Вае дер Вальса учистком 
+\begin_inset Formula $v_{1}v_{2}$
+\end_inset
+
+, то они там различаются.
+\end_layout
+
+\begin_layout Standard
+Но не всё плохо для него все таки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $CDE$
+\end_inset
+
+ --- нереальный участок
+\end_layout
+
+\begin_layout Standard
+Поэтому корень 
+\begin_inset Formula $D$
+\end_inset
+
+ --- физически не реален.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ --- обьем жидкости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ --- обьем газа
+\end_layout
+
+\begin_layout Standard
+Участки 
+\begin_inset Formula $BC$
+\end_inset
+
+ и 
+\begin_inset Formula $EF$
+\end_inset
+
+ --- физически получаемы (осуществимы), но они соответствуют неустогйчевому
+ состоянию вещества.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $BC$
+\end_inset
+
+ --- соответствует стстоянию перегретой жидкости.
+\end_layout
+
+\begin_layout Standard
+Кипение возникает вокруг центров кипения (неоднородности в среде жидкости).
+\end_layout
+
+\begin_layout Standard
+Участок 
+\begin_inset Formula $EF$
+\end_inset
+
+ называется присыщенного (переохлажденного) пара (формально переохлажденного
+ газа).
+ 
+\end_layout
+
+\begin_layout Standard
+Кристализация, так же как и кипение, возникает около неоднородности в среде.
+\end_layout
+
+\begin_layout Standard
+При некоторых опытах получается что точка 
+\begin_inset Formula $C$
+\end_inset
+
+ опускается ниже нуля.
+ Давление оторицательно.
+ Такое принципе возможно.
+ Это когда жидкость не давит на стенки сосуда, а наоборот, пытается ихз
+ втенуть.
 \end_layout
 
 \end_body
