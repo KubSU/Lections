@@ -86,325 +86,325 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sl}{\Longrightarrow}
+\renewcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dsl}{\Longleftrightarrow}
+\renewcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tr}{\ldots}
+\renewcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\nr}{\neq}
+\renewcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\um}{\cdot}
+\renewcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pr}{\prime}
+\renewcommand{\pr}{\prime}
 {\prime}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tg}{\text{tg}}
+\renewcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tan}{\tg}
+\renewcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\arctg}{\text{arctg}}
+\renewcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\arcctg}{\text{arcctg}}
+\renewcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\N}{\mathbb{N}}
+\renewcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\R}{\mathbb{R}}
+\renewcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Q}{\text{Q}}
+\renewcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sh}{\text{sh}}
+\renewcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ch}{\text{ch}}
+\renewcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\th}{\text{th}}
+\renewcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\st}{\to}
+\renewcommand{\st}{\to}
 {\to}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sinx}{\sin\left(x\right)}
+\renewcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\cosx}{\cos\left(x\right)}
+\renewcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\fx}{f\left(x\right)}
+\renewcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\un}[2]{\underset{#2}{#1}}
+\renewcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ov}[2]{\overset{#2}{#1}}
+\renewcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ul}[1]{\lim\limits _{#1}}
+\renewcommand{\ul}[1]{\lim\limits _{#1}}
 {\lim\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umax}[1]{\max\limits _{#1}}
+\renewcommand{\umax}[1]{\max\limits _{#1}}
 {\max\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umin}[1]{\min\limits _{#1}}
+\renewcommand{\umin}[1]{\min\limits _{#1}}
 {\min\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+\renewcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
 {\iint\limits _{#1}^{#2}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\newcommand{\ppr}{\pr\pr}
+\renewcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pppr}{\ppr\pr}
+\renewcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\br}{\geq}
+\renewcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\mr}{\leq}
+\renewcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+\renewcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\df}[2]{\dfrac{#1}{#2}}
+\renewcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tl}{\approx}
+\renewcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\D}{\Delta}
+\renewcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\b}{\infty}
+\renewcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vkl}{\subset}
+\renewcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vec}[1]{\overrightarrow{#1}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\v}[1]{\overrightarrow{#1}}
+\renewcommand{\v}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\mom}{\text{mom}}
+\renewcommand{\mom}{\text{mom}}
 {\text{mom}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\x}{\times}
+\renewcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\DD}{\partial}
+\renewcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dd}{\partial}
+\renewcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\grad}{\text{grad}}
+\renewcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ctg}{\text{ctg}}
+\renewcommand{\ctg}{\text{ctg}}
 {\text{ctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vtr}{\vdots}
+\renewcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ntr}{\ddots}
+\renewcommand{\ntr}{\ddots}
 {\ddots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ob}{\cup}
+\renewcommand{\ob}{\cup}
 {\cup}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dint}{\iint}
+\renewcommand{\dint}{\iint}
 {\iint}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pro}{\text{Пр}}
+\renewcommand{\pro}{\text{Пр}}
 {\text{Пр}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ui}[1]{\int\limits _{#1}}
+\renewcommand{\ui}[1]{\int\limits _{#1}}
 {\int\limits _{#1}}
 \end_inset
 
@@ -6350,7 +6350,7 @@ f_{y}\pr\left(x_{0}+\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y
 \end_layout
 
 \begin_layout Proof
-Аналогично:
+Аналогично: 
 \begin_inset Formula $\exists\Theta_{2}\in\left(0,1\right):\quad f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)=f_{x}\pr\left(x_{0}+\Theta_{2}\D x_{1},y_{0}\right)\um\D x$
 \end_inset
 
@@ -6541,7 +6541,7 @@ status open
 \begin_inset Formula $M\left(x_{1}\pr,\tr,x_{m}\pr\right)$
 \end_inset
 
-, где
+, где:
 \begin_inset Formula 
 \[
 x_{j}\pr=\varphi_{j}\left(t_{1}\pr,\tr,t_{k}\pr\right)
@@ -6873,31 +6873,35 @@ status open
 \begin_inset Formula $x_{1},\tr,x_{m}$
 \end_inset
 
- - независимые переменные, дифференциал функции 
+ --- независимые переменные, дифференциал функции 
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
  имеет вид: 
-\begin_inset Formula $du=\df{\dd u}{\dd x_{1}}\um dx_{1}+\df{\dd u}{\dd x_{2}}\um dx_{2}+\tr+\df{\dd u}{\dd x_{m}}\um dx_{m}$
+\begin_inset Formula 
+\[
+du=\df{\dd u}{\dd x_{1}}\um dx_{1}+\df{\dd u}{\dd x_{2}}\um dx_{2}+\tr+\df{\dd u}{\dd x_{m}}\um dx_{m}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
 Если аргументы 
 \begin_inset Formula $x_{1}\tr x_{m}$
 \end_inset
 
- - зависимые, то
+ --- зависимые, то
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x_{1}=\varphi_{1}\left(t_{1},\tr,t_{k}\right)\\
 \tr\\
 x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
@@ -6920,11 +6924,15 @@ x_{m}=\varphi_{m}\left(t_{1},\tr,t_{k}\right)
 \begin_inset Formula $M\left(x_{1}\pr,\tr,x_{m}\pr\right)$
 \end_inset
 
-, где 
-\begin_inset Formula $x_{i}\pr=\varphi_{i}\left(N\right),\ i=\overline{1,m}$
+, где:
+\begin_inset Formula 
+\[
+x_{i}\pr=\varphi_{i}\left(N\right),\quad i=\overline{1,m}
+\]
+
 \end_inset
 
- .
+
 \end_layout
 
 \begin_layout Standard
@@ -6951,11 +6959,11 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
  & = & \df{\dd u}{\dd x_{1}}\um\left(\df{\dd x_{1}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{1}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{1}}{\dd t_{k}}\um dt_{k}\right)+\\
  & + & \tr+\\
  & + & \df{\dd u}{\dd x_{m}}\um\left(\df{\dd x_{m}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{m}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{m}}{\dd t_{k}}\um dt_{k}\right)=\\
- & = & \left\{ \begin{array}{c}
+ & = & \left|\begin{array}{c}
 \df{\dd x_{1}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{1}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{1}}{\dd t_{k}}\um dt_{k}=dx_{1}\\
 \tr\\
 \df{\dd x_{m}}{\dd t_{1}}\um dt_{1}+\df{\dd x_{m}}{\dd t_{2}}\um dt_{2}+\tr+\df{\dd x_{m}}{\dd t_{k}}\um dt_{k}=dx_{m}
-\end{array}\right\} =\\
+\end{array}\right|=\\
  & = & \df{\dd u}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd u}{\dd x_{m}}\um dx_{m}
 \end{eqnarray*}
 
@@ -6974,7 +6982,7 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
 \begin_inset Formula $u=f\left(x,y,z\right)$
 \end_inset
 
-, определена в некоторой окрестности точки 
+, определенная в некоторой окрестности точки 
 \begin_inset Formula $M\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
@@ -6982,19 +6990,15 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
 \end_layout
 
 \begin_layout Standard
-Рассмотри единичный вектор 
+Рассмотрим единичный вектор 
 \begin_inset Formula $\vec n=\left(\cos\alpha,\cos\beta,\cos\gamma\right)$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-Рассмотрим линия 
+ и линию 
 \begin_inset Formula $l$
 \end_inset
 
- - ось, проходящая через точку 
+ --- ось, проходящую через точку 
 \begin_inset Formula $M$
 \end_inset
 
@@ -7003,36 +7007,30 @@ du & = & \df{\dd u}{\dd t_{1}}\um dt_{1}+\df{\dd u}{\dd t_{2}}\um dt_{2}+\tr+\df
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x=x_{0}+l\um\cos\alpha\\
 y=y_{0}+l\um\cos\beta\\
 z=z_{0}+l\um\cos\gamma
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- на оси 
+Тогда на оси 
 \begin_inset Formula $\vec l$
 \end_inset
 
- функции 
+: 
 \begin_inset Formula $f\left(x,y,z\right)=f\left(x_{0}+l\um\cos\alpha,y_{0}+l\um\cos\beta,z_{0}+l\um\cos\gamma\right)$
 \end_inset
 
- - сложная функция аргумента 
+ --- сложная функция аргумента 
 \begin_inset Formula $l$
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Definition
@@ -7061,19 +7059,23 @@ z=z_{0}+l\um\cos\gamma
 \end_inset
 
 .
- И обозначается 
-\begin_inset Formula $\df{\dd u}{\dd l}=\df{\dd f\left(M_{0}\right)}{\dd l}$
+ И обозначается:
+\begin_inset Formula 
+\[
+\fbox{\df{\dd u}{\dd l}=\df{\dd f\left(M_{0}\right)}{\dd l}}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-Согласно доказанной формуле для производной сложной функции получим 
+Согласно доказанной формуле для производной сложной функции получим: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \df{\dd u}{\dd l} & = & \df{\dd u}{\dd x}\um\df{\dd x}{\dd l}+\df{\dd u}{\dd y}\um\df{\dd y}{\dd l}+\df{\dd u}{\dd z}\um\df{\dd z}{\dd l}=\\
- & = & \left\{ \df{\dd x}{\dd l}=\left(x_{0}+\cos\alpha\right)\pr\right\} =\\
+ & = & \left|\df{\dd x}{\dd l}=\left(x_{0}+\cos\alpha\right)\pr\right|=\\
  & = & \df{\dd u}{\dd x}\um\cos\alpha+\df{\dd u}{\dd y}\um\cos\beta+\df{\dd u}{\dd z}\um\cos\gamma
 \end{eqnarray*}
 
@@ -7091,41 +7093,46 @@ z=z_{0}+l\um\cos\gamma
 \begin_inset Formula $M_{0}$
 \end_inset
 
- называется выражение 
-\begin_inset Formula $\nabla u=\grad u=u\pr=\left(\begin{array}{c}
+ называется выражение:
+\begin_inset Formula 
+\[
+\nabla u=\grad u=u\pr=\left(\begin{array}{c}
 \df{\dd u}{\dd x}\\
 \df{\dd u}{\dd y}\\
 \df{\dd u}{\dd z}
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- - частные производные функции в 
+ Компоненты --- частные производные функции в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Remark
 Очевидно что 
 \begin_inset Formula $\df{\dd u}{\dd l}=\left(\vec n,\grad u\right)$
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Standard
-Докажем что направление градиента --- направление наискорейшего роста функции:
+\begin_layout Claim
+Направление градиента --- направление наискорейшего роста функции.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\df{\dd u}{\dd l}=\left(\vec n,\grad u\right)=\left|\vec n\right|\um\left|\grad u\right|\um\cos\left(\hat{\vec n,\grad u}\right)=\left|\grad u\right|\um\cos\left(\hat{\vec n,\grad u}\right)$
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\df{\dd u}{\dd l}=\left(\vec n,\grad u\right)=\left|\vec n\right|\um\left|\grad u\right|\um\cos\left(\hat{\vec n,\grad u}\right)=\left|\grad u\right|\um\cos\left(\hat{\vec n,\grad u}\right)
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\df{\dd u}{\dd l}\st max$
 \end_inset
 
@@ -7133,11 +7140,11 @@ z=z_{0}+l\um\cos\gamma
 \begin_inset Formula $\cos\left(\hat{\vec n,\grad u}\right)=1$
 \end_inset
 
- , то-есть 
+ , то есть 
 \begin_inset Formula $\vec n=\df{\grad u}{\left|\grad u\right|}$
 \end_inset
 
- - сложная функция аргумента 
+ --- сложная функция аргумента 
 \begin_inset Formula $l$
 \end_inset
 
@@ -7145,6 +7152,7 @@ z=z_{0}+l\um\cos\gamma
 \end_layout
 
 \begin_layout Example
+Найти градиент 
 \begin_inset Formula $u=f\left(x,y\right)=x^{2}+y^{2}$
 \end_inset
 
@@ -7152,7 +7160,9 @@ z=z_{0}+l\um\cos\gamma
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\grad u=\left(\begin{array}{c}
+\begin_inset Formula 
+\[
+\grad u=\left(\begin{array}{c}
 u_{x}\pr\\
 u_{y}\pr
 \end{array}\right)=\left(\begin{array}{c}
@@ -7161,35 +7171,24 @@ u_{y}\pr
 \end{array}\right)=2\left(\begin{array}{c}
 x\\
 y
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Example
-\begin_inset Formula $M_{0}\left(1,0\right)$
-\end_inset
-
- 
-\begin_inset Formula $\grad u\left(M_{0}\right)=\left(\begin{array}{c}
+\begin_inset Formula 
+\begin{align*}
+M_{0}\left(1,0\right) & \quad\grad u\left(M_{0}\right)=\left(\begin{array}{c}
 2\\
 0
-\end{array}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{1}\left(\df{\sqrt{2}}2,\df{\sqrt{2}}2\right)$
-\end_inset
-
- 
-\begin_inset Formula $\grad u\left(M_{1}\right)=\left(\begin{array}{c}
+\end{array}\right)\\
+M_{1}\left(\df{\sqrt{2}}2,\df{\sqrt{2}}2\right) & \quad\grad u\left(M_{1}\right)=\left(\begin{array}{c}
 \sqrt{2}\\
 \sqrt{2}
-\end{array}\right)$
+\end{array}\right)
+\end{align*}
+
 \end_inset
 
 
@@ -7213,20 +7212,28 @@ y
 \end_layout
 
 \begin_layout Definition
-Выражения вида 
-\begin_inset Formula $\df{\dd^{2}f}{\dd x\dd y}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd y}\right),\ \df{\dd^{2}f}{\dd x^{2}}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd x}\right),\ \df{\dd^{2}f}{\dd y^{2}}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd y}\right),\ \df{\dd^{2}f}{\dd y\dd x}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd x}\right)$
+Выражения вида: 
+\begin_inset Formula 
+\begin{flalign*}
+\df{\dd^{2}f}{\dd x\dd y}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd y}\right), & \quad & \df{\dd^{2}f}{\dd x^{2}}=\df{\dd}{\dd x}\left(\df{\dd f}{\dd x}\right), & \quad & \df{\dd^{2}f}{\dd y^{2}}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd y}\right), & \quad & \df{\dd^{2}f}{\dd y\dd x}=\df{\dd}{\dd y}\left(\df{\dd f}{\dd x}\right)
+\end{flalign*}
+
 \end_inset
 
- называются второй производной от функции 
+называются второй производной от функции 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
 .
  Обозначаются по-другому: 
-\begin_inset Formula $u_{yx}\ppr,\ u_{x^{2}}\ppr,\ u_{y^{2}}\ppr,\ u_{yx}\ppr$
+\begin_inset Formula 
+\[
+u_{xy}'',\quad u_{x^{2}}'',\quad u_{y^{2}}'',\quad u_{yx}''
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Definition
@@ -7238,95 +7245,64 @@ y
 \begin_inset Formula $u=f\left(x_{1},\tr,x_{m}\right)$
 \end_inset
 
- 
+:
 \end_layout
 
 \begin_layout Definition
-\begin_inset Formula $\df{\dd^{2}f}{\dd x_{k}\dd x_{i}}=\df{\dd}{\dd x_{k}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}x_{k}}\ppr,\ i\nr k$
-\end_inset
+\begin_inset Formula 
+\[
+\df{\dd^{2}f}{\dd x_{k}\dd x_{i}}=\df{\dd}{\dd x_{k}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}x_{k}}'',\quad i\nr k
+\]
 
- 
-\end_layout
-
-\begin_layout Definition
-\begin_inset Formula $\df{\dd^{2}f}{\dd x_{i}^{2}}=\df{\dd}{\dd x_{i}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}^{2}}\ppr,\ i=\overline{1,m}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(1)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u=x^{3}\left(y^{2}+z^{2}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-Найти 
-\begin_inset Formula $u_{x}\pr,\ u_{y}\pr,\ u_{z}\pr,\ u_{x^{2}}\pr\pr,\ u_{y^{2}}\pr\pr,\ u_{z^{2}}\pr\pr,\ u_{xy}\ppr,\ u_{yx}\ppr,\ u_{zy}\ppr,\ u_{yz}\ppr,\ u_{zx}\ppr,\ u_{xz}\ppr$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr=3x^{2}\left(y^{2}+z^{2}\right)$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{\dd^{2}f}{\dd x_{i}^{2}}=\df{\dd}{\dd x_{i}}\left(\df{\dd f}{\dd x_{i}}\right)=f_{x_{i}^{2}}'',\quad i=\overline{1,m}
+\]
 
-\begin_layout Example
-\begin_inset Formula $u_{y}\pr=2y\um x^{3}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{z}\pr=2x^{3}y$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-В этом примере смешанные производные не зависят от порядка дифференцирования.
-\end_layout
-
-\begin_layout --Separator--
 
 \end_layout
 
 \begin_layout Example
 
 \emph on
-(2) (Когда 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Когда 
 \begin_inset Formula $f_{xy}\ppr\ne f_{yx}\ppr$
 \end_inset
 
-)
+
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+\end_inset
+
+ 
+\emph default
+Вычислить вторые частные производные:
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\begin{cases}
 xy\df{x^{2}-y^{2}}{x^{2}+y^{2}} & ,\left(x,y\right)\nr\left(0,0\right)\\
 0 & ,\left(x,y\right)=\left(0,0\right)
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{x}\pr\left(x,y\right)=\begin{cases}
+\begin_inset Formula $f_{x}'\left(x,y\right)=\begin{cases}
 y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{2}}\right] & ,\left(x,y\right)\nr\left(0,0\right)\\
 0 & ,\left(x,y\right)=\left(0,0\right)
 \end{cases}$
@@ -7336,7 +7312,7 @@ y\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}+\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $f_{x}\pr\left(0,y\right)=-y$
+\begin_inset Formula $f_{x}'\left(0,y\right)=-y$
 \end_inset
 
  
@@ -7391,11 +7367,16 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Theorem
-(О равенстве смешанных производных)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О равенстве смешанных производных
 \end_layout
 
-\begin_layout Theorem
-Пусть
+\end_inset
+
+Пусть:
 \end_layout
 
 \begin_deeper
@@ -7403,7 +7384,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - определена в открытой области 
+ --- определена в открытой области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -7416,15 +7397,15 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_inset
 
  определены частные производные 
-\begin_inset Formula $f_{x}\pr,\ f_{y}\pr,\ f_{xy}\ppr,f_{yx}\ppr.$
+\begin_inset Formula $f_{x}',f_{y}',f_{xy}'',f_{yx}''$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Enumerate
 Производные 
-\begin_inset Formula $f_{xy}\ppr,\ f_{yx}\ppr$
+\begin_inset Formula $f_{xy}'',f_{yx}''$
 \end_inset
 
  непрерывны в некоторой точке 
@@ -7437,35 +7418,52 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_deeper
 \begin_layout Theorem
 Тогда 
-\begin_inset Formula $f_{xy}\ppr\left(x_{0},y_{0}\right)=f_{yx}\ppr\left(x_{0},y_{0}\right)$
+\begin_inset Formula $f_{xy}''\left(x_{0},y_{0}\right)=f_{yx}''\left(x_{0},y_{0}\right)$
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Proof
 Рассмотрим выражение:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
-\omega & = & \df 1{\D x}\left(\df{f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)}{\D y}-\df{f\left(x_{0},y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)}{\D y}\right)=\\
- & = & \left\{ \begin{array}{c}
-\text{Обозначим}\\
-\varphi\left(x\right)=\df{f\left(x,y_{0}+\D y\right)-f\left(x,y_{0}\right)}{\D y}\\
-\varphi\pr\left(x\right)=\df{f_{x}\pr\left(x,y_{0}+\D y\right)-f_{x}\pr\left(x,y_{0}\right)}{\D y}
-\end{array}\right\} =\\
- & = & \df{\varphi\left(x_{0}+\D x\right)-\varphi\left(x\right)}{\D x}=\\
- & = & \left\{ \text{По Логранжу}\right\} =\\
- & = & \df{\varphi\pr\left(x_{0}+\Theta\um\D x\right)\um\D x}{\D x}=\\
- & = & \varphi\pr\left(x_{0}+\Theta\um\D x\right)=\\
- & = & \df{f_{x}\pr\left(x_{0}+\Theta\um\D x,y_{0}+\D y\right)-f_{x}\pr\left(x_{0}+\Theta\um\D x,y_{0}\right)}{\D y}=\\
- & = & \left\{ f_{xy}\ppr\ -\ \text{существует}\right\} =\\
- & = & \left\{ \text{По Т. Логранжа по аргументу}\ y\right\} =\\
- & = & \df{f_{xy}\ppr\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y}{\D y}=\\
- & = & f_{xy}\ppr\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right),\ \Theta,\Theta_{1}\in\left(0;1\right)
-\end{eqnarray*}
+\[
+\omega=\df 1{\D x}\left(\df{f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0}+\D x,y_{0}\right)}{\D y}-\df{f\left(x_{0},y_{0}+\D y\right)-f\left(x_{0},y_{0}\right)}{\D y}\right)
+\]
+
+\end_inset
+
+Обозначим за:
+\begin_inset Formula 
+\begin{align*}
+\varphi\left(x\right)=\df{f\left(x,y_{0}+\D y\right)-f\left(x,y_{0}\right)}{\D y} & \quad & \varphi'\left(x\right)=\df{f_{x}'\left(x,y_{0}+\D y\right)-f_{x}'\left(x,y_{0}\right)}{\D y}
+\end{align*}
+
+\end_inset
+
+Тогда выражение преобразуется в:
+\begin_inset Formula 
+\begin{multline*}
+\omega=\df{\varphi\left(x_{0}+\D x\right)-\varphi\left(x\right)}{\D x}=\left|\text{По лагранжу}\right|=\df{\varphi'\left(x_{0}+\Theta\um\D x\right)\um\D x}{\D x}=\\
+=\varphi'\left(x_{0}+\Theta\um\D x\right)=\df{f_{x}'\left(x_{0}+\Theta\um\D x,y_{0}+\D y\right)-f_{x}'\left(x_{0}+\Theta\um\D x,y_{0}\right)}{\D y}
+\end{multline*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $f_{xy}''$
+\end_inset
+
+ существует, то по теореме Лагранжа по аргументу 
+\begin_inset Formula $y$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\omega=\df{f_{xy}''\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right)\um\D y}{\D y}=\\
+=f_{xy}''\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right),\quad\Theta,\Theta_{1}\in\left(0;1\right)
+\end{multline*}
 
 \end_inset
 
@@ -7473,12 +7471,12 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \end_layout
 
 \begin_layout Proof
-Аналогично, 
+Аналогично,
 \begin_inset Formula 
-\begin{eqnarray*}
-\omega & = & \df 1{\D y}\left(\df{f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}+\D y\right)}{\D x}-\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}\right)=\\
- & = & f_{yx}\ppr\left(x_{0}+\Theta_{2}\um\D x,y_{0}+\Theta_{3}\um\D y\right),\ \Theta_{3},\Theta_{4}\in\left(0;1\right)
-\end{eqnarray*}
+\begin{multline*}
+\omega=\df 1{\D y}\left(\df{f\left(x_{0}+\D x,y_{0}+\D y\right)-f\left(x_{0},y_{0}+\D y\right)}{\D x}-\df{f\left(x_{0}+\D x,y_{0}\right)-f\left(x_{0},y_{0}\right)}{\D x}\right)=\\
+=f_{yx}''\left(x_{0}+\Theta_{2}\um\D x,y_{0}+\Theta_{3}\um\D y\right),\quad\Theta_{3},\Theta_{4}\in\left(0;1\right)
+\end{multline*}
 
 \end_inset
 
@@ -7487,33 +7485,40 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 
 \begin_layout Proof
 Итак, 
-\begin_inset Formula $f_{xy}\ppr\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{yx}\ppr\left(x_{0}+\Theta_{2}\um\D x,y_{0}+\Theta_{3}\um\D y\right)$
+\begin_inset Formula 
+\[
+f_{xy}''\left(x_{0}+\Theta\um\D x,y_{0}+\Theta_{1}\um\D y\right)=f_{yx}''\left(x_{0}+\Theta_{2}\um\D x,y_{0}+\Theta_{3}\um\D y\right)
+\]
+
 \end_inset
 
-, так как 
-\begin_inset Formula $f_{xy}\ppr$
+Так как 
+\begin_inset Formula $f_{xy}''$
 \end_inset
 
  и 
-\begin_inset Formula $f_{yx}\ppr$
+\begin_inset Formula $f_{yx}''$
 \end_inset
 
  непрерывны в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
- , то при 
-\begin_inset Formula $\begin{array}{c}
-\D x\st0\\
+, то при 
+\begin_inset Formula $\begin{smallmatrix}\D x\st0\\
 \D y\st0
-\end{array}$
+\end{smallmatrix}$
 \end_inset
 
  в пределе получится 
-\begin_inset Formula $f_{xy}\ppr\left(M_{0}\right)=f_{yx}\ppr\left(M_{0}\right)$
+\begin_inset Formula 
+\[
+f_{xy}''\left(M_{0}\right)=f_{yx}''\left(M_{0}\right)
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -7546,7 +7551,7 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 .
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
 В случае, когда 
 \begin_inset Formula $x$
 \end_inset
@@ -7555,41 +7560,61 @@ x\left[\df{x^{2}-y^{2}}{x^{2}+y^{2}}-\df{4x^{2}y^{2}}{\left(x^{2}+y^{2}\right)^{
 \begin_inset Formula $y$
 \end_inset
 
- - независимые переменные, 
-\begin_inset Formula $\D x=dx,\ \D y=dy$
+ --- независимые переменные, 
+\begin_inset Formula $\D x=dx,$
 \end_inset
 
- - не зависят от 
+ 
+\begin_inset Formula $\D y=dy$
+\end_inset
+
+ --- не зависят от 
 \begin_inset Formula $x,y$
 \end_inset
 
  (
-\begin_inset Formula $\left(dx\right)_{x}\pr=\left(dx\right)_{y}\pr=\left(dy\right)_{x}\pr=\left(dy\right)_{y}\pr=0$
+\begin_inset Formula $\left(dx\right)_{x}'=\left(dx\right)_{y}'=\left(dy\right)_{x}'=\left(dy\right)_{y}'=0$
 \end_inset
 
-), получим 
+), получим:
 \begin_inset Formula 
-\begin{eqnarray*}
-d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
- & = & \left(u_{x}\pr\um dx+u_{y}\um dy\right)_{x}\pr\um dx+\left(u_{x}\pr\um dx+u_{y}\um dy\right)_{y}\pr\um dy=\\
- & = & u_{x^{2}}\ppr\um d\left(x^{2}\right)+u_{yx}\ppr\um dy\um dx+u_{xy}\ppr\um dx\um dy+u_{y^{2}}\ppr\um d\left(y^{2}\right)=\\
- & = & \left\{ u_{xy}\ppr=u_{yx}\ppr\right\} =\\
- & = & u_{x^{2}}\ppr\um d\left(x^{2}\right)+2u_{xy}\ppr\um dx\um dy+u_{y^{2}}\ppr\um d\left(y^{2}\right)=\\
- & = & \left\{ \text{Симаолическая запись}\right\} =\\
- & = & \left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u
-\end{eqnarray*}
+\begin{align*}
+d^{2}u & =d\left(u_{x}'\um dx+u_{y}'\um dy\right)=\\
+ & =\left(u_{x}'\um dx+u_{y}'\um dy\right)_{x}'\um dx+\left(u_{x}'\um dx+u_{y}'\um dy\right)_{y}'\um dy=\\
+ & =u_{x^{2}}''\um dx^{2}+u_{yx}''\um dydx+u_{xy}''\um dxdy+u_{y^{2}}''\um dy^{2}
+\end{align*}
 
 \end_inset
 
- Аналогично 
+Так как 
+\begin_inset Formula $u_{xy}''=u_{yx}''$
+\end_inset
+
+, то получим:
+\begin_inset Formula 
+\[
+u_{x^{2}}''\um dx^{2}+2u_{xy}''\um dxdy+u_{y^{2}}''dy^{2}
+\]
+
+\end_inset
+
+Что в символической записи:
+\begin_inset Formula 
+\begin{multline*}
+\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{2}u
+\end{multline*}
+
+\end_inset
+
+ Аналогично: 
 \begin_inset Formula 
 \begin{equation}
-\forall n\in\N\ \ d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:13}
+\forall n\in\N\quad d^{n}u=d\left(d^{n-1}u\right)=\left(\df{\dd}{\dd x}\um dx+\df{\dd}{\dd y}\um dy\right)^{n}u\label{eq:13}
 \end{equation}
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Example
@@ -7607,16 +7632,15 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
 \end_inset
 
  
-\end_layout
+\emph default
 
-\begin_layout Standard
-\begin_inset Formula $d^{n}u=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}\right)$
+\begin_inset Formula 
+\[
+d^{n}u=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}\right)
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
 
 \emph on
 Рассмотрим случай зависимых переменных.
@@ -7631,7 +7655,11 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
 \begin_inset Formula $x,y$
 \end_inset
 
- - зависят: 
+ зависят от 
+\begin_inset Formula $t$
+\end_inset
+
+: 
 \begin_inset Formula $x=\varphi\left(t\right),\ y=\psi\left(t\right)$
 \end_inset
 
@@ -7640,25 +7668,24 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
 
 \begin_layout Standard
 В этом случае 
-\begin_inset Formula $dx=\varphi\pr\left(t\right)\um dt\nr\D x$
+\begin_inset Formula $dx=\varphi'\left(t\right)\um dt\nr\D x$
 \end_inset
 
 , если 
 \begin_inset Formula $\varphi\left(t\right)$
 \end_inset
 
- - нелинейная функция.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $dy=\psi\pr\left(t\right)\um dt\nr\D y$
+ --- нелинейная функция.
+ 
+\begin_inset Formula $dy=\psi'\left(t\right)\um dt\nr\D y$
 \end_inset
 
-, если она нелин6ейная.
-\end_layout
+, если 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
 
-\begin_layout Standard
-Тогда 
+ нелинейная.
+ Тогда 
 \begin_inset Formula $d^{2}x=d\left(\varphi\pr\left(t\right)\um dt\right)=\varphi\ppr\left(t\right)\um d\left(t^{2}\right)\nr0$
 \end_inset
 
@@ -7668,7 +7695,7 @@ d^{2}u & = & d\left(u_{x}\pr\um dx+u_{y}\um dy\right)=\\
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-d^{2}u & = & d\left(du\right)=d\left(u_{x}\pr\um dx+y_{y}\pr\um dy\right)=\\
+d^{2}u & = & d\left(du\right)=d\left(u_{x}'\um dx+y_{y}'\um dy\right)=\\
  & = & \left\{ duv=du\um v=u\um dv\right\} =\\
  & = & d\left(u_{x}\pr\right)\um dx+u_{x}\pr\um d^{2}x+d\left(u_{y}\pr\right)\um dy+u_{y}\pr\um d^{2}y=\\
  & = & u_{x^{2}}\pr\um d\left(x^{2}\right)+u_{xy}\ppr\um dy\um dx+u_{x}\pr\um d\left(x^{2}\right)+u_{yx}\ppr\um dx\um dy+y_{y^{2}}\ppr\um d\left(y^{2}\right)+u_{y}\pr\um d^{2}y=\\
