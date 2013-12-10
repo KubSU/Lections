@@ -25951,7 +25951,7 @@ status open
 \end_layout
 
 \begin_layout Example
-Итал, ряд сходится абсолютно на 
+Итак, ряд сходится абсолютно на 
 \begin_inset Formula $\left(-2;8\right)$
 \end_inset
 
@@ -25969,6 +25969,688 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Свойства степенных рядов
+\end_layout
+
+\begin_layout Theorem
+Если радиус степенного ряда 
+\begin_inset Formula $\ous{n=1}{\infty}a_{n}x^{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $R\neq0$
+\end_inset
+
+, то эго сумма 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть точка 
+\begin_inset Formula $x$
+\end_inset
+
+ --- произвольная точка интервала сходимости 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+.
+ Следовательно 
+\begin_inset Formula 
+\[
+\exists q>0:\quad\left|x\right|\mr q<R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по теореме Абеля ряд сходится равномерно на 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+, то по теореме о непрерывности суммы равномерно сходящегося функционального
+ ряда, получим, что сумма 
+\begin_inset Formula $S(x)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+, а значит и в точке 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Операции почленного дифференцирования на промежутке 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+ и почленного интегрирования по любому промежутку 
+\begin_inset Formula $\left[x_{0};x\right]\subset(-R;R)$
+\end_inset
+
+ не изменяют радиуса сходимости степенного ряда.
+\end_layout
+
+\begin_layout Proof
+Ограничимся случаем, когда 
+\begin_inset Formula $\exists\ul{n\to\infty}\left|\df{a_{n}}{a_{n+1}}\right|=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим через 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ --- радиус сходимости почленно дифференцированного ряда:
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}\left(a_{n}x^{n}\right)'=\ous{n=1}{\infty}n\um a_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{1}=\ul{n\st\infty}\left|\df{n\um a_{n}}{(n+1)a_{n+1}}\right|=\ul{n\st\infty}\df n{n+1}\left|\df{a_{n}}{a_{n+1}}\right|=R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогично, пусть 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ --- радиус схрдимости почленно проинтегрированого ряда:
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}\oui{x_{0}}xa_{n}x^{n}dx=\ous{n=0}{\infty}\left(\df{a_{n}x^{n+1}}{n+1}-\df{a_{n}x_{0}^{n+1}}{n+1}\right)=\ous{n=0}{\infty}\df{a_{n}x^{n+1}}{n+1}-\ous{n=0}{\infty}\df{a_{n}x_{0}^{n+1}}{n+1}
+\]
+
+\end_inset
+
+числовой ряд, сходящийся абсолютно по признаку сравнения
+\begin_inset Formula 
+\[
+\left|\df{a_{n}x_{0}^{n+1}}{n+1}\right|\mr\left|a_{n}x_{0}^{n+1}\right|=\left|x_{0}\right|\um\underset{u_{n}(x_{0})}{\underbrace{\left|a_{n}x_{0}^{n}\right|}}
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\ous{n=1}{\infty}a_{n}x_{0}^{n}$
+\end_inset
+
+ сходится абсолютно, то 
+\begin_inset Formula $x_{0}\in\left(-R;R\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ --- радиус сходимости степенного ряда 
+\begin_inset Formula $\ous{n=0}{\infty}\df{a_{n}x^{n+1}}{n+1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+R_{2}=\ul{n\st\infty}\left|\df{a_{n}}{n+1}\um\df{n+2}{a_{n+1}}\right|=R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Следствие.
+
+\series default
+ 
+\shape italic
+Степенной ряд 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x^{n}$
+\end_inset
+
+ можно почленно дифференцировать и интегрировать на 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+ любое число раз.
+\end_layout
+
+\begin_layout Subsection
+Ряды Тейлора
+\end_layout
+
+\begin_layout Subsubsection
+Понятие ряда Тейлора и оснвные свойства
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ имеет в некоторой окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ производные любого порядка (
+\begin_inset Formula $f(x)\in C^{\infty}$
+\end_inset
+
+).
+ Рассмотрим соответствие:
+\begin_inset Formula 
+\begin{equation}
+f(x)\sim f(x_{0})+f'(x_{0})(x-x_{0})+\df{f^{\pr\pr}(x_{0})}{2!}(x-x_{0})^{2}+\tr+\label{eq:rt1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ряд в (1) называется рядом Тейлора функции 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ в окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+, то получим ряд Макларена.
+\end_layout
+
+\begin_layout Standard
+Заметим, что если радиус сходимости 
+\begin_inset Formula $R$
+\end_inset
+
+ степенного ряда отличен от 0, то не при всех 
+\begin_inset Formula $x$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $f(x)=S(x)$
+\end_inset
+
+, где 
+\begin_inset Formula $S(x)$
+\end_inset
+
+ --- сумма ряда (1).
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S(x)=f(x)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+, то говорят , что ряд Тейлора (1) сходится к функции 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+, а функция 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ расходится нв 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+ в сходящийся ряд Тейлора????
+\end_layout
+
+\begin_layout Standard
+Заметим, что:
+\begin_inset Formula 
+\[
+S_{n}(x)=\ous{k=0}n\df{f^{(k)}\left(x_{0}\right)}{k!}\left(x-x_{0}\right)^{k}=T_{n}\left(x\right)
+\]
+
+\end_inset
+
+ Поэтому если ряд Тейлора сходится к 
+\begin_inset Formula $f(x)$
+\end_inset
+
+, то выполняется равенство:
+\begin_inset Formula 
+\[
+T_{n}(x)+R_{n}(x)=f(x)=S(x)=S_{n}\left(x\right)+\gamma_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $R_{n}\left(x\right)$
+\end_inset
+
+ --- n--ый остаток формулы Тейлоора, который может принять вид: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{i}\left(x\right)=\df{f^{n+1}\left(\xi\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n}\left(x\right)=o\left(\left(x-x_{0}\right)^{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma_{n}\left(x\right)$
+\end_inset
+
+ --- n-ый остаток ряда Тейлора.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Функция 
+\begin_inset Formula $f\in C^{\b}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+ раскладиывается в ряд Тейлора в 
+\begin_inset Formula $\left(x_{0}-R,x_{0}+R\right)$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\ul{n\st\b}R_{n}\left(x\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\dsl$
+\end_inset
+
+ следует из равенства (3)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f\left(x\right)=S\left(x\right)\dsl R_{n}\left(x\right)=\gamma_{n}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\gamma_{n}\left(x\right)\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\exists M>0\ :\ \left|f^{\left(n\right)}\left(x\right)\right|<M$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\N$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{n}\left(x\right)\st f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|R_{n}\left(x\right)\right|=\left|\df{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1}\right|\mr\df{M\um R^{n+1}}{\left(n+1\right)!}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall x\in\left(x_{0}-R;x_{0}+R\right)\ \left|R_{n}\left(x\right)\right|\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Problem
+Известно что в некоторой окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ степенной ряд 
+\begin_inset Formula $\ous{n=0}{\b}a_{n}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+ сходяится к функции 
+\begin_inset Formula $f\left(x\right)\in C^{\b}\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Вопрос: А является лиэтот степенной ряд рядом Тейлора (1) для 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как степенной ряд 
+\begin_inset Formula $f\left(x\right)=a_{0}+a_{1}\left(x-x_{0}\right)+a_{2}\left(x-x_{0}\right)^{2}+\tr+a_{n}\left(x-x_{0}\right)^{n}+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Можно диференцировать бесконечное число раз на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right),$
+\end_inset
+
+ получим 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\pr\left(x\right)=a_{1}+2a_{2}\left(x-x_{0}\right)+\tr+na_{n}\left(x-x_{0}\right)^{n-1}+\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\ppr\left(x\right)=2a_{2}+6a_{3}\left(x-x_{0}\right)+\tr+n\left(n-1\right)\left(x-x_{0}\right)^{n-2}+\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+a_{0}=f\left(x_{0}\right)\\
+a_{1}=f\pr\left(x_{0}\right)\\
+a_{2}=\df{f\ppr\left(x_{0}\right)}{2!}\\
+\vtr\\
+a_{n}=\df{f^{\left(n\right)}\left(x_{0}\right)}{n!}\\
+\vtr
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если степенной ряд (1) сходится в окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ к 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, то этот ряд является рядом Тейлора для 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Разложения ряда Тейлора для элементарных функций.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A>0,$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x\right|<A$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f^{\left(n\right)}\left(x\right)\right|=\left|e^{x}\right|=<e^{A}=M$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\emph on
+По теореме 2 
+\emph default
+
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ раскладывается в ряд Маклорена 
+\begin_inset Formula $\forall x+R$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $e^{x}=1+\df x{1!}+\df{x^{2}}{2!}+\tr+\df{x^{n}}{n!}=\ous{n=0}{\b}\df{x^{n}}{1!}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(x\right) & = & \ch x=\df{e^{x}+e^{-x}}2=\df 12\left(e^{x}+e^{-x}\right)=\df 12\left(e^{x}+e^{-x}\right)=\df 12\left(\ous{n=0}{\b}\df{x^{n}}{n!}+\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{n}}{n!}\right)=\\
+ & = & \df 12\ous{n=0}{\b}\left(1+\left(-1\right)^{n}\right)\df{x^{n}}{n!}=\df 22\ous{k=0}{\b}\df{x^{2k}}{\left(2k\right)!}\ \forall x\in\R
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(x\right) & = & \sh x=\left(\ch x\right)\pr=\ous{k=0}{\b}\df{\left(x^{2k}\right)\pr}{\left(2k\right)!}=\ous{k=1}{\b}\df{2kx^{2k-1}}{\left(2k\right)!}=\\
+ & = & \ous{k=1}{\b}\df{x^{2k-1}}{\left(2k-1\right)!}=\ous{k=0}{\b}\df{x^{2k+1}}{\left(2k+1\right)!},\ \forall x\in\R
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f^{\left(n\right)}\left(x\right)=\sin\left(x+\df{\pi n}2\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f^{\left(n\right)}\left(x\right)\right|\mr1,\ \forall x\in\R,\ \forall n\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+f\left(0\right)=0\\
+f\pr\left(0\right)=1\\
+f\ppr\left(0\right)=0\\
+f\pppr\left(0\right)=-1\\
+\vtr
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\sin x & = & 0+\df 1{1!}x+\df 0{2!}x^{2}-\df 1{3!}x^{3}+\tr+\df{\left(-1\right)^{n}}{\left(2n+1\right)!}x^{2n+1}+\tr=\\
+ & = & \ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+1}}{\left(2n+1\right)!},\ x\in\R
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\cosx=\left(\sin x\right)\pr=\ous{n=0}{\b}\df{\left(-1\right)^{n}\left(x^{2n+1}\right)\pr}{\left(2n+1\right)!}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
