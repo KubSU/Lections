@@ -8952,24 +8952,23 @@ status open
 \end_inset
 
  выполнено следующее уравнение: 
-\begin_inset Formula $F\left(x_{1},x_{2},\tr,x_{m},u\right)=0$
+\begin_inset Formula 
+\[
+F\left(x_{1},x_{2},\tr,x_{m},u\right)=0
+\]
+
 \end_inset
 
-.
- Функция 
+Функция 
 \begin_inset Formula $F\left(\vec x,u\right)$
 \end_inset
 
  --- непрерывна в окрестности точки 
-\begin_inset Formula $M_{0}$
-\end_inset
-
-: 
-\begin_inset Formula $\Omega\vkl E^{m+1}$
+\begin_inset Formula $M_{0}:\;\Omega\vkl E^{m+1}$
 \end_inset
 
  вместе с частными производными 
-\begin_inset Formula $Fx_{i}\pr,\ i=\overline{1,m}$
+\begin_inset Formula $Fx_{i}\pr,\; i=\overline{1,m}$
 \end_inset
 
 , причем 
@@ -8990,7 +8989,11 @@ status open
 \end_inset
 
  и выполнены следующие равенства: 
-\begin_inset Formula $f_{x_{i}}\pr\left(N_{0}\right)=-\df{F_{x_{i}}\pr\left(M_{0}\right)}{F_{u}\pr\left(M_{0}\right)},\ i=\overline{1,m}$
+\begin_inset Formula 
+\[
+f_{x_{i}}\pr\left(N_{0}\right)=-\df{F_{x_{i}}\pr\left(M_{0}\right)}{F_{u}\pr\left(M_{0}\right)},\quad i=\overline{1,m}
+\]
+
 \end_inset
 
  
@@ -8998,75 +9001,6 @@ status open
 
 \begin_layout Proof
 В нашем курсе не рассматривается это доказательство.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u^{3}-2\um u^{2}\um x+u\um x\um y-2=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $M_{0}\left(1,1,1\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr,u_{y}\pr=?$
-\end_inset
-
- в точке 
-\begin_inset Formula $N_{0}\left(1,1\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F\left(x,y,u\right)=u^{3}-2\um u^{2}\um x+u\um x\um y-2$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{x}\pr=-2\um u^{2}+u\um y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{y}\pr=u\um x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{u}\pr=3\um u^{2}-4\um u\um x+x\um y=\left\{ \text{В точке }M_{0}\left(1,1,1\right)\right\} =0\ \sl\ $
-\end_inset
-
- Дифференцируемости нет 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $u_{x}\pr\left(1,1\right)=-\df{-2\um u^{2}+u\um y}{3\um u^{2}-4\um u\um x+x\um y}=\left\{ \text{Мы работаем в точке }M_{0}\left(1,1,1\right)\right\} =\df 10$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Remark
-Ну тут что то с примером у Малыхина не так пошло.
- Переделаем примерчик...
-\end_layout
-
-\begin_layout --Separator--
-
 \end_layout
 
 \begin_layout Example
@@ -9139,9 +9073,6 @@ status open
 \end_inset
 
  задана неявно:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 F\left(x,y,z\right)=0\label{eq:16}
@@ -9149,10 +9080,6 @@ F\left(x,y,z\right)=0\label{eq:16}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Пусть 
 \begin_inset Formula $F\left(x_{0},y_{0},z_{0}\right)=0$
 \end_inset
@@ -9165,16 +9092,19 @@ F\left(x,y,z\right)=0\label{eq:16}
 \begin_inset Formula $F_{x}\pr,F_{y}\pr,F_{z}\pr$
 \end_inset
 
- - непрерывны и не равны нулю одновременно в точке 
+ непрерывны и не равны нулю одновременно в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
-, то есть 
-\begin_inset Formula $\grad F\left(M_{0}\right)=\left(F_{x}\pr\left(M_{0}\right),F_{y}\pr\left(M_{0}\right),F_{z}\pr\left(M_{0}\right)\right)$
+, то есть: 
+\begin_inset Formula 
+\[
+\grad F\left(M_{0}\right)=\left(F_{x}\pr\left(M_{0}\right),F_{y}\pr\left(M_{0}\right),F_{z}\pr\left(M_{0}\right)\right)
+\]
+
 \end_inset
 
-.
- Пусть например 
+Пусть например 
 \begin_inset Formula $F_{z}\pr\left(M_{0}\right)\nr0$
 \end_inset
 
@@ -9205,52 +9135,31 @@ F\left(x,y,z\right)=0\label{eq:16}
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+z-z_{0}=f_{x}\pr\left(N_{0}\right)\um\left(x-x_{0}\right)+f_{y}\pr\left(N_{0}\right)\um\left(y-y_{0}\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $z-z_{0}=f_{x}\pr\left(N_{0}\right)\um\left(x-x_{0}\right)+f_{y}\pr\left(N_{0}\right)\um\left(y-y_{0}\right)$
 \end_inset
 
- 
-\end_layout
+Но так как функция задана неявно:
+\begin_inset Formula 
+\begin{align*}
+f_{x}\pr\left(N_{0}\right) & =-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\\
+f_{y}\pr\left(N_{0}\right) & =-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}
+\end{align*}
 
-\begin_layout Standard
-Но так как функция задана неявно..
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{x}\pr\left(N_{0}\right)=-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}$
 \end_inset
 
+А тогда: 
+\begin_inset Formula 
+\[
+z-z_{0}=\left(-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(x-x_{0}\right)+\left(-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(y-y_{0}\right)
+\]
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{y}\pr\left(N_{0}\right)=-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z-z_{0}=\left(-\df{F_{x}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(x-x_{0}\right)+\left(-\df{F_{y}\pr\left(M_{0}\right)}{F_{z}\pr\left(M_{0}\right)}\right)\um\left(y-y_{0}\right)$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
+Откуда:
 \begin_inset Formula 
 \begin{equation}
 F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\left(y-y_{0}\right)+F_{z}\pr\left(M_{0}\right)\um\left(z-z_{0}\right)=0\label{eq:17}
@@ -9258,10 +9167,6 @@ F_{x}\pr\left(M_{0}\right)\um\left(x-x_{0}\right)+F_{y}\pr\left(M_{0}\right)\um\
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -9269,7 +9174,7 @@ reference "eq:17"
 
 \end_inset
 
-) - уравнение касательной к плоскости в точке 
+) --- уравнение касательной к плоскости в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -9284,10 +9189,6 @@ reference "eq:17"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -9295,7 +9196,7 @@ reference "eq:18"
 
 \end_inset
 
-) - уравнение нормали.
+) --- уравнение нормали.
 \end_layout
 
 \begin_layout Standard
@@ -9319,7 +9220,7 @@ reference "eq:18"
 \begin_inset Formula $y=y\left(x,z\right)$
 \end_inset
 
- - неявные, однозначные функции.
+ --- неявные, однозначные функции.
  Уравнения получаются аналогичные (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -9354,70 +9255,47 @@ reference "eq:18"
 \end_layout
 
 \begin_layout Example
+Найти касательную плоскость 
 \begin_inset Formula $z^{2}-x^{2}-y^{2}=0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-Точка 
+ в точке 
 \begin_inset Formula $M_{0}\left(0,0,0\right)$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\begin{align*}
+F_{x}\pr & =-2\um x\\
+F_{y}\pr & =-2\um y\\
+F_{z}\pr & =2\um z
+\end{align*}
 
-\begin_layout Example
-\begin_inset Formula $F_{x}\pr=-2\um x$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{y}\pr=-2\um y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $F_{z}\pr=2\um z$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\grad F\left(M_{0}\right)=\left(\begin{array}{c}
-0\\
+Следовательно: 
+\begin_inset Formula $\grad F\left(M_{0}\right)=\left(\begin{smallmatrix}0\\
 0\\
 0
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
 \end_layout
 
-\begin_deeper
 \begin_layout Remark
-\begin_inset Formula $\forall\left(x,y,z\right)\in E^{3}\ z^{2}=x^{2}+y^{2},\ z=\pm\sqrt{x^{2}+y^{2}}$
+\begin_inset Formula $\forall\left(x,y,z\right)\in E^{3}\quad z^{2}=x^{2}+y^{2},\quad z=\pm\sqrt{x^{2}+y^{2}}$
 \end_inset
 
  
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
+\begin_layout Remark
 \begin_inset Formula $\left|x\right|=\left|z\right|$
 \end_inset
 
- - Конус.
-\end_layout
-
-\begin_layout Standard
-В любой точке 
+ --- конус.
+ В любой точке 
 \begin_inset Formula $M'\left(x_{0},y_{0},z_{0}\right)$
 \end_inset
 
@@ -9425,17 +9303,14 @@ reference "eq:18"
 \begin_inset Formula $M_{0}$
 \end_inset
 
- уравнение касательной к плоскости
-\end_layout
+ уравнение касательной к плоскости:
+\begin_inset Formula 
+\[
+-2\um x_{0}\um\left(x-x_{0}\right)-2\um y_{0}\um\left(y-y_{0}\right)+2\um z_{0}\left(z-z_{0}\right)=0
+\]
 
-\begin_layout Standard
-\begin_inset Formula $-2\um x_{0}\um\left(x-x_{0}\right)-2\um y_{0}\um\left(y-y_{0}\right)+2\um z_{0}\left(z-z_{0}\right)=0$
 \end_inset
 
- - уравнение касательной.
-\end_layout
-
-\begin_layout Standard
 Можно провести бесконечное множество касательных плоскостей в точке 
 \begin_inset Formula $M_{0}\left(0,0,0\right)$
 \end_inset
@@ -9443,8 +9318,6 @@ reference "eq:18"
 .
 \end_layout
 
-\end_deeper
-\end_deeper
 \begin_layout Subsubsection
 Система функций заданных неявно
 \end_layout
@@ -9455,9 +9328,6 @@ reference "eq:18"
 \end_inset
 
  задана неявно:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -9469,23 +9339,23 @@ F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr y_{k}\right)=0
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 То есть функции 
 \begin_inset Formula $y_{1},\tr,y_{k}$
 \end_inset
 
- - решения системы (
+ --- решения системы (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:19"
 
 \end_inset
 
-), 
-\begin_inset Formula $y_{j}=y_{j}\left(x_{1},\tr x_{m}\right),\ j=\overline{1,k}$
+), где
+\begin_inset Formula 
+\[
+y_{j}=y_{j}\left(x_{1},\tr x_{m}\right),\quad j=\overline{1,k}
+\]
+
 \end_inset
 
  
@@ -9513,18 +9383,18 @@ reference "eq:19"
 \end_inset
 
  точки 
-\begin_inset Formula $M_{0}\left(x_{1}^{0},x_{2}^{0},\tr,x_{m}^{0},y_{1}^{0},\tr,y_{k}^{0}\right)$
+\begin_inset Formula 
+\[
+M_{0}\left(x_{1}^{0},x_{2}^{0},\tr,x_{m}^{0},y_{1}^{0},\tr,y_{k}^{0}\right)
+\]
+
 \end_inset
 
  и непрерывно дифференцируемы в этой окрестности.
 \end_layout
 
 \begin_layout Enumerate
-Якобиан(определитель Якоби) системы отличен от нуля.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
+Якобиан (определитель Якоби) системы отличен от нуля.
 \begin_inset Formula 
 \[
 \left|\begin{array}{cccc}
@@ -9540,7 +9410,6 @@ reference "eq:19"
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Точка 
 \begin_inset Formula $M_{0}$
@@ -9559,39 +9428,41 @@ reference "eq:19"
 \end_deeper
 \begin_layout Theorem
 Тогда существует окрестность точки 
-\begin_inset Formula $M_{0}:$
+\begin_inset Formula $M_{0}$
 \end_inset
 
+:
+\begin_inset Formula 
+\[
+\D=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\quad i=\overline{1,m};\quad\left|y_{j}-y_{j}^{0}\right|<b,\quad j=\overline{1,k}\right\} \vkl\Omega
+\]
 
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $\D=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m};\ \left|y_{j}-y_{j}^{0}\right|<b,\ j=\overline{1,k}\right\} \vkl\Omega$
 \end_inset
 
- такая система определяет 
+такая система определяет 
 \begin_inset Formula $y_{1},y_{2},\tr,y_{k}$
 \end_inset
 
- однозначно как непрерывно дифференцируемые функции на множестве
-\end_layout
+ однозначно, как непрерывно дифференцируемые функции на множестве
+\begin_inset Formula 
+\[
+\D^{0}=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\quad i=\overline{1,m}\right\} \vkl E^{k}
+\]
 
-\begin_layout Theorem
-\begin_inset Formula $\D^{0}=\left\{ \left|x_{i}-x_{i}^{0}\right|<a,\ i=\overline{1,m}\right\} \vkl E^{k}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
-В нашем курсе его не будет..
+В нашем курсе его не будет.
 \end_layout
 
-\begin_layout Remark
-Как находить частные производные? 
+\begin_layout Paragraph
+Нахождение частных производных 
 \end_layout
 
-\begin_layout Remark
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -9604,16 +9475,17 @@ y_{k}=\psi_{k}\left(x_{1},\tr,x_{m}\right)
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{dy_{j}}{dx_{l}},\quad j=\overline{1,k},\quad l=\overline{1,m}
+\]
 
-\begin_layout Remark
-\begin_inset Formula $\df{dy_{j}}{dx_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Remark
+\begin_layout Standard
 Обозначим 
 \begin_inset Formula $x=\left(x_{1},\tr,x_{m}\right)$
 \end_inset
@@ -9633,9 +9505,6 @@ reference "eq:19"
 \end_inset
 
 ) дает:
-\end_layout
-
-\begin_layout Remark
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -9647,18 +9516,11 @@ F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\ri
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Remark
 Дифференцируем по 
 \begin_inset Formula $x_{l}$
 \end_inset
 
  каждое тождество, получим:
-\end_layout
-
-\begin_layout Remark
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -9670,17 +9532,13 @@ F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\ri
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Remark
 Это линейная система, относительно неизвестных 
 \begin_inset Formula $\df{\dd\psi_{j}}{\dd x_{l}},\ j=\overline{1,k},\ l=\overline{1,m}$
 \end_inset
 
 .
- Она однозначно разрешима тогда и только тогда, когда ее определитель ---
- Якобиан: 
+ Она однозначно разрешима тогда и только тогда, когда ее Якобиан отличен
+ от нуля:
 \begin_inset Formula 
 \[
 \df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\nr0
@@ -9688,7 +9546,7 @@ F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\ri
 
 \end_inset
 
-А решения этой системы выглядят следующим образом: 
+А решения этой системы выглядят следующим образом:
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -9717,7 +9575,7 @@ F_{k}\left(\vec x,\psi_{1}\left(\vec x\right),\tr,\psi_{k}\left(\vec x\right)\ri
 \begin_inset Formula $m$
 \end_inset
 
- переменных 
+ переменных:
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -9729,7 +9587,7 @@ u_{k}=\varphi_{k}\left(x_{1},\tr,x_{m}\right)
 
 \end_inset
 
-, определенных в области 
+определенных в области 
 \begin_inset Formula $D\vkl E^{m}$
 \end_inset
 
@@ -9739,7 +9597,18 @@ u_{k}=\varphi_{k}\left(x_{1},\tr,x_{m}\right)
 \begin_layout Definition
 
 \emph on
-(1)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+1
+\end_layout
+
+\end_inset
+
+
 \emph default
  Функция 
 \begin_inset Formula $u_{n}$
@@ -9756,15 +9625,19 @@ reference "eq:21"
 \begin_inset Formula $D$
 \end_inset
 
-, если 
-\begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ k\br n$
+, если:
+\begin_inset Formula 
+\[
+\forall x\in D\quad u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\quad k\br n
+\]
+
 \end_inset
 
-, где 
+Где 
 \begin_inset Formula $\Psi$
 \end_inset
 
- - некоторая функция 
+ --- некоторая функция 
 \begin_inset Formula $\left(k-1\right)$
 \end_inset
 
@@ -9778,7 +9651,18 @@ reference "eq:21"
 \begin_layout Definition
 
 \emph on
-(2) 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+2
+\end_layout
+
+\end_inset
+
+ 
 \emph default
 Система функций (
 \begin_inset CommandInset ref
@@ -9801,17 +9685,32 @@ reference "eq:21"
 \begin_layout Definition
 
 \emph on
-(3) 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+3
+\end_layout
+
+\end_inset
+
+
 \emph default
 Если не существует функций 
 \begin_inset Formula $\Psi\left(t_{1},\tr,t_{k-1}\right)$
 \end_inset
 
 , что 
-\begin_inset Formula $\forall x\in D\ u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\ n=\overline{1,k}$
+\begin_inset Formula 
+\[
+\forall x\in D\quad u_{n}=\Psi\left(u_{1},u_{2},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right),\quad n=\overline{1,k}
+\]
+
 \end_inset
 
-, то функции называются независимыми на 
+то функции называются независимыми на 
 \begin_inset Formula $D$
 \end_inset
 
@@ -9819,29 +9718,27 @@ reference "eq:21"
 \end_layout
 
 \begin_layout Example
-
-\emph on
-(1)
-\emph default
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
+Показать зависимость функций:
+\begin_inset Formula 
+\[
+\begin{cases}
 u_{1}=x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}\\
 u_{2}=x_{1}+x_{2}+x_{3}+x_{4}\\
 u_{3}=2\um x_{1}\um x_{2}+2\um x_{1}\um x_{3}+2\um x_{1}\um x_{4}+2\um x_{2}\um x_{3}+2\um x_{2}\um x_{4}+2\um x_{3}\um x_{4}
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Example
-\begin_inset Formula $u_{3}=u_{2}^{2}-u_{1}$
+\begin_inset Formula 
+\[
+u_{3}=u_{2}^{2}-u_{1}
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout --Separator--
@@ -9849,26 +9746,22 @@ u_{3}=2\um x_{1}\um x_{2}+2\um x_{1}\um x_{3}+2\um x_{1}\um x_{4}+2\um x_{2}\um 
 \end_layout
 
 \begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
+Показать независимость:
+\begin_inset Formula 
+\[
+\begin{cases}
 u_{1}=x+y\\
 u_{2}=x-y
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $D\vkl E^{2},\ M_{0}\left(0,0\right)\in D$
+\begin_inset Formula $D\vkl E^{2},\quad M_{0}\left(0,0\right)\in D$
 \end_inset
 
- - внутренняя точка области 
+ --- внутренняя точка области 
 \begin_inset Formula $D$
 \end_inset
 
