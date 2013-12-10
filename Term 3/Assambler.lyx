@@ -6137,5 +6137,445 @@ add bx, n
 loop L5
 \end_layout
 
+\begin_layout Section
+Множества
+\end_layout
+
+\begin_layout Standard
+Практически ни в одном пк нет стандартного представления множеств, поэтому
+ программистам самим приходится выбирать представление для множеств и реализовыв
+ать операции над ними.
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+Type 
+\end_layout
+
+\begin_layout Plain Layout
+	Base = L..K;
+\end_layout
+
+\begin_layout Plain Layout
+	SetB = Set of Base;
+\end_layout
+
+\begin_layout Plain Layout
+Var
+\end_layout
+
+\begin_layout Plain Layout
+	M: SetB;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При моделировании множеств сдредствами любого языка, для представления каждой
+ множественной переменной, резервируется так называемая множественная шкала.
+ Если соответствующая позиция этой шкалы равна 1, то элемент базового типа
+ принадлежит соответствующему множеству.
+ Для переменных типа SetB резервируется пол одному байту (при условии, что
+ L=0; K=7) тогда значение переменной M представлено шкалой(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Шкала1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Представаление множества
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Шкала1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Очевидно, чтол при таклом способе кодирования множеств, теоретико--множественные
+ операции моделируются с помощью логических команд.
+ В общем случае для представления множественного значения необходимо резервирова
+ть более 1 байта.
+ При этом последний (самый правый) может использоваться не полностью.
+ Для определения позиции некоторого произвольного элемента базового типа,
+ соответствующего данной шкале, можно воспользоваться ...
+\end_layout
+
+\begin_layout Example
+Реализуем объединение двух множеств
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+L	EQU	10
+\end_layout
+
+\begin_layout Plain Layout
+
+K	EQU	200
+\end_layout
+
+\begin_layout Plain Layout
+
+N	EQU	(K-L)/8+1
+\end_layout
+
+\begin_layout Plain Layout
+
+M	DB	N DUP(?)
+\end_layout
+
+\begin_layout Plain Layout
+
+M1	DB	N DUP(?)
+\end_layout
+
+\begin_layout Plain Layout
+
+M2	DB	N DUP(?)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Необходимо использовать ...
+ Надо в цикле логически сложить все байты M1 и M2
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+	SUB	BX,	BX
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	CX,	N
+\end_layout
+
+\begin_layout Plain Layout
+
+L1:	MOV	AL,	M1[BX]
+\end_layout
+
+\begin_layout Plain Layout
+
+	OR	AL,	M1[BX]
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	B[BX],	AL
+\end_layout
+
+\begin_layout Plain Layout
+
+	INC	BX
+\end_layout
+
+\begin_layout Plain Layout
+
+	LOOP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Операцию вычитания всами.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $L\leq P\leq K$
+\end_inset
+
+, проверить принадлежность значения P базового типа множеству M.
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+	MOV	AL,	P
+\end_layout
+
+\begin_layout Plain Layout
+
+	SUB	AL,	L
+\end_layout
+
+\begin_layout Plain Layout
+
+	XOR	AH,	AH
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	BL,	8
+\end_layout
+
+\begin_layout Plain Layout
+
+	DIV	BL
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	BL,	AL
+\end_layout
+
+\begin_layout Plain Layout
+
+	XOR	BH,	BH
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	AL,	M[BX]
+\end_layout
+
+\begin_layout Plain Layout
+
+	MOV	CL,	AH
+\end_layout
+
+\begin_layout Plain Layout
+
+	SHL	AL,	CL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

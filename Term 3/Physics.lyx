@@ -11043,15 +11043,2040 @@ f=\eta\df{du}{dz}\um S
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+23 ноября 2013
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_inset Formula $U_{1}=U\left(z+\left\langle l\right\rangle \right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{2}=U\left(z-\left\langle l\right\rangle \right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Раз длинна свободного пробера маленькая, тто мы можем применить формулу
+ Тейлора (из мат анализа)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}=U\left(z+\left\langle l\right\rangle \right)=u\left(z\right)+\df{du\left(z\right)}{dz}\left\langle l\right\rangle +\df{d^{2}u\left(z\right)}{dz}\df{\left\langle l\right\rangle ^{2}}{2!}+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\left\langle l\right\rangle $
+\end_inset
+
+ очень мало, то ограничемся всего лишь 2мя слагаемыми:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}=u\left(z\right)-\df{du}{dz}\left\langle l\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{1}=-\df 16mn\left\langle v\right\rangle 2\df{du}{dz}\left\langle l\right\rangle S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Учитывая что это 
+\begin_inset Formula $f$
+\end_inset
+
+ --- сила взаимодействия между слоями на площадке 
+\begin_inset Formula $S$
+\end_inset
+
+, то ее знак можно опустить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle \df{du}{dz}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сравним с поученой эксперементально: 
+\begin_inset Formula $f=\nu\df{du}{dz}S$
+\end_inset
+
+, 
+\begin_inset Formula $\nu=mn\left\langle v\right\rangle \left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu=\df 13mn\sqrt{\df{8kT}{3m}}\df 1{\sqrt{2}\sigma n}\sim\df{\sqrt{T}\sqrt{m}}{\sigma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Коофицент вязкости не зависит от концентрации молекул, и таким образом и
+ от давления.
+\end_layout
+
+\begin_layout Subsection
+Тепропроводность газом
+\end_layout
+
+\begin_layout Standard
+Теплопроводность --- это перенос энергии.
+\end_layout
+
+\begin_layout Standard
+Опытным путем было установлено, то что за еденицу времени черезт площадку
+ с проходит 
+\begin_inset Formula $q=-\df{dT}{dz}S$
+\end_inset
+
+ количество тепла.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=q\um t$
+\end_inset
+
+ --- тепло, прошедшее через площадку за время 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda$
+\end_inset
+
+ --- коофицент теплопроводностии
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\lambda\right]=\df{\text{Дж}}{\text{К}\x\text{М}\x\text{с}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попробуем обьяснить эту формулу основываясь на молекулярно кинетическую
+ теорию.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+НРис 33
+\end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{1}\right\rangle =\df 32\um k\um T_{1}$
+\end_inset
+
+ --- энергия 1го слоя
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{2}\right\rangle =\df 32\um k\um T_{2}$
+\end_inset
+
+ --- энергия 2го слоя
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N=\df 16\um\left\langle v\right\rangle \um\D t\um S\um n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Количество молекул перешедших из 1го слоя во 2й и обратно одинакого.
+ Посчитаем энергию:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D E=-\D N\left\langle \varepsilon_{1}\right\rangle +\D N\left\langle \varepsilon_{2}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta E=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)\D tS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=\df{\D E}{\D t}=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)S=\df 16\left\langle v\right\rangle n\df 32k\left(T_{2}-T_{1}\right)S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}=T\left(z+\left\langle l\right\rangle \right)\approx T\left(z\right)+\df{dT}{dz}\um\left\langle l\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}=T\left(z-\left\langle l\right\rangle \right)\approx T\left(z\right)-\df{dT}{dz}\um\left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle n\df 32k\df{dT}{dz}S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Сопоставляем с полученой эксперементально и убеждаемся что все правильно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k=\\
+ & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k\df{mN_{A}}{mN_{A}}=\\
+ & = & \left\{ \begin{array}{c}
+kN_{A}=R\\
+n\um m=\rho\\
+mN_{A}=\mu
+\end{array}\right\} =\\
+ & = & \df 13\rho\df{3R}{2\mu}\left\langle v\right\rangle \left\langle l\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{v}=\df 32\df R{\mu}$
+\end_inset
+
+ --- удельная теплоемкость.
+ 
+\begin_inset Formula $\df 32$
+\end_inset
+
+ --- зависит от количества атомов в молекул (это тдля одноатомных).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle c_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=c_{v}\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=\df 13n\sqrt{\df{8kT}{\pi m}}\df 1{\sqrt{2}\sigma n}\df 32k\sim\df{\sqrt{T}}{\sigma\sqrt{m}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Дифузия газов
+\end_layout
+
+\begin_layout Standard
+Будем считать чтодавление и концентрация молекул по обьему одна и та же.
+\end_layout
+
+\begin_layout Standard
+Пусть смесь состоит только из 2х газов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 34
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}'+n_{1}''=n_{2}'+n_{2}''=n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это явление дифузии.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K$
+\end_inset
+
+ --- количество молекул, проходящие через площадку 
+\begin_inset Formula $S$
+\end_inset
+
+ в еденицу времени
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K'=-D\df{dn'}{dz}S$
+\end_inset
+
+ --- была получена эксперементально
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ --- коофицент дифузии.
+\end_layout
+
+\begin_layout Standard
+Попробуем эту формулу получить основываясь на молекулярно кинетической теории.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N=\df 16\left\langle v\right\rangle \D tnS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D N'=-\D N_{1}'+\D N_{2}'=\df 16\left\langle v\right\rangle \left(n_{2}-n_{1}\right)\D tS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Накую величину изменилось количество молекул где то там...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K=\df{\D N'}{\D t}=\df 16\left\langle v\right\rangle \left(n_{2}'-n_{1}'\right)S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n'\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}'=n'\left(z+\left\langle l\right\rangle \right)\approx n'\left(z\right)+\df{dn'}{dz}\left\langle l\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}'=n'\left(z-\left\langle l\right\rangle \right)\approx n'\left(z\right)-\df{dn}{dz}\left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\left\langle l\right\rangle $
+\end_inset
+
+ маленькое, пренебрегаем степенями большими
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K'=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle \df{dn'}{dz}S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\df 13\left\langle v\right\rangle \left\langle l\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu=\rho\um D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\df 13\sqrt{\df{8kT}{\pi m}}\df 1{\sigma n\sqrt{2}}\sim\df{\sqrt{T}}{\sqrt{m}n\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K''=-D\df{dn''}{dz}S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M'=-D\df{d\rho'}{dz}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Первое начало термодинамики
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вн}}=E_{\text{кин}}+E_{\text{вд}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=E_{\text{кин}}$
+\end_inset
+
+ --- в газах
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=E_{\text{кин}}=N\df 32kT=\nu\df 32RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрм, если газ получает некоторую энергию извне, в виде температьуры.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Условимся, что если газ получет тепо, то 
+\begin_inset Formula $Q>0$
+\end_inset
+
+,если отдает, то 
+\begin_inset Formula $Q<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Точно также условимся с работой.
+ Если газ совершает рабьоту над внешними телаами, то это робота положительная,
+ а если соверщается на гахом, то эта робота отрицательная.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=Q$
+\end_inset
+
+ --- изменение внутренней энергии
+\end_layout
+
+\begin_layout Standard
+Если газ в это время будет совершать работу, то его енергия будет уменьшаться.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=Q-A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=$
+\end_inset
+
+Тепло, поступающее в газ идет на изменение его внутренней энергии и на соверщени
+е газом работиы над внешними телами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+25 ноября 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теплоемкость газа.
+ (Одноатомного и многоатомного газа)
+\end_layout
+
+\begin_layout Definition
+Теплоемкостью какого либа тела, называется величина, равная колическтву
+ тепла, которое необходимо сообщить телу, чтобы поднять его температуру
+ на 1 градус.
+\end_layout
+
+\begin_layout Standard
+Если мы для какогото тела поднимает его температуру на 
+\begin_inset Formula $\D T$
+\end_inset
+
+, а тепрература тела повышается на 
+\begin_inset Formula $\D Q$
+\end_inset
+
+, то теплоемкостью можно называьт 
+\begin_inset Formula $C_{T}=\df{\D Q}{\D T}=\left[\df{\text{Джоуль}}{\text{Кельвин}}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Теплоемкость еденицы массы вещества называется удельной теплоемкостью.
+ Обозначается 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ В системе 
+\begin_inset Formula $\left[c\right]$
+\end_inset
+
+ измеряется в 
+\begin_inset Formula $\df{\text{Джоуль}}{\text{Кельвин}\x\text{Килограмм}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Теплоемкость одного киломоля вещества называется молярной теплоемкостью.
+ Обозначается 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left[C\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Киломоль}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=\df C{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим такую ситуацию.
+ Будем нагревать газ в замкнутом обьеме (
+\begin_inset Formula $V=const$
+\end_inset
+
+).
+ Газ не расширяется и не совершает работу (
+\begin_inset Formula $A=0$
+\end_inset
+
+), и тогда вся энергия пойдет на увеличение температуры.
+ 
+\begin_inset Formula $Q=\D U$
+\end_inset
+
+.
+ Мы уже знгаем что 
+\begin_inset Formula $U=\df 32\um R\um T$
+\end_inset
+
+ для одного моля.
+ 
+\begin_inset Formula $\D U=\df 32\nu R\D T$
+\end_inset
+
+.
+ Согласно этому примеру, еслши мы берем 
+\begin_inset Formula $\nu=1\,\text{КМоль}$
+\end_inset
+
+, то 
+\begin_inset Formula $C_{V}=\df Q{\D T}=\df{\D U}{\D T}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Теперь, если мы возьмем ситуацию, что обьем изменяется (Нагрев при постоянном
+ давлении) (
+\begin_inset Formula $P-const$
+\end_inset
+
+).
+ 
+\begin_inset Formula $Q=\D U+A$
+\end_inset
+
+ Вод тут будет такое равенство.
+ 
+\begin_inset Formula $C_{P}=\df Q{\D T}=\df{\D U}{\D T}+\df A{\D T}=C_{V}+\df A{\D T}>C_{V}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+При разных условиях теплоемкость газов разная.
+\end_layout
+
+\begin_layout Standard
+При движении поршня на 
+\begin_inset Formula $\D h$
+\end_inset
+
+, 
+\begin_inset Formula $A=F\D h=P\um S\um\D h=P\D V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{P}=C_{V}+\df{P\D V}{\D T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV_{1}=RT_{1}$
+\end_inset
+
+.
+ Потом мы нагрели получилось: 
+\begin_inset Formula $PV_{2}=RT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В итоге получим:
+\begin_inset Formula $P\D V=R\D T$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Подставим: 
+\begin_inset Formula $C_{P}=C_{V}+\df{P\D V}{\D T}=C_{V}+\df{R\D T}{\D T}=C_{V}+R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{P}=C_{V}+R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это формура Майэра.
+\end_layout
+
+\begin_layout Standard
+Универсальная газовая постоянная 
+\begin_inset Formula $R$
+\end_inset
+
+ численно рава работе расширения обного киломоля идеального газа при его
+ нагревании на один градус в условиях постоянного давления.
+\end_layout
+
+\begin_layout Standard
+Берем 
+\begin_inset Formula $\nu=1\,\text{КМоль}$
+\end_inset
+
+, 
+\begin_inset Formula $\D U=\df 32R\D T$
+\end_inset
+
+, то тогда 
+\begin_inset Formula $C_{V}=\df 32R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если мы берем 
+\begin_inset Formula $C_{V}=\df Q{\D T}$
+\end_inset
+
+ и если 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ зависит от пемпературы, то тогда устремляем 
+\begin_inset Formula $\D T\to\b$
+\end_inset
+
+.
+ И придем к формуле 
+\begin_inset Formula $C_{V}=\df{du}{dT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При некоторых условиях коофицент 
+\begin_inset Formula $\df 32$
+\end_inset
+
+ будет меняться, даже для одного и того же газа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{V}=\df 32R$
+\end_inset
+
+ --- такой теплокмкостью обладают газы 
+\begin_inset Formula $He,\, Ne,\, Ar,\tr$
+\end_inset
+
+.
+ (Восьмой столбец таблицы Минделеева) У них все элексроны заполнены.
+ Их называют благородными газами.
+ Для них 
+\begin_inset Formula $C_{V}=12,5\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для 
+\begin_inset Formula $N_{2},\, O_{2}$
+\end_inset
+
+ --- 
+\begin_inset Formula $C_{V}=20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для 
+\begin_inset Formula $NH_{3},\, CH_{4}$
+\end_inset
+
+ --- 
+\begin_inset Formula $C_{V}=25,0\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT=\df{m\left\langle v^{2}\right\rangle }2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v^{2}=v_{x}^{2}+v_{y}^{2}+v_{z}^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df{m\left\langle v_{x}^{2}\right\rangle }2+\df{m\left\langle v_{y}^{2}\right\rangle }2+\df{m\left\langle v_{z}^{2}\right\rangle }2=\df 12kT+\df 12kT+\df 12kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для одноатомного газа (
+\begin_inset Formula $He,\, Ne$
+\end_inset
+
+), для ни= 
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это было для одноатомного газа, у которго 3 степени свободы.
+\end_layout
+
+\begin_layout Standard
+Больцман предположил, что на любую степень своботы приходится 
+\begin_inset Formula $\df 12kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{\text{вр}}=\df{I\um\omega^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{\text{вр}}\right\rangle =\df{I\um\left\langle \omega^{2}\right\rangle }2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать молекулу многоатомного газа.
+ При хаотическом движении любое поступательное движение может перейти во
+ вращательное и наоборот.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N_{2},\, O_{2}$
+\end_inset
+
+ --- 5 степеней свободы.
+ Тогда 
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+2\left(\df 12kT\right)=\df 52kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь перейдем во внутреннюю энергию газов, то там 
+\begin_inset Formula $U=\df 52RT$
+\end_inset
+
+, 
+\begin_inset Formula $C_{V}=\df 52R\approx20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $NH_{3},\, CH_{4},\, H_{2}O$
+\end_inset
+
+ --- 6 степеней свободы.
+\end_layout
+
+\begin_layout Standard
+Для них 
+\begin_inset Formula $\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+3\left(\df 12kT\right)=\df 62kT=3kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если посчитать, то всё сходится.
+\end_layout
+
+\begin_layout Standard
+Но есть некоторые исключения.
+ Дело в том, что некоторые газы, например 
+\begin_inset Formula $CO_{2}$
+\end_inset
+
+, у него структура линейная, и у него 5 степеней свободы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 35
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Почему это так? Все таки молукула, этот не твердое тело.
+ При очень нихких температурах у них нету вращательного движения, и гворят,
+ что она вымерзает.
+ Тоесть если 
+\begin_inset Formula $\widetilde{\varepsilon_{\text{вр}}}>\df 12kT+\df 12kT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Примерно при 
+\begin_inset Formula $T=100\, K$
+\end_inset
+
+ и меньше вымерзают вращательные степени свободы.
+\end_layout
+
+\begin_layout Standard
+С ростом температуры у отдельных молекул начинает проявляться колебательная
+ степень свободы, связанная с движением атомов в молекуле.
+ В этом дуижении участвуют два вида энергии --- этергия движения атомов
+ и потенциальная энергия связи в атомах.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle \varepsilon_{\text{кол}}\right\rangle =\left\langle \varepsilon_{AT}\right\rangle +\left\langle U_{AT}\right\rangle =\df 12kT+\df 12kT=kT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT>\tilde{\varepsilon}_{\text{кол}}$
+\end_inset
+
+\SpecialChar \@.
+ На нее приходится 
+\begin_inset Formula $\df 22kT$
+\end_inset
+
+.
+ По отдельности на каждый вид энергии.
+\end_layout
+
+\begin_layout Standard
+На 2500 молекулы распадаются, и вся энергия идет на распад молекул на атомы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tilde{\varepsilon}_{\text{св}}\approx kT$
+\end_inset
+
+ --- 2500 K
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon_{\text{эл}}\approx kT$
+\end_inset
+
+ --- примерно 3000 K
+\end_layout
+
+\begin_layout Standard
+После 3000 электроны покидают молекулы газа, и он превращается в плазму.
+\end_layout
+
+\begin_layout Subsection
+Процессы и циклы с газами
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=\nu RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если я знаю значения 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+, то можно найти 
+\begin_inset Formula $T.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\df 1{\nu R}PV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $PV$
+\end_inset
+
+ диаграмму.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 36
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Какие же энергетические преобразования происходят еще.
+\end_layout
+
+\begin_layout Standard
+При постоянном лавлении 
+\begin_inset Formula $A=p\um\D V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Изохарический процесс.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $V=const$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $A=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\D U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{V}=\df i2R$
+\end_inset
+
+, где 
+\begin_inset Formula $i$
+\end_inset
+
+--- число степеней свободы молекул.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изобaрический процесс
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $P=const$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $A=P\um\D V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=\D U+A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{P}=\df{i+2}2R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=P\left(V_{2}-V_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изотермический процесс
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+02.12.13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Процесс теплообмена
+\end_layout
+
+\begin_layout Standard
+Приаедем в соприкосновение 2 тела с разной температурой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\ov{\st}QT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 38
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попробуем обратить процесс.
+\end_layout
+
+\begin_layout Standard
+Возьмем газ между телами.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{1}<T_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T-const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}\ov{\st}Q$
+\end_inset
+
+газ
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботический
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поднимаем температуру гназа чуть больше 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $T$
+\end_inset
+
+ растет и становится больше чем 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T-const$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+газ 
+\begin_inset Formula $\ov{\st}QT_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Обратите внимание, что газ нагрелся.
+\end_layout
+
+\begin_layout Standard
+Есть 2 способа исправить:
+\end_layout
+
+\begin_layout Enumerate
+Отдать излишнее тепло во внешнею среду, но тогда там будут изменения.
+\end_layout
+
+\begin_layout Enumerate
+Адиоботически вернуть в тоже состояние, но тогда получится замкнутый циык,
+ и тогда над газом совершили работу, а работа то из внешней среды, и тогда
+ во внешней среде произошли изменения.
+\end_layout
+
+\begin_layout Subsection
+Изотермическое расширение или сжатие газа.
+\end_layout
+
+\begin_layout Standard
+Чисто изотермический процесс обратим.
+\end_layout
+
+\begin_layout Standard
+Все тепло, поступающее в газ, идет в работу.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q=\delta A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q'=\delta A'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q'=-\delta Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A'=-\delta A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Адиоботическое расширение или сжатие
+\end_layout
+
+\begin_layout Standard
+Оно тоже обратимо.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $Q=0$
+\end_inset
+
+, то 
+\begin_inset Formula $dU=-\delta A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Нужнопроводить этот процесс бесконечно быстро, чтобы не успевало тепло уходить.
+\end_layout
+
+\begin_layout Claim
+Реальные тепловые процессы всегда необратимы.
+\end_layout
+
+\begin_layout Section
+Второе начало термодинамики.
+\end_layout
+
+\begin_layout Definition
+Невозможны такие процессы, 
+\emph on
+единственным 
+\emph default
+результатом которых являлось бы переход тепла от тела менее нагретого, к
+ телу, более нагретому.
+\end_layout
+
+\begin_layout Standard
+Иначе бы можно было бы ставить чайник на лед, и он закипел бы.
+\end_layout
+
+\begin_layout Definition
+Невозможны такие процессы, 
+\emph on
+единственным 
+\emph default
+результатом которых было бы отнятие некоторого тепла у произвольного тела
+ и превращения этого тепла полностью в работу.
+\end_layout
+
+\begin_layout Standard
+или 
+\end_layout
+
+\begin_layout Definition
+Невозможен вечный двигатель 2го рода
+\end_layout
+
+\begin_layout Subsection
+Цикл Карно
+\end_layout
+
+\begin_layout Standard
+Карно --- Французский инженер
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 40
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Он решил создать обратимую тепловую машину.
+ (Из 2х по идее обратимых циклов)
+\end_layout
+
+\begin_layout Standard
+В этом цикле 4 этапа.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T_{1}=T$
+\end_inset
+
+---const
+\end_layout
+
+\begin_layout Standard
+Изотермическое расширение.
+\end_layout
+
+\begin_layout Standard
+Нагреватель отдает некоторое тепло газу.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботическое расширение
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\st T_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $T_{1}<T_{2}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изотермическое сжтие 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Газ отдате тепло 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ холодильнику.
+ (Чаще всего холодильник это оклужающая среда)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботическое сжатие
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возвращаем всю систему в исходное состояние.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В этом цикле совершается работа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=Q_{1}-Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ --- это тепло, которое берет холодильник (просто если это тепло, которое
+ отдал газ, то это слогаемое должно быть со знаком минус)
+\end_layout
+
+\begin_layout Theorem
+Две различны еобратимые тепловые машины, работающие с одними и теми же нагревати
+лем и холодильником имеют одинаковое КПД.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 41
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1M},\ Q_{2m},\ A_{M},\ \eta_{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1N},\ Q_{2N},\ A_{N},\ \eta_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1?}$
+\end_inset
+
+ --- тепло, которое забрали у нагревателя.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{2?}$
+\end_inset
+
+ --- тепло, которое отдали холодильнику.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{?}$
+\end_inset
+
+ --- работа
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\eta_{?}$
+\end_inset
+
+ --- КПД
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1M}=Q_{1N}=Q_{1}$
+\end_inset
+
+ --- выбрали такое цикл, когда
+\end_layout
+
+\begin_layout Proof
+Докажем от противного: пусть 
+\begin_inset Formula $\eta_{M}>\eta_{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{2M}<Q_{2N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{M}>A_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заставим эту машину работать по обратному циклу.
+ (над ней совершается работа 
+\begin_inset Formula $A_{N},$
+\end_inset
+
+и отдается темло нагревателю 
+\begin_inset Formula $Q_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $A_{M}>A_{N}$
+\end_inset
+
+, то мы можем взять часть работы от 
+\begin_inset Formula $M$
+\end_inset
+
+ и отдать 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ (Работу, которую нужно совершить над 
+\begin_inset Formula $N$
+\end_inset
+
+ заберем у 
+\begin_inset Formula $M$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+У машины 
+\begin_inset Formula $M$
+\end_inset
+
+ останется часть работы, которое можно использовать.
+ (
+\begin_inset Formula $A=A_{M}-A_{N}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+Расмотрим единую тепловую машину 
+\begin_inset Formula $\left(M-N\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Она забтрает у холодильника тепло 
+\begin_inset Formula $Q_{2}=Q_{N2}-Q_{M2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Получается нагреватель стоит ради мебели, а работа совершалаь.
+ Тоесть машина забрала тепло у холдодильника и полностью превратила его
+ в работу, что невозможно в силу 2го начала термодинамики.
+\end_layout
+
+\begin_layout Proof
+Предположение неверно, следовательно 
+\begin_inset Formula $\eta_{M}\mr\eta_{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично мжно доказать, что 
+\begin_inset Formula $\eta_{M}<\eta_{N}$
+\end_inset
+
+ тоже неверное, следорвательно остается их приравнять.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ --- необратимая машина, а 
+\begin_inset Formula $O$
+\end_inset
+
+ --- обратимая машина.
+ Они работают с одним и теми же холодилшьником и нагревателем, различие
+ только в том, что одна обратимая, а другая нет.
+ Аналогично можно показать, что неравенство 
+\begin_inset Formula $\eta_{H}>\eta_{O}$
+\end_inset
+
+, следовательно 
+\begin_inset Formula $\eta_{H}\mr\eta_{O}$
+\end_inset
+
+, но мы не можем опровергнуть 
+\begin_inset Formula $\eta_{H}<\eta_{O}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Как сделать из обратимой машины необратимую, присыпать песочку, добависть
+ трение.
+ И тогда КПД обратимой машины будет ментше чем необратимой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}Q=\eta$
+\end_inset
+
+ --- так вычисляется КПД.
+ Но для обратимой машыны можно подругому по идее.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как минус в формуле КПД поставлен явно, то 
+\begin_inset Formula $\ln\df{V_{3}}{V_{4}}$
+\end_inset
+
+, а не 
+\begin_inset Formula $\ln\df{V_{4}}{V_{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{2}V_{2}^{\gamma}=P_{3}V_{3}^{\gamma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{2}V_{2}=\nu RT_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{3}V_{3}=\nu RT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выражаем 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{3}$
+\end_inset
+
+, и подставляем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Откуда получаем уравнение адиобаты, связывающее обьем и температуру.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Аналогично из процесса 4-1 получаем 
+\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{4}}{V_{1}}\right)^{\gamma-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $\df{V_{3}}{V_{4}}=\df{V_{2}}{V_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{O}=\df{T_{1}-T_{2}}{T_{2}}$
+\end_inset
+
+ --- так вычисляется КПД для обратимых машин.
+\end_layout
+
+\begin_layout Remark
+Обратимая темловая машина называется идеальной тепловой машиной иногда.
+\end_layout
+
+\begin_layout Subsection
+Приведенное кол-во тепла.
+ Неравеснство Клаузиуса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}$
+\end_inset
+
+ --- действует для всех машин
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{T_{1}-T_{2}}{T_{1}}$
+\end_inset
+
+ --- действует только для обратимых.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если рассматривать только газ и рассматривать что газ отдает тепло со знаком
+ минус, то если брать это неравествтвво по отношению к одному телу, то мы
+ получим 
+\begin_inset Formula $\df{Q_{1}}{T_{1}}+\df{Q_{2}}{T_{2}}\mr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если газ контактирует не с 2мя а с 
+\begin_inset Formula $N$
+\end_inset
+
+ телами, то можно записать 
+\begin_inset Formula $\ous{i=1}N\df{Q_{i}}{T_{i}}\mr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это неравество Клаудиуса.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df QT$
+\end_inset
+
+ --- эту дробь Клаузиус называл прриваеденным колическвом тепла.
+\end_layout
+
+\begin_layout Subsection
+Энтропия
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
