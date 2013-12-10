@@ -9854,7 +9854,7 @@ u_{2}=x-y
 \begin_inset Formula $\left(k\mr m\right)$
 \end_inset
 
-,определяемых системой (
+, определяемых системой (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:21"
@@ -9894,9 +9894,6 @@ reference "eq:21"
 
 .
  
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
 \df{\dd\left(u_{1},u_{2},\tr,u_{k}\right)}{\dd\left(x_{1},\tr,x_{k}\right)}\nr0\label{eq:22}
@@ -9912,19 +9909,23 @@ reference "eq:21"
 \begin_inset Formula $u_{1},\tr,u_{k}$
 \end_inset
 
- - зависимы в некоторой окрестности точки 
+ --- зависимы в некоторой окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
 , например 
-\begin_inset Formula $u_{n}=\Psi\left(u_{1},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right)$
+\begin_inset Formula 
+\[
+u_{n}=\Psi\left(u_{1},\tr,u_{n-1},u_{n+1},\tr,u_{k}\right)
+\]
+
 \end_inset
 
- в окрестности точки 
+в окрестности точки 
 \begin_inset Formula $M_{0}$
 \end_inset
 
- - сложная функция аргументов 
+ --- сложная функция аргументов 
 \begin_inset Formula $x_{1},\tr,x_{m}$
 \end_inset
 
@@ -9932,15 +9933,15 @@ reference "eq:21"
 \begin_inset Formula $x_{j},\ j=\overline{1,k}$
 \end_inset
 
-.
+:
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula $\begin{cases}
-\df{\dd u_{n}}{\dd x_{1}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{1}}\\
-\df{\dd u_{n}}{\dd x_{2}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{2}}\\
+\df{\dd u_{n}}{\dd x_{1}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{1}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{1}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{1}}\\
+\df{\dd u_{n}}{\dd x_{2}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{2}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{2}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{2}}\\
 \tr\\
-\df{\dd u_{n}}{\dd x_{k}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{2}}\um\df{\dd u_{2}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{k}}
+\df{\dd u_{n}}{\dd x_{k}}=\df{\dd\Psi}{\dd u_{1}}\um\df{\dd u_{1}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{n-1}}\um\df{\dd u_{n-1}}{\dd x_{k}}+\df{\dd\Psi}{\dd u_{n+1}}\um\df{\dd u_{n+1}}{\dd x_{k}}+\tr+\df{\dd\Psi}{\dd u_{k}}\um\df{\dd u_{k}}{\dd x_{k}}
 \end{cases}$
 \end_inset
 
@@ -9949,11 +9950,7 @@ reference "eq:21"
 
 \begin_layout Proof
 Данное выражение означает, что вектор 
-\begin_inset Formula $\left(\begin{array}{c}
-\df{\dd u_{n}}{\dd x_{1}}\\
-\vtr\\
-\df{\dd u_{n}}{\dd x_{k}}
-\end{array}\right)$
+\begin_inset Formula $\left(\frac{\dd u_{n}}{\dd x_{1}},\tr,\frac{\dd u_{n}}{\dd x_{k}}\right)^{T}$
 \end_inset
 
 , являющийся 
@@ -9971,7 +9968,7 @@ reference "eq:21"
 \end_layout
 
 \begin_layout Example
-Найти экстремумы функции 
+Найти экстремумы функции
 \begin_inset Formula 
 \begin{equation}
 u=x^{2}+y^{2}\label{eq:23}
@@ -9979,7 +9976,7 @@ u=x^{2}+y^{2}\label{eq:23}
 
 \end_inset
 
- при условии 
+при условии
 \begin_inset Formula 
 \begin{equation}
 x+y-1=0\label{eq:24}
@@ -9990,35 +9987,45 @@ x+y-1=0\label{eq:24}
 
 \end_layout
 
-\begin_layout Example
+\begin_deeper
+\begin_layout Enumerate
 Выразим 
 \begin_inset Formula $y=1-x$
 \end_inset
 
 , подставим его в 
-\begin_inset Formula $\tilde{u}=x^{2}+\left(1+x\right)^{2}=2\um x^{2}-2\um x+1$
+\begin_inset Formula $u$
 \end_inset
 
- - функция одной переменной.
-\end_layout
+, получим функцию одной переменной: 
+\begin_inset Formula 
+\[
+\tilde{u}=x^{2}+\left(1+x\right)^{2}=2\um x^{2}-2\um x+1
+\]
 
-\begin_layout Example
-Ее область определения 
+\end_inset
+
+Ее область определения: 
 \begin_inset Formula $x\in\left(-\b,+\b\right)$
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Example
+\begin_layout Enumerate
 Найдем ее экстремумы:
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $\tilde{u}\pr=4\um x-2=0\ \sl\ x=\df 12$
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\tilde{u}\pr=4\um x-2=0$
 \end_inset
 
- - критическая точка.
+, тогда 
+\begin_inset Formula $x=\df 12$
+\end_inset
+
+ --- критическая точка.
  Так как функция 
 \begin_inset Formula $\tilde{u}$
 \end_inset
@@ -10027,28 +10034,28 @@ x+y-1=0\label{eq:24}
 \begin_inset Formula $x=\df 12$
 \end_inset
 
- меняет знак с минуса на плюс, значить 
+ меняет знак с минуса на плюс, значит 
 \begin_inset Formula $x=\df 12$
 \end_inset
 
- - точка минимума.
-\end_layout
+ --- точка минимума:
+\begin_inset Formula 
+\[
+\tilde{u}_{min}=\tilde{u}\left(\df 12\right)=\df 12
+\]
 
-\begin_layout Example
-\begin_inset Formula $\tilde{u}_{min}=\tilde{u}\left(\df 12\right)=\df 12$
 \end_inset
 
-.
-\end_layout
+Заметим что глобальным экстремумом (минимумом) функции является:
+\begin_inset Formula 
+\[
+f_{min}=f\left(0,0\right)=0
+\]
 
-\begin_layout Example
-Заметим что глобальный экстремум (минимум) 
-\begin_inset Formula $M_{0}\left(0,0\right),\ f_{min}=f\left(0,0\right)=0$
 \end_inset
 
-.
- Полученный экстремум называется условным, так как необходимо учитывать
- дополнительное условие - условие связи (
+Полученный экстремум называется условным, так как необходимо учитывать дополните
+льное условие --- условие связи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:24"
@@ -10061,9 +10068,6 @@ reference "eq:24"
 \begin_layout Standard
 В общей постановке задача нахождения условного экстремума выглядит следующим
  образом:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 u=f\left(x_{1},\tr,x_{m},y_{1},\tr,y_{k}\right)\st extr\label{eq:25}
@@ -10072,9 +10076,6 @@ u=f\left(x_{1},\tr,x_{m},y_{1},\tr,y_{k}\right)\st extr\label{eq:25}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -10086,10 +10087,6 @@ F_{k}\left(x_{1},\tr,x_{m},y_{1},\tr,y_{k}\right)=0
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Функция 
 \begin_inset Formula $f\left(\vec x,\vec y\right)$
 \end_inset
@@ -10112,6 +10109,8 @@ reference "eq:26"
 .
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Definition
 Говорят что функция (
 \begin_inset CommandInset ref
@@ -10120,7 +10119,7 @@ reference "eq:25"
 
 \end_inset
 
-) имеет условный максимум(минимум) в точке 
+) имеет условный максимум (минимум) в точке 
 \begin_inset Formula $M_{0}\left(\vec{x_{0}},\vec{y_{0}}\right)$
 \end_inset
 
@@ -10143,7 +10142,7 @@ reference "eq:26"
 \begin_inset Formula $f\left(\vec x,\vec y\right)$
 \end_inset
 
- принимает наибольшее(наименьшее) значение в точке 
+ принимает наибольшее (наименьшее) значение в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
@@ -10170,7 +10169,7 @@ reference "eq:26"
 \begin_inset Formula $M_{0}$
 \end_inset
 
-, и Якобиан 
+, и Якобиан равен:
 \begin_inset Formula 
 \begin{equation}
 \left|D\right|=\df{\dd\left(F_{1},\tr,F_{k}\right)}{\dd\left(y_{1},\tr,y_{k}\right)}\label{eq:27}
@@ -10178,19 +10177,12 @@ reference "eq:26"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Тогда 
-\begin_inset Formula $\sl$
-\end_inset
-
- по теореме о системе неявных функций существует окрестность в точке 
+Тогда, по теореме о системе неявных функций, существует окрестность в точке
+ 
 \begin_inset Formula $M_{0}'\left(x_{1}^{0},\tr,x_{m}^{0}\right)$
 \end_inset
 
- в которой однозначно определены функции 
+, в которой однозначно определены функции:
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -10202,10 +10194,6 @@ y_{k}=\varphi_{k}\left(x_{1},\tr,x_{m}\right)
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Они же являются решениями системы (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -10228,25 +10216,19 @@ reference "eq:25"
 
 \end_inset
 
-) получим задачу на безусловный экстремум.
-\end_layout
-
-\begin_layout Standard
+) получим задачу на безусловный экстремум:
 \begin_inset Formula 
-\begin{equation}
-u=f\left(x_{1},\tr,x_{m},\varphi_{1}\left(x_{1},\tr,x_{m}\right),\tr,\varphi_{k}\left(x_{1},\tr,x_{m}\right)\right)=\Phi\left(x_{1},\tr,x_{m}\right)\st extr\label{eq:29}
-\end{equation}
+\begin{multline}
+u=f\left(x_{1},\tr,x_{m},\varphi_{1}\left(x_{1},\tr,x_{m}\right),\tr,\varphi_{k}\left(x_{1},\tr,x_{m}\right)\right)=\\
+=\Phi\left(x_{1},\tr,x_{m}\right)\st extr\label{eq:29}
+\end{multline}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-
-\emph on
-Вопрос: 
-\emph default
+\begin_layout Problem
 Можно ли получить необходимые условия экстремума, не решая систему (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -10262,32 +10244,29 @@ reference "eq:26"
 \begin_inset Formula $u$
 \end_inset
 
- в точке 
+ имеет в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
- это экстремум, то 
-\begin_inset Formula $\sl$
+ экстремум, то:
+\begin_inset Formula 
+\[
+du=\df{\dd\Phi}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd\Phi}{\dd x_{m}}\um dx_{m}=0
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $du=\df{\dd\Phi}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd\Phi}{\dd x_{m}}\um dx_{m}=0$
-\end_inset
-
- для любого набора 
+для любого набора 
 \begin_inset Formula $dx_{i},\ i=\overline{1,m}$
 \end_inset
 
 .
  Так как дифференциал обладает свойством инвариантности формы, он может
- выглядеть так: (но только в точке 
+ выглядеть так (но только в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
-)
-\end_layout
-
-\begin_layout Standard
+):
 \begin_inset Formula 
 \begin{equation}
 du=\df{\dd f}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd f}{\dd x_{m}}\um dx_{m}+\df{\dd f}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd f}{\dd y_{k}}\um dy_{k}=0\label{eq:30}
@@ -10295,10 +10274,6 @@ du=\df{\dd f}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd f}{\dd x_{m}}\um dx_{m}+\df{\dd f
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Дифференцируя уравнения связи (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -10313,10 +10288,7 @@ reference "eq:28"
 
 \end_inset
 
-) получим систему следующую:
-\end_layout
-
-\begin_layout Standard
+) получим следующую систему:
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -10328,10 +10300,6 @@ reference "eq:28"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Так как Якобиан отличен от нуля в точке 
 \begin_inset Formula $M_{0}$
 \end_inset
@@ -10352,10 +10320,7 @@ reference "eq:31"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-После их подстановки в (
+ После их подстановки в (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:29"
@@ -10363,37 +10328,34 @@ reference "eq:29"
 \end_inset
 
 ) получим:
-\end_layout
+\begin_inset Formula 
+\[
+A_{1}\um dx_{1}+\tr+A_{m}\um dx_{m}=0,\quad\forall dx_{i},\quad i=\overline{1,m}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $A_{1}\um dx_{1}+\tr+A_{m}\um dx_{m}=0,\ \forall dx_{i},\ i=\overline{1,m}$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\begin{cases}
+А тогда:
+\begin_inset Formula 
+\[
+\begin{cases}
 A_{1}=0\\
-\vtr\\
+\tr\\
 A_{m}=0
-\end{cases},\ \begin{cases}
+\end{cases},\qquad\begin{cases}
 F_{1}=0\\
-\vtr\\
+\tr\\
 F_{k}=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
 Получили 
 \begin_inset Formula $\left(k+m\right)$
 \end_inset
 
- условий - необходимое условие экстремума задачи (
+ условий --- необходимое условие экстремума для задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:25"
@@ -10420,18 +10382,19 @@ reference "eq:26"
 \end_layout
 
 \begin_layout Standard
-Рассматривается функция Лагранжа 
-\end_layout
+Рассматривается функция Лагранжа:
+\begin_inset Formula 
+\[
+L\left(\vec x,\vec y,\vec{\lambda}\right)=f\left(\vec x,\vec y\right)+\lambda_{1}\um F\left(\vec x,\vec y\right)+\tr+\lambda_{k}\um F_{k}\left(\vec x,\vec y\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $L\left(\vec x,\vec y,\vec{\lambda}\right)=f\left(\vec x,\vec y\right)+\lambda_{1}\um F\left(\vec x,\vec y\right)+\tr+\lambda_{k}\um F_{k}\left(\vec x,\vec y\right)$
 \end_inset
 
- Где 
+Где 
 \begin_inset Formula $\lambda_{j},\ j=\overline{1,k}$
 \end_inset
 
- (пока) неизвестные множители Лагранжа.
+ --- (пока) неизвестные множители Лагранжа.
 \end_layout
 
 \begin_layout Standard
@@ -10446,69 +10409,73 @@ reference "eq:26"
 \begin_inset Formula $f\left(\vec x,\vec y\right)$
 \end_inset
 
- - дифференцируема выберем 
+ --- дифференцируема, выберем 
 \begin_inset Formula $\lambda_{j},\ j=\overline{1,k}$
 \end_inset
 
- из условий 
-\begin_inset Formula $\df{\dd L}{\dd y_{1}}=\df{\dd L}{\dd y_{2}}=\tr=\df{\dd L}{\dd y_{k}}=0$
+ из условий: 
+\begin_inset Formula 
+\[
+\df{\dd L}{\dd y_{1}}=\df{\dd L}{\dd y_{2}}=\tr=\df{\dd L}{\dd y_{k}}=0
+\]
+
 \end_inset
 
-.
- Это возможно так как система 
-\begin_inset Formula $\begin{cases}
+Это возможно так как система: 
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{\dd f}{\dd y_{1}}+\lambda_{1}\um\df{\dd F_{1}}{\dd y_{1}}+\tr+\lambda_{k}\um\df{\dd F_{k}}{\dd y_{1}}=0\\
 \vtr\\
 \df{\dd f}{\dd y_{k}}+\lambda_{1}\um\df{\dd F_{1}}{\dd y_{k}}+\tr+\lambda_{k}\um\df{\dd F_{k}}{\dd y_{k}}=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
- однозначно разрешима по условию 
+однозначно разрешима по условию 
 \begin_inset Formula $\df{d\left(F_{1},\tr,F_{k}\right)}{d\left(y_{1},\tr,y_{k}\right)}\nr0$
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Отсюда следует что 
+ Отсюда следует что 
 \begin_inset Formula $dL=0$
 \end_inset
 
-, то есть 
-\begin_inset Formula $\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}+\df{\dd L}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd L}{\dd y_{k}}\um dy_{k}=0$
+, то есть: 
+\begin_inset Formula 
+\[
+\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}+\df{\dd L}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd L}{\dd y_{k}}\um dy_{k}=0
+\]
+
 \end_inset
 
-.
-\end_layout
+примет вид: 
+\begin_inset Formula 
+\[
+\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}=0
+\]
 
-\begin_layout Standard
-Примет вид: 
-\begin_inset Formula $\df{\dd L}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd L}{\dd x_{m}}\um dx_{m}=0$
 \end_inset
 
-.
- 
+Где 
 \begin_inset Formula $x_{i}$
 \end_inset
 
- - произвольное.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+ --- произвольное.
+ Значит:
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{\dd L}{\dd x_{1}}=0\\
 \vtr\\
 \df{\dd L}{\dd x_{m}}=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Получили необходимые условия экстремума задачи (
+ Получили необходимые условия экстремума задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:25"
@@ -10522,74 +10489,80 @@ reference "eq:26"
 
 \end_inset
 
-) 
-\begin_inset Formula $\begin{cases}
-L_{x_{1}}\pr=0\\
-\vtr\\
-L_{x_{m}}\pr=0\\
-L_{y_{1}}\pr=0\\
-\vtr\\
-L_{y_{k}}\pr=0\\
-F_{1}=0\\
-\vtr\\
-F_{k}=0
-\end{cases}$
+): 
+\begin_inset Formula 
+\[
+\left\{ \begin{aligned}L_{x_{1}}'=0 & \qquad & L_{y_{1}}\pr=0 & \qquad & F_{1}=0\\
+\vtr & \qquad & \vtr & \qquad & \vtr\\
+L_{x_{m}}\pr=0 & \qquad & L_{y_{k}}\pr=0 & \qquad & F_{k}=0
+\end{aligned}
+\right.
+\]
+
 \end_inset
 
- .
+
 \end_layout
 
 \begin_layout Standard
 Достаточное условие экстремума:
-\end_layout
+\begin_inset Formula 
+\[
+d^{2}L=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}+\df{\dd}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd}{\dd y_{k}}\um dy_{k}\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $d^{2}L=\left(\df{\dd}{\dd x_{1}}\um dx_{1}+\tr+\df{\dd}{\dd x_{m}}\um dx_{m}+\df{\dd}{\dd y_{1}}\um dy_{1}+\tr+\df{\dd}{\dd y_{k}}\um dy_{k}\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $L>0\sl\min,\ L<0\sl\max$
+Тогда если 
+\begin_inset Formula $L>0\ \then\ \min$
 \end_inset
 
+, а если 
+\begin_inset Formula $L<0\ \then\ \max$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Remark
-При исследование 
+При исследовании 
 \begin_inset Formula $d^{2}u$
 \end_inset
 
- на знак часто требуется дополнительное дифференцировать (взять дифференциал)
- условия связи - это позволяет получить соотношение между 
-\begin_inset Formula $dx_{1},\tr,dx_{m},dy_{1},\tr,d_{y_{k}}.$
+ на знак часто требуется дополнительно дифференцировать условия связи ---
+ это позволяет получить соотношение между 
+\begin_inset Formula $dx_{1},\tr,dx_{m},dy_{1},\tr,d_{y_{k}}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Example
-
+Найти экстремумы:
 \emph on
-(1)
-\end_layout
 
-\begin_layout Example
-
-\emph on
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 u=x^{2}-y^{2}\st extr\\
 2\um x-y-3=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
-\end_layout
+\emph default
 
-\begin_layout Example
-\begin_inset Formula $L\left(\vec x,\vec y,\vec{\lambda}\right)=x^{2}-y^{2}+\lambda\um\left(2\um x-y-3\right)$
+\begin_inset Formula 
+\[
+L\left(\vec x,\vec y,\vec{\lambda}\right)=x^{2}-y^{2}+\lambda\um\left(2\um x-y-3\right)
+\]
+
 \end_inset
 
 
@@ -10598,83 +10571,58 @@ u=x^{2}-y^{2}\st extr\\
 \begin_deeper
 \begin_layout Enumerate
 необходимое условие экстремума.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $L_{x}\pr=\begin{cases}
-2\um x+2\um\lambda=0\\
-2\um y-\lambda=0\\
-2\um x-y-3=0
-\end{cases}\sl\begin{cases}
+\begin_inset Formula 
+\begin{flalign*}
+L_{x}\pr=\begin{cases}
+2\um x+2\um\lambda & =0\\
+2\um y-\lambda & =0\\
+2\um x-y-3 & =0
+\end{cases} &  & \then & \begin{cases}
 x=-\lambda\\
-y=-\df{\lambda}2\\
--2\um\lambda+\df{\lambda}2=3
-\end{cases}\sl\begin{cases}
-x=2\\
-y=1\\
-\lambda=-2
-\end{cases}$
+y=-\lambda/2\\
+-2\um\lambda+\lambda/2=3
+\end{cases} & \then & \begin{cases}
+x & =2\\
+y & =1\\
+\lambda & =-2
+\end{cases}
+\end{flalign*}
+
 \end_inset
 
- 
-\begin_inset Newline newline
+Тогда 
+\begin_inset Formula $M_{0}\left(2;1\right)$
 \end_inset
 
-
-\begin_inset Formula $\sl\ \exists M_{0}\left(2;1\right)$
-\end_inset
-
- - критическая точка, отвечающая 
+ --- критическая точка, отвечающая 
 \begin_inset Formula $\lambda=-2$
 \end_inset
 
 .
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Достаточное условие экстремума
-\end_layout
+\begin_inset Formula 
+\[
+d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy+L_{y^{2}}^{\prime\prime}\um dy^{2}=2\um dx^{2}-2\um dy^{2}
+\]
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy+L_{y^{2}}^{\prime\prime}\um dy^{2}=2\um dx^{2}-2\um dy^{2}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Продифференцируем условие связи: 
 \begin_inset Formula $d\left(2\um x-y-3\right)=0$
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset Formula 
+\[
+2\um dx=dy\qquad\then\qquad d^{2}L=2\um dx^{2}-2\um4\um dx^{2}-6\um dx^{2}<0
+\]
+
 \end_inset
 
-
-\begin_inset Formula $2\um dx=dy$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L=2\um dx^{2}-2\um4\um dx^{2}-6\um dx^{2}<0$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
+Тогда 
 \begin_inset Formula $U_{\max}=U\left(M_{0}\right)=U\left(2;1\right)=3$
 \end_inset
 
@@ -10682,176 +10630,13 @@ y=1\\
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Example
-
-\emph on
-(2)
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-u=x^{2}+y^{2}+z^{2}\st extr\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1,\ a>b>c>0
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $L=x^{2}+y^{2}+z^{2}+\lambda\um\left(\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}-1\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Необходимое условие
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\begin{array}{c}
-L_{x}\pr=\\
-L_{y}\pr=\\
-L_{z}\pr=\\
-L_{\lambda}\pr=
-\end{array}\begin{cases}
-2\um x+\df{2\lambda x}{\lambda^{2}}=0\\
-2y+\df{2y\lambda}{\lambda^{2}}=0\\
-2z+\df{2\lambda z}{\lambda^{2}}=0\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1
-\end{cases}\dsl\begin{cases}
-x\left(1+\df 1{a^{2}}\right)=0\\
-y\left(1+\df{\lambda}{b^{2}}=0\right)\\
-z\left(1+\df{\lambda}{c^{2}}\right)=0\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1
-\end{cases}\dsl\begin{cases}
-\left[\begin{array}{c}
-x=0\\
-\lambda=-a^{2}
-\end{array}\right.\\
-\left[\begin{array}{c}
-z=0\\
-\lambda=-c^{2}
-\end{array}\right.\\
-\left[\begin{array}{c}
-y=0\\
-\lambda=-b^{2}
-\end{array}\right.\\
-\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1
-\end{cases}\dsl\left[\begin{array}{c}
-\begin{cases}
-\lambda=-a^{2}\\
-y=0\\
-z=0\\
-x=\pm a
-\end{cases}\\
-\begin{cases}
-\lambda=-b^{2}\\
-x=0\\
-z=0\\
-y=\pm b
-\end{cases}\\
-\begin{cases}
-\lambda=-c^{2}\\
-y=0\\
-x=0\\
-z=\pm c
-\end{cases}
-\end{array}\right.$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $M_{1}^{\pm}\left(\pm a;0;0\right),\ \lambda=-a^{2}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $M_{2}^{\pm}\left(0;\pm b;0\right),\ \lambda=-b^{2}$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $M_{3}^{\pm}\left(0;0;\pm c\right),\ \lambda=-c^{2}$
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Достаточное условие экстремума
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-d^{2}L & = & \left\{ L_{xy}^{\prime\prime}=L_{xz}^{\prime\prime}=L_{yz}^{\prime\prime}\right\} =\\
- & = & L_{x^{2}}^{\prime\prime}\um dx^{2}+L_{y^{2}}^{\prime\prime}\um dy^{2}+L_{z^{2}}^{\prime\prime}\um dz^{2}=\\
- & = & \left(2+\df{2\lambda}{a^{2}}\right)dx^{2}+\left(2+\df{2\lambda}{b^{2}}\right)dy^{2}+\left(2+\df{2\lambda}{c^{2}}\right)dz^{2}
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L\left(M_{1}^{\pm}\right)=2\left(1-1\right)dx^{2}+2\left(1-\df{a^{2}}{b^{2}}\right)dy^{2}+2\left(1-\df{a^{2}}{c^{2}}\right)dz^{2}<0\sl\max$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L\left(M_{2}^{\pm}\right)=2\left(1-\df{b^{2}}{a^{2}}\right)dx^{2}+2\left(1-1\right)dy^{2}+2\left(11+\df{b^{2}}{c^{2}}\right)dz^{2}$
-\end_inset
-
- - Знакопеременная форма
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d\left(\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}+\df{z^{2}}{c^{2}}=1\right)=\df{2xdx}{a^{2}}+\df{2ydy}{b^{2}}+\df{2zdz}{c^{2}}=\left\{ \begin{array}{c}
-\df{2xdx}{a^{2}}=0\\
-\df{2ydy}{b^{2}}=0\\
-\df{2zdz}{c^{2}}=0
-\end{array}\right\} =0$
-\end_inset
-
- - тут все обнуляется.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $d^{2}L\left(M_{3}^{\pm}\right)=2\left(1-\df{c^{2}}{a^{2}}\right)dx^{2}+2\left(1-\df{c^{2}}{b^{2}}\right)dy^{2}+2\left(1-1\right)dz^{2}>0\sl\min$
+\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\end_deeper
-\end_deeper
 \begin_layout Section
 Интегральное исчисления функций многих переменных
 \end_layout
