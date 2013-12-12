@@ -26653,7 +26653,632 @@ f\pppr\left(0\right)=-1\\
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\ln\left(1+x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
+Рассмотрим функции:
+\begin_inset Formula 
+\[
+\df 1{1+x}=1-x+x^{2}-x^{3}+\tr+\left(-1\right)^{n}x^{n}+\tr=\ous{n=0}{\b}\left(-1\right)^{n}x^{n},\quad\left|x\right|<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда:
+\begin_inset Formula 
+\[
+\ln\left(1+x\right)=\oiu 0x\df{dt}{1+t}=\oui 0x\left(\ous{n=0}{\b}\left(-1\right)^{n}t^{n}\right)dt=\ous{n=1}{\b}\df{\left(-1\right)^{n}x^{n+1}}{n+1}=\ous{n=1}{\b}\df{\left(-1\right)^{n}x^{n}}n,\ \left|x\right|<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(1+x\right)^{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Оценить 
+\begin_inset Formula $f^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ сложно, поэтому воспользуемся следующим приемом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ удовлетворяет условиям:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\left(1+x\right)f\pr\left(x\right)=\alpha f\left(x\right)\\
+f\left(0\right)=1
+\end{cases}$
+\end_inset
+
+ --- Это задача Коши.
+ Она однозначино разрешима.
+\end_layout
+
+\begin_layout Standard
+Пусть решение этой задачи Коши раскладывается ряд Макларена в некоторой
+ области: 
+\begin_inset Formula 
+\[
+f\left(x\right)=1+\ous{n=1}{\b}a_{n}x^{n}=1+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+\tr+a_{n}x^{n}+\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\left(1+x\right)\left(a_{1}+2a_{2}x+3a_{3}x^{2}+4a_{4}x^{3}+\tr+n\um a_{n}\um x^{n-1}+\tr\right)=\\
+=\alpha+\alpha a_{1}x+\alpha a_{2}x^{2}+\tr+\alpha na_{n}x^{n}+\tr
+\end{multline*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{multline*}
+a_{1}+\left(a_{1}+2a_{2}\right)x+\left(2a_{2}+3a_{3}\right)x^{2}+\left(3a_{3}+4a_{4}\right)x^{3}+\tr+\left(na_{n}+\left(n+1\right)a_{n+1}\right)x^{n}=\\
+=\alpha+\alpha a_{1}x+\alpha a_{2}x^{2}+\tr+\alpha a_{n}x^{n}+\tr
+\end{multline*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\begin{cases}
+a_{1}=\alpha\\
+a_{1}+2a_{2}=\alpha a_{1}\ \sl\ a_{2}=\df{\left(\alpha-1\right)a_{1}}2=\df{\alpha\left(\alpha-1\right)}2\\
+2a_{2}+3a_{3}=\alpha a_{2}\ \sl\ a_{3}=a_{2}\df{\alpha-2}3=\df{\alpha\left(\alpha-1\right)\left(\alpha-2\right)}{3!}\\
+\vtr\\
+a_{n}=\df{\alpha\left(\alpha-1\right)\um\tr\um\left(\alpha-n+1\right)}{n!},\ n\in\N
+\end{cases}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\fbox{f\left(x\right)=1+\ous{n=1}{\b}\df{\alpha\left(\alpha-1\right)\um\tr\um\left(\alpha-n+1\right)}{n!}x^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Область схлжимости ряда легко получить по Даламберу: 
+\begin_inset Formula $R=1,\ \left|x\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Нужно доказать самим.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Методы разложения в ряд Тейлора
+\end_layout
+
+\begin_layout Enumerate
+Использование геометрической прогрессии.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить функцию
+\begin_inset Formula 
+\[
+f\left(x\right)=\df 1{1+x}
+\]
+
+\end_inset
+
+В окрестности 
+\begin_inset Formula $x_{0}=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение:
+\emph default
+
+\begin_inset Formula 
+\[
+\df 1{1+x}=-\df 1{1-\un{\underbrace{\left(x+2\right)}}{q,\ \left|q\right|<1}}=-\ous{n=0}{\b}\left(x-2\right)^{n},\ x\in\left(-3;-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\df 1{1+x} & = & -\df 1{2-\left(x+3\right)}=-\df 12\df 1{1-\df{x+3}2}=\\
+ & = & \left|\begin{array}{c}
+\df{\left|x+3\right|}2<1\\
+\left|x+3\right|<2
+\end{array}\right|=\\
+ & = & -\df 12\ous{n=0}{\b}\left(\df{x+3}2\right)^{n}=\\
+ & = & -\ous{n=0}{\b}\df{\left(x+3\right)^{n}}{2^{n+1}},\ x\in\left(-3;-1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Метод замены
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить 
+\begin_inset Formula $f\left(x\right)=\sin2x$
+\end_inset
+
+ в окрестности точки 
+\begin_inset Formula $x_{0}=\df{\pi}4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\sin2x=\left\{ \begin{array}{c}
+t=x-\df{\pi}4\\
+x=t+\df{\pi}4
+\end{array}\right\} =\sin2\left(t+\df{\pi}4\right)=\sin\left(2t+\df{\pi}2\right)=\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Метод интегрирования
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить в ряд Маклорена следующую функцию.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=\ln\df{1+x}{1-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ln\df{1+x}{1-x}=2\oui 0x\df{dt}{1-t^{2}}=\left\{ \begin{array}{c}
+t^{2}<1\\
+\left|t\right|<1
+\end{array}\right\} =2\oui 0x\ous{n=1}{\b}t^{2n}dt=2\ous{n=1}{\b}\df{x^{2n+1}}{2n+1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Метод дифференцирования.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить в ряд Макларена функцию 
+\begin_inset Formula $f\left(x\right)=\df{2x}{\left(1-x^{2}\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение: 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=\df{2x}{\left(1-x^{2}\right)^{2}}=\left(\df 1{1-x^{2}}\right)\pr=\left\{ \left|x\right|<1\right\} =\ous{n=1}{\b}\left(x^{2n}\right)\pr=\tr$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Приложения рядов Тейлора
+\end_layout
+
+\begin_layout Subsubsection
+Приближенное вычисление значений функции
+\end_layout
+
+\begin_layout Standard
+Можно находить приближенные значения функции в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ с заданной точностью.
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Вычислить число 
+\begin_inset Formula $e$
+\end_inset
+
+ с точностью до 
+\begin_inset Formula $\varepsilon=0,01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $e^{x}=\ous{k=0}n\df{x^{k}}{k!}+R_{n}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $R_{n}\left(x\right)=\df{e^{c}}{\left(n+1\right)!}x^{n+1}=\left\{ c\in\left(0;1\right)\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|R_{n}\left(1\right)\right|=\df{e^{c}}{\left(n+1\right)!}1^{n+1}<\df e{\left(n+1\right)!}<\df 3{\left(n+1\right)!}<0,01$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $n\br5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $e\approx1+\df 1{1!}+\df 1{2!}+\df 1{3!}+\df 1{4!}=2+0.5+0.167+0.042+0.008=2.72$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Вычислить 
+\begin_inset Formula $\sqrt[5]{32}$
+\end_inset
+
+ с точностью 
+\begin_inset Formula $\varepsilon=0,0001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\sqrt[5]{33} & = & \sqrt[5]{32+1}=2\sqrt[5]{1+\df 1{32}}=2\left(1+\df 1{32}\right)^{\df 15}=\\
+ & = & \left\{ \begin{array}{c}
+\left(1+x\right)^{\alpha}=\\
+=1+\df{\alpha}{1!}x+\df{\alpha\left(\alpha-1\right)}{2!}x^{2}+\tr\\
+x=\df 1{32},\ \alpha=\df 15
+\end{array}\right\} =\\
+ & = & 2\left(1+\df 15\df 1{32}-\df 2{25}\left(\df 1{32}\right)^{2}+\df 6{125}\left(\df 1{32}\right)^{3}-\tr\right)=\\
+ & = & 2+\df 1{5\um16}-\df 1{\un{\underbrace{258\um32}}{<6400}}+\df 3{\un{\underbrace{8\um125\um32^{2}}}{<10000}}-\tr
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\fbox{\left|r_{n}\right|\mr\left|a_{n+1}\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Приближенное вычисление определенных интегралов
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Вычислить 
+\begin_inset Formula 
+\[
+I=\oui 0{\df 13}e^{-x^{2}}dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+I=\oui 0{\df 13}e^{-x^{2}}dx=\oiu 0{\frac{1}{3}}\left(\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n}}{n!}\right)dx=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{n!}\oiu 0{\frac{1}{3}}x^{2n}dx=\\
+=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{n!}\left(\df 13\right)^{2n+1}\df 1{2n+1}=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(2n+1\right)n!\um3^{2n+1}}
+\end{multline*}
+
+\end_inset
+
+Это ряд Лейбница, тогда 
+\begin_inset Formula 
+\[
+\left|\gamma_{n}\right|\mr\left|a_{n+1}\right|=\df 1{\left(2n+3\right)\um\left(n+1\right)!\um3^{2n+3}}<0,001
+\]
+
+\end_inset
+
+Откуда 
+\begin_inset Formula $n=1$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+I\approx\df 13-\df 1{3\um3^{3}}=0.3333-0.0123=0,3210
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Вычислить 
+\begin_inset Formula $\oui 01\df{\sin x}xdx,\ \varepsilon=0,001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\oui 01\df 1x\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+1}}{\left(2n+1\right)!}dx=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(2n+1\right)!}\oui 01x^{2n}dx=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(n+1\right)!\left(2n+1\right)}=\tr\left(!\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I\approx0,946$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление сумм числовых рядов
+\end_layout
+
+\begin_layout Standard
+Вчисление суммы числового ряда иногда можно свести к нахождению значения
+ некоторой функциии в определенной точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Найти сумму числового ряда
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(2n+1\right)\left(2n+3\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение:
+\end_layout
+
+\begin_layout Example
+Разложим в степенной ряд
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+3}}{\left(2n+1\right)\left(2n+3\right)}=S\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Степенной ряд 
+\begin_inset Formula $\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[-1;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Мажоранта: 
+\begin_inset Formula $\ous{n=0}{\b}\df 1{\left(2n+1\right)\left(2n+3\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\pr\left(x\right)=x\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+1}}{2n+1}=x\um\arctg x$
+\end_inset
+
+ --- сходится равномерно на промежутке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Так как это ряд Лейбница, то 
+\begin_inset Formula $\left|\gamma_{n}\left(x\right)\right|\mr\df 1{2n+1}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Решгим диференциальное уравнение следующенгог вида:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+S\pr\left(x\right)=x\arctg x\\
+S\left(0\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(x\right)=\oui 0xS\pr\left(x\right)dx+S\left(0\right)=\df 12\left(\left(1+x^{2}\right)\arctg x-x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $I=S\left(1\right)=\df{\pi}4-\df 12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
