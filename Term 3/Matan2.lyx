@@ -76,7 +76,7 @@ theorems-starred
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
-\output_changes false
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -86,331 +86,331 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sl}{\Longrightarrow}
+\renewcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dsl}{\Longleftrightarrow}
+\renewcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tr}{\ldots}
+\renewcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\nr}{\neq}
+\renewcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\um}{\cdot}
+\renewcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pr}{'}
+\renewcommand{\pr}{'}
 {'}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tg}{\text{tg}}
+\renewcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tan}{\tg}
+\renewcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\arctg}{\text{arctg}}
+\renewcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\arcctg}{\text{arcctg}}
+\renewcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\N}{\mathbb{N}}
+\renewcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\R}{\mathbb{R}}
+\renewcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Q}{\text{Q}}
+\renewcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sh}{\text{sh}}
+\renewcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ch}{\text{ch}}
+\renewcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\th}{\text{th}}
+\renewcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\st}{\to}
+\renewcommand{\st}{\to}
 {\to}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sinx}{\sin\left(x\right)}
+\renewcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\cosx}{\cos\left(x\right)}
+\renewcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\fx}{f\left(x\right)}
+\renewcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\un}[2]{\underset{#2}{#1}}
+\renewcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ov}[2]{\overset{#2}{#1}}
+\renewcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ul}[1]{\lim\limits _{#1}}
+\renewcommand{\ul}[1]{\lim\limits _{#1}}
 {\lim\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umax}[1]{\max\limits _{#1}}
+\renewcommand{\umax}[1]{\max\limits _{#1}}
 {\max\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umin}[1]{\min\limits _{#1}}
+\renewcommand{\umin}[1]{\min\limits _{#1}}
 {\min\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+\renewcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
 {\iint\limits _{#1}^{#2}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\newcommand{\ppr}{^{\prime\prime}}
+\renewcommand{\ppr}{^{\prime\prime}}
 {^{\prime\prime}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pppr}{^{\prime\prime\prime}}
+\renewcommand{\pppr}{^{\prime\prime\prime}}
 {^{\prime\prime\prime}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\br}{\geq}
+\renewcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\mr}{\leq}
+\renewcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+\renewcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\df}[2]{\dfrac{#1}{#2}}
+\renewcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tl}{\approx}
+\renewcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\D}{\Delta}
+\renewcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\b}{\infty}
+\renewcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vkl}{\subset}
+\renewcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vec}[1]{\overrightarrow{#1}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\v}[1]{\overrightarrow{#1}}
+\renewcommand{\v}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\mom}{\text{mom}}
+\renewcommand{\mom}{\text{mom}}
 {\text{mom}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\x}{\times}
+\renewcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\DD}{\partial}
+\renewcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dd}{\partial}
+\renewcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\grad}{\text{grad}}
+\renewcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ctg}{\text{ctg}}
+\renewcommand{\ctg}{\text{ctg}}
 {\text{ctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vtr}{\vdots}
+\renewcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ntr}{\ddots}
+\renewcommand{\ntr}{\ddots}
 {\ddots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ob}{\cup}
+\renewcommand{\ob}{\cup}
 {\cup}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dint}{\iint}
+\renewcommand{\dint}{\iint}
 {\iint}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pro}{\text{Пр}}
+\renewcommand{\pro}{\text{Пр}}
 {\text{Пр}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ui}[1]{\int\limits _{#1}}
+\renewcommand{\ui}[1]{\int\limits _{#1}}
 {\int\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\then}{\Rightarrow}
+\renewcommand{\then}{\Rightarrow}
 {\Rightarrow}
 \end_inset
 
@@ -14986,10 +14986,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -23645,7 +23641,2562 @@ reference "eq:rr1"
 
 \end_deeper
 \end_deeper
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
+\end_layout
+
+\end_inset
+
+Функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\ous{k=n+1}{n+p}u_{k}\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\left|\ous{k=n+1}{n+p}u_{k}\left(x\right)\right|=\left|S_{n+p}\left(x\right)-S_{n}\left(x\right)\right|$
+\end_inset
+
+, то утверждение этой теоремы эквивалентно равномерной фундаментальности
+ последователности 
+\begin_inset Formula $\left\{ S_{n}\left(x\right)\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Критерий Коши для функциональных последовательностей 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Исходный ряд сходится равноменро на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Вейерштрассе
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\forall x\in D\ \left|u_{n}\left(x\right)\right|\mr a_{n},\ n\in\N$
+\end_inset
+
+ и знакоположительный ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится, то ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n}$
+\end_inset
+
+ сходится, то по Критерию Коши сходимости чсиловых рядов: 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \ous{k=n+1}{n+p}a_{k}<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\ous{k=n+1}{n+p}u_{k}\left(x\right)\right|\mr\ous{k=n+1}{n+p}\left|u_{k}\left(x\right)\right|\ov{\mr}{\text{По условию теоремы}}\ous{k=n+1}{n+p}a_{k}<\varepsilon\ \forall x\in D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Ряд по Критерию Коши сходится равномерно.
+\end_layout
+
+\begin_layout Remark
+Числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}a_{n},$
+\end_inset
+
+члены которого оценивают слогаемые функционального ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+, называется мажорантным рядом (можарантой).
+ Признак Вейерштрассе называют мажорантным признаком равномерной сходимости
+ функциональных рядов.
+\end_layout
+
+\begin_layout Example
+Исследовать на равномерную содимость следующий ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{\sin nx}{2^{n}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $\left|u_{n}\left(x\right)\right|=\df{\left|\sin nx\right|}{2^{n}}\mr\df 1{2^{n}}=a_{n}$
+\end_inset
+
+, а ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{2^{n}}$
+\end_inset
+
+ --- сходящаяся геометрическая прогрессия (сходится мажорантно) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Исходный ряд сходится равномерно на 
+\begin_inset Formula $\R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{x^{n}}{n!}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D=\left[-L;L\right],\ L>0$
+\end_inset
+
+ --- фиксированное число.
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
+\begin_inset Formula $\left|u_{n}\left(x\right)\right|=\df{\left|x\right|^{n}}{n!}\mr\df{L^{n}}{n!}=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{L^{n}}{n!}$
+\end_inset
+
+ --- сходится по Даланберу: 
+\begin_inset Formula $\ul{n\st\b}\df{a_{n+1}}{a_{n}}=\ul{n\st\b}\df L{n+1}=0<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+То исходный ряд сходится равномерно на 
+\begin_inset Formula $D=\left[-L;L\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D=\left(-\b;\b\right)$
+\end_inset
+
+ Докажем что нету равномерной сходимости
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тоесть 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall\br N\ \left|r_{n}\left(x\right)\right|<\varepsilon\ \forall x\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отрицание: 
+\begin_inset Formula $\exists\varepsilon>0\ \forall N\ \exists n\br N\ \exists x\in D\ \left|r_{n}\left(x\right)\right|>\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon=1;\ n=N+1;\ x=N+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|r_{N+1}\right|=\ous{n=N+1}{\b}\df{\left(N+1\right)^{n}}{n!}=\df{\left(N+1\right)^{N+1}}{\left(N+1\right)!}+\df{\left(N+1\right)^{N+2}}{\left(N+2\right)!}+\tr>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Значит нету равномерной сходимотсти функционального ряда
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Функциональные свойства суммы ряда
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1, О непрерывности суммы функционального ряда
+\end_layout
+
+\end_inset
+
+Если на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+ функцилональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}n_{n}\left(x\right)$
+\end_inset
+
+, сходится равномерно и 
+\begin_inset Formula $u_{n}\left(x\right)$
+\end_inset
+
+ непрерывны на области 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, то сумма ряда так-же непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как ряд 
+\begin_inset Formula $u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно, то функциональная последовательность 
+\begin_inset Formula $\left\{ S_{n}\left(x\right)\right\} $
+\end_inset
+
+ так же сходится равномерно к сумме 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ ряда 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $S_{n}\left(x\right)$
+\end_inset
+
+ --- непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+, то по теореме о непрерывности пределаравномерно сходящейся функциональной
+ последователшьности действительно 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ --- непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\df{x^{2}}{\left(1+x^{2}\right)^{n-1}}=\begin{cases}
+0, & x=0\\
+x^{2}+1, & x\nr0
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ --- разрывно в точке 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+, следовательно на множестве 
+\begin_inset Formula $D=\left[-1;1\right]\ni\left\{ 0\right\} $
+\end_inset
+
+ нет равномерной сходимости ряда к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+ 
+\emph default
+В равномерно сходящемся ряде, составленом из непрерывных слогаемых, возможен
+ почеленный переход к пределу 
+\begin_inset Formula $\ul{x\st x_{0}}\ous{n=1}{\b}u_{n}\left(x\right)=\ous{n=1}{\b}\ul{x\st x_{0}}u_{n}\left(x\right)=\ous{n=1}{\b}u_{n}\left(x_{0}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+Так как по 
+\emph on
+Теореме (1) 
+\emph default
+сумма 
+\begin_inset Formula $S\left(x\right)=\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\forall x_{0}\in D$
+\end_inset
+
+, то 
+\begin_inset Formula $\ul{x\st x_{0}}S\left(x\right)=S\left(x_{0}\right)=\ous{n=1}{\b}u_{n}\left(x_{0}\right)=\ous{n=1}{\b}\ul{x\st x_{0}}u_{n}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{x\st x_{0}}\ous{n=1}{\b}u_{n}\left(x\right)=\ul{x\st x_{0}}S\left(x\right)=S\left(x_{0}\right)=\ous{n=1}{\b}u_{n}\left(x_{0}\right)=\ous{n=1}{\b}\ul{x\st x_{0}}u_{n}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ous{n=1}{\b}\df{\cos nx}{10^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Ряд 
+\begin_inset Formula $u_{n}\left(x\right)=\df{\left|\cos nx\right|}{10^{n}}\mr\df 1{10^{n}}=a_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Числовой ряд: 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{10^{n}}$
+\end_inset
+
+ --- сходящаяся мажоранта 
+\begin_inset Formula $\forall x\in\R$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Исходный ряд сходится равномерно.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|c_{n}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ul{x\st0}\ous{n=1}{\b}\df{\cos nx}{10^{n}}=\ous{n=1}{\b}\df{\cos n}{10^{n}}\mr\ous{n=1}{\b}\df 1{10^{n}}=\df 19$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2, О почеленном интегрировании функционального ряда
+\end_layout
+
+\end_inset
+
+Если функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $u_{n}\left(x\right)\in C\left[a;b\right]$
+\end_inset
+
+, то функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ можно почеленно интегрировать полюбому отрезку 
+\begin_inset Formula $\left[x_{0};x\right]\subseteq\left[a;b\right]$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui{x_{0}}xS\left(t\right)dt & = & \oui{x_{0}}x\ous{n=1}{\b}u_{n}\left(t\right)dt=\\
+ & = & \ous{n=1}{\b}\oui{x_{0}}xu_{n}\left(t\right)dt
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Причем 
+\begin_inset Formula $\ous{n=1}{\b}\oui{x_{0}}xu_{n}\left(t\right)dt$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $x\in\left[a;b\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(x\right)$
+\end_inset
+
+ сходится равномерно к сумме 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то по определению равномерной сходимости, можно записать: 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|S_{n}\left(x\right)-S\left(x\right)\right|<\df{\varepsilon}{b-a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Оценим 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\oui{x_{0}}xS\left(t\right)dt-\oui{x_{0}}xS_{n}\left(t\right)dt\right| & \mr & \left\{ \left|\oui{x_{0}}xS\left(t\right)st-\ous{k=1}n\oui{x_{0}}xu_{k}\left(t\right)dt\right|\dsl\left|\oui{x_{0}}xS\left(t\right)dt-\oui{x_{0}}xS_{n}\left(t\right)dt\right|\right\} \mr\\
+ & \mr & \oui{x_{0}}x\left|S\left(t\right)-S_{n}\left(t\right)\right|dt<\\
+ & < & \left\{ \left|S\left(t\right)-S_{n}\left(t\right)\right|<\df{\varepsilon}{b-a}\right\} <\\
+ & < & \df{\varepsilon}{b-a}\left(x-x_{0}\right)\mr\varepsilon
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Причем сходимость ряда, полученного почеленным интегрированием, равномерная.
+\end_layout
+
+\begin_layout Example
+Исследовать на сходимость 
+\begin_inset Formula $\ous{n=1}{\b}\df 1n\arctg\df xn$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим функциональный ряд из производных:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left(\df 1n\arctg\df xn\right)\pr=\df 1n\df 1{1+\df{x^{2}}{n^{2}}}\df 1n=\df 1{x^{2}+n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df 1{x^{2}+1}+\df 1{x^{2}+4}+\df 1{x^{2}+16}+\tr+\df 1{x^{2}+n^{2}}+\tr=\ous{n=1}{\b}\df 1{x^{2}+n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u_{n}\left(x\right)=\df 1{x^{2}+n^{2}}\mr\df 1{n^{2}}=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df 1{n^{2}}$
+\end_inset
+
+ --- сходящаяся мажоранта, следовательно ряд из производных сходится равномерно
+ на любом множестве (на 
+\begin_inset Formula $\R$
+\end_inset
+
+), следовательно:
+\end_layout
+
+\begin_layout Example
+Интегриируя почеленно на 
+\begin_inset Formula $\left[0;x\right]$
+\end_inset
+
+ ряд их производных получим:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\b}\oui 0x\df{dt}{t^{2}+n^{2}}=\ous{n=1}{\b}\df 1n\arctg\df tn|_{0}^{x}=\ous{n=1}{\b}\df 1narctg\df xn$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3, О почленном дифференцировании функционального ряда
+\end_layout
+
+\end_inset
+
+Если ряд (1), где u_n(x) --- непрерывно дифферненцируемы на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, сходится к 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, и ряд 
+\begin_inset Formula $\ous{i=1}nu_{n}\pr\left(x\right)$
+\end_inset
+
+ --- сходится равномерно на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то исходный ряд сходится равномерно на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, и выполняется следующее равенство: 
+\begin_inset Formula $S\pr\left(x\right)=\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $\delta\left(x\right)=\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+ --- сумма равномернго сходится на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ По 
+\emph on
+тоереме 2 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+\begin_inset Formula $\forall\left[x_{0};x\right]\subseteq\left[a;b\right]$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\oui{x_{0}}xS\left(x\right)dx=\oui{x_{0}}x\ous{n=1}{\b}u_{n}\pr\left(x\right)=\ous{n=1}{\b}\oui{x_{0}}xu_{n}\pr\left(x\right)=\ous{n=1}{\b}\left(u_{n}\left(x\right)-u_{n}\left(x_{0}\right)\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Пользуясь арифметическими свойствани сходящихся рядлв можно записать: 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{n=1}{\b}\left(u_{n}\left(x\right)-u_{n}\left(x_{0}\right)\right)=S\left(x\right)-S\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $u_{n}\pr\left(x\right)$
+\end_inset
+
+ --- непрерывны на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, и ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $\delta\left(x\right)$
+\end_inset
+
+ --- непрерывна на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По теореме о дифферернцируемости интеграла с переменным верхним пределом,
+ получаем слкдующее:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\oui{x_{0}}x\delta\left(t\right)dt\right)_{X}'=\delta\left(x\right)=S\pr\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Равномерная сходимость исходного ряда следует из 
+\emph on
+теоремы 2 
+\emph default
+при почеленом интегрировании ряда 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\pr\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Степенные ряды
+\end_layout
+
+\begin_layout Subsubsection
+Понятие степенного ряда.
+ Теорема Абеля.
+\end_layout
+
+\begin_layout Standard
+Функциональный ряд вида: 
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}a_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{n},x_{0}\in R,\quad x\in R$
+\end_inset
+
+ называется степенным рядом по степени 
+\begin_inset Formula $\left(x-x_{0}\right)$
+\end_inset
+
+.
+ Заменой 
+\begin_inset Formula $X=x-x_{0}$
+\end_inset
+
+ ряд (1) можно привести к виду: 
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}a_{n}\um x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ряд (2) сходится в т.
+ 
+\begin_inset Formula $x=0\;\left(S_{n}(0)=a_{0}\ov{\st}{n\st\infty}a_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если ряд (2) сходится в точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, то этот же самый ряд (2) сходится абсолютно на интервале 
+\begin_inset Formula $\left(-\left|x_{1}\right|;\left|x_{1}\right|\right)$
+\end_inset
+
+ и равномрено на любом отрезке вида 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $\left|x_{1}\right|>q>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть ряд (2) сходится в точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, следовательно сходится числовой ряд: 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x_{1}^{n}$
+\end_inset
+
+, следовательно по необходимому при знаку сходимости числового ряда 
+\begin_inset Formula $\left\{ a_{n}x_{1}^{n}\right\} $
+\end_inset
+
+ --- ограничена:
+\begin_inset Formula 
+\[
+\exists M>0\quad\forall n\in N\quad\left|a_{n}x_{1}^{n}\right|\mr M
+\]
+
+\end_inset
+
+ Рассмотрим произвольную точку 
+\begin_inset Formula $x:\;\left|x\right|<\left|x_{1}\right|$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left|a_{n}x^{n}\right|=\left|\df x{x_{1}}\right|^{n}\um\left|a_{n}x_{1}^{n}\right|=\left\{ \begin{array}{c}
+\left|a_{n}x_{1}^{n}\right|\mr M\\
+\left|\df x{x_{1}}\right|^{n}\mr1
+\end{array}\right\} \mr M\um\left|\df x{x_{1}}\right|^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\ous{n=1}{\b}M\left|\df x{x_{1}}\right|^{n}=M\ous{n=1}{\b}\left|\df x{x_{1}}\right|^{n}$
+\end_inset
+
+ --- сходится, то по признаку сравнения исходный ряд сходится абсолютно
+ в точке 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\left|x\right|\mr q<\left|x_{1}\right|$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left|a_{n}x^{n}\right|=\left|\df x{x_{1}}\right|^{n}\um\left|a_{n}x_{1}^{n}\right|\mr\left|\df q{x_{1}}\right|^{n}\um M=b_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Следовательно 
+\begin_inset Formula $\ous{n=0}{\infty}b_{n}$
+\end_inset
+
+ --- сходящаяся мажоранта для (2), а тогда ряд(2) сходится равномерно на
+ 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие (1)
+\end_layout
+
+\begin_layout Standard
+Если степенной ряд (2) расходится в точке 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, то он расходится на множестве 
+\begin_inset Formula $\left|x\right|>\left|x_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+От противного: пусть ряд (2) расходится в точке 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, но не расходится на 
+\begin_inset Formula $\left|x\right|>\left|x_{2}\right|$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\exists x_{3}:\quad\left|x_{3}\right|>\left|x_{2}\right|,$
+\end_inset
+
+такая что ряд (2) сходится в точке 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, тогда по теореме Абеля ряд (2) сходится абсолютно на 
+\begin_inset Formula $\left(-\left|x_{3}\right|;\left|x_{3}\right|\right)$
+\end_inset
+
+, а значит и в точке 
+\begin_inset Formula $x_{2}\in\left(-\left|x_{3}\right|;\left|x_{3}\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Радиус сходимости степенного ряда.
+\end_layout
+
+\begin_layout Standard
+Из теоремы Абеля следует: если степенной ряд 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x^{n}$
+\end_inset
+
+ сходится в некоторой конечной точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и расходится в некоторой конечной точке 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\exists R>0$
+\end_inset
+
+, что ряд 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x^{n}$
+\end_inset
+
+ сходится в интервале 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+, называемом интервалом сходимости ряда (2) и расходится на множестве 
+\begin_inset Formula $\left(-\infty;-R\right)\ob\left(R;+\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В точках 
+\begin_inset Formula $\pm R$
+\end_inset
+
+ требуется дополнительное исследование.
+\end_layout
+
+\begin_layout Remark
+Если ряд (2) сходится только в точке 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для находжения радиуса сходимости степенного ряда можно использовать т еормеу
+ Коши или Даламбера
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\exists\ul{n\st\b}\left|\df{a_{n+1}}{a_{n}}\right|=L$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $u_{n}\left(x\right)=a_{n}x^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{n+1}\left(x\right)=a_{n+1}x^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ul{n\st\b}\left|\df{a_{n+1}\left(x\right)}{a_{n}\left(x\right)}\right|=\ul{n\st\b}\left|\df{a_{n+1}}{a_{n}}\right|\um\left|x\right|=L\left|x\right|<1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x\right|<\df 1L$
+\end_inset
+
+ --- область сходимости 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\df 1L=\ul{n\st\b}\left|\df{a_{n}}{a_{n+1}}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $\exists\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\ul{n\st\b}\sqrt[n]{\left|u_{n}\left(x\right)\right|}=\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|\um\left|x\right|^{n}}=\left|x\right|\um\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|}=\left|x\right|L<1$
+\end_inset
+
+ --- область сходимости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|x\right|<\df 1L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\df 1L=\df 1{\left|x\right|\um\ul{n\st\b}\sqrt[n]{\left|a_{n}\right|}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Найти 
+\begin_inset Formula $R:\;\ous{n=0}{\infty}n!x^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решение.
+ По Даламберу:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $R=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=1}{\infty}\df{\left(x-3\right)^{n}}{n\um5^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Решение.
+ Обозначим 
+\begin_inset Formula $t=x-3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Получим 
+\begin_inset Formula $\ous{n=1}{\b}\df{t^{n}}{n\um5^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $R=\df 1{\ul{n\st\b}\sqrt[n]{\df 1{n5^{n}}}}=\left\{ \sqrt[n]{n}\st1\right\} =5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left(t\right)<5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $-5<x-3<5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $-2<x<8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим точку 
+\begin_inset Formula $x=-2,\ x=8$
+\end_inset
+
+ --- требуется дополнительное исследоватние 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=-2$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ получим числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{\left(-5\right)^{n}}{n\um5^{n}}=\ous{n=1}{\b}\df{\left(-1\right)^{n}}n$
+\end_inset
+
+ --- сходится знакочередующийся ряд (Лейбница)
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x=8$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ ряд 
+\begin_inset Formula $\ous{n=1}{\b}\df{5^{n}}{n\um5^{n}}=\ous{n=1}{\b}\df 1n$
+\end_inset
+
+ --- нет сходимости
+\end_layout
+
+\begin_layout Example
+Итак, ряд сходится абсолютно на 
+\begin_inset Formula $\left(-2;8\right)$
+\end_inset
+
+.
+ Сходится на 
+\begin_inset Formula $[-2;8)$
+\end_inset
+
+, и будет равномерно сходится на 
+\begin_inset Formula $\forall\left[a;b\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $-2<a<b<8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Свойства степенных рядов
+\end_layout
+
+\begin_layout Theorem
+Если радиус степенного ряда 
+\begin_inset Formula $\ous{n=1}{\infty}a_{n}x^{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $R\neq0$
+\end_inset
+
+, то эго сумма 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть точка 
+\begin_inset Formula $x$
+\end_inset
+
+ --- произвольная точка интервала сходимости 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+.
+ Следовательно 
+\begin_inset Formula 
+\[
+\exists q>0:\quad\left|x\right|\mr q<R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по теореме Абеля ряд сходится равномерно на 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+, то по теореме о непрерывности суммы равномерно сходящегося функционального
+ ряда, получим, что сумма 
+\begin_inset Formula $S(x)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\left[-q;q\right]$
+\end_inset
+
+, а значит и в точке 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Операции почленного дифференцирования на промежутке 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+ и почленного интегрирования по любому промежутку 
+\begin_inset Formula $\left[x_{0};x\right]\subset(-R;R)$
+\end_inset
+
+ не изменяют радиуса сходимости степенного ряда.
+\end_layout
+
+\begin_layout Proof
+Ограничимся случаем, когда 
+\begin_inset Formula $\exists\ul{n\to\infty}\left|\df{a_{n}}{a_{n+1}}\right|=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим через 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ --- радиус сходимости почленно дифференцированного ряда:
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}\left(a_{n}x^{n}\right)'=\ous{n=1}{\infty}n\um a_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{1}=\ul{n\st\infty}\left|\df{n\um a_{n}}{(n+1)a_{n+1}}\right|=\ul{n\st\infty}\df n{n+1}\left|\df{a_{n}}{a_{n+1}}\right|=R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогично, пусть 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ --- радиус схрдимости почленно проинтегрированого ряда:
+\begin_inset Formula 
+\[
+\ous{n=0}{\infty}\oui{x_{0}}xa_{n}x^{n}dx=\ous{n=0}{\infty}\left(\df{a_{n}x^{n+1}}{n+1}-\df{a_{n}x_{0}^{n+1}}{n+1}\right)=\ous{n=0}{\infty}\df{a_{n}x^{n+1}}{n+1}-\ous{n=0}{\infty}\df{a_{n}x_{0}^{n+1}}{n+1}
+\]
+
+\end_inset
+
+числовой ряд, сходящийся абсолютно по признаку сравнения
+\begin_inset Formula 
+\[
+\left|\df{a_{n}x_{0}^{n+1}}{n+1}\right|\mr\left|a_{n}x_{0}^{n+1}\right|=\left|x_{0}\right|\um\underset{u_{n}(x_{0})}{\underbrace{\left|a_{n}x_{0}^{n}\right|}}
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\ous{n=1}{\infty}a_{n}x_{0}^{n}$
+\end_inset
+
+ сходится абсолютно, то 
+\begin_inset Formula $x_{0}\in\left(-R;R\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ --- радиус сходимости степенного ряда 
+\begin_inset Formula $\ous{n=0}{\infty}\df{a_{n}x^{n+1}}{n+1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+R_{2}=\ul{n\st\infty}\left|\df{a_{n}}{n+1}\um\df{n+2}{a_{n+1}}\right|=R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Следствие.
+
+\series default
+ 
+\shape italic
+Степенной ряд 
+\begin_inset Formula $\ous{n=0}{\infty}a_{n}x^{n}$
+\end_inset
+
+ можно почленно дифференцировать и интегрировать на 
+\begin_inset Formula $\left(-R;R\right)$
+\end_inset
+
+ любое число раз.
+\end_layout
+
+\begin_layout Subsection
+Ряды Тейлора
+\end_layout
+
+\begin_layout Subsubsection
+Понятие ряда Тейлора и оснвные свойства
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ имеет в некоторой окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ производные любого порядка (
+\begin_inset Formula $f(x)\in C^{\infty}$
+\end_inset
+
+).
+ Рассмотрим соответствие:
+\begin_inset Formula 
+\begin{equation}
+f(x)\sim f(x_{0})+f'(x_{0})(x-x_{0})+\df{f^{\pr\pr}(x_{0})}{2!}(x-x_{0})^{2}+\tr+\label{eq:rt1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ряд в (1) называется рядом Тейлора функции 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ в окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+, то получим ряд Макларена.
+\end_layout
+
+\begin_layout Standard
+Заметим, что если радиус сходимости 
+\begin_inset Formula $R$
+\end_inset
+
+ степенного ряда отличен от 0, то не при всех 
+\begin_inset Formula $x$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $f(x)=S(x)$
+\end_inset
+
+, где 
+\begin_inset Formula $S(x)$
+\end_inset
+
+ --- сумма ряда (1).
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S(x)=f(x)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+, то говорят , что ряд Тейлора (1) сходится к функции 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+, а функция 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ расходится нв 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+ в сходящийся ряд Тейлора????
+\end_layout
+
+\begin_layout Standard
+Заметим, что:
+\begin_inset Formula 
+\[
+S_{n}(x)=\ous{k=0}n\df{f^{(k)}\left(x_{0}\right)}{k!}\left(x-x_{0}\right)^{k}=T_{n}\left(x\right)
+\]
+
+\end_inset
+
+ Поэтому если ряд Тейлора сходится к 
+\begin_inset Formula $f(x)$
+\end_inset
+
+, то выполняется равенство:
+\begin_inset Formula 
+\[
+T_{n}(x)+R_{n}(x)=f(x)=S(x)=S_{n}\left(x\right)+\gamma_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $R_{n}\left(x\right)$
+\end_inset
+
+ --- n--ый остаток формулы Тейлоора, который может принять вид: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{i}\left(x\right)=\df{f^{n+1}\left(\xi\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n}\left(x\right)=o\left(\left(x-x_{0}\right)^{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma_{n}\left(x\right)$
+\end_inset
+
+ --- n-ый остаток ряда Тейлора.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Функция 
+\begin_inset Formula $f\in C^{\b}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+ раскладиывается в ряд Тейлора в 
+\begin_inset Formula $\left(x_{0}-R,x_{0}+R\right)$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\ul{n\st\b}R_{n}\left(x\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\dsl$
+\end_inset
+
+ следует из равенства (3)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f\left(x\right)=S\left(x\right)\dsl R_{n}\left(x\right)=\gamma_{n}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\gamma_{n}\left(x\right)\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\exists M>0\ :\ \left|f^{\left(n\right)}\left(x\right)\right|<M$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\N$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{n}\left(x\right)\st f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|R_{n}\left(x\right)\right|=\left|\df{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1}\right|\mr\df{M\um R^{n+1}}{\left(n+1\right)!}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall x\in\left(x_{0}-R;x_{0}+R\right)\ \left|R_{n}\left(x\right)\right|\st0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Problem
+Известно что в некоторой окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ степенной ряд 
+\begin_inset Formula $\ous{n=0}{\b}a_{n}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+ сходяится к функции 
+\begin_inset Formula $f\left(x\right)\in C^{\b}\left(x_{0}-R;x_{0}+R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Вопрос: А является лиэтот степенной ряд рядом Тейлора (1) для 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как степенной ряд 
+\begin_inset Formula $f\left(x\right)=a_{0}+a_{1}\left(x-x_{0}\right)+a_{2}\left(x-x_{0}\right)^{2}+\tr+a_{n}\left(x-x_{0}\right)^{n}+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Можно диференцировать бесконечное число раз на 
+\begin_inset Formula $\left(x_{0}-R;x_{0}+R\right),$
+\end_inset
+
+ получим 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\pr\left(x\right)=a_{1}+2a_{2}\left(x-x_{0}\right)+\tr+na_{n}\left(x-x_{0}\right)^{n-1}+\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\ppr\left(x\right)=2a_{2}+6a_{3}\left(x-x_{0}\right)+\tr+n\left(n-1\right)\left(x-x_{0}\right)^{n-2}+\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+a_{0}=f\left(x_{0}\right)\\
+a_{1}=f\pr\left(x_{0}\right)\\
+a_{2}=\df{f\ppr\left(x_{0}\right)}{2!}\\
+\vtr\\
+a_{n}=\df{f^{\left(n\right)}\left(x_{0}\right)}{n!}\\
+\vtr
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если степенной ряд (1) сходится в окрестности точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ к 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, то этот ряд является рядом Тейлора для 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Разложения ряда Тейлора для элементарных функций.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A>0,$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x\right|<A$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f^{\left(n\right)}\left(x\right)\right|=\left|e^{x}\right|=<e^{A}=M$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\emph on
+По теореме 2 
+\emph default
+
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ раскладывается в ряд Маклорена 
+\begin_inset Formula $\forall x+R$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $e^{x}=1+\df x{1!}+\df{x^{2}}{2!}+\tr+\df{x^{n}}{n!}=\ous{n=0}{\b}\df{x^{n}}{1!}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(x\right) & = & \ch x=\df{e^{x}+e^{-x}}2=\df 12\left(e^{x}+e^{-x}\right)=\df 12\left(e^{x}+e^{-x}\right)=\df 12\left(\ous{n=0}{\b}\df{x^{n}}{n!}+\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{n}}{n!}\right)=\\
+ & = & \df 12\ous{n=0}{\b}\left(1+\left(-1\right)^{n}\right)\df{x^{n}}{n!}=\df 22\ous{k=0}{\b}\df{x^{2k}}{\left(2k\right)!}\ \forall x\in\R
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(x\right) & = & \sh x=\left(\ch x\right)\pr=\ous{k=0}{\b}\df{\left(x^{2k}\right)\pr}{\left(2k\right)!}=\ous{k=1}{\b}\df{2kx^{2k-1}}{\left(2k\right)!}=\\
+ & = & \ous{k=1}{\b}\df{x^{2k-1}}{\left(2k-1\right)!}=\ous{k=0}{\b}\df{x^{2k+1}}{\left(2k+1\right)!},\ \forall x\in\R
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f^{\left(n\right)}\left(x\right)=\sin\left(x+\df{\pi n}2\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f^{\left(n\right)}\left(x\right)\right|\mr1,\ \forall x\in\R,\ \forall n\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+f\left(0\right)=0\\
+f\pr\left(0\right)=1\\
+f\ppr\left(0\right)=0\\
+f\pppr\left(0\right)=-1\\
+\vtr
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\sin x & = & 0+\df 1{1!}x+\df 0{2!}x^{2}-\df 1{3!}x^{3}+\tr+\df{\left(-1\right)^{n}}{\left(2n+1\right)!}x^{2n+1}+\tr=\\
+ & = & \ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+1}}{\left(2n+1\right)!},\ x\in\R
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\cosx=\left(\sin x\right)\pr=\ous{n=0}{\b}\df{\left(-1\right)^{n}\left(x^{2n+1}\right)\pr}{\left(2n+1\right)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\ln\left(1+x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Рассмотрим функции:
+\begin_inset Formula 
+\[
+\df 1{1+x}=1-x+x^{2}-x^{3}+\tr+\left(-1\right)^{n}x^{n}+\tr=\ous{n=0}{\b}\left(-1\right)^{n}x^{n},\quad\left|x\right|<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда:
+\begin_inset Formula 
+\[
+\ln\left(1+x\right)=\oiu 0x\df{dt}{1+t}=\oui 0x\left(\ous{n=0}{\b}\left(-1\right)^{n}t^{n}\right)dt=\ous{n=1}{\b}\df{\left(-1\right)^{n}x^{n+1}}{n+1}=\ous{n=1}{\b}\df{\left(-1\right)^{n}x^{n}}n,\ \left|x\right|<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(1+x\right)^{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Оценить 
+\begin_inset Formula $f^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ сложно, поэтому воспользуемся следующим приемом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ удовлетворяет условиям:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\left(1+x\right)f\pr\left(x\right)=\alpha f\left(x\right)\\
+f\left(0\right)=1
+\end{cases}$
+\end_inset
+
+ --- Это задача Коши.
+ Она однозначино разрешима.
+\end_layout
+
+\begin_layout Standard
+Пусть решение этой задачи Коши раскладывается ряд Макларена в некоторой
+ области: 
+\begin_inset Formula 
+\[
+f\left(x\right)=1+\ous{n=1}{\b}a_{n}x^{n}=1+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+\tr+a_{n}x^{n}+\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\left(1+x\right)\left(a_{1}+2a_{2}x+3a_{3}x^{2}+4a_{4}x^{3}+\tr+n\um a_{n}\um x^{n-1}+\tr\right)=\\
+=\alpha+\alpha a_{1}x+\alpha a_{2}x^{2}+\tr+\alpha na_{n}x^{n}+\tr
+\end{multline*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{multline*}
+a_{1}+\left(a_{1}+2a_{2}\right)x+\left(2a_{2}+3a_{3}\right)x^{2}+\left(3a_{3}+4a_{4}\right)x^{3}+\tr+\left(na_{n}+\left(n+1\right)a_{n+1}\right)x^{n}=\\
+=\alpha+\alpha a_{1}x+\alpha a_{2}x^{2}+\tr+\alpha a_{n}x^{n}+\tr
+\end{multline*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\begin{cases}
+a_{1}=\alpha\\
+a_{1}+2a_{2}=\alpha a_{1}\ \sl\ a_{2}=\df{\left(\alpha-1\right)a_{1}}2=\df{\alpha\left(\alpha-1\right)}2\\
+2a_{2}+3a_{3}=\alpha a_{2}\ \sl\ a_{3}=a_{2}\df{\alpha-2}3=\df{\alpha\left(\alpha-1\right)\left(\alpha-2\right)}{3!}\\
+\vtr\\
+a_{n}=\df{\alpha\left(\alpha-1\right)\um\tr\um\left(\alpha-n+1\right)}{n!},\ n\in\N
+\end{cases}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\fbox{f\left(x\right)=1+\ous{n=1}{\b}\df{\alpha\left(\alpha-1\right)\um\tr\um\left(\alpha-n+1\right)}{n!}x^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Область схлжимости ряда легко получить по Даламберу: 
+\begin_inset Formula $R=1,\ \left|x\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Нужно доказать самим.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Методы разложения в ряд Тейлора
+\end_layout
+
+\begin_layout Enumerate
+Использование геометрической прогрессии.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить функцию
+\begin_inset Formula 
+\[
+f\left(x\right)=\df 1{1+x}
+\]
+
+\end_inset
+
+В окрестности 
+\begin_inset Formula $x_{0}=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение:
+\emph default
+
+\begin_inset Formula 
+\[
+\df 1{1+x}=-\df 1{1-\un{\underbrace{\left(x+2\right)}}{q,\ \left|q\right|<1}}=-\ous{n=0}{\b}\left(x-2\right)^{n},\ x\in\left(-3;-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\df 1{1+x} & = & -\df 1{2-\left(x+3\right)}=-\df 12\df 1{1-\df{x+3}2}=\\
+ & = & \left|\begin{array}{c}
+\df{\left|x+3\right|}2<1\\
+\left|x+3\right|<2
+\end{array}\right|=\\
+ & = & -\df 12\ous{n=0}{\b}\left(\df{x+3}2\right)^{n}=\\
+ & = & -\ous{n=0}{\b}\df{\left(x+3\right)^{n}}{2^{n+1}},\ x\in\left(-3;-1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Метод замены
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить 
+\begin_inset Formula $f\left(x\right)=\sin2x$
+\end_inset
+
+ в окрестности точки 
+\begin_inset Formula $x_{0}=\df{\pi}4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\sin2x=\left\{ \begin{array}{c}
+t=x-\df{\pi}4\\
+x=t+\df{\pi}4
+\end{array}\right\} =\sin2\left(t+\df{\pi}4\right)=\sin\left(2t+\df{\pi}2\right)=\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Метод интегрирования
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить в ряд Маклорена следующую функцию.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=\ln\df{1+x}{1-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ln\df{1+x}{1-x}=2\oui 0x\df{dt}{1-t^{2}}=\left\{ \begin{array}{c}
+t^{2}<1\\
+\left|t\right|<1
+\end{array}\right\} =2\oui 0x\ous{n=1}{\b}t^{2n}dt=2\ous{n=1}{\b}\df{x^{2n+1}}{2n+1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Метод дифференцирования.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Разложить в ряд Макларена функцию 
+\begin_inset Formula $f\left(x\right)=\df{2x}{\left(1-x^{2}\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение: 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x\right)=\df{2x}{\left(1-x^{2}\right)^{2}}=\left(\df 1{1-x^{2}}\right)\pr=\left\{ \left|x\right|<1\right\} =\ous{n=1}{\b}\left(x^{2n}\right)\pr=\tr$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Приложения рядов Тейлора
+\end_layout
+
+\begin_layout Subsubsection
+Приближенное вычисление значений функции
+\end_layout
+
+\begin_layout Standard
+Можно находить приближенные значения функции в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ с заданной точностью.
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Вычислить число 
+\begin_inset Formula $e$
+\end_inset
+
+ с точностью до 
+\begin_inset Formula $\varepsilon=0,01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $e^{x}=\ous{k=0}n\df{x^{k}}{k!}+R_{n}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $R_{n}\left(x\right)=\df{e^{c}}{\left(n+1\right)!}x^{n+1}=\left\{ c\in\left(0;1\right)\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|R_{n}\left(1\right)\right|=\df{e^{c}}{\left(n+1\right)!}1^{n+1}<\df e{\left(n+1\right)!}<\df 3{\left(n+1\right)!}<0,01$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $n\br5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $e\approx1+\df 1{1!}+\df 1{2!}+\df 1{3!}+\df 1{4!}=2+0.5+0.167+0.042+0.008=2.72$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Вычислить 
+\begin_inset Formula $\sqrt[5]{32}$
+\end_inset
+
+ с точностью 
+\begin_inset Formula $\varepsilon=0,0001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\sqrt[5]{33} & = & \sqrt[5]{32+1}=2\sqrt[5]{1+\df 1{32}}=2\left(1+\df 1{32}\right)^{\df 15}=\\
+ & = & \left\{ \begin{array}{c}
+\left(1+x\right)^{\alpha}=\\
+=1+\df{\alpha}{1!}x+\df{\alpha\left(\alpha-1\right)}{2!}x^{2}+\tr\\
+x=\df 1{32},\ \alpha=\df 15
+\end{array}\right\} =\\
+ & = & 2\left(1+\df 15\df 1{32}-\df 2{25}\left(\df 1{32}\right)^{2}+\df 6{125}\left(\df 1{32}\right)^{3}-\tr\right)=\\
+ & = & 2+\df 1{5\um16}-\df 1{\un{\underbrace{258\um32}}{<6400}}+\df 3{\un{\underbrace{8\um125\um32^{2}}}{<10000}}-\tr
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\fbox{\left|r_{n}\right|\mr\left|a_{n+1}\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Приближенное вычисление определенных интегралов
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Вычислить 
+\begin_inset Formula 
+\[
+I=\oui 0{\df 13}e^{-x^{2}}dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+I=\oui 0{\df 13}e^{-x^{2}}dx=\oiu 0{\frac{1}{3}}\left(\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n}}{n!}\right)dx=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{n!}\oiu 0{\frac{1}{3}}x^{2n}dx=\\
+=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{n!}\left(\df 13\right)^{2n+1}\df 1{2n+1}=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(2n+1\right)n!\um3^{2n+1}}
+\end{multline*}
+
+\end_inset
+
+Это ряд Лейбница, тогда 
+\begin_inset Formula 
+\[
+\left|\gamma_{n}\right|\mr\left|a_{n+1}\right|=\df 1{\left(2n+3\right)\um\left(n+1\right)!\um3^{2n+3}}<0,001
+\]
+
+\end_inset
+
+Откуда 
+\begin_inset Formula $n=1$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+I\approx\df 13-\df 1{3\um3^{3}}=0.3333-0.0123=0,3210
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Вычислить 
+\begin_inset Formula $\oui 01\df{\sin x}xdx,\ \varepsilon=0,001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\oui 01\df 1x\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+1}}{\left(2n+1\right)!}dx=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(2n+1\right)!}\oui 01x^{2n}dx=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(n+1\right)!\left(2n+1\right)}=\tr\left(!\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I\approx0,946$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление сумм числовых рядов
+\end_layout
+
+\begin_layout Standard
+Вчисление суммы числового ряда иногда можно свести к нахождению значения
+ некоторой функциии в определенной точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Найти сумму числового ряда
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $I=\ous{n=0}{\b}\df{\left(-1\right)^{n}}{\left(2n+1\right)\left(2n+3\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение:
+\end_layout
+
+\begin_layout Example
+Разложим в степенной ряд
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+3}}{\left(2n+1\right)\left(2n+3\right)}=S\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Степенной ряд 
+\begin_inset Formula $\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[-1;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Мажоранта: 
+\begin_inset Formula $\ous{n=0}{\b}\df 1{\left(2n+1\right)\left(2n+3\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\pr\left(x\right)=x\ous{n=0}{\b}\df{\left(-1\right)^{n}x^{2n+1}}{2n+1}=x\um\arctg x$
+\end_inset
+
+ --- сходится равномерно на промежутке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Так как это ряд Лейбница, то 
+\begin_inset Formula $\left|\gamma_{n}\left(x\right)\right|\mr\df 1{2n+1}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Решгим диференциальное уравнение следующенгог вида:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+S\pr\left(x\right)=x\arctg x\\
+S\left(0\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\left(x\right)=\oui 0xS\pr\left(x\right)dx+S\left(0\right)=\df 12\left(\left(1+x^{2}\right)\arctg x-x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $I=S\left(1\right)=\df{\pi}4-\df 12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
