@@ -1001,9 +1001,6 @@ reference "1:1"
 
 \begin_layout Definition
 Однородным уравнением называется уравнения вида:
-\end_layout
-
-\begin_layout Definition
 \begin_inset Formula 
 \begin{equation}
 \df{dy}{dx}=f\left(\df yx\right)\label{eq:6}
@@ -1011,10 +1008,7 @@ reference "1:1"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Description
+Где 
 \begin_inset Formula $f$
 \end_inset
 
@@ -1052,9 +1046,6 @@ reference "eq:6"
 \end_inset
 
 ):
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 x\um\df{dz}{dx}+z=f\left(z\right)\,\sl\, x\df{dz}{dx}=f\left(z\right)-z
@@ -1063,9 +1054,6 @@ x\um\df{dz}{dx}+z=f\left(z\right)\,\sl\, x\df{dz}{dx}=f\left(z\right)-z
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \left[\begin{array}{ccc}
@@ -1077,9 +1065,6 @@ f\left(z\right)-z & = & 0\\
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \left[\begin{array}{ccc}
@@ -1091,9 +1076,6 @@ f\left(z\right)-z & = & 0\\
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \left[\begin{array}{ccc}
