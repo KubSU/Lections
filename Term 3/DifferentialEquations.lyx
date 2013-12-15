@@ -1020,7 +1020,7 @@ reference "1:1"
 \end_layout
 
 \begin_layout Standard
-С помощью замены 
+Сделаем замену: 
 \begin_inset Formula $x=\df yz$
 \end_inset
 
@@ -1094,7 +1094,7 @@ f\left(z\right)-z & = & 0\\
 \end_layout
 
 \begin_layout Definition
-Линейным уравнением 1-го порядка называется уравнение вида: 
+Линейным уравнением 1-го порядка называется уравнение вида:
 \begin_inset Formula 
 \begin{equation}
 \df{dy}{dx}=a\left(x\right)y+b\left(x\right)\label{1:7}
@@ -1103,9 +1103,6 @@ f\left(z\right)-z & = & 0\\
 \end_inset
 
 
-\end_layout
-
-\begin_layout Definition
 \begin_inset Formula 
 \begin{equation}
 y\left(x_{0}\right)=y_{0}\label{1:8}
@@ -1113,11 +1110,7 @@ y\left(x_{0}\right)=y_{0}\label{1:8}
 
 \end_inset
 
-
-\end_layout
-
-\begin_deeper
-\begin_layout Description
+Где 
 \begin_inset Formula $a\left(x\right)$
 \end_inset
 
@@ -1129,7 +1122,6 @@ y\left(x_{0}\right)=y_{0}\label{1:8}
  
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 Если в этом уравнении 
 \begin_inset Formula $b\left(x\right)\equiv0$
@@ -1175,7 +1167,7 @@ reference "1:8"
 \end_layout
 
 \begin_layout Proof
-Рассмотрим линейное однородное уравнение: 
+Рассмотрим линейное однородное уравнение:
 \begin_inset Formula 
 \begin{equation}
 \df{dx}{dy}=a\left(x\right)\label{eq:9}
@@ -1203,7 +1195,7 @@ reference "1:8"
 \begin_inset Formula $y$
 \end_inset
 
-: 
+:
 \begin_inset Formula 
 \[
 \df 1y\um\df{dy}{dx}=a\left(x\right)
@@ -1211,14 +1203,7 @@ reference "1:8"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Проинтегрируем:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
 \oui{x_{0}}x\df 1y\um\df{dy}{dx}dx & = & \oui{x_{0}}xa\left(\xi\right)d\xi\\
@@ -1228,18 +1213,11 @@ reference "1:8"
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 Тогда, так как 
 \begin_inset Formula $u=\ln e^{u}$
 \end_inset
 
  получаем:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=y_{0}\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:10}
@@ -1247,10 +1225,6 @@ y\left(x\right)=y_{0}\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1273,10 +1247,7 @@ reference "1:8"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Proof
-Единственность решения задачи (
+ Единственность решения задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:9"
@@ -1297,10 +1268,7 @@ reference "1:10"
 
 \end_inset
 
-)
-\end_layout
-
-\begin_layout Proof
+).
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:11}
@@ -1308,10 +1276,6 @@ y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:1
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1327,14 +1291,11 @@ reference "eq:9"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Proof
-При 
+ При 
 \begin_inset Formula $c=u\left(x_{0}\right)$
 \end_inset
 
- уравнение выглядит так: 
+ уравнение выглядит так:
 \begin_inset Formula 
 \begin{eqnarray*}
 y\left(x\right) & = & u\left(x_{0}\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)
@@ -1355,7 +1316,7 @@ reference "1:7"
 
 ).
  Для нахождения решения неоднородного уравнения применим метод вариации
- произвольной постоянной, то-есть решения будим искать в виде: 
+ произвольной постоянной, то-есть решения будим искать в виде:
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\label{1:12}
@@ -1363,7 +1324,7 @@ y\left(x\right)=z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\ri
 
 \end_inset
 
- где 
+где 
 \begin_inset Formula $z\left(x\right)$
 \end_inset
 
@@ -1385,20 +1346,15 @@ reference "1:7"
 
 \end_inset
 
-).
- 
+):
 \begin_inset Formula 
-\begin{eqnarray*}
-z\pr\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\um a\left(x\right)=\\
+\begin{multline*}
+z'\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)\um a\left(x\right)=\\
 =a\left(x\right)\um z\left(x\right)\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+b\left(x\right)
-\end{eqnarray*}
+\end{multline*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Тогда чтобы (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1417,7 +1373,7 @@ reference "1:7"
 \begin_inset Formula $z\left(x\right)$
 \end_inset
 
- было решением уравнения: 
+ было решением уравнения:
 \begin_inset Formula 
 \begin{eqnarray*}
 \df{dz}{dx} & = & b\left(x\right)\um\exp\left(-\oui{x_{0}}xa\left(\xi\right)d\xi\right)
@@ -1425,7 +1381,7 @@ reference "1:7"
 
 \end_inset
 
-Заметим что для того, чтобы (
+Заметим, что для того, чтобы (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "1:12"
@@ -1456,7 +1412,7 @@ reference "1:8"
 \begin_inset Formula $z\left(x_{0}\right)=y_{0}$
 \end_inset
 
-, получим: 
+, получим:
 \begin_inset Formula 
 \[
 z\left(x\right)=y_{0}+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta
@@ -1489,7 +1445,7 @@ reference "1:8"
 
 \end_inset
 
-) имеет вид: 
+) имеет вид:
 \begin_inset Formula 
 \begin{eqnarray}
 y\left(x\right) & = & y_{0}\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta\label{eq:13}
@@ -1497,11 +1453,7 @@ y\left(x\right) & = & y_{0}\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-То что это решение, проверяется непосредственной подстановкой.
+То что это решение уравнения, проверяется непосредственной подстановкой.
 \end_layout
 
 \begin_layout Proof
@@ -1529,9 +1481,6 @@ reference "1:8"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -1543,9 +1492,6 @@ y_{1}\left(x_{0}\right) & =y_{0}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -1557,9 +1503,6 @@ y_{2}\left(x_{0}\right) & =y_{0}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 u\left(x\right)=y_{1}-y_{2}
@@ -1567,14 +1510,7 @@ u\left(x\right)=y_{1}-y_{2}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Тогда вычтем из верхнего нижнее:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 \df{du}{dx}=a\left(x\right)u\left(x\right)
@@ -1582,14 +1518,7 @@ u\left(x\right)=y_{1}-y_{2}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Вычтем по-другому, и получим:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -1600,16 +1529,15 @@ u\left(x_{0}\right) & =0
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Получим что 
 \begin_inset Formula $u\left(x\right)$
 \end_inset
 
- является решением задачи Коши для однородного уравнения с 0-ым начальным
- условием.
+ является решением задачи Коши для однородного уравнения с 
+\begin_inset Formula $0$
+\end_inset
+
+-ым начальным условием.
 \end_layout
 
 \begin_layout Proof
@@ -1643,9 +1571,6 @@ reference "1:7"
 \end_inset
 
 ) имеет такой вид:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=c\um\exp\left(\oui{x_{0}}xa\left(\xi\right)d\xi\right)+\oui{x_{0}}xb\left(\zeta\right)\um\exp\left(-\oui{x_{0}}{\zeta}a\left(\xi\right)d\xi\right)d\zeta\label{1:14}
@@ -1686,37 +1611,37 @@ reference "1:14"
 \end_layout
 
 \begin_layout Standard
-Рассмотрим уравнение вида: 
+Рассмотрим уравнение вида:
 \begin_inset Formula 
 \begin{equation}
-M\left(x,y\right)N\left(x,y\right)dy=0\label{eq:t1}
+M\left(x,y\right)N\left(x,y\right)dy=0\label{Общий вид уравнения в полных дифференциалах}
 \end{equation}
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Definition
 Если левая часть уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
-) есть полный дифференциал некоторой функции 2х переменных 
+) есть полный дифференциал некоторой функции 2-х переменных 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
 , то уравнение (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
-) называется уравнением уравнением полных дифференциалов.
+) называется уравнением в полных дифференциалах.
 \end_layout
 
 \begin_layout Standard
@@ -1728,12 +1653,12 @@ reference "eq:t1"
  левая часть (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
 ) была полным дифференциалом некоторой функции необходимо и достаточно выполнени
-е условия: 
+е условия:
 \begin_inset Formula 
 \begin{equation}
 \df{\delta M}{\delta y}\equiv\df{\delta N}{\delta x}\label{eq:t2}
@@ -1741,14 +1666,10 @@ reference "eq:t1"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Может быть что уравнение (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
@@ -1756,58 +1677,48 @@ reference "eq:t1"
  некоторую функцию оно становится уравнением в полных дифференциалах.
 \end_layout
 
-\begin_layout Standard
-Рассмотри следующий примерчик:
-\end_layout
-
 \begin_layout Example
+Решить уравнение: 
 \begin_inset Formula $xdy-ydx=0$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+M=-y,\quad N=x
+\]
 
-\begin_layout Example
-\begin_inset Formula $M=-y,\ N=x$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df{\delta M}{\delta y}=-1,\ \df{\delta N}{\delta x}=1$
+\begin_inset Formula $\df{\delta M}{\delta y}=-1,\quad\df{\delta N}{\delta x}=1$
 \end_inset
 
- - значит оно не является уравнением в полных дифференциалах
-\end_layout
-
-\begin_layout Example
-Но умножим его на 
+ --- значит оно не является уравнением в полных дифференциалах.
+ Умножим его на 
 \begin_inset Formula $\df 1{x^{2}}$
 \end_inset
 
+, полоучим:
+\begin_inset Formula 
+\[
+\df 1xdy-\df y{x^{2}}dx=0
+\]
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\df 1xdy-\df y{x^{2}}dx=0$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Example
 \begin_inset Formula $-\df 1{x^{2}}=-\df 1{x^{2}}$
 \end_inset
 
- - А тут все нормально.
+ --- А тут все нормально.
 \end_layout
 
 \begin_layout Definition
 Множитель, после умножения на который уравнение (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
@@ -1819,7 +1730,7 @@ reference "eq:t1"
 Известно что для любого уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
@@ -1831,7 +1742,7 @@ reference "eq:t1"
 \begin_inset Formula $N$
 \end_inset
 
- - гладкие, существует интегрирующий множитель, но нет способа, позволяющего
+ --- гладкие, существует интегрирующий множитель, но нет способа, позволяющего
  находить его всегда, но в частных случаях, в частности, когда интегрирующий
  множитель зависит только от одной переменной 
 \begin_inset Formula $x$
@@ -1843,40 +1754,37 @@ reference "eq:t1"
 
 , его можно находить.
  Сейчас мы покажем это, и приведем условия, позволяющие определять интегрирующий
- множитель.
-\end_layout
-
-\begin_layout Standard
+ множитель 
 \begin_inset Formula $\mu\left(x,y\right)$
 \end_inset
 
- 
-\end_layout
+.
+ Справедливы условия:
+\begin_inset Formula 
+\[
+\df{\delta}{\delta y}\left(M\left(x,y\right)\mu\left(x,y\right)\right)=\df{\delta}{\delta x}\left(N\left(x,y\right)\mu\left(x,y\right)\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{\delta}{\delta y}\left(M\left(x,y\right)\mu\left(x,y\right)\right)=\df{\delta}{\delta x}\left(N\left(x,y\right)\mu\left(x,y\right)\right)$
 \end_inset
 
- 
-\end_layout
+Откуда:
+\begin_inset Formula 
+\[
+\df{\delta M}{\delta y}\mu+M\df{\delta\mu}{\delta y}=\df{\delta N}{\delta x}\um\mu+N\df{\delta\mu}{\delta x}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{\delta M}{\delta y}\mu+M\df{\delta\mu}{\delta y}=\df{\delta N}{\delta x}\um\mu+N\df{\delta\mu}{\delta x}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Разделим на 
 \begin_inset Formula $\mu$
 \end_inset
 
- 
-\end_layout
+:
+\begin_inset Formula 
+\[
+\df{M\df{\delta\mu}{dy}-N\df{\delta\mu}{\delta x}}{\mu}=\df{\delta N}{\delta x}-\df{\delta M}{\delta y}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{M\df{\delta\mu}{dy}-N\df{\delta\mu}{\delta x}}{\mu}=\df{\delta N}{\delta x}-\df{\delta M}{\delta y}$
 \end_inset
 
 
@@ -1891,17 +1799,11 @@ reference "eq:t1"
 \begin_inset Formula $y$
 \end_inset
 
-, то..
-\end_layout
-
-\begin_layout Standard
+, то: 
 \begin_inset Formula $\df{\delta\mu}{\delta x}=0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+ и
 \begin_inset Formula 
 \begin{equation}
 \df 1{\mu}\um\df{\delta M}{\delta y}=\df{\df{\delta N}{\delta x}-\df{\delta M}{\delta y}}M\label{eq:t3}
@@ -1909,21 +1811,11 @@ reference "eq:t1"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Если наоборот то..
-\end_layout
-
-\begin_layout Standard
+Если наоборот то: 
 \begin_inset Formula $\df{\delta M}{\delta y}=0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+ и
 \begin_inset Formula 
 \begin{equation}
 \df 1{\mu}\um\df{\delta M}{\delta x}=\df{\df{\delta M}{\delta y}-\df{\delta N}{\delta x}}N\label{eq:t4}
@@ -1931,15 +1823,7 @@ reference "eq:t1"
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Отсюда вытекают следующие условия: 
-\end_layout
-
-\begin_layout Standard
-Если правая часть (
+Отсюда вытекают следующие условия: если правая часть (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t3"
@@ -1950,11 +1834,10 @@ reference "eq:t3"
 \begin_inset Formula $y$
 \end_inset
 
-.
- то у уравнения (
+, то у уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:t1"
+reference "Общий вид уравнения в полных дифференциалах"
 
 \end_inset
 
