@@ -230,8 +230,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\un{\ov{\Sigma}{#2}}{#1}}
-{\un{\ov{\Sigma}{#2}}{#1}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
 \end_inset
 
 
@@ -370,6 +370,12 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\x}{\times}
 {\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\li}{\hspace{1.5cm}}
+{\hspace{1.5cm}}
 \end_inset
 
 
@@ -552,13 +558,13 @@ reference "1:1"
 Наряду с одним дифференциальным уравнением будем рассматривать системы обыкновен
 ных дифференциальных уравнений, например системы вида: 
 \begin_inset Formula 
-\begin{equation}
-\begin{cases}
+\begin{flalign}
+\li\begin{cases}
 \df{dy_{1}}{dx}=f_{1}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)\\
 \tr\\
 \df{dy_{n}}{dx}=f_{n}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)
-\end{cases}\label{1:3}
-\end{equation}
+\end{cases} &  & {}\label{1:3}
+\end{flalign}
 
 \end_inset
 
@@ -569,7 +575,7 @@ reference "1:1"
 \begin_inset Formula $f_{1}\tr f_{n}$
 \end_inset
 
- --- известные функции своих аргументов, 
+ --- известные функции своих аргументов,
 \end_layout
 
 \begin_layout Description
@@ -608,7 +614,7 @@ reference "1:2"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-y_{1}\left(x\right)=y\left(x\right),\, y_{2}\left(x\right)=\df{dy}{dx},\,\tr,\, y_{n}\left(x\right)=\df{d^{n-1}y}{dx^{n-1}}
+y_{1}\left(x\right)=y\left(x\right),\quad y_{2}\left(x\right)=\df{dy}{dx},\quad\tr,\quad y_{n}\left(x\right)=\df{d^{n-1}y}{dx^{n-1}}
 \]
 
 \end_inset
@@ -617,19 +623,16 @@ y_{1}\left(x\right)=y\left(x\right),\, y_{2}\left(x\right)=\df{dy}{dx},\,\tr,\, 
 \end_layout
 
 \begin_layout Standard
-Дифференцируя получаем 
-\end_layout
-
-\begin_layout Standard
+Дифференцируя получаем:
 \begin_inset Formula 
-\begin{equation}
-\begin{cases}
+\begin{flalign}
+\li\begin{cases}
 \df{dy_{1}}{dx}=y_{2}\left(x\right)\\
 \df{dy_{2}}{dx}=y_{3}\left(x\right)\\
 \tr\\
 \df{dy_{n}}{dx}=f\left(x,y_{1}\left(x\right)\tr y_{n}\left(x\right)\right)
-\end{cases}\label{1:4}
-\end{equation}
+\end{cases} &  & {}\label{1:4}
+\end{flalign}
 
 \end_inset
 
@@ -660,19 +663,11 @@ reference "1:2"
 \end_inset
 
 ) то функции 
-\begin_inset Formula $y_{1}\left(x\right)=y\left(x\right)$
-\end_inset
+\begin_inset Formula 
+\[
+y_{1}\left(x\right)=y\left(x\right),\quad y_{2}\left(x\right)=\df{dy}{dx},\quad\tr,\quad y_{n}\left(x\right)=\df{d^{n-1}y}{dx^{n-1}}
+\]
 
-, 
-\begin_inset Formula $y_{2}\left(x\right)=\df{dy}{dx}$
-\end_inset
-
-, 
-\begin_inset Formula $\tr$
-\end_inset
-
-, 
-\begin_inset Formula $y_{n}\left(x\right)=\df{d^{n-1}y}{dx^{n-1}}$
 \end_inset
 
  будут решениями системы (
@@ -755,12 +750,12 @@ reference "1:3"
 
 \begin_layout Example
 \begin_inset Formula 
-\[
-\begin{cases}
+\begin{flalign*}
+\li\begin{cases}
 \df{dy_{1}}{dx}=f_{1}\left(x,y_{1},y_{2}\right)\\
 \df{dy_{2}}{dx}=f_{2}\left(x,y_{1},y_{2}\right)
-\end{cases}
-\]
+\end{cases} &  & {}
+\end{flalign*}
 
 \end_inset
 
@@ -819,15 +814,15 @@ reference "1:2"
 
 \end_inset
 
-) начальные условия : 
+) начальные условия :
 \begin_inset Formula 
-\[
-\begin{cases}
+\begin{flalign*}
+\li\begin{cases}
 y\left(x_{0}\right) & =y_{1,0}\\
 \tr\\
 \df{d^{n-1}y\left(x_{0}\right)}{dx^{n-1}} & =y_{n,0}
-\end{cases}
-\]
+\end{cases} &  & {}
+\end{flalign*}
 
 \end_inset
 
@@ -842,14 +837,14 @@ reference "1:4"
 
 \end_inset
 
-) начальные условия : 
+) начальные условия :
 \begin_inset Formula 
-\[
-\begin{cases}
+\begin{flalign*}
+\li\begin{cases}
 y_{1}\left(x_{0}\right) & =y_{1,0}\\
 y_{n}\left(x_{0}\right) & =y_{n,0}
-\end{cases}
-\]
+\end{cases} &  & {}
+\end{flalign*}
 
 \end_inset
 
@@ -1053,34 +1048,20 @@ x\um\df{dz}{dx}+z=f\left(z\right)\,\sl\, x\df{dz}{dx}=f\left(z\right)-z
 
 
 \begin_inset Formula 
-\[
-\left[\begin{array}{ccc}
+\begin{flalign*}
+ & \left[\begin{array}{ccc}
 f\left(z\right)-z & = & 0\\
 \df{dz}{dx}\um\df 1{f\left(z\right)-z} & = & \df 1x
-\end{array}\right.
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\left[\begin{array}{ccc}
+\end{array}\right.\\
+\li & \left[\begin{array}{ccc}
 f\left(z\right)-z & = & 0\\
 \int\df{dz}{dx}\um\df 1{f\left(z\right)-z}dx & = & \int\df 1x
-\end{array}\right.
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\left[\begin{array}{ccc}
+\end{array}\right. & {}\\
+ & \left[\begin{array}{ccc}
 f\left(z\right)-z & = & 0\\
 \int\df{dz}{f\left(z\right)-z} & = & \ln\left|x\right|
 \end{array}\right.
-\]
+\end{flalign*}
 
 \end_inset
 
@@ -1480,31 +1461,17 @@ reference "1:8"
 
 .
 \begin_inset Formula 
-\[
-\begin{cases}
-\df{dy_{1}}{dx} & =a\left(x\right)y_{1}+b\left(x\right)\\
-y_{1}\left(x_{0}\right) & =y_{0}
-\end{cases}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\begin{cases}
-\df{dy_{2}}{dx} & =a\left(x\right)y_{2}+b\left(x\right)\\
-y_{2}\left(x_{0}\right) & =y_{0}
-\end{cases}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-u\left(x\right)=y_{1}-y_{2}
-\]
+\begin{flalign*}
+\li & \begin{cases}
+\df{dy_{1}}{dx}=a\left(x\right)y_{1}+b\left(x\right)\\
+y_{1}\left(x_{0}\right)=y_{0}
+\end{cases}\\
+\li & \begin{cases}
+\df{dy_{2}}{dx}=a\left(x\right)y_{2}+b\left(x\right)\\
+y_{2}\left(x_{0}\right)=y_{0}
+\end{cases} & {}\\
+ & u\left(x\right)=y_{1}-y_{2}
+\end{flalign*}
 
 \end_inset
 
@@ -1518,12 +1485,12 @@ u\left(x\right)=y_{1}-y_{2}
 
 Вычтем по-другому, и получим:
 \begin_inset Formula 
-\[
-\begin{cases}
-\df{du}{dx} & =a\left(x\right)u\left(x\right)\\
-u\left(x_{0}\right) & =0
-\end{cases}
-\]
+\begin{flalign*}
+\li\begin{cases}
+\df{du}{dx}=a\left(x\right)u\left(x\right)\\
+u\left(x_{0}\right)=0
+\end{cases} &  & {}
+\end{flalign*}
 
 \end_inset
 
@@ -1785,10 +1752,6 @@ reference "Общий вид уравнения в полных дифферен
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если интегрирующий множитель не зависит от 
 \begin_inset Formula $x$
 \end_inset
@@ -2395,8 +2358,7 @@ reference "eq:th2"
 \begin_inset Formula 
 \begin{multline*}
 \left|f\left(x_{1},y_{1}\right)-f\left(x_{2},y_{2}\right)\right|=\left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)+f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr\\
-\mr\left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)\right|+\left|f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr\\
-\mr K\left|y_{1}-y_{2}\right|+\df{\varepsilon}2\mr\varepsilon
+\mr\left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)\right|+\left|f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr K\left|y_{1}-y_{2}\right|+\df{\varepsilon}2\mr\varepsilon
 \end{multline*}
 
 \end_inset
@@ -2681,47 +2643,31 @@ reference "eq:th6"
 
 
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|\varphi_{3}\left(x\right)-\varphi_{2}\left(x\right)\right| & = & \oui{x_{0}}xf\left(\xi,\varphi_{2}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{1}\left(\xi\right)\right)d\xi\mr\\
- & \mr & \left|\oui{x_{0}}x\left|f\left(\xi,\varphi_{2}\left(\xi\right)\right)-f\left(\xi,\varphi_{1}\left(\xi\right)\right)\right|d\xi\right|\mr\\
- & \mr & \left\{ \text{по условию Лишшица}\right\} \mr\\
- & \mr & \left|\oui{x_{0}}xk\left|\varphi_{2}\left(\xi\right)-\varphi_{1}\left(\xi\right)\right|d\xi\right|\mr\\
- & \mr & 2c\um k\um\left|x-x_{0}\right|
-\end{eqnarray*}
+\begin{multline*}
+\left|\varphi_{3}\left(x\right)-\varphi_{2}\left(x\right)\right|=\oui{x_{0}}xf\left(\xi,\varphi_{2}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{1}\left(\xi\right)\right)d\xi\mr\\
+\mr\left|\oui{x_{0}}x\left|f\left(\xi,\varphi_{2}\left(\xi\right)\right)-f\left(\xi,\varphi_{1}\left(\xi\right)\right)\right|d\xi\right|\mr\\
+\mr\left\{ \text{по условию Лишшица}\right\} \mr\left|\oui{x_{0}}xk\left|\varphi_{2}\left(\xi\right)-\varphi_{1}\left(\xi\right)\right|d\xi\right|\mr2c\um k\um\left|x-x_{0}\right|
+\end{multline*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|\varphi_{4}\left(x\right)-\varphi_{3}\left(x\right)\right| & = & \oui{x_{0}}xf\left(\xi,\varphi_{3}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{2}\left(\xi\right)\right)d\xi\mr\\
- & \mr & \left|\oui{x_{0}}x\left|f\left(\xi,\varphi_{3}\left(\xi\right)\right)-f\left(\xi,\varphi_{2}\left(\xi\right)\right)\right|d\xi\right|\mr\\
- & \mr & \left\{ \text{по условию Лишшица}\right\} \mr\\
- & \mr & \left|\oui{x_{0}}xk\left|\varphi_{3}\left(\xi\right)-\varphi_{2}\left(\xi\right)\right|d\xi\right|\mr\\
- & \mr & 2c\um k^{2}\um\df{\left|x-x_{0}\right|^{2}}2
-\end{eqnarray*}
+\begin{multline*}
+\left|\varphi_{4}\left(x\right)-\varphi_{3}\left(x\right)\right|=\oui{x_{0}}xf\left(\xi,\varphi_{3}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{2}\left(\xi\right)\right)d\xi\mr\\
+\mr\left|\oui{x_{0}}x\left|f\left(\xi,\varphi_{3}\left(\xi\right)\right)-f\left(\xi,\varphi_{2}\left(\xi\right)\right)\right|d\xi\right|\mr\\
+\mr\left\{ \text{по условию Лишшица}\right\} \mr\left|\oui{x_{0}}xk\left|\varphi_{3}\left(\xi\right)-\varphi_{2}\left(\xi\right)\right|d\xi\right|\mr2c\um k^{2}\um\df{\left|x-x_{0}\right|^{2}}2
+\end{multline*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Пользуясь методом математической индукции..
-\end_layout
-
-\begin_layout Proof
+Пользуясь методом математической индукции:
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right| & = & \oui{x_{0}}xf\left(\xi,\varphi_{n}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{n-1}\left(\xi\right)\right)d\xi\mr\\
- & \mr & \left|\oui{x_{0}}x\left|f\left(\xi,\varphi_{n}\left(\xi\right)\right)-f\left(\xi,\varphi_{n-1}\left(\xi\right)\right)\right|d\xi\right|\mr\\
- & \mr & \left\{ \text{по условию Лишшица}\right\} \mr\\
- & \mr & \left|\oui{x_{0}}xk\left|\varphi_{n}\left(\xi\right)-\varphi_{n-1}\left(\xi\right)\right|d\xi\right|\mr\\
- & \mr & 2c\um k^{n-1}\um\df{\left|x-x_{0}\right|^{n-1}}{\left(n-1\right)!}
-\end{eqnarray*}
+\begin{multline*}
+\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right|=\oui{x_{0}}xf\left(\xi,\varphi_{n}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{n-1}\left(\xi\right)\right)d\xi\mr\\
+\mr\left|\oui{x_{0}}x\left|f\left(\xi,\varphi_{n}\left(\xi\right)\right)-f\left(\xi,\varphi_{n-1}\left(\xi\right)\right)\right|d\xi\right|\mr\\
+\mr\left\{ \text{по условию Лишшица}\right\} \mr\left|\oui{x_{0}}xk\left|\varphi_{n}\left(\xi\right)-\varphi_{n-1}\left(\xi\right)\right|d\xi\right|\mr2c\um k^{n-1}\um\df{\left|x-x_{0}\right|^{n-1}}{\left(n-1\right)!}
+\end{multline*}
 
 \end_inset
 
@@ -2729,18 +2675,13 @@ reference "eq:th6"
 \end_layout
 
 \begin_layout Proof
+Значит:
 \begin_inset Formula 
-\begin{equation}
-\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right|\mr2c\um k^{n-1}\um\df{\left|x-x_{0}\right|^{n-1}}{\left(n-1\right)!}\label{eq:th7}
-\end{equation}
+\begin{align}
+\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right| & \mr2c\um k^{n-1}\um\df{\left|x-x_{0}\right|^{n-1}}{\left(n-1\right)!}\label{eq:th7}\\
+\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right| & \mr2\um c\um k^{n-1}\um\df{\left|b-a\right|^{n-1}}{\left(n-1\right)!}\nonumber 
+\end{align}
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right|\mr2\um c\um k^{n-1}\um\df{\left|b-a\right|^{n-1}}{\left(n-1\right)!}$
 \end_inset
 
 
@@ -2756,10 +2697,7 @@ reference "eq:th6"
 \end_inset
 
  является сходящимся.
-\end_layout
-
-\begin_layout Proof
-А тогда функциональный ряд (
+ А тогда функциональный ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th6"
@@ -2792,28 +2730,31 @@ reference "eq:th6"
 \end_inset
 
  не покидает их).
- 
-\begin_inset Formula $\sl$
+ Следовательно имеет смысл интеграл 
+\begin_inset Formula 
+\[
+\oui{x_{0}}xf\left(\xi,\varphi\left(\xi\right)\right)d\xi
+\]
+
 \end_inset
 
- Имеет смысл интеграл 
-\begin_inset Formula $\oui{x_{0}}xf\left(\xi,\varphi\left(\xi\right)\right)d\xi$
+ Причем 
+\begin_inset Formula 
+\[
+\left|\oui{x_{0}}xf\left(\xi,\varphi\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{n}\left(\xi\right)\right)d\xi\right|\mr\left|\oui{x_{0}}xk\left|\varphi\left(\xi\right)-\varphi_{n}\left(\xi\right)\right|d\xi\right|<\left(\ref{eq:th4}\right)<\varepsilon
+\]
+
 \end_inset
 
- и разность 
-\begin_inset Formula $\left|\oui{x_{0}}xf\left(\xi,\varphi\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{n}\left(\xi\right)\right)d\xi\right|\mr\left|\oui{x_{0}}xk\left|\varphi\left(\xi\right)-\varphi_{n}\left(\xi\right)\right|d\xi\right|<\left(\ref{eq:th4}\right)<\varepsilon$
+Тогда получаем что 
+\begin_inset Formula 
+\[
+\varphi\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi\left(\xi\right)\right)d\xi
+\]
+
 \end_inset
 
-.
- 
-\end_layout
 
-\begin_layout Proof
-И тогда получаем что 
-\begin_inset Formula $\varphi\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi\left(\xi\right)\right)d\xi$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Proof
@@ -2825,16 +2766,19 @@ reference "eq:th3"
 \end_inset
 
 ).
- Предположим противное, что существую два решения - одно 
+ Предположим противное, что существую два решения: одно 
 \begin_inset Formula $\varphi\left(x\right)$
 \end_inset
 
 , а другое 
-\begin_inset Formula $\psi\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\psi\left(\xi\right)\right)d\xi$
+\begin_inset Formula 
+\[
+\psi\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\psi\left(\xi\right)\right)d\xi.
+\]
+
 \end_inset
 
-.
- Нетрудно показать что график 
+Нетрудно показать что график 
 \begin_inset Formula $\psi\left(x\right)$
 \end_inset
 
@@ -2846,7 +2790,7 @@ reference "eq:th3"
 \begin_inset Formula $\D ADE$
 \end_inset
 
- .
+.
  Тогда найдется 
 \begin_inset Formula $x_{1}\in\left[a,b\right]$
 \end_inset
@@ -2860,16 +2804,13 @@ reference "eq:th3"
 \begin_inset Formula $\left|\psi\left(x_{1}\right)-y_{0}\right|\mr M\left|x_{0}-x\right|$
 \end_inset
 
- - противоречие 
-\begin_inset Formula $\sl$
-\end_inset
-
- график находится в треугольниках 
-\begin_inset Formula $\sl$
-\end_inset
-
+ --- противоречие, следовательно график находится в треугольниках, а значит:
  
-\begin_inset Formula $\left|\psi\left(x\right)-\varphi\left(x\right)\right|\mr\left|\oui{x_{0}}xk\left|\psi\left(\xi\right)-\varphi\left(\xi\right)\right|d\xi\right|\mr\left\{ \text{по лемма Грануола-Белмона}\right\} \mr0$
+\begin_inset Formula 
+\[
+\left|\psi\left(x\right)-\varphi\left(x\right)\right|\mr\left|\oui{x_{0}}xk\left|\psi\left(\xi\right)-\varphi\left(\xi\right)\right|d\xi\right|\mr\left\{ \text{по лемма Грануола-Белмона}\right\} \mr0
+\]
+
 \end_inset
 
  для 
@@ -2904,11 +2845,16 @@ reference "eq:th4"
 \end_layout
 
 \begin_layout Theorem
-(Пеано)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Пеано
 \end_layout
 
-\begin_layout Theorem
-Если функция 
+\end_inset
+
+ Если функция 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -2990,11 +2936,16 @@ status open
 \end_layout
 
 \begin_layout Theorem
-(О гладкости решений дифференциального уравнения)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О гладкости решений дифференциального уравнения
 \end_layout
 
-\begin_layout Theorem
-Если 
+\end_inset
+
+ Если 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -3011,7 +2962,11 @@ status open
 \end_inset
 
 -того порядка, то решение уравнения 
-\begin_inset Formula $\df{dy}{dx}=f\left(x,y\right)$
+\begin_inset Formula 
+\[
+\df{dy}{dx}=f\left(x,y\right)
+\]
+
 \end_inset
 
  имеет непрерывные производные по 
@@ -3034,13 +2989,13 @@ status open
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- - некоторое решение уравнения 1.
+ --- некоторое решение уравнения 1.
  Тогда функция 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
  имеет производную, следовательно, она непрерывна.
- И справедливо тождество 
+ И справедливо тождество
 \begin_inset Formula 
 \begin{equation}
 \df{dy}{dx}=f\left(x,y\left(x\right)\right)\label{eq:qq1}
@@ -3055,7 +3010,7 @@ status open
 
  как суперпозиция непрерывных функций.
  Следовательно, и левая часть непрерывна.
- То-есть, решение непрерывно-дифференцируемо.
+ То есть, решение непрерывно-дифференцируемо.
 \end_layout
 
 \begin_layout Proof
@@ -3090,10 +3045,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Продифференцируем правую часть
-\end_layout
-
-\begin_layout Proof
+Продифференцируем правую часть:
 \begin_inset Formula 
 \begin{equation}
 \df{d^{2}y}{dx^{2}}=\df{\dd f}{\dd x}+\df{\dd f}{\dd y}\um\df{dy}{dx}\label{eq:qq2}
@@ -3101,20 +3053,13 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Применяя к этому тождеству те-же рассуждения, что и выше, докажем теорему,
  для 
 \begin_inset Formula $p=2$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-И так далее..
+ И так далее.
 \end_layout
 
 \begin_layout Subsection
@@ -3122,33 +3067,20 @@ status open
 \end_layout
 
 \begin_layout Standard
-Рассмотрим систему дифференциальных уравнений вида 
-\end_layout
-
-\begin_layout Standard
+Рассмотрим систему дифференциальных уравнений вида:
 \begin_inset Formula 
-\begin{equation}
-\begin{cases}
+\begin{flalign}
+\li & \begin{cases}
 \df{dy_{1}}{dx}=f_{1}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)\\
 \tr\\
 \df{dy_{n}}{dx}=f_{n}\left(x,y_{1}\left(x\right),\tr,y_{n}\left(x\right)\right)
-\end{cases}\label{eq:qq3}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
+\end{cases} & {}\label{eq:qq3}\\
+ & \begin{cases}
 y_{1}\left(x_{0}\right)=y_{1}^{(0}\\
 \tr\\
 y_{n}\left(x_{0}\right)=y_{n}^{\left(0\right)}
 \end{cases}\label{eq:qq4}
-\end{equation}
+\end{flalign}
 
 \end_inset
 
@@ -3204,11 +3136,10 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
-y_{1}\left(x\right)\\
+\begin_inset Formula $y\left(x\right)=\left(\begin{smallmatrix}y_{1}\left(x\right)\\
 \tr\\
 y_{n}\left(x\right)
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
@@ -3228,29 +3159,34 @@ y_{n}\left(x\right)
 \end_inset
 
 .
- И под производной функции будем понимать 
-\begin_inset Formula $y\pr\left(x_{0}\right)=\left(\begin{array}{c}
-y_{1}\pr\left(x_{0}\right)\\
+ И под производной функции будем понимать: 
+\begin_inset Formula 
+\[
+y'\left(x_{0}\right)=\left(\begin{array}{c}
+y_{1}'\left(x_{0}\right)\\
 \tr\\
-y_{n}\pr\left(x_{0}\right)
-\end{array}\right)$
+y_{n}'\left(x_{0}\right)
+\end{array}\right).
+\]
+
 \end_inset
 
-.
- Аналогично можно говорить об интеграле 
+Аналогично можно говорить об интеграле:
 \begin_inset Formula 
 \[
 \oui aby\left(x\right)dx=\left(\begin{array}{c}
 \oui aby_{1}\left(x\right)dx\\
 \tr\\
 \oui aby_{n}\left(x\right)dx
-\end{array}\right)
+\end{array}\right).
 \]
 
 \end_inset
 
 Обозначим через 
-\begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\left(\begin{array}{c}
 f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
 \tr\\
 f_{n}\left(x,y_{1},\tr my_{n}\right)
@@ -3258,11 +3194,12 @@ f_{n}\left(x,y_{1},\tr my_{n}\right)
 f_{1}\left(x,y\right)\\
 \tr\\
 f_{n}\left(x,y\right)
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
-.
- Это --- есть отображение некоторой области 
+Это --- отображение некоторой области 
 \begin_inset Formula $G\in R_{n+1}$
 \end_inset
 
@@ -3272,66 +3209,64 @@ f_{n}\left(x,y\right)
 
 .
  Обозначим через 
-\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
-y_{1}^{\left(0\right)}\\
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{smallmatrix}y_{1}^{\left(0\right)}\\
 \tr\\
 y_{n}^{\left(0\right)}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 .
- Тогда задачу (3,4) в векторной форме можем записать 
-\begin_inset Formula $\begin{cases}
+ Тогда задачу (3,4) в векторной форме можем записать так:
+\begin_inset Formula 
+\begin{flalign*}
+\li\begin{cases}
 \df{dy}{dx}=f\left(x,y\right)\\
 y\left(x_{0}\right)=y^{\left(0\right)}
-\end{cases}$
+\end{cases} &  & {}
+\end{flalign*}
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
 Рассмотрим 
 \begin_inset Formula $n$
 \end_inset
 
 -мерное пространство векторов 
-\begin_inset Formula $y=\left(\begin{array}{c}
-y_{1}\\
+\begin_inset Formula $y=\left(\begin{smallmatrix}y_{1}\\
 \vtr\\
 y_{n}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 .
- Норма --- неотрицательно определенная функция, и обладающее свойствами:
+ Норма --- неотрицательно определенная функция, и обладающая свойствами:
  
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\left|\left|y\br0\right|\right|,\ \left|\left|y\right|\right|=0\ \sl\ y=0$
+\begin_inset Formula $\left\Vert y\br0\right\Vert ,\quad\left\Vert y\right\Vert =0\ \sl\ y=0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\left|\left|c\um y\right|\right|=\left|c\right|\um\left|\left|y\right|\right|$
+\begin_inset Formula $\left\Vert c\um y\right\Vert =\left|c\right|\um\left\Vert y\right\Vert $
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\left|\left|y^{\left(1\right)}+y^{\left(2\right)}\right|\right|\mr\left|\left|y^{\left(1\right)}\right|\right|+\left|\left|y^{\left(2\right)}\right|\right|$
+\begin_inset Formula $\left\Vert y^{\left(1\right)}+y^{\left(2\right)}\right\Vert \mr\left\Vert y^{\left(1\right)}\right\Vert +\left\Vert y^{\left(2\right)}\right\Vert $
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-Мы возьмем за норму 
-\begin_inset Formula $\left|\left|y\right|\right|=\sqrt{\ous{i=1}ny^{\left(n\right)}}$
+Мы возьмем за норму: 
+\begin_inset Formula $\left\Vert y\right\Vert =\sqrt{\ous{i=1}ny^{\left(n\right)}}$
 \end_inset
 
 
@@ -3359,22 +3294,31 @@ y_{n}
 \end_inset
 
  если, 
-\begin_inset Formula $\forall\left(x,y_{1}\right),\left(x,y_{2}\right)\in G\vkl R_{n+1}$
+\begin_inset Formula $\forall\left(x,y_{1}\right),\ \left(x,y_{2}\right)\in G\vkl R_{n+1}$
 \end_inset
 
- справедлива норма 
-\begin_inset Formula $\left|\left|f\left(x,y^{\left(1\right)}\right)-f\left(x,y^{\left(2\right)}\right)\right|\right|\mr L\um\left|\left|y^{\left(1\right)}-y^{\left(2\right)}\right|\right|$
+ справедлива норма: 
+\begin_inset Formula 
+\[
+\left\Vert f\left(x,y^{\left(1\right)}\right)-f\left(x,y^{\left(2\right)}\right)\right\Vert \mr L\um\left\Vert y^{\left(1\right)}-y^{\left(2\right)}\right\Vert .
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
-(Существования и единственности Пикара для систем)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Существования и единственности Пикара для систем
 \end_layout
 
-\begin_layout Theorem
-Пусть область 
+\end_inset
+
+ Пусть область 
 \begin_inset Formula $G$
 \end_inset
 
@@ -3410,16 +3354,30 @@ y_{n}
 \begin_inset Formula $\left[a,b\right]$
 \end_inset
 
- , содержащий 
+, содержащий 
 \begin_inset Formula $x_{0}$
 \end_inset
 
- внутри, что на нем существуют единственные решения задачи (3,4).
+ внутри, что на нем существуют единственные решения задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qq3"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qq4"
+
+\end_inset
+
+).
  
 \end_layout
 
 \begin_layout Proof
-Самостоятельно..
+Самостоятельно.
  Подсказка: Он аналогичен для теоремы Пикара для обычных уравнений.
 \end_layout
 
@@ -3454,10 +3412,14 @@ y_{n}
 \end_inset
 
 Вводим область 
-\begin_inset Formula $\D=\left\{ \left(x,y_{1},\tr,y_{n}\right)\ |\ \left|\left|y-y^{\left(0\right)}\right|\right|\mr M\um\left|\left|x-x_{0}\right|\right|,\ x\in\left[a,b\right],\ x_{0}\in\left(a,b\right)\right\} \in\overline{G_{1}}$
+\begin_inset Formula 
+\[
+\D=\left\{ \left(x,y_{1},\tr,y_{n}\right)\ |\ \left|\left|y-y^{\left(0\right)}\right|\right|\mr M\um\left|\left|x-x_{0}\right|\right|,\ x\in\left[a,b\right],\ x_{0}\in\left(a,b\right)\right\} \in\overline{G_{1}}
+\]
+
 \end_inset
 
- - аналог тех равнобедренных треугольников.
+ Это аналог тех равнобедренных треугольников.
 \end_layout
 
 \end_deeper
@@ -3506,14 +3468,22 @@ y_{n}
 \end_deeper
 \begin_layout Enumerate
 После этого мы строим ряд 
-\begin_inset Formula $\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(n\right)}\left(x\right)-\varphi^{\left(n-1\right)}\left(x\right)\right)+\tr$
+\begin_inset Formula 
+\[
+\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(n\right)}\left(x\right)-\varphi^{\left(n-1\right)}\left(x\right)\right)+\tr
+\]
+
 \end_inset
 
- И для этого ряда докажем оценку
-\begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}K^{k-1}\um2\um c$
+И для этого ряда докажем оценку
+\begin_inset Formula 
+\[
+\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}K^{k-1}\um2\um c
+\]
+
 \end_inset
 
-, и докажем, что она сходится у некоторой непрерывной функции 
+и докажем, что она сходится у некоторой непрерывной функции 
 \begin_inset Formula $\varphi\left(x\right)$
 \end_inset
 
@@ -3526,26 +3496,23 @@ y_{n}
 \end_layout
 
 \begin_layout Standard
-Будем рассматривать линейные системы, разрешенные относительно производных
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+Будем рассматривать линейные системы, разрешенные относительно производных:
+\begin_inset Formula 
+\begin{flalign*}
+\li\begin{cases}
 \df{dy_{1}}{dx}=a_{1,1}\left(x\right)\um y_{1}+\tr+a_{1,n}\left(x\right)\um y_{n}+f_{1}\left(x\right)\\
 \tr\\
 \df{dy_{n}}{dx}=a_{n,1}\left(x\right)\um y_{1}+\tr+a_{n,n}\left(x\right)\um y_{n}+f_{n}\left(x\right)
-\end{cases}$
+\end{cases} &  & {}
+\end{flalign*}
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{i,j}\left(x\right),f_{i}\left(x\right),\ i,j=\overline{1,n}$
+\begin_inset Formula $a_{i,j}\left(x\right),f_{i}\left(x\right),\quad i,j=\overline{1,n}$
 \end_inset
 
- - заданные непрерывные функции.
+ --- заданные непрерывные функции.
  В дальнейшем будем предполагать, что они замкнуты на интервале 
 \begin_inset Formula $x\in\left(\alpha,\beta\right)$
 \end_inset
@@ -3555,85 +3522,86 @@ y_{n}
 \begin_inset Formula $x$
 \end_inset
 
- - независимая переменная, 
+ --- независимая переменная, 
 \begin_inset Formula $y_{1}\left(x\right)\tr y_{n}\left(x\right)$
 \end_inset
 
- - неизвестные функции.
+ --- неизвестные функции.
  
 \end_layout
 
 \begin_layout Standard
-Задача Коши 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+А так-же рассмотрим задачу Коши:
+\begin_inset Formula 
+\begin{flalign*}
+\li\begin{cases}
 y_{1}\left(x_{0}\right)=y_{1}^{\left(0\right)}\\
 \tr\\
 y_{n}\left(x_{0}\right)=y_{n}^{\left(0\right)}
-\end{cases}$
+\end{cases} &  & {}
+\end{flalign*}
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f\left(x\right)=\left(\begin{array}{c}
+Введем обозначения:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\left(\begin{array}{c}
 f_{1}\left(x\right)\\
 \tr\\
 f_{n}\left(x\right)
-\end{array}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $A\left(x\right)=\left(\begin{array}{c}
-a_{1,1}\left(x\right)\tr a_{1,n}\left(x\right)\\
-\tr\\
-a_{n,1}\tr a_{n,n}
-\end{array}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+\end{array}\right)\\
+A\left(x\right) & =\left(\begin{array}{ccc}
+a_{1,1}\left(x\right) & \tr & a_{1,n}\left(x\right)\\
+\vtr & \ddots & \vtr\\
+a_{n,1}\left(x\right) & \tr & a_{n,n}\left(x\right)
+\end{array}\right)\\
+y^{\left(0\right)} & =\left(\begin{array}{c}
 y_{1}^{\left(0\right)}\\
 \tr\\
 y_{n}^{\left(0\right)}
-\end{array}\right)$
+\end{array}\right)
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Тогда векторная запись задачи Коши принимает вид 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+Тогда векторная запись задачи Коши принимает вид:
+\begin_inset Formula 
+\begin{flalign*}
+\li\begin{cases}
 \df{dy}{dx}=A\left(x\right)\um y+f\left(x\right)\\
 y\left(x_{0}\right)=y^{\left(0\right)}
-\end{cases}$
+\end{cases} &  & {}
+\end{flalign*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-..
- тогда правая часть удовлетворяет условию Липшица по переменной 
+......
+\end_layout
+
+\begin_layout Standard
+Правая часть удовлетворяет условию Липшица по переменной 
 \begin_inset Formula $y$
 \end_inset
 
 .
  А тогда теорема Пикара для (1,2) справедлива, но из теоремы Пикара будет
- вытекать что найдется такой отрезок 
+ вытекать, что найдется такой отрезок 
 \begin_inset Formula $\left[a,b\right]\vkl\left(\alpha,\beta\right),\ x_{0}\in\left(a,b\right)$
 \end_inset
 
@@ -3641,15 +3609,20 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 \end_layout
 
 \begin_layout Theorem
-(Теорема о существовании и единственности для линейных систем)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Теорема о существовании и единственности для линейных систем
 \end_layout
 
-\begin_layout Theorem
-Пусть 
+\end_inset
+
+ Пусть 
 \begin_inset Formula $a_{i,j}\left(x\right),\ f_{i}\left(x\right),\ i,j=\overline{1,n}$
 \end_inset
 
- - определены и непрерывны на 
+ --- определены и непрерывны на 
 \begin_inset Formula $x\in\left(\alpha,\beta\right)$
 \end_inset
 
@@ -3707,7 +3680,11 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 
 \begin_layout Enumerate
 И строем последовательность 
-\begin_inset Formula $\varphi^{\left(k+1\right)}\left(x\right)=y^{\left(0\right)}+\oui{x_{0}}xA\left(\xi\right)\varphi^{\left(k\right)}\left(\xi\right)d\xi+\oui{x_{0}}xf\left(\xi\right)f\xi$
+\begin_inset Formula 
+\[
+\varphi^{\left(k+1\right)}\left(x\right)=y^{\left(0\right)}+\oui{x_{0}}xA\left(\xi\right)\varphi^{\left(k\right)}\left(\xi\right)d\xi+\oui{x_{0}}xf\left(\xi\right)f\xi
+\]
+
 \end_inset
 
  и 
@@ -3719,14 +3696,22 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 
 \begin_layout Enumerate
 Снова строем ряд 
-\begin_inset Formula $\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right)+\tr$
+\begin_inset Formula 
+\[
+\varphi^{\left(1\right)}\left(x\right)+\left(\varphi^{\left(2\right)}\left(x\right)-\varphi^{\left(1\right)}\left(x\right)\right)+\tr+\left(\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right)+\tr
+\]
+
 \end_inset
 
  И решаем его сходимость.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|=\left|\left|\oui{x_{0}}xA\left(\xi\right)\left(\varphi^{\left(k\right)}\left(\xi\right)-\varphi^{\left(k+1\right)}\left(\xi\right)\right)d\xi\right|\right|$
+\begin_inset Formula 
+\[
+\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|=\left|\left|\oui{x_{0}}xA\left(\xi\right)\left(\varphi^{\left(k\right)}\left(\xi\right)-\varphi^{\left(k+1\right)}\left(\xi\right)\right)d\xi\right|\right|
+\]
+
 \end_inset
 
 
@@ -3745,10 +3730,14 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}M^{k-1}\um2\um c,\ \forall x\in\left[a_{1},b_{1}\right]$
+\begin_inset Formula 
+\[
+\left|\left|\varphi^{\left(k+1\right)}\left(x\right)-\varphi^{\left(k\right)}\left(x\right)\right|\right|\mr\df{\left|x-x_{0}\right|^{k-1}}{\left(k-1\right)!}M^{k-1}\um2\um c,\ \forall x\in\left[a_{1},b_{1}\right]
+\]
+
 \end_inset
 
-, но ряд вод с таким членом сходится при любых 
+но ряд вод с таким членом сходится при любых 
 \begin_inset Formula $x$
 \end_inset
 
@@ -3786,29 +3775,35 @@ y\left(x_{0}\right)=y^{\left(0\right)}
 
  решений системы (3).
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y^{\left(1\right)}\left(x\right)=\left(\begin{array}{c}
+\begin_inset Formula 
+\[
+y^{\left(1\right)}\left(x\right)=\left(\begin{array}{c}
 y_{1}^{\left(1\right)}\left(x\right)\\
 \vtr\\
 y_{n}^{\left(1\right)}\left(x\right)
-\end{array}\right),\tr,y^{\left(m\right)}\left(x\right)=\left(\begin{array}{c}
+\end{array}\right),\quad\tr,\quad y^{\left(m\right)}\left(x\right)=\left(\begin{array}{c}
 y_{1}^{\left(n\right)}\left(x\right)\\
 \vtr\\
 y_{n}^{\left(n\right)}\left(x\right)
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Theorem
-(1,О свойствах решений линейных однородных системы)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1, О свойствах решений линейных однородных систем
 \end_layout
 
-\begin_layout Theorem
-Линейная комбинация решений линейной однородной системы 
+\end_inset
+
+ Линейная комбинация решений линейной однородной системы 
 \begin_inset Formula $\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)$
 \end_inset
 
@@ -3826,16 +3821,19 @@ y_{n}^{\left(n\right)}\left(x\right)
 \end_inset
 
  Подставим в нее вектор функцию 
-\begin_inset Formula $y\left(x\right)=\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)$
+\begin_inset Formula 
+\[
+y\left(x\right)=\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right),
+\]
+
 \end_inset
 
-, тогда в левой части получим 
+тогда в левой части получим:
 \begin_inset Formula 
-\begin{align*}
-\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right) & =\\
- & =\ous{k=1}mc_{k}\df{dy^{\left(k\right)}}{dx}-\ous{k=1}mc_{k}A\left(x\right)y^{\left(k\right)}\left(x\right)=\\
- & =\ous{k=1}mc_{k}\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)
-\end{align*}
+\begin{multline*}
+\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)=\ous{k=1}mc_{k}\df{dy^{\left(k\right)}}{dx}-\ous{k=1}mc_{k}A\left(x\right)y^{\left(k\right)}\left(x\right)=\\
+=\ous{k=1}mc_{k}\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)
+\end{multline*}
 
 \end_inset
 
@@ -3843,22 +3841,23 @@ y_{n}^{\left(n\right)}\left(x\right)
 \begin_inset Formula $y^{\left(k\right)}$
 \end_inset
 
- - решение , то 
+ --- решение , то 
 \begin_inset Formula $\left(\df{dy^{\left(k\right)}}{dx}-A\left(x\right)y^{\left(k\right)}\right)=0$
 \end_inset
 
 , тогда и 
-\begin_inset Formula $\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)=0$
+\begin_inset Formula 
+\[
+\df d{dx}\left(\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)\right)-A\left(x\right)\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right)=0.
+\]
+
 \end_inset
 
- .
-\end_layout
 
-\begin_layout Standard
-Рассмотрим некоторые вектор функции .
 \end_layout
 
 \begin_layout Definition
+Функции 
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
@@ -3870,16 +3869,19 @@ y_{n}^{\left(n\right)}\left(x\right)
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
- не все равные нулю, что 
-\begin_inset Formula $c_{1}y^{\left(1\right)}\left(x\right)+\tr+c_{m}y^{\left(m\right)}\left(x\right)=0,\ \forall x\in\left(\alpha,\beta\right)$
+, не все равные нулю, такие что: 
+\begin_inset Formula 
+\[
+c_{1}y^{\left(1\right)}\left(x\right)+\tr+c_{m}y^{\left(m\right)}\left(x\right)=0,\quad\forall x\in\left(\alpha,\beta\right).
+\]
+
 \end_inset
 
-.
- Если не удается найти такие 
+Если не удается найти такие 
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
- , то систему функций называют линейно независимой.
+, то систему функций называют линейно независимой.
 \end_layout
 
 \begin_layout --Separator--
@@ -3888,11 +3890,15 @@ y_{n}^{\left(n\right)}\left(x\right)
 
 \begin_layout Definition
 Определитель 
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+\begin_inset Formula 
+\[
+W\left(x\right)=\left|\begin{array}{ccc}
 y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
 \vdots & \ddots & \vdots\\
 y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\right)
-\end{array}\right|$
+\end{array}\right|
+\]
+
 \end_inset
 
  называют определителем Вронского, построенным по функциям 
@@ -3903,12 +3909,17 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 \end_layout
 
 \begin_layout Theorem
-(2)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
 \end_layout
 
-\begin_layout Theorem
-Если вектор функции 
-\begin_inset Formula $y^{\left(1\right)}\left(x\right)\tr y^{\left(n\right)}\left(x\right)$
+\end_inset
+
+ Если вектор функции 
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
  линейно зависимы, то определитель Вронского, построенный по этим функциям
@@ -3916,8 +3927,8 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 \end_layout
 
 \begin_layout Proof
-Вытекает из известной теоремы линейной алгебры..
- Если столбцы определителя линейно зависимы, то определитель равен нулю.
+Вытекает из известной теоремы линейной алгебры: если столбцы определителя
+ линейно зависимы, то определитель равен нулю.
 \end_layout
 
 \begin_layout Standard
@@ -3933,23 +3944,21 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\df{dy}{dx}=\vec A\left(x\right)\um\vec y$
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Theorem
-(3)
-\end_layout
-
-\begin_layout Theorem
-Пусть вектор функции 
+ Пусть вектор функции 
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- - решения линейной однородной диференциальной системы (1).
+ --- решения линейной однородной дифференциальной системы (1).
  тогда если определеитель Вронского, составленный по этим вектор-функциям,
  равен нулю в некоторой точке 
 \begin_inset Formula $x_{0}$
@@ -3965,43 +3974,57 @@ status open
 
  равен нулю.
  Тогда столбцы определителя 
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+\begin_inset Formula 
+\[
+W\left(x\right)=\left|\begin{array}{ccc}
 y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
 \vdots & \ddots & \vdots\\
 y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\right)
-\end{array}\right|$
+\end{array}\right|
+\]
+
 \end_inset
 
- линейно зависимы, это значит найдутся постоянные 
+линейно зависимы, это значит найдутся постоянные 
 \begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
 \end_inset
 
 , не все равные нулю, что линейная комбинация столбцов определителя равна
  нулю.
  
-\begin_inset Formula $\alpha_{1}\um y^{\left(1\right)}\left(x_{0}\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x_{0}\right)=0$
+\begin_inset Formula 
+\[
+\alpha_{1}\um y^{\left(1\right)}\left(x_{0}\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x_{0}\right)=0
+\]
+
 \end_inset
 
- С помошью этих постоянных 
+С помошью этих постоянных 
 \begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
 \end_inset
 
- построим вектор функцию.
- 
-\begin_inset Formula $u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x\right)$
+ построим вектор функцию: 
+\begin_inset Formula 
+\[
+u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x\right)
+\]
+
 \end_inset
 
- ПО теореме (1) она будет решением системы (1).
- При этом в силу 
-\begin_inset Formula $\alpha_{1}\um y^{\left(1\right)}\left(x_{0}\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x_{0}\right)=0$
-\end_inset
-
-, то 
+По теореме (1) она будет решением системы (1).
+ При этом 
 \begin_inset Formula $u\left(x_{0}\right)=0$
 \end_inset
 
-.
- Вектор функция тождественный ноль 
+ в силу: 
+\begin_inset Formula 
+\[
+\alpha_{1}\um y^{\left(1\right)}\left(x_{0}\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x_{0}\right)=0
+\]
+
+\end_inset
+
+Вектор функция тождественный ноль 
 \begin_inset Formula $y\left(x\right)\equiv0$
 \end_inset
 
@@ -4025,11 +4048,14 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 .
  Ну а тогда в силу теоремы единственности они совподают.
  
-\begin_inset Formula $u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x\right)\equiv0$
+\begin_inset Formula 
+\[
+u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um y^{\left(n\right)}\left(x\right)\equiv0
+\]
+
 \end_inset
 
-.
- Это означает что решения 
+Это означает что решения 
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
@@ -4071,15 +4097,16 @@ x^{2}\\
 \end{array}\right)$
 \end_inset
 
- - Две вектор функции.
- Они линейно не зависимы.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{cc}
+ --- Две вектор функции.
+ Они линейно независимы:
+\begin_inset Formula 
+\[
+W\left(x\right)=\left|\begin{array}{cc}
 x & x^{2}\\
 0 & 0
-\end{array}\right|=0$
+\end{array}\right|=0
+\]
+
 \end_inset
 
  
