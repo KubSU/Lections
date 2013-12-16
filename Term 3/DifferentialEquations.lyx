@@ -6,9 +6,7 @@
 \begin_preamble
 \usepackage{indentfirst}
 \numberwithin{equation}{section}
-\setlength{\mathindent}{15mm}
 \end_preamble
-\options fleqn
 \use_default_options true
 \begin_modules
 theorems-starred
@@ -1885,15 +1883,23 @@ reference "eq:t4"
 \begin_inset Formula $u\left(t\right)$
 \end_inset
 
- удовлетворяет неравенству 
-\begin_inset Formula $u\left(t\right)\mr c+\left|\oui{t_{0}}t\alpha\left(\zeta\right)u\left(\zeta\right)d\zeta\right|$
+ удовлетворяет неравенству: 
+\begin_inset Formula 
+\[
+u\left(t\right)\mr c+\left|\oui{t_{0}}t\alpha\left(\zeta\right)u\left(\zeta\right)d\zeta\right|,
+\]
+
 \end_inset
 
-, тогда 
-\begin_inset Formula $u\left(t\right)\mr c\um\exp\left(\left|\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right|\right)$
+тогда 
+\begin_inset Formula 
+\[
+u\left(t\right)\mr c\um\exp\left(\left|\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right|\right).
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -1903,69 +1909,52 @@ reference "eq:t4"
 
 , тогда можно снять модули.
  Введем функцию 
-\begin_inset Formula $v\left(t\right)=\varepsilon+c+\oui{t_{0}}t\alpha\left(\zeta\right)u\left(\zeta\right)d\zeta,\ \varepsilon>0$
+\begin_inset Formula 
+\[
+v\left(t\right)=\varepsilon+c+\oui{t_{0}}t\alpha\left(\zeta\right)u\left(\zeta\right)d\zeta,\quad\varepsilon>0.
+\]
+
 \end_inset
 
-.
- Очевидно что 
+Очевидно что 
 \begin_inset Formula $v>0,\ v\left(t\right)>u\left(t\right)$
 \end_inset
 
 .
  Продифференцируем равенство, получим:
-\end_layout
+\begin_inset Formula 
+\[
+v'\left(t\right)=\alpha\left(t\right)u\left(t\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $v\pr\left(t\right)=\alpha\left(t\right)u\left(t\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Так как 
 \begin_inset Formula $v\left(t\right)>u\left(t\right)$
 \end_inset
 
-, ото можем написать..
-\end_layout
+, то верно:
+\begin_inset Formula 
+\[
+v'\left(t\right)\mr\alpha\left(t\right)v\left(t\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $v\pr\left(t\right)\mr\alpha\left(t\right)v\left(t\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\df{v\pr}v\mr\alpha\left(t\right)$
+Отсюда: 
+\begin_inset Formula $\df{v\pr}v\mr\alpha\left(t\right).$
 \end_inset
 
+ Проинтегрируем:
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui{t_{0}}t\df{v\pr}vd\zeta & \mr & \oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\\
+\ln v|_{t_{0}}^{t} & \mr & \oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\\
+v\left(t\right) & \mr & v\left(t_{0}\right)\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)
+\end{eqnarray*}
 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\oui{t_{0}}t\df{v\pr}vd\zeta\mr\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ln v|_{t_{0}}^{t}\mr\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $v\left(t\right)\mr v\left(t_{0}\right)\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
 Так как 
 \begin_inset Formula $u\left(t\right)<v\left(t\right)$
 \end_inset
@@ -1974,14 +1963,14 @@ reference "eq:t4"
 \begin_inset Formula $v\left(t_{0}\right)=\varepsilon+c$
 \end_inset
 
-, то получаем 
-\begin_inset Formula $u\left(t\right)<\left(c+\varepsilon\right)\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)$
+, то получаем: 
+\begin_inset Formula 
+\[
+u\left(t\right)<\left(c+\varepsilon\right)\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Это неравенство справедливо для любого 
 \begin_inset Formula $\varepsilon>0$
 \end_inset
@@ -1994,14 +1983,15 @@ reference "eq:t4"
 \begin_inset Formula $\varepsilon\st0$
 \end_inset
 
-, получим..
-\end_layout
+, получим:
+\begin_inset Formula 
+\[
+u\left(t\right)\mr c\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right).
+\]
 
-\begin_layout Proof
-\begin_inset Formula $u\left(t\right)\mr c\um\exp\left(\oui{t_{0}}t\alpha\left(\zeta\right)d\zeta\right)$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -2017,38 +2007,28 @@ reference "eq:t4"
 \end_layout
 
 \begin_layout Standard
-Рассмотрим вод такую задачу Коши: 
+Рассмотрим задачу Коши:
 \begin_inset Formula 
-\begin{equation}
-\df{dy}{dx}=f\left(x,y\right)\label{eq:th1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
+\begin{gather}
+\df{dy}{dx}=f\left(x,y\right)\label{eq:th1}\\
 y\left(x_{0}\right)=y_{0}\label{eq:th2}
-\end{equation}
+\end{gather}
 
 \end_inset
 
- 
+Где 
 \begin_inset Formula $f$
 \end_inset
 
- - известная функция своих аргументов, 
+ --- известная функция своих аргументов, 
 \begin_inset Formula $x$
 \end_inset
 
- - независимая переменная, 
+ --- независимая переменная, 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
-- искомая функция.
+--- искомая функция.
 \end_layout
 
 \begin_layout Standard
@@ -2084,18 +2064,18 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \begin_inset Formula $L$
 \end_inset
 
- если для любых 
+, если для любых 
 \begin_inset Formula $\left(x,y_{1}\right),\left(x,y_{2}\right)\in G$
 \end_inset
 
- справедлива оценка 
-\begin_inset Formula $\left|f\left(x,y_{1}\right)-f\left(x,y_{2}\right)\right|\mr L\left|y_{1}-y_{2}\right|$
+ справедлива оценка: 
+\begin_inset Formula 
+\[
+\left|f\left(x,y_{1}\right)-f\left(x,y_{2}\right)\right|\mr L\left|y_{1}-y_{2}\right|.
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
 Если функция 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
@@ -2120,11 +2100,15 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \end_layout
 
 \begin_layout Standard
-Рассмотрим: 
-\begin_inset Formula $\left|f\left(x,y_{1}\right)-f\left(x,y_{2}\right)\right|=\left|\df{\delta f\left(x,\xi\right)}{\delta y}\right|\um\left|y_{1}-y_{2}\right|\mr L\left|y_{1}-y_{2}\right|$
+Рассмотрим:
+\begin_inset Formula 
+\[
+\left|f\left(x,y_{1}\right)-f\left(x,y_{2}\right)\right|=\left|\df{\delta f\left(x,\xi\right)}{\delta y}\right|\um\left|y_{1}-y_{2}\right|\mr L\left|y_{1}-y_{2}\right|
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -2136,7 +2120,7 @@ y\left(x_{0}\right)=y_{0}\label{eq:th2}
 \begin_inset Formula $f\left(x,y\right)=\left|y\right|$
 \end_inset
 
- - удовлетворяет условию Липшица, но не является дифференцируемой в области,
+ --- удовлетворяет условию Липшица, но не является дифференцируемой в области,
  содержащей точки оси абсцисс.
 \end_layout
 
@@ -2172,14 +2156,15 @@ reference "eq:th2"
 \end_inset
 
 .
- И тогда подставив, мы получим..
-\end_layout
+ Тогда подставив, получим:
+\begin_inset Formula 
+\[
+y\pr\left(\xi\right)=f\left(\xi,y\left(\xi\right)\right),
+\]
 
-\begin_layout Standard
-\begin_inset Formula $y\pr\left(\xi\right)=f\left(\xi,y\left(\xi\right)\right)$
 \end_inset
 
-, где 
+где 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -2195,42 +2180,17 @@ reference "eq:th2"
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
- - непрерывная функция.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Правая часть 
+ --- непрерывная функция, следовательно правая часть 
 \begin_inset Formula $y\pr\left(\xi\right)=f\left(\xi,y\left(\xi\right)\right)$
 \end_inset
 
- - непрерывная функция по 
+ --- непрерывная функция по 
 \begin_inset Formula $\xi$
 \end_inset
 
 .
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Тогда и левая часть - непрерывная функция.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Можем проинтегрировать левую и правую часть в пределах от 
+ Тогда и левая часть --- непрерывная функция.
+ А значит можем проинтегрировать левую и правую часть в пределах от 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -2238,18 +2198,15 @@ reference "eq:th2"
 \begin_inset Formula $x$
 \end_inset
 
-..
-\end_layout
-
-\begin_layout Standard
-Воспользовавшись условием (
+.
+ Воспользовавшись условием (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th2"
 
 \end_inset
 
-) получим: 
+) получим:
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,y\left(\xi\right)\right)d\xi\label{eq:th3}
@@ -2260,7 +2217,7 @@ y\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,y\left(\xi\right)\right)d\xi\label{
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Уравнения, в которых неизвестная функция входит под знак интеграла называют
  интегральными уравнениями.
 \end_layout
@@ -2288,7 +2245,7 @@ reference "eq:th2"
 \end_inset
 
 ) эквивалентны.
- Если функция - решение задачи (
+ Если функция --- решение задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th1"
@@ -2358,11 +2315,16 @@ reference "eq:th3"
 \end_layout
 
 \begin_layout Theorem
-(О существовании и единственности Пикара)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Пикара, о существовании и единственности
 \end_layout
 
-\begin_layout Theorem
-Пусть в области 
+\end_inset
+
+ Пусть в области 
 \begin_inset Formula $G$
 \end_inset
 
@@ -2403,7 +2365,7 @@ reference "eq:th3"
 \begin_inset Formula $x_{0}$
 \end_inset
 
- внутри, что на нем существует единственное решение задачи (
+ внутри, такой что на нем существует единственное решение задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th1"
@@ -2429,21 +2391,17 @@ reference "eq:th2"
 \begin_inset Formula $x,\ y$
 \end_inset
 
-.
- 
-\end_layout
-
-\begin_layout Proof
+:
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|f\left(x_{1},y_{1}\right)-f\left(x_{2},y_{2}\right)\right| & = & \left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)+f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr\\
- & \mr & \left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)\right|+\left|f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr\\
- & \mr & K\left|y_{1}-y_{2}\right|+\df{\varepsilon}2\mr\varepsilon
-\end{eqnarray*}
+\begin{multline*}
+\left|f\left(x_{1},y_{1}\right)-f\left(x_{2},y_{2}\right)\right|=\left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)+f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr\\
+\mr\left|f\left(x_{1},y_{1}\right)-f\left(x_{1},y_{2}\right)\right|+\left|f\left(x_{1},y_{2}\right)-f\left(x_{2},y_{2}\right)\right|\mr\\
+\mr K\left|y_{1}-y_{2}\right|+\df{\varepsilon}2\mr\varepsilon
+\end{multline*}
 
 \end_inset
 
- Теорему будем доказывать для интегрального уравнения (
+Теорему будем доказывать для интегрального уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:th3"
@@ -2565,11 +2523,14 @@ status open
 
 .
  И простроим функцию 
-\begin_inset Formula $\varphi_{1}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{0}\left(\xi\right)\right)d\xi$
+\begin_inset Formula 
+\[
+\varphi_{1}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{0}\left(\xi\right)\right)d\xi
+\]
+
 \end_inset
 
-.
- 
+
 \begin_inset Formula $\varphi_{1}\left(x\right)$
 \end_inset
 
@@ -2598,7 +2559,7 @@ status open
 \end_inset
 
 .
- (Тогда ь
+ (Тогда 
 \begin_inset Formula $\left|f\right|\mr M$
 \end_inset
 
@@ -2606,16 +2567,23 @@ status open
 \begin_inset Formula $y_{0}$
 \end_inset
 
- в левую часть 
-\begin_inset Formula $\left|\varphi_{1}\left(x\right)-y_{0}\right|\mr M\left|x-x_{0}\right|$
+ в левую часть: 
+\begin_inset Formula 
+\[
+\left|\varphi_{1}\left(x\right)-y_{0}\right|\mr M\left|x-x_{0}\right|,
+\]
+
 \end_inset
 
-, ну а тогда график не покидает этих треугольников) Построим функцию 
-\begin_inset Formula $\varphi_{2}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{1}\left(\xi\right)\right)d\xi$
+ну а тогда график не покидает этих треугольников) Построим функцию 
+\begin_inset Formula 
+\[
+\varphi_{2}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{1}\left(\xi\right)\right)d\xi.
+\]
+
 \end_inset
 
-.
- Заметим, что функция 
+Заметим, что функция 
 \begin_inset Formula $\varphi_{2}$
 \end_inset
 
@@ -2624,8 +2592,7 @@ status open
 \end_inset
 
 .
- Продолжим этот процесс...
- 
+ Продолжим этот процесс:
 \begin_inset Formula 
 \begin{equation}
 \varphi_{n}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{n-1}\left(\xi\right)\right)d\xi\label{eq:th4}
@@ -2633,8 +2600,7 @@ status open
 
 \end_inset
 
-.
- Процесс построения функций 
+Процесс построения функций 
 \begin_inset Formula $\varphi_{1}.\varphi_{2}\tr\varphi_{n}\tr$
 \end_inset
 
@@ -2652,7 +2618,7 @@ reference "eq:th3"
 \end_inset
 
 ).
- Заметим, что 
+ Заметим, что:
 \begin_inset Formula 
 \begin{equation}
 \varphi_{n}\left(x\right)=\varphi_{1}\left(x\right)+\left(\varphi_{2}\left(x\right)-\varphi_{1}\left(x\right)\right)+\tr+\left(\varphi_{n}\left(x\right)-\varphi_{n-1}\left(x\right)\right)\label{eq:th5}
@@ -2664,7 +2630,7 @@ reference "eq:th3"
 \begin_inset Formula $\left\{ \varphi_{n}\right\} $
 \end_inset
 
- будем доказывать сходимость функционального ряда 
+ будем доказывать сходимость функционального ряда:
 \begin_inset Formula 
 \begin{equation}
 \varphi_{n}\left(x\right)=\varphi_{1}\left(x\right)+\left(\varphi_{2}\left(x\right)-\varphi_{1}\left(x\right)\right)+\tr+\left(\varphi_{n}\left(x\right)-\varphi_{n-1}\left(x\right)\right)+\tr\label{eq:th6}
@@ -2697,19 +2663,23 @@ reference "eq:th6"
 \begin_inset Formula $c$
 \end_inset
 
- такую постоянную, чтобы 
-\begin_inset Formula $\left|\varphi_{1}\left(x\right)\right|<c,\ \left|\varphi_{2}\left(x\right)\right|<c,\ \forall x\in\left[a,b\right]$
+ такую постоянную, чтобы:
+\begin_inset Formula 
+\[
+\left|\varphi_{1}\left(x\right)\right|<c,\quad\left|\varphi_{2}\left(x\right)\right|<c,\quad\forall x\in\left[a,b\right]
+\]
+
 \end_inset
 
-.
- 
-\begin_inset Formula $\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right|\mr2c$
+
+\begin_inset Formula 
+\[
+\left|\varphi_{n+1}\left(x\right)-\varphi_{n}\left(x\right)\right|\mr2c
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
 \left|\varphi_{3}\left(x\right)-\varphi_{2}\left(x\right)\right| & = & \oui{x_{0}}xf\left(\xi,\varphi_{2}\left(\xi\right)\right)d\xi-\oui{x_{0}}xf\left(\xi,\varphi_{1}\left(\xi\right)\right)d\xi\mr\\
