@@ -26650,6 +26650,621 @@ z=x^{2}+y^{2}, & z=0
 ...
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+9(28)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+10(28)
+\end_layout
+
+\end_inset
+
+Найти работу силы 
+\begin_inset Formula $\v F=-x\v i+y\v j$
+\end_inset
+
+ при перемещении вдоль линии 
+\begin_inset Formula $L\,:\, x^{2}+\df{y^{2}}9=1\ \left(x\br0,\ y\br0\right)$
+\end_inset
+
+ от точки 
+\begin_inset Formula $M\left(1,0\right)$
+\end_inset
+
+ до точки 
+\begin_inset Formula $N\left(0;3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+A=\ui LPdx+Qdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=r\cos\varphi\\
+y=3r\sin\varphi
+\end{cases}$
+\end_inset
+
+ При 
+\begin_inset Formula $r=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+A & = & \ui LP\um\un{\underbrace{dx}}{\begin{array}{c}
+\Vert\\
+-r\sin\varphi d\varphi
+\end{array}}+Q\um\un{\underbrace{dy}}{3r\cos\varphi d\varphi}=\oui 0{\df{\pi}2}\left(-r\cos\varphi\right)\um\left(-r\sin\varphi+3r\sin\varphi3r\cos\varphi\right)d\varphi=\\
+ & = & 5\oui 0{\df{\pi}2}\sin2\varphi d\varphi=-\df 52\cos2\varphi|_{0}^{\df{\pi}2}=-\df 52\left(\ov{\overbrace{\cos\pi}}{-1}-\ov{\overbrace{\cos0}}1\right)=5
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+11(28)
+\end_layout
+
+\end_inset
+
+Найти циркуляцию векторного поля 
+\begin_inset Formula $\v a=x\v i-3z^{2}\v j+y\v k$
+\end_inset
+
+ вдоль контура 
+\begin_inset Formula $\Gamma\,:\,\begin{cases}
+x=\cos t\\
+y=4\sin t\\
+z=2\cos t-4\sin t+3
+\end{cases}\ \dsl\ \begin{cases}
+z=2x-y+3\\
+x^{2}+\df{y^{2}}4=1
+\end{cases}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+ЦИркуляция векторного поля: 
+\begin_inset Formula 
+\begin{eqnarray*}
+c & = & \un{\oint}{\Gamma}Pdx+Qdy+Rdz=\\
+ & = & \left\{ \begin{array}{c}
+P=x=\cos t\\
+Q=-3z^{2}=-3\left(2\cos t-4\sin t+3\right)^{2}\\
+R=y=4\sin t\\
+dx=-\sin tdt\\
+dy=4\cos tdt\\
+dz=\left(-2\sin t-4\cos t\right)dt
+\end{array}\right\} =\\
+ & = & \oui 0{2\pi}\left(\cos t\left(-\sin t\right)-3\left(2\cos t-4\sin t+3\right)^{2}4\cos t+4\sin t\left(-2\sin t-4\cos t\right)\right)dt=\\
+ & = & \tr
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+12(28)
+\end_layout
+
+\end_inset
+
+Найти модуль циркуляции векторного поля 
+\begin_inset Formula $\v a=3z\v i-2y\v j+2y\v k$
+\end_inset
+
+ вдоль контура 
+\begin_inset Formula $\Gamma\,:\,\begin{cases}
+x^{2}+y^{2}=4\\
+2x-3y-2z=1
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x=2\cos t\\
+y=2\sin t\\
+z=2\cos t-3\sin t-\df 12
+\end{cases},\ t\in\left[0;\,2\pi\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|c\right|=\left|\oui 0{2\pi}Pdx+Qdy+Rdz\right|=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1.16
+\end_layout
+
+\end_inset
+
+Есть функция 
+\begin_inset Formula $u=x+\ln\left(z^{2}+y^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Есть направление вектора 
+\begin_inset Formula $\v I=-2\v i+\v j-\v k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $M\left(2;1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Найти 
+\begin_inset Formula $\df{\dd u\left(M\right)}{\dd I}=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $l=\df I{\left|I\right|}=\df{-2\v i+\v j-\v k}{\sqrt{4+1+1}}=\df{-2}{\sqrt{6}}\v i+\df 1{\sqrt{6}}\v j-\df 1{\sqrt{6}}\v k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{\dd u\left(x,y,z\right)}{\dd l} & = & u_{x}\pr\left(M\right)\cos\alpha+u_{y}\pr\left(M\right)\cos\beta+u_{z}\pr\left(M\right)\cos\gamma=\\
+ & = & \left(1\right)\left(\df{-2}{\sqrt{6}}\right)+\left(\df 1{z^{2}+y^{2}}\left(2y\right)\right)\df 1{\sqrt{6}}+\left(\df 1{z^{2}+y^{2}}\left(2z\right)\right)\left(\df{-1}{\sqrt{6}}\right)=\\
+ & = & \df{-2}{\sqrt{6}}+\df 2{\left(1+1\right)\sqrt{6}}-\df 21\df 1{\sqrt{6}}=\\
+ & = & -\df 2{\sqrt{6}}+\df 1{\sqrt{6}}-\df 1{\sqrt{6}}=-\df 2{\sqrt{6}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $u=-\df{\sqrt{6}}{2x}+\df{\sqrt{6}}{2y}-\df 2{3z}$
+\end_inset
+
+, 
+\begin_inset Formula $v=\df x{yz^{2}},$
+\end_inset
+
+
+\begin_inset Formula $M\left(\df 1{\sqrt{2}};\df 1{\sqrt{2}};\df 1{\sqrt{3}}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\left(\grad u\left(M\right),\grad v\left(M\right)\right)}=?$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\grad\, u\left(M\right)=\left(\begin{array}{c}
+\df{\sqrt{6}}{2x^{2}}\\
+-\df{\sqrt{6}}{2y^{2}}\\
+\df 2{3z^{2}}
+\end{array}\right)_{\left(\df 1{\sqrt{2}};\df 1{\sqrt{2}};\df 1{\sqrt{3}}\right)}=\left(\begin{array}{c}
+\sqrt{6}\\
+-\sqrt{6}\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\grad\, v\left(M\right)=\left(\begin{array}{c}
+\df 1{yz^{2}}\\
+-\df x{y^{2}z^{2}}\\
+-\df{2x}{yz^{3}}
+\end{array}\right)_{\left(\df 1{\sqrt{2}};\df 1{\sqrt{2}};\df 1{\sqrt{3}}\right)}=\left(\begin{array}{c}
+3\sqrt{2}\\
+-\sqrt{2}3\\
+-6\sqrt{3}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\cos\left(\hat{grad\, u\left(M\right),grad\, v\left(M\right)}\right) & = & \df{\left(grad\, u,grad\, v\right)}{\left|grad\, u\right|\um\left|grad\, v\right|}=\\
+ & = & \df{\sqrt{6}\um3\sqrt{2}+\sqrt{6}\um3\sqrt{2}-2\um6\sqrt{3}}{4\um\sqrt{18+18+36\um3}}=\\
+ & = & \df{6\sqrt{12}-12\sqrt{3}}{48}=\\
+ & = & \df{\sqrt{12}-2\sqrt{3}}8=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\hat{grad\, u\left(M\right),grad\, v\left(M\right)}=\df{\pi}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v a=\left(xz+y\right)\v i+\left(yz-x\right)\v j+\left(z^{2}-2\right)\v k$
+\end_inset
+
+, 
+\begin_inset Formula $S\,:\, x^{2}+y^{2}=z^{2},\ \left(z\br0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\,:\, z=3$
+\end_inset
+
+, 
+\begin_inset Formula $\Pi=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi & = & \un{\iint}S\left(\vec a,\vec n\right)dS=\\
+ & = & \left\{ \begin{array}{c}
+U\,:\, x^{2}+y^{2}-z^{2}=0\\
+\v n=\pm\df{2x\vec i+2y\vec j-2z\vec k}{2\sqrt{x^{2}+y^{2}+z^{2}}}\\
+\text{Выбераем -}
+\end{array}\right\} =\\
+ & = & \un{\iint}S\df{\left(-\left(xz+y\right)x-\left(yz-x\right)y+\left(z^{2}-2\right)z\right)dS}{\sqrt{x^{2}+y^{2}+z^{2}}}=\\
+ & = & \un{\iint}S\df{\left(-x^{2}z-xy-y^{2}z+xy+z^{3}-2z\right)dS}{\sqrt{x^{2}+y^{2}+z^{2}}}=\\
+ & = & \un{\iint}S\df{\left(-z\left(x^{2}+y^{2}-z^{2}+2\right)\right)dS}{\sqrt{x^{2}+y^{2}+z^{2}}}=\\
+ & = & \left\{ \begin{array}{c}
+-z\left(x^{2}+y^{2}-z^{2}+2\right)=\\
+=\left\{ z^{2}=y^{2}+x^{2}\right\} =\\
+=-z\left(2\right)=\\
+=-2\sqrt{x^{2}+y^{2}}\\
+\sqrt{x^{2}+y^{2}+z^{2}}=\\
+=\sqrt{2}\sqrt{x^{2}+y^{2}}
+\end{array}\right\} =\\
+ & = & \un{\iint}S\df{-2\sqrt{x^{2}+y^{2}}dS}{\sqrt{2}\sqrt{x^{2}+y^{2}}}=\\
+ & = & \un{\iint}S-\sqrt{2}dS
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v a=2x\v i+3y\v j+5z\v k,$
+\end_inset
+
+ 
+\begin_inset Formula $P\,:\,\df x2+\df y3+z=1$
+\end_inset
+
+, 
+\begin_inset Formula $\Pi=?$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+6.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v a=9\pi y\v i+\left(7x+1\right)\v k$
+\end_inset
+
+, 
+\begin_inset Formula $P\,:\, x+y+z=1$
+\end_inset
+
+, 
+\begin_inset Formula $\Pi=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+7.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v a=\left(x+y^{2}\right)\v i+\left(xz+y\right)\v j+\left(\sqrt{x^{2}+1}+z\right)\v k$
+\end_inset
+
+, 
+\begin_inset Formula $S\,:\,\left\{ x^{2}+y^{2}=z^{2},\ z=2,\ z=3\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\Pi=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+8.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v a=\left(y+6x\right)\v i+5\left(x+z\right)\v j+4y\v k$
+\end_inset
+
+, 
+\begin_inset Formula $S\,:\,\left\{ y=x,\, y=2x,\, y=2,\, z=x^{2}+y^{2},\, z=0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+9.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v a=3x^{2}\v i-2x^{2}y\v j+\left(2x-1\right)z\v k$
+\end_inset
+
+, 
+\begin_inset Formula $S\,:\,\left\{ x^{2}+y^{2}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\Pi=?$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+10.16
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\v F=\left(x+y\sqrt{x^{2}+y^{2}}\right)\v i+\left(y-x\sqrt{x^{2}+y^{2}}\right)\v j$
+\end_inset
+
+, 
+\begin_inset Formula $L\,:\, x^{2}+y^{2}=1,\ \left(y\br0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M\left(1;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $N\left(-1;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $A=?$
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout Example
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
