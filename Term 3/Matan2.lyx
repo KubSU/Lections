@@ -86,331 +86,331 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\sl}{\Longrightarrow}
+\newcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dsl}{\Longleftrightarrow}
+\newcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tr}{\ldots}
+\newcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\nr}{\neq}
+\newcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\um}{\cdot}
+\newcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pr}{'}
+\newcommand{\pr}{'}
 {'}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tg}{\text{tg}}
+\newcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tan}{\tg}
+\newcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arctg}{\text{arctg}}
+\newcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arcctg}{\text{arcctg}}
+\newcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\N}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Z}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Q}{\text{Q}}
+\newcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sh}{\text{sh}}
+\newcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ch}{\text{ch}}
+\newcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\th}{\text{th}}
+\newcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\st}{\to}
+\newcommand{\st}{\to}
 {\to}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sinx}{\sin\left(x\right)}
+\newcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\cosx}{\cos\left(x\right)}
+\newcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\fx}{f\left(x\right)}
+\newcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\un}[2]{\underset{#2}{#1}}
+\newcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\lim\limits _{#1}}
+\newcommand{\ul}[1]{\lim\limits _{#1}}
 {\lim\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\max\limits _{#1}}
+\newcommand{\umax}[1]{\max\limits _{#1}}
 {\max\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\min\limits _{#1}}
+\newcommand{\umin}[1]{\min\limits _{#1}}
 {\min\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
 {\iint\limits _{#1}^{#2}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{^{\prime\prime}}
+\newcommand{\ppr}{^{\prime\prime}}
 {^{\prime\prime}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{^{\prime\prime\prime}}
+\newcommand{\pppr}{^{\prime\prime\prime}}
 {^{\prime\prime\prime}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
 {\int\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\v}[1]{\overrightarrow{#1}}
+\newcommand{\v}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mom}{\text{mom}}
+\newcommand{\mom}{\text{mom}}
 {\text{mom}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\x}{\times}
+\newcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\DD}{\partial}
+\newcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dd}{\partial}
+\newcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\grad}{\text{grad}}
+\newcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ctg}{\text{ctg}}
+\newcommand{\ctg}{\text{ctg}}
 {\text{ctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vtr}{\vdots}
+\newcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ntr}{\ddots}
+\newcommand{\ntr}{\ddots}
 {\ddots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ob}{\cup}
+\newcommand{\ob}{\cup}
 {\cup}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dint}{\iint}
+\newcommand{\dint}{\iint}
 {\iint}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pro}{\text{Пр}}
+\newcommand{\pro}{\text{Пр}}
 {\text{Пр}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ui}[1]{\int\limits _{#1}}
+\newcommand{\ui}[1]{\int\limits _{#1}}
 {\int\limits _{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\then}{\Rightarrow}
+\newcommand{\then}{\Rightarrow}
 {\Rightarrow}
 \end_inset
 
@@ -26194,6 +26194,460 @@ S\left(0\right)=0
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Примеры
+\end_layout
+
+\begin_layout Subsection
+Практика по теории поля.
+ Векторный анализ
+\end_layout
+
+\begin_layout Example
+Найти производную скалярного поля
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $U\left(x,y,z\right)=\ln\left(1+x^{2}+y^{2}\right)-\sqrt{x^{2}+z^{2}}$
+\end_inset
+
+ , в точке 
+\begin_inset Formula $M\left(3;0;-4\right)$
+\end_inset
+
+ по направлению, проходящей через эту точку нормали к поверности 
+\begin_inset Formula $S:x^{2}-6x+9y^{2}+z^{2}=4z+23$
+\end_inset
+
+, образующей острый угол с положительным направлением оси 
+\begin_inset Formula $Oz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S:U=x^{2}-6x+9y^{2}+z^{2}-4z-23\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $n=\pm\df{grad\, U}{\left|grad\, U\right|}=\pm\df{U_{x}\pr\um\vec{i}+U_{y}\pr\um\vec{j}+U_{z}\pr\um\vec{k}}{\sqrt{\left(U_{x}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}}}=-\df{\un{\underbrace{\left(2x-6\right)}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}\um\vec{i}+\un{\underbrace{\left(8y\right)}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}\um\vec{j}+\un{\underbrace{\left(2z-4\right)}}{\begin{array}{c}
+\Vert\\
+-12
+\end{array}}\um\vec{k}}{\sqrt{0+0+144}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+....
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1(28)
+\end_layout
+
+\end_inset
+
+Найти производную скалярного поля 
+\begin_inset Formula $u\left(x,y,z\right)=\ln\left(x^{2}+y^{2}\right)+xyz$
+\end_inset
+
+ в точке 
+\begin_inset Formula $M\left(1;-1;2\right)$
+\end_inset
+
+ по направлению 
+\begin_inset Formula $I=\vec{i}-\vec{j}+5\vec{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $l=\df I{\left|I\right|}=\df{\vec{i}-\vec{j}+5\vec{k}}{\sqrt{1+1+25}}=\un{\underbrace{\df 1{3\sqrt{3}}}}{\begin{array}{c}
+\Vert\\
+\cos\alpha
+\end{array}}\vec{i}-\un{\underbrace{\df 1{3\sqrt{3}}}}{\begin{array}{c}
+\Vert\\
+\cos\beta
+\end{array}}\vec{j}+\un{\underbrace{\df 5{3\sqrt{3}}}}{\begin{array}{c}
+\Vert\\
+\cos\gamma
+\end{array}}\vec{k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{\dd u\left(x,y,z\right)}{\dd l}u_{x}\pr\left(M\right)\cos\alpha+u_{y}\pr\left(M\right)\cos\beta+u_{z}\pr\left(M\right)\cos\gamma=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2(29)
+\end_layout
+
+\end_inset
+
+Найти угол между градиентом скалярных полей 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $u\left(x,y,z\right)=\df{x^{3}}{\sqrt{2}}-\df{y^{3}}{\sqrt{2}}-\df{8z^{3}}{\sqrt{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $v\left(x,y,z\right)=\df{y^{2}z^{3}}{x^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+в точке 
+\begin_inset Formula $M\left(\sqrt{2};\sqrt{2};\df{\sqrt{3}}2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $grad\,\left(M\right)=\left(\begin{array}{c}
+\df{3x^{2}}{\sqrt{2}}\\
+-\df{3y^{2}}{\sqrt{2}}\\
+-\df{24z^{2}}{\sqrt{3}}
+\end{array}\right)_{\left(\sqrt{2};\sqrt{2};\df{\sqrt{3}}2\right)}=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\cos\left(\hat{grad\, u\left(M\right),grad\, v\left(M\right)}\right)=\df{\left(grad\, u,grad\, v\right)}{\left|grad\, u\right|\um\left|grad\, v\right|}\sl$
+\end_inset
+
+ Ответ будет в 
+\begin_inset Formula $\arccos\left(\tr\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4(28)
+\end_layout
+
+\end_inset
+
+Найти поток векторного поля 
+\begin_inset Formula $\vec{a}=\left(x+xz^{2}\right)\vec{i}+u\vec{j}+\left(z-zx^{2}\right)\vec{k}$
+\end_inset
+
+ через часть поверхности 
+\begin_inset Formula $S\,:\, y^{2}+x^{2}+z^{2}=9$
+\end_inset
+
+, вырезаимою плоскостью 
+\begin_inset Formula $P\,:\, z=0$
+\end_inset
+
+.
+ (Нормаль --- внешняя к замкнутой поверхности, обрахуемой данными поверхностями).
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+Поток векторного поля через поверхность: 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi & = & \un{\iint}S\left(\vec{a},\vec{n}\right)dS=\\
+ & = & \left\{ \begin{array}{c}
+U=x^{2}+y^{2}+z^{2}-9\equiv0\\
+\vec{n}=\pm\df{grad\, U}{\left|grad\, U\right|}=\\
+=\pm\df{2x\vec{i}+2y\vec{j}+2z\vec{k}}{2\sqrt{x^{2}+y^{2}+z^{2}}}\\
+\text{Выбераем +}
+\end{array}\right\} =\\
+ & = & \un{\iint}S\left(\left(x+xz^{2}\right)x+y\um y+\left(z-zx^{2}\right)z\right)\df 1{\sqrt{x^{2}+y^{2}+z^{2}}}dS=\\
+ & = & \un{\iint}S\un{\underbrace{\sqrt{x^{2}+y^{2}+z^{2}}}}{\begin{array}{c}
+\Vert\\
+3
+\end{array}}dS=\\
+ & = & \left\{ \begin{array}{c}
+\cos\gamma=\df z{\sqrt{x^{2}+y^{2}+z^{2}}}\\
+dS=\df{dxdy}{\cos\gamma}=\\
+=\df{\sqrt{x^{2}+y^{2}+z^{2}}dxdy}z
+\end{array}\right\} =\\
+ & = & \un{\iint}{\dd xy}\df{9dxdy}{\sqrt{9-x^{2}-y^{2}}}=\\
+ & = & 9\oui 0{2\pi}d\varphi\oui 03\df{rdr}{\sqrt{9-r^{2}}}=\\
+ & = & \df{9\um2\pi}{-2}\oui 03\df{d\left(9-r^{2}\right)}{\sqrt{9-r^{2}}}=\\
+ & = & -9\pi2\sqrt{9-r^{2}}|_{0}^{3}=\\
+ & = & +54\pi
+\end{eqnarray*}
+
+\end_inset
+
+ Формула Гаусса-Острогатсткого:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\un{\underbrace{\un{\oiint}{\sum}\left(\vec{a},\vec{n}\right)dS}}{\begin{array}{c}
+\Vert\\
+\un{\iint}S\left(\vec{a},\vec{n}\right)dS+\un{\iint}T\un{\underbrace{\left(\vec{a},\vec{n}\right)}}{\begin{array}{c}
+\Vert\\
+\left(0;0;-1\right)
+\end{array}}\un{\underbrace{dS}}{\begin{array}{c}
+\Vert\\
+dxdy
+\end{array}}
+\end{array}}=\un{\iiint}V\un{\underbrace{div\,\vec{a}}}{\begin{array}{c}
+\Vert\\
+P_{x}\pr+Q_{y}\pr+R_{z}\pr
+\end{array}}\um dxdydz=\un{\iiint}V\left(1+z^{2}+1+1-x^{2}\right)dxdydz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5(28)
+\end_layout
+
+\end_inset
+
+Найти поток векторного поля 
+\begin_inset Formula $\vec{a}=2x\vec{i}+3y\vec{j}+4z\vec{k}$
+\end_inset
+
+ через часть плоскости 
+\begin_inset Formula $P\,:\,2x+3y+z=1$
+\end_inset
+
+, расположенной в первом октанте.
+ (Угол 
+\begin_inset Formula $\gamma<\df{\pi}2$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Рещение.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\Pi=\un{\iint}P\left(\vec{a},\vec{n}\right)dS=\un{\iint}P\left(2x\df 2{\sqrt{14}}+3y\df 3{\sqrt{14}}+4z\df 3{\sqrt{14}}\right)dS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{n}=\ov{\overbrace{\pm}}{\begin{array}{c}
++\\
+\Vert
+\end{array}}\df{2\vec{i}=3\vec{j}+1\vec{k}}{\sqrt{14}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\cos\gamma=\df 1{\sqrt{14}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\iint}P\left(2x\df 2{\sqrt{14}}+3y\df 3{\sqrt{14}}+4z\df 3{\sqrt{14}}\right)dS & = & \un{\iint}{\dd xy}\df{\left(4x+9y+4z\right)}{\sqrt{14}}\sqrt{14}dxdy=\\
+ & = & \oui 0{\df 12}dx\oui 0{\df{1-2x}3}\left(4x+9y+4\left(1-2x-3y\right)\right)dxdy=\\
+ & = & \oui 0{\df 12}dx\oui 0{\df{1-2x}3}\left(-8x-4y+4\right)dy
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+7(28)
+\end_layout
+
+\end_inset
+
+Найти поток векторного поля 
+\begin_inset Formula $\vec{a}\left(3yz-x\right)\vec{i}+\left(x^{2}-y\right)\vec{j}+\left(6z-1\right)\vec{k}$
+\end_inset
+
+ через замкнутую поверхность 
+\begin_inset Formula $S\,:\,\begin{cases}
+z^{2}=9\left(x^{2}+y^{2}\right)\\
+z=3
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+Поверхность: вращается конус и отсекается плоскостью 
+\begin_inset Formula $z=3$
+\end_inset
+
+.
+ Проэкция на 
+\begin_inset Formula $Oxy$
+\end_inset
+
+ --- окружность радиуса 1.
+\end_layout
+
+\begin_layout Example
+Имеет смысл воспользоваться формулой Острогатского.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\Pi & = & \un{\iint}S\left(\vec{a},\vec{n}\right)dS=\left\{ \text{Формула Гаусса-Острогатского}\right\} =\\
+ & = & \un{\iiint}Vdiv\, a\, dxdydz=\\
+ & = & \left\{ \begin{array}{c}
+P=3yz-x\\
+P_{x}\pr=-1\\
+Q=x^{2}-y\\
+Q_{y}\pr=-1\\
+R=6z-1\\
+R_{z}\pr=6
+\end{array}\right\} =\\
+ & = & 4\un{\iiint}VdV=\\
+ & = & 4\df 13S\um H=\\
+ & = & \df 43\pi3=4\pi
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+8(28)
+\end_layout
+
+\end_inset
+
+Аналлогично с седьмой.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\vec{a}=\left(y+z\right)\vec{i}+\left(x-2y+z\right)\vec{j}+x\vec{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $S\,:\,\begin{cases}
+x^{2}+y^{2}=1\\
+z=x^{2}+y^{2}, & z=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Example
+...
 \end_layout
 
 \begin_layout Example
