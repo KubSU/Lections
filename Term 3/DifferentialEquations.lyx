@@ -7521,7 +7521,7 @@ P\left(\lambda\right)\kr\lambda^{n}+a_{1}\lambda^{n-1}+\tr+a_{n-1}\lambda+a_{n}=
 Заметим, что если правая часть (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7548,7 +7548,7 @@ reference "eq:j1"
  будет решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7568,7 +7568,7 @@ reference "eq:j1"
  в уравнеии (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7617,7 +7617,7 @@ P\left(\alpha\right)\nr0\label{eq:j3}
 Тогда часное решение уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7651,7 +7651,7 @@ reference "eq:j4"
 ) в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7694,7 +7694,7 @@ reference "eq:j4"
 ) в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7784,7 +7784,7 @@ reference "eq:j3"
 ) из (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7845,7 +7845,7 @@ P\left(\alpha\right)=\df{dP\left(\alpha\right)}{d\lambda}=\tr=\dif d{k-1}{P\left
 Тогда часное решение уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7879,7 +7879,7 @@ reference "eq:j7"
 ) в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -7903,7 +7903,7 @@ reference "eq:j7"
 ) в (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:j1"
+reference "eq:jj1"
 
 \end_inset
 
@@ -11770,7 +11770,616 @@ reference "eq:m1"
 
 \end_inset
 
+ 
+\end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+20/12/2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Мы рассматриваем систему линейных неоднородных уравнений с постоянными коофициен
+тами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=Ay+f\left(x\right)\label{eq:jj1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(i,j\right),\ a_{i,j}=const,\ i.j=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для линейной системы справедлив принцип суперпозиции:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\ous{k=1}mf^{\left(k\right)}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y^{\left(k\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}Ay^{\left(k\right)}=A^{\left(k\right)}+f^{\left(k\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\ous{k=1}mf^{\left(k\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Всвязи с этим свойством, будем рассматривать 
+\begin_inset Formula $f\left(x\right)=\left(\begin{array}{c}
+c_{1}\\
+\vtr\\
+c_{n}
+\end{array}\right)x^{\beta}e^{\alpha x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ имеет вод такой вид (Пока что 
+\begin_inset Formula $a_{i,j}$
+\end_inset
+
+ и комплексные и вещественные): 
+\begin_inset Formula $c_{1},\tr,c_{n},\alpha$
+\end_inset
+
+ --- вещественные или комплексные постоянные, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ --- целое, неотрицательное.
+ 
+\end_layout
+
+\begin_layout Standard
+В системе (jj1) Сделаем замену переменых: 
+\begin_inset Formula 
+\begin{equation}
+z=Ty\label{eq:jj2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Где 
+\begin_inset Formula $T$
+\end_inset
+
+ --- невырожденная матрица, такая что матрица 
+\begin_inset Formula $B=TAT^{-1}$
+\end_inset
+
+имеет Жорданову форму матрици 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{dz}{dx}=Bz+g\left(x\right)\label{eq:jj3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g\left(x\right)=T\um f=\left(\begin{array}{c}
+d_{1}\\
+\vtr\\
+d_{n}
+\end{array}\right)x^{\beta}e^{\alpha x}$
+\end_inset
+
+, где 
+\begin_inset Formula $d_{1},\tr,d_{n}$
+\end_inset
+
+ --- новые постоянные.
+\end_layout
+
+\begin_layout Standard
+Матрица системы (jj3) имеет Жорданову форму (Она будет блочная, где каждый
+ блок --- Жорданова клетка).
+ ЗАчем мы все это делаем? Благодаря виду матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+, в группе первого блока неизвестными будут только лишь 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ непеменых (
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ --- размерность Жордановой клетки), для группы второго блока так-же...
+ Так что рассматриваем их не все вместе, а делим на группы.
+ Та что мы упростили решение.
+ 
+\end_layout
+
+\begin_layout Standard
+Наша задачиа определить, какого вида вод эта система (jj1) будет иметь часное
+ решение.
+ Оказывается, что когда правая часть системы (jj1) имеет вод такой вод вид,
+ можно увидить структуру часного решения.
+ Так что мы не только упростили, но и увидели структуру часного решения.
+ Вод цель этого действа.
+\end_layout
+
+\begin_layout Standard
+СИстема (jj3) распадается на группы уравнений, соответствующим Жордановым
+ блокам матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Рассмотрим группу уравнений, соответствующих какому-то Жордановому блоку
+ матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Эта группа уравнений имеет вид: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dz_{k+1}}{dx}=\lambda_{s}z_{k+1}+z_{k+2}+d_{k+1}x^{\beta}e^{\alpha x}\\
+\df{dz_{k+2}}{dx}=\lambda_{s}z_{k+2}+z_{k+3}+d_{k+2}x^{\beta}e^{\alpha x}\\
+\vtr\\
+\df{dz_{k+p_{s}}}{dx}=\lambda_{s}z_{k+p_{s}}+d_{k+p_{s}}x^{\beta}e^{\alpha x}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сделаем замену переменных:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+z_{k+i}=U_{k+i}e^{\lambda_{s}x},\ i=\overline{1,p_{s}}\label{eq:jj5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь делаем эту замену переменных в (jj4).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dU_{k+1}}{dx}e^{\lambda_{s}x}+U_{k+1}\lambda_{s}e^{\lambda_{S}x}=\lambda_{s}U_{k+1}e^{\lambda_{s}x}+U_{k+2}e^{\lambda_{s}x}+d_{k+1}x^{\beta}e^{\alpha x}\\
+\df{dU_{k+2}}{dx}e^{\lambda_{s}x}+U_{k+2}\lambda_{s}e^{\lambda_{S}x}=\lambda_{s}U_{k+2}e^{\lambda_{s}x}+U_{k+3}e^{\lambda_{s}x}+d_{k+2}x^{\beta}e^{\alpha x}\\
+\vtr\\
+\df{dU_{k+p_{s}}}{dx}e^{\lambda_{s}x}+U_{k+p_{s}}\lambda_{s}e^{\lambda_{S}x}=\lambda_{s}U_{k+p_{s}}e^{\lambda_{s}x}+d_{k+p_{s}}x^{\beta}e^{\alpha x}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Земечаем: что есть одинаковое слогаемое.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dU_{k+1}}{dx}e^{\lambda_{s}x}=U_{k+2}e^{\lambda_{s}x}+d_{k+1}x^{\beta}e^{\alpha x}\\
+\df{dU_{k+2}}{dx}e^{\lambda_{s}x}=U_{k+3}e^{\lambda_{s}x}+d_{k+2}x^{\beta}e^{\alpha x}\\
+\vtr\\
+\df{dU_{k+p_{s}}}{dx}e^{\lambda_{s}x}=d_{k+p_{s}}x^{\beta}e^{\alpha x}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Каждое уравнение разделим на 
+\begin_inset Formula $e^{\lambda_{S}x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dU_{k+1}}{dx}=U_{k+2}+d_{k+1}x^{\beta}e^{\left(\alpha-\lambda_{s}\right)x}\\
+\df{dU_{k+2}}{dx}=U_{k+3}+d_{k+2}x^{\beta}e^{\left(\alpha-\lambda_{s}\right)x}\\
+\vtr\\
+\df{dU_{k+p_{s}}}{dx}=d_{k+p_{s}}x^{\beta}e^{\left(\alpha-\lambda_{s}\right)x}
+\end{cases}\label{eq:jj6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 2 случая: 
+\end_layout
+
+\begin_layout Enumerate
+Когда 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не сопподает с 
+\begin_inset Formula $\lambda_{s}$
+\end_inset
+
+.
+ (Не резонансный)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не ровняется 
+\begin_inset Formula $\lambda_{s}$
+\end_inset
+
+, тогда заметим, что в системе (jj6) в последнем уравнении нету неизвестных
+ функцй.
+ Тогда просто будем интеграл от правой части.
+ Будем это вычислять методом интегрирования по частям (
+\begin_inset Formula $\beta$
+\end_inset
+
+ раз).
+ Отсюда вытекает, что:
+\begin_inset Formula 
+\[
+U_{k+i}\left(x\right)=P_{i}^{\left(\beta\right)}\left(x\right)e^{\left(\alpha-\lambda_{s}\right)x}\quad i=\overline{1,P_{s}}
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $P_{i}^{\left(\beta\right)}\left(x\right)$
+\end_inset
+
+ --- многочлены степени не выше 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+Z_{k+i}\left(x\right)=P_{i}^{\left(\beta\right)}\left(x\right)e^{\alpha x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Когда 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ совподает с 
+\begin_inset Formula $\lambda_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если и в остальных группах уравнений системы 3 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не будет совпадать ни с одним собственным значением, то все .....
+ Тогда 
+\begin_inset Formula $y=T^{-1}Z$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+y_{i}\left(x\right)=Q_{i}^{\left(\beta\right)}\left(x\right)e^{\alpha x}\quad i=\overline{1,n}
+\]
+
+\end_inset
+
+Мы показали, что если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не совпадает .....
+ степени не выше 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Чтобы найти частные решения системы 1, (7) подставляем в (1), сокращаем
+ на 
+\begin_inset Formula $e^{\alpha x}$
+\end_inset
+
+, приравниваем коэффициенты при одинаковых степенях 
+\begin_inset Formula $x$
+\end_inset
+
+ и получаем систему линейных алгебраических уравнений на коэфиициенты многочлено
+в 
+\begin_inset Formula $Q_{i}^{\left(\beta\right)}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Случай 2 --- резонансный.
+\end_layout
+
+\begin_layout Standard
+Пусть в (6) 
+\begin_inset Formula $\alpha=\lambda_{s}$
+\end_inset
+
+ , тогда система 6 примет вид:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{du_{k+1}}{dx}=u_{k+2}d_{k+1}x^{\beta}\\
+\df{du_{k+2}}{dx}=u_{k+3}d_{k+2}x^{\beta}\\
+\tr\\
+\df{du_{k+p_{s}}}{dx}=d_{k+p_{s}}x^{\beta}
+\end{cases}\label{eq:ttt8}
+\end{equation}
+
+\end_inset
+
+Тогда решение (8) будет иметь вид:
+\begin_inset Formula 
+\[
+u_{k+j}=P_{k+j}^{\left(p_{s}+1-j\right)}\left(x\right)x^{\beta}\quad j=\overline{1,p_{s}}
+\]
+
+\end_inset
+
+Сделаем замену (5): 
+\begin_inset Formula 
+\[
+z_{k+j}(x)=P_{k+j}^{\left(p_{s}+1-j\right)}\left(x\right)x^{\beta}e^{\alpha x}\quad j=\overline{1,p_{s}}
+\]
+
+\end_inset
+
+Для остальных групп уравнений системы 3, для которых 
+\begin_inset Formula $\lambda_{s}\nr\alpha$
+\end_inset
+
+ решения будут иметь вид ....
+ Тогда 
+\begin_inset Formula $y=T^{-1}Z$
+\end_inset
+
+ будет иметь вид:
+\begin_inset Formula 
+\[
+y_{i}\left(x\right)=Q_{i}^{\left(p+\beta\right)}\left(x\right)e^{\alpha x}\quad i=...
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $P$
+\end_inset
+
+ --- длина наибольшего Жорданового блока, соответствующего собственному
+ значению 
+\begin_inset Formula $\lambda=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Вещественный случай:
+\end_layout
+
+\begin_layout Standard
+Пусть матрица системы (1) --- вещественная.
+ А 
+\begin_inset Formula 
+\begin{equation}
+f(x)=e^{\alpha x}x^{\beta}\left(c^{\left(1\right)}\cos\gamma x+c^{\left(2\right)}\sin\gamma x\right)\label{eq:ttt9}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $c^{\left(1\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $c^{\left(2\right)}$
+\end_inset
+
+ --- вектора с постоянными вещественными коэффициентами.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+ Для этого преобразуем:
+\begin_inset Formula 
+\begin{multline*}
+f=e^{\alpha x}x^{\beta}\left(c^{\left(1\right)}\df{e^{i\gamma x}+e^{-i\gamma x}}2-ic^{(2)}\df{e^{i\gamma x}-e^{-i\gamma x}}2\right)=e^{\alpha x}x^{\beta}\left(e^{i\gamma x}\df{c^{\left(1\right)}-ic^{\left(2\right)}}2+e^{-i\gamma x}\df{c^{\left(1\right)}+ic^{\left(2\right)}}2\right)=\\
+=x^{\beta}e^{\left(\alpha+i\gamma\right)x}\df{c^{\left(1\right)}-ic^{\left(2\right)}}2+x^{\beta}e^{\left(\alpha-i\gamma\right)x}\df{c^{\left(1\right)}+ic^{\left(2\right)}}2
+\end{multline*}
+
+\end_inset
+
+....
+ представлена в виде двух комплексно сопряженных слагаемых.
+ Заметим, что если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ в системе 1 --- вещественная и 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ --- решение системы 1, то 
+\begin_inset Formula $\overline{y}(x)$
+\end_inset
+
+ будет решением системы 1 с комплексно сопряженной 
+\begin_inset Formula $\overline{f}(x)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $y^{\left(1\right)}(x)$
+\end_inset
+
+ будет решением ....
+ то 
+\begin_inset Formula $y$
+\end_inset
+
+ ...
+ тоесть частное решение системы 1 c 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ (9) существует в виде:
+\begin_inset Formula 
+\[
+y(x)=e^{\left(\alpha+i\gamma\right)x}\df{Q^{\left(\beta+p\right)}\left(x\right)-iR^{\left(\beta+p\right)}\left(x\right)}2+e^{\left(\alpha-i\gamma\right)x}\df{Q^{\left(\beta+p\right)}\left(x\right)+iR^{\left(\beta+p\right)}\left(x\right)}2
+\]
+
+\end_inset
+
+Преобразуем эту сумму:
+\begin_inset Formula 
+\begin{multline*}
+=e^{\alpha x}\left(\cos\gamma x+i\sin\gamma x\right)\df{Q^{\left(\beta+p\right)}\left(x\right)-iR^{\left(\beta+p\right)}\left(x\right)}2+e^{\alpha x}\left(\cos\gamma x-i\sin\gamma x\right)\df{Q^{\left(\beta+p\right)}\left(x\right)+iR^{\left(\beta+p\right)}\left(x\right)}2=\\
+=e^{\alpha x}\left(Q^{\left(\beta+p\right)}\left(x\right)\cos\gamma x+R^{\left(\beta+p\right)}\left(x\right)\sin\gamma x\right)
+\end{multline*}
+
+\end_inset
+
+Где 
+\begin_inset Formula $Q^{\left(\beta+p\right)}\left(x\right)$
+\end_inset
+
+ --- вектор-функции, компонентами которых являются многочлены с вещественными
+ коэффициентами степени 
+\begin_inset Formula $\left(\beta+p\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p=0$
+\end_inset
+
+ если 
+\begin_inset Formula $\alpha+i\gamma$
+\end_inset
+
+ не является собственнным значением матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ и если 
+\begin_inset Formula $\alpha+i\gamma$
+\end_inset
+
+ является собственным значением, то 
+\begin_inset Formula $p$
+\end_inset
+
+ равно длине наибольшей Жордановой цепочки соответствующей собственному
+ значению 
+\begin_inset Formula $\alpha+i\gamma$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
