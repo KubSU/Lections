@@ -14620,5 +14620,628 @@ status open
  втенуть.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+16.12.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Явления смачивания
+\end_layout
+
+\begin_layout Standard
+Мы рассмотрели жидколсть и ее границу с газом.
+ Но у нее в условиях земли есть еще одна граница --- с твердым телом.
+ Жидкость с твердым телом активно взаимодействует.
+\end_layout
+
+\begin_layout Standard
+Энергия взаимодействия с молекулами жидкости ---
+\begin_inset Formula $U_{min}^{\text{ж}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Энергия взаимодействия с твердым телом --- 
+\begin_inset Formula $U_{min}^{\text{тв}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|U_{min}^{\text{ж}}\right|$
+\end_inset
+
+
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Formula $\left|U_{min}^{\text{тв}}\right|$
+\end_inset
+
+ --- рассмотрим такой вариант 
+\begin_inset Formula $\left(U_{min}^{\text{ж}}<U_{min}^{\text{тв}}<0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если у нас имеется вод такое соотношение, то молекула жидкости будет стремится
+ ийти в нутрь жидкости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{гр}}\approx6\um U_{min}^{\text{ж}}+6\um U_{min}^{\text{тв}}$
+\end_inset
+
+ --- полная энергия молекул на границе
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вн}}\approx12\um U_{min}^{\text{ж}}$
+\end_inset
+
+ --- полная энегрия молекулы внутри жидкости
+\end_layout
+
+\begin_layout Standard
+Когда мы рассматриваем переход молекулы жидкости из нутри на границу, то
+ изменяется ее потенциальная энергия.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=U_{\text{гр}}-U_{\text{вн}}=6\left(U_{min}^{\text{тв}}-U_{min}^{\text{ж}}\right)>0$
+\end_inset
+
+ --- изменения энергии молекулы жидкости, еслои она переходит из жидкости
+ на ее границу с твердым телом.
+\end_layout
+
+\begin_layout Standard
+В этом случае жидкость хочет уменьшить площадь соприкосновения с твердым
+ телом, и горорят, что в этом случае жидкость не смачивает твержое тело.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|U_{min}^{\text{ж}}\right|$
+\end_inset
+
+
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Formula $\left|U_{min}^{\text{тв}}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\D U<0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Жидкость хочет увеличить площадь соприкосновения с твердым телом, и говорят,
+ что жидкость смачивает твердое тело.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Когда жидкость находитвся в земных условиях, на нее действует сила тяжести,
+ и у нее есть еще свободная поверхность, на которую действует сила поверхностног
+о натяжения.
+\end_layout
+
+\begin_layout Standard
+Эти 3 силы и определяют жидкость на земле.
+\end_layout
+
+\begin_layout Enumerate
+Когда жидкость не смачивает твердое тело
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Характеристикой степени смачивания является угол, между сосудом и свободной
+ поверхностью жидкости.
+ Его и называют краевым углом.
+ Когда жидкость не смачавает твердое тело, он лежит в пределах 
+\begin_inset Formula $\df{\pi}2<\Theta<\pi$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Когда жидкость смачивает
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В этом случае 
+\begin_inset Formula $0<\Theta<\df{\pi}2$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ртуть и стекло --- 
+\begin_inset Formula $\Theta\approx\pi$
+\end_inset
+
+ --- пример почти абсольтного несмачивания
+\end_layout
+
+\begin_layout Standard
+Стекло и вода --- 
+\begin_inset Formula $\Theta\approx0$
+\end_inset
+
+ --- пример почти абсольтного смачивания
+\end_layout
+
+\begin_layout Subsection
+Капилярные явления
+\end_layout
+
+\begin_layout Standard
+Если мы берем большой обьем жидкости, то краевую границу сложно увидить.
+ Но когда мы берем тонкий сисуд, то ее можно исследовать.
+ Явления, происходящие в тонких сосудах называются капилярными явлениями.
+\end_layout
+
+\begin_layout Standard
+Возьмем уский сосуд.
+ Пусть у нас жидкость не смачивает твержое тело.
+ На поверхности образуется некое подобие шара.
+ Сделаем срез на некоторой высоте.
+ Радиус шара --- 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Радиус среза окружности --- 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Сила поверхностного натяжения направлена по касательной к жидкости, причем
+ нужно учесть, что, если разложить на координатам, то 
+\begin_inset Formula $y$
+\end_inset
+
+ должен по идее быть меньше нуля, так как молекула жидкости хочет уйти в
+ нуьрь жидкости.
+ Обозначим ее 
+\begin_inset Formula $\D F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=\sum\D F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разложим на составляющие вектора силы --- одни направлены к стенке (
+\begin_inset Formula $\D F_{\bot}$
+\end_inset
+
+), а другие направлениы во внутрь жидкости (
+\begin_inset Formula $\D F_{\Vert}$
+\end_inset
+
+).
+ Угол между 
+\begin_inset Formula $\D F_{\bot}$
+\end_inset
+
+ и 
+\begin_inset Formula $\D F$
+\end_inset
+
+ назовем 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D F_{\bot}=\D F\cos\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D F_{\Vert}=\D F\sin\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\v F\right|=\un{\underbrace{\sum\D\v{F_{\bot}}}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}+\sum\D\v{F_{\Vert}}=\sin\beta\sum\left|\D F\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как мы можем узнать 
+\begin_inset Formula $\beta$
+\end_inset
+
+ --- 
+\begin_inset Formula $\sin\beta=\df rR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В преведущей лекции мы рассматривали --- 
+\begin_inset Formula $\D F=\alpha\D l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin\beta\sum\left|\D F\right|=\df rR\sum\left|\D F\right|=\df rR\sum\alpha\D l=\df rR\alpha2\pi r=\df{2\um\alpha\um\pi}Rr^{2}\pi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F=\df{2\um\alpha\um\pi}Rr^{2}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Перейдем к давлению 
+\begin_inset Formula $P=\df FS=\df{2\um\alpha}R$
+\end_inset
+
+ --- избыточное давление (увеличивает атмосферное давление).
+\end_layout
+
+\begin_layout Standard
+Если жидкость смачивает твердое тело, то избыточное давление уменьшает атмосферн
+ое давление.
+ ПРи этом 
+\begin_inset Formula $P=-\df{2\alpha}P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Чтобы не разделять эти 2 случая, то в первом случае 
+\begin_inset Formula $R>0$
+\end_inset
+
+ , а во втором 
+\begin_inset Formula $R<0$
+\end_inset
+
+.
+ И тогда 
+\begin_inset Formula $R=\df{2\alpha}R$
+\end_inset
+
+ выполняется для обоих случаев.
+ 
+\end_layout
+
+\begin_layout Standard
+В общем случае, когдаэто не окружность, и какой нить эллипс, то справедлива
+ формула --- 
+\begin_inset Formula $P=\alpha\left(\df 1{R_{1}}+\df 1{R_{2}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Вереж сольшой сосуд с жтдкостью.
+ Опускаем капиряр туда.
+ Жидкость не смачавает стенки капиляра.
+ Уровень жидкости в капиляре меньше уровля жидкости в сосуде на 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Найдем 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Посчитаем давление.
+ 
+\begin_inset Formula $P_{1}=P_{2}$
+\end_inset
+
+ (1 --- давление внутри капиляра, а 2 --- давление в сосуде).
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{1}=P_{\text{атм}}+P$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{2}=P_{\text{атм}}+P_{\text{гидр}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P=P_{\text{гидр}}=\rho gh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{2\alpha}R=\rho gh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Слоедовательно, мы можем найти 
+\begin_inset Formula $h$
+\end_inset
+
+ --- 
+\begin_inset Formula $h=\df{2\alpha}{R\rho g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Тут неочерь удобно использовать 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ ЧТо у нас еще есть? У нас есть угол
+\begin_inset Formula $\Theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $r=R\um\sin\left(\Theta-\df{\pi}2\right)=-R\cos\Theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Получим, что 
+\begin_inset Formula $R=-\df r{\cos\Theta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Подставим: 
+\begin_inset Formula $h=-\df{2\alpha\cos\Theta}{r\rho g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Возникает вопрос: какого там есть минус?
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $\cos\Theta<0$
+\end_inset
+
+ то вс норм получается.
+\end_layout
+
+\begin_layout Example
+Для ситуации, когда жидкость смачивает твердое тело, то тогда в сосуде жидкость
+ выше, чем в сосуде, и тогда принято считать, что 
+\begin_inset Formula $h<0$
+\end_inset
+
+.
+ И для такой ситуации 
+\begin_inset Formula $h=\df{2\alpha\cos\Theta}{2\rho g}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Example
+Так что в общем случае 
+\begin_inset Formula 
+\[
+h=\df{2\alpha\cos\Theta}{r\rho g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $h<0$
+\end_inset
+
+ --- жидкость не смачивает капилляр
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $h>0$
+\end_inset
+
+ --- жидкость смачивает капилляр
+\end_layout
+
+\begin_layout Example
+Возьмем кирпич.
+ Силикатный (Белый, без дырок).
+ В нем есть капиляры диаметром примерно 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+.
+ В этом случае 
+\begin_inset Formula $h\approx30$
+\end_inset
+
+ метров.
+ 9й этаж ппц!
+\end_layout
+
+\begin_layout Subsection
+Явление переноса.
+ Вязкость жидкости.
+\end_layout
+
+\begin_layout Standard
+В газе все явления перенос связаны с хаотическим движением молекул.
+ В жидкости впринципе тоже это тесть, но в отличие от газа это перемещение
+ идет на очень маленькое рассмояние, во вторых у молекулы есть время оседлой
+ жизни, так что они там не всегда прыгают.
+ Явление вязкости обусловлено другими причинами, чем в газе (С точки зрения
+ физики это вообще разные явления).
+ Большуюроль играют силы межмолекулярного сцепления.
+ Физически явления разные, но формула одна и та-же.
+\end_layout
+
+\begin_layout Standard
+В газе это сила внутренено трения (Она так называется, но по сути в газах
+ нету трения).
+ Так эе она называется и в жидкости.
+ 
+\begin_inset Formula $F=-\eta\um\df{dv}{dx}\um S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=-\eta\um\grad\,\left(\v v\um\v n\right)\um S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если говорить о дифузии.
+ Она там и там одним и тем же обусловлена (только в жидкости она идет медленнее).
+ 
+\begin_inset Formula $J=-D\um\df{dn}{dx}\um S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если сравнивать коэффициент дифузии в жидкостях и в газе.
+ В газе он выше (
+\begin_inset Formula $D_{\text{г}}>>D_{\text{ж}}$
+\end_inset
+
+).
+ А коэфициент вязкости в жидкости больше (
+\begin_inset Formula $\eta_{\text{г}}<<\eta_{\text{ж}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{\text{г}}\sim D_{\text{г}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{\text{ж}}\sim D_{\text{ж}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Когда мы рассматрриваем движение твердых тел в жидеости.
+ Оно обусдловлено трением о жидкость и еще чем то.
+ В часности, если рассмотреть шарик (есть формулда Стокса (Сила, действующая
+ на гар радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ движущейся в жидкости при малых скоростях 
+\begin_inset Formula $v$
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=6\um\pi\um r\um\eta\um v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эта формула верна и для газа.
+\end_layout
+
 \end_body
 \end_document
