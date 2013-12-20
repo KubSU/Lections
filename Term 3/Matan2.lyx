@@ -10663,7 +10663,7 @@ d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy
 \end_inset
 
 .
- Ставится задача нахождения обьема цилиндрического бруса, ограниченного
+ Ставится задача нахождения объема цилиндрического бруса, ограниченного
  плоскостью 
 \begin_inset Formula $XoY$
 \end_inset
@@ -10890,7 +10890,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Самостоятельно..
+Самостоятельно...
 \end_layout
 
 \begin_layout Theorem
@@ -10915,7 +10915,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Самостоятельно..
+Самостоятельно...
 \end_layout
 
 \begin_layout Theorem
@@ -10946,7 +10946,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Самостоятельно..
+Самостоятельно...
 \end_layout
 
 \begin_layout Subsubsection
@@ -10975,7 +10975,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Самостоятельно..
+Самостоятельно...
 \end_layout
 
 \begin_layout Theorem
@@ -11351,7 +11351,7 @@ Q\left(x\right)=\oui cdf\left(x,y\right)dy
 \begin_inset Formula $D=\{\left(x,y\right)|\left(x,y\right)\in E^{2}$
 \end_inset
 
-, ограниченая прямыми 
+, ограниченная прямыми 
 \begin_inset Formula $x=a,\ x=b$
 \end_inset
 
@@ -11418,7 +11418,7 @@ status open
 \begin_inset Formula $\forall x_{0}\in\left[a,b\right]$
 \end_inset
 
- площадь поперечного сечения цилендрического бруса равна:
+ площадь поперечного сечения цилиндрического бруса равна:
 \end_layout
 
 \begin_layout Standard
@@ -11480,7 +11480,7 @@ V & = & \oui abQ\left(x\right)\um dx=\\
 
 \end_deeper
 \begin_layout Theorem
-тогда существует повторный интегриал, равный двойному.
+тогда существует повторный интеграл, равный двойному.
 \end_layout
 
 \begin_layout Proof
@@ -11553,7 +11553,7 @@ status open
 \end_inset
 
 .
- Рассмотрим следующую функцию двих переменных: 
+ Рассмотрим следующую функцию двух переменных: 
 \begin_inset Formula 
 \[
 f^{*}\left(x,y\right)=\begin{cases}
@@ -11595,7 +11595,7 @@ f\left(x,y\right), & \left(x,y\right)\in D\\
 
 \end_inset
 
- Существует предел 2)
+ Существует предел:
 \end_layout
 
 \begin_layout Proof
@@ -11626,7 +11626,7 @@ f\left(x,y\right), & \left(x,y\right)\in D\\
 \begin_inset Formula $D$
 \end_inset
 
- не более чем в 2х точках.
+ не более чем в двух точках.
 \end_layout
 
 \begin_layout Definition
@@ -11672,7 +11672,7 @@ status open
 \begin_inset Formula $y_{1}\left(x\right)$
 \end_inset
 
- определяет одну огбщую точку (точку входа), а 
+ определяет одну общую точку (точку входа), а 
 \begin_inset Formula $y_{2}\left(x\right)$
 \end_inset
 
@@ -11837,7 +11837,7 @@ status open
 
 \end_inset
 
- Расставить пределы интегрирования в разном порядке ддля интегралов 
+ Расставить пределы интегрирования в разном порядке для интегралов 
 \begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy$
 \end_inset
 
@@ -11862,11 +11862,11 @@ status open
 \begin_inset Formula $y$
 \end_inset
 
- внутреннее интегррирование: 
+ внутреннее интегрирование: 
 \begin_inset Formula $x\in\left[0,a\right]$
 \end_inset
 
-, длиния входа 
+, линия входа 
 \begin_inset Formula $y=0$
 \end_inset
 
@@ -11880,7 +11880,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Тут был прикол насчет свяклы и студентов
+Тут был прикол насчет свёклы и студентов
 \end_layout
 
 \end_inset
@@ -12020,7 +12020,7 @@ status collapsed
 \end_deeper
 \begin_layout Remark
 В случае если для линии входа или выхода нельзя указать единую аналитическую
- зависимость, осласть 
+ зависимость, область 
 \begin_inset Formula $D$
 \end_inset
 
@@ -12141,7 +12141,7 @@ status open
 \begin_inset Formula $x$
 \end_inset
 
-, а не длелить ее на 2 области.
+, а не делить ее на две области.
 \end_layout
 
 \begin_layout Remark
@@ -12181,7 +12181,12 @@ status open
 \end_layout
 
 \begin_layout Remark
-\begin_inset Formula $I=\oui 02dy\oui{\sqrt[3]{\df y2}}{3-y}x^{2}ydx=\tr$
+Получилось бы так:
+\begin_inset Formula 
+\[
+I=\oui 02dy\oui{\sqrt[3]{\df y2}}{3-y}x^{2}ydx=\tr
+\]
+
 \end_inset
 
  
@@ -12196,7 +12201,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-Если 
+Если:
 \end_layout
 
 \begin_deeper
@@ -12232,7 +12237,7 @@ status open
 
 \end_deeper
 \begin_layout Theorem
-то существует повторный интеграл 
+То существует повторный интеграл 
 \begin_inset Formula $\oui abdx\oui cdf\left(x,y\right)dy$
 \end_inset
 
@@ -12245,17 +12250,19 @@ status open
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+a=x_{0}<x_{1}<\tr<x_{i}<x_{i+1}<\tr<x_{n}=b
+\]
 
-\begin_layout Proof
-\begin_inset Formula $a=x_{0}<x_{1}<\tr<x_{i}<x_{i+1}<\tr<x_{n}=b$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+c=y_{0}<y_{1}<\tr<y_{k}<y_{ik+1}<\tr<y_{m}=d
+\]
 
-\begin_layout Proof
-\begin_inset Formula $c=y_{0}<y_{1}<\tr<y_{k}<y_{ik+1}<\tr<y_{m}=d$
 \end_inset
 
 
@@ -12270,7 +12277,21 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $D=\Pi=\un{\ob}{i,k}D_{i,k},\ \D x_{i}=x_{i+1}-x_{i},\ \D y_{k}=y_{k+1}-y_{k},\ m_{i,k}=\un{\inf}{D_{i,k}}f\left(x,y\right),\ M_{i,k}=\un{\sup}{D_{i,k}}f\left(x,y\right)$
+\begin_inset Formula $D=\Pi=\un{\ob}{i,k}D_{i,k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\D x_{i}=x_{i+1}-x_{i},\quad\D y_{k}=y_{k+1}-y_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $m_{i,k}=\un{\inf}{D_{i,k}}f\left(x,y\right),\quad M_{i,k}=\un{\sup}{D_{i,k}}f\left(x,y\right)$
 \end_inset
 
 
@@ -12281,36 +12302,26 @@ status open
 \begin_inset Formula $\xi_{i}\in\left[x_{i},x_{i+1}\right]$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
+, следовательно:
+\begin_inset Formula 
+\[
+m_{i,k}\um\D y_{k}\mr\oui{y_{k}}{y_{k+1}}f\left(\xi_{i},y\right)dy\mr M_{i,k}\um\D y_{k}
+\]
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $m_{i,k}\um\D y_{k}\mr\oui{y_{k}}{y_{k+1}}f\left(\xi_{i},y\right)dy\mr M_{i,k}\um\D y_{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Суммирует по 
+Суммируем по 
 \begin_inset Formula $k=\overline{0,m-1}$
 \end_inset
 
- 
-\end_layout
+.
+\begin_inset Formula 
+\[
+\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\mr\oui cdf\left(\xi_{i},y\right)dy\mr\ous{k=0}{m-1}M_{i,k}\um\D y_{k}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\mr\oui cdf\left(\xi_{i},y\right)dy\mr\ous{k=0}{m-1}M_{i,k}\um\D y_{k}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Умножая на 
 \begin_inset Formula $\D x_{i}$
 \end_inset
@@ -12320,51 +12331,17 @@ status open
 \end_inset
 
  получается:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}\mr\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}\mr\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}=s_{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}=S_{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Это верхняя и нижняя суммы Дарбу для двойного интеграла.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $S_{n},\ s_{n}\ov{\st}{\begin{array}{c}
-n\st\b\\
-\lambda\st0
-\end{array}}\un{\iint}Df\left(x,y\right)dxdy$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}$
-\end_inset
-
- - интегральная сумма для определенного интеграла 
 \begin_inset Formula 
 \[
-\oui abF\left(x\right)dx=\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx
+\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}\mr\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}\mr\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ous{i=0}{n-1}\left(\ous{k=0}{m-1}m_{i,k}\um\D y_{k}\right)\D x_{i}=s_{n}
 \]
 
 \end_inset
@@ -12373,6 +12350,36 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
+\begin_inset Formula 
+\[
+\ous{i=0}{n-1}\left(\ous{k=0}{m-1}M_{i,k}\um\D y_{k}\right)\D x_{i}=S_{n}
+\]
+
+\end_inset
+
+Это верхняя и нижняя суммы Дарбу для двойного интеграла.
+\begin_inset Formula 
+\[
+S_{n},\ s_{n}\ov{\st}{\begin{smallmatrix}n\st\b\\
+\lambda\st0
+\end{smallmatrix}}\un{\iint}Df\left(x,y\right)dxdy
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\ous{i=0}{n-1}\oui cdf\left(\xi_{i},y\right)dy\um\D x_{i}$
+\end_inset
+
+ - интегральная сумма для определенного интеграла
+\begin_inset Formula 
+\[
+\oui abF\left(x\right)dx=\oui ab\left(\oui cdf\left(x,y\right)dy\right)dx
+\]
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \oui ab\left(\oui cdf\left(x,y\right)dy\right)dx=\un{\dint}Df\left(x,y\right)dxdy
@@ -12388,11 +12395,11 @@ n\st\b\\
 \end_layout
 
 \begin_layout Standard
-В плоскоти 
+В плоскости 
 \begin_inset Formula $XoY$
 \end_inset
 
- введем полярные координаты 
+ введем полярные координаты: 
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -12403,7 +12410,7 @@ y=r\um\sin\varphi
 
 \end_inset
 
-Пусть фунция 
+Пусть функция 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
@@ -12529,7 +12536,7 @@ status open
 \begin_inset Formula $D_{i,k}$
 \end_inset
 
- - область ограничиемая лучами 
+ - область ограниченная лучами 
 \begin_inset Formula $\varphi=\varphi_{k},\ \varphi=\varphi_{k+1}=\varphi_{k}+\D\varphi_{k}$
 \end_inset
 
@@ -12542,7 +12549,7 @@ status open
 \end_inset
 
 .
- Её площадь 
+ Её площадь: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \D S_{i,k} & = & \df{r_{i+1}^{2}\D\varphi_{k}}2-\df{r_{i}^{2}\um\D\varphi_{k}}2=\df{\D\varphi_{k}}2\left(r_{i+1}-r_{i}\right)\left(r_{i+1}+r_{i}\right)=\\
@@ -12553,21 +12560,14 @@ status open
 
 \end_inset
 
+Следовательно: 
+\begin_inset Formula 
+\[
+\ous i{}\ous k{}f\left(\xi_{i,k},\eta_{i,k}\right)\um\D S_{i,k}\approx\ous i{}\ous k{}f\left(r_{i}\um\cos\varphi_{k},r_{i}\um\sin\varphi_{k}\right)\um r_{i}\um\D r_{i}\um\D\varphi_{k}
+\]
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
 \end_inset
 
- 
-\begin_inset Formula $\ous i{}\ous k{}f\left(\xi_{i,k},\eta_{i,k}\right)\um\D S_{i,k}\approx\ous i{}\ous k{}f\left(r_{i}\um\cos\varphi_{k},r_{i}\um\sin\varphi_{k}\right)\um r_{i}\um\D r_{i}\um\D\varphi_{k}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 При 
 \begin_inset Formula $\lambda=\umax{i,k}$
 \end_inset
@@ -12593,9 +12593,6 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \oui{\alpha}{\beta}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr
@@ -12607,10 +12604,17 @@ status open
 \end_layout
 
 \begin_layout Example
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 
 \emph on
-(1) 
-\emph default
+1
+\end_layout
+
+\end_inset
+
 Перейти к полярным координатам в интеграле:
 \end_layout
 
@@ -12670,11 +12674,8 @@ status open
 \begin_inset Formula $\varphi\in\left[\df{\pi}6,\df{\pi}4\right],\ r\in\left[2,3\right]$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+.
+ Следовательно 
 \begin_inset Formula $D'$
 \end_inset
 
@@ -12718,11 +12719,12 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
+Следовательно: 
+\begin_inset Formula 
+\[
+I=\oui{\df{\pi}6}{\df{\pi}4}d\varphi\oui 23f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr
+\]
 
- 
-\begin_inset Formula $I=\oui{\df{\pi}6}{\df{\pi}4}d\varphi\oui 23f\left(r\um\cos\varphi,r\um\sin\varphi\right)\um r\um dr$
 \end_inset
 
 
@@ -12735,9 +12737,21 @@ status open
 \begin_layout Example
 
 \emph on
-(2) 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
 \emph default
 Вычислить двойной интеграл: 
+\end_layout
+
+\begin_layout Example
 \begin_inset Formula $I=\un{\dint}Dx\um dx\um dy,\ D:\left\{ x^{2}+y^{2}-2\um x=0\right\} $
 \end_inset
 
@@ -12805,7 +12819,7 @@ y=r\um\sin\varphi
 \end_layout
 
 \begin_layout Example
-на 
+На 
 \begin_inset Formula $\dd D\ :\ r^{2}-2\um\cos\varphi\um r=0$
 \end_inset
 
@@ -12823,11 +12837,14 @@ y=r\um\sin\varphi
 \begin_inset Formula $\left[\begin{array}{c}
 r_{1}=0\\
 r_{2}=2\um\cos\varphi
-\end{array}\right.\ D':\ \varphi\in\left[-\df{\pi}2;\df{\pi}2\right],\ r\in$
+\end{array}\right.$
 \end_inset
 
 
-\begin_inset Formula $\left[0;2\um\cos\varphi\right]$
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $D':\ \varphi\in\left[-\df{\pi}2;\df{\pi}2\right],\ r\in\left[0;2\um\cos\varphi\right]$
 \end_inset
 
 
@@ -12870,11 +12887,12 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
+Следовательно: 
+\begin_inset Formula 
+\[
+I=\oui{-\frac{\pi}{2}}{\frac{\pi}{2}}d\varphi\oui 0{2\um\cos\varphi}r\um\cos\varphi\um r\um dr=\oui{-\frac{\pi}{2}}{\frac{\pi}{2}}\left(\df{r^{3}}3\um\cos\varphi\right)|_{0}^{2\cos\varphi}d\varphi=\df 83\oui{-\frac{\pi}{2}}{\frac{\pi}{2}}\cos^{4}\varphi\um d\varphi=\tr=2\um\pi
+\]
 
- 
-\begin_inset Formula $I=\oui{-\df{\pi}2}{\df{\pi}2}d\varphi\oui 0{2\um\cos\varphi}r\um\cos\varphi\um r\um dr=\oui{-\df{\pi}2}{\df{\pi}2}\left(\df{r^{3}}3\um\cos\varphi\right)|_{0}^{2\cos\varphi}d\varphi=\df 83\oui{-\df{\pi}2}{\df{\pi}2}\cos^{4}\varphi\um d\varphi=\tr=2\um\pi$
 \end_inset
 
 
@@ -12892,7 +12910,7 @@ y=y\left(u,v\right)
 \end{cases}$
 \end_inset
 
- взаимно однозначно отобдражают область 
+ взаимно однозначно отображают область 
 \begin_inset Formula $\left(u,v\right)\in D'$
 \end_inset
 
@@ -13014,8 +13032,8 @@ status open
 \begin_inset Formula $p_{2}p_{3}$
 \end_inset
 
- - попарно паралельны.
- Заменяем приращение диференцируемых функций диференциалом, отбрасываем
+ - попарно параллельны.
+ Заменяем приращение дифференцируемых функций дифференциалом, отбрасываем
  бесконечно малые высших порядков, относительно
 \begin_inset Formula $\D u$
 \end_inset
@@ -13038,7 +13056,7 @@ status open
 \begin_inset Formula $x_{2}=x\left(u+\D u,v\right)=x\left(u,v\right)+\df{\dd x\left(u,v\right)}{\dd u}\um\D u$
 \end_inset
 
- - часный дифференциаль в точкее 
+ - частный дифференциал в точке 
 \begin_inset Formula $\left(u,v\right)$
 \end_inset
 
@@ -13046,7 +13064,7 @@ status open
 \begin_inset Formula $u$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -13085,7 +13103,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Площадь парелелограмма равна 
+Площадь параллелограмма равна: 
 \begin_inset Formula 
 \begin{eqnarray*}
 2S_{\D p_{1}p_{2}p_{3}} & = & 2\um\df 12\left|\left|\begin{array}{cc}
@@ -13103,10 +13121,6 @@ y_{3}-y_{1} & y_{3}-y_{2}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Величина 
 \begin_inset Formula $\left|I\right|=\left|\left|\begin{array}{cc}
 \df{\dd x}{\dd u} & \df{\dd x}{\dd v}\\
@@ -13134,7 +13148,7 @@ y_{3}-y_{1} & y_{3}-y_{2}
 \begin_inset Formula $\left|I\right|$
 \end_inset
 
- - коофицент растяжения или сжатия малых прощадей при переходе от координат
+ - коэффициент растяжения или сжатия малых площадей при переходе от координат
  
 \begin_inset Formula $\left(u,v\right)$
 \end_inset
@@ -13160,35 +13174,34 @@ y_{3}-y_{1} & y_{3}-y_{2}
 \end_inset
 
 :
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\ul{\begin{array}{c}
+\begin_inset Formula 
+\[
+\ul{\begin{array}{c}
 n\st\b\\
 \lambda\st0
-\end{array}}\df{\D S}{\D S'}=\left|I\right|$
+\end{array}}\df{\D S}{\D S'}=\left|I\right|
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+Следовательно 
 \begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy$
 \end_inset
 
- преобразуется в другой инттеграл 
+ преобразуется в другой интеграл 
 \begin_inset Formula $\un{\dint}{D'}f\left(x\left(u,v\right),y\left(u,v\right)\right)\um\left|I\right|\um du\um dv$
 \end_inset
 
+.
+\begin_inset Formula 
+\[
+\un{\dint}Df\left(x,y\right)\um dx\um dy=\un{\dint}{D'}f_{1}\left(u,v\right)\um\left|I\right|\um du\um dv
+\]
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\un{\dint}Df\left(x,y\right)\um dx\um dy=\un{\dint}{D'}f_{1}\left(u,v\right)\um\left|I\right|\um du\um dv$
 \end_inset
 
 
@@ -13197,36 +13210,45 @@ n\st\b\\
 \begin_layout Example
 
 \emph on
-(1) 
-\emph default
-Переход к полярным координатам:
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+1
 \end_layout
 
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
-x=r\um\cos\varphi\\
-y=r\um\sin\varphi
-\end{cases}$
 \end_inset
 
 
-\end_layout
+\emph default
+Переход к полярным координатам:
+\begin_inset Formula 
+\[
+\begin{cases}
+x=r\um\cos\varphi\\
+y=r\um\sin\varphi
+\end{cases}
+\]
 
-\begin_layout Example
-\begin_inset Formula $\left|I\right|=\left|\left|\begin{array}{cc}
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|I\right|=\left|\left|\begin{array}{cc}
 x_{r}' & x_{\varphi}'\\
 y_{r}' & y_{\varphi}'
 \end{array}\right|\right|=\left|\begin{array}{cc}
 \cos\varphi & -r\cos\varphi\\
 \sin\varphi & r\cos\varphi
-\end{array}\right|=r\cos^{2}\varphi+r\sin^{2}\varphi=r$
+\end{array}\right|=r\cos^{2}\varphi+r\sin^{2}\varphi=r
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
-Тоесть 
+То есть: 
 \begin_inset Formula $\un{\dint}Df\left(x,y\right)dxdy=\un{\dint}{D'}f_{1}\left(x,y\right)\um r\um dr\um d\varphi$
 \end_inset
 
@@ -13240,14 +13262,32 @@ y_{r}' & y_{\varphi}'
 \begin_layout Example
 
 \emph on
-(2)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+2
+\end_layout
+
+\end_inset
+
+
 \emph default
  Вычислить интеграл 
 \begin_inset Formula $J=\un{\dint}D\left(x+y\right)dxdy$
 \end_inset
 
-, где 
-\begin_inset Formula $D:\left\{ xy=a;\ xy=b;\ y=x;\ y=x-c;\ c>0,\ 0<a<b\right\} $
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+D\,:\,\left\{ xy=a;\ xy=b;\ y=x;\ y=x-c;\ c>0,\ 0<a<b\right\} 
+\]
+
 \end_inset
 
 
@@ -13294,7 +13334,7 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $u=xy;\ v=y-x$
+\begin_inset Formula $u=xy,\ v=y-x$
 \end_inset
 
 
@@ -13363,9 +13403,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
 \begin_inset Formula 
 \begin{eqnarray*}
 I & = & \left|\begin{array}{cc}
@@ -13380,15 +13417,12 @@ y_{u}' & y_{v}'
 
 \end_inset
 
+Следовательно: 
+\begin_inset Formula 
+\[
+J=\oui{-c}0dv\oui ab\sqrt{v^{2}+4u}\um\df 1{\sqrt{v^{2}+4u}}du=\oui{-c}0u|_{a}^{b}dv=\left(b-a\right)c
+\]
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $J=\oui{-c}0dv\oui ab\sqrt{v^{2}+4u}\um\df 1{\sqrt{v^{2}+4u}}du=\oui{-c}0u|_{a}^{b}dv=\left(b-a\right)c$
 \end_inset
 
 
@@ -13443,15 +13477,16 @@ status open
 \begin_inset Formula $D\vkl E^{2}$
 \end_inset
 
- чимленно равно обьему цилиндра с основанием 
+ численно равно объему цилиндра с основанием 
 \begin_inset Formula $D$
 \end_inset
 
-, высота 1.
-\end_layout
+,поэтому высота равна единице.
+\begin_inset Formula 
+\[
+S_{D}=\un{\dint}D1dxdy=\un{\dint}Ddxdy
+\]
 
-\begin_layout Standard
-\begin_inset Formula $S_{D}=\un{\dint}D1dxdy=\un{\dint}Ddxdy$
 \end_inset
 
 
@@ -13514,65 +13549,66 @@ status open
 \end_layout
 
 \begin_layout Standard
-Аналогично определяются статические моменты относительно осей координат
- 
-\begin_inset Formula $k_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y_{j}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy\rho\left(x,y\right)dxdy$
+Аналогично определяются статические моменты относительно осей координат:
+\begin_inset Formula 
+\[
+k_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y_{j}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy\rho\left(x,y\right)dxdy
+\]
+
 \end_inset
 
 
+\begin_inset Formula 
+\[
+k_{y}=\un{\dint}Dx\rho\left(x,y\right)dxdy
+\]
+
+\end_inset
+
+Моменты инерции:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $k_{y}=\un{\dint}Dx\rho\left(x,y\right)dxdy$
+\begin_inset Formula 
+\[
+I_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y^{2}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy^{2}\rho\left(x,y\right)dxdy
+\]
+
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+I_{y}=\un{\dint}Dx^{2}\rho\left(x,y\right)dxdy
+\]
 
-\begin_layout Standard
-Моменты инерции
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I_{x}\approx\ous{i=0}{n-1}\ous{j=0}{l-1}y^{2}\rho\left(\xi_{i},\eta_{j}\right)\D x_{i}\D y_{j}\ov{\st}{\lambda\st0}\un{\dint}Dy^{2}\rho\left(x,y\right)dxdy$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+I_{0}=I_{x}+I_{y}=\un{\dint}D\left(x^{2}+y^{2}\right)\rho\left(x,y\right)dxdy
+\]
 
-\begin_layout Standard
-\begin_inset Formula $I_{y}=\un{\dint}Dx^{2}\rho\left(x,y\right)dxdy$
+\end_inset
+
+Координаты центра масс:
+\begin_inset Formula 
+\[
+x_{c}=\df{k_{y}}M=\df{\un{\dint}Dx\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}
+\]
+
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+y_{c}=\df{k_{x}}M=\df{\un{\dint}Dy\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $I_{0}=I_{x}+I_{y}=\un{\dint}D\left(x^{2}+y^{2}\right)\rho\left(x,y\right)dxdy$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Координаты центра масс
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{c}=\df{k_{y}}M=\df{\un{\dint}Dx\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y_{c}=\df{k_{x}}M=\df{\un{\dint}Dy\rho\left(x,y\right)dxdy}{\un{\dint}D\rho\left(x,y\right)dxdy}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -13638,7 +13674,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
+Кубируемое тело
 \end_layout
 
 \end_inset
@@ -13677,7 +13713,7 @@ status open
 \begin_inset Formula $\D V_{i}$
 \end_inset
 
- - обьем 
+ - объем 
 \begin_inset Formula $V_{i}$
 \end_inset
 
@@ -13686,13 +13722,13 @@ status open
 \begin_inset Formula $V$
 \end_inset
 
- приближенна равна сумме: 
+ приближённо равна сумме: 
 \begin_inset Formula $M\approx\ous{i=1}nm_{i}=\ous{i=1}n\rho\left(\xi_{i},\eta_{i},\zeta_{i}\right)\um\D V_{i}=\sigma_{n}$
 \end_inset
 
- - итнтегральная сумма.
+ - интегральная сумма.
  Если 
-\begin_inset Formula $\lambda=\max diamV_{i}=\umax{M',M''\vkl V_{i}}\rho\left(M',M''\right)\st0$
+\begin_inset Formula $\lambda=\max\, diam\, V_{i}=\umax{M',M''\vkl V_{i}}\rho\left(M',M''\right)\st0$
 \end_inset
 
  и 
@@ -13721,7 +13757,7 @@ status open
 \begin_inset Formula $f\left(x,y,z\right)$
 \end_inset
 
- по обьему 
+ по объему 
 \begin_inset Formula $V$
 \end_inset
 
@@ -13750,6 +13786,10 @@ n\st0\\
 \end_layout
 
 \begin_layout Standard
+Это то, что нам нужно было дома скопипастить с двойных интегралов:
+\end_layout
+
+\begin_layout Enumerate
 Определение сумм Дарбу.
  
 \begin_inset Formula $s,S$
@@ -13758,29 +13798,16 @@ n\st0\\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Свойства сумм Дарбу
 \end_layout
 
-\begin_layout Standard
-Необходимое и достаточнное условия существувования тройного интеграла.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Это дома
-\end_layout
-
-\end_inset
-
-
+\begin_layout Enumerate
+Необходимое и достаточное условия существования тройного интеграла.
 \end_layout
 
 \begin_layout Subsubsection
-Свойства тройного интеграла.
+Свойства тройного интеграла
 \end_layout
 
 \begin_layout Standard
@@ -13906,11 +13933,11 @@ status open
 Свойство 5.
 
 \emph default
- Еслир 
+ Если 
 \begin_inset Formula $f\left(\vec M\right)$
 \end_inset
 
- интегирруема на 
+ интегрируема на 
 \begin_inset Formula $V$
 \end_inset
 
@@ -13952,7 +13979,7 @@ status open
 \begin_inset Formula $V$
 \end_inset
 
- - обьем тела 
+ - объем тела 
 \begin_inset Formula $V$
 \end_inset
 
@@ -13978,7 +14005,7 @@ status open
 \begin_inset Formula $f\left(\vec M\right)$
 \end_inset
 
- -интегрируема, то 
+ интегрируема, то 
 \begin_inset Formula $\exists\mu\in\left[m,M\right]\ \un{\iiint}Vf\left(x,y,z\right)dV=\mu\um V$
 \end_inset
 
@@ -13998,7 +14025,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Вычисление тройных интегралов по паралелепипеду
+Вычисление тройных интегралов по параллелепипеду
 \end_layout
 
 \begin_layout Standard
@@ -14006,7 +14033,7 @@ status open
 \begin_inset Formula $V=\left[a,b,c,d,e,f\right]$
 \end_inset
 
- - паралелепипед.
+ - параллелепипед.
  
 \begin_inset Formula $x\in\left[a,b\right],\ y\in\left[c,d\right],\ z\in\left[e,f\right]$
 \end_inset
@@ -14025,7 +14052,7 @@ status open
 \begin_inset Formula $f\left(x,y,z\right)$
 \end_inset
 
- существует тройной интеграл опо области 
+ существует тройной интеграл по области 
 \begin_inset Formula $V$
 \end_inset
 
@@ -14098,15 +14125,11 @@ status open
 \end_inset
 
 .
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- тело 
+ Следовательно тело 
 \begin_inset Formula $V$
 \end_inset
 
- разобьется на элементарные паралелепипеды: 
+ разобьется на элементарные параллелепипеды: 
 \begin_inset Formula $V_{i,j,k}=\left[x_{i},x_{i+1},y_{i},y_{i+1},z_{i},z_{i+1}\right]$
 \end_inset
 
@@ -14153,7 +14176,7 @@ status open
 \begin_inset Formula $D_{j,k}=\left[y_{j},y_{j+1},z_{k},z_{k+1}\right]$
 \end_inset
 
- - проэкция тела 
+ - проекция тела 
 \begin_inset Formula $V_{i,j,k}$
 \end_inset
 
@@ -14179,7 +14202,7 @@ status open
 \begin_inset Formula $x$
 \end_inset
 
- - фиксированиая переменная, 
+ - фиксированная переменная, 
 \begin_inset Formula $m_{i,j,k}\mr f\left(x,y,z\right)\mr M_{i,j,k}$
 \end_inset
 
@@ -14197,35 +14220,30 @@ status open
 \end_inset
 
 , получим: 
-\end_layout
+\begin_inset Formula 
+\[
+\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D y_{j}\D z_{k}\mr I\left(\xi_{i}\right)=\un{\iint}Df\left(\xi_{i},y,z\right)dydz\mr\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D y_{j}\D z_{k}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D y_{j}\D z_{k}\mr I\left(\xi_{i}\right)=\un{\iint}Df\left(\xi_{i},y,z\right)dydz\mr\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D y_{j}\D z_{k}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 Умножим на 
 \begin_inset Formula $\D x_{i}$
 \end_inset
 
- и просумиреем по 
+ и просуммируем по 
 \begin_inset Formula $i=\overline{0,n-1}$
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D x_{i}\D y_{j}\D z_{k}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}M_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula $\ous{i=0}{n-1}\ous{j=0}{m-1}\ous{k=0}{l-1}m_{i,j,k}\D x_{i}\D y_{j}\D z_{k}$
 \end_inset
 
@@ -14240,7 +14258,11 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $s\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr S$
+\begin_inset Formula 
+\[
+s\mr\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}\mr S
+\]
+
 \end_inset
 
 
@@ -14258,7 +14280,7 @@ status open
 \begin_inset Formula $\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}$
 \end_inset
 
- - интегральная сумаа для функции
+ - интегральная сума для функции 
 \begin_inset Formula $I\left(x\right)$
 \end_inset
 
@@ -14266,21 +14288,30 @@ status open
 \begin_inset Formula $\lambda\st0,\ n\st\b$
 \end_inset
 
- по теореме о 2х пределов, равна 
+ по теореме о двух пределов, равна 
 \begin_inset Formula $\ous{i=0}{n-1}I\left(\xi_{i}\right)\D x_{i}=\oui abI\left(x\right)dx=\oui ab\left(\un{\iint}Df\left(x,y,z\right)dudz\right)dx$
 \end_inset
 
  .
-\backslash
-
 \end_layout
 
 \begin_layout Remark
 
 \emph on
-(1)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+1
+\end_layout
+
+\end_inset
+
+
 \emph default
- Так как
+Так как
 \begin_inset Formula $\un{\iint}Df\left(x,y,z\right)dydz=\oui cddy\oui eff\left(x,y,z\right)dz$
 \end_inset
 
@@ -14298,9 +14329,18 @@ status open
 \begin_layout Remark
 
 \emph on
-(2)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
 \emph default
- Тройной интеграл можно свести к повторному, вычисляя двойной интеграл от
+Тройной интеграл можно свести к повторному, вычисляя двойной интеграл от
  однократного.
  
 \end_layout
@@ -14374,7 +14414,7 @@ status open
 \begin_inset Formula $D\vkl XoY$
 \end_inset
 
- - проэкция 
+ - проекция 
 \begin_inset Formula $V$
 \end_inset
 
@@ -14423,15 +14463,15 @@ status open
 \end_layout
 
 \begin_layout Standard
-Для люблой точки 
+Для любой точки 
 \begin_inset Formula $\forall\left(x,y\right)\in D$
 \end_inset
 
- прямая, проходяшая через точку 
-\begin_inset Formula $\bot XoY$
+ прямая, проходящая через эту точку перпендикулярно 
+\begin_inset Formula $XoY$
 \end_inset
 
- имеет с границой 
+ имеет с границей 
 \begin_inset Formula $\dd V$
 \end_inset
 
@@ -14452,12 +14492,12 @@ status open
 \begin_inset Formula $z=z_{2}\left(x,y\right)$
 \end_inset
 
- - певерхности входа и выхрода из 
+ - поверхности входа и выхода из 
 \begin_inset Formula $V$
 \end_inset
 
 .
- Тогда 
+ Тогда:
 \begin_inset Formula 
 \begin{eqnarray*}
 \un{\iiint}Vf\left(x,y,z\right)dV & = & \un{\iint}Ddxdy\oui{z_{1}\left(x,y\right)}{z_{2}\left(x,y\right)}f\left(x,y,z\right)dz=\\
@@ -14487,7 +14527,7 @@ D:x\in\left[a,b\right],\ y\in\left[y_{1}\left(x\right),y_{2}\left(x\right)\right
 \begin_inset Formula $x=b$
 \end_inset
 
-
+, то:
 \end_layout
 
 \begin_deeper
@@ -14525,9 +14565,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \un{\iiint}Vf\left(x,y,z\right)dV & = & \oui abdx\un{\iint}{\dd x}f\left(x,y,z\right)dydz=\\
@@ -14546,11 +14583,11 @@ z\in\left[z_{1}\left(x,y\right),z_{2}\left(x,y\right)\right]
 
 \end_deeper
 \begin_layout Example
-Вычислить тройной интеграл по обьему 
+Вычислить тройной интеграл по объему 
 \begin_inset Formula $V$
 \end_inset
 
- от функциии 
+ от функции 
 \begin_inset Formula $\un{\iiint}V\left(x+y+z\right)dV$
 \end_inset
 
@@ -14604,7 +14641,7 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-Проэкция 
+Проекция 
 \begin_inset Formula $V$
 \end_inset
 
@@ -14643,9 +14680,6 @@ I & = & \un{\iint}Ddxdy\oui 0{1-x-y}\left(x+y+z\right)dz=
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
  & = & \left\{ D:x\in\left[0,1\right]\ y\in\left[0,1-x\right]\right\} =\\
@@ -14708,14 +14742,11 @@ status open
 \begin_inset Formula $x=0,\ x=1$
 \end_inset
 
-, тоесть 
+, то есть 
 \begin_inset Formula $x\in\left[0,1\right]$
 \end_inset
 
  - внешнее интегрирование.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 I & = & \oui 01dx\un{\iint}{\dd x}\left(x+y+z\right)dydz=\\
@@ -14745,17 +14776,14 @@ I & = & \oui 01dx\un{\iint}{\dd x}\left(x+y+z\right)dydz=\\
 \end_inset
 
  осуществляется по следующей формуле: 
-\end_layout
+\begin_inset Formula 
+\[
+\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f\left(x\left(u,v,w\right),y\left(u,v,w\right),z\left(u,v,w\right)\right)\um\left|I\right|\um dudvdw
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f\left(x\left(u,v,w\right),y\left(u,v,w\right),z\left(u,v,w\right)\right)\um\left|I\right|\um dudvdw$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-где 
+Где 
 \begin_inset Formula $I=\left|\begin{array}{ccc}
 \df{\dd x}{\dd u} & \df{\dd x}{\dd v} & \df{\dd x}{\dd w}\\
 \df{\dd y}{\dd u} & \df{\dd y}{\dd v} & \df{\dd y}{\dd w}\\
@@ -14775,7 +14803,7 @@ I & = & \oui 01dx\un{\iint}{\dd x}\left(x+y+z\right)dydz=\\
 \begin_inset Formula $M_{0}\left(x,y\right)$
 \end_inset
 
- - ее проэкция на 
+ - ее проекция на 
 \begin_inset Formula $XoY$
 \end_inset
 
@@ -14787,14 +14815,18 @@ I & = & \oui 01dx\un{\iint}{\dd x}\left(x+y+z\right)dydz=\\
 \begin_inset Formula $XoY$
 \end_inset
 
- введем полярные кооординаты:
+ введем полярные координаты:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x=r\cos\varphi\\
 y=r\sin\varphi
-\end{cases},\ r\in[0;+\b),\ \varphi\in[0;2\pi)$
+\end{cases},\ r\in[0;+\b),\ \varphi\in[0;2\pi)
+\]
+
 \end_inset
 
 
@@ -14842,11 +14874,11 @@ status open
 \end_inset
 
 .
- Тикам образлм каждай точка 
+ Таким образом каждая точка 
 \begin_inset Formula $\left(x,y,z\right)$
 \end_inset
 
- однозначно определеяется координатами 
+ однозначно определяется координатами 
 \begin_inset Formula $\left(r,\varphi,h\right)$
 \end_inset
 
@@ -14879,11 +14911,11 @@ status open
 \begin_inset Formula $h=h_{0}=const$
 \end_inset
 
- - плоскость, паралельная 
+ - плоскость, параллельная 
 \begin_inset Formula $XoY,$
 \end_inset
 
- пересекающай ось 
+ пересекающей ось 
 \begin_inset Formula $oZ$
 \end_inset
 
@@ -14892,10 +14924,9 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I=\left|\begin{array}{ccc}
+\begin_inset Formula 
+\[
+I=\left|\begin{array}{ccc}
 x_{r}\pr & x_{\varphi}\pr & x_{h}\pr\\
 y_{r}\pr & y_{\varphi}\pr & y_{h}\pr\\
 z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
@@ -14903,48 +14934,50 @@ z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
 \cos\varphi & -r\um\sin\varphi & 0\\
 \sin\varphi & r\um\cos\varphi & 0\\
 0 & 0 & 1
-\end{array}\right|=\left(r\cos^{2}\varphi+r\sin^{2}\varphi\right)\um1=r$
+\end{array}\right|=\left(r\cos^{2}\varphi+r\sin^{2}\varphi\right)\um1=r
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f_{1}\left(r,\varphi,h\right)\um r\um drd\varphi dh=\oui{\varphi_{0}}{\varphi_{1}}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}d\varphi\oui{h_{1}\left(r,\varphi\right)}{h_{2}\left(r,\varphi\right)}f_{1}\left(r,\varphi,h\right)\um r\um dh$
+\begin_inset Formula 
+\[
+\un{\iiint}Vf\left(x,y,z\right)dV=\un{\iiint}{V'}f_{1}\left(r,\varphi,h\right)\um r\um drd\varphi dh=\oui{\varphi_{0}}{\varphi_{1}}d\varphi\oui{r_{1}\left(\varphi\right)}{r_{2}\left(\varphi\right)}d\varphi\oui{h_{1}\left(r,\varphi\right)}{h_{2}\left(r,\varphi\right)}f_{1}\left(r,\varphi,h\right)\um r\um dh
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Example
-Вычислить интеграл:
-\end_layout
-
-\begin_layout Example
+Вычислить интеграл 
 \begin_inset Formula $J=\un{\iiint}VydV$
 \end_inset
 
-, где 
-\begin_inset Formula $V:y=0,y=\sqrt{2x-x^{2}},z=0,z=a$
+, где:
+\begin_inset Formula 
+\[
+V:y=0,\quad y=\sqrt{2x-x^{2}},\quad z=0,\quad z=a
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Example
-\begin_inset Formula $y=\sqrt{2x-x^{2}}\dsl\begin{cases}
+\begin_inset Formula 
+\[
+y=\sqrt{2x-x^{2}}\dsl\begin{cases}
 y\br0\\
 y^{2}=2x-x^{2}
 \end{cases}\dsl\begin{cases}
 y\br0\\
 \left(x+1\right)^{2}+y^{2}=1
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -15041,21 +15074,19 @@ status open
 \end_layout
 
 \begin_layout Example
-Перейдем к цилиндрическим координатам
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\begin{cases}
+Перейдем к цилиндрическим координатам:
+\begin_inset Formula 
+\[
+\begin{cases}
 x=r\cos\varphi\\
 y=r\sin\varphi\\
 z=h
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
 \begin_inset Formula $D:x\in\left[0;2\right],\ y\in\left[0;\sqrt{2x-x^{2}}\right]$
 \end_inset
 
@@ -15078,17 +15109,14 @@ z=h
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\varphi\in\left[0;\df{\pi}2\right],\ r\in\left[0;2\cos\varphi\right]$
+\begin_inset Formula $\varphi\in\left[0;\df{\pi}2\right],\quad r\in\left[0;2\cos\varphi\right]$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+Следовательно:
 \begin_inset Formula 
 \begin{eqnarray*}
 J & = & \un{\iint}Ddxdy\oui 0aydz=\\
@@ -15115,13 +15143,14 @@ Hbc 55
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\un{\iiint}Vf\left(x,y,z\right)dxdydz=\oui{\alpha}{\beta}\varphi\oui{r_{1}}{r_{2}}dr\oui abf_{1}\left(r,\varphi,h\right)\um r\um dh
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\oui{\alpha}{\beta}\varphi\oui{r_{1}}{r_{2}}dr\oui abf_{1}\left(r,\varphi,h\right)\um r\um dh$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -15188,7 +15217,7 @@ Hbc 55
 \begin_inset Formula $oX$
 \end_inset
 
- и радщиус вектором точки 
+ и радиус вектором точки 
 \begin_inset Formula $M_{0}\left(x,y,0\right)$
 \end_inset
 
@@ -15219,7 +15248,7 @@ status open
 \begin_inset Formula $\varphi=\varphi_{0}=consy$
 \end_inset
 
- - полупроскость
+ - полуплоскость
 \end_layout
 
 \begin_layout Standard
@@ -15249,9 +15278,6 @@ z=r\cos\psi
 \end_inset
 
  - проверка
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 I & = & \left|\begin{array}{ccc}
@@ -15271,17 +15297,19 @@ z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|I\right|=r^{2}\sin\psi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\left|I\right|=r^{2}\sin\psi$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\un{\iiint}Vf\left(x,y,z\right)dxdydz=\un{\iiint}Vf_{1}\left(r,\varphi,\psi\right)\um r^{2}\sin\varphi drd\varphi d\psi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\un{\iiint}Vf\left(x,y,z\right)dxdydz=\un{\iiint}Vf_{1}\left(r,\varphi,\psi\right)\um r^{2}\sin\varphi drd\varphi d\psi$
 \end_inset
 
 
@@ -15292,16 +15320,17 @@ z_{r}\pr & z_{\varphi}\pr & z_{h}\pr
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $V:\left.\begin{cases}
+\begin_inset Formula 
+\[
+V:\left.\begin{cases}
 x^{2}+y^{2}+z^{2}=R_{1}^{2}\\
 x^{2}+y^{2}+z^{2}=R_{2}^{2}
-\end{cases}\right\} $
+\end{cases}\right\} 
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Example
@@ -15335,7 +15364,7 @@ Hbc 57
 \begin_inset Formula $r\in\left[r_{1};r_{2}\right]$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Example
@@ -15349,13 +15378,14 @@ Hbc 58
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+J=\oui 0{2\pi}d\varphi\oui 0{\df{\pi}2}d\psi\oui{r_{1}}{r_{2}}\left(r\cos\psi+2\right)\um r^{2}\sin\psi dr=\tr
+\]
 
-\begin_layout Example
-\begin_inset Formula $J=\oui 0{2\pi}d\varphi\oui 0{\df{\pi}2}d\psi\oui{r_{1}}{r_{2}}\left(r\cos\psi+2\right)\um r^{2}\sin\psi dr=\tr$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -15367,7 +15397,7 @@ Hbc 58
 \begin_inset Formula $\psi$
 \end_inset
 
- узмеряется не от полюса к полюсу, а от экватора к полюсам.
+ измеряется не от полюса к полюсу, а от экватора к полюсам.
 \end_layout
 
 \begin_layout Standard
@@ -15388,14 +15418,15 @@ hbc 59
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x=r\cos\varphi\cos\psi\\
 y=r\sin\varphi\cos\psi\\
 z=r\sin\psi
-\end{cases},\ \varphi\in\left[0;2\pi\right],\ r\br0$
+\end{cases},\ \varphi\in\left[0;2\pi\right],\ r\br0
+\]
+
 \end_inset
 
 
@@ -15406,39 +15437,37 @@ z=r\sin\psi
 \end_layout
 
 \begin_layout Paragraph
-Вычисление обьемов
+Вычисление объемов 
 \end_layout
 
 \begin_layout Standard
-Из определения тройного интеграла следует что обьем кубироемого тела 
+Из определения тройного интеграла следует что объем кубируемого тела 
 \begin_inset Formula $\left(V\right)$
 \end_inset
 
-вычисляется по формуле 
-\end_layout
+ вычисляется по формуле:
+\begin_inset Formula 
+\[
+V=\un{\iiint}V1dV=\un{\iiint}Vdxdydz
+\]
 
-\begin_layout Standard
-\begin_inset Formula $V=\un{\iiint}V1dV=\un{\iiint}Vdxdydz$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Example
-Вычислить обьем тела, ограниченными следующими поверхностями.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $V:\begin{cases}
+Вычислить объем тела, ограниченными следующими поверхностями:
+\begin_inset Formula 
+\[
+V:\begin{cases}
 64\mr x^{2}+y^{2}+z^{2}\mr196\\
 z=\mr\sqrt{\df{x^{2}+y^{2}}3} & ,\ \df x{\sqrt{2}}\mr y\mr0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
 Шаровой слой: 
 \begin_inset Formula $8\mr r\mr14$
 \end_inset
@@ -15523,12 +15552,12 @@ status open
 \end_layout
 
 \begin_layout Example
-Итак, 
-\begin_inset Formula $V=\oui{\pi}{\df{7\pi}6}d\varphi\oui{\df{\pi}3}{\pi}d\psi\oui 8{14}r^{2}\sin\psi dr=\oui{\pi}{\df{7\pi}6}d\varphi\oui{\df{\pi}3}{\pi}d\psi\sin\psi\df{r^{3}}3|_{8}^{14}=\df{14^{3}-8^{3}}3\um\cos\psi|_{\df{\pi}3}^{\pi}\df{\pi}6=\tr$
-\end_inset
+Итак:
+\begin_inset Formula 
+\[
+V=\oui{\pi}{\df{7\pi}6}d\varphi\oui{\df{\pi}3}{\pi}d\psi\oui 8{14}r^{2}\sin\psi dr=\oui{\pi}{\df{7\pi}6}d\varphi\oui{\df{\pi}3}{\pi}d\psi\sin\psi\df{r^{3}}3|_{8}^{14}=\df{14^{3}-8^{3}}3\um\cos\psi|_{\df{\pi}3}^{\pi}\df{\pi}6=\tr
+\]
 
-
-\begin_inset Formula $ $
 \end_inset
 
 
@@ -15539,22 +15568,19 @@ status open
 \end_layout
 
 \begin_layout Standard
-Аналогично случаю двойного интеграла
-\end_layout
+Аналогично случаю двойного интеграла:
+\begin_inset Formula 
+\[
+M=\un{\iiint}V\rho\left(x,y,z\right)dxdydz
+\]
 
-\begin_layout Standard
-\begin_inset Formula $M=\un{\iiint}V\rho\left(x,y,z\right)dxdydz$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Масса тела с распредененной плостностью 
+Масса тела с распределенной плотностью 
 \begin_inset Formula $\rho\left(x,y,z\right)$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -15587,7 +15613,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Моменты инерции относителщьно координатных плоскостей:
+Моменты инерции относительно координатных плоскостей:
 \end_layout
 
 \begin_layout Standard
@@ -15627,7 +15653,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Криволинейные интегралы первого рода.
+Криволинейные интегралы первого рода
 \end_layout
 
 \begin_layout Standard
@@ -15639,7 +15665,7 @@ status open
 \begin_inset Formula $\rho\left(M\right)$
 \end_inset
 
- --- линейная плотность, распределеннная на кривой 
+ --- линейная плотность, распределенная на кривой 
 \begin_inset Formula $L$
 \end_inset
 
@@ -15669,7 +15695,7 @@ status open
 \begin_inset Formula $A_{0}=A,\ A_{1},\ A_{2},\ \tr,\ A_{i},\ A_{i+1},\ A_{n}=B$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -15715,7 +15741,8 @@ status open
 \begin_inset Formula $m\approx\ous{i=0}{n-1}\rho\left(M_{i}\right)\D i$
 \end_inset
 
-.Обозначим 
+.
+ Обозначим 
 \begin_inset Formula $\lambda=\un{\max}i\D i$
 \end_inset
 
@@ -15741,10 +15768,10 @@ status open
 \end_inset
 
  при 
-\begin_inset Formula $n\st\b,\ \lambda\st0,\ $
+\begin_inset Formula $n\st\b,\ \lambda\st0$
 \end_inset
 
- не зависящих от способа разбиения и выбьора точек 
+ не зависящих от способа разбиения и выбора точек 
 \begin_inset Formula $\v{M_{i}}$
 \end_inset
 
@@ -15774,7 +15801,7 @@ status open
 
 \end_inset
 
-Из определение слудует что значение интеграла 
+Из определение следует что значение интеграла 
 \begin_inset Formula $I$
 \end_inset
 
@@ -15806,7 +15833,7 @@ status open
 \begin_inset Formula $L$
 \end_inset
 
- --- пространственная кривая, интегарл определяется аналогимчно, и записывется
+ --- пространственная кривая, интеграл определяется аналогично, и записывается
  
 \begin_inset Formula $I=\un{\int}{AB}f\left(x,y,z\right)dL$
 \end_inset
@@ -15819,6 +15846,8 @@ status open
 \end_layout
 
 \begin_layout Standard
+
+\emph on
 Сокращенно КИПР.
 \end_layout
 
@@ -15840,7 +15869,7 @@ status open
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- определена на крирвой 
+ определена на кривой 
 \begin_inset Formula $L=AB$
 \end_inset
 
@@ -15854,35 +15883,29 @@ status open
 \begin_inset Formula $S=AM$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Можно 
+, следовательно можно 
 \begin_inset Formula $x,y$
 \end_inset
 
  задать параметрически.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x=x\left(s\right)\\
 y=y\left(s\right)
-\end{cases},\ 0\mr s\mr S$
+\end{cases},\ 0\mr s\mr S
+\]
+
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+S=\left|\ov{AB}{\smile}\right|
+\]
 
-\begin_layout Standard
-\begin_inset Formula $S=\left|\ov{AB}{\smile}\right|$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Теперь 
 \begin_inset Formula $f\left(x,y\right)=f\left(x\left(s\right),y\left(s\right)\right)=f\left(s\right)$
 \end_inset
@@ -15906,17 +15929,6 @@ y=y\left(s\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\D i=S_{i+1}-S_{i}=\left|AA_{i}\right|$
-\end_inset
-
-
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -15930,26 +15942,26 @@ hbc 65
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sl$
+\begin_inset Formula $\D i=S_{i+1}-S_{i}=\left|AA_{i}\right|$
 \end_inset
 
- Интегральная сумма 
-\begin_inset Formula $\ous{i=0}{n-1}f\left(\vec{M_{i}}\right)\D i=\ous{i=0}{n-1}f\left(x\left(\overline{s_{i}}\right),y\left(\overline{s_{i}}\right)\right)\D s_{i}$
+, следовательно интегральная сумма: 
+\begin_inset Formula 
+\[
+\ous{i=0}{n-1}f\left(\vec{M_{i}}\right)\D i=\ous{i=0}{n-1}f\left(x\left(\overline{s_{i}}\right),y\left(\overline{s_{i}}\right)\right)\D s_{i}
+\]
+
 \end_inset
 
- --- интегральная сумма дляопределнного интеграла 
+ Это интегральная сумма для определённого интеграла 
 \begin_inset Formula $\oui 0sf\left(x\left(s\right),y\left(s\right)\right)ds$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- предельным переходлм при 
+, следовательно предельным переходом при 
 \begin_inset Formula $n\st\b,\ \lambda\st0$
 \end_inset
 
- получим 
+ получим:
 \begin_inset Formula 
 \[
 \un{\int}{AB}f\left(\v M\right)dL=\oui 0sf\left(x\left(s\right),y\left(s\right)\right)dS
@@ -15957,18 +15969,11 @@ hbc 65
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Если,в часности 
+Если, в частности 
 \begin_inset Formula $L$
 \end_inset
 
- задано параметрически:
-\end_layout
-
-\begin_layout Standard
+ задано параметрически: 
 \begin_inset Formula $\begin{cases}
 x=x\left(t\right)\\
 y=y\left(t\right)
@@ -15980,9 +15985,6 @@ y=y\left(t\right)
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 I=\oui{\alpha}{\beta}f\left(x\left(t\right),y\left(t\right)\right)\sqrt{x^{2\prime}\left(t\right)+y^{2\prime}\left(t\right)}dt
@@ -15990,11 +15992,11 @@ I=\oui{\alpha}{\beta}f\left(x\left(t\right),y\left(t\right)\right)\sqrt{x^{2\pri
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-Еслит при этом 
+Если при этом 
 \begin_inset Formula $L$
 \end_inset
 
@@ -16142,7 +16144,7 @@ y=a\sin\varphi\cos\varphi=\df{a\sin^{2}\varphi}2
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $I=\oui{-\df{\pi}2}{\df{\pi}2}a\cos\varphi d\varphi=2a$
+\begin_inset Formula $I=\oui{-\frac{\pi}{2}}{\frac{\pi}{2}}a\cos\varphi d\varphi=2a$
 \end_inset
 
 
@@ -16218,12 +16220,14 @@ I & = & \oui 0{2\pi}a\left(1-\cos t\right)\um\sqrt{a^{2}\left(1-\cos^{2}t\right)
 \end_layout
 
 \begin_layout Subsubsection
-Криволинейный интеграл втоорого рода.
+Криволинейный интеграл второго рода.
  Физический смысл.
  Определение.
 \end_layout
 
 \begin_layout Standard
+
+\emph on
 Сокращенно КИВР.
 \end_layout
 
@@ -16232,7 +16236,7 @@ I & = & \oui 0{2\pi}a\left(1-\cos t\right)\um\sqrt{a^{2}\left(1-\cos^{2}t\right)
 \begin_inset Formula $L=\ov{AB}{\smile}$
 \end_inset
 
- --- кривая, спрямляемая кривая в пространтсве 
+ --- кривая, спрямляемая кривая в пространстве 
 \begin_inset Formula $E^{2}$
 \end_inset
 
@@ -16262,11 +16266,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Стоит задача найти работу, каторую совершает сила 
+Стоит задача найти работу, которую совершает сила 
 \begin_inset Formula $\v F\left(x,y\right)$
 \end_inset
 
- при перемешении из точки 
+ при перемещении из точки 
 \begin_inset Formula $A$
 \end_inset
 
@@ -16294,7 +16298,7 @@ status open
 \begin_inset Formula $\ov{A_{i}A_{i+1}}{\smile},\ i=\overline{0,n-1}$
 \end_inset
 
- выберем произвольлную точку 
+ выберем произвольную точку 
 \begin_inset Formula $M_{i}\left(\xi_{i},\eta_{i}\right)$
 \end_inset
 
@@ -16324,22 +16328,20 @@ status open
 \begin_inset Formula $\v F\left(M\right)=\v F\left(M_{i}\right)$
 \end_inset
 
-, а саму дугу будем считать совподающей (с погрешностью конечно) с направленым
+, а саму дугу будем считать совподающей (с погрешностью конечно) с направленным
  отрезком 
 \begin_inset Formula $A_{i}A_{i+1}$
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+\v{\D s}=\D x_{i}\um\v i+\D y\um\v j
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\v{\D s}=\D x_{i}\um\v i+\D y\um\v j$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -16357,7 +16359,7 @@ Hbc 70
 \begin_inset Formula $\v F$
 \end_inset
 
- при перемешении из точки 
+ при перемещении из точки 
 \begin_inset Formula $A_{i}$
 \end_inset
 
@@ -16365,7 +16367,7 @@ Hbc 70
 \begin_inset Formula $A_{i+1}$
 \end_inset
 
- приблизительно равна: 
+ приблизительно равна:
 \begin_inset Formula 
 \begin{eqnarray*}
 \omega_{i} & \approx & \left\{ A=F\um S\right\} \approx\\
@@ -16378,26 +16380,19 @@ Hbc 70
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Вся работа вдоль 
 \begin_inset Formula $\ov{AB}{\smile}$
 \end_inset
 
  --- сумма: 
-\end_layout
+\begin_inset Formula 
+\[
+\omega=\ous{i=0}{n-1}\omega_{i}=\ous{i=0}{n-1}\left(P\left(\xi_{i},\eta_{i}\right)\D x_{i}+Q\left(\xi_{i},\eta_{i}\right)\D y_{i}\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\omega=\ous{i=0}{n-1}\omega_{i}=\ous{i=0}{n-1}\left(P\left(\xi_{i},\eta_{i}\right)\D x_{i}+Q\left(\xi_{i},\eta_{i}\right)\D y_{i}\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Придельным переходмо при 
+Придельным переходом при 
 \begin_inset Formula $\lambda=\un{\max}i\sqrt{\D x_{i}^{2}+\D y_{i}^{2}}\st0,\ n\st\b$
 \end_inset
 
@@ -16425,7 +16420,7 @@ Hbc 70
 \begin_inset Formula $\left\{ A_{i}\right\} $
 \end_inset
 
-и выбора точем 
+ и выбора точек 
 \begin_inset Formula $\left\{ M_{i}\right\} $
 \end_inset
 
@@ -16441,41 +16436,48 @@ Hbc 70
 \end_layout
 
 \begin_layout Definition
-В общес случае криволинейный интеграл второго рода записывается так:
-\end_layout
+В общем случае криволинейный интеграл второго рода записывается так:
+\begin_inset Formula 
+\[
+I=\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui{\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)}
+\]
 
-\begin_layout Definition
-\begin_inset Formula $I=\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\ui{\left(P\left(x,y\right)dx+Q\left(x,y\right)dy\right)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsubsection
-Существование и вычисление криволинейного интеграла вторго рода.
+Существование и вычисление криволинейного интеграла второго рода.
 \end_layout
 
 \begin_layout Theorem
 Пусть спрямляемая кривая задана параметрически:
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 x=\varphi\left(t\right)\\
 y=\psi\left(t\right)
-\end{cases},\ t\in\left[\alpha,\beta\right],\ \begin{array}{c}
+\end{cases},\ t\in\left[\alpha,\beta\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
 A\left(\varphi\left(\alpha\right),\psi\left(\alpha\right)\right)\\
 B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
 \end{array},\ \begin{array}{c}
 \psi\left(t\right)\in C\left[\alpha,\beta\right]\ \left(\text{непрерывна на }\left[\alpha,\beta\right]\right)\\
 \varphi\left(t\right)\in C^{1}\left[\alpha,\beta\right]\ \left(\text{непрерывна с 1й производной}\right)
-\end{array}$
+\end{array}
+\]
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Theorem
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -16487,14 +16489,11 @@ B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
 \end_layout
 
 \begin_layout Theorem
-Тогджа КИВР 
+Тогда КИВР 
 \begin_inset Formula $\ui f\left(x,y\right)dx$
 \end_inset
 
  существует и справедливо равенство:
-\end_layout
-
-\begin_layout Theorem
 \begin_inset Formula 
 \begin{equation}
 \ui f\left(x,y\right)dx=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt\label{eq:32}
@@ -16502,7 +16501,7 @@ B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Proof
@@ -16514,7 +16513,7 @@ B\left(\varphi\left(\beta\right),\psi\left(\beta\right)\right)
 \begin_inset Formula $t_{i},\ i=\overline{0,n}$
 \end_inset
 
- --- ему однозначно соотвествует разбиение 
+ --- ему однозначно соответствует разбиение 
 \begin_inset Formula $\left\{ A_{i}\right\} $
 \end_inset
 
@@ -16531,9 +16530,6 @@ reference "eq:32"
 \end_inset
 
 ) выглядит так:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
 \sigma_{n} & = & \ous{i=0}{n-1}f\left(\xi_{i},\eta_{i}\right)\D x_{i}=\\
@@ -16547,11 +16543,7 @@ reference "eq:32"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Инеграл в правой части (
+Интеграл в правой части (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:32"
@@ -16559,16 +16551,13 @@ reference "eq:32"
 \end_inset
 
 ):
-\end_layout
+\begin_inset Formula 
+\[
+\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt=\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt=\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)dt$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Оценим модуль разности:
 \end_layout
 
@@ -16583,14 +16572,18 @@ Hbc 71, 72
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|\sigma_{n}-I\right| & = & \left|\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}\left[f\left(\xi_{i},\eta_{i}\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right]\varphi\pr\left(t\right)dt\right|\mr\\
- & \mr & \ous{i=0}{n-1}\left|\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t_{i}\right),\psi\left(t_{i}\right)\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right|\um\left|\varphi\pr\left(t\right)\right|dt\mr\\
- & \mr & \left\{ \begin{array}{c}
+\begin{align*}
+\left|\sigma_{n}-I\right| & =\left|\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}\left[f\left(\xi_{i},\eta_{i}\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right]\varphi\pr\left(t\right)dt\right|\mr\\
+ & \mr\ous{i=0}{n-1}\left|\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t_{i}\right),\psi\left(t_{i}\right)\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right|\um\left|\varphi\pr\left(t\right)\right|dt\mr
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mr\left\{ \begin{array}{c}
 \varphi\pr\left(t\right)\ -\ \text{непрерывна}\ \sl\\
 \ \text{ограничена на}\ \left[\alpha;\beta\right]\ \sl\\
 \exists K>0\ \left|\varphi\pr\left(t\right)\right|\mr K\ \forall t\in\left[\alpha;\beta\right]\\
@@ -16603,11 +16596,19 @@ f\left(\varphi\left(t\right),\psi\left(t\right)\right)\ \text{на отрезк�
 \text{если}\ \D t_{i}\ \text{достаточно мало. Поэтому}\\
 \exists\delta=\delta\left(\varepsilon\right):\ \lambda=\max\D t_{i}<\delta_{i}\sl\omega_{i}<\df{\varepsilon}{K\left(\beta-\alpha\right)}\\
 \sl\left|\oui{t_{i}}{t_{i+1}}f\left(\varphi\left(t_{i}\right),\psi\left(t_{i}\right)\right)-f\left(\varphi\left(t\right),\psi\left(t\right)\right)\right|\mr\omega_{i}<\df{\varepsilon}{K\left(\beta-\alpha\right)}
-\end{array}\right\} \mr\\
- & \mr & k\df{\varepsilon}{K\left(\beta-\alpha\right)}\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}dt=\\
- & = & \left\{ \ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}dt=\beta-\alpha\right\} =\\
- & = & \varepsilon
-\end{eqnarray*}
+\end{array}\right\} \mr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\mr k\df{\varepsilon}{K\left(\beta-\alpha\right)}\ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}dt=\left\{ \ous{i=0}{n-1}\oui{t_{i}}{t_{i+1}}dt=\beta-\alpha\right\} =\varepsilon
+\]
 
 \end_inset
 
@@ -16624,11 +16625,11 @@ status open
 
 \end_inset
 
-Значение КИВР заивисит от напрaвления кривой 
+Значение КИВР зависит от направления кривой 
 \begin_inset Formula $L$
 \end_inset
 
-
+:
 \end_layout
 
 \begin_layout Remark
@@ -16664,10 +16665,11 @@ status open
 \end_inset
 
  то тогда интеграл тоже вычисляется:
-\end_layout
+\begin_inset Formula 
+\[
+\ui f\left(x,y\right)dy=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\psi\pr\left(t\right)dt
+\]
 
-\begin_layout Remark
-\begin_inset Formula $\ui f\left(x,y\right)dy=\oui{\alpha}{\beta}f\left(\varphi\left(t\right),\psi\left(t\right)\right)\psi\pr\left(t\right)dt$
 \end_inset
 
 
@@ -16683,10 +16685,11 @@ status open
 \end_inset
 
 :
-\end_layout
+\begin_inset Formula 
+\[
+\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}\left(P\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)\psi\pr\left(t\right)dt\right)
+\]
 
-\begin_layout Remark
-\begin_inset Formula $\ui P\left(x,y\right)dx+Q\left(x,y\right)dy=\oui{\alpha}{\beta}\left(P\left(\varphi\left(t\right),\psi\left(t\right)\right)\varphi\pr\left(t\right)\psi\pr\left(t\right)dt\right)$
 \end_inset
 
 
@@ -16714,7 +16717,7 @@ status open
 \begin_inset Formula $y=y\left(x\right),\ x\in\left[a;b\right],\ y\left(x\right)\in C^{1}\left[a;b\right]$
 \end_inset
 
-, то
+, то:
 \end_layout
 
 \begin_layout Remark
@@ -16742,7 +16745,7 @@ status open
 \begin_inset Formula $L$
 \end_inset
 
- --- отрезок прямой, паралельной оси 
+ --- отрезок прямой, параллельной оси 
 \begin_inset Formula $Oy$
 \end_inset
 
@@ -16771,7 +16774,7 @@ status open
 \end_layout
 
 \begin_layout Remark
-Обратьно, если параленьно 
+Обратно, если параллельно 
 \begin_inset Formula $Ox$
 \end_inset
 
@@ -16797,20 +16800,18 @@ status open
 \end_inset
 
 Для случая пространственной кривой:
-\end_layout
-
-\begin_layout Remark
-\begin_inset Formula $L:\begin{cases}
+\begin_inset Formula 
+\[
+L:\begin{cases}
 x=\varphi\left(t\right)\\
 y=\psi\left(t\right)\\
 z=\chi\left(t\right)
-\end{cases},\ t\in\left[\alpha;\beta\right]$
+\end{cases},\ t\in\left[\alpha;\beta\right]
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Remark
 \begin_inset Formula 
 \begin{eqnarray*}
 \ui P\left(x,y,z\right)dx+Q\left(x,y,z\right)dy+R\left(x,y,z\right)dz & = & \oui{\alpha}{\beta}(P\left(\varphi\left(t\right),\psi\left(t\right),\chi\left(t\right)\right)\varphi\pr\left(t\right)+\\
@@ -16984,7 +16985,7 @@ status open
 \begin_inset Formula $L=\dd D$
 \end_inset
 
- называется положительно ориентированым, если при обходе контура 
+ называется положительно ориентированным, если при обходе контура 
 \begin_inset Formula $L$
 \end_inset
 
@@ -17045,11 +17046,11 @@ status open
 \begin_inset Formula $D$
 \end_inset
 
- вместе с часной производной 
+ вместе с частной производной 
 \begin_inset Formula $P_{y}\pr\left(x,y\right)$
 \end_inset
 
-, тогда 
+, тогда: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \un{\iint}D\df{\dd P\left(x,y\right)}{\dd y}dxdy & = & \oui abdx\oui{y_{0}\left(x\right)}{y_{1}\left(x\right)}P_{y}\pr\left(x,y\right)=\\
@@ -17083,7 +17084,7 @@ status open
 \begin_inset Formula $x$
 \end_inset
 
-, а функци 
+, а функции 
 \begin_inset Formula $Q\left(x,y\right)$
 \end_inset
 
@@ -17091,11 +17092,11 @@ status open
 \begin_inset Formula $D$
 \end_inset
 
- вместе с часной производной 
+ вместе с частной производной 
 \begin_inset Formula $Q_{x}\pr\left(x,y\right)$
 \end_inset
 
-, то 
+, то: 
 \end_layout
 
 \begin_layout Standard
@@ -17109,9 +17110,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \un{\iint}D\df{\dd Q\left(x,y\right)}{\dd x}dxdy=\un{\oint}LQ\left(x,y\right)dy
@@ -17119,10 +17117,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 В общем случае для односвязной области 
 \begin_inset Formula $D$
 \end_inset
@@ -17132,13 +17126,10 @@ status open
 \end_inset
 
  --- связное множество) справедлива формула Грина:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
-\[
-\un{\iint}D\left(Q_{x}\pr\left(x,y\right)-P_{y}\pr\left(x,y\right)\right)dxdy=\un{\oint}LP\left(x,y\right)dx+Q\left(x,y\right)dy
-\]
+\begin{equation}
+\un{\iint}D\left(Q_{x}\pr\left(x,y\right)-P_{y}\pr\left(x,y\right)\right)dxdy=\un{\oint}LP\left(x,y\right)dx+Q\left(x,y\right)dy\label{eq:ff1}
+\end{equation}
 
 \end_inset
 
@@ -17174,15 +17165,15 @@ status open
 \begin_inset Formula $P$
 \end_inset
 
-, то используя формулу Грина, можно вычислить пложадь фигуры 
+, то используя формулу Грина, можно вычислить площадь фигуры 
 \begin_inset Formula $S_{D}$
 \end_inset
 
- с помощью криволинейногго интеграла второго рода.
+ с помощью криволинейного интеграла второго рода.
 \end_layout
 
 \begin_layout Standard
-Рассмотрим часный случаи:
+Рассмотрим частный случаи:
 \end_layout
 
 \begin_layout Enumerate
@@ -17231,7 +17222,7 @@ status open
 \end_layout
 
 \begin_layout Example
-Вычислиь площадь эллипса.
+Вычислить площадь эллипса.
  
 \begin_inset Formula $\df{x^{2}}{a^{2}}+\df{y^{2}}{b^{2}}\mr1$
 \end_inset
@@ -17263,10 +17254,14 @@ Hbc 77
 \end_layout
 
 \begin_layout Example
-Воспользуемся формулой (3), получим:
-\end_layout
+Воспользуемся формулой (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ff1"
 
-\begin_layout Example
+\end_inset
+
+), получим:
 \begin_inset Formula 
 \begin{eqnarray*}
 S_{D} & = & \df 12\un{\oint}Lxdy-ydx=\\
@@ -17276,7 +17271,7 @@ S_{D} & = & \df 12\un{\oint}Lxdy-ydx=\\
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -17322,8 +17317,7 @@ Hbc 78
 \end_layout
 
 \begin_layout Standard
-Рассмотрим К.И.В.Р.
- 
+Рассмотрим К.И.В.Р.: 
 \begin_inset Formula $\un{\iint}{AB}Pdx+Qdy$
 \end_inset
 
@@ -17331,8 +17325,8 @@ Hbc 78
 \end_layout
 
 \begin_layout Standard
-Сформуцлируем условие, при которых значение интеграла зависит только от
- выбора точек 
+Сформулируем условие, при которых значение интеграла зависит только от выбора
+ точек 
 \begin_inset Formula $A$
 \end_inset
 
@@ -17381,7 +17375,7 @@ Hbc 78
 \begin_inset Formula $Pdx+Qdy$
 \end_inset
 
- является полным диференциалом от некоторой функции 
+ является полным дифференциалом от некоторой функции 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -17450,7 +17444,7 @@ hbc 79
 \begin_inset Formula $f\left(x,y\right)=\oui{\left(x_{0},y_{0}\right)}{\left(x,y\right)}Pdx+Qdy$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Proof
@@ -17560,7 +17554,7 @@ x\in\left[x;x+\D x\right]
 \end_inset
 
 .
- тоесть 
+ то есть 
 \begin_inset Formula $\df{\dd f\left(x,y\right)}{\dd x}=P\left(x,y\right),\ \df{\dd f\left(x,y\right)}{\dd y}=Q\left(x,y\right)$
 \end_inset
 
@@ -17609,7 +17603,7 @@ y=y\left(t\right)
 \end_layout
 
 \begin_layout Proof
-Получим 
+Получим: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \ui Pdx+Qdy & = & \left\{ \begin{array}{c}
@@ -17633,8 +17627,8 @@ y\pr\left(t\right)=\df{dy\left(t\right)}{dt}
 \end_layout
 
 \begin_layout Subsubsection
-Признак полного диференциала.
- Нахождение первообразной для случая прамоугольной области.
+Признак полного дифференциала.
+ Нахождение первообразной для случая прямоугольной области.
 \end_layout
 
 \begin_layout Standard
@@ -17642,7 +17636,7 @@ y\pr\left(t\right)=\df{dy\left(t\right)}{dt}
 \begin_inset Formula $D$
 \end_inset
 
- непрерывны часные производные 
+ непрерывны частные производные 
 \begin_inset Formula $Q_{x}\pr$
 \end_inset
 
@@ -17658,7 +17652,7 @@ y\pr\left(t\right)=\df{dy\left(t\right)}{dt}
 \begin_inset Formula $Pdx+Qdy$
 \end_inset
 
- является полным диференциалом тогда и только тогда, когда 
+ является полным дифференциалом тогда и только тогда, когда 
 \begin_inset Formula $\df{\dd P}{\dd y}=\df{\dd Q}{\dd x}$
 \end_inset
 
@@ -17748,10 +17742,7 @@ Hbc 81
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+Следовательно:
 \begin_inset Formula 
 \begin{eqnarray*}
 F\left(x,y\right)-F\left(x_{0},y_{0}\right) & = & F\left(B\right)-F\left(A\right)=\\
@@ -17776,10 +17767,7 @@ x=x\in\left[x_{0};x\right]
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- Первообразная 
+Следовательно, первообразная 
 \begin_inset Formula $\Phi\left(x,y\right)=\oui{y_{0}}yQ\left(x_{1},y\right)dy+\oui{x_{0}}xP\left(x,y_{1}\right)dx+C$
 \end_inset
 
@@ -17887,11 +17875,11 @@ status open
 \begin_inset Formula $d\Phi\left(x,y,z\right)=P\left(x,y,z\right)dx+Q\left(x,y,z\right)dy+R\left(x,ymz\right)dz$
 \end_inset
 
- находжения 
+ нахождения 
 \begin_inset Formula $\Phi$
 \end_inset
 
- аналогимчно (на самостоятельное изучение).
+ аналогично (на самостоятельное изучение).
 \end_layout
 
 \begin_layout Subsubsection
@@ -17919,7 +17907,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Доказать двудя способоми..
+Доказать двумя способами...
 \end_layout
 
 \begin_deeper
@@ -17929,7 +17917,7 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\sl$
+\begin_inset Formula $\left(\sl\right)$
 \end_inset
 
  
@@ -17942,7 +17930,7 @@ status open
 \end_inset
 
  не зависит от пути интегрирования.
- Рассмотримм производную.
+ Рассмотрим производную.
 \end_layout
 
 \begin_layout Standard
@@ -17985,7 +17973,7 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\Longleftarrow$
+\begin_inset Formula $\left(\Longleftarrow\right)$
 \end_inset
 
 
@@ -17997,7 +17985,7 @@ status open
 \begin_inset Formula $\un{\oint}LPdx+Qdy=0$
 \end_inset
 
- для любього замкнутого контура 
+ для любого замкнутого контура 
 \begin_inset Formula $L\vkl D$
 \end_inset
 
@@ -18013,7 +18001,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Рассмотрим дваразных пути: 
+Рассмотрим два разных пути: 
 \begin_inset Formula $L_{1}$
 \end_inset
 
@@ -18079,7 +18067,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Для лубого замкнутого контура 
+Для любого замкнутого контура 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -18087,7 +18075,7 @@ status open
 \begin_inset Formula $K\vkl D$
 \end_inset
 
- по формуле грина, получим:
+ по формуле Грина, получим:
 \end_layout
 
 \begin_layout Standard
@@ -18108,11 +18096,11 @@ status open
 \begin_inset Formula $P\left(x,y\right),Q\left(x,y\right)$
 \end_inset
 
- непрерывные вместе с часными производными
+ непрерывные вместе с частными производными
 \begin_inset Formula $P_{y}\pr,Q_{x}\pr$
 \end_inset
 
- в многгосвязной области 
+ в многосвязной области 
 \begin_inset Formula $D$
 \end_inset
 
@@ -18143,7 +18131,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Ограничемся случаем трехсвязной области, с границей 
+Ограничимся случаем трехсвязной областью, с границей 
 \begin_inset Formula $\gamma_{0}\ob\gamma_{1}\ob\gamma_{2}$
 \end_inset
 
@@ -18180,18 +18168,15 @@ status open
 \end_layout
 
 \begin_layout Proof
-Для полученой односвязной области обход по ее границе:
-\end_layout
+Для полученной односвязной области обход по ее границе:
+\begin_inset Formula 
+\[
+\gamma_{0}\ob l_{1}^{+}\ob l_{1}^{-}\ob\gamma_{1}\ob l_{2}^{+}\ob l_{2}^{-}\ob\gamma_{2}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\gamma_{0}\ob l_{1}^{+}\ob l_{1}^{-}\ob\gamma_{1}\ob l_{2}^{+}\ob l_{2}^{-}\ob\gamma_{2}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Так как при интегрировании по этому контуру слогаемые по 
+Так как при интегрировании по этому контуру слагаемые по 
 \begin_inset Formula $l_{1}^{+},l_{1}^{-}$
 \end_inset
 
@@ -18225,7 +18210,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Рассмотривается поверхности 
+Рассматривается поверхности 
 \begin_inset Formula $S\vkl E^{3}$
 \end_inset
 
@@ -18266,7 +18251,7 @@ status open
 \begin_inset Formula $n$
 \end_inset
 
- частей, обозщначим их 
+ частей, обозначим их 
 \begin_inset Formula $S_{i}$
 \end_inset
 
@@ -18309,11 +18294,11 @@ status open
 \begin_inset Formula $n\st\b,\ \lambda\st0$
 \end_inset
 
- существует конечный предел последовательнсти 
+ существует конечный предел последовательности 
 \begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(x_{i}my_{i},z_{i}\right)\D S_{i}$
 \end_inset
 
- не зависящий от способо разбиения 
+ не зависящий от способа разбиения 
 \begin_inset Formula $\left\{ S_{i}\right\} $
 \end_inset
 
@@ -18454,7 +18439,7 @@ n\st\b\\
 \begin_inset Formula $D_{xy}\vkl XoY$
 \end_inset
 
- проэкция области 
+ проекция области 
 \begin_inset Formula $S$
 \end_inset
 
@@ -18470,12 +18455,12 @@ n\st\b\\
 \begin_inset Formula $S$
 \end_inset
 
- --- гладкая, тоесть в каждой точке можно провести касательную плоскость
+ --- гладкая, то есть в каждой точке можно провести касательную плоскость
  к 
 \begin_inset Formula $S$
 \end_inset
 
-, и каждая прямая, поралельная оси 
+, и каждая прямая, параллельная оси 
 \begin_inset Formula $Oz$
 \end_inset
 
@@ -18483,7 +18468,7 @@ n\st\b\\
 \begin_inset Formula $S$
 \end_inset
 
- не бдолее чем в одной точке 
+ не более чем в одной точке 
 \begin_inset Formula $\sl$
 \end_inset
 
@@ -18524,7 +18509,7 @@ status open
 \begin_inset Formula $D_{i}$
 \end_inset
 
- --- проэкция 
+ --- проекция 
 \begin_inset Formula $S_{i}$
 \end_inset
 
@@ -18548,7 +18533,7 @@ status open
 \begin_inset Formula $T_{i}$
 \end_inset
 
- --- кусоке плоскости, касающейся поверхности 
+ --- кусок плоскости, касающейся поверхности 
 \begin_inset Formula $S$
 \end_inset
 
@@ -18556,7 +18541,7 @@ status open
 \begin_inset Formula $M_{i}$
 \end_inset
 
-, проэкция которого на 
+, проекция которого на 
 \begin_inset Formula $XoY$
 \end_inset
 
@@ -18565,7 +18550,7 @@ status open
 \end_inset
 
 .
- С точностью до бесконечно малых высших порядков юудем считать, что площадь
+ С точностью до бесконечно малых высших порядков будем считать, что площадь
  куска 
 \begin_inset Formula $D_{i}$
 \end_inset
@@ -18618,14 +18603,11 @@ status open
 \begin_inset Formula $z_{x}\pr\left(N_{i}\right)\left(x-x_{i}\right)+z_{y}\pr\left(N_{i}\right)\left(y-y_{i}\right)-\left(z-z_{i}\right)=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, 
 \end_layout
 
 \begin_layout Standard
+следовательно 
 \begin_inset Formula $\v{n_{i}}=\v{\left(-z_{x}\pr\left(N_{i}\right);-z_{y}\pr\left(N_{i}\right);1\right)}$
 \end_inset
 
@@ -18884,7 +18866,7 @@ hbc 86
 \end_layout
 
 \begin_layout Example
-Проэктируем именно на 
+Проектируем именно на 
 \begin_inset Formula $YoZ$
 \end_inset
 
@@ -18895,7 +18877,7 @@ hbc 86
 \begin_inset Formula $D_{yz}$
 \end_inset
 
- --- проэкция 
+ --- проекция 
 \begin_inset Formula $S$
 \end_inset
 
@@ -19059,7 +19041,7 @@ S\,:\, z=\varphi\left(x,y\right)\\
 \end_layout
 
 \begin_layout Subsubsection
-Сторона тповенхности.
+Сторона поверхности.
  Ориентация пространства
 \end_layout
 
@@ -19093,19 +19075,19 @@ S\,:\, z=\varphi\left(x,y\right)\\
 \begin_inset Formula $M_{0}$
 \end_inset
 
- востановиим нормаль к поверхности (выбераем одно их двух направлений).
+ восстановим нормаль к поверхности (выберем одно их двух направлений).
 \end_layout
 
 \begin_layout Definition
-Для любого замннутого контура 
+Для любого замкнутого контура 
 \begin_inset Formula $\gamma$
 \end_inset
 
-, содержашегося в 
+, содержащегося в 
 \begin_inset Formula $S$
 \end_inset
 
-, проходящего черех точку при непрерынвом движении по 
+, проходящего через точку при непрерывном движении по 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -19129,7 +19111,7 @@ S\,:\, z=\varphi\left(x,y\right)\\
 \begin_inset Formula $S$
 \end_inset
 
- называется двустаронней поверхностью, а направление нормали 
+ называется двухсторонней поверхностью, а направление нормали 
 \begin_inset Formula $\v n$
 \end_inset
 
@@ -19178,7 +19160,7 @@ Hbc 87
 \end_layout
 
 \begin_layout Standard
-В дальнейшем будем рассматривать только двусторонние поверхзности
+В дальнейшем будем рассматривать только двусторонние поверхности
 \end_layout
 
 \begin_layout Definition
@@ -19186,7 +19168,7 @@ Hbc 87
 \begin_inset Formula $\gamma$
 \end_inset
 
- --- замкнутый контур на выбранной стороне поверхногсти 
+ --- замкнутый контур на выбранной стороне поверхности 
 \begin_inset Formula $S$
 \end_inset
 
@@ -19194,7 +19176,7 @@ Hbc 87
 \begin_inset Formula $\gamma$
 \end_inset
 
- называется положительно ориентированым относительно выбранной стороны,
+ называется положительно ориентированным относительно выбранной стороны,
  если наблюдатель, находящийся в вершине вектора 
 \begin_inset Formula $\v n$
 \end_inset
@@ -19209,7 +19191,8 @@ Hbc 87
 \begin_layout Subsubsection
 ПИВР.
  Понятие.
- Основные свойстванепрер
+ Основные свойства.
+ Непрерывность
 \end_layout
 
 \begin_layout Standard
@@ -19226,7 +19209,7 @@ Hbc 87
 \end_inset
 
 .
- Разобъем 
+ Разобьем 
 \begin_inset Formula $S$
 \end_inset
 
@@ -19288,7 +19271,7 @@ Hbc 87
 \end_layout
 
 \begin_layout Standard
-Рассмотиримм конечную сумму 
+Рассмотрим конечную сумму 
 \begin_inset Formula $\sigma_{n}=\ous{i=1}nf\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy},\ M_{i}\left(x_{i};\, y_{i};\, z_{i}\right)\in S_{i}$
 \end_inset
 
@@ -19374,7 +19357,7 @@ Hbc 87
 \begin_inset Formula $\left\{ M_{i}\right\} $
 \end_inset
 
-, то его называют поверхностным интегралом второго рода от функци 
+, то его называют поверхностным интегралом второго рода от функции 
 \begin_inset Formula $f\left(x,y,z\right)$
 \end_inset
 
@@ -19437,7 +19420,7 @@ n\st\b
 \end_layout
 
 \begin_layout Standard
-В общем случае ПИВР имеет слудующий вид:
+В общем случае ПИВР имеет следующий вид:
 \end_layout
 
 \begin_layout Standard
@@ -19526,7 +19509,7 @@ n\st\b
 \end_layout
 
 \begin_layout Standard
-Сводится к вычислению двойного интегралаю
+Сводится к вычислению двойного интеграла
 \end_layout
 
 \begin_layout Standard
@@ -19538,7 +19521,7 @@ n\st\b
 \begin_inset Formula $S$
 \end_inset
 
-, заданой явно 
+, заданной явно 
 \begin_inset Formula $z=\varphi\left(x,y\right)$
 \end_inset
 
@@ -19547,7 +19530,7 @@ n\st\b
 \begin_inset Formula $\left(x;y\right)\vkl D_{x,y}$
 \end_inset
 
- --- проэкция 
+ --- проекция 
 \begin_inset Formula $S$
 \end_inset
 
@@ -19584,11 +19567,11 @@ Hbc 88
 \begin_inset Formula $\gamma=\left(\hat{\v n,\v k}\right)$
 \end_inset
 
-, тоесть 
+, то есть 
 \begin_inset Formula $\cos\gamma>0$
 \end_inset
 
-, сдедовательно при разбиении самой поверхности 
+, следовательно при разбиении самой поверхности 
 \begin_inset Formula $S$
 \end_inset
 
@@ -19596,7 +19579,7 @@ Hbc 88
 \begin_inset Formula $S_{i},\ i=\overline{1,n}$
 \end_inset
 
- их проэкции 
+ их проекции 
 \begin_inset Formula $\D_{i}^{xy}$
 \end_inset
 
@@ -19609,7 +19592,7 @@ Hbc 88
 \end_inset
 
 .
- Следовательно интегральноая сумма:
+ Следовательно интегральная сумма:
 \end_layout
 
 \begin_layout Standard
@@ -19626,28 +19609,26 @@ Hbc 88
 
 \begin_layout Standard
 Это интегральная сумма для двойного интеграла.
-\end_layout
+\begin_inset Formula 
+\[
+\ous{i=1}nR\left(x_{i},y_{i},\varphi\left(x_{i},y_{i}\right)\right)\D_{i}^{xy}\ov{\st}{n\st\b,\lambda\st0}\un{\iint}{D_{xy}}R\left(x,y,\varphi\left(x,y\right)\right)dxdy
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\ous{i=1}nR\left(x_{i},y_{i},\varphi\left(x_{i},y_{i}\right)\right)\D_{i}^{xy}\ov{\st}{n\st\b,\lambda\st0}\un{\iint}{D_{xy}}R\left(x,y,\varphi\left(x,y\right)\right)dxdy$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\ous{i=1}nR\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}=\un{\iiint}SR\left(x,y,z\right)dS
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\ous{i=1}nR\left(x_{i},y_{i},z_{i}\right)\D_{i}^{xy}=\un{\iiint}{}R\left(x,y,z\right)d$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если 
 \begin_inset Formula $\cos\gamma<0$
 \end_inset
 
-, то в равенстве получином перед интегралом будет знак 
+, то в равенстве полученном перед интегралом будет знак 
 \begin_inset Quotes eld
 \end_inset
 
@@ -19846,12 +19827,12 @@ I & = & \un{\iint}{D_{yz}}\left(-\df{3y}2+\df z2-3\right)dydz-\un{\iint}{D_{xz}}
 \end_layout
 
 \begin_layout Subsubsection
-Формула Гасса--Острогацкого
+Формула Гасса---Острогацкого
 \end_layout
 
 \begin_layout Standard
-Связь между ПИВР на замкнутой поверхности и тройным интегралом по обьему,
- ограниченному этой поверхностью, устанавливает следующая таорема.
+Связь между ПИВР на замкнутой поверхности и тройным интегралом по объему,
+ ограниченному этой поверхностью, устанавливает следующая теорема.
 \end_layout
 
 \begin_layout Theorem
@@ -19859,7 +19840,7 @@ I & = & \un{\iint}{D_{yz}}\left(-\df{3y}2+\df z2-3\right)dydz-\un{\iint}{D_{xz}}
 \begin_inset Formula $P\left(x,y,z\right),\, Q\left(x,y,z\right),\, R\left(x,y,z\right)$
 \end_inset
 
- --- непрерывны вместе с часными производными первого порядка в области
+ --- непрерывны вместе с частными производными первого порядка в области
  
 \begin_inset Formula $V\vkl E^{3}$
 \end_inset
@@ -19925,7 +19906,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Тогда 
+Тогда:
 \begin_inset Formula 
 \begin{eqnarray}
 \un{\iiint}V\df{\dd R}{\dd z}dxdydz & = & \un{\iint}Ddxdy\oui{r_{1}(x,y)}{r_{2}(x,y)}\df{\dd R}{\dd z}dz=\nonumber \\
@@ -19936,10 +19917,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Заметим, что равенство (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19969,14 +19946,7 @@ I=\un{\oiint}S-xdydz+zdxdz+5dxdy
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
 где S --- внешняя сторона пирамиды:
-\end_layout
-
-\begin_layout Example
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -19990,9 +19960,6 @@ z & =0
 \end_inset
 
 
-\end_layout
-
-\begin_layout Example
 \begin_inset Formula $\un{\iiint}V\left(P'_{x}+Q'_{y}+R'_{z}\right)dxdydz=\un{\oiint}SPdydz+Qdxdz+Rdxdy$
 \end_inset
 
@@ -20058,8 +20025,8 @@ R=5
 \end_layout
 
 \begin_layout Standard
-Осноыные характеристики скалярных полей: поверхности (лиинии) уровня, производна
-я по направлению, градиент.
+Основные характеристики скалярных полей: поверхности (линии) уровня, производная
+ по направлению, градиент.
 \end_layout
 
 \begin_layout Subsection
@@ -20218,7 +20185,7 @@ status open
 \begin_inset Formula $S$
 \end_inset
 
- --- двустаронняя поверхность в 
+ --- двухсторонняя поверхность в 
 \begin_inset Formula $V$
 \end_inset
 
@@ -20227,7 +20194,7 @@ status open
 \begin_inset Formula $W$
 \end_inset
 
- --- количество жидкости, протекающей за еденицу времени через поверхность
+ --- количество жидкости, протекающей за единицу времени через поверхность
  
 \begin_inset Formula $S$
 \end_inset
@@ -20240,7 +20207,7 @@ status open
 \begin_inset Formula $\v n$
 \end_inset
 
- --- еденичный вектор, перпендикулярный к 
+ --- единичный вектор, перпендикулярный к 
 \begin_inset Formula $S$
 \end_inset
 
@@ -20338,7 +20305,7 @@ status open
 \begin_inset Formula $\lambda\st0,\ n\st\b$
 \end_inset
 
- получим 
+ получим:
 \begin_inset Formula 
 \begin{eqnarray*}
 W & = & \un{\iint}S\left(\v a,\v n\right)dS=\\
@@ -20357,7 +20324,7 @@ W & = & \un{\iint}S\left(\v a,\v n\right)dS=\\
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Definition
@@ -20381,7 +20348,7 @@ W & = & \un{\iint}S\left(\v a,\v n\right)dS=\\
 \begin_inset Formula $S$
 \end_inset
 
-, ориентированый в соответствии с выбранной стораной поверхности 
+, ориентированный в соответствии с выбранной стороной поверхности 
 \end_layout
 
 \begin_layout Subsection
@@ -20422,11 +20389,11 @@ Hbc 91
 \begin_inset Formula $S_{1}$
 \end_inset
 
-жидкость втикает, а через 
+жидкость втекает, а через 
 \begin_inset Formula $S_{2}$
 \end_inset
 
- --- вытикает.
+ --- вытекает.
 \end_layout
 
 \begin_layout Standard
@@ -20434,11 +20401,11 @@ Hbc 91
 \begin_inset Formula $\Pi$
 \end_inset
 
- жидкости через внешнююсторону поверхности 
+ жидкости через внешнюю сторону поверхности 
 \begin_inset Formula $S$
 \end_inset
 
- равен: 
+ равен:
 \begin_inset Formula 
 \begin{eqnarray*}
 \Pi & = & \Pi_{1}+\Pi_{2}=\un{\oiint}S\left(\v a\left(M\right),\v n\left(M\right)\right)dS=\\
@@ -20447,10 +20414,6 @@ Hbc 91
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Заметим, что 
 \begin_inset Formula $\Pi_{1}<0$
 \end_inset
@@ -20478,7 +20441,7 @@ Hbc 91
 \begin_inset Formula $V$
 \end_inset
 
-, ограниченой
+, ограниченной
 \begin_inset Formula $S$
 \end_inset
 
@@ -20493,7 +20456,7 @@ Hbc 91
 \begin_inset Formula $V$
 \end_inset
 
- за еденицу времени
+ за единицу времени
 \end_layout
 
 \begin_layout Standard
@@ -20513,7 +20476,7 @@ Hbc 91
 \begin_inset Formula $\Pi=0$
 \end_inset
 
- то сумарная можность источников равна сумарной мощности приемников.
+ то суммарная мощность источников равна суммарной мощности приемников.
 \end_layout
 
 \begin_layout Subsection
@@ -20525,7 +20488,7 @@ Hbc 91
 \begin_inset Formula $S$
 \end_inset
 
- не замкнута и однозначно проэктируется на плоскость 
+ не замкнута и однозначно проектируется на плоскость 
 \begin_inset Formula $XoY$
 \end_inset
 
@@ -20533,7 +20496,7 @@ Hbc 91
 \begin_inset Formula $D=D_{xy}$
 \end_inset
 
- --- проэкция 
+ --- проекция 
 \begin_inset Formula $S$
 \end_inset
 
@@ -20565,7 +20528,7 @@ Hbc 91
 \begin_inset Formula $\Pi=\un{\iint}S\left(\v n,\v a\right)dS=\un{\iint}{D_{xy}}\df{\left(\v n,\v a\right)dxdy}{\left|\cos\gamma\right|}$
 \end_inset
 
- (Надо убитывать при этом что 
+ (Надо учитывать при этом что 
 \begin_inset Formula $z=f\left(x,y\right)$
 \end_inset
 
@@ -20573,7 +20536,7 @@ Hbc 91
 \end_layout
 
 \begin_layout Standard
-Заметим, что уравнение поверхзности 
+Заметим, что уравнение поверхности 
 \begin_inset Formula $S\,:\, z-f\left(x,y\right)=0$
 \end_inset
 
@@ -20593,7 +20556,7 @@ Hbc 91
 \begin_inset Formula $U$
 \end_inset
 
- ортогонален поверхности уровня, а значит поверрхности 
+ ортогонален поверхности уровня, а значит поверхности 
 \begin_inset Formula $S$
 \end_inset
 
