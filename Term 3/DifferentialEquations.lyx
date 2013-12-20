@@ -4505,7 +4505,7 @@ W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left
 \begin_inset Formula $j$
 \end_inset
 
--го столбца, а входит он только в одно слогаемое 
+-го столбца, а входит он только в одно слагаемое 
 \begin_inset Formula $y_{i}^{\left(j\right)}\left(x\right)\um B_{i,j}$
 \end_inset
 
@@ -4531,10 +4531,6 @@ W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 При 
 \begin_inset Formula $i=1$
 \end_inset
@@ -4543,28 +4539,27 @@ W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left
 \begin_inset Formula $\ous{j=1}nB_{1,j}\um\df{dy_{1}^{\left(j\right)}}{dx}$
 \end_inset
 
- - это разложение по 1й строке определителя 
-\begin_inset Formula $\left|\begin{array}{cccc}
-\df{dy_{1}^{\left(1\right)}}{dx} & \df{dy_{1}^{\left(2\right)}}{dx} & \tr & \df{dy_{1}^{\left(n\right)}}{dx}\\
+ --- это разложение по 1-й строке определителя:
+\begin_inset Formula 
+\[
+\left|\begin{smallmatrix}\frac{dy_{1}^{\left(1\right)}}{dx} & \frac{dy_{1}^{\left(2\right)}}{dx} & \tr & \frac{dy_{1}^{\left(n\right)}}{dx}\\
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
-\end{array}\right|.$
+\end{smallmatrix}\right|
+\]
+
 \end_inset
 
- При 
+При 
 \begin_inset Formula $i=2$
 \end_inset
 
- продеференцирована 2я строка..
-\end_layout
-
-\begin_layout Proof
-Следственно
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\df{dW}{dx}=\left|\begin{array}{cccc}
+ продифференцированная 2-я строка.
+ Следовательно:
+\begin_inset Formula 
+\[
+\df{dW}{dx}=\left|\begin{array}{cccc}
 \df{dy_{1}^{\left(1\right)}}{dx} & \df{dy_{1}^{\left(2\right)}}{dx} & \tr & \df{dy_{1}^{\left(n\right)}}{dx}\\
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
@@ -4579,55 +4574,45 @@ dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 \df{y_{n}^{\left(1\right)}}{dx} & \df{y_{n}^{\left(2\right)}}{dx} & \tr & \df{y_{n}^{\left(n\right)}}{dx}
-\end{array}\right|$
+\end{array}\right|
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Так как 
-\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}=A\um y^{\left(k\right)},\ k=\overline{1,n}$
+\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}=A\um y^{\left(k\right)},\quad k=\overline{1,n}$
 \end_inset
 
 , то 
-\begin_inset Formula $\df{dy_{i}^{\left(k\right)}}{dx}=\ous{j=1}na_{i,j}\um y_{j}^{\left(k\right)},\ i,k=\overline{1,n}$
+\begin_inset Formula $\df{dy_{i}^{\left(k\right)}}{dx}=\ous{j=1}na_{i,j}\um y_{j}^{\left(k\right)},\quad i,k=\overline{1,n}$
 \end_inset
 
  .
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
-\df{dW}{dx} & = & \left|\begin{array}{cccc}
+\begin{multline*}
+\df{dW}{dx}=\left|\begin{array}{cccc}
 \ous{j=1}na_{1,j}\um y_{j}^{\left(1\right)} & \ous{j=1}na_{1,j}\um y_{j}^{\left(2\right)} & \tr & \ous{j=1}na_{1,j}\um y_{j}^{\left(n\right)}\\
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
 \end{array}\right|+\\
- & + & \left|\begin{array}{cccc}
++\left|\begin{array}{cccc}
 dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
 \ous{j=1}na_{2,j}\um y_{j}^{\left(1\right)} & \ous{j=1}na_{2,j}\um y_{j}^{\left(2\right)} & \tr & \ous{j=1}na_{2,j}\um y_{j}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
-\end{array}\right|+\\
- & + & \tr+\\
- & + & \left|\begin{array}{cccc}
+\end{array}\right|+\tr+\\
++\left|\begin{array}{cccc}
 dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 \ous{j=1}na_{n,j}\um y_{j}^{\left(1\right)} & \ous{j=1}na_{n,j}\um y_{j}^{\left(2\right)} & \tr & \ous{j=1}na_{n,j}\um y_{j}^{\left(n\right)}
 \end{array}\right|
-\end{eqnarray*}
+\end{multline*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Из 1й строки вычтем 
+Из 1-й строки вычтем 
 \begin_inset Formula $i$
 \end_inset
 
@@ -4640,48 +4625,41 @@ y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \end_inset
 
 .
- (Это для 1го определителя, для остальных сделаем наподобее аналогично...)
-\end_layout
-
-\begin_layout Proof
+ (Это для 1-го определителя, для остальных сделаем аналогично).
 \begin_inset Formula 
-\begin{eqnarray*}
-\df{dW}{dx} & = & \left|\begin{array}{cccc}
+\begin{multline*}
+\df{dW}{dx}=\left|\begin{array}{cccc}
 a_{1,1}\um y_{j}^{\left(1\right)} & a_{1,1}\um y_{1}^{\left(2\right)} & \tr & a_{1,1}\um y_{1}^{\left(n\right)}\\
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
 \end{array}\right|+\\
- & + & \left|\begin{array}{cccc}
++\left|\begin{array}{cccc}
 dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
 a_{2,2}\um y_{2}^{\left(1\right)} & a_{2,2}\um y_{2}^{\left(2\right)} & \tr & a_{2,2}\um y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 y_{n}^{\left(1\right)} & y_{n}^{\left(2\right)} & \tr & y_{n}^{\left(n\right)}
-\end{array}\right|+\\
- & + & \tr+\\
- & + & \left|\begin{array}{cccc}
+\end{array}\right|+\tr+\\
++\left|\begin{array}{cccc}
 dy_{1}^{\left(1\right)} & dy_{1}^{\left(2\right)} & \tr & dy_{1}^{\left(n\right)}\\
 y_{2}^{\left(1\right)} & y_{2}^{\left(2\right)} & \tr & y_{2}^{\left(n\right)}\\
 \vtr & \vtr & \ddots & \vtr\\
 a_{n,n}\um y_{n}^{\left(1\right)} & a_{n,n}\um y_{n}^{\left(2\right)} & \tr & a_{n,n}\um y_{n}^{\left(n\right)}
 \end{array}\right|
-\end{eqnarray*}
+\end{multline*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Теперь выносим из каждого опрелелителя 
-\begin_inset Formula $a_{i,i},\ i=\overline{1,n}$
+Теперь выносим из каждого определителя 
+\begin_inset Formula $a_{i,i},\quad i=\overline{1,n}$
 \end_inset
 
- 
-\end_layout
+:
+\begin_inset Formula 
+\[
+\df{dW}{dx}=a_{1,1}\um W\left(x\right)+a_{2,2}\um W\left(x\right)+\tr+a_{n,n}\um W\left(x\right)=W\left(x\right)\um\ous{k=1}na_{k,k}\left(x\right)
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\df{dW}{dx}=a_{1,1}\um W\left(x\right)+a_{2,2}\um W\left(x\right)+\tr+a_{n,n}\um W\left(x\right)=W\left(x\right)\um\ous{k=1}na_{k,k}\left(x\right)$
 \end_inset
 
 
@@ -4696,41 +4674,41 @@ a_{n,n}\um y_{n}^{\left(1\right)} & a_{n,n}\um y_{n}^{\left(2\right)} & \tr & a_
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- - решения системы (1).
- Составим матрицу из этих вектор функций, которую обозначим через 
-\begin_inset Formula $Y\left(x\right)=\left(\begin{array}{ccc}
+ --- решения системы (1).
+ Составим матрицу из этих вектор функций, которую обозначим через: 
+\begin_inset Formula 
+\[
+Y\left(x\right)=\left(\begin{array}{ccc}
 y_{1}^{\left(1\right)}\left(x\right) & \tr & y_{1}^{\left(n\right)}\left(x\right)\\
 \vtr & \ddots & \vtr\\
 y_{1}^{\left(n\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right)
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
-.
- Под производной матрици будем понималь по определению 
-\begin_inset Formula $\df{dY}{dx}=\left(\begin{array}{ccc}
+Под производной матрицы будем понимать по определению: 
+\begin_inset Formula 
+\[
+\df{dY}{dx}=\left(\begin{array}{ccc}
 \df{y_{1}^{\left(1\right)}\left(x\right)}{dx} & \tr & \df{y_{1}^{\left(n\right)}\left(x\right)}{dx}\\
 \vtr & \ddots & \vtr\\
 \df{y_{1}^{\left(n\right)}\left(x\right)}{dx} & \tr & \df{y_{n}^{\left(n\right)}\left(x\right)}{dx}
-\end{array}\right)$
+\end{array}\right)
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}=A\left(x\right)\um y^{\left(k\right)},\quad k=\overline{1,n}$
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\df{dy^{\left(k\right)}}{dx}=A\left(x\right)\um y^{\left(k\right)},\ k=\overline{1,n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Тогда эти 
+ Тогда эти 
 \begin_inset Formula $n^{2}$
 \end_inset
 
- равенств можно обьеденить 
+ равенств можно объединить в матричное равенство:
 \begin_inset Formula 
 \begin{equation}
 \df{dY}{dx}=A\um Y\label{eq:rr4}
@@ -4738,11 +4716,11 @@ y_{1}^{\left(n\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right
 
 \end_inset
 
-в матречное равенство.
+
 \end_layout
 
 \begin_layout Definition
-Фундаментальной матрицей линейной однородной системы (1) будем называтеь
+Фундаментальной матрицей линейной однородной системы (1) будем называть
  решение уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4750,14 +4728,14 @@ reference "eq:rr4"
 
 \end_inset
 
-), невырожденной хотябы в 1-ой точке.
+), невырожденной хотя бы в 1-ой точке.
 \end_layout
 
 \begin_layout Standard
-Столбцы фундаментальной матрици обзазуют фундаментальную систему решений
+Столбцы фундаментальной матрицы образуют фундаментальную систему решений
  системы (1), и обратно.
- Поэтому нахождение фундаментальной матрици аналогично нахождению фундаментально
-й системы решщений.
+ Поэтому нахождение фундаментальной матрицы аналогично нахождению фундаментально
+й системы решений.
  
 \end_layout
 
@@ -4771,20 +4749,26 @@ reference "eq:rr4"
 \begin_inset Formula $Y\left(x\right)$
 \end_inset
 
- - фундаментальная матрица системы (1), а 
-\begin_inset Formula $\vec c=\left(\begin{array}{c}
-c_{1}\\
+ --- фундаментальная матрица системы (1), а 
+\begin_inset Formula $\vec c=\left(\begin{smallmatrix}c_{1}\\
 \vtr\\
 c_{n}
-\end{array}\right)\in R^{n}$
+\end{smallmatrix}\right)\in R^{n}$
 \end_inset
 
-.Тогда 
+.
+ Тогда 
 \begin_inset Formula $y\left(x\right)=Y\left(x\right)\um c$
 \end_inset
 
- будет решщение м системы (ы) и любое решение системы (1) можно представить
- в виде 
+ будет решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rr4"
+
+\end_inset
+
+) и любое решение системы (1) можно представить в виде:
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=Y\left(x\right)\um c\label{eq:rr5}
@@ -4796,26 +4780,27 @@ y\left(x\right)=Y\left(x\right)\um c\label{eq:rr5}
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $y\left(x\right)=\left(\begin{array}{ccc}
+Пусть:
+\begin_inset Formula 
+\[
+y\left(x\right)=\left(\begin{array}{ccc}
 y_{1}^{\left(1\right)}\left(x\right) & \tr & y_{1}^{\left(n\right)}\left(x\right)\\
 \vtr & \ddots & \vtr\\
 y_{1}^{\left(n\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right)
 \end{array}\right)\um\left(\begin{array}{c}
 c_{1}\\
-\\
+\vtr\\
 c_{n}
-\end{array}\right)=\left(\begin{array}{c}
-c_{1}y_{1}^{\left(1\right)}\left(x\right)\tr c_{n}y_{1}^{\left(n\right)}\left(x\right)\\
-\\
-\\
-\end{array}\right)$
+\end{array}\right)=\left(\begin{array}{ccc}
+c_{1}y_{1}^{\left(1\right)}\left(x\right) & \tr & c_{n}y_{1}^{\left(n\right)}\left(x\right)\\
+\vtr & \ddots & \vtr\\
+c_{1}y_{n}^{\left(1\right)}\left(x\right) & \tr & c_{n}y_{n}^{\left(n\right)}\left(x\right)
+\end{array}\right)
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-По теореме 1 о свойстве решений однородных систем 
+По теореме 1 о свойствах решений однородных систем 
 \begin_inset Formula $y(x)$
 \end_inset
 
@@ -4841,14 +4826,11 @@ c_{1}y_{1}^{\left(1\right)}\left(x\right)\tr c_{n}y_{1}^{\left(n\right)}\left(x\
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Построим 
+ Построим 
 \begin_inset Formula $u(x)=Y(x)\um Y^{-1}(x_{0})y(x_{0})$
 \end_inset
 
- Тгда по доказанному выше: 
+ Тогда по доказанному выше: 
 \begin_inset Formula $u(x)$
 \end_inset
 
@@ -4865,11 +4847,12 @@ c_{1}y_{1}^{\left(1\right)}\left(x\right)\tr c_{n}y_{1}^{\left(n\right)}\left(x\
 \end_layout
 
 \begin_layout Standard
-Свойство 2:
-\end_layout
 
-\begin_layout Standard
-Пусть 
+\emph on
+Свойство 2.
+
+\emph default
+ Пусть 
 \begin_inset Formula $Y(x)$
 \end_inset
 
@@ -4877,7 +4860,7 @@ c_{1}y_{1}^{\left(1\right)}\left(x\right)\tr c_{n}y_{1}^{\left(n\right)}\left(x\
 \begin_inset Formula $C$
 \end_inset
 
- -- невырожденная матрица с постоянными элементами, тогда 
+ --- невырожденная матрица с постоянными элементами, тогда 
 \begin_inset Formula $Y_{2}(x)=Y_{1}(x)\um C$
 \end_inset
 
@@ -4885,7 +4868,8 @@ c_{1}y_{1}^{\left(1\right)}\left(x\right)\tr c_{n}y_{1}^{\left(n\right)}\left(x\
 \end_layout
 
 \begin_layout Standard
-Тк 
+Т.к.
+ 
 \begin_inset Formula $Y_{1}$
 \end_inset
 
@@ -4940,7 +4924,7 @@ status open
 \begin_inset Formula $Y_{1}(x),Y_{2}(x)$
 \end_inset
 
- --- фундаментальные матрицы, тогда найдется невырожд матрица 
+ --- фундаментальные матрицы, тогда найдется невырожденная матрица 
 \begin_inset Formula $C$
 \end_inset
 
@@ -4960,15 +4944,14 @@ status open
 \begin_inset Formula $U(x)=Y_{1}(x)\um Y_{1}^{-1}(x_{0})\um Y_{2}(x_{0})$
 \end_inset
 
- Тгда U по доказанному выше --- фундаментальная матрица системы 1 те будет
+ Тогда U по доказанному выше --- фундаментальная матрица системы 1 те будет
  решением матричного уравнения 4 и 
 \begin_inset Formula $U(x_{0})=Y_{2}(x_{0})$
 \end_inset
 
 .
- Мы имеем 2 решения совпад.
- в одной точке тогда в силу теоремы существования и единственности для линейных
- систем: 
+ Мы имеем 2 решения совпадающих в одной точке, тогда в силу теоремы существовани
+я и единственности для линейных систем: 
 \begin_inset Formula $Y_{2}(x)\equiv U(x)$
 \end_inset
 
@@ -4981,9 +4964,6 @@ status open
 
 \begin_layout Standard
 Рассмотрим линейную неоднородную систему вида:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \df{dy}{dx}=A(x)y+f(x)\label{eq:ln1}
@@ -4991,19 +4971,29 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Пусть 
 \begin_inset Formula $\vec{\phi(x)}$
 \end_inset
 
- --- некоторое решение системы 1.
+ --- некоторое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Claim
-Любое решение (1) может быть представлено в виде 
+Любое решение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+) может быть представлено в виде:
 \begin_inset Formula 
 \begin{equation}
 y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
@@ -5011,12 +5001,26 @@ y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
 
 \end_inset
 
+Где 
+\begin_inset Formula $V(x)$
+\end_inset
 
-\end_layout
+ --- решение соответствующей однородной системы и обратно любая вектор функция
+ вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln2"
 
-\begin_layout Claim
-где V(x) --- решение соответствующей однородной системы и обратно любая
- вектор функция вида (2) будет решением системы (1)
+\end_inset
+
+) будет решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Proof
@@ -5024,15 +5028,26 @@ y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
 \begin_inset Formula $V(x)$
 \end_inset
 
- --- некотрое решение линейной однородной систеемы , а 
+ --- некоторое решение линейной однородной системы , а 
 \begin_inset Formula $\phi(x)$
 \end_inset
 
---- некотрое решение линейной неоднородной систеемы.
- покажем, что (2) является решением (1):
-\end_layout
+ --- некоторое решение линейной неоднородной системы.
+ Покажем, что (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln2"
 
-\begin_layout Proof
+\end_inset
+
+) является решением (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+):
 \begin_inset Formula 
 \[
 \df{dy}{dx}-A(x)y=\df d{dx}(V+\phi)-A(V+\phi)=\df{dV}{dx}+\df{d\phi}{dx}-AV-A\phi=f
@@ -5040,20 +5055,27 @@ y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
 
 \end_inset
 
+Обратно покажем, что решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
 
-\end_layout
+\end_inset
 
-\begin_layout Proof
-обратно покажем, что решение системы 1 можно представить в виде 2.
+) можно представить в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln2"
+
+\end_inset
+
+).
  Для этого возьмем 
 \begin_inset Formula $V(x)=y(x)-\phi(x)$
 \end_inset
 
 .
  Покажем что V(x) --- решение соответствующей однородной системы:
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \[
 \df{dV}{dx}-AV=\df d{dx}(y-\phi)-A(y-\phi)=\df{dy}{dx}-\df{d\phi}{dx}-Ay+A\phi=\left(\df{dy}{dx}-Ay\right)-\left(\df{d\phi}{dx}-A\phi\right)....
@@ -5061,27 +5083,30 @@ y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Следствие: пусть 
 \begin_inset Formula $y_{1}(x)\tr y_{n}(x)$
 \end_inset
 
  .....
- тогда любое решение системы 1 можно представить в виде ...
+ тогда любое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+) можно представить в виде ...
  где 
 \begin_inset Formula $c_{k}$
 \end_inset
 
  --- соответствующим образом подобранные постоянные.
- Это следствие вытекает из тверждения и теоремы 5.
+ Это следствие вытекает из утверждения и теоремы 5.
 \end_layout
 
 \begin_layout Standard
-Другими словами: общее решение - сумма частного решения и общего решения
- соотв линейной 
+Другими словами: общее решение --- сумма частного решения и общего решения
+ соответствующей линейной 
 \emph on
 однородной
 \emph default
@@ -5093,27 +5118,33 @@ y\left(x\right)=V(x)+\phi(x)\label{eq:ln2}
 \end_layout
 
 \begin_layout Standard
-пусть известно общее решение соответствующей 
+Пусть известно общее решение соответствующей 
 \emph on
 однородной 
 \emph default
 системы.
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
-\[
-y(x_{0})=y^{(0)}
-\]
+\begin{equation}
+y(x_{0})=y^{(0)}\label{eq:ln3}
+\end{equation}
 
 \end_inset
 
+Покажем как найти решение задачи Коши (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Покажем как найти решение задачи Коши (1,3).
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln3"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -5131,7 +5162,14 @@ y(x_{0})=y^{(0)}
 \end_layout
 
 \begin_layout Standard
-Тогда решение неоднородной системы (1) будем искать в виде: 
+Тогда решение неоднородной системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+) будем искать в виде:
 \begin_inset Formula 
 \begin{equation}
 y(x)=Y(x)\um c(x)\label{eq:ln4}
@@ -5139,22 +5177,26 @@ y(x)=Y(x)\um c(x)\label{eq:ln4}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-где 
+Где 
 \begin_inset Formula $c(x)$
 \end_inset
 
  --- неизвестная вектор--функция.
-\end_layout
+ Подставим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln4"
 
-\begin_layout Standard
-Подставим (4) в 1
-\end_layout
+\end_inset
 
-\begin_layout Standard
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+):
 \begin_inset Formula 
 \[
 \df{dY}{dx}c(x)+Y(x)\df{dc}{dx}=A(x)Y(x)c(x)+f(x)
@@ -5162,14 +5204,7 @@ y(x)=Y(x)\um c(x)\label{eq:ln4}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 остается 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 Y(x)\df{dc}{dx}=f(x)
@@ -5177,15 +5212,7 @@ Y(x)\df{dc}{dx}=f(x)
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Умножим слева на обратную фунд.
- матрицу:
-\end_layout
-
-\begin_layout Standard
+Умножим слева на обратную фундаментальную матрицу:
 \begin_inset Formula 
 \[
 \df{dc}{dx}=Y^{-1}(x)f(x)
@@ -5193,14 +5220,7 @@ Y(x)\df{dc}{dx}=f(x)
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Проинтегрируем:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 c(x)-c(x_{0})=\oiu{x_{0}}xY^{-1}(s)f(s)ds
@@ -5209,16 +5229,17 @@ c(x)-c(x_{0})=\oiu{x_{0}}xY^{-1}(s)f(s)ds
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $c(x_{0})$
 \end_inset
 
- выберем так, чтобы выполнялось условие 3:
-\end_layout
+ выберем так, чтобы выполнялось условие (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln3"
 
-\begin_layout Standard
+\end_inset
+
+):
 \begin_inset Formula 
 \[
 c(x_{0})=Y^{-1}(x_{0})\um y^{(0)}
@@ -5226,14 +5247,28 @@ c(x_{0})=Y^{-1}(x_{0})\um y^{(0)}
 
 \end_inset
 
+Подставим в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln4"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-подставим в 4 и получим, что решение задачи (1,3):
-\end_layout
+) и получим, что решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
 
-\begin_layout Standard
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln3"
+
+\end_inset
+
+):
 \begin_inset Formula 
 \[
 y(x)=Y(x)Y^{-1}(x_{0})y^{(0)}+Y(x)\oiu{x_{0}}xY^{-1}(s)f(s)ds
@@ -5241,18 +5276,11 @@ y(x)=Y(x)Y^{-1}(x_{0})y^{(0)}+Y(x)\oiu{x_{0}}xY^{-1}(s)f(s)ds
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Обозначим матрицу Коши как: 
 \begin_inset Formula $C(x,\, s)=Y(x)\um Y^{-1}(s)$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 y(x)=C(x,x_{0})y^{(0)}+\oiu{x_{0}}xC(x,s)f(s)ds\label{eq:ln5}
@@ -5260,24 +5288,44 @@ y(x)=C(x,x_{0})y^{(0)}+\oiu{x_{0}}xC(x,s)f(s)ds\label{eq:ln5}
 
 \end_inset
 
+Первое слагаемое в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln5"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Первое слагаемое в 5 --- решение соотв однородной системы удовл.
- условию 3
-\end_layout
+) --- решение соотв однородной системы удовлетворяет условию (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln3"
 
-\begin_layout Standard
-Второе слагаемое в 5 --- решение неоднородной системы 1, удовл нулевому
- начальному условию.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Тогда общее решение системы 1 имеет вид:
-\end_layout
+).
+ Второе слагаемое в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln5"
 
-\begin_layout Standard
+\end_inset
+
+) --- решение неоднородной системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+), удовлетворяет нулевому начальному условию.
+ Тогда общее решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ln1"
+
+\end_inset
+
+) имеет вид:
 \begin_inset Formula 
 \begin{equation}
 y(x)=Y(x)c+\oiu{x_{0}}xC(c,s)f(s)ds\label{eq:ln6}
@@ -5285,11 +5333,7 @@ y(x)=Y(x)c+\oiu{x_{0}}xC(c,s)f(s)ds\label{eq:ln6}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-где 
+Где 
 \begin_inset Formula $c$
 \end_inset
 
@@ -5302,9 +5346,6 @@ y(x)=Y(x)c+\oiu{x_{0}}xC(c,s)f(s)ds\label{eq:ln6}
 
 \begin_layout Standard
 Рассмотрим уравнения вида:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \df{d^{n}y}{dx^{n}}=a_{n-1}(x)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{n-1}(x)\df{d^{n}y}{dx^{n}}+a_{0}(x)y+f(x)\label{eq:ldn1}
@@ -5324,7 +5365,7 @@ y(x)=Y(x)c+\oiu{x_{0}}xC(c,s)f(s)ds\label{eq:ln6}
 \begin_inset Formula $f(x)\equiv0$
 \end_inset
 
-, то уравнение назыв линейным однородным, иначе неоднородным.
+, то уравнение называется линейным однородным, иначе неоднородным.
 \end_layout
 
 \begin_layout Standard
@@ -5371,7 +5412,7 @@ f(x)
 status open
 
 \begin_layout Plain Layout
-Пропущено жёриком
+Пропущено Жориком
 \end_layout
 
 \end_inset
@@ -5384,7 +5425,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-18 октября 2013 года 1го века 2го тысячеления 1го милионолетия
+18 октября 2013 года 1го века 2го тысячелетия
 \end_layout
 
 \end_inset
@@ -5393,10 +5434,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Будем расматривать уравнения нного порядка
-\end_layout
+Будем рассматривать уравнения 
+\begin_inset Formula $n$
+\end_inset
 
-\begin_layout Standard
+-ого порядка:
 \begin_inset Formula 
 \begin{equation}
 \df{d^{n}y}{dx^{n}}=a_{n-1}\left(x\right)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{1}\left(x\right)\df{dy}{dx}+a_{0}\left(x\right)y+f\left(x\right)\label{eq:38}
@@ -5404,14 +5446,7 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-И уравнения Коши
-\end_layout
-
-\begin_layout Standard
+И задачу Коши:
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -5428,24 +5463,32 @@ y\left(x_{0}\right)=y_{0,0}\\
 \end_layout
 
 \begin_layout Standard
-Тогда справеллива теорема существования и единственности решения задачи
- Окши для лингейнеог7о уравнения нного порядка.
+Тогда справедлива теорема существования и единственности решения задачи
+ Коши для линейного уравнения 
+\begin_inset Formula $n$
+\end_inset
+
+-ого порядка.
 \end_layout
 
 \begin_layout Standard
 Пусть 
-\begin_inset Formula $a_{i}\left(x\right),\ i=\overline{1,n-1},\ f\left(x\right)$
+\begin_inset Formula $a_{i}\left(x\right),\quad i=\overline{1,n-1},\quad f\left(x\right)$
 \end_inset
 
  определены и непрерывны на 
 \begin_inset Formula $x\in\left(\alpha;\beta\right)$
 \end_inset
 
-, тогда 
-\begin_inset Formula $\forall x_{0}\in\left(\alpha;\beta\right)\ -\b<y_{i,0},+\b,\ i=\overline{0,n-1}$
+, тогда: 
+\begin_inset Formula 
+\[
+\forall x_{0}\in\left(\alpha;\beta\right)\quad-\b<y_{i,0},+\b,\ \quad i=\overline{0,n-1}
+\]
+
 \end_inset
 
-, существует единственное решение задачи (
+существует единственное решение задачи (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:38"
@@ -5464,41 +5507,26 @@ reference "eq:39"
 \end_inset
 
 .
- Эта теоррема является следствием из соответствующей теоремы существования
- и единственности для линенных систем.
-\end_layout
-
-\begin_layout Standard
+ Эта теорема является следствием из соответствующей теоремы существования
+ и единственности для линейных систем.
 \begin_inset Formula 
-\begin{equation}
-\begin{cases}
+\begin{flalign*}
+ & \begin{cases}
 \df{dY}{dx}=A\left(x\right)Y\left(x\right)+F\left(x\right)\\
 Y\left(x_{0}\right)=y^{\left(0\right)}
-\end{cases}\label{eq:40}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+\end{cases}\\
+\li & y^{\left(0\right)}=\left(\begin{array}{c}
 y_{0,0}\\
 \vtr\\
 y_{n-1,0}
-\end{array}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $Y\left(x\right)=\left(\begin{array}{c}
+\end{array}\right) & {}\\
+ & Y\left(x\right)=\left(\begin{array}{c}
 y_{0}\left(x\right)\\
 \vtr\\
 y_{n-1}\left(x\right)
-\end{array}\right)$
+\end{array}\right)
+\end{flalign*}
+
 \end_inset
 
 
@@ -5508,14 +5536,15 @@ y_{n-1}\left(x\right)
 \begin_inset Formula $A\left(x\right)$
 \end_inset
 
- - соответствующай матрица
+ - соответствующая матрица
 \end_layout
 
 \begin_layout Subsection
-Свойства решений линейных однородных диференциальных уравнения n-ного порядка
+Свойства решений линейных однородных дифференциальных уравнения n-ого порядка
 \end_layout
 
 \begin_layout Standard
+Рассмотрим линейное однородное дифференциальное уравнение:
 \begin_inset Formula 
 \begin{equation}
 \df{d^{n}y}{dx^{n}}=a_{n-1}\left(x\right)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{1}\left(x\right)\df{dy}{dx}+a_{0}\left(x\right)y+f\left(x\right)\label{eq:41}
@@ -5523,26 +5552,11 @@ y_{n-1}\left(x\right)
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Рассмотрим линейное однородное дифференциальное уравнение (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:41"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
 Функции 
-\begin_inset Formula $a_{i},\ i=\overline{1,n-1}$
+\begin_inset Formula $a_{i},\quad i=\overline{1,n-1}$
 \end_inset
 
- определены и непрерывны на интегвале 
+ определены и непрерывны на интервале 
 \begin_inset Formula $x\in\left(\alpha;\beta\right)$
 \end_inset
 
@@ -5550,11 +5564,20 @@ reference "eq:41"
 \end_layout
 
 \begin_layout Theorem
-(1) Пусть функции 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ Пусть функции 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
 \end_inset
 
- - решения уравнения (
+ --- решения уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:41"
@@ -5562,7 +5585,11 @@ reference "eq:41"
 \end_inset
 
 ), тогда их линейная комбинация 
-\begin_inset Formula $y\left(x\right)=c_{1}y_{1}\left(x\right)+\tr+c_{m}y_{m}\left(x\right),\ c_{i}=const,\ i=\overline{1,m}$
+\begin_inset Formula 
+\[
+y\left(x\right)=c_{1}y_{1}\left(x\right)+\tr+c_{m}y_{m}\left(x\right),\quad c_{i}=const,\quad i=\overline{1,m}
+\]
+
 \end_inset
 
  также будет решением уравнения (
@@ -5580,16 +5607,12 @@ reference "eq:41"
 \end_inset
 
  
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
-\begin{eqnarray*}
- & \df{d^{n}}{dx^{n}}\left(\ous{k=1}mc_{k}y_{k}\left(x\right)\right)-a_{n-1}\left(x\right)\df{d^{n-1}}{dx^{n-1}}\left(\ous{k=1}mc_{k}y_{k}\left(x\right)\right)-\tr-a_{0}\ous{k=1}mc_{k}y_{k}\left(x\right) & =\\
-= & \ous{k=1}mc_{k}\df{d^{n}y_{k}}{dx^{n}}-\ous{k=1}mc_{k}a_{n-1}\df{d^{n-1}y_{k}}{dx^{n-1}}-\tr-\ous{k=1}mc_{k}a_{0}y_{k} & =\\
-= & \ous{k=1}mc_{k}\left(\df{d^{n}y_{k}}{dx^{n}}-a_{n-1}\df{d^{n-1}y_{k}}{dx^{n-1}}-\tr-a_{0}y_{k}\right) & =\\
-= & 0
-\end{eqnarray*}
+\begin{multline*}
+\df{d^{n}}{dx^{n}}\left(\ous{k=1}mc_{k}y_{k}\left(x\right)\right)-a_{n-1}\left(x\right)\df{d^{n-1}}{dx^{n-1}}\left(\ous{k=1}mc_{k}y_{k}\left(x\right)\right)-\tr-a_{0}\ous{k=1}mc_{k}y_{k}\left(x\right)=\\
+=\ous{k=1}mc_{k}\df{d^{n}y_{k}}{dx^{n}}-\ous{k=1}mc_{k}a_{n-1}\df{d^{n-1}y_{k}}{dx^{n-1}}-\tr-\ous{k=1}mc_{k}a_{0}y_{k}=\\
+=\ous{k=1}mc_{k}\left(\df{d^{n}y_{k}}{dx^{n}}-a_{n-1}\df{d^{n-1}y_{k}}{dx^{n-1}}-\tr-a_{0}y_{k}\right)=0
+\end{multline*}
 
 \end_inset
 
@@ -5601,7 +5624,7 @@ reference "eq:41"
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
 \end_inset
 
- называбтся линейно зависимыми на интервале 
+ называются линейно зависимыми на интервале 
 \begin_inset Formula $\left(a;b\right)$
 \end_inset
 
@@ -5609,7 +5632,7 @@ reference "eq:41"
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
-, не все равные 0-лю, что линейная комбинация тождественно равна нулю всех
+, не все равные нулю, что линейная комбинация тождественно равна нулю всех
  
 \begin_inset Formula $x$
 \end_inset
@@ -5626,53 +5649,71 @@ reference "eq:41"
 \end_layout
 
 \begin_layout Definition
-Определителем Вронского, составленым по функциям 
+Определителем Вронского, составленным по функциям 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
 \end_inset
 
  называется определитель 
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+\begin_inset Formula 
+\[
+W\left(x\right)=\left|\begin{array}{ccc}
 y_{1}\left(x\right) & \tr & y_{m}\left(x\right)\\
 \df{dy_{1}}{dx} & \tr & \df{dy_{n}}{dx}\\
 \vtr & \vtr & \vtr\\
 \df{d^{n-1}y_{1}}{dx^{n-1}} & \tr & \df{d^{n-1}y_{m}}{dx^{n-1}}
-\end{array}\right|$
+\end{array}\right|
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Theorem
-(2) Если функции 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ Если функции 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
 \end_inset
 
- линейнео зависимы, то определитель Вронского составленеый по этим функциям
+ линейно зависимы, то определитель Вронского составленный по этим функциям
  тождественно равен нулю.
 \end_layout
 
 \begin_layout Proof
-Пусть .., тогда найдутся постаянные 
+Пусть функции 
+\begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
+\end_inset
+
+ линейно зависимы, тогда найдутся постоянные 
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
-, не всет равные нулю, что 
-\begin_inset Formula $c_{1}y_{1}\left(x\right)+\tr+c_{m}y_{m}\left(x\right)\equiv0$
+, не все равные нулю, что 
+\begin_inset Formula 
+\[
+c_{1}y_{1}\left(x\right)+\tr+c_{m}y_{m}\left(x\right)\equiv0
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
-Продейеренцируем это 
+Продифференцируем это 
 \begin_inset Formula $n-1$
 \end_inset
 
- раз.
-\end_layout
+ раз, получим:
+\begin_inset Formula 
+\[
+c_{1}\dif dk{y_{1}}x+\tr+c_{m}\dif dkyx\equiv0
+\]
 
-\begin_layout Proof
-\begin_inset Formula $c_{1}\dif dk{y_{1}}x+\tr+c_{m}\dif dkyx\equiv0$
 \end_inset
 
 
@@ -5684,8 +5725,8 @@ y_{1}\left(x\right) & \tr & y_{m}\left(x\right)\\
 \begin_inset Formula $x$
 \end_inset
 
- будуьот линейно зависимыми, ну а тогда по известной теореме алгебры определител
-ь тожлественно равен нулю
+ будут линейно зависимыми, ну а тогда по известной теореме алгебры определитель
+ тождественно равен нулю.
 \end_layout
 
 \begin_layout Theorem
@@ -5702,7 +5743,7 @@ status open
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- - решения однородного уравнения (
+ --- решения однородного уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:41"
@@ -5713,7 +5754,7 @@ reference "eq:41"
 \begin_inset Formula $W\left(x_{0}\right)=0$
 \end_inset
 
- в тточке 
+ в точке 
 \begin_inset Formula $x_{0}\in\left(\alpha;\beta\right)$
 \end_inset
 
@@ -5721,11 +5762,11 @@ reference "eq:41"
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- - динейно зависимы.
+ --- линейно зависимы.
 \end_layout
 
 \begin_layout Proof
-Из того что определитель вронскоро в точке 
+Из того что определитель Вронского в точке 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -5735,7 +5776,7 @@ reference "eq:41"
 \begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
 \end_inset
 
-, не все равные нулю, что линейная комбинация 
+, не все равные нулю, что линейная комбинация:
 \begin_inset Formula 
 \begin{equation}
 \alpha_{1}\left(\begin{array}{c}
@@ -5746,20 +5787,24 @@ y_{1}\left(x_{0}\right)\\
 y_{n}\left(x\right)\\
 \vtr\\
 \dif d{n-1}{y_{n}\left(x_{0}\right)}x
-\end{array}\right)\label{eq:42}
+\end{array}\right)=0\label{eq:42}
 \end{equation}
 
 \end_inset
 
- Затем с помощью этих- постоянных построем функцию 
-\begin_inset Formula $y\left(x\right)=\alpha_{1}y_{1}\left(x\right)+\tr+\alpha_{n}y_{n}\left(x\right)$
+Затем с помощью этих постоянных построим функцию: 
+\begin_inset Formula 
+\[
+y\left(x\right)=\alpha_{1}y_{1}\left(x\right)+\tr+\alpha_{n}y_{n}\left(x\right)
+\]
+
 \end_inset
 
  Так как 
 \begin_inset Formula $y_{i}$
 \end_inset
 
- - решения, то в силу теоремы 1, 
+ --- решения, то в силу теоремы 1, 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
@@ -5771,10 +5816,7 @@ reference "eq:41"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Proof
-И в силу (
+ И в силу (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:42"
@@ -5782,19 +5824,19 @@ reference "eq:42"
 \end_inset
 
 ) 
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\begin{flalign*}
+\li & \begin{cases}
 y\left(x_{0}\right)=0\\
 \dif d{}{y\left(x_{0}\right)}x=0\\
 \vtr\\
 \dif d{n-1}{y\left(x_{0}\right)}x
-\end{cases}$
+\end{cases} & {}
+\end{flalign*}
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Тогда мы имеет 2 функции 
+Тогда мы имеем 2 функции 
 \begin_inset Formula $u\left(x\right)\equiv0$
 \end_inset
 
@@ -5802,23 +5844,37 @@ y\left(x_{0}\right)=0\\
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
-, которые удовлетворяют уравнению (41) и нулевым начальным условиям.
- А тогда в силу существования и единственности они совподают.
+, которые удовлетворяют уравнению (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+) и нулевым начальным условиям.
+ А тогда в силу существования и единственности они совпадают.
  Это означает что решения 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- - линейно зависмы.
+ --- линейно зависимы.
 \end_layout
 
 \begin_layout Standard
 
 \emph on
-Следвствие.
+Следствие.
 
 \emph default
  Если определитель Вронского, составленный по решениям линейного однородного
- уравнения (41) обращается в ноль в некоторой точке из интервала 
+ уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+) обращается в ноль в некоторой точке из интервала 
 \begin_inset Formula $\left(\alpha;\beta\right)$
 \end_inset
 
@@ -5826,7 +5882,7 @@ y\left(x_{0}\right)=0\\
 \end_layout
 
 \begin_layout Proof
-Очевидно..
+Очевидно.
 \end_layout
 
 \begin_layout Remark
@@ -5834,20 +5890,15 @@ y\left(x_{0}\right)=0\\
 \begin_inset Formula $y_{1}\left(x\right),\tr y_{n}\left(x\right)$
 \end_inset
 
- не являются решенгиями уравнения (41) с непрерывными коофицентами, то утвержден
-ие, аналогичные выше сформцулированым (теорема 3 и следствия) для них в
- общем случа не верны.
-\end_layout
+ не являются решениями уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
 
-\begin_layout Standard
+\end_inset
 
-\emph on
-Д
-\backslash
-З 
-\emph default
-Самостоятельно привести пример функций для которых определитель вронского
- тождественный ноль, но функции линейно не зависимы.
+) с непрерывными коэффициентами, то утверждение, аналогичные выше сформулированн
+ым (теорема 3 и следствия) для них в общем случае не верны.
 \end_layout
 
 \begin_layout Definition
@@ -5855,8 +5906,14 @@ y\left(x_{0}\right)=0\\
 \begin_inset Formula $n$
 \end_inset
 
- динейно независимых решения линейного однородного уравнения (41) называется
- фундаментальной системой решений этого уравнения.
+ линейно независимых решений линейного однородного уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+) называется фундаментальной системой решений этого уравнения.
 \end_layout
 
 \begin_layout Theorem
@@ -5869,74 +5926,72 @@ status open
 
 \end_inset
 
- Фундаментальная система решений уществует для любого линейног7о однородного
- уравнения (41).
+ Фундаментальная система решений существует для любого линейного однородного
+ уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Proof
-Построем 
+Построим 
 \begin_inset Formula $n$
 \end_inset
 
- решений уравненгия (41), как решения следующих задач Коши.
+ решений уравнения (41), как решения следующих задач Коши.
  Возьмем 
 \begin_inset Formula $x_{0}\in\left(\alpha;\beta\right)$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $y_{1}\left(x\right):\begin{cases}
-\left(41\right)\\
+\begin_inset Formula 
+\begin{flalign*}
+y_{1}\left(x\right):\begin{cases}
+\left(\ref{eq:41}\right)\\
 y_{1}\left(x_{0}\right)=1\\
 \dif d{}{y_{1}\left(x_{0}\right)}x=0\\
 \vtr\\
 \dif d{n-1}{y_{1}\left(x_{0}\right)}x=0
-\end{cases},\ y_{2}\left(x\right):\begin{cases}
-(41)\\
+\end{cases} & \quad & y_{2}\left(x\right):\begin{cases}
+(\ref{eq:41})\\
 y_{2}\left(x_{0}\right)=1\\
 \dif d{}{y_{2}\left(x\right)}x=0\\
 \vtr\\
 \dif d{n-1}{y_{2}\left(x\right)}x=0
-\end{cases},\ \tr,\ y_{n}\left(x\right):\begin{cases}
-(41)\\
+\end{cases} & \quad & \tr & \quad & y_{n}\left(x\right):\begin{cases}
+(\ref{eq:41})\\
 y_{n}\left(x_{0}\right)=1\\
 \dif d{}{y_{n}\left(x\right)}x=0\\
 \vtr\\
 \dif d{n-1}{y_{n}\left(x\right)}x=0
-\end{cases}$
+\end{cases}
+\end{flalign*}
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 Составим определитель Вронского по этим функциям:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $W\left(x_{0}\right)=\left|\begin{array}{cccc}
+\begin_inset Formula 
+\[
+W\left(x_{0}\right)=\left|\begin{array}{cccc}
 1 & 0 & \tr & 0\\
 0 & 1 & \tr & 0\\
 \vtr & \vtr & \ddots & \vtr\\
 0 & 0 & \tr & 1
-\end{array}\right|=1$
+\end{array}\right|=1
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Построенные решения 
+ Следовательно построенные решения 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- не могут быть линейно зависимы 
-\begin_inset Formula $\sl$
-\end_inset
-
- Они образую фундаментальную системы решений.
+ не могут быть линейно зависимы, тогда они образуют фундаментальную систему
+ решений.
 \end_layout
 
 \begin_layout Theorem
@@ -5949,38 +6004,49 @@ status open
 
 \end_inset
 
-Общее решения линейного однородного уравнения (41) есть линейная комбинация
- с произвольными постоянными фундаментальной системы решений.
+Общее решение линейного однородного уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+) есть линейная комбинация с произвольными постоянными фундаментальной системы
+ решений.
 \end_layout
 
 \begin_layout Proof
-Пусть фнкции 
+Пусть функции 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- обзазуют фундаментальную систему решений уравнения (41).
- Составим по ним определителдь Вронского.
+ образуют фундаментальную систему решений уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
+ Составим по ним определитель Вронского.
  Возьмем 
 \begin_inset Formula $x_{0}\in\left(\alpha;\beta\right)$
 \end_inset
 
  и рассмотрим составленный определитель Вронского в этой точке:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+\begin_inset Formula 
+\[
+W\left(x\right)=\left|\begin{array}{ccc}
 y_{1}\left(x_{0}\right) & \tr & y_{m}\left(x_{0}\right)\\
 \df{dy_{1}\left(x_{0}\right)}{dx} & \tr & \df{dy_{n}\left(x_{0}\right)}{dx}\\
 \vtr & \vtr & \vtr\\
 \df{d^{n-1}y_{1}\left(x_{0}\right)}{dx^{n-1}} & \tr & \df{d^{n-1}y_{m}\left(x_{0}\right)}{dx^{n-1}}
-\end{array}\right|\nr0$
+\end{array}\right|\nr0
+\]
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
-Столбцы этого определителя 
+Столбцы этого определителя:
 \begin_inset Formula 
 \begin{equation}
 \left(\begin{array}{c}
@@ -5988,7 +6054,7 @@ y_{1}\left(x_{0}\right)\\
 \df{dy_{1}\left(x_{0}\right)}{dx}\\
 \vtr\\
 \df{d^{n-1}y_{1}\left(x_{0}\right)}{dx^{n-1}}
-\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+\end{array}\right),\quad\tr,\quad\left(\begin{array}{c}
 y_{m}\left(x_{0}\right)\\
 \df{dy_{n}\left(x_{0}\right)}{dx}\\
 \vtr\\
@@ -5998,36 +6064,56 @@ y_{m}\left(x_{0}\right)\\
 
 \end_inset
 
-линейно не зависимы, а тогда такие линейные вектора (43) образуют базис
- в 
+линейно не зависимы, а тогда такие линейные вектора (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:43"
+
+\end_inset
+
+) образуют базис в 
 \begin_inset Formula $\R^{n}$
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Proof
-ПУсть Функция 
+Пусть функция 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
- какоето решения уравнгения (41).
+ --- какое то решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
  Покажем, что его можно представить в виде линейной комбинации функций,
- образуюзих фундаментальную систему решений
-\backslash
-Для этого рассмотрим вектор 
-\begin_inset Formula $\left(\begin{array}{c}
+ образующих фундаментальную систему решений.
+ Для этого рассмотрим вектор 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
 y\left(x_{0}\right)\\
 \df{dy\left(x_{0}\right)}{dx}\\
 \vtr\\
 \df{d^{n-1}y\left(x_{0}\right)}{dx^{n-1}}
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
-и разложим егог по базису (43), что будет верно равненство (44).
-\end_layout
+и разложим его по базису (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:43"
 
-\begin_layout Proof
+\end_inset
+
+), что будет верно равенство:
 \begin_inset Formula 
 \begin{equation}
 \left(\begin{array}{c}
@@ -6050,41 +6136,41 @@ y_{m}\left(x_{0}\right)\\
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
-С помощью постоянных построем 
+С помощью постоянных построим 
 \begin_inset Formula $u\left(x\right)=c_{1}y_{1}\left(x\right)+\tr+c_{n}y_{n}\left(x\right)$
 \end_inset
 
+.
+ По теореме 1 она будет решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
 
-\end_layout
+\end_inset
 
-\begin_layout Proof
-По теореме 1 она будет решением уравнения (41) и в силу (44)
-\end_layout
+) и в силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:44"
 
-\begin_layout Proof
-\begin_inset Formula $\begin{cases}
+\end_inset
+
+):
+\begin_inset Formula 
+\begin{flalign*}
+\li & \begin{cases}
 u\left(x_{0}\right)=y\left(x_{0}\right)\\
 \dif d{}{u\left(x_{0}\right)}x=\dif d{}{y\left(x_{0}\right)}x\\
 \vtr\\
 \dif d{n-1}{u\left(x_{0}\right)}x=\dif d{n-1}{y\left(x_{0}\right)}x
-\end{cases}$
+\end{cases} & {}
+\end{flalign*}
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Таким образом есть 2 решения, удовлетворяющие одним и тем же начальным условиям
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- эти функции совподают тождественно в силу теоремы существовании и единственност
-и.
+Таким образом есть 2 решения, удовлетворяющие одним и тем же начальным условиям,
+ следовательно эти функции совпадают тождественно в силу теоремы существовании
+ и единственности.
 \end_layout
 
 \begin_layout Theorem
@@ -6101,83 +6187,112 @@ status open
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- какое то решения уравнения (41), тогда определитель Вронского, составдленный
- по этим функциям ьудет решением следубщего дифференциального уравнения.
- 
-\begin_inset Formula $\df{dW}{dx}=a_{n-1}\left(x\right)W$
+ --- какое то решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
 \end_inset
 
- , где 
+), тогда определитель Вронского, составленный по этим функциям будет решением
+ следующего дифференциального уравнения.
+ 
+\begin_inset Formula 
+\[
+\df{dW}{dx}=a_{n-1}\left(x\right)W
+\]
+
+\end_inset
+
+ Где 
 \begin_inset Formula $a_{n-1}\left(x\right)$
 \end_inset
 
- -коофицент од 
+ --- коэффициент от 
 \begin_inset Formula $n-1$
 \end_inset
 
- производной уравнения типа (41).
+ производной уравнения типа (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Proof
-Является следствием из теоремы Лиувиля для систем.
-\end_layout
-
-\begin_layout Proof
-Действительно, есть 
+Является следствием из теоремы Лиувилля для систем.
+ Действительно, есть 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- решщенгия (41), то вектор-функция 
-\begin_inset Formula $\left(\begin{array}{c}
+ --- решения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+), тогда вектор--функция: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
 y_{1}\left(x\right)\\
 \df{dy_{1}\left(x\right)}{dx}\\
 \vtr\\
 \df{d^{n-1}y_{1}\left(x\right)}{dx^{n-1}}
-\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+\end{array}\right),\quad\tr,\quad\left(\begin{array}{c}
 y_{m}\left(x\right)\\
 \df{dy_{n}\left(x\right)}{dx}\\
 \vtr\\
 \df{d^{n-1}y_{m}\left(x\right)}{dx^{n-1}}
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- будут решениями соответствующей эквивалентной линейной однородной системы
+будут решениями соответствующей эквивалентной линейной однородной системы
  вида: 
-\begin_inset Formula $\df{dY}{dx}=A\left(x\right)Y$
+\begin_inset Formula 
+\[
+\df{dY}{dx}=A\left(x\right)Y
+\]
+
 \end_inset
 
-, где 
+Где 
 \begin_inset Formula $A\left(x\right)$
 \end_inset
 
- тмеет вид 
-\begin_inset Formula $A\left(x\right)=\left(\begin{array}{ccccc}
-0 & 1 & 0 & \tr & 0\\
+ имеет вид 
+\begin_inset Formula $A\left(x\right)=\left(\begin{smallmatrix}0 & 1 & 0 & \tr & 0\\
 0 & 0 & 1 & \tr & 0\\
 \vtr & \vtr & \vtr & \ddots & \vtr\\
 a_{0} & a_{1} & a_{2} & \tr & a_{n-1}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
-Заметим что на главной диагонили может быть только 1н ненулевой элемент
+.
+ Заметим что на главной диагонали может быть только один ненулевой элемент
  
 \begin_inset Formula $A_{n,n}\left(x\right)=a_{n-1}$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- Слуд матрицы 
+.
+ Следовательно след матрицы 
 \begin_inset Formula $A$
 \end_inset
 
- nравет 
+ равен 
 \begin_inset Formula $a_{n-1}\left(x\right)$
 \end_inset
 
-, а тогда определитель Вронского, построеный по функциям 
-\begin_inset Formula $\left(\begin{array}{c}
+, а тогда определитель Вронского, построенный по функциям: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
 y_{1}\left(x\right)\\
 \df{dy_{1}\left(x\right)}{dx}\\
 \vtr\\
@@ -6187,18 +6302,20 @@ y_{m}\left(x\right)\\
 \df{dy_{n}\left(x\right)}{dx}\\
 \vtr\\
 \df{d^{n-1}y_{m}\left(x\right)}{dx^{n-1}}
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- совподает с определителем вронсткого, построенным по функциям 
+совпадает с определителем Вронского, построенным по функциям 
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{n}\left(x\right)$
 \end_inset
 
- и в силу теоремы Лиувилля для систем является решением вод этгого уравнения.
+ и в силу теоремы Лиувилля для систем является решением вод этого уравнения.
 \end_layout
 
 \begin_layout Subsection
-Понижения порядка линейного однородного уравнения
+Понижение порядка линейного однородного уравнения
 \end_layout
 
 \begin_layout Standard
@@ -6206,8 +6323,15 @@ y_{m}\left(x\right)\\
 \begin_inset Formula $y_{1}\left(x\right),\tr,y_{m}\left(x\right)$
 \end_inset
 
- - линейно не зависимые решения уравнения (41).
- Покажем, как можно понизить погрядок 
+ --- линейно независимые решения уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+).
+ Покажем, как можно понизить порядок 
 \begin_inset Formula $\left(m<n\right)$
 \end_inset
 
@@ -6215,22 +6339,22 @@ y_{m}\left(x\right)\\
 \begin_inset Formula $m$
 \end_inset
 
- , тоесть свести его к уранвению 
+ , то есть свести его к уравнению 
 \begin_inset Formula $\left(n-m\right)$
 \end_inset
 
--го порядка.
+-ого порядка.
  Очевидно что 
 \begin_inset Formula $y_{1}\left(x\right)$
 \end_inset
 
- - тождественно не равна нулю.
- 
-\begin_inset Formula $\sl$
-\end_inset
+ --- тождественно не равна нулю.
+ Тогда 
+\begin_inset Formula 
+\[
+\exists x_{0}\in\left(\alpha;\beta\right)\ y_{1}\left(x\right)\nr0
+\]
 
- 
-\begin_inset Formula $\exists x_{0}\in\left(\alpha;\beta\right)\ y_{1}\left(x\right)\nr0$
 \end_inset
 
  В силу непрерывности 
@@ -6253,26 +6377,31 @@ y_{m}\left(x\right)\\
 \begin_inset Formula $z\left(x\right)$
 \end_inset
 
- - новая неизвестная функция.
+ --- новая неизвестная функция.
  Подставим 
 \begin_inset Formula $y\left(x\right)=y_{1}\left(x\right)z\left(x\right)$
 \end_inset
 
- в (41), получим:
-\end_layout
+ в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
 
-\begin_layout Standard
-\begin_inset Formula $\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}z}{\sim}$
 \end_inset
 
+), получим:
+\begin_inset Formula 
+\[
+\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}z}{\sim}
+\]
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
+Где 
 \begin_inset Formula $\ov{a_{i}}{\sim}$
 \end_inset
 
- - ффункции, которые выражаются через 
+ --- функции, которые выражаются через 
 \begin_inset Formula $a_{i},\ y_{1}\left(x\right)$
 \end_inset
 
@@ -6281,93 +6410,83 @@ y_{m}\left(x\right)\\
 \begin_inset Formula $y_{1}\left(x\right)$
 \end_inset
 
- решение уравнения (41), то 
+ решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:41"
+
+\end_inset
+
+), то 
 \begin_inset Formula $z\left(x\right)\equiv1$
 \end_inset
 
-, будет решением уравнения 
-\begin_inset Formula $\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}z}{\sim}$
+, будет решением уравнения: 
+\begin_inset Formula 
+\[
+\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}z}{\sim}
+\]
+
 \end_inset
 
-.
- ПОдставим 
+Подставим в него 
 \begin_inset Formula $z\left(x\right)\equiv1$
 \end_inset
 
- в 
-\begin_inset Formula $\dif dnzx=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-1}zx+\tr+\ov{a_{1}}{\sim}\df{dz}{dx}+\ov{a_{0}}{\sim}z$
-\end_inset
-
- получим 
+, получим 
 \begin_inset Formula $\ov{a_{0}}{\sim}\equiv0$
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+z_{i}\left(x\right)=\df{y_{i+1}\left(x\right)}{y_{1}\left(x\right)},\quad i=\overline{1,m-1}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $z_{i}\left(x\right)=\df{y_{i+1}\left(x\right)}{y_{1}\left(x\right)},\ i=\overline{1,m-1}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+Пусть 
 \begin_inset Formula $u\left(x\right)=\df{dz}{dx}$
 \end_inset
 
+, тогда:
+\begin_inset Formula 
+\[
+\dif d{n-1}ux=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-2}ux+\tr+\ov{a_{1}}{\sim}\left(x\right)u
+\]
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\dif d{n-1}ux=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-2}ux+\tr+\ov{a_{1}}{\sim}\left(x\right)u$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Тогда функции 
 \begin_inset Formula $u_{i}=\df d{dx}\left(\df{y_{i+1}}{y_{1}}\right),\ i=\overline{1,m-1}$
 \end_inset
 
- будут решениями уравнения 
-\begin_inset Formula $\dif d{n-1}ux=\ov{a_{n-1}}{\sim}\left(x\right)\dif d{n-2}ux+\tr+\ov{a_{1}}{\sim}\left(x\right)u$
+ будут решениями этого уравнения и они будут линейно независимые.
+ Тогда:
+\begin_inset Formula 
+\[
+\ous{i=1}{m-1}c_{i}\df d{dx}\left(\df{y_{i+1}}{y_{1}}\right)\equiv0
+\]
+
 \end_inset
 
- и они будут линекйн6о не зависимые.
+
+\begin_inset Formula 
+\[
+\ous{i=1}{m-1}\left(\df{y_{i+1}}{y_{1}}\right)\equiv C
+\]
+
+\end_inset
+
+Получили противоречие, значит функции линейно независимы.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\ous{i=1}{m-1}c_{i}\df d{dx}\left(\df{y_{i+1}}{y_{1}}\right)\equiv0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\ous{i=1}{m-1}\left(\df{y_{i+1}}{y_{1}}\right)\equiv C$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- Противореяие
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- Фкнкции линейно не зависимы
-\end_layout
-
-\begin_layout Standard
-и так далее получим уарвнения 
+и так далее получим уравнения 
 \begin_inset Formula $\left(n-m\right)$
 \end_inset
 
@@ -6392,16 +6511,23 @@ status open
 \end_layout
 
 \begin_layout Standard
-Будем рассматриватть уравнение 
-\begin_inset Formula $\dif dnyx=a_{n-1}\left(x\right)\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a_{0}y+f\left(x\right)$
+Будем рассматривать уравнение: 
+\begin_inset Formula 
+\begin{equation}
+\dif dnyx=a_{n-1}\left(x\right)\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a_{0}y+f\left(x\right)\label{eq:vpp1}
+\end{equation}
+
 \end_inset
 
-.
-\end_layout
+Будем предполагать что общее решение однородного уравнения известно.
+ Поставим в соответствие уравнению (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:vpp1"
 
-\begin_layout Standard
-Будем предпологать что общее решение однородного уравнения известно.
- ПРоставим в сообтветсвие уравнению (1) эквивалентную систему:
+\end_inset
+
+) эквивалентную систему:
 \end_layout
 
 \begin_layout Standard
