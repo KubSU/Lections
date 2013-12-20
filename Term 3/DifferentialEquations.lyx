@@ -2484,7 +2484,7 @@ status open
 \end_inset
 
 .
- И простроим функцию 
+ И простроим функцию: 
 \begin_inset Formula 
 \[
 \varphi_{1}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{0}\left(\xi\right)\right)d\xi
@@ -2537,7 +2537,8 @@ status open
 
 \end_inset
 
-ну а тогда график не покидает этих треугольников) Построим функцию 
+ну а тогда график не покидает этих треугольников).
+ Построим функцию: 
 \begin_inset Formula 
 \[
 \varphi_{2}\left(x\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{1}\left(\xi\right)\right)d\xi.
@@ -4130,11 +4131,16 @@ x & x^{2}\\
 \end_layout
 
 \begin_layout Theorem
-(4)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4
 \end_layout
 
-\begin_layout Theorem
-Фундаментальнаят системы решений существует у каждой линейной однородной
+\end_inset
+
+ Фундаментальная система решений существует у каждой линейной однородной
  системы (1).
 \end_layout
 
@@ -4143,54 +4149,49 @@ x & x^{2}\\
 \begin_inset Formula $n$
 \end_inset
 
- еденичных числовых векторов.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $e^{\left(1\right)}=\left(\begin{array}{c}
+ еденичных числовых векторов:
+\begin_inset Formula 
+\[
+e^{\left(1\right)}=\left(\begin{array}{c}
 1\\
 0\\
 \vtr\\
 0
-\end{array}\right),\ e^{\left(2\right)}=\left(\begin{array}{c}
+\end{array}\right),\quad e^{\left(2\right)}=\left(\begin{array}{c}
 0\\
 1\\
 \vtr\\
 0
-\end{array}\right),\ \tr,\ e^{\left(n\right)}=\left(\begin{array}{c}
+\end{array}\right),\quad\tr,\quad e^{\left(n\right)}=\left(\begin{array}{c}
 0\\
 0\\
 \vtr\\
 1
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 И построим 
 \begin_inset Formula $n$
 \end_inset
 
- решений системы (1), а именно решений слеующих задач Коши:
-\end_layout
-
-\begin_layout Proof
+ решений системы (1), а именно решений слеующих задач Коши: 
 \begin_inset Formula $x_{0}\in\left(\alpha,\beta\right)$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Proof
-\begin_inset Formula $y^{\left(1\right)}\left(x\right)\ :\ \begin{cases}
+\begin_inset Formula 
+\[
+y^{\left(1\right)}\left(x\right):\ \begin{cases}
 \df{dy^{\left(1\right)}}{dx}=Ay^{\left(1\right)}\\
 y^{\left(1\right)}\left(x_{0}\right)=e^{\left(1\right)}
-\end{cases},\ \tr,\ y^{\left(n\right)}\left(x\right)\ :\ \begin{cases}
+\end{cases},\quad\tr,\quad y^{\left(n\right)}\left(x\right):\ \begin{cases}
 \df{dy^{\left(n\right)}}{dx}=Ay^{\left(n\right)}\\
 y^{\left(n\right)}\left(x_{0}\right)=e^{\left(n\right)}
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
@@ -4203,27 +4204,35 @@ y^{\left(n\right)}\left(x_{0}\right)=e^{\left(n\right)}
 
 .
  Заметим, что определитель Вронского, построенный по вектор функциям имеет
- вид 
-\begin_inset Formula $W\left(x_{0}\right)=\left|\begin{array}{cccc}
+ вид: 
+\begin_inset Formula 
+\[
+W\left(x_{0}\right)=\left|\begin{array}{cccc}
 1 & 0 & \tr & 0\\
 0 & 1 & \tr & 0\\
 \vtr & \vtr & \ddots & \vtr\\
 0 & 0 & \tr & 1
-\end{array}\right|=1\nr0$
+\end{array}\right|=1\nr0
+\]
+
 \end_inset
 
  Следовательно эти вектор функции не могут быть линейно зввисимыми.
  Ну а тогда они образуют фундаментальную систему решений.
- Теорема доказана.
 \end_layout
 
 \begin_layout Theorem
-(5)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5
 \end_layout
 
-\begin_layout Theorem
-Общее решение линейной однородной системы (1) естьлинейная комбинаци с произволь
-ьными постоянными фундаментальной системы решений.
+\end_inset
+
+ Общее решение линейной однородной системы (1) --- это линейная комбинация
+ с произволььными постоянными фундаментальной системы решений.
 \end_layout
 
 \begin_layout Proof
@@ -4231,19 +4240,23 @@ y^{\left(n\right)}\left(x_{0}\right)=e^{\left(n\right)}
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- образуют фундаментальную систему решений системы (1), тоест они линейно
+ образуют фундаментальную систему решений системы (1), то есть они линейно
  не зависимы.
  Пусть вектор функция 
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
- некоторое решение системы (1).
+ --- некоторое решение системы (1).
  Покаждем что найдутся постоянные 
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
-, что эту вектор функцию можно предстовить в виде 
-\begin_inset Formula $y\left(x\right)=c_{1}\um y^{\left(1\right)}\left(x\right)+\tr+c_{n}\um y^{\left(n\right)}\left(x\right)$
+, такие что эту вектор функцию можно предстовить в виде 
+\begin_inset Formula 
+\[
+y\left(x\right)=c_{1}\um y^{\left(1\right)}\left(x\right)+\tr+c_{n}\um y^{\left(n\right)}\left(x\right)
+\]
+
 \end_inset
 
  Возьмем некоторую точку 
@@ -4254,99 +4267,102 @@ y^{\left(n\right)}\left(x_{0}\right)=e^{\left(n\right)}
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- в этой точке.
- 
-\begin_inset Formula $\left(\begin{array}{c}
+ в этой точке: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
 y_{1}^{\left(1\right)}\left(x_{0}\right)\\
 \vtr\\
 y_{n}^{\left(1\right)}\left(x_{0}\right)
-\end{array}\right),\ \tr,\ \left(\begin{array}{c}
+\end{array}\right),\quad\tr,\quad\left(\begin{array}{c}
 y_{1}^{\left(n\right)}\left(x_{0}\right)\\
 \vtr\\
 y_{n}^{\left(n\right)}\left(x_{0}\right)
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
-Тогда эти же числовые вектора будут линейно не зависимые.
+Тогда эти же числовые вектора будут линейно не зависимы.
  Следовательно, образуют базис в 
 \begin_inset Formula $n$
 \end_inset
 
 -мерном пространстве.
- Расмсмотрим 
+ 
+\end_layout
+
+\begin_layout Proof
+Расмсмотрим 
 \begin_inset Formula $y\left(x_{0}\right)$
 \end_inset
 
 , тогда 
-\begin_inset Formula $\left(\begin{array}{c}
-y_{1}\left(x_{0}\right)\\
+\begin_inset Formula $\left(\begin{smallmatrix}y_{1}\left(x_{0}\right)\\
 \vtr\\
 y_{n}\left(x_{0}\right)
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
- можно разложить по базису 
-\begin_inset Formula $\left(\begin{array}{c}
-y_{1}^{\left(1\right)}\left(x_{0}\right)\\
+ можно разложить по базису: 
+\begin_inset Formula 
+\[
+\left(\begin{smallmatrix}y_{1}^{\left(1\right)}\left(x_{0}\right)\\
 \vtr\\
 y_{n}^{\left(1\right)}\left(x_{0}\right)
-\end{array}\right),\ \tr,\ \left(\begin{array}{c}
-y_{1}^{\left(n\right)}\left(x_{0}\right)\\
+\end{smallmatrix}\right),\ \tr,\ \left(\begin{smallmatrix}y_{1}^{\left(n\right)}\left(x_{0}\right)\\
 \vtr\\
 y_{n}^{\left(n\right)}\left(x_{0}\right)
-\end{array}\right)$
+\end{smallmatrix}\right)
+\]
+
 \end_inset
 
-, тоесть найдутся 
+то есть найдутся 
 \begin_inset Formula $c_{1},\tr,c_{n}$
 \end_inset
 
-, что будет справедливо равенство 
-\begin_inset Formula $\left(\begin{array}{c}
-y_{1}\left(x_{0}\right)\\
+, такие что будет справедливо равенство: 
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{smallmatrix}y_{1}\left(x_{0}\right)\\
 \vtr\\
 y_{n}\left(x_{0}\right)
-\end{array}\right)=c_{1}\um\left(\begin{array}{c}
-y_{1}^{\left(1\right)}\left(x_{0}\right)\\
+\end{smallmatrix}\right)=c_{1}\um\left(\begin{smallmatrix}y_{1}^{\left(1\right)}\left(x_{0}\right)\\
 \vtr\\
 y_{n}^{\left(1\right)}\left(x_{0}\right)
-\end{array}\right)+\tr+c_{n}\um\left(\begin{array}{c}
-y_{1}^{\left(n\right)}\left(x_{0}\right)\\
+\end{smallmatrix}\right)+\tr+c_{n}\um\left(\begin{smallmatrix}y_{1}^{\left(n\right)}\left(x_{0}\right)\\
 \vtr\\
 y_{n}^{\left(n\right)}\left(x_{0}\right)
-\end{array}\right)$
+\end{smallmatrix}\right).\label{eq:LinComb}
+\end{equation}
+
 \end_inset
 
-.
- Используя эти постоянные построим вектор функцию 
-\begin_inset Formula $u\left(x\right)=c_{1}\um y^{\left(1\right)}\left(x\right)+\tr+c_{n}\um y^{\left(n\right)}\left(x\right)$
+Используя эти постоянные построим вектор функцию: 
+\begin_inset Formula 
+\[
+u\left(x\right)=c_{1}\um y^{\left(1\right)}\left(x\right)+\tr+c_{n}\um y^{\left(n\right)}\left(x\right)
+\]
+
 \end_inset
 
- По теореме (1) она будет решением системы (1) и в точке 
+По теореме (1) она будет решением системы (1), и в точке 
 \begin_inset Formula $x_{0}$
 \end_inset
 
- в силу 
-\begin_inset Formula $\left(\begin{array}{c}
-y_{1}\left(x_{0}\right)\\
-\vtr\\
-y_{n}\left(x_{0}\right)
-\end{array}\right)=c_{1}\um\left(\begin{array}{c}
-y_{1}^{\left(1\right)}\left(x_{0}\right)\\
-\vtr\\
-y_{n}^{\left(1\right)}\left(x_{0}\right)
-\end{array}\right)+\tr+c_{n}\um\left(\begin{array}{c}
-y_{1}^{\left(n\right)}\left(x_{0}\right)\\
-\vtr\\
-y_{n}^{\left(n\right)}\left(x_{0}\right)
-\end{array}\right)$
+ в силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LinComb"
+
 \end_inset
 
- будет совподать с функцией 
+) будет совпадать с функцией 
 \begin_inset Formula $u\left(x_{0}\right)=y\left(x_{0}\right)$
 \end_inset
 
- в тичке 
+ в точке 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -4356,11 +4372,15 @@ y_{n}^{\left(n\right)}\left(x_{0}\right)
 \end_inset
 
 .
- Следовательно 
-\begin_inset Formula $y\left(x\right)=\ous{k=1}nc_{k}\um y^{\left(k\right)}\left(x\right)$
+ Следовательно: 
+\begin_inset Formula 
+\[
+y\left(x\right)=\ous{k=1}nc_{k}\um y^{\left(k\right)}\left(x\right).
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Corollary
@@ -4368,41 +4388,48 @@ y_{n}^{\left(n\right)}\left(x_{0}\right)
 \begin_inset Formula $n$
 \end_inset
 
- - мерным линейным пространством.
+-мерным линейным пространством.
 \end_layout
 
 \begin_layout Theorem
-(Лиувилля для линейных систем)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Лиувилля для линейных систем
 \end_layout
 
-\begin_layout Theorem
-Пусть вектор-функции 
+\end_inset
+
+ Пусть вектор-функции 
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- решение системы (1), а 
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
-y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
+ --- решение системы (1), а 
+\begin_inset Formula $W\left(x\right)=\left|\begin{smallmatrix}y_{1}^{\left(1\right)}\left(x\right) & \ldots & y_{1}^{\left(n\right)}\left(x\right)\\
 \vdots & \ddots & \vdots\\
 y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\right)
-\end{array}\right|$
+\end{smallmatrix}\right|$
 \end_inset
 
- - определитель Вронского, построенный по этим решениям.
- Тогда он является решение следующему дифференциальному уравнению: 
-\begin_inset Formula $\df{dW}{dx}=\ous{k=1}na_{k,k}\left(x\right)\um W\left(x\right)$
+ --- определитель Вронского, построенный по этим решениям.
+ Тогда он является решением следующего дифференциального уравнения: 
+\begin_inset Formula 
+\[
+\df{dW}{dx}=\ous{k=1}na_{k,k}\left(x\right)\um W\left(x\right).
+\]
+
 \end_inset
 
-.
- (
+(
 \begin_inset Formula $\ous{k=1}na_{k,k}\left(x\right)$
 \end_inset
 
-- след матрици 
+ --- след матрици 
 \begin_inset Formula $A$
 \end_inset
 
-, тоесть сумма диагональных элементов)
+, то есть сумма диагональных элементов).
 \end_layout
 
 \begin_layout Proof
@@ -4415,27 +4442,34 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 \begin_inset Formula $y_{i}\left(j\right)$
 \end_inset
 
- , каждая их которыз зависит еще от 
+, каждая их которых зависит еще от 
 \begin_inset Formula $x$
 \end_inset
 
 .
  
-\begin_inset Formula $\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}$
+\begin_inset Formula 
+\[
+\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}
+\]
+
 \end_inset
 
-.
- Через 
+Через 
 \begin_inset Formula $B_{i,j}$
 \end_inset
 
- обозначим алгеброическое дополнение элемента 
+ обозначим алгебраическое дополнение элемента 
 \begin_inset Formula $\left(i,j\right)$
 \end_inset
 
 .
- Заметим, что часная производная 
-\begin_inset Formula $\df{\dd W}{\dd y_{i}^{\left(j\right)}}=B_{i,j}$
+\end_layout
+
+\begin_deeper
+\begin_layout Remark
+Частная производная равна: 
+\begin_inset Formula $\frac{\dd W}{\dd y_{i}^{\left(j\right)}}=B_{i,j}$
 \end_inset
 
 .
@@ -4443,24 +4477,27 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 \end_layout
 
 \begin_layout Proof
-(Разложим определитель Вронского по 
+Разложим определитель Вронского по 
 \begin_inset Formula $i$
 \end_inset
 
--й строке 
-\begin_inset Formula $W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left(j\right)}\left(x\right)\um B_{i,j}+\tr+y_{i}^{\left(n\right)}\left(x\right)\um B_{i,n}$
+-й строке: 
+\begin_inset Formula 
+\[
+W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left(j\right)}\left(x\right)\um B_{i,j}+\tr+y_{i}^{\left(n\right)}\left(x\right)\um B_{i,n}
+\]
+
 \end_inset
 
-.
- 
+Тогда 
 \begin_inset Formula $y_{i}^{\left(j\right)}\left(x\right)$
 \end_inset
 
- - не будет входить не в одно из алгебраических 
+ не будет входить ни в одно из алгебраических дополнений 
 \begin_inset Formula $B_{i,1},\tr B_{i,n}$
 \end_inset
 
- дополнений в силу вычеркивания 
+ в силу вычеркивания 
 \begin_inset Formula $i$
 \end_inset
 
@@ -4468,18 +4505,23 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 \begin_inset Formula $j$
 \end_inset
 
--го столбца, а входит он только в одно это слогаемое 
+-го столбца, а входит он только в одно слогаемое 
 \begin_inset Formula $y_{i}^{\left(j\right)}\left(x\right)\um B_{i,j}$
 \end_inset
 
 .
- Отсюда и следуте равенство 
-\begin_inset Formula $\df{\dd W}{\dd y_{i}^{\left(j\right)}}=B_{i,j}$
+ Отсюда и следует равенство 
+\begin_inset Formula 
+\[
+\df{\dd W}{\dd y_{i}^{\left(j\right)}}=B_{i,j}
+\]
+
 \end_inset
 
-)
+
 \end_layout
 
+\end_deeper
 \begin_layout Proof
 \begin_inset Formula $\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{i,j=1}nB_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{j=1}n\left(\ous{i=1}n\left(B_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}\right)\right)$
 \end_inset
