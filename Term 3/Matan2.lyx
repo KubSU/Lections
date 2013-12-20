@@ -10655,7 +10655,7 @@ d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy
 \end_inset
 
  - квадрируемая область, а функция 
-\begin_inset Formula $u=f\left(x;y\right)$
+\begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
  определена на 
@@ -10663,7 +10663,7 @@ d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy
 \end_inset
 
 .
- Ставится задача нахождения объема цилиндрического бруса, ограниченного
+ Ставится задача нахождения обьема цилиндрического бруса, ограниченного
  плоскостью 
 \begin_inset Formula $XoY$
 \end_inset
@@ -10696,7 +10696,8 @@ d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy
 \begin_inset Formula $D_{i}\cap D_{j}=\textrm{Ø}\ j\nr i$
 \end_inset
 
-, 
+.
+ 
 \begin_inset Formula $\forall i=\overline{1,n}$
 \end_inset
 
@@ -10704,7 +10705,8 @@ d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy
 \begin_inset Formula $M_{i}\left(\xi_{i},\nu_{i}\right)\in D_{i}$
 \end_inset
 
-, обозначим 
+.
+ Обозначим 
 \begin_inset Formula $\D S_{i}$
 \end_inset
 
@@ -10733,7 +10735,7 @@ d^{2}L=L_{x^{2}}^{\prime\prime}\um dx^{2}+2\um L_{xy}^{\prime\prime}\um dx\um dy
 \end_inset
 
  приближенно равна объему нашего груза.
- 
+ При 
 \begin_inset Formula $n\st\b,\ \lambda\st0$
 \end_inset
 
@@ -10786,6 +10788,8 @@ n\st\b\\
 \end_layout
 
 \begin_layout Standard
+
+\emph on
 Условия существования интегралов.
 \end_layout
 
@@ -10832,14 +10836,14 @@ n\st\b\\
 \end_inset
 
 , обозначим 
-\begin_inset Formula $m_{i}=\un{\inf}{}f\left(x,y\right)$
+\begin_inset Formula $m_{i}=\un{\inf}{D_{i}}f\left(x,y\right)$
 \end_inset
 
 , 
-\begin_inset Formula $M_{i}=\un{\sup}{}f\left(x,y\right)$
+\begin_inset Formula $M_{i}=\un{\sup}{D_{i}}f\left(x,y\right)$
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Definition
@@ -10872,11 +10876,16 @@ n\st\b\\
 \end_layout
 
 \begin_layout Theorem
-(1)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
 \end_layout
 
-\begin_layout Theorem
-При добавлении в разбиение еще 1-ной спрямляемой линии нижние суммы Дарбу
+\end_inset
+
+При добавлении в разбиение еще одной спрямляемой линии нижние суммы Дарбу
  не убывают, а верхние суммы Дарбу не возрастают.
 \end_layout
 
@@ -10885,12 +10894,17 @@ n\st\b\\
 \end_layout
 
 \begin_layout Theorem
-(2)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Всякая нижняя сумма Дарбу 
-\begin_inset Formula $s'$
+\begin_inset Formula $s\pr$
 \end_inset
 
  не превосходит всякой верхней суммы Дарбу 
@@ -10905,10 +10919,15 @@ n\st\b\\
 \end_layout
 
 \begin_layout Theorem
-(3)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Функция 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
@@ -10918,13 +10937,12 @@ n\st\b\\
 \end_inset
 
  тогда и только тогда, когда 
-\begin_inset Formula $\ul{\begin{array}{c}
-n\st\b\\
+\begin_inset Formula $\ul{\begin{smallmatrix}n\st\b\\
 \lambda\st0
-\end{array}}\left(S_{n}-s_{n}\right)=0$
+\end{smallmatrix}}\left(S_{n}-s_{n}\right)=0$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -10936,10 +10954,15 @@ n\st\b\\
 \end_layout
 
 \begin_layout Theorem
-(1)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
 \end_layout
 
-\begin_layout Theorem
+\end_inset
+
 Функция 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
@@ -10956,6 +10979,15 @@ n\st\b\\
 \end_layout
 
 \begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
 Если ограниченная функция 
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
@@ -10964,7 +10996,7 @@ n\st\b\\
 \begin_inset Formula $D$
 \end_inset
 
- разрывы лишь на конечном множестве кривых площади 0, то 
+ разрывы лишь на конечном множестве кривых нулевой площади, то 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -11021,7 +11053,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1-го курса...
 \end_layout
 
 \begin_layout Standard
@@ -11046,7 +11078,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1-го курса...
 \end_layout
 
 \begin_layout Standard
@@ -11083,7 +11115,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1-го курса...
 \end_layout
 
 \begin_layout Standard
@@ -11116,7 +11148,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1-го курса...
 \end_layout
 
 \begin_layout Standard
@@ -11149,7 +11181,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1-го курса...
 \end_layout
 
 \begin_layout Standard
@@ -11178,7 +11210,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с 1-го курса...
 \end_layout
 
 \begin_layout Standard
@@ -11211,7 +11243,7 @@ n\st\b\\
 \end_layout
 
 \begin_layout Proof
-Самостоятельно, аналогично для одинарного интеграла с 1го курса...
+Самостоятельно, аналогично для одинарного интеграла с первого курса...
 \end_layout
 
 \begin_layout Subsubsection
@@ -11420,11 +11452,11 @@ V & = & \oui abQ\left(x\right)\um dx=\\
 \begin_inset Formula $u=f\left(x,y\right)$
 \end_inset
 
- инт егрируема на области 
+ интегрируема на области 
 \begin_inset Formula $D$
 \end_inset
 
-, олгртаниченой линиями 
+, ограниченой линиями 
 \begin_inset Formula $x=a,\ x=b,\ y=y_{1}\left(x\right),\ y=y_{2}\left(x\right)$
 \end_inset
 
@@ -25092,7 +25124,7 @@ R_{2}=\ul{n\st\infty}\left|\df{a_{n}}{n+1}\um\df{n+2}{a_{n+1}}\right|=R
  Рассмотрим соответствие:
 \begin_inset Formula 
 \begin{equation}
-f(x)\sim f(x_{0})+f'(x_{0})(x-x_{0})+\df{f^{\pr\pr}(x_{0})}{2!}(x-x_{0})^{2}+\tr+\label{eq:rt1}
+f(x)\sim f(x_{0})+f'(x_{0})(x-x_{0})+\df{f\ppr(x_{0})}{2!}(x-x_{0})^{2}+\tr+\label{eq:rt1}
 \end{equation}
 
 \end_inset
@@ -26236,16 +26268,16 @@ S\left(0\right)=0
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $n=\pm\df{grad\, U}{\left|grad\, U\right|}=\pm\df{U_{x}\pr\um\vec{i}+U_{y}\pr\um\vec{j}+U_{z}\pr\um\vec{k}}{\sqrt{\left(U_{x}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}}}=-\df{\un{\underbrace{\left(2x-6\right)}}{\begin{array}{c}
+\begin_inset Formula $n=\pm\df{grad\, U}{\left|grad\, U\right|}=\pm\df{U_{x}\pr\um\vec i+U_{y}\pr\um\vec j+U_{z}\pr\um\vec k}{\sqrt{\left(U_{x}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}+\left(U_{z}\pr\right)^{2}}}=-\df{\un{\underbrace{\left(2x-6\right)}}{\begin{array}{c}
 \Vert\\
 0
-\end{array}}\um\vec{i}+\un{\underbrace{\left(8y\right)}}{\begin{array}{c}
+\end{array}}\um\vec i+\un{\underbrace{\left(8y\right)}}{\begin{array}{c}
 \Vert\\
 0
-\end{array}}\um\vec{j}+\un{\underbrace{\left(2z-4\right)}}{\begin{array}{c}
+\end{array}}\um\vec j+\un{\underbrace{\left(2z-4\right)}}{\begin{array}{c}
 \Vert\\
 -12
-\end{array}}\um\vec{k}}{\sqrt{0+0+144}}$
+\end{array}}\um\vec k}{\sqrt{0+0+144}}$
 \end_inset
 
  
@@ -26278,23 +26310,23 @@ status open
 \end_inset
 
  по направлению 
-\begin_inset Formula $I=\vec{i}-\vec{j}+5\vec{k}$
+\begin_inset Formula $I=\vec i-\vec j+5\vec k$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $l=\df I{\left|I\right|}=\df{\vec{i}-\vec{j}+5\vec{k}}{\sqrt{1+1+25}}=\un{\underbrace{\df 1{3\sqrt{3}}}}{\begin{array}{c}
+\begin_inset Formula $l=\df I{\left|I\right|}=\df{\vec i-\vec j+5\vec k}{\sqrt{1+1+25}}=\un{\underbrace{\df 1{3\sqrt{3}}}}{\begin{array}{c}
 \Vert\\
 \cos\alpha
-\end{array}}\vec{i}-\un{\underbrace{\df 1{3\sqrt{3}}}}{\begin{array}{c}
+\end{array}}\vec i-\un{\underbrace{\df 1{3\sqrt{3}}}}{\begin{array}{c}
 \Vert\\
 \cos\beta
-\end{array}}\vec{j}+\un{\underbrace{\df 5{3\sqrt{3}}}}{\begin{array}{c}
+\end{array}}\vec j+\un{\underbrace{\df 5{3\sqrt{3}}}}{\begin{array}{c}
 \Vert\\
 \cos\gamma
-\end{array}}\vec{k}$
+\end{array}}\vec k$
 \end_inset
 
  
@@ -26383,7 +26415,7 @@ status open
 \end_inset
 
 Найти поток векторного поля 
-\begin_inset Formula $\vec{a}=\left(x+xz^{2}\right)\vec{i}+u\vec{j}+\left(z-zx^{2}\right)\vec{k}$
+\begin_inset Formula $\vec a=\left(x+xz^{2}\right)\vec i+u\vec j+\left(z-zx^{2}\right)\vec k$
 \end_inset
 
  через часть поверхности 
@@ -26411,11 +26443,11 @@ status open
 \begin_layout Example
 \begin_inset Formula 
 \begin{eqnarray*}
-\Pi & = & \un{\iint}S\left(\vec{a},\vec{n}\right)dS=\\
+\Pi & = & \un{\iint}S\left(\vec a,\vec n\right)dS=\\
  & = & \left\{ \begin{array}{c}
 U=x^{2}+y^{2}+z^{2}-9\equiv0\\
-\vec{n}=\pm\df{grad\, U}{\left|grad\, U\right|}=\\
-=\pm\df{2x\vec{i}+2y\vec{j}+2z\vec{k}}{2\sqrt{x^{2}+y^{2}+z^{2}}}\\
+\vec n=\pm\df{grad\, U}{\left|grad\, U\right|}=\\
+=\pm\df{2x\vec i+2y\vec j+2z\vec k}{2\sqrt{x^{2}+y^{2}+z^{2}}}\\
 \text{Выбераем +}
 \end{array}\right\} =\\
  & = & \un{\iint}S\left(\left(x+xz^{2}\right)x+y\um y+\left(z-zx^{2}\right)z\right)\df 1{\sqrt{x^{2}+y^{2}+z^{2}}}dS=\\
@@ -26441,16 +26473,16 @@ dS=\df{dxdy}{\cos\gamma}=\\
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\un{\underbrace{\un{\oiint}{\sum}\left(\vec{a},\vec{n}\right)dS}}{\begin{array}{c}
+\begin_inset Formula $\un{\underbrace{\un{\oiint}{\sum}\left(\vec a,\vec n\right)dS}}{\begin{array}{c}
 \Vert\\
-\un{\iint}S\left(\vec{a},\vec{n}\right)dS+\un{\iint}T\un{\underbrace{\left(\vec{a},\vec{n}\right)}}{\begin{array}{c}
+\un{\iint}S\left(\vec a,\vec n\right)dS+\un{\iint}T\un{\underbrace{\left(\vec a,\vec n\right)}}{\begin{array}{c}
 \Vert\\
 \left(0;0;-1\right)
 \end{array}}\un{\underbrace{dS}}{\begin{array}{c}
 \Vert\\
 dxdy
 \end{array}}
-\end{array}}=\un{\iiint}V\un{\underbrace{div\,\vec{a}}}{\begin{array}{c}
+\end{array}}=\un{\iiint}V\un{\underbrace{div\,\vec a}}{\begin{array}{c}
 \Vert\\
 P_{x}\pr+Q_{y}\pr+R_{z}\pr
 \end{array}}\um dxdydz=\un{\iiint}V\left(1+z^{2}+1+1-x^{2}\right)dxdydz$
@@ -26474,7 +26506,7 @@ status open
 \end_inset
 
 Найти поток векторного поля 
-\begin_inset Formula $\vec{a}=2x\vec{i}+3y\vec{j}+4z\vec{k}$
+\begin_inset Formula $\vec a=2x\vec i+3y\vec j+4z\vec k$
 \end_inset
 
  через часть плоскости 
@@ -26496,17 +26528,17 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\Pi=\un{\iint}P\left(\vec{a},\vec{n}\right)dS=\un{\iint}P\left(2x\df 2{\sqrt{14}}+3y\df 3{\sqrt{14}}+4z\df 3{\sqrt{14}}\right)dS$
+\begin_inset Formula $\Pi=\un{\iint}P\left(\vec a,\vec n\right)dS=\un{\iint}P\left(2x\df 2{\sqrt{14}}+3y\df 3{\sqrt{14}}+4z\df 3{\sqrt{14}}\right)dS$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\vec{n}=\ov{\overbrace{\pm}}{\begin{array}{c}
+\begin_inset Formula $\vec n=\ov{\overbrace{\pm}}{\begin{array}{c}
 +\\
 \Vert
-\end{array}}\df{2\vec{i}=3\vec{j}+1\vec{k}}{\sqrt{14}}$
+\end{array}}\df{2\vec i=3\vec j+1\vec k}{\sqrt{14}}$
 \end_inset
 
 
@@ -26547,7 +26579,7 @@ status open
 \end_inset
 
 Найти поток векторного поля 
-\begin_inset Formula $\vec{a}\left(3yz-x\right)\vec{i}+\left(x^{2}-y\right)\vec{j}+\left(6z-1\right)\vec{k}$
+\begin_inset Formula $\vec a\left(3yz-x\right)\vec i+\left(x^{2}-y\right)\vec j+\left(6z-1\right)\vec k$
 \end_inset
 
  через замкнутую поверхность 
@@ -26586,7 +26618,7 @@ z=3
 \begin_layout Example
 \begin_inset Formula 
 \begin{eqnarray*}
-\Pi & = & \un{\iint}S\left(\vec{a},\vec{n}\right)dS=\left\{ \text{Формула Гаусса-Острогатского}\right\} =\\
+\Pi & = & \un{\iint}S\left(\vec a,\vec n\right)dS=\left\{ \text{Формула Гаусса-Острогатского}\right\} =\\
  & = & \un{\iiint}Vdiv\, a\, dxdydz=\\
  & = & \left\{ \begin{array}{c}
 P=3yz-x\\
@@ -26624,7 +26656,7 @@ status open
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\vec{a}=\left(y+z\right)\vec{i}+\left(x-2y+z\right)\vec{j}+x\vec{k}$
+\begin_inset Formula $\vec a=\left(y+z\right)\vec i+\left(x-2y+z\right)\vec j+x\vec k$
 \end_inset
 
 
