@@ -4523,7 +4523,12 @@ W\left(x\right)=y_{i}^{\left(1\right)}\left(x\right)\um B_{i,1}+\tr+y_{i}^{\left
 
 \end_deeper
 \begin_layout Proof
-\begin_inset Formula $\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{i,j=1}nB_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{j=1}n\left(\ous{i=1}n\left(B_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}\right)\right)$
+А значит:
+\begin_inset Formula 
+\[
+\df{dW}{dx}=\ous{i,j=1}n\df{\dd W}{\dd y_{i}^{\left(j\right)}}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{i,j=1}nB_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}=\ous{j=1}n\left(\ous{i=1}n\left(B_{i,j}\um\df{dy_{i}^{\left(j\right)}}{dx}\right)\right)
+\]
+
 \end_inset
 
 
