@@ -72,8 +72,8 @@ theorems-starred
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes true
-\output_changes true
+\tracking_changes false
+\output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -83,139 +83,139 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\sl}{\Longrightarrow}
+\newcommand{\sl}{\Longrightarrow}
 {\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
 {\overset{def}{\Longleftrightarrow}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dsl}{\Longleftrightarrow}
+\newcommand{\dsl}{\Longleftrightarrow}
 {\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tr}{\ldots}
+\newcommand{\tr}{\ldots}
 {\ldots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\nr}{\neq}
+\newcommand{\nr}{\neq}
 {\neq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\um}{\cdot}
+\newcommand{\um}{\cdot}
 {\cdot}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pr}{\prime}
+\newcommand{\pr}{\prime}
 {\prime}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tg}{\text{tg}}
+\newcommand{\tg}{\text{tg}}
 {\text{tg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tan}{\tg}
+\newcommand{\tan}{\tg}
 {\tg}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arctg}{\text{arctg}}
+\newcommand{\arctg}{\text{arctg}}
 {\text{arctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\arcctg}{\text{arcctg}}
+\newcommand{\arcctg}{\text{arcctg}}
 {\text{arcctg}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\N}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
 {\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
 {\mathbb{R}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Z}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
 {\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\Q}{\text{Q}}
+\newcommand{\Q}{\text{Q}}
 {\text{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sh}{\text{sh}}
+\newcommand{\sh}{\text{sh}}
 {\text{sh}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ch}{\text{ch}}
+\newcommand{\ch}{\text{ch}}
 {\text{ch}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\th}{\text{th}}
+\newcommand{\th}{\text{th}}
 {\text{th}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\st}{\longrightarrow}
+\newcommand{\st}{\longrightarrow}
 {\longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\sinx}{\sin\left(x\right)}
+\newcommand{\sinx}{\sin\left(x\right)}
 {\sin\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\cosx}{\cos\left(x\right)}
+\newcommand{\cosx}{\cos\left(x\right)}
 {\cos\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\fx}{f\left(x\right)}
+\newcommand{\fx}{f\left(x\right)}
 {f\left(x\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\un}[2]{\underset{#2}{#1}}
+\newcommand{\un}[2]{\underset{#2}{#1}}
 {\underset{#2}{#1}}
 \end_inset
 
@@ -224,103 +224,103 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\underset{#1}{\lim}}
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
 {\underset{#1}{\lim}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\underset{#1}{\max}}
+\newcommand{\umax}[1]{\underset{#1}{\max}}
 {\underset{#1}{\max}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\underset{#1}{\min}}
+\newcommand{\umin}[1]{\underset{#1}{\min}}
 {\underset{#1}{\min}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{\pr\pr}
+\newcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{\ppr\pr}
+\newcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\oui{#1}{#2}}
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
 {\oui{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
@@ -332,49 +332,49 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\renewcommand{\DD}{\text{\emph{д}}}
+\newcommand{\DD}{\text{\emph{д}}}
 {\text{\emph{д}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dd}{\text{\emph{д}}}
+\newcommand{\dd}{\text{\emph{д}}}
 {\text{\emph{д}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\grad}{\text{grad}}
+\newcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vtr}{\vdots}
+\newcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
+\newcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
 {\df{#1^{#2}#3}{#1#4^{#2}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\kr}{\equiv}
+\newcommand{\kr}{\equiv}
 {\equiv}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\x}{\times}
+\newcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\li}{\hspace{1.5cm}}
+\newcommand{\li}{\hspace{1.5cm}}
 {\hspace{1.5cm}}
 \end_inset
 
@@ -6528,30 +6528,24 @@ reference "eq:vpp1"
 \end_inset
 
 ) эквивалентную систему:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\begin{flalign*}
+\li & \begin{cases}
 y_{0}=y\\
 y_{1}=\df{dy}{dx}\\
 \vtr\\
 y_{n-1}=\dif d{n-1}yx
-\end{cases}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\end{cases} &  & \begin{cases}
 \df{dy_{0}}{dx}=y_{1}\\
 \df{dy_{2}}{dx}=y_{2}\\
 \vtr\\
-\df{dy_{n-1}}{dx}=a_{n-1}y_{n-1}+\tr=a_{1}y_{1}+a_{0}y_{0}+f\left(x\right)
-\end{cases}$
+\df{dy_{n-1}}{dx}=a_{n-1}y_{n-1}+\tr+a_{1}y_{1}+a_{0}y_{0}+f\left(x\right)
+\end{cases}
+\end{flalign*}
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -6559,10 +6553,12 @@ y_{n-1}=\dif d{n-1}yx
 \begin_inset Formula $z_{1}\left(x\right),\tr,z_{n}\left(x\right)$
 \end_inset
 
- образуют фундаментальную систему решгений соответсвубщего обдородного уравнения
+ образуют фундаментальную систему решений соответствующего однородного уравнения
  (1).
- Тогда ветор-функции 
-\begin_inset Formula $\left(\begin{array}{c}
+ Тогда вектор--функции: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
 z_{1}\left(x\right)\\
 \dif d{}{z_{1}\left(x\right)}x\\
 \dif d2{z_{1}\left(x\right)}x\\
@@ -6574,22 +6570,19 @@ z_{n}\left(x\right)\\
 \dif d2{z_{n}\left(x\right)}x\\
 \vtr\\
 \dif d{n-1}{z_{n}\left(x\right)}x
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- будут образовывать фундаментальную ссистему решений соответствующей однородной
+будут образовывать фундаментальную систему решений соответствующей однородной
  системы.
- Применим метод вариации произвольных постоянных для поиска часных решений
+ Применим метод вариации произвольных постоянных для поиска частных решений
  системы (2).
- 
-\end_layout
-
-\begin_layout Standard
-Решение будем искать в виде:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left(\begin{array}{c}
+ Решение будем искать в виде:
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
 y_{0}\\
 y_{1}\\
 \vtr\\
@@ -6606,64 +6599,68 @@ z_{n}\left(x\right)\\
 \dif d2{z_{n}\left(x\right)}x\\
 \vtr\\
 \dif d{n-1}{z_{n}\left(x\right)}x
-\end{array}\right)$
+\end{array}\right)
+\]
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Где 
 \begin_inset Formula $c_{1}\left(x\right),\tr,c_{n}\left(x\right)$
 \end_inset
 
- --- неизвестные функции
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+ --- неизвестные функции.
+ Тогда:
+\begin_inset Formula 
+\begin{flalign*}
+\li & \begin{cases}
 y_{0}\left(x\right)=\ous{k=1}nc_{k}\left(x\right)z_{k}\left(x\right)\\
 y_{1}\left(x\right)=\ous{k=1}nc_{k}\left(x\right)\dif d{}{z_{k}\left(x\right)}x\\
 \vtr\\
 y_{n-1}\left(x\right)=\ous{k=1}nc_{k}\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x
-\end{cases}$
+\end{cases} & {}
+\end{flalign*}
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+Значит:
+\begin_inset Formula 
+\begin{flalign*}
+\li & \begin{cases}
 \ous{k=1}nc_{k}\pr\left(x\right)z_{k}\left(x\right)+\ous{k=1}nc_{k}\df{dz_{k}\left(x\right)}{dx}=\ous{k=1}nc_{k}\left(x\right)\df{dz_{k}\left(x\right)}{dx}\\
 \ous{k=1}nc_{k}\pr\df{dz_{k}\left(x\right)}{dx}+\ous{k=1}nc_{k}\dif d2{z_{k}\left(x\right)}x=\ous{k=1}nc_{k}\dif d2{z_{k}\left(x\right)}x\\
 \vtr\\
-\ous{k=1}nc_{k}\pr\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x+\ous{k=1}nc_{k}\left(x\right)\dif dn{z_{k}\left(X\right)}x=a_{n-1}\ous{k=1}nc_{k}\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x+\tr+a_{0}\ous{k=1}nc_{k}\left(x\right)z_{k}\left(x\right)+f\left(x\right)
-\end{cases}$
+\begin{aligned}\ous{k=1}nc_{k}\pr\left(x\right) & \dif d{n-1}{z_{k}\left(x\right)}x+\ous{k=1}nc_{k}\left(x\right)\dif dn{z_{k}\left(X\right)}x=\\
+ & =a_{n-1}\ous{k=1}nc_{k}\left(x\right)\dif d{n-1}{z_{k}\left(x\right)}x+\tr+a_{0}\ous{k=1}nc_{k}\left(x\right)z_{k}\left(x\right)+f\left(x\right)
+\end{aligned}
+\end{cases} & {}
+\end{flalign*}
+
 \end_inset
 
- 
+Тогда:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\ous{k=1}nc_{k}\left(x\right)\left(\dif dn{z_{k}\left(x\right)}x-a_{n-1}\dif d{n-1}{z_{k}\left(x\right)}x-\tr-a_{0}z_{k}\left(x\right)\right) & = & \left\{ \forall k\ \left(\dif dn{z_{k}\left(x\right)}x-a_{n-1}\dif d{n-1}{z_{k}\left(x\right)}x-\tr-a_{0}z_{k}\left(x\right)\right)=0\right\} =\\
- & = & 0
-\end{eqnarray*}
+\begin{multline*}
+\ous{k=1}nc_{k}\left(x\right)\left(\dif dn{z_{k}\left(x\right)}x-a_{n-1}\dif d{n-1}{z_{k}\left(x\right)}x-\tr-a_{0}z_{k}\left(x\right)\right)=\\
+=\left|\forall k\quad\left(\dif dn{z_{k}\left(x\right)}x-a_{n-1}\dif d{n-1}{z_{k}\left(x\right)}x-\tr-a_{0}z_{k}\left(x\right)\right)=0\right|=0
+\end{multline*}
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+Следовательно:
+\begin_inset Formula 
+\begin{flalign*}
+\li & \begin{cases}
 c_{1}\pr\left(x\right)z_{1}\left(x\right)+\tr+c_{n}\pr\left(x\right)z_{n}\left(x\right)=0\\
 c_{1}\pr\left(x\right)\df{dz_{1}\left(x\right)}{dx}+\tr+c_{n}\pr\left(x\right)\df{dz_{n}\left(x\right)}{dx}=0\\
 \vtr\\
 c_{1}\pr\left(x\right)\dif d{n-2}{z_{1}\left(x\right)}x+\tr+c_{n}\pr\left(x\right)\dif d{n-2}{z_{n}\left(x\right)}x=0\\
 c_{1}\pr\left(x\right)\dif d{n-1}{z_{1}\left(x\right)}x+\tr+c_{n}\pr\left(x\right)\dif d{n-1}{z_{n}\left(x\right)}x=f\left(x\right)
-\end{cases}$
+\end{cases} & {}
+\end{flalign*}
+
 \end_inset
 
  
@@ -6676,21 +6673,39 @@ c_{1}\pr\left(x\right)\dif d{n-1}{z_{1}\left(x\right)}x+\tr+c_{n}\pr\left(x\righ
 
 .
  Решения можно найти всегда.
- Очевидног, что функция 
-\begin_inset Formula $y_{0}\left(x\right)=c_{1}\left(x\right)\um z_{1}\left(x\right)+\tr+c_{n}\left(x\right)z_{n}\left(x\right)$
+ Очевидно, что функция 
+\begin_inset Formula 
+\[
+y_{0}\left(x\right)=c_{1}\left(x\right)\um z_{1}\left(x\right)+\tr+c_{n}\left(x\right)z_{n}\left(x\right)
+\]
+
 \end_inset
 
- бьудет решщением уравнения (1).
- Это и есть часное решение уравнения (1).
+ будет решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:vpp1"
+
+\end_inset
+
+).
+ Это и есть частное решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:vpp1"
+
+\end_inset
+
+).
  
 \end_layout
 
 \begin_layout Subsection
-Линейные однородные уравнения с постоянными коофицентами
+Линейные однородные уравнения с постоянными коэффициентами
 \end_layout
 
 \begin_layout Standard
-Рассмотрим слудующие линейные однородные укравнения 
+Рассмотрим следующие линейные однородные уравнения:
 \begin_inset Formula 
 \begin{equation}
 L\left(x\right)\equiv\dif dnyx-\left(a_{n-1}\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a_{0}y\right)=0\label{eq:100}
@@ -6698,7 +6713,7 @@ L\left(x\right)\equiv\dif dnyx-\left(a_{n-1}\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a
 
 \end_inset
 
-, где 
+Где 
 \begin_inset Formula $a_{i}=const,\ i=\overline{0,n-1}$
 \end_inset
 
@@ -6707,11 +6722,18 @@ L\left(x\right)\equiv\dif dnyx-\left(a_{n-1}\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a
 \end_layout
 
 \begin_layout Standard
-Бдуцем искать решение уравнения (4) в виде 
-\begin_inset Formula $y\left(x\right)=e^{\lambda x},\ $
+Будем искать решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
 \end_inset
 
- где 
+) в виде 
+\begin_inset Formula $y\left(x\right)=e^{\lambda x}$
+\end_inset
+
+, где 
 \begin_inset Formula $\lambda$
 \end_inset
 
@@ -6720,51 +6742,73 @@ L\left(x\right)\equiv\dif dnyx-\left(a_{n-1}\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a
 \begin_inset Formula $e^{\lambda x}$
 \end_inset
 
- в елвую часть, заметим:
-\end_layout
+ в левую часть, заметим:
+\begin_inset Formula 
+\[
+\dif dk{}x\left(e^{\lambda x}\right)=\lambda^{k}e^{\lambda x}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\dif dk{}x\left(e^{\lambda x}\right)=\lambda^{k}e^{\lambda x}$
 \end_inset
 
- 
-\end_layout
+ А тогда:
+\begin_inset Formula 
+\[
+L\left(e^{\lambda x}\right)=e^{\lambda x}\left(\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}\right)=0
+\]
 
-\begin_layout Standard
-\begin_inset Formula $L\left(e^{\lambda x}\right)=e^{\lambda x}\left(\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}\right)=0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-тогадж, чтобы функция 
+Тогда, чтобы функция 
 \begin_inset Formula $e^{\lambda x}$
 \end_inset
 
- была решением (4) необходимо и достаточно, чтобы 
+ была решением (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+) необходимо и достаточно, чтобы 
 \begin_inset Formula $\lambda$
 \end_inset
 
- была корнем уравнения 
-\begin_inset Formula $P\left(\lambda\right)\equiv\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}=0$
+ была корнем уравнения: 
+\begin_inset Formula 
+\[
+P\left(\lambda\right)\equiv\lambda^{n}-a_{n-1}\lambda^{n-1}-\tr-a_{1}\lambda-a_{0}=0
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Этот многочелен называют характеристическим многочленом уравнения(4), а
- нулю многочелена называютхарактеристическими числами уравнения (4).
+Этот многочлен называют характеристическим многочленом уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+), а нули многочлена называют характеристическими числами уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
-Пусть все характеристические числа различные, тоесть уравнение(5) имеет
+Пусть все характеристические числа различные, то есть уравнение (5) имеет
  
 \begin_inset Formula $n$
 \end_inset
 
- различных нулей(корней, 
+ различных нулей (корней, 
 \begin_inset Formula $\lambda_{1},\tr,\lambda_{n}$
 \end_inset
 
@@ -6773,13 +6817,19 @@ L\left(x\right)\equiv\dif dnyx-\left(a_{n-1}\dif d{n-1}yx+\tr+a_{1}\df{dy}{dx}+a
 \begin_inset Formula $e^{\lambda_{1}x},\tr,e^{\lambda_{n}x}$
 \end_inset
 
- будут решениями уравнения (4).
+ будут решениями уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+).
  Они линейно не зависимы.
  Покажем это, составив определитель Вронского:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $W\left(x\right)=\left|\begin{array}{ccc}
+\begin_inset Formula 
+\[
+W\left(x\right)=\left|\begin{array}{ccc}
 e^{\lambda_{1}} & \tr & e^{\lambda_{n}x}\\
 \lambda_{1}e^{\lambda_{1}x} & \tr & \lambda_{n}e^{\lambda_{n}x}\\
 \vtr & \vtr & \vtr\\
@@ -6789,18 +6839,27 @@ e^{\lambda_{1}} & \tr & e^{\lambda_{n}x}\\
 \lambda_{1} & \tr & \lambda_{n}\\
 \vtr & \vtr & \vtr\\
 \lambda_{1}^{n-1} & \tr & \lambda_{n}^{n-1}
-\end{array}\right|\nr0$
+\end{array}\right|\nr0
+\]
+
 \end_inset
 
- 
-\end_layout
+Следовательно общее решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
 
-\begin_layout Standard
-Следовательно общее решения уравнения (4) будет равняться 
-\begin_inset Formula $y\left(x\right)=c_{1}e^{\lambda_{1}x}+\tr+c_{n}e^{\lambda_{n}x}$
 \end_inset
 
-, где 
+) будет равняться: 
+\begin_inset Formula 
+\[
+y\left(x\right)=c_{1}e^{\lambda_{1}x}+\tr+c_{n}e^{\lambda_{n}x}
+\]
+
+\end_inset
+
+Где 
 \begin_inset Formula $c_{1},\tr,c_{n}$
 \end_inset
 
@@ -6826,8 +6885,15 @@ status open
 \begin_inset Formula $a_{i}$
 \end_inset
 
- в уравнении (4) вещественные постоянные, а характеристические числа по
- прежнему различны, но среди них есть как вещественные, так и комплексные.
+ в уравнении (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+) вещественные постоянные, а характеристические числа по прежнему различны,
+ но среди них есть как вещественные, так и комплексные.
 \end_layout
 
 \begin_layout Standard
@@ -6835,7 +6901,14 @@ status open
 \begin_inset Formula $\lambda=a+bi$
 \end_inset
 
- --- комплексное характеристическое число уравнения (4), тогда 
+ --- комплексное характеристическое число уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+), тогда 
 \begin_inset Formula $\overline{\lambda}=a-bi$
 \end_inset
 
@@ -6844,38 +6917,44 @@ status open
 \begin_inset Formula $e^{\left(a+bi\right)x}$
 \end_inset
 
- ьудет решение уравнения (4).
- Тогда его вещественное и мнимая части также будут решением уравнения (4).
- (Покажем это: Пусть 
+ будет решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+).
+ Тогда его вещественная и мнимая части также будут решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Покажем это: Пусть 
 \begin_inset Formula $y\left(x\right)=u\left(x\right)+iv\left(x\right)$
 \end_inset
 
-
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+ тогда 
 \begin_inset Formula $L\left(u+iv\right)=0$
 \end_inset
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
+, следовательно 
 \begin_inset Formula $L\left(u\right)+iL\left(v\right)=0$
 \end_inset
 
- 
-\begin_inset Formula $L\left(u\right)=0,\ L\left(v\right)=0$
-\end_inset
+ откуда 
+\begin_inset Formula 
+\[
+e^{\left(a+bi\right)x}=e^{ax}\left(\cos bx+i\sin bx\right)
+\]
 
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $e^{\left(a+bi\right)x}=e^{ax}\left(\cos bx+i\sin bx\right)$
 \end_inset
 
  
@@ -6926,13 +7005,20 @@ status open
 \end_layout
 
 \begin_layout Standard
-Тоесть вешественная частиь совподает с вещенственной частью .., а мнимой получаетс
-я умножением на -1 соответствующей мнимой части.
+То есть вещественная часть совпадает с вещественной частью ..., а мнимой получается
+ умножением на -1 соответствующей мнимой части.
 \end_layout
 
 \begin_layout Standard
-Тоесть, комплексно сопряженное характеристическое число, не пораждает новых
- линейно не зависимых, с уже построеными решениями уравнения (4).
+То есть, комплексно сопряженное характеристическое число, не порождает новых
+ линейно независимых, с уже построенными решениями уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -6944,40 +7030,57 @@ status open
 \begin_inset Formula $e^{\lambda_{k}x}$
 \end_inset
 
-, а каждой паре комплексных сопряженных характеристических чисел 
+, а каждой паре комплексно сопряженных характеристических чисел 
 \begin_inset Formula $a\pm bi$
 \end_inset
 
- поставим в соотвествие 2 решения: 
-\begin_inset Formula $e^{ax}\cos bx,\ e^{ax}\sin bx$
+ поставим в соответствие 2 решения: 
+\begin_inset Formula 
+\[
+e^{ax}\cos bx,\quad e^{ax}\sin bx
+\]
+
 \end_inset
 
-.
- В результате получим 
+В результате получим 
 \begin_inset Formula $n$
 \end_inset
 
- решений уравнения (4).
- Они будут линейно не зависимыми.
- Так как предполагаем противное, и заменяя 
-\begin_inset Formula $\cos bx=\df{e^{ibx}-e^{-idx}}2$
+ решений уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
 \end_inset
 
- и 
-\begin_inset Formula $\sin bx=\df{e^{ibx}-e^{-ibx}}{2i}$
+).
+ Они будут линейно не зависимыми.
+ Так как предполагаем противное, и заменяя: 
+\begin_inset Formula 
+\[
+\cos bx=\df{e^{ibx}-e^{-ibx}}2,\quad\sin bx=\df{e^{ibx}-e^{-ibx}}{2i}
+\]
+
 \end_inset
 
  мы получим, что будут линейно зависимы функции 
 \begin_inset Formula $e^{\lambda_{1}x},\tr,e^{\lambda_{n}x}$
 \end_inset
 
- пр различных 
+ при различных 
 \begin_inset Formula $\lambda_{1},\tr,\lambda_{n}$
 \end_inset
 
 , что противоречит показанному выше.
- Ну а тогда линейная комбинация с произвольными постоянными, построеных
- решений будет общим решение уравнения (4).
+ Ну а тогда линейная комбинация с произвольными постоянными, построенных
+ решений будет общим решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:100"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Lemma
@@ -7004,20 +7107,23 @@ status open
 
  попарно различные вещественные или комплексные числа.
  Тогда функции 
-\begin_inset Formula $\begin{array}{c}
-e^{\lambda_{1}x},xe^{\lambda_{1}x},\tr,x^{n_{1}}e^{\lambda_{1}x}\\
-e^{\lambda_{2}x},xe^{\lambda_{2}x},\tr,x^{n_{2}\lambda_{2}x}\\
-\vtr\\
-e^{\lambda_{m}x},xe^{\lambda_{m}x},\tr,x^{n_{m}\lambda_{m}x}
-\end{array}$
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+e^{\lambda_{1}x}, & xe^{\lambda_{1}x}, & \tr, & x^{n_{1}}e^{\lambda_{1}x}\\
+e^{\lambda_{2}x}, & xe^{\lambda_{2}x}, & \tr, & x^{n_{2}}e^{\lambda_{2}x}\\
+\vtr & \vtr &  & \vtr\\
+e^{\lambda_{m}x}, & xe^{\lambda_{m}x}, & \tr, & x^{n_{m}}e^{\lambda_{m}x}
+\end{array}
+\]
+
 \end_inset
 
- , где 
+ где 
 \begin_inset Formula $n_{1}\tr n_{m}$
 \end_inset
 
- --- неотрицательные целые постоянные, что эти фунцкии линейно независимые
- 
+ --- неотрицательные целые постоянные, линейно независимые 
 \begin_inset Formula $\left(-\b;+\b\right)$
 \end_inset
 
@@ -7026,47 +7132,30 @@ e^{\lambda_{m}x},xe^{\lambda_{m}x},\tr,x^{n_{m}\lambda_{m}x}
 
 \begin_layout Proof
 Предположим противное: что эти функции линейно зависимы.
- Тоггда найдутся постоянные, не все равные 0лю, что их линейная комбинация
- тождественно равна нулю.
-\end_layout
+ Тогда найдутся постоянные, не все равные нулю, что их линейная комбинация
+ тождественно равна нулю:
+\begin_inset Formula 
+\begin{multline*}
+\alpha_{0}^{\left(1\right)}e^{\lambda_{1}x}+\alpha_{1}^{\left(1\right)}xe^{\lambda_{1}x}+\tr+\alpha_{n_{1}}^{\left(1\right)}x^{n_{1}}e^{\lambda_{1}x}+\\
++\alpha_{0}^{\left(2\right)}e^{\lambda_{2}x}+\alpha_{1}^{\left(2\right)}xe^{\lambda_{2}x}+\tr+\alpha_{n_{2}}^{\left(2\right)}x^{n_{2}}e^{\lambda_{2}x}+\tr+\\
++\alpha_{0}^{\left(m\right)}e^{\lambda_{m}x}+\alpha_{1}^{\left(m\right)}xe^{\lambda_{m}x}+\tr+\alpha_{n_{m}}^{\left(m\right)}x^{n_{m}}e^{\lambda_{m}x}\equiv0
+\end{multline*}
 
-\begin_layout Proof
-\begin_inset Formula $\alpha_{0}^{\left(1\right)}e^{\lambda_{1}x}+\alpha_{1}^{\left(1\right)}xe^{\lambda_{1}x}+\tr+\alpha_{n_{1}}^{\left(1\right)}x^{n_{1}}e^{\lambda_{1}x}+$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $+\alpha_{0}^{\left(2\right)}e^{\lambda_{2}x}+\alpha_{1}^{\left(2\right)}xe^{\lambda_{2}x}+\tr+\alpha_{n_{2}}^{\left(2\right)}x^{n_{2}}e^{\lambda_{2}x}+\tr+$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $+\alpha_{0}^{\left(m\right)}e^{\lambda_{m}x}+\alpha_{1}^{\left(m\right)}xe^{\lambda_{m}x}+\tr+\alpha_{n_{m}}^{\left(m\right)}x^{n_{m}}e^{\lambda_{m}x}\equiv0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
 Причем, есть хотябы один 
 \begin_inset Formula $\alpha_{j}^{\left(k\right)}\nr0$
 \end_inset
 
- 
-\end_layout
+.
+ Значит:
+\begin_inset Formula 
+\begin{equation}
+\ous{k=1}mP_{n_{k}}\left(x\right)e^{\lambda_{k}x}\equiv0\label{eq:louc6}
+\end{equation}
 
-\begin_layout Proof
-\begin_inset Formula $\ous{k=1}mP_{n_{k}}\left(x\right)e^{\lambda_{k}x}\equiv0(6)$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 Где 
 \begin_inset Formula $P_{n_{k}}\left(x\right)$
 \end_inset
@@ -7079,35 +7168,45 @@ e^{\lambda_{m}x},xe^{\lambda_{m}x},\tr,x^{n_{m}\lambda_{m}x}
 \begin_inset Formula $k$
 \end_inset
 
-, причем хотябы один из этих многочленом отличен от тождественного нуля.
+, причем хотя бы один из этих многочленов отличен от тождественного нуля.
  Без ограничения общности будем считать, что многочлен 
 \begin_inset Formula $P_{n_{k}}\left(x\right)$
 \end_inset
 
  тождественно не равен нулю.
- Умножем (6) на 
+ Умножим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:louc6"
+
+\end_inset
+
+) на 
 \begin_inset Formula $e^{-\lambda_{1}x}$
 \end_inset
 
 , получим: 
-\begin_inset Formula $P_{n_{1}}\left(x\right)+\ous{k=2}mP_{n_{k}}\left(x\right)e^{\left(\lambda_{k}-\lambda_{1}\right)x}=0$
+\begin_inset Formula 
+\[
+P_{n_{1}}\left(x\right)+\ous{k=2}mP_{n_{k}}\left(x\right)e^{\left(\lambda_{k}-\lambda_{1}\right)x}=0,\quad\lambda_{k}-\lambda_{1}\nr0,\quad k=\overline{2,m}
+\]
+
 \end_inset
 
-, 
-\begin_inset Formula $\lambda_{k}-\lambda_{1}\nr0,\ k=\overline{2,m}$
-\end_inset
-
-.
- Продеференцируем это тождество 
+Продифференцируем это тождество 
 \begin_inset Formula $\left(n_{1}+1\right)$
 \end_inset
 
  раз.
- После диференцирования полуим 
-\begin_inset Formula $\ous{k=2}mP_{n_{k}}^{\left(1\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{1}\right)x}\equiv0$
+ После дифференцирования получим: 
+\begin_inset Formula 
+\[
+\ous{k=2}mP_{n_{k}}^{\left(1\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{1}\right)x}\equiv0
+\]
+
 \end_inset
 
-, причем 
+причем 
 \begin_inset Formula $P_{n_{k}}^{\left(1\right)}\left(x\right)\equiv0$
 \end_inset
 
@@ -7117,32 +7216,41 @@ e^{\lambda_{m}x},xe^{\lambda_{m}x},\tr,x^{n_{m}\lambda_{m}x}
 \end_inset
 
 , получим: 
-\begin_inset Formula $P_{n_{2}}^{\left(1\right)}\left(x\right)+\ous{k=3}mP_{n_{k}}^{\left(1\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{2}\right)x}\equiv0$
+\begin_inset Formula 
+\[
+P_{n_{2}}^{\left(1\right)}\left(x\right)+\ous{k=3}mP_{n_{k}}^{\left(1\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{2}\right)x}\equiv0
+\]
+
 \end_inset
 
- Продеференцируем это тождество 
+Продифференцируем это тождество 
 \begin_inset Formula $\left(n_{2}+1\right)$
 \end_inset
 
- раз, тогда получим 
-\begin_inset Formula $\ous{k=3}mP_{n_{k}}^{\left(2\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{2}\right)x}\equiv0$
+ раз, тогда получим: 
+\begin_inset Formula 
+\[
+\ous{k=3}mP_{n_{k}}^{\left(2\right)}\left(x\right)e^{\left(\lambda_{k}-\lambda_{2}\right)x}\equiv0
+\]
+
 \end_inset
 
- и так далее...получим 
-\begin_inset Formula $P_{n_{m}}^{\left(m-1\right)}\left(x\right)e^{\left(\lambda_{m}-\lambda_{m-1}\right)x}\equiv0$
+и так далее.
+ В итоге получим: 
+\begin_inset Formula 
+\[
+P_{n_{m}}^{\left(m-1\right)}\left(x\right)e^{\left(\lambda_{m}-\lambda_{m-1}\right)x}\equiv0
+\]
+
 \end_inset
 
-, причем 
+причем 
 \begin_inset Formula $P_{n_{m}}^{\left(m-1\right)}\left(x\right)$
 \end_inset
 
  отличен от тождественного нуля.
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- противоречие, еоторое и доказывает лемму, тоесть линейную независимость
- функций.
+ Следовательно, получим противоречие, которое и доказывает лемму, то есть
+ линейную независимость функций.
 \end_layout
 
 \begin_layout Subsection
