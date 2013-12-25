@@ -15243,5 +15243,399 @@ h=\df{2\alpha\cos\Theta}{r\rho g}
 Эта формула верна и для газа.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+21.12.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Строение и свойства твердых тел.
+\end_layout
+
+\begin_layout Standard
+Строение их отличается от жидкостей.
+ После нагрузки они могут вернуться сами в исходное состояние.
+ Сначала рассмотрим процесс плавления.
+\end_layout
+
+\begin_layout Standard
+Есть некоторая температура плавления.
+ Всё тепло расходуется на превращение твердого тела в жидкость, то есть
+ на разрыв связи в кристаллах.
+\end_layout
+
+\begin_layout Standard
+Чтобы начался процесс кристаллизации, температура должна упасть немного
+ ниже температуры плавления.
+ Это нужно чтобы возникли центры кристаллизации.
+ На сколько меньше нужно опуститься --- это зависит от самого вещества.
+ У металлов это доли градусов, а у другим материалов может доходить до 100
+ градусов.
+ При этом при переохлажденной жидкости могут возникнуть так называемые 
+\emph on
+аморфные 
+\emph default
+тела (Жидкость, приобретшая свойства твердого тела).
+ Пример аморфного тела --- стекло.
+\end_layout
+
+\begin_layout Standard
+Если рассматривать структуру кристаллического твердого тела.
+ В нем могу возникать за счет хаотического движения (в некоторый момент
+ времени, очень редко) атом может выскочить за решетку.
+ На его месте возникла дырка.
+ Он переходит в более неустойчевое состояние и он начал путешествовать по
+ кристаллу.
+ Но на место дырки тоже перескакивают атомы, и получается что дырки тоже
+ путешествуют по телу.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Разница в структуре аморфных и твердых тел:
+\end_layout
+
+\begin_layout Standard
+У кристалических твердых тел структура кристала повторяется на больших расстояни
+я (Это называется 
+\emph on
+дальним порядком
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+У аморфных твердых тел есть только 
+\emph on
+ближний порядок
+\emph default
+.
+ (Кароче структура вроде бы повторяется, но очень коряво).
+ 
+\end_layout
+
+\begin_layout Standard
+При кристализации металлов образуется огромное количество центтров кристализации.
+ Так что металл --- это огромное количество маленьких кристаликов.
+ 
+\end_layout
+
+\begin_layout Standard
+Особенннро ярко это проявляется при наращивании кристалов.
+ (Скорость роста кристала по одному направлению больше, чем по другому направлен
+ию).
+ Нарастить крупный кристалл это усскуство.
+ И еще концентрацию молекул в растворе.
+\end_layout
+
+\begin_layout Standard
+Типы кристалических решеток (Они разничаются по геометрии, их более 200
+ видов, причем у одного и того же вещества могут быть разные кристалические
+ решетки) (Классификация по типу связи):
+\end_layout
+
+\begin_layout Enumerate
+Ионные.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Решетки различных солей.
+ (Для 
+\begin_inset Formula $HCl$
+\end_inset
+
+ атомы просто черезуются в кубической решетке).
+ Здесь поимо дырок еще может быть такие дефекты: 2 одинаковых стоя.
+ Или вместо одних атомов стоят другие.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Атомные решетки.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+.В узла стоят атомы (ядра или часть ядер) одних и тех же веществ, и между
+ ними существует ковалентная связь.
+ Особо это характерно для элементов четвертой группы.
+ (Алмаз)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Молекулярные решетки.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В узлах решетки стоят молекулы.
+ Связи очень слабые и они появляются при очень низких температурах.
+ Проявляется в охлажденных газах.
+ Еще она есть в органических молекулах.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Мелалические решетки.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В узлах стоят положительно заряженные атомы.
+ А меж-атомном пространстве (межузловом пространстве) находятся свободные
+ электроны (большое их количество), которые как раз и сдерживают эту решетку
+ (как клей (невздумайте нюхать)).
+ При изменении температуры происходит перестройка кристалической решетки.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Тепловое движение в твердых телах
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon\left(T\right)=\varepsilon^{\text{кин}}+\varepsilon^{\text{потенц}}=kT$
+\end_inset
+
+ --- энергия теплового движения.
+\end_layout
+
+\begin_layout Standard
+Уровень энергии молекулы: 
+\begin_inset Formula $E=U_{min}+\varepsilon\left(T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\df{r_{1}+r_{2}}2,\ r\left(\varepsilon\left(T\right)\right)>r_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если говорить о теплоемкости, если в узлах стоят атомы, то 
+\begin_inset Formula $C\approx3\um R$
+\end_inset
+
+.
+ Почему? Потому что 
+\begin_inset Formula $\df 12kT$
+\end_inset
+
+ на 1ну степень свободы.
+ Так что тут возбуждаются все 6 (точнее 3 (на каждую ось)) степеней свободы
+ (при неочень больших тоемпературах).
+ Так как решетки разные, то общей формулы для всех веществ нету.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D l$
+\end_inset
+
+ --- удлинение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- длиннпа образца
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{r-r_{0}}{r_{0}}=\df{\D l}l=\alpha T$
+\end_inset
+
+ --- коэффициент линейнного расширения твердого тела.
+\end_layout
+
+\begin_layout Section
+Деффекты кристалической решетки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau$
+\end_inset
+
+ --- время оседной жизни
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{0}$
+\end_inset
+
+ --- энергия, необходимая на вытаскивание из решетки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=\tau_{0}e^{\df{U_{0}}{kT}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Деффекты (В структуре кристалла):
+\end_layout
+
+\begin_layout Enumerate
+Дырки и молекулы-путешественницы.
+\end_layout
+
+\begin_layout Enumerate
+Еще вместо одгого элемента встает другой.
+ Иногда это хорошо (редко), но в большенстве случаев неок.
+\end_layout
+
+\begin_layout Enumerate
+Плохие деффекты: одним из самых нехороших деффектов --- 
+\emph on
+дислокации
+\emph default
+.
+ Это когда пропадает ряд.
+ Это потеря прочности.
+ 
+\end_layout
+
+\begin_layout Section
+Механические свойства твердых тел.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=-grad\, U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=-\df{dv}{dr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(r_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если мы рассмотрим скорость изменения силы в зависимости отт растояния (
+\begin_inset Formula $\df{\D f}{\D r}$
+\end_inset
+
+).
+ Так вод если уисримить 
+\begin_inset Formula $\D r\st0$
+\end_inset
+
+ , то получим 
+\begin_inset Formula $\df{df}{dr}$
+\end_inset
+
+.
+ И вод как раз коэффициент упругости определяется этой величиной.
+ 
+\begin_inset Formula 
+\[
+\df{df}{dr}_{r=r_{0}}=k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(r\right)=\un{\underbrace{f\left(r_{0}\right)}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}+f\pr\left(r_{0}\right)\D r=-k\D r$
+\end_inset
+
+ --- закон Гука для одной молекулы.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{\text{упругости}}=S\um n_{0}\um f=-k\D rn_{0}S=-\un{\underbrace{kr_{0}n_{0}}}{\begin{array}{c}
+\Vert\\
+E
+\end{array}}\df{\D l}l$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Мы переходим от молекул до реальных тразмеров.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ --- модуль Юнга.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma=E\varepsilon$
+\end_inset
+
+ --- этот закон соблюдается в случаях, ктогда в 
+\begin_inset Formula $f\left(r\right)=\un{\underbrace{f\left(r_{0}\right)}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}+f\pr\left(r_{0}\right)\D r$
+\end_inset
+
+ мы пренебрегаем одним слагаемым.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\sigma=\df FS;\ \varepsilon=\df{\D l}l\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ --- относительная деформация
+\end_layout
+
+\begin_layout Standard
+Исходя из теории моджно вычислить критическое значение 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, значение, при котором материал теоритически не разорвется.
+ Но проблема в том, что на практике не получается нифига.
+ Все дело в том, что в кристалле нарушена кристалическая решетка.
+\end_layout
+
 \end_body
 \end_document
