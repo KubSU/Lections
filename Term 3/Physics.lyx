@@ -9146,6 +9146,13 @@ status open
  Формула Торричелли.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Термодинамика и молекулярная физика.
 \end_layout
@@ -9206,12 +9213,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-Любой процесс прехода из одного состояния в другое, связан с нарушением
+Любой процесс перехода из одного состояния в другое, связан с нарушением
  равновесия системы.
 \end_layout
 
 \begin_layout Subsection*
-Темпреатура
+Температура
 \end_layout
 
 \begin_layout Standard
@@ -9252,23 +9259,26 @@ status open
 \begin_layout Standard
 Реферная точка --- точка в которой пар, жидкость и тело воды находятся в
  равновесии (это происходит при очень низком давлении).
+ 
+\begin_inset Formula 
+\[
+tC=T
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=tC+273.15
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Formula $tC=T$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $T=tC+273.15$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Молекулярно кинетическая теория
 \end_layout
@@ -9323,7 +9333,7 @@ status open
 
 \begin_layout Definition
 Кило-моль (в граммах --- моль) --- количество данного вещества, масса которого
- выраженая в килограммах численно равна молекулярному весу.
+ выраженная в килограммах численно равна молекулярному весу.
 \end_layout
 
 \begin_layout --Separator--
@@ -9339,7 +9349,7 @@ status open
 \end_layout
 
 \begin_layout Claim
-Кмоли всех веществ содержат одно и то-же число молекул.
+Кмоли всех веществ содержат одно и то же число молекул.
 \end_layout
 
 \begin_layout Definition
@@ -9351,7 +9361,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-В равных объемах газов при равных темпреатурах и давлениях содержится равное
+В равных объемах газов при равных температурах и давлениях содержится равное
  число молекул.
  В частности Кмоль любого газа при нормальном давлении (
 \begin_inset Formula $1.01\um10^{5}\text{Па}$
@@ -9439,7 +9449,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Законы Гей-Люссака
+Законы Гей--Люссака
 \end_layout
 
 \begin_layout Paragraph
@@ -9480,12 +9490,10 @@ status open
 \end_layout
 
 \begin_layout Standard
-Давление данной массы газа при постоянном объеме меняется линейно с температурой.
-\end_layout
-
-\begin_layout Standard
-
+Давление данной массы газа при постоянном объеме меняется линейно с температурой
+:
 \family typewriter
+
 \begin_inset Formula 
 \[
 P=P_{0}\left(1+\alpha t\right)
@@ -9494,9 +9502,7 @@ P=P_{0}\left(1+\alpha t\right)
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
+\family default
 где 
 \begin_inset Formula $\alpha=\df 1{273.15}=\df 1{T_{0}}$
 \end_inset
@@ -9532,7 +9538,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Законы Бойля--Мариота и Гей-Люсака можно объединить, что сначала сделал
+Законы Бойля--Мариота и Гей--Люссака можно объединить, что сначала сделал
  Клайперон, а затем улучшил Менделеев.
 \end_layout
 
@@ -9541,7 +9547,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Часто для изображение процессов термодинамики применяют PV-диаграмму.
+Часто для изображение процессов термодинамики применяют PV--диаграмму.
 \end_layout
 
 \begin_layout Standard
@@ -9565,7 +9571,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Согласно закону Гей-Люсака, получим 
+Согласно закону Гей--Люсcака, получим 
 \begin_inset Formula $\df{P'}{T_{1}}=\df{P_{2}}{T_{2}}$
 \end_inset
 
@@ -9587,7 +9593,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Получим закон Клаперона --- 
+Получим закон Клайперона: 
 \begin_inset Formula $\df{PV}T=B$
 \end_inset
 
@@ -9607,19 +9613,16 @@ status open
 \begin_inset Formula $V_{m}$
 \end_inset
 
- --- молярный обьем --- обьем одного моля.
-\end_layout
-
-\begin_layout Standard
-Так как количество молекул не меняется в одном моле, поэтому 
+ --- молярный объем --- объем одного моля.
+ Так как количество молекул не меняется в одном моле, поэтому 
 \begin_inset Formula $V_{m}$
 \end_inset
 
- должно быть одинакого для каждого газа.
+ должно быть одинаково для каждого газа.
 \end_layout
 
 \begin_layout Standard
-Менделеев улучшил закон Клаперона, и получил 
+Менделеев улучшил закон Клайперона, и получил 
 \begin_inset Formula $\df{PV_{m}}T=R$
 \end_inset
 
@@ -9630,21 +9633,21 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\nu$
 \end_inset
 
  --- количество вещества
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $V_{m}=\df V{\nu}$
 \end_inset
 
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\nu=\df m{\mu}$
 \end_inset
 
@@ -9657,12 +9660,9 @@ status open
 
 \begin_layout Standard
 Когда мы все это подставим, то получим:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-PV=\df m{\mu}RT
+\fbox{PV=\df m{\mu}RT}
 \]
 
 \end_inset
@@ -9675,33 +9675,32 @@ PV=\df m{\mu}RT
 \end_layout
 
 \begin_layout Standard
-Так как у нас все газы занимают одно количество обьема под один моль, то
+Так как у нас все газы занимают одно количество объема под один моль, то
  константа 
 \begin_inset Formula $R$
 \end_inset
 
- одинаковая для всех шазов.
- Мы можем ее вычислить.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $P_{0}V_{m0}=RT_{0}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $R=\df{P_{0}V_{m0}}{T_{0}}=\df{1.01\um10^{5}\um22.4}{275.15}=8.31\um10^{3}$
-\end_inset
-
- --- универсальная газовая постоянная
-\end_layout
-
-\begin_layout Standard
+ одинаковая для всех газов.
+ Мы можем ее вычислить:
 \begin_inset Formula 
 \[
-\left[R\right]=\df{\df{\text{Ньютон}}{\text{метр}^{2}}\um\df{\text{метр}^{3}}{\text{Кмоль}}}{\text{Кельвин}}=\df{\text{Ждоуль}}{\text{Кмоль}\um\text{Кельвин}}
+P_{0}V_{m0}=RT_{0}
+\]
+
+\end_inset
+
+Откуда получим универсальную газовую постоянную:
+\begin_inset Formula 
+\[
+R=\df{P_{0}V_{m0}}{T_{0}}=\df{1.01\um10^{5}\um22.4}{275.15}=8.31\um10^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[R\right]=\df{\df{\text{Ньютон}}{\text{метр}^{2}}\um\df{\text{метр}^{3}}{\text{Кмоль}}}{\text{Кельвин}}=\df{\text{Джоуль}}{\text{Кмоль}\um\text{Кельвин}}
 \]
 
 \end_inset
@@ -9715,13 +9714,14 @@ PV=\df m{\mu}RT
 
 \begin_layout Standard
 Давление в сосуде --- удары молекул о стенки сосуда.
- Ударение в деальном газе --- абсолютно усругие.
- Энергия у молекулы не меняется, а меняется импульс и скорость.
- Средняя (кинетическая) энергия в сосуде постоянна.
-\end_layout
+ Ударения в идеальном газе --- абсолютно упругие: энергия молекулы не меняется,
+ а меняется импульс и скорость.
+ Средняя (кинетическая) энергия в сосуде постоянна:
+\begin_inset Formula 
+\[
+\varepsilon_{i}=\df 12m_{i}v_{i}^{2}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\varepsilon_{i}=\df 12m_{i}v_{i}^{2}$
 \end_inset
 
 
@@ -9729,51 +9729,37 @@ PV=\df m{\mu}RT
 
 \begin_layout Standard
 Будем рассматривать через средние величины, сложим и разделим на число молекул.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Formula $N$
 \end_inset
 
- --- общее число молекул газа
-\end_layout
+ --- общее число молекул газа.
+\begin_inset Formula 
+\begin{align*}
+\left\langle \varepsilon\right\rangle  & =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N\\
+\intertext{\mbox{В таких скобках будем обозначать среднее значение}} & =\df m{2N}\ous{i=1}Nv_{i}^{2}
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\left\langle \text{Идентификатор}\right\rangle $
-\end_inset
-
- --- Так будем обозначать среднее значение идентификотора.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N=\df m{2N}\ous{i=1}Nv_{i}^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\left\langle v^{2}\right\rangle =\df{\ous{i=1}Nv_{i}^{2}}N$
 \end_inset
 
  --- средний квадрат скорости
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\sqrt{\left\langle v^{2}\right\rangle }=v_{\text{ср кв}}$
 \end_inset
 
  --- средне--квадратичная скорость
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\left\langle v\right\rangle =\df 1N\ous{i=1}N\left|v_{i}\right|$
 \end_inset
 
@@ -9786,25 +9772,23 @@ PV=\df m{\mu}RT
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left\langle v^{2}\right\rangle >\left\langle v\right\rangle ^{2}$
+ Заметим, что 
+\begin_inset Formula $\left\langle v^{2}\right\rangle \br\left\langle v\right\rangle ^{2}$
 \end_inset
 
-, или равно при 
+ при 
 \begin_inset Formula $T=0\, K$
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph*
 Переходим к основному уравнению молекулярно--кинетической теории.
 \end_layout
 
 \begin_layout Standard
-Будем считать что молекулю двигаются только паралельно осям координат.
+Будем считать что молекулы двигаются только параллельно осям координат.
  Будем рассматривать изотропное пространство.
  
 \end_layout
@@ -9823,38 +9807,36 @@ Hbc 30
 \end_layout
 
 \begin_layout Standard
+Значит 
 \begin_inset Formula $\df 13N$
 \end_inset
 
- --- количество молекул, двигающихся паралельно одной из осей
-\end_layout
-
-\begin_layout Standard
+ --- количество молекул, двигающихся параллельно одной из осей, откуда 
 \begin_inset Formula $\df 16N$
 \end_inset
 
- --- двигаются в одну сторону паралельно одной оси
+ --- двигаются в одну сторону параллельно одной оси.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $v$
 \end_inset
 
  --- скорость молекулы
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $mv$
 \end_inset
 
  --- импульс
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D J'=\left(-mv\right)-mv=-2mv$
 \end_inset
 
- --- импульс при стодкновении молекулы 
+ --- импульс при столкновении молекулы 
 \end_layout
 
 \begin_layout Standard
@@ -9862,17 +9844,17 @@ Hbc 30
 \begin_inset Formula $2mv$
 \end_inset
 
- 
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D t$
 \end_inset
 
  --- промежуток времени
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D S$
 \end_inset
 
@@ -9880,7 +9862,7 @@ Hbc 30
 \end_layout
 
 \begin_layout Standard
-Молекулы, которые могут удариться о стенку находлятся в обьеме 
+Молекулы, которые могут удариться о стенку находятся в объеме 
 \begin_inset Formula $v\um\D t\um\D S$
 \end_inset
 
@@ -9888,7 +9870,7 @@ Hbc 30
 \end_layout
 
 \begin_layout Standard
-Внесем еще 1ну величину, 
+Внесем еще одну величину, 
 \begin_inset Formula $n$
 \end_inset
 
@@ -9896,18 +9878,19 @@ Hbc 30
 \begin_inset Formula $n=\df NV$
 \end_inset
 
- --- число молекул в еденице обьема
+ --- число молекул в единице объема
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D N$
 \end_inset
 
- --- число молекул, которые могут удариться об стенку
-\end_layout
+ --- число молекул, которые могут удариться о стенку
+\begin_inset Formula 
+\[
+\D N=\df 16v\um\D t\um\D S\um n
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\D N=\df 16v\um\D t\um\D S\um n$
 \end_inset
 
  
@@ -9933,7 +9916,7 @@ Hbc 30
  --- переходим к силе через дифференцирование
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\df{\D J}{\D t}=F$
 \end_inset
 
@@ -9944,32 +9927,34 @@ Hbc 30
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D J=F\D t$
 \end_inset
 
  --- средний импульс стенки
-\end_layout
+\begin_inset Formula 
+\[
+F=\df 13\um v^{2}\um n\um m\um\D S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $F=\df 13\um v^{2}\um n\um m\um\D S$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-От силы перейдем к давлению.
-\end_layout
+От силы перейдем к давлению:
+\begin_inset Formula 
+\[
+P=\df F{\D S}=\df 13\um v^{2}\um m\um n=\df 23\df{\left\langle v^{2}\right\rangle m}2n
+\]
 
-\begin_layout Standard
-\begin_inset Formula $P=\df F{\D S}=\df 13\um v^{2}\um m\um n=\df 23\df{\left\langle v^{2}\right\rangle m}2n$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\df{\left\langle v^{2}\right\rangle m}2$
 \end_inset
 
@@ -9977,14 +9962,14 @@ Hbc 30
 \end_layout
 
 \begin_layout Definition
-Oсновное уравнение молекулярно--кинетической теории.
+Основное уравнение молекулярно--кинетической теории.
  (Только для одноатомного газа, или у газа, где отсутствует вращение)
 \end_layout
 
 \begin_layout Definition
 \begin_inset Formula 
 \[
-P=\df 23n\left\langle \varepsilon\right\rangle 
+\fbox{P=\df 23n\left\langle \varepsilon\right\rangle }
 \]
 
 \end_inset
@@ -9997,11 +9982,12 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \end_layout
 
 \begin_layout Standard
-Сделаем несколько преобразований.
-\end_layout
+Сделаем несколько преобразований:
+\begin_inset Formula 
+\[
+PV=\df 23nV\left\langle \varepsilon\right\rangle =\df 23N\left\langle \epsilon\right\rangle =\df 23E
+\]
 
-\begin_layout Standard
-\begin_inset Formula $PV=\df 23nV\left\langle \varepsilon\right\rangle =\df 23N\left\langle \epsilon\right\rangle =\df 23E$
 \end_inset
 
  
@@ -10018,7 +10004,7 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \begin_inset Formula $PV=\df 23E$
 \end_inset
 
- --- на уровнеобщего состояния газа целиком
+ --- на уровне общего состояния газа целиком
 \end_layout
 
 \begin_layout Standard
@@ -10036,15 +10022,13 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \end_layout
 
 \begin_layout Standard
-Для одного киломоля мы получим вод такую формулу 
-\begin_inset Formula $PV_{m}=\df 23N_{A}\left\langle \varepsilon\right\rangle $
-\end_inset
+Для одного кило--моля мы получим такую формулу: 
+\begin_inset Formula 
+\begin{align*}
+PV_{m} & =\df 23N_{A}\left\langle \varepsilon\right\rangle \\
+TR & =\df 23N_{A}\left\langle \varepsilon\right\rangle 
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $TR=\df 23N_{A}\left\langle \varepsilon\right\rangle $
 \end_inset
 
 
@@ -10069,8 +10053,8 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \end_layout
 
 \begin_layout Standard
-Коофицент 
-\begin_inset Formula $\df 32$
+Коэффициент 
+\begin_inset Formula $\frac{3}{2}$
 \end_inset
 
  характерен только для одноатомных молекул или для тех молекул, у которых
@@ -10104,7 +10088,7 @@ P=n\um k\um T
 \begin_inset Formula $i$
 \end_inset
 
--тог компонены газа
+-ой компоненты газа
 \end_layout
 
 \begin_layout Standard
@@ -10112,18 +10096,16 @@ P=n\um k\um T
 \begin_inset Formula $s$
 \end_inset
 
- газов смешали.
-\end_layout
-
-\begin_layout Standard
+ газов смешали, тогда: 
 \begin_inset Formula $n=\ous{i=1}sn_{i}$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $P=kT\ous{i=1}sn_{i}=\ous{i=1}skTn_{i}$
+\begin_inset Formula 
+\[
+P=kT\ous{i=1}sn_{i}=\ous{i=1}skTn_{i}
+\]
+
 \end_inset
 
  
@@ -10143,10 +10125,11 @@ P=n\um k\um T
 
 -ой компоненты газа, при условии, что остальные компоненты отсутствуют.
  В результате получим закон Дальтона:
-\end_layout
+\begin_inset Formula 
+\[
+\fbox{P=\ous{i=1}sP_{i}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $P=\ous{i=1}sP_{i}$
 \end_inset
 
 
@@ -10164,28 +10147,12 @@ P=n\um k\um T
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $v_{\text{ср кв}}=\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+v_{\text{ср кв}} & =\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}\\
+\intertext{\text{Так как \ensuremath{k=\frac{R}{N_{A}}\quad N_{A}\um m=\mu}}} & =\sqrt{\df{3RT}{\mu}}
+\end{align*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $k=\df R{N_{A}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $N_{A}m=\mu$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v_{\text{ср кв}}=\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}=\sqrt{\df{3RT}{\mu}}$
 \end_inset
 
 
@@ -10223,62 +10190,36 @@ Hbc 31
 \begin_inset Formula $\left(v_{i};v_{i}+\D v\right)$
 \end_inset
 
- --- число малекул в диапозоне
+ --- число молекул в диапазоне
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\rho\left(v_{i}\right)=\df{\D N\left(v_{i}\right)}{\D v}$
 \end_inset
 
- --- плотность распределение молекл по скорости
+ --- плотность распределение молекул по скорости
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $f\left(v_{i}\right)=\df{\D N\left(v_{i}\right)}{N\um\D v}$
 \end_inset
 
- --- относительное --- распределение молекул газа по скорости --- функция
- распределения
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f\left(v\right)=\df 1N\ul{\D v\to0}\df{\D N\left(v\right)}{\D v}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\sum\Delta N(v) & = & \sum Nf(v)\Delta v=N
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sum f(v)\Delta v=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Устремляя 
-\begin_inset Formula $\Delta v\to0$
-\end_inset
-
-, получим
-\end_layout
-
-\begin_layout Standard
+ --- относительное распределение молекул газа по скорости --- функция распределе
+ния.
+ Откуда получим:
 \begin_inset Formula 
 \[
-\oiu 0{\infty}f(v)dv=1
+f\left(v\right)=\df 1N\ul{\D v\to0}\df{\D N\left(v\right)}{\D v}
 \]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum\Delta N(v) & =\sum Nf(v)\Delta v=N\sum f(v)\Delta v=\\
+\intertext{\text{Устремляя \ensuremath{\Delta v\to0}:}} & =N\oiu 0{\infty}f(v)dv=1
+\end{align*}
 
 \end_inset
 
@@ -10355,9 +10296,6 @@ f(v)=4\pi\left(\df m{2\pi kT}\right)^{\frac{3}{2}}v^{2}exp\left(-\frac{mv^{2}}{2
 \end_deeper
 \begin_layout Standard
 Наиболее вероятная скорость:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 v_{\text{вер}}=\sqrt{\df{2kT}m}=\sqrt{\df{2RT}{\mu}}
@@ -10365,14 +10303,7 @@ v_{\text{вер}}=\sqrt{\df{2kT}m}=\sqrt{\df{2RT}{\mu}}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Причем выполняется соотношение:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
@@ -10406,10 +10337,10 @@ v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
 \end_layout
 
 \begin_layout Standard
-Раз установившееся максвеловское распределение скоростей молекул в дальнейшем
+Раз установившееся максвелловское распределение скоростей молекул в дальнейшем
  сохраняется, более того: в результате взаимодействия между молекулами,
- каким бы нибыло исходное распеределение скоростей молекул, в конце концов
- устанавливается максвеловское распределение.
+ каким бы ни было исходное распределение скоростей молекул, в конце концов
+ устанавливается максвелловское распределение.
 \end_layout
 
 \begin_layout Subsection
@@ -10473,7 +10404,7 @@ v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
 \end_layout
 
 \begin_layout Enumerate
-Будем считать, что темпрература с высотой не меняется: 
+Будем считать, что температура с высотой не меняется: 
 \begin_inset Formula $t=const$
 \end_inset
 
@@ -10506,10 +10437,10 @@ F_{\text{т}}=m_{0}g\um nS\Delta h
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
--m_{0}g\um nS\Delta h+pS-(p+\Delta p)S & = & 0\\
--m_{0}g\um n\Delta h-\Delta p & = & 0
-\end{eqnarray*}
+\begin{align*}
+-m_{0}g\um nS\Delta h+pS-(p+\Delta p)S & =0\\
+-m_{0}g\um n\Delta h-\Delta p & =0
+\end{align*}
 
 \end_inset
 
@@ -10550,18 +10481,14 @@ P=P_{0}\um exp\left(-\df{mgh}{kT}\right)=P_{0}\um exp\left(-\df{\mu gh}{RT}\righ
 Больцман предположил, что в любом потенциальном поле сил, это соотношение
  верно.
  Обозначим: 
-\begin_inset Formula $U\left(h\right)=mgh$
+\begin_inset Formula 
+\[
+U\left(h\right)=mgh;\qquad p=nkT;\qquad P_{0}=n_{0}kT.
+\]
+
 \end_inset
 
-; 
-\begin_inset Formula $p=nkT$
-\end_inset
 
-; 
-\begin_inset Formula $P_{0}=n_{0}kT$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -10573,7 +10500,7 @@ P=P_{0}\um exp\left(-\df{mgh}{kT}\right)=P_{0}\um exp\left(-\df{\mu gh}{RT}\righ
 \begin_layout Standard
 \begin_inset Formula 
 \[
-n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
+\fbox{n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)}
 \]
 
 \end_inset
@@ -10600,10 +10527,14 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 
 \begin_layout Definition
 Эффективным сечением молекулы называется величина равная 
-\begin_inset Formula $\sigma=\pi d^{2}$
+\begin_inset Formula 
+\[
+\sigma=\pi d^{2}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout --Separator--
@@ -10639,7 +10570,7 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 \end_layout
 
 \begin_layout Standard
-Возьмем два вектора: 
+Возьмем два вектора скорости: 
 \begin_inset Formula $\vec{v_{1}}$
 \end_inset
 
@@ -10648,10 +10579,7 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Тогда: 
+ Тогда: 
 \begin_inset Formula $\vec{v_{1}}=\vec{v_{2}}+\vec{v_{\text{отн}}}$
 \end_inset
 
@@ -10661,13 +10589,7 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Используя теорему косинусов:
-\end_layout
-
-\begin_layout Standard
+ Используя теорему косинусов:
 \begin_inset Formula 
 \[
 v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
@@ -10676,14 +10598,10 @@ v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\left\langle v_{\text{отн}}^{2}\right\rangle  & = & \left\langle v_{1}^{2}\right\rangle +\left\langle v_{2}^{2}\right\rangle -2\left\langle v_{1}v_{2}\cos\Theta\right\rangle =\\
- & = & 2\left\langle v^{2}\right\rangle 
-\end{eqnarray*}
+\[
+\left\langle v_{\text{отн}}^{2}\right\rangle =\left\langle v_{1}^{2}\right\rangle +\left\langle v_{2}^{2}\right\rangle -2\left\langle v_{1}v_{2}\cos\Theta\right\rangle =2\left\langle v^{2}\right\rangle 
+\]
 
 \end_inset
 
@@ -10692,9 +10610,6 @@ v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
 
 \begin_layout Standard
 Тогда:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 v_{\text{ср.кв.отн}}=\sqrt{2}v_{\text{ср.кв}}
@@ -10711,49 +10626,43 @@ v_{\text{ср.кв.отн}}=\sqrt{2}v_{\text{ср.кв}}
 \end_inset
 
 .
-\end_layout
+ Тогда высота цилиндра: 
+\begin_inset Formula 
+\[
+h=v_{\text{ср.кв.отн.}}\um1\text{с}
+\]
 
-\begin_layout Standard
-Тогда высота цилиндра: 
-\begin_inset Formula $h=v_{\text{ср.кв.отн.}}\um1\text{с}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 А объем цилиндра 
-\begin_inset Formula $V=\sigma\um h=\pi d^{2}v_{cp.kv.otn}$
+\begin_inset Formula 
+\[
+V=\sigma\um h=\pi d^{2}v_{cp.kv.otn}
+\]
+
 \end_inset
 
+Число столкновений: 
+\begin_inset Formula 
+\[
+K=n\um V=n\pi d^{2}v_{cp.kv.otn}
+\]
 
-\end_layout
-
-\begin_layout Standard
-Число сталкновений 
-\begin_inset Formula $K=n\um V=n\pi d^{2}v_{cp.kv.otn}$
 \end_inset
 
+Общая длинна расстояния, которая проходит молекула за одну секунду: 
+\begin_inset Formula 
+\[
+L=v_{cp.kv}\um1sec
+\]
 
-\end_layout
-
-\begin_layout Standard
-Общая длинна расстояния, которая проходит молекула за одну секунду 
-\begin_inset Formula $L=v_{cp.kv}\um1sec$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Средняя длина пробега молекулы: 
 \begin_inset Formula 
-\begin{eqnarray}
-\left\langle l\right\rangle  & = & \df LK=\df{v_{\text{ср.кв.}}}{\pi nd^{2}v_{\text{ср.кв.отн.}}}=\nonumber \\
- & = & \df 1{\sqrt{2}\pi nd^{2}}=\nonumber \\
- & = & \df 1{\sqrt{2}n\sigma}=\label{eq:xxx}\\
- & = & \df{kt}{\sqrt{2}p\sigma}\nonumber 
-\end{eqnarray}
+\begin{equation}
+\left\langle l\right\rangle =\df LK=\df{v_{\text{ср.кв.}}}{\pi nd^{2}v_{\text{ср.кв.отн.}}}=\df 1{\sqrt{2}\pi nd^{2}}=\df 1{\sqrt{2}n\sigma}=\df{kt}{\sqrt{2}p\sigma}\label{eq:xxx}
+\end{equation}
 
 \end_inset
 
@@ -10919,12 +10828,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-Газ в состоянии сверхвысокого вакуума называется ультраразряженым.
+Газ в состоянии сверхвысокого вакуума называется ультра--разряженным.
  
 \end_layout
 
 \begin_layout Definition
-Физический факуум --- когда вообще нету молекул.
+Физический вакуум --- когда вообще нету молекул.
 \end_layout
 
 \begin_layout Subsection
@@ -10952,13 +10861,11 @@ status open
 \end_inset
 
  --- скорость направленного движения.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Formula $S$
 \end_inset
 
---- площадь соприкосновения слоев, 
+ --- площадь соприкосновения слоев, 
 \begin_inset Formula $\eta$
 \end_inset
 
@@ -10966,7 +10873,7 @@ status open
 \begin_inset Formula $\frac{du}{dz}$
 \end_inset
 
- --- скорость изменения скорости вдоль оси 
+ --- ускорение вдоль оси 
 \begin_inset Formula $z$
 \end_inset
 
@@ -10999,7 +10906,7 @@ f=\eta\df{du}{dz}\um S
 \begin_inset Formula $\D\v{J_{'}^{''}}=N\um m\um\v{U_{2}}$
 \end_inset
 
- --- которые пришли ....
+ --- которые пришли.
 \end_layout
 
 \begin_layout Standard
@@ -11009,48 +10916,37 @@ f=\eta\df{du}{dz}\um S
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+N=\df 16\left\langle v\right\rangle \D t\um S\um n
+\]
 
-\begin_layout Standard
-\begin_inset Formula $N=\df 16\left\langle v\right\rangle \D t\um S\um n$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Таким образом мы можем посчитать, как изменилося импукльс первого слоя за
+Таким образом мы можем посчитать, как изменился импульс первого слоя за
  
 \begin_inset Formula $\D t$
 \end_inset
 
- 
-\end_layout
+:
+\begin_inset Formula 
+\begin{align*}
+\D\v{J_{1}} & =\D\v{J_{'}^{''}}-\D\v{J_{'}^{'}}=\\
+ & =\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)\D t\um S
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\D\v{J_{1}}=\D\v{J_{'}^{''}}-\D\v{J_{'}^{'}}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\D\v{J_{1}}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)\D t\um S$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
 Делим на 
 \begin_inset Formula $\D t$
 \end_inset
 
- и получаем силу, и устремляем к нулю
-\end_layout
+, получаем силу, и устремляем к нулю:
+\begin_inset Formula 
+\[
+f_{1}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $f_{1}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)S$
 \end_inset
 
 
@@ -11084,33 +10980,20 @@ status open
 \end_layout
 
 \begin_layout Standard
-Раз длинна свободного пробера маленькая, тто мы можем применить формулу
- Тейлора (из мат анализа)
+Раз длинна свободного пробега маленькая, то мы можем применить формулу Тейлора
+ (из мат анализа):
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U_{1}=U\left(z+\left\langle l\right\rangle \right)=u\left(z\right)+\df{du\left(z\right)}{dz}\left\langle l\right\rangle +\df{d^{2}u\left(z\right)}{dz}\df{\left\langle l\right\rangle ^{2}}{2!}+\tr$
+\begin_inset Formula 
+\begin{align*}
+U_{1} & =U\left(z+\left\langle l\right\rangle \right)=u\left(z\right)+\df{du\left(z\right)}{dz}\left\langle l\right\rangle +\df{d^{2}u\left(z\right)}{dz}\df{\left\langle l\right\rangle ^{2}}{2!}+\tr=\\
+\intertext{\text{Так как \left\langle l\right\rangle очень мало, то ограничимся всего лишь 2-мя слагаемыми:}} & =u\left(z\right)-\df{du}{dz}\left\langle l\right\rangle 
+\end{align*}
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Так как 
-\begin_inset Formula $\left\langle l\right\rangle $
-\end_inset
-
- очень мало, то ограничемся всего лишь 2мя слагаемыми:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $U_{1}=u\left(z\right)-\df{du}{dz}\left\langle l\right\rangle $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+Откуда: 
 \begin_inset Formula $f_{1}=-\df 16mn\left\langle v\right\rangle 2\df{du}{dz}\left\langle l\right\rangle S$
 \end_inset
 
@@ -11126,18 +11009,19 @@ status open
 \begin_inset Formula $S$
 \end_inset
 
-, то ее знак можно опустить.
-\end_layout
+, то ее знак можно опустить: 
+\begin_inset Formula 
+\[
+f=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle \df{du}{dz}S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $f=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle \df{du}{dz}S$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Сравним с поученой эксперементально: 
+Сравним с полученной экспериментально: 
 \begin_inset Formula $f=\nu\df{du}{dz}S$
 \end_inset
 
@@ -11146,38 +11030,37 @@ status open
 \end_inset
 
  
-\end_layout
+\begin_inset Formula 
+\[
+\nu=\df 13mn\sqrt{\df{8kT}{3m}}\df 1{\sqrt{2}\sigma n}\sim\df{\sqrt{T}\sqrt{m}}{\sigma}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\nu=\df 13mn\sqrt{\df{8kT}{3m}}\df 1{\sqrt{2}\sigma n}\sim\df{\sqrt{T}\sqrt{m}}{\sigma}$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Коофицент вязкости не зависит от концентрации молекул, и таким образом и
- от давления.
+Коэффициент вязкости не зависит от концентрации молекул, и таким образом
+ и от давления.
 \end_layout
 
 \begin_layout Subsection
-Тепропроводность газом
+Теплопроводность газов
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Теплопроводность --- это перенос энергии.
 \end_layout
 
 \begin_layout Standard
-Опытным путем было установлено, то что за еденицу времени черезт площадку
- с проходит 
+Опытным путем было установлено, то что за единицу времени через площадку
+ проходит 
 \begin_inset Formula $q=-\df{dT}{dz}S$
 \end_inset
 
  количество тепла.
-\end_layout
-
-\begin_layout Standard
+ Тогда: 
 \begin_inset Formula $Q=q\um t$
 \end_inset
 
@@ -11192,19 +11075,17 @@ status open
 \begin_inset Formula $\lambda$
 \end_inset
 
- --- коофицент теплопроводностии
-\end_layout
-
-\begin_layout Standard
+ --- коэффициент теплопроводности.
+ 
 \begin_inset Formula $\left[\lambda\right]=\df{\text{Дж}}{\text{К}\x\text{М}\x\text{с}}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-Попробуем обьяснить эту формулу основываясь на молекулярно кинетическую
- теорию.
+Попробуем объяснить эту формулу основываясь на молекулярно--кинетической
+ теории.
 \end_layout
 
 \begin_layout Standard
@@ -11224,44 +11105,47 @@ status open
 \begin_inset Formula $\left\langle \varepsilon_{1}\right\rangle =\df 32\um k\um T_{1}$
 \end_inset
 
- --- энергия 1го слоя
+ --- энергия 1-го слоя
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\left\langle \varepsilon_{2}\right\rangle =\df 32\um k\um T_{2}$
 \end_inset
 
- --- энергия 2го слоя
+ --- энергия 2-го слоя
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\D N=\df 16\um\left\langle v\right\rangle \um\D t\um S\um n$
+\begin_inset Formula 
+\[
+\D N=\df 16\um\left\langle v\right\rangle \um\D t\um S\um n
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Количество молекул перешедших из 1го слоя во 2й и обратно одинакого.
+Количество молекул перешедших из 1-го слоя во 2-й и обратно одинаково.
  Посчитаем энергию:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\D E=-\D N\left\langle \varepsilon_{1}\right\rangle +\D N\left\langle \varepsilon_{2}\right\rangle $
+\begin_inset Formula 
+\begin{align*}
+\D E & =-\D N\left\langle \varepsilon_{1}\right\rangle +\D N\left\langle \varepsilon_{2}\right\rangle \\
+ & =\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)\D tS
+\end{align*}
+
 \end_inset
 
-
+Тогда количество тепла:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Delta E=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)\D tS$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+q=\df{\D E}{\D t} & =\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)S\\
+ & =\df 16\left\langle v\right\rangle n\df 32k\left(T_{2}-T_{1}\right)S
+\end{align*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $q=\df{\D E}{\D t}=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)S=\df 16\left\langle v\right\rangle n\df 32k\left(T_{2}-T_{1}\right)S$
 \end_inset
 
 
@@ -11272,6 +11156,22 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+..............................................
+\end_layout
+
+\begin_layout Standard
+Выразим 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -11289,35 +11189,36 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle n\df 32k\df{dT}{dz}S$
+Подставим:
+\begin_inset Formula 
+\[
+q=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle n\df 32k\df{dT}{dz}S
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Сопоставляем с полученой эксперементально и убеждаемся что все правильно.
+Сопоставляем с полученной экспериментально и убеждаемся что все правильно.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\lambda & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k=\\
- & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k\df{mN_{A}}{mN_{A}}=\\
- & = & \left\{ \begin{array}{c}
+\begin{align*}
+\lambda & =\df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k=\\
+ & =\df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k\df{mN_{A}}{mN_{A}}=\\
+ & =\left\{ \begin{array}{c}
 kN_{A}=R\\
 n\um m=\rho\\
 mN_{A}=\mu
-\end{array}\right\} =\\
- & = & \df 13\rho\df{3R}{2\mu}\left\langle v\right\rangle \left\langle l\right\rangle 
-\end{eqnarray*}
+\end{array}\right\} =\df 13\rho\df{3R}{2\mu}\left\langle v\right\rangle \left\langle l\right\rangle 
+\end{align*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $c_{v}=\df 32\df R{\mu}$
 \end_inset
 
@@ -11326,40 +11227,26 @@ mN_{A}=\mu
 \begin_inset Formula $\df 32$
 \end_inset
 
- --- зависит от количества атомов в молекул (это тдля одноатомных).
-\end_layout
+ --- зависит от количества атомов в молекул (это для одноатомных).
+\begin_inset Formula 
+\begin{align*}
+\lambda & =\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle c_{v}\\
+ & =c_{v}\nu\\
+ & =\df 13n\sqrt{\df{8kT}{\pi m}}\df 1{\sqrt{2}\sigma n}\df 32k\sim\df{\sqrt{T}}{\sigma\sqrt{m}}
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\lambda=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle c_{v}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lambda=c_{v}\nu$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lambda=\df 13n\sqrt{\df{8kT}{\pi m}}\df 1{\sqrt{2}\sigma n}\df 32k\sim\df{\sqrt{T}}{\sigma\sqrt{m}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsection
-Дифузия газов
+Диффузия газов
 \end_layout
 
 \begin_layout Standard
-Будем считать чтодавление и концентрация молекул по обьему одна и та же.
-\end_layout
-
-\begin_layout Standard
-Пусть смесь состоит только из 2х газов.
+Будем считать что давление и концентрация молекул по объему одна и та же.
+ Пусть смесь состоит только из 2х газов.
 \end_layout
 
 \begin_layout Standard
@@ -11379,14 +11266,17 @@ status open
 \begin_inset Formula $n_{1}'+n_{1}''=n_{2}'+n_{2}''=n$
 \end_inset
 
- 
+ Это явление диффузии.
 \end_layout
 
 \begin_layout Standard
-Это явление дифузии.
+\begin_inset Formula $K'=-D\df{dn'}{dz}S$
+\end_inset
+
+ --- формула была получена экспериментально.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $K$
 \end_inset
 
@@ -11394,21 +11284,14 @@ status open
 \begin_inset Formula $S$
 \end_inset
 
- в еденицу времени
+ в единицу времени.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $K'=-D\df{dn'}{dz}S$
-\end_inset
-
- --- была получена эксперементально
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $D$
 \end_inset
 
- --- коофицент дифузии.
+ --- коэффициент диффузии.
 \end_layout
 
 \begin_layout Standard
@@ -11431,16 +11314,14 @@ status open
 
 \begin_layout Standard
 Накую величину изменилось количество молекул где то там...
-\end_layout
+\begin_inset Formula 
+\[
+K=\df{\D N'}{\D t}=\df 16\left\langle v\right\rangle \left(n_{2}'-n_{1}'\right)S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $K=\df{\D N'}{\D t}=\df 16\left\langle v\right\rangle \left(n_{2}'-n_{1}'\right)S$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+По Тейлору: 
 \begin_inset Formula $n'\left(z\right)$
 \end_inset
 
@@ -11470,49 +11351,69 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $K'=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle \df{dn'}{dz}S$
+\begin_inset Formula 
+\[
+K'=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle \df{dn'}{dz}S
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $D=\df 13\left\langle v\right\rangle \left\langle l\right\rangle $
-\end_inset
+\begin_inset Formula 
+\[
+D=\df 13\left\langle v\right\rangle \left\langle l\right\rangle 
+\]
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\nu=\rho\um D$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D=\df 13\sqrt{\df{8kT}{\pi m}}\df 1{\sigma n\sqrt{2}}\sim\df{\sqrt{T}}{\sqrt{m}n\sigma}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $K''=-D\df{dn''}{dz}S$
-\end_inset
+\begin_inset Formula 
+\[
+\nu=\rho\um D
+\]
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $M'=-D\df{d\rho'}{dz}S$
 \end_inset
 
 
+\begin_inset Formula 
+\[
+D=\df 13\sqrt{\df{8kT}{\pi m}}\df 1{\sigma n\sqrt{2}}\sim\df{\sqrt{T}}{\sqrt{m}n\sigma}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K''=-D\df{dn''}{dz}S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M'=-D\df{d\rho'}{dz}S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS$
+\begin_inset Newpage newpage
 \end_inset
 
 
