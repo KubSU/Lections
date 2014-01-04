@@ -12992,7 +12992,7 @@ status open
 \begin_inset Formula $T_{1}=T$
 \end_inset
 
----const
+ --- const
 \end_layout
 
 \begin_layout Standard
@@ -13034,12 +13034,12 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-Газ отдате тепло 
+Газ отдаче тепло 
 \begin_inset Formula $Q_{2}$
 \end_inset
 
  холодильнику.
- (Чаще всего холодильник это оклужающая среда)
+ (Чаще всего холодильник это окружающая среда)
 \end_layout
 
 \end_deeper
@@ -13076,11 +13076,11 @@ status open
 \end_inset
 
  --- это тепло, которое берет холодильник (просто если это тепло, которое
- отдал газ, то это слогаемое должно быть со знаком минус)
+ отдал газ, то это слагаемое должно быть со знаком минус)
 \end_layout
 
 \begin_layout Theorem
-Две различные обратимые тепловые машины, работающие с одними и теми же нагревати
+Две различные обратимые тепловые машины, работающие с одними и теми же нагревате
 лем и холодильником имеют одинаковое КПД.
 \end_layout
 
@@ -13152,36 +13152,35 @@ status open
 \end_inset
 
  
-\end_layout
+\begin_inset Formula 
+\[
+\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+Q_{2M}<Q_{2N}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $Q_{2M}<Q_{2N}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $A_{M}>A_{N}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+A_{M}>A_{N}
+\]
 
-\begin_layout Proof
+\end_inset
+
 Заставим эту машину работать по обратному циклу.
  (над ней совершается работа 
 \begin_inset Formula $A_{N},$
 \end_inset
 
-и отдается темло нагревателю 
+и отдается тепло нагревателю 
 \begin_inset Formula $Q_{1}$
 \end_inset
 
@@ -13227,7 +13226,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Расмотрим единую тепловую машину 
+Рассмотрим единую тепловую машину 
 \begin_inset Formula $\left(M-N\right)$
 \end_inset
 
@@ -13235,7 +13234,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Она забтрает у холодильника тепло 
+Она забирает у холодильника тепло 
 \begin_inset Formula $Q_{2}=Q_{N2}-Q_{M2}$
 \end_inset
 
@@ -13243,8 +13242,8 @@ status open
 \end_layout
 
 \begin_layout Proof
-Получается нагреватель стоит ради мебели, а работа совершалаь.
- Тоесть машина забрала тепло у холдодильника и полностью превратила его
+Получается нагреватель стоит ради мебели, а работа совершалась.
+ То есть машина забрала тепло у холодильника и полностью превратила его
  в работу, что невозможно в силу 2го начала термодинамики.
 \end_layout
 
@@ -13257,11 +13256,11 @@ status open
 \end_layout
 
 \begin_layout Proof
-Аналогично мжно доказать, что 
+Аналогично можно доказать, что 
 \begin_inset Formula $\eta_{M}<\eta_{N}$
 \end_inset
 
- тоже неверное, следорвательно остается их приравнять.
+ тоже неверное, следовательно остается их приравнять.
 \end_layout
 
 \begin_layout Standard
@@ -13274,8 +13273,8 @@ status open
 \end_inset
 
  --- обратимая машина.
- Они работают с одним и теми же холодилшьником и нагревателем, различие
- только в том, что одна обратимая, а другая нет.
+ Они работают с одним и теми же холодильником и нагревателем, различие только
+ в том, что одна обратимая, а другая нет.
  Аналогично можно показать, что неравенство 
 \begin_inset Formula $\eta_{H}>\eta_{O}$
 \end_inset
@@ -13292,9 +13291,9 @@ status open
 \end_layout
 
 \begin_layout Standard
-Как сделать из обратимой машины необратимую, присыпать песочку, добависть
+Как сделать из обратимой машины необратимую, присыпать песочку, добавить
  трение.
- И тогда КПД обратимой машины будет ментше чем необратимой.
+ И тогда КПД обратимой машины будет меньше чем необратимой.
 \end_layout
 
 \begin_layout Standard
@@ -13302,24 +13301,22 @@ status open
 \end_inset
 
  --- так вычисляется КПД.
- Но для обратимой машыны можно подругому по идее.
-\end_layout
+ Но для обратимой машины можно по другому по идее.
+\begin_inset Formula 
+\[
+Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Так как минус в формуле КПД поставлен явно, то 
 \begin_inset Formula $\ln\df{V_{3}}{V_{4}}$
 \end_inset
@@ -13332,10 +13329,14 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}$
+\begin_inset Formula 
+\[
+\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -13369,49 +13370,41 @@ status open
 \end_inset
 
 , и подставляем:
-\end_layout
+\begin_inset Formula 
+\[
+\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}$
 \end_inset
 
- 
-\end_layout
+Откуда получаем уравнение адиобаты, связывающее объем и температуру.
+\begin_inset Formula 
+\[
+T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}
+\]
 
-\begin_layout Standard
-Откуда получаем уравнение адиобаты, связывающее обьем и температуру.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Аналогично из процесса 4-1 получаем 
 \begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{4}}{V_{1}}\right)^{\gamma-1}$
 \end_inset
 
  
-\end_layout
+\begin_inset Formula 
+\[
+\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Следовательно, 
 \begin_inset Formula $\df{V_{3}}{V_{4}}=\df{V_{2}}{V_{1}}$
 \end_inset
@@ -13427,12 +13420,12 @@ status open
 \end_layout
 
 \begin_layout Remark
-Обратимая темловая машина называется идеальной тепловой машиной иногда.
+Обратимая тепловая машина называется идеальной тепловой машиной иногда.
 \end_layout
 
 \begin_layout Subsection
 Приведенное количество тепла.
- Неравеснство Клаузиуса.
+ Неравенство Клаузиуса.
 \end_layout
 
 \begin_layout Standard
@@ -13452,40 +13445,40 @@ status open
 \begin_inset Formula $\df{T_{1}-T_{2}}{T_{1}}$
 \end_inset
 
- --- действует только для обратимых.
-\end_layout
+ --- действует только для обратимых
+\begin_inset Formula 
+\[
+\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если рассматривать только газ и рассматривать что газ отдает тепло со знаком
- минус, то если брать это неравествтвво по отношению к одному телу, то мы
+ минус, то если брать это неравенство по отношению к одному телу, то мы
  получим 
 \begin_inset Formula $\df{Q_{1}}{T_{1}}+\df{Q_{2}}{T_{2}}\mr0$
 \end_inset
@@ -13502,7 +13495,7 @@ status open
 \begin_inset Formula $\ous{i=1}N\df{Q_{i}}{T_{i}}\mr0$
 \end_inset
 
- --- это неравество Клаудиуса.
+ --- это неравенство Клаудиуса.
  
 \end_layout
 
@@ -13510,7 +13503,7 @@ status open
 \begin_inset Formula $\df QT$
 \end_inset
 
- --- эту дробь Клаузиус называл приаеденным колическвом тепла.
+ --- эту дробь Клаузиус называл приведенным количеством тепла.
 \end_layout
 
 \begin_layout Subsection
@@ -13529,7 +13522,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Для обратимости процесса необходимо:
+Для обратимости процесса необходимо
 \begin_inset Formula 
 \[
 \begin{array}{cc}
@@ -13687,9 +13680,6 @@ S=k\um\ln W
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 S=k\um N\um\ln V+B,\ B=k\um\ln b
@@ -13697,23 +13687,20 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\D S=S_{2}-S_{1}=kN\ln\df{V_{2}}{V_{1}}$
+\begin_inset Formula 
+\[
+\D S=S_{2}-S_{1}=kN\ln\df{V_{2}}{V_{1}}
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Рассмотрим газ в обьеме 
+Рассмотрим газ в объеме 
 \begin_inset Formula $V$
 \end_inset
 
 .
- Увеличим обьем к 
+ Увеличим объем к 
 \begin_inset Formula $2V$
 \end_inset
 
@@ -13723,16 +13710,14 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+Q=A=\nu RT\ln\df{V_{2}}{V_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $Q=A=\nu RT\ln\df{V_{2}}{V_{1}}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \D S & = & kN\ln\df{V_{2}}{V_{1}}=\\
@@ -13743,9 +13728,6 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\df QT=\D S$
 \end_inset
 
@@ -13769,7 +13751,6 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \begin_layout Standard
 Так как в рамках 1го тела у нас процесс изотермический, то мы можем записать:
- 
 \begin_inset Formula 
 \begin{eqnarray*}
 \D S & = & \D S_{1}+\D S_{2}=\\
@@ -13779,10 +13760,6 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если 
 \begin_inset Formula $T_{1}\simeq T_{2}$
 \end_inset
@@ -13796,21 +13773,22 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \begin_layout Standard
 В адиобатическом: 
-\begin_inset Formula $\D S=\D S_{\text{газа}}+\D S_{\text{мех}}=\left\{ \begin{array}{c}
+\begin_inset Formula 
+\[
+\D S=\D S_{\text{газа}}+\D S_{\text{мех}}=\left\{ \begin{array}{c}
 \D S_{\text{мех}}=0\\
 \D S_{\text{газа}}=0
-\end{array}\right\} =0$
+\end{array}\right\} =0
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
 В итоге мы приходим к еще 1ой математической формулировки второго начала
  термодинамики:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \D S\br0
@@ -13840,7 +13818,7 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_layout
 
 \begin_layout Enumerate
-Стеени свободы
+Степени свободы
 \end_layout
 
 \begin_layout Enumerate
@@ -13895,12 +13873,12 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 status open
 
 \begin_layout Plain Layout
-Как-бы третье начало термидинамики
+Как бы третье начало термодинамики
 \end_layout
 
 \end_inset
 
-При стремленнии температуры в абсолютному нулю энтропия любого тела так-же
+При стремлении температуры в абсолютному нулю энтропия любого тела так же
  стремится к нулю.
 \end_layout
 
@@ -13920,7 +13898,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Втреднем размер одной простой молекулы равен 
+В среднем размер одной простой молекулы равен 
 \begin_inset Formula $d\sim10^{-10}$
 \end_inset
 
@@ -13936,7 +13914,7 @@ status open
 \begin_inset Formula $U_{\text{вз}}=0$
 \end_inset
 
- --- так как мелекулы находятся на очень большом расстоянии
+ --- так как молекулы находятся на очень большом расстоянии
 \end_layout
 
 \begin_layout Standard
@@ -13950,7 +13928,7 @@ status open
 \begin_inset Formula $d$
 \end_inset
 
- --- эфективный диаметр молекул
+ --- эффективный диаметр молекул
 \end_layout
 
 \begin_layout Standard
@@ -13977,7 +13955,7 @@ status open
 \begin_inset Formula $r\sim2-3d$
 \end_inset
 
-, то тогда возникают силы притяжения (энергитической природы)
+, то тогда возникают силы притяжения (энергетической природы)
 \end_layout
 
 \begin_layout Standard
@@ -14062,14 +14040,14 @@ status open
 \begin_inset Formula $kT<<\left|U_{min}\right|$
 \end_inset
 
- --- твердое состояние вещнества
+ --- твердое состояние вещества
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $kT>>\left|U_{min}\right|$
 \end_inset
 
- --- газообрахное состояние вещесмтва
+ --- газообразное состояние вещества
 \end_layout
 
 \begin_layout Standard
@@ -14084,7 +14062,7 @@ status open
 \begin_inset Formula $\nu$
 \end_inset
 
- --- 1 киломоль, то 
+ --- 1 Киломоль, то 
 \begin_inset Formula $PV=RT$
 \end_inset
 
@@ -14100,7 +14078,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Стали смотреть, что происходит с давлением, и оказалося:
+Стали смотреть, что происходит с давлением, и оказалось:
 \end_layout
 
 \begin_layout Standard
@@ -14154,9 +14132,9 @@ status open
  Когда он это делал, начинался переход молекул из жидкого состояния в газообразн
 ое, повышается давление и граница будет смешаться в сторону газа (вверх,
  за счет линейного расширения газа), если воды много, а если воды мало,
- то граница между газом и жидкостью начинает полсти вниз.
- Ему заходелось найти ту границу, когда эта планка будет стоять на месте.
- Путём огпытов, что он ее нашел такое стстояние, когда граница не двигается.
+ то граница между газом и жидкостью начинает ползти вниз.
+ Ему захотелось найти ту границу, когда эта планка будет стоять на месте.
+ Путём опытов, что он ее нашел такое состояние, когда граница не двигается.
  
 \end_layout
 
@@ -14172,7 +14150,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-А если сделать обратный эксперимент (не нагривать а остужать), то жидкость
+А если сделать обратный эксперимент (не нагревать а остужать), то жидкость
  конденсируется в капельки и опадает.
 \end_layout
 
@@ -14181,7 +14159,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Эндрюс исследовал с углекислым газом.
+
+\emph on
+Эндрюс 
+\emph default
+исследовал с углекислым газом.
  И построил его изотермы.
 \end_layout
 
@@ -14203,7 +14185,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Если говорить про большие температуры : они практически совподают с геперболой
+Если говорить про большие температуры : они практически совпадают с гиперболой
  (
 \begin_inset Formula $PV=const$
 \end_inset
@@ -14213,17 +14195,17 @@ status open
 \end_layout
 
 \begin_layout Standard
-Давление насыщеного пара - когда ты повышаешь обьем, а давление не меняется
+Давление насыщенного пара - когда ты повышаешь объем, а давление не меняется
  (оно зависит от температуры).
 \end_layout
 
 \begin_layout Standard
-При некоторой температуре невозможно добится увеличением обьема переход
+При некоторой температуре невозможно добиться увеличением объема переход
  жидкости в газообразное состояние.
 \end_layout
 
 \begin_layout Standard
-Пунктирная кривая обганичевает линию перезода от газа в жидкость, и ее так
+Пунктирная кривая ограничивает линию перевода от газа в жидкость, и ее так
  и называют --- 
 \emph on
 пограничной кривой.
@@ -14235,7 +14217,7 @@ status open
 газом
 \emph default
 .
- Нижи критической изотермы и правее пограничной кривой будем назыапать 
+ Ниже критической изотермы и правее пограничной кривой будем называть 
 \emph on
 жидкостью
 \emph default
@@ -14245,7 +14227,7 @@ status open
 паром
 \emph default
 .
- А внутри пограничной кривой назывем 
+ А внутри пограничной кривой назовем 
 \emph on
 насыщенным паром
 \emph default
@@ -14267,9 +14249,13 @@ F\left(\beta,V,T\right)=0
 На самом деле сложно его записать из за того, что силы взаимодействия разные
  в разных газах.
  Но есть хорошие приближения.
- Одно из них было полчено голандским ученым 
+ Одно из них было получено Голландским ученым 
 \emph on
-Ван дер Ваальс.
+Ван дер Ваальс
+\emph default
+-ом
+\emph on
+.
  
 \emph default
 Что он сделал? Он взял уравнение Менделеева-Клаперона.
@@ -14279,13 +14265,13 @@ F\left(\beta,V,T\right)=0
 
 , но при этом учтены только силы притяжения, а силы отталкивания заменены
  жесткой границей.
- Возникает поняние 
+ Возникает понятие 
 \emph on
-недопустимого обьема 
+недопустимого объема 
 \emph default
---- когда молекула не может попасять в какую-то точку (она занята другой
+--- когда молекула не может попасть в какую то точку (она занята другой
  молекулой).
- И еще одна поправка на внутренее давление (давление уменьшается).
+ И еще одна поправка на внутреннее давление (давление уменьшается).
 \end_layout
 
 \begin_layout Enumerate
@@ -14316,12 +14302,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-Центры молекул не могут находится на растоянии, меньше чем диаметр этой
+Центры молекул не могут находится на расстоянии, меньше чем диаметр этой
  молекулы.
 \end_layout
 
 \begin_layout Standard
-Обьем этого места (обьм шара) 
+Объем этого места (объём шара) 
 \begin_inset Formula $\df 43\pi d^{3}$
 \end_inset
 
@@ -14333,7 +14319,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Сколько различных пар мы можем состовить? Ответ: 
+Сколько различных пар мы можем составить? Ответ: 
 \begin_inset Formula $C_{N}^{2}=\df{N\left(N-1\right)}2\approx\df{N^{2}}2$
 \end_inset
 
@@ -14344,7 +14330,7 @@ status open
 \begin_inset Formula $\df 43\pi d^{3}\df{N^{2}}2$
 \end_inset
 
- --- получим такую формулу --- недопустимый обьем для всех молккул
+ --- получим такую формулу --- недопустимый объем для всех молекул
 \end_layout
 
 \begin_layout Standard
@@ -14356,7 +14342,7 @@ status open
 \begin_inset Formula $b$
 \end_inset
 
- --- недопустимый обьем так обозначается
+ --- недопустимый объем так обозначается
 \end_layout
 
 \begin_layout Standard
@@ -14370,11 +14356,11 @@ status open
 \begin_inset Formula $\df{\pi d^{3}}6$
 \end_inset
 
- --- обьем одной молекулы
+ --- объем одной молекулы
 \end_layout
 
 \begin_layout Standard
-Уравнение Менделеева-Клаперона c этой поправкой будет выгрядить так: 
+Уравнение Менделеева-Клаперона c этой поправкой будет выглядит так: 
 \begin_inset Formula $P\left(V-b\right)=\nu RT$
 \end_inset
 
@@ -14395,8 +14381,8 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-О стенку могут биться только те молекулы, которые находятся на рассмотянии
- длиннц свободного пробега.
+О стенку могут биться только те молекулы, которые находятся на расстоянии
+ длинна свободного пробега.
  
 \end_layout
 
@@ -14449,7 +14435,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Введем коофицент пропорциональности: 
+Введем коэффициент пропорциональности: 
 \begin_inset Formula $P'=\alpha\df{N^{2}}{V^{2}}=\df{a^{2}}{V^{2}}$
 \end_inset
 
@@ -14492,7 +14478,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Зпишем это уравнение в форме 
+Запишем это уравнение в форме 
 \begin_inset Formula $F\left(\beta,V,T\right)=0$
 \end_inset
 
@@ -14517,7 +14503,11 @@ status open
 
 \begin_layout Standard
 Построим график этой функции.
- Назовём его изотермой вандервальса.
+ Назовём его изотермой 
+\emph on
+Ван дер Вальса
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -14554,7 +14544,7 @@ status open
 \emph on
 Ван дер Вальса 
 \emph default
-учистком 
+участком 
 \begin_inset Formula $v_{1}v_{2}$
 \end_inset
 
@@ -14584,14 +14574,14 @@ status open
 \begin_inset Formula $v_{1}$
 \end_inset
 
- --- обьем жидкости
+ --- объем жидкости
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $v_{2}$
 \end_inset
 
- --- обьем газа
+ --- объем газа
 \end_layout
 
 \begin_layout Standard
@@ -14603,7 +14593,7 @@ status open
 \begin_inset Formula $EF$
 \end_inset
 
- --- физически получаемы (осуществимы), но они соответствуют неустогйчевому
+ --- физически получаемы (осуществимы), но они соответствуют неустойчивому
  состоянию вещества.
 \end_layout
 
@@ -14611,7 +14601,7 @@ status open
 \begin_inset Formula $BC$
 \end_inset
 
- --- соответствует стстоянию перегретой жидкости.
+ --- соответствует состоянию перегретой жидкости.
 \end_layout
 
 \begin_layout Standard
@@ -14623,13 +14613,13 @@ status open
 \begin_inset Formula $EF$
 \end_inset
 
- называется присыщенного (переохлажденного) пара (формально переохлажденного
+ называется пресыщенного (переохлажденного) пара (формально переохлажденного
  газа).
  
 \end_layout
 
 \begin_layout Standard
-Кристализация, так же как и кипение, возникает около неоднородности в среде.
+Кристаллизация, так же как и кипение, возникает около неоднородности в среде.
 \end_layout
 
 \begin_layout Standard
@@ -14638,8 +14628,8 @@ status open
 \end_inset
 
  опускается ниже нуля.
- Давление оторицательно.
- Такое впринципе возможно.
+ Давление отрицательно.
+ Такое в принципе возможно.
  Это когда жидкость не давит на стенки сосуда, а наоборот, пытается их втянуть.
 \end_layout
 
