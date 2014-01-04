@@ -367,6 +367,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -11424,28 +11430,27 @@ q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U_{\text{вн}}=E_{\text{кин}}+E_{\text{вд}}$
+\begin_inset Formula 
+\[
+U_{\text{вн}}=E_{\text{кин}}+E_{\text{вд}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+U & =E_{\text{кин}}\text{ --- в газах}\\
+U & =E_{\text{кин}}=N\df 32kT=\nu\df 32RT
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U=E_{\text{кин}}$
-\end_inset
-
- --- в газах
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $U=E_{\text{кин}}=N\df 32kT=\nu\df 32RT$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Рассмотрм, если газ получает некоторую энергию извне, в виде температьуры.
+Рассмотрим, если газ получает некоторую энергию извне, в виде температуры.
 \end_layout
 
 \begin_layout Standard
@@ -11470,11 +11475,11 @@ q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
 \end_layout
 
 \begin_layout Standard
-Условимся, что если газ получет тепо, то 
+Условимся, что если газ получает тепло, то 
 \begin_inset Formula $Q>0$
 \end_inset
 
-,если отдает, то 
+, если отдает, то 
 \begin_inset Formula $Q<0$
 \end_inset
 
@@ -11483,8 +11488,8 @@ q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
 
 \begin_layout Standard
 Точно также условимся с работой.
- Если газ совершает рабьоту над внешними телаами, то это робота положительная,
- а если соверщается на гахом, то эта робота отрицательная.
+ Если газ совершает работу над внешними телами, то это робота положительная,
+ а если совершается над газом, то эта робота отрицательная.
 \end_layout
 
 \begin_layout Standard
@@ -11495,7 +11500,7 @@ q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
 \end_layout
 
 \begin_layout Standard
-Если газ в это время будет совершать работу, то его енергия будет уменьшаться.
+Если газ в это время будет совершать работу, то его энергия будет уменьшаться.
 \end_layout
 
 \begin_layout Standard
@@ -11506,11 +11511,8 @@ q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Q=$
-\end_inset
-
-Тепло, поступающее в газ идет на изменение его внутренней энергии и на соверщени
-е газом работиы над внешними телами.
+Тепло, поступающее в газ идет на изменение его внутренней энергии и на совершени
+е газом работы над внешними телами.
 \end_layout
 
 \begin_layout Standard
@@ -11532,21 +11534,20 @@ status open
 \end_layout
 
 \begin_layout Definition
-Теплоемкостью какого либа тела, называется величина, равная колическтву
- тепла, которое необходимо сообщить телу, чтобы поднять его температуру
- на 1 градус.
+Теплоемкостью какого либо тела, называется величина, равная количеству тепла,
+ которое необходимо сообщить телу, чтобы поднять его температуру на 1 градус.
 \end_layout
 
 \begin_layout Standard
-Если мы для какогото тела поднимает его температуру на 
+Если мы поднимаем температуру какого то тела на 
 \begin_inset Formula $\D T$
 \end_inset
 
-, а тепрература тела повышается на 
+, а температура тела повышается на 
 \begin_inset Formula $\D Q$
 \end_inset
 
-, то теплоемкостью можно называьт 
+, то теплоемкостью можно называть 
 \begin_inset Formula $C_{T}=\df{\D Q}{\D T}=\left[\df{\text{Джоуль}}{\text{Кельвин}}\right]$
 \end_inset
 
@@ -11554,21 +11555,21 @@ status open
 \end_layout
 
 \begin_layout Definition
-Теплоемкость еденицы массы вещества называется удельной теплоемкостью.
- Обозначается 
+Теплоемкость единицы массы вещества называется удельной теплоемкостью.
+ Обозначается: 
 \begin_inset Formula $c$
 \end_inset
 
 .
- В системе 
-\begin_inset Formula $\left[c\right]$
+ В системе СИ: 
+\begin_inset Formula 
+\[
+\left[c\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Килограмм}}
+\]
+
 \end_inset
 
- измеряется в 
-\begin_inset Formula $\df{\text{Джоуль}}{\text{Кельвин}\x\text{Килограмм}}$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout --Separator--
@@ -11583,13 +11584,14 @@ status open
 
 .
  
-\begin_inset Formula $\left[C\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Киломоль}}$
+\begin_inset Formula 
+\[
+\left[C\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Киломоль}}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
+Причем
 \begin_inset Formula 
 \[
 c=\df C{\mu}
@@ -11601,61 +11603,69 @@ c=\df C{\mu}
 \end_layout
 
 \begin_layout Standard
-Рассмотрим такую ситуацию.
- Будем нагревать газ в замкнутом обьеме (
-\begin_inset Formula $V=const$
+Рассмотрим такую ситуацию: будем нагревать газ в замкнутом объеме 
+\begin_inset Formula $(V=const)$
 \end_inset
 
-).
- Газ не расширяется и не совершает работу (
-\begin_inset Formula $A=0$
+.
+ Газ не расширяется и не совершает работу 
+\begin_inset Formula $(A=0)$
 \end_inset
 
-), и тогда вся энергия пойдет на увеличение температуры.
+, и тогда вся энергия пойдет на увеличение температуры.
  
 \begin_inset Formula $Q=\D U$
 \end_inset
 
 .
- Мы уже знгаем что 
+ Мы уже знаем что 
 \begin_inset Formula $U=\df 32\um R\um T$
 \end_inset
 
  для одного моля.
  
-\begin_inset Formula $\D U=\df 32\nu R\D T$
+\begin_inset Formula 
+\[
+\D U=\df 32\nu R\D T
+\]
+
 \end_inset
 
-.
- Согласно этому примеру, еслши мы берем 
+Согласно этому примеру, если мы берем 
 \begin_inset Formula $\nu=1\,\text{КМоль}$
 \end_inset
 
 , то 
-\begin_inset Formula $C_{V}=\df Q{\D T}=\df{\D U}{\D T}$
+\begin_inset Formula 
+\[
+C_{V}=\df Q{\D T}=\df{\D U}{\D T}
+\]
+
 \end_inset
 
-.
- 
+
 \end_layout
 
 \begin_layout Standard
-Теперь, если мы возьмем ситуацию, что обьем изменяется (Нагрев при постоянном
- давлении) (
-\begin_inset Formula $P-const$
+Теперь, если мы возьмем ситуацию, что объем изменяется (Нагрев при постоянном
+ давлении) 
+\begin_inset Formula $(P=const)$
 \end_inset
 
-).
+.
  
 \begin_inset Formula $Q=\D U+A$
 \end_inset
 
- Вод тут будет такое равенство.
- 
-\begin_inset Formula $C_{P}=\df Q{\D T}=\df{\D U}{\D T}+\df A{\D T}=C_{V}+\df A{\D T}>C_{V}$
+ То выполняется равенство:
+\begin_inset Formula 
+\[
+C_{P}=\df Q{\D T}=\df{\D U}{\D T}+\df A{\D T}=C_{V}+\df A{\D T}>C_{V}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Corollary
@@ -11667,11 +11677,15 @@ c=\df C{\mu}
 \begin_inset Formula $\D h$
 \end_inset
 
-, 
-\begin_inset Formula $A=F\D h=P\um S\um\D h=P\D V$
+, работа равна: 
+\begin_inset Formula 
+\[
+A=F\D h=P\um S\um\D h=P\D V
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -11682,6 +11696,7 @@ c=\df C{\mu}
 \end_layout
 
 \begin_layout Standard
+Пусть было: 
 \begin_inset Formula $PV_{1}=RT_{1}$
 \end_inset
 
@@ -11694,7 +11709,7 @@ c=\df C{\mu}
 \end_layout
 
 \begin_layout Standard
-В итоге получим:
+В итоге получим: 
 \begin_inset Formula $P\D V=R\D T$
 \end_inset
 
@@ -11706,13 +11721,13 @@ c=\df C{\mu}
 \begin_inset Formula $C_{P}=C_{V}+\df{P\D V}{\D T}=C_{V}+\df{R\D T}{\D T}=C_{V}+R$
 \end_inset
 
- 
+ получим формулу Майера.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-C_{P}=C_{V}+R
+\fbox{C_{P}=C_{V}+R}
 \]
 
 \end_inset
@@ -11721,15 +11736,11 @@ C_{P}=C_{V}+R
 \end_layout
 
 \begin_layout Standard
-Это формура Майэра.
-\end_layout
-
-\begin_layout Standard
 Универсальная газовая постоянная 
 \begin_inset Formula $R$
 \end_inset
 
- численно рава работе расширения обного киломоля идеального газа при его
+ численно равна работе расширения одного киломоля идеального газа при его
  нагревании на один градус в условиях постоянного давления.
 \end_layout
 
@@ -11758,20 +11769,24 @@ C_{P}=C_{V}+R
 \begin_inset Formula $C_{V}$
 \end_inset
 
- зависит от пемпературы, то тогда устремляем 
+ зависит от температуры, то тогда устремляем 
 \begin_inset Formula $\D T\to\b$
 \end_inset
 
 .
  И придем к формуле 
-\begin_inset Formula $C_{V}=\df{du}{dT}$
+\begin_inset Formula 
+\[
+C_{V}=\df{du}{dT}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-При некоторых условиях коофицент 
+При некоторых условиях коэффициент 
 \begin_inset Formula $\df 32$
 \end_inset
 
@@ -11782,60 +11797,138 @@ C_{P}=C_{V}+R
 \begin_inset Formula $C_{V}=\df 32R$
 \end_inset
 
- --- такой теплокмкостью обладают газы 
+ --- такой теплоемкостью обладают газы 
 \begin_inset Formula $He,\, Ne,\, Ar,\tr$
 \end_inset
 
 .
- (Восьмой столбец таблицы Минделеева) У них все элексроны заполнены.
+ (Восьмой столбец таблицы Менделеева) У них все электроны заполнены.
  Их называют благородными газами.
- Для них 
-\begin_inset Formula $C_{V}=12,5\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $He,\, Ne,\, Ar,\tr$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Для 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{V}=\df 32R=12,5\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $N_{2},\, O_{2}$
 \end_inset
 
- --- 
-\begin_inset Formula $C_{V}=20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{V}=\df 52R=20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Для 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $NH_{3},\, CH_{4}$
 \end_inset
 
- --- 
-\begin_inset Formula $C_{V}=25,0\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{V}=\df 62R=25,0\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Теплоемкости некоторых газов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT=\df{m\left\langle v^{2}\right\rangle }2$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+\left\langle \varepsilon\right\rangle  & =\df 32kT=\df{m\left\langle v^{2}\right\rangle }2\\
+\intertext{\text{Так как: \ensuremath{v^{2}=v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}} & =\df{m\left\langle v_{x}^{2}\right\rangle }2+\df{m\left\langle v_{y}^{2}\right\rangle }2+\df{m\left\langle v_{z}^{2}\right\rangle }2=\\
+ & =\df 12kT+\df 12kT+\df 12kT
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v^{2}=v_{x}^{2}+v_{y}^{2}+v_{z}^{2}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df{m\left\langle v_{x}^{2}\right\rangle }2+\df{m\left\langle v_{y}^{2}\right\rangle }2+\df{m\left\langle v_{z}^{2}\right\rangle }2=\df 12kT+\df 12kT+\df 12kT$
 \end_inset
 
 
@@ -11846,7 +11939,7 @@ C_{P}=C_{V}+R
 \begin_inset Formula $He,\, Ne$
 \end_inset
 
-), для ни= 
+): 
 \begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT$
 \end_inset
 
@@ -11854,15 +11947,11 @@ C_{P}=C_{V}+R
 \end_layout
 
 \begin_layout Standard
-Это было для одноатомного газа, у которго 3 степени свободы.
-\end_layout
-
-\begin_layout Standard
-Больцман предположил, что на любую степень своботы приходится 
+Больцман предположил, что на любую степень свободы приходится 
 \begin_inset Formula $\df 12kT$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -11898,12 +11987,16 @@ C_{P}=C_{V}+R
 \end_layout
 
 \begin_layout Standard
-Теперь перейдем во внутреннюю энергию газов, то там 
+Теперь если перейдем во внутреннюю энергию газов, то 
 \begin_inset Formula $U=\df 52RT$
 \end_inset
 
 , 
-\begin_inset Formula $C_{V}=\df 52R\approx20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\begin_inset Formula 
+\[
+C_{V}=\df 52R\approx20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}
+\]
+
 \end_inset
 
 
@@ -11914,11 +12007,12 @@ C_{P}=C_{V}+R
 \end_inset
 
  --- 6 степеней свободы.
-\end_layout
+ Для них: 
+\begin_inset Formula 
+\[
+\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+3\left(\df 12kT\right)=\df 62kT=3kT
+\]
 
-\begin_layout Standard
-Для них 
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+3\left(\df 12kT\right)=\df 62kT=3kT$
 \end_inset
 
 
@@ -11926,15 +12020,12 @@ C_{P}=C_{V}+R
 
 \begin_layout Standard
 Если посчитать, то всё сходится.
-\end_layout
-
-\begin_layout Standard
-Но есть некоторые исключения.
+ Но есть некоторые исключения.
  Дело в том, что некоторые газы, например 
 \begin_inset Formula $CO_{2}$
 \end_inset
 
-, у него структура линейная, и у него 5 степеней свободы.
+, имеют линейную структуру, и у него 5 степеней свободы.
 \end_layout
 
 \begin_layout Standard
@@ -11951,14 +12042,18 @@ status open
 \end_layout
 
 \begin_layout Standard
-Почему это так? Все таки молукула, этот не твердое тело.
- При очень нихких температурах у них нету вращательного движения, и гворят,
- что она вымерзает.
- Тоесть если 
-\begin_inset Formula $\widetilde{\varepsilon_{\text{вр}}}>\df 12kT+\df 12kT$
+Почему это так? Все таки молекула, это не твердое тело.
+ При очень низких температурах у них нету вращательного движения, и говорят,
+ что молекула вымерзает.
+ То есть если 
+\begin_inset Formula 
+\[
+\widetilde{\varepsilon_{\text{вр}}}>\df 12kT+\df 12kT
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -11972,12 +12067,13 @@ status open
 \begin_layout Standard
 С ростом температуры у отдельных молекул начинает проявляться колебательная
  степень свободы, связанная с движением атомов в молекуле.
- В этом дуижении участвуют два вида энергии --- этергия движения атомов
- и потенциальная энергия связи в атомах.
-\end_layout
+ В этом движении участвуют два вида энергии: энергия движения атомов и потенциал
+ьная энергия связи в атомах.
+\begin_inset Formula 
+\[
+\left\langle \varepsilon_{\text{кол}}\right\rangle =\left\langle \varepsilon_{AT}\right\rangle +\left\langle U_{AT}\right\rangle =\df 12kT+\df 12kT=kT
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon_{\text{кол}}\right\rangle =\left\langle \varepsilon_{AT}\right\rangle +\left\langle U_{AT}\right\rangle =\df 12kT+\df 12kT=kT$
 \end_inset
 
 
@@ -11997,7 +12093,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-На 2500 молекулы распадаются, и вся энергия идет на распад молекул на атомы.
+На 2500К молекулы распадаются, и вся энергия идет на распад молекул на атомы.
 \end_layout
 
 \begin_layout Standard
@@ -12023,13 +12119,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $PV=\nu RT$
+\begin_inset Formula 
+\[
+PV=\nu RT
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если я знаю значения 
 \begin_inset Formula $P$
 \end_inset
@@ -12039,14 +12135,18 @@ status open
 \end_inset
 
 , то можно найти 
-\begin_inset Formula $T.$
+\begin_inset Formula $T$
 \end_inset
 
- 
+: 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $T=\df 1{\nu R}PV$
+\begin_inset Formula 
+\[
+T=\df 1{\nu R}PV
+\]
+
 \end_inset
 
 
@@ -12078,14 +12178,11 @@ Hbc 36
 \end_layout
 
 \begin_layout Standard
-При постоянном лавлении 
+При постоянном давлении 
 \begin_inset Formula $A=p\um\D V$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
@@ -12106,7 +12203,7 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 \end_inset
 
  
-\begin_inset Formula $\sl$
+\begin_inset Formula $\then$
 \end_inset
 
  
@@ -12152,7 +12249,7 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 \end_inset
 
  
-\begin_inset Formula $\sl$
+\begin_inset Formula $\then$
 \end_inset
 
  
@@ -12280,8 +12377,8 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 
 \begin_deeper
 \begin_layout Standard
-Процесс, протекающий без теплообмета с внешней средой.
- Система доджна быть теплоизолирована.
+Процесс, протекающий без теплообмена с внешней средой.
+ Система должна быть теплоизолирована.
  
 \end_layout
 
@@ -12376,7 +12473,7 @@ PdV+VdP-RdT=0
 \end_layout
 
 \begin_layout Standard
-Первое домножаем на 
+Первое домножим на 
 \begin_inset Formula $R$
 \end_inset
 
@@ -12567,7 +12664,7 @@ status open
 \begin_inset Formula $A_{341}=-A_{143}$
 \end_inset
 
-, а значит: 
+, а значит:
 \begin_inset Formula 
 \[
 A=A_{123}-A_{143}=A_{123}+A_{341}=\oint\limits _{12341}P\left(V\right)dV
@@ -12576,9 +12673,6 @@ A=A_{123}-A_{143}=A_{123}+A_{341}=\oint\limits _{12341}P\left(V\right)dV
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\Delta U=0$
 \end_inset
 
@@ -12671,7 +12765,7 @@ Hbc 38
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $T-const$
+\begin_inset Formula $T=const$
 \end_inset
 
 
@@ -12686,7 +12780,7 @@ Hbc 38
 
 \end_deeper
 \begin_layout Enumerate
-Адиоботический
+Адиобатический
 \end_layout
 
 \begin_deeper
@@ -12715,7 +12809,7 @@ Hbc 38
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $T-const$
+\begin_inset Formula $T=const$
 \end_inset
 
 
@@ -12744,7 +12838,7 @@ Hbc 38
 \end_layout
 
 \begin_layout Enumerate
-Адиоботически вернуть в тоже состояние, но тогда получится замкнутый циык,
+Адиобатически вернуть в тоже состояние, но тогда получится замкнутый цикл,
  и тогда над газом совершили работу, а работа то из внешней среды, и тогда
  во внешней среде произошли изменения.
 \end_layout
@@ -12790,7 +12884,7 @@ Hbc 38
 \end_layout
 
 \begin_layout Subsection
-Адиоботическое расширение или сжатие
+Адиобатическое расширение или сжатие
 \end_layout
 
 \begin_layout Standard
@@ -12810,7 +12904,8 @@ Hbc 38
 \end_layout
 
 \begin_layout Standard
-Нужнопроводить этот процесс бесконечно быстро, чтобы не успевало тепло уходить.
+Нужно проводить этот процесс бесконечно быстро, чтобы не успевало тепло
+ уходить.
 \end_layout
 
 \begin_layout Claim
