@@ -10053,9 +10053,10 @@ status open
 
  го порядка, для которых справедливо равенство:
 \begin_inset Formula 
-\[
-F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n}z_{1},\tr,z_{m}\right)=\ous{i=1}n\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)\left(y_{i}-x_{i}\right)
-\]
+\begin{multline*}
+F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n}z_{1},\tr,z_{m}\right)=\\
+=\ous{i=1}n\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)\left(y_{i}-x_{i}\right)
+\end{multline*}
 
 \end_inset
 
@@ -10065,9 +10066,10 @@ F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n}z_{1},\tr,z_
 \begin_layout Proof
 Верно равенство 
 \begin_inset Formula 
-\[
-F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}
-\]
+\begin{multline*}
+F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n},z_{1},\tr,z_{m}\right)=\\
+=\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}
+\end{multline*}
 
 \end_inset
 
