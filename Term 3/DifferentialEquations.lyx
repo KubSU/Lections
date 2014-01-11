@@ -9419,10 +9419,7 @@ reference "eq:kk1"
 
 \begin_layout Standard
 Рассмотрим такое линейное однородное дифференциальное уравнение с переменными
- коофицентами.
-\end_layout
-
-\begin_layout Standard
+ коэффициентами.
 \begin_inset Formula 
 \begin{equation}
 y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
@@ -9442,7 +9439,7 @@ y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
 \begin_inset Formula $a_{2}\left(x\right)$
 \end_inset
 
- являются вещественными аналиническми функциями.
+ являются вещественными аналитическими функциями.
 \end_layout
 
 \begin_layout Definition
@@ -9454,15 +9451,19 @@ y\ppr+a_{1}\left(x\right)y\pr+a_{2}\left(x\right)y=0\label{eq:uu1}
 \begin_inset Formula $x_{0}$
 \end_inset
 
-, если в некоторой окресности точки 
+, если в некоторой окрестности точки 
 \begin_inset Formula $x_{0}$
 \end_inset
 
  она представима в виде сходящегося ряда 
-\begin_inset Formula $u\left(x\right)=\ous{k=0}{\b}c_{k}\left(x-x_{0}\right)^{k},\ c_{k}=const$
+\begin_inset Formula 
+\[
+u\left(x\right)=\ous{k=0}{\b}c_{k}\left(x-x_{0}\right)^{k},\quad c_{k}=const
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -9473,15 +9474,19 @@ reference "eq:uu1"
 
 \end_inset
 
-) можно находить в виде степеннгого ряда по 
+) можно находить в виде степенного ряда по 
 \begin_inset Formula $\left(x-x_{0}\right)$
 \end_inset
 
- : 
-\begin_inset Formula $y\left(x\right)=\ous{i=1}{\b}c_{k}\left(x-x_{0}\right)^{k}$
+: 
+\begin_inset Formula 
+\[
+y\left(x\right)=\ous{i=1}{\b}c_{k}\left(x-x_{0}\right)^{k}
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -9500,12 +9505,11 @@ y\ppr+xy=0\label{eq:hh2}
 
 \end_inset
 
-.
- 
+
 \end_layout
 
 \begin_layout Standard
-Покажем как оно пораждает новые функции и как находить решение в виде степенных
+Покажем как оно порождает новые функции и как находить решение в виде степенных
  рядов.
  Будем искать решение уравнения (
 \begin_inset CommandInset ref
@@ -9520,21 +9524,22 @@ reference "eq:hh2"
 
 .
  Тогда 
-\begin_inset Formula $y\pr\left(x\right)=\ous{k=1}{\b}kc_{k}x^{k-1}$
+\begin_inset Formula 
+\[
+y\pr\left(x\right)=\ous{k=1}{\b}kc_{k}x^{k-1}\qquad y\ppr=\ous{k=2}{\b}k\left(k-1\right)c_{k}x^{k-2}
+\]
+
 \end_inset
 
-.
- А 
-\begin_inset Formula $y\ppr=\ous{k=2}{\b}k\left(k-1\right)c_{k}x^{k-2}$
+Подставим и получим: 
+\begin_inset Formula 
+\[
+\ous{k=2}{\b}k\left(k-1\right)c_{k}x^{k-2}+\ous{k=0}{\b}c_{k}x^{k+1}=0
+\]
+
 \end_inset
 
- .
- Подставим и получим: 
-\begin_inset Formula $\ous{k=2}{\b}k\left(k-1\right)c_{k}x^{k-2}+\ous{k=0}{\b}c_{k}x^{k+1}=0$
-\end_inset
-
-.
- Сделаем замену 
+Сделаем замену 
 \begin_inset Formula $n=k-2$
 \end_inset
 
@@ -9544,11 +9549,19 @@ reference "eq:hh2"
 
 .
  
-\begin_inset Formula $\ous{n=0}{\b}\left(n+2\right)\left(n+1\right)c_{n+2}x^{n}+\ous{n=1}{\b}c_{n-1}x^{n}=0$
+\begin_inset Formula 
+\[
+\ous{n=0}{\b}\left(n+2\right)\left(n+1\right)c_{n+2}x^{n}+\ous{n=1}{\b}c_{n-1}x^{n}=0
+\]
+
 \end_inset
 
-, тогда 
-\begin_inset Formula $2\um1\um c_{2}+\ous{n=1}{\b}\left(\left(n+2\right)\left(n+1\right)c_{n+2}+c_{n-1}\right)x^{n}=0$
+тогда 
+\begin_inset Formula 
+\[
+2\um1\um c_{2}+\ous{n=1}{\b}\left(\left(n+2\right)\left(n+1\right)c_{n+2}+c_{n-1}\right)x^{n}=0
+\]
+
 \end_inset
 
  
@@ -9631,7 +9644,7 @@ reference "eq:hh2"
 \end_layout
 
 \begin_layout Standard
-Сдесь коофиценты 
+Здесь коэффициенты 
 \begin_inset Formula $c_{0},c_{1}$
 \end_inset
 
@@ -9640,12 +9653,12 @@ reference "eq:hh2"
 \begin_inset Formula $c_{0}$
 \end_inset
 
- равное еденице, а 
+ равное единице, а 
 \begin_inset Formula $c_{1}$
 \end_inset
 
  равное нулю.
- Это обзачает что 
+ Это обозначает что 
 \begin_inset Formula $y\left(0\right)=1$
 \end_inset
 
@@ -9662,7 +9675,7 @@ y_{1}\left(x\right)=\ous{m=0}{\b}\df{\left(-1\right)^{m}x^{3m}}{3m\left(3m-1\rig
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -9683,9 +9696,6 @@ y_{1}\left(x\right)=\ous{m=0}{\b}\df{\left(-1\right)^{m}x^{3m}}{3m\left(3m-1\rig
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 y_{2}\left(x\right)=\df{\left(-1\right)^{m}x^{3m+1}}{\left(3m+1\right)3m\left(3m-2\right)\left(3m-3\right)\tr4\um3}\label{eq:hh4}
@@ -9732,7 +9742,7 @@ reference "eq:hh2"
 \begin_inset Formula $y_{2}$
 \end_inset
 
-, опредлеляемы е равенствами (
+, определяемые равенствами (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:hh3"
@@ -9746,8 +9756,8 @@ reference "eq:hh4"
 
 \end_inset
 
-) лимнейн6о не зависимы (доказывается по определителю Вронского).
- А тогда общим рещшение урпавнения (
+) линейно независимы (доказывается построением определителя Вронского).
+ А тогда общим решением уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:hh2"
@@ -9766,8 +9776,12 @@ reference "eq:hh2"
 \end_layout
 
 \begin_layout Claim
-Если в линейном неоднородном уравнениии 
-\begin_inset Formula $y\ppr+a_{1}\left(x\right)y\pr\left(x\right)+a_{2}\left(x\right)y=f\left(x\right),$
+Если в линейном неоднородном уравнении 
+\begin_inset Formula 
+\[
+y\ppr+a_{1}\left(x\right)y\pr\left(x\right)+a_{2}\left(x\right)y=f\left(x\right)
+\]
+
 \end_inset
 
  где 
@@ -9778,8 +9792,8 @@ reference "eq:hh2"
 \begin_inset Formula $x_{0}$
 \end_inset
 
-, то его общее решение может быть получено методом неопределенных коофицентов,
- аналогично тому, как эхто делалось для уравнениия (
+, то его общее решение может быть получено методом неопределенных коэффициентов,
+ аналогично тому, как это делалось для уравнения (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:hh2"
@@ -9790,11 +9804,11 @@ reference "eq:hh2"
 \end_layout
 
 \begin_layout Subsection
-Зависимость решений от начальных значений и паратров
+Зависимость решений от начальных значений и параметров
 \end_layout
 
 \begin_layout Standard
-Рассмотрим задачу Коши для одного джифференциального уравнения:
+Рассмотрим задачу Коши для одного дифференциального уравнения:
 \end_layout
 
 \begin_layout Standard
@@ -9829,12 +9843,12 @@ y\left(x_{0}\right)=y_{0}
 \begin_inset Formula $y_{0}$
 \end_inset
 
- решение изменялось маленько не сильно.
+ решение изменялось не сильно.
 \end_layout
 
 \begin_layout Standard
 Заметим, что изучение зависимости решения дифференциального уравнения от
- начальных данных можно свести к изучению зависимости решения диференциального
+ начальных данных можно свести к изучению зависимости решения дифференциального
  уравнения, от параметров, входящих в правую часть.
 \end_layout
 
@@ -9856,7 +9870,7 @@ y\left(x_{0}\right)=y_{0}
 \end_inset
 
 .
- Торгда начальным значением 
+ Тогда начальным значением 
 \begin_inset Formula $x=x_{0}$
 \end_inset
 
@@ -9864,7 +9878,7 @@ y\left(x_{0}\right)=y_{0}
 \begin_inset Formula $y=y_{0}$
 \end_inset
 
- будут соотвествовать значения 
+ будут соответствовать значения 
 \begin_inset Formula $t=0$
 \end_inset
 
@@ -9873,23 +9887,22 @@ y\left(x_{0}\right)=y_{0}
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+z\left(t\right)=y\left(x_{0}+t,x_{0},y_{0}\right)-y_{0}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $z\left(t\right)=y\left(x_{0}+t,x_{0},y_{0}\right)-y_{0}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{dy}{dx}=\df{dz}{dt},\ \df{dt}{dx}=\df{dz}{dt}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{dy}{dx}=\df{dz}{dt},\ \df{dt}{dx}=\df{dz}{dt}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -9904,20 +9917,23 @@ z\left(0\right)=0
 \end_layout
 
 \begin_layout Standard
-Справедливо и обратное: иучение зависимости решения дифференциальногоь уравнения
+Справедливо и обратное: изучение зависимости решения дифференциального уравнения
  от параметров в правой части можно свести к изучению решения дифференциального
  уравнения от начальных условий.
 \end_layout
 
 \begin_layout Standard
 Ну действительно, пусть: 
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{dy}{dx}=f\left(x,y,\mu\right)\\
 y\left(x_{0}\right)=y_{0}
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
- .
  Нам интересно, как от параметра 
 \begin_inset Formula $\mu$
 \end_inset
@@ -9957,19 +9973,23 @@ y\left(x_{0}\right)=y_{0}
 \end_inset
 
 , если 
-\begin_inset Formula $\forall\left(x_{1}\tr x_{n},z_{1}\tr z_{m}\right),\,\left(y_{1}\tr y_{n},\, z_{1}\tr z_{m}\right)\in G$
+\begin_inset Formula $\forall\left(x_{1}\tr x_{n},z_{1}\tr z_{m}\right),\ \left(y_{1}\tr y_{n},\, z_{1}\tr z_{m}\right)\in G$
 \end_inset
 
-, пренадлежит 
+, принадлежит 
 \begin_inset Formula $G$
 \end_inset
 
- и весь отрезок прямой, соединяющей эти точки.
- тоесть пренаднежат точки 
-\begin_inset Formula $\left(x_{1}+\alpha\left(y_{1}-x_{1}\right),\tr,x_{n}+\alpha\left(y_{n}-x_{n}\right),z_{1},\tr z_{n}\right)\in G,\ \forall\alpha\in\left[0;1\right]$
+ и весь отрезок прямой, соединяющей эти точки, то есть принадлежат точки:
+ 
+\begin_inset Formula 
+\[
+\left(x_{1}+\alpha\left(y_{1}-x_{1}\right),\tr,x_{n}+\alpha\left(y_{n}-x_{n}\right),z_{1},\tr z_{n}\right)\in G,\ \forall\alpha\in\left[0;1\right]
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Lemma
@@ -10011,16 +10031,19 @@ status open
 \end_inset
 
 .
- Тогда найдутс 
+ Тогда найдутся 
 \begin_inset Formula $n$
 \end_inset
 
  функций 
-\begin_inset Formula $\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right),\ i=\overline{1,n}$
+\begin_inset Formula 
+\[
+\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right),\ i=\overline{1,n}
+\]
+
 \end_inset
 
-.
- Имеющие непрерывные производнеые по 
+ имеющие непрерывные производные по 
 \begin_inset Formula $x_{1},\tr x_{n},y_{1},\tr,y_{n}$
 \end_inset
 
@@ -10028,37 +10051,32 @@ status open
 \begin_inset Formula $p-1$
 \end_inset
 
- го порядка, то справедливо равенство:
-\end_layout
+ го порядка, для которых справедливо равенство:
+\begin_inset Formula 
+\[
+F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n}z_{1},\tr,z_{m}\right)=\ous{i=1}n\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)\left(y_{i}-x_{i}\right)
+\]
 
-\begin_layout Lemma
-\begin_inset Formula $F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n}z_{1},\tr,z_{m}\right)=\ous{i=1}n\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)\left(y_{i}-x_{i}\right)$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Proof
-Верно равненство 
-\end_layout
+Верно равенство 
+\begin_inset Formula 
+\[
+F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $F\left(y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)-F\left(x_{1},\tr,x_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 Это аналог 
 \begin_inset Formula $y\left(b\right)-y\left(a\right)=\oui ab\df{dy}{dt}dt$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Обозначим 
+.
+ Обозначим 
 \begin_inset Formula $\xi_{i}=x_{i}+t\left(y_{i}-x_{i}\right)$
 \end_inset
 
@@ -10070,24 +10088,24 @@ status open
 \end_layout
 
 \begin_layout Proof
-Тогда по правилу дифференцирования сложной функции получим, что 
-\begin_inset Formula $\df{dF}{dt}=\ous{i=1}n\df{\dd F}{\dd\xi_{i}}\um\df{\dd\xi_{i}}{\dd t}=\ous{i=1}n\df{\dd F}{\dd\xi_{i}}\left(y_{i}-x_{i}\right)$
-\end_inset
+Тогда по правилу дифференцирования сложной функции получим, что: 
+\begin_inset Formula 
+\[
+\df{dF}{dt}=\ous{i=1}n\df{\dd F}{\dd\xi_{i}}\um\df{\dd\xi_{i}}{\dd t}=\ous{i=1}n\df{\dd F}{\dd\xi_{i}}\left(y_{i}-x_{i}\right)
+\]
 
-.
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}=\ous{i=1}n\oui 01\df{\dd F}{\dd\xi_{i}}dt\left(y_{i}-x_{i}\right)$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\oui 01\df{dF\left(x_{1}+t\left(y_{1}-x_{1}\right),\tr,x_{n}+t\left(y_{n}-x_{n}\right),z_{1},\tr,z_{m}\right)}{dt}=\ous{i=1}n\oui 01\df{\dd F}{\dd\xi_{i}}dt\left(y_{i}-x_{i}\right)
+\]
 
-\begin_layout Proof
+\end_inset
+
 Обозначим через 
-\begin_inset Formula $\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{\dd F}{\dd\xi_{i}}dt,\ i=\overline{1,n}$
+\begin_inset Formula $\varphi_{i}\left(x_{1},\tr,x_{n},y_{1},\tr,y_{n},z_{1},\tr,z_{m}\right)=\oui 01\df{\dd F}{\dd\xi_{i}}dt,\quad i=\overline{1,n}$
 \end_inset
 
 
@@ -10098,24 +10116,23 @@ status open
 \begin_inset Formula $\varphi_{i}$
 \end_inset
 
- удовлетворяют условиям леммы, тоесть функции 
+ удовлетворяют условиям леммы, то есть функции 
 \begin_inset Formula $\varphi_{i}$
 \end_inset
 
  будут иметь непрерывные производные до 
-\begin_inset Formula $\left(p-1\right)-$
+\begin_inset Formula $\left(p-1\right)$
 \end_inset
 
-го порядка по переменным 
+-го порядка по переменным 
 \begin_inset Formula $\left(x_{1},\tr x_{n}\right),\,\left(y_{1},\tr,y_{n}\right)$
 \end_inset
 
 .
- Чтд.
 \end_layout
 
 \begin_layout Standard
-Рассмотрим диференциальное уравнение 
+Рассмотрим дифференциальное уравнение 
 \begin_inset Formula $\begin{cases}
 \df{dy}{dx}=f\left(x,y,\mu_{1},\tr,\mu_{n}\right)\\
 y\left(x_{0}\right)=y_{0}
@@ -10137,10 +10154,14 @@ y\left(x_{0}\right)=y_{0}
 
 .
  
-\begin_inset Formula $G\left\{ \left(x,y,\mu_{1},\tr,\mu_{n}\right)|\left(x,y\right)\in\overline{G_{xy}},\,\left|\mu_{i}\right|<\mu_{i}^{\left(0\right)}\right\} ,\,\mu_{i}^{\left(0\right)}>0,\ i=\overline{1,n}$
+\begin_inset Formula 
+\[
+G\left\{ \left(x,y,\mu_{1},\tr,\mu_{n}\right)|\left(x,y\right)\in\overline{G_{xy}},\,\left|\mu_{i}\right|<\mu_{i}^{\left(0\right)}\right\} ,\,\mu_{i}^{\left(0\right)}>0,\ i=\overline{1,n}
+\]
+
 \end_inset
 
- .
+
 \end_layout
 
 \begin_layout Theorem
@@ -10162,7 +10183,7 @@ status open
 \emph on
 (О непрерывности)
 \emph default
- Если функця 
+ Если функция 
 \begin_inset Formula $f\left(x,y,\mu_{1},\tr,\mu_{n}\right)$
 \end_inset
 
@@ -10171,7 +10192,7 @@ status open
 \end_inset
 
  по совокупности всех своих аргументов, ограничена, и удовлетворяет в этой
- обьласти 
+ области 
 \begin_inset Formula $\overline{G}$
 \end_inset
 
@@ -10179,16 +10200,20 @@ status open
 \begin_inset Formula $y$
 \end_inset
 
-, тоесть 
-\begin_inset Formula $\left|f\left(x,y_{2},\mu_{1},\tr,\mu_{n}\right)-f\left(x,y_{1},\mu_{1},\tr,\mu_{n}\right)\right|\mr K\left|y_{2}-y_{1}\right|$
+, то есть 
+\begin_inset Formula 
+\[
+\left|f\left(x,y_{2},\mu_{1},\tr,\mu_{n}\right)-f\left(x,y_{1},\mu_{1},\tr,\mu_{n}\right)\right|\mr K\left|y_{2}-y_{1}\right|
+\]
+
 \end_inset
 
-, где 
+где 
 \begin_inset Formula $K$
 \end_inset
 
- не зависиь от 
-\begin_inset Formula $x,y,\mu_{i},\, iu=\overline{1,n}$
+ не зависит от 
+\begin_inset Formula $x,y,\mu_{i},\ iu=\overline{1,n}$
 \end_inset
 
 .
@@ -10209,7 +10234,7 @@ status open
 \end_inset
 
  внутри, на котором существует решение задачи Коши (1), непрерывное по совокупно
-сти пееменных 
+сти переменных 
 \begin_inset Formula $\left(x,\mu_{1},\tr,\mu_{n}\right)$
 \end_inset
 
@@ -10219,17 +10244,17 @@ status open
 \begin_layout Enumerate
 
 \emph on
-(Диференцируемости) 
+(Дифференцируемости) 
 \emph default
 Если 
 \begin_inset Formula $f$
 \end_inset
 
  и её производные до 
-\begin_inset Formula $p-$
+\begin_inset Formula $p$
 \end_inset
 
-го порядка по 
+-го порядка по 
 \begin_inset Formula $y$
 \end_inset
 
@@ -10253,7 +10278,7 @@ status open
 \begin_inset Formula $\mu_{i}$
 \end_inset
 
- непрерывные по совокупности переменных производные также до 
+ непрерывные по совокупности переменных производные так-же до 
 \begin_inset Formula $p$
 \end_inset
 
@@ -10270,7 +10295,7 @@ status open
 \begin_inset Formula $\left[a;b\right]$
 \end_inset
 
- --- обрезок из пункта 1.
+ --- орезок из пункта 1.
 \end_layout
 
 \end_deeper
@@ -10317,27 +10342,15 @@ y\left(x_{0}\right)=y_{0}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\varphi_{1}\left(x,\mu\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{0}\left(\xi\right),\mu\right)d\xi$
+\begin_inset Formula 
+\begin{align*}
+\varphi_{1}\left(x,\mu\right) & =y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{0}\left(\xi\right),\mu\right)d\xi\\
+ & \tr\\
+\varphi_{k+1}\left(x,\mu\right) & =y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{k}\left(\xi\right),\mu\right)d\xi
+\end{align*}
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\tr$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\varphi_{k+1}\left(x,\mu\right)=y_{0}+\oui{x_{0}}xf\left(\xi,\varphi_{k}\left(\xi\right),\mu\right)d\xi$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Где 
 \begin_inset Formula $\varphi_{0}\left(\xi\right)$
 \end_inset
@@ -10350,21 +10363,21 @@ y\left(x_{0}\right)=y_{0}
 \end_layout
 
 \begin_layout Standard
-Потом все делаем методом последовательных прибличений.
+Потом все делаем методом последовательных приближений.
 \end_layout
 
 \begin_layout Standard
-А тогда по теореме о существовании и единственности Перара у задачи Коши
+А тогда по теореме о существовании и единственности Пикара у задачи Коши
  будет существовать решение на отрезке 
 \begin_inset Formula $\left[a,b\right]$
 \end_inset
 
 .
- Вод это отрезок 
+ Вот это отрезок 
 \begin_inset Formula $\left[a;b\right]$
 \end_inset
 
- возьмем для дальнейшихрассмотрений.
+ возьмем для дальнейших рассмотрений.
  У нас по условию ограничено, тогда найдется 
 \begin_inset Formula $M$
 \end_inset
@@ -10374,20 +10387,28 @@ y\left(x_{0}\right)=y_{0}
 \end_inset
 
 .
- Ну а тошда точно также рассмиатриваем ряд ь
-\begin_inset Formula $\varphi_{0}+\left(\varphi_{1}-\varphi_{0}\right)+\tr+\left(\varphi_{k+1}-\varphi_{k}\right)+\tr$
+ Ну а тогда точно также рассматриваем ряд 
+\begin_inset Formula 
+\[
+\varphi_{0}+\left(\varphi_{1}-\varphi_{0}\right)+\tr+\left(\varphi_{k+1}-\varphi_{k}\right)+\tr
+\]
+
 \end_inset
 
- и получаем оценку 
-\begin_inset Formula $\left|\varphi_{k+1}-\varphi_{k}\right|\mr\df{2CK^{k-1}x^{k-1}}{\left(k-1\right)!}$
+и получаем оценку 
+\begin_inset Formula 
+\[
+\left|\varphi_{k+1}-\varphi_{k}\right|\mr\df{2CK^{k-1}x^{k-1}}{\left(k-1\right)!}
+\]
+
 \end_inset
 
- --- эта оценка равномерная по 
+Эта оценка равномерная по 
 \begin_inset Formula $\mu$
 \end_inset
 
 .
- Следовательно соответствуюший ряд будет сходиться равномерно по 
+ Следовательно соответствующий ряд будет сходиться равномерно по 
 \begin_inset Formula $x$
 \end_inset
 
@@ -10445,22 +10466,12 @@ y\left(x_{0}\right)=y_{0}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\df{d\varphi\left(x,\mu+\D\mu\right)}{dx}=f\left(x,\varphi\left(x,\mu+\D\mu\right),\mu+\D\mu\right)$
-\end_inset
+\begin_inset Formula 
+\begin{flalign*}
+\df{d\varphi\left(x,\mu+\D\mu\right)}{dx} & =f\left(x,\varphi\left(x,\mu+\D\mu\right),\mu+\D\mu\right) & \varphi\left(x_{0},\mu+\D\mu\right) & =y_{0}\\
+\df{d\varphi\left(x,\mu\right)}{dx} & =f\left(x,\varphi\left(x,\mu\right),\mu\right) & \varphi\left(x_{0},\mu\right) & =y_{0}
+\end{flalign*}
 
- и 
-\begin_inset Formula $\varphi\left(x_{0},\mu+\D\mu\right)=y_{0}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\df{d\varphi\left(x,\mu\right)}{dx}=f\left(x,\varphi\left(x,\mu\right),\mu\right)$
-\end_inset
-
- и 
-\begin_inset Formula $\varphi\left(x_{0},\mu\right)=y_{0}$
 \end_inset
 
 
@@ -10468,24 +10479,27 @@ y\left(x_{0}\right)=y_{0}
 
 \begin_layout Standard
 Вычтем их верхнего равенства нижнее, тогда мы можем записать:
-\end_layout
+\begin_inset Formula 
+\[
+\df{d\left(\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)\right)}{dx}=f\left(x,\varphi\left(x,\mu+\D\mu\right),\mu+\D\mu\right)-f\left(x,\varphi\left(x,\mu\right),\mu\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{d\left(\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)\right)}{dx}=f\left(x,\varphi\left(x,\mu+\D\mu\right),\mu+\D\mu\right)-f\left(x,\varphi\left(x,\mu\right),\mu\right)$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)=0
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)=0$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\D\varphi=\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\D\varphi=\varphi\left(x,\mu+\D\mu\right)-\varphi\left(x,\mu\right)$
 \end_inset
 
  
@@ -10493,10 +10507,11 @@ y\left(x_{0}\right)=y_{0}
 
 \begin_layout Standard
 Применим к правой части равенства лемму Адамара, получим:
-\end_layout
+\begin_inset Formula 
+\[
+\df{d\varphi}{dx}=\D\varphi\um\Phi_{1}+\D\mu\um\Phi_{2}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{d\varphi}{dx}=\D\varphi\um\Phi_{1}+\D\mu\um\Phi_{2}$
 \end_inset
 
 
@@ -10507,42 +10522,23 @@ y\left(x_{0}\right)=y_{0}
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\begin{align*}
+\Phi_{1}\left(x,\varphi\left(x,\mu+\D\mu\right),\varphi\left(x,\mu\right),\mu+\D\mu,\mu\right) & =\oui 01\df{\dd f\left(x,\varphi\left(x,\mu\right)+t\D\mu\right)}{\dd\left(\varphi\left(x,\mu\right)+t\D\varphi\right)}dt\\
+\Phi_{2}\left(x,\varphi\left(x,\mu+\D\mu\right),\varphi\left(x,\mu\right),\mu+\D\mu,\mu\right) & =\oui 01\df{\dd f\left(x,\varphi\left(x,\mu\right)+t\D\mu,\mu+t\D\mu\right)}{\dd\left(\mu+t\D\mu\right)}dt
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\Phi_{1}\left(x,\varphi\left(x,\mu+\D\mu\right),\varphi\left(x,\mu\right),\mu+\D\mu,\mu\right)=$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\oui 01\df{\dd f\left(x,\varphi\left(x,\mu\right)+t\D\mu\right)}{\dd\left(\varphi\left(x,\mu\right)+t\D\varphi\right)}dt$
-\end_inset
-
-
+В силу леммы Адамара эти функции непрерывны по совокупности своих переменных.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Phi_{2}\left(x,\varphi\left(x,\mu+\D\mu\right),\varphi\left(x,\mu\right),\mu+\D\mu,\mu\right)=$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $=\oui 01\df{\dd f\left(x,\varphi\left(x,\mu\right)+t\D\mu,\mu+t\D\mu\right)}{\dd\left(\mu+t\D\mu\right)}dt$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-В силу лемма Адамара эти функции непрерывны по совокупности своих переменных.
-\end_layout
-
-\begin_layout Standard
-В силу пункта 1го доказываемой теоремы, функция 
+В силу пункта 1-го доказываемой теоремы, функция 
 \begin_inset Formula $\varphi\left(x,\mu\right)$
 \end_inset
 
@@ -10643,21 +10639,18 @@ y\left(x_{0}\right)=y_{0}
 \begin_inset Formula $\Phi_{2}\left(x,\D\mu\right)$
 \end_inset
 
- зависят от таких переменных,тоесть получим что тоо типа этого:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{cases}
+ зависят от таких переменных, то есть получим что--то типа этого:
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{d\psi\left(x,\D\mu\right)}{dx}=\psi\left(x,\D\mu\right)\Phi_{1}+\Phi_{2}\\
 \psi\left(x,\D\mu\right)=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Условия пункта 1го выполнены для этой задачи Коши.
+Условия пункта 1-го выполнены для этой задачи Коши.
 \end_layout
 
 \begin_layout Standard
@@ -10665,7 +10658,7 @@ y\left(x_{0}\right)=y_{0}
 \begin_inset Formula $\psi\left(x,\D\mu\right)$
 \end_inset
 
- (тоесть 
+ (то есть 
 \begin_inset Formula $\df{\D\varphi}{\D\mu}$
 \end_inset
 
@@ -10694,22 +10687,23 @@ y\left(x_{0}\right)=y_{0}
 \end_layout
 
 \begin_layout Standard
-Теперь и положим
-\end_layout
+Теперь и положим:
+\begin_inset Formula 
+\[
+\ul{\D\mu\st0}\df{\D\varphi}{\D\mu}=\df{\dd\varphi\left(x,\mu\right)}{\dd\mu}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\ul{\D\mu\st0}\df{\D\varphi}{\D\mu}=\df{\dd\varphi\left(x,\mu\right)}{\dd\mu}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Тоесть 
+То есть 
 \begin_inset Formula $\varphi$
 \end_inset
 
- дифиренцираема по 
+ дифференцируема по 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -10725,7 +10719,7 @@ y\left(x_{0}\right)=y_{0}
 \begin_inset Formula $\D\mu\st0$
 \end_inset
 
- : 
+: 
 \begin_inset Formula $\D\varphi\st0$
 \end_inset
 
@@ -10752,9 +10746,6 @@ y\left(x_{0}\right)=y_{0}
 \end_inset
 
 , получим:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
@@ -10765,26 +10756,22 @@ y\left(x_{0}\right)=y_{0}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Тоесть мы доказалисуществование производной, и 
+То есть мы доказали существование производной, и 
 \begin_inset Formula $\df{\dd\varphi\left(x,\mu\right)}{\dd\mu}$
 \end_inset
 
- является рещшением задачи (6).
- Заметим, что для дифференциального уравнения выполнены условия пункта 1го
- длоказываетмой теоремы.
+ является решением задачи (6).
+ Заметим, что для дифференциального уравнения выполнены условия пункта 1-го
+ доказываемой теоремы.
 \end_layout
 
 \begin_layout Standard
-Тоесть теорема доказана, при 
+То есть теорема доказана, при 
 \begin_inset Formula $p=1$
 \end_inset
 
 .
- Если теперь ффункция 
+ Если теперь функция 
 \begin_inset Formula $f$
 \end_inset
 
@@ -10804,7 +10791,7 @@ y\left(x_{0}\right)=y_{0}
 \begin_inset Formula $p\br2$
 \end_inset
 
-, то применяя к уравнению (6) теже рассуждения, чтто и для уравнения (1)
+, то применяя к уравнению (6) те же рассуждения, что и для уравнения (1)
  и взяв в качестве 
 \begin_inset Formula $\df{\dd\varphi}{\dd\mu}$
 \end_inset
@@ -10844,7 +10831,7 @@ y\left(x_{0}\right)=y_{0}
 \end_layout
 
 \begin_layout Standard
-Рассмотрим
+Рассмотрим:
 \end_layout
 
 \begin_layout Standard
@@ -10882,7 +10869,7 @@ y\left(x_{0}=y_{0}\right)
 \begin_inset Formula $y$
 \end_inset
 
- непрерыные производные до 
+ непрерывные производные до 
 \begin_inset Formula $p$
 \end_inset
 
@@ -10898,11 +10885,11 @@ y\left(x_{0}=y_{0}\right)
 \begin_inset Formula $y_{0}$
 \end_inset
 
- так-же до 
-\begin_inset Formula $p-$
+ так же до 
+\begin_inset Formula $p$
 \end_inset
 
-го порядка, 
+-го порядка, 
 \begin_inset Formula $p\br1$
 \end_inset
 
@@ -10914,10 +10901,14 @@ y\left(x_{0}=y_{0}\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{dz}{dt}=f\left(t+x_{0},z+y_{0}\right)\\
 z\left(0\right)=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
@@ -10931,17 +10922,22 @@ z\left(0\right)=0
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df d{dx}\left(\df{\dd y}{\dd y_{0}}\right)=\df{\dd f}{\dd y}\df{\dd y}{\dd y_{0}}\\
 \df{\dd y}{\dd y_{0}}\left(x_{0}\right)=1
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df d{dx}\left(\df{\dd y}{\dd x_{0}}\right)=\df{\dd f}{\dd y}\df{\dd y}{\dd x_{0}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df d{dx}\left(\df{\dd y}{\dd x_{0}}\right)=\df{\dd f}{\dd y}\df{\dd y}{\dd x_{0}}$
 \end_inset
 
 
@@ -10949,23 +10945,25 @@ z\left(0\right)=0
 
 \begin_layout Standard
 Для того чтобы получить начальные условия для этого уравнения нужно задачу
- (7) заменить эквивалентным интегральным уравнением и продереренцириуем
- это равненство по 
+ (7) заменить эквивалентным интегральным уравнением и продифференцируем
+ это равенство по 
 \begin_inset Formula $x_{0}$
 \end_inset
 
 :
-\end_layout
+\begin_inset Formula 
+\[
+y\left(x,x_{0},y_{0}\right)=y_{0}+f\left(\xi,y\left(\xi,x_{0},y_{0}\right)\right)d\xi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $y\left(x,x_{0},y_{0}\right)=y_{0}+f\left(\xi,y\left(\xi,x_{0},y_{0}\right)\right)d\xi$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+V\left(x\right)=\oui{\varphi_{1}\left(x\right)}{\varphi_{2}\left(x\right)}U\left(\xi,x\right)d\xi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $V\left(x\right)=\oui{\varphi_{1}\left(x\right)}{\varphi_{2}\left(x\right)}U\left(\xi,x\right)d\xi$
 \end_inset
 
 
@@ -10976,7 +10974,7 @@ z\left(0\right)=0
 \begin_inset Formula $U,\,\varphi_{1},\,\varphi_{2}$
 \end_inset
 
- диференцируемы пло 
+ дифференцируемы по 
 \begin_inset Formula $x$
 \end_inset
 
@@ -10984,32 +10982,31 @@ z\left(0\right)=0
 \begin_inset Formula $V$
 \end_inset
 
- также диференцируема по 
+ также дифференцируема по 
 \begin_inset Formula $x$
 \end_inset
 
 , и
-\end_layout
+\begin_inset Formula 
+\[
+\df{dV}{dx}=U\left(\varphi_{2}\left(x\right),x\right)\um\df{d\varphi_{2}}{dx}-U\left(\varphi_{1}\left(x\right),x\right)\df{d\varphi_{2}}{dx}+\oui{\varphi_{1}\left(x\right)}{\varphi_{2}\left(x\right)}\df{dU\left(\xi,x\right)}{dx}d\xi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{dV}{dx}=U\left(\varphi_{2}\left(x\right),x\right)\um\df{d\varphi_{2}}{dx}-U\left(\varphi_{1}\left(x\right),x\right)\df{d\varphi_{2}}{dx}+\oui{\varphi_{1}\left(x\right)}{\varphi_{2}\left(x\right)}\df{dU\left(\xi,x\right)}{dx}d\xi$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{\dd y\left(x,x_{0},y_{0}\right)}{\dd x_{0}}=-f\left(x_{0},y\left(x_{0},x_{0},y_{0}\right)\right)+\oui{x_{0}}x\df{\dd f}{\dd y}\df{\dd y}{\dd x_{0}}d\xi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{\dd y\left(x,x_{0},y_{0}\right)}{\dd x_{0}}=-f\left(x_{0},y\left(x_{0},x_{0},y_{0}\right)\right)+\oui{x_{0}}x\df{\dd f}{\dd y}\df{\dd y}{\dd x_{0}}d\xi$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\df{\dd y}{\dd x_{0}}\left(x_{0}\right)=-f\left(x_{0},y_{0}\right)$
 \end_inset
 
- --- вод это начальное условие для нашего диференциального уравнения.
+ --- это начальное условие для нашего дифференциального уравнения.
 \end_layout
 
 \begin_layout Subsection
