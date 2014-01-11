@@ -7330,17 +7330,11 @@ P\left(\lambda_{1}\right)=\df{dP\left(\lambda_{1}\right)}{d\lambda}=\tr=\dif d{k
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+Где 
 \begin_inset Formula $\dif dk{P\left(\lambda_{1}\right)}{\lambda}\nr0$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 L\left(e^{\lambda x}\right)\equiv P\left(\lambda\right)e^{\lambda x}\label{eq:t10.1}
@@ -7352,7 +7346,7 @@ L\left(e^{\lambda x}\right)\equiv P\left(\lambda\right)e^{\lambda x}\label{eq:t1
 \end_layout
 
 \begin_layout Standard
-Продеферинцируем это тождество 
+Продифференцируем это тождество 
 \begin_inset Formula $m$
 \end_inset
 
@@ -7364,21 +7358,19 @@ L\left(e^{\lambda x}\right)\equiv P\left(\lambda\right)e^{\lambda x}\label{eq:t1
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dif{\dd}m{}{\lambda}\left(L\left(e^{\lambda x}\right)\right)\equiv\dif{\dd}m{}{\lambda}\left(P\left(\lambda\right)e^{\lambda x}\right)$
+\begin_inset Formula 
+\begin{align*}
+\dif{\dd}m{}{\lambda}\left(L\left(e^{\lambda x}\right)\right) & \equiv\dif{\dd}m{}{\lambda}\left(P\left(\lambda\right)e^{\lambda x}\right)\\
+\dif{\dd}m{}{\lambda}\left(L\left(e^{\lambda x}\right)\right) & =L\left(\dif{\dd}m{}{\lambda}e^{\lambda x}\right)=L\left(x^{m}e^{\lambda x}\right)
+\end{align*}
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dif{\dd}m{}{\lambda}\left(L\left(e^{\lambda x}\right)\right)=L\left(\dif{\dd}m{}{\lambda}e^{\lambda x}\right)=L\left(x^{m}e^{\lambda x}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Воспользуемся формулой Лейбница по дифиренцировании произведения.
+Воспользуемся формулой Лейбница по дифференцированию произведения.
 \end_layout
 
 \begin_layout Standard
@@ -7388,25 +7380,26 @@ L\left(e^{\lambda x}\right)\equiv P\left(\lambda\right)e^{\lambda x}\label{eq:t1
 
 .
  Тогда 
-\begin_inset Formula $\dif dm{\left(u\left(\lambda\right)v\left(\lambda\right)\right)}{\lambda}=\ous{j=0}mC_{m}^{j}\dif dju{\lambda}\um\dif d{m-j}v{\lambda}$
+\begin_inset Formula 
+\[
+\dif dm{\left(u\left(\lambda\right)v\left(\lambda\right)\right)}{\lambda}=\ous{j=0}mC_{m}^{j}\dif dju{\lambda}\um\dif d{m-j}v{\lambda}
+\]
+
 \end_inset
 
-.
- При этом 
+При этом 
 \begin_inset Formula $C_{m}^{0}=1$
 \end_inset
 
- и 0я производная от функции это сама функция.
-\end_layout
+ и нулевая производная от функции --- это сама функция.
+\begin_inset Formula 
+\[
+\dif{\dd}m{\left(P\left(\lambda\right)e^{\lambda x}\right)}{\lambda}=\ous{j=0}mC_{m}^{j}\dif dj{P\left(\lambda\right)}{\lambda}\um x^{m-j}e^{\lambda x}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\dif{\dd}m{\left(P\left(\lambda\right)e^{\lambda x}\right)}{\lambda}=\ous{j=0}mC_{m}^{j}\dif dj{P\left(\lambda\right)}{\lambda}\um x^{m-j}e^{\lambda x}$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 L\left(x^{m}e^{\lambda x}\right)\equiv\ous{j=0}mC_{m}^{j}\dif dj{P\left(\lambda\right)}{\lambda}\um x^{m-j}e^{\lambda x}\label{eq:t10.2}
@@ -7458,13 +7451,13 @@ reference "eq:t9"
 
  решений уравнения (4).
  По лемме они линейно независимы.
- Тоесть образуют фундаментальную систему решений.
- А общим решением будет линейная коибинация решений системы с произвольными
+ То есть образуют фундаментальную систему решений.
+ А общим решением будет линейная комбинация решений системы с произвольными
  постоянными.
 \end_layout
 
 \begin_layout Standard
-Пусть коофиценты уравнения (4) 
+Пусть коэффициенты уравнения (4) 
 \begin_inset Formula $a_{i}$
 \end_inset
 
@@ -7482,33 +7475,37 @@ reference "eq:t9"
 \begin_inset Formula $k$
 \end_inset
 
--кратное характеристическое число уравнения (4).
+--кратное характеристическое число уравнения (4).
  Тогда 
 \begin_inset Formula $\overline{\lambda}=a-bi$
 \end_inset
 
- --- комплексно-сопряженное тоже будет 
+ --- комплексно--сопряженное тоже будет 
 \begin_inset Formula $k$
 \end_inset
 
--кратным характеристическим числом.
+--кратным характеристическим числом.
  В силу показанного выше, функции 
-\begin_inset Formula $e^{\left(a+bi\right)x},xe^{\left(a+bi\right)x},\tr,x^{k-1}e^{\left(a+bi\right)x}$
+\begin_inset Formula 
+\[
+e^{\left(a+bi\right)x},\quad xe^{\left(a+bi\right)x},\quad\tr,\quad x^{k-1}e^{\left(a+bi\right)x}
+\]
+
 \end_inset
 
- будут решениями уравнения (4).
+будут решениями уравнения (4).
  Их вещественные и мнимые части 
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{c}
-e^{ax}\cos bx,xe^{ax}\cos bx,\tr,x^{k-1}e^{ax}\cos bx\\
-e^{ax}\sin bx,xe^{ax}\sin bx,\tr,x^{k-1}e^{ax}\sin bx
+e^{ax}\cos bx,\quad xe^{ax}\cos bx,\quad\tr,\quad x^{k-1}e^{ax}\cos bx\\
+e^{ax}\sin bx,\quad xe^{ax}\sin bx,\quad\tr,\quad x^{k-1}e^{ax}\sin bx
 \end{array}\label{eq:t12}
 \end{equation}
 
 \end_inset
 
- будут решениями уравнения (4).
+будут решениями уравнения (4).
  Функции (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7516,7 +7513,7 @@ reference "eq:t12"
 
 \end_inset
 
-) линейно не зависимы (доказывается от противного, предпологая противное,
+) линейно не зависимы (доказывается от противного, предполагая противное,
  и заменяя 
 \begin_inset Formula $\cos bx=\df{e^{iibx}+e^{-ibx}}2$
 \end_inset
@@ -7532,16 +7529,16 @@ reference "eq:t12"
 
 \end_inset
 
-) мы получилибы, что були бы линейно зависимыми функциии 
+) мы получили бы, что были бы линейно зависимыми функции 
 \begin_inset Formula $x^{l}e^{\lambda_{j}x}$
 \end_inset
 
 , что является противоречием).
- Kомплексно сопряженное характеристическое число 
+ Комплексно--сопряженное характеристическое число 
 \begin_inset Formula $a-bi$
 \end_inset
 
- не пораждает новых, линейно независимых с (
+ не порождает новых, линейно независимых с (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:t12"
@@ -7554,13 +7551,13 @@ reference "eq:t12"
 \end_inset
 
  вещественных решений.
- В случае уравненгия (4) с вещественными коофицентами фундаметтальная система
- решений строиться следующим образом: Каждому простому вещественному характерист
-ическиму числу 
+ В случае уравнения (4) с вещественными коэффициентами фундаментальная система
+ решений строится следующим образом: каждому простому вещественному характеристи
+ческому числу 
 \begin_inset Formula $\lambda_{1}$
 \end_inset
 
- ставим всоответствие решение 
+ ставим в соответствие решение 
 \begin_inset Formula $e^{\lambda_{1}x}$
 \end_inset
 
@@ -7569,7 +7566,8 @@ reference "eq:t12"
 \begin_inset Formula $k$
 \end_inset
 
--кратному вещественному зарактеристическому числу ставим в соотвествии 
+--кратному вещественному характеристическому числу ставим в соответствие
+ 
 \begin_inset Formula $k$
 \end_inset
 
@@ -7578,7 +7576,7 @@ reference "eq:t12"
 \begin_inset Formula $a\pm bi$
 \end_inset
 
- ставим 2 решения вида 
+ ставим в соответствие 2 решения вида 
 \begin_inset Formula $e^{ax}\cos bx$
 \end_inset
 
@@ -7590,11 +7588,11 @@ reference "eq:t12"
 \begin_inset Formula $k$
 \end_inset
 
- - кратных комплексно сопряженным характеристических числа 
+--кратных комплексно--сопряженных характеристических чисел 
 \begin_inset Formula $a\pm bi$
 \end_inset
 
- ставим с соответствие 
+ ставим в соответствие 
 \begin_inset Formula $2k$
 \end_inset
 
@@ -7612,11 +7610,11 @@ reference "eq:t12"
 
  вещественных решений уравнения (4).
  Они линейно независимы (доказывается от противного).
- Мы показали как простоить общее решения укравнения с постоянными коофицентами.
+ Мы показали как построить общие решения уравнения с постоянными коэффициентами.
 \end_layout
 
 \begin_layout Subsection
-Линейные неоднородные уравнения с постоянными коофицентами
+Линейные неоднородные уравнения с постоянными коэффициентами
 \end_layout
 
 \begin_layout Standard
