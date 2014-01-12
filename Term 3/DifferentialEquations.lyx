@@ -1149,7 +1149,7 @@ reference "1:8"
 Рассмотрим линейное однородное уравнение:
 \begin_inset Formula 
 \begin{equation}
-\df{dx}{dy}=a\left(x\right)\label{eq:9}
+\df{dy}{dx}=a\left(x\right)\label{eq:9}
 \end{equation}
 
 \end_inset
@@ -1579,7 +1579,7 @@ reference "1:14"
 Рассмотрим уравнение вида:
 \begin_inset Formula 
 \begin{equation}
-M\left(x,y\right)N\left(x,y\right)dy=0\label{Общий вид уравнения в полных дифференциалах}
+M\left(x,y\right)dx+N\left(x,y\right)dy=0\label{Общий вид уравнения в полных дифференциалах}
 \end{equation}
 
 \end_inset
