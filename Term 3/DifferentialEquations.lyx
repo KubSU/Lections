@@ -1014,7 +1014,7 @@ reference "1:1"
 
 \begin_layout Standard
 Сделаем замену: 
-\begin_inset Formula $x=\df yz$
+\begin_inset Formula $z=\df yx$
 \end_inset
 
 , тогда: 
@@ -1149,7 +1149,7 @@ reference "1:8"
 Рассмотрим линейное однородное уравнение:
 \begin_inset Formula 
 \begin{equation}
-\df{dx}{dy}=a\left(x\right)\label{eq:9}
+\df{dy}{dx}=a\left(x\right)y\label{eq:9}
 \end{equation}
 
 \end_inset
@@ -1579,7 +1579,7 @@ reference "1:14"
 Рассмотрим уравнение вида:
 \begin_inset Formula 
 \begin{equation}
-M\left(x,y\right)N\left(x,y\right)dy=0\label{Общий вид уравнения в полных дифференциалах}
+M\left(x,y\right)dx+N\left(x,y\right)dy=0\label{Общий вид уравнения в полных дифференциалах}
 \end{equation}
 
 \end_inset
@@ -2809,7 +2809,7 @@ reference "eq:th3"
  
 \begin_inset Formula 
 \[
-\left|\psi\left(x\right)-\varphi\left(x\right)\right|\mr\left|\oui{x_{0}}xk\left|\psi\left(\xi\right)-\varphi\left(\xi\right)\right|d\xi\right|\mr\left\{ \text{по лемма Грануола-Белмона}\right\} \mr0
+\left|\psi\left(x\right)-\varphi\left(x\right)\right|\mr0+\left|\oui{x_{0}}xk\left|\psi\left(\xi\right)-\varphi\left(\xi\right)\right|d\xi\right|\mr\left\{ \text{по лемме Грануолла-Белмона}\right\} \mr0
 \]
 
 \end_inset
@@ -3813,12 +3813,12 @@ status open
 
 \begin_layout Proof
 Пусть вектор функции 
-\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(m\right)}\left(x\right)$
 \end_inset
 
  --- решение линейной однородной системы.
  
-\begin_inset Formula $\df{dy}{dx}=A\left(x\right)y=0.$
+\begin_inset Formula $\df{dy}{dx}=A\left(x\right)y.$
 \end_inset
 
  Подставим в нее вектор функцию 
@@ -3859,7 +3859,7 @@ y\left(x\right)=\ous{k=1}mc_{k}y^{\left(k\right)}\left(x\right),
 
 \begin_layout Standard
 Функции 
-\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
+\begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(m\right)}\left(x\right)$
 \end_inset
 
  называются линейно зависимыми на интервале 
@@ -3945,7 +3945,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Theorem
 \begin_inset Argument
 status open
 
@@ -4000,7 +4000,7 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 
 \end_inset
 
-С помошью этих постоянных 
+С помощью этих постоянных 
 \begin_inset Formula $\alpha_{1},\tr,\alpha_{n}$
 \end_inset
 
@@ -4033,7 +4033,7 @@ u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um
 \begin_inset Formula $x_{0}$
 \end_inset
 
- он тоже равен нюлю.
+ он тоже равен нулю.
  Получилось что есть 2 вектор функции (
 \begin_inset Formula $u\left(x\right)$
 \end_inset
@@ -4042,12 +4042,12 @@ u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um
 \begin_inset Formula $y\left(x\right)$
 \end_inset
 
-), которые являются решениями и совподают в точке 
+), которые являются решениями и совпадают в точке 
 \begin_inset Formula $x_{0}$
 \end_inset
 
 .
- Ну а тогда в силу теоремы единственности они совподают.
+ Ну а тогда в силу теоремы единственности они совпадают.
  
 \begin_inset Formula 
 \[
@@ -4069,8 +4069,8 @@ u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um
 Следствие.
  
 \emph default
-Если опредлелитель Вронсткого, построеный порешениян линейной однородной
- системы (1) обращается в ноль в некоторой точке, то он тождественногй равен
+Если определитель Вронсткого, построенный по решениям линейной однородной
+ системы (1) обращается в ноль в некоторой точке, то он тождественно равен
  нулю.
 \end_layout
 
@@ -4079,9 +4079,9 @@ u\left(x\right)=\alpha_{1}\um y^{\left(1\right)}\left(x\right)+\tr+\alpha_{n}\um
 \begin_inset Formula $y^{\left(1\right)}\left(x\right),\tr,y^{\left(n\right)}\left(x\right)$
 \end_inset
 
- не являются решениями линейной однородной диференциальной системы (1) с
- неприрывными коофицентами, то утверждение, аналогичное теомере (3), для
- них не верно.
+ не являются решениями линейной однородной дифференциальной системы (1)
+ с непрерывными коэффициентами, то утверждение, аналогичное теореме (3),
+ для них не верно.
 \end_layout
 
 \begin_layout Example
@@ -4122,7 +4122,7 @@ x & x^{2}\\
 \end_inset
 
  линейно независимых решений линейной однородной системы (1) называется
- фундаментольной системой решений этой системы.
+ фундаментальной системой решений этой системы.
  
 \begin_inset Formula $n$
 \end_inset
@@ -4149,7 +4149,7 @@ status open
 \begin_inset Formula $n$
 \end_inset
 
- еденичных числовых векторов:
+ единичных числовых векторов:
 \begin_inset Formula 
 \[
 e^{\left(1\right)}=\left(\begin{array}{c}
@@ -4176,7 +4176,7 @@ e^{\left(1\right)}=\left(\begin{array}{c}
 \begin_inset Formula $n$
 \end_inset
 
- решений системы (1), а именно решений слеующих задач Коши: 
+ решений системы (1), а именно решений следующих задач Коши: 
 \begin_inset Formula $x_{0}\in\left(\alpha,\beta\right)$
 \end_inset
 
@@ -4217,7 +4217,7 @@ W\left(x_{0}\right)=\left|\begin{array}{cccc}
 
 \end_inset
 
- Следовательно эти вектор функции не могут быть линейно зввисимыми.
+ Следовательно эти вектор функции не могут быть линейно зависимыми.
  Ну а тогда они образуют фундаментальную систему решений.
 \end_layout
 
@@ -4232,7 +4232,7 @@ status open
 \end_inset
 
  Общее решение линейной однородной системы (1) --- это линейная комбинация
- с произволььными постоянными фундаментальной системы решений.
+ с произвольными постоянными фундаментальной системы решений.
 \end_layout
 
 \begin_layout Proof
@@ -4293,11 +4293,7 @@ y_{n}^{\left(n\right)}\left(x_{0}\right)
 \end_layout
 
 \begin_layout Proof
-Расмсмотрим 
-\begin_inset Formula $y\left(x_{0}\right)$
-\end_inset
-
-, тогда 
+Тогда 
 \begin_inset Formula $\left(\begin{smallmatrix}y_{1}\left(x_{0}\right)\\
 \vtr\\
 y_{n}\left(x_{0}\right)
@@ -4362,12 +4358,8 @@ reference "eq:LinComb"
 \begin_inset Formula $u\left(x_{0}\right)=y\left(x_{0}\right)$
 \end_inset
 
- в точке 
-\begin_inset Formula $x_{0}$
-\end_inset
-
 .
- Cледовательно, в силу теоремы единственности, 
+ Следовательно, в силу теоремы единственности, 
 \begin_inset Formula $u\left(x\right)\equiv y\left(x\right)$
 \end_inset
 
@@ -4425,7 +4417,7 @@ y_{n}^{\left(1\right)}\left(X\right) & \cdots & y_{n}^{\left(n\right)}\left(x\ri
 \begin_inset Formula $\ous{k=1}na_{k,k}\left(x\right)$
 \end_inset
 
- --- след матрици 
+ --- след матрицы 
 \begin_inset Formula $A$
 \end_inset
 
@@ -4681,7 +4673,7 @@ a_{n,n}\um y_{n}^{\left(1\right)} & a_{n,n}\um y_{n}^{\left(2\right)} & \tr & a_
 Y\left(x\right)=\left(\begin{array}{ccc}
 y_{1}^{\left(1\right)}\left(x\right) & \tr & y_{1}^{\left(n\right)}\left(x\right)\\
 \vtr & \ddots & \vtr\\
-y_{1}^{\left(n\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right)
+y_{n}^{\left(1\right)}\left(x\right) & \tr & y_{n}^{\left(n\right)}\left(x\right)
 \end{array}\right)
 \]
 
@@ -4916,11 +4908,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-Свойство 3Ж
-\end_layout
+\noindent
 
-\begin_layout Standard
-Пусть 
+\emph on
+Свойство 3.
+
+\emph default
+ Пусть 
 \begin_inset Formula $Y_{1}(x),Y_{2}(x)$
 \end_inset
 
@@ -5049,9 +5043,10 @@ reference "eq:ln1"
 
 ):
 \begin_inset Formula 
-\[
-\df{dy}{dx}-A(x)y=\df d{dx}(V+\phi)-A(V+\phi)=\df{dV}{dx}+\df{d\phi}{dx}-AV-A\phi=f
-\]
+\begin{multline*}
+\df{dy}{dx}-A(x)y=\df d{dx}(V+\phi)-A(x)(V+\phi)=\\
+=\df{dV}{dx}+\df{d\phi}{dx}-AV-A\phi=\underset{0}{\underbrace{\left(\df{dV}{dx}-AV\right)}}+\df{d\phi}{dx}-A\phi=f
+\end{multline*}
 
 \end_inset
 
@@ -5105,8 +5100,11 @@ reference "eq:ln1"
 \end_layout
 
 \begin_layout Standard
-Другими словами: общее решение --- сумма частного решения и общего решения
- соответствующей линейной 
+Другими словами: общее решение --- сумма частного решения линейного 
+\emph on
+неоднородного
+\emph default
+ и общего решения соответствующей линейной 
 \emph on
 однородной
 \emph default
@@ -5348,7 +5346,7 @@ y(x)=Y(x)c+\oiu{x_{0}}xC(c,s)f(s)ds\label{eq:ln6}
 Рассмотрим уравнения вида:
 \begin_inset Formula 
 \begin{equation}
-\df{d^{n}y}{dx^{n}}=a_{n-1}(x)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{n-1}(x)\df{d^{n}y}{dx^{n}}+a_{0}(x)y+f(x)\label{eq:ldn1}
+\df{d^{n}y}{dx^{n}}=a_{n-1}(x)\df{d^{n-1}y}{dx^{n-1}}+\tr+a_{1}(x)\df{dy}{dx}+a_{0}(x)y+f(x)\label{eq:ldn1}
 \end{equation}
 
 \end_inset
@@ -5632,8 +5630,8 @@ reference "eq:41"
 \begin_inset Formula $c_{1},\tr,c_{m}$
 \end_inset
 
-, не все равные нулю, что линейная комбинация тождественно равна нулю всех
- 
+, не все равные нулю, что линейная комбинация тождественно равна нулю для
+ всех 
 \begin_inset Formula $x$
 \end_inset
 
@@ -5658,9 +5656,9 @@ reference "eq:41"
 \[
 W\left(x\right)=\left|\begin{array}{ccc}
 y_{1}\left(x\right) & \tr & y_{m}\left(x\right)\\
-\df{dy_{1}}{dx} & \tr & \df{dy_{n}}{dx}\\
+\df{dy_{1}}{dx} & \tr & \df{dy_{m}}{dx}\\
 \vtr & \vtr & \vtr\\
-\df{d^{n-1}y_{1}}{dx^{n-1}} & \tr & \df{d^{n-1}y_{m}}{dx^{n-1}}
+\df{d^{m-1}y_{1}}{dx^{m-1}} & \tr & \df{d^{m-1}y_{m}}{dx^{m-1}}
 \end{array}\right|
 \]
 
@@ -5830,7 +5828,7 @@ reference "eq:42"
 y\left(x_{0}\right)=0\\
 \dif d{}{y\left(x_{0}\right)}x=0\\
 \vtr\\
-\dif d{n-1}{y\left(x_{0}\right)}x
+\dif d{n-1}{y\left(x_{0}\right)}x=0
 \end{cases} & {}
 \end{flalign*}
 
@@ -5958,16 +5956,16 @@ y_{1}\left(x_{0}\right)=1\\
 \dif d{n-1}{y_{1}\left(x_{0}\right)}x=0
 \end{cases} & \quad & y_{2}\left(x\right):\begin{cases}
 (\ref{eq:41})\\
-y_{2}\left(x_{0}\right)=1\\
-\dif d{}{y_{2}\left(x\right)}x=0\\
+y_{2}\left(x_{0}\right)=0\\
+\dif d{}{y_{2}\left(x\right)}x=1\\
 \vtr\\
 \dif d{n-1}{y_{2}\left(x\right)}x=0
 \end{cases} & \quad & \tr & \quad & y_{n}\left(x\right):\begin{cases}
 (\ref{eq:41})\\
-y_{n}\left(x_{0}\right)=1\\
+y_{n}\left(x_{0}\right)=0\\
 \dif d{}{y_{n}\left(x\right)}x=0\\
 \vtr\\
-\dif d{n-1}{y_{n}\left(x\right)}x=0
+\dif d{n-1}{y_{n}\left(x\right)}x=1
 \end{cases}
 \end{flalign*}
 
@@ -6064,7 +6062,7 @@ y_{m}\left(x_{0}\right)\\
 
 \end_inset
 
-линейно не зависимы, а тогда такие линейные вектора (
+линейно не зависимы, а тогда такие  вектора (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:43"
