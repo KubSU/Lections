@@ -1323,8 +1323,8 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="45col%">
+<column alignment="center" valignment="top" width="45col%">
 <row>
 <cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1493,8 +1493,8 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="33col%">
-<column alignment="center" valignment="top" width="66col%">
+<column alignment="center" valignment="top" width="45col%">
+<column alignment="center" valignment="top" width="45col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1759,8 +1759,8 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="45text%">
+<column alignment="center" valignment="top" width="45text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2305,7 +2305,383 @@ status open
 \begin_layout Standard
 При оценке баланса изучаются как каждая отдельно взятая отросль, так и в
  совокупности.
+\end_layout
+
+\begin_layout Subsection
+Формы и типы конкуренции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Формы и типы конкуренции
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Микросреда
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Макросреда
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+поставщики
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+эконом.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+посредники
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+политика
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+потребители
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+культуры
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+конкуренты
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+технические
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+контактная аудитория
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+технология
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+природные
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+демографические
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Конкуренты --- рыночные соперники, производящие подобный товар, или оказывающие
+ такую-же услугу.
+ Конкуренция является мотивирующим фактором для предприятия к совершенствованию
+ своей деятельности.
+ При выходе на рынок и оценки возможностей компания должна оценить свою
+ конкурентоспособность и выявить конкурентное преимущество.
  
+\end_layout
+
+\begin_layout Standard
+Виды конкуренции:
+\end_layout
+
+\begin_layout Enumerate
+Ценовая и не ценовая.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ценовая --- кода конкурирующее с вами предприятие делает товар дешевле.
+\end_layout
+
+\begin_layout Standard
+Не ценовая --- Конкуренция с поиском не ценовых методов борьбы (что нить
+ оригинальное, конкурсы, реклама прикольная, или как песенка про Windows
+ 8)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Отрослевая и межотрослевая
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Отрослевая --- очень схожие товары и одном ыеновом диопозоне.
+\end_layout
+
+\begin_layout Standard
+Другое --- когда один товар на рынке может заменить другой.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Прямая и косвеная конкуренция.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Прямая --- когда одно не скрывает свою конкуренцию.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Совершенная (чистая) и не совершенная конкуренция.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cовершенная -- конкуренция на равных правах при свободном выходе на рынок,
+ которая позволяет фирмам выйти в лидируещие позиции засчет конкурентных
+ преимуществ.
+\end_layout
+
+\begin_layout Standard
+Несовершенная --- преобладают агрессивные формы воздействия.
+ Выход на рынок затруднен.
+ Методы конкурентной борьбы не всегда честные.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Конкуренция продавцов и конкуренция покупателей.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+КОнкуренция продавцов или производтелей подразумевает преобладание предложения
+ над спросом, заставляет производителей искать новые возможности сбыта и
+ постоянно совершенствоваться.
+\end_layout
+
+\begin_layout Standard
+Конкуренция покупателей --- ВОзникает при дифиците, либо в случаях когда
+ товары редкие, коллекционные, эксклюзивные, раритетные (товары узкого сигмента,
+ как правило).
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Модели рынка
+\end_layout
+
+\begin_layout Enumerate
+Модель совершенной или чистой конкуренции
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Число фирм огромное, продукция однородная, препятствие при выходе на рынок
+ отсутствует, контроль за ценами не ведется, неценовая конкуренция тоже
+ отсутствует.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Монополитическая
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Товар один, продукция не имеет аналогов и заменителей, контроль за ценами
+ высокий, вход на рынок практически невозможен, форма продвижения --- реклама
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Монополистическая конкуренция
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Товар представлен в большом количестве, рынок дифференцированный, контроль
+ за ценами не значительный, вступление в отрасль значительно легче, чем
+ при монополии, неценовая конкуренция мало развита.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Олигополия
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Производителей несколько, товар стандартный либо дифференцированный, контроль
+ за ценами умеренный, неценовая конкуренция развита, препятствия при выходе
+ на рынок существенные.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Сегодня преобладает несовершенные формы конкуренции, в некоторых отраслях
+ монополия и алигополия.
+ С точки зрения завоевания рынка выделяют лидера рынка, претендента на лидерство
+ и последователей.
+ Конкурентное поведение может быть трех типов: приспособление, обеспечивающееся
+ (фирма, достигнув своих позиций пытается их удерживать на приемлемом уровне),
+ новаторское (характерно для фирм, которые могут одержать победу над конкурентам
+и, обладают преимуществом, устойчивые, работоспособные и могут предложить
+ нечто новое).
+\end_layout
+
+\begin_layout Standard
+Любое предприятие должно стремиться к честной конкурентной борьбе, котрая
+ позволяет выделиться за счет собственых преимуществ, а не недостатков конкурент
+ов.
 \end_layout
 
 \begin_layout Standard

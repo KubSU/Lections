@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage {cancel}
+\end_preamble
 \use_default_options true
 \begin_modules
 theorems-starred
@@ -307,6 +310,24 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\b}{\infty}
 {\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ca}[1]{\cancel{#1}}
+{\overset{CANCEL}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cat}[2]{\cancel{#2}{#1}}
+{\overset{CANCELTO\left(#2\right)}{#1}}
 \end_inset
 
 
@@ -13825,10 +13846,6 @@ s_{n+1}-a_{1}\mr\oui 1{n+1}\fx dx\mr S_{n}\label{eq:210513*}
 
 \begin_layout Example
 Обобщенный гармонический ряд.
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Standard

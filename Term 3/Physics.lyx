@@ -12275,9 +12275,3367 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Formula $T=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{1}V_{1}=P_{2}V_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=P\left(V\right)dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{12}=\oui{V_{1}}{V_{2}}P\left(V\right)dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=\nu RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(V\right)=\df{\nu RT}V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\oui{V_{1}}{V_{2}}\df{\nu RT}VdV=\nu RT\oui{V_{1}}{V_{2}}\df{dV}V=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{T}=\df Q{\D T}=\b$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботический процесс
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Процесс, протекающий без теплообмета с внешней средой.
+ Система доджна быть теплоизолирована.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=A+\D U$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=-A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{Q}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A=PdV$
+\end_inset
+
+; 
+\begin_inset Formula $dU=-\delta A$
+\end_inset
+
+; 
+\begin_inset Formula $\nu=1\ \text{КМоль}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=\df 32RT\nu$
+\end_inset
+
+; 
+\begin_inset Formula $U=\df i2RT\nu$
+\end_inset
+
+; 
+\begin_inset Formula $C_{V}=\df i2R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dU=C_{V}dT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $DdV+C_{V}dT=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV=RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\begin{array}{c}
+PdV+C_{V}dT=0\\
+PdV+VdP-RdT=0
+\end{array}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Первое домножаем на 
+\begin_inset Formula $R$
+\end_inset
+
+, второе на 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ и складываем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RPdV+C_{V}PdV+C_{V}VdP=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(R+C_{V}\right)PdV+C_{V}VdP=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда по формуле Майера:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma PdV+VdP=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решая это уравнение получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+P & = & B\um V^{-\gamma};\quad B=const\nonumber \\
+P\um V^{\gamma} & = & const\label{eq:Адиабат}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Адиабат"
+
+\end_inset
+
+) называют уравнением Адиабата, где: 
+\begin_inset Formula 
+\[
+\gamma=\df{C_{P}}{C_{V}}=\df{R+C_{V}}{C_{V}}=\df{R+\frac{i}{2}R}{\frac{i}{2}R}=\df{i+2}i>1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Адиабата круче изотермы.
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+Процессы, протекающие при постоянной теплоемкости называются политропными.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=cosnt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV^{n}=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=\df{C_{p}-C}{C-C_{V}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=0$
+\end_inset
+
+, то процесс адиабатический.
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=C_{P}$
+\end_inset
+
+, то 
+\begin_inset Formula $n=0$
+\end_inset
+
+, следовательно процесс изобарический.
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=\infty$
+\end_inset
+
+, то 
+\begin_inset Formula $n=1$
+\end_inset
+
+, следовательно процесс изотермический.
+\end_layout
+
+\begin_layout Itemize
+Если 
+\begin_inset Formula $C=C_{V}$
+\end_inset
+
+, то 
+\begin_inset Formula $n=\infty$
+\end_inset
+
+, следовательно 
+\end_layout
+
+\begin_layout Subsection
+Циклы в газах.
+\end_layout
+
+\begin_layout Definition
+Замкнутым циклом (круговым процессом) называется процесс, при котором система
+ пройдя через ряд состояний возвращается в исходное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 37
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При подсчете работы находится: 
+\begin_inset Formula $A_{123}>0$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{341}<0$
+\end_inset
+
+, причем 
+\begin_inset Formula $A_{341}=-A_{143}$
+\end_inset
+
+, а значит: 
+\begin_inset Formula 
+\[
+A=A_{123}-A_{143}=A_{123}+A_{341}=\oint\limits _{12341}P\left(V\right)dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta U=0$
+\end_inset
+
+, а тогда 
+\begin_inset Formula $Q=A$
+\end_inset
+
+ и 
+\begin_inset Formula $Q=Q_{1}-Q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Периодически действующий двигатель, совершающий работу за счет поступающего
+ извне тепла называется тепловой машиной.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Цикл, идущий по часовой стрелке называется прямым циклом.
+\end_layout
+
+\begin_layout Remark
+Любая тепловая машина работает по прямому циклу.
+\end_layout
+
+\begin_layout Definition
+Машина, работающая на обратном цикле, называется холодильной машиной.
+\end_layout
+
+\begin_layout Standard
+Тепловая машина характеризуется коэффициентом полезного действия: 
+\begin_inset Formula 
+\[
+\eta=\df A{Q_{1}}=\df{Q_{1}-Q_{2}}{Q_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Процесс теплообмена
+\end_layout
+
+\begin_layout Standard
+Приаедем в соприкосновение 2 тела с разной температурой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\ov{\st}QT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hbc 38
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попробуем обратить процесс.
+\end_layout
+
+\begin_layout Standard
+Возьмем газ между телами.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{1}<T_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T-const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}\ov{\st}Q$
+\end_inset
+
+газ
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботический
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поднимаем температуру гназа чуть больше 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $T$
+\end_inset
+
+ растет и становится больше чем 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T-const$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+газ 
+\begin_inset Formula $\ov{\st}QT_{1}$
+\end_inset
+
 
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+Обратите внимание, что газ нагрелся.
+\end_layout
+
+\begin_layout Standard
+Есть 2 способа исправить:
+\end_layout
+
+\begin_layout Enumerate
+Отдать излишнее тепло во внешнею среду, но тогда там будут изменения.
+\end_layout
+
+\begin_layout Enumerate
+Адиоботически вернуть в тоже состояние, но тогда получится замкнутый циык,
+ и тогда над газом совершили работу, а работа то из внешней среды, и тогда
+ во внешней среде произошли изменения.
+\end_layout
+
+\begin_layout Subsection
+Изотермическое расширение или сжатие газа.
+\end_layout
+
+\begin_layout Standard
+Чисто изотермический процесс обратим.
+\end_layout
+
+\begin_layout Standard
+Все тепло, поступающее в газ, идет в работу.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q=\delta A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q'=\delta A'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta Q'=-\delta Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta A'=-\delta A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Адиоботическое расширение или сжатие
+\end_layout
+
+\begin_layout Standard
+Оно тоже обратимо.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $Q=0$
+\end_inset
+
+, то 
+\begin_inset Formula $dU=-\delta A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Нужнопроводить этот процесс бесконечно быстро, чтобы не успевало тепло уходить.
+\end_layout
+
+\begin_layout Claim
+Реальные тепловые процессы всегда необратимы.
+\end_layout
+
+\begin_layout Section
+Второе начало термодинамики
+\end_layout
+
+\begin_layout Definition
+Невозможны такие процессы, 
+\emph on
+единственным 
+\emph default
+результатом которых являлось бы переход тепла от тела менее нагретого, к
+ телу, более нагретому.
+\end_layout
+
+\begin_layout Standard
+Иначе бы можно было бы ставить чайник на лед, и он закипел бы.
+\end_layout
+
+\begin_layout Definition
+Невозможны такие процессы, 
+\emph on
+единственным 
+\emph default
+результатом которых было бы отнятие некоторого тепла у произвольного тела
+ и превращения этого тепла полностью в работу.
+\end_layout
+
+\begin_layout Standard
+или 
+\end_layout
+
+\begin_layout Definition
+Невозможен вечный двигатель 2го рода
+\end_layout
+
+\begin_layout Subsection
+Цикл Карно
+\end_layout
+
+\begin_layout Standard
+Карно --- Французский инженер
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 40
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Он решил создать обратимую тепловую машину.
+ (Из 2х по идее обратимых циклов)
+\end_layout
+
+\begin_layout Standard
+В этом цикле 4 этапа.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $T_{1}=T$
+\end_inset
+
+---const
+\end_layout
+
+\begin_layout Standard
+Изотермическое расширение.
+\end_layout
+
+\begin_layout Standard
+Нагреватель отдает некоторое тепло газу.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботическое расширение
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\st T_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $T_{1}<T_{2}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Изотермическое сжтие 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Газ отдате тепло 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ холодильнику.
+ (Чаще всего холодильник это оклужающая среда)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Адиоботическое сжатие
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возвращаем всю систему в исходное состояние.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В этом цикле совершается работа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=Q_{1}-Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ --- это тепло, которое берет холодильник (просто если это тепло, которое
+ отдал газ, то это слогаемое должно быть со знаком минус)
+\end_layout
+
+\begin_layout Theorem
+Две различны еобратимые тепловые машины, работающие с одними и теми же нагревати
+лем и холодильником имеют одинаковое КПД.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 41
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1M},\ Q_{2m},\ A_{M},\ \eta_{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1N},\ Q_{2N},\ A_{N},\ \eta_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1?}$
+\end_inset
+
+ --- тепло, которое забрали у нагревателя.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{2?}$
+\end_inset
+
+ --- тепло, которое отдали холодильнику.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{?}$
+\end_inset
+
+ --- работа
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\eta_{?}$
+\end_inset
+
+ --- КПД
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{1M}=Q_{1N}=Q_{1}$
+\end_inset
+
+ --- выбрали такое цикл, когда
+\end_layout
+
+\begin_layout Proof
+Докажем от противного: пусть 
+\begin_inset Formula $\eta_{M}>\eta_{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Q_{2M}<Q_{2N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{M}>A_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заставим эту машину работать по обратному циклу.
+ (над ней совершается работа 
+\begin_inset Formula $A_{N},$
+\end_inset
+
+и отдается темло нагревателю 
+\begin_inset Formula $Q_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $A_{M}>A_{N}$
+\end_inset
+
+, то мы можем взять часть работы от 
+\begin_inset Formula $M$
+\end_inset
+
+ и отдать 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ (Работу, которую нужно совершить над 
+\begin_inset Formula $N$
+\end_inset
+
+ заберем у 
+\begin_inset Formula $M$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+У машины 
+\begin_inset Formula $M$
+\end_inset
+
+ останется часть работы, которое можно использовать.
+ (
+\begin_inset Formula $A=A_{M}-A_{N}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+Расмотрим единую тепловую машину 
+\begin_inset Formula $\left(M-N\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Она забтрает у холодильника тепло 
+\begin_inset Formula $Q_{2}=Q_{N2}-Q_{M2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Получается нагреватель стоит ради мебели, а работа совершалаь.
+ Тоесть машина забрала тепло у холдодильника и полностью превратила его
+ в работу, что невозможно в силу 2го начала термодинамики.
+\end_layout
+
+\begin_layout Proof
+Предположение неверно, следовательно 
+\begin_inset Formula $\eta_{M}\mr\eta_{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично мжно доказать, что 
+\begin_inset Formula $\eta_{M}<\eta_{N}$
+\end_inset
+
+ тоже неверное, следорвательно остается их приравнять.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ --- необратимая машина, а 
+\begin_inset Formula $O$
+\end_inset
+
+ --- обратимая машина.
+ Они работают с одним и теми же холодилшьником и нагревателем, различие
+ только в том, что одна обратимая, а другая нет.
+ Аналогично можно показать, что неравенство 
+\begin_inset Formula $\eta_{H}>\eta_{O}$
+\end_inset
+
+, следовательно 
+\begin_inset Formula $\eta_{H}\mr\eta_{O}$
+\end_inset
+
+, но мы не можем опровергнуть 
+\begin_inset Formula $\eta_{H}<\eta_{O}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Как сделать из обратимой машины необратимую, присыпать песочку, добависть
+ трение.
+ И тогда КПД обратимой машины будет ментше чем необратимой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}Q=\eta$
+\end_inset
+
+ --- так вычисляется КПД.
+ Но для обратимой машыны можно подругому по идее.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Так как минус в формуле КПД поставлен явно, то 
+\begin_inset Formula $\ln\df{V_{3}}{V_{4}}$
+\end_inset
+
+, а не 
+\begin_inset Formula $\ln\df{V_{4}}{V_{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{2}V_{2}^{\gamma}=P_{3}V_{3}^{\gamma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{2}V_{2}=\nu RT_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{3}V_{3}=\nu RT_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выражаем 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{3}$
+\end_inset
+
+, и подставляем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Откуда получаем уравнение адиобаты, связывающее обьем и температуру.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Аналогично из процесса 4-1 получаем 
+\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{4}}{V_{1}}\right)^{\gamma-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $\df{V_{3}}{V_{4}}=\df{V_{2}}{V_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{O}=\df{T_{1}-T_{2}}{T_{2}}$
+\end_inset
+
+ --- так вычисляется КПД для обратимых машин.
+\end_layout
+
+\begin_layout Remark
+Обратимая темловая машина называется идеальной тепловой машиной иногда.
+\end_layout
+
+\begin_layout Subsection
+Приведенное кол-во тепла.
+ Неравеснство Клаузиуса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}$
+\end_inset
+
+ --- действует для всех машин
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{T_{1}-T_{2}}{T_{1}}$
+\end_inset
+
+ --- действует только для обратимых.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если рассматривать только газ и рассматривать что газ отдает тепло со знаком
+ минус, то если брать это неравествтвво по отношению к одному телу, то мы
+ получим 
+\begin_inset Formula $\df{Q_{1}}{T_{1}}+\df{Q_{2}}{T_{2}}\mr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если газ контактирует не с 2мя а с 
+\begin_inset Formula $N$
+\end_inset
+
+ телами, то можно записать 
+\begin_inset Formula $\ous{i=1}N\df{Q_{i}}{T_{i}}\mr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это неравество Клаудиуса.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df QT$
+\end_inset
+
+ --- эту дробь Клаузиус называл прриваеденным колическвом тепла.
+\end_layout
+
+\begin_layout Subsection
+Процессы обратимые и необратимые
+\end_layout
+
+\begin_layout Definition
+Обратимым процессом называется такой процесс, который может быть проведен
+ в обратном направлении таким образом, что система будет проходить через
+ те-же состояния что и в прямом ходе, но вв обратном порядке.
+ 
+\end_layout
+
+\begin_layout Claim
+Чисто механический процесс всегда обратим.
+\end_layout
+
+\begin_layout Standard
+Для обратимости процесса необходимо:
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+\delta A & \delta Q\\
+\delta A' & \delta Q'
+\end{array}\quad\text{Причем: }\begin{array}{c}
+\delta A=-\delta A'\\
+\delta Q=-\delta Q'
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Вопрос об обратимости процесса
+\end_layout
+
+\end_inset
+
+Нельзя ли при помощи каких либо процессов или механизмов добиться того,
+ чтобы участвовавшие в них тела можно было вернуть в исходное состояние
+ без того, чтобы в окружающей среде возникли какие либо другие изменения.
+\end_layout
+
+\begin_layout Subsubsection
+Расширение газа в пустоту
+\end_layout
+
+\begin_layout Standard
+Процесс связанный с расширением газа в пустоту не обратим.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+7 декабря 2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Граници применения второго начала термодинамики
+\end_layout
+
+\begin_layout Definition
+Количество микросостояний 
+\begin_inset Formula $W$
+\end_inset
+
+, соответствующих данному макросостоянию носит название термодинамической
+ вероятностью.
+\end_layout
+
+\begin_layout Standard
+Представить количественно эту величину не очень то возможно.
+\end_layout
+
+\begin_layout Standard
+Эта величина позволяет характеризовать степень беспорядка в системе.
+ 
+\end_layout
+
+\begin_layout Standard
+Чем эта величина больше, тем больше беспорядка.
+\end_layout
+
+\begin_layout Standard
+Пусть есть система в которой есть 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+, тогда общая характеристика системы 
+\begin_inset Formula $W=W_{1}\um W_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=k\um\ln W
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ --- Энтропия 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+ --- Постоянная Больцмана
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=k\um\ln W=k\um\ln W_{1}+k\um\ln W_{2}=S_{1}+S_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W_{\text{Мех}}=1$
+\end_inset
+
+ --- Термодинамическая вероятность механической системы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{\text{Мех}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W$
+\end_inset
+
+ пропорциональна 
+\begin_inset Formula $V^{N}$
+\end_inset
+
+, где 
+\begin_inset Formula $N$
+\end_inset
+
+ --- количество молекул, или 
+\begin_inset Formula $W=b\um V^{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=k\um N\um\ln V+B,\ B=k\um\ln b
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D S=S_{2}-S_{1}=kN\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим газ в обьеме 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Увеличим обьем к 
+\begin_inset Formula $2V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\D S=kN\ln2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=A=\nu RT\ln\df{V_{2}}{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\D S & = & kN\ln\df{V_{2}}{V_{1}}=\\
+ & = & kN_{A}\nu\ln\df{V_{2}}{V_{1}}=\\
+ & = & \nu R\ln\df{V_{2}}{V_{1}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df QT=\D S$
+\end_inset
+
+ --- Эта формула только для обратимых процессов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}>T_{2},\ Q$
+\end_inset
+
+ переходит от 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ к 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, но температура не меняется
+\end_layout
+
+\begin_layout Standard
+Так как в рамках 1го тела у нас процесс изотермический, то мы можем записать:
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\D S & = & \D S_{1}+\D S_{2}=\\
+ & = & -\df Q{T_{1}}+\df Q{T_{2}}=\\
+ & = & Q\left(\df 1{T_{2}}-\df 1{T_{1}}\right)>0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $T_{1}\simeq T_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\D S=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В адиобатическом: 
+\begin_inset Formula $\D S=\D S_{\text{газа}}+\D S_{\text{мех}}=\left\{ \begin{array}{c}
+\D S_{\text{мех}}=0\\
+\D S_{\text{газа}}=0
+\end{array}\right\} =0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+В итоге мы приходим к еще 1ой математической формулировки второго начала
+ термодинамики:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\D S\br0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+При всех процессах, протекаюзих в макроскопической (термодинамической) системе,
+ система не может самопроизвольно переходить из более вероятного состояния
+ в менее вероятное состояние, тоесть энтропия системы не убывает.
+\end_layout
+
+\begin_layout Standard
+Это определение носит вероятностный характер.
+\end_layout
+
+\begin_layout Definition
+Наиболее вероянтой изменение энтропии системы является ее возрастание.
+\end_layout
+
+\begin_layout Standard
+Ограничения:
+\end_layout
+
+\begin_layout Enumerate
+Стеени свободы
+\end_layout
+
+\begin_layout Enumerate
+В сосуд поместим газ.
+ Температуры у сосуда и газа разные.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+За короткое время 
+\begin_inset Formula $U>>E_{\text{вз}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Системы, у которых выполнено условие 
+\begin_inset Formula $U>>E_{\text{вз}}$
+\end_inset
+
+называются почти изолированными.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{\text{вз}}$
+\end_inset
+
+ --- Энергия взаимодействия.
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ --- Внутренняя энергия газа
+\end_layout
+
+\begin_layout Standard
+Но если мы оставим этот сосут на долгое время
+\end_layout
+
+\begin_layout Standard
+Для открытых (как наша вселенная) системы этот закон несправедлив.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+В 1906 Нернст занимался с квантовой электродинамикой.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Как-бы третье начало термидинамики
+\end_layout
+
+\end_inset
+
+При стремленнии температуры в абсолютному нулю энтропия любого тела так-же
+ стремится к нулю.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $S=\oui 0T\df{dQ}T=\oui 0T\df{C\left(T\right)dT}T$
+\end_inset
+
+ , где 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ --- теплоемкость.
+\end_layout
+
+\begin_layout Subsection
+Реальные газы
+\end_layout
+
+\begin_layout Standard
+Втреднем размер одной простой молекулы равен 
+\begin_inset Formula $d\sim10^{-10}$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\lambda\sim10^{-7}$
+\end_inset
+
+ На земле это так.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вз}}=0$
+\end_inset
+
+ --- так как мелекулы находятся на очень большом расстоянии
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r$
+\end_inset
+
+ --- расстояние между центрами молекул
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d$
+\end_inset
+
+ --- эфективный диаметр молекул
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r>>d$
+\end_inset
+
+ (
+\begin_inset Formula $r>10^{d}$
+\end_inset
+
+) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $U_{\text{вз}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А когда 
+\begin_inset Formula $r\sim2-3d$
+\end_inset
+
+, то тогда возникают силы притяжения (энергитической природы)
+\end_layout
+
+\begin_layout Standard
+А если 
+\begin_inset Formula $r\mr d$
+\end_inset
+
+ то возникают очень большие силы отталкивания.
+\end_layout
+
+\begin_layout Standard
+Принято считать, что если тебя с кому нить тянет, то это силы отрицательные,
+ если отталкивает, то сидлы положительные (с точке зрения физики).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Жорик сука распиздяй этот рисунок не хочет рисовать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v F=-\grad U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v F=-\df{\dd u}{\dd r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вз}}\left(\b\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $du=-Fdr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При сближении молекул энергия понижается.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+9.12.13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{min}$
+\end_inset
+
+ --- глубина потенциальной ямы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT<<\left|U_{min}\right|$
+\end_inset
+
+ --- твердое состояние вещнества
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT>>\left|U_{min}\right|$
+\end_inset
+
+ --- газообрахное состояние вещесмтва
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $kT\approx\left|U_{min}\right|$
+\end_inset
+
+ --- жидкое состояние вещества
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\nu$
+\end_inset
+
+ --- 1 киломоль, то 
+\begin_inset Formula $PV=RT$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\df{PV}{RT}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Стали смотреть, что происходит с давлением, и оказалося:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 38
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Часть внешнего давления уходит на энергию притяжение между молекулами (этим
+ обуславливается убывание).
+ А в водороде такие силы очень малы.
+ Поэтому пользоваться этой формулах при больших давлениях и/или малых температур
+ах невозможно (будет большая погрешность, так как газ не идеальный).
+\end_layout
+
+\begin_layout Standard
+Поэтому нужно учитывать 
+\begin_inset Formula $U_{min}$
+\end_inset
+
+.
+ Тогда для каждого газа будет своя формула (потому что разная формула молекул
+ и не только это).
+\end_layout
+
+\begin_layout Standard
+Выделим Менделеева.
+ Он рассматривал поверхностное натяжение (границу между жидкостью и газом
+ этой жидкости).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 39
+\end_layout
+
+\end_inset
+
+ Он браз закрытый сосуд.
+ В нее помежал некоторое количество воды.
+ Нагревал.
+ Когда он это делал, начинался переход молекул из жидкого состояния в газообразн
+ое, повышается давление и граница будет смешаться в сторону газа (вверх,
+ за счет линейного расширения газа), если воды много, а если воды мало,
+ то граница между газом и жидкостью начинает полсти вниз.
+ Ему заходелось найти ту границу, когда эта планка будет стоять на месте.
+ Путём огпытов, что он ее нашел такое стстояние, когда граница не двигается.
+ 
+\end_layout
+
+\begin_layout Standard
+Оказывается граница пропадает при определенной температуре (для каждой жидкости
+ и давления своя).
+ Он назвал эту температуру температурой 
+\emph on
+абсолютного кипения
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+А если сделать обратный эксперимент (не нагривать а остужать), то жидкость
+ конденсируется в капельки и опадает.
+\end_layout
+
+\begin_layout Subsection
+Реальные изотермы углекислого газа
+\end_layout
+
+\begin_layout Standard
+Эндрюс исследовал с углекислым газом.
+ И построил его изотермы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 40
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чем выше изотерма, там при большей температуре она проведена.
+\end_layout
+
+\begin_layout Standard
+Если говорить про большие температуры : они практически совподают с геперболой
+ (
+\begin_inset Formula $PV=const$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Давление насыщеного пара - когда ты повышаешь обьем, а давление не меняется
+ (оно зависит от температуры).
+\end_layout
+
+\begin_layout Standard
+При некоторой температуре невозможно добится увеличением обьема переход
+ жидкости в газообразное состояние.
+\end_layout
+
+\begin_layout Standard
+Пунктирная кривая обганичевает линию перезода от газа в жидкость, и ее так
+ и называют --- 
+\emph on
+пограничной кривой.
+\end_layout
+
+\begin_layout Standard
+То что выше критической изотермы мы будет называть 
+\emph on
+газом
+\emph default
+.
+ Нижи критической изотермы и правее пограничной кривой будем назыапать 
+\emph on
+жидкостью
+\emph default
+.
+ То что ниже критической изотермы и правее пограничной кривой назовем 
+\emph on
+паром
+\emph default
+.
+ А внутри пограничной кривой назывем 
+\emph on
+насыщенным паром
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Уравнение состояние реального газа
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(\beta,V,T\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+На самом деле сложно его записать из за того, что силы взаимодействия разные
+ в разных газах.
+ Но есть хорошие приближения.
+ Одно из них было полчено голандским ученым 
+\emph on
+Ван дер Ваальс.
+ 
+\emph default
+Что он сделал? Он взял уравнение Менделеева-Клаперона.
+ Он учел, что 
+\begin_inset Formula $U_{\text{вз}}\nr0$
+\end_inset
+
+, но при этом учтены только силы притяжения, а силы отталкивания заменены
+ жесткой границей.
+ Возникает поняние 
+\emph on
+недопустимого обьема 
+\emph default
+--- когда молекула не может попасять в какую-то точку (она занята другой
+ молекулой).
+ И еще одна поправка на внутренее давление (давление уменьшается).
+\end_layout
+
+\begin_layout Enumerate
+Поправка на 
+\emph on
+недопустимый обьем
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ --- диаметр молекулы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 41
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Центры молекул не могут находится на растоянии, меньше чем диаметр этой
+ молекулы.
+\end_layout
+
+\begin_layout Standard
+Обьем этого места (обьм шара) 
+\begin_inset Formula $\df 43\pi d^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Но в газе очень много молекул.
+\end_layout
+
+\begin_layout Standard
+Сколько различных пар мы можем состовить? Ответ: 
+\begin_inset Formula $C_{N}^{2}=\df{N\left(N-1\right)}2\approx\df{N^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 43\pi d^{3}\df{N^{2}}2$
+\end_inset
+
+ --- получим такую формулу --- недопустимый обьем для всех молккул
+\end_layout
+
+\begin_layout Standard
+Тут мы считаем для всех молекул.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b$
+\end_inset
+
+ --- недопустимый обьем так обозначается
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b=\df N6\um4\pi d^{3}=4N\df{\pi d^{3}}6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\pi d^{3}}6$
+\end_inset
+
+ --- обьем одной молекулы
+\end_layout
+
+\begin_layout Standard
+Уравнение Менделеева-Клаперона c этой поправкой будет выгрядить так: 
+\begin_inset Formula $P\left(V-b\right)=\nu RT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b=4N_{A}\df{\pi d^{3}}6\sim\nu$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Стенка, о которую бьются молекулы (они определяют давление)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+О стенку могут биться только те молекулы, которые находятся на рассмотянии
+ длиннц свободного пробега.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle l\right\rangle $
+\end_inset
+
+ --- длинна свободного пробега
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+ --- концентрация молекул
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 42
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Учитывая силы притяжения, получается что на эти молекулы (внутри этого слоя,
+ между стенкой и длинной свободного пробега от стенку) действуют только
+ молекулы соседнего слоя.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P'$
+\end_inset
+
+ --- внутреннее давление (уменьшает давление, которое газ оказывается на
+ стенку)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P'\sim n^{2}=\left(\df NV\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Введем коофицент пропорциональности: 
+\begin_inset Formula $P'=\alpha\df{N^{2}}{V^{2}}=\df{a^{2}}{V^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\sim\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Внесем еще и эту поправку: 
+\begin_inset Formula $P=\df{\nu RT}{V-b}-P'$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\fbox{\left(P+\df{a^{2}}{V^{2}}\right)\um\left(V-b\right)=\nu RT}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Это уравнение Ван дер Вальса.
+\end_layout
+
+\begin_layout Standard
+Зпишем это уравнение в форме 
+\begin_inset Formula $F\left(\beta,V,T\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PV^{3}-\left(Pb+\nu RT\right)V^{2}+a^{2}V-a^{2}b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если рассматривать его относительно 
+\begin_inset Formula $V$
+\end_inset
+
+ --- это многочлен 3й степени.
+ Корней у него максимум 3 корня.
+\end_layout
+
+\begin_layout Standard
+Построим график этой функции.
+ Назовём его изотермой вандервальса.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рис 43
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При высокой температуре 
+\begin_inset Formula $\df{a^{2}}{v^{2}}<<RT$
+\end_inset
+
+, и тогда мы можем пренебречь 
+\begin_inset Formula $\df{a^{2}}{v^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В этом случае мы получим гиперболу, просто смещенную чуть чуть.
+\end_layout
+
+\begin_layout Standard
+Если сравнивать реальные изотермы и график Вае дер Вальса учистком 
+\begin_inset Formula $v_{1}v_{2}$
+\end_inset
+
+, то они там различаются.
+\end_layout
+
+\begin_layout Standard
+Но не всё плохо для него все таки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $CDE$
+\end_inset
+
+ --- нереальный участок
+\end_layout
+
+\begin_layout Standard
+Поэтому корень 
+\begin_inset Formula $D$
+\end_inset
+
+ --- физически не реален.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ --- обьем жидкости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ --- обьем газа
+\end_layout
+
+\begin_layout Standard
+Участки 
+\begin_inset Formula $BC$
+\end_inset
+
+ и 
+\begin_inset Formula $EF$
+\end_inset
+
+ --- физически получаемы (осуществимы), но они соответствуют неустогйчевому
+ состоянию вещества.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $BC$
+\end_inset
+
+ --- соответствует стстоянию перегретой жидкости.
+\end_layout
+
+\begin_layout Standard
+Кипение возникает вокруг центров кипения (неоднородности в среде жидкости).
+\end_layout
+
+\begin_layout Standard
+Участок 
+\begin_inset Formula $EF$
+\end_inset
+
+ называется присыщенного (переохлажденного) пара (формально переохлажденного
+ газа).
+ 
+\end_layout
+
+\begin_layout Standard
+Кристализация, так же как и кипение, возникает около неоднородности в среде.
+\end_layout
+
+\begin_layout Standard
+При некоторых опытах получается что точка 
+\begin_inset Formula $C$
+\end_inset
+
+ опускается ниже нуля.
+ Давление оторицательно.
+ Такое принципе возможно.
+ Это когда жидкость не давит на стенки сосуда, а наоборот, пытается ихз
+ втенуть.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+16.12.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Явления смачивания
+\end_layout
+
+\begin_layout Standard
+Мы рассмотрели жидколсть и ее границу с газом.
+ Но у нее в условиях земли есть еще одна граница --- с твердым телом.
+ Жидкость с твердым телом активно взаимодействует.
+\end_layout
+
+\begin_layout Standard
+Энергия взаимодействия с молекулами жидкости ---
+\begin_inset Formula $U_{min}^{\text{ж}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Энергия взаимодействия с твердым телом --- 
+\begin_inset Formula $U_{min}^{\text{тв}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|U_{min}^{\text{ж}}\right|$
+\end_inset
+
+
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Formula $\left|U_{min}^{\text{тв}}\right|$
+\end_inset
+
+ --- рассмотрим такой вариант 
+\begin_inset Formula $\left(U_{min}^{\text{ж}}<U_{min}^{\text{тв}}<0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если у нас имеется вод такое соотношение, то молекула жидкости будет стремится
+ ийти в нутрь жидкости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{гр}}\approx6\um U_{min}^{\text{ж}}+6\um U_{min}^{\text{тв}}$
+\end_inset
+
+ --- полная энергия молекул на границе
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{\text{вн}}\approx12\um U_{min}^{\text{ж}}$
+\end_inset
+
+ --- полная энегрия молекулы внутри жидкости
+\end_layout
+
+\begin_layout Standard
+Когда мы рассматриваем переход молекулы жидкости из нутри на границу, то
+ изменяется ее потенциальная энергия.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D U=U_{\text{гр}}-U_{\text{вн}}=6\left(U_{min}^{\text{тв}}-U_{min}^{\text{ж}}\right)>0$
+\end_inset
+
+ --- изменения энергии молекулы жидкости, еслои она переходит из жидкости
+ на ее границу с твердым телом.
+\end_layout
+
+\begin_layout Standard
+В этом случае жидкость хочет уменьшить площадь соприкосновения с твердым
+ телом, и горорят, что в этом случае жидкость не смачивает твержое тело.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|U_{min}^{\text{ж}}\right|$
+\end_inset
+
+
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Formula $\left|U_{min}^{\text{тв}}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\D U<0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Жидкость хочет увеличить площадь соприкосновения с твердым телом, и говорят,
+ что жидкость смачивает твердое тело.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Когда жидкость находитвся в земных условиях, на нее действует сила тяжести,
+ и у нее есть еще свободная поверхность, на которую действует сила поверхностног
+о натяжения.
+\end_layout
+
+\begin_layout Standard
+Эти 3 силы и определяют жидкость на земле.
+\end_layout
+
+\begin_layout Enumerate
+Когда жидкость не смачивает твердое тело
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Характеристикой степени смачивания является угол, между сосудом и свободной
+ поверхностью жидкости.
+ Его и называют краевым углом.
+ Когда жидкость не смачавает твердое тело, он лежит в пределах 
+\begin_inset Formula $\df{\pi}2<\Theta<\pi$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Когда жидкость смачивает
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В этом случае 
+\begin_inset Formula $0<\Theta<\df{\pi}2$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ртуть и стекло --- 
+\begin_inset Formula $\Theta\approx\pi$
+\end_inset
+
+ --- пример почти абсольтного несмачивания
+\end_layout
+
+\begin_layout Standard
+Стекло и вода --- 
+\begin_inset Formula $\Theta\approx0$
+\end_inset
+
+ --- пример почти абсольтного смачивания
+\end_layout
+
+\begin_layout Subsection
+Капилярные явления
+\end_layout
+
+\begin_layout Standard
+Если мы берем большой обьем жидкости, то краевую границу сложно увидить.
+ Но когда мы берем тонкий сисуд, то ее можно исследовать.
+ Явления, происходящие в тонких сосудах называются капилярными явлениями.
+\end_layout
+
+\begin_layout Standard
+Возьмем уский сосуд.
+ Пусть у нас жидкость не смачивает твержое тело.
+ На поверхности образуется некое подобие шара.
+ Сделаем срез на некоторой высоте.
+ Радиус шара --- 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Радиус среза окружности --- 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Сила поверхностного натяжения направлена по касательной к жидкости, причем
+ нужно учесть, что, если разложить на координатам, то 
+\begin_inset Formula $y$
+\end_inset
+
+ должен по идее быть меньше нуля, так как молекула жидкости хочет уйти в
+ нуьрь жидкости.
+ Обозначим ее 
+\begin_inset Formula $\D F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=\sum\D F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разложим на составляющие вектора силы --- одни направлены к стенке (
+\begin_inset Formula $\D F_{\bot}$
+\end_inset
+
+), а другие направлениы во внутрь жидкости (
+\begin_inset Formula $\D F_{\Vert}$
+\end_inset
+
+).
+ Угол между 
+\begin_inset Formula $\D F_{\bot}$
+\end_inset
+
+ и 
+\begin_inset Formula $\D F$
+\end_inset
+
+ назовем 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D F_{\bot}=\D F\cos\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D F_{\Vert}=\D F\sin\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\v F\right|=\un{\underbrace{\sum\D\v{F_{\bot}}}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}+\sum\D\v{F_{\Vert}}=\sin\beta\sum\left|\D F\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как мы можем узнать 
+\begin_inset Formula $\beta$
+\end_inset
+
+ --- 
+\begin_inset Formula $\sin\beta=\df rR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В преведущей лекции мы рассматривали --- 
+\begin_inset Formula $\D F=\alpha\D l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin\beta\sum\left|\D F\right|=\df rR\sum\left|\D F\right|=\df rR\sum\alpha\D l=\df rR\alpha2\pi r=\df{2\um\alpha\um\pi}Rr^{2}\pi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F=\df{2\um\alpha\um\pi}Rr^{2}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Перейдем к давлению 
+\begin_inset Formula $P=\df FS=\df{2\um\alpha}R$
+\end_inset
+
+ --- избыточное давление (увеличивает атмосферное давление).
+\end_layout
+
+\begin_layout Standard
+Если жидкость смачивает твердое тело, то избыточное давление уменьшает атмосферн
+ое давление.
+ ПРи этом 
+\begin_inset Formula $P=-\df{2\alpha}P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Чтобы не разделять эти 2 случая, то в первом случае 
+\begin_inset Formula $R>0$
+\end_inset
+
+ , а во втором 
+\begin_inset Formula $R<0$
+\end_inset
+
+.
+ И тогда 
+\begin_inset Formula $R=\df{2\alpha}R$
+\end_inset
+
+ выполняется для обоих случаев.
+ 
+\end_layout
+
+\begin_layout Standard
+В общем случае, когдаэто не окружность, и какой нить эллипс, то справедлива
+ формула --- 
+\begin_inset Formula $P=\alpha\left(\df 1{R_{1}}+\df 1{R_{2}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Вереж сольшой сосуд с жтдкостью.
+ Опускаем капиряр туда.
+ Жидкость не смачавает стенки капиляра.
+ Уровень жидкости в капиляре меньше уровля жидкости в сосуде на 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Найдем 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Посчитаем давление.
+ 
+\begin_inset Formula $P_{1}=P_{2}$
+\end_inset
+
+ (1 --- давление внутри капиляра, а 2 --- давление в сосуде).
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{1}=P_{\text{атм}}+P$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P_{2}=P_{\text{атм}}+P_{\text{гидр}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P=P_{\text{гидр}}=\rho gh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\df{2\alpha}R=\rho gh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Слоедовательно, мы можем найти 
+\begin_inset Formula $h$
+\end_inset
+
+ --- 
+\begin_inset Formula $h=\df{2\alpha}{R\rho g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Тут неочерь удобно использовать 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ ЧТо у нас еще есть? У нас есть угол
+\begin_inset Formula $\Theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $r=R\um\sin\left(\Theta-\df{\pi}2\right)=-R\cos\Theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Получим, что 
+\begin_inset Formula $R=-\df r{\cos\Theta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Подставим: 
+\begin_inset Formula $h=-\df{2\alpha\cos\Theta}{r\rho g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Возникает вопрос: какого там есть минус?
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $\cos\Theta<0$
+\end_inset
+
+ то вс норм получается.
+\end_layout
+
+\begin_layout Example
+Для ситуации, когда жидкость смачивает твердое тело, то тогда в сосуде жидкость
+ выше, чем в сосуде, и тогда принято считать, что 
+\begin_inset Formula $h<0$
+\end_inset
+
+.
+ И для такой ситуации 
+\begin_inset Formula $h=\df{2\alpha\cos\Theta}{2\rho g}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Example
+Так что в общем случае 
+\begin_inset Formula 
+\[
+h=\df{2\alpha\cos\Theta}{r\rho g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $h<0$
+\end_inset
+
+ --- жидкость не смачивает капилляр
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $h>0$
+\end_inset
+
+ --- жидкость смачивает капилляр
+\end_layout
+
+\begin_layout Example
+Возьмем кирпич.
+ Силикатный (Белый, без дырок).
+ В нем есть капиляры диаметром примерно 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+.
+ В этом случае 
+\begin_inset Formula $h\approx30$
+\end_inset
+
+ метров.
+ 9й этаж ппц!
+\end_layout
+
+\begin_layout Subsection
+Явление переноса.
+ Вязкость жидкости.
+\end_layout
+
+\begin_layout Standard
+В газе все явления перенос связаны с хаотическим движением молекул.
+ В жидкости впринципе тоже это тесть, но в отличие от газа это перемещение
+ идет на очень маленькое рассмояние, во вторых у молекулы есть время оседлой
+ жизни, так что они там не всегда прыгают.
+ Явление вязкости обусловлено другими причинами, чем в газе (С точки зрения
+ физики это вообще разные явления).
+ Большуюроль играют силы межмолекулярного сцепления.
+ Физически явления разные, но формула одна и та-же.
+\end_layout
+
+\begin_layout Standard
+В газе это сила внутренено трения (Она так называется, но по сути в газах
+ нету трения).
+ Так эе она называется и в жидкости.
+ 
+\begin_inset Formula $F=-\eta\um\df{dv}{dx}\um S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=-\eta\um\grad\,\left(\v v\um\v n\right)\um S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если говорить о дифузии.
+ Она там и там одним и тем же обусловлена (только в жидкости она идет медленнее).
+ 
+\begin_inset Formula $J=-D\um\df{dn}{dx}\um S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если сравнивать коэффициент дифузии в жидкостях и в газе.
+ В газе он выше (
+\begin_inset Formula $D_{\text{г}}>>D_{\text{ж}}$
+\end_inset
+
+).
+ А коэфициент вязкости в жидкости больше (
+\begin_inset Formula $\eta_{\text{г}}<<\eta_{\text{ж}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{\text{г}}\sim D_{\text{г}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{\text{ж}}\sim D_{\text{ж}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Когда мы рассматрриваем движение твердых тел в жидеости.
+ Оно обусдловлено трением о жидкость и еще чем то.
+ В часности, если рассмотреть шарик (есть формулда Стокса (Сила, действующая
+ на гар радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ движущейся в жидкости при малых скоростях 
+\begin_inset Formula $v$
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=6\um\pi\um r\um\eta\um v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эта формула верна и для газа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+21.12.2013
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Строение и свойства твердых тел.
+\end_layout
+
+\begin_layout Standard
+Строение их отличается от жидкостей.
+ После нагрузки они могут вернуться сами в исходное состояние.
+ Сначала рассмотрим процесс плавления.
+\end_layout
+
+\begin_layout Standard
+Есть некоторая температура плавления.
+ Всё тепло расходуется на превращение твердого тела в жидкость, то есть
+ на разрыв связи в кристаллах.
+\end_layout
+
+\begin_layout Standard
+Чтобы начался процесс кристаллизации, температура должна упасть немного
+ ниже температуры плавления.
+ Это нужно чтобы возникли центры кристаллизации.
+ На сколько меньше нужно опуститься --- это зависит от самого вещества.
+ У металлов это доли градусов, а у другим материалов может доходить до 100
+ градусов.
+ При этом при переохлажденной жидкости могут возникнуть так называемые 
+\emph on
+аморфные 
+\emph default
+тела (Жидкость, приобретшая свойства твердого тела).
+ Пример аморфного тела --- стекло.
+\end_layout
+
+\begin_layout Standard
+Если рассматривать структуру кристаллического твердого тела.
+ В нем могу возникать за счет хаотического движения (в некоторый момент
+ времени, очень редко) атом может выскочить за решетку.
+ На его месте возникла дырка.
+ Он переходит в более неустойчевое состояние и он начал путешествовать по
+ кристаллу.
+ Но на место дырки тоже перескакивают атомы, и получается что дырки тоже
+ путешествуют по телу.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Разница в структуре аморфных и твердых тел:
+\end_layout
+
+\begin_layout Standard
+У кристалических твердых тел структура кристала повторяется на больших расстояни
+я (Это называется 
+\emph on
+дальним порядком
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+У аморфных твердых тел есть только 
+\emph on
+ближний порядок
+\emph default
+.
+ (Кароче структура вроде бы повторяется, но очень коряво).
+ 
+\end_layout
+
+\begin_layout Standard
+При кристализации металлов образуется огромное количество центтров кристализации.
+ Так что металл --- это огромное количество маленьких кристаликов.
+ 
+\end_layout
+
+\begin_layout Standard
+Особенннро ярко это проявляется при наращивании кристалов.
+ (Скорость роста кристала по одному направлению больше, чем по другому направлен
+ию).
+ Нарастить крупный кристалл это усскуство.
+ И еще концентрацию молекул в растворе.
+\end_layout
+
+\begin_layout Standard
+Типы кристалических решеток (Они разничаются по геометрии, их более 200
+ видов, причем у одного и того же вещества могут быть разные кристалические
+ решетки) (Классификация по типу связи):
+\end_layout
+
+\begin_layout Enumerate
+Ионные.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Решетки различных солей.
+ (Для 
+\begin_inset Formula $HCl$
+\end_inset
+
+ атомы просто черезуются в кубической решетке).
+ Здесь поимо дырок еще может быть такие дефекты: 2 одинаковых стоя.
+ Или вместо одних атомов стоят другие.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Атомные решетки.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+.В узла стоят атомы (ядра или часть ядер) одних и тех же веществ, и между
+ ними существует ковалентная связь.
+ Особо это характерно для элементов четвертой группы.
+ (Алмаз)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Молекулярные решетки.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В узлах решетки стоят молекулы.
+ Связи очень слабые и они появляются при очень низких температурах.
+ Проявляется в охлажденных газах.
+ Еще она есть в органических молекулах.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Мелалические решетки.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+В узлах стоят положительно заряженные атомы.
+ А меж-атомном пространстве (межузловом пространстве) находятся свободные
+ электроны (большое их количество), которые как раз и сдерживают эту решетку
+ (как клей (невздумайте нюхать)).
+ При изменении температуры происходит перестройка кристалической решетки.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Тепловое движение в твердых телах
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon\left(T\right)=\varepsilon^{\text{кин}}+\varepsilon^{\text{потенц}}=kT$
+\end_inset
+
+ --- энергия теплового движения.
+\end_layout
+
+\begin_layout Standard
+Уровень энергии молекулы: 
+\begin_inset Formula $E=U_{min}+\varepsilon\left(T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\df{r_{1}+r_{2}}2,\ r\left(\varepsilon\left(T\right)\right)>r_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если говорить о теплоемкости, если в узлах стоят атомы, то 
+\begin_inset Formula $C\approx3\um R$
+\end_inset
+
+.
+ Почему? Потому что 
+\begin_inset Formula $\df 12kT$
+\end_inset
+
+ на 1ну степень свободы.
+ Так что тут возбуждаются все 6 (точнее 3 (на каждую ось)) степеней свободы
+ (при неочень больших тоемпературах).
+ Так как решетки разные, то общей формулы для всех веществ нету.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D l$
+\end_inset
+
+ --- удлинение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- длиннпа образца
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{r-r_{0}}{r_{0}}=\df{\D l}l=\alpha T$
+\end_inset
+
+ --- коэффициент линейнного расширения твердого тела.
+\end_layout
+
+\begin_layout Section
+Деффекты кристалической решетки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau$
+\end_inset
+
+ --- время оседной жизни
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{0}$
+\end_inset
+
+ --- энергия, необходимая на вытаскивание из решетки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=\tau_{0}e^{\df{U_{0}}{kT}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Деффекты (В структуре кристалла):
+\end_layout
+
+\begin_layout Enumerate
+Дырки и молекулы-путешественницы.
+\end_layout
+
+\begin_layout Enumerate
+Еще вместо одгого элемента встает другой.
+ Иногда это хорошо (редко), но в большенстве случаев неок.
+\end_layout
+
+\begin_layout Enumerate
+Плохие деффекты: одним из самых нехороших деффектов --- 
+\emph on
+дислокации
+\emph default
+.
+ Это когда пропадает ряд.
+ Это потеря прочности.
+ 
+\end_layout
+
+\begin_layout Section
+Механические свойства твердых тел.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=-grad\, U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=-\df{dv}{dr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(r_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если мы рассмотрим скорость изменения силы в зависимости отт растояния (
+\begin_inset Formula $\df{\D f}{\D r}$
+\end_inset
+
+).
+ Так вод если уисримить 
+\begin_inset Formula $\D r\st0$
+\end_inset
+
+ , то получим 
+\begin_inset Formula $\df{df}{dr}$
+\end_inset
+
+.
+ И вод как раз коэффициент упругости определяется этой величиной.
+ 
+\begin_inset Formula 
+\[
+\df{df}{dr}_{r=r_{0}}=k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(r\right)=\un{\underbrace{f\left(r_{0}\right)}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}+f\pr\left(r_{0}\right)\D r=-k\D r$
+\end_inset
+
+ --- закон Гука для одной молекулы.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{\text{упругости}}=S\um n_{0}\um f=-k\D rn_{0}S=-\un{\underbrace{kr_{0}n_{0}}}{\begin{array}{c}
+\Vert\\
+E
+\end{array}}\df{\D l}l$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Мы переходим от молекул до реальных тразмеров.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ --- модуль Юнга.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma=E\varepsilon$
+\end_inset
+
+ --- этот закон соблюдается в случаях, ктогда в 
+\begin_inset Formula $f\left(r\right)=\un{\underbrace{f\left(r_{0}\right)}}{\begin{array}{c}
+\Vert\\
+0
+\end{array}}+f\pr\left(r_{0}\right)\D r$
+\end_inset
+
+ мы пренебрегаем одним слагаемым.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\sigma=\df FS;\ \varepsilon=\df{\D l}l\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ --- относительная деформация
+\end_layout
+
+\begin_layout Standard
+Исходя из теории моджно вычислить критическое значение 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, значение, при котором материал теоритически не разорвется.
+ Но проблема в том, что на практике не получается нифига.
+ Все дело в том, что в кристалле нарушена кристалическая решетка.
+\end_layout
+
 \end_body
 \end_document
