@@ -191,8 +191,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\st}{\longrightarrow}
-{\longrightarrow}
+\newcommand{\st}{\to}
+{\to}
 \end_inset
 
 
@@ -230,8 +230,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\un{\ov{\sum}{#2}}{#1}}
-{\un{\ov{\sum}{#2}}{#1}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
 \end_inset
 
 
@@ -254,8 +254,8 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\underset{#1}{\overset{#2}{\int}}}
-{\underset{#1}{\overset{#2}{\int}}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
 \end_inset
 
  
@@ -364,6 +364,12 @@ theorems-starred
 \begin_inset FormulaMacro
 \newcommand{\const}{\text{константа}}
 {\text{константа}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
 \end_inset
 
 
@@ -690,11 +696,10 @@ theorems-starred
 \end_inset
 
  или в Декартовой системе координат 
-\begin_inset Formula $\left(\begin{array}{c}
-x=x\left(t\right)\\
+\begin_inset Formula $\left(\begin{smallmatrix}x=x\left(t\right)\\
 y=y\left(t\right)\\
 z=z\left(t\right)
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
@@ -751,11 +756,14 @@ z=z\left(t\right)
 \end_inset
 
  к нулю, получим мгновенную скорость: 
-\begin_inset Formula $\vec v\left(t\right)=\ul{\D t\st0}\df{\D\vec r}{\D t}=\df{d\vec r}{dt}=\dot{\vec r}$
+\begin_inset Formula 
+\[
+\vec v\left(t\right)=\ul{\D t\st0}\df{\D\vec r}{\D t}=\df{d\vec r}{dt}=\dot{\vec r}
+\]
+
 \end_inset
 
-.
- Где 
+Где 
 \begin_inset Formula $\dot{\vec r}$
 \end_inset
 
@@ -768,11 +776,14 @@ z=z\left(t\right)
 \end_inset
 
 , то продифференцировав, получим: 
-\begin_inset Formula $\df{d\vec r}{dt}=\vec i\df{dx}{dt}+\vec j\df{dy}{dt}+\vec k\df{dz}{dt}$
+\begin_inset Formula 
+\[
+\df{d\vec r}{dt}=\vec i\df{dx}{dt}+\vec j\df{dy}{dt}+\vec k\df{dz}{dt}
+\]
+
 \end_inset
 
-.
- Или 
+Или 
 \begin_inset Formula $\vec v=\vec i\um v_{x}+\vec j\um v_{y}+\vec k\um v_{z}=\vec i\dot{x}+\vec j\dot{y}+\vec k\dot{z}$
 \end_inset
 
@@ -781,7 +792,11 @@ z=z\left(t\right)
 
 \begin_layout Standard
 Скорость можно вычислить, как длину вектора скорости:
-\begin_inset Formula $\left|\vec v\right|=\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}=v$
+\begin_inset Formula 
+\[
+\left|\vec v\right|=\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}=v
+\]
+
 \end_inset
 
  
@@ -850,32 +865,38 @@ z=z\left(t\right)
 \end_inset
 
  к нулю, получим мгновенное ускорение:
-\begin_inset Formula $\vec{\omega}=\ul{\D t\st0}\df{\D\vec v}{\D t}=\df{d\vec v}{dt}$
+\begin_inset Formula 
+\[
+\vec{\omega}=\ul{\D t\st0}\df{\D\vec v}{\D t}=\df{d\vec v}{dt}
+\]
+
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\vec{\omega}=\dot{\vec v}=\ddot{\vec r}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\vec{\omega}=\dot{\vec v}=\ddot{\vec r}$
 \end_inset
 
+В покоординатной форме:
+\begin_inset Formula 
+\[
+\omega_{x}=\dot{v_{x}}=\ddot{x},\quad\omega_{y}=\dot{v_{y}}=\ddot{y},\quad\omega_{z}=\dot{v_{z}}=\ddot{z}
+\]
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\omega_{x}=\dot{v_{x}}=\ddot{x},\ \omega_{y}=\dot{v_{y}}=\ddot{y},\ \omega_{z}=\dot{v_{z}}=\ddot{z}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Ускорение можно вычислить, как длину вектора ускорения:
-\begin_inset Formula $\left|\vec{\omega}\right|=\sqrt{\omega_{x}^{2}+\omega_{y}^{2}+\omega_{z}^{2}}=w$
+\begin_inset Formula 
+\[
+\left|\vec{\omega}\right|=\sqrt{\omega_{x}^{2}+\omega_{y}^{2}+\omega_{z}^{2}}=w
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Paragraph
@@ -907,19 +928,22 @@ z=z\left(t\right)
 Естественный способ задания движения
 \end_layout
 
-\begin_layout Paragraph
-Скорость:
+\begin_layout Subsubsection
+Скорость
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vec{v_{cp}}=\df{\D\vec r}{\D t}$
+Определим среднюю скорость, как: 
+\begin_inset Formula $\vec{v_{cp}}=\frac{\Delta\vec r}{\Delta t}$
 \end_inset
 
- 
-\end_layout
+.
+ Тогда мгновенная скорость:
+\begin_inset Formula 
+\[
+\vec v=\ul{\D t\st0}\df{\D\vec r}{\D t}.
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\vec v=\ul{\D t}\df{\D\vec r}{\D t}$
 \end_inset
 
 
@@ -931,80 +955,68 @@ z=z\left(t\right)
 \begin_inset Formula $\vec{\tau}$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
+, тогда: 
 \begin_inset Formula $\vec v=v\um\vec{\tau}$
 \end_inset
 
- 
-\end_layout
+.
+\begin_inset Formula 
+\[
+v=\left|\vec v\right|=\left|\ul{\D t\st0}\df{\D\vec r}{\D t}\right|=\ul{\D t\st0}\df{\left|\D\vec r\right|}{\D t}=\bigl|\left|\D\vec r\right|\br\D\left|\vec r\right|\bigr|=\ul{\D t\st0}\df{\D S}{\D t}=\df{dS}{dt}=\dot{S}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $v=\left|\vec v\right|=\left|\ul{\D t\st0}\df{\D\vec r}{\D t}\right|=\ul{\D t\st0}\df{\left|\D\vec r\right|}{\D t}$
 \end_inset
 
- 
-\end_layout
+Тогда:
+\begin_inset Formula 
+\[
+\vec v=\vec{\tau}\um\df{dS}{dt}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\left|\D\vec r\right|\br\D\left|\vec r\right|$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v=\left|\vec v\right|=\left|\ul{\D t\st0}\df{\D\vec r}{\D t}\right|=\ul{\D t\st0}\df{\left|\D\vec r\right|}{\D t}=\ul{\D t\st0}\df{\D S}{\D t}=\df{dS}{dt}=\dot{S}$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Subsubsection
+Ускорение
+\end_layout
+
 \begin_layout Standard
-\begin_inset Formula $\vec v=\vec{\tau}\um\df{dS}{dt}$
+Разобьем путь на маленькие части:
+\begin_inset Formula 
+\[
+S_{i}=\ous{i=1}{\b}S_{i}=\ous{i=1}{\b}v_{i}\D t_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $v\left(t\right)=\left|\vec v\right|$
+\end_inset
+
+.
+ То есть путь:
+\begin_inset Formula 
+\[
+S=\ul{\D t_{i}\st0}\ous{i=1}{\b}v_{i}\D t_{i}=\oui{t_{0}}tv\left(t\right)dt
+\]
+
+\end_inset
+
+А перемещение:
+\begin_inset Formula 
+\[
+\D\vec r=\oui{t_{0}}t\vec v\left(t\right)dt
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Paragraph
-Ускорение:
-\end_layout
-
-\begin_layout Standard
-Разобьем путь на маленькие части.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S_{i}=\ous i{}S_{i}=\ous i{}v_{i}\D t_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v\left(t\right)=\left|\vec v\right|$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-То-есть путь 
-\begin_inset Formula $S=\ul{\D t_{i}\st0}\ous i{}v_{i}\D t_{i}=\oui{t_{0}}tv\left(t\right)dt$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-А перемещение 
-\begin_inset Formula $\D\vec r=\oui{t_{0}}t\vec v\left(t\right)dt$
-\end_inset
-
-
+Естесственный трехгранник
 \end_layout
 
 \begin_layout Standard
@@ -1012,10 +1024,10 @@ z=z\left(t\right)
 \begin_inset Formula $M_{0},\ M_{1},\ M_{2}$
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Предельное положение плоскости, проходящей через точки 
 \begin_inset Formula $M_{0},\ M_{1},\ M_{2}$
 \end_inset
@@ -1040,7 +1052,11 @@ z=z\left(t\right)
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
 Предельное положение точки 
 \begin_inset Formula $M_{0}$
 \end_inset
@@ -1053,12 +1069,11 @@ z=z\left(t\right)
 \begin_inset Formula $M_{0}$
 \end_inset
 
-называется касательной траектории к точке 
+ называется касательной траектории к точке 
 \begin_inset Formula $M_{0}$
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -1066,7 +1081,7 @@ z=z\left(t\right)
  Этих нормалей у траектории в данной точке бесконечное множество.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Нормаль, лежащая в соприкасающейся плоскости называется главной нормалью.
  Вектор главной нормали направлен в сторону вогнутости кривой.
 \end_layout
@@ -1075,26 +1090,34 @@ z=z\left(t\right)
 Плоскость, перпендикулярная касательной называется нормальной плоскостью.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Плоскость, перпендикулярная соприкасающейся плоскости и нормальной плоскости
  называется спрямляющей плоскостью.
 \end_layout
 
-\begin_layout Standard
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
 Вектор, нормали, лежащий в спрямляющей плоскости называется бинормалью и
  обозначается 
 \begin_inset Formula $\vec b$
 \end_inset
 
 .
- Направление бинормали выбирается так, чтобы вектора 
+ 
+\end_layout
+
+\begin_layout Standard
+Направление бинормали выбирается так, чтобы вектора 
 \begin_inset Formula $\vec v,\ \vec n,\ \vec b$
 \end_inset
 
  образовывали правую тройку векторов.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Система координат, построенная на векторах 
 \begin_inset Formula $\vec{\tau},\ \vec n,\ \vec b$
 \end_inset
@@ -1103,6 +1126,7 @@ z=z\left(t\right)
  координат).
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $\left(\vec{\tau},\vec n\right)$
 \end_inset
@@ -1124,12 +1148,17 @@ z=z\left(t\right)
  - спрямляющая плоскость
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
 Угол смежности 
 \begin_inset Formula $\D\Theta$
 \end_inset
 
- - угол между 
+ --- угол между 
 \begin_inset Formula $\vec{\tau}$
 \end_inset
 
@@ -1140,22 +1169,27 @@ z=z\left(t\right)
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
 Средняя кривизна траектории определяется как 
 \begin_inset Formula $K_{cp}=\df{\D\Theta}{\D S}$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-Ну так не пойдет, понятно что надо находить кривизну в каждой точке:
-\end_layout
+\begin_inset Formula 
+\[
+K=\ul{\D S\st0}\df{\D\Theta}{\D S}=\df{d\Theta}{dS}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $K=\ul{\D S\st0}\df{\D\Theta}{\D S}=\df{d\Theta}{dS}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout --Separator--
 
 \end_layout
 
@@ -1179,6 +1213,10 @@ z=z\left(t\right)
 называются кругом кривизны.
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Definition
 Радиус круга кривизны называется радиусом кривизны траектории в данной точке
  и обозначается 
@@ -1188,92 +1226,79 @@ z=z\left(t\right)
 .
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Paragraph
 Ускорение при естественном задании движения точки.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vec v=\vec{\tau}\um v$
+Пусть
+\begin_inset Formula 
+\[
+\vec v=\vec{\tau}\um v
+\]
+
 \end_inset
 
- 
-\end_layout
+А тогда:
+\begin_inset Formula 
+\[
+\vec{\omega}=\df{d\vec v}{dt}=\df{d\vec{\tau}}{dt}\um v+\vec{\tau}\um\df{dv}{dt}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\vec{\omega}=\df{d\vec v}{dt}=\df{d\vec{\tau}}{dt}\um v+\vec{\tau}\um\df{dv}{dt}$
-\end_inset
-
- - тут проблема в 1ом слагаемом.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st\b}\df{\vec{\tau}-\vec{\tau_{0}}}{\D t}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\df{d\vec{\tau}}{dt}=\vec n\um\left|\df{d\vec{\tau}}{dt}\right|$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st0}\df{\left|\D\vec{\tau}\right|}{\D t}$
-\end_inset
-
-
+\begin_layout Problem
+Вычислить первое слагаемое.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left|\D\vec{\tau}\right|=2\um\left|\tau\right|\um\sin\df{\D\Theta}2=\left\{ \sin\alpha\approx\alpha,\ \text{при}\ \alpha\st0\right\} =2\um\left|\tau\right|\um\df{\D\Theta}2$
+\begin_inset Formula 
+\begin{multline*}
+\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st\b}\df{\vec{\tau}-\vec{\tau_{0}}}{\D t}=\vec n\um\left|\df{d\vec{\tau}}{dt}\right|=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st0}\df{\left|\D\vec{\tau}\right|}{\D t}=\\
+=\left|\left|\D\vec{\tau}\right|=2\um\left|\tau\right|\um\sin\df{\D\Theta}2=\left\{ \sin\alpha\approx\alpha,\ \text{при}\ \alpha\st0\right\} =2\um\left|\tau\right|\um\df{\D\Theta}2\right|=\\
+=\ul{\D t\st0}\df{\D\Theta}{\D t}=\ul{\D t\st0}\df{\D\Theta}{\D S}\um\df{\D S}{\D t}=\ul{\D S\st0}\df{\D\Theta}{\D S}\um\ul{\D t\st0}\df{\D S}{\D t}=K\um v=\df v{\rho}
+\end{multline*}
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\df{d\vec{\tau}}{dt}=\ul{\D t\st0}\df{\D\vec{\tau}}{\D t}=\ul{\D t\st0}\df{\left|\D\vec{\tau}\right|}{\D t}=\ul{\D t\st0}\df{\D\Theta}{\D t}=\ul{\D t\st0}\df{\D\Theta}{\D S}\um\df{\D S}{\D t}=\ul{\D S\st0}\df{\D\Theta}{\D S}\um\ul{\D t\st0}\df{\D S}{\D t}=K\um v=\df v{\rho}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Тогда 
 \begin_inset Formula $\df{d\vec{\tau}}{dt}=\vec n\um\df v{\rho}$
 \end_inset
 
-, и получаем следующую формулу 
-\begin_inset Formula $\vec{\omega}=\vec n\um\df{v^{2}}{\rho}+\vec{\tau}\um\df{dv}{dt}$
+, и получаем следующую формулу:
+\begin_inset Formula 
+\[
+\fbox{\vec{\omega}=\vec n\um\df{v^{2}}{\rho}+\vec{\tau}\um\df{dv}{dt}}
+\]
+
 \end_inset
 
-.
- Первое слагаемое называется нормальным ускорением, 2е - касательным ускорением
- (или тангенциальным).
+Первое слагаемое называется нормальным ускорением, 2-е --- касательным ускорение
+м (или тангенциальным).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\omega_{n}=\df{v^{2}}{\rho}$
 \end_inset
 
- - величина нормального ускорения
+ --- величина нормального ускорения.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\omega_{\tau}=\df{dv}{dt}$
 \end_inset
 
-
+ --- величина касательного ускорения.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\omega=\sqrt{\omega_{\tau}^{2}+\omega_{n}^{2}}$
 \end_inset
 
- 
+ --- величина ускорения.
 \end_layout
 
 \begin_layout Subsection
@@ -1297,24 +1322,24 @@ z=z\left(t\right)
 \begin_inset Formula $x=x\left(t\right)$
 \end_inset
 
- - уравнение движения точки.
+ --- уравнение движения точки.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $v_{x}=\dot{x}$
 \end_inset
 
-
+ --- скорость точки.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\omega_{x}=\ddot{x}$
 \end_inset
 
-
+ --- ускорение точки.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Если знаки 
 \begin_inset Formula $\omega_{x}$
 \end_inset
@@ -1323,42 +1348,51 @@ z=z\left(t\right)
 \begin_inset Formula $v_{x}$
 \end_inset
 
- совпадают, то движение ускоренное, если наоборот --- то замедленное.
+ совпадают, то движение ускоренное, если наоборот, то замедленное.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\omega_{x}=0\ \sl\ v_{x}=const$
+\begin_layout Itemize
+Если 
+\begin_inset Formula $\omega_{x}=0$
 \end_inset
 
- 
+, то 
+\begin_inset Formula $v_{x}=const$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+Если 
 \begin_inset Formula $\omega_{x}=a=const$
 \end_inset
 
- - равнопеременное движение (равно-ускоренное или равно-замедленное).
-\end_layout
+, то это --- равнопеременное движение (равно-ускоренное или равно-замедленное).
+ Тогда скорость:
+\begin_inset Formula 
+\[
+v_{x}=v_{0}+at,
+\]
 
-\begin_layout Standard
-\begin_inset Formula $v=v_{0}+at$
 \end_inset
 
- 
-\end_layout
+а координата точки:
+\begin_inset Formula 
+\[
+x=x_{0}+v_{0}t+\df{at^{2}}2
+\]
 
-\begin_layout Standard
-\begin_inset Formula $v_{x}=x_{0}+v_{0}t+\df{at^{2}}2$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 \begin_inset Formula $x=A\um\sin\left(\omega t+\psi\right)$
 \end_inset
 
- - уравнение колебательного движения.
+ --- уравнение колебательного движения.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1366,83 +1400,82 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Standard
+Пусть 
 \begin_inset Formula $R$
 \end_inset
 
- - радиус окружности.
- 
-\end_layout
-
-\begin_layout Standard
-В таком случае величина скорости будет 
+ --- радиус окружности.
+ В таком случае величина скорости будет 
 \begin_inset Formula $v=\df{ds}{dt}$
 \end_inset
 
-, а направлена скорость по касательной.
+, и скорость направлена по касательной.
 \end_layout
 
 \begin_layout Standard
-Но на самом деле тут удобно описывать положение точки при помощи угла.
- Измеряем мы его в радианах.
-\end_layout
+Но на самом деле, удобно описывать положение точки при помощи угла.
+ Измеряем мы его в радианах, тогда:
+\begin_inset Formula 
+\[
+S=R\um\varphi
+\]
 
-\begin_layout Standard
-\begin_inset Formula $S=R\um\varphi$
 \end_inset
 
- 
-\end_layout
+А скорость:
+\begin_inset Formula 
+\[
+v=R\um\df{d\varphi}{dt}=R\um\omega
+\]
 
-\begin_layout Standard
-Скорость 
-\begin_inset Formula $v=R\um\df{d\varphi}{dt}=R\um\omega$
 \end_inset
 
- 
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 \begin_inset Formula $\omega=\df{d\varphi}{dt}$
 \end_inset
 
- - угловая скорость
+ --- угловая скорость.
 \end_layout
 
 \begin_layout Standard
-Ускорение 
-\begin_inset Formula $\omega_{\tau}=\df{dv}{dt}$
+Ввиду 
+\begin_inset Formula $\overline{w}=\overline{\tau}\um w_{\tau}+\overline{n}\um w_{n}$
 \end_inset
 
-.
- Ввиду 
-\begin_inset Formula $\overline{\omega}=\overline{\tau}\um\omega_{\tau}+\overline{n}\um\omega_{n}$
+ получим: 
+\begin_inset Formula 
+\[
+w_{n}=\df{v^{2}}{\rho}=\df{v^{2}}R=w^{2}\um R
+\]
+
 \end_inset
 
- получим 
-\begin_inset Formula $\omega_{n}=\df{v^{2}}{\rho}=\df{v^{2}}R=\omega^{2}\um R$
+А касательное ускорение:
+\begin_inset Formula 
+\[
+w_{\tau}=\df{dv}{dt}=R\um\df{dw}{dt}=R\um\varepsilon
+\]
+
 \end_inset
 
-.
- 
+Где 
+\begin_inset Formula $\varepsilon=\df{dw}{dt}$
+\end_inset
+
+ --- угловое ускорение.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\omega_{\tau}=\df{dv}{dt}=R\um\df{d\omega}{dt}=R\um\varepsilon$
-\end_inset
+Если записывать величину полного ускорения во время движения точки то она
+ равна:
+\begin_inset Formula 
+\[
+w=\sqrt{w_{n}^{2}+w_{\tau}^{2}}=R\sqrt{w^{4}+\varepsilon^{2}}
+\]
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\varepsilon=\df{d\omega}{dt}$
-\end_inset
-
- - угловое ускорение
-\end_layout
-
-\begin_layout Standard
-Если записывать величину полного ускорения во время движения точки то 
-\begin_inset Formula $\omega=\sqrt{\omega_{n}^{2}+\omega_{\tau}^{2}}=R\sqrt{\omega^{4}+\varepsilon^{2}}$
 \end_inset
 
 
@@ -1534,29 +1567,23 @@ z=z\left(t\right)
 \end_layout
 
 \begin_layout Proof
-Берем любые 3 точки твердого тела.
- 
-\begin_inset Formula $A\left(x_{a},y_{a},z_{a}\right),\ B\left(x_{b},y_{b},z_{b}\right),\ C\left(x_{c},y_{c},z_{c}\right)$
+Берем любые 3 точки твердого тела: 
+\begin_inset Formula 
+\[
+A\left(x_{a},y_{a},z_{a}\right),\quad B\left(x_{b},y_{b},z_{b}\right),\quad C\left(x_{c},y_{c},z_{c}\right).
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
+Тогда: 
 \begin_inset Formula $R_{A,B}=\sqrt{\left(x_{a}-x_{b}\right)^{2}+\left(y_{a}-y_{b}\right)^{2}+\left(z_{a}-z_{b}\right)^{2}}=const$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
+, 
 \begin_inset Formula $R_{B,C}=const$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
+, 
 \begin_inset Formula $R_{A,C}=const$
 \end_inset
 
@@ -1565,24 +1592,17 @@ z=z\left(t\right)
 
 \begin_layout Proof
 9 координат, 3 уравнения.
- Число степеней свободы = 6.
+ Число степеней свободы равно 6.
 \end_layout
 
 \begin_layout Proof
-Добавим к нему еще 1ну точку 
+Добавим к нему еще одну точку: 
 \begin_inset Formula $D\left(x_{d},y_{d},z_{d}\right)$
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Proof
-Добавление ее сразу-же добавляет еще 3 уравнения связи.
-\end_layout
-
-\begin_layout Proof
-Опять же 6 степеней свободы.
+ Добавление ее сразу-же добавляет еще 3 уравнения связи.
+ Опять же 6 степеней свободы.
 \end_layout
 
 \begin_layout Proof
@@ -9132,6 +9152,13 @@ status open
  Формула Торричелли.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Термодинамика и молекулярная физика.
 \end_layout
@@ -9192,12 +9219,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-Любой процесс прехода из одного состояния в другое, связан с нарушением
+Любой процесс перехода из одного состояния в другое, связан с нарушением
  равновесия системы.
 \end_layout
 
 \begin_layout Subsection*
-Темпреатура
+Температура
 \end_layout
 
 \begin_layout Standard
@@ -9238,23 +9265,26 @@ status open
 \begin_layout Standard
 Реферная точка --- точка в которой пар, жидкость и тело воды находятся в
  равновесии (это происходит при очень низком давлении).
+ 
+\begin_inset Formula 
+\[
+tC=T
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=tC+273.15
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Formula $tC=T$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $T=tC+273.15$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Молекулярно кинетическая теория
 \end_layout
@@ -9309,7 +9339,7 @@ status open
 
 \begin_layout Definition
 Кило-моль (в граммах --- моль) --- количество данного вещества, масса которого
- выраженая в килограммах численно равна молекулярному весу.
+ выраженная в килограммах численно равна молекулярному весу.
 \end_layout
 
 \begin_layout --Separator--
@@ -9325,7 +9355,7 @@ status open
 \end_layout
 
 \begin_layout Claim
-Кмоли всех веществ содержат одно и то-же число молекул.
+Кмоли всех веществ содержат одно и то же число молекул.
 \end_layout
 
 \begin_layout Definition
@@ -9337,7 +9367,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-В равных объемах газов при равных темпреатурах и давлениях содержится равное
+В равных объемах газов при равных температурах и давлениях содержится равное
  число молекул.
  В частности Кмоль любого газа при нормальном давлении (
 \begin_inset Formula $1.01\um10^{5}\text{Па}$
@@ -9425,7 +9455,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Законы Гей-Люссака
+Законы Гей--Люссака
 \end_layout
 
 \begin_layout Paragraph
@@ -9466,12 +9496,10 @@ status open
 \end_layout
 
 \begin_layout Standard
-Давление данной массы газа при постоянном объеме меняется линейно с температурой.
-\end_layout
-
-\begin_layout Standard
-
+Давление данной массы газа при постоянном объеме меняется линейно с температурой
+:
 \family typewriter
+
 \begin_inset Formula 
 \[
 P=P_{0}\left(1+\alpha t\right)
@@ -9480,9 +9508,7 @@ P=P_{0}\left(1+\alpha t\right)
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
+\family default
 где 
 \begin_inset Formula $\alpha=\df 1{273.15}=\df 1{T_{0}}$
 \end_inset
@@ -9518,7 +9544,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Законы Бойля--Мариота и Гей-Люсака можно объединить, что сначала сделал
+Законы Бойля--Мариота и Гей--Люссака можно объединить, что сначала сделал
  Клайперон, а затем улучшил Менделеев.
 \end_layout
 
@@ -9527,7 +9553,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Часто для изображение процессов термодинамики применяют PV-диаграмму.
+Часто для изображение процессов термодинамики применяют PV--диаграмму.
 \end_layout
 
 \begin_layout Standard
@@ -9551,7 +9577,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Согласно закону Гей-Люсака, получим 
+Согласно закону Гей--Люсcака, получим 
 \begin_inset Formula $\df{P'}{T_{1}}=\df{P_{2}}{T_{2}}$
 \end_inset
 
@@ -9573,7 +9599,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Получим закон Клаперона --- 
+Получим закон Клайперона: 
 \begin_inset Formula $\df{PV}T=B$
 \end_inset
 
@@ -9593,19 +9619,16 @@ status open
 \begin_inset Formula $V_{m}$
 \end_inset
 
- --- молярный обьем --- обьем одного моля.
-\end_layout
-
-\begin_layout Standard
-Так как количество молекул не меняется в одном моле, поэтому 
+ --- молярный объем --- объем одного моля.
+ Так как количество молекул не меняется в одном моле, поэтому 
 \begin_inset Formula $V_{m}$
 \end_inset
 
- должно быть одинакого для каждого газа.
+ должно быть одинаково для каждого газа.
 \end_layout
 
 \begin_layout Standard
-Менделеев улучшил закон Клаперона, и получил 
+Менделеев улучшил закон Клайперона, и получил 
 \begin_inset Formula $\df{PV_{m}}T=R$
 \end_inset
 
@@ -9616,21 +9639,21 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\nu$
 \end_inset
 
  --- количество вещества
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $V_{m}=\df V{\nu}$
 \end_inset
 
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\nu=\df m{\mu}$
 \end_inset
 
@@ -9643,12 +9666,9 @@ status open
 
 \begin_layout Standard
 Когда мы все это подставим, то получим:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-PV=\df m{\mu}RT
+\fbox{PV=\df m{\mu}RT}
 \]
 
 \end_inset
@@ -9661,33 +9681,32 @@ PV=\df m{\mu}RT
 \end_layout
 
 \begin_layout Standard
-Так как у нас все газы занимают одно количество обьема под один моль, то
+Так как у нас все газы занимают одно количество объема под один моль, то
  константа 
 \begin_inset Formula $R$
 \end_inset
 
- одинаковая для всех шазов.
- Мы можем ее вычислить.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $P_{0}V_{m0}=RT_{0}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $R=\df{P_{0}V_{m0}}{T_{0}}=\df{1.01\um10^{5}\um22.4}{275.15}=8.31\um10^{3}$
-\end_inset
-
- --- универсальная газовая постоянная
-\end_layout
-
-\begin_layout Standard
+ одинаковая для всех газов.
+ Мы можем ее вычислить:
 \begin_inset Formula 
 \[
-\left[R\right]=\df{\df{\text{Ньютон}}{\text{метр}^{2}}\um\df{\text{метр}^{3}}{\text{Кмоль}}}{\text{Кельвин}}=\df{\text{Ждоуль}}{\text{Кмоль}\um\text{Кельвин}}
+P_{0}V_{m0}=RT_{0}
+\]
+
+\end_inset
+
+Откуда получим универсальную газовую постоянную:
+\begin_inset Formula 
+\[
+R=\df{P_{0}V_{m0}}{T_{0}}=\df{1.01\um10^{5}\um22.4}{275.15}=8.31\um10^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[R\right]=\df{\df{\text{Ньютон}}{\text{метр}^{2}}\um\df{\text{метр}^{3}}{\text{Кмоль}}}{\text{Кельвин}}=\df{\text{Джоуль}}{\text{Кмоль}\um\text{Кельвин}}
 \]
 
 \end_inset
@@ -9701,13 +9720,14 @@ PV=\df m{\mu}RT
 
 \begin_layout Standard
 Давление в сосуде --- удары молекул о стенки сосуда.
- Ударение в деальном газе --- абсолютно усругие.
- Энергия у молекулы не меняется, а меняется импульс и скорость.
- Средняя (кинетическая) энергия в сосуде постоянна.
-\end_layout
+ Ударения в идеальном газе --- абсолютно упругие: энергия молекулы не меняется,
+ а меняется импульс и скорость.
+ Средняя (кинетическая) энергия в сосуде постоянна:
+\begin_inset Formula 
+\[
+\varepsilon_{i}=\df 12m_{i}v_{i}^{2}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\varepsilon_{i}=\df 12m_{i}v_{i}^{2}$
 \end_inset
 
 
@@ -9715,51 +9735,37 @@ PV=\df m{\mu}RT
 
 \begin_layout Standard
 Будем рассматривать через средние величины, сложим и разделим на число молекул.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Formula $N$
 \end_inset
 
- --- общее число молекул газа
-\end_layout
+ --- общее число молекул газа.
+\begin_inset Formula 
+\begin{align*}
+\left\langle \varepsilon\right\rangle  & =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N\\
+\intertext{\mbox{В таких скобках будем обозначать среднее значение}} & =\df m{2N}\ous{i=1}Nv_{i}^{2}
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\left\langle \text{Идентификатор}\right\rangle $
-\end_inset
-
- --- Так будем обозначать среднее значение идентификотора.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 12\df{\ous{i=1}Nm_{i}v_{i}^{2}}N=\df m{2N}\ous{i=1}Nv_{i}^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\left\langle v^{2}\right\rangle =\df{\ous{i=1}Nv_{i}^{2}}N$
 \end_inset
 
  --- средний квадрат скорости
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\sqrt{\left\langle v^{2}\right\rangle }=v_{\text{ср кв}}$
 \end_inset
 
  --- средне--квадратичная скорость
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\left\langle v\right\rangle =\df 1N\ous{i=1}N\left|v_{i}\right|$
 \end_inset
 
@@ -9772,25 +9778,23 @@ PV=\df m{\mu}RT
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left\langle v^{2}\right\rangle >\left\langle v\right\rangle ^{2}$
+ Заметим, что 
+\begin_inset Formula $\left\langle v^{2}\right\rangle \br\left\langle v\right\rangle ^{2}$
 \end_inset
 
-, или равно при 
+ при 
 \begin_inset Formula $T=0\, K$
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph*
 Переходим к основному уравнению молекулярно--кинетической теории.
 \end_layout
 
 \begin_layout Standard
-Будем считать что молекулю двигаются только паралельно осям координат.
+Будем считать что молекулы двигаются только параллельно осям координат.
  Будем рассматривать изотропное пространство.
  
 \end_layout
@@ -9809,38 +9813,36 @@ Hbc 30
 \end_layout
 
 \begin_layout Standard
+Значит 
 \begin_inset Formula $\df 13N$
 \end_inset
 
- --- количество молекул, двигающихся паралельно одной из осей
-\end_layout
-
-\begin_layout Standard
+ --- количество молекул, двигающихся параллельно одной из осей, откуда 
 \begin_inset Formula $\df 16N$
 \end_inset
 
- --- двигаются в одну сторону паралельно одной оси
+ --- двигаются в одну сторону параллельно одной оси.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $v$
 \end_inset
 
  --- скорость молекулы
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $mv$
 \end_inset
 
  --- импульс
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D J'=\left(-mv\right)-mv=-2mv$
 \end_inset
 
- --- импульс при стодкновении молекулы 
+ --- импульс при столкновении молекулы 
 \end_layout
 
 \begin_layout Standard
@@ -9848,17 +9850,17 @@ Hbc 30
 \begin_inset Formula $2mv$
 \end_inset
 
- 
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D t$
 \end_inset
 
  --- промежуток времени
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D S$
 \end_inset
 
@@ -9866,7 +9868,7 @@ Hbc 30
 \end_layout
 
 \begin_layout Standard
-Молекулы, которые могут удариться о стенку находлятся в обьеме 
+Молекулы, которые могут удариться о стенку находятся в объеме 
 \begin_inset Formula $v\um\D t\um\D S$
 \end_inset
 
@@ -9874,7 +9876,7 @@ Hbc 30
 \end_layout
 
 \begin_layout Standard
-Внесем еще 1ну величину, 
+Внесем еще одну величину, 
 \begin_inset Formula $n$
 \end_inset
 
@@ -9882,18 +9884,19 @@ Hbc 30
 \begin_inset Formula $n=\df NV$
 \end_inset
 
- --- число молекул в еденице обьема
+ --- число молекул в единице объема
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D N$
 \end_inset
 
- --- число молекул, которые могут удариться об стенку
-\end_layout
+ --- число молекул, которые могут удариться о стенку
+\begin_inset Formula 
+\[
+\D N=\df 16v\um\D t\um\D S\um n
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\D N=\df 16v\um\D t\um\D S\um n$
 \end_inset
 
  
@@ -9919,7 +9922,7 @@ Hbc 30
  --- переходим к силе через дифференцирование
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\df{\D J}{\D t}=F$
 \end_inset
 
@@ -9930,32 +9933,34 @@ Hbc 30
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\D J=F\D t$
 \end_inset
 
  --- средний импульс стенки
-\end_layout
+\begin_inset Formula 
+\[
+F=\df 13\um v^{2}\um n\um m\um\D S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $F=\df 13\um v^{2}\um n\um m\um\D S$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-От силы перейдем к давлению.
-\end_layout
+От силы перейдем к давлению:
+\begin_inset Formula 
+\[
+P=\df F{\D S}=\df 13\um v^{2}\um m\um n=\df 23\df{\left\langle v^{2}\right\rangle m}2n
+\]
 
-\begin_layout Standard
-\begin_inset Formula $P=\df F{\D S}=\df 13\um v^{2}\um m\um n=\df 23\df{\left\langle v^{2}\right\rangle m}2n$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\df{\left\langle v^{2}\right\rangle m}2$
 \end_inset
 
@@ -9963,14 +9968,14 @@ Hbc 30
 \end_layout
 
 \begin_layout Definition
-Oсновное уравнение молекулярно--кинетической теории.
+Основное уравнение молекулярно--кинетической теории.
  (Только для одноатомного газа, или у газа, где отсутствует вращение)
 \end_layout
 
 \begin_layout Definition
 \begin_inset Formula 
 \[
-P=\df 23n\left\langle \varepsilon\right\rangle 
+\fbox{P=\df 23n\left\langle \varepsilon\right\rangle }
 \]
 
 \end_inset
@@ -9983,11 +9988,12 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \end_layout
 
 \begin_layout Standard
-Сделаем несколько преобразований.
-\end_layout
+Сделаем несколько преобразований:
+\begin_inset Formula 
+\[
+PV=\df 23nV\left\langle \varepsilon\right\rangle =\df 23N\left\langle \epsilon\right\rangle =\df 23E
+\]
 
-\begin_layout Standard
-\begin_inset Formula $PV=\df 23nV\left\langle \varepsilon\right\rangle =\df 23N\left\langle \epsilon\right\rangle =\df 23E$
 \end_inset
 
  
@@ -10004,7 +10010,7 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \begin_inset Formula $PV=\df 23E$
 \end_inset
 
- --- на уровнеобщего состояния газа целиком
+ --- на уровне общего состояния газа целиком
 \end_layout
 
 \begin_layout Standard
@@ -10022,15 +10028,13 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \end_layout
 
 \begin_layout Standard
-Для одного киломоля мы получим вод такую формулу 
-\begin_inset Formula $PV_{m}=\df 23N_{A}\left\langle \varepsilon\right\rangle $
-\end_inset
+Для одного кило--моля мы получим такую формулу: 
+\begin_inset Formula 
+\begin{align*}
+PV_{m} & =\df 23N_{A}\left\langle \varepsilon\right\rangle \\
+TR & =\df 23N_{A}\left\langle \varepsilon\right\rangle 
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $TR=\df 23N_{A}\left\langle \varepsilon\right\rangle $
 \end_inset
 
 
@@ -10055,8 +10059,8 @@ P=\df 23n\left\langle \varepsilon\right\rangle
 \end_layout
 
 \begin_layout Standard
-Коофицент 
-\begin_inset Formula $\df 32$
+Коэффициент 
+\begin_inset Formula $\frac{3}{2}$
 \end_inset
 
  характерен только для одноатомных молекул или для тех молекул, у которых
@@ -10090,7 +10094,7 @@ P=n\um k\um T
 \begin_inset Formula $i$
 \end_inset
 
--тог компонены газа
+-ой компоненты газа
 \end_layout
 
 \begin_layout Standard
@@ -10098,18 +10102,16 @@ P=n\um k\um T
 \begin_inset Formula $s$
 \end_inset
 
- газов смешали.
-\end_layout
-
-\begin_layout Standard
+ газов смешали, тогда: 
 \begin_inset Formula $n=\ous{i=1}sn_{i}$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $P=kT\ous{i=1}sn_{i}=\ous{i=1}skTn_{i}$
+\begin_inset Formula 
+\[
+P=kT\ous{i=1}sn_{i}=\ous{i=1}skTn_{i}
+\]
+
 \end_inset
 
  
@@ -10129,10 +10131,11 @@ P=n\um k\um T
 
 -ой компоненты газа, при условии, что остальные компоненты отсутствуют.
  В результате получим закон Дальтона:
-\end_layout
+\begin_inset Formula 
+\[
+\fbox{P=\ous{i=1}sP_{i}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $P=\ous{i=1}sP_{i}$
 \end_inset
 
 
@@ -10150,28 +10153,12 @@ P=n\um k\um T
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $v_{\text{ср кв}}=\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+v_{\text{ср кв}} & =\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}\\
+\intertext{\text{Так как \ensuremath{k=\frac{R}{N_{A}}\quad N_{A}\um m=\mu}}} & =\sqrt{\df{3RT}{\mu}}
+\end{align*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $k=\df R{N_{A}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $N_{A}m=\mu$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v_{\text{ср кв}}=\sqrt{\left\langle v^{2}\right\rangle }=\sqrt{\df{3kT}m}=\sqrt{\df{3RT}{\mu}}$
 \end_inset
 
 
@@ -10209,62 +10196,36 @@ Hbc 31
 \begin_inset Formula $\left(v_{i};v_{i}+\D v\right)$
 \end_inset
 
- --- число малекул в диапозоне
+ --- число молекул в диапазоне
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\rho\left(v_{i}\right)=\df{\D N\left(v_{i}\right)}{\D v}$
 \end_inset
 
- --- плотность распределение молекл по скорости
+ --- плотность распределение молекул по скорости
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $f\left(v_{i}\right)=\df{\D N\left(v_{i}\right)}{N\um\D v}$
 \end_inset
 
- --- относительное --- распределение молекул газа по скорости --- функция
- распределения
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f\left(v\right)=\df 1N\ul{\D v\to0}\df{\D N\left(v\right)}{\D v}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\sum\Delta N(v) & = & \sum Nf(v)\Delta v=N
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sum f(v)\Delta v=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Устремляя 
-\begin_inset Formula $\Delta v\to0$
-\end_inset
-
-, получим
-\end_layout
-
-\begin_layout Standard
+ --- относительное распределение молекул газа по скорости --- функция распределе
+ния.
+ Откуда получим:
 \begin_inset Formula 
 \[
-\oiu 0{\infty}f(v)dv=1
+f\left(v\right)=\df 1N\ul{\D v\to0}\df{\D N\left(v\right)}{\D v}
 \]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum\Delta N(v) & =\sum Nf(v)\Delta v=N\sum f(v)\Delta v=\\
+\intertext{\text{Устремляя \ensuremath{\Delta v\to0}:}} & =N\oiu 0{\infty}f(v)dv=1
+\end{align*}
 
 \end_inset
 
@@ -10341,9 +10302,6 @@ f(v)=4\pi\left(\df m{2\pi kT}\right)^{\frac{3}{2}}v^{2}exp\left(-\frac{mv^{2}}{2
 \end_deeper
 \begin_layout Standard
 Наиболее вероятная скорость:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 v_{\text{вер}}=\sqrt{\df{2kT}m}=\sqrt{\df{2RT}{\mu}}
@@ -10351,14 +10309,7 @@ v_{\text{вер}}=\sqrt{\df{2kT}m}=\sqrt{\df{2RT}{\mu}}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Причем выполняется соотношение:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
@@ -10392,10 +10343,10 @@ v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
 \end_layout
 
 \begin_layout Standard
-Раз установившееся максвеловское распределение скоростей молекул в дальнейшем
+Раз установившееся максвелловское распределение скоростей молекул в дальнейшем
  сохраняется, более того: в результате взаимодействия между молекулами,
- каким бы нибыло исходное распеределение скоростей молекул, в конце концов
- устанавливается максвеловское распределение.
+ каким бы ни было исходное распределение скоростей молекул, в конце концов
+ устанавливается максвелловское распределение.
 \end_layout
 
 \begin_layout Subsection
@@ -10459,7 +10410,7 @@ v_{\text{вер}}\leq\left\langle v\right\rangle \leq v_{\text{ср.кв.}}
 \end_layout
 
 \begin_layout Enumerate
-Будем считать, что темпрература с высотой не меняется: 
+Будем считать, что температура с высотой не меняется: 
 \begin_inset Formula $t=const$
 \end_inset
 
@@ -10492,10 +10443,10 @@ F_{\text{т}}=m_{0}g\um nS\Delta h
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
--m_{0}g\um nS\Delta h+pS-(p+\Delta p)S & = & 0\\
--m_{0}g\um n\Delta h-\Delta p & = & 0
-\end{eqnarray*}
+\begin{align*}
+-m_{0}g\um nS\Delta h+pS-(p+\Delta p)S & =0\\
+-m_{0}g\um n\Delta h-\Delta p & =0
+\end{align*}
 
 \end_inset
 
@@ -10536,18 +10487,14 @@ P=P_{0}\um exp\left(-\df{mgh}{kT}\right)=P_{0}\um exp\left(-\df{\mu gh}{RT}\righ
 Больцман предположил, что в любом потенциальном поле сил, это соотношение
  верно.
  Обозначим: 
-\begin_inset Formula $U\left(h\right)=mgh$
+\begin_inset Formula 
+\[
+U\left(h\right)=mgh;\qquad p=nkT;\qquad P_{0}=n_{0}kT.
+\]
+
 \end_inset
 
-; 
-\begin_inset Formula $p=nkT$
-\end_inset
 
-; 
-\begin_inset Formula $P_{0}=n_{0}kT$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -10559,7 +10506,7 @@ P=P_{0}\um exp\left(-\df{mgh}{kT}\right)=P_{0}\um exp\left(-\df{\mu gh}{RT}\righ
 \begin_layout Standard
 \begin_inset Formula 
 \[
-n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
+\fbox{n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)}
 \]
 
 \end_inset
@@ -10586,10 +10533,14 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 
 \begin_layout Definition
 Эффективным сечением молекулы называется величина равная 
-\begin_inset Formula $\sigma=\pi d^{2}$
+\begin_inset Formula 
+\[
+\sigma=\pi d^{2}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout --Separator--
@@ -10625,7 +10576,7 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 \end_layout
 
 \begin_layout Standard
-Возьмем два вектора: 
+Возьмем два вектора скорости: 
 \begin_inset Formula $\vec{v_{1}}$
 \end_inset
 
@@ -10634,10 +10585,7 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Тогда: 
+ Тогда: 
 \begin_inset Formula $\vec{v_{1}}=\vec{v_{2}}+\vec{v_{\text{отн}}}$
 \end_inset
 
@@ -10647,13 +10595,7 @@ n=n_{0}\um exp\left(-\df{U\left(h\right)}{kT}\right)
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Используя теорему косинусов:
-\end_layout
-
-\begin_layout Standard
+ Используя теорему косинусов:
 \begin_inset Formula 
 \[
 v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
@@ -10662,14 +10604,10 @@ v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\left\langle v_{\text{отн}}^{2}\right\rangle  & = & \left\langle v_{1}^{2}\right\rangle +\left\langle v_{2}^{2}\right\rangle -2\left\langle v_{1}v_{2}\cos\Theta\right\rangle =\\
- & = & 2\left\langle v^{2}\right\rangle 
-\end{eqnarray*}
+\[
+\left\langle v_{\text{отн}}^{2}\right\rangle =\left\langle v_{1}^{2}\right\rangle +\left\langle v_{2}^{2}\right\rangle -2\left\langle v_{1}v_{2}\cos\Theta\right\rangle =2\left\langle v^{2}\right\rangle 
+\]
 
 \end_inset
 
@@ -10678,9 +10616,6 @@ v_{\text{отн}}^{2}=v_{1}^{2}+v_{2}^{2}-2v_{1}v_{2}\cos\Theta
 
 \begin_layout Standard
 Тогда:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 v_{\text{ср.кв.отн}}=\sqrt{2}v_{\text{ср.кв}}
@@ -10697,49 +10632,43 @@ v_{\text{ср.кв.отн}}=\sqrt{2}v_{\text{ср.кв}}
 \end_inset
 
 .
-\end_layout
+ Тогда высота цилиндра: 
+\begin_inset Formula 
+\[
+h=v_{\text{ср.кв.отн.}}\um1\text{с}
+\]
 
-\begin_layout Standard
-Тогда высота цилиндра: 
-\begin_inset Formula $h=v_{\text{ср.кв.отн.}}\um1\text{с}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 А объем цилиндра 
-\begin_inset Formula $V=\sigma\um h=\pi d^{2}v_{cp.kv.otn}$
+\begin_inset Formula 
+\[
+V=\sigma\um h=\pi d^{2}v_{cp.kv.otn}
+\]
+
 \end_inset
 
+Число столкновений: 
+\begin_inset Formula 
+\[
+K=n\um V=n\pi d^{2}v_{cp.kv.otn}
+\]
 
-\end_layout
-
-\begin_layout Standard
-Число сталкновений 
-\begin_inset Formula $K=n\um V=n\pi d^{2}v_{cp.kv.otn}$
 \end_inset
 
+Общая длинна расстояния, которая проходит молекула за одну секунду: 
+\begin_inset Formula 
+\[
+L=v_{cp.kv}\um1sec
+\]
 
-\end_layout
-
-\begin_layout Standard
-Общая длинна расстояния, которая проходит молекула за одну секунду 
-\begin_inset Formula $L=v_{cp.kv}\um1sec$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Средняя длина пробега молекулы: 
 \begin_inset Formula 
-\begin{eqnarray}
-\left\langle l\right\rangle  & = & \df LK=\df{v_{\text{ср.кв.}}}{\pi nd^{2}v_{\text{ср.кв.отн.}}}=\nonumber \\
- & = & \df 1{\sqrt{2}\pi nd^{2}}=\nonumber \\
- & = & \df 1{\sqrt{2}n\sigma}=\label{eq:xxx}\\
- & = & \df{kt}{\sqrt{2}p\sigma}\nonumber 
-\end{eqnarray}
+\begin{equation}
+\left\langle l\right\rangle =\df LK=\df{v_{\text{ср.кв.}}}{\pi nd^{2}v_{\text{ср.кв.отн.}}}=\df 1{\sqrt{2}\pi nd^{2}}=\df 1{\sqrt{2}n\sigma}=\df{kt}{\sqrt{2}p\sigma}\label{eq:xxx}
+\end{equation}
 
 \end_inset
 
@@ -10905,12 +10834,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-Газ в состоянии сверхвысокого вакуума называется ультраразряженым.
+Газ в состоянии сверхвысокого вакуума называется ультра--разряженным.
  
 \end_layout
 
 \begin_layout Definition
-Физический факуум --- когда вообще нету молекул.
+Физический вакуум --- когда вообще нету молекул.
 \end_layout
 
 \begin_layout Subsection
@@ -10938,13 +10867,11 @@ status open
 \end_inset
 
  --- скорость направленного движения.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Formula $S$
 \end_inset
 
---- площадь соприкосновения слоев, 
+ --- площадь соприкосновения слоев, 
 \begin_inset Formula $\eta$
 \end_inset
 
@@ -10952,7 +10879,7 @@ status open
 \begin_inset Formula $\frac{du}{dz}$
 \end_inset
 
- --- скорость изменения скорости вдоль оси 
+ --- ускорение вдоль оси 
 \begin_inset Formula $z$
 \end_inset
 
@@ -10985,7 +10912,7 @@ f=\eta\df{du}{dz}\um S
 \begin_inset Formula $\D\v{J_{'}^{''}}=N\um m\um\v{U_{2}}$
 \end_inset
 
- --- которые пришли ....
+ --- которые пришли.
 \end_layout
 
 \begin_layout Standard
@@ -10995,48 +10922,37 @@ f=\eta\df{du}{dz}\um S
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+N=\df 16\left\langle v\right\rangle \D t\um S\um n
+\]
 
-\begin_layout Standard
-\begin_inset Formula $N=\df 16\left\langle v\right\rangle \D t\um S\um n$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Таким образом мы можем посчитать, как изменилося импукльс первого слоя за
+Таким образом мы можем посчитать, как изменился импульс первого слоя за
  
 \begin_inset Formula $\D t$
 \end_inset
 
- 
-\end_layout
+:
+\begin_inset Formula 
+\begin{align*}
+\D\v{J_{1}} & =\D\v{J_{'}^{''}}-\D\v{J_{'}^{'}}=\\
+ & =\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)\D t\um S
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\D\v{J_{1}}=\D\v{J_{'}^{''}}-\D\v{J_{'}^{'}}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\D\v{J_{1}}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)\D t\um S$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
 Делим на 
 \begin_inset Formula $\D t$
 \end_inset
 
- и получаем силу, и устремляем к нулю
-\end_layout
+, получаем силу, и устремляем к нулю:
+\begin_inset Formula 
+\[
+f_{1}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $f_{1}=\df 16\left\langle v\right\rangle \um m\um n\left(U_{2}-U_{1}\right)S$
 \end_inset
 
 
@@ -11070,33 +10986,20 @@ status open
 \end_layout
 
 \begin_layout Standard
-Раз длинна свободного пробера маленькая, тто мы можем применить формулу
- Тейлора (из мат анализа)
+Раз длинна свободного пробега маленькая, то мы можем применить формулу Тейлора
+ (из мат анализа):
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U_{1}=U\left(z+\left\langle l\right\rangle \right)=u\left(z\right)+\df{du\left(z\right)}{dz}\left\langle l\right\rangle +\df{d^{2}u\left(z\right)}{dz}\df{\left\langle l\right\rangle ^{2}}{2!}+\tr$
+\begin_inset Formula 
+\begin{align*}
+U_{1} & =U\left(z+\left\langle l\right\rangle \right)=u\left(z\right)+\df{du\left(z\right)}{dz}\left\langle l\right\rangle +\df{d^{2}u\left(z\right)}{dz}\df{\left\langle l\right\rangle ^{2}}{2!}+\tr=\\
+\intertext{\text{Так как \left\langle l\right\rangle очень мало, то ограничимся всего лишь 2-мя слагаемыми:}} & =u\left(z\right)-\df{du}{dz}\left\langle l\right\rangle 
+\end{align*}
+
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Так как 
-\begin_inset Formula $\left\langle l\right\rangle $
-\end_inset
-
- очень мало, то ограничемся всего лишь 2мя слагаемыми:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $U_{1}=u\left(z\right)-\df{du}{dz}\left\langle l\right\rangle $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+Откуда: 
 \begin_inset Formula $f_{1}=-\df 16mn\left\langle v\right\rangle 2\df{du}{dz}\left\langle l\right\rangle S$
 \end_inset
 
@@ -11112,18 +11015,19 @@ status open
 \begin_inset Formula $S$
 \end_inset
 
-, то ее знак можно опустить.
-\end_layout
+, то ее знак можно опустить: 
+\begin_inset Formula 
+\[
+f=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle \df{du}{dz}S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $f=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle \df{du}{dz}S$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Сравним с поученой эксперементально: 
+Сравним с полученной экспериментально: 
 \begin_inset Formula $f=\nu\df{du}{dz}S$
 \end_inset
 
@@ -11132,38 +11036,37 @@ status open
 \end_inset
 
  
-\end_layout
+\begin_inset Formula 
+\[
+\nu=\df 13mn\sqrt{\df{8kT}{3m}}\df 1{\sqrt{2}\sigma n}\sim\df{\sqrt{T}\sqrt{m}}{\sigma}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\nu=\df 13mn\sqrt{\df{8kT}{3m}}\df 1{\sqrt{2}\sigma n}\sim\df{\sqrt{T}\sqrt{m}}{\sigma}$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Коофицент вязкости не зависит от концентрации молекул, и таким образом и
- от давления.
+Коэффициент вязкости не зависит от концентрации молекул, и таким образом
+ и от давления.
 \end_layout
 
 \begin_layout Subsection
-Тепропроводность газом
+Теплопроводность газов
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Теплопроводность --- это перенос энергии.
 \end_layout
 
 \begin_layout Standard
-Опытным путем было установлено, то что за еденицу времени черезт площадку
- с проходит 
+Опытным путем было установлено, то что за единицу времени через площадку
+ проходит 
 \begin_inset Formula $q=-\df{dT}{dz}S$
 \end_inset
 
  количество тепла.
-\end_layout
-
-\begin_layout Standard
+ Тогда: 
 \begin_inset Formula $Q=q\um t$
 \end_inset
 
@@ -11178,19 +11081,17 @@ status open
 \begin_inset Formula $\lambda$
 \end_inset
 
- --- коофицент теплопроводностии
-\end_layout
-
-\begin_layout Standard
+ --- коэффициент теплопроводности.
+ 
 \begin_inset Formula $\left[\lambda\right]=\df{\text{Дж}}{\text{К}\x\text{М}\x\text{с}}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-Попробуем обьяснить эту формулу основываясь на молекулярно кинетическую
- теорию.
+Попробуем объяснить эту формулу основываясь на молекулярно--кинетической
+ теории.
 \end_layout
 
 \begin_layout Standard
@@ -11210,44 +11111,47 @@ status open
 \begin_inset Formula $\left\langle \varepsilon_{1}\right\rangle =\df 32\um k\um T_{1}$
 \end_inset
 
- --- энергия 1го слоя
+ --- энергия 1-го слоя
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\left\langle \varepsilon_{2}\right\rangle =\df 32\um k\um T_{2}$
 \end_inset
 
- --- энергия 2го слоя
+ --- энергия 2-го слоя
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\D N=\df 16\um\left\langle v\right\rangle \um\D t\um S\um n$
+\begin_inset Formula 
+\[
+\D N=\df 16\um\left\langle v\right\rangle \um\D t\um S\um n
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Количество молекул перешедших из 1го слоя во 2й и обратно одинакого.
+Количество молекул перешедших из 1-го слоя во 2-й и обратно одинаково.
  Посчитаем энергию:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\D E=-\D N\left\langle \varepsilon_{1}\right\rangle +\D N\left\langle \varepsilon_{2}\right\rangle $
+\begin_inset Formula 
+\begin{align*}
+\D E & =-\D N\left\langle \varepsilon_{1}\right\rangle +\D N\left\langle \varepsilon_{2}\right\rangle \\
+ & =\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)\D tS
+\end{align*}
+
 \end_inset
 
-
+Тогда количество тепла:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Delta E=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)\D tS$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+q=\df{\D E}{\D t} & =\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)S\\
+ & =\df 16\left\langle v\right\rangle n\df 32k\left(T_{2}-T_{1}\right)S
+\end{align*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $q=\df{\D E}{\D t}=\df 16\left\langle v\right\rangle n\left(\left\langle \varepsilon_{2}\right\rangle -\left\langle \varepsilon_{1}\right\rangle \right)S=\df 16\left\langle v\right\rangle n\df 32k\left(T_{2}-T_{1}\right)S$
 \end_inset
 
 
@@ -11258,6 +11162,22 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+..............................................
+\end_layout
+
+\begin_layout Standard
+Выразим 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -11275,35 +11195,36 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle n\df 32k\df{dT}{dz}S$
+Подставим:
+\begin_inset Formula 
+\[
+q=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle n\df 32k\df{dT}{dz}S
+\]
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Сопоставляем с полученой эксперементально и убеждаемся что все правильно.
+Сопоставляем с полученной экспериментально и убеждаемся что все правильно.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\lambda & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k=\\
- & = & \df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k\df{mN_{A}}{mN_{A}}=\\
- & = & \left\{ \begin{array}{c}
+\begin{align*}
+\lambda & =\df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k=\\
+ & =\df 13n\left\langle v\right\rangle \left\langle l\right\rangle \df 32k\df{mN_{A}}{mN_{A}}=\\
+ & =\left\{ \begin{array}{c}
 kN_{A}=R\\
 n\um m=\rho\\
 mN_{A}=\mu
-\end{array}\right\} =\\
- & = & \df 13\rho\df{3R}{2\mu}\left\langle v\right\rangle \left\langle l\right\rangle 
-\end{eqnarray*}
+\end{array}\right\} =\df 13\rho\df{3R}{2\mu}\left\langle v\right\rangle \left\langle l\right\rangle 
+\end{align*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $c_{v}=\df 32\df R{\mu}$
 \end_inset
 
@@ -11312,40 +11233,26 @@ mN_{A}=\mu
 \begin_inset Formula $\df 32$
 \end_inset
 
- --- зависит от количества атомов в молекул (это тдля одноатомных).
-\end_layout
+ --- зависит от количества атомов в молекул (это для одноатомных).
+\begin_inset Formula 
+\begin{align*}
+\lambda & =\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle c_{v}\\
+ & =c_{v}\nu\\
+ & =\df 13n\sqrt{\df{8kT}{\pi m}}\df 1{\sqrt{2}\sigma n}\df 32k\sim\df{\sqrt{T}}{\sigma\sqrt{m}}
+\end{align*}
 
-\begin_layout Standard
-\begin_inset Formula $\lambda=\df 13mn\left\langle v\right\rangle \left\langle l\right\rangle c_{v}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lambda=c_{v}\nu$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lambda=\df 13n\sqrt{\df{8kT}{\pi m}}\df 1{\sqrt{2}\sigma n}\df 32k\sim\df{\sqrt{T}}{\sigma\sqrt{m}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsection
-Дифузия газов
+Диффузия газов
 \end_layout
 
 \begin_layout Standard
-Будем считать чтодавление и концентрация молекул по обьему одна и та же.
-\end_layout
-
-\begin_layout Standard
-Пусть смесь состоит только из 2х газов.
+Будем считать что давление и концентрация молекул по объему одна и та же.
+ Пусть смесь состоит только из 2х газов.
 \end_layout
 
 \begin_layout Standard
@@ -11365,14 +11272,17 @@ status open
 \begin_inset Formula $n_{1}'+n_{1}''=n_{2}'+n_{2}''=n$
 \end_inset
 
- 
+ Это явление диффузии.
 \end_layout
 
 \begin_layout Standard
-Это явление дифузии.
+\begin_inset Formula $K'=-D\df{dn'}{dz}S$
+\end_inset
+
+ --- формула была получена экспериментально.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $K$
 \end_inset
 
@@ -11380,21 +11290,14 @@ status open
 \begin_inset Formula $S$
 \end_inset
 
- в еденицу времени
+ в единицу времени.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $K'=-D\df{dn'}{dz}S$
-\end_inset
-
- --- была получена эксперементально
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $D$
 \end_inset
 
- --- коофицент дифузии.
+ --- коэффициент диффузии.
 \end_layout
 
 \begin_layout Standard
@@ -11417,16 +11320,14 @@ status open
 
 \begin_layout Standard
 Накую величину изменилось количество молекул где то там...
-\end_layout
+\begin_inset Formula 
+\[
+K=\df{\D N'}{\D t}=\df 16\left\langle v\right\rangle \left(n_{2}'-n_{1}'\right)S
+\]
 
-\begin_layout Standard
-\begin_inset Formula $K=\df{\D N'}{\D t}=\df 16\left\langle v\right\rangle \left(n_{2}'-n_{1}'\right)S$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+По Тейлору: 
 \begin_inset Formula $n'\left(z\right)$
 \end_inset
 
@@ -11456,49 +11357,69 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $K'=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle \df{dn'}{dz}S$
+\begin_inset Formula 
+\[
+K'=-\df 13\left\langle v\right\rangle \left\langle l\right\rangle \df{dn'}{dz}S
+\]
+
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $D=\df 13\left\langle v\right\rangle \left\langle l\right\rangle $
-\end_inset
+\begin_inset Formula 
+\[
+D=\df 13\left\langle v\right\rangle \left\langle l\right\rangle 
+\]
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\nu=\rho\um D$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D=\df 13\sqrt{\df{8kT}{\pi m}}\df 1{\sigma n\sqrt{2}}\sim\df{\sqrt{T}}{\sqrt{m}n\sigma}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $K''=-D\df{dn''}{dz}S$
-\end_inset
+\begin_inset Formula 
+\[
+\nu=\rho\um D
+\]
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $M'=-D\df{d\rho'}{dz}S$
 \end_inset
 
 
+\begin_inset Formula 
+\[
+D=\df 13\sqrt{\df{8kT}{\pi m}}\df 1{\sigma n\sqrt{2}}\sim\df{\sqrt{T}}{\sqrt{m}n\sigma}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K''=-D\df{dn''}{dz}S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M'=-D\df{d\rho'}{dz}S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q=-\lambda\um grad\, T\um S=-\lambda\um\un{\iint}S\left(grad\, T,\,\v n\right)dS$
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -11509,28 +11430,27 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U_{\text{вн}}=E_{\text{кин}}+E_{\text{вд}}$
+\begin_inset Formula 
+\[
+U_{\text{вн}}=E_{\text{кин}}+E_{\text{вд}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+U & =E_{\text{кин}}\text{ --- в газах}\\
+U & =E_{\text{кин}}=N\df 32kT=\nu\df 32RT
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U=E_{\text{кин}}$
-\end_inset
-
- --- в газах
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $U=E_{\text{кин}}=N\df 32kT=\nu\df 32RT$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Рассмотрм, если газ получает некоторую энергию извне, в виде температьуры.
+Рассмотрим, если газ получает некоторую энергию извне, в виде температуры.
 \end_layout
 
 \begin_layout Standard
@@ -11555,11 +11475,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Условимся, что если газ получет тепо, то 
+Условимся, что если газ получает тепло, то 
 \begin_inset Formula $Q>0$
 \end_inset
 
-,если отдает, то 
+, если отдает, то 
 \begin_inset Formula $Q<0$
 \end_inset
 
@@ -11568,8 +11488,8 @@ status open
 
 \begin_layout Standard
 Точно также условимся с работой.
- Если газ совершает рабьоту над внешними телаами, то это робота положительная,
- а если соверщается на гахом, то эта робота отрицательная.
+ Если газ совершает работу над внешними телами, то это робота положительная,
+ а если совершается над газом, то эта робота отрицательная.
 \end_layout
 
 \begin_layout Standard
@@ -11580,7 +11500,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Если газ в это время будет совершать работу, то его енергия будет уменьшаться.
+Если газ в это время будет совершать работу, то его энергия будет уменьшаться.
 \end_layout
 
 \begin_layout Standard
@@ -11591,11 +11511,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Q=$
-\end_inset
-
-Тепло, поступающее в газ идет на изменение его внутренней энергии и на соверщени
-е газом работиы над внешними телами.
+Тепло, поступающее в газ идет на изменение его внутренней энергии и на совершени
+е газом работы над внешними телами.
 \end_layout
 
 \begin_layout Standard
@@ -11617,21 +11534,20 @@ status open
 \end_layout
 
 \begin_layout Definition
-Теплоемкостью какого либа тела, называется величина, равная колическтву
- тепла, которое необходимо сообщить телу, чтобы поднять его температуру
- на 1 градус.
+Теплоемкостью какого либо тела, называется величина, равная количеству тепла,
+ которое необходимо сообщить телу, чтобы поднять его температуру на 1 градус.
 \end_layout
 
 \begin_layout Standard
-Если мы для какогото тела поднимает его температуру на 
+Если мы поднимаем температуру какого то тела на 
 \begin_inset Formula $\D T$
 \end_inset
 
-, а тепрература тела повышается на 
+, а температура тела повышается на 
 \begin_inset Formula $\D Q$
 \end_inset
 
-, то теплоемкостью можно называьт 
+, то теплоемкостью можно называть 
 \begin_inset Formula $C_{T}=\df{\D Q}{\D T}=\left[\df{\text{Джоуль}}{\text{Кельвин}}\right]$
 \end_inset
 
@@ -11639,21 +11555,21 @@ status open
 \end_layout
 
 \begin_layout Definition
-Теплоемкость еденицы массы вещества называется удельной теплоемкостью.
- Обозначается 
+Теплоемкость единицы массы вещества называется удельной теплоемкостью.
+ Обозначается: 
 \begin_inset Formula $c$
 \end_inset
 
 .
- В системе 
-\begin_inset Formula $\left[c\right]$
+ В системе СИ: 
+\begin_inset Formula 
+\[
+\left[c\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Килограмм}}
+\]
+
 \end_inset
 
- измеряется в 
-\begin_inset Formula $\df{\text{Джоуль}}{\text{Кельвин}\x\text{Килограмм}}$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout --Separator--
@@ -11668,13 +11584,14 @@ status open
 
 .
  
-\begin_inset Formula $\left[C\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Киломоль}}$
+\begin_inset Formula 
+\[
+\left[C\right]=\df{\text{Джоуль}}{\text{Кельвин}\x\text{Киломоль}}
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
+Причем
 \begin_inset Formula 
 \[
 c=\df C{\mu}
@@ -11686,61 +11603,69 @@ c=\df C{\mu}
 \end_layout
 
 \begin_layout Standard
-Рассмотрим такую ситуацию.
- Будем нагревать газ в замкнутом обьеме (
-\begin_inset Formula $V=const$
+Рассмотрим такую ситуацию: будем нагревать газ в замкнутом объеме 
+\begin_inset Formula $(V=const)$
 \end_inset
 
-).
- Газ не расширяется и не совершает работу (
-\begin_inset Formula $A=0$
+.
+ Газ не расширяется и не совершает работу 
+\begin_inset Formula $(A=0)$
 \end_inset
 
-), и тогда вся энергия пойдет на увеличение температуры.
+, и тогда вся энергия пойдет на увеличение температуры.
  
 \begin_inset Formula $Q=\D U$
 \end_inset
 
 .
- Мы уже знгаем что 
+ Мы уже знаем что 
 \begin_inset Formula $U=\df 32\um R\um T$
 \end_inset
 
  для одного моля.
  
-\begin_inset Formula $\D U=\df 32\nu R\D T$
+\begin_inset Formula 
+\[
+\D U=\df 32\nu R\D T
+\]
+
 \end_inset
 
-.
- Согласно этому примеру, еслши мы берем 
+Согласно этому примеру, если мы берем 
 \begin_inset Formula $\nu=1\,\text{КМоль}$
 \end_inset
 
 , то 
-\begin_inset Formula $C_{V}=\df Q{\D T}=\df{\D U}{\D T}$
+\begin_inset Formula 
+\[
+C_{V}=\df Q{\D T}=\df{\D U}{\D T}
+\]
+
 \end_inset
 
-.
- 
+
 \end_layout
 
 \begin_layout Standard
-Теперь, если мы возьмем ситуацию, что обьем изменяется (Нагрев при постоянном
- давлении) (
-\begin_inset Formula $P-const$
+Теперь, если мы возьмем ситуацию, что объем изменяется (Нагрев при постоянном
+ давлении) 
+\begin_inset Formula $(P=const)$
 \end_inset
 
-).
+.
  
 \begin_inset Formula $Q=\D U+A$
 \end_inset
 
- Вод тут будет такое равенство.
- 
-\begin_inset Formula $C_{P}=\df Q{\D T}=\df{\D U}{\D T}+\df A{\D T}=C_{V}+\df A{\D T}>C_{V}$
+ То выполняется равенство:
+\begin_inset Formula 
+\[
+C_{P}=\df Q{\D T}=\df{\D U}{\D T}+\df A{\D T}=C_{V}+\df A{\D T}>C_{V}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Corollary
@@ -11752,11 +11677,15 @@ c=\df C{\mu}
 \begin_inset Formula $\D h$
 \end_inset
 
-, 
-\begin_inset Formula $A=F\D h=P\um S\um\D h=P\D V$
+, работа равна: 
+\begin_inset Formula 
+\[
+A=F\D h=P\um S\um\D h=P\D V
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -11767,6 +11696,7 @@ c=\df C{\mu}
 \end_layout
 
 \begin_layout Standard
+Пусть было: 
 \begin_inset Formula $PV_{1}=RT_{1}$
 \end_inset
 
@@ -11779,7 +11709,7 @@ c=\df C{\mu}
 \end_layout
 
 \begin_layout Standard
-В итоге получим:
+В итоге получим: 
 \begin_inset Formula $P\D V=R\D T$
 \end_inset
 
@@ -11791,13 +11721,13 @@ c=\df C{\mu}
 \begin_inset Formula $C_{P}=C_{V}+\df{P\D V}{\D T}=C_{V}+\df{R\D T}{\D T}=C_{V}+R$
 \end_inset
 
- 
+ получим формулу Майера.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-C_{P}=C_{V}+R
+\fbox{C_{P}=C_{V}+R}
 \]
 
 \end_inset
@@ -11806,15 +11736,11 @@ C_{P}=C_{V}+R
 \end_layout
 
 \begin_layout Standard
-Это формура Майэра.
-\end_layout
-
-\begin_layout Standard
 Универсальная газовая постоянная 
 \begin_inset Formula $R$
 \end_inset
 
- численно рава работе расширения обного киломоля идеального газа при его
+ численно равна работе расширения одного киломоля идеального газа при его
  нагревании на один градус в условиях постоянного давления.
 \end_layout
 
@@ -11843,20 +11769,24 @@ C_{P}=C_{V}+R
 \begin_inset Formula $C_{V}$
 \end_inset
 
- зависит от пемпературы, то тогда устремляем 
+ зависит от температуры, то тогда устремляем 
 \begin_inset Formula $\D T\to\b$
 \end_inset
 
 .
  И придем к формуле 
-\begin_inset Formula $C_{V}=\df{du}{dT}$
+\begin_inset Formula 
+\[
+C_{V}=\df{du}{dT}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-При некоторых условиях коофицент 
+При некоторых условиях коэффициент 
 \begin_inset Formula $\df 32$
 \end_inset
 
@@ -11867,60 +11797,138 @@ C_{P}=C_{V}+R
 \begin_inset Formula $C_{V}=\df 32R$
 \end_inset
 
- --- такой теплокмкостью обладают газы 
+ --- такой теплоемкостью обладают газы 
 \begin_inset Formula $He,\, Ne,\, Ar,\tr$
 \end_inset
 
 .
- (Восьмой столбец таблицы Минделеева) У них все элексроны заполнены.
+ (Восьмой столбец таблицы Менделеева) У них все электроны заполнены.
  Их называют благородными газами.
- Для них 
-\begin_inset Formula $C_{V}=12,5\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $He,\, Ne,\, Ar,\tr$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Для 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{V}=\df 32R=12,5\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $N_{2},\, O_{2}$
 \end_inset
 
- --- 
-\begin_inset Formula $C_{V}=20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{V}=\df 52R=20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Для 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $NH_{3},\, CH_{4}$
 \end_inset
 
- --- 
-\begin_inset Formula $C_{V}=25,0\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{V}=\df 62R=25,0\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Теплоемкости некоторых газов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT=\df{m\left\langle v^{2}\right\rangle }2$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+\left\langle \varepsilon\right\rangle  & =\df 32kT=\df{m\left\langle v^{2}\right\rangle }2\\
+\intertext{\text{Так как: \ensuremath{v^{2}=v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}} & =\df{m\left\langle v_{x}^{2}\right\rangle }2+\df{m\left\langle v_{y}^{2}\right\rangle }2+\df{m\left\langle v_{z}^{2}\right\rangle }2=\\
+ & =\df 12kT+\df 12kT+\df 12kT
+\end{align*}
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v^{2}=v_{x}^{2}+v_{y}^{2}+v_{z}^{2}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\df{m\left\langle v_{x}^{2}\right\rangle }2+\df{m\left\langle v_{y}^{2}\right\rangle }2+\df{m\left\langle v_{z}^{2}\right\rangle }2=\df 12kT+\df 12kT+\df 12kT$
 \end_inset
 
 
@@ -11931,7 +11939,7 @@ C_{P}=C_{V}+R
 \begin_inset Formula $He,\, Ne$
 \end_inset
 
-), для ни= 
+): 
 \begin_inset Formula $\left\langle \varepsilon\right\rangle =\df 32kT$
 \end_inset
 
@@ -11939,15 +11947,11 @@ C_{P}=C_{V}+R
 \end_layout
 
 \begin_layout Standard
-Это было для одноатомного газа, у которго 3 степени свободы.
-\end_layout
-
-\begin_layout Standard
-Больцман предположил, что на любую степень своботы приходится 
+Больцман предположил, что на любую степень свободы приходится 
 \begin_inset Formula $\df 12kT$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -11983,12 +11987,16 @@ C_{P}=C_{V}+R
 \end_layout
 
 \begin_layout Standard
-Теперь перейдем во внутреннюю энергию газов, то там 
+Теперь если перейдем во внутреннюю энергию газов, то 
 \begin_inset Formula $U=\df 52RT$
 \end_inset
 
 , 
-\begin_inset Formula $C_{V}=\df 52R\approx20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}$
+\begin_inset Formula 
+\[
+C_{V}=\df 52R\approx20,8\um10^{3}\df{\text{Джоуль}}{\text{КМоль}\x\text{Кельвин}}
+\]
+
 \end_inset
 
 
@@ -11999,11 +12007,12 @@ C_{P}=C_{V}+R
 \end_inset
 
  --- 6 степеней свободы.
-\end_layout
+ Для них: 
+\begin_inset Formula 
+\[
+\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+3\left(\df 12kT\right)=\df 62kT=3kT
+\]
 
-\begin_layout Standard
-Для них 
-\begin_inset Formula $\left\langle \varepsilon\right\rangle =\left\langle \varepsilon_{\text{пост}}\right\rangle +\left\langle \varepsilon_{\text{вр}}\right\rangle =3\left(\df 12kT\right)+3\left(\df 12kT\right)=\df 62kT=3kT$
 \end_inset
 
 
@@ -12011,15 +12020,12 @@ C_{P}=C_{V}+R
 
 \begin_layout Standard
 Если посчитать, то всё сходится.
-\end_layout
-
-\begin_layout Standard
-Но есть некоторые исключения.
+ Но есть некоторые исключения.
  Дело в том, что некоторые газы, например 
 \begin_inset Formula $CO_{2}$
 \end_inset
 
-, у него структура линейная, и у него 5 степеней свободы.
+, имеют линейную структуру, и у него 5 степеней свободы.
 \end_layout
 
 \begin_layout Standard
@@ -12036,14 +12042,18 @@ status open
 \end_layout
 
 \begin_layout Standard
-Почему это так? Все таки молукула, этот не твердое тело.
- При очень нихких температурах у них нету вращательного движения, и гворят,
- что она вымерзает.
- Тоесть если 
-\begin_inset Formula $\widetilde{\varepsilon_{\text{вр}}}>\df 12kT+\df 12kT$
+Почему это так? Все таки молекула, это не твердое тело.
+ При очень низких температурах у них нету вращательного движения, и говорят,
+ что молекула вымерзает.
+ То есть если 
+\begin_inset Formula 
+\[
+\widetilde{\varepsilon_{\text{вр}}}>\df 12kT+\df 12kT
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -12057,12 +12067,13 @@ status open
 \begin_layout Standard
 С ростом температуры у отдельных молекул начинает проявляться колебательная
  степень свободы, связанная с движением атомов в молекуле.
- В этом дуижении участвуют два вида энергии --- этергия движения атомов
- и потенциальная энергия связи в атомах.
-\end_layout
+ В этом движении участвуют два вида энергии: энергия движения атомов и потенциал
+ьная энергия связи в атомах.
+\begin_inset Formula 
+\[
+\left\langle \varepsilon_{\text{кол}}\right\rangle =\left\langle \varepsilon_{AT}\right\rangle +\left\langle U_{AT}\right\rangle =\df 12kT+\df 12kT=kT
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\left\langle \varepsilon_{\text{кол}}\right\rangle =\left\langle \varepsilon_{AT}\right\rangle +\left\langle U_{AT}\right\rangle =\df 12kT+\df 12kT=kT$
 \end_inset
 
 
@@ -12082,7 +12093,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-На 2500 молекулы распадаются, и вся энергия идет на распад молекул на атомы.
+На 2500К молекулы распадаются, и вся энергия идет на распад молекул на атомы.
 \end_layout
 
 \begin_layout Standard
@@ -12108,13 +12119,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $PV=\nu RT$
+\begin_inset Formula 
+\[
+PV=\nu RT
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если я знаю значения 
 \begin_inset Formula $P$
 \end_inset
@@ -12124,14 +12135,18 @@ status open
 \end_inset
 
 , то можно найти 
-\begin_inset Formula $T.$
+\begin_inset Formula $T$
 \end_inset
 
- 
+: 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $T=\df 1{\nu R}PV$
+\begin_inset Formula 
+\[
+T=\df 1{\nu R}PV
+\]
+
 \end_inset
 
 
@@ -12163,14 +12178,11 @@ Hbc 36
 \end_layout
 
 \begin_layout Standard
-При постоянном лавлении 
+При постоянном давлении 
 \begin_inset Formula $A=p\um\D V$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
@@ -12191,7 +12203,7 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 \end_inset
 
  
-\begin_inset Formula $\sl$
+\begin_inset Formula $\then$
 \end_inset
 
  
@@ -12237,7 +12249,7 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 \end_inset
 
  
-\begin_inset Formula $\sl$
+\begin_inset Formula $\then$
 \end_inset
 
  
@@ -12365,8 +12377,8 @@ A=\oui{v_{1}}{v_{2}}P\left(V\right)\um dV
 
 \begin_deeper
 \begin_layout Standard
-Процесс, протекающий без теплообмета с внешней средой.
- Система доджна быть теплоизолирована.
+Процесс, протекающий без теплообмена с внешней средой.
+ Система должна быть теплоизолирована.
  
 \end_layout
 
@@ -12461,7 +12473,7 @@ PdV+VdP-RdT=0
 \end_layout
 
 \begin_layout Standard
-Первое домножаем на 
+Первое домножим на 
 \begin_inset Formula $R$
 \end_inset
 
@@ -12652,7 +12664,7 @@ status open
 \begin_inset Formula $A_{341}=-A_{143}$
 \end_inset
 
-, а значит: 
+, а значит:
 \begin_inset Formula 
 \[
 A=A_{123}-A_{143}=A_{123}+A_{341}=\oint\limits _{12341}P\left(V\right)dV
@@ -12661,9 +12673,6 @@ A=A_{123}-A_{143}=A_{123}+A_{341}=\oint\limits _{12341}P\left(V\right)dV
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\Delta U=0$
 \end_inset
 
@@ -12756,7 +12765,7 @@ Hbc 38
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $T-const$
+\begin_inset Formula $T=const$
 \end_inset
 
 
@@ -12771,7 +12780,7 @@ Hbc 38
 
 \end_deeper
 \begin_layout Enumerate
-Адиоботический
+Адиобатический
 \end_layout
 
 \begin_deeper
@@ -12800,7 +12809,7 @@ Hbc 38
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $T-const$
+\begin_inset Formula $T=const$
 \end_inset
 
 
@@ -12829,7 +12838,7 @@ Hbc 38
 \end_layout
 
 \begin_layout Enumerate
-Адиоботически вернуть в тоже состояние, но тогда получится замкнутый циык,
+Адиобатически вернуть в тоже состояние, но тогда получится замкнутый цикл,
  и тогда над газом совершили работу, а работа то из внешней среды, и тогда
  во внешней среде произошли изменения.
 \end_layout
@@ -12875,7 +12884,7 @@ Hbc 38
 \end_layout
 
 \begin_layout Subsection
-Адиоботическое расширение или сжатие
+Адиобатическое расширение или сжатие
 \end_layout
 
 \begin_layout Standard
@@ -12895,7 +12904,8 @@ Hbc 38
 \end_layout
 
 \begin_layout Standard
-Нужнопроводить этот процесс бесконечно быстро, чтобы не успевало тепло уходить.
+Нужно проводить этот процесс бесконечно быстро, чтобы не успевало тепло
+ уходить.
 \end_layout
 
 \begin_layout Claim
@@ -12915,7 +12925,7 @@ Hbc 38
  телу, более нагретому.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Remark
 Иначе бы можно было бы ставить чайник на лед, и он закипел бы.
 \end_layout
 
@@ -12941,7 +12951,11 @@ Hbc 38
 \end_layout
 
 \begin_layout Standard
-Карно --- Французский инженер
+
+\emph on
+Карно 
+\emph default
+--- Французский инженер
 \end_layout
 
 \begin_layout Standard
@@ -12978,7 +12992,7 @@ status open
 \begin_inset Formula $T_{1}=T$
 \end_inset
 
----const
+ --- const
 \end_layout
 
 \begin_layout Standard
@@ -13015,17 +13029,17 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-Изотермическое сжтие 
+Изотермическое сжатие 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-Газ отдате тепло 
+Газ отдаче тепло 
 \begin_inset Formula $Q_{2}$
 \end_inset
 
  холодильнику.
- (Чаще всего холодильник это оклужающая среда)
+ (Чаще всего холодильник это окружающая среда)
 \end_layout
 
 \end_deeper
@@ -13062,11 +13076,11 @@ status open
 \end_inset
 
  --- это тепло, которое берет холодильник (просто если это тепло, которое
- отдал газ, то это слогаемое должно быть со знаком минус)
+ отдал газ, то это слагаемое должно быть со знаком минус)
 \end_layout
 
 \begin_layout Theorem
-Две различны еобратимые тепловые машины, работающие с одними и теми же нагревати
+Две различные обратимые тепловые машины, работающие с одними и теми же нагревате
 лем и холодильником имеют одинаковое КПД.
 \end_layout
 
@@ -13138,37 +13152,36 @@ status open
 \end_inset
 
  
-\end_layout
+\begin_inset Formula 
+\[
+\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\df{Q_{1}-Q_{2M}}{Q_{1}}>\df{Q_{1}-Q_{2N}}{Q_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+Q_{2M}<Q_{2N}
+\]
 
-\begin_layout Proof
-\begin_inset Formula $Q_{2M}<Q_{2N}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $A_{M}>A_{N}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+A_{M}>A_{N}
+\]
 
-\begin_layout Proof
+\end_inset
+
 Заставим эту машину работать по обратному циклу.
  (над ней совершается работа 
 \begin_inset Formula $A_{N},$
 \end_inset
 
-и отдается темло нагревателю 
-\begin_inset Formula $Q_{1})$
+и отдается тепло нагревателю 
+\begin_inset Formula $Q_{1}$
 \end_inset
 
 
@@ -13213,7 +13226,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Расмотрим единую тепловую машину 
+Рассмотрим единую тепловую машину 
 \begin_inset Formula $\left(M-N\right)$
 \end_inset
 
@@ -13221,7 +13234,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Она забтрает у холодильника тепло 
+Она забирает у холодильника тепло 
 \begin_inset Formula $Q_{2}=Q_{N2}-Q_{M2}$
 \end_inset
 
@@ -13229,8 +13242,8 @@ status open
 \end_layout
 
 \begin_layout Proof
-Получается нагреватель стоит ради мебели, а работа совершалаь.
- Тоесть машина забрала тепло у холдодильника и полностью превратила его
+Получается нагреватель стоит ради мебели, а работа совершалась.
+ То есть машина забрала тепло у холодильника и полностью превратила его
  в работу, что невозможно в силу 2го начала термодинамики.
 \end_layout
 
@@ -13243,11 +13256,11 @@ status open
 \end_layout
 
 \begin_layout Proof
-Аналогично мжно доказать, что 
+Аналогично можно доказать, что 
 \begin_inset Formula $\eta_{M}<\eta_{N}$
 \end_inset
 
- тоже неверное, следорвательно остается их приравнять.
+ тоже неверное, следовательно остается их приравнять.
 \end_layout
 
 \begin_layout Standard
@@ -13260,8 +13273,8 @@ status open
 \end_inset
 
  --- обратимая машина.
- Они работают с одним и теми же холодилшьником и нагревателем, различие
- только в том, что одна обратимая, а другая нет.
+ Они работают с одним и теми же холодильником и нагревателем, различие только
+ в том, что одна обратимая, а другая нет.
  Аналогично можно показать, что неравенство 
 \begin_inset Formula $\eta_{H}>\eta_{O}$
 \end_inset
@@ -13278,9 +13291,9 @@ status open
 \end_layout
 
 \begin_layout Standard
-Как сделать из обратимой машины необратимую, присыпать песочку, добависть
+Как сделать из обратимой машины необратимую, присыпать песочку, добавить
  трение.
- И тогда КПД обратимой машины будет ментше чем необратимой.
+ И тогда КПД обратимой машины будет меньше чем необратимой.
 \end_layout
 
 \begin_layout Standard
@@ -13288,24 +13301,22 @@ status open
 \end_inset
 
  --- так вычисляется КПД.
- Но для обратимой машыны можно подругому по идее.
-\end_layout
+ Но для обратимой машины можно по другому по идее.
+\begin_inset Formula 
+\[
+Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $Q_{1}=A_{1}=\nu RT\ln\df{V_{2}}{V_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $Q_{2}=A_{2}=\nu RT\ln\df{V_{3}}{V_{4}}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Так как минус в формуле КПД поставлен явно, то 
 \begin_inset Formula $\ln\df{V_{3}}{V_{4}}$
 \end_inset
@@ -13318,10 +13329,14 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}$
+\begin_inset Formula 
+\[
+\eta=\df{T_{1}\ln\df{V_{2}}{V_{1}}-T_{2}\ln\df{V_{3}}{V_{4}}}{T_{1}\ln\df{V_{2}}{V_{1}}}
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -13355,49 +13370,41 @@ status open
 \end_inset
 
 , и подставляем:
-\end_layout
+\begin_inset Formula 
+\[
+\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{\nu RT_{1}V_{2}^{\gamma}}{V_{2}}=\df{\nu RT_{2}V_{3}^{\gamma}}{V_{3}}$
 \end_inset
 
- 
-\end_layout
+Откуда получаем уравнение адиобаты, связывающее объем и температуру.
+\begin_inset Formula 
+\[
+T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}
+\]
 
-\begin_layout Standard
-Откуда получаем уравнение адиобаты, связывающее обьем и температуру.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $T_{1}\um V_{2}^{\gamma-1}=T_{2}\um V_{3}^{\gamma-1}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{3}}{V_{2}}\right)^{\gamma-1}$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
 Аналогично из процесса 4-1 получаем 
 \begin_inset Formula $\df{T_{1}}{T_{2}}=\left(\df{V_{4}}{V_{1}}\right)^{\gamma-1}$
 \end_inset
 
  
-\end_layout
+\begin_inset Formula 
+\[
+\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{V_{4}}{V_{1}}=\df{V_{3}}{V_{2}}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Следовательно, 
 \begin_inset Formula $\df{V_{3}}{V_{4}}=\df{V_{2}}{V_{1}}$
 \end_inset
@@ -13413,12 +13420,18 @@ status open
 \end_layout
 
 \begin_layout Remark
-Обратимая темловая машина называется идеальной тепловой машиной иногда.
+Обратимая тепловая машина называется идеальной тепловой машиной иногда.
 \end_layout
 
 \begin_layout Subsection
-Приведенное кол-во тепла.
- Неравеснство Клаузиуса.
+Приведенное количество тепла.
+ Неравенство Клаузиуса.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Кпд:
 \end_layout
 
 \begin_layout Standard
@@ -13432,40 +13445,40 @@ status open
 \begin_inset Formula $\df{T_{1}-T_{2}}{T_{1}}$
 \end_inset
 
- --- действует только для обратимых.
-\end_layout
+ --- действует только для обратимых
+\begin_inset Formula 
+\[
+\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{Q_{1}-Q_{2}}{Q_{1}}\mr\df{T_{1}-T_{2}}{T_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $1-\df{Q_{2}}{Q_{1}}\mr1-\df{T_{2}}{T_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{Q_{2}}{T_{2}}\br\df{Q_{1}}{T_{1}}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\df{Q_{1}}{T_{1}}-\df{Q_{2}}{T_{2}}\mr0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если рассматривать только газ и рассматривать что газ отдает тепло со знаком
- минус, то если брать это неравествтвво по отношению к одному телу, то мы
+ минус, то если брать это неравенство по отношению к одному телу, то мы
  получим 
 \begin_inset Formula $\df{Q_{1}}{T_{1}}+\df{Q_{2}}{T_{2}}\mr0$
 \end_inset
@@ -13474,7 +13487,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Если газ контактирует не с 2мя а с 
+Если газ контактирует не с двумя, а с 
 \begin_inset Formula $N$
 \end_inset
 
@@ -13482,11 +13495,7 @@ status open
 \begin_inset Formula $\ous{i=1}N\df{Q_{i}}{T_{i}}\mr0$
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Это неравество Клаудиуса.
+ --- это неравенство Клаудиуса.
  
 \end_layout
 
@@ -13494,7 +13503,7 @@ status open
 \begin_inset Formula $\df QT$
 \end_inset
 
- --- эту дробь Клаузиус называл прриваеденным колическвом тепла.
+ --- эту дробь Клаузиус называл приведенным количеством тепла.
 \end_layout
 
 \begin_layout Subsection
@@ -13504,7 +13513,7 @@ status open
 \begin_layout Definition
 Обратимым процессом называется такой процесс, который может быть проведен
  в обратном направлении таким образом, что система будет проходить через
- те-же состояния что и в прямом ходе, но вв обратном порядке.
+ те-же состояния что и в прямом ходе, но в обратном порядке.
  
 \end_layout
 
@@ -13513,7 +13522,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Для обратимости процесса необходимо:
+Для обратимости процесса необходимо
 \begin_inset Formula 
 \[
 \begin{array}{cc}
@@ -13567,7 +13576,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Граници применения второго начала термодинамики
+Границы применения второго начала термодинамики
 \end_layout
 
 \begin_layout Definition
@@ -13671,9 +13680,6 @@ S=k\um\ln W
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 S=k\um N\um\ln V+B,\ B=k\um\ln b
@@ -13681,23 +13687,20 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\D S=S_{2}-S_{1}=kN\ln\df{V_{2}}{V_{1}}$
+\begin_inset Formula 
+\[
+\D S=S_{2}-S_{1}=kN\ln\df{V_{2}}{V_{1}}
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Рассмотрим газ в обьеме 
+Рассмотрим газ в объеме 
 \begin_inset Formula $V$
 \end_inset
 
 .
- Увеличим обьем к 
+ Увеличим объем к 
 \begin_inset Formula $2V$
 \end_inset
 
@@ -13707,16 +13710,14 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+Q=A=\nu RT\ln\df{V_{2}}{V_{1}}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $Q=A=\nu RT\ln\df{V_{2}}{V_{1}}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \D S & = & kN\ln\df{V_{2}}{V_{1}}=\\
@@ -13727,9 +13728,6 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\df QT=\D S$
 \end_inset
 
@@ -13753,7 +13751,6 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \begin_layout Standard
 Так как в рамках 1го тела у нас процесс изотермический, то мы можем записать:
- 
 \begin_inset Formula 
 \begin{eqnarray*}
 \D S & = & \D S_{1}+\D S_{2}=\\
@@ -13763,10 +13760,6 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Если 
 \begin_inset Formula $T_{1}\simeq T_{2}$
 \end_inset
@@ -13780,21 +13773,22 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 
 \begin_layout Standard
 В адиобатическом: 
-\begin_inset Formula $\D S=\D S_{\text{газа}}+\D S_{\text{мех}}=\left\{ \begin{array}{c}
+\begin_inset Formula 
+\[
+\D S=\D S_{\text{газа}}+\D S_{\text{мех}}=\left\{ \begin{array}{c}
 \D S_{\text{мех}}=0\\
 \D S_{\text{газа}}=0
-\end{array}\right\} =0$
+\end{array}\right\} =0
+\]
+
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
 В итоге мы приходим к еще 1ой математической формулировки второго начала
  термодинамики:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 \D S\br0
@@ -13806,7 +13800,7 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_layout
 
 \begin_layout Definition
-При всех процессах, протекаюзих в макроскопической (термодинамической) системе,
+При всех процессах, протекающих в макроскопической (термодинамической) системе,
  система не может самопроизвольно переходить из более вероятного состояния
  в менее вероятное состояние, тоесть энтропия системы не убывает.
 \end_layout
@@ -13824,7 +13818,7 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 \end_layout
 
 \begin_layout Enumerate
-Стеени свободы
+Степени свободы
 \end_layout
 
 \begin_layout Enumerate
@@ -13879,12 +13873,12 @@ S=k\um N\um\ln V+B,\ B=k\um\ln b
 status open
 
 \begin_layout Plain Layout
-Как-бы третье начало термидинамики
+Как бы третье начало термодинамики
 \end_layout
 
 \end_inset
 
-При стремленнии температуры в абсолютному нулю энтропия любого тела так-же
+При стремлении температуры в абсолютному нулю энтропия любого тела так же
  стремится к нулю.
 \end_layout
 
@@ -13904,7 +13898,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Втреднем размер одной простой молекулы равен 
+В среднем размер одной простой молекулы равен 
 \begin_inset Formula $d\sim10^{-10}$
 \end_inset
 
@@ -13920,7 +13914,7 @@ status open
 \begin_inset Formula $U_{\text{вз}}=0$
 \end_inset
 
- --- так как мелекулы находятся на очень большом расстоянии
+ --- так как молекулы находятся на очень большом расстоянии
 \end_layout
 
 \begin_layout Standard
@@ -13934,7 +13928,7 @@ status open
 \begin_inset Formula $d$
 \end_inset
 
- --- эфективный диаметр молекул
+ --- эффективный диаметр молекул
 \end_layout
 
 \begin_layout Standard
@@ -13961,7 +13955,7 @@ status open
 \begin_inset Formula $r\sim2-3d$
 \end_inset
 
-, то тогда возникают силы притяжения (энергитической природы)
+, то тогда возникают силы притяжения (энергетической природы)
 \end_layout
 
 \begin_layout Standard
@@ -13974,7 +13968,7 @@ status open
 
 \begin_layout Standard
 Принято считать, что если тебя с кому нить тянет, то это силы отрицательные,
- если отталкивает, то сидлы положительные (с точке зрения физики).
+ если отталкивает, то силы положительные (с точке зрения физики).
 \end_layout
 
 \begin_layout Standard
@@ -14046,14 +14040,14 @@ status open
 \begin_inset Formula $kT<<\left|U_{min}\right|$
 \end_inset
 
- --- твердое состояние вещнества
+ --- твердое состояние вещества
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $kT>>\left|U_{min}\right|$
 \end_inset
 
- --- газообрахное состояние вещесмтва
+ --- газообразное состояние вещества
 \end_layout
 
 \begin_layout Standard
@@ -14068,7 +14062,7 @@ status open
 \begin_inset Formula $\nu$
 \end_inset
 
- --- 1 киломоль, то 
+ --- 1 Киломоль, то 
 \begin_inset Formula $PV=RT$
 \end_inset
 
@@ -14084,7 +14078,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Стали смотреть, что происходит с давлением, и оказалося:
+Стали смотреть, что происходит с давлением, и оказалось:
 \end_layout
 
 \begin_layout Standard
@@ -14132,15 +14126,15 @@ status open
 
 \end_inset
 
- Он браз закрытый сосуд.
- В нее помежал некоторое количество воды.
+ Он брал закрытый сосуд.
+ В нее помещал некоторое количество воды.
  Нагревал.
  Когда он это делал, начинался переход молекул из жидкого состояния в газообразн
 ое, повышается давление и граница будет смешаться в сторону газа (вверх,
  за счет линейного расширения газа), если воды много, а если воды мало,
- то граница между газом и жидкостью начинает полсти вниз.
- Ему заходелось найти ту границу, когда эта планка будет стоять на месте.
- Путём огпытов, что он ее нашел такое стстояние, когда граница не двигается.
+ то граница между газом и жидкостью начинает ползти вниз.
+ Ему захотелось найти ту границу, когда эта планка будет стоять на месте.
+ Путём опытов, что он ее нашел такое состояние, когда граница не двигается.
  
 \end_layout
 
@@ -14156,7 +14150,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-А если сделать обратный эксперимент (не нагривать а остужать), то жидкость
+А если сделать обратный эксперимент (не нагревать а остужать), то жидкость
  конденсируется в капельки и опадает.
 \end_layout
 
@@ -14165,7 +14159,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Эндрюс исследовал с углекислым газом.
+
+\emph on
+Эндрюс 
+\emph default
+исследовал с углекислым газом.
  И построил его изотермы.
 \end_layout
 
@@ -14187,7 +14185,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Если говорить про большие температуры : они практически совподают с геперболой
+Если говорить про большие температуры : они практически совпадают с гиперболой
  (
 \begin_inset Formula $PV=const$
 \end_inset
@@ -14197,17 +14195,17 @@ status open
 \end_layout
 
 \begin_layout Standard
-Давление насыщеного пара - когда ты повышаешь обьем, а давление не меняется
+Давление насыщенного пара - когда ты повышаешь объем, а давление не меняется
  (оно зависит от температуры).
 \end_layout
 
 \begin_layout Standard
-При некоторой температуре невозможно добится увеличением обьема переход
+При некоторой температуре невозможно добиться увеличением объема переход
  жидкости в газообразное состояние.
 \end_layout
 
 \begin_layout Standard
-Пунктирная кривая обганичевает линию перезода от газа в жидкость, и ее так
+Пунктирная кривая ограничивает линию перевода от газа в жидкость, и ее так
  и называют --- 
 \emph on
 пограничной кривой.
@@ -14219,7 +14217,7 @@ status open
 газом
 \emph default
 .
- Нижи критической изотермы и правее пограничной кривой будем назыапать 
+ Ниже критической изотермы и правее пограничной кривой будем называть 
 \emph on
 жидкостью
 \emph default
@@ -14229,7 +14227,7 @@ status open
 паром
 \emph default
 .
- А внутри пограничной кривой назывем 
+ А внутри пограничной кривой назовем 
 \emph on
 насыщенным паром
 \emph default
@@ -14241,19 +14239,23 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $F\left(\beta,V,T\right)=0$
+\begin_inset Formula 
+\[
+F\left(\beta,V,T\right)=0
+\]
+
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 На самом деле сложно его записать из за того, что силы взаимодействия разные
  в разных газах.
  Но есть хорошие приближения.
- Одно из них было полчено голандским ученым 
+ Одно из них было получено Голландским ученым 
 \emph on
-Ван дер Ваальс.
+Ван дер Ваальс
+\emph default
+-ом
+\emph on
+.
  
 \emph default
 Что он сделал? Он взял уравнение Менделеева-Клаперона.
@@ -14263,13 +14265,13 @@ status open
 
 , но при этом учтены только силы притяжения, а силы отталкивания заменены
  жесткой границей.
- Возникает поняние 
+ Возникает понятие 
 \emph on
-недопустимого обьема 
+недопустимого объема 
 \emph default
---- когда молекула не может попасять в какую-то точку (она занята другой
+--- когда молекула не может попасть в какую то точку (она занята другой
  молекулой).
- И еще одна поправка на внутренее давление (давление уменьшается).
+ И еще одна поправка на внутреннее давление (давление уменьшается).
 \end_layout
 
 \begin_layout Enumerate
@@ -14300,12 +14302,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-Центры молекул не могут находится на растоянии, меньше чем диаметр этой
+Центры молекул не могут находится на расстоянии, меньше чем диаметр этой
  молекулы.
 \end_layout
 
 \begin_layout Standard
-Обьем этого места (обьм шара) 
+Объем этого места (объём шара) 
 \begin_inset Formula $\df 43\pi d^{3}$
 \end_inset
 
@@ -14317,7 +14319,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Сколько различных пар мы можем состовить? Ответ: 
+Сколько различных пар мы можем составить? Ответ: 
 \begin_inset Formula $C_{N}^{2}=\df{N\left(N-1\right)}2\approx\df{N^{2}}2$
 \end_inset
 
@@ -14328,7 +14330,7 @@ status open
 \begin_inset Formula $\df 43\pi d^{3}\df{N^{2}}2$
 \end_inset
 
- --- получим такую формулу --- недопустимый обьем для всех молккул
+ --- получим такую формулу --- недопустимый объем для всех молекул
 \end_layout
 
 \begin_layout Standard
@@ -14340,7 +14342,7 @@ status open
 \begin_inset Formula $b$
 \end_inset
 
- --- недопустимый обьем так обозначается
+ --- недопустимый объем так обозначается
 \end_layout
 
 \begin_layout Standard
@@ -14354,11 +14356,11 @@ status open
 \begin_inset Formula $\df{\pi d^{3}}6$
 \end_inset
 
- --- обьем одной молекулы
+ --- объем одной молекулы
 \end_layout
 
 \begin_layout Standard
-Уравнение Менделеева-Клаперона c этой поправкой будет выгрядить так: 
+Уравнение Менделеева-Клаперона c этой поправкой будет выглядит так: 
 \begin_inset Formula $P\left(V-b\right)=\nu RT$
 \end_inset
 
@@ -14379,8 +14381,8 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-О стенку могут биться только те молекулы, которые находятся на рассмотянии
- длиннц свободного пробега.
+О стенку могут биться только те молекулы, которые находятся на расстоянии
+ длинна свободного пробега.
  
 \end_layout
 
@@ -14433,7 +14435,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Введем коофицент пропорциональности: 
+Введем коэффициент пропорциональности: 
 \begin_inset Formula $P'=\alpha\df{N^{2}}{V^{2}}=\df{a^{2}}{V^{2}}$
 \end_inset
 
@@ -14468,11 +14470,15 @@ status open
 \end_layout
 
 \begin_layout Standard
-Это уравнение Ван дер Вальса.
+Это уравнение 
+\emph on
+Ван дер Вальса
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
-Зпишем это уравнение в форме 
+Запишем это уравнение в форме 
 \begin_inset Formula $F\left(\beta,V,T\right)=0$
 \end_inset
 
@@ -14497,7 +14503,11 @@ status open
 
 \begin_layout Standard
 Построим график этой функции.
- Назовём его изотермой вандервальса.
+ Назовём его изотермой 
+\emph on
+Ван дер Вальса
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -14530,7 +14540,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Если сравнивать реальные изотермы и график Вае дер Вальса учистком 
+Если сравнивать реальные изотермы и график 
+\emph on
+Ван дер Вальса 
+\emph default
+участком 
 \begin_inset Formula $v_{1}v_{2}$
 \end_inset
 
@@ -14560,14 +14574,14 @@ status open
 \begin_inset Formula $v_{1}$
 \end_inset
 
- --- обьем жидкости
+ --- объем жидкости
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $v_{2}$
 \end_inset
 
- --- обьем газа
+ --- объем газа
 \end_layout
 
 \begin_layout Standard
@@ -14579,7 +14593,7 @@ status open
 \begin_inset Formula $EF$
 \end_inset
 
- --- физически получаемы (осуществимы), но они соответствуют неустогйчевому
+ --- физически получаемы (осуществимы), но они соответствуют неустойчивому
  состоянию вещества.
 \end_layout
 
@@ -14587,7 +14601,7 @@ status open
 \begin_inset Formula $BC$
 \end_inset
 
- --- соответствует стстоянию перегретой жидкости.
+ --- соответствует состоянию перегретой жидкости.
 \end_layout
 
 \begin_layout Standard
@@ -14599,13 +14613,13 @@ status open
 \begin_inset Formula $EF$
 \end_inset
 
- называется присыщенного (переохлажденного) пара (формально переохлажденного
+ называется пресыщенного (переохлажденного) пара (формально переохлажденного
  газа).
  
 \end_layout
 
 \begin_layout Standard
-Кристализация, так же как и кипение, возникает около неоднородности в среде.
+Кристаллизация, так же как и кипение, возникает около неоднородности в среде.
 \end_layout
 
 \begin_layout Standard
@@ -14614,10 +14628,9 @@ status open
 \end_inset
 
  опускается ниже нуля.
- Давление оторицательно.
- Такое принципе возможно.
- Это когда жидкость не давит на стенки сосуда, а наоборот, пытается ихз
- втенуть.
+ Давление отрицательно.
+ Такое в принципе возможно.
+ Это когда жидкость не давит на стенки сосуда, а наоборот, пытается их втянуть.
 \end_layout
 
 \begin_layout Standard
