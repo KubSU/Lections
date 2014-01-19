@@ -3315,7 +3315,7 @@ m\df{dv_{z}}{dt}=f_{3}\left(z\right) & ,z\left(0\right)=z_{0},\ v_{z}\left(0\rig
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\df{dx}{dt}=v\sl dt=\df{dx}{dt}$
+\begin_inset Formula $\df{dx}{dt}=v\then dt=\df{dx}v$
 \end_inset
 
 
@@ -3327,6 +3327,7 @@ m\df{dv_{z}}{dt}=f_{3}\left(z\right) & ,z\left(0\right)=z_{0},\ v_{z}\left(0\rig
 \end_inset
 
  в уравнение движения, получаем уравнение с разделяющимися переменными:
+ 
 \begin_inset Formula $m\df{vdv}{dx}=f\left(x\right)$
 \end_inset
 
@@ -3401,15 +3402,7 @@ m\df{dv_{z}}{dt}=f_{3}\left(z\right) & ,z\left(0\right)=z_{0},\ v_{z}\left(0\rig
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\df{dx}{dt}=v$
-\end_inset
-
- 
-\begin_inset Formula $\sl$
-\end_inset
-
- 
-\begin_inset Formula $\df{dx}{dt}=\pm\sqrt{v_{0}^{2}+\df 2m\um\oui{x_{0}}xf\left(\xi\right)d\xi},\ x\left(0\right)=x_{0}$
+\begin_inset Formula $\df{dx}{dt}=v\quad\then\quad\df{dx}{dt}=\pm\sqrt{v_{0}^{2}+\df 2m\um\oui{x_{0}}xf\left(\xi\right)d\xi},\ x\left(0\right)=x_{0}$
 \end_inset
 
 
