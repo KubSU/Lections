@@ -6,9 +6,7 @@
 \begin_preamble
 \usepackage{indentfirst}
 \numberwithin{equation}{section}
-\setlength{\mathindent}{15mm}
 \end_preamble
-\options fleqn
 \use_default_options true
 \begin_modules
 theorems-starred
@@ -518,7 +516,7 @@ theorems-starred
 \end_layout
 
 \begin_layout Standard
-Ссылка на задачник - Кудрявцев второй том.
+Ссылка на задачник --- Кудрявцев второй том.
 \end_layout
 
 \begin_layout Standard
@@ -527,10 +525,10 @@ theorems-starred
 \end_inset
 
  определена на множестве 
-\begin_inset Formula $\left[a;b\right]\x Y$
+\begin_inset Formula $\left[a;b\right]\x Y,$
 \end_inset
 
-, 
+ 
 \begin_inset Formula $\left(x\in\left[a;b\right],\, y\in Y\right)$
 \end_inset
 
@@ -540,20 +538,28 @@ theorems-starred
 \end_inset
 
 .
- Промежуток 
-\begin_inset Formula $\left[a;b\right]\ \left(\left(a;b\right)\right)$
+ Промежуток
+\begin_inset Formula $\left[a;b\right]$
 \end_inset
 
- --- конечен или бесконечен.
+ или интервал 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+ конечен или бесконечен.
  При этом на 
 \begin_inset Formula $Y$
 \end_inset
 
- определена функция 
-\begin_inset Formula $\Phi\left(y\right)=\oui abf\left(x,y\right)dx$
+ определена функция:
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=\oui abf\left(x,y\right)dx
+\]
+
 \end_inset
 
-, называемая интергалом, зависящим от параметра 
+называемая интегралом, зависящим от параметра 
 \begin_inset Formula $y$
 \end_inset
 
@@ -611,7 +617,7 @@ status open
 \end_layout
 
 \begin_layout Remark
-В часности, если 
+В частности, если 
 \begin_inset Formula $Y=\N$
 \end_inset
 
@@ -629,10 +635,14 @@ status open
 
 .
  Тогда 
-\begin_inset Formula $\Phi\left(y\right)=\Phi\left(n\right)=\oui ab\varphi_{n}\left(x\right)dx$
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=\Phi\left(n\right)=\oui ab\varphi_{n}\left(x\right)dx\text{ --- числовая последовательность}
+\]
+
 \end_inset
 
- --- числовая последовательность.
+
 \end_layout
 
 \begin_layout Standard
@@ -697,7 +707,7 @@ status open
 \begin_inset Formula $y\in Y$
 \end_inset
 
- --- некоторое множдество на 
+ --- некоторое множество на 
 \begin_inset Formula $\R.$
 \end_inset
 
@@ -713,11 +723,20 @@ status open
 \begin_inset Formula $Y$
 \end_inset
 
-, если в любой её выколотой окресности можно указать точку 
+, если в любой её выколотой окрестности можно указать точку 
 \begin_inset Formula $y\in Y$
 \end_inset
 
-.
+, т.
+ е.
+\begin_inset Formula 
+\[
+\forall\delta>0\ \exists y\in Y\cap U_{\delta}\left(y_{0}\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -733,27 +752,15 @@ status open
 
 \end_layout
 
-\begin_layout Example
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Formula $Y=\left\{ \df 1n\right\} ,\ y_{0}=0$
-\end_inset
-
- --- точка сгущения
-\end_layout
-
 \begin_layout Standard
+Пусть 
+\begin_inset Formula $\forall x\in\left[a;b\right]\ \exists\ul{y\st y_{0}}f\left(x,y\right)\ov ={def}\varphi\left(x\right)$
+\end_inset
+
+, то есть
 \begin_inset Formula 
 \[
-\forall\delta>0\ \exists y\in Y\cap U_{\delta}\left(y_{0}\right)
+\forall\varepsilon>0\ \exists\delta=\delta\left(x,\varepsilon\right)>0\ \forall y\in Y\quad0<\left|y-y_{0}\right|<\delta\,\sl\,\left|f\left(x,y\right)-\varphi\left(x\right)\right|<\varepsilon
 \]
 
 \end_inset
@@ -762,22 +769,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Пусть 
-\begin_inset Formula $\forall x\in\left[a;b\right]\ \exists\ul{y\st y_{0}}f\left(x,y\right)\ov ={def}\varphi\left(x\right)$
-\end_inset
-
-, то есть
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(x,\varepsilon\right)>0\ \forall y\in Y\quad0<\left|y-y_{0}\right|<\delta\,\sl\,\left|f\left(x,y\right)-\varphi\left(x\right)\right|<\varepsilon$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Эта сходимость называется поточечьной сходимостью 
+Эта сходимость называется поточечной сходимостью 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -794,10 +786,7 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Эта сходимость функции 
+ Сходимость функции 
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
@@ -810,9 +799,10 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)>0\ \forall x\in\left[a;b\right]\ \forall y\in Y\quad0<\left|y-y_{0}\right|<\delta\,\sl\,\left|f\left(x,y\right)-\varphi\left(x\right)\right|<\varepsilon\label{eq:_1_1}
-\end{equation}
+\begin{multline}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)>0\quad\forall x\in\left[a;b\right]\quad\forall y\in Y\quad0<\left|y-y_{0}\right|<\delta\,\then\\
+\then\,\left|f\left(x,y\right)-\varphi\left(x\right)\right|<\varepsilon\label{eq:_1_1}
+\end{multline}
 
 \end_inset
 
@@ -829,17 +819,23 @@ status open
 \end_inset
 
  при 
-\begin_inset Formula $y\st y_{0}$
+\begin_inset Formula $y\st y_{0}.$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Дадим определение равномерной сходимости по Гейне.
+\begin_layout Definition
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Равномерная сходимость по Гейне
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
 \begin_inset Formula $f\left(x,y\right)\rightrightarrows\varphi\left(x\right)$
 \end_inset
 
@@ -871,7 +867,7 @@ status open
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
@@ -914,15 +910,11 @@ reference "eq:_1_2"
 \begin_layout Lemma
 \begin_inset Formula 
 \begin{equation}
-\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)>0\ \forall y\in Y\quad0<\left|y-y_{0}\right|<\delta\,\sl\,\un{\sup}{x\in\left[a;b\right]}\left|f\left(x,y\right)-\varphi\left(x\right)\right|<\varepsilon\label{eq:_1_3}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)>0\quad\forall y\in Y\quad0<\left|y-y_{0}\right|<\delta\,\sl\,\un{\sup}{x\in\left[a;b\right]}\left|f\left(x,y\right)-\varphi\left(x\right)\right|<\varepsilon\label{eq:_1_3}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Lemma
 Запишем (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -930,7 +922,7 @@ reference "eq:_1_3"
 
 \end_inset
 
-) иначе: 
+) иначе:
 \begin_inset Formula 
 \begin{equation}
 \ul{y\st y_{0}}\left(\un{\sup}{x\in\left[a;b\right]}\left|f\left(x,y\right)-\varphi\left(x\right)\right|\right)=0\label{eq:_1_4}
@@ -938,7 +930,7 @@ reference "eq:_1_3"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout --Separator--
@@ -950,19 +942,23 @@ reference "eq:_1_3"
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- -- непрерывна на 
+ непрерывна на 
 \begin_inset Formula $K=\left[a;b\right]\x\left[c;d\right]$
 \end_inset
 
 , то 
-\begin_inset Formula $\forall y_{0}\in\left[c;d\right]\ f\left(x,y\right)\rightrightarrows f\left(x,y_{0}\right)$
+\begin_inset Formula 
+\[
+\forall y_{0}\in\left[c;d\right]\quad f\left(x,y\right)\rightrightarrows f\left(x,y_{0}\right)
+\]
+
 \end_inset
 
- поточечьно при 
-\begin_inset Formula $y\st y_{0}$
+ поточечно при 
+\begin_inset Formula $y\st y_{0}.$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -970,7 +966,7 @@ reference "eq:_1_3"
 \begin_inset Formula $f\left(x,y\right)$
 \end_inset
 
- --- непрерывна на ограниченом замкнутом множестве 
+ --- непрерывна на ограниченном замкнутом множестве 
 \begin_inset Formula $K$
 \end_inset
 
@@ -984,9 +980,10 @@ reference "eq:_1_3"
 
 .
 \begin_inset Formula 
-\[
-\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)>0\ \forall M'\left(x',y'\right),M''\left(x'',y''\right)\ \un{\left(\left|x'-x''\right|<\delta\&\left|y'-y''\right|<\delta\right)}{\rho\left(M',M''\right)<\delta}\sl\left|f\left(x',y'\right)-f\left(x'',y''\right)\right|<\varepsilon
-\]
+\begin{multline*}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)>0\quad\forall M'\left(x',y'\right),M''\left(x'',y''\right)\quad\un{\left(\left|x'-x''\right|<\delta\ \&\ \left|y'-y''\right|<\delta\right)}{\rho\left(M',M''\right)<\delta}\then\\
+\then\left|f\left(x',y'\right)-f\left(x'',y''\right)\right|<\varepsilon
+\end{multline*}
 
 \end_inset
 
@@ -995,9 +992,6 @@ reference "eq:_1_3"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
 \begin_inset Note Note
 status open
 
@@ -1008,16 +1002,13 @@ status open
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)\quad\forall x\in\left[a;b\right]\quad\forall y'\in\left[c,d\right]\quad\left|y-y_{0}\right|<\delta\sl\left|f\left(x,y'\right)-f\left(x,y_{0}\right)\right|<\varepsilon
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall x\in\left[a;b\right]\ \forall y'\in\left[c,d\right]\ \left|y-y_{0}\right|<\delta\sl\left|f\left(x,y'\right)-f\left(x,y_{0}\right)\right|<\varepsilon$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 То есть 
 \begin_inset Formula $f\left(x,y\right)\rightrightarrows f\left(x,y_{0}\right)$
 \end_inset
@@ -1057,7 +1048,8 @@ status open
 \begin_layout Theorem
 \begin_inset Formula 
 \begin{multline*}
-\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)>0\ \forall x\in\left[a;b\right]\ \forall y',y''\in Y\ \left(0<\left|y'-y_{0}\right|<\delta\&0<\left|y''-y_{0}\right|<\delta\right)\sl\left|f\left(x,y'\right)-f\left(x,y''\right)\right|<\varepsilon
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)>0\quad\forall x\in\left[a;b\right]\quad\forall y',y''\in Y\\
+\left(0<\left|y'-y_{0}\right|<\delta\ \&\ 0<\left|y''-y_{0}\right|<\delta\right)\quad\then\quad\left|f\left(x,y'\right)-f\left(x,y''\right)\right|<\varepsilon
 \end{multline*}
 
 \end_inset
@@ -1082,28 +1074,23 @@ status open
 \end_inset
 
 .
-\end_layout
+ Тогда по определению равномерной сходимости:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)\quad\forall x\in\left[a;b\right]\quad\begin{aligned}\forall y'\in Y\quad & 0<\left|y'-y_{0}\right|<\delta & \left|f\left(x,y'\right)-\varphi\left(x\right)\right|<\df{\varepsilon}2\\
+\forall y''\in Y\quad & 0<\left|y''-y_{0}\right|<\delta & \left|f\left(x,y''\right)-\varphi\left(x\right)\right|<\df{\varepsilon}2
+\end{aligned}
+\]
 
-\begin_layout Proof
-Тогда по определению равномернорй сходимости:
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall x\in\left[a;b\right]\ \begin{array}{c}
-\forall y'\in Y\ 0<\left|y'-y_{0}\right|<\delta\sl\left|f\left(x,y'\right)-\varphi\left(x\right)\right|<\df{\varepsilon}2\\
-\forall y''\in Y\ 0<\left|y''-y_{0}\right|<\delta\sl\left|f\left(x,y''\right)-\varphi\left(x\right)\right|<\df{\varepsilon}2
-\end{array}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Следовательно:
-\end_layout
+\begin_inset Formula 
+\begin{multline*}
+\left|f\left(x,y'\right)-f\left(x,y''\right)\right|=\left|\left(f\left(x,y'\right)-\varphi\left(x\right)\right)-\left(f\left(x,y''\right)-\varphi\left(x\right)\right)\right|\mr\\
+\mr\un{\underbrace{\left|f\left(x,y'\right)-\varphi\left(x\right)\right|}}{<\frac{\varepsilon}{2}}+\un{\underbrace{\left|f\left(x,y''\right)-\varphi\left(x\right)\right|}}{<\frac{\varepsilon}{2}}<\varepsilon
+\end{multline*}
 
-\begin_layout Proof
-\begin_inset Formula $\left|f\left(x,y'\right)-f\left(x,y''\right)\right|=\left|\left(f\left(x,y'\right)-\varphi\left(x\right)\right)-\left(f\left(x,y''\right)-\varphi\left(x\right)\right)\right|\mr\un{\underbrace{\left|f\left(x,y'\right)-\varphi\left(x\right)\right|}}{<\df{\varepsilon}2}+\un{\underbrace{\left|f\left(x,y''\right)-\varphi\left(x\right)\right|}}{<\df{\varepsilon}2}<\varepsilon$
 \end_inset
 
  
@@ -1113,18 +1100,14 @@ status open
 \begin_inset Formula $\left(\Leftarrow\right)$
 \end_inset
 
- Пусть в правой части Критерия будет написано 
+ Пусть в правой части Критерия:
 \begin_inset Formula 
 \begin{equation}
-\left|f\left(x,y'\right)-f\left(x,y''\right)\right|<\df{\varepsilon}2\label{eq:_1_5}
+\left|f\left(x,y'\right)-f\left(x,y''\right)\right|<\df{\varepsilon}2\tag{*}\label{eq:_1_*}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Зафиксируем произвольно 
 \begin_inset Formula $x\in\left[a;b\right]\sl f\left(x,y\right)$
 \end_inset
@@ -1133,11 +1116,13 @@ status open
 \begin_inset Formula $y$
 \end_inset
 
- и правая часть
-\end_layout
+ и правая часть критерия Коши в этом случае:
+\begin_inset Formula 
+\begin{multline*}
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)\quad\forall y',y''\in Y\quad\left(0<\left|y'-y_{0}\right|<\delta\ \&\ 0<\left|y''-y_{0}\right|<\delta\right)\then\\
+\then\left|f\left(x,y'\right)-f\left(x,y''\right)\right|<\varepsilon
+\end{multline*}
 
-\begin_layout Proof
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall y',y''\in Y\ \left(0<\left|y'-y_{0}\right|<\delta\&0<\left|y''-y_{0}\right|<\delta\right)\sl\left|f\left(x,y'\right)-f\left(x,y''\right)\right|<\varepsilon$
 \end_inset
 
 
@@ -1148,14 +1133,14 @@ status open
 \begin_inset Formula $y_{0}$
 \end_inset
 
- : 
-\begin_inset Formula $\exists\ul{y\st y_{0}}f\left(x,y\right)\ov ={def}\varphi\left(x\right)$
+: 
+\begin_inset Formula 
+\[
+\exists\ul{y\st y_{0}}f\left(x,y\right)\ov ={def}\varphi\left(x\right)
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
 Полагая 
 \begin_inset Formula $0<\left|y'-y_{0}\right|<\delta$
 \end_inset
@@ -1177,33 +1162,30 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Предельным переходом в неравенстве (
+ Тогда предельным переходом в неравенстве (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:_1_5"
+reference "eq:_1_*"
 
 \end_inset
 
 ): 
-\begin_inset Formula $\left|f\left(x,y'\right)-\varphi\left(x\right)\right|\mr\df{\varepsilon}2<\varepsilon$
+\begin_inset Formula 
+\[
+\left|f\left(x,y'\right)-\varphi\left(x\right)\right|\mr\df{\varepsilon}2<\varepsilon
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
 Таким образом, 
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall x\in\left[a;b\right]\&\forall y'\in Y\ 0\left|y'-y_{0}\right|<\delta\sl\left|f\left(x,y'\right)-\varphi\left(x\right)\right|<\varepsilon$
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)\quad\forall x\in\left[a;b\right]\ \&\ \forall y'\in Y\quad0\left|y'-y_{0}\right|<\delta\sl\left|f\left(x,y'\right)-\varphi\left(x\right)\right|<\varepsilon
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Proof
-Так и получается, что да, действительно 
+Следовательно 
 \begin_inset Formula $f\left(x,y\right)\rightrightarrows\varphi\left(x\right)$
 \end_inset
 
@@ -1219,6 +1201,13 @@ reference "eq:_1_5"
 \end_layout
 
 \begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
 
 \end_layout
 
