@@ -1204,6 +1204,445 @@ reference "eq:_1_*"
 
 \end_layout
 
+\begin_layout Subsection
+Собственные интегралы, зависящие от параметра.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(y)=\oiu abf(x,y)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+О предельном переходе под знаком интеграла
+\end_layout
+
+\end_inset
+
+Пусть
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ интегрируема на 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ по 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\forall y\in Y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)\rightrightarrows\varphi\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ при 
+\begin_inset Formula $y\st y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+тогда 
+\begin_inset Formula $\ul{y\to y_{0}}\oiu abf(x,y)dx=\oiu ab\ul{y\to y_{0}}f(x,y)dx=\oiu ab\varphi(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset Formula $\rightrightarrows$
+\end_inset
+
+ по Гейне:
+\begin_inset Formula 
+\[
+\forall\left\{ y_{n}\right\} \quad(y_{n}\nr y_{0})\quad y_{n}\to y_{0}\quad\then\quad f\left(x,y_{n}\right)=\varphi_{n}\left(x\right)\rightrightarrows\varphi\left(x\right)
+\]
+
+\end_inset
+
+Тогда по свойству равномерной сходимости функциональной последовательности:
+\begin_inset Formula 
+\[
+\ul{n\to\b}\oiu ab\varphi_{n}\left(x\right)dx=\oiu ab\ul{n\to\b}\varphi_{n}\left(x\right)dx=\oiu ab\varphi\left(x\right)dx=\Phi_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(Дописать)....
+\end_layout
+
+\begin_layout Example
+Покажем существенность условия 2:
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=\oiu 01\df{2xy^{2}}{\left(x^{2}+y^{2}\right)^{2}}dx,\quad y\in\left[0;1\right]
+\]
+
+\end_inset
+
+При 
+\begin_inset Formula $y\to0$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\forall x\in\left[0;1\right]:\quad\ul{y\to0}f\left(x,y\right)=\ul{y\to0}\df{2xy^{2}}{\left(x^{2}+y^{2}\right)^{2}}=\begin{cases}
+0, & x=0\\
+0, & x\nr0
+\end{cases}
+\]
+
+\end_inset
+
+С другой стороны, на прямой 
+\begin_inset Formula $x=y$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\ul{y\to0}f\left(x,y\right)=\ul{y\to0}\df{2y^{3}}{4y^{4}}=+\b\nr0
+\]
+
+\end_inset
+
+Значит, равномерной сходимости нет.
+\end_layout
+
+\begin_layout Example
+(Дописать.......)
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\oiu 01yx\left(1-x\right)^{y}dx,\quad\begin{array}{c}
+y\in[0;+\b)\\
+y_{0}=+\b
+\end{array}
+\]
+
+\end_inset
+
+Вычислим
+\begin_inset Formula 
+\[
+\ul{y\to+\b}yx\left(1-x\right)^{y}=\begin{cases}
+0, & \begin{array}{c}
+x=0\\
+x=1
+\end{array}\\
+0, & 0<x<1
+\end{cases}=0
+\]
+
+\end_inset
+
+Следовательно 
+\begin_inset Formula $\varphi\left(x\right)\equiv0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=y\oiu 01x\left(1-x\right)^{y}dx=\df y{\left(y+1\right)\left(y+2\right)}\to0
+\]
+
+\end_inset
+
+С другой стороны:
+\begin_inset Formula 
+\[
+\oiu 01\ul{y\to+\b}yx\left(1-x\right)^{y}dx=\oiu 010dx=0
+\]
+
+\end_inset
+
+Т.
+ е.
+ 
+\begin_inset Formula $\ul{y\to+\b}\Phi\left(y\right)=\Phi_{\b}$
+\end_inset
+
+ то есть предельный переход оправдан.
+ Проверим раномерную сходимость:
+\begin_inset Formula 
+\[
+\sup\left|f\left(x,\varphi\right)-0\right|=\max xy\left(1-x\right)^{y}=\left(\df y{y+1}\right)^{y+1}\to e^{-1}=\df 1e\nr0
+\]
+
+\end_inset
+
+То есть условие 2 является достаточным, но не необходимым.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ непрерывна на прямоугольнике 
+\begin_inset Formula $K=\left[a,b\right]x\left[x,d\right]$
+\end_inset
+
+, то функция
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=\oiu abf\left(x,y\right)dx
+\]
+
+\end_inset
+
+непрерывна на 
+\begin_inset Formula $\left[c,d\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим произвольную точку 
+\begin_inset Formula $y_{0}\in\left[c,d\right]$
+\end_inset
+
+.
+ Так как при 
+\begin_inset Formula $y\to y_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x,y\right)\rightrightarrows f\left(x,y_{0}\right)$
+\end_inset
+
+ (по Лемме из пред.
+ пункта).
+ Следовательно выполнено условие 2 Т1.
+ Тогда применяя Теорему 1:
+\begin_inset Formula 
+\[
+\exists\ul{y\to y_{0}}\Phi\left(y\right)=\oiu ab\varphi\left(x\right)dx=\oiu abf\left(x,y_{0}\right)dx=\Phi\left(y_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ и ее производная 
+\begin_inset Formula $\df{\dd f\left(x,y\right)}{\dd y}$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $K=\left[a,b\right]x\left[c,d\right]$
+\end_inset
+
+, то функция 
+\begin_inset Formula $\Phi\left(y\right)=\oiu abf\left(x,y\right)dx$
+\end_inset
+
+ дифференцируема на 
+\begin_inset Formula $\left[c,d\right]$
+\end_inset
+
+........
+\end_layout
+
+\begin_layout Proof
+Рассмотрим произвольную точку 
+\begin_inset Formula $y_{0}\in\left(c,d\right),$
+\end_inset
+
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ --- приращение, 
+\begin_inset Formula $y_{0}+h\in\left(c,d\right)$
+\end_inset
+
+.
+ По определению производной: 
+\begin_inset Formula 
+\begin{multline*}
+\Phi\left(y_{0}\right)=\ul{h\to0}\df{\Phi\left(y_{0}+h\right)-\Phi\left(y_{0}\right)}h=\ul{h\to0}\df 1h\oiu ab\left(f\left(x,y_{0}+h\right)-f\left(x,y_{0}\right)\right)dx=\\
+=\ul{h\to0}\df 1h\oiu ab\df{\dd}{\dd y}f\left(x,y_{0}+\theta h\right)\um hdx=\oiu ab\ul{h\to0}\df{\dd}{\dd y}f\left(x,y_{0}+\theta h\right)dx=\oiu ab\df{\dd}{\dd y}f\left(x,y_{0}\right)dx
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Интегрирование под знаком 
+\begin_inset Formula $\int$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $K=\left[a,b\right]x\left[c,d\right]$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\oiu cd\left(\oiu abf\left(x,y\right)dx\right)dy=\oiu ab\left(\oiu cdf\left(x,y\right)dy\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $K$
+\end_inset
+
+ то существует двойной интеграл 
+\begin_inset Formula 
+\[
+\oudi K{}f\left(x,y\right)dxdy.............
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Несобственные интегралы, зависящие от параметра.
+ Равномерная сходимость несобственных интегралов.
+\end_layout
+
+\begin_layout Standard
+Ограничимся изучением несобственных интегралов по бесконечному промежутку.
+ Пусть
+\begin_inset Formula 
+\begin{equation}
+\Phi\left(y\right)=\oiu a{\b}f\left(x,y\right)dx\label{eq:1_4_1}
+\end{equation}
+
+\end_inset
+
+и пусть 
+\begin_inset Formula $\forall y\in Y$
+\end_inset
+
+ интеграл (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_4_1"
+
+\end_inset
+
+) сходится, то есть: 
+\begin_inset Formula 
+\begin{equation}
+\forall y\in Y\quad\exists\ul{A\to+\b}\Phi\left(y,A\right)=\oiu aAf\left(x,y\right)dx\label{eq:1_4_2}
+\end{equation}
+
+\end_inset
+
+Аналогично предыдущему пункту ставится вопрос о равномерной сходимости:
+ 
+\begin_inset Formula 
+\[
+\Phi\left(y,A\right)\overset{?}{\rightrightarrows}\Phi\left(y\right)\text{ на }Y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Несобственный интеграл (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_4_1"
+
+\end_inset
+
+) сходится равномерно на 
+\begin_inset Formula $Y$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\Delta=\Delta\left(\varepsilon\right)>0\quad\forall y\in Y\quad\forall A>\Delta\quad\underset{\left|\Phi\left(y\right)-\Phi\left(y,A\right)\right|}{\underbrace{\left|\oiu A{\b}f\left(x,y\right)dx\right|}}<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
