@@ -31,7 +31,7 @@ theorems-starred
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 12
+\paperfontsize 10
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -142,7 +142,7 @@ uses
 
 \begin_layout Plain Layout
 
-	WinTypes, WinProcs;
+    WinTypes, WinProcs;
 \end_layout
 
 \begin_layout Plain Layout
@@ -152,12 +152,12 @@ var
 
 \begin_layout Plain Layout
 
-	Wnd: HWND;
+    Wnd: HWND;
 \end_layout
 
 \begin_layout Plain Layout
 
-	Msg: TMsg;
+    Msg: TMsg;
 \end_layout
 
 \begin_layout Plain Layout
@@ -182,42 +182,42 @@ begin
 
 \begin_layout Plain Layout
 
-	case iMessage of
+    case iMessage of
 \end_layout
 
 \begin_layout Plain Layout
 
-		WM_DESTROY:
+    WM_DESTROY:
 \end_layout
 
 \begin_layout Plain Layout
 
-		begin
+        begin
 \end_layout
 
 \begin_layout Plain Layout
 
-			PostQuitMessage(0);
+            PostQuitMessage(0);
 \end_layout
 
 \begin_layout Plain Layout
 
-			exit;
+            exit;
 \end_layout
 
 \begin_layout Plain Layout
 
-		end;
+        end;
 \end_layout
 
 \begin_layout Plain Layout
 
-	end;
+    end;
 \end_layout
 
 \begin_layout Plain Layout
 
-	Window1:=DefWindowProc(Wnd, iMessage, wParam, LParam);
+    Window1:=DefWindowProc(Wnd, iMessage, wParam, LParam);
 \end_layout
 
 \begin_layout Plain Layout
