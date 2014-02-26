@@ -494,6 +494,182 @@ End.
 
 \end_layout
 
+\begin_layout Section
+Графический интерфейс
+\end_layout
+
+\begin_layout Subsection
+Графические примитивы
+\end_layout
+
+\begin_layout Standard
+Необходимо получить контекст устройства.
+\end_layout
+
+\begin_layout Enumerate
+Rectangle(hdc, x1, y1, x2, y2);
+\end_layout
+
+\begin_layout Enumerate
+Ellipse(hdc, x1, y1, x2, y2);
+\end_layout
+
+\begin_layout Enumerate
+Arc(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+x3, y3, x4, y4 Задают угол.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Chord(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+\end_layout
+
+\begin_layout Enumerate
+Pie(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+\end_layout
+
+\begin_layout Enumerate
+RoundRect(hdc, x1, y1, x2, y2, x3, y3);
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+x3, y3 --- радиус закругления
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Инструменты рисования
+\end_layout
+
+\begin_layout Subsubsection
+Карандаш 
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+HPEN pen = CreatePen(стиль, толщина, цвет);
+\end_layout
+
+\begin_layout Plain Layout
+
+SelectObject(hdc, pen);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Стиль
+\end_layout
+
+\begin_layout Enumerate
+PS_SOLID
+\end_layout
+
+\begin_layout Enumerate
+PS_DASH
+\end_layout
+
+\begin_layout Enumerate
+PS_DOT
+\end_layout
+
+\begin_layout Enumerate
+PS_DASHDOT
+\end_layout
+
+\begin_layout Enumerate
+PS_DASHDOTDOT
+\end_layout
+
+\begin_layout Paragraph
+Цвет
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+RGB(R, G, B);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Кисть
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+HBRUSH brush;
+\end_layout
+
+\begin_layout Plain Layout
+
+brush = CreateSolidBrush(цвет);
+\end_layout
+
+\begin_layout Plain Layout
+
+brush = CreateHatchBrush(стиль, цвет);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Стиль
+\end_layout
+
+\begin_layout Enumerate
+HS_VERTICAL
+\end_layout
+
+\begin_layout Enumerate
+HS_HORISONTAL
+\end_layout
+
+\begin_layout Enumerate
+HS_CROSS
+\end_layout
+
+\begin_layout Enumerate
+HS_BDIAGONAL
+\end_layout
+
+\begin_layout Enumerate
+HS_FDIAGONAL
+\end_layout
+
+\begin_layout Enumerate
+HS_DIAGCROSS
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
