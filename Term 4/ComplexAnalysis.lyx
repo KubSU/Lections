@@ -1640,7 +1640,731 @@ reference "eq:1_4_1"
 
 \end_inset
 
+ 
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+Пропущено чуть чуть
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Несобственный интеграл 
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx$
+\end_inset
+
+ называется равномернот сходящимся на области 
+\begin_inset Formula $Y$
+\end_inset
+
+ если на любой бесконечно большой последовательности 
+\begin_inset Formula $\left\{ A_{k}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $A_{1}=a$
+\end_inset
+
+ соответствующий функциональный ряд 
+\begin_inset Formula $\ous{k=1}{\b}u_{k}\left(y\right)$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Исследовать на равномерную сходимсоть следующий интенграл:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\Phi\left(y\right)=\oui 0{\b}y\um e^{-xy}dx$
+\end_inset
+
+, 
+\begin_inset Formula $y>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Рассмотрим следующую функцию: 
+\begin_inset Formula $\Phi\left(y,A\right)=\oui 0Ay\um e^{-xy}dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|\Phi\left(y\right)-\Phi\left(y,A\right)\right|=\oui A{\b}y\um e^{-xy}dx=-e^{-xy}|_{A}^{+\b}=-\left(e^{-y\um\b}-e^{-Ay}\right)=e^{-Ay}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Рассмотрим 2 случая:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $0<y_{0}\mr y$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\un{\sup}{0<y_{0}<y}e^{-Ay}=e^{-Ay_{0}}\ov{\st}{A\st+\b}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+То есть на множестве 
+\begin_inset Formula $Y'=[y_{0};+\b)$
+\end_inset
+
+ наш интеграл как функция от 
+\begin_inset Formula $y$
+\end_inset
+
+ сходится равномерно.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Y=\left(0;+\b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\un{\sup}{\left(0;+\b\right)}e^{-Ay}=1\ov{\st}{A\st+\b}1\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+То есть равномерная сходимость не получается.
+ Сходимость то будет, но не равномерная.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Сформулируем некоторые достаточные условия равномерной сходимости:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Вейерштрассе (Мажоранта)
+\end_layout
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ интегрируема на отрезке от 
+\begin_inset Formula $\left[a;A\right]\ \forall y\in Y\ \forall A>a$
+\end_inset
+
+ и удовлетворяет следующим условиям:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|f\left(x,y\right)\right|\mr\varphi\left(x\right),$
+\end_inset
+
+ 
+\begin_inset Formula $x\br a,$
+\end_inset
+
+ 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}\varphi\left(x\right)dx<\b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда интеграл 
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Сводится к применению мажорантного признака сходимости функцинальных рядов,
+ с инспользованием представления: 
+\begin_inset Formula $\oui a{\b}\varphi\left(x\right)dx=\ous{k=1}{\b}\oui{A_{k}}{A_{k+1}}\varphi\left(x\right)dx=\ous{k=1}{\b}a_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Абеля
+\end_layout
+
+\end_inset
+
+Пусть функции 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x,y\right)$
+\end_inset
+
+ таковы, что:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Интеграл 
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x,y\right)$
+\end_inset
+
+ монотонная на по 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\forall y\in Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists L>0\ \left|g\left(x,y\right)\right|<L\ \forall x\in[a;+\b)\ \forall y\in Y$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда интеграл 
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)g\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Заменяем интегралы на суммы, и сами доказываем эту теорему.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Дерихле
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x,y\right)$
+\end_inset
+
+ таковы, что:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|\oui aAf\left(x,y\right)dx\right|\mr L\ \forall A\br a\ \forall y\in Y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x,y\right)$
+\end_inset
+
+ монотонна по 
+\begin_inset Formula $X$
+\end_inset
+
+ на 
+\begin_inset Formula $Y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x,y\right)\rightrightarrows0$
+\end_inset
+
+ на 
+\begin_inset Formula $Y$
+\end_inset
+
+ при 
+\begin_inset Formula $X\st\b$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда 
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)g\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Этого доказательства на экзамене не будет, но представления о нем нужно
+ иметь.
+\end_layout
+
+\begin_layout Subsection
+Свойства несобственных интегралов, зависящих от параметра
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1, О предельном переходе под знаком несобственного интеграла
+\end_layout
+
+\end_inset
+
+Пусть:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ интегрируема на 
+\begin_inset Formula $\left[a,A\right]\ \forall A\br a\ \forall y\in Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)\rightrightarrows\varphi\left(x\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $y\st y_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left[a;A\right],\ A\br a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда получается 
+\begin_inset Formula $\exists\ul{y\st y_{0}}\oui a{\b}f\left(x,y\right)dx=\oui a{\b}\ul{y\st y_{0}}f\left(x,y\right)dx=\oui a{\b}\varphi\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Нету.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+f_{n}\left(x\right)=\df n{x^{3}}\um e^{-\df n{2x^{2}}}, & x>0\\
+f_{n}\left(0\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(x,n\right)=f_{n}\left(x\right),\ Y=\N,\ y_{0}=\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Изучим сходимость интеграла: 
+\begin_inset Formula $\Phi\left(u\right)=\oui 0{\b}f_{n}\left(x\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Проверим выполнение условий 
+\color cyan
+Теоремы 1
+\color inherit
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}\left(x\right)=\df n{x^{3}}e^{-\df n{2x^{2}}}$
+\end_inset
+
+ --- непрерывна на обрезке 
+\begin_inset Formula $\left[0;A\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\forall A\br0,\ \forall n\in\N$
+\end_inset
+
+ так как 
+\begin_inset Formula 
+\[
+\ul{x\st0}f_{n}\left(x\right)=n\ul{x\st0}\df 1{x^{3}\um e^{\df n{2x^{2}}}}=n\ul{x\st+\b}\df{t^{3}}{e^{\df n2\um t^{2}}}=\left\{ \df{\b}{\b}\right\} =0=f_{n}\left(0\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+При 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+: 
+\begin_inset Formula $\forall x\br0$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{n\st\b}f_{n}\left(x\right)=0$
+\end_inset
+
+ следовательно 
+\begin_inset Formula $\varphi\left(x\right)\equiv0$
+\end_inset
+
+ --- предельная функция.
+ При этом 
+\begin_inset Formula $f_{n}\left(x\right)\rightrightarrows0$
+\end_inset
+
+ --- доказывается: 
+\begin_inset Formula $\umax{\left[0;A\right]}\df n{x^{3}}e^{-\df n{2x^{2}}}=\left|\tr\tr\right|\ov{\st}{n\st\b}0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Заметим что 
+\begin_inset Formula $\oui 0{\b}f_{n}\left(x\right)dx=\tr=1\quad\forall n\in\N$
+\end_inset
+
+ так как 
+\begin_inset Formula $\ul{n\to\b}\oiu 0{\b}f_{n}\left(x\right)dx=1\nr0=\oui 0{\b}\varphi\left(x\right)dx,$
+\end_inset
+
+ то из Теоремы 1 следует, что условие 3 не выполняется.
+ Интеграл 
+\begin_inset Formula $\oui 0{\b}f_{n}\left(x\right)dx$
+\end_inset
+
+ равномерно не сходится при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Пусть:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+непрерывна на 
+\begin_inset Formula $[a;+\b)\x\left[c;d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx$
+\end_inset
+
+ сходится равномерно на 
+\begin_inset Formula $\left[c;d\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда 
+\begin_inset Formula $\Phi\left(y\right)=\oui a{\b}f\left(x,y\right)dx$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\left[c;d\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим произвольную бесконечно большую последовательность 
+\begin_inset Formula $\left\{ A_{k}\right\} ,\ A_{1}=a,\ A_{n}\ov{\st}{n\st\b}\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Следовательно: 
+\begin_inset Formula $\Phi\left(y\right)=\oui a{\b}f\left(x,y\right)dx=\ous{k=1}{\b}\oui{A_{k}}{A_{k+1}}f\left(x,y\right)dx=\ous{k=1}{\b}u_{k}\left(y\right)$
+\end_inset
+
+.
+ Так как собственный интеграл, зависящий от параметра 
+\begin_inset Formula $\oiu{A_{k}}{A_{k+1}}f\left(x,y\right)dx=u_{k}\left(y\right)$
+\end_inset
+
+ --- непрерывная функция на 
+\begin_inset Formula $\left[c;d\right]$
+\end_inset
+
+ (по теореме о непрерывности собственного интеграла, зависящий от параметра)
+ и в силу предположения условия 2 теоремы, 
+\begin_inset Formula $\oiu a{\b}f\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+, а значит и функциональный ряд 
+\begin_inset Formula $\ous{k=1}{\b}u_{k}\left(y\right)\rightrightarrows$
+\end_inset
+
+, то по теореме о непрерывности суммы функционального ряда, сумма ряда 
+\begin_inset Formula $\ous{k=1}{\b}u_{k}\left(y\right)$
+\end_inset
+
+ --- непрерывная функция , а следовательно и интеграл 
+\begin_inset Formula $\Phi\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+Пусть 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Функции 
+\begin_inset Formula $f\left(x,y\right),\ \df{\dd}{\dd y}f\left(x,y\right)$
+\end_inset
+
+ --- непрерывны на 
+\begin_inset Formula $[a;+\b)\x\left[c;d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[c;d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}f_{y}\pr\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[c;d\right]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда 
+\begin_inset Formula $\forall y\in\left[c;d\right]\ \exists\Phi\pr\left(y\right)=\oui a{\b}f_{y}\pr\left(x,y\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Хз
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Пусть:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ --- непрерывная на 
+\begin_inset Formula $[a;+\b)\x\left[c;d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}f\left(x,y\right)dx\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[c;d\right]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда 
+\begin_inset Formula $\exists\oui cd\Phi\left(y\right)dy=\oui cddy\oui a{\b}f\left(x,y\right)dx=\oui a{\b}\left(\oui cdf\left(x,y\right)dy\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Все сводится к рядам.
 \end_layout
 
 \begin_layout Standard
