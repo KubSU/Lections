@@ -1,0 +1,1233 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\numberwithin{equation}{section}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\prime}
+{\prime}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\longrightarrow}
+{\longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
+{\underset{#1}{\lim}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\underset{#1}{\max}}
+{\underset{#1}{\max}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\underset{#1}{\min}}
+{\underset{#1}{\min}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\underset{#1}{\overset{#2}{\int}}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{\pr\pr}
+{\pr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{\ppr\pr}
+{\ppr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
+{\oui{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
+{\df{#1^{#2}#3}{#1#4^{#2}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kr}{\equiv}
+{\equiv}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\li}{\hspace{1.5cm}}
+{\hspace{1.5cm}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Обыкновенные дифференциальные уравнения.
+ Том 2.
+\end_layout
+
+\begin_layout Section
+Теория устойчивости
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy_{1}}{dx}=f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
+\vtr\\
+\df{dy_{n}}{dx}=f_{n}\left(x,y_{1},\tr,y_{n}\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+y_{1}\left(x_{0}\right)=y^{\left(0\right)}\\
+\vtr\\
+y_{n}\left(x_{0}\right)=y^{\left(n\right)}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\vtr\\
+y_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
+f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
+\vtr\\
+f_{n}\left(x,y_{1},\tr,y_{n}\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+y_{1}^{\left(0\right)}\\
+\vtr\\
+y_{n}^{\left(0\right)}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dy}{dx}=f\left(x,y\right)\\
+y\left(x_{0}\right)=y^{\left(0\right)}
+\end{cases}\label{eq:_1_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_1"
+
+\end_inset
+
+) будем обозначать через 
+\begin_inset Formula $y\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $\df{dy}{dx}=ay-1,\ a=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим начальные условия 
+\begin_inset Formula $y\left(0\right)=\df 1a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Решение: 
+\begin_inset Formula $d\left(x\right)=\df 1a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x,y^{\left(0\right)}\right)=\df 1a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Сделаем возмущение начальное условие: 
+\begin_inset Formula $y\left(0\right)=\df 1a+\D y^{\left(0\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решение возмущенной задачи: 
+\begin_inset Formula $y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)=\D y^{\left(0\right)}e^{ax}+\df 1a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=ce^{ax}+\df 1a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотри разность решений по модулю: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|=\left|\D y^{\left(0\right)}\right|\um e^{ax}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим два случая:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|\D y^{\left(0\right)}\right|e^{ax}\mr\left|\D y^{\left(0\right)}\right|<\varepsilon\quad\forall x\br0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $x\st+\b$
+\end_inset
+
+ : 
+\begin_inset Formula $\left|\D y^{\left(0\right)}\right|e^{ax}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Говорят что решение 
+\begin_inset Formula $\df 1a$
+\end_inset
+
+ устойчиво.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|\D y^{\left(0\right)}\right|e^{ax}\ov{\st}{x\st+\b}\b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Получается что решения разойдутся...
+\end_layout
+
+\begin_layout Standard
+Говорят, что решение 
+\begin_inset Formula $\df 1a$
+\end_inset
+
+ неустойчиво.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Понятие устойчивости ввел российский математик Ляпунов.
+ Он же заложил основные методы исследования решений задач на устойчивость.
+\end_layout
+
+\begin_layout Standard
+В качестве нормы вектора 
+\begin_inset Formula $y=\left(\begin{array}{c}
+y_{1}\\
+\vtr\\
+y_{n}
+\end{array}\right)$
+\end_inset
+
+ будем рассматривать 
+\begin_inset Formula $\left|\left|y\right|\right|=\sqrt{\ous{k=1}ny_{k}^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать устойчивость по начальным условиям.
+\end_layout
+
+\begin_layout Definition
+Решения задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_1"
+
+\end_inset
+
+) : 
+\begin_inset Formula $y=y\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ называется устойчивым по Ляпунову, если: 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall\left|\left|\D y^{\left(0\right)}\right|\right|<\delta\ \forall x>x_{0}\ \left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Решение 
+\begin_inset Formula $y\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_1"
+
+\end_inset
+
+) называется асимптотически устойчивым если:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Оно устойчиво по Ляпунову.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists\delta_{0}:\ \forall\left|\left|\D y^{\left(0\right)}\right|\right|<\delta_{0}\quad\ul{x\st+\b}\left|\left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|\right|=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Исследование на устойчивость ненулевого решения можно свести исследованию
+ на устойчивость нулевого решение некоторой вспомогательной задачи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)=y\left(x,y^{\left(0\right)}\right)+U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)}{dx}=\df{dy\left(x,y^{\left(0\right)}\right)}{dx}+\df{dU}{dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dU}{dx}=f\left(x,y\left(x,y^{\left(0\right)}\right)+U\right)-\df{dy\left(x,y^{\left(0\right)}\right)}{dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x,y\right)=f\left(x,y\left(x,y^{\left(0\right)}\right)+U\right)-\df{dy\left(x,y^{\left(0\right)}\right)}{dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U\left(x_{0}\right)=y\left(x_{0},y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x_{0},y^{\left(0\right)}\right)=y^{\left(0\right)}+\D y^{\left(0\right)}-y^{\left(0\right)}=\D y^{\left(0\right)}=U_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dU}{dx}=F\left(x,U\right)\\
+U\left(x\right)=0
+\end{cases}\label{eq:_1_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_1"
+
+\end_inset
+
+) будет соответствовать задача (хз), при начальном условии 
+\begin_inset Formula $хз$
+\end_inset
+
+ а задачи (3,4) будет соответствовать задача 4,5 при 
+\begin_inset Formula $u\left(0\right)=\D y^{\left(0\right)}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Тогда если нулевое решение уравнение (4) будет устойчиво, то и решение 
+\begin_inset Formula $y\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ будет устойчивым решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Нулевое решение устойчиво, если для всякой 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+окрестности в начале координат, существует 
+\begin_inset Formula $\delta$
+\end_inset
+
+ окрестность, то если решение начинается в 
+\begin_inset Formula $\delta$
+\end_inset
+
+ окрестности, то оно не покидает 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ окрестности.
+ Решение асимптотически устойчиво, если оно не только не покидает окрестности,
+ но и стремится к нулю.
+ Но когда мы говорим об асимптотическом устойчивости стремление решение
+ к нулю недостаточно, то есть первый пункт нужный.
+\end_layout
+
+\begin_layout Subsection
+Устойчивость нулевого решения линейной однородной системы диффренциальных
+ уравнений с постоянными коэффициентами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy_{1}}{dx}=a_{1,1}y_{1}+\tr+a_{1,n}y_{n}\\
+\vtr\\
+\df{dy_{n}}{dx}=a_{n,1}y_{1}+\tr+a_{n,n}y_{n}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{i,j}=const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\vtr\\
+y_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(\begin{array}{c}
+a_{1,1},\tr a_{1,n}\\
+\vtr\\
+a_{n,1,\tr,a_{n,n}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=Ay\label{eq:_2_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим что 
+\begin_inset Formula $y\left(x\right)=0$
+\end_inset
+
+ будет решением этого системы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{k}=\mu_{k}+i\um\nu_{k},\ k\mr m\mr n,\ k=\overline{1,m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Lemma
+Если все собственные значения матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ имеют отрицательные вещественные части, то 
+\begin_inset Formula $\forall$
+\end_inset
+
+ решения 
+\begin_inset Formula $y=\varphi\left(x\right)$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) существуют положительные постоянные 
+\begin_inset Formula $R,\alpha>0$
+\end_inset
+
+ что для всех 
+\begin_inset Formula $x>0$
+\end_inset
+
+ будет справедливо вод это неравенство: 
+\begin_inset Formula $\left|\left|\varphi\left(x\right)\right|\right|\mr Re^{-\alpha x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда любое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) можно записать как: 
+\begin_inset Formula 
+\begin{equation}
+\varphi\left(x\right)=\ous{k=1}m\varphi_{k}\left(x\right)e^{\lambda_{k}x}\label{eq:_2_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Где 
+\begin_inset Formula $\varphi_{k}\left(x\right)$
+\end_inset
+
+ -- это вектор функции, компонентами которых являются некоторые многочлены.
+ ПО условию леммы, 
+\begin_inset Formula $Re\ \lambda_{k}<0$
+\end_inset
+
+ (То есть 
+\begin_inset Formula $\mu_{k}<0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Следовательно: 
+\begin_inset Formula $\exists\alpha>0\ \mu_{k}+\alpha<0\ \forall k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда из (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2"
+
+\end_inset
+
+) мы получаем, что 
+\begin_inset Formula 
+\begin{eqnarray}
+\left|\left|\varphi\left(x\right)\right|\right|\mr\ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|\um\left|e^{x\left(\mu_{k}+i\um\nu_{k}\right)}\right| & = & \ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|\um e^{x\mu_{k}}\label{eq:_2_3}
+\end{eqnarray}
+
+\end_inset
+
+ так как 
+\begin_inset Formula $\left|e^{\lambda_{k}x}\right|=\left|e^{x\mu_{k}}\right|\um\left|e^{i\um\nu_{k}x}\right|=e^{x\mu k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Умножим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3"
+
+\end_inset
+
+) на 
+\begin_inset Formula $e^{\lambda x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\left|\left|\varphi_{k}\left(x\right)\right|\right|e^{\alpha x}\mr\ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|e^{x\left(\mu_{k}+\alpha\right)}\label{eq:_2_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\mu_{k}<0$
+\end_inset
+
+ для всех 
+\begin_inset Formula $k$
+\end_inset
+
+ следовательно каждая компонента ветор функции 
+\begin_inset Formula $\varphi_{k}\left(x\right)$
+\end_inset
+
+ является многочленом некоторой степени.
+ 
+\end_layout
+
+\begin_layout Proof
+Следовательно правая часть неравенства (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4"
+
+\end_inset
+
+) стремится к 0 при 
+\begin_inset Formula $x\st+\b$
+\end_inset
+
+.
+ Следовательно правая часть неравенства (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4"
+
+\end_inset
+
+) ограничена.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|e^{x\left(\mu_{k}+\alpha\right)}\mr R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+А тогда: 
+\begin_inset Formula $\left|\left|\varphi_{k}\right|\right|e^{\alpha x}\mr R\ \forall x\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\left|\varphi\left(x\right)\right|\right|\mr Re^{-\alpha x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем обозначать через 
+\begin_inset Formula $y=\varphi\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+), которое в нуле принимает значение 
+\begin_inset Formula $y^{\left(0\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Если все собственные значения матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ имеют отрицательные вещенсивенные части, то 
+\begin_inset Formula $\forall$
+\end_inset
+
+ решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) 
+\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\exists r,\alpha>0$
+\end_inset
+
+ (они константы), что 
+\begin_inset Formula $\forall x\br0$
+\end_inset
+
+ справедлива оценка: 
+\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr r\left|\left|y^{\left(0\right)}\right|\right|e^{-\alpha x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим как 
+\begin_inset Formula $\varphi^{\left(j\right)}\left(x\right)$
+\end_inset
+
+ решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+), удовлетворяющее вод такому начальному условию: 
+\begin_inset Formula $\varphi^{\left(j\right)}\left(0\right)=e^{\left(j\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $e^{\left(j\right)}=\left(\begin{array}{c}
+0\\
+\vtr\\
+0\\
+1\\
+0\\
+\vtr\\
+0
+\end{array}\right)$
+\end_inset
+
+--- стоит на 
+\begin_inset Formula $j$
+\end_inset
+
+-ом месте.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+y_{1}^{\left(0\right)}\\
+\vtr\\
+y_{n}^{\left(0\right)}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда в силу теоремы существования и единственности решение можно представить
+ в виде: 
+\begin_inset Formula 
+\begin{equation}
+\varphi\left(x,y^{\left(0\right)}\right)=\ous{j=1}ny_{j}^{\left(0\right)}\varphi^{\left(j\right)}\left(x\right)\label{eq:_2_5}
+\end{equation}
+
+\end_inset
+
+В силу Леммы 1 
+\begin_inset Formula $\exists R_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr R_{j}e^{-\alpha x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим через 
+\begin_inset Formula $R=\umax{j=\overline{1,n}}R_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда из 
+\begin_inset Formula $\forall j=\overline{1,n}\quad\left|\left|\varphi\left(x\right)\right|\right|\mr Re^{-\alpha x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5"
+
+\end_inset
+
+): 
+\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr\ous{j=1}n\left|y_{j}^{\left(0\right)}\right|\um Re^{-\alpha x}\mr\left|\left|y^{\left(0\right)}\right|\right|n\um Re^{-\alpha x}=re^{-\alpha x}\um\left|\left|y^{\left(0\right)}\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $r=n\um R$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
