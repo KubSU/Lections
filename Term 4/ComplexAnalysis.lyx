@@ -413,6 +413,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\rs}{\rightrightarrows}
+{\rightrightarrows}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -1459,8 +1465,20 @@ status open
 
  (по Лемме из пред.
  пункта).
- Следовательно выполнено условие 2 Т1.
- Тогда применяя Теорему 1:
+ Следовательно выполнено 
+\color green
+условие 2
+\color inherit
+ 
+\color cyan
+Теоремы 1
+\color inherit
+.
+ Тогда применяя 
+\color cyan
+Теорему 1
+\color inherit
+:
 \begin_inset Formula 
 \[
 \exists\ul{y\to y_{0}}\Phi\left(y\right)=\oiu ab\varphi\left(x\right)dx=\oiu abf\left(x,y_{0}\right)dx=\Phi\left(y_{0}\right)
@@ -1568,6 +1586,19 @@ status open
 \[
 \oudi K{}f\left(x,y\right)dxdy.............
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать!
+\end_layout
 
 \end_inset
 
@@ -2153,7 +2184,11 @@ f_{n}\left(0\right)=0
 \begin_inset Formula $\ul{n\to\b}\oiu 0{\b}f_{n}\left(x\right)dx=1\nr0=\oui 0{\b}\varphi\left(x\right)dx,$
 \end_inset
 
- то из Теоремы 1 следует, что условие 3 не выполняется.
+ то из 
+\color cyan
+Теоремы 1
+\color inherit
+ следует, что условие 3 не выполняется.
  Интеграл 
 \begin_inset Formula $\oui 0{\b}f_{n}\left(x\right)dx$
 \end_inset
@@ -2238,7 +2273,11 @@ status open
 \end_inset
 
  (по теореме о непрерывности собственного интеграла, зависящий от параметра)
- и в силу предположения условия 2 теоремы, 
+ и в силу предположения 
+\color green
+условия 2
+\color inherit
+ теоремы, 
 \begin_inset Formula $\oiu a{\b}f\left(x,y\right)dx\rightrightarrows$
 \end_inset
 
@@ -2323,7 +2362,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-4
+4, Об интегрируемости под знаком интеграла
 \end_layout
 
 \end_inset
@@ -2365,6 +2404,677 @@ status open
 
 \begin_layout Proof
 Все сводится к рядам.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5, Об изменение порядка интегрирования при несобственном интегрировании
+\end_layout
+
+\end_inset
+
+Пусть:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ --- непрерывна на 
+\begin_inset Formula $[a;+\b)\x[c;+\b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{+\b}f\left(x,y\right)dx$
+\end_inset
+
+ сходится равномерно по 
+\begin_inset Formula $y$
+\end_inset
+
+ на множестве 
+\begin_inset Formula $\left[c;C\right]\ni y$
+\end_inset
+
+ 
+\begin_inset Formula $\forall C>c$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\oui c{+\b}f\left(x,y\right)dy$
+\end_inset
+
+ сходится равномерно по 
+\begin_inset Formula $x\in\left[a;A\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\forall A>a$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+или 
+\begin_inset Formula $\oui a{\b}dx\oui c{\b}\left|f\left(x,y\right)\right|dy$
+\end_inset
+
+ и или 
+\begin_inset Formula $\oui c{\b}dy\oui a{\b}\left|f\left(x,y\right)\right|dx$
+\end_inset
+
+ сходятся
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда существуют и равны 
+\begin_inset Formula $\oui a{\b}dx\oui c{\b}f\left(x,y\right)dy$
+\end_inset
+
+ и 
+\begin_inset Formula $\oui c{\b}dy\oui a{\b}f\left(x,y\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть для определенности существует интеграл 
+\begin_inset Formula $\oui a{\b}dx\oui c{\b}\left|f\left(x,y\right)\right|dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Зафиксируем произвольный 
+\begin_inset Formula $C>c$
+\end_inset
+
+ 
+\begin_inset Formula $\then$
+\end_inset
+
+ по Теореме 4 
+\begin_inset Formula $\then$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\then$
+\end_inset
+
+ 
+\begin_inset Formula $\oui cCdy\oui a{\b}f\left(x,y\right)dx=\oui a{\b}dx\oui cCf\left(x,y\right)dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем что в правой части равенства возможен предельный переход при 
+\begin_inset Formula $C\st+\b$
+\end_inset
+
+ под знаком интеграла.
+ Для этого достаточно доказать, что функция:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $F\left(x,C\right)=\oui cCf\left(x,y\right)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Удовлетворяет Условиям 1, 2, 3 Теоремы 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Нужно проверить, что интегрируемость функций 
+\begin_inset Formula $F\left(x,C\right)\quad\forall\left[a;A\right]$
+\end_inset
+
+ по 
+\begin_inset Formula $x$
+\end_inset
+
+ --- 
+\begin_inset Formula $\exists\oui aAf\left(x,C\right)=\oui aAdx\oui cCf\left(x,y\right)dy$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\left[a;A\right]\x\left[c;C\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Интеграл 
+\begin_inset Formula $F\left(x,C\right)=\oui cCf\left(x,y\right)dy\ov{\rightrightarrows}{c\st+\b}\oui c{\b}f\left(x,y\right)dy$
+\end_inset
+
+ --- следует из Условия 2 Теоремы.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\oui a{\b}F\left(x,c\right)dx\rs\forall C>c$
+\end_inset
+
+ --- Это слудует из оценки:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|F\left(x,C\right)\right|=\left|\oui cCf\left(x,y\right)dy\right|\mr\oui cC\left|f\left(x,y\right)\right|dy\mr\oui c{\b}\left|f\left(x,y\right)\right|dy=\varphi\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x,C\right)\mr\varphi\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+И сходимость интеграла 
+\begin_inset Formula $\oui a{\b}dx\oui c{\b}\left|f\left(x,y\right)\right|dy=\oui a{\b}\varphi\left(x\right)dx$
+\end_inset
+
+ по Мажорантному признако (или признаку Вейерштрассе) 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ По Теореме 1 : 
+\begin_inset Formula 
+\[
+\exists\ul{c\to+\b}\oui cCdy\oui a{\b}f\left(x,y\right)dx=\ul{c\to\b}\oui a{\b}dx\oui cCf\left(x,y\right)dy\ov ={T.1}\oui a{\b}\left(\ul{c\to\b}\oui cCf\left(x,y\right)dy\right)dx=\oui a{\b}dx\oui c{\b}f\left(x,y\right)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Игтерралы Эйлера.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим интегралы вида:
+\begin_inset Formula 
+\begin{equation}
+B\left(a,b\right)=\oui 01x^{a-1}\um\left(1-x\right)^{b-1}dx\label{eq:_1_6_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это Эйлеров интеграл 1-го рода, или бетта-функция.
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left(a\right)=\oui 0{\b}x^{a-1}\um e^{-x}dx\label{eq:_1_6_2}
+\end{equation}
+
+\end_inset
+
+Это интеграл второго рада, или гамма-функция.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\left(a,b\right)$
+\end_inset
+
+ --- несобвтсенный интеграл, причем его сосбые точки 
+\begin_inset Formula $x=0;\ x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\left(a,b\right)=\oui 0{\frac{1}{2}}\df 1{x^{1-a}}\um\left(1-x\right)^{b-1}dx+\oui{\frac{1}{2}}1x^{a-1}\um\df 1{\left(1-x\right)^{1-b}}dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(1-x\right)^{b-1}\to1;\quad$
+\end_inset
+
+
+\begin_inset Formula $\df 1{x^{1-a}}$
+\end_inset
+
+ --- сходится при условии, что 
+\begin_inset Formula $1-a<1\sl a>0\ \forall b\in\R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+При 
+\begin_inset Formula $x\st1-0$
+\end_inset
+
+ : 
+\begin_inset Formula $x^{a-1}\to1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\df 1{\left(1-x\right)^{1-b}}$
+\end_inset
+
+ сходится при условии что 
+\begin_inset Formula $1-b<1\sl b>0\ \forall a\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $B\left(a,b\right)$
+\end_inset
+
+ сходится (определен) при 
+\begin_inset Formula $a>0,\ b>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Заметим, что несоббстивенный интеграл (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_6_1"
+
+\end_inset
+
+) 
+\begin_inset Formula $\rs$
+\end_inset
+
+ на множестве 
+\begin_inset Formula $0<a_{0}\mr a;\ 0<b_{0}\mr b$
+\end_inset
+
+.
+ Так как подинтегральная функция 
+\begin_inset Formula $x^{a-1}\um\left(1-x\right)^{b-1}\br x^{a_{0}-1}\um\left(1-x\right)^{b_{0}-1}$
+\end_inset
+
+ --- интегрируема, и она является мажорантой.
+ Значит по Мажорантному признаку, интеграл сходится.
+\end_layout
+
+\begin_layout Subsubsection
+Рассмотрим свойства бетта-функции:
+\end_layout
+
+\begin_layout Enumerate
+Симметричность 
+\begin_inset Formula $B\left(a,b\right)=B\left(b,a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Замена в (1): 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $t=1-x;\ x=1-t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x\in\left[0;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $t\in\left[1;0\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $dx=-dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $B\left(a,b\right)=\oui 10\left(1-t\right)^{a-1}\um t^{b-1}\left(-dt\right)=\oui 01t^{b-1}\left(1-t\right)^{a-1}dt=B\left(b,a\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Из далека будем выводить 2е свойство
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+B\left(a,b\right) & =\oui 01x^{a-1}\left(1-x\right)^{b-1}dx=\df 1a\oui 01\left(1-x\right)^{b-1}dx^{a}=\\
+ & =x^{a}\df{\left(1-x\right)^{b-1}}a|_{0}^{1}+\df{b-1}a\oui 01x^{a}\um\left(1-x\right)^{b-2}dx=\\
+ & =\left\{ \begin{array}{c}
+x^{a}\left(1-x\right)^{b-2}=x^{a-1}\um\left(1-x\right)^{b-2}-x^{a-1}\left(1-x\right)^{b-1}=\\
+=x^{a-1}\um\left(1-x\right)^{b-2}\left(1-\left(1-x\right)\right)
+\end{array}\right\} =\\
+ & =\df{b-1}a\un{\underbrace{\oui 01x^{a-1}\left(1-x\right)^{b-2}dx}}{B\left(a,b-1\right)}-\df{b-1}a\un{\underbrace{\oui 01x^{a-1}\left(1-x\right)^{b-1}dx}}{B\left(a,b\right)}=\df{b-1}aB\left(a,b-1\right)-\df{b-1}aB\left(a,b\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\left(a,b\right)\um\left(1^{\backslash a}+\df{b-1}a\right)=\df{b-1}a\um B\left(a,b-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\left(a,b\right)=\df{b-1}{a+b-1}\um B\left(a,b-1\right),\ a>0,\ b>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $b=n\in\N$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+B\left(a,n\right) & = & \df{n-1}{a+n-1}\um B\left(a,n-1\right)=\df{n-1}{a+n-1}\um\df{n-2}{a+n-2}\um B\left(a,n-2\right)=\tr=\\
+ & = & \left\{ B\left(a,1\right)=\oui 01x^{a-1}dx=\df{x^{a}}a|_{0}^{1}=\df 1a\right\} =\\
+ & = & \df{n-1}{a+n-1}\um\df{n-2}{a+n-2}\um\df{n-3}{a+n-3}\um\tr\um\df 1a
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\left(m,n\right)=\df{n-1}{m+n-1}\um\df{n-2}{m+n-2}\um\tr\df 1{m+1}=\df 1m\um\df{\left(n-1\right)!\um\left(m-1\right)!}{\left(m+n-1\right)!},\ m,n\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В общем это оно (2е свойство).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $B\left(a,b\right)=\oui 0{\b}\df{y^{a-1}}{\left(1+y\right)^{a+b}}dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Получается заменой 
+\begin_inset Formula $x=\df y{y+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\in\left[0;1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $y\in\left[0;+\b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Самостоятельно проверить.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Совйтсва гамма-функций
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma\left(a\right)=\oui 0{\b}x^{a-1}e^{-x}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Интеграл , зависящий от параметра 
+\begin_inset Formula $a$
+\end_inset
+
+, причем нужно заметить что возможная сосбая точка 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\left(a\right)=\oui 01\df{e^{-x}}{1-a}dx+\oui 1{\b}x^{a-1}e^{-x}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\oui 01\df{e^{-x}}{1-a}dx$
+\end_inset
+
+ --- сходится при 
+\begin_inset Formula $1-a<1,\ \sl a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\oui 1{\b}x^{a-1}e^{-x}dx$
+\end_inset
+
+ --- интегрируема 
+\begin_inset Formula $\forall a\in\R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $\Gamma\left(a\right)$
+\end_inset
+
+ определена при 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Интеграл (2) схордтится равномерно на множестве 
+\begin_inset Formula $0<a_{0}\mr a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\left(a\right)=\oui 01x^{a-1}e^{-x}dx+\oui 1{\b}x^{a-1}e^{-x}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+На 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+ имеется Мажоранта 
+\begin_inset Formula $x^{a-1}e^{-x}\mr x^{a_{0}-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+На 
+\begin_inset Formula $\left[1;+\b\right]$
+\end_inset
+
+ : 
+\begin_inset Formula $\forall A>0$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[a_{0};A\right]$
+\end_inset
+
+ мажоранта 
+\begin_inset Formula $x^{a-1}\um e^{-x}\mr x^{A-1}e^{-x}=x^{A}e^{-x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как на области 
+\begin_inset Formula $\left[a_{0};\b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma\left(a\right)\rs,$
+\end_inset
+
+ то 
+\begin_inset Formula $\forall a>0$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma\left(a\right)$
+\end_inset
+
+ непрерывна.
+\end_layout
+
+\begin_layout Standard
+Аналогично доказывается, что интеграл, полученый дифференцируемый по параметру
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ так же сходистя равномерно на 
+\begin_inset Formula $\left[a_{0};A\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall A>a_{0}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\pr\left(a\right)=\oui 0{\b}\left(x^{a-1}e^{-x}\right)\pr dx=\oui 0{\b}x^{a-1}\ln x\um e^{-x}dx$
+\end_inset
+
+ (мажорантный признак)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\ppr\left(a\right)=\oui 0{\b}x^{a-1}\um\ln^{2}x\um e^{-x}dx>0$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
