@@ -1693,7 +1693,7 @@ status open
 \begin_inset Formula $\oui a{\b}f\left(x,y\right)dx$
 \end_inset
 
- называется равномернот сходящимся на области 
+ называется равномерно сходящимся на области 
 \begin_inset Formula $Y$
 \end_inset
 
@@ -1717,36 +1717,30 @@ status open
 \end_layout
 
 \begin_layout Example
-Исследовать на равномерную сходимсоть следующий интенграл:
-\end_layout
+Исследовать на равномерную сходимость следующий интеграл:
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=\oui 0{\b}y\um e^{-xy}dx,\quad y>0
+\]
 
-\begin_layout Example
-\begin_inset Formula $\Phi\left(y\right)=\oui 0{\b}y\um e^{-xy}dx$
 \end_inset
 
-, 
-\begin_inset Formula $y>0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
 Рассмотрим следующую функцию: 
-\begin_inset Formula $\Phi\left(y,A\right)=\oui 0Ay\um e^{-xy}dx$
-\end_inset
+\begin_inset Formula 
+\[
+\Phi\left(y,A\right)=\oui 0Ay\um e^{-xy}dx
+\]
 
-.
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $\left|\Phi\left(y\right)-\Phi\left(y,A\right)\right|=\oui A{\b}y\um e^{-xy}dx=-e^{-xy}|_{A}^{+\b}=-\left(e^{-y\um\b}-e^{-Ay}\right)=e^{-Ay}$
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\left|\Phi\left(y\right)-\Phi\left(y,A\right)\right|=\oui A{\b}y\um e^{-xy}dx=-e^{-xy}\Big|_{A}^{+\b}=-\left(e^{-y\um\b}-e^{-Ay}\right)=e^{-Ay}
+\]
 
-\begin_layout Example
+\end_inset
+
 Рассмотрим 2 случая:
 \end_layout
 
@@ -1796,7 +1790,7 @@ status open
 
 \begin_layout Standard
 То есть равномерная сходимость не получается.
- Сходимость то будет, но не равномерная.
+ Сходимость будет, но не равномерная.
 \end_layout
 
 \end_deeper
@@ -1810,7 +1804,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Признак Вейерштрассе (Мажоранта)
+Признак Вейерштрасса (Мажоранта)
 \end_layout
 
 \end_inset
@@ -1863,12 +1857,16 @@ status open
 \end_layout
 
 \begin_layout Proof
-Сводится к применению мажорантного признака сходимости функцинальных рядов,
- с инспользованием представления: 
-\begin_inset Formula $\oui a{\b}\varphi\left(x\right)dx=\ous{k=1}{\b}\oui{A_{k}}{A_{k+1}}\varphi\left(x\right)dx=\ous{k=1}{\b}a_{k}$
+Сводится к применению мажорантного признака сходимости функциональных рядов,
+ с использованием представления: 
+\begin_inset Formula 
+\[
+\oui a{\b}\varphi\left(x\right)dx=\ous{k=1}{\b}\oui{A_{k}}{A_{k+1}}\varphi\left(x\right)dx=\ous{k=1}{\b}a_{k}
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
@@ -1909,7 +1907,7 @@ status open
 \begin_inset Formula $g\left(x,y\right)$
 \end_inset
 
- монотонная на по 
+ монотонная по 
 \begin_inset Formula $x$
 \end_inset
 
@@ -2078,7 +2076,7 @@ status open
 
 \end_deeper
 \begin_layout Theorem
-Тогда получается 
+Тогда 
 \begin_inset Formula $\exists\ul{y\st y_{0}}\oui a{\b}f\left(x,y\right)dx=\oui a{\b}\ul{y\st y_{0}}f\left(x,y\right)dx=\oui a{\b}\varphi\left(x\right)dx$
 \end_inset
 
@@ -2086,14 +2084,18 @@ status open
 \end_layout
 
 \begin_layout Proof
-Нету.
+Без доказательства.
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 f_{n}\left(x\right)=\df n{x^{3}}\um e^{-\df n{2x^{2}}}, & x>0\\
 f_{n}\left(0\right)=0
-\end{cases}$
+\end{cases}
+\]
+
 \end_inset
 
 
@@ -2181,7 +2183,11 @@ f_{n}\left(0\right)=0
 \end_inset
 
  так как 
-\begin_inset Formula $\ul{n\to\b}\oiu 0{\b}f_{n}\left(x\right)dx=1\nr0=\oui 0{\b}\varphi\left(x\right)dx,$
+\begin_inset Formula 
+\[
+\ul{n\to\b}\oiu 0{\b}f_{n}\left(x\right)dx=1\nr0=\oui 0{\b}\varphi\left(x\right)dx,
+\]
+
 \end_inset
 
  то из 
@@ -2256,15 +2262,14 @@ status open
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\Phi\left(y\right)=\oui a{\b}f\left(x,y\right)dx=\ous{k=1}{\b}\oui{A_{k}}{A_{k+1}}f\left(x,y\right)dx=\ous{k=1}{\b}u_{k}\left(y\right)
+\]
 
-\begin_layout Proof
-Следовательно: 
-\begin_inset Formula $\Phi\left(y\right)=\oui a{\b}f\left(x,y\right)dx=\ous{k=1}{\b}\oui{A_{k}}{A_{k+1}}f\left(x,y\right)dx=\ous{k=1}{\b}u_{k}\left(y\right)$
 \end_inset
 
-.
- Так как собственный интеграл, зависящий от параметра 
+Так как собственный интеграл, зависящий от параметра 
 \begin_inset Formula $\oiu{A_{k}}{A_{k+1}}f\left(x,y\right)dx=u_{k}\left(y\right)$
 \end_inset
 
@@ -2272,7 +2277,7 @@ status open
 \begin_inset Formula $\left[c;d\right]$
 \end_inset
 
- (по теореме о непрерывности собственного интеграла, зависящий от параметра)
+ (по теореме о непрерывности собственного интеграла, зависящего от параметра)
  и в силу предположения 
 \color green
 условия 2
@@ -2354,7 +2359,7 @@ status open
 \end_layout
 
 \begin_layout Proof
-Хз
+Без доказательства.
 \end_layout
 
 \begin_layout Theorem
@@ -2396,10 +2401,14 @@ status open
 \end_deeper
 \begin_layout Theorem
 Тогда 
-\begin_inset Formula $\exists\oui cd\Phi\left(y\right)dy=\oui cddy\oui a{\b}f\left(x,y\right)dx=\oui a{\b}\left(\oui cdf\left(x,y\right)dy\right)dx$
+\begin_inset Formula 
+\[
+\exists\oui cd\Phi\left(y\right)dy=\oui cddy\oui a{\b}f\left(x,y\right)dx=\oui a{\b}\left(\oui cdf\left(x,y\right)dy\right)dx
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -2411,7 +2420,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-5, Об изменение порядка интегрирования при несобственном интегрировании
+5, Об изменении порядка интегрирования при несобственном интегрировании
 \end_layout
 
 \end_inset
@@ -2517,14 +2526,14 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\then$
+\begin_inset Formula 
+\[
+\oui cCdy\oui a{\b}f\left(x,y\right)dx=\oui a{\b}dx\oui cCf\left(x,y\right)dy
+\]
+
 \end_inset
 
- 
-\begin_inset Formula $\oui cCdy\oui a{\b}f\left(x,y\right)dx=\oui a{\b}dx\oui cCf\left(x,y\right)dy$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout Proof
@@ -2534,17 +2543,14 @@ status open
 
  под знаком интеграла.
  Для этого достаточно доказать, что функция:
-\end_layout
+\begin_inset Formula 
+\[
+F\left(x,C\right)=\oui cCf\left(x,y\right)dy
+\]
 
-\begin_layout Proof
-\begin_inset Formula $F\left(x,C\right)=\oui cCf\left(x,y\right)dy$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Удовлетворяет Условиям 1, 2, 3 Теоремы 1.
+удовлетворяет Условиям 1, 2, 3 Теоремы 1.
 \end_layout
 
 \begin_deeper
@@ -2585,17 +2591,18 @@ status open
 \begin_inset Formula $\oui a{\b}F\left(x,c\right)dx\rs\forall C>c$
 \end_inset
 
- --- Это слудует из оценки:
-\end_layout
+ --- Это следует из оценки:
+\begin_inset Formula 
+\[
+\left|F\left(x,C\right)\right|=\left|\oui cCf\left(x,y\right)dy\right|\mr\oui cC\left|f\left(x,y\right)\right|dy\mr\oui c{\b}\left|f\left(x,y\right)\right|dy=\varphi\left(x\right)
+\]
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\left|F\left(x,C\right)\right|=\left|\oui cCf\left(x,y\right)dy\right|\mr\oui cC\left|f\left(x,y\right)\right|dy\mr\oui c{\b}\left|f\left(x,y\right)\right|dy=\varphi\left(x\right)$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $F\left(x,C\right)\mr\varphi\left(x\right)$
 \end_inset
@@ -2611,25 +2618,23 @@ status open
  по Мажорантному признако (или признаку Вейерштрассе) 
 \end_layout
 
-\end_deeper
-\end_deeper
 \begin_layout Standard
-\begin_inset Formula $\sl$
-\end_inset
-
- По Теореме 1 : 
+Следовательно по Теореме 1 : 
 \begin_inset Formula 
-\[
-\exists\ul{c\to+\b}\oui cCdy\oui a{\b}f\left(x,y\right)dx=\ul{c\to\b}\oui a{\b}dx\oui cCf\left(x,y\right)dy\ov ={T.1}\oui a{\b}\left(\ul{c\to\b}\oui cCf\left(x,y\right)dy\right)dx=\oui a{\b}dx\oui c{\b}f\left(x,y\right)dy
-\]
+\begin{multline*}
+\exists\ul{c\to+\b}\oui cCdy\oui a{\b}f\left(x,y\right)dx=\ul{c\to\b}\oui a{\b}dx\oui cCf\left(x,y\right)dy\ov ={T.1}\\
+\ov ={T.1}\oui a{\b}\left(\ul{c\to\b}\oui cCf\left(x,y\right)dy\right)dx=\oui a{\b}dx\oui c{\b}f\left(x,y\right)dy
+\end{multline*}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Subsection
-Игтерралы Эйлера.
+Интегралы Эйлера.
 \end_layout
 
 \begin_layout Standard
