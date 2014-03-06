@@ -3089,6 +3089,432 @@ B\left(a,n\right) & = & \df{n-1}{a+n-1}\um B\left(a,n-1\right)=\df{n-1}{a+n-1}\u
 
 \end_layout
 
+\begin_layout Section
+Комплексный анализ
+\end_layout
+
+\begin_layout Subsection
+Комплексные числа.
+ Операции над комплексными числами.
+\end_layout
+
+\begin_layout Subsubsection
+Понятие комплексного числа, аргумент, модуль.
+ Формы записи комплексных чисел.
+\end_layout
+
+\begin_layout Definition
+Выражение вида 
+\begin_inset Formula 
+\begin{equation}
+z=x+iy\label{eq:2_1_1_1}
+\end{equation}
+
+\end_inset
+
+ называется комплексным числом, где 
+\begin_inset Formula $x,\ y$
+\end_inset
+
+ --- вещественные числа, 
+\begin_inset Formula $i$
+\end_inset
+
+ --- мнимая единица.
+\end_layout
+
+\begin_layout Standard
+Комплексные числа изображаются на плоскости 
+\begin_inset Formula $XoY$
+\end_inset
+
+ точками, с координатами 
+\begin_inset Formula $\left(x;y\right)$
+\end_inset
+
+.
+ Иначе в плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ с вещественной осью 
+\begin_inset Formula $x$
+\end_inset
+
+ и мнимой осью 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ И точка 
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+ изображается как вектор, определяемый суммой векторов 
+\begin_inset Formula $\left(x,0\right),\left(0,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Множество всех комплексных чисел обозначается 
+\begin_inset Formula $C$
+\end_inset
+
+ и называется комплексной плоскостью.
+\end_layout
+
+\begin_layout Standard
+Слагаемое x в (1) называется вещественной частью числа z и обозначается
+ 
+\begin_inset Formula $Re\ z=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+вещественное числа 
+\begin_inset Formula $y$
+\end_inset
+
+ в (1) называется мнимой частью от чисдла 
+\begin_inset Formula $z$
+\end_inset
+
+, и обохначается 
+\begin_inset Formula $Im\ z=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Равенство (1) определяет алгебраическую форму записи числа.
+\end_layout
+
+\begin_layout Standard
+Если в плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ ввести полярные координаты:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+x=r\um\cos\varphi\\
+y=r\um\sin\varphi
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+z=r\left(\cos\varphi+i\um\sin\varphi\right)\label{eq:2_1_1_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если воспользоваться формулой Эйлера
+\begin_inset Formula 
+\[
+e^{i\varphi}=\cos\varphi+i\sin\varphi
+\]
+
+\end_inset
+
+Получим показательную форму числа:
+\begin_inset Formula 
+\begin{equation}
+z=r\um e^{i\varphi}\label{eq:2_1_1_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula 
+\[
+\left|z\right|=\sqrt{x^{2}+y^{2}}=\sqrt{\left(Re\ z\right)^{2}+\left(Im\ z\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Угол 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ называют аргументом числа 
+\begin_inset Formula $z$
+\end_inset
+
+, определяется:
+\begin_inset Formula 
+\[
+\varphi=\arg z=\begin{cases}
+\arctg\df yx, & x>0\\
+\arcctg\df yx+\pi, & x<0,\ y\br0\\
+\arcctg\df yx-\pi, & x<0,\ y<0\\
+\frac{\pi}{2} & x=0,\ y>0\\
+-\frac{\pi}{2} & x=0,\ y<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как функции 
+\begin_inset Formula $\cos\varphi,\ \sin\varphi$
+\end_inset
+
+ --- периодические, с периодом 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, то аргумент 
+\begin_inset Formula $z$
+\end_inset
+
+ --- периодическая.
+\end_layout
+
+\begin_layout Definition
+Выражение 
+\begin_inset Formula $\arg z$
+\end_inset
+
+ --- главный аргумент 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Число 
+\begin_inset Formula $\overline{z}=x-iy$
+\end_inset
+
+ называется числом комплексно сопряженным числу 
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Операции над комплексными числами
+\end_layout
+
+\begin_layout Definition
+Суммой комплексных чисел 
+\begin_inset Formula $z_{1}=x_{1}+iy_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}=x_{2}+iy_{2}$
+\end_inset
+
+ называется комплексное число 
+\begin_inset Formula $z=x_{1}+x_{2}+i\left(y_{1}+y_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+На комплексной плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ получается как сумма векторов 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\ \left(x_{2},y_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Произведением комплексных чисел 
+\begin_inset Formula $z_{1}=x_{1}+iy_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}=x_{2}+iy_{2}$
+\end_inset
+
+ называется комплексное число 
+\begin_inset Formula 
+\[
+z=x_{1}x_{2}-y_{1}y_{2}+i\left(x_{1}y_{2}+y_{1}x_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если представить в тригонометрической форме:
+\begin_inset Formula 
+\begin{align*}
+z_{1} & =r_{1}\cos\varphi_{1}+i\sin\varphi_{1} & z_{2} & =r_{2}\cos\varphi_{2}+i\sin\varphi_{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z_{1}\um z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\left(\varphi_{1}+\varphi_{2}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Очевидно, что 
+\begin_inset Formula $z\um\overline{z}=\left|z\right|^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Частным от деления числа 
+\begin_inset Formula $z_{1}=x_{1}+iy_{1}$
+\end_inset
+
+ на число 
+\begin_inset Formula $z_{2}=x_{2}+iy_{2}$
+\end_inset
+
+ называется комплексное число:
+\begin_inset Formula 
+\[
+\df{x_{1}+iy_{1}}{x_{2}+iy_{2}}=\df{\left(x_{1}+iy_{1}\right)\left(x_{2}-iy_{2}\right)}{\left(x_{2}+iy_{2}\right)\left(x_{2}-iy_{2}\right)}=\df{x_{1}x_{2}+y_{1}y_{2}}{x_{2}^{2}+y_{2}^{2}}+i\df{x_{2}y_{1}-x_{1}y_{2}}{x_{2}^{2}+y_{2}^{2}}
+\]
+
+\end_inset
+
+Используем показательную форму: 
+\begin_inset Formula 
+\begin{multline*}
+\df{z_{1}}{z_{2}}=\df{r_{1}e^{i\varphi_{2}}}{r_{2}e^{i\varphi_{2}}}=\df{r_{1}}{r_{2}}\um\df{\cos\varphi_{1}+i\sin\varphi_{1}}{\cos\varphi_{2}+i\sin\varphi_{2}}=\df{r_{1}}{r_{2}}\um\df{\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)\left(\cos\varphi_{2}-i\sin\varphi_{2}\right)}{\left(\cos\varphi_{2}+i\sin\varphi_{2}\right)\left(\cos\varphi_{1}-i\sin\varphi_{2}\right)}=\\
+=\df{r_{1}}{r_{2}}\um\df{\cos\varphi_{1}\cos\varphi_{2}+\sin\varphi_{1}\sin\varphi_{2}+i\left(\cos\varphi_{2}\sin\varphi_{1}-\cos\varphi_{1}\sin\varphi_{2}\right)}{\cos^{2}\varphi_{2}+\sin^{2}\varphi_{2}}=\\
+=\df{r_{1}}{r_{2}}\um\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right)=\df{r_{1}}{r_{2}}e^{i\left(\varphi_{1}-\varphi_{2}\right)}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Извлечение корня 
+\begin_inset Formula $n$
+\end_inset
+
+-ной степени из комплексного числа.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $z=re^{i\varphi}$
+\end_inset
+
+, то 
+\begin_inset Formula $z^{n}=r^{n}e^{i\um n\um\varphi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Решим обратную задачу извлечения корня 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени из заданного комплексного числа: 
+\begin_inset Formula $z=re^{i\varphi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\sqrt[n]{z}=w=\rho\um e^{i\psi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что 
+\begin_inset Formula $z=w^{n}$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\rho^{n}=r$
+\end_inset
+
+ и 
+\begin_inset Formula $i\um\psi\um n=i\left(\varphi+2\pi k\right)$
+\end_inset
+
+, а значит:
+\begin_inset Formula 
+\begin{align*}
+\rho & =\sqrt[n]{r} & \psi & =\df{\varphi}n+\df{2\pi k}n,\quad k=\overline{0,n-1}
+\end{align*}
+
+\end_inset
+
+Таким образом:
+\begin_inset Formula 
+\[
+\sqrt[n]{z}=\sqrt[n]{r}\um\left(\cos\df{\varphi+2\pi k}n+i\sin\df{\varphi+2\pi k}n\right)
+\]
+
+\end_inset
+
+То есть операция извлечения корня из комплексного числа дает 
+\begin_inset Formula $n$
+\end_inset
+
+--значный ответ.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
