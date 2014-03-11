@@ -1216,7 +1216,11 @@ reference "eq:_2_5"
 \end_inset
 
 ): 
-\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr\ous{j=1}n\left|y_{j}^{\left(0\right)}\right|\um Re^{-\alpha x}\mr\left|\left|y^{\left(0\right)}\right|\right|n\um Re^{-\alpha x}=re^{-\alpha x}\um\left|\left|y^{\left(0\right)}\right|\right|$
+\begin_inset Formula 
+\begin{equation}
+\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr\ous{j=1}n\left|y_{j}^{\left(0\right)}\right|\um Re^{-\alpha x}\mr\left|\left|y^{\left(0\right)}\right|\right|n\um Re^{-\alpha x}=re^{-\alpha x}\um\left|\left|y^{\left(0\right)}\right|\right|\label{eq:_2_6}
+\end{equation}
+
 \end_inset
 
 
@@ -1227,6 +1231,743 @@ reference "eq:_2_5"
 \end_inset
 
  
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если все собствнные значения матрипци 
+\begin_inset Formula $A$
+\end_inset
+
+ имеют отрицательные вещественные части, то положение равновесия системы
+ (1) 
+\begin_inset Formula $y\equiv0$
+\end_inset
+
+ , ассимптотически устойчиво
+\end_layout
+
+\begin_layout Proof
+...
+\end_layout
+
+\begin_layout Proof
+Тогда лбюбое решение системы (1) удовлетворяет реравенству (6), в силу леммы
+ (2) и в силу условий теоремы.
+\end_layout
+
+\begin_layout Proof
+Тогда в качестве 
+\begin_inset Formula $\delta$
+\end_inset
+
+ мы возьмем 
+\begin_inset Formula $\df{\varepsilon}r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\df{\varepsilon}r\ \left|\left|y^{\left(0\right)}\right|\right|<\delta,\ x>x_{0}\ \left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr r\um\delta=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Мы показали что 0-оерешение системы (1) усточчиво по Ляпунову.
+ Вместе с тем, так же в силу (6):
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{x\st+\b}\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если хотябы одно собственное значения матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ имеет положительную вещественную часть или все собственные значения матрици
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ ИМЕЮТ ВЕЩЕСТВЕННЫЕ ЧАСТИ НЕ ПОЛОЖИТЕЛЬНЫЕ и хотя бы для одного собственного
+ значения 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ у которого вещественная часть равна нулю, число линейно независимых собственных
+ векторов меньше кратности этого собственного числа 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, то нулевое решщение системы (1) 
+\begin_inset Formula $y\equiv0$
+\end_inset
+
+ неустойчиво.
+\end_layout
+
+\begin_layout Proof
+Будем доказывать неустойчивость в 2х случаях:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть у системы (1) есть собственное число, такое что рреальная часть 
+\begin_inset Formula $\lambda=\mu>0$
+\end_inset
+
+.
+ ...положительные вещественные части.
+ Тогда этому вещественному числу соответствует некоторый вектор 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $h\um e^{\lambda x}$
+\end_inset
+
+ --- решщегниеи системы (1).
+\end_layout
+
+\begin_layout Standard
+Оно может быть комплексно значным.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=Re\, h\um e^{\lambda x}$
+\end_inset
+
+ --- тоже будет решением системы (1).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $h=h^{\left(1\right)}+i\um h^{\left(2\right)}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\right)e^{\mu x}\left(\cos\nu x+i\sin\nu x\right)\right) & = & e^{\mu x}\left(h^{\left(1\right)}\cos\nu x-h^{\left(2\right)}\sin\nu x\right)
+\end{eqnarray*}
+
+\end_inset
+
+ Нетрудно видель, что норма этого решение 
+\begin_inset Formula $\ov{\st}{x\st+\b}+\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(x\right)=c\um y$
+\end_inset
+
+ --- тоже решенние системы (1).
+ (
+\begin_inset Formula $c=const$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(0\right)=c\um h^{\left(1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поэтому выберая 
+\begin_inset Formula $c$
+\end_inset
+
+ достаточно малы, мы можем сделать 
+\begin_inset Formula $\left|\left|\varphi\left(0\right)\right|\right|<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Но 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ по норме будет стремиться к плюс бесконечности, при 
+\begin_inset Formula $x\st+\b$
+\end_inset
+
+.
+ Отсюдо следует, что нулевое решение не устойчиво.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть у матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ системы (1) есть собственное число 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, у которого вещественная часть равна нулю и кратность этого числа 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ больше чем число линеейно независимых собственных векторов, соответствующих
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда очевидно этому собственному значению будет соответствовать хотябы
+ одна Жорданова цепочка --- 
+\begin_inset Formula $h^{\left(1\right)},\tr,h^{\left(p\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $p\br2$
+\end_inset
+
+, где 
+\begin_inset Formula $h^{\left(1\right)}$
+\end_inset
+
+ --- собственный вектор, а остальные присоедененные.
+ И у системы (1) будет решение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)=e^{\lambda x}\left(h^{\left(1\right)}+xh^{\left(2\right)}+\tr+\df{x^{p-1}}{\left(p-1\right)!}h^{\left(p\right)}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Нетрудно видеть, что: 
+\begin_inset Formula $\varphi\left(0,y^{\left(0\right)}\right)=y^{\left(0\right)}=h^{\left(1\right)}$
+\end_inset
+
+.
+ Тогда норма 
+\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\ov{\st}{x\st+\b}+\b$
+\end_inset
+
+, хотя при 
+\begin_inset Formula $x=0$
+\end_inset
+
+, 
+\begin_inset Formula $y^{\left(0\right)}=h^{\left(1\right)}$
+\end_inset
+
+ по норме может быть взято вколь угодно малым.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Theorem
+Если все собственные значения матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ имеют неположительные вещественные части и для каждого собственного значения
+ с вещественной частью равной нулю число линейно независимых собственных
+ векторов равно кратности собственного значения, то нулевое решение системы
+ (1) устойчиво по Ляпунову.
+\end_layout
+
+\begin_layout Proof
+В этом случае любое решение системы (1) можно представить в виде 
+\begin_inset Formula $y\left(x\right)=\un{\Sigma}{Re\,\lambda<0}g_{k}\left(x\right)e^{\lambda x}+\un{\Sigma}{Re\,\lambda=0}c_{k}h^{\left(k\right)}e^{\lambda x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $g_{k}$
+\end_inset
+
+ --- функции, компонентами которых являются многочлены.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ --- постоянные
+\end_layout
+
+\begin_layout Proof
+Нетрудно видеть, что 
+\begin_inset Formula $\left|\left|y\left(x\right)\right|\right|\mr M$
+\end_inset
+
+, где 
+\begin_inset Formula $M$
+\end_inset
+
+ --- положительная постоянная.
+ Все решения ограничены.
+\end_layout
+
+\begin_layout Proof
+Как и при доказательстве Леммы 2 обозначим через 
+\begin_inset Formula $\varphi^{\left(j\right)}\left(x\right),\ j=\overline{1,n}$
+\end_inset
+
+ решение системы 1, удовлетворяющее начальнгом уусловию, 
+\begin_inset Formula $\varphi^{\left(j\right)}\left(0\right)=e^{\left(j\right)}=\left(\begin{array}{c}
+0\\
+\vtr\\
+1\\
+\vtr\\
+0
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Каждое из этих решений по норме будет меньше или равно некоторого 
+\begin_inset Formula $M_{j}$
+\end_inset
+
+.
+ (
+\begin_inset Formula $\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr M_{j}$
+\end_inset
+
+ )
+\end_layout
+
+\begin_layout Proof
+Через 
+\begin_inset Formula $M=\umax{M_{j}}M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда все эти решения по норме меньше или равны 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ (
+\begin_inset Formula $\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr M$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ --- решение системы (1), которое 
+\begin_inset Formula $\varphi\left(0,y^{\left(0\right)}\right)=y^{\left(0\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
+y_{1}^{\left(0\right)}\\
+\vtr\\
+y_{n}^{\left(0\right)}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)=\ous{j=1}ny_{j}^{\left(0\right)}\um\varphi^{\left(j\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В точке 0, левые и правые части совподают.
+ Следовательно они совподают всегда.
+ Поэтомутрешение можно предствить в таком виде.
+ Тогда:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr\ous{j=1}n\left|y_{j}^{\left(0\right)}\right|\um\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+А модуль компоненты вектора меньше либо равен норме вектора.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\mr\ous{j=1}n\left|\left|y^{\left(0\right)}\right|\right|\um M=n\um M\um\left|\left|y^{\left(0\right)}\right|\right|=\overline{M}\um\left|\left|y^{\left(0\right)}\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\overline{M}=n\um M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Мы показали, что если 
+\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+, решение системы (1), которое в нуле принимает значение 
+\begin_inset Formula $y^{\left(0\right)}$
+\end_inset
+
+, тогда для этого решения справедлива вышеупомянутая оценка.
+ Откуда и вытекает устойчивость нулевого решенгия.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall\varepsilon>0,\ \exists\delta=\delta\df{\varepsilon}M\ \left|\left|y^{0}\right|\right|<\delta\sl\left|\left|\varphi\right|\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Устойчивость или неустойчивость любого решения лдинейной неоднородной системы
+ эквивалентно устойчивости или неустойчивости нулевого решения однородной
+ системы.
+\end_layout
+
+\begin_layout Subsection
+Случай произвольной системы
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать систему:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dy_{1}}{dx}=f_{1}\left(x,y_{1}\tr y_{n}\right)\\
+\vtr\\
+\df{dy_{n}}{dx}=f_{n}\left(x,y_{1}\tr y_{n}\right)
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\vtr\\
+y_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
+f_{1}\left(x,y_{1}\tr y_{n}\right)\\
+\vtr\\
+f_{n}\left(x,y_{1}\tr y_{n}\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=f\left(x,y\right)\label{eq:_1_2_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем предпологать что 
+\begin_inset Formula $y\equiv0$
+\end_inset
+
+ --- решение системы (1).
+\end_layout
+
+\begin_layout Standard
+Тоесть 
+\begin_inset Formula $f\left(x,0\right)\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Ляпунова
+\end_layout
+
+\end_inset
+
+Пусть для некоторого 
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+ правая часть системы (1) определена и непрерывна для 
+\begin_inset Formula $x_{0}\mr x$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|y\right|\right|<\varepsilon_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x,0\right)\equiv0$
+\end_inset
+
+ и пусть при 
+\begin_inset Formula $\left|\left|y\right|\right|\mr\varepsilon_{0}$
+\end_inset
+
+ существуют непрерывно-дифференцируемая функция Ляпунова 
+\begin_inset Formula $V\left(y\right)\br0$
+\end_inset
+
+, причем равная нулю только в нуле, и такая, что 
+\begin_inset Formula 
+\begin{equation}
+\ous{j=1}n\df{\dd f_{1}}{\dd y_{j}}f_{j}\mr0\label{eq:_1_2_2}
+\end{equation}
+
+\end_inset
+
+Тогда нулевое решение системы (1) устойчиво.
+ Если выполнено более сильное условие, тоесть при 
+\begin_inset Formula $\left|\left|y\right|\right|\mr\varepsilon_{0}$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\begin{equation}
+\ous{j=1}n\df{\dd f_{j}}{\dd y_{j}}f_{j}\mr-W\left(y\right)\label{eq:_1_2_3}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $W\left(y\right)$
+\end_inset
+
+ --- некоторая неотрицательная непрерывная функция, равная нулю ттогль в
+ начале координат, то нулевое решение системы (1) ассимптотически устойчиво.
+\end_layout
+
+\begin_layout Proof
+Возьмем некоторое 
+\begin_inset Formula $0<\varepsilon\mr\varepsilon_{0}$
+\end_inset
+
+.
+ И будем обозначать через 
+\begin_inset Formula $K_{\varepsilon}=\left\{ y:\left|\left|y\right|\right|=\varepsilon\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+И обозначим через 
+\begin_inset Formula $V_{\varepsilon}=\umin{y\in K_{\varepsilon}}V\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Очевидно, что 
+\begin_inset Formula $V_{\varepsilon}>0$
+\end_inset
+
+.
+ Потому что по условию леммы 
+\begin_inset Formula $V\br0$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Proof
+Выберем теперь 
+\begin_inset Formula $\delta<\varepsilon$
+\end_inset
+
+ настолько малым, чтобы на 
+\begin_inset Formula $K_{\delta}$
+\end_inset
+
+ и всюду внутри 
+\begin_inset Formula $K_{\delta}$
+\end_inset
+
+ : 
+\begin_inset Formula $V<V_{\varepsilon}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+...
+ так как 
+\begin_inset Formula $V$
+\end_inset
+
+ --- непрерывная функция, и в нуле она равна в нулю.
+\end_layout
+
+\begin_layout Proof
+Покаже, что все интегральные решения системы (1), начинающиеся в сфере 
+\begin_inset Formula $K_{\delta}$
+\end_inset
+
+ никогда при увеличении 
+\begin_inset Formula $x$
+\end_inset
+
+ не могут достигнуть сферы 
+\begin_inset Formula $K_{\varepsilon}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Действительно, заметим, что вдоль каждого решения системы (1) функция 
+\begin_inset Formula $V\left(y\left(x\right)\right)$
+\end_inset
+
+ является сложной фунцкией и 
+\begin_inset Formula $\df{dV}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}f_{j}\mr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+В силу (2) это 
+\begin_inset Formula $\mr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $V\left(y\left(x\right)\right)$
+\end_inset
+
+ --- невозрастающая.
+\end_layout
+
+\begin_layout Proof
+Предположим что какое то решение, начинающаяся при 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+, и при некотором 
+\begin_inset Formula $x=x_{1}$
+\end_inset
+
+ это решение прервыедостигает сферы 
+\begin_inset Formula $K_{\varepsilon}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $V\left(y\left(x_{0}\right)\right)<V_{\varepsilon},$
+\end_inset
+
+а 
+\begin_inset Formula $V\left(y,x_{1}\right)\br V_{\varepsilon}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $V\left(y\left(0\right)\right)<V_{\varepsilon}\mr V\left(y\left(x_{1}\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Получается что функция будет возростать.
+\end_layout
+
+\begin_layout Proof
+Следовательно это противоречие!
+\end_layout
+
+\begin_layout Proof
+Это и означает, что нулевое решение системы устойчиво.
 \end_layout
 
 \end_body
