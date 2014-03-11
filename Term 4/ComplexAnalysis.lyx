@@ -419,6 +419,24 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\C}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\f}[2]{\frac{#1}{#2}}
+{\frac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tc}{\mid}
+{\mid}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -483,6 +501,22 @@ theorems-starred
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Привалов 
+\begin_inset Quotes eld
+\end_inset
+
+Теория функций комплексной переменной
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ферарюк, Сидоров
 \end_layout
 
 \begin_layout Standard
@@ -3509,6 +3543,822 @@ z_{1}\um z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\le
 \end_inset
 
 --значный ответ.
+\end_layout
+
+\begin_layout Subsubsection
+Предел последовательности комплексных чисел
+\end_layout
+
+\begin_layout Standard
+Рассмотрим последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ комплексных чисел вида: 
+\begin_inset Formula $z_{n}=x_{n}+i\um y_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(n\in\N\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Пара 
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}$
+\end_inset
+
+ наывается пределом последовательности 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|z_{n}-z_{0}\right|<\varepsilon
+\]
+
+\end_inset
+
+Записывают, что 
+\begin_inset Formula $\ul{n\st\b}z_{n}=z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Заметим что 
+\begin_inset Formula $\left|z_{n}-z_{0}\right|=\left|\left(x_{n}-x_{0}\right)+i\um\left(y_{n}-y_{0}\right)\right|=\sqrt{\left(x_{n}-x_{0}\right)^{2}+\left(y_{n}-y_{0}\right)^{2}}=\rho\left(z_{n},z_{0}\right)$
+\end_inset
+
+ --- расстояние между 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{n}$
+\end_inset
+
+ на 
+\begin_inset Formula $\R^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $U_{\varepsilon}\left(z_{0}\right)=\left\{ z\in\mathbb{C}|\left|z-z_{0}\right|<\varepsilon\right\} $
+\end_inset
+
+ называется 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+--окресностью точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ определяет точки из 
+\begin_inset Formula $\R^{2}$
+\end_inset
+
+, то свойство последовательнстей в 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ аналолгичны свойствам последовательностей в 
+\begin_inset Formula $\R^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ul{n\st\b}z_{n}=z_{0}\dsl\ul{n\st\b}x_{n}=x_{0}\&\ul{n\st\b}y_{n}=y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Последовательность точек 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ называется ограниченой, если 
+\begin_inset Formula 
+\[
+\exists M>0\ \forall n\in\N\ \left|z_{n}\right|\mr M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Из всякой ограниченой последовательности можно извлечь сходящуюся подпоследовате
+льноть.
+\end_layout
+
+\begin_layout Definition
+Последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ называется фундаментальной, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|z_{n+p}-z_{n}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3, Критерий Коши
+\end_layout
+
+\end_inset
+
+Последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ сходится тогда и только тогда, когда последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ фундаментальна.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Всякая фундаментальная последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ ограничена.
+\end_layout
+
+\begin_layout Subsubsection
+Бесконечно удаленная точка
+\end_layout
+
+\begin_layout Definition
+Последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} \in\C$
+\end_inset
+
+ называется бесконечно-возрастающей, если 
+\begin_inset Formula 
+\[
+\forall R>0\ \exists N=N\left(R\right)\ \forall n\br N\ \left|z_{n}\right|>R
+\]
+
+\end_inset
+
+Записывают 
+\begin_inset Formula $\ul{n\st\b}z_{n}=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем сичитать всякую бесконечно-возрастающую последовательность сходящейся
+ к бесконечно удаленной точке: 
+\begin_inset Formula $z=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{R}\left(\b\right)=\left\{ z\in\C|\left|z\right|>R\right\} $
+\end_inset
+
+ --- 
+\begin_inset Formula $R$
+\end_inset
+
+--окресность точки 
+\begin_inset Formula $z=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $\overline{\C}=\C\ob\left\{ \b\right\} $
+\end_inset
+
+ называется расширенной (полной) комплексной плоскостью.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим геометрический смысл точки 
+\begin_inset Formula $z=\b$
+\end_inset
+
+.
+ Рассмотрим в 
+\begin_inset Formula $3$
+\end_inset
+
+-мерном пространстве 
+\begin_inset Formula $\left(x;y;u\right)$
+\end_inset
+
+ сферу Римана --- сферу с центром в точке 
+\begin_inset Formula $\left(0;0;\frac{1}{2}\right)$
+\end_inset
+
+ диаметра 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотри произвольную бесконечно-возрастающую последовательность 
+\begin_inset Formula $\left\{ z_{n}\right\} \vkl\C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обозначим точку пересечения отрезка, соеденяющего точку 
+\begin_inset Formula $z_{n}$
+\end_inset
+
+ с полярной точкой 
+\begin_inset Formula $\left(0;0;1\right)$
+\end_inset
+
+, со сферой Римана как 
+\begin_inset Formula $z_{n}'$
+\end_inset
+
+ и назовем её проэкцией точки 
+\begin_inset Formula $z_{n}$
+\end_inset
+
+ на сферу.
+ Очевидно, при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+ получается, что 
+\begin_inset Formula $z_{n}'\st z_{\b}'\left(0;0;1\right)$
+\end_inset
+
+, тоесть полярная точка --- это и есть проэкция бесконечно-удаленной точки
+ 
+\begin_inset Formula $z=\b$
+\end_inset
+
+ на сферу Римана.
+\end_layout
+
+\begin_layout Standard
+Рассмаотрим алгебраические свойства точки 
+\begin_inset Formula $z=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $\ul{n\st\b}z_{n}=\b\dsl\ul{n\st\b}\df 1{z_{n}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $R\leftrightarrow\f 12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Всвязи с этим записывают: 
+\begin_inset Formula $\f 1{\b}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\f 10=\b$
+\end_inset
+
+ в 
+\begin_inset Formula $\overline{\C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Очевидно, что:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall z\in\C\nr0\quad z\um\b=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall z\in\C\quad\f z{\b}=0,\ z+\b=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Отношение 
+\begin_inset Formula $\f{\b}{\b}$
+\end_inset
+
+ --- неопределенность.
+\end_layout
+
+\begin_layout Subsubsection
+Множества в плоскости 
+\begin_inset Formula $\C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-окресностью точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ называется множество 
+\begin_inset Formula 
+\[
+U_{\varepsilon}\left(z_{0}\right)=\left\{ z\in\C\tc\left|z-z_{0}\right|<\varepsilon\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ называется внутренней точкой множества 
+\begin_inset Formula $D\subseteq\C$
+\end_inset
+
+, если она пренадлежит области 
+\begin_inset Formula $D$
+\end_inset
+
+ вместе с некоторой своей окресностью.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D\in\C$
+\end_inset
+
+ называется открытым если все его точки внутренние.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ называется предельной точкой множества 
+\begin_inset Formula $D$
+\end_inset
+
+, если в любой ее выколотой окресности седержатся точки из области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Рассмотрим область 
+\begin_inset Formula $D=\left\{ z\,\mid\,\left|z\right|<1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Возьмем точку 
+\begin_inset Formula $z_{0}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Докажем что 
+\begin_inset Formula $\exists z\in D\ \left|z-z_{0}\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Действителдьно достоточно полижить 
+\begin_inset Formula $z=1-\f{\varepsilon}2\ \sl\ \left|\left(1-\f{\varepsilon}2\right)-1\right|=\f{\varepsilon}2<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ является предельной точкой множества 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\left\{ z_{n}\right\} \vkl D,\ z_{n}\nr z_{0}\ \ul{n\st\b}z_{n}=z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+На экзамене это доказательство будет.
+ Доказывается аналогично..
+\end_layout
+
+\begin_layout Definition
+Множество всех предельных точек множдества 
+\begin_inset Formula $D$
+\end_inset
+
+ назвается производной множества 
+\begin_inset Formula $D$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $D\pr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D$
+\end_inset
+
+ называется замкнутым, если оно содержи все свои предельные точки.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множдество 
+\begin_inset Formula $\overline{D}=D\ob D\pr$
+\end_inset
+
+ называется замыканием множества 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Lemma
+Множесво 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ замкнуто.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно нужно записать 2 предложения.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D$
+\end_inset
+
+ открыто 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\C\backslash D$
+\end_inset
+
+ --- замкнуто.
+\end_layout
+
+\begin_layout Proof
+Самостоятельно доказать.
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ называется граничной точкой множества 
+\begin_inset Formula $D$
+\end_inset
+
+, если в любой ее окресности есть точки, пренадлежащие 
+\begin_inset Formula $D$
+\end_inset
+
+, и не преадлежащие 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество всех граничных точек множества 
+\begin_inset Formula $D$
+\end_inset
+
+ называется границей множества 
+\begin_inset Formula $D$
+\end_inset
+
+ называется границей множдества 
+\begin_inset Formula $D$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $\dd D,\,\Gamma,\,\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $D\vkl\overline{\C}$
+\end_inset
+
+ называется областью, если оно открыто и любые две точки 
+\begin_inset Formula $z_{1},z_{2}\in D$
+\end_inset
+
+ можно соеденить линией, содержащейся в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Функции комплексной переменной.
+ Аналитичность
+\end_layout
+
+\begin_layout Subsubsection
+Понятие функции комплексной переменной
+\end_layout
+
+\begin_layout Definition
+Говорят что на множестве
+\begin_inset Formula $D$
+\end_inset
+
+ из комплексной плоскости 
+\begin_inset Formula $\C$
+\end_inset
+
+ определена функция 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+, если указан закон, по каторому каждому числу 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ поставлено в сответствии определенное комплексное число 
+\begin_inset Formula $w$
+\end_inset
+
+ (совокупность чисед 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $j=\overline{1,n}$
+\end_inset
+
+).
+ Функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ называется однозначной (многозначной).
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $D$
+\end_inset
+
+ называется областью определения 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, а множемтво всех значений 
+\begin_inset Formula $N$
+\end_inset
+
+ --- область значений (
+\begin_inset Formula $N_{j}$
+\end_inset
+
+ --- области значений.
+ 
+\begin_inset Formula $j=\overline{1,n}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+, 
+\begin_inset Formula $w=u+iv$
+\end_inset
+
+, на задание функции комплексной переменной равносильно заданию пары вещественно
+значных функций вещественных аргументов 
+\begin_inset Formula $u=u\left(x,y\right);\ v=v\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+, определенная на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+ называется однолистной если в любых различных точках 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ она принимает различные значения 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+.
+ Тоесть однолистная функция, это та функция, обратная к которой является
+ однозначной.
+\end_layout
+
+\begin_layout Example
+Если функция 
+\begin_inset Formula $f\left(z\right)=z^{2}$
+\end_inset
+
+, то области однолистности ее не могут пренадлежать одновременно пары точек
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $-z_{1}$
+\end_inset
+
+.
+ Любая полуплоскость с границея содержащей 
+\begin_inset Formula $z=0$
+\end_inset
+
+ --- облоасть однолистности функции 
+\begin_inset Formula $f\left(z\right)=z^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
