@@ -4358,7 +4358,892 @@ U_{\varepsilon}\left(z_{0}\right)=\left\{ z\in\C\tc\left|z-z_{0}\right|<\varepsi
 
 \end_layout
 
+\begin_layout Subsubsection
+Предел и непрерывность функций комплексной переменной
+\end_layout
+
 \begin_layout Standard
+Пусть функция 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ определена в некоторой окресности точки 
+\begin_inset Formula $z_{0}=x_{0}+i\um y_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $f\left(z\right)=\left\{ z=x+i\um y\right\} =u\left(x,y\right)+i\um v\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Говорят, что в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ существует конечный предел, обозначаемый 
+\begin_inset Formula $\ul{z\st z_{0}}f\left(z\right)$
+\end_inset
+
+, если существуют конечные пределы:
+\begin_inset Formula 
+\[
+\ul{\begin{array}{c}
+x\st x_{0}\\
+y\st y_{0}
+\end{array}}u\left(x,y\right)=u_{0},\quad\ul{\begin{array}{c}
+x\st x_{0}\\
+y\st y_{0}
+\end{array}}v\left(x,y\right)=v_{0}
+\]
+
+\end_inset
+
+ При этом полагаем: 
+\begin_inset Formula $\ul{z\st z_{0}}f\left(z\right)=u_{0}+i\um v_{0}=w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из свойств функций многих переменных получим:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{z\st z_{0}}\left(f\left(z\right)\pm g\left(z\right)\right)=\ul{z\st z_{0}}f\left(z\right)\pm\ul{z\st z_{0}}g\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{z\st z_{0}}f\left(z\right)\um g\left(z\right)=\ul{z\st z_{0}}f\left(z\right)\um\ul{z\st z_{0}}g\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{z\st z_{0}}\df{f\left(z\right)}{g\left(z\right)}=\df{\ul{z\st z_{0}}f\left(z\right)}{\ul{z\st z_{0}}g\left(z\right)},\quad\ul{z\st z_{0}}g\left(z\right)\nr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Говорят, что функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ имеет в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ предел, равный 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+, если:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon,\, z_{0}\right)>0\ \forall z\in D\left(f\right)\ 0<\left|z-z_{0}\right|<\delta\,\sl\,\left|f\left(z\right)-w_{0}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+Это предел 
+\begin_inset Formula $\ul{z\st z_{0}}f\left(z\right)=w_{0}$
+\end_inset
+
+ --- по Гейне (через последовательности).
+ Сформулировать самостоятельно.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Функция 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ называется непрерывной в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если она определена в некоторой окресности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $\ul{z\st z_{0}}f\left(z\right)=f\left(z_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+Функция 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+ называется непрерывной на множестве 
+\begin_inset Formula $D$
+\end_inset
+
+, если 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в каждой точке 
+\begin_inset Formula $z\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Сформулируем свойство функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, непрерывной на замкнутом множестве 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ (
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ --- замкнутое множество).
+\end_layout
+
+\begin_layout Enumerate
+Ограниченность (Первая теорема Вейерштрассе)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\exists M>0\ \forall z\in\overline{D}\ \left|f\left(z\right)\right|\mr M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Достигаются верхняя и нижняя грани, тоесть существуют наибольшее и наименьшее
+ значения 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\exists z',z''\in\overline{D}\ \forall z\in\overline{D}\ \begin{array}{c}
+\left|f\left(z'\right)\right|\br\left|f\left(z\right)\right|\ \umax{z\in\overline{D}}\left|f\left(z\right)\right|=\left|f\left(z'\right)\right|\\
+\left|f\left(z''\right)\right|\mr\left|f\left(z\right)\right|\ \umin{z\in\overline{D}}\left|f\left(z\right)\right|=\left|f\left(z''\right)\right|
+\end{array}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Равномерная непрерывность на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall z'',z'\in\overline{D}\ \left|z'-z''\right|<\delta\sl\left|f\left(z'\right)-f\left(z''\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+ (все точки области внутренние) и взаимно-однозначно (она однозначная и
+ однолистная) отображает множество
+\begin_inset Formula $D$
+\end_inset
+
+ на множество 
+\begin_inset Formula $\D$
+\end_inset
+
+ плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ (область значений), то 
+\begin_inset Formula $\D$
+\end_inset
+
+ --- так же область (все точки области внутренние), и обратная функция 
+\begin_inset Formula $z=\varphi\left(w\right)$
+\end_inset
+
+ --- непрерывная на 
+\begin_inset Formula $\D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Дифференцируемость и аналитичность
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ называется дифференцируемой в точке 
+\begin_inset Formula $z$
+\end_inset
+
+, если существуею конечный предел:
+\begin_inset Formula 
+\[
+\ul{h\st0}\df{f\left(z+h\right)-f\left(z\right)}h\ov ={def}f\pr\left(z\right),
+\]
+
+\end_inset
+
+Называемой производной функцией 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Предел не зависит от способа стремления 
+\begin_inset Formula $h$
+\end_inset
+
+ к 0.
+\end_layout
+
+\begin_layout Example
+В каких точках дифференцируема функция 
+\begin_inset Formula $f\left(z\right)=Re\, z$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x+i\um y\ov{\st}{f\left(z\right)}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Выберем различные пути, по которым приращение 
+\begin_inset Formula $h$
+\end_inset
+
+ аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+ стремится к 0.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h=t\in\R,\ h\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\ul{h\st0}\df{f\left(z+h\right)-f\left(z\right)}h=\ul{t\st0}\df{Re\,\left(x+i\um y+t\right)-Re\,\left(x+i\um y\right)}t=\ul{t\st0}\df tt=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h=i\um\tau,\ \tau\in\R,\ \tau\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\ul{\tau\st0}\df{Re\,\left(x+iy+i\tau\right)-Re\,\left(x+i\um y\right)}{i\um\tau}=\ul{\tau\st0}\df 0{i\um\tau}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+\begin_inset Formula $1\nr0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Функция не является дифференцируемой.
+\end_layout
+
+\begin_layout Theorem
+Пусть функции 
+\begin_inset Formula $u\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(x,y\right)$
+\end_inset
+
+ непрерывны в некоторой окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и дифференцируемы в самой точке 
+\begin_inset Formula $z_{0}=x_{0}+i\um y_{0}$
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ дифференцируема в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ выполнены условия Коши-Римана (Эйлера-Даламбера):
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{\dd y}{\dd x}=\df{\dd v}{\dd y}\\
+\df{\dd u}{\dd y}=-\df{\dd v}{\dd x}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $(\sl)$
+\end_inset
+
+ Пусть существует 
+\begin_inset Formula $\exists f\pr\left(z_{0}\right)=\ul{h\st0}\df{f\left(z_{0}+h\right)-f\left(z_{0}\right)}h$
+\end_inset
+
+.
+ Рассмотрим различные способы стремления 
+\begin_inset Formula $h\st0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h=s\in\R\quad\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+f\pr\left(z_{0}\right) & = & \ul{h\st0}\df{f\left(z_{0}+s\right)-f\left(z_{0}\right)}s=\\
+ & = & \left\{ \begin{array}{c}
+u\left(x_{0}+s,y_{0}\right)+i\um v\left(x_{0}+s,y_{0}\right)=f\left(z_{0}+s\right)\\
+-u\left(x_{0},y_{0}\right)-i\um v\left(x_{0},y_{0}\right)=-f\left(z_{0}\right)
+\end{array}\right\} =\\
+ & = & \ul{s\st0}\df{u\left(x_{0}+s,y_{0}\right)+i\um v\left(x_{0}+s,y_{0}\right)-u\left(x_{0},y_{0}\right)-i\um v\left(x_{0},y_{0}\right)}s=\\
+ & = & \ul{s\st0}\left(\df{u\left(x_{0}+s,y_{0}\right)-u\left(x_{0},y_{0}\right)}s+i\um\df{v\left(x_{0}+s,y_{0}\right)-v\left(x_{0},y_{0}\right)}s\right)=\\
+ & = & u_{x}\pr\left(x_{0},y_{0}\right)+i\um v_{x}\pr\left(x_{0},y_{0}\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h=i\um\tau,\ \tau\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\ul{\tau\st0}\df{f\left(z_{0}+i\um\tau\right)-f\left(z_{0}\right)}{i\um\tau} & = & -i\um\ul{\tau\st0}\df{u\left(x_{0},y_{0}+\tau\right)+i\um v\left(x_{0},y_{0}+\tau\right)-u\left(x_{0},y_{0}\right)-i\um v\left(x_{0},y_{0}\right)}{\tau}=\\
+ & = & -i\um\ul{\tau\st0}\left(\df{u\left(x_{0},y_{0}+\tau\right)-u\left(x_{0},y_{0}\right)}{\tau}+i\um\df{v\left(x_{0},y_{0}+\tau\right)-v\left(x_{0},y_{0}\right)}{\tau}\right)=\\
+ & = & -i\um\left(u_{y}\pr\left(x_{0},y_{0}\right)+i\um v_{y}\pr\left(x_{0},y_{0}\right)\right)=\\
+ & = & v_{y}\pr\left(x_{0},y_{0}\right)-i\um u_{y}\pr\left(x_{0},y_{0}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Proof
+Приравнивая вещественные мномые части для 
+\begin_inset Formula $f\pr\left(z_{0}\right)$
+\end_inset
+
+ получим:
+\begin_inset Formula 
+\[
+\begin{cases}
+u_{x}\pr\left(x_{0},y_{0}\right)=v_{y}\pr\left(x_{0},y_{0}\right)\\
+v_{x}\pr\left(x_{0},y_{0}\right)=-u_{y}\pr\left(x_{0},y_{0}\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\Longleftarrow\right)$
+\end_inset
+
+Пусть 
+\begin_inset Formula $h=s+i\um t$
+\end_inset
+
+ --- приращение аргумента 
+\begin_inset Formula $z_{0}=x_{0}+i\um y_{0}$
+\end_inset
+
+.
+ Тогда приращение дифференцируемых в точке 
+\begin_inset Formula $\left(x_{0};y_{0}\right)$
+\end_inset
+
+ функции можно представить:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\D u\left(x_{0},y_{0}\right)=u\left(x_{0}+s,y_{0}+t\right)-u\left(x_{0},y_{0}\right)=\left\{ du+\alpha\um\un{\underbrace{\left|h\right|}}{\begin{array}{c}
+\parallel\\
+\rho
+\end{array}}\right\} =\df{\dd u\left(x_{0},y_{0}\right)}{\dd x}\um s+\df{\dd u}{\dd y}\um t+\alpha\um\left|h\right|\\
+\D v\left(x_{0},y_{0}\right)=v\left(x_{0}+s,y_{0}+t\right)-v\left(x_{0},y_{0}\right)=\df{\dd v\left(x_{0},y_{0}\right)}{\dd x}\um s+\df{\dd v}{\dd y}\um t+\beta\um\left|h\right|
+\end{array},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $\alpha,\,\beta$
+\end_inset
+
+ --- бесконечно малые функции при 
+\begin_inset Formula $\left|h\right|\st0$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z_{0}+h\right)-f\left(z_{0}\right) & = & \D u+i\um\D v=u_{x}\pr\um s+u_{y}\pr\um t+\alpha\um\left|h\right|+i\um v_{x}\pr\um s+i\um v_{y}\pr\um t+i\um\left|h\right|=\\
+ & = & \left\{ \begin{array}{c}
+u_{y}\pr=-v_{x}\pr\\
+v_{y}\pr=u_{x}\pr
+\end{array}\right\} =\\
+ & = & u_{x}\pr\um s-v_{x}\pr\um t+i\um v_{x}\pr\um s+i\um u_{x}\pr\um t+\gamma\um\left|h\right|=\\
+ & = & A\um h+\gamma\um\left|h\right|,
+\end{eqnarray*}
+
+\end_inset
+
+где 
+\begin_inset Formula $A$
+\end_inset
+
+ --- 
+\begin_inset Formula $u_{x}\pr+i\um v_{x}\pr$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Следовательно: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\exists\ul{h\st0}\df{f\left(z_{0}+h\right)-f\left(z_{0}\right)}h & = & \ul{h\st0}\df{A\um h+\gamma\um\left|h\right|}h=\\
+ & = & \ul{h\st0}\left(A+\gamma\um\df{\left|h\right|}h\right)=A
+\end{eqnarray*}
+
+\end_inset
+
+Итак 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ дифференцируема в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, причем:
+\begin_inset Formula 
+\[
+f\pr\left(z_{0}\right)=u_{x}\pr+i\um v_{x}\pr=v_{y}\pr+i\um v_{x}\pr=v_{y}\pr-i\um u_{y}\pr=u_{x}\pr-i\um u_{y}\pr,
+\]
+
+\end_inset
+
+в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Основные свойства производных:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(f\left(z\right)\pm g\left(z\right)\right)\pr=f\pr\left(z\right)\pm g\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(f\left(z\right)g\left(z\right)\right)\pr=f\pr\left(z\right)g\left(z\right)+f\left(z\right)g\pr\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\df{f\left(z\right)}{g\left(z\right)}\right)\pr=\df{f\pr\left(z\right)g\left(z\right)-f\left(z\right)g\pr\left(z\right)}{g^{2}\left(z\right)},\quad g\left(z\right)\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Выяснить в каких точках дифференцируемы функции:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ul{h\st0}\df{\left(z+h\right)^{2}-z^{2}}{h^{2}}=\ul{h\st0}\df{2zh+h^{2}}h=\ul{h\st0}\left(2z+h\right)=2z,\quad\forall z\in\C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z^{2}=\left(x+i\um y\right)^{2}=x^{2}-y^{2}+i\um2xy$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $u\left(x,y\right)=x^{2}-y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\left(x,y\right)=2xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+u_{x}\pr=2x\\
+\parallel\\
+v_{y}\pr=2x
+\end{array}$
+\end_inset
+
+ и 
+\begin_inset Formula $\begin{array}{c}
+v_{x}\pr=2y\\
+\parallel\\
+u_{y}\pr=-v_{x}\pr
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выполнены условия Коши-Римана, и следоватедльно есть дифференцируемость
+ во всех точках.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $w=\left|z\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Решение.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ul{h\st0}\df{\left|z+h\right|^{2}-\left|z\right|^{2}}h=\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h=s\st0,\ s\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr & = & \ul{s\st0}\df{\left|x+i\um y+s\right|^{2}-\left|x+i\um y\right|^{2}}s=\\
+ & = & \ul{s\st0}\df{\left(x+s\right)^{2}+y^{2}-\left(x^{2}+y^{2}\right)}s=\\
+ & = & \ul{s\st0}\df{2xs+s^{2}}s=2x
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h=i\um t,\ t\st0,\ t\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\ul{t\st0}\df{\left|x+iy+s\right|^{2}-\left|x+iy\right|^{2}}{i\um t}=\ul{t\st0}\df{x^{2}+\left(y+t\right)^{2}-\left(x^{2}+y^{2}\right)}{i\um t}=-i\ul{t\st0}\df{2yt+t^{2}}t=-i2y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Для дифференцируемости в точке 
+\begin_inset Formula $\left(x;y\right)$
+\end_inset
+
+ необходимо: 
+\begin_inset Formula 
+\[
+2x=-i2y
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+ вол всех точках кроме нуля в них нету дифференцируемости.
+\end_layout
+
+\begin_layout Standard
+В точке 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=\rho\um e^{i\um\varphi}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\pr\left(0\right)=\ul{\rho\st0}\df{\rho^{2}}{\rho e^{i\varphi}}=\ul{\rho\st0}\df{\rho}{e^{i\varphi}}=\{e^{i\varphi}-\text{число, пренадлежащее еденгичной окружности}\}=0$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Функция, дифференцируемая в каждой точке области 
+\begin_inset Formula $D$
+\end_inset
+
+ называется аналитической в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
 \begin_inset Newpage newpage
 \end_inset
 
