@@ -1905,7 +1905,11 @@ status open
 \end_inset
 
  является сложной фунцкией и 
-\begin_inset Formula $\df{dV}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}f_{j}\mr0$
+\begin_inset Formula 
+\[
+\df{dV}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}f_{j}\mr0
+\]
+
 \end_inset
 
  
@@ -1917,9 +1921,7 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
+ 
 \begin_inset Formula $V\left(y\left(x\right)\right)$
 \end_inset
 
@@ -1949,25 +1951,306 @@ status open
 \end_inset
 
  
+\begin_inset Formula 
+\[
+V\left(y\left(0\right)\right)<V_{\varepsilon}\mr V\left(y\left(x_{1}\right)\right)
+\]
+
+\end_inset
+
+Получается что функция будет возростать.
+ Следовательно это противоречие! Это и означает, что нулевое решение системы
+ устойчиво.
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $V\left(y\left(0\right)\right)<V_{\varepsilon}\mr V\left(y\left(x_{1}\right)\right)$
+Докажем для (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_3"
+
 \end_inset
 
+): 
+\begin_inset Formula $\exists\delta:\quad K_{\delta}\ V<V_{\epsilon}$
+\end_inset
+
+ Мы должны показать, что 
+\begin_inset Formula $\left\Vert y\left(x\right)\right\Vert \to0$
+\end_inset
+
+ Для этого покажем, что функция 
+\begin_inset Formula $V\left(y\left(x\right)\right)\to0$
+\end_inset
+
+ на любом решении .
  
 \end_layout
 
 \begin_layout Proof
-Получается что функция будет возростать.
+Предположим противное: это значит, что существует интегральная кривая 
+\begin_inset Formula $l$
+\end_inset
+
+, начинающаяся в сфере 
+\begin_inset Formula $K_{\delta}$
+\end_inset
+
+, что функция 
+\begin_inset Formula $V\left(y\left(x\right)\right)\underset{x\to+\b}{!\to}0$
+\end_inset
+
+ Отсюда следует (как было показано ранее), что 
+\begin_inset Formula $V$
+\end_inset
+
+ не возрастает на любом решении: 
+\begin_inset Formula $V\left(y\left(x\right)\right)|_{l}\br\eta>0$
+\end_inset
+
+, а это значит, что кривая 
+\begin_inset Formula $l$
+\end_inset
+
+ расположена вне сферы 
+\begin_inset Formula $K_{\alpha}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\df{dV}{dx}|_{l}=\ous{j=1}n\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}|_{l}=\ous{j=1}n\df{\dd V}{\dd y}f_{j}|_{l}\mr-W\left(y\right)|_{l}\mr-\beta
+\]
+
+\end_inset
+
+А это означает, что ....
 \end_layout
 
 \begin_layout Proof
-Следовательно это противоречие!
+А это противоречит условию, что 
+\begin_inset Formula $V\br0$
+\end_inset
+
+ всюду, значит предположение не верно, следовательно 
+\begin_inset Formula $V\left(y\left(x\right)\right)\to0$
+\end_inset
+
+ для любого решения.
 \end_layout
 
 \begin_layout Proof
-Это и означает, что нулевое решение системы устойчиво.
+Покажем, что отсюда следует, что 
+\begin_inset Formula $\left\Vert y\left(x\right)\right\Vert \to0,\ x\to+\b$
+\end_inset
+
+.
+ От противного: 
+\begin_inset Formula $\left\Vert y\left(x\right)\right\Vert !\to0,\ x\to+\b$
+\end_inset
+
+ Это означает, что 
+\begin_inset Formula 
+\[
+\exists x_{i},\ x_{i}\to+\b\ \left\Vert y\left(x_{i}\right)\right\Vert >\delta_{0}\quad V\left(y\left(x_{i}\right)\right)\br\delta_{1}
+\]
+
+\end_inset
+
+т.е.
+ 
+\begin_inset Formula $V\left(y_{i}\right)!\to0$
+\end_inset
+
+ при 
+\begin_inset Formula $x_{i}\to+\b$
+\end_inset
+
+--- противоречие.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Читаева (о неустойчивости)
+\end_layout
+
+\end_inset
+
+Рассмотрим систему (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+).
+ Пусть в некоторой окрестности 
+\begin_inset Formula $U$
+\end_inset
+
+ начала координат, существует непрерывно дифференцируемая функция 
+\begin_inset Formula $V\left(y\right)$
+\end_inset
+
+, такая что: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Для любой 
+\begin_inset Formula $U_{\delta},\ \exists\alpha>0$
+\end_inset
+
+ и некоторая подобласть 
+\begin_inset Formula $\omega_{\delta}^{+}$
+\end_inset
+
+, в которй выполняется 
+\begin_inset Formula $V\left(y\right)\br\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\alpha>0,\ \exists\beta>0,\quad V\left(y\right)\br\alpha$
+\end_inset
+
+ то 
+\begin_inset Formula $W\left(y,x\right)\equiv\ous{j=1}n\df{\dd V}{\dd y_{j}}f_{j}\left(x,y\right)\br\beta\quad x\br x_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Тогда нулевое решение системы (1) неустойчиво.
+\end_layout
+
+\begin_layout Proof
+Предположим противное: 0-е решение устойчиво.
+ Тогда 
+\begin_inset Formula 
+\[
+\forall\epsilon>0\quad\exists\delta\left(\epsilon\right):\quad\left\Vert y\left(x_{0}\right)\right\Vert <\delta\quad\Rightarrow\quad\forall x\br x_{0}\quad\left\Vert y\left(x\right)\right\Vert <\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+тогда по условиям теоремы для этого 
+\begin_inset Formula $\delta,\ \exists\alpha>0,\ \exists\omega_{\delta}^{+}\ V\left(y\right)\br\alpha$
+\end_inset
+
+ Возьмем такое решение системы (1), которое при 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ начинается в области 
+\begin_inset Formula $\omega_{\delta}^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $V\left(y\left(x_{0}\right)\right)=\alpha$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $x>x_{0}$
+\end_inset
+
+, но достаточно близких к 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+и рассмотрим разность 
+\begin_inset Formula $V\left(y\left(x\right)\right)-V\left(y\left(x_{0}\right)\right)$
+\end_inset
+
+ знак этой разности будет определяться знаком производной 
+\begin_inset Formula $V\left(y\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\df{dV}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}=\ous{j=1}n\df{\dd V}{\dd y_{j}}f_{j}=W\left(y\left(x_{0}\right),x_{0}\right)\br\beta>0
+\]
+
+\end_inset
+
+То есть мы показали, что при 
+\begin_inset Formula $x>x_{0}\quad V\left(y\left(x\right)\right)-V\left(y\left(x_{0}\right)\right)>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Покажем теперь, что 
+\begin_inset Formula $V\left(y\left(x\right)\right)>\alpha\quad\forall x>x_{0}:$
+\end_inset
+
+ предположим противное.
+ То есть что 
+\begin_inset Formula $\exists x_{1}$
+\end_inset
+
+ ближайший к 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ в котором 
+\begin_inset Formula $V\left(y\left(x_{1}\right)\right)=\alpha$
+\end_inset
+
+ тогда 
+\begin_inset Formula 
+\[
+0=V\left(y\left(x_{1}\right)\right)-V\left(y\left(x_{0}\right)\right)=\df{dV\left(\bar{x}\right)}{dx}\left(x_{1}-x_{0}\right)=W\left(y\left(\bar{x}\right),\bar{x}\right)
+\]
+
+\end_inset
+
+ Тогда поскльку 
+\begin_inset Formula $ $
+\end_inset
+
+........
+ 
+\end_layout
+
+\begin_layout Proof
+Рассмотрим разность 
+\begin_inset Formula $V\left(y\left(x\right)\right)-V\left(y\left(x_{0}\right)\right)$
+\end_inset
+
+ по теореме о среднем это рвно: 
+\begin_inset Formula 
+\[
+\df{dv}{dx}\left(\bar{\bar{x}}\right)\left(x-x_{0}\right)=W\left(y\left(\bar{\bar{x}}\right),\bar{\bar{x}}\right)\left(x-x_{0}\right)\br\beta\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+Мы показали, что 
+\begin_inset Formula $V\to+\b$
+\end_inset
+
+...........
 \end_layout
 
 \end_body
