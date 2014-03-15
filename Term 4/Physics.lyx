@@ -834,6 +834,14 @@ status open
 \end_inset
 
 .
+\begin_inset Formula 
+\[
+\fbox{\Phi_{E}=\oiint\limits _{S}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\ous{i=1}Nq_{i}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -926,6 +934,291 @@ E=\df{\sigma}{2\varepsilon_{0}}
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Поле бесконечно заряженного цилиндра
+\end_layout
+
+\begin_layout Standard
+Рассмотрим бесконечную цилиндрическую поверхность, радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Будем считать, что на поверхности распределен заряд с поверхностной плотностью
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ Окружим другой цилиндрической поверхностью, радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Причем: 
+\begin_inset Formula $R<r$
+\end_inset
+
+.
+ Положим высоту цилиндра 2 --- 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=\df 1{\epsilon}\um2\pi Rh\um\sigma
+\]
+
+\end_inset
+
+С другой стороны:
+\begin_inset Formula 
+\[
+\Phi_{E}=\iint\limits _{S\text{осн}}\underset{0}{\underbrace{\v E\um\v n}}dS+\iint\limits _{S\text{бок}}\v E\um\v ndS=\iint\limits _{S}EdS=E\iint\limits _{S}dS=2\pi rh\um E
+\]
+
+\end_inset
+
+Тогда:
+\begin_inset Formula 
+\begin{align*}
+\df 1{\epsilon_{0}}\um2\pi Rh\sigma & =E\um2\pi rh\\
+E & =\df{\sigma\um R}{\epsilon_{0}\um r}
+\end{align*}
+
+\end_inset
+
+Если радиусом можно пренебречь, то: 
+\begin_inset Formula 
+\[
+E=\df 1{2\pi\varepsilon_{0}}\um\df{\lambda}r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $E=0$
+\end_inset
+
+ если 
+\begin_inset Formula $R>r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Поле заряженной сферической поверхности
+\end_layout
+
+\begin_layout Standard
+Возьмем сферу радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, с поверхностной плотностью 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=\df 1{\epsilon_{0}}\um\sigma\um4\pi R^{2}=E\um4\pi r^{2}
+\]
+
+\end_inset
+
+Откуда: 
+\begin_inset Formula 
+\[
+\begin{cases}
+E=\df{\sigma R^{2}}{\varepsilon_{0}r^{2}}, & R<r\\
+E=0, & R>r
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Работа сил электростатического поля
+\end_layout
+
+\begin_layout Standard
+В поле 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ будем перемещать заряд 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+A=\ui L\v F\um d\v r=\oiu{r_{1}}{r_{2}}Fdr=\oiu{r_{1}}{r_{2}}E_{0}q\um dr
+\]
+
+\end_inset
+
+Взяв замкнутую траекторию, и учитывая, что сила Кулона --- сила консервативная:
+\begin_inset Formula 
+\[
+\fbox{\oint\limits _{L}\v Ed\v l=0}
+\]
+
+\end_inset
+
+То есть циркуляция равна нулю.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\delta A=-dW$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+A_{12}=\oiu{r_{1}}{r_{2}}E_{0}qdr=\oiu{r_{1}}{r_{2}}\df 1{4\pi\varepsilon_{0}}\um\df{q_{0}}{r^{2}}\um q\um dr=\df{q_{0}q}{4\pi\varepsilon_{0}}\oiu{r_{1}}{r_{2}}\df{dr}{r^{2}}=\\
+=\df{q_{0}q}{4\pi\varepsilon_{0}}\left(\df 1{r_{1}}-\df 1{r_{2}}\right)=\df{q_{0}q}{4\pi\varepsilon_{0}r_{1}}-\df{q_{0}q}{4\pi\varepsilon_{0}r_{2}}=W_{1}-W_{2}=-\Delta W
+\end{multline*}
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $W=\df 1{4\pi\varepsilon_{0}}\df{q_{0}q}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля: 
+\begin_inset Formula $\varphi=\df Wq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля точечного заряда: 
+\begin_inset Formula $\varphi=\df 1{4\pi\varepsilon_{0}}\df{q_{0}}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля системы точечных зарядов: 
+\begin_inset Formula $\varphi=\df 1{4\pi\varepsilon_{0}}\ous{i=1}n\df{q_{i}}{r_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда через потенциалы:
+\begin_inset Formula $A=W_{1}-W_{2}=q\left(\varphi_{1}-\varphi_{2}\right)$
+\end_inset
+
+.
+ А тогда работа по перемещению заряда из бесконечности в некоторую точку:
+ 
+\begin_inset Formula $A_{\b}=\varphi\um q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Потенциал численно равен работе по перемещению единичного заряда из бесконечност
+и в некоторую точку.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\varphi\right]=\df{\text{Дж}}{\text{Кл}}=\text{В}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для измерения работы используют еще эВ (электрон Вольт)
+\end_layout
+
+\begin_layout Definition
+Электрон Вольт --- работа, совершаемая силами поля над зарядом равным заряду
+ электрона при прохождении им разности потенциалов, равным 1В.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $1эВ=1.6\um10^{-19}Дж$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Связь между напряженностью и потенциалом.
+\end_layout
+
+\begin_layout Standard
+Возьмем элементарное перемещение 
+\begin_inset Formula $dr$
+\end_inset
+
+ и элементарный потенциал 
+\begin_inset Formula $d\varphi$
+\end_inset
+
+.
+ Посчитаем элементарную работу: 
+\begin_inset Formula 
+\begin{align*}
+\delta A & =-q\um d\varphi\\
+\delta A & =q\um\v Ed\v r=qE_{r}dr
+\end{align*}
+
+\end_inset
+
+Приравняем: 
+\begin_inset Formula $-qd\varphi=qE_{r}dr$
+\end_inset
+
+, получим:
+\begin_inset Formula 
+\[
+E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{\v E=\left(E_{x},E_{y},E_{z}\right)=-\left(\df{\dd\varphi}{\dd x},\df{\dd\varphi}{\dd y},\df{\dd\varphi}{\dd z}\right)=-\grad\varphi}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
