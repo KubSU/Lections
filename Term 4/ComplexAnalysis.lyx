@@ -5244,6 +5244,585 @@ u_{y}\pr=-v_{x}\pr
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Элементарные функции
+\end_layout
+
+\begin_layout Subsubsection
+Инверсия --- 
+\begin_inset Formula $w=\df 1z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z=\rho\um e^{i\varphi}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|=\rho$
+\end_inset
+
+, 
+\begin_inset Formula $arg\, z=\varphi$
+\end_inset
+
+, 
+\begin_inset Formula $w=\df 1{\rho e^{i\varphi}}=\df 1{\rho}\um e^{-i\varphi}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|\df 1z\right|=\left|w\right|=\df 1{\rho}=\left|\df 1{\rho}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|z\right|\um\left|w\right|=1$
+\end_inset
+
+, 
+\begin_inset Formula $arg\, w=arg\,\df 1z=-arg\, z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Точки 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $z^{*}$
+\end_inset
+
+ называются симметричными относительно окружности радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $arg\,\left|z-z_{0}\right|=arg\,\left|z^{*}-z_{0}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|z-z_{0}\right|\um\left|z^{*}-z_{0}\right|=R^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Заметим, что точка 
+\begin_inset Formula $z^{*}$
+\end_inset
+
+ это 
+\begin_inset Formula $\df 1{\rho}\um e^{i\varphi}$
+\end_inset
+
+ --- симметрична точке 
+\begin_inset Formula $z$
+\end_inset
+
+ относительно еденичной окружности 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+ (
+\begin_inset Formula $C_{1}=\left\{ z\tc\left|z\right|=1\right\} $
+\end_inset
+
+), так как 
+\begin_inset Formula $\left|z^{*}\right|\um\left|z\right|=\df 1{\rho}\um\rho$
+\end_inset
+
+.
+ Очевидно, что 
+\begin_inset Formula $w=\df 1z=z^{*}=\overline{\left(\df 1{\rho}e^{i\varphi}\right)}=\df 1{\rho}e^{i\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Очевидно: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w\left(0\right)=\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w\left(\b\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\overline{\C}_{z}\ov{\st}{w=\frac{1}{z}}\overline{\C}_{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Внутренность еденичного круга --- область 
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+ переводится инверсией во внешность: 
+\begin_inset Formula $\left|w\right|>1$
+\end_inset
+
+, а внешность --- во внутренность.
+ ПОлярный угол 
+\begin_inset Formula $\alpha<arg\, z<\beta$
+\end_inset
+
+ --- в полярный угол 
+\begin_inset Formula $-\beta<w<-\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Отображение 
+\begin_inset Formula $w=\df 1z$
+\end_inset
+
+ является взаимно-однозначным.
+\end_layout
+
+\begin_layout Standard
+Самим доказать: 
+\begin_inset Formula $\left(\df 1z\right)\pr=-\df 1{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Линейная функция --- 
+\begin_inset Formula $w=a\um z+b,\quad a,b\in\C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a=\left|a\right|\um e^{i\varphi}$
+\end_inset
+
+, 
+\begin_inset Formula $b=s+i\um t$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $w=\left|a\right|\um e^{i\varphi}\um z+s+i\um t$
+\end_inset
+
+, следовательно функцию 
+\begin_inset Formula $w$
+\end_inset
+
+ можно представить как суперпозицию трех функций:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{1}=\left|a\right|\um z$
+\end_inset
+
+ --- Растяжение в 
+\begin_inset Formula $\left|a\right|$
+\end_inset
+
+ раз
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{2}=e^{i\varphi}\um w_{1}$
+\end_inset
+
+ --- Поворот на угол 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{3}=w_{2}+s+it$
+\end_inset
+
+ --- Паралельный перенос на вектор 
+\begin_inset Formula $\v b\left(s;t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следовательно линейная функция осиществляет растяжение, поворот и паралельный
+ перенос, следовательно линейная фунцкия является преобразованием подобия.
+\end_layout
+
+\begin_layout Standard
+Самостоятельно доказать, что 
+\begin_inset Formula $\left(az+b\right)\pr=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Функции 
+\begin_inset Formula $w=z^{n},\ w=\sqrt[n]{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим фунцкию 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+.
+ пусть точка 
+\begin_inset Formula $z=\rho e^{i\varphi}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $w=z^{2}=\rho^{2}e^{i2\varphi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим точку: 
+\begin_inset Formula $-z=-\rho e^{i\varphi}=\rho e^{i\left(\varphi+\pi\right)}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(-z\right)^{2} & = & \left(\rho e^{i\left(\varphi+\pi\right)}\right)^{2}=\rho^{2}\um e^{i\left(2\varphi+2\pi\right)}=\\
+ & = & \left\{ \begin{array}{c}
+e^{i\left(2\varphi+2\pi\right)}=\cos\left(2\varphi+2\pi\right)+i\sin\left(2\varphi+2\pi\right)=\\
+=\cos2\varphi+i\sin2\varphi=e^{i2\varphi}
+\end{array}\right\} =\\
+ & = & \rho^{2}e^{i2\varphi}
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $z^{2}=\left(-z\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом функция 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+ отображает колмплексную плоскость 
+\begin_inset Formula $\C$
+\end_inset
+
+ на себя, причем двум различным тогчкам 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+, таким что 
+\begin_inset Formula $\left|z_{1}\right|=\left|z_{2}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|arg\, z_{1}-arg\, z_{2}\right|=\pi$
+\end_inset
+
+ станосится в соответствии станосится в соответствие одно и тоже значение
+ 
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Функция 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+ не является однолистной.
+\end_layout
+
+\begin_layout Standard
+Расмотрим в плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ область 
+\begin_inset Formula $\left\{ 0<arg\, z<\pi\right\} =D_{0}$
+\end_inset
+
+ --- верхняя полупроскость.
+ Фунцкия 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+ переводит 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ в область 
+\begin_inset Formula $0<arg\, w<2\pi$
+\end_inset
+
+ --- комплексная плоскость 
+\begin_inset Formula $\C$
+\end_inset
+
+ с разрезом по лучу 
+\begin_inset Formula $z\in\left(0;+\b\right)$
+\end_inset
+
+ --- положительная вещественная полуось.
+ (Причем в 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ есть верхний берег разреза, а в 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ --- нижний берег разреза (Это граници разреза))
+\end_layout
+
+\begin_layout Standard
+При этом отображение 
+\begin_inset Formula $D_{0}\ov{\st}{w=z^{2}}\C\backslash[0;+\b)$
+\end_inset
+
+ является взаимно-однозначной.
+ 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ --- область однолистности.
+\end_layout
+
+\begin_layout Standard
+Очевидно что 
+\begin_inset Formula $D_{1}=\left\{ z\tc\pi<arg\, z<2\pi\right\} $
+\end_inset
+
+ --- отображается на множество 
+\begin_inset Formula $2\pi<arg\, z<4\pi=\C\backslash[0;+\b)$
+\end_inset
+
+ --- на туже плоскость с тем же разрезом, причем отображение взаимно-однозначное.
+\end_layout
+
+\begin_layout Standard
+Таким образом функция 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+ является двулистной функцей, 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ являются ее областями однолистности.
+\end_layout
+
+\begin_layout Remark
+В общем случае в качестве областей однотистности можно взять любую полупроскость
+ вида: 
+\begin_inset Formula $D_{\alpha}=\left\{ z\tc\alpha<arg\, z<\alpha+\pi\right\} \quad\st\quad E_{\alpha}=\left\{ w\tc2\alpha<arg\, w<2\alpha+\pi\right\} $
+\end_inset
+
+ --- 
+\begin_inset Formula $\C$
+\end_inset
+
+ с разрезом по лучу 
+\begin_inset Formula $arg\, w=2\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как функция 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+ --- двулистная, то обратная функция 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ --- двузначная, причем:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{0}=\sqrt{z_{0}}=\sqrt{\left|z\right|\um e^{i\left(\frac{\varphi+2\pi\um0}{2}\right)}}=\sqrt{\left|z\right|}\um e^{i\frac{\varphi}{2}}$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi=arg\, z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{1}=\sqrt{z_{1}}=\sqrt{\left|z\right|}e^{i\frac{\varphi+2\pi\um1}{2}}=\sqrt{\left|z\right|}e^{i\left(\frac{\varphi}{2}+\pi\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом выделяются 2 однозначные функции:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{0}:\C\backslash[0;+\b)\st\left\{ 0<arg\, w<\pi\right\} =D_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w_{1}:\C\backslash[0;+\b)\st D_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Их называют однозначные ветви двузначной функции 
+\begin_inset Formula $w=z^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При движение по замкнутому контуру, не содержащую внутри себя точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ соответствующий контур в плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ также замкнут.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим замкнутый контур, проходящий через точку 
+\begin_inset Formula $z\pr$
+\end_inset
+
+, содержащий внутри точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При движение по нему получается в плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ незамкнутый контур, соеденяющий точки 
+\begin_inset Formula $\sqrt{z_{0}\pr}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{z_{1}\pr}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ называется точкой ветвления многозначной функции 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+, если при движении по любому замкнутому контуру 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, окружающему эту точку происходит движение в плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ по незамкнутому контуру, концы которого являются значениями различных ветвей
+ этой функции в некоторой точке.
+\end_layout
+
+\begin_layout Standard
+Очевидно в любой окресности точки ветвления нельзя отделить различные ветви
+ друг от друга.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
