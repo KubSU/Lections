@@ -5823,6 +5823,321 @@ e^{i\left(2\varphi+2\pi\right)}=\cos\left(2\varphi+2\pi\right)+i\sin\left(2\varp
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $w=z^{n}$
+\end_inset
+
+ --- многолистная, областью однолистности является любой полярный сектор
+ раствора 
+\begin_inset Formula $\df{2\pi}n$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+D^{\alpha}=\left\{ z|\alpha<\arg z<\alpha+\df{2\pi}n\right\} 
+\]
+
+\end_inset
+
+Образом этого сектора при действии 
+\begin_inset Formula $w=z^{n}$
+\end_inset
+
+ будет: 
+\begin_inset Formula $E^{\alpha}=\left\{ w|n\alpha<\arg w<n\alpha+2\pi\right\} $
+\end_inset
+
+--- плоскость 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ с разрезом по лучу 
+\begin_inset Formula $\arg w=n\alpha$
+\end_inset
+
+.
+ В частности областями однолистности являются области: 
+\begin_inset Formula 
+\[
+D_{k}=\left\{ z|\df{2\pi k}n<\arg z<\df{2\pi}n+\df{2\pi k}n\right\} ,\text{ где }k=\overline{0,n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обратная функция 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+ --- 
+\begin_inset Formula $n$
+\end_inset
+
+-значная, причем мы можем выделить 
+\begin_inset Formula $n$
+\end_inset
+
+ однозначных ветвей:
+\begin_inset Formula 
+\[
+\sqrt[n]{z}_{k}=\sqrt[n]{\left|z\right|}\um exp\left(i\df{\varphi+2\pi k}n\right),\quad k=\overline{0,n-1}
+\]
+
+\end_inset
+
+Где ветвь 
+\begin_inset Formula $\sqrt[n]{z}_{k}$
+\end_inset
+
+ взаимно однозначно переводит плоскость с разрезом 
+\begin_inset Formula $\mathbb{C}\backslash\left[0;+\b\right]$
+\end_inset
+
+ на сектор 
+\begin_inset Formula $D_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Показательная и логорифмическая функции
+\end_layout
+
+\begin_layout Standard
+Определим показательную функцию:
+\begin_inset Formula 
+\[
+w=e^{z}=e^{x+iy}=x^{x}\um e^{iy}=e^{x}\left(\cos y+i\sin y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Свойства
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|e^{z}\right|\nr0\quad\forall z\in\mathbb{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $\left|e^{z}\right|=\left|e^{x}\right|\um\left|e^{iy}\right|=e^{x}>0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ --- не ограниченна на 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Пусть .....
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $e^{z_{1}}\um e^{z_{2}}=e^{z_{1}+z_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $z_{1}=x_{1}+iy_{1},\quad z_{2}=x_{2}+iy_{2}$
+\end_inset
+
+.
+ Тогда
+\begin_inset Formula 
+\begin{multline*}
+e^{z_{1}}\um e^{z_{2}}=e^{x_{1}+iy_{1}}\um e^{x_{2}+iy_{2}}=e^{x_{1}}\um\left(\cos y_{1}+i\sin y_{1}\right)\um e^{x_{2}}\left(\cos y_{2}+i\sin y_{2}\right)=\\
+=e^{x_{1}+x_{2}}\left[\left(\cos\right)\right]=\\
+=e^{z_{1}+z_{2}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Дифференцируемость (условие Коши--Римана)
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Пусть
+\begin_inset Formula 
+\begin{align*}
+u & =e^{x}\um\cos y\\
+v & =e^{x}\um\sin y
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+u'_{x}=v'_{y}\\
+\\
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Периодичность
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+e^{z}=e^{x+iy}=e^{x}\left(\cos y+i\sin y\right)=e^{x}\left(\cos\left(y+2\pi\right)+i\sin\left(y+2\pi\right)\right)=\\
+=e^{x+i\left(y+2\pi\right)}=e^{z+i2\pi}
+\end{multline*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ --- периодичная, то она бесконечно листная.
+ Тогда областью однолистности функции 
+\begin_inset Formula $w=e^{z}$
+\end_inset
+
+ является всякая полоса ширины 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ вида:
+\begin_inset Formula 
+\[
+D_{\alpha}=\left\{ z|\alpha<Imz<\alpha+2\pi\right\} \quad\forall\alpha\in R
+\]
+
+\end_inset
+
+В частности в качестве области однолистности возьмем область 
+\begin_inset Formula 
+\[
+D_{0}=\left\{ z|0<y<2\pi\right\} 
+\]
+
+\end_inset
+
+Найдем ее образ при отображении функции 
+\begin_inset Formula $w=e^{z}$
+\end_inset
+
+.
+ Зафиксируем 
+\begin_inset Formula $x=x_{0}\in R,\ y\in\left(0;2\pi\right),$
+\end_inset
+
+ получим интервал.
+ Найдем его образ:
+\begin_inset Formula 
+\[
+e^{z}=e^{x_{0}+iy}=\underset{\left|w\right|}{\underbrace{e^{x_{0}}}}\um e^{iy}
+\]
+
+\end_inset
+
+То есть это точки, лежащие на окружности радиуса 
+\begin_inset Formula $e^{x_{0}}$
+\end_inset
+
+ с выброшеной точкой 
+\begin_inset Formula $w=e^{x_{0}}$
+\end_inset
+
+.
+ Значит полоса 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ отображается на 
+\begin_inset Formula $\mathbb{C}\backslash\left[0;2\pi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим семейство прямых вида:
+\begin_inset Formula 
+\[
+y=y_{0}=const\in\left(0;2\pi\right),\quad x\in\left(-\b;+\b\right)
+\]
+
+\end_inset
+
+Получим: 
+\begin_inset Formula $w=e^{z}=e^{x+iy_{0}}$
+\end_inset
+
+ --- луч: 
+\begin_inset Formula $\arg w=y_{0},\ w\nr0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Следовательно семейство прямых 
+\begin_inset Formula $y=y_{0}=const$
+\end_inset
+
+ отображается на семейство лучей 
+\begin_inset Formula $\arg w=y_{0},\ w\nr0$
+\end_inset
+
+, тогда полоса 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ отображается на 
+\begin_inset Formula $\mathbb{C}\backslash\left[0;2\pi\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
