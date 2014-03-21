@@ -379,11 +379,24 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
 Обыкновенные дифференциальные уравнения.
  Том 2.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+От препода: Когда разбираете теоритический материал нужно сначала выписывать
+ обьект исследования, а потом сам вопрос.
 \end_layout
 
 \begin_layout Section
@@ -2220,7 +2233,7 @@ reference "eq:_1_2_1"
  тогда 
 \begin_inset Formula 
 \[
-0=V\left(y\left(x_{1}\right)\right)-V\left(y\left(x_{0}\right)\right)=\df{dV\left(\bar{x}\right)}{dx}\left(x_{1}-x_{0}\right)=W\left(y\left(\bar{x}\right),\bar{x}\right)
+0=V\left(y\left(x_{1}\right)\right)-V\left(y\left(x_{0}\right)\right)=\df{dV\left(\bar{x}\right)}{dx}\left(x_{1}-x_{0}\right)=W\left(y\left(\bar{x}\right),\bar{x}\right)\left(x-x_{0}\right),\ \forall x\in\left[x_{0},x_{1}\right]
 \]
 
 \end_inset
@@ -2238,7 +2251,7 @@ reference "eq:_1_2_1"
 \begin_inset Formula $V\left(y\left(x\right)\right)-V\left(y\left(x_{0}\right)\right)$
 \end_inset
 
- по теореме о среднем это рвно: 
+ по теореме о среднем это равно: 
 \begin_inset Formula 
 \[
 \df{dv}{dx}\left(\bar{\bar{x}}\right)\left(x-x_{0}\right)=W\left(y\left(\bar{\bar{x}}\right),\bar{\bar{x}}\right)\left(x-x_{0}\right)\br\beta\left(x-x_{0}\right)
@@ -2250,7 +2263,829 @@ reference "eq:_1_2_1"
 \begin_inset Formula $V\to+\b$
 \end_inset
 
-...........
+.....
+\end_layout
+
+\begin_layout Subsection
+Приобразовангие линейной сиситемы к каноническому виду
+\end_layout
+
+\begin_layout Standard
+Мы покажем что произвольную линейную неоднородную сисетмы можно привести
+ к некоторому специальному каноническому виду.
+\end_layout
+
+\begin_layout Standard
+Будем рассматриват линeйную систему:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=Ay+f\left(x\right)\label{eq:_1_3_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\vtr\\
+y_{n}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\left(\begin{array}{c}
+f_{1}\left(x\right)\\
+\vtr\\
+f_{2}\left(x\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(\begin{array}{ccc}
+a_{1,1} & \tr & a_{1,n}\\
+\vtr & \ntr & \vtr\\
+a_{n,1} & \tr & a_{n,n}
+\end{array}\right),a_{i,j}=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сделаем замену переменной:
+\begin_inset Formula $\ov z{\sim}\left(x\right)=Ky,\ K=\left(\begin{array}{ccc}
+k_{1,1} & \tr & k_{1,n}\\
+\vtr & \ntr & \vtr\\
+k_{n,1} & \tr & k_{n,n}
+\end{array}\right),\ K$
+\end_inset
+
+ --- невырожденная.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=K^{-1}\ov z{\sim}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K^{-1}\df{d\ov z{\sim}}{dx}=Ak^{-1}\ov z{\sim}+f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{d\ov z{\sim}}{dx}=KAK^{-1}\ov z{\sim}+Kf\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обозначим через 
+\begin_inset Formula $B=KAK^{-1}$
+\end_inset
+
+, а через 
+\begin_inset Formula $\ov g{\sim}\left(x\right)=Kf\left(x\right)$
+\end_inset
+
+, тогда мы получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d\ov z{\sim}}{dx}=B\ov z{\sim}+\ov g{\sim}\left(x\right)\label{eq:_1_3_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Мы можем сделать так, что: 
+\begin_inset Formula $B=\left(\begin{array}{cccc}
+\Pi_{1} & 0 & 0 & 0\\
+0 & \Pi_{2} & 0 & 0\\
+0 & 0 & \ntr & 0\\
+0 & 0 & 0 & \Pi_{k}
+\end{array}\right)$
+\end_inset
+
+ , где 
+\begin_inset Formula $\Pi_{j}=\left(\begin{array}{ccccc}
+\lambda_{j} & 0 & 0 & \tr & 0\\
+1 & \lambda_{j} & 0 & \tr & 0\\
+0 & 1 & \lambda_{j} & \tr & 0\\
+\vtr & \vtr & \vtr & \ntr & \vtr\\
+0 & 0 & \tr & 1 & \lambda_{j}
+\end{array}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ --- собственные значения матрици 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Сделаем в системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1"
+
+\end_inset
+
+) замену: 
+\begin_inset Formula $\ov z{\sim}=\ov K{\sim}y$
+\end_inset
+
+, где 
+\begin_inset Formula $\ov K{\sim}$
+\end_inset
+
+ такова, что 
+\begin_inset Formula $\ov B{\sim}=\ov K{\sim}A\ov K{\sim}^{-1}$
+\end_inset
+
+ имеет нормальную Жорданову форму.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\df{d\ov z{\sim}}{dx}=\ov B{\sim}\ov z{\sim}+\ov g{\sim}\left(x\right)\label{eq:_1_3_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_3"
+
+\end_inset
+
+) распадается на 
+\begin_inset Formula $k$
+\end_inset
+
+ групп дифференциальных уравнений, где 
+\begin_inset Formula $k$
+\end_inset
+
+ --- количество Жордановых блоков в матрице 
+\begin_inset Formula $\ov B{\sim}$
+\end_inset
+
+.
+ Рассмотрим первуюгруппу в системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_3"
+
+\end_inset
+
+), соответствующему первому Жордановому блоку матрици 
+\begin_inset Formula $\ov B{\sim}.$
+\end_inset
+
+ Эта группа уравнений имеет вид:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{d\ov{z_{1}}{\sim}}{dx}=\lambda_{1}\ov{z_{1}}{\sim}+\ov{g_{1}}{\sim}\left(x\right)\\
+\df{d\ov{z_{2}}{\sim}}{dx}=\ov{z_{1}}{\sim}+\lambda_{1}\ov{z_{2}}{\sim}+\ov{g_{2}}{\sim}\left(x\right)\\
+\vtr\\
+\df{d\ov{z_{n_{1}}}{\sim}}{dx}=\ov{z_{n_{1}-1}+}{\sim}\lambda_{1}\ov{z_{n_{1}}}{\sim}+\ov{g_{n_{1}}}{\sim}\left(x\right)
+\end{cases}\label{eq:_1_3_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сделаем замену переменных: 
+\begin_inset Formula 
+\begin{equation}
+z_{1}=a_{1}\widetilde{z_{1}},\ z=a_{2}\widetilde{z_{2}},\tr,z_{n_{1}}=a_{n_{1}}\widetilde{z_{n_{1}}}\label{eq:_1_3_5}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $\begin{cases}
+\df{dz_{1}}{dx}=\lambda_{1}z_{1}+g_{1}\left(x\right)\\
+\df{dz_{2}}{dx}=\df{a_{2}}{a_{1}}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
+\vtr\\
+\df{dz_{n_{1}}}{dx}=\df{a_{n_{1}}}{a_{n_{1}-1}}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)
+\end{cases}$
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1}\left(x\right)=a_{1}\widetilde{g_{1}}\left(x\right),\tr,g_{n_{1}}\left(x\right)=a_{n_{1}}\widetilde{g_{n_{1}}}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обозначим через 
+\begin_inset Formula $\alpha_{1}-\df{a_{2}}{a_{1}},\ \alpha_{2}=\df{a_{3}}{a_{2}},\ \tr,\ \alpha_{n_{1}-1}=\df{a_{n_{1}}}{a_{n_{1}-1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда система примет вид:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dz_{1}}{dx}=\lambda_{1}z_{1}+g_{1}\left(x\right)\\
+\df{dz_{2}}{dx}=\alpha_{1}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
+\vtr\\
+\df{dz_{n_{1}}}{dx}=\alpha_{n_{1}-1}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)
+\end{cases}\label{eq:_1_3_6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_6"
+
+\end_inset
+
+) 
+\begin_inset Formula $\alpha_{1},\tr,\alpha_{n_{1}-1}$
+\end_inset
+
+ можно сделать любыми напередзаданными, в часности скольугодно малыми по
+ модулю, отличными от нуля.
+ Для этого в замене (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_5"
+
+\end_inset
+
+) сделаем: 
+\begin_inset Formula 
+\[
+a_{1}=1,\ a_{2}=\alpha_{1},\ a_{3}=\alpha_{2}\um a_{2},\ \tr,a_{n_{1}}=\alpha_{n_{1}-1}a_{n_{1}-1}
+\]
+
+\end_inset
+
+Мы придем к сисиме (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_6"
+
+\end_inset
+
+) диагональныеэлементы будут любыми, которые мы захотим заранее.
+ Аналогично преобразованиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_5"
+
+\end_inset
+
+) сделаем замену в остальных группах уравнений, соответствующих остальным
+ Жордановым блокам.
+ Тогда эту замену можно записать: 
+\begin_inset Formula $Z=l\widetilde{z}$
+\end_inset
+
+, где 
+\begin_inset Formula 
+\[
+L=\left(\begin{array}{cccc}
+a_{1} & 0 & \tr & 0\\
+0 & a_{2} & \tr & 0\\
+\vtr & \vtr & \ntr & 0\\
+0 & 0 & \tr & a_{n_{1}}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $z=L\widetilde{K}y=\left\{ K=L\widetilde{K}\right\} =Ky$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда вод аткая замена систему (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1"
+
+\end_inset
+
+) приводит в виду:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dz_{1}}{dx}=\lambda_{1}z_{1}+g_{1}\left(x\right)\\
+\df{dz_{2}}{dx}=\alpha_{1}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
+\vtr\\
+\df{dz_{n_{1}}}{dx}=\alpha_{n_{1}-1}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)\\
+\vtr\vtr\vtr\\
+\df{dz_{n-n_{k}+1}}{dx}=\lambda_{k}z_{n-n_{k}+1}+g_{n-n_{k}+1}\left(x\right)\\
+\df{dz_{n-n_{k}+2}}{dx}=\omega_{1}z_{n-n_{k}+1}+\lambda_{k}z_{n-n_{k}+2}+g_{n-n_{k}+2}\left(x\right)\\
+\vtr\\
+\df{dz_{n}}{dx}=\omega_{n_{k}-1}z_{n-1}+\lambda_{k}z_{n}+g_{n}\left(x\right)
+\end{cases}\label{eq:_1_3_7}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_7"
+
+\end_inset
+
+) 
+\begin_inset Formula $\alpha_{i},\tr,\omega_{i}$
+\end_inset
+
+ могут быть любыми напередзаданными, отличными от нуля.
+ Систему линейных дифференциальных уравнений (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_7"
+
+\end_inset
+
+) называают канонической системой.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Ляпунова(Об устойчивости по первому приближению)
+\end_layout
+
+\end_inset
+
+
+\emph on
+Будем рассматривать систему диференциальных уравнений 
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dx}=f\left(x,y\right),\ y\left(x\right)=\left(\begin{array}{c}
+y_{1}\left(x\right)\\
+\vtr\\
+y_{n}\left(x\right)
+\end{array}\right),\ f\left(x,y\right)=\left(\begin{array}{c}
+f_{1}\left(x_{1},y_{1},\tr,y_{n}\right)\\
+\vtr\\
+f_{n}\left(x,y_{1},\tr,y_{n}\right)
+\end{array}\right)\label{eq:_1_3_8}
+\end{equation}
+
+\end_inset
+
+Будем предполагать что 
+\begin_inset Formula $y\left(x\right)\equiv0$
+\end_inset
+
+ является решенияем (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+), тогда 
+\begin_inset Formula $f\left(x,0\right)\equiv0$
+\end_inset
+
+ (Если это не так надобудет к нему привести)
+\end_layout
+
+\begin_layout Theorem
+Решения 
+\begin_inset Formula $y\left(x\right)\equiv0$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+) будет ассимптотически устойчивым если правую часть системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+) можно придставить в виде 
+\begin_inset Formula 
+\begin{equation}
+f\left(x,y\right)=Ay+F\left(x,y\right)\label{eq:_1_3_9}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $A$
+\end_inset
+
+ --- постоянная матрица, у которой все собственные значения 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ имеют отрицательные вещественные части, а 
+\begin_inset Formula $F\left(x,y\right)=\left(\begin{array}{c}
+F_{1}\left(x,y\right)\\
+\vtr\\
+F_{n}\left(x,y\right)
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $F_{i}\left(x,y\right),\ i=\overline{1,n}$
+\end_inset
+
+ непрерывно дифференцируемы, и при 
+\begin_inset Formula $x\br x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ достаточно малых по норме, удовлетворяет неравенству 
+\begin_inset Formula 
+\begin{equation}
+\left|\left|F\left(x,y\right)\right|\right|\mr M\left|\left|y\right|\right|^{1+\alpha}\label{eq:_1_3_9*}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $M,\alpha>0$
+\end_inset
+
+ --- некоторые положительные постоянные.
+\end_layout
+
+\begin_layout Remark
+В частности правую часть системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+) можно представить в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_9"
+
+\end_inset
+
+), если 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+) не зависит от 
+\begin_inset Formula $x$
+\end_inset
+
+, и в окресности начала координат дважды непрерывно-дифференцируема по 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
+f_{1}\left(y\right)\\
+\vtr\\
+f_{n}\left(y\right)
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x,0\right)\equiv0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Можно применить формулу Тейлора:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\begin{cases}
+f_{1}\left(y\right)=0+\df{\dd f_{1}}{\dd y_{1}}\left(0\right)y_{1}+\tr+\df{\dd f_{1}}{\dd y_{n}}\left(0\right)y_{n}+O\left(\left|\left|y\right|\right|^{2}\right)\\
+\vtr\\
+f_{n}\left(y\right)=0+\df{\dd f_{n}}{\dd y_{1}}\left(0\right)y_{1}+\tr+\df{\dd f_{n}}{\dd y_{n}}\left(0\right)y_{n}+O\left(\left|\left|y\right|\right|^{2}\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Тогда матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ имеет вид:
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $A=\left(\begin{array}{ccc}
+\df{\dd f_{1}}{\dd y_{1}}\left(0\right) & \tr & \df{\dd f_{1}}{\dd y_{n}}\left(0\right)\\
+\vtr & \ntr & \vtr\\
+\df{\dd f_{n}}{\dd y_{1}}\left(0\right) & \tr & \df{\dd f_{n}}{\dd y_{n}}\left(0\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Для устойчивости нужно: 
+\begin_inset Formula $Re\, A_{i}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $b$
+\end_inset
+
+ --- верещственное, то 
+\begin_inset Formula $b\mr\left|b\right|$
+\end_inset
+
+.
+ В качестве нормы будем рассматоривать 
+\begin_inset Formula $\left|\left|z\right|\right|=\left(\ous{i=1}n\left|z_{i}\right|^{2}\right)^{\frac{1}{2}}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $z$
+\end_inset
+
+ --- комплексное, то 
+\begin_inset Formula $\left|z_{i}\right|=\overline{\left|z_{i}\right|}$
+\end_inset
+
+.
+ Так же ---
+\begin_inset Formula $\left|z_{i}\right|\mr\left|\left|z\right|\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+) сделаем замену 
+\begin_inset Formula 
+\begin{equation}
+z=Ky\label{eq:_1_3_10}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $K$
+\end_inset
+
+ --- невырожденная матрица, приводящая матрицу 
+\begin_inset Formula $A$
+\end_inset
+
+ к каноническому виду, причем все поддиагональные элементы (
+\begin_inset Formula $\alpha_{i},\tr,\omega_{i}\mr\df a4$
+\end_inset
+
+, 
+\begin_inset Formula $a=-\un{\max}iRe\,\lambda_{i}$
+\end_inset
+
+).
+ Но в обратном преобраховании 
+\begin_inset Formula $y=K^{-1}z$
+\end_inset
+
+ будем рассматривать 
+\begin_inset Formula $y$
+\end_inset
+
+ вещественные.
+ 
+\end_layout
+
+\begin_layout Proof
+Для доказательства будем пользователься лемммой Ляпунова.
+ В качестве функции Ляпунова возьмем
+\begin_inset Formula 
+\[
+V\left(y\right)=\left|\left|z\right|\right|^{2}=\left|\left|Ky\right|\right|^{2}=\ous{i=1}n\left|z_{i}\right|^{2}=\ous{i=1}nz_{i}\overline{z_{i}}
+\]
+
+\end_inset
+
+После преобразования (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_10"
+
+\end_inset
+
+) система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_8"
+
+\end_inset
+
+) примет вид: 
+\begin_inset Formula 
+\[
+\df{dz}{dx}=Bz+F^{*}\left(x,z\right)
+\]
+
+\end_inset
+
+где матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ имеет вид: 
+\begin_inset Formula $B=\left(\begin{array}{cccccc}
+\lambda_{1} & 0 & \tr & 0 & 0 & 0\\
+\beta_{1} & \lambda_{1} & \tr & 0 & 0 & 0\\
+\vtr & \vtr & \ntr & \vtr & \vtr & \vtr\\
+0 & 0 & \tr & \lambda_{k} & 0 & 0\\
+0 & 0 & \tr & \beta_{n-n_{k}+1} & \ntr & 0\\
+0 & 0 & \tr & 0 & \beta_{n} & \lambda_{k}
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F^{*}=KF.$
+\end_inset
+
+
+\begin_inset Formula $F^{*}\left(x,z\right)=\left(\begin{array}{c}
+F_{1}^{*}\left(x,z\right)\\
+\vtr\\
+F_{n}^{*}\left(x,z\right)
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F_{j}^{*}\left(x,z\right)=\ous{l=1}nK_{i,l}F_{l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем что: 
+\begin_inset Formula 
+\begin{equation}
+\left|F_{j}^{*}\left(x,z\right)\right|\mr M^{*}\left|\left|z\right|\right|^{1+\alpha}\label{eq:_1_3_11}
+\end{equation}
+
+\end_inset
+
+Действительно модем записать: 
+\begin_inset Formula 
+\[
+\left|F_{j}^{*}\left(x,z\right)\right|=\left|\ous{l=1}nK_{j,l}F_{l}\right|\mr M_{1}\ous{l=1}n\left|F_{l}\right|\mr M_{1}\um n\um\left|\left|F\right|\right|\mr\left\{ \ref{eq:_1_3_9*}\right\} \mr M_{2}\left|\left|y\right|\right|^{1+\alpha}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $K^{-1}=\left(\begin{array}{ccc}
+t_{1,1} & \tr & t_{1,n}\\
+\vtr & \ntr & \vtr\\
+t_{n,1} & \tr & t_{n,n}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $y=K^{-1}z$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|y_{j}\right|^{1+\alpha}=\left|\ous{l=1}nt_{j,l}z_{l}\right|\mr M_{3}\um n\um\left|\left|z\right|\right|^{1+\alpha}\mr M_{4}\left|\left|z\right|\right|^{1+\alpha}$
+\end_inset
+
+.
+ Ну а тогда очевидно, что справедлива оценка что 
+\begin_inset Formula 
+\[
+\left|F_{j}^{*}\left(x,z\right)\right|\mr M^{*}\left|\left|z\right|\right|^{1+\alpha}\ \left(\ref{eq:_1_3_11}\right)
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Если у матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ будет хоть одно значение с положительной вещественной частью илиже они
+ будут равны нулю, то решение системы будет неустойчиво.
+ 
 \end_layout
 
 \end_body
