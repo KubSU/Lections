@@ -1221,6 +1221,202 @@ E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
 
 \end_layout
 
+\begin_layout Subsection
+Эквипотенциальноая поверхность
+\end_layout
+
+\begin_layout Standard
+Потенциаль электрического поля - 
+\begin_inset Formula $\varphi\left(x,y,z\right)=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В любой точке пространства можно провести эсвипотенциальную поверхность.
+\end_layout
+
+\begin_layout Standard
+Вектор напряженность электрического поля портендикулярен эквипотенциальной
+ поверхности.
+ 
+\end_layout
+
+\begin_layout Subsection
+Электрическое поля в диэлектриках.
+\end_layout
+
+\begin_layout Standard
+Диэлектрико --- такой материал, к коготором почти отсутствуют свободные
+ заряженные частицы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{r_{c}}=\df{\sum m_{i}r_{i}}{\sum m_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{+}$
+\end_inset
+
+ --- центр положительных задрядов (центр масс положительных зарядов, центр
+ тяжести полоожиьтельных зарядов)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{+}=\df{\sum q_{i}^{+}r_{i}^{+}}{\sum q_{i}^{+}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{-}=\df{\sum q_{i}^{-}r_{i}^{-}}{\sum q_{i}^{-}}=\df{\sum q_{i}^{-}r_{i}^{-}}{q^{-}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если диэлекстрик нейтральный: 
+\begin_inset Formula $q^{+}=-q^{-}=q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Применим эти операции для одной малекулы.
+ В том слкчае, когда 
+\begin_inset Formula $\v{r^{+}}=\v{r^{-}}$
+\end_inset
+
+, тогда говорят, что диэлектрик не полярный (или молекула не полярная).
+ Когда 
+\begin_inset Formula $\v{r^{+}}\nr\v{r^{-}}$
+\end_inset
+
+ , то мы имем полярный диэлексрик (полярную молекулу).
+ Тогда мы можем представить эту полекулу как диполь.
+ 
+\begin_inset Formula $l=\left|\v{r^{+}}-\v{r^{-}}\right|\nr0$
+\end_inset
+
+.
+ Кроме того мы ставим каждому диполю ставим вектор начального момента диполя
+ (электрического момента).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=q\um\v l=q\left(\v{r^{+}}-\v{r^{-}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Полеризация диэлектрика.
+\end_layout
+
+\begin_layout Standard
+Поместим некий диэлекстрик в электричесоке поле.
+ Электрическое части сместятся, и молекула, которая была не полярная, будет
+ полярной.
+ Тем самым возникает полеризация.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v P=\beta\um\varepsilon_{0}\um\v E$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ --- коофициент полеризуемости молекулы.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ --- не зависимая от 
+\begin_inset Formula $\beta$
+\end_inset
+
+, называемая диэлектрическая восприимчивость диэлектрика.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v P=x\um\varepsilon_{0}\um E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для неполярных диэлектриков 
+\begin_inset Formula $x$
+\end_inset
+
+ --- константа, а для полярных --- эта функция температуры.
+\end_layout
+
+\begin_layout Subsubsection
+Описание электрического поля в диэлектрике
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v E=\v{E_{0}}+E\pr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Электрическим смещением н6азывается физическая величина, определяемая соотношени
+ем:
+\begin_inset Formula 
+\[
+\v D=\varepsilon_{0}\v E+\v P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{D}=\un{\oiint}S\left(\v D,\v n\right)dS=\sum q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поток вектора электрического смещения через замкнутую поверхность равен
+ алгербаической сумме заключенных внутри этой поверхности свободных зарядов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1+x=\varepsilon$
+\end_inset
+
+ --- Относительной диэлектрической проницаемость.
+\end_layout
+
+\begin_layout Standard
+Относительной диэлектрической проницаемость.
+ показывается, во сколько раз ослабляется поле внутри диэлектрика.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset

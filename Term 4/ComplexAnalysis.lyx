@@ -6173,6 +6173,424 @@ y=y_{0}=const\in\left(0;2\pi\right),\quad x\in\left(-\b;+\b\right)
 \end_layout
 
 \end_deeper
+\begin_layout Subsubsection
+Дробно-линейные функции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w=f\left(z\right)=\df{\alpha+bz}{\beta+dz},\ \df ac\pm\df bd$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w=\lambda\df{\alpha+z}{\beta+z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Заданные три пары значений:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $f\left(z_{1}\right)=w_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $f\left(z_{2}\right)=w_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $f\left(z_{3}\right)=w_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Однозначно определяется дроюбно-линйейная функция.
+\end_layout
+
+\begin_layout Proof
+Преобразуем разность.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+w_{1}-w_{2} & = & \lambda\df{\alpha+z_{2}}{\beta+z_{2}}-\lambda\df{\alpha+z_{1}}{\beta+z_{1}}=\\
+ & = & \lambda\df{\beta z_{2}+\alpha z_{1}-\beta z_{1}-\alpha z_{2}}{\left(\beta+z_{2}\right)\left(\alpha+z_{2}\right)}=\\
+ & = & \lambda\df{\left(z_{2}-z_{1}\right)\left(\beta-\alpha\right)}{\left(\beta+z_{2}\right)\left(\alpha+z_{2}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+w_{3}-w_{2}=\lambda\df{\left(z_{2}-z_{1}\right)\left(\beta-\alpha\right)}{\left(\beta+z_{1}\right)\left(\beta+z_{2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\df{w_{1}-w_{2}}{w_{3}-w_{2}}=\df{\left(z_{2}-z_{1}\right)\left(\beta+z_{3}\right)}{\left(z_{3}-z_{2}\right)\left(\beta+z_{1}\right)}\sl\begin{array}{c}
+\df{w_{1}-w_{2}}{w_{3}-w_{2}}=\df{\left(z_{1}-z_{2}\right)\left(\beta+z_{2}\right)}{\left(z_{3}-z_{2}\right)\left(\beta+z_{1}\right)}\\
+\df{w_{1}-w}{w_{3}-w}=\df{\left(z_{1}-z\right)\left(\beta+z\right)}{\left(z_{3}-z\right)\left(\beta+z_{1}\right)}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall z\in\overline{\C}\ w=f\left(z\right)\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\df{w_{1}-w_{2}}{w_{1}-w_{3}}:\df{w_{1}-w}{w_{3}-w}=\df{z_{1}-z_{2}}{z_{3}-z_{2}}:\df{z_{1}-z}{z_{3}-z}\label{eq:_1_2_3_*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Полученное соотношение не явно выражает однозначную функцию 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+, которую можно выразить явно, используя алгебраические преобразования.
+\end_layout
+
+\begin_layout Proof
+Формула (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_3_*"
+
+\end_inset
+
+) справедлива при 
+\begin_inset Formula $\begin{array}{c}
+z_{i}=\b\ \left(i=\overline{1,3}\right)\\
+w_{i}=\b\ \left(i=\overline{1,3}\right)
+\end{array}$
+\end_inset
+
+.
+ В этом случае соответствующие разности полагают равными 1.
+\end_layout
+
+\begin_layout Paragraph
+Свойства дробно-линейных отображений.
+\end_layout
+
+\begin_layout Standard
+Запишем дроюбно-линейную функцию в виде: 
+\begin_inset Formula $w=\lambda\df{\alpha+z}{\beta+z}=\lambda\left(\df{\alpha-b}{z+\beta}+1\right)$
+\end_inset
+
+ --- Это суперпозиция следующих функций: 
+\begin_inset Formula $w_{1}=z+\beta$
+\end_inset
+
+ --- сдвиг, 
+\begin_inset Formula $w_{2}=\df 1{w_{1}}=\df 1{z+\beta}$
+\end_inset
+
+ --- инверсия, 
+\begin_inset Formula $w_{3}=\lambda\um\left(\alpha-\beta\right)w_{2}+\lambda$
+\end_inset
+
+ --- линейная функция.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Круговое свойство дробно-линейного отображения
+\end_layout
+
+\end_inset
+
+Дробно-линейное отображение всякую окружность расширеной комплексной плоскости
+ переводит в окружность.
+\end_layout
+
+\begin_layout Remark
+Прямая в плоскости это окружность радиуса 
+\begin_inset Formula $R=\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Достаточно доказать, что круговым свойством обладает инверсия, так как мы
+ уже значем, что сдвиг и лингейная функция обладают таким свойством.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим в плоскости 
+\begin_inset Formula $\overline{\C}$
+\end_inset
+
+ общее уравнение окружности.
+ 
+\begin_inset Formula $\left(z=x+iy\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+A\left(x^{2}+y^{2}\right)+Bx+Cy+D=0,\ A\br0\label{eq:_2_2_3_5_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что при 
+\begin_inset Formula $D=0$
+\end_inset
+
+ то окружность проходит через начало координат (через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+).
+ При 
+\begin_inset Formula $A=0$
+\end_inset
+
+ получатеся уравнение прямой.
+ (проходит через точку 
+\begin_inset Formula $z=\b$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\left(x^{2}+\df BAx\right)+A\left(y^{2}+\df CAy\right)+D=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\left(x+\df B{2A}\right)^{2}+A\left(y+\df C{2A}\right)^{2}+D-\df{B^{2}}{4A}-\df{C^{2}}{4A}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Исслудуем функцию 
+\begin_inset Formula $w=\df 1z$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $w=u+iv=\df 1{x+iy}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x+iy=\df 1{u+iv}=\df{u-iv}{u^{2}+v^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x=\df u{u^{2}+v^{2}};\ y=-\df v{u^{2}+v^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2_3_5_1"
+
+\end_inset
+
+) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\um\df 1{u^{2}+v^{2}}+B\df u{u^{2}+v^{2}}-C\df v{u^{2}+v^{2}}+D=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $D\left(u^{2}+v^{2}\right)+Bu-Cv+A=0$
+\end_inset
+
+ --- уравнение окружности в расширенной плоскости 
+\begin_inset Formula $w\in\overline{\C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В часности при 
+\begin_inset Formula $A=0$
+\end_inset
+
+ в плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ получается что прямая отображается в окружность, проходящую через точку
+ 0.
+\end_layout
+
+\begin_layout Proof
+В часности при 
+\begin_inset Formula $D=0$
+\end_inset
+
+.
+ Окружности, проходящие через 
+\begin_inset Formula $z=0$
+\end_inset
+
+ переходят в прямые.
+\end_layout
+
+\begin_layout Example
+Найти дробно-линейное отображение, переводящее круг 
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+ в верхнюю полуплоскость.
+ 
+\begin_inset Formula $Im\, w>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решение.
+\end_layout
+
+\begin_layout Example
+Предположим, что 
+\begin_inset Formula $w\left(-1\right)=\b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Значение 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ найдем из оставшегося условия.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Всякая окружность 
+\begin_inset Formula $C'$
+\end_inset
+
+, проходящая через две точки 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $p'$
+\end_inset
+
+ симметричные относительно окружности 
+\begin_inset Formula $C$
+\end_inset
+
+, ортогональная этой окружности.
+\end_layout
+
+\begin_layout Proof
+ssa
+\end_layout
+
+\begin_layout Theorem
+При отображении дробно-линейной функции точки, симметричные относительно
+ окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ переходят в точки, симметричные относительно её образа 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset

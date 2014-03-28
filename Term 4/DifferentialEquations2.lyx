@@ -2961,12 +2961,11 @@ reference "eq:_1_3_8"
 \end{array}\right)$
 \end_inset
 
-.
- 
-\begin_inset Formula $F^{*}=KF.$
+; 
+\begin_inset Formula $F^{*}=KF$
 \end_inset
 
-
+; 
 \begin_inset Formula $F^{*}\left(x,z\right)=\left(\begin{array}{c}
 F_{1}^{*}\left(x,z\right)\\
 \vtr\\
@@ -2974,12 +2973,15 @@ F_{n}^{*}\left(x,z\right)
 \end{array}\right)$
 \end_inset
 
-.
- 
+; 
 \begin_inset Formula $F_{j}^{*}\left(x,z\right)=\ous{l=1}nK_{i,l}F_{l}$
 \end_inset
 
-.
+; 
+\begin_inset Formula $\left|\beta_{i}\right|\mr\df a4,\ a=-\umax iRe\,\lambda$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -3029,6 +3031,226 @@ t_{n,1} & \tr & t_{n,n}
 \end_inset
 
 
+<<<<<<< 6440270630dc280097c858611c484ec0c323b059
+=======
+\begin_inset Formula 
+\begin{equation}
+\df{dz}{dx}=Bz+F^{*}\left(x,z\right)\label{eq:_1_3_10*}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dV}{dx}=\ous{i=1}n\df{d\left|z_{i}\right|^{2}}{dx}=\ous{i=1}n\left(\overline{z_{i}}\df{dz_{i}}{dx}+z_{i}\df{d\left|z_{i}\right|}{dx}\right)
+\]
+
+\end_inset
+
+Выпишим группу уравнений системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_10*"
+
+\end_inset
+
+), соответствующей Жордановому блоку матрици 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{dz_{1}}{dx}=\lambda_{1}z_{1}+F_{1}^{*}\\
+\df{dz_{2}}{dx}=\beta_{1}z_{1}+\lambda_{1}z_{2}+F_{2}^{*}\\
+\vtr\\
+\df{dz_{n_{1}}}{dx}=\beta_{1}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+F_{n_{1}}^{*}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{d\left|z_{1}\right|^{2}}{dx} & = & \overline{z_{1}}\left(\lambda_{1}z_{1}+F_{1}^{*}\right)+z_{1}\left(\overline{\lambda_{1}}\overline{z_{1}}+\overline{F_{1}^{*}}\right)=\\
+ & = & \left|z_{1}\right|^{2}\um2\um\overline{Re\,\lambda_{1}}+\overline{z_{1}}F_{1}^{*}+z_{1}\overline{F_{1}^{*}}
+\end{eqnarray*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\overline{z_{1}}F_{1}^{*}+z_{1}\overline{F_{1}^{*}}$
+\end_inset
+
+ --- вещественное, то 
+\begin_inset Formula $\overline{z_{1}}F_{1}^{*}+z_{1}\overline{F_{1}^{*}}\mr\left|\overline{z_{1}}F_{1}^{*}+z_{1}\overline{F_{1}^{*}}\right|$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & \left|z_{1}\right|^{2}\um2\um\overline{Re\,\lambda_{1}}+\overline{z_{1}}F_{1}^{*}+z_{1}\overline{F_{1}^{*}}\mr\\
+ & \mr & \left|z_{1}\right|^{2}\um2\um\overline{Re\,\lambda_{1}}+\left|\overline{z_{1}}F_{1}^{*}+z_{1}\overline{F_{1}^{*}}\right|\mr\\
+ & \mr & \left|z_{1}\right|^{2}2Re\,\lambda_{1}+2\left|z_{1}\right|\left|F_{1}^{*}\right|\mr\\
+ & \mr & \left\{ \left|z_{j}\right|\mr\sqrt{\ous{i=1}bz_{i}^{2}}=\left|z\right|\right\} \mr\\
+ & \mr & \left|z_{1}\right|^{2}2Re\,\lambda_{1}+2\left|\left|z\right|\right|\um M^{*}\left|\left|z\right|\right|^{1+\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\df{d\left|z_{1}\right|^{2}}{dx}\mr\left|z_{1}\right|^{2}\um2\um Re\,\lambda_{1}+2\um M^{*}\um\left|\left|z\right|\right|^{2+\alpha}\label{eq:_1_3_12}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{d\left|z_{i}\right|^{2}}{dx} & = & \overline{z_{i}}\df{dz_{i}}{dx}+z_{i}\df{d\overline{z_{i}}}{dx}=\\
+ & = & \overline{z_{i}}\left(\beta z_{i-1}+\lambda_{1}z_{i}+F_{i}^{*}\right)+z_{i}\left(\beta_{1}\overline{z_{i-1}}+\overline{\lambda_{1}}\overline{z_{i}}+\overline{F_{i}^{*}}\right)=\\
+ & = & \left|z_{i}\right|^{2}2Re\,\lambda_{1}+\overline{z_{i}}\beta_{1}z_{i-1}+z_{i}\beta_{1}\overline{z_{i-1}}+\overline{z_{i}}F_{i}^{*}+z_{i}\overline{F_{i}^{*}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $\overline{z_{i}}\beta_{1}z_{i-1}+z_{i}\beta_{1}\overline{z_{i-1}}$
+\end_inset
+
+ --- сумма комплексно-сопряженных --- вещественное число, так же как и 
+\begin_inset Formula $\overline{z_{i}}F_{i}^{*}+z_{i}\overline{F_{i}^{*}}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & \left|z_{i}\right|^{2}2Re\,\lambda_{1}+\overline{z_{i}}\beta_{1}z_{i-1}+z_{i}\beta_{1}\overline{z_{i-1}}+\overline{z_{i}}F_{i}^{*}+z_{i}\overline{F_{i}^{*}}=\\
+ & = & \left|z_{i}\right|^{2}2Re\,\lambda_{1}+2\beta_{1}\left|z_{i}\right|\left|z_{i-1}\right|+2\left|z_{i}\right|\left|F_{i}^{*}\right|\mr\\
+ & \mr & \left\{ 2ab\mr a^{2}+b^{2}\right\} \mr\\
+ & \mr & \left|z_{i}\right|^{2}2Re\,\lambda_{1}+\beta_{1}\left(\left|z_{i}\right|^{2}+\left|z_{i-1}\right|^{2}\right)+2\left|\left|z\right|\right|\um M^{*}\um\left|\left|z\right|\right|^{1+\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\df{d\left|z_{i}\right|^{2}}{dx}\mr\left|z_{i}\right|^{2}2Re\,\lambda_{1}+\beta_{1}\left|z_{i}\right|^{2}+\beta_{1}\left|z_{i-1}\right|^{2}+2\um M^{*}\um\left|\left|z\right|\right|^{2+\alpha}\label{eq:_1_3_13}
+\end{equation}
+
+\end_inset
+
+Аналогичные неравенства можно получить и для остальных 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+, используя остальные группы уравнений системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_10*"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Re\,\lambda_{i}\mr-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Сцуммируя неравенства (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_12"
+
+\end_inset
+
+) и (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_13"
+
+\end_inset
+
+) по всем 
+\begin_inset Formula $i$
+\end_inset
+
+ от 1 до 
+\begin_inset Formula $n$
+\end_inset
+
+, и учитывая неравенство выше, получим:
+\begin_inset Formula 
+\[
+\ous{i=1}n\df{d\left|z_{i}\right|^{2}}{dx}=-2a\ous{i=1}n\left|z_{i}\right|^{2}+\beta_{1}\ous{i=2}n\left|z_{i}\right|^{2}+\beta_{1}\ous{i=2}n\left|z_{i-1}\right|^{2}+2M^{*}\left|\left|z\right|\right|^{2+\alpha}\ous{i=1}n1
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $\left|\left|z\right|\right|^{2+\alpha}=\left(\left|\left|z\right|\right|^{2}\right)^{1+\frac{\alpha}{2}}$
+\end_inset
+
+, то
+\begin_inset Formula 
+\[
+\df{dV}{dx}\mr-2aV+2\beta_{1}V+2M^{*}nV^{1+\frac{\alpha}{2}}
+\]
+
+\end_inset
+
+Поскольку в Лемме Ляпонова неравенство 
+\begin_inset Formula $\df{dV}{dx}\mr-W$
+\end_inset
+
+ должно выполняться при достаточно малых 
+\begin_inset Formula $y$
+\end_inset
+
+ ( 
+\begin_inset Formula $\left|\left|y\right|\right|<\varepsilon_{0}$
+\end_inset
+
+) то выберем 
+\begin_inset Formula $y$
+\end_inset
+
+ по норме настолько малым, чтобы 
+\begin_inset Formula $2M^{*}nV^{\frac{\alpha}{2}}\mr\df a2$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $V^{\frac{\alpha}{2}}\mr\df a{4M^{*}4}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\df{dV}{dx}\mr-2aV+\df a2V+\df a2V=-aV
+\]
+
+\end_inset
+
+Полагая 
+\begin_inset Formula $w=aV$
+\end_inset
+
+ видим, что условия леммы Ляпунова выполнены.
+>>>>>>> 995b98f3481f7f5c17e6979260bdb717a509c049
 \end_layout
 
 \begin_layout Remark
@@ -3036,10 +3258,365 @@ t_{n,1} & \tr & t_{n,n}
 \begin_inset Formula $A$
 \end_inset
 
- будет хоть одно значение с положительной вещественной частью илиже они
+ будет хоть одно значение с положительной вещественной частью или же они
  будут равны нулю, то решение системы будет неустойчиво.
  
 \end_layout
 
+\begin_layout Subsection
+Критерий Рауса-Гурвица
+\end_layout
+
+\begin_layout Standard
+Пусть у нас есть 
+\begin_inset Formula $A$
+\end_inset
+
+ --- вещественная матрица, тогда 
+\begin_inset Formula $det\left(A-\lambda E\right)=0$
+\end_inset
+
+ --- многочлен 
+\begin_inset Formula $n$
+\end_inset
+
+-ной степени вида
+\begin_inset Formula 
+\begin{equation}
+a_{0}\lambda^{n}+a_{1}\lambda^{n-1}+\tr+a_{n-1}\lambda+a_{n}+0\label{eq:_1_3_1_1}
+\end{equation}
+
+\end_inset
+
+И тогда не решая уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1_1"
+
+\end_inset
+
+) можно определить, лежат ли корни в левой полуплоскости или нет.
+\end_layout
+
+\begin_layout Standard
+Пусть все коэфициенты уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1_1"
+
+\end_inset
+
+) вещественные и 
+\begin_inset Formula $a_{0}>0$
+\end_inset
+
+.
+ Для того, чтобы все корни уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1_1"
+
+\end_inset
+
+) имели отрицательные вещественные части необходимо и достаточно чтобы все
+ главные диагональные миноры матрици:
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccccc}
+a_{1} & a_{0} & 0 & 0 & \tr & 0\\
+a_{3} & a_{2} & a_{1} & a_{0} & \tr & 0\\
+a_{5} & a_{4} & a_{3} & a_{2} & \tr & 0\\
+\vtr & \vtr & \vtr & \vtr & \ntr & \vtr\\
+0 & 0 & 0 & 0 & \tr & a_{n}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D_{1}=a_{1}>0,\ \D_{2}=\left|\begin{array}{cc}
+a_{1} & a_{0}\\
+a_{3} & a_{2}
+\end{array}\right|>0,\ \D_{3}=\left|\begin{array}{ccc}
+a_{1} & a_{0} & 0\\
+a_{3} & a_{2} & a_{1}\\
+a_{5} & a_{4} & a_{3}
+\end{array}\right|>0,\ \tr
+\]
+
+\end_inset
+
+ Заметим, что из Критерия Раусса-Гурвица следует, что необходимым, но не
+ достаточным условием, чтобы все корди уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1_1"
+
+\end_inset
+
+) имели отрицательные вещественные части, является, чтобы все коэффициенты
+ уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_3_1_1"
+
+\end_inset
+
+) были положительными.
+\end_layout
+
+\begin_layout Section
+Поведение траeкторий линейной однородной системы дифференциальных уравнений
+ второго порядка с постоянными коэффициентами
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать систему 
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dx_{1}}{dt}=a_{1,1}x_{1}=a_{1,2}x_{2}\\
+\df{dx_{2}}{dt}=a_{2,1}x_{1}+a_{2,2}x_{2}
+\end{cases}\label{eq:_2_1_1}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $a_{i,j}=const,\ i,j=1,2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наша задача показать как ведут себя траэктории системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Рассмотрим все возможные случаи.
+\end_layout
+
+\begin_layout Enumerate
+Пусть все собственные значения матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ вещественные, различные и отличные от нуля (
+\begin_inset Formula $\lambda_{1}\nr\lambda_{2},\ \lambda_{1}\nr0,\ \lambda_{2}\nr0$
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ будет соответствовать собственный вектор 
+\begin_inset Formula $h^{\left(1\right)}$
+\end_inset
+
+, а 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ --- 
+\begin_inset Formula $h^{\left(2\right)}$
+\end_inset
+
+.
+ тогда общее решение будет иметь вид: 
+\begin_inset Formula $x\left(t\right)=c_{1}e^{\lambda_{1}t}h^{\left(1\right)}=c_{2}e^{\lambda_{2}t}h^{\left(2\right)}$
+\end_inset
+
+.
+ Собственные вектора, соответствующие разным собственным значениям линейно
+ не зависимы, и образхуют базис на плоскости 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+.
+ Обозначим через 
+\begin_inset Formula $y_{1}=c_{1}e^{\lambda_{1}t}$
+\end_inset
+
+ , через 
+\begin_inset Formula $y_{2}=c_{2}e^{\lambda_{2}t}$
+\end_inset
+
+ --- координаты вектора 
+\begin_inset Formula $x$
+\end_inset
+
+ в базисе 
+\begin_inset Formula $h^{\left(1\right)},h^{\left(2\right)}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $c_{1}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{2}=0$
+\end_inset
+
+, то мы получаенм решение --- начало координат, если 
+\begin_inset Formula $c_{1}=0$
+\end_inset
+
+, а 
+\begin_inset Formula $c_{2}>0$
+\end_inset
+
+ , то решение будет прямая, направленная вдоль оси 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Рассмотрим случай, что 
+\begin_inset Formula $\lambda_{1}<0,\ \lambda_{2}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Получается что ...
+ пиздец он тут газонул
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+Будем предпологать, что 
+\begin_inset Formula $\left|\lambda_{1}\right|<\left|\lambda_{2}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy_{2}}{dy_{1}}=\df{c_{2}\lambda_{2}e^{\lambda_{2}t}}{c_{1}\lambda_{1}e^{\lambda_{1}t}}=\df{c_{2}\lambda_{2}}{c_{1}\lambda_{1}}e^{\left(\lambda_{2}-\lambda_{1}\right)t}$
+\end_inset
+
+ А так как 
+\begin_inset Formula $\left(\lambda_{2}-\lambda_{1}\right)<0$
+\end_inset
+
+, то это все 
+\begin_inset Formula $\st0$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Стрелки указывают направление движение по траэктории при возрастании 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Такое расположение траэкторий называется устойчивым узлом.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lambda_{1}>0,\ \lambda_{2}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\lambda_{1}\right|<\left|\lambda_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда у нас получится, что:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+
+\begin_inset Formula $\st+\b$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1},y_{2}\st+0$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st-\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{dy_{2}}{dy_{1}}\st0$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st-\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полуячим такоеже расположение траэкторий, только двигаться по ним будем
+ в противоположном направлении.
+\end_layout
+
+\begin_layout Standard
+Такое положение траэктории называется неустойчивым узлом.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lambda_{1}<0<\lambda_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
