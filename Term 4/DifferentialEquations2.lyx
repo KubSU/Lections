@@ -332,14 +332,14 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\DD}{\text{\emph{д}}}
-{\text{\emph{д}}}
+\newcommand{\DD}{\partial}
+{\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dd}{\text{\emph{д}}}
-{\text{\emph{д}}}
+\newcommand{\dd}{\partial}
+{\partial}
 \end_inset
 
 
@@ -426,33 +426,30 @@ y_{n}\left(x_{0}\right)=y^{\left(n\right)}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
-y_{1}\left(x\right)\\
+\begin_inset Formula $y\left(x\right)=\left(\begin{smallmatrix}y_{1}\left(x\right)\\
 \vtr\\
 y_{n}\left(x\right)
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f\left(x,y\right)=\left(\begin{array}{c}
-f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
+\begin_inset Formula $f\left(x,y\right)=\left(\begin{smallmatrix}f_{1}\left(x,y_{1},\tr,y_{n}\right)\\
 \vtr\\
 f_{n}\left(x,y_{1},\tr,y_{n}\right)
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $y^{\left(0\right)}=\left(\begin{array}{c}
-y_{1}^{\left(0\right)}\\
+\begin_inset Formula $y^{\left(0\right)}=\left(\begin{smallmatrix}y_{1}^{\left(0\right)}\\
 \vtr\\
 y_{n}^{\left(0\right)}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
@@ -492,11 +489,7 @@ reference "eq:_1_1"
 \begin_inset Formula $\df{dy}{dx}=ay-1,\ a=const$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Рассмотрим начальные условия 
+ и начальные условия: 
 \begin_inset Formula $y\left(0\right)=\df 1a$
 \end_inset
 
@@ -505,21 +498,14 @@ reference "eq:_1_1"
 
 \begin_layout Standard
 Решение: 
-\begin_inset Formula $d\left(x\right)=\df 1a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y\left(x,y^{\left(0\right)}\right)=\df 1a$
+\begin_inset Formula $d\left(x\right)=\df 1a\quad\Rightarrow\quad y\left(x,y^{\left(0\right)}\right)=\df 1a$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Сделаем возмущение начальное условие: 
+Сделаем возмущение начального условия: 
 \begin_inset Formula $y\left(0\right)=\df 1a+\D y^{\left(0\right)}$
 \end_inset
 
@@ -527,15 +513,13 @@ reference "eq:_1_1"
 \end_layout
 
 \begin_layout Standard
-Решение возмущенной задачи: 
-\begin_inset Formula $y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)=\D y^{\left(0\right)}e^{ax}+\df 1a$
-\end_inset
+Решение возмущенной задачи:
+\begin_inset Formula 
+\begin{align*}
+y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right) & =\D y^{\left(0\right)}e^{ax}+\df 1a\\
+y\left(x\right) & =ce^{ax}+\df 1a
+\end{align*}
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y\left(x\right)=ce^{ax}+\df 1a$
 \end_inset
 
 
@@ -543,10 +527,11 @@ reference "eq:_1_1"
 
 \begin_layout Standard
 Рассмотри разность решений по модулю: 
-\end_layout
+\begin_inset Formula 
+\[
+\left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|=\left|\D y^{\left(0\right)}\right|\um e^{ax}
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|=\left|\D y^{\left(0\right)}\right|\um e^{ax}$
 \end_inset
 
  
@@ -627,11 +612,10 @@ reference "eq:_1_1"
 
 \begin_layout Standard
 В качестве нормы вектора 
-\begin_inset Formula $y=\left(\begin{array}{c}
-y_{1}\\
+\begin_inset Formula $y=\left(\begin{smallmatrix}y_{1}\\
 \vtr\\
 y_{n}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
  будем рассматривать 
@@ -660,7 +644,7 @@ reference "eq:_1_1"
  называется устойчивым по Ляпунову, если: 
 \begin_inset Formula 
 \[
-\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall\left|\left|\D y^{\left(0\right)}\right|\right|<\delta\ \forall x>x_{0}\ \left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|<\varepsilon
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon\right)\quad\forall\left|\left|\D y^{\left(0\right)}\right|\right|<\delta\quad\forall x>x_{0}\quad\left|y\left(x,y^{\left(0\right)}+\D y^{\left(0\right)}\right)-y\left(x,y^{\left(0\right)}\right)\right|<\varepsilon
 \]
 
 \end_inset
@@ -825,40 +809,35 @@ reference "eq:_1_1"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\[
+\begin{cases}
 \df{dy_{1}}{dx}=a_{1,1}y_{1}+\tr+a_{1,n}y_{n}\\
 \vtr\\
 \df{dy_{n}}{dx}=a_{n,1}y_{1}+\tr+a_{n,n}y_{n}
-\end{cases}$
+\end{cases}\quad a_{i,j}=const
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{i,j}=const$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y\left(x\right)=\left(\begin{array}{c}
-y_{1}\left(x\right)\\
-\vtr\\
+\begin_inset Formula $y\left(x\right)=\left(\begin{smallmatrix}y_{1}\left(x\right)\\
+\tr\\
 y_{n}\left(x\right)
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A=\left(\begin{array}{c}
-a_{1,1},\tr a_{1,n}\\
-\vtr\\
-a_{n,1,\tr,a_{n,n}}
-\end{array}\right)$
+\begin_inset Formula $A=\left(\begin{smallmatrix}a_{11} & \tr & a_{1n}\\
+\tr &  & \tr\\
+a_{n1} & \tr & a_{nn}
+\end{smallmatrix}\right)$
 \end_inset
 
 
@@ -1154,15 +1133,7 @@ reference "eq:_2_1"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $e^{\left(j\right)}=\left(\begin{array}{c}
-0\\
-\vtr\\
-0\\
-1\\
-0\\
-\vtr\\
-0
-\end{array}\right)$
+\begin_inset Formula $e^{\left(j\right)}=\left(0\tr0\ 1\ 0\tr0\right)^{T}$
 \end_inset
 
 --- стоит на 
@@ -1287,22 +1258,20 @@ status open
 \end_inset
 
 .
-\end_layout
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\df{\varepsilon}r\quad\left|\left|y^{\left(0\right)}\right|\right|<\delta,\quad x>x_{0}\quad\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr r\um\delta=\varepsilon
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\df{\varepsilon}r\ \left|\left|y^{\left(0\right)}\right|\right|<\delta,\ x>x_{0}\ \left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\mr r\um\delta=\varepsilon$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
-Мы показали что 0-оерешение системы (1) усточчиво по Ляпунову.
+Мы показали что 0-ое решение системы (1) усточчиво по Ляпунову.
  Вместе с тем, так же в силу (6):
-\end_layout
+\begin_inset Formula 
+\[
+\ul{x\to+\b}\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|=0
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\ul{x\st+\b}\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|=0$
 \end_inset
 
 
@@ -1387,11 +1356,12 @@ status open
 \begin_inset Formula $h=h^{\left(1\right)}+i\um h^{\left(2\right)}$
 \end_inset
 
-, тогда 
+, тогда
 \begin_inset Formula 
-\begin{eqnarray*}
-y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\right)e^{\mu x}\left(\cos\nu x+i\sin\nu x\right)\right) & = & e^{\mu x}\left(h^{\left(1\right)}\cos\nu x-h^{\left(2\right)}\sin\nu x\right)
-\end{eqnarray*}
+\begin{multline*}
+y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\right)e^{\mu x}\left(\cos\nu x+i\sin\nu x\right)\right)=\\
+=e^{\mu x}\left(h^{\left(1\right)}\cos\nu x-h^{\left(2\right)}\sin\nu x\right)
+\end{multline*}
 
 \end_inset
 
@@ -1485,13 +1455,14 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 
  --- собственный вектор, а остальные присоедененные.
  И у системы (1) будет решение:
-\end_layout
+\begin_inset Formula 
+\[
+\varphi\left(x,y^{\left(0\right)}\right)=e^{\lambda x}\left(h^{\left(1\right)}+xh^{\left(2\right)}+\tr+\df{x^{p-1}}{\left(p-1\right)!}h^{\left(p\right)}\right)
+\]
 
-\begin_layout Standard
-\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)=e^{\lambda x}\left(h^{\left(1\right)}+xh^{\left(2\right)}+\tr+\df{x^{p-1}}{\left(p-1\right)!}h^{\left(p\right)}\right)$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -1501,7 +1472,7 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 
 .
  Тогда норма 
-\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\ov{\st}{x\st+\b}+\b$
+\begin_inset Formula $\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|\ov{\to}{x\to+\b}+\b$
 \end_inset
 
 , хотя при 
@@ -1569,13 +1540,7 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \end_inset
 
  решение системы 1, удовлетворяющее начальнгом уусловию, 
-\begin_inset Formula $\varphi^{\left(j\right)}\left(0\right)=e^{\left(j\right)}=\left(\begin{array}{c}
-0\\
-\vtr\\
-1\\
-\vtr\\
-0
-\end{array}\right)$
+\begin_inset Formula $\varphi^{\left(j\right)}\left(0\right)=e^{\left(j\right)}=\left(0\tr1\tr0\right)^{T}$
 \end_inset
 
 .
@@ -1587,32 +1552,25 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \end_inset
 
 .
- (
-\begin_inset Formula $\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr M_{j}$
+ 
+\begin_inset Formula $\left(\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr M_{j}\right)$
 \end_inset
 
- )
-\end_layout
-
-\begin_layout Proof
-Через 
+ Обозначим через 
 \begin_inset Formula $M=\umax{M_{j}}M$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Тогда все эти решения по норме меньше или равны 
+ Тогда все эти решения по норме меньше или равны 
 \begin_inset Formula $M$
 \end_inset
 
 .
- (
-\begin_inset Formula $\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr M$
+ 
+\begin_inset Formula $\left(\left|\left|\varphi^{\left(j\right)}\left(x\right)\right|\right|\mr M\right)$
 \end_inset
 
-)
+
 \end_layout
 
 \begin_layout Proof
@@ -1687,10 +1645,11 @@ y_{n}^{\left(0\right)}
 
 , тогда для этого решения справедлива вышеупомянутая оценка.
  Откуда и вытекает устойчивость нулевого решенгия.
-\end_layout
+\begin_inset Formula 
+\[
+\forall\varepsilon>0,\quad\exists\delta=\delta\df{\varepsilon}M\quad\left|\left|y^{0}\right|\right|<\delta\quad\sl\quad\left|\left|\varphi\right|\right|<\varepsilon
+\]
 
-\begin_layout Proof
-\begin_inset Formula $\forall\varepsilon>0,\ \exists\delta=\delta\df{\varepsilon}M\ \left|\left|y^{0}\right|\right|<\delta\sl\left|\left|\varphi\right|\right|<\varepsilon$
 \end_inset
 
 
@@ -1804,7 +1763,7 @@ status open
 \begin_inset Formula $V\left(y\right)\br0$
 \end_inset
 
-, причем равная нулю только в нуле, и такая, что 
+, причем равная нулю только в нуле, и такая, что
 \begin_inset Formula 
 \begin{equation}
 \ous{j=1}n\df{\dd f_{1}}{\dd y_{j}}f_{j}\mr0\label{eq:_1_2_2}
@@ -1817,7 +1776,7 @@ status open
 \begin_inset Formula $\left|\left|y\right|\right|\mr\varepsilon_{0}$
 \end_inset
 
- : 
+:
 \begin_inset Formula 
 \begin{equation}
 \ous{j=1}n\df{\dd f_{j}}{\dd y_{j}}f_{j}\mr-W\left(y\right)\label{eq:_1_2_3}
@@ -1925,10 +1884,6 @@ status open
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Proof
 В силу (2) это 
 \begin_inset Formula $\mr0$
 \end_inset
@@ -1956,10 +1911,10 @@ status open
 
 .
  Тогда 
-\begin_inset Formula $V\left(y\left(x_{0}\right)\right)<V_{\varepsilon},$
+\begin_inset Formula $V\left(y\left(x_{0}\right)\right)<V_{\varepsilon}$
 \end_inset
 
-а 
+, а 
 \begin_inset Formula $V\left(y,x_{1}\right)\br V_{\varepsilon}.$
 \end_inset
 
@@ -2033,7 +1988,7 @@ reference "eq:_1_2_3"
  
 \begin_inset Formula 
 \[
-\df{dV}{dx}|_{l}=\ous{j=1}n\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}|_{l}=\ous{j=1}n\df{\dd V}{\dd y}f_{j}|_{l}\mr-W\left(y\right)|_{l}\mr-\beta
+\left.\df{dV}{dx}\right|_{l}=\ous{j=1}n\left.\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}\right|_{l}=\ous{j=1}n\left.\df{\dd V}{\dd y}f_{j}\right|_{l}\mr\left.-W\left(y\right)\right|_{l}\mr-\beta
 \]
 
 \end_inset
@@ -2066,7 +2021,7 @@ reference "eq:_1_2_3"
  Это означает, что 
 \begin_inset Formula 
 \[
-\exists x_{i},\ x_{i}\to+\b\ \left\Vert y\left(x_{i}\right)\right\Vert >\delta_{0}\quad V\left(y\left(x_{i}\right)\right)\br\delta_{1}
+\exists x_{i},\quad x_{i}\to+\b\quad\left\Vert y\left(x_{i}\right)\right\Vert >\delta_{0}\quad V\left(y\left(x_{i}\right)\right)\br\delta_{1}
 \]
 
 \end_inset
@@ -2233,7 +2188,7 @@ reference "eq:_1_2_1"
  тогда 
 \begin_inset Formula 
 \[
-0=V\left(y\left(x_{1}\right)\right)-V\left(y\left(x_{0}\right)\right)=\df{dV\left(\bar{x}\right)}{dx}\left(x_{1}-x_{0}\right)=W\left(y\left(\bar{x}\right),\bar{x}\right)\left(x-x_{0}\right),\ \forall x\in\left[x_{0},x_{1}\right]
+0=V\left(y\left(x_{1}\right)\right)-V\left(y\left(x_{0}\right)\right)=\df{dV\left(\bar{x}\right)}{dx}\left(x_{1}-x_{0}\right)=W\left(y\left(\bar{x}\right),\bar{x}\right)\left(x-x_{0}\right),\quad\forall x\in\left[x_{0},x_{1}\right]
 \]
 
 \end_inset
@@ -2381,22 +2336,20 @@ k_{n,1} & \tr & k_{n,n}
 
 \begin_layout Standard
 Мы можем сделать так, что: 
-\begin_inset Formula $B=\left(\begin{array}{cccc}
-\Pi_{1} & 0 & 0 & 0\\
+\begin_inset Formula $B=\left(\begin{smallmatrix}\Pi_{1} & 0 & 0 & 0\\
 0 & \Pi_{2} & 0 & 0\\
-0 & 0 & \ntr & 0\\
+\tr & \tr & \tr & \tr\\
 0 & 0 & 0 & \Pi_{k}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
- , где 
-\begin_inset Formula $\Pi_{j}=\left(\begin{array}{ccccc}
-\lambda_{j} & 0 & 0 & \tr & 0\\
+, где 
+\begin_inset Formula $\Pi_{j}=\left(\begin{smallmatrix}\lambda_{j} & 0 & 0 & \tr & 0\\
 1 & \lambda_{j} & 0 & \tr & 0\\
 0 & 1 & \lambda_{j} & \tr & 0\\
 \vtr & \vtr & \vtr & \ntr & \vtr\\
 0 & 0 & \tr & 1 & \lambda_{j}
-\end{array}\right)$
+\end{smallmatrix}\right)$
 \end_inset
 
 , где 
@@ -2485,8 +2438,8 @@ reference "eq:_1_3_3"
 \begin{cases}
 \df{d\ov{z_{1}}{\sim}}{dx}=\lambda_{1}\ov{z_{1}}{\sim}+\ov{g_{1}}{\sim}\left(x\right)\\
 \df{d\ov{z_{2}}{\sim}}{dx}=\ov{z_{1}}{\sim}+\lambda_{1}\ov{z_{2}}{\sim}+\ov{g_{2}}{\sim}\left(x\right)\\
-\vtr\\
-\df{d\ov{z_{n_{1}}}{\sim}}{dx}=\ov{z_{n_{1}-1}+}{\sim}\lambda_{1}\ov{z_{n_{1}}}{\sim}+\ov{g_{n_{1}}}{\sim}\left(x\right)
+\tr\\
+\df{d\ov{z_{n_{1}}}{\sim}}{dx}=\ov{z_{n_{1}-1}}{\sim}+\lambda_{1}\ov{z_{n_{1}}}{\sim}+\ov{g_{n_{1}}}{\sim}\left(x\right)
 \end{cases}\label{eq:_1_3_4}
 \end{equation}
 
@@ -2504,20 +2457,20 @@ z_{1}=a_{1}\widetilde{z_{1}},\ z=a_{2}\widetilde{z_{2}},\tr,z_{n_{1}}=a_{n_{1}}\
 
 \end_inset
 
- 
-\begin_inset Formula $\begin{cases}
-\df{dz_{1}}{dx}=\lambda_{1}z_{1}+g_{1}\left(x\right)\\
-\df{dz_{2}}{dx}=\df{a_{2}}{a_{1}}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
-\vtr\\
-\df{dz_{n_{1}}}{dx}=\df{a_{n_{1}}}{a_{n_{1}-1}}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)
-\end{cases}$
+
+\begin_inset Formula 
+\[
+\left\{ \begin{aligned}\df{dz_{1}}{dx} & =\lambda_{1}z_{1}+g_{1}\left(x\right)\\
+\df{dz_{2}}{dx} & =\df{a_{2}}{a_{1}}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
+\tr\\
+\df{dz_{n_{1}}}{dx} & =\df{a_{n_{1}}}{a_{n_{1}-1}}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)
+\end{aligned}
+\right.,\ \text{где}\ g_{1}\left(x\right)=a_{1}\widetilde{g_{1}}\left(x\right),\tr,g_{n_{1}}\left(x\right)=a_{n_{1}}\widetilde{g_{n_{1}}}\left(x\right)
+\]
+
 \end_inset
 
-, где 
-\begin_inset Formula $g_{1}\left(x\right)=a_{1}\widetilde{g_{1}}\left(x\right),\tr,g_{n_{1}}\left(x\right)=a_{n_{1}}\widetilde{g_{n_{1}}}\left(x\right)$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout Standard
@@ -2634,17 +2587,17 @@ reference "eq:_1_3_1"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{cases}
-\df{dz_{1}}{dx}=\lambda_{1}z_{1}+g_{1}\left(x\right)\\
-\df{dz_{2}}{dx}=\alpha_{1}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
-\vtr\\
-\df{dz_{n_{1}}}{dx}=\alpha_{n_{1}-1}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)\\
-\vtr\vtr\vtr\\
-\df{dz_{n-n_{k}+1}}{dx}=\lambda_{k}z_{n-n_{k}+1}+g_{n-n_{k}+1}\left(x\right)\\
-\df{dz_{n-n_{k}+2}}{dx}=\omega_{1}z_{n-n_{k}+1}+\lambda_{k}z_{n-n_{k}+2}+g_{n-n_{k}+2}\left(x\right)\\
-\vtr\\
-\df{dz_{n}}{dx}=\omega_{n_{k}-1}z_{n-1}+\lambda_{k}z_{n}+g_{n}\left(x\right)
-\end{cases}\label{eq:_1_3_7}
+\left\{ \begin{aligned}\df{dz_{1}}{dx} & =\lambda_{1}z_{1}+g_{1}\left(x\right)\\
+\df{dz_{2}}{dx} & =\alpha_{1}z_{1}+\lambda_{1}z_{2}+g_{2}\left(x\right)\\
+ & \tr\\
+\df{dz_{n_{1}}}{dx} & =\alpha_{n_{1}-1}z_{n_{1}-1}+\lambda_{1}z_{n_{1}}+g_{n_{1}}\left(x\right)\\
+ & \tr\\
+\df{dz_{n-n_{k}+1}}{dx} & =\lambda_{k}z_{n-n_{k}+1}+g_{n-n_{k}+1}\left(x\right)\\
+\df{dz_{n-n_{k}+2}}{dx} & =\omega_{1}z_{n-n_{k}+1}+\lambda_{k}z_{n-n_{k}+2}+g_{n-n_{k}+2}\left(x\right)\\
+ & \tr\\
+\df{dz_{n}}{dx} & =\omega_{n_{k}-1}z_{n-1}+\lambda_{k}z_{n}+g_{n}\left(x\right)
+\end{aligned}
+\right.\label{eq:_1_3_7}
 \end{equation}
 
 \end_inset
@@ -3075,7 +3028,7 @@ t_{n,1} & \tr & t_{n,n}
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Remark
