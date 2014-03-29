@@ -1586,7 +1586,95 @@ E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
 \end_layout
 
 \begin_layout Standard
-Внутри проводника 
+Внутри проводника...
+\end_layout
+
+\begin_layout Subsubsection
+Проводник во внешнем элекстрическом поле
+\end_layout
+
+\begin_layout Standard
+Напряженности внутри не будет.
+\end_layout
+
+\begin_layout Subsubsection
+Электроемкость
+\end_layout
+
+\begin_layout Standard
+Различные по величине заряды распределяются на уединенном проводние подобным
+ образом.
+ Если я сообщаю ему разные заряды то отношение величин зарядов будет константой.
+ Отсюда получаается, что потенциал изолированного проводника пропорционален
+ находящегося на нем заряду.
+ 
+\begin_inset Formula 
+\[
+q=C\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+ --- (электро)емкость.
+ Коэффициент пропорциональности 
+\begin_inset Formula $C$
+\end_inset
+
+ называется элексроемкостью (или просто емкостью) проводника.
+ 
+\end_layout
+
+\begin_layout Definition
+Емкость численно равна заряду, сообщение которого проводнику повышает его
+ потенциал на еденицу.
+\end_layout
+
+\begin_layout Example
+Вычислам емкость шара
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+E=\df 1{4\pi\varepsilon_{0}}\um\df q{\varepsilon r^{2}},\quad F=E\um1\,\text{Кулон}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi=\oui{\b}R\df 1{4\pi\varepsilon_{0}}\df q{\varepsilon r^{2}}dr=\df q{4\pi\varepsilon\varepsilon_{0}}\left(-\df 1r\mid_{\b}^{R}\right)=\df q{4\pi\varepsilon\varepsilon_{0}R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $C=4\pi\varepsilon\varepsilon_{0}R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+За еденицу емкости принимают емкость такого проводника, потенциал которого
+ изменяется на один вольт при сообщение ему заряда на один кулон.
+ Емкость измеряется в фарадах (
+\begin_inset Formula $\Phi$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+Конденсатор
 \end_layout
 
 \begin_layout Standard
