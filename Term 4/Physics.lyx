@@ -1417,6 +1417,178 @@ E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
  показывается, во сколько раз ослабляется поле внутри диэлектрика.
 \end_layout
 
+\begin_layout Subsubsection
+Преломление линий электрического поля
+\end_layout
+
+\begin_layout Standard
+Пусть есть 2 диэлектрика соответственно с диэлектрической проницаемостью
+ 
+\begin_inset Formula $\varepsilon_{1},\ \varepsilon_{2}$
+\end_inset
+
+.
+ Так как свойства диэлектриков разные, то на границах возникают 
+\begin_inset Formula $\sigma_{1}^{-},\ \sigma_{1}^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sigma_{2}^{-},\ \sigma_{2}^{+}$
+\end_inset
+
+.
+ Если будем рассматривать электрическое смещение, и воспользуемся теоремой
+ Гаусса, чтобы посчитать его.
+ Посчитаем поток вектора эектрического смещения через этот цилиндр.
+\begin_inset Formula 
+\begin{align*}
+\Phi_{D} & =\oiint\limits _{\Omega}\v D\v nds=0\\
+\v{E_{1}} & =-E_{1n}\um\v{n_{1}}+E_{1\tau}\v{\tau} & \v{D_{1}} & =-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\\
+\v{E_{2}} & =-E_{2n}\um\v{n_{2}}+E_{2\tau}\v{\tau} & \v{D_{2}} & =-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\\
+\Phi_{D} & =\oudi{S_{1}}{}\left(-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\right)\v{n_{1}}ds+\\
+ & \quad+\oudi{S_{2}}{}\left(-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\right)\v{n_{2}}ds=\\
+ & =-\oudi{S_{1}}{}D_{1n}ds+\oudi{S_{2}}{}D_{2n}ds=\\
+ & =-D_{1n}S_{1}+D_{2n}S_{2}
+\end{align*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $D=\epsilon\varepsilon_{0}E$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\df{E_{1n}}{E_{2n}}=\df{\varepsilon_{2}}{\varepsilon_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Посчитаем циркуляцию 
+\begin_inset Formula $\v E$
+\end_inset
+
+ по линии 
+\begin_inset Formula $L$
+\end_inset
+
+: 
+\begin_inset Formula $\oint\limits _{L}\v Ed\v l=0$
+\end_inset
+
+.
+ С другой стороны: 
+\begin_inset Formula 
+\begin{multline*}
+\oint\limits _{L_{12}}\v{E_{1}}d\v l+\oint\limits _{23}\v Ed\v l+\oint\limits _{L_{31}}\v{E_{2}}d\v l+\oint\limits _{41}\v Ed\v l=\\
+=\oiu{L_{12}}{}-E_{1\tau}dl+\oui{L_{34}E_{2gt}}{}dl=-aE_{1\tau}+aE_{2\tau}=\left(-E_{1\tau}+E_{2\tau}\right)a=0
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\df{D_{1\varepsilon}}{\varepsilon_{1}\varepsilon_{2}} & =\df{D_{2\tau}}{\varepsilon_{2}\varepsilon_{0}} & \df{D_{1\tau}}{D_{2\tau}} & =\df{\varepsilon_{1}}{\varepsilon_{2}} & D_{2n} & =D_{1n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tg\alpha_{1}=\df{D_{1\tau}}{D_{1n}},\ \tg\alpha_{2}=\df{D_{2\tau}}{D_{2n}},\ \df{\tg\alpha_{1}}{\tg\alpha_{2}}=\df{D_{1\tau}D_{2n}}{D_{1n}D_{2\tau}}=\df{\varepsilon_{1}}{\varepsilon_{2}}
+\]
+
+\end_inset
+
+Рассмотрим закон Кулона в диэлектриках.
+ 
+\begin_inset Formula $\v F=q\um\v E$
+\end_inset
+
+ преобразуется в безграничном диэлектрике в 
+\begin_inset Formula 
+\[
+\fbox{F=\df 1{4\pi\varepsilon_{0}}\df{q_{1}q_{2}}{\varepsilon r^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Сегнетоэлектрики
+\end_layout
+
+\begin_layout Standard
+Это такие элексрики, которые могут обладать полеризацией, при отсутствуе
+ внешнего элестрическое паля.
+ Это было обнаружено в первый раз для сигнетовой соли.
+ Особенности:
+\end_layout
+
+\begin_layout Enumerate
+Диэлектрическая проницаемость составляет несколько тысяч единиц.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Зависимость между 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $E$
+\end_inset
+
+ нелинейная.
+\end_layout
+
+\begin_layout Enumerate
+Значение вектора поляризации отстает от изменения вектора напряженности.
+\end_layout
+
+\begin_layout Standard
+Поляризация 
+\begin_inset Formula $P$
+\end_inset
+
+ зависит не только от текущего значения 
+\begin_inset Formula $E$
+\end_inset
+
+, но и от предшествующих значений.
+ 
+\end_layout
+
+\begin_layout Standard
+Эта петля называется петлей Гистерезиса.
+ Этими свойствами диэлектрик обладает только в определенном диапазоне температур.
+ Если при деформации диэлектрик поляризуется, то это явление называется
+ прямым пьезо-электрическим эффектои.
+ Если при проведении тока диэлестрик диформирется, то это обратный пьезоэлектрич
+еский эффект.
+\end_layout
+
+\begin_layout Subsection
+Проводники в электрическом поле
+\end_layout
+
+\begin_layout Subsubsection
+Равновесие заряда на проводнике
+\end_layout
+
+\begin_layout Standard
+Внутри проводника 
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
