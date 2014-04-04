@@ -6574,10 +6574,6 @@ status open
 , ортогональная этой окружности.
 \end_layout
 
-\begin_layout Proof
-ssa
-\end_layout
-
 \begin_layout Theorem
 При отображении дробно-линейной функции точки, симметричные относительно
  окружности 
@@ -6589,6 +6585,547 @@ ssa
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Remark
+Прямая в 
+\begin_inset Formula $\C$
+\end_inset
+
+ --- окружность радиуса 
+\begin_inset Formula $R=\b$
+\end_inset
+
+.
+ Симметрия относительно прямой --- это обычная осевая симметрия.
+\end_layout
+
+\begin_layout Subsubsection
+Функция Жуковского.
+\end_layout
+
+\begin_layout Standard
+Функция вида 
+\begin_inset Formula $w=\df 12\left(z+\df 1z\right)$
+\end_inset
+
+ называется функцей Жуковского.
+\end_layout
+
+\begin_layout Standard
+Свойства функции Жуковского:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w\left(0\right)=w\left(\b\right)=\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\pr\left(z\right)=\df 12\left(1-\df 1{z^{2}}\right)$
+\end_inset
+
+ --- дифференцируема на 
+\begin_inset Formula $\overline{\C}$
+\end_inset
+
+, конформность нарушается в точках 
+\begin_inset Formula $\left(f\pr=0\right)$
+\end_inset
+
+ 
+\begin_inset Formula $z=\pm1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Области однолисиности: 
+\begin_inset Formula $f\left(z_{0}\right)=f\left(z_{1}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\df 12\left(z_{0}+\df 1{z_{0}}\right)=\df 12\left(z_{1}+\df 1{z_{1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(z_{0}+z_{1}\right)+\df{z_{1}-z_{0}}{z_{0}z_{1}}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(z_{0}-z_{1}\right)\um\left(1-\df 1{z_{0}z_{1}}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Точки 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $\df 1z$
+\end_inset
+
+ не пренадлежат одной области однолистности.
+\end_layout
+
+\begin_layout Standard
+Областями однолисиности функции 1 являются области 
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+ или 
+\begin_inset Formula $\left|z\right|>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Другире области однолисиности: 
+\begin_inset Formula $Im\, z>0,\ Im\, z<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Изучим свойства отображения 1.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z=\rho e^{i\varphi}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)=\df 12\left(\rho e^{i\varphi}+\df 1{\rho}e^{-i\varphi}\right)=\df 12\left(\rho+\df 1{\rho}\right)\um\cos\varphi+i\df 12\left(\rho-\df 1{\rho}\right)\sin\varphi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{cases}
+u=\df 12\left(\rho+\df 1{\rho}\right)\cos\varphi\\
+v=\df 12\left(\rho+\df 1{\rho}\right)\sin\varphi
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho=\rho_{0}$
+\end_inset
+
+ --- фиксированое число, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ --- переменная.
+ Исключим 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{u^{2}}{\df 14\left(\rho_{0}+\df 1{\rho_{0}}\right)^{2}}+\df{v^{2}}{\df 14\left(\rho_{0}-\df 1{\rho_{0}}\right)^{2}}=1$
+\end_inset
+
+ --- Эллипм с плоскости 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Функция, обратная к функции жуковского
+\end_layout
+
+\begin_layout Standard
+Самостоятельно
+\end_layout
+
+\begin_layout Subsection
+Интеграл от функции комплексной переменной
+\end_layout
+
+\begin_layout Subsubsection
+Понятие ингтеграла.
+ Вычисление.
+ Основные свойства.
+\end_layout
+
+\begin_layout Standard
+Расположим в 
+\begin_inset Formula $\C$
+\end_inset
+
+ кусочногладкую кривую 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, заданную параметрически
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+x=x\left(t\right)\\
+y=y\left(t\right)
+\end{cases},\ t\in\left[\alpha;\beta\right],\ \begin{array}{c}
+a=x\left(\alpha\right)+iy\left(\alpha\right)\\
+b=x\left(\beta\right)+iy\left(\beta\right)
+\end{array}
+\]
+
+\end_inset
+
+Где функции 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ непрерывны, а их производные могут иметь лишь конечное число точек разрыва.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ определена на 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, и комплекснозначна 
+\begin_inset Formula $f\left(z\right)=u\left(x,y\right)+iv\left(x,y\right)$
+\end_inset
+
+.
+ Разобьем кривую 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ точками 
+\begin_inset Formula $\left\{ z_{k}\right\} ,\ k=\overline{0,n}$
+\end_inset
+
+, 
+\begin_inset Formula $a=z_{0},z_{1},\tr,z_{n-1},z_{n}=b$
+\end_inset
+
+, причем 
+\begin_inset Formula $z_{k}=x_{k}+iy_{k}$
+\end_inset
+
+.
+ Рассмотрим конечную сумму вида 
+\begin_inset Formula $S_{n}=\ous{k=1}nf\left(\xi_{k}\right)\D z_{k}$
+\end_inset
+
+.
+ Где 
+\begin_inset Formula $\xi_{k}$
+\end_inset
+
+ --- произвольная точка на дуге 
+\begin_inset Formula $\breve{z_{k-1}z_{k}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\xi_{k}=\nu_{k}+i\eta_{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\D z_{k}=z_{k}-z_{k-1}=\left(x_{k}-x_{k-1}\right)+i\left(y_{k}-y_{k-1}\right)=\D x_{k}+i\D y_{k}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\lambda=\umax{k=\overline{1,n}}\left|\D z_{k}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если существует конечный предел последовательности интегральных сумм 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, при 
+\begin_inset Formula $n\st\b,\ \lambda\st0$
+\end_inset
+
+, не зависящий от способа разбиения 
+\begin_inset Formula $\left\{ z_{k}\right\} $
+\end_inset
+
+ и выбера точек 
+\begin_inset Formula $\left\{ \xi_{k}\right\} $
+\end_inset
+
+, то его называют интегралом от функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ по кривой 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, и обозначают:
+\begin_inset Formula 
+\begin{equation}
+\un{\int}{\gamma}f\left(z\right)dz\ov ={def}\ul{\begin{array}{c}
+n\st\b\\
+\lambda\st0
+\end{array}}\ous{k=1}nf\left(\xi_{k}\right)\um\D z_{k}\label{eq:_2_4_1_1}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+Если функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна на кусочно-гладкой кривой 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, то существует интеграл 
+\begin_inset Formula $\ui{\gamma}f\left(z\right)dz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Преобразуем интегральную сумму 
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{n} & = & \ous{k=1}nf\left(\xi_{k}\right)\um\D z_{k}=\\
+ & = & \ous{k=1}n\left(u\left(\nu_{k},\eta_{k}\right)+iv\left(\nu_{k},\eta_{k}\right)\right)\left(\D x_{k}+iy_{k}\right)=\\
+ & = & \ous{k=1}n\left(u\left(\nu_{k},\eta_{k}\right)\D x_{k}-v\left(\nu_{k},\eta_{k}\right)\D y_{k}\right)+i\left(v\left(\nu_{k},\eta_{k}\right)\D x_{k}+u\left(\nu_{k}.\eta_{k}\right)\D y_{k}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что 
+\begin_inset Formula $Re\, S_{n}=\ous{k=1}nu\left(\nu_{k},\eta_{k}\right)\D x_{k}-v\left(\nu_{k},\eta_{k}\right)\D y_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $Im\, S_{n}=\ous{k=1}nv\left(\nu_{k},\eta_{k}\right)\D x_{k}+u\left(\nu_{k}.\eta_{k}\right)\D y_{k}$
+\end_inset
+
+ --- это интегральные суммы для криволинейного интеграла второго рода: 
+\begin_inset Formula $\ui{\gamma}u\left(x,y\right)dx-v\left(x,y\right)dy,\ i\ui{\gamma}v\left(x,y\right)dx+u\left(x,y\right)dy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В приделе при 
+\begin_inset Formula $\lambda\st0$
+\end_inset
+
+ по свойствам КИВР получим:
+\begin_inset Formula 
+\begin{equation}
+\exists\ui{\gamma}f\left(z\right)dz=\ui{\gamma}u\left(x,y\right)dx-v\left(x,y\right)dy+i\ui{\gamma}v\left(x,y\right)dx+u\left(x,y\right)dy\label{eq:_2_4_1_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства интеграла (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1_2"
+
+\end_inset
+
+) (Следуют из свойств К.И.В.Р.):
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ui{\gamma}f\left(z\right)dz=-\ui{\gamma}f\left(z\right)dz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ui{\gamma}\left(f\left(z\right)+g\left(z\right)\right)dz=\ui{\gamma}f\left(z\right)dz+\ui{\gamma}g\left(z\right)dz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ui{\gamma}f\left(z\right)dz=\ui{\gamma_{1}}f\left(z\right)dz+\ui{\gamma_{2}}f\left(z\right)dz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ui{\gamma}k\um f\left(z\right)dz=k\um\ui{\gamma}f\left(z\right)dz,\ \forall k\in\C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\ui{\gamma}f\left(z\right)dz\right|\mr\ui{\gamma}\left|f\left(z\right)\right|\um\left|dz\right|,\ $
+\end_inset
+
+ 
+\begin_inset Formula $\left|dz\right|=dl,\ $
+\end_inset
+
+ 
+\begin_inset Formula $\left|dz\right|=\sqrt{\left(x\pr\left(t\right)\right)^{2}+\left(y\pr\left(t\right)\right)^{2}}dt=\sqrt{1+\left(y\pr\left(t\right)\right)^{2}}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Следствие: 
+\emph default
+Если 
+\begin_inset Formula $\left|f\left(z\right)\right|\mr M$
+\end_inset
+
+ на 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\ui{\gamma}f\left(z\right)dz\right|\mr M\um L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Используя расчетные формулы для К.И.В.Р.
+ можно записать:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+I & = & \ui{\gamma}f\left(z\right)dz=\nonumber \\
+ & = & \left\{ \begin{array}{c}
+dx=x\pr\left(t\right)dt\\
+dy=y\pr\left(t\right)dt\\
+t\in\left[\alpha,\beta\right]
+\end{array}\right\} =\nonumber \\
+ & = & \oui{\alpha}{\beta}\left(u\left(x\left(t\right),y\left(t\right)\right)\right)\um x\pr\left(t\right)-v\left(x\left(t\right),y\left(t\right)y\pr\left(t\right)\right)dt+\nonumber \\
+ & + & i\oui{\alpha}{\beta}\left(v\left(x\left(t\right),y\left(t\right)\right)\right)\um x\pr\left(t\right)+u\left(x\left(t\right),y\left(t\right)y\pr\left(t\right)\right)dt\label{eq:_2_4_1_3}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Вычисление К.И.В.Р.
+\end_layout
+
+\begin_layout Standard
+Для вычисление К.И.В.Р.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1_2"
+
+\end_inset
+
+) необходимо:
+\end_layout
+
+\begin_layout Enumerate
+Параметризовать кривую 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Определить пределы для параметра 
+\begin_inset Formula $t$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Получить определенный интеграл (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1_3"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
