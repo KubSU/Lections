@@ -3030,9 +3030,7 @@ t_{n,1} & \tr & t_{n,n}
 
 \end_inset
 
-
-<<<<<<< 6440270630dc280097c858611c484ec0c323b059
-=======
+<<<<<<< 6440270630dc280097c858611c484ec0c323b059=======
 \begin_inset Formula 
 \begin{equation}
 \df{dz}{dx}=Bz+F^{*}\left(x,z\right)\label{eq:_1_3_10*}
@@ -3249,8 +3247,8 @@ reference "eq:_1_3_13"
 \begin_inset Formula $w=aV$
 \end_inset
 
- видим, что условия леммы Ляпунова выполнены.
->>>>>>> 995b98f3481f7f5c17e6979260bdb717a509c049
+ видим, что условия леммы Ляпунова выполнены.>>>>>>> 995b98f3481f7f5c17e6979260bd
+b717a509c049
 \end_layout
 
 \begin_layout Remark
@@ -3384,7 +3382,41 @@ reference "eq:_1_3_1_1"
 
 \end_inset
 
- 
+
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+a_{1,1} & a_{1,2}\\
+a_{2,1} & a_{2,2}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=\left(\begin{array}{c}
+x_{1}\left(t\right)\\
+\vtr\\
+x_{n}\left(t\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dx}{dy}=Ax
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $a_{i,j}=const,\ i,j=1,2$
 \end_inset
 
@@ -3614,9 +3646,608 @@ reference "eq:_2_1_1"
 \begin_inset Formula $\lambda_{1}<0<\lambda_{2}$
 \end_inset
 
+ Собственные значения матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ различных знаков.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\df{dx_{1}}{dt}=f_{1}\left(x_{1},x_{2}\right)\\
+\df{dx_{2}}{dt}=f_{2}\left(x_{1},x_{2}\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+f_{1}\left(x_{1},x_{2}\right)=0\\
+f_{2}\left(x_{1},x_{2}\right)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{1}\sl h^{\left(1\right)},\ \lambda_{2}\sl h^{\left(2\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\left(t\right)=c_{1}e^{\lambda_{1}t}h^{\left(1\right)}+c_{2}e^{\lambda_{2}t}h^{\left(2\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}=c_{1}e^{\lambda_{1}t},\ y_{2}=c_{2}e^{\lambda_{2}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $c_{1}>0,\ c_{2}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+: 
+\begin_inset Formula $y_{1}\st0$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}\st+\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+ : 
+\begin_inset Formula $y_{1}\st+\b$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ткаое поведение траэкторрии называется сидлом.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Собственные значения матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ комплексно-сопряженные.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\lambda=\mu+i\nu$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{\lambda}=\mu-i\nu$
+\end_inset
+
+, 
+\begin_inset Formula $\nu\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=\frac{1}{2}\left(h^{\left(1\right)}-ih^{\left(2\right)}\right),\ \overline{h}=\frac{1}{2}=\left(h^{\left(1\right)}+ih^{\left(2\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h^{\left(1\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $h^{\left(2\right)}$
+\end_inset
+
+ вещественные вектора, причем они линейно независимы.
+\end_layout
+
+\begin_layout Standard
+Тогда общее решение системы (1) имеет вид: 
+\begin_inset Formula $x\left(t\right)=c_{1}e^{\lambda t}h+c_{2}e^{\overline{\lambda}t}\overline{h}$
+\end_inset
+
+.
+ Причем оно будет комплекснозначным.
  
 \end_layout
 
+\begin_layout Standard
+В силу утверждения о вещественности решения с комплексными собственными
+ значениями решение (2) будет вещественным тогда и толькот тогда, когда
+ 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ комплексносопряженне.
+ (
+\begin_inset Formula $c_{1}=\overline{c_{2}}$
+\end_inset
+
+).
+ Тогда общее вещественное решение системы (1) в рассматрирваемом слечае
+ будет иметь вид: 
+\begin_inset Formula 
+\[
+x\left(t\right)=ce^{\lambda t}h+\overline{c}e^{\overline{\lambda}t}\overline{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=Re^{i\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(t\right) & = & Re^{i\alpha}e^{\left(\mu+i\nu\right)t}\df 12\left(h^{\left(1\right)}-ih^{\left(2\right)}\right)+Re^{-i\alpha}e^{\left(\mu-i\nu\right)}\df 12\left(h^{\left(1\right)}+ih^{\left(2\right)}\right)=\\
+ & = & Re^{\mu t}\df{e^{i\left(\alpha+\nu t\right)}+e^{-i\left(\alpha+\nu t\right)}}2h^{\left(1\right)}-iRe^{\mu t}\df{e^{i\left(\alpha+\nu t\right)}-e^{-i\left(\alpha+\mu t\right)}}2h^{\left(2\right)}=\\
+ & = & Re^{\mu t}\cos\left(\alpha+\nu t\right)h^{\left(1\right)}+Re^{\mu t}\sin\left(\alpha+\nu t\right)h^{\left(2\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}=Re^{\mu t}\cos\left(\alpha+\nu t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}=Re^{\mu t}\sin\left(\alpha+\nu t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=0$
+\end_inset
+
+ --- мы получаем особую точку --- начало координат.
+\end_layout
+
+\begin_layout Standard
+Пусть в начале 
+\begin_inset Formula $\mu<0$
+\end_inset
+
+, тогда мы получим что и 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ будут стремиться к нулю при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $t\st-\b$
+\end_inset
+
+, то 
+\begin_inset Formula $y_{1}\st+\b$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}\st+\b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu>0$
+\end_inset
+
+ --- Траэктории закручиваются против часовой стрелке.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu<0$
+\end_inset
+
+ --- Траэктории закручиваются по часовой стрелке
+\end_layout
+
+\begin_layout Standard
+Такое поведение траэкторииин называется уистойчивым фокусом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}^{2}+y_{2}^{2}\st+\b$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1},\, y_{2}\st0$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st-\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu>0$
+\end_inset
+
+ --- Траэктории будут раскручиваться против часовой стрелки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu<0$
+\end_inset
+
+ --- Траэктории будут раскручиваться по часовой стрелке
+\end_layout
+
+\begin_layout Standard
+Такое поведение траэкторий называется неусточчивым фокусом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}=R\cos\left(\alpha+\nu t\right),\ y_{2}=R\sin\left(\alpha+\nu t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Траэкториями в этом случае будут замкнутыми кривыми --- эллипсами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu>0$
+\end_inset
+
+ --- движение против часовой стрелке.
+ 
+\begin_inset Formula $\nu<0$
+\end_inset
+
+ --- по часовой стрелке.
+\end_layout
+
+\begin_layout Standard
+Направление закручиности определяем по вектору скорости.
+\end_layout
+
+\begin_layout Standard
+Такое поведение траэкторий назывпется центром.
+ Центр будет устойчивым положением равновесия, но не ассимптотически устойчивым.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lambda_{1}=0,$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda_{2}\nr0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Общее решение системы (1) --- 
+\begin_inset Formula $x\left(t\right)=c_{1}h^{\left(1\right)}+c_{2}e^{\lambda_{2}t}h^{\left(2\right)}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{cases}
+y_{1}=c_{1}\\
+y_{2}=c_{2}e^{\lambda_{2}t}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $c_{2}=0$
+\end_inset
+
+ тогда любая точка, которая расположена на оси 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ будет решением системы (1).
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $c_{2}\nr0$
+\end_inset
+
+, то 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ мы зафтиксированли, а 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+будет стремиться либо к 0, либо к 
+\begin_inset Formula $\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{2}<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{2}\st0$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+.
+ Этио будут лучи, параленльные оси 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ и направленные к оси 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{2}>0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{2}\st+\b$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+.
+ Это будут лучи паралельные 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ с направлением движение от оси 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В этом случае бусконечно много положений равновесия.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Собственные значения кратные.
+ 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Сдесь возможны 2 случчая, когда этому собсивенныому соответствует либо один
+ либо 2 собственных вектора.
+\end_layout
+
+\begin_layout Enumerate
+Кратному значению соответствуюет 2 собственных вектора
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Ah^{\left(1\right)}=\lambda h^{\left(2\right)},\ Ah^{\left(2\right)}=\lambda h^{\left(2\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\left(t\right)=c_{1}e^{\lambda t}h^{\left(1\right)}+c_{2}e^{\lambda t}h^{\left(2\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}=c_{1}e^{\lambda t},\ y_{2}=c_{2}e^{\lambda t}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Заметим что 
+\begin_inset Formula $\df{y_{2}}{y_{1}}=\df{c_{2}}{c_{1}}$
+\end_inset
+
+.
+ --- Отношение координат постоянное.
+\end_layout
+
+\begin_layout Standard
+Это лучи, которые если 
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+ направлены к начала координат, а есть 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+ то лучи направлены от начала координат.
+\end_layout
+
+\begin_layout Standard
+Такое положение равновесия --- устойчивый дикретический узел.
+ А второе --- неустойчивый дикретический узел.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Кратному собственному знгачению соответствует 1 собственный вектор
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда у нас будет еще присоедененный вектор.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ah^{\left(1\right)}=\lambda h^{\left(2\right)},\ Ah^{\left(2\right)}=\lambda h^{\left(2\right)}+h^{\left(1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\left(t\right)=c_{1}e^{\lambda t}h^{\left(1\right)}+c_{2}e^{\lambda t}\left(h^{\left(1\right)}t+h^{\left(2\right)}\right)=\left(c_{1}+c_{2}t\right)e^{\lambda t}h^{\left(1\right)}+c_{2}e^{\lambda t}h^{\left(2\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+, 
+\begin_inset Formula $c_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+Это устойчивый вырожденный узел.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_deeper
 \end_body
 \end_document
