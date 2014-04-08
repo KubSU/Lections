@@ -7129,6 +7129,428 @@ reference "eq:_2_4_1_3"
 \end_layout
 
 \begin_layout Standard
+...............................................
+\end_layout
+
+\begin_layout Subsubsection
+Формула Грина
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint\limits_{\gamma}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oudi D{}\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+, аналитичная в 
+\begin_inset Formula $D$
+\end_inset
+
+, то для любого замкнутого контура 
+\begin_inset Formula $\gamma\subset D$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\oiu{\gamma}{}f\left(z\right)dz=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+I=\oiu{\gamma}{}f\left(z\right)dz=\oiu{\gamma}{}\left(u+iv\right)d\left(x+iy\right)=\un{\underbrace{\oiu{\gamma}{}udx-vdy}}{Re\ I}+i\un{\underbrace{\oiu{\gamma}{}vdx+udy}}{Im\ I}
+\]
+
+\end_inset
+
+Найдем их: 
+\begin_inset Formula 
+\begin{multline*}
+Re\ I=\oiu{\gamma}{}udx-vdy=\left|\text{По формуле Грина}\right|=\oudi{D^{*}}{}\left(-\df{\dd v}{\dd x}-\df{\dd u}{\dd y}\right)dxdy=\\
+=\left|\text{условие Коши-Римана}\right|=-\oudi{D^{*}}{}\un{\underbrace{\left(-\df{\dd u}{\dd y}+\df{\dd u}{\dd y}\right)}}0dxdy=0
+\end{multline*}
+
+\end_inset
+
+ Аналогичные рассуждения для мнимой части, и их сумма равна нулю.
+\end_layout
+
+\begin_layout Subsubsection
+Формула Грина для многосвязной области.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим функцию 
+\begin_inset Formula $f\left(z\right)=\frac{1}{z}$
+\end_inset
+
+, определенную на множествах:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D_{1}=\left\{ z|\ \left|z\right|<2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D_{2}=\left\{ z|\ \frac{1}{2}<\left|z\right|<2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma=\left\{ z|\ \left|z\right|=1\right\} \subset D_{1},\ \subset D_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=\oiu{\gamma}{}f\left(z\right)dz=\oiu{\gamma}{}\df{dz}z=\oiu 0{2\pi}\df{de^{i\varphi}}{e^{i\varphi}}=\oiu 0{2\pi}\df{ie^{i\varphi}d\varphi}{e^{i\varphi}}=2\pi i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+..........
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Коши для многосвязной области
+\end_layout
+
+\end_inset
+
+ Пусть область 
+\begin_inset Formula $D$
+\end_inset
+
+ --- многосвязна, ограниченная составным контуром 
+\begin_inset Formula $\Gamma=\gamma\cup\gamma_{1}\cup\tr\cup\gamma_{n}$
+\end_inset
+
+, функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+аналитична в 
+\begin_inset Formula $D$
+\end_inset
+
+, непрерывна в 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\oiu{\Gamma}{}f\left(z\right)dz=\oiu{\gamma\cup\gamma_{1}\cup\tr\cup\gamma_{n}}{}f\left(z\right)dz=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Воспользуемся методом перемычек, а именно произведем 
+\begin_inset Formula $n$
+\end_inset
+
+ разрезов 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ области 
+\begin_inset Formula $D$
+\end_inset
+
+, связывающих границу 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ с комкомпонентами 
+\begin_inset Formula $\gamma_{i},\ i=\overline{1,n}$
+\end_inset
+
+, получим односвязную область, с границей 
+\begin_inset Formula $\gamma\cup c_{1}^{-}\cup\gamma_{1}\cup c_{1}^{+}\cup\tr$
+\end_inset
+
+ Тогда по теореме Коши для односвязной области: 
+\begin_inset Formula 
+\[
+\oiu{\gamma\cup\gamma_{1}\cup\tr\cup\gamma_{n}}{}f\left(z\right)dz=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Неопределенный интеграл
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Рассмотрим две произвольные точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+и 
+\begin_inset Formula $z_{1}\in D$
+\end_inset
+
+, и две линии 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+, соединяющих их ориентировано из 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в 
+\begin_inset Formula $D$
+\end_inset
+
+, то по теореме Коши:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oiu{c_{1}\cup c_{0}^{-}}{}f\left(z\right)=\oiu{c_{1}}{}f\left(z\right)dz-\oiu{c_{0}}{}f\left(z\right)dz=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $F\left(z\right)=\oiu c{}f\left(z\right)dz$
+\end_inset
+
+ где 
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ определена и непрерывна в замкнутой области 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+, и 
+\begin_inset Formula $\forall$
+\end_inset
+
+ замкнутого контура 
+\begin_inset Formula $\gamma\in D$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oiu{\gamma}{}f\left(z\right)dz=0
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $F\left(z\right)=\oiu c{}f\left(\xi\right)d\xi$
+\end_inset
+
+ --- аналитическая функция, где 
+\begin_inset Formula $c$
+\end_inset
+
+ --- произвольный контур, соединяющий 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим разностное отношение:
+\begin_inset Formula 
+\[
+\df{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}=\df 1{\Delta z}\oiu z{z+\Delta z}f\left(\xi\right)d\xi
+\]
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $\oiu z{z+\Delta z}d\xi=\Delta z$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+\left|\df{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}-f\left(z\right)\right|=\left|\df 1{\Delta z}\oiu z{z+\Delta z}f\left(\xi\right)d\xi-\df{f\left(z\right)}{\Delta z}\oiu z{z+\Delta z}d\xi\right|=\\
+=\df 1{\left|\Delta z\right|}\left|\oiu z{z+\Delta z}\left(f\left(\xi\right)-f\left(z\right)\right)d\xi\right|\mr\df 1{\left|\Delta z\right|}\oiu z{z+\Delta z}\left|f\left(\xi\right)-f\left(z\right)\right|\um\left|d\xi\right|\mr\\
+\mr\df 1{\left|\Delta z\right|}\um\max\left|f\left(\xi\right)-f\left(z\right)\right|\um\left|\Delta z\right|
+\end{multline*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ --- непрерывная функция, то 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\quad\exists\delta=\delta\left(\varepsilon,z\right)>0\quad\forall\xi\quad\left|z-\xi\right|<\delta\quad\then\quad\left|f\left(\xi\right)-f\left(z\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+Выбрать 
+\begin_inset Formula $\Delta z$
+\end_inset
+
+ так, что 
+\begin_inset Formula $\left|\Delta z\right|<\delta$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+///////
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ называется превообразной для 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+, если
+\begin_inset Formula 
+\[
+\forall z\in D\quad F'\left(z\right)=f\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Совокупность всех первообразных для 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ называется неопределенным интегралом 
+\begin_inset Formula 
+\[
+F\left(z\right)=\oiu{z_{0}}zf\left(\xi\right)d\xi+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\oiu{z_{0}}{z_{1}}f\left(\xi\right)d\xi=\left.F\left(z\right)\right|_{z_{0}}^{z_{1}}=F\left(z_{1}\right)-F\left(z_{0}\right)
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ --- одна из первообразных 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
