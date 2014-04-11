@@ -4253,5 +4253,624 @@ y_{2}=c_{2}e^{\lambda_{2}t}
 \end_deeper
 \end_deeper
 \end_deeper
+\begin_layout Subsection
+Положения равновесия автономной системы второго порядка
+\end_layout
+
+\begin_layout Standard
+Рассмотрим нормальную автономную систему второго порядка:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dx}{dt}=f\left(x,y\right)\\
+\df{dy}{dt}=g\left(x,y\right)
+\end{cases}\label{eq:2_1_1}
+\end{equation}
+
+\end_inset
+
+Положения равновесия:
+\begin_inset Formula 
+\[
+\begin{cases}
+f\left(x,y\right)=0\\
+g\left(x,y\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+Будем полагать что точка 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ является положением равновесия.
+ Будем предполагать что функции 
+\begin_inset Formula $f$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+ достаточно гладкие, тогда проведем линеаризацию системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+) в окрестности начала координат.
+ Для этого функции 
+\begin_inset Formula $f$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+ разложим в ряд Тейлора по 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ и оставим только линейные слагаемые.
+\begin_inset Formula 
+\begin{align}
+\df{dx}{dt} & =\df{\dd f\left(0,0\right)}{\dd x}x+\df{\dd f\left(0,0\right)}{\dd y}y\label{eq:2_1_2}\\
+\df{dy}{dt} & =\df{\dd g\left(0,0\right)}{\dd x}x+\df{\dd g\left(0,0\right)}{\dd y}y\nonumber 
+\end{align}
+
+\end_inset
+
+Обозначим:
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+\df{\dd f\left(0,0\right)}{\dd x} & \df{\dd f\left(0,0\right)}{\dd y}\\
+\df{\dd g\left(0,0\right)}{\dd x} & \df{\dd g\left(0,0\right)}{\dd y}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Положение равновесия 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+) называется невырожденным если собственные значения матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ различные и вещественные части их отличны от нуля.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+ вещественные и различные отрицательные, то положение равновесия 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ системы 1 является устойчивым узлом, иначе неустойчивым узлом.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+ комплексно сопряженные и их вещественная часть отрицательная, то положение
+ равновесия называется устойчивым фокусом.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+ комплексно сопряженные и их вещественная часть положительная, то положение
+ равновесия называется неустойчивым фокусом.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+ вещественные разных знаков, то положение равновесия называется седлом.
+\end_layout
+
+\begin_layout Standard
+Для невырожденого положения равновесия поведения траекторий вблизи 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+) в существенном совпадает с поведением траекторий вблизи положения равновесия
+ 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ Пусть положение равновесия 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+) является седлом.
+ Пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ --- прямая, проходящая через начало координат вдлоль собственного вектора
+ матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ соответствующего отрицательному собственному значению, а 
+\begin_inset Formula $Q$
+\end_inset
+
+ --- прямая, проходящая через начало координат вдоль собственного вектора,
+ соответствующего положительному собственному значению матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Тогда фазовая картина вблизи положения равновесия 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ имеет вид (Рисунок).
+ Тоесть существуют ровно две траектории 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+) которые при 
+\begin_inset Formula $t\to+\b$
+\end_inset
+
+ ассимптотически приближаются.
+ Эти траектории вместе с точкой 
+\begin_inset Formula $O$
+\end_inset
+
+ образуют непрерывно дифференцируемую кривую вместе с этой точкой, касающуюся
+ прямой 
+\begin_inset Formula $P$
+\end_inset
+
+ в точке 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Точно так же существуют ровно две траектории 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+, которые при 
+\begin_inset Formula $t\to-\b$
+\end_inset
+
+ ассимптотически приближаются к точке 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Эти траектории вместе с точкой 
+\begin_inset Formula $O$
+\end_inset
+
+ образуют непрерывно дифференцируемую кривую, касающуюся прямой 
+\begin_inset Formula $Q$
+\end_inset
+
+ в точке 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Остальные траектории проходящие вблизи точки 
+\begin_inset Formula $O$
+\end_inset
+
+ ведут себя в общем так же, как в случае линейной системы.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ Пусть точка 
+\begin_inset Formula $O\left(0,0\right)$
+\end_inset
+
+ является фокусом системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+), тоесть матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ линеаризованной системы имеет собственные значения 
+\begin_inset Formula $\lambda=\mu+i\nu,\ \overline{\lambda}=\mu-i\nu\quad\mu,\nu\nr0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\mu<0$
+\end_inset
+
+ то при 
+\begin_inset Formula $t\to+\b$
+\end_inset
+
+ все траектории проходящие вблизи точки 
+\begin_inset Formula $O$
+\end_inset
+
+ наматываются на начало координат как спирали.
+ Если 
+\begin_inset Formula $\mu>0$
+\end_inset
+
+ то при 
+\begin_inset Formula $t\to-\b$
+\end_inset
+
+ все траектории, проходящие вблизи точки 
+\begin_inset Formula $O$
+\end_inset
+
+ наматываются на начало координат как спирали.
+ 
+\end_layout
+
+\begin_layout Proof
+Разложим правые части системы 1 в ряд Тейлора:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dx}{dt}=a_{11}x+a_{12}y+r\left(x,y\right)\\
+\df{dy}{dt}=a_{21}x+a_{22}y+s\left(x,y\right)
+\end{cases}\label{eq:2_1_3}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $r,s$
+\end_inset
+
+ --- функции, которые можно записать так:
+\begin_inset Formula 
+\begin{align}
+r\left(x,y\right) & =r_{11}\left(x,y\right)x^{2}+r_{12}\left(x,y\right)xy+r_{22}\left(x,y\right)y^{2}\label{eq:2_1_4}\\
+s\left(x,y\right) & =s_{11}\left(x,y\right)x^{2}+s_{12}\left(x,y\right)xy+s_{22}\left(x,y\right)y^{2}\nonumber 
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula $r_{ij},s_{ij}$
+\end_inset
+
+ --- функции, ограниченные вблизи начала координат.
+\end_layout
+
+\begin_layout Proof
+Известно, что существует невырожденная вещественная матрица 
+\begin_inset Formula $K$
+\end_inset
+
+, такая что 
+\begin_inset Formula 
+\[
+KAK^{-1}=\left(\begin{array}{cc}
+\mu & -\nu\\
+\nu & \mu
+\end{array}\right)
+\]
+
+\end_inset
+
+Сделаем замену переменных в системе 3:
+\begin_inset Formula 
+\begin{align*}
+\xi & =k_{11}x+k_{12}y & \eta & =k_{21}x+k_{22}y
+\end{align*}
+
+\end_inset
+
+ Тогда система 3 преобразуется к виду:
+\begin_inset Formula 
+\begin{align}
+\df{d\xi}{dt} & =\mu\xi-\nu\eta+r_{1}\left(\xi,\eta\right)\label{eq:2_1_5}\\
+\df{d\eta}{dt} & =\nu\xi+\mu\eta+s_{1}\left(\xi,\eta\right)\nonumber 
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula $r_{1},s_{1}$
+\end_inset
+
+имеют вид аналогичный 4.
+ 
+\end_layout
+
+\begin_layout Proof
+В системе 5 перейдем к полярным координатам:
+\begin_inset Formula 
+\begin{align}
+\xi & =\rho\cos\varphi & \eta & =\rho\sin\varphi\label{eq:2_1_6}
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\df{d\rho}{dt}\cos\varphi-\rho\sin\varphi\df{d\varphi}{dt} & =\mu\rho\cos\varphi-\nu\rho\sin\varphi+r_{1}\left(\rho\cos\varphi,\rho\sin\varphi\right)\\
+\df{d\rho}{dt}\sin\varphi+\rho\cos\varphi\df{d\varphi}{dt} & =\nu\rho\cos\varphi+\mu\rho\sin\varphi+s_{1}\left(\rho\cos\varphi,\rho\sin\varphi\right)
+\end{align*}
+
+\end_inset
+
+Разрешим эту систему относительно 
+\begin_inset Formula $\frac{d\rho}{dt},\frac{d\varphi}{dt}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align}
+\df{d\rho}{dt} & =\mu\rho+\rho^{2}\um p\left(\rho,\varphi\right)\nonumber \\
+\df{d\varphi}{dt} & =\nu+\rho\um q\left(\rho,\varphi\right)\label{eq:2_1_7}
+\end{align}
+
+\end_inset
+
+ Где 
+\begin_inset Formula $p\left(\rho,\varphi\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $q\left(\rho,\varphi\right)$
+\end_inset
+
+ --- ограниченные при малых 
+\begin_inset Formula $\rho$
+\end_inset
+
+ и преиодические по 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ с периодом 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть для определенности 
+\begin_inset Formula $\mu<0$
+\end_inset
+
+ рассмотрим траектории системы 7 начинающиеся в точке 
+\begin_inset Formula $\left(\rho_{0},\varphi_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $0<\rho_{0}<\varepsilon$
+\end_inset
+
+ где 
+\begin_inset Formula $\varepsilon\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $\mu<0$
+\end_inset
+
+ /////////////////////////////////////////
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+Пусть точка 
+\begin_inset Formula $O\left(0,0\right)$
+\end_inset
+
+ --- устойчивый узел системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1_1"
+
+\end_inset
+
+) и для собственных значений справедливо неравенство: 
+\begin_inset Formula $\mu<\lambda<0$
+\end_inset
+
+ в направлении собственного вектора соответствующего собственному значению
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ через точку 
+\begin_inset Formula $O$
+\end_inset
+
+ проведем прямую 
+\begin_inset Formula $P$
+\end_inset
+
+, а в направлении собственного вектора соответствующего собственному значению
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+ проведем прямую 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ Тогда каждая траектория, начинающаяся достаточно близко к точке 
+\begin_inset Formula $O$
+\end_inset
+
+ ассимптотически приближается к точке 
+\begin_inset Formula $O$
+\end_inset
+
+ и имеет в точке 
+\begin_inset Formula $O$
+\end_inset
+
+ касательную.
+ При этом только две траектории касаются прямой 
+\begin_inset Formula $Q$
+\end_inset
+
+, подходя к точке 
+\begin_inset Formula $O$
+\end_inset
+
+ с противоположных сторон, остальные траектории касаются прямой 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ В случае неустойчивого узла, поведение траекторий при 
+\begin_inset Formula $t\to-\b$
+\end_inset
+
+ аналогично.
+\end_layout
+
+\begin_layout Subsection
+Предельные циклы
+\end_layout
+
 \end_body
 \end_document
