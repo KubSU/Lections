@@ -7139,7 +7139,7 @@ reference "eq:_2_4_1_3"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\oint\limits_{\gamma}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oudi D{}\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy
+\oint\limits _{\gamma}P\left(x,y\right)dx+Q\left(x,y\right)dy=\oudi D{}\left(\df{\dd Q}{\dd x}-\df{\dd P}{\dd y}\right)dxdy
 \]
 
 \end_inset
@@ -7480,7 +7480,7 @@ status open
 \begin_layout Proof
 \begin_inset Formula 
 \begin{multline*}
-///////
+......
 \end{multline*}
 
 \end_inset
@@ -7550,6 +7550,355 @@ F\left(z\right)=\oiu{z_{0}}zf\left(\xi\right)d\xi+c
 .
 \end_layout
 
+\begin_layout Subsection
+Интегральная формула Коши
+\end_layout
+
+\begin_layout Standard
+Если функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна на замыкании области 
+\begin_inset Formula $D$
+\end_inset
+
+ и аналитична в области 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{equation}
+\forall z\in D\ f\left(z\right)=\df 1{2\pi i}\ui C\df{f\pr\left(\xi\right)}{\xi-z}d\xi\label{eq:_1_2_5}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $C$
+\end_inset
+
+ --- положительно ориентированый контур, замкнутый, содержащий внутри точку
+ 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Преобрахуем правую часть формулы (1).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $I=\un{\underbrace{\df 1{2\pi i}\ui C\df{dS}{\xi\um z}}}{I_{1}}+\un{\underbrace{\df 1{2\pi i}\ui C\df{f\left(\xi\right)-f\left(z\right)}{\xi\um z}d\xi}}{I_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем, что 
+\begin_inset Formula $I_{1}=f\left(z\right),\ I_{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{1} & = & \df{f\left(z\right)}{2\pi i}\ui C\df{d\xi}{\xi-z}=\df{f\left(z\right)}{2\pi i}\ui{C_{R}}\df{d\xi}{\xi-z}=\\
+ & = & \left\{ \begin{array}{c}
+\xi\in C_{R}\ \sl\ \\
+\xi=z+R\um e^{i\varphi},\,\varphi\in\left[0;2\pi\right]
+\end{array}\right\} =\\
+ & = & \df{f\left(z\right)}{2\pi i}\oui 0{2\pi}\df{R\um i\um e^{i\varphi}}{R\um e^{i\varphi}}=f\left(z\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+...аналитична в области, с границей 
+\begin_inset Formula $C_{R}\ob C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $I_{2}=\df 1{2\pi i}\ui C\df{f\left(\xi\right)f\left(z\right)}{\xi-z}d\xi=\left\{ \text{Теорема Коши}\right\} =\df 1{2\pi i}\ui{C_{R}}\df{f\left(\xi\right)-f\left(z\right)}{\xi-z}d\xi$
+\end_inset
+
+, причем не зависит от выбора 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Оценим 
+\begin_inset Formula $\left|I_{2}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|I_{2}\right| & = & \df 1{2\pi}\um\left|\ui{C_{R}}\df{f\left(\xi\right)-f\left(z\right)}{\xi-z}d\xi\right|\mr\df 1{2\pi}\um\ui{C_{R}}\df{\left|f\left(\xi\right)-f\left(z\right)\right|}{\left|\xi-z\right|}\left|d\xi\right|\mr\\
+ & \mr & \left\{ \begin{array}{c}
+f\left(\xi\right)-\text{непрерывная на }C_{R}\sl\\
+\left|f\left(\xi\right)-f\left(z\right)\right|\text{так непрерывна на }C_{R}\sl\\
+\exists\max\left|f\left(\xi\right)-f\left(z\right)\right|=M
+\end{array}\right\} \mr\\
+ & \mr & \df M{2\pi R}\ui{C_{R}}\left|d\xi\right|\mr\\
+ & \mr & \left\{ \ui{C_{R}}\left|d\xi\right|=2\pi r-\text{длинна окружности }C_{R}\right\} \mr\\
+ & \mr & \umax{\xi\in C_{R}}\left|f\left(\xi\right)-f\left(z\right)\right|
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим, что при 
+\begin_inset Formula $R\st0\quad\xi\st z$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(\xi\right)\st f\left(z\right)$
+\end_inset
+
+так как 
+\begin_inset Formula $f\left(\xi\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Таким образом 
+\begin_inset Formula $0\mr\left|I_{2}\right|\mr\umax{\xi\in C_{R}}\left|f\left(\xi\right)-f\left(z\right)\right|$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\umax{\xi\in C_{R}}\left|f\left(\xi\right)-f\left(z\right)\right|\st0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $I_{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Следствие.
+ Теорема о среднем.
+ 
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $f\left(\xi\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\overline{S_{R}}=\left\{ \xi|\left|\xi-z\right|\mr R\right\} $
+\end_inset
+
+ и аналитичная в круге 
+\begin_inset Formula $S_{R}=\left\{ \xi|\left|\xi-z\right|<R\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Тогда значчение 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно среднему ее значению на окружности 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+По (1): 
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \df 1{2\pi i}\ui C\df{f\left(z\right)}{\xi-z}d\xi=\\
+ & = & \df 1{2\pi i}\ui{C_{R}}\df{f\left(\xi\right)}{\xi-z}d\xi=\\
+ & = & \left\{ \begin{array}{c}
+\xi=z+Re^{i\varphi}\\
+d\xi=iRe^{i\varphi}d\varphi
+\end{array}\right\} =\\
+ & = & \df 1{2\pi i}\oui 0{2\pi}\df{f\left(z+Re^{i\varphi}\right)iRe^{i\varphi}d\varphi}{Re^{i\varphi}}=\\
+ & = & \df 1{2\pi}\oui 0{2\pi}...
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С помощью фолрмулуы (1) можно вычислять некоторые интегралы от функциии
+ многих переменных.
+\end_layout
+
+\begin_layout Theorem
+Пусть функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ и аналитична в тобласти 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Тогда либо 
+\begin_inset Formula $\left|f\left(z\right)\right|=const$
+\end_inset
+
+ на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+, либо 
+\begin_inset Formula $\umax{z\in\overline{D}}\left|f\left(z\right)\right|$
+\end_inset
+
+ достигается н6а границахъ области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ непрерынат на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(z\right)=u+iv$
+\end_inset
+
+, где 
+\begin_inset Formula $u\left(x,y\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(x,y\right)$
+\end_inset
+
+ --- непрерыны на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\left(z\right)\right|=\sqrt{u^{2}+v^{2}}$
+\end_inset
+
+ --- непрерына на 
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ по Теореме Вейерштрассе 
+\begin_inset Formula $\exists z_{0}\in\overline{D}$
+\end_inset
+
+, что 
+\begin_inset Formula $\left|f\left(z_{0}\right)\right|=\umax{\overline{D}}\left|f\left(z\right)\right|=M$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- внутренняя точка области 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists r>0\ C_{r}=\left\{ \xi|\left|\xi-z_{0}\right|=r\right\} \vkl D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M=\left|f\left(z_{0}\right)\right|=\left\{ \text{Теорема о среднем}\right\} =\df 1{2\pi}\oui 0{2\pi}f\left(z_{0}+re^{i\varphi}\right)d\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
