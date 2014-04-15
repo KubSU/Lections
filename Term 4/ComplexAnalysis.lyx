@@ -7899,6 +7899,783 @@ d\xi=iRe^{i\varphi}d\varphi
 
 \end_deeper
 \end_deeper
+\begin_layout Subsection
+Производные высших порядков
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Рассмотрим произвольную точку 
+\begin_inset Formula $z\in D$
+\end_inset
+
+.
+ Окружим ее замкнутым положительно ориентированным контером 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Тогда по итерратльной формуле Коши:
+\begin_inset Formula 
+\[
+f\left(z\right)=\df 1{2\pi i}\un{\int}C\df{f\left(\xi\right)}{\xi-z}d\xi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+К интегралу правой части ..., зависящий от параметра 
+\begin_inset Formula $z$
+\end_inset
+
+,...
+\begin_inset Formula 
+\[
+f\pr\left(z\right)=\df 1{2\pi i}\un{\int}C\df{\dd}{\dd z}\left(\df{f\left(\xi\right)}{\xi-z}\right)d\xi=\df 1{2\pi i}\un{\int}C\df{f\left(\xi\right)}{\left(\xi-z\right)^{2}}d\xi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для 
+\begin_inset Formula $f^{\left(n\right)}\left(z\right)$
+\end_inset
+
+ выполняется:
+\begin_inset Formula 
+\begin{equation}
+f^{\left(n\right)}\left(z\right)=\df 1{2\pi i}\un{\int}C\df{f\left(\xi\right)}{\left(\xi-z\right)^{n+1}}d\xi\label{eq:_2_6_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Вычислить:
+\begin_inset Formula 
+\[
+I=\un{\int}{\left|z-\pi\right|=1}\df{\cos\xi}{\left(\xi-\pi\right)^{3}}d\xi
+\]
+
+\end_inset
+
+Так как точка 
+\begin_inset Formula $z=\pi$
+\end_inset
+
+ внутри контера 
+\begin_inset Formula $C$
+\end_inset
+
+ и кроме того в качестве функциии 
+\begin_inset Formula $f\left(\xi\right)=\cos\xi$
+\end_inset
+
+(
+\begin_inset Formula $\cos$
+\end_inset
+
+ всюдуаналитична), то можем записать:
+\begin_inset Formula 
+\begin{eqnarray*}
+\un{\int}C\df{\cos\xi}{\left(\xi-\pi\right)^{3}}d\xi & = & \left\{ \begin{array}{c}
+n=2\\
+(\ref{eq:_2_6_1})
+\end{array}\right\} =\\
+ & = & \df{2\pi i}{2!}\left(\cos\xi\right)\ppr|_{\xi=\pi}=\\
+ & = & \pi i\left(-\cos\pi\right)=\\
+ & = & \pi i
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Из доказанного следует, что производная от аналитической функции также аналитичн
+а.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Морера
+\end_layout
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в односвязной области 
+\begin_inset Formula $D$
+\end_inset
+
+ и интеграл по функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ по любому замкнутому контеру 
+\begin_inset Formula $\gamma\in D$
+\end_inset
+
+ равен нулю.
+ Тогда 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим функцию 
+\begin_inset Formula $F\left(z\right)=\oui{z_{0}}zf\left(\xi\right)d\xi$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- фиксированная точка в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ --- игтеграл с переменным верхним пределом, причем он не зависит от предела
+ интегрирования.
+ Причем 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ является первообразной для 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $F\pr\left(z\right)=f\left(z\right)$
+\end_inset
+
+.
+ (Так как производная от аналитической функции (
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+) есть функция аналитическая, то 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ --- аналитическая функция.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Лиувилля
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ --- аналитическая на 
+\begin_inset Formula $\C$
+\end_inset
+
+ функция, и 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ равномерно отграничена на 
+\begin_inset Formula $\C$
+\end_inset
+
+.
+ Тогда сама функция 
+\begin_inset Formula $f\left(z\right)\equiv const$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Используя формулу для проищводной 
+\begin_inset Formula $f\pr\left(z\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\pr\left(z\right)=\df 1{2\pi i}\ui{C_{R}}\df{f\left(\xi\right)}{\left(\xi-z\right)^{2}}d\xi
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $\left|\xi-z\right|=R$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ --- равномерно ограничен на 
+\begin_inset Formula $C$
+\end_inset
+
+, тоесть:
+\begin_inset Formula 
+\[
+\exists M>0\ \left|f\left(z\right)\right|\mr M\ \forall z\in\C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|f\pr\left(z\right)\right| & = & \df 1{2\pi}\left|\ui{C_{R}}\df{f\left(\xi\right)}{\left(\xi-z\right)^{2}}d\xi\right|\mr\\
+ & \mr & \df 1{2\pi}\ui C\df{\left|f\left(\xi\right)\right|}{\left|\xi-z\right|^{2}}\um\left|d\xi\right|\mr\\
+ & \mr & \df 1{2\pi}\df M{R^{2}}\ui{C_{R}}\left|d\xi\right|=\\
+ & = & \left\{ \ui{C_{R}}\left|d\xi\right|=2\pi R\right\} =\\
+ & = & \df MR
+\end{eqnarray*}
+
+\end_inset
+
+Итак 
+\begin_inset Formula $0\mr\left|f\pr\left(z\right)\right|\mr\df MR$
+\end_inset
+
+, где 
+\begin_inset Formula $f\pr\left(z\right)$
+\end_inset
+
+ нет зависит от выбора 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\pr\left(z\right)\right|=0\ \forall z\in\C$
+\end_inset
+
+ и 
+\begin_inset Formula $f\pr\left(z\right)=0\ \forall z\in\C$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Функциональные ряды
+\end_layout
+
+\begin_layout Subsection
+Равномерная сходимость функциональных рядов
+\end_layout
+
+\begin_layout Standard
+Рассмотрим функциональную последовательность 
+\begin_inset Formula $\left\{ u_{n}\left(z\right)\right\} $
+\end_inset
+
+, определенную на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ ВЫражение вида:
+\begin_inset Formula 
+\begin{equation}
+\ous{n=1}{\b}u_{n}\left(z\right)\label{eq:_3_1_1}
+\end{equation}
+
+\end_inset
+
+ называется функцфиональным рядом на области 
+\begin_inset Formula $D$
+\end_inset
+
+, а 
+\begin_inset Formula 
+\begin{equation}
+S_{n}\left(z\right)=\ous{k=1}nu_{k}\left(z\right)\label{eq:_3_1_2}
+\end{equation}
+
+\end_inset
+
+называется 
+\begin_inset Formula $n$
+\end_inset
+
+-ой частичной суммой ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Заметим, что 
+\begin_inset Formula $\forall z\in D$
+\end_inset
+
+ получается числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(z\right)$
+\end_inset
+
+, определенная в точке 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) называется сходящимся в области 
+\begin_inset Formula $D$
+\end_inset
+
+, если 
+\begin_inset Formula $\forall z\in D$
+\end_inset
+
+ соответствующий кй числовой ряд сходится к некоторой своей сумме.
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $f\left(z\right),\, z\in D$
+\end_inset
+
+, называется суммой функционального ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+).
+ При этом выполняется следующее утверждение:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(z,\varepsilon\right)\ \forall n\br N\ \left|f\left(z\right)-S_{n}\left(z\right)\right|=\left|f\left(z\right)-\ous{k=1}nu_{k}\left(z\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+Обозначим 
+\begin_inset Formula $R_{n}\left(z\right)=f\left(z\right)-\ous{k=1}nu_{k}\left(z\right)=\ous{k=n+1}{\b}u_{k}\left(z\right)$
+\end_inset
+
+ --- 
+\begin_inset Formula $n$
+\end_inset
+
+-ый остаток ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) называется равномерно сходящимся к сумме 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на облласти 
+\begin_inset Formula $D$
+\end_inset
+
+, если:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|f\left(z\right)-\ous{k=1}nu_{k}\left(z\right)\right|<\varepsilon\ \forall z\in D
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
+\end_layout
+
+\end_inset
+
+Функциональный ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) сходится равномерно на 
+\begin_inset Formula $D$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|\ous{k=n+1}{n+p}u_{k}\left(z\right)\right|<\varepsilon\ \forall z\in D
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Признак Вейерштрассе
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\forall n\in\N\ \forall z\in D\ \left|u_{n}\left(z\right)\right|\mr\left|a_{n}\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|<\b$
+\end_inset
+
+ то ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) сходится равномерно на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Так как ряд из 
+\begin_inset Formula $\ous{n=1}{\b}\left|a_{n}\right|$
+\end_inset
+
+ то по признаку Коши сходимости числовых рядов мы можем записать:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \ous{k=n+1}{n+p}\left|a_{k}\right|<\varepsilon\\
+\Downarrow\\
+\forall z\in D\ \left|\ous{k=1+n}{n+p}u_{k}\left(z\right)\right|\mr\ous{k=1+n}{n+p}\left|u_{k}\left(z\right)\right|\mr\\
+\mr\left\{ \text{По предположению теоремы}\right\} \mr\ous{k=1+n}{n+p}\left|a_{k}\right|<\varepsilon
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Свойства равномерно сходящийся функциональных рядов 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если функции 
+\begin_inset Formula $u_{n}\left(z\right)$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $D$
+\end_inset
+
+, где 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, а ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) сходится равномерног в функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на области 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ также непрерывна на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из равномерной сходимостти ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) к 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ следует, что:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \begin{array}{c}
+\forall z\in D\ \left|f\left(z\right)-\ous{k=1}nu_{k}\left(z\right)\right|<\df{\varepsilon}3\\
+\forall z+\D z\in D\ \left|f\left(z+\D z\right)-\ous{k=1}nu_{k}\left(z+\D z\right)\right|<\df{\varepsilon}3
+\end{array}
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $u_{k}\left(z\right)$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+, то конечная сумма 
+\begin_inset Formula $S_{N}\left(z\right)=\ous{k=1}Nu_{k}\left(z\right)$
+\end_inset
+
+ --- также непрерывна на 
+\begin_inset Formula $D$
+\end_inset
+
+, а следовательно и в точке 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Следовательно для выбранного 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ и полученного по нему 
+\begin_inset Formula $N$
+\end_inset
+
+ получим:
+\begin_inset Formula 
+\[
+\exists\delta=\delta\left(\varepsilon\right)\ \forall\D z\ \left|\D z\right|<\delta\sl\left|S_{N}\left(z+\D z\right)-S_{N}\left(z\right)\right|<\df{\varepsilon}3
+\]
+
+\end_inset
+
+Следовательно: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|f\left(z+\D z\right)-f\left(z\right)\right| & = & \left|\left(f\left(z+\D z\right)-S_{N}\left(z+\D z\right)\right)+\left(S_{N}\left(z+\D z\right)-S_{N}\left(z\right)\right)+\left(S_{N}\left(z\right)-f\left(z\right)\right)\right|\mr\\
+ & \mr & \left|f\left(z+\D z\right)-S_{N}\left(z+\D z\right)\right|+\left|S_{N}\left(z+\D z\right)-S_{N}\left(z\right)\right|+\left|S_{N}\left(z\right)-f\left(z\right)\right|\mr\\
+ & \mr & \df{\varepsilon}3+\df{\varepsilon}3+\df{\varepsilon}3=\varepsilon
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall\D z\ \left|\D z\right|<\delta\sl\left|f\left(z+\D z\right)-f\left(z\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если функциональный ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_1_1"
+
+\end_inset
+
+) из непрерывных на 
+\begin_inset Formula $D$
+\end_inset
+
+ функций сходится равномерно сходится равномерно на области 
+\begin_inset Formula $D$
+\end_inset
+
+, то его можно полчеленно интегрировать по любому контере 
+\begin_inset Formula $\gamma\vkl D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\ui{\gamma}f\left(\xi\right)d\xi=\ous{n=1}{\b}\ui{\gamma}u_{n}\left(\xi\right)d\xi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Оценим модуль разности:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\ui{\gamma}f\left(\xi\right)d\xi-\ous{k=1}n\ui{\gamma}u_{k}\left(\xi\right)d\xi\right| & = & \left|\ui{\gamma}\left(f\left(\xi\right)-\ous{k=1}nu_{k}\left(\xi\right)\right)\right|\mr\\
+ & \mr & \ui{\gamma}\left|f\left(\xi\right)-\ous{k=1}nu_{k}\left(\xi\right)\right|\um\left|d\xi\right|\mr
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(z\right)\rightrightarrows f\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N\ \forall n\br N\ \left|f\left(z\right)-\ous{k=1}nu_{k}\left(z\right)\right|<\df{\varepsilon}L$
+\end_inset
+
+, где 
+\begin_inset Formula $L$
+\end_inset
+
+ --- длинна дуги
+\begin_inset Formula 
+\begin{eqnarray*}
+ & \mr & \df{\varepsilon}L\um\ui{\gamma}\left|d\xi\right|=\\
+ & = & \varepsilon
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Итак 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|\ui{\gamma}f\left(\xi\right)d\xi-\ous{k=1}n\ui{\gamma}u_{k}\left(\xi\right)d\xi\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
