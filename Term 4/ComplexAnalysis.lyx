@@ -8597,6 +8597,15 @@ reference "eq:_3_1_1"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
 Если функциональный ряд (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -8612,7 +8621,7 @@ reference "eq:_3_1_1"
 \begin_inset Formula $D$
 \end_inset
 
-, то его можно полчеленно интегрировать по любому контере 
+, то его можно полчеленно интегрировать по любому контуру 
 \begin_inset Formula $\gamma\vkl D$
 \end_inset
 
@@ -8674,6 +8683,889 @@ reference "eq:_3_1_1"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3, первая теореа Вейерштрассе
+\end_layout
+
+\end_inset
+
+Пусть функции 
+\begin_inset Formula $u_{n}\left(z\right)$
+\end_inset
+
+ аналитичны в области 
+\begin_inset Formula $D$
+\end_inset
+
+, а функциональный ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(z\right)$
+\end_inset
+
+ сходится равномерно к функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на любой замкнутой подобласти 
+\begin_inset Formula $\overline{D'}\subseteq D$
+\end_inset
+
+.
+ Тогда выполняются утверждения:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична на области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{\left(k\right)}\left(z\right)=\ous{n=1}{\b}u_{n}^{\left(k\right)}\left(z\right),\ k\in\N\quad\forall z\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ous{n=1}{\b}u_{n}^{\left(k\right)}\left(z\right)\rightrightarrows f^{\left(k\right)}\left(z\right)$
+\end_inset
+
+ на любой замкнутой подобласти 
+\begin_inset Formula $\overline{D'}\subseteq D$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Докажем каждое утверждение.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Рассмотрим любую точку 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Возьмём замкнутую подобласть 
+\begin_inset Formula $\overline{D'}\subseteq D$
+\end_inset
+
+, такую что 
+\begin_inset Formula $z_{0}\in\overline{D'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+По теореме 1: сумма 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\overline{D'}$
+\end_inset
+
+.
+ (
+\begin_inset Formula $u_{n}\left(x\right)$
+\end_inset
+
+ аналитичны, и следовательно непрерывны на 
+\begin_inset Formula $\overline{D'}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $C\vkl\overline{D'}$
+\end_inset
+
+ --- замкнутый контур.
+\end_layout
+
+\begin_layout Standard
+По теореме 2: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ui Cf\left(\xi\right)d\xi & = & \ui Cu_{n}\left(\xi\right)d\xi=\left\{ \text{Теорема 2}\right\} =\\
+ & = & \ous{i=1}{\b}\ui Cu_{n}\left(\xi\right)d\xi=\\
+ & = & \left\{ \text{Теорема Коши}\right\} =\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $C\vkl\overline{D'}$
+\end_inset
+
+ --- произвольный замкнутый контур, то по теореме Момрера 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в области 
+\begin_inset Formula $\overline{D'}$
+\end_inset
+
+, следовательно и в 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- произвольной точке из 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Обтаток 
+\begin_inset Formula $R_{n}\left(z\right)=f\left(z\right)-S_{n}\left(z\right)=\ous{n=1}{\b}u_{n}\left(z\right)$
+\end_inset
+
+.
+ Тут все аналитично.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Зафиксируем точку 
+\begin_inset Formula $z_{0}\in\overline{D'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Окружим точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ замкнутым контуром 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+ --- это минимум расстояния до точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+d=\un{\min}{z\in C}\left|z_{0}-z\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ряд 
+\begin_inset Formula 
+\begin{equation}
+\df{f\left(z\right)}{\left(z_{0}-z\right)^{k+1}}=\ous{n=1}{\b}\df{u_{n}\left(z\right)}{\left(z-z_{0}\right)^{k+1}}\label{eq:_3_2_*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как ряд 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(z\right)\rightrightarrows$
+\end_inset
+
+ на 
+\begin_inset Formula $\overline{D'}$
+\end_inset
+
+ и 
+\begin_inset Formula $\df 1{\left|z-z_{0}\right|^{k+1}}\mr\df 1{d^{k+1}}$
+\end_inset
+
+, то ряд в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_*"
+
+\end_inset
+
+) сходится равномерно на 
+\begin_inset Formula $\overline{D'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следлвательно по теореме 2:
+\begin_inset Formula 
+\begin{eqnarray*}
+\ui C\df{f\left(z\right)}{\left(z-z_{0}\right)^{k+1}}dz & = & \ous{n=1}{\b}\ui C\df{u_{n}\left(z\right)}{\left(z-z_{0}\right)^{k+1}}dz\\
+\Downarrow & \left\{ \begin{array}{c}
+\text{Формула для производных высших порядков}\\
+f^{\left(k\right)}\left(z_{0}\right)=\df{k!}{2\pi i}\ui C\df{f\left(z\right)}{\left(z-z_{0}\right)^{k+1}}dz
+\end{array}\right\}  & \Downarrow\\
+\df{2\pi i}{k!}f^{\left(k\right)}\left(z_{0}\right) & = & \ous{n=1}{\b}\df{2\pi i}{k!}u_{n}^{\left(k\right)}\left(z_{0}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следовательно 
+\begin_inset Formula $f^{\left(k\right)}\left(z_{0}\right)=\ous{n=1}{\b}u_{n}^{\left(k\right)}\left(z_{0}\right),\quad\forall z_{0}\in D$
+\end_inset
+
+, следовательно поточечьная сходимость есть.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Рассмотрим подобласть 
+\begin_inset Formula $\overline{D'}\vkl D$
+\end_inset
+
+, 
+\begin_inset Formula $z_{0}\in\overline{D'}$
+\end_inset
+
+ и построим в области 
+\begin_inset Formula $D$
+\end_inset
+
+ замкнутый контур 
+\begin_inset Formula $C$
+\end_inset
+
+, содержащий внутри себя область 
+\begin_inset Formula $\overline{D'}$
+\end_inset
+
+, такое что 
+\begin_inset Formula $\exists d>0\quad d=\umin{\begin{array}{c}
+z\in\overline{D'}\\
+\xi\in C
+\end{array}}\left|z-\xi\right|$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Так как остаток 
+\begin_inset Formula $R_{n}\left(z\right)=\ous{m=n+1}{\b}u_{m}\left(z\right)$
+\end_inset
+
+ --- аналитическая функция на области 
+\begin_inset Formula $D$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{eqnarray*}
+\forall z_{0}\in\overline{D'}\ R_{n}^{\left(k\right)}\left(z_{0}\right) & = & \left\{ \text{Интегральная формула Коши}\right\} =\\
+ & = & \df{k!}{2\pi i}\ui C\df{R_{n}\left(z\right)}{\left(z-z_{0}\right)^{k+1}}dz
+\end{eqnarray*}
+
+\end_inset
+
+Где 
+\begin_inset Formula $R_{n}^{\left(k\right)}\left(z\right)$
+\end_inset
+
+ --- остаток ряда 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}^{\left(k\right)}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\ous{n=1}{\b}u_{n}\left(z\right)$
+\end_inset
+
+ сходится равномерно, то 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall z\in C\ \left|R_{n}\left(z\right)\right|<\df{\varepsilon\um2\pi\um d^{k+1}}{k!\um L}
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $L=\left|C\right|$
+\end_inset
+
+ --- длина контура 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\left|R_{n}^{\left(k\right)}\left(z_{0}\right)\right|\mr\df{k!}{2\pi i}\um\df{\varepsilon2\pi d^{k+1}}{d^{k+1}\um k!\um L}\ui C\left|dz\right|=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Definition
+Функциональный ряд вида .
+\begin_inset Formula 
+\begin{equation}
+\ous{n=1}{\b}c_{n}\left(z-z_{0}\right)^{n}\label{eq:_3_2_1}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $c_{n}\in\C,\ z_{0}\in\C$
+\end_inset
+
+ --- фиксированная, называется степенным рядом в окресности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как члены ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) 
+\begin_inset Formula $u_{n}=C_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ --- аналитические функции, то можно исследовать ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) с использванием доказанных в преведущем пункте теорем.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Абеля
+\end_layout
+
+\end_inset
+
+Если степенной ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) сходится в точке 
+\begin_inset Formula $z_{1}\nr z_{0}$
+\end_inset
+
+, то он сходится абсолютно 
+\begin_inset Formula $\forall z\,:\,\left|z-z_{0}\right|<\left|z_{0}-z_{1}\right|$
+\end_inset
+
+ и равномерно в круге 
+\begin_inset Formula $\left|z-z_{0}\right|\mr\rho<\left|z_{1}-z_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем 2 утверждения.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $z$
+\end_inset
+
+ --- произвольная точка, такая что 
+\begin_inset Formula $\left|z-z_{0}\right|<\left|z_{1}-z_{0}\right|$
+\end_inset
+
+ и рассмотрим ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+).
+ Обозначим 
+\begin_inset Formula $q=\df{\left|z-z_{0}\right|}{\left|z_{1}-z_{0}\right|}<1$
+\end_inset
+
+.
+ Так как ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) сходится в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, тоест сходится числовой ряд 
+\begin_inset Formula $\ous{n=0}{\b}C_{n}\left(z_{1}-z_{0}\right)^{n}$
+\end_inset
+
+, то по необходимому признаку сходимости часлового ряда должен стремиться
+ к нулю.
+ 
+\begin_inset Formula $\ul{n\st\b}C_{n}\left(z_{1}-z_{0}\right)^{n}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ последовательность 
+\begin_inset Formula $\left\{ C_{n}\left(z_{1}-z_{0}\right)^{n}\right\} $
+\end_inset
+
+ бесконечно мала 
+\begin_inset Formula $\sl$
+\end_inset
+
+ она ограничена 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists M>0\ \left|C_{n}\left(z_{1}-z_{0}\right)^{n}\right|=\left|C_{n}\right|\um\left|z_{1}-z_{0}\right|^{n}\mr M\quad\forall n$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|C_{n}\right|\mr\df M{\left|z_{1}-z_{0}\right|^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Исследуем ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) на абсолютную сходимость:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|u_{n}\left(z\right)\right|=\left|C_{n}\right|\um\left|z-z_{0}\right|^{n}\mr M\left(\df{\left|z-z_{0}\right|}{\left|z_{1}-z_{0}\right|}\right)^{n}=M\um q^{n}
+\]
+
+\end_inset
+
+ Это 
+\begin_inset Formula $n$
+\end_inset
+
+-ый член сходящийся числовой прогрессии.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ по призаку сравнения сходится знакоположительный ряд 
+\begin_inset Formula $\ous{n=0}{\b}\left|C_{n}\left(z-z_{0}\right)^{n}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) сходится абсолютно.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Так как 
+\begin_inset Formula $\forall z\,:\,\left|z-z_{0}\right|\mr\rho<\left|z_{1}-z_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|u_{n}\left(z\right)\right|=\left|C_{n}\right|\left|z-z_{0}\right|^{n}\mr M\left(\df{\left|z-z_{0}\right|}{\left|z_{1}-z_{0}\right|}\right)^{n}\mr M\left(\df{\rho}{\left|z_{1}-z_{0}\right|}\right)^{n}=a_{n}$
+\end_inset
+
+ Эта оценка не зависящая от 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ous{n=0}{\b}a_{n}$
+\end_inset
+
+ --- сходящаяся мажоранта для ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) в рассматриваемом замкнутом круге.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ В этом круге ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) схордится равномерно.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\emph on
+Следствие 1.
+ 
+\emph default
+Если ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) расходится в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то он расходится влюбой точке 
+\begin_inset Formula $z$
+\end_inset
+
+ , такой что 
+\begin_inset Formula $\left|z-z_{0}\right|>\left|z-z_{1}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказательство.
+ От противного.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $R$
+\end_inset
+
+ --- тотчная верхняя грань всех таких значений 
+\begin_inset Formula $\left|z-z_{0}\right|$
+\end_inset
+
+, что ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) сходится в точке 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 2.
+ 
+\emph default
+Для любого степенного ряда существует такое 
+\begin_inset Formula $R$
+\end_inset
+
+, что в круге 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+ ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) сходится абсодютно, а вне круга ряд расходится.
+\end_layout
+
+\begin_layout Definition
+Область 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+ называется кругом сходимости ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+), а число 
+\begin_inset Formula $R$
+\end_inset
+
+ --- конечное или бесконечное --- радиусом сходимости ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $u_{n}\left(z\right)=C_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ --- аналитические функции, то по перваой теореме Вейерштрассе в области
+ равномерной сходимости этого ряда сумма 
+\begin_inset Formula $f\left(z\right)=\ous{n=0}{\b}C_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ --- аналитическая функция в круге 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 3.
+
+\emph default
+ Внутри круга 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+ ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) сходится к аналитической функции и внутри круга 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+ ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) можно почленно дифференцировать и интегрировать любое число раз.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 4.
+
+\emph default
+ 
+\begin_inset Formula $\forall n\ C_{n}=\df{f^{\left(n\right)}\left(z_{0}\right)}{n!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из формулы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_2_1"
+
+\end_inset
+
+) 
+\begin_inset Formula $f\left(z\right)=\ous{n=0}{\b}C_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z_{0}\right)=C_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $C_{0}=\df{f^{\left(0\right)}\left(z_{0}\right)}{0!}=f\left(z_{0}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f\pr\left(z\right)=\ous{n=1}{\b}C_{n}\um n\um\left(z-z_{0}\right)^{n-1}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\pr\left(z_{0}\right)=C_{1}\um1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $C_{1}=\df{f\pr\left(z_{0}\right)}{1!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+И так далее..
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f^{\left(k\right)}\left(z\right)=\ous{n=k}{\b}C_{n}\um n\um\left(n-1\right)\um\tr\um\left(n-k+1\right)\um\left(z-z_{0}\right)^{n-k}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f^{\left(k\right)}\left(z_{0}\right)=C_{k}\um k\um\left(k-1\right)\tr z\um1=C_{k}\um k!$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $C_{n}=\df{f\left(z_{0}\right)}{n!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 5.
+ (Коши)
+\emph default
+ 
+\begin_inset Formula $R=\df 1{\overline{\ul{n\st\b}\sqrt[n]{\left|C_{n}\right|}}}$
+\end_inset
+
+.
+ Без доказательства.
 \end_layout
 
 \begin_layout Standard
