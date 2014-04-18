@@ -4872,5 +4872,1167 @@ reference "eq:2_1_1"
 Предельные циклы
 \end_layout
 
+\begin_layout Standard
+Будем рассматривать автономную систему:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dx_{1}}{dt}=f_{1}\left(x_{1},x_{2}\right)\\
+\df{dx_{2}}{dt}=f_{2}\left(x_{1},x_{2}\right)
+\end{cases}\label{eq:_2_2_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=\left(\begin{array}{c}
+x_{1}\left(t\right)\\
+x_{2}\left(t\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(\begin{array}{c}
+f_{1}\left(x\right)\\
+f_{2}\left(x\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dx}{dt}=f\left(x\right)\ (\ref{eq:_2_2_1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Предельным циклом системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2_1"
+
+\end_inset
+
+) называется изолированое переодическое решение этой системы.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $x=\varphi\left(t\right)$
+\end_inset
+
+ переождическое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2_1"
+
+\end_inset
+
+), а 
+\begin_inset Formula $k$
+\end_inset
+
+ --- замкнутая траэктория, которую описывает вод это переодическое решение.
+ Тогда 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- предельный цикл (или 
+\begin_inset Formula $k$
+\end_inset
+
+), если существует некоторое 
+\begin_inset Formula $\delta$
+\end_inset
+
+, что любая траэктория системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2_1"
+
+\end_inset
+
+), проходящая на расстоянии меньше 
+\begin_inset Formula $\delta$
+\end_inset
+
+ от траэктории 
+\begin_inset Formula $k$
+\end_inset
+
+, не является переодическим решением.
+ Поскольку траэктории системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2_1"
+
+\end_inset
+
+) не могут пересекаться в силу теоремы единственности, то замкнутая траэктория
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ разбивает фазовую плоскость 
+\begin_inset Formula $\left(x_{1},x_{2}\right)$
+\end_inset
+
+ на две области (внутреннюю и внешнюю по отношению к 
+\begin_inset Formula $k$
+\end_inset
+
+), также разбивает траэктории на две группы (находящейся во внешней или
+ во внутренней области по отношению к 
+\begin_inset Formula $k$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- предельный цикл системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2_1"
+
+\end_inset
+
+) и 
+\begin_inset Formula $k$
+\end_inset
+
+ --- замкнутая траэктория, описываемая этим решением на фазовой плоскости
+ 
+\begin_inset Formula $\left(x_{1},x_{2}\right)$
+\end_inset
+
+.
+ Тогда как для внешних так и для внутренних траэкторий имеются две взаимно
+ исключающие друг друга возможности поведения вблизи 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ А именно: все внутренние траэктории начинающиеся вблизи 
+\begin_inset Formula $k$
+\end_inset
+
+ наматываются на 
+\begin_inset Formula $k$
+\end_inset
+
+ как спирали, либо при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+ либо при 
+\begin_inset Formula $t\st-\b$
+\end_inset
+
+.
+ Тоже самое справедливо и для внешних траэкторий.
+ Если все траэктории как внешние так и внутренние, начинающиеся вблизи 
+\begin_inset Formula $k$
+\end_inset
+
+ наматываются на 
+\begin_inset Formula $k$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st+\b$
+\end_inset
+
+ то предельный цикл называется устойчивым или аттрактором.
+ Если все траэктории, начинающиеся вблизи 
+\begin_inset Formula $k$
+\end_inset
+
+, наматываются на 
+\begin_inset Formula $k$
+\end_inset
+
+ при 
+\begin_inset Formula $t\st-\b$
+\end_inset
+
+ то предельный цикл называется вполне неустойчивым или репеллером.
+ В дух других случаях предельный цикл называется полустойчивым (если внутренние
+ наматываются а внешние разматываются, или наоборот).
+\end_layout
+
+\begin_layout Subsection
+Устойчивость переодических решений
+\end_layout
+
+\begin_layout Standard
+Рассмотрим систему линейных дифференцальных уравнений:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\df{dx_{1}}{dt}=a_{1,1}\left(t\right)x_{1}+\tr+a_{1,n}\left(t\right)x_{n}\\
+\vtr\\
+\df{dx_{n}}{dt}=a_{n,1}\left(t\right)x_{1}+\tr+a_{n,n}\left(t\right)x_{n}
+\end{cases}\label{eq:_2_3_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=\left(\begin{array}{c}
+x_{1}\left(t\right)\\
+\vtr\\
+x_{2}\left(t\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\left(t\right)=\left(\begin{array}{ccc}
+a_{1,1}\left(t\right) & \tr & a_{1,n}\left(t\right)\\
+\vtr & \ntr & \vtr\\
+a_{n,1}\left(t\right) & \tr & a_{n,n}\left(t\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dx}{dt}=A\left(t\right)x\ (\ref{eq:_2_3_1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\Phi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Phi_{2}$
+\end_inset
+
+ --- две фундаментальные матрици системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+) , то найдется невырожденная постоянная матрица 
+\begin_inset Formula $\Phi$
+\end_inset
+
+, такая что: 
+\begin_inset Formula 
+\begin{equation}
+\Phi_{2}\left(t\right)=\Phi_{1}\left(t\right)\um P\label{eq:_2_3_2}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Предположим что коэфициенты системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+) являются переодическими функциями с периодом 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a_{i,j}\left(t+\tau\right)=a_{i,j}\left(t\right),\ i,j=\overline{1,n}$
+\end_inset
+
+ или 
+\begin_inset Formula $A\left(t+\tau\right)=A\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- фундаментальная матрица системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+), тогда найдется постоянноая невырожденная матрица 
+\begin_inset Formula $C$
+\end_inset
+
+ что выполнится равенство:
+\begin_inset Formula 
+\begin{equation}
+\Phi\left(t+\tau\right)=\Phi\left(t\right)\um C\label{eq:_2_3_3}
+\end{equation}
+
+\end_inset
+
+Матрица 
+\begin_inset Formula $C$
+\end_inset
+
+ называется основной для фундаментальной матрици 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\Phi\left(t\right)$
+\end_inset
+
+ --- фундаменталдьная матрица системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+), то:
+\begin_inset Formula 
+\[
+\df{d\Phi\left(t\right)}{dt}=A\left(t\right)\Phi\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{d\Phi\left(t\right)}{dt}=A\left(t+\tau\right)\Phi\left(t+\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{d\Phi\left(t+\tau\right)}{dt}=A\left(t\right)\Phi\left(t+\tau\right)
+\]
+
+\end_inset
+
+Тоесть 
+\begin_inset Formula $\Phi\left(t+\tau\right)$
+\end_inset
+
+ также является фундаментальной матрицей системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+).
+ А тогда в силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_2"
+
+\end_inset
+
+) найдется постоянная невырожденная матрица 
+\begin_inset Formula $C$
+\end_inset
+
+, что будет справедлива (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_3"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\Phi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Phi_{2}$
+\end_inset
+
+ --- две фундаментальные матрци системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+), а соответственно 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ их основные матрции, тоесть 
+\begin_inset Formula $\Phi_{1}\left(t+\tau\right)=\Phi_{1}\left(t\right)C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Phi_{2}\left(t+\tau\right)=\Phi_{2}\left(t\right)C_{2}$
+\end_inset
+
+ тогда эти матрци будут связаны соотношением: 
+\begin_inset Formula $C_{2}=P^{-1}C_{1}P$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ --- некоторая невырожденная постоянная матрциа.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\Phi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Phi_{2}$
+\end_inset
+
+ фундаментальные матрици, то существет невыроржденная матрици 
+\begin_inset Formula $P$
+\end_inset
+
+, что справедливо равенство (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_2"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\[
+\Phi_{1}\left(t\right)=\Phi_{2}\left(t\right)P^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Phi_{2}\left(t+\tau\right) & = & \Phi_{1}\left(t+\tau\right)P=\\
+ & = & \Phi_{1}\left(t\right)C_{1}P=\\
+ & = & \Phi_{2}\left(t\right)P^{-1}C_{1}P
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С одной стороны: 
+\begin_inset Formula $\Phi_{2}\left(t+\tau\right)=\Phi_{2}\left(t\right)P^{-1}C_{1}P$
+\end_inset
+
+, а с другой стороны: 
+\begin_inset Formula $\Phi_{2}\left(t+\tau\right)=\Phi_{2}\left(t\right)C_{2}$
+\end_inset
+
+.
+ А тогда в силу того что левые части равны, то равны и правые части, а тогда
+ получим: 
+\begin_inset Formula 
+\[
+\Phi_{2}\left(t\right)P^{-1}C_{1}P=\Phi_{2}\left(t\right)C_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{2}\left(t\right)\left(P^{-1}C_{1}P-C_{2}\right)=0
+\]
+
+\end_inset
+
+В силу того что 
+\begin_inset Formula $\Phi_{2}\left(t\right)$
+\end_inset
+
+ --- фундаментальная матрица, то следует что: 
+\begin_inset Formula $C_{2}=P^{-1}C_{1}P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Собственные значения для остоыных матрици сисстемы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+) являются инвариантными.
+\end_layout
+
+\begin_layout Definition
+Собственные матрици 
+\begin_inset Formula $C$
+\end_inset
+
+ называются характеристическими числами системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать систему уравнений: 
+\begin_inset Formula 
+\begin{equation}
+\df{dx}{dt}=f\left(f,x\right)\label{eq:_2_3_4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=\left(\begin{array}{c}
+x_{1}\left(t\right)\\
+\vtr\\
+x_{2}\left(t\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(t,x\right)=\left(\begin{array}{c}
+f_{1}\left(t,x\right)\\
+\vtr\\
+f_{n}\left(t,x\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+Будем рассматривать сисатемы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) с переодическими правыми частями, тоесть 
+\begin_inset Formula $f\left(t+\tau,x\right)=f\left(t,x\right)$
+\end_inset
+
+, илиже автономные системы: 
+\begin_inset Formula $f\left(t,x\right)=f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+И будем исследовать вопрос устойчивости переодических решений 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ с периодом 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\varphi\left(t+\tau\right)=\varphi\left(t\right)
+\]
+
+\end_inset
+
+Проведем линеоризацию сиатемы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) на переодическом решении 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+.
+ Для этогот в системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) сделаем замену: 
+\begin_inset Formula 
+\[
+x\left(t\right)=\varphi\left(t\right)+y\left(t\right)
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ --- это новыя неизвесная вектор-функция.
+ Подставим и получим:
+\begin_inset Formula 
+\begin{equation}
+\df{d\varphi}{dt}+\df{dy}{dt}=f\left(t,\varphi\left(t\right)+y\left(t\right)\right)\label{eq:_2_3_5}
+\end{equation}
+
+\end_inset
+
+Разложим правые части в ряд Тейлора по 
+\begin_inset Formula $y$
+\end_inset
+
+ в окресности 
+\begin_inset Formula $\varphi\left(t\right).$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+f_{1}\left(t,\varphi\left(t\right)+y\left(t\right)\right)=f_{1}\left(t,\varphi\left(t\right)\right)+\df{\dd f_{1}\left(t,\varphi\left(t\right)\right)}{\dd x_{1}}y_{1}+\tr+\df{\dd f_{1}\left(t,y\left(t\right)\right)}{\dd x_{n}}y_{n}+r_{1}\left(t,y\right)\\
+\vtr\\
+f_{n}\left(t,\varphi\left(t\right)+y\left(t\right)\right)=f_{n}\left(t,\varphi\left(t\right)\right)+\df{\dd f_{n}\left(t,\varphi\left(t\right)\right)}{\dd x_{1}}y_{1}+\tr+\df{\dd f_{n}\left(t,y\left(t\right)\right)}{\dd x_{n}}y_{n}+r_{n}\left(t,y\right)
+\end{array}
+\]
+
+\end_inset
+
+Тогда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_5"
+
+\end_inset
+
+) принимает вид:
+\begin_inset Formula 
+\begin{equation}
+\df{d\varphi}{dt}+\df{dy}{dt}=f\left(t,\varphi\left(t\right)\right)+A\left(t\right)y+r\left(t,y\right)\label{eq:_2_3_6}
+\end{equation}
+
+\end_inset
+
+Где 
+\begin_inset Formula $A\left(t\right)$
+\end_inset
+
+ --- матрица 
+\begin_inset Formula $A\left(t\right)=\left(\begin{array}{ccc}
+\df{\dd f_{1}\left(t,\varphi\left(t\right)\right)}{\dd x_{1}} & \tr & \df{\dd f_{1}\left(t,\varphi\left(t\right)\right)}{\dd x_{n}}\\
+\vtr & \ntr & \vtr\\
+\df{\dd f_{n}\left(t,\varphi\left(t\right)\right)}{\dd x_{1}} & \tr & \df{\dd f_{n}\left(t,\varphi\left(t\right)\right)}{\dd x_{n}}
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a_{i,j}\left(t\right)=\df{\dd f_{i}\left(t,x\left(t\right)\right)}{\dd x_{j}}$
+\end_inset
+
+ 
+\begin_inset Formula $y\left(t\right)=\left(\begin{array}{c}
+y_{1}\left(t\right)\\
+\vtr\\
+y_{n}\left(t\right)
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $r\left(t,y\right)=\left(\begin{array}{c}
+r_{1}\left(t,y\right)\\
+\vtr\\
+r_{n}\left(t,x\right)
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ является решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+), то отбрасывая слогаемые вторго порядка малости по 
+\begin_inset Formula $y$
+\end_inset
+
+ --- 
+\begin_inset Formula $r$
+\end_inset
+
+, получим линеоризованную систему.
+\begin_inset Formula 
+\begin{equation}
+\df{dy}{dt}=A\left(t\right)y\label{eq:_2_3_7}
+\end{equation}
+
+\end_inset
+
+Если правые части системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) переодичны с периодом 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (
+\begin_inset Formula $f\left(t+\tau,x\right)=f\left(t,x\right)$
+\end_inset
+
+), и решение тоже переодическое с решением 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (
+\begin_inset Formula $\varphi\left(t+\tau\right)=\varphi\left(t\right)$
+\end_inset
+
+), то линеоризованная система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) такаже являестя переодической с переиодом 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (
+\begin_inset Formula $a_{i,j}\left(t+\tau\right)=a_{i,j}\left(t\right),\ i,j=\overline{1,n}$
+\end_inset
+
+).
+ Поэтому можно говорить о характеристических числах системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Покажем, что если система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) является автономной, а ее переодическое решение 
+\begin_inset Formula $\varphi\left(t+\tau\right)=\varphi\left(t\right)$
+\end_inset
+
+ отлично от положения равновесия (
+\begin_inset Formula $\varphi\left(t\right)\nr C$
+\end_inset
+
+), то линейная система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) обязательно имеет характеристическое число, равное еденице.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\Phi\left(t\right)$
+\end_inset
+
+ --- фундаментальная матримца системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) и в некоторой точке 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ это есть фундаментальная матрица, а 
+\begin_inset Formula $C$
+\end_inset
+
+ --- ее основная матрица.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+\df{d\Phi}{dt}=A\left(t\right)\Phi\\
+\Phi\left(t_{0}\right)=E
+\end{array}\label{eq:_2_3_8}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Phi\left(t+\tau\right)=\Phi\left(t\right)C\label{eq:_2_3_9}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+ --- некоторое решение сисетмы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+\psi\left(t\right)=\Phi\left(t\right)\psi\left(t_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi\left(t_{0}\right)\psi\left(t_{0}\right)=\psi\left(y_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\psi\left(t_{0}+\tau\right)=\Phi\left(t_{0}+\tau\right)\psi\left(t_{0}\right)=\Phi\left(t_{0}\right)C\psi\left(t_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\psi\left(t_{0}+\tau\right)=C\psi\left(t_{0}\right)\label{eq:_2_3_10}
+\end{equation}
+
+\end_inset
+
+Для оюбого регения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) будет справедливо равенство (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_10"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- переодическое решение системы.
+\begin_inset Formula 
+\[
+\df{d\varphi}{dt}=f\left(\varphi\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df d{dt}\left(\df{d\varphi}{dt}\right)=A\left(t\right)\df{d\varphi}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\df{d\varphi}{dt}$
+\end_inset
+
+ --- является решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\[
+\df{d\varphi\left(t+\tau\right)}{dt}=\df{d\varphi\left(t\right)}{dt}
+\]
+
+\end_inset
+
+В силу переодичности решения:
+\begin_inset Formula 
+\[
+\df{d\varphi\left(t_{0}\right)}{dt}=\df{d\varphi\left(t_{0}+\tau\right)}{dt}
+\]
+
+\end_inset
+
+В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_10"
+
+\end_inset
+
+) получим:
+\begin_inset Formula 
+\[
+\df{d\varphi\left(t_{0}+\tau\right)}{dt}=C\df{d\varphi\left(t_{0}\right)}{dt}
+\]
+
+\end_inset
+
+В итоге: 
+\begin_inset Formula 
+\[
+C\df{d\varphi\left(t_{0}\right)}{dt}=\df{d\varphi\left(t_{0}\right)}{dt}
+\]
+
+\end_inset
+
+Тоесть еденица является характеристическим число системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Ляпунова
+\end_layout
+
+\end_inset
+
+Система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) переодична по 
+\begin_inset Formula $\tau$
+\end_inset
+
+ с периудом 
+\begin_inset Formula $\tau$
+\end_inset
+
+, и 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- переодическое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) с периудом 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Если все характеристические числа системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) по модулю меньше еденици, то переодическое решение 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- ассимптотически устойчиво, причем любое решение, начинающиеся вблизи
+ 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, будет стремиться к 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ эксподенциальным образом.
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Андронного-Витте
+\end_layout
+
+\end_inset
+
+Пусть система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_4"
+
+\end_inset
+
+) автономна, и 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- ее переодическое решение с периодом 
+\begin_inset Formula $\tau$
+\end_inset
+
+, отличное от положения равновесия.
+ Если характеристическое число системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) равное еденице имеет кратность 1, а все остальные характеристические числа
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_3_7"
+
+\end_inset
+
+) по модулю меньше еденици, то 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ --- устойчиво по Ляпунову.
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+\end_layout
+
 \end_body
 \end_document
