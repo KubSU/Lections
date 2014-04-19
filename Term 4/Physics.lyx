@@ -2233,7 +2233,335 @@ U_{12}=\varepsilon(\text{большая})+\left(\varphi_{1}-\varphi_{2}\right)
 
 \end_layout
 
+\begin_layout Subsubsection
+Закон Ома.
+ Сопротивление проводников.
+\end_layout
+
+\begin_layout Definition
+Участок цепи на котором отсутствует ЭДС называется однородным.
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula 
+\[
+I=\df UR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I --- Сила тока.
+\end_layout
+
+\begin_layout Standard
+U --- Напряжение на участке.
+\end_layout
+
+\begin_layout Standard
+R --- сопротивление участка.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\rho\um\df lS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- Длина проводника.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ --- Поперечное сечение проводника.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- Удельное сопротивление.
+\end_layout
+
+\begin_layout Claim
+Для последовательного соединения сопротивлений:
+\begin_inset Formula 
+\[
+R=\ous{i=1}nR_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Claim
+Для параллельного соединения сопротивлений:
+\begin_inset Formula 
+\[
+\df 1R=\ous{i=1}n\df 1{R_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим закон Ома в дифференциальной форме:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+i & =\df{du\um ds}{\rho\um dl}\\
+jds & =\df{E\um dl\um ds}{\rho\um dl} & \then &  & j & =\df E{\rho}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+j --- плотность тока.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{\rho}=\sigma$
+\end_inset
+
+ --- коэффициент электропроводимости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\rho & =\rho_{0}\left(1+\alpha t\right)\\
+\alpha & =\df 1{273.15}\\
+\rho & =\rho_{0}\df T{T_{0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Закон Джоуля--Ленца.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Q & =R\um I^{2}\um t=\df{U^{2}}R\um t=U\um I\um t\\
+Q & =R\oiu 0ti^{2}\left(\tau\right)d\tau
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta A=U\um dq=Uidt=R\um i\um idt=Ri^{2}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\delta Q=Ri^{2}dt=\rho\df{dl}{ds}\um\left(j\um ds\right)^{2}dt=\\
+=\rho j^{2}\um dl\um ds\um dt=\rho j^{2}dv\um dt
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Удельная мощность тока --- 
+\begin_inset Formula $w=\rho j^{2}=\v j\um\v E$
+\end_inset
+
+.
+ Это и есть закон Джоуля--Ленца в дифференциальной форме.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+Q=\oiu 0t\iiint\limits _{D}\rho j^{2}\left(\tau\right)\um dv\um d\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Закон Ома для неоднородного участка цепи
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{12}=\varphi_{1}-\varphi_{2}+\varepsilon_{12}
+\]
+
+\end_inset
+
+Тогда
+\begin_inset Formula 
+\begin{align*}
+\delta A & =U_{12}dq=\left(\varphi_{1}-\varphi_{2}\right)dq+\varepsilon_{12}dq\\
+\delta Q & =R\um i^{2}dt=R\um i\um dq
+\end{align*}
+
+\end_inset
+
+Но так как 
+\begin_inset Formula $\delta A=\delta Q$
+\end_inset
+
+, то
+\begin_inset Formula 
+\begin{align*}
+R\um i & =\left(\varphi_{1}-\varphi_{2}\right)+\varepsilon_{12}\\
+i & =\df{\left(\varphi_{1}-\varphi_{2}\right)+\varepsilon_{12}}R
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Закон Ома для замкнутой цепи:
+\begin_inset Formula 
+\[
+i=\df{\varepsilon}R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Разветвленные цепи.
+ Правило Кирхгофа.
+\end_layout
+
+\begin_layout Definition
+Узел разветвленной цепи --- точка, в которой сходится 3 и более проводников.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Первое правило Киркгофа
+\end_layout
+
+\end_inset
+
+ Алгебраическая сумма токов, сходящихся в узле равна нулю.
+ Ток который входит в узел положительный, который выходит --- отрицательный.
+\begin_inset Formula 
+\[
+\ous{i=1}nI_{i}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рисунок!!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{1}R_{1}=\varphi_{a}-\varphi_{b}+\varepsilon_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{2}R_{2}=\varphi_{b}-\varphi_{c}+\varepsilon_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{3}R_{4}=\varphi_{c}-\varphi_{a}+\varepsilon_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{1}R_{1}-i_{2}R_{2}+i_{3}R_{4}=\varepsilon_{1}-\varepsilon_{3}-\varepsilon_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Второе правило Киркгофа
+\end_layout
+
+\end_inset
+
+ Если в цепи 
+\begin_inset Formula $n$
+\end_inset
+
+ циклов, то правило Киркгофа записывется для 
+\begin_inset Formula $n-1$
+\end_inset
+
+ цикла.
+\begin_inset Formula 
+\[
+\ous{k=1}ni_{k}R_{k}=\ous{k=1}n\varepsilon_{k}
+\]
+
+\end_inset
+
 
 \end_layout
 
