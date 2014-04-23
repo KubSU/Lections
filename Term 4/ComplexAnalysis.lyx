@@ -9569,6 +9569,620 @@ reference "eq:_3_2_1"
 \end_layout
 
 \begin_layout Standard
+Можно находить 
+\begin_inset Formula $R$
+\end_inset
+
+ при помиощи признака Даламбера сходимости знакоположительного ряда.
+ Для абсолютной сходимсоти ряда 
+\begin_inset Formula $\ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ исследуется ряд 
+\begin_inset Formula $\ous{n=0}{\b}\left|c_{n}\right|\um\left|z-z_{0}\right|^{n}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\ul{n\st\b}\df{a_{n+1}}{a_{n}} & = & \ul{n\st\b}\df{\left|c_{n+1}\right|\left|z-z_{0}\right|^{n+1}}{\left|c_{n}\right|\left|z-z_{0}\right|^{n}}=\\
+ & = & \left|z-z_{0}\right|\ul{n\st\b}\left|\df{c_{n+1}}{c_{n}}\right|=\\
+ & = & R
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ряд Тейлора
+\end_layout
+
+\begin_layout Standard
+Мы доказали что внутри круга сходимсоти степенной ряд определяет аналитическую
+ функцию.
+ Верно и обратное утверэдение:
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитическая внутри круга 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+ может быть представлена в этом круге сходящимся степенным рядом:
+\begin_inset Formula 
+\[
+f\left(z\right)=\ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+причем это представление единственно.
+\end_layout
+
+\begin_layout Proof
+Возьмем производную точку 
+\begin_inset Formula $z$
+\end_inset
+
+ такую что 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+.
+ Рассмотрим окружность 
+\begin_inset Formula $C_{\rho}=\left\{ \xi|\left|\xi-z_{0}\right|=\rho<R\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По интегральной формуле Коши:
+\begin_inset Formula 
+\begin{equation}
+f\left(z\right)=\df 1{2\pi i}\ui{C_{\rho}}\df{f\left(\xi\right)}{\xi-z}d\rho\label{eq:_3_3_2}
+\end{equation}
+
+\end_inset
+
+Преобразуем:
+\begin_inset Formula 
+\begin{eqnarray}
+\df 1{\xi-z} & = & \df 1{\xi-z_{0}-\left(z-z_{0}\right)}=\nonumber \\
+ & = & \df 1{\xi-z_{0}}\um\df 1{1-\df{z-z_{0}}{\xi-z_{0}}}=\nonumber \\
+ & = & \left\{ \begin{array}{c}
+\left|\df{z-z_{0}}{\xi-z_{0}}\right|<1\\
+\df 1{1-t}=\ous{n=0}{\b}t^{n}
+\end{array}\right\} =\nonumber \\
+ & = & \df 1{\xi-z_{0}}\um\ous{n=0}{\b}\left(\df{z-z_{0}}{\xi-z_{0}}\right)^{n}=\nonumber \\
+ & = & \ous{n=0}{\b}\df{\left(z-z_{0}\right)^{n}}{\left(\xi-z_{0}\right)^{n+1}}\label{eq:_3_3_3}
+\end{eqnarray}
+
+\end_inset
+
+ так как 
+\begin_inset Formula $\left|\df{\left(z-z_{0}\right)^{n}}{\left(\xi-z_{0}\right)^{n+1}}\right|=\df{\left|z-z_{0}\right|^{n}}{\left|\xi-z_{0}\right|^{n+1}}=\df 1{\rho}\left(\df{\left|z-z_{0}\right|}{\rho}\right)^{n}$
+\end_inset
+
+ --- члены сходящегося числового ряда, следовательно ряд (3) допускает сходящуюс
+я мажоранту (равномерная оценка не зависит от 
+\begin_inset Formula $\xi$
+\end_inset
+
+) следовательно ряд сходится равномерно на 
+\begin_inset Formula $C_{\rho}$
+\end_inset
+
+, следовательно почленным интегрированием по контуру 
+\begin_inset Formula $C_{\rho}$
+\end_inset
+
+получим:
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \df 1{2\pi i}\ui{C_{\rho}}f\left(\xi\right)\ous{n=0}{\b}\df{\left(z-z_{0}\right)^{n}}{\left(\xi-z_{0}\right)^{n+1}}d\xi=\\
+ & = & \df 1{2\pi i}\ui{C_{\rho}}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi\left(z-z_{0}\right)^{n}=\\
+ & = & \ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}
+\end{eqnarray*}
+
+\end_inset
+
+где 
+\begin_inset Formula $c_{n}=\df{f^{\left(n\right)}\left(z_{0}\right)}{n!},\ n=0,1,\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Единственность разложения следует из однозначности коэфикиентов 
+\begin_inset Formula $\left\{ c_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в области 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ называется нулем функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $f\left(z_{0}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Используя разложение:
+\begin_inset Formula 
+\[
+f\left(z\right)=\ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+получим 
+\begin_inset Formula $f\left(z_{0}\right)=c_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ называется нулем 
+\begin_inset Formula $k$
+\end_inset
+
+-ого порядка функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $f\left(z_{0}\right)=f\pr\left(z_{0}\right)=\tr=f^{\left(k-1\right)}\left(z_{0}\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $f^{\left(k\right)}\left(z_{0}\right)\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для нуля 
+\begin_inset Formula $k$
+\end_inset
+
+-ого порядка из разложения 
+\begin_inset Formula $f\left(z\right)=\ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\pr\left(z_{0}\right)=0\dsl c_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\pr\left(z_{0}\right)=0\dsl c_{1}=\df{f\pr\left(z_{0}\right)}{1!}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vtr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{k-1}=\df{f^{\left(k-1\right)}\left(z_{0}\right)}{\left(k-1\right)!}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{k}=\df{f^{\left(k\right)}\left(z_{0}\right)}{k!}\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \ous{n=k}{\b}c_{n}\left(z-z_{0}\right)^{n}=\\
+ & = & \left(z-z_{0}\right)^{k}\um\ous{n=0}{\b}c_{k+n}\left(z-z_{0}\right)^{n}=\\
+ & = & \left(z-z_{0}\right)^{k}\um\varphi\left(z\right)
+\end{eqnarray*}
+
+\end_inset
+
+где 
+\begin_inset Formula $\varphi\left(z\right)$
+\end_inset
+
+ --- аналитическая функция 
+\begin_inset Formula $\varphi\left(z_{0}\right)\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в области 
+\begin_inset Formula $D$
+\end_inset
+
+, и обращается в 0 в точках 
+\begin_inset Formula $z_{k},\ k=1,2\tr$
+\end_inset
+
+.
+ Если последовательность 
+\begin_inset Formula $\left\{ z_{k}\right\} $
+\end_inset
+
+ имеет конечную предельную точку 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $R=dist\left(z_{0},\dd D\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ в круге 
+\begin_inset Formula $\left|z-z_{0}\right|<R$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ --- аналитиччна, а следовательно раскладывается в ряд Тейлора:
+\begin_inset Formula 
+\[
+f\left(z\right)=\ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\ul{n\st\b}z_{n}=z_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ul{k\st\b}f\left(z_{k}\right) & = & \left\{ \begin{array}{c}
+\text{аналитичность \ensuremath{\sl}непрерывность в \ensuremath{z_{0}}}\\
+\text{По Тейлору}
+\end{array}\right\} =\\
+ & = & f\left(z_{0}\right)=0
+\end{eqnarray*}
+
+\end_inset
+
+Следовательно 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ это ноль функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, следовательног можно сказать, что 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{0}\right)\varphi_{1}\left(z\right)$
+\end_inset
+
+ где 
+\begin_inset Formula $\varphi_{1}\left(z\right)$
+\end_inset
+
+ --- аналитическая функция в том же самом круге.
+ 
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\forall k$
+\end_inset
+
+ 
+\begin_inset Formula $z_{k}\nr z_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(z_{k}\right)=\left(z_{k}-z_{0}\right)\varphi_{1}\left(z_{k}\right)=0\ \dsl\ \varphi_{1}\left(z_{k}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Слежовательно аналогично преведущему: 
+\begin_inset Formula $\varphi_{1}\left(z\right)=\left(z-z_{0}\right)\varphi_{2}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+И так далее....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall k=1,2\tr$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{0}\right)^{k}\varphi_{k}\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{k}=0\ \sl\ f\left(z\right)\equiv0$
+\end_inset
+
+ в круге.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим произвольную точку 
+\begin_inset Formula $z\in D$
+\end_inset
+
+.
+ СОеденим 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+ гладким контуром 
+\begin_inset Formula $\gamma\vkl D$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $d=\min\rho\left(\xi,\eta\right)$
+\end_inset
+
+ В круге 
+\begin_inset Formula $S_{d}\left(z_{0}\right)\ f\left(z\right)\equiv0$
+\end_inset
+
+ по доказанному выше.
+ Так как точка 
+\begin_inset Formula $z_{1}=\gamma\cap C_{d}\left(z_{0}\right)$
+\end_inset
+
+ --- предельная точка для функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, то в круге 
+\begin_inset Formula $S_{d}\left(z_{1}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+ 
+\begin_inset Formula $z_{2}=\gamma\cap C_{d}\left(z_{1}\right)$
+\end_inset
+
+ и так далее за конесное число шагов:
+\begin_inset Formula 
+\[
+z\in C_{d}\left(z_{m}\right)\then f\left(z\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+
+\emph default
+ Если 
+\begin_inset Formula $f\left(z\right)\nr0$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+ и аналитична то в любой пообласти области 
+\begin_inset Formula $D$
+\end_inset
+
+ множество нулей 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на может быть бесконечным.
+\end_layout
+
+\begin_layout Proof
+Небудет.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Единственности
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ аналитичны в 
+\begin_inset Formula $D$
+\end_inset
+
+ и множество точек 
+\begin_inset Formula $z_{k}$
+\end_inset
+
+, таких что 
+\begin_inset Formula $f\left(z_{k}\right)=g\left(z_{k}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $z_{k}\in D,\ k\in\N$
+\end_inset
+
+ имеет предельную точку 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $f\left(z\right)\equiv g\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Расммотрим 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+ --- аналитичная функция на 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z_{k}\right)=0\ \forall k\in\N$
+\end_inset
+
+, 
+\begin_inset Formula $\ul{n\st\b}z_{0}\in D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ По преведущей теореме 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $h\left(z\right)\equiv0$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)\equiv g\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
