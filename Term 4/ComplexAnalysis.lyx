@@ -10182,11 +10182,454 @@ status open
 .
 \end_layout
 
+\begin_layout Subsection
+Ряд Лорана
+\end_layout
+
+\begin_layout Definition
+Ряд вида 
+\begin_inset Formula 
+\begin{equation}
+\ous{n=-\b}{+\b}c_{n}\left(z-z_{0}\right)^{n}\label{eq:_3_4_1}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $z_{0}\in\C$
+\end_inset
+
+ --- фиксированная точка, 
+\begin_inset Formula $c_{n},\, n\in\Z$
+\end_inset
+
+ --- коэффициенты, называется рядом Лорана.
+\end_layout
+
 \begin_layout Standard
-\begin_inset Newpage newpage
+Область сходимости ряда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_4_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \ous{n=-\b}{+\b}c_{n}\left(z-z_{0}\right)^{n}=\\
+ & = & \ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}+\ous{n=-\b}{-1}c_{n}\left(z-z_{0}\right)^{n}=\\
+ & = & \ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}+\ous{n=1}{\b}\df{c_{-n}}{\left(z-z_{0}\right)^{n}}=
+\end{eqnarray*}
+
+\end_inset
+
+Суммы 
+\begin_inset Formula $f_{1}\left(z\right)=\ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)=\ous{n=1}{\b}\df{c_{-n}}{\left(z-z_{0}\right)^{n}}$
+\end_inset
+
+ называются правильной и главной частями ряда Лорана соответственно.
+ 
+\end_layout
+
+\begin_layout Standard
+Так как правильная часть 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ --- это ряд Тейлора.
+ Он сходится в круге с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ радиуса 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\xi=\df 1{z-z_{0}}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $f_{2}\left(z\right)=\ous{n=1}{\b}c_{-n}\xi^{n}$
+\end_inset
+
+ --- Это тоже ряд Тейлора, который сходится в некотором круге 
+\begin_inset Formula $\left|\xi\right|<\df 1{R_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{\left|z-z_{0}\right|}<\df 1{R_{2}}\ \dsl\ \left|z-z_{0}\right|>R_{2}$
+\end_inset
+
+ --- область сходимости главной части.
+\end_layout
+
+\begin_layout Standard
+Следовательно областьюж сходимости ряда Лорана является кольцо: 
+\begin_inset Formula $R_{2}<\left|z-z_{0}\right|<R_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что если 
+\begin_inset Formula $R_{2}>R_{1}$
+\end_inset
+
+, то ряд (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_4_1"
+
+\end_inset
+
+) нигде не сходится.
+\end_layout
+
+\begin_layout Theorem
+Функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, аналитическая в круговом кольце 
+\begin_inset Formula $R_{2}<\left|z-z_{0}\right|<R_{1}$
+\end_inset
+
+, однозначно представляется в этом кольце сходящимся рядом Лорана: 
+\begin_inset Formula $f\left(z\right)=\ous{n=-\b}{+\b}c_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Зафиксируем в кольце 
+\begin_inset Formula $R_{2}<\left|z-z_{0}\right|<R_{1}$
+\end_inset
+
+ произвольную точку 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Рассмотрим окружности 
+\begin_inset Formula $C_{R_{1}\pr}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{R_{2}\pr}$
+\end_inset
+
+ радиуса 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ так, что:
+\begin_inset Formula 
+\[
+R_{2}<R_{2}\pr<\left|z-z_{0}\right|<R_{1}\pr<R_{1}
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+По теореме Коши для многосвязной области: 
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \df 1{2\pi i}\ui{C_{R_{1}\pr}\ob C_{R_{2}\pr}^{-}}\df{f\left(\xi\right)}{\xi-z}d\xi=\\
+ & = & \df 1{2\pi i}\ui{C_{R_{1}\pr}}\df{f\left(\xi\right)}{\xi-z}d\xi+\df 1{2\pi i}\ui{C_{R_{2}\pr}^{-}}\df{f\left(\xi\right)}{\xi-z}d\xi
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $C_{R_{1}\pr}\left|\df{z-z_{0}}{\xi-z_{0}}\right|=q<1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df 1{\xi-z}=\df 1{\left(\xi-z_{0}\right)-\left(z-z_{0}\right)}=\df 1{\xi-z_{0}}\um\df 1{1-\df{z-z_{0}}{\xi-z_{0}}}=\df 1{\xi-z_{0}}\um\ous{n=0}{\b}\left(\df{z-z_{0}}{\xi-z_{0}}\right)^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как степенной ряд сходится равномерно, то почленное интегрирование по
+ контуру 
+\begin_inset Formula $C_{R_{1}\pr}$
+\end_inset
+
+ дает следующее:
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{1}\left(z\right) & = & \df 1{2\pi i}\ui{C_{R_{1}\pr}}\df{f\left(\xi\right)}{\xi-z}d\xi=\\
+ & = & \df 1{2\pi i}\ous{n=0}{\b}\ui{C_{R_{1}\pr}}\df{f\left(\xi\right)d\xi}{\left(\xi-z_{0}\right)^{n+1}}\left(z-z_{0}\right)^{n}=\\
+ & = & \ous{n=0}{\b}c_{n}\left(z-z_{0}\right)^{n}
+\end{eqnarray*}
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\begin{equation}
+c_{n}=\df 1{2\pi i}\ui{C_{R_{1}\pr}}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi\label{eq:_3_4_*}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $n=0,1,\tr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+На 
+\begin_inset Formula $C_{R_{2}\pr}$
+\end_inset
+
+: 
+\begin_inset Formula $\left|\df{\xi-z_{0}}{z-z_{0}}\right|=q<1$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\df 1{\xi-z} & = & \df 1{\left(\xi-z_{0}\right)-\left(z-z_{0}\right)}=\\
+ & = & -\df 1{z-z_{0}}\um\df 1{1-\df{\xi-z_{0}}{z-z_{0}}}=\\
+ & = & \df 1{z-z_{0}}\ous{n=0}{\b}\left(\df{\xi-z_{0}}{z-z_{0}}\right)^{n},
+\end{eqnarray*}
+
+\end_inset
+
+Равномерно сходится, почленно интегририруя на 
+\begin_inset Formula $C_{R_{2}\pr},$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{2}\left(z\right) & = & \df 1{2\pi i}\ui{C_{R_{2}\pr}}\df{f\left(\xi\right)}{\xi-z}d\xi=\\
+ & = & \ous{n=0}{\b}\left(-\df 1{2\pi i}\right)\ui{C_{R_{2}\pr}}\df{f\left(\xi\right)\left(\xi-z_{0}\right)^{n}}{\left(z-z_{0}\right)^{n+1}}d\xi=\\
+ & = & \ous{n=1}{\b}\df 1{2\pi i}\ui{C_{R_{2}\pr}}\df{f\left(\xi\right)\left(\xi-z_{0}\right)^{n-1}}{\left(z-z_{0}\right)^{n}}=\\
+ & = & \ous{n=-\b}{-1}\df 1{2\pi i}\ui{C_{R_{2}\pr}}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi\left(z-z_{0}\right)^{n}=\\
+ & = & \ous{n=-\b}{-1}c_{n}\left(z-z_{0}\right)^{n},
+\end{eqnarray*}
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\begin{equation}
+c_{n}=\df 1{2\pi i}\ui{C_{R_{2}\pr}}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi\label{eq:_3_4_**}
+\end{equation}
+
+\end_inset
+
+Заметим, что 
+\begin_inset Formula $\forall R\ :\ R_{2}\pr<R<R_{1}\pr$
+\end_inset
+
+ интегралы от наналитиченой функции 
+\begin_inset Formula $\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}$
+\end_inset
+
+ по контурам 
+\begin_inset Formula $C_{R_{1}\pr}\ob C_{R_{2}}^{-}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{R_{1}}\ob C_{R_{2}\pr}^{-}$
+\end_inset
+
+.
+ То 
+\begin_inset Formula $\ui{C_{R_{1}\pr}}=\ui{C_{R}}$
+\end_inset
+
+, 
+\begin_inset Formula $\ui{C_{R_{2}\pr}}=\ui{C_{R_{1}}}$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Proof
+Следовательно из (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_4_*"
+
+\end_inset
+
+) и (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_3_4_**"
+
+\end_inset
+
+) получим одну формулу: 
+\begin_inset Formula $c_{n}=\df 1{2\pi i}\ui{C_{R}}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi,\ n\in\Z$
+\end_inset
+
+, и 
+\begin_inset Formula $f\left(z\right)=\ous{n=-\b}{+\b}c_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем единственность.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ допускает в кольце 
+\begin_inset Formula $R_{1}<\left|z-z_{0}\right|<R_{1}$
+\end_inset
+
+, дваразложения:
+\begin_inset Formula 
+\[
+f\left(z\right)=\ous{n=-\b}{+\b}c_{n}\left(z-z_{0}\right)=\ous{n=-\b}{+\b}c_{n}\pr\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+Домножим обе части равенства 
+\begin_inset Formula $\left(z-z_{0}\right)^{-m-1}$
+\end_inset
+
+ проинтегрируем по контуру 
+\begin_inset Formula $C_{R}=\left\{ \xi|\left|\xi-z_{0}\right|R,\, R_{2}<R<R_{1}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\xi-z_{0}=R\um e^{i\varphi}\ \sl\ \xi=z_{0}+Re^{i\varphi},\ \varphi\in\left[0;2\pi\right]\ d\xi=R\um ie^{i\varphi}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula $\ui{C_{R}}\left(\xi-z_{0}\right)^{n-m-1}d\xi=\oui 0{2\pi}R^{n-m-1}e^{i\varphi\left(n-m-1\right)}R\um i\um e^{i\varphi}=R^{n-m}i\oui 0{2\pi}e^{i\varphi\left(n-m\right)}d\varphi=\begin{cases}
+2\pi i, & m=n\\
+0, & n\nr m
+\end{cases}$
+\end_inset
+
+ при 
+\end_layout
+
+\begin_layout Proof
+При почленном интегрировании получим 
+\begin_inset Formula $\left(n=m\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+c_{m}\um2\pi i=c_{m}\pr2\pi i,\ \forall m\in\Z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{m}=c_{m}\pr\ \forall m\ \sl\text{разложение однозначн.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Особые точки
+\end_layout
+
+\begin_layout Definition
+Точка 
+\begin_inset Formula $z=a$
+\end_inset
+
+ называется изолированной особой точкой функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ если существует выколотая окресность точки 
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+0<\left|z-a\right|<R
+\]
+
+\end_inset
+
+в которой функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична.
+\end_layout
+
+\begin_layout Definition
+Обчедно, что такая окресность --- часный слкучай кольца.
 \end_layout
 
 \begin_layout Standard
