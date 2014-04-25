@@ -6034,5 +6034,977 @@ reference "eq:_2_3_7"
 Без доказательства.
 \end_layout
 
+\begin_layout Subsection
+Краевые задачи
+\end_layout
+
+\begin_layout Standard
+Для выделение единственного решения дифференциального уравненпия нужно задавать
+ дополнительные условия.
+ Если дополнительные условия задаются в одной точке то они называются условиями
+ Коши, а дифференциальное уравнение и эти условия называются задачей Коши.
+ Если дополнительные условия задаются более чем в одной точке, то они называаютс
+я краевыми или граничными, ну а дифференциальное уравнение и дополнительные
+ условия называются краевой задачей.
+ 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим линейное дифференциальное уравнение:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\df{d^{2}x}{dt^{2}}+b\left(t\right)\df{dx}{dt}+a\left(t\right)x=f\left(t\right),\ t\in\left[t_{1},t_{2}\right]\\
+\alpha_{1}x\left(t_{1}\right)+\beta_{1}x\pr\left(t_{1}\right)=\gamma_{1}\\
+\alpha_{1}x\left(t_{1}\right)+\beta_{2}x\pr\left(t_{2}\right)=\gamma_{2}
+\end{array}
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $\alpha_{i},\beta_{i},\gamma_{i}$
+\end_inset
+
+ --- заданные постоянные, причем предпологается, что 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ одновременно в нуль не обращаются.Тоесть 
+\begin_inset Formula $\alpha_{i}^{2}+\beta_{i}^{2}\nr0,\ i=\overline{1,2}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+ равны нулю, то краевые условия называются однородными.
+ Если и уравнение однородное, то тогда краевая задача называется однородной.
+ Если 
+\begin_inset Formula $\beta_{1}=\beta_{2}=0$
+\end_inset
+
+ то граничные услогвия называются условиями первого рода.
+ Если 
+\begin_inset Formula $\alpha_{1}=\alpha_{2}=0$
+\end_inset
+
+, то тогда граничные условия называются условиями второго рода.
+ Если 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ одновременно не равны нулю, то в этом случае граничные условия называются
+ условиями третьего рода.
+\end_layout
+
+\begin_layout Standard
+Сделаем парочку упрощений:
+\end_layout
+
+\begin_layout Enumerate
+Уберем первую производную.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+МОжно сделать замену, с помощью которой можно избавится от первой производной.
+\begin_inset Formula 
+\[
+x\left(t\right)=y\left(t\right)\um\exp\left(-\df 12\oui{t_{1}}tb\left(\xi\right)d\xi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Будем считать, что 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau=\df{t-t_{1}}{t_{2}-t_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Без ограничения общности неоднородное дифференциальное уравнения можно рассматри
+вать с однородными граничными условиями.
+\begin_inset Formula 
+\[
+\gamma_{1}=\gamma_{2}=0
+\]
+
+\end_inset
+
+Если это не так, то можно селать замену:
+\begin_inset Formula 
+\[
+x\left(t\right)=y\left(t\right)+z\left(t\right)
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ --- любая функция, удовлетворяющая граничным условиям.
+ Например если задано граниченое условия первого рода 
+\begin_inset Formula $x\left(t_{1}\right)=\gamma_{1},\ x\left(t_{2}\right)=\gamma_{2}$
+\end_inset
+
+, то в качестве 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ можно взять линейную функцию: 
+\begin_inset Formula $y\left(t\right)=\gamma_{1}\left(1-t\right)+\gamma_{2}\um t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для простоты будем предпологать что 
+\begin_inset Formula $\beta_{1}=\beta_{2}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+В дальнейшем будем рассматривать вод такую задачу:
+\begin_inset Formula 
+\begin{equation}
+\df{d^{2}x}{dt^{2}}+a\left(t\right)x=f\left(t\right),\ t\in\left[0;1\right]\label{eq:_2_4_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+x\left(0\right)=x\left(1\right)=0\label{eq:_2_4_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Всюду в дальнейшем будем предпологать, что функции 
+\begin_inset Formula $a\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ заданы и непрерывны на отрезке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+x\ppr+b^{2}x=f\left(t\right)\\
+x\left(0\right)=x\left(1\right)=0
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda^{2}+b^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\lambda_{1,2}=\pm bi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x\left(t\right)=c_{1}\cos bt+c_{2}\sin bt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+c_{1}\pr\left(t\right)\cos bt+c_{2}\pr\left(t\right)\sin bt=0\\
+-c_{1}\pr\left(t\right)b\sin bt+c_{2}\pr\left(t\right)b\cos bt=f\left(t\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\begin{cases}
+c_{2}\pr\left(t\right)=\df 1b\cos bt\um f\left(t\right)\\
+c_{1}\pr\left(t\right)=-\df 1b\sin bt\um f\left(t\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Проинтегрировав, погсставив и немного упростив, мы получим, что общее решение
+ этой задачи будет иметь вид:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x\left(t\right)=c_{1}\cos bt+c_{2}\sin bt+\df 1b\oui 0t\sin\left(t-s\right)f\left(s\right)ds$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Должно выполняться: 
+\begin_inset Formula $c_{1}+c_{2}\um0=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $c_{1}\cos b+c_{2}\sin b+\df 1b\oui 01\sin b\left(1-s\right)f\left(s\right)ds=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $c_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Если 
+\begin_inset Formula $\sin b\nr0$
+\end_inset
+
+, то алгебраическая система разрешима, причем единственно, ну а следовательно
+ и рассматриваемая краевая задача емеет единственное решение.
+\end_layout
+
+\begin_layout Example
+Если же 
+\begin_inset Formula $\sin b=0$
+\end_inset
+
+, то в этом слкучае система разрешима не при любой функции 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+, ну а следовательно и краевая задача разрешима не при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+, так как если 
+\begin_inset Formula $\sin b=0$
+\end_inset
+
+, то должно выполняться: 
+\begin_inset Formula $\oui 01\sin b\left(1-s\right)f\left(s\right)ds=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Если же интеграл равен нулю, то краевая задача имеет бесконечно много решений,
+ а если необращается в ноль, то не тимеет их совсем.
+ Заметим, что если 
+\begin_inset Formula $\sin b=0$
+\end_inset
+
+, то соооттветствующая однородная краевая задача:
+\begin_inset Formula 
+\[
+\begin{cases}
+x\ppr+b^{2}x=0\\
+x\left(0\right)=x\left(1\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+имеет ненулевое решение, а имннно 
+\begin_inset Formula $x=\sin bt$
+\end_inset
+
+, а если 
+\begin_inset Formula $\sin b\nr0$
+\end_inset
+
+, то эта задача имеет толькот нулевое решение.
+\end_layout
+
+\begin_layout Subsection
+Альтернатива Фредгольма
+\end_layout
+
+\begin_layout Standard
+Либа краевая задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) при любой правой части 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ имеет решения, либо соответствующая однородная задача имеет ненулевое решение.
+\end_layout
+
+\begin_layout Standard
+Иначе говоря, чтобы задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) была разрешима при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+, неоюходимо и доастаточно чтобы соответствующая однородная краевая задачаимела
+ только нулевое решение.
+\end_layout
+
+\begin_layout Proof
+Пусть однородная краевая задача имеет решения отличное от тождественного
+ нуля.
+ Пусть 
+\begin_inset Formula $x\left(t\right)\nr0$
+\end_inset
+
+, удовлетворяет такой краевой задачи: 
+\begin_inset Formula 
+\[
+\begin{cases}
+x_{1}\ppr\left(t\right)+a\left(t\right)x_{1}\left(t\right)=0\\
+x_{1}\left(0\right)=x_{2}\left(1\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Покажем что в этом случае задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) разрешима не при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+.
+ Обозначим через 
+\begin_inset Formula $x_{2}\left(t\right)$
+\end_inset
+
+ какое нибудь решения однордного дифференциального уравнения 
+\begin_inset Formula $x_{2}\ppr\left(t\right)+a\left(t\right)x_{2}\left(t\right)=0$
+\end_inset
+
+, линейно независимое с 
+\begin_inset Formula $x_{1}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда определитель Вронсткого 
+\begin_inset Formula $W\left(t\right)=\left|\begin{array}{cc}
+x_{1}\left(t\right) & x_{2}\left(t\right)\\
+x_{1}\pr\left(t\right) & x_{2}\pr\left(t\right)
+\end{array}\right|\nr0$
+\end_inset
+
+, построенный по этим функциям, никогда не обращается в ноль (поскольку
+ они линейно не зависимы).
+ Более того, в силу теоремы Лиуввилля 
+\begin_inset Formula $W\left(t\right)=const$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $W\left(0\right)=\left|\begin{array}{cc}
+0 & x_{2}\left(0\right)\\
+x_{1}\pr\left(0\right) & x_{2}\pr\left(0\right)
+\end{array}\right|=-x_{1}\pr\left(0\right)x_{2}\left(0\right)\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогимчно показываем, что 
+\begin_inset Formula $x_{2}\left(1\right)\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тоесть 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ образуют функциональную систему соответствуемого линейного однородного
+ дифференциального уравнения.
+\end_layout
+
+\begin_layout Proof
+Тогда общее решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+) имеет вид: 
+\begin_inset Formula 
+\begin{equation}
+x\left(t\right)=c_{1}x_{1}\left(t\right)+c_{2}x_{2}\left(t\right)+\oui 0t\df{x_{2}\left(t\right)x_{1}\left(s\right)-x_{2}\left(s\right)x_{1}\left(t\right)}{W\left(s\right)}f\left(s\right)ds\label{eq:_2_5_3}
+\end{equation}
+
+\end_inset
+
+Это следуем из:
+\begin_inset Formula 
+\[
+\begin{cases}
+c_{1}\pr\left(t\right)x_{1}\left(t\right)+c_{2}\pr\left(t\right)x_{2}\left(t\right)=0\\
+c_{1}\pr\left(t\right)x_{1}\pr\left(t\right)+c_{2}\pr\left(t\right)x_{2}\pr\left(t\right)=f\left(t\right)
+\end{cases}
+\]
+
+\end_inset
+
+Чтобы 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_3"
+
+\end_inset
+
+) удовлетворяла граничным условиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) постоянные 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ должны удовлетворять слудующей алгебраической системе:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+c_{1}\um0+c_{2}\um x_{2}\left(0\right)=0\\
+c_{1}x_{1}\left(1\right)+c_{2}x_{1}\left(1\right)+\oui 01\df{x_{2}\left(1\right)x_{1}\left(s\right)}{W\left(s\right)}f\left(s\right)ds=0
+\end{array}
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $x_{2}\left(0\right)\nr0$
+\end_inset
+
+, то из первого уравнения получаем, что 
+\begin_inset Formula $c_{2}=0$
+\end_inset
+
+.
+ И тогда система будет совместной, если: 
+\begin_inset Formula 
+\begin{equation}
+\oui 01x_{1}\left(s\right)f\left(s\right)ds=0\label{eq:_2_5_4}
+\end{equation}
+
+\end_inset
+
+Причем если условие ортогональности (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_4"
+
+\end_inset
+
+) выполнено, то 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ может быть любым, итогда задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) имеет бесконечно много решений.
+ Если же
+\begin_inset Formula 
+\[
+\oui 01x_{1}\left(s\right)f\left(s\right)ds\nr0
+\]
+
+\end_inset
+
+то алгебраическая система несовместна, а следовательно краевая задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) не имеет решений.
+\end_layout
+
+\begin_layout Proof
+Пусть однородная краевая задача имеет только нулевое решение.
+ Покажем, что в этом случае задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) разрешима при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+.
+ Построим два решения линейного однородного дифференциальногог уравнения:
+\begin_inset Formula 
+\[
+x_{1}\left(t\right):\begin{cases}
+x_{1}\ppr\left(t\right)+a\left(t\right)x_{1}\left(t\right)=0\\
+x_{1}\left(0\right)=0\\
+x_{1}\pr\left(0\right)=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}\left(t\right):\begin{cases}
+x_{2}\ppr\left(t\right)+a\left(t\right)x_{2}\left(t\right)=0\\
+x_{2}\left(1\right)=0\\
+x_{2}\pr\left(1\right)=1
+\end{cases}
+\]
+
+\end_inset
+
+Эти решения линейно независимы.
+ Доказывается от противного, тогда 
+\begin_inset Formula $x_{1}\left(t\right)=cx_{2}\left(t\right)$
+\end_inset
+
+.
+ И мы получили бы 
+\begin_inset Formula $x_{1}\left(0\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x_{2}\left(0\right)=0$
+\end_inset
+
+.
+ Но тогда как обьяснить 
+\begin_inset Formula $x_{2}\pr\left(1\right)=1$
+\end_inset
+
+.
+ Пародокс.
+ Следовательно все таки они линейно незиавсимимы.
+ 
+\end_layout
+
+\begin_layout Proof
+Ну а тогда они обзазуют фнудаменталдьную систему решений однородной задачи,
+ и общее решение неоднородного уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+) будет иметь вид:
+\begin_inset Formula 
+\begin{equation}
+x\left(t\right)=c_{1}x_{1}\left(t\right)+c_{2}x_{2}\left(t\right)+\oui 0t\df{x_{2}\left(t\right)x_{1}\left(s\right)-x_{2}\left(s\right)x_{1}\left(t\right)}{W\left(s\right)}f\left(s\right)ds\label{eq:_2_5_5}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(s\right)=\left|\begin{array}{cc}
+x_{1}\left(s\right) & x_{2}\left(s\right)\\
+x_{1}\pr\left(s\right) & x_{2}\pr\left(s\right)
+\end{array}\right|=const
+\]
+
+\end_inset
+
+Выберем 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ чтобы 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ вида (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_5"
+
+\end_inset
+
+) удовлетворяла граничным условиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c_{1}x_{1}\left(0\right)+c_{2}x_{2}\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c_{1}x_{1}\left(1\right)+c_{2}x_{2}\left(1\right)+\oui 01\df{x_{2}\left(1\right)x_{1}\left(s\right)-x_{2}\left(s\right)x_{1}\left(1\right)}{W\left(s\right)}f\left(s\right)ds=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что : 
+\begin_inset Formula $x_{2}\left(0\right)\nr0$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{1}\left(1\right)\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Ну а тогда мы поллучим, что 
+\begin_inset Formula $c_{2}=0$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}\left(1\right)=0$
+\end_inset
+
+, и поллучим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+c_{1}=\oui 01\df{x_{2}\left(s\right)f\left(s\right)}{W\left(s\right)}ds
+\]
+
+\end_inset
+
+Подставим найденые 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+, получим:
+\begin_inset Formula 
+\begin{equation}
+x\left(t\right)=\oui 01\df{x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}f\left(s\right)ds+\oui 0t\df{x_{2}\left(t\right)x_{1}\left(s\right)-x_{2}\left(s\right)x_{1}\left(t\right)}{W\left(t\right)}f\left(s\right)ds\label{eq:_2_5_6}
+\end{equation}
+
+\end_inset
+
+Это и есть решение при любой 
+\begin_inset Formula $f\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+
+\emph default
+ Если краевая задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) разрешима при лобюбой правой части 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+, то это решение единственнное.
+\end_layout
+
+\begin_layout Proof
+Предположим противное, что задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) ......
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x_{1}\ppr+a\left(t\right)x_{1}\left(t\right)=f\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x_{2}\ppr+a\left(t\right)x_{2}\left(t\right)=f\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x\left(t\right)=x_{1}\left(t\right)-x_{2}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x\ppr\left(t\right)+a\left(t\right)x\left(t\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x\left(t\right)\nr0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+А это противоречие.
+\end_layout
+
+\begin_layout Standard
+В процессе доказательства альте Если однородная задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) имеет ненулевое решение 
+\begin_inset Formula $\ov x{\sim}\left(t\right)\nr0$
+\end_inset
+
+, то задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+) имеет решение тогда и толко тогда когда интеграл 
+\begin_inset Formula $\oui 01\ov x{\sim}\left(s\right)f\left(s\right)ds=0$
+\end_inset
+
+.
+ Причем если это условие выполнено, то существует бесконечное множество
+ решений задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_4_2"
+
+\end_inset
+
+).
+\end_layout
+
 \end_body
 \end_document
