@@ -2565,6 +2565,259 @@ status open
 
 \end_layout
 
+\begin_layout Subsubsection
+Коэффициет полезного действия тока
+\end_layout
+
+\begin_layout Standard
+Для замктутой цепи:
+\begin_inset Formula 
+\begin{align*}
+I & =\df{\varepsilon}{R+r}\\
+U & =I\um R=\df{\varepsilon}{R+r}\um R
+\end{align*}
+
+\end_inset
+
+Когда берем 
+\begin_inset Formula $R=\b$
+\end_inset
+
+ то есть цепь не замкнута.
+ Тогда 
+\begin_inset Formula $U=\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Для источника тока: 
+\begin_inset Formula 
+\begin{align*}
+\delta A & =\varepsilon\um dq\\
+P & =\df{\delta A}{dt}=\varepsilon\df{dq}{dt}=\varepsilon\um I=\df{\varepsilon^{2}}{R+r}
+\end{align*}
+
+\end_inset
+
+Значит чем меньше внешняя нагрузка тем больше мощность.
+\end_layout
+
+\begin_layout Standard
+Мощность на сопротивлении:
+\begin_inset Formula 
+\begin{align*}
+Q & =U\um I\um t=I^{2}\um R\um t\\
+\delta Q & =I^{2}\um R\um dt\\
+P_{\text{н}} & =I^{2}\um R=\df{\varepsilon^{2}R}{\left(R+r\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда КПД:
+\begin_inset Formula 
+\[
+\eta=\df{P_{\text{н}}}P=\df R{R+r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чем больше внешняя нагрузка тем выше КПД.
+\end_layout
+
+\begin_layout Section
+Магнитное поле в вакууме.
+\end_layout
+
+\begin_layout Subsection
+Взаимодействие токов
+\end_layout
+
+\begin_layout Standard
+Берем 2 прямолинейных проводника по которым течет ток.
+ Если токи текут в одном направлении, то проводники будут притягиваться
+ друг к другу, иначе отталкиваться.
+ Ампер получил закон, по которому для единицы длины проводника:
+\begin_inset Formula 
+\[
+f=k\um\df{2\um i_{1}\um i_{2}}b
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $k$
+\end_inset
+
+ --- некий коэффициент, 
+\begin_inset Formula $b$
+\end_inset
+
+ --- расстояние между проводниками.
+\end_layout
+
+\begin_layout Standard
+1Кл = 1А/сек.
+\end_layout
+
+\begin_layout Standard
+Магнитная постоянная 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{f=\df{\mu_{0}}{4\pi}\um\df{2\um i_{1}\um i_{2}}b}
+\]
+
+\end_inset
+
+Отсюда посчитаем 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+.
+ Возьмем 
+\begin_inset Formula $i_{1}=i_{2}=1A$
+\end_inset
+
+, 
+\begin_inset Formula $b=1m$
+\end_inset
+
+, 
+\begin_inset Formula $f=2\um10^{-7}$
+\end_inset
+
+Н.
+ Тогда
+\begin_inset Formula 
+\begin{align*}
+\mu_{0} & =1.26\um10^{-6}\\
+\left[\mu_{0}\right] & =\df{\text{Н}}{\text{А}^{2}}=\df{\text{Гн}}{\text{м}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнитное поле.
+\end_layout
+
+\begin_layout Standard
+Возьмем плоский пробный контур.
+ Будем его характеризовать силой тока и направлением нормали к нему.
+ Когда мы вносим его в поле, то возникает момент сил:
+\begin_inset Formula 
+\[
+p_{m}=I\um S
+\]
+
+\end_inset
+
+где S --- площадь контура.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\v{P_{m}}=P_{m}\um\v n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Магнитная индукция поля
+\begin_inset Formula 
+\[
+B=\df{M_{\max}}{P_{m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v B$
+\end_inset
+
+ --- вектор магнитной индукции, направление которого определяется равновесным
+ направлением нормали пробного контура.
+\end_layout
+
+\begin_layout Standard
+В каждой точке касательной к линии направление вектора совпадает с вектором
+ магнитной индукции.
+ Густота этих линий характеризует величину магнитной индукции.
+\end_layout
+
+\begin_layout Subsection
+Закон Био--Савара--Лапласса
+\end_layout
+
+\begin_layout Standard
+Установили что магнитная индукция прямопропорциональна силе тока.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dB=k\df{\left[d\v l;\v r\right]i}{r^{3}}
+\]
+
+\end_inset
+
+В СИ 
+\begin_inset Formula $k=\frac{\mu_{0}}{4\pi}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+dB=\df{\mu_{0}}{4\pi}\um\df{i\um dl\um\sin\alpha}{r^{2}}
+\]
+
+\end_inset
+
+В системе СИ 
+\begin_inset Formula $\left[B\right]=\text{Тл}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Плотность тока 
+\begin_inset Formula 
+\begin{align*}
+dl\um\v j & =\frac{i}{S}d\v l\\
+S\um dl\um\v j & =i\um d\v l\\
+d\v B & =\df{\mu_{0}}{4\pi}\df{\left[\v j;\v r\right]Sdl}{r^{3}}=\df{\mu_{0}}{4\pi}\df{n_{l}\um e\um Sdl\um\left[\v v,\v r\right]}{r^{3}}\\
+\v B_{e} & =\df{d\v B}{N_{e}}=\df{\mu_{0}}{4\pi}\df{e\um\left[\v v,\v r\right]}{r^{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
