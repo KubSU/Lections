@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -18,13 +18,13 @@ theorems-starred
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -45,15 +45,24 @@ theorems-starred
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date true
+\justification true
 \use_refstyle 1
 \boxbgcolor #55ff00
 \index Index
@@ -450,7 +459,7 @@ theorems-starred
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -502,7 +511,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -681,7 +690,7 @@ F & =\df 1{4\pi\varepsilon_{0}}\df{q_{0}q}{r^{2}}\\
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -818,7 +827,7 @@ N=\oudi S{}E\um\cos\alpha\um dS=\oudi S{}\left(\v E,\v n\right)dS=\Phi_{E}=\oudi
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2483,7 +2492,7 @@ i=\df{\varepsilon}R
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2537,7 +2546,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2816,6 +2825,178 @@ d\v B & =\df{\mu_{0}}{4\pi}\df{\left[\v j;\v r\right]Sdl}{r^{3}}=\df{\mu_{0}}{4\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+30.04.14
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Поле прямого тока
+\end_layout
+
+\begin_layout Standard
+Возьмем бесконечный прямолинейный проводник.
+ Найдем 
+\begin_inset Formula $d\v B$
+\end_inset
+
+ в некоторой точке:
+\begin_inset Formula 
+\[
+d\v B=\df{\mu_{0}}{4\pi}\um\df{i\left[d\v l;\v r\right]}{r^{3}}
+\]
+
+\end_inset
+
+Обозначим расстояние от точки до провода через 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Очевидно что 
+\begin_inset Formula $r=b/\sin\alpha$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+dr & =r\um\sin\alpha=rd\alpha\\
+dl & =\df{dr}{\sin\alpha}=\df{rd\alpha}{\sin\alpha}
+\end{align*}
+
+\end_inset
+
+Так как с направлением 
+\begin_inset Formula $dB$
+\end_inset
+
+ мы уже определились, то будем находить только величину:
+\begin_inset Formula 
+\begin{multline*}
+dB=\df{\mu_{0}}{4\pi}\um\df{i\um r\um d\alpha\um b\um\sin\alpha}{\sin\alpha\um\sin\alpha}\um\df{\sin^{3}\alpha}{b^{3}}=\\
+=\df{\mu_{0}}{4\pi}\um\df{i\um r\um\sin^{2}\alpha\um d\alpha}{b^{2}}=\df{\mu_{0}}{4\pi}\um\df{i\um\sin\alpha\um d\alpha}b
+\end{multline*}
+
+\end_inset
+
+Тогда
+\begin_inset Formula 
+\[
+B=\oui 0{\pi}\df{\mu_{0}}{4\pi}\df{i\um\sin\alpha}bd\alpha=\df{\mu_{0}i}{4\pi b}\um\oiu 0{\pi}\sin\alpha d\alpha=\df{\mu_{0}i}{2\pi b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнитное поле кругового тока
+\end_layout
+
+\begin_layout Standard
+Пусть ток течет по контуру против часовой стрелки.
+ Найдем вектор магнитной индукции в центре контура.
+ Он будет направлен к нам.
+\begin_inset Formula 
+\[
+dB=\df{\mu_{0}}{4\pi}\um\df{i\um dl}{R^{2}}
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula 
+\[
+B=\oint\limits _{C_{R}}\df{\mu_{0}}{4\pi}\df{i\um dl}{R^{2}}=\df{\mu_{0}i}{2R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Циркуляция вектора магнитной индукции в поле соленоида
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint\limits _{L}\v B\um d\v l=\oint\limits _{L}B_{l}dl
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для простоты расчитаем все для окружности.
+ 
+\begin_inset Formula $dl=R\um d\alpha$
+\end_inset
+
+, а тогда
+\begin_inset Formula 
+\[
+\v B\um d\v l=BRd\alpha=\df{\mu_{0}}{2\pi}\df iRR\um d\alpha=\df{\mu_{0}}{2\pi}id\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\limits _{C}\v B\um d\v l=\oint\limits _{C}\df{\mu_{0}}{2\pi}id\alpha=\mu_{0}i
+\]
+
+\end_inset
+
+Так как в формуле нет 
+\begin_inset Formula $R$
+\end_inset
+
+ то можем ее использовать для любого контура (не только окружности).
+\begin_inset Formula 
+\[
+\oiu L{}\v B\um d\v l=\mu_{0}i
+\]
+
+\end_inset
+
+В итоге:
+\begin_inset Formula 
+\[
+\fbox{\oiu L{}\v B\um d\v l=\mu_{0}\sum i}
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $\sum i$
+\end_inset
+
+ --- алгебраическая сумма токов охватываемых контуром 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Векторные поля у которых циркуляция не равна нулю называются вихревыми полями.
+ Для них нет понятия потенциала.
 \end_layout
 
 \begin_layout Standard

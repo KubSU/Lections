@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -19,13 +19,13 @@ theorems-starred
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -46,15 +46,24 @@ theorems-starred
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date true
+\justification true
 \use_refstyle 1
 \boxbgcolor #55ff00
 \index Index
@@ -571,7 +580,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 панда
@@ -902,7 +911,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1093,7 +1102,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1292,7 +1301,7 @@ reference "eq:_1_*"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1487,7 +1496,7 @@ x=1
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1610,7 +1619,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1870,7 +1879,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1940,7 +1949,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2013,7 +2022,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2094,7 +2103,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2278,7 +2287,7 @@ f_{n}\left(0\right)=0
 
 \end_deeper
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2372,7 +2381,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2433,7 +2442,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2486,7 +2495,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -3683,7 +3692,7 @@ z_{1}\um z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\le
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -3716,7 +3725,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -3746,7 +3755,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -3771,7 +3780,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4419,7 +4428,7 @@ U_{\varepsilon}\left(z_{0}\right)=\left\{ z\in\C\tc\left|z-z_{0}\right|<\varepsi
 \end_layout
 
 \begin_layout Definition
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4483,7 +4492,7 @@ y\st y_{0}
 \end_layout
 
 \begin_layout Definition
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4520,7 +4529,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4542,7 +4551,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4575,7 +4584,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -6332,7 +6341,7 @@ w_{i}=\b\ \left(i=\overline{1,3}\right)
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -6546,7 +6555,7 @@ reference "eq:_2_2_3_5_1"
 \end_layout
 
 \begin_layout Lemma
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -7241,7 +7250,7 @@ I=\oiu{\gamma}{}f\left(z\right)dz=\oiu{\gamma}{}\df{dz}z=\oiu 0{2\pi}\df{de^{i\v
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8014,7 +8023,7 @@ n=2\\
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8096,7 +8105,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8370,7 +8379,7 @@ reference "eq:_3_1_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8406,7 +8415,7 @@ reference "eq:_3_1_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8464,7 +8473,7 @@ reference "eq:_3_1_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8597,7 +8606,7 @@ reference "eq:_3_1_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -8686,7 +8695,7 @@ reference "eq:_3_1_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -9097,7 +9106,7 @@ reference "eq:_3_2_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -10085,7 +10094,7 @@ z\in C_{d}\left(z_{m}\right)\then f\left(z\right)=0
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -10632,7 +10641,253 @@ c_{m}=c_{m}\pr\ \forall m\ \sl\text{разложение однозначн.}
 Обчедно, что такая окресность --- часный слкучай кольца.
 \end_layout
 
+\begin_layout Subsection
+Поведение аналиттической функции в окрестности изолированной особой точки.
+\end_layout
+
 \begin_layout Standard
+Если 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ --- аналитична в выколотой окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- у.о.т., то 
+\begin_inset Formula 
+\[
+\exists\ul{z\to z_{0}}f\left(z\right)=A
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $A$
+\end_inset
+
+ --- конечное число.
+\end_layout
+
+\begin_layout Proof
+По определению у.о.т.
+\begin_inset Formula 
+\[
+f\left(z\right)=c_{0}+c_{1}\left(z-z_{0}\right)+c_{2}\left(z-z_{0}\right)^{2}+\tr+c_{n}\left(z-z_{0}\right)^{n}+\tr
+\]
+
+\end_inset
+
+--- Степенной ряд, --- ряд Тейлора для 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, в некоторой окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и он сходится причем он в этой окрестности определяет аналитическую, а
+ значит непрерывную функцию, следовательно 
+\begin_inset Formula $\exists\ul{z\to z_{0}}f\left(z\right)=c_{0}$
+\end_inset
+
+ --- конечный предел.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Следствие
+\end_layout
+
+\end_inset
+
+ Если точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- у.о.т функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, то в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ функцию 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ можно доопределить (переопределить) положив 
+\begin_inset Formula $f\left(z_{0}\right)=c_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- полюс порядка 
+\begin_inset Formula $m$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, аналитичной в выколотой окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\ul{z\to z_{0}}f\left(z\right)=\b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- полюс 
+\begin_inset Formula $m$
+\end_inset
+
+-го порядка 
+\begin_inset Formula $f\left(z\right),$
+\end_inset
+
+ то есть
+\begin_inset Formula 
+\begin{multline*}
+f\left(z\right)=\df{c_{-m}}{\left(z-z_{0}\right)^{m}}+\df{c_{-m+1}}{\left(z-z_{0}\right)^{m-1}}+\tr+\df{c_{-1}}{z-z_{0}}+\\
++c_{0}+c_{1}\left(z-z_{0}\right)+\tr+c_{n}\left(z-z_{0}\right)^{n}+\tr=\\
+=\df 1{\left(z-z_{0}\right)^{m}}\left(c_{-m}+c_{-m+1}\left(z-z_{0}\right)+\tr\right)=\df{\varphi\left(z\right)}{\left(z-z_{0}\right)^{m}}
+\end{multline*}
+
+\end_inset
+
+где 
+\begin_inset Formula $\varphi\left(z\right)$
+\end_inset
+
+ --- аналитическая функция в окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, причем 
+\begin_inset Formula $\ul{z\to z_{0}}\varphi\left(z\right)=c_{m}\nr0$
+\end_inset
+
+, а тогда 
+\begin_inset Formula 
+\[
+\ul{z\to z_{0}}f\left(z\right)=\ul{z\to z_{0}}\df{\varphi\left(z\right)}{\left(z-z_{0}\right)^{m}}=\df{c_{m}}0=\b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Сохоцкого
+\end_layout
+
+\end_inset
+
+ Если 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- с.о.т 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, аналитичной в выколотой окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то для любого чила 
+\begin_inset Formula $A\in\mathbb{\overline{C}}$
+\end_inset
+
+, конечного или бесконечного, 
+\begin_inset Formula $\exists\left\{ z_{k}\right\} ,\quad\ul{k\to\b}z_{k}=z_{0}$
+\end_inset
+
+, такая что 
+\begin_inset Formula $\ul{k\to\b}f\left(z_{k}\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Теория вычетов
+\end_layout
+
+\begin_layout Subsection
+Понятие вычета, расчетные формулы.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ --- и.о.т аналитичной функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ следовательно в некоторой окрестности точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ допускает разложение в ряд Лорана:
+\begin_inset Formula 
+\[
+f\left(z\right)=\ous{n=-\b}{\b}c_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $c_{n}\df 1{2\pi i}\oiu c{}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi$
+\end_inset
+
+, где 
+\begin_inset Formula $c$
+\end_inset
+
+ --- замкнутый контур 
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
