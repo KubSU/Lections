@@ -224,103 +224,103 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ov}[2]{\overset{#2}{#1}}
+\renewcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ul}[1]{\underset{#1}{\lim}}
+\renewcommand{\ul}[1]{\underset{#1}{\lim}}
 {\underset{#1}{\lim}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umax}[1]{\underset{#1}{\max}}
+\renewcommand{\umax}[1]{\underset{#1}{\max}}
 {\underset{#1}{\max}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\umin}[1]{\underset{#1}{\min}}
+\renewcommand{\umin}[1]{\underset{#1}{\min}}
 {\underset{#1}{\min}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\newcommand{\ppr}{\pr\pr}
+\renewcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\pppr}{\ppr\pr}
+\renewcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\br}{\geq}
+\renewcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\mr}{\leq}
+\renewcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\oiu}[2]{\oui{#1}{#2}}
+\renewcommand{\oiu}[2]{\oui{#1}{#2}}
 {\oui{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\df}[2]{\dfrac{#1}{#2}}
+\renewcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tl}{\approx}
+\renewcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\D}{\Delta}
+\renewcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\b}{\infty}
+\renewcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vkl}{\subset}
+\renewcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vec}[1]{\overrightarrow{#1}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
@@ -332,56 +332,62 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\newcommand{\DD}{\partial}
+\renewcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dd}{\partial}
+\renewcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\grad}{\text{grad}}
+\renewcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vtr}{\vdots}
+\renewcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
+\renewcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
 {\df{#1^{#2}#3}{#1#4^{#2}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\kr}{\equiv}
+\renewcommand{\kr}{\equiv}
 {\equiv}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\x}{\times}
+\renewcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\li}{\hspace{1.5cm}}
+\renewcommand{\li}{\hspace{1.5cm}}
 {\hspace{1.5cm}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ntr}{\ddots}
+\renewcommand{\ntr}{\ddots}
 {\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\bs}[1]{\left.#1\right|}
+{\left.#1\right|}
 \end_inset
 
 
@@ -389,7 +395,11 @@ theorems-starred
 
 \begin_layout Title
 Обыкновенные дифференциальные уравнения.
- Том 2.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Том 2.
 \end_layout
 
 \begin_layout Standard
@@ -803,6 +813,19 @@ reference "eq:_1_1"
  к нулю недостаточно, то есть первый пункт нужный.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Тут должна быть геометрическая интерпритация
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Устойчивость нулевого решения линейной однородной системы диффренциальных
  уравнений с постоянными коэффициентами.
@@ -870,6 +893,15 @@ a_{n1} & \tr & a_{nn}
 \end_layout
 
 \begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
 Если все собственные значения матрицы 
 \begin_inset Formula $A$
 \end_inset
@@ -929,7 +961,7 @@ reference "eq:_2_1"
 \end_inset
 
  -- это вектор функции, компонентами которых являются некоторые многочлены.
- ПО условию леммы, 
+ Пo условию леммы, 
 \begin_inset Formula $Re\ \lambda_{k}<0$
 \end_inset
 
@@ -956,7 +988,7 @@ reference "eq:_2_2"
 
 \end_inset
 
-) мы получаем, что 
+) мы получаем, что
 \begin_inset Formula 
 \begin{eqnarray}
 \left|\left|\varphi\left(x\right)\right|\right|\mr\ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|\um\left|e^{x\left(\mu_{k}+i\um\nu_{k}\right)}\right| & = & \ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|\um e^{x\mu_{k}}\label{eq:_2_3}
@@ -964,7 +996,7 @@ reference "eq:_2_2"
 
 \end_inset
 
- так как 
+так как 
 \begin_inset Formula $\left|e^{\lambda_{k}x}\right|=\left|e^{x\mu_{k}}\right|\um\left|e^{i\um\nu_{k}x}\right|=e^{x\mu k}$
 \end_inset
 
@@ -984,9 +1016,6 @@ reference "eq:_2_3"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
 \begin_inset Formula 
 \begin{equation}
 \left|\left|\varphi_{k}\left(x\right)\right|\right|e^{\alpha x}\mr\ous{k=1}m\left|\left|\varphi_{k}\left(x\right)\right|\right|e^{x\left(\mu_{k}+\alpha\right)}\label{eq:_2_4}
@@ -994,10 +1023,6 @@ reference "eq:_2_3"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Так как 
 \begin_inset Formula $\mu_{k}<0$
 \end_inset
@@ -1079,6 +1104,15 @@ reference "eq:_2_1"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
 Если все собственные значения матрицы 
 \begin_inset Formula $A$
 \end_inset
@@ -1240,11 +1274,24 @@ status open
 \end_layout
 
 \begin_layout Proof
-...
-\end_layout
+Пусть 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
 
-\begin_layout Proof
-Тогда лбюбое решение системы (1) удовлетворяет реравенству (6), в силу леммы
+ и 
+\begin_inset Formula $\varphi\left(x,y^{\left(0\right)}\right)$
+\end_inset
+
+ --- решение и в и при 
+\begin_inset Formula $x=0$
+\end_inset
+
+ равняется 
+\begin_inset Formula $y^{\left(0\right)}$
+\end_inset
+
+.
+ И любое решение системы (1) удовлетворяет реравенству (6), в силу леммы
  (2) и в силу условий теоремы.
 \end_layout
 
@@ -1296,8 +1343,11 @@ status open
 \begin_inset Formula $A$
 \end_inset
 
- ИМЕЮТ ВЕЩЕСТВЕННЫЕ ЧАСТИ НЕ ПОЛОЖИТЕЛЬНЫЕ и хотя бы для одного собственного
- значения 
+ 
+\series bold
+имеют вещественные части неположительные
+\series default
+ и хотя бы для одного собственного значения 
 \begin_inset Formula $\lambda$
 \end_inset
 
@@ -1324,7 +1374,6 @@ status open
 \end_inset
 
 .
- ...положительные вещественные части.
  Тогда этому вещественному числу соответствует некоторый вектор 
 \begin_inset Formula $h$
 \end_inset
@@ -1337,7 +1386,7 @@ status open
 \begin_inset Formula $h\um e^{\lambda x}$
 \end_inset
 
- --- решщегниеи системы (1).
+ --- решение системы (1).
 \end_layout
 
 \begin_layout Standard
@@ -1489,6 +1538,15 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \end_deeper
 \end_deeper
 \begin_layout Theorem
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
 Если все собственные значения матрицы 
 \begin_inset Formula $A$
 \end_inset
@@ -1803,18 +1861,12 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-И обозначим через 
+ И обозначим через 
 \begin_inset Formula $V_{\varepsilon}=\umin{y\in K_{\varepsilon}}V\left(y\right)$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Очевидно, что 
+ Очевидно, что 
 \begin_inset Formula $V_{\varepsilon}>0$
 \end_inset
 
@@ -1823,11 +1875,8 @@ status open
 \begin_inset Formula $V\br0$
 \end_inset
 
-...
-\end_layout
-
-\begin_layout Proof
-Выберем теперь 
+.
+ Выберем теперь 
 \begin_inset Formula $\delta<\varepsilon$
 \end_inset
 
@@ -1844,19 +1893,13 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-...
- так как 
+ Так как 
 \begin_inset Formula $V$
 \end_inset
 
  --- непрерывная функция, и в нуле она равна в нулю.
-\end_layout
-
-\begin_layout Proof
-Покаже, что все интегральные решения системы (1), начинающиеся в сфере 
+ Покаже, что все интегральные решения системы (1), начинающиеся в сфере
+ 
 \begin_inset Formula $K_{\delta}$
 \end_inset
 
@@ -1869,10 +1912,7 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Действительно, заметим, что вдоль каждого решения системы (1) функция 
+ Действительно, заметим, что вдоль каждого решения системы (1) функция 
 \begin_inset Formula $V\left(y\left(x\right)\right)$
 \end_inset
 
@@ -1921,7 +1961,7 @@ status open
  
 \begin_inset Formula 
 \[
-V\left(y\left(0\right)\right)<V_{\varepsilon}\mr V\left(y\left(x_{1}\right)\right)
+\fbox{V\left(y\left(0\right)\right)<V_{\varepsilon}\mr V\left(y\left(x_{1}\right)\right)}
 \]
 
 \end_inset
@@ -1929,6 +1969,12 @@ V\left(y\left(0\right)\right)<V_{\varepsilon}\mr V\left(y\left(x_{1}\right)\righ
 Получается что функция будет возростать.
  Следовательно это противоречие! Это и означает, что нулевое решение системы
  устойчиво.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Докажем ассимптотическую устойчивость.
 \end_layout
 
 \begin_layout Proof
@@ -1943,6 +1989,7 @@ reference "eq:_1_2_3"
 \begin_inset Formula $\exists\delta:\quad K_{\delta}\ V<V_{\epsilon}$
 \end_inset
 
+.
  Мы должны показать, что 
 \begin_inset Formula $\left\Vert y\left(x\right)\right\Vert \to0$
 \end_inset
@@ -1988,16 +2035,53 @@ reference "eq:_1_2_3"
  
 \begin_inset Formula 
 \[
-\left.\df{dV}{dx}\right|_{l}=\ous{j=1}n\left.\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}\right|_{l}=\ous{j=1}n\left.\df{\dd V}{\dd y}f_{j}\right|_{l}\mr\left.-W\left(y\right)\right|_{l}\mr-\beta
+\left.\df{dV}{dx}\right|_{l}=\ous{j=1}n\left.\df{\dd V}{\dd y_{j}}\df{dy_{j}}{dx}\right|_{l}=\ous{j=1}n\left.\df{\dd V}{\dd y}f_{j}\right|_{l}\mr\left.-W\left(y\right)\right|_{l}
 \]
 
 \end_inset
 
-А это означает, что ....
-\end_layout
 
-\begin_layout Proof
-А это противоречит условию, что 
+\begin_inset Formula 
+\[
+W\left(y\right)|_{l}\br\beta>0\ \sl\ -W\left(y\right)|_{l}\mr-\beta
+\]
+
+\end_inset
+
+Проигтегрируем это нерпвенство от 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ до 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left(V\left(x\right)-V\left(x_{0}\right)\right)|_{l}\mr-\beta\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\left(x\right)|_{l}\mr V\left(x_{0}\right)|_{l}-\beta\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula $V\left(x\right)\st-\b$
+\end_inset
+
+ при 
+\begin_inset Formula $x\st+\b$
+\end_inset
+
+.
+ А это противоречит условию, что 
 \begin_inset Formula $V\br0$
 \end_inset
 
@@ -2193,16 +2277,17 @@ reference "eq:_1_2_1"
 
 \end_inset
 
- Тогда поскльку 
-\begin_inset Formula $ $
+То в силу второго пункта 
+\begin_inset Formula $W\left(y\left(\overline{x}\right),\overline{x}\right)\left(x_{1}-x_{0}\right)\br\beta\left(x_{1}-x_{0}\right)$
 \end_inset
 
-........
- 
-\end_layout
+.
+ Тоесть мы показали что 
+\begin_inset Formula $V\left(y\left(x\right)\right)\br\alpha,\ \forall x>x_{0}$
+\end_inset
 
-\begin_layout Proof
-Рассмотрим разность 
+.
+ Тогда рассмотрим разность 
 \begin_inset Formula $V\left(y\left(x\right)\right)-V\left(y\left(x_{0}\right)\right)$
 \end_inset
 
@@ -2218,7 +2303,16 @@ reference "eq:_1_2_1"
 \begin_inset Formula $V\to+\b$
 \end_inset
 
-.....
+ при 
+\begin_inset Formula $x\st+\b$
+\end_inset
+
+.
+ А это противоречит условию 1, рну а тоогда 
+\begin_inset Formula $y\left(x\right)\equiv0$
+\end_inset
+
+ является устойчивым решением системы (1).
 \end_layout
 
 \begin_layout Subsection
@@ -3030,7 +3124,7 @@ t_{n,1} & \tr & t_{n,n}
 
 \end_inset
 
-<<<<<<< 6440270630dc280097c858611c484ec0c323b059=======
+
 \begin_inset Formula 
 \begin{equation}
 \df{dz}{dx}=Bz+F^{*}\left(x,z\right)\label{eq:_1_3_10*}
@@ -3247,8 +3341,7 @@ reference "eq:_1_3_13"
 \begin_inset Formula $w=aV$
 \end_inset
 
- видим, что условия леммы Ляпунова выполнены.>>>>>>> 995b98f3481f7f5c17e6979260bd
-b717a509c049
+ видим, что условия леммы Ляпунова выполнены.
 \end_layout
 
 \begin_layout Remark
@@ -3532,7 +3625,17 @@ reference "eq:_2_1_1"
 \begin_deeper
 \begin_layout Standard
 Получается что ...
- пиздец он тут газонул
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+пиздец он тут газонул
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4253,6 +4356,10 @@ y_{2}=c_{2}e^{\lambda_{2}t}
 \end_deeper
 \end_deeper
 \end_deeper
+\begin_layout Standard
+Нелинейные системы
+\end_layout
+
 \begin_layout Subsection
 Положения равновесия автономной системы второго порядка
 \end_layout
@@ -4784,7 +4891,53 @@ KAK^{-1}=\left(\begin{array}{cc}
 \begin_inset Formula $\mu<0$
 \end_inset
 
- /////////////////////////////////////////
+, это по теореме Ляпунова, стсемы (1) при 
+\begin_inset Formula $t\to+\b$
+\end_inset
+
+ будут стремиться к точке 
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\rho_{0}\left(\mu+\rho_{0}\um p\left(\rho_{0},\varphi_{0}\right)\right)\ \sl\ \bs{\df{dp}{dt}}_{\left(\rho_{0};\varphi_{0}\right)}<0\ \sl\ \rho_{0}\st0\,\&\, t\st+\b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Знак прапвой части второго уравнения будет совподать со знаком 
+\begin_inset Formula $\nu$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\st+\b$
+\end_inset
+
+ при 
+\begin_inset Formula $\nu>0$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\st-\b$
+\end_inset
+
+ при 
+\begin_inset Formula $\nu<0$
+\end_inset
+
+.
+ Следовательно, рассматриваемая траэктория на плоскости 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ наматывается как спираль на 
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Theorem
@@ -7004,6 +7157,19 @@ reference "eq:_2_4_2"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
 \end_layout
 
 \end_body
