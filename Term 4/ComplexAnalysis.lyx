@@ -10887,7 +10887,193 @@ f\left(z\right)=\ous{n=-\b}{\b}c_{n}\left(z-z_{0}\right)^{n}
 \begin_inset Formula $c$
 \end_inset
 
- --- замкнутый контур 
+ --- замкнутый контур
+\end_layout
+
+\begin_layout Subsection
+Интегралы вида 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\oiu{-\b}{+\b}f\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть функция вещественной переменной 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+, определена на 
+\begin_inset Formula $\left(-\b;+\b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Функция комплексной переменной 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ называется аналитическим продолжением функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на верхнюю полуплоскость, если она аналитична на множестве 
+\begin_inset Formula $Im\ z>0$
+\end_inset
+
+ за исключением конечного числа ИОТ и 
+\begin_inset Formula $f\left(z\right)=f\left(x\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $z=x\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Пусть функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ аналитична в полуплоскости 
+\begin_inset Formula $Im\ z>0$
+\end_inset
+
+ за исключением конечного числа ИОТ и 
+\begin_inset Formula $\exists R_{0},\ M,\ \delta>0,$
+\end_inset
+
+ что
+\begin_inset Formula 
+\[
+\forall z\quad Im\ z>0\quad\left|f\left(z\right)\right|<\df M{\left|z\right|^{1+\delta}},\ \left|z\right|>R_{0}
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula 
+\[
+\ul{R\to\b}\oiu{C'_{R}}{}f\left(\xi\right)d\xi=0\qquad C'_{R}=\left\{ z|\left|z\right|=R,\ Im\ z>0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим при 
+\begin_inset Formula $R>R_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\oiu{C'_{R}}{}f\left(\xi\right)d\xi\right|\mr\oiu{C'_{R}}{}\left|f\left(\xi\right)\right|\um\left|d\xi\right|\mr\df M{R^{1+\delta}}\oiu{C'_{R}}{}\left|d\xi\right|=\df{\pi M}{R^{\delta}}
+\]
+
+\end_inset
+
+При 
+\begin_inset Formula $R\to\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ определена при 
+\begin_inset Formula $x\in\left(-\b;+\b\right)$
+\end_inset
+
+ и допускает аналитическое продолжение 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на верхнюю полуплоскость 
+\begin_inset Formula $Im\ z>0$
+\end_inset
+
+, удовлетворяет условию предыдущей леммы, не имеющее особых точек на вещественно
+й оси.
+ 
+\end_layout
+
+\begin_layout Theorem
+Тогда несобственный интеграл 
+\begin_inset Formula $\oiu{-\b}{+\b}f\left(x\right)dx$
+\end_inset
+
+ существует и вычет равен 
+\begin_inset Formula 
+\[
+\oiu{-\b}{+\b}f\left(x\right)dx=2\pi i\ous{k=1}Nres_{z=z_{k}}\ f\left(z\right)
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $z_{1}\tr z_{n}$
+\end_inset
+
+ --- все ИОТ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $Im\ z>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ --- фиксированное, такое что 
+\begin_inset Formula $\left|z_{k}\right|<R_{0}$
+\end_inset
+
+.
+ Возьмем 
+\begin_inset Formula $R>R_{0}$
+\end_inset
+
+ произвольное.
+ Рассмотрим замкнутый контур 
+\begin_inset Formula $C=C'_{R}\cup\left[-R;R\right]$
+\end_inset
+
+ тогда по основной теореме теории вычетов 
+\begin_inset Formula 
+\[
+\oiu C{}f\left(\xi\right)d\xi=\oiu{-R}Rf\left(x\right)dx+\oiu{C'_{R}}{}f\left(\xi\right)d\xi=2\pi i\ous{k=1}Nres_{z=z_{k}}\ f\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
