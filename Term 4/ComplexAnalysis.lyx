@@ -569,10 +569,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/панда.jpg
+	filename Pictures/Panda.jpg
 	width 5cm
 	height 5cm
-	keepAspectRatio
 
 \end_inset
 
@@ -583,7 +582,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Panda
+Панда
 \end_layout
 
 \end_inset
