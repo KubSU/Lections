@@ -11073,6 +11073,230 @@ I=\oiu{-\b}{+\b}f\left(x\right)dx
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+\oui{-\b}{+\b}f\left(x\right)e^{iax}dx=2\pi i\sum\un{\text{res}}{z=z_{k}}\left(f\left(z\right)e^{iaz}\right),\ \left\{ z_{k}\right\} \ -\ \text{п.о.т. в }Im\, z\br0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ четно и выполнены услловия леммы Жордана для фцнуцйии 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, то если нужно найти интеграл: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui 0{\b}f\left(x\right)\um\cos ax\um dx & = & \df 12\oui{-\b}{\b}f\left(x\right)\cos ax\um dx=\\
+ & = & \df 12Re\,\oui{-\b}{\b}f\left(x\right)e^{iax}dx=\\
+ & = & \df 12Re\,\left[2\pi i\ous{k=1}n\un{\text{res}}{z=z_{k}}\left(f\left(z\right)e^{iaz}\right)\right]=\\
+ & = & \left\{ Re\, i\left(x+iy\right)=-y=-Im\left(x+iy\right)\right\} =\\
+ & = & -\pi\um Im\,\ous{k=1}n\un{\text{res }}{z=z_{k}}\left(f\left(z\right)e^{iaz}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\backslash
+
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ нечетно и выполнены услловия леммы Жордана для фцнуцйии 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, то если нужно найти интеграл: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui 0{\b}f\left(x\right)\um\sin ax\um dx & = & \df 12\oui{-\b}{\b}f\left(x\right)\sin ax\um dx=\\
+ & = & \df 12Im\,\oui{-\b}{\b}f\left(x\right)e^{iax}dx=\\
+ & = & \df 12Im\,\left[2\pi i\ous{k=1}n\un{\text{res}}{z=z_{k}}\left(f\left(z\right)e^{iaz}\right)\right]=\\
+ & = & \left\{ Im\, i\left(x+iy\right)=x=Re\left(x+iy\right)\right\} =\\
+ & = & \pi\um Re\,\ous{k=1}n\un{\text{res }}{z=z_{k}}\left(f\left(z\right)e^{iaz}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Разножить в ряд Лорана по степеням 
+\begin_inset Formula $z$
+\end_inset
+
+ функцию:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f\left(z\right)=\df{2z+1}{z^{2}+z-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Особые точки: 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D_{1}\ :\ \left|z\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\df 1{1-z}=\ous{n=0}{\b}z^{n},\ \left|z\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{1+z}=\ous{n=0}{\b}\left(-1\right)^{n}z^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\df 1{z-1}+\df 1{z+2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{z-1}$
+\end_inset
+
+ Тут 
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+, пропускаем
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{z+2}$
+\end_inset
+
+ Тут 
+\begin_inset Formula $2>\left|z\right|\sl$
+\end_inset
+
+ Выносим 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \df 1{z-1}+\df 1{z+2}=\\
+ & = & \df 1{1-z}+\df 12\df 1{1+\df z2}=\\
+ & = & \left\{ \begin{array}{c}
+\left|z\right|<1\\
+\left|\df z2\right|<1\dsl\left|z\right|<2
+\end{array}\right\} =\\
+ & = & -\ous{n=0}{\b}z^{n}+\df 12\ous{n=0}{\b}\left(-1\right)^{n}\df{z^{n}}{2^{n}}=\\
+ & = & \ous{n=0}{\b}\left(\df{2^{n+1}+\left(-1\right)^{n}}{2^{n+1}}\right)z^{n}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D_{2}\ :\ 1<\left|z\right|<2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \df 1{z-1}+\df 1{z+2}=\\
+ & = & \df 1z\df 1{1-\df 1z}+\df 12\df 1{1+z}=\\
+ & = & \left\{ \begin{array}{c}
+\left|\df 1z\right|<1\dsl\left|z\right|>1\\
+\left|\df z2\right|<1\dsl\left|z\right|<2\\
+1<\left|z\right|<2
+\end{array}\right\} =\\
+ & = & \df 1z\ous{n=0}{\b}\df 1{z^{n}}+\df 12\ous{n=0}{\b}\df{\left(-1\right)^{n}z^{n}}{2^{n}}=\\
+ & = & \ous{n=-\b}{-1}z^{n}+\ous{n=0}{\b}\df{\left(-1\right)^{n}z^{n}}{2^{n+1}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D_{3}\ :\ \left|z\right|>2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(z\right) & = & \df 1{z-1}+\df 1{z+2}=\\
+ & = & \df 1z\df 1{1-\df 1z}+\df 1z\df 1{1+\df 2z}=\\
+ & = & \left\{ \begin{array}{c}
+\left|\df 1z\right|<1\dsl\left|z\right|>1\\
+\left|\df 2z\right|<1\dsl\left|z\right|>2
+\end{array}\right\} =\\
+ & = & \df 1z\ous{n=0}{\b}\df 1{z^{n}}+\df 1z\ous{n=0}{\b}\df{\left(-1\right)^{n}2^{n}}{z^{n}}=\\
+ & = & \ous{n=0}{\b}\df{1+\left(-1\right)^{n}2^{n}}{z^{n+1}}=\\
+ & = & \ous{n=-\b}{-1}\left(1+\left(-1\right)^{n-1}2^{n+1}\right)z^{n}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
