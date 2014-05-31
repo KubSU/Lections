@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -19,13 +19,13 @@ theorems-starred
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format pdf2
 \output_sync 0
@@ -45,15 +45,24 @@ theorems-starred
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date true
+\justification true
 \use_refstyle 1
 \boxbgcolor #55ff00
 \index Index
@@ -224,103 +233,103 @@ theorems-starred
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\ov}[2]{\overset{#2}{#1}}
+\newcommand{\ov}[2]{\overset{#2}{#1}}
 {\overset{#2}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
 {\sum\limits _{#1}^{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ul}[1]{\underset{#1}{\lim}}
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
 {\underset{#1}{\lim}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umax}[1]{\underset{#1}{\max}}
+\newcommand{\umax}[1]{\underset{#1}{\max}}
 {\underset{#1}{\max}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\umin}[1]{\underset{#1}{\min}}
+\newcommand{\umin}[1]{\underset{#1}{\min}}
 {\underset{#1}{\min}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
 {\underset{#1}{\overset{#2}{\int}}}
 \end_inset
 
  
 \begin_inset FormulaMacro
-\renewcommand{\ppr}{\pr\pr}
+\newcommand{\ppr}{\pr\pr}
 {\pr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\pppr}{\ppr\pr}
+\newcommand{\pppr}{\ppr\pr}
 {\ppr\pr}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\br}{\geq}
+\newcommand{\br}{\geq}
 {\geq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\mr}{\leq}
+\newcommand{\mr}{\leq}
 {\leq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\oiu}[2]{\oui{#1}{#2}}
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
 {\oui{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
 {\dfrac{#1}{#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\tl}{\approx}
+\newcommand{\tl}{\approx}
 {\approx}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\D}{\Delta}
+\newcommand{\D}{\Delta}
 {\Delta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\b}{\infty}
+\newcommand{\b}{\infty}
 {\infty}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vkl}{\subset}
+\newcommand{\vkl}{\subset}
 {\subset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\vec}[1]{\overrightarrow{#1}}
 {\overrightarrow{#1}}
 \end_inset
 
@@ -332,61 +341,61 @@ theorems-starred
 
 
 \begin_inset FormulaMacro
-\renewcommand{\DD}{\partial}
+\newcommand{\DD}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dd}{\partial}
+\newcommand{\dd}{\partial}
 {\partial}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\grad}{\text{grad}}
+\newcommand{\grad}{\text{grad}}
 {\text{grad}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\vtr}{\vdots}
+\newcommand{\vtr}{\vdots}
 {\vdots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
+\newcommand{\dif}[4]{\df{#1^{#2}#3}{#1#4^{#2}}}
 {\df{#1^{#2}#3}{#1#4^{#2}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\kr}{\equiv}
+\newcommand{\kr}{\equiv}
 {\equiv}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\x}{\times}
+\newcommand{\x}{\times}
 {\times}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\li}{\hspace{1.5cm}}
+\newcommand{\li}{\hspace{1.5cm}}
 {\hspace{1.5cm}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\ntr}{\ddots}
+\newcommand{\ntr}{\ddots}
 {\ddots}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\renewcommand{\bs}[1]{\left.#1\right|}
+\newcommand{\bs}[1]{\left.#1\right|}
 {\left.#1\right|}
 \end_inset
 
@@ -893,7 +902,7 @@ a_{n1} & \tr & a_{nn}
 \end_layout
 
 \begin_layout Lemma
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1104,7 +1113,7 @@ reference "eq:_2_1"
 \end_layout
 
 \begin_layout Lemma
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1252,7 +1261,7 @@ reference "eq:_2_5"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1325,7 +1334,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1538,7 +1547,7 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \end_deeper
 \end_deeper
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -1788,7 +1797,7 @@ f_{n}\left(x,y_{1}\tr y_{n}\right)
 \end_layout
 
 \begin_layout Lemma
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2123,7 +2132,7 @@ V\left(x\right)|_{l}\mr V\left(x_{0}\right)|_{l}-\beta\left(x-x_{0}\right)
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -2723,7 +2732,7 @@ reference "eq:_1_3_7"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4564,7 +4573,7 @@ reference "eq:2_1_2"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4681,7 +4690,7 @@ reference "eq:2_1_1"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -4941,7 +4950,7 @@ KAK^{-1}=\left(\begin{array}{cc}
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -6068,7 +6077,7 @@ reference "eq:_2_3_7"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -6136,7 +6145,7 @@ reference "eq:_2_3_7"
 \end_layout
 
 \begin_layout Theorem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -7157,6 +7166,1003 @@ reference "eq:_2_4_2"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+23.5.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассматриваем простейшую краевую задачю:
+\begin_inset Formula 
+\begin{equation}
+x\ppr\left(t\right)+a\left(t\right)x\left(t\right)=f\left(t\right),\ t\in\left[0;1\right]\label{eq:_2_5_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x\left(0\right)=x\left(1\right)=0\label{eq:_2_5_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}\left(t\right)\begin{cases}
+x_{1}''+a\left(t\right)x_{1}=0\\
+x\left(0\right)=0,\ x'\left(0\right)=1
+\end{cases};x_{2}\begin{cases}
+x_{2}''+a\left(t\right)x_{2}=0\\
+x_{2}\left(1\right)=0;x_{2}'\left(1\right)=1
+\end{cases}
+\]
+
+\end_inset
+
+Такие решения всегда существуют.
+\begin_inset Formula 
+\begin{equation}
+x\left(t\right)=\oui 0t\df{x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}f\left(s\right)ds-\oui 0t\df{x_{2}\left(t\right)x_{1}\left(s\right)-x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}f\left(s\right)ds\label{eq:_2_5_6_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(s\right)=\left|\begin{array}[t]{cc}
+x_{1}\left(s\right) & x_{2}\left(s\right)\\
+x_{1}'\left(s\right) & x_{2}'\left(s\right)
+\end{array}\right|
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Функция Грина
+\end_layout
+
+\begin_layout Theorem
+Если однородная задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) имеет только нулевое решение, то сущестуует непрерывная в квадрате 
+\begin_inset Formula $\left[0;1\right]\x\left[0;1\right]$
+\end_inset
+
+ функция 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+, такакя, что при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ единственное решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) представимо в виде:
+\begin_inset Formula 
+\begin{equation}
+x\left(t\right)=\oui 01G\left(t,s\right)f\left(s\right)ds\label{eq:_2_5_8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если непрерывная в квадрате 
+\begin_inset Formula $\left[0;1\right]\x\left[0;1\right]$
+\end_inset
+
+ функция 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ такова, что при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) представимо в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_8"
+
+\end_inset
+
+), то 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ называется функцией Грина задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Тогда вышесформулированную теорему можно сформулировать подругому:
+\end_layout
+
+\begin_layout Theorem
+Если соответствующая однородная задача имеет только нулевое решение, то
+ для задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) существует функция Грина.
+\end_layout
+
+\begin_layout Proof
+Пусть однгородная задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) имеет только нулевое решение.
+\end_layout
+
+\begin_layout Proof
+При доказательстве альтернативы Фретгольма мы показали, что в этом случае
+ при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) представимо в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_6_1"
+
+\end_inset
+
+).
+ Преобразуем теперь (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_6_1"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(t\right) & = & \oui 01\df{x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}f\left(s\right)ds-\oui 0t\df{x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}f\left(s\right)ds+\oui 0t\df{x_{2}\left(t\right)x_{1}\left(s\right)}{W\left(s\right)}f\left(s\right)ds=\\
+ & = & \oui t1\df{x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}f\left(s\right)ds+\oui 0t\df{x_{2}\left(t\right)x_{1}\left(s\right)}{W\left(s\right)}f\left(s\right)ds
+\end{eqnarray*}
+
+\end_inset
+
+Введем функцию 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ следующим образом: 
+\begin_inset Formula 
+\[
+G\left(t,s\right)=\begin{cases}
+\df{x_{1}\left(t\right)x_{2}\left(s\right)}{W\left(s\right)} & ,0\mr t\mr s\mr1\\
+\df{x_{2}\left(t\right)x_{1}\left(s\right)}{W\left(s\right)} & ,0\mr s<t\mr1
+\end{cases}
+\]
+
+\end_inset
+
+Очевидно, что такая функция 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ непрерывна в квадрате 
+\begin_inset Formula $\left[0;1\right]\x\left[0;1\right]$
+\end_inset
+
+, тогда используя построенну таким образом фунцию 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ можно записать, что: 
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(t\right) & = & \oui t1G\left(t,s\right)f\left(s\right)ds+\oui 0tG\left(t,s\right)f\left(s\right)ds=\\
+ & = & \oui 01G\left(t,s\right)f\left(s\right)ds
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Установим некоторые совйства построенной функции Грина:
+\end_layout
+
+\begin_layout Enumerate
+При каждом фиксированном 
+\begin_inset Formula $s$
+\end_inset
+
+ функция 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ как функция 
+\begin_inset Formula $G\left(t\right)$
+\end_inset
+
+ на промежутках 
+\begin_inset Formula $[1,s)$
+\end_inset
+
+ и 
+\begin_inset Formula $(s,1]$
+\end_inset
+
+ является решением однородного дифференциального уровнения: 
+\begin_inset Formula $x\ppr+a\left(t\right)x\left(t\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+При каждом фиксированном 
+\begin_inset Formula $s$
+\end_inset
+
+ функция 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ как функция 
+\begin_inset Formula $G\left(t\right)$
+\end_inset
+
+ удовлетворяет однородным граничным условиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ непрерывна в квадрате 
+\begin_inset Formula $\left[0;1\right]\x\left[0;1\right]$
+\end_inset
+
+, а ее производная: 
+\begin_inset Formula $G_{t}\pr\left(t,t-0\right)-G_{t}\pr\left(t,t+0\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Еще можно записать: 
+\begin_inset Formula $G_{t}\pr|_{t=s+0}-G_{t}\pr|_{t=s-0}=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+G_{t}\pr\left(t,t-0\right)-G_{t}\pr\left(t,t+0\right) & = & \df{x_{2}\pr\left(t\right)x_{1}\left(s\right)}{W\left(s\right)}|_{\begin{array}{c}
+s<t\\
+s=t-0
+\end{array}}-\df{x_{1}\pr\left(t\right)x_{2}\left(s\right)}{W\left(s\right)}|_{\begin{array}{c}
+s>t\\
+s=t+0
+\end{array}}=\\
+ & = & \df{x_{2}\pr\left(t\right)x_{1}\left(t\right)-x_{1}\pr\left(t\right)x_{2}\left(t\right)}{W\left(t\right)}=\\
+ & = & \df{W\left(t\right)}{W\left(t\right)}=\\
+ & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Claim
+Если функция 
+\begin_inset Formula $\tilde{G}\left(t,s\right)$
+\end_inset
+
+ удовлетворяет условиям 1, 2, 3, то 
+\begin_inset Formula $\tilde{G}\left(t,s\right)$
+\end_inset
+
+ является функцией Грина задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+).
+ Задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) тимеет единственную функцию Грина.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $G\left(t,s\right)$
+\end_inset
+
+ удовлетворяет 1,2,3.
+ Нужно показать, что прилюбой правой части функция 
+\begin_inset Formula 
+\begin{equation}
+x\left(t\right)=\oui 01\tilde{G}\left(t,s\right)f\left(s\right)ds\label{eq:_2_5_9}
+\end{equation}
+
+\end_inset
+
+ является решением задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+).
+ А тогда в силу определения это и бкудет означать, что это наша функция
+ Грина.
+ В силу пункта 2 при каждом фиксированном 
+\begin_inset Formula $s$
+\end_inset
+
+ 
+\begin_inset Formula $\tilde{G}\left(t,s\right)$
+\end_inset
+
+ удовлетворяет граничным условиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+).
+ Покажем, что (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_9"
+
+\end_inset
+
+) удорвлетворяет уравнению (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(t\right) & = & \oui 01\tilde{G}\left(t,s\right)f\left(s\right)ds=\\
+ & = & \oui t1\tilde{G}\left(t,s\right)f\left(s\right)ds+\oui 0t\tilde{G}\left(t,s\right)f\left(s\right)ds
+\end{eqnarray*}
+
+\end_inset
+
+ Смотри первый симетстр, диференцирование интегралов, зависящих от параметра.
+\begin_inset Formula 
+\[
+x\pr\left(t\right)=\oui 01\tilde{G}_{t}\pr\left(t,s\right)f\left(s\right)ds+\tilde{G}\left(t,t-0\right)f\left(t\right)+\oui t1\tilde{G}_{t}\pr f\left(s\right)ds-\tilde{G}\left(t,t+0\right)f\left(t\right)
+\]
+
+\end_inset
+
+ В силу непрерывности:
+\begin_inset Formula 
+\[
+x\pr\left(t\right)=\oui 01\tilde{G}_{t}\pr\left(t,s\right)f\left(s\right)ds+\oui t1\tilde{G}_{t}\pr f\left(s\right)ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+x\ppr\left(t\right) & = & \oui 0t\tilde{G}_{t}\ppr\left(t,s\right)f\left(s\right)ds+\tilde{G}_{t}\ppr\left(t,t-0\right)+\oui t1\tilde{G}_{t}\pr\left(t,s\right)f\left(s\right)ds-\tilde{G_{t}\pr\left(t,t+0\right)=}\\
+ & = & \left\{ \text{В силу пункта 3.}\right\} =\\
+ & = & \oui 01\tilde{G}_{t}\ppr\left(t,s\right)f\left(s\right)ds+f\left(t\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+x\ppr\left(t\right)+a\left(t\right)x\left(t\right) & = & \oui 01\tilde{G}_{t}\ppr\left(t,s\right)f\left(s\right)ds+f\left(t\right)+\oui 01a\left(t\right)\tilde{G}\left(t,s\right)f\left(s\right)ds=\\
+ & = & \oui 01\left(\tilde{G}_{t}\ppr\left(t,s\right)+a\left(t\right)\tilde{G}\left(t,s\right)\right)f\left(s\right)ds+f\left(t\right)
+\end{eqnarray*}
+
+\end_inset
+
+В силу первого свойства функции 
+\begin_inset Formula $\tilde{G}\left(t,s\right)$
+\end_inset
+
+ при каждом фиксированном 
+\begin_inset Formula $s$
+\end_inset
+
+ 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ является решением однородного уравнения.
+ Ну а тогда 
+\begin_inset Formula 
+\[
+x\ppr\left(t\right)+a\left(t\right)x\left(t\right)=f\left(t\right)
+\]
+
+\end_inset
+
+И 
+\begin_inset Formula $\tilde{G}\left(t,s\right)$
+\end_inset
+
+ и есть функция Грина.
+ Докажем единственность функции Грина.
+ 
+\end_layout
+
+\begin_layout Proof
+Предположим противное.
+ Пусть 
+\begin_inset Formula $G_{1}\left(t,s\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}\left(t,s\right)$
+\end_inset
+
+ --- функции Грина задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+).
+ Но так как функция Грина существует, то решение задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_5_2"
+
+\end_inset
+
+) единственно, то это единственное решение 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ может быть предствавленно:
+\begin_inset Formula 
+\[
+x\left(t\right)=\oui 01G_{1}\left(t,s\right)f\left(s\right)ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=\oui 01G_{2}\left(t,s\right)f\left(s\right)ds
+\]
+
+\end_inset
+
+ Обозначим через 
+\begin_inset Formula 
+\[
+H\left(t,s\right)=G_{1}\left(t,s\right)-G_{2}\left(t,s\right)
+\]
+
+\end_inset
+
+Тогда вычитаея мы получим, что при любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\oui 01H\left(t,s\right)f\left(s\right)ds\equiv0,\ t\in\left[0;1\right]\label{eq:_2_5_10}
+\end{equation}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ разные, то 
+\begin_inset Formula $H\left(t,s\right)$
+\end_inset
+
+ отлимчно от нуля.
+ Следовательно, нгайдется точка 
+\begin_inset Formula $H\left(t_{0},s_{0}\right)\nr0,\ t_{0},s_{0}\in\left[0;1\right].$
+\end_inset
+
+ Пусть для опредлеленности 
+\begin_inset Formula $H\left(t_{0},s_{0}\right)>0$
+\end_inset
+
+.
+ Тогда в силу непрерывности 
+\begin_inset Formula $H\left(t,s\right)$
+\end_inset
+
+ найдется интервал 
+\begin_inset Formula $s_{0}\in\left(\alpha;\beta\right)\vkl\left[0;1\right]$
+\end_inset
+
+, что 
+\begin_inset Formula $H\left(t_{0},s\right)>0,$
+\end_inset
+
+ тогда когда 
+\begin_inset Formula $s\in\left[\alpha;\beta\right]$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ --- некоторая непрерывная функция, которая больше нуля, при 
+\begin_inset Formula $t\in\left(\alpha;\beta\right)$
+\end_inset
+
+, и 
+\begin_inset Formula $f\left(t\right)=0,$
+\end_inset
+
+ когда 
+\begin_inset Formula $t\notin\left(\alpha;\beta\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(t\right)=\begin{cases}
+\left(t-\alpha\right)\left(\beta-t\right) & ,t\in\left(\alpha;\beta\right)\\
+0 & ,t\notin\left(\alpha;\beta\right)
+\end{cases}
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula 
+\[
+\oui 01H\left(t,s\right)f\left(s\right)ds\equiv0
+\]
+
+\end_inset
+
+ для любой 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ и для любой 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ Но с другой стороны 
+\begin_inset Formula 
+\[
+\oui 01H\left(t_{0},s\right)\tilde{f}\left(s\right)ds=\oui{\alpha}{\beta}H\left(t_{0},s\right)\tilde{f}\left(s\right)ds>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Собственные значения и собственные фунции
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x\ppr+\left(a\left(t\right)+\lambda\right)x\left(t\right)\label{eq:_2_7_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+x\left(0\right)=x\left(1\right)=0\label{eq:_2_7_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Значевние параметра 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, при котором задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_2"
+
+\end_inset
+
+) имеет ненулевое решение называется собственным знгачением задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_2"
+
+\end_inset
+
+), а соответствующие ненулевое решение называется собственной функцией,
+ соттветствубщей этому собственному значению.
+\end_layout
+
+\begin_layout Standard
+Задачей на собственные значения называются спектральными задачами.
+ В часности задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_2"
+
+\end_inset
+
+) называется спектрнальной задачей Штурма-Леувилля.Совокупность всех собственных
+ значевний называется спектром задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_7_2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+x\ppr\left(t\right)+\lambda x\left(t\right)=0\\
+x\left(0\right)=x\left(1\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\mu^{2}+\lambda=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1)
+\begin_inset Formula $\lambda=-b^{2}<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{1,2}=\pm\sqrt{-\lambda}=\pm e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\left(t\right)=c_{1}e^{\sqrt{-\lambda}x}+c_{2}e^{-\sqrt{\lambda}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+c_{1}+c_{2}=0\\
+c_{1}e^{\sqrt{-\lambda}x}+c_{2}e^{-\sqrt{\lambda}x}=0
+\end{cases}\sl\begin{cases}
+c_{1}=0\\
+c_{2}=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2)
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+, 
+\begin_inset Formula $x\ppr\left(t\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $x\left(t\right)=c_{1}+c_{2}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+c_{1}=0\\
+c_{1}+c_{2}=0
+\end{cases}\sl\begin{cases}
+c_{1}=0\\
+c_{2}=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3)
+\begin_inset Formula $\lambda=b^{2}>0,$
+\end_inset
+
+ 
+\begin_inset Formula $\mu_{1,2}=\pm i\sqrt{\lambda}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\left(t\right)=c_{1}\cos\sqrt{\lambda}t+c_{2}\sin\sqrt{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+c_{1}=0\\
+c_{1}\cos\sqrt{\lambda}t+c_{2}\sin\sqrt{\lambda}=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin\sqrt{\lambda}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{\lambda}=\pi k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{k}=\left(\pi k\right)^{2},\ k=1,2,\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{k}\left(t\right)=c\sin\pi kt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При этом нетрудно видеть, что 
+\begin_inset Formula $\oui 01x_{k}\left(t\right)x_{l}\left(t\right)ds=0,\ k\nr l$
+\end_inset
+
+.
+ Тоесть собвтенные функци, сооттветствующие различным собственнеым значениям
+ ортогональны, а собственные фунцкии соответствующие однопу собвтсенному
+ значению пропорциональны.
 \end_layout
 
 \begin_layout --Separator--

@@ -421,6 +421,12 @@ theorems-starred
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -2997,6 +3003,1345 @@ B=\oint\limits _{C_{R}}\df{\mu_{0}}{4\pi}\df{i\um dl}{R^{2}}=\df{\mu_{0}i}{2R}
 \begin_layout Standard
 Векторные поля у которых циркуляция не равна нулю называются вихревыми полями.
  Для них нет понятия потенциала.
+\end_layout
+
+\begin_layout Subsection
+Действие магнитного поля на токи и заряды.
+ Сила Лоренца.
+\end_layout
+
+\begin_layout Standard
+На некий элемент 
+\begin_inset Formula $d\v l$
+\end_inset
+
+ со стороны магнитного поля действует сила
+\begin_inset Formula 
+\[
+d\v f=ki\left[d\v l;\v B\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\df{\mu_{0}i}{2\pi b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+df=ki_{2}dl\df{\mu_{0}i_{1}}{2\pi B}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+df=k\df{\mu_{0}}{4\pi}\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\v j\um s
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+id\v l=\v js\um dl=\v j\um dv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+df=\left[\v j,\v B\right]\um dv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v j=\v v\um c\um n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+ --- концентрация заряженых частиц в еденице обьема
+\begin_inset Formula 
+\[
+df=e\um\left[\v v,\v B\right]\um n\um dv
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $n\um dv$
+\end_inset
+
+ --- общее число заряженных частиц, движущихся в проводнике
+\end_layout
+
+\begin_layout Standard
+Сила, действующая со стороны магнитного поля на одну частицу (сила Лорпенса):
+\begin_inset Formula 
+\[
+F_{\Lambda}=e\left[\v v;\v B\right]
+\]
+
+\end_inset
+
+Сила всегда будет направлена перепендикулярно вектору перемещения.
+ И получается, что сила Лоренса работы не совершает, и следователдьно, не
+ меняет энергию частици.
+ Это характерно только для постоянного магнитного поля, а для непостоянного
+ там она меняется.
+\end_layout
+
+\begin_layout Subsection
+Кoнтур с током в магнитном поле
+\end_layout
+
+\begin_layout Standard
+Рассмотрим прямоугольный контур с током.
+\begin_inset Formula 
+\[
+df=i\left[d\v l,B\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v M=f_{a}\df b2+f_{a}\df b2=f_{a}\um b
+\]
+
+\end_inset
+
+Момент сил, котрый действует на такой проводник:
+\begin_inset Formula 
+\[
+M=i\um B\um a\um b=i\um B\um S=p_{m}\um B
+\]
+
+\end_inset
+
+Эта формула и указанные выводы справедливы для плоского контура любой формы.
+\begin_inset Formula 
+\[
+M=P_{m}\um B\um\sin\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v M=\left[\v{P_{m}};\v B\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнетики
+\end_layout
+
+\begin_layout Subsubsection
+Классификация магнетиков
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi$
+\end_inset
+
+ --- магнитная восприимчивость.
+ 
+\end_layout
+
+\begin_layout Standard
+В зависимости от величитны магтитной восприимчивости все магнетики разделяются
+ на три группы:
+\end_layout
+
+\begin_layout Enumerate
+Дио-магнетики.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi<0,\ \chi\sim10^{-8}\div10^{-7}$
+\end_inset
+
+, 
+\begin_inset Formula $\v J\rightleftarrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пара-магнетики
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi>0,\ \chi\sim10^{-7}\div10^{-6}$
+\end_inset
+
+, 
+\begin_inset Formula $\v J\upuparrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ферро-магнетики
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi>0;\ \chi\sim10^{3}$
+\end_inset
+
+ , 
+\begin_inset Formula $\v J\upuparrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если для дио- и пара- .....
+ то у ферро-магнетиков 
+\begin_inset Formula $\chi$
+\end_inset
+
+ является функцией напряженности магнитного поля.
+ 
+\begin_inset Formula 
+\[
+P_{m}=i\um S=e\um\nu\um S=e\um\nu\pi r^{2}=\df{erv}2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{e}=\nu2\pi r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{m}=\df{erv}2
+\]
+
+\end_inset
+
+Момент импульса электрона:
+\begin_inset Formula 
+\[
+L=v\um n\um r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{P_{m}}L=-\df 12\df em
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Электрон обладает своими 
+\begin_inset Formula $P_{ms}$
+\end_inset
+
+ и 
+\begin_inset Formula $L_{s}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\df{P_{ms}}{L_{s}}=-\df em
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ферро-магнентики
+\end_layout
+
+\begin_layout Standard
+Они обладают намагничеванием в отсутствие магнитного поля.
+ Название получило от железа.
+ Полупроводники, обрадающие такими свойствами называются ферритами.
+\end_layout
+
+\begin_layout Subsection
+Электромагнитная индукция.
+\end_layout
+
+\begin_layout Standard
+В 1831 году Фарадей открыл явление магнитной индукции.
+ Он показал, что во всяком замкнутом проводящем контуре при изменении потока
+ магнитной индукции через поверхность, ограниченную этим контуром, возникает
+ электрический ток.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+24.5.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когдла сила тока растет или уменьшается, поворачивать, то в другом возникает
+ индукционный эликтрический ток.
+ Он фиксируется гальванометром.
+ От способа измемения магнитной индекции ничего не зависит.
+ 
+\end_layout
+
+\begin_layout Standard
+Ленц сформулировал закон направления тока в новом контуре: Индукционный
+ ток, возникающий в контуре направлен так, чтобы противодействовать причине
+ его вызывающей.
+\end_layout
+
+\begin_layout Standard
+Если приближаем, то проводники должны отталкиватьлся, то возникает ток с
+ противоположным направдением.
+ Если отталкиваем то наоборот.
+\end_layout
+
+\begin_layout Standard
+Величина индукционного тока зависит не от напряженнрости магнитного поля,
+ я от величины магнитной индукции.
+\end_layout
+
+\begin_layout Subsubsection
+ЭДС индукции
+\end_layout
+
+\begin_layout Standard
+Раз есть ток в контуре, значит есть и ЭДС.
+ Вoзьмем простой эксперемент.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рисунок
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+НАчинаем двигать планку со скоростью 
+\begin_inset Formula $\v v$
+\end_inset
+
+.
+ На каждую частицу будет действоваать сила Лоренса: 
+\begin_inset Formula $\v F_{\Lambda}=e\left[\v v;\v B\right]$
+\end_inset
+
+.
+ Сила Лолренса будет направлена вниз, тоесть электроны будут по контуру
+ двигаться вниз.
+ А ток будет направлен вверх.
+ У нас возникает ЭДС, который закручивает ток по контуру.
+ 
+\begin_inset Formula $F_{\Lambda}=ev\um B$
+\end_inset
+
+.
+ Напряженностьть внешних (сторонних) сил: 
+\begin_inset Formula 
+\[
+E=\df{F_{\Lambda}}e=v\um B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{i} & = & \oint\v E\um d\v l=\\
+ & = & E\um l=\\
+ & = & v\um B\um l=\\
+ & = & v\um B\um\df{ldt}{dt}=\\
+ & = & B\df{ds}{dt}=\\
+ & = & \df{d\Phi_{B}}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+Поток магнитной индукции (Измеряется в: вебер):
+\begin_inset Formula 
+\[
+\Phi_{B}=\un{\iint}S\v B\um\v n\um ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{i}=-\df{d\Phi}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Явление самоиндукции
+\end_layout
+
+\begin_layout Standard
+Когда мы берез некий контур и пускаем там ток, получается, что этот ток
+ не является постоянным, он нарастает, а значит меняется магнитная эндукция,
+ а значит что в этом контуре возникает еще один ток, который противодействиет
+ первому.
+ Это явление самоиндукци.
+\end_layout
+
+\begin_layout Standard
+Через
+\begin_inset Formula $\Psi$
+\end_inset
+
+ обозначим поток через контур в самом контуре, в котором мы измеряем ток.
+ Он оказался пропорционален силе тока.
+ 
+\begin_inset Formula $\Psi=L\um i$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ называется индуктивностью контура.
+ Оказывается что тут написали линейную зависимость, но на самом деле она
+ не совсем такая.
+ Если такие магнитики, например феромегнетики, то эта зависимость становится
+ нелиннйной.
+ То 
+\begin_inset Formula $L$
+\end_inset
+
+ зависит от магнитных свойств вещества.
+ Зависит от формы и размера.
+ 
+\end_layout
+
+\begin_layout Standard
+Пробнем вычислить индуктивность 
+\begin_inset Formula $L$
+\end_inset
+
+ для кокогонибудь контура.
+ Например для солиноида.
+ Будет 
+\begin_inset Formula $N$
+\end_inset
+
+ витков.
+ 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ --- поток.
+ Индуктивность: 
+\begin_inset Formula 
+\[
+\Psi=N\um\Phi=B\um S\um n\um l
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ --- плотность намотки, 
+\begin_inset Formula $l$
+\end_inset
+
+ --- длинна.
+\begin_inset Formula 
+\begin{eqnarray*}
+\Psi & = & N\um\Phi=B\um S\um n\um l=\\
+ & = & \mu\mu_{0}in^{2}Sl=\\
+ & = & \mu\mu_{0}in^{2}V
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}n^{2}v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n=\df Nl
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}N^{2}\df Sl
+\]
+
+\end_inset
+
+ Чем больше пложадь и меньше длинна чем больше индуктивность, при такомже
+ количестве витков.
+ ВОзникает ЭДС самоиндукции.
+ Оно связано с изменением потока 
+\begin_inset Formula $\Psi$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{c} & = & -\df{d\Psi}{dt}=\\
+ & = & -\df{dl}{dt}\um i-l\um\df{di}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+ Если 
+\begin_inset Formula $L$
+\end_inset
+
+ --- константа:
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dl}{dt}=\df{dl}{di}\um\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-\left(i\df{dL}{di}+L\right)\df{di}{dt}
+\]
+
+\end_inset
+
+Еденица измерения индлуктивности: 
+\begin_inset Formula $\left[L\right]=\df{\text{Вольт}\um\text{Секунду}}{\text{Ампер}}=\text{Генри}=\text{Гн}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ток при замыкании и размыкании цепи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{0}=\df{\varepsilon}R
+\]
+
+\end_inset
+
+Сопротивленгие источника пренебружимо мало.
+\begin_inset Formula 
+\[
+i\um R=\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}+\df RLi=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i\left(0\right)=I_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{0}\um e^{-\frac{L}{R}t}
+\]
+
+\end_inset
+
+Постоянная времени, характеризующая контур:
+\begin_inset Formula 
+\[
+\df LR=\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{0}e^{-\df t{\tau}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ток при замыкании цепи
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+i\um R & = & \varepsilon_{c}+\varepsilon=\\
+ & = & \varepsilon-L\df{di}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}+\df RLi=\df{\varepsilon}L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i\left(0\right)=0
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+i=I_{0}+ce^{-\df Blt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При размыканнии цепи ток вычисляется так:
+\begin_inset Formula 
+\[
+i=I_{0}\left(1-e^{-\frac{R}{L}t}\right)
+\]
+
+\end_inset
+
+Это если индуктивность постоянная
+\end_layout
+
+\begin_layout Subsection
+Энергия магнитного поля
+\end_layout
+
+\begin_layout Standard
+Закон Джоуля-Ленца:
+\begin_inset Formula 
+\begin{eqnarray*}
+dA & = & \varepsilon_{c}\um I\um dt=\\
+ & = & -\df{d\Psi}{dt}i\um dt=\\
+ & = & -d\Psi\um i=\\
+ & = & \left\{ \begin{array}{c}
+\Psi=L\um i\\
+d\psi=Ldi
+\end{array}\right\} =\\
+ & = & -Lidi
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\oui{I_{0}}0-Lidi=\df{I_{0}^{2}}2L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\df{i^{2}}2L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}n^{2}V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=in
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\mu\mu_{0}H
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\mu\mu_{0}\df{i^{2}n^{2}}2V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+w & = & \mu\mu_{0}\df{i^{2}n^{2}}2=\\
+ & = & \mu\mu_{0}\df{H^{2}}2=\\
+ & = & \df{B\um H}2
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+24.5.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Движение заряженной частицы в однородном магнитном поле
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{\Lambda}=e\left[\v v;\v B\right]
+\]
+
+\end_inset
+
+Сила Лоренса не меняет энергию частици.
+ Но есть ускорение.
+ Значит меняется направление.
+\end_layout
+
+\begin_layout Standard
+Ускоренпие этой частици:
+\begin_inset Formula 
+\[
+F=m\um\v w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=\df Fm
+\]
+
+\end_inset
+
+У нас частица будет двигаться по окружности.
+\begin_inset Formula 
+\[
+\v w_{n}=\df em\left[\v v;\v B\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w_{n}=\df em\um v\um B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w_{n}=\df{v^{2}}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=\df{v^{2}}{w_{n}}=\df me\df vB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Удельный заряд: 
+\begin_inset Formula $\df em$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+За какое время он делает полный оборот (периуд вращения):
+\begin_inset Formula 
+\[
+T=\df{2\pi R}v=\df{2\pi m}e\df 1B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+v_{1}=v\sin\alpha\\
+v_{2}=v\cos\alpha
+\end{array}
+\]
+
+\end_inset
+
+Таким образом частица будет двигаться по спирали, ось которой совподает
+ с направлением вектора 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ При этом не мняется величина скорости и работу оно не совершает.
+ Если частица положительная, то спираль закручивается по часовой стрелке,
+ если отрицательно, то наоборот.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\v w=\df{e\v E}m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Переменный ток
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- Длинна цепи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=\df lc<<T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Такой ток нызвается квазистационарным.
+ Для него хоть он и переменный действиют законы Киргофа и законы Ома.
+\end_layout
+
+\begin_layout Standard
+Сопротивление, которое обладает не емкостью, не индуктивностью называтеся
+ активным сопротивленимем.
+ Таких не бывает, но иногда им можно пренебречь.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u=u_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df UR=\df{u_{m}}R\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=\df{u_{m}}R
+\]
+
+\end_inset
+
+Тем самым характер изменения напряджения и тока один и тот же.
+\begin_inset Formula 
+\[
+u=I_{m}R\cos wt
+\]
+
+\end_inset
+
+Напряждение и сила тока меняются симфазно (тоесть в обной фазе).
+\end_layout
+
+\begin_layout Subsection
+Переменный ток, текущий через индуктивность
+\end_layout
+
+\begin_layout Standard
+Будем считать что 
+\begin_inset Formula $R=0$
+\end_inset
+
+ и емкость тоже равна нулю.
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u+\varepsilon_{c}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}\cos wt=L\df{di}{dt}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}=\df{u_{m}}L\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df{u_{m}}{Lw}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df{u_{m}}{Lw}\cos\left(wt-\df{\pi}2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=\df{u_{m}}{lw}
+\]
+
+\end_inset
+
+Вод если сопоставить это уравнения с законом Ома, то можно сказать что 
+\begin_inset Formula $Lw=R_{L}$
+\end_inset
+
+ можно рассматривать как некоторое сопротивлением, и называется (реактивным)
+ индуктивным соопротивлением.
+\begin_inset Formula 
+\[
+i=I_{m}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u=LwI_{m}\sin\left(wt+\df{\pi}2\right)
+\]
+
+\end_inset
+
+В этиом слкчае напряжение опережает по фазе ток на 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+, тоесть на 
+\begin_inset Formula $\df 14$
+\end_inset
+
+ периуда.
+\end_layout
+
+\begin_layout Subsection
+Переменный ток, текущий серез емкость
+\end_layout
+
+\begin_layout Standard
+Перменный ток через емкость может течь.
+\begin_inset Formula 
+\[
+U=\df qC=u_{m}\cos wt
+\]
+
+\end_inset
+
+Вспомним что такое 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ Это заряд.
+\begin_inset Formula 
+\[
+i=\df{dq}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=Cu_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dq}{dt}=i=-cwu_{m}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=cwu_{m}\cos\left(wt+\df{\pi}2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=cwu_{m}
+\]
+
+\end_inset
+
+Емкостное сопротивление:
+\begin_inset Formula 
+\[
+R_{c}=\df 1{wc}
+\]
+
+\end_inset
+
+Для конденсатора напряжение отстоет на 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+ от тока.
+\begin_inset Formula 
+\[
+u_{m}^{2}\left(u_{L}-u_{c}\right)^{2}+u_{R}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}^{2}=\left(I_{m}Lw-\df{I_{m}}{wc}\right)^{2}+\left(RI_{m}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}=I_{m}\sqrt{\left(Lw-\df 1{wc}\right)^{2}+R^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tg\varphi & = & \df{wL-\df 1{wc}}R=\\
+ & = & \df{R_{L}-R_{c}}R
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\sqrt{\left(Lw-\df 1{wc}\right)^{2}+R^{2}}
+\]
+
+\end_inset
+
+Преведущую величину называют полным сопротивлением цепи.
+\begin_inset Formula 
+\[
+u=u_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{m}\cos\left(wt-\varphi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}=I_{m}\um z
+\]
+
+\end_inset
+
+Реактивное сопротивление: 
+\begin_inset Formula 
+\[
+Lw-\df 1{wc}=X
+\]
+
+\end_inset
+
+Можно подобрать по 
+\begin_inset Formula $w$
+\end_inset
+
+ чтобы 
+\begin_inset Formula $X=0$
+\end_inset
+
+, то это резонансное явление, общее сопротивление минимальное.
+\begin_inset Formula 
+\[
+w_{res}=\df 1{\sqrt{Lc}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{L\ res} & = & u_{c\ res}=\\
+ & = & \sqrt{\df Lc}I_{m}=\\
+ & = & \df 1R\sqrt{\df Lc}u_{m}
+\end{eqnarray*}
+
+\end_inset
+
+ Если 
+\begin_inset Formula $\sqrt{\df Lc}>R$
+\end_inset
+
+ это приводит к тому, что напряджение на емкости и на конденсаторе выше
+ чем напряжение в цепи.
+\end_layout
+
+\begin_layout Subsection
+Электромагнитное поле
+\end_layout
+
+\begin_layout Subsubsection
+Вихревое электрическое поле
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varepsilon_{B}=\oint\v E_{B}d\v l
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{B} & = & -\df{d\Phi}{dt}=\\
+ & = & -\df d{dt}\un{\iint}SB\um\pi\um dS=\\
+ & = & \un{\iint}S\df{d\v B}{dt}\um\v n\um dS
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\v E_{q}d\v l=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\v E_{B}d\v l=-\un{\iint}S\df{d\v B}{dt}\pi dS
+\]
+
+\end_inset
+
+ Следовательно возникающее в пространстве электрическое поле, свзяанное
+ смагнитным полем, будет вихревым.
+\begin_inset Formula 
+\[
+\v E=\v E_{q}+\v E_{B}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\v Ed\v l=-\un{\iint}S\df{dB}{dt}ndS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
