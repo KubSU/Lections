@@ -4341,7 +4341,320 @@ u_{L\ res} & = & u_{c\ res}=\\
 \end_layout
 
 \begin_layout Standard
-.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+31 мая 2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когда мы рассмотрим мгновенное значение тока: 
+\begin_inset Formula $i=\df{dq}{dt}=\dot{q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С дриугой стороны рассмотрим плотность тогка с правой граници левой оплавки
+ конденсатора: 
+\begin_inset Formula 
+\[
+j=\df is=\df{\dot{q}}s=\df d{dt}\left(\df qs\right)=\dot{\sigma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df qs$
+\end_inset
+
+ --- плотность поверхностногог заряда.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j_{\text{СМ}}=j_{\text{ПР}}=\dot{\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Электрическое смещение: 
+\begin_inset Formula $D=\varepsilon_{0}E_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E=\df{\sigma}{\varepsilon_{0}}$
+\end_inset
+
+ --- электрический ток между двумя пластинами
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\varepsilon_{0}E_{0}=\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{D}=\dot{\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j_{\text{СМ}}=\dot{D}$
+\end_inset
+
+ --- Но дело в том что и то и то это вектора
+\end_layout
+
+\begin_layout Standard
+Получаетсмя что направление тока и направление электрического смещения совподут.т
+ Получается, что равенство не только скалярное, но и векторное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{j_{\text{СМ}}}=\dot{\v D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полная плотность тока: 
+\begin_inset Formula $\v{j_{\text{Полная}}}=\v{j_{\text{ПР}}}+\v{j_{\text{СМ}}}=\v{j_{\text{ПР}}}+\dot{\v D}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint\v Hd\v l=\sum i=\un{\iint}s\v{j_{\text{Полная}}}\v nds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{\oint\v Hd\v l=\un{\iint}s\left(\v{j_{\text{ПР}}}+\dot{\v D}\right)\v nds}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\oint\v Ed\v l=-\un{\iint}s\df{\dd\v B}{\dd t}\v nds\label{eq:_18_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Смысл формулы: Переменное магнитное поле создает электрическое поле.
+\begin_inset Formula 
+\begin{equation}
+\un{\oiint}s\v B\v nds=0\label{eq:_18_2}
+\end{equation}
+
+\end_inset
+
+Смысл формулы: Эта формула говорит что не существует магнитных зарядов и
+ линии магнитного поля всегда замкнуты.
+\begin_inset Formula 
+\begin{equation}
+\oint\v Hd\v l=\un{\iint}s\left(\v{j_{\text{ПР}}}+\dot{\v D}\right)\v nds\label{eq:_18_3}
+\end{equation}
+
+\end_inset
+
+Смысл формулы: Магнитное поле возникает вследствии существования станционарных
+ токов, либо переменным электрическим полем.
+\begin_inset Formula 
+\begin{equation}
+\un{\oiint}sDds=\un{\iiint}V\rho dv\label{eq:_18_4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- обьемная плотность заряда.
+ Означает что станционарное электрическоет поле создается станционарными
+ зарядами, и линии электрического поля начинаются на одних(положительных)
+ зарядах и заканчиваются на других(отрицательных).
+\end_layout
+
+\begin_layout Standard
+Эти уравнения образуют полную систему Максвелла.
+\end_layout
+
+\begin_layout Standard
+Согласно формуле Стокса:
+\begin_inset Formula 
+\[
+\oint\v Ed\v l=\un{\iint}srot\v E\v nds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iint}srot\v E\v nds+\un{\iint}s\df{\dd\v B}{\dd t}\v nds=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iint}s\left(rot\v E+\df{\dd\v B}{\dd t}\right)\v nds=0
+\]
+
+\end_inset
+
+Дифференцианьное уравнения Максвелла:
+\begin_inset Formula 
+\begin{equation}
+rot\v E+\df{\dd B}{\dd t}=0\label{eq:_18_1'}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_18_3"
+
+\end_inset
+
+): Применим к ней формулу стокса.
+\begin_inset Formula 
+\[
+\un{\iint}srot\v H\v nds=\un{\iint}s\left(\v{j_{\text{ПР}}}+\dot{\v D}\right)\v nds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+rot\v H=\v{j_{\text{ПР}}}+\dot{\v D}\label{eq:_18_3'}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Применим формулу Гаусса-Острогратского к формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_18_4"
+
+\end_inset
+
+) и (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_18_2"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\un{\iiint}Vdiv\v Bdv=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+div\v B=0\label{eq:_18_2'}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iiint div\v Ddv=\un{\iiint}V\rho
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+div\v D=\rho\label{eq:_18_4'}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+rot\v E+\dot{\v B=0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v D=\varepsilon\varepsilon_{0}\v E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\mu\mu_{0}H
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j=\sigma E
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
