@@ -1722,7 +1722,7 @@ y_{n}^{\left(0\right)}
 
 \end_layout
 
-\begin_layout Remark
+\begin_layout Claim
 Устойчивость или неустойчивость любого решения лдинейной неоднородной системы
  эквивалентно устойчивости или неустойчивости нулевого решения однородной
  системы.
@@ -1785,7 +1785,14 @@ f_{n}\left(x,y_{1}\tr y_{n}\right)
 \begin_inset Formula $y\equiv0$
 \end_inset
 
- --- решение системы (1).
+ --- решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1838,7 +1845,14 @@ status open
 
 \end_inset
 
-Тогда нулевое решение системы (1) устойчиво.
+Тогда нулевое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+) устойчиво.
  Если выполнено более сильное условие, тоесть при 
 \begin_inset Formula $\left|\left|y\right|\right|\mr\varepsilon_{0}$
 \end_inset
@@ -1856,7 +1870,14 @@ status open
 \end_inset
 
  --- некоторая неотрицательная непрерывная функция, равная нулю ттогль в
- начале координат, то нулевое решение системы (1) ассимптотически устойчиво.
+ начале координат, то нулевое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+) ассимптотически устойчиво.
 \end_layout
 
 \begin_layout Proof
@@ -1907,8 +1928,14 @@ status open
 \end_inset
 
  --- непрерывная функция, и в нуле она равна в нулю.
- Покаже, что все интегральные решения системы (1), начинающиеся в сфере
- 
+ Покаже, что все интегральные решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+), начинающиеся в сфере 
 \begin_inset Formula $K_{\delta}$
 \end_inset
 
@@ -1921,7 +1948,14 @@ status open
 \end_inset
 
 .
- Действительно, заметим, что вдоль каждого решения системы (1) функция 
+ Действительно, заметим, что вдоль каждого решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+) функция 
 \begin_inset Formula $V\left(y\left(x\right)\right)$
 \end_inset
 
@@ -1933,7 +1967,14 @@ status open
 
 \end_inset
 
-В силу (2) это 
+В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_2"
+
+\end_inset
+
+) это 
 \begin_inset Formula $\mr0$
 \end_inset
 
@@ -2190,7 +2231,14 @@ reference "eq:_1_2_1"
 
 \end_deeper
 \begin_layout Theorem
-Тогда нулевое решение системы (1) неустойчиво.
+Тогда нулевое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+) неустойчиво.
 \end_layout
 
 \begin_layout Proof
@@ -2321,7 +2369,14 @@ reference "eq:_1_2_1"
 \begin_inset Formula $y\left(x\right)\equiv0$
 \end_inset
 
- является устойчивым решением системы (1).
+ является устойчивым решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection

@@ -10879,7 +10879,7 @@ f\left(z\right)=\ous{n=-\b}{\b}c_{n}\left(z-z_{0}\right)^{n}
 \end_inset
 
 где 
-\begin_inset Formula $c_{n}\df 1{2\pi i}\oiu c{}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi$
+\begin_inset Formula $c_{n}=\df 1{2\pi i}\oiu c{}\df{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi$
 \end_inset
 
 , где 
@@ -11108,8 +11108,6 @@ I=\oiu{-\b}{+\b}f\left(x\right)dx
 \end_layout
 
 \begin_layout --Separator--
-
-\backslash
 
 \end_layout
 
