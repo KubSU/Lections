@@ -803,7 +803,7 @@ reference "eq:_1_1"
 \begin_inset Formula $\varepsilon$
 \end_inset
 
-окрестности в начале координат, существует 
+ окрестности в начале координат, существует 
 \begin_inset Formula $\delta$
 \end_inset
 
@@ -867,7 +867,7 @@ y_{n}\left(x\right)
 
 \begin_layout Standard
 \begin_inset Formula $A=\left(\begin{smallmatrix}a_{11} & \tr & a_{1n}\\
-\tr &  & \tr\\
+\vtr & \ntr & \vtr\\
 a_{n1} & \tr & a_{nn}
 \end{smallmatrix}\right)$
 \end_inset
@@ -969,7 +969,7 @@ reference "eq:_2_1"
 \begin_inset Formula $\varphi_{k}\left(x\right)$
 \end_inset
 
- -- это вектор функции, компонентами которых являются некоторые многочлены.
+ --- это вектор функции, компонентами которых являются некоторые многочлены.
  Пo условию леммы, 
 \begin_inset Formula $Re\ \lambda_{k}<0$
 \end_inset
@@ -1207,7 +1207,11 @@ y_{n}^{\left(0\right)}
 
 \end_inset
 
-В силу Леммы 1 
+В силу 
+\emph on
+Леммы 1
+\emph default
+ 
 \begin_inset Formula $\exists R_{j}$
 \end_inset
 
@@ -1275,7 +1279,14 @@ status open
 \end_inset
 
  имеют отрицательные вещественные части, то положение равновесия системы
- (1) 
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) 
 \begin_inset Formula $y\equiv0$
 \end_inset
 
@@ -1300,8 +1311,28 @@ status open
 \end_inset
 
 .
- И любое решение системы (1) удовлетворяет реравенству (6), в силу леммы
- (2) и в силу условий теоремы.
+ И любое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) удовлетворяет реравенству (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_6"
+
+\end_inset
+
+), в силу леммы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_2"
+
+\end_inset
+
+) и в силу условий теоремы.
 \end_layout
 
 \begin_layout Proof
@@ -1321,8 +1352,22 @@ status open
 
 \end_inset
 
-Мы показали что 0-ое решение системы (1) усточчиво по Ляпунову.
- Вместе с тем, так же в силу (6):
+Мы показали что 0-ое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) усточчиво по Ляпунову.
+ Вместе с тем, так же в силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_6"
+
+\end_inset
+
+):
 \begin_inset Formula 
 \[
 \ul{x\to+\b}\left|\left|\varphi\left(x,y^{\left(0\right)}\right)\right|\right|=0
@@ -1365,7 +1410,14 @@ status open
 \begin_inset Formula $\lambda$
 \end_inset
 
-, то нулевое решщение системы (1) 
+, то нулевое решщение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) 
 \begin_inset Formula $y\equiv0$
 \end_inset
 
@@ -1378,7 +1430,14 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-Пусть у системы (1) есть собственное число, такое что рреальная часть 
+Пусть у системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) есть собственное число, такое что рреальная часть 
 \begin_inset Formula $\lambda=\mu>0$
 \end_inset
 
@@ -1395,7 +1454,14 @@ status open
 \begin_inset Formula $h\um e^{\lambda x}$
 \end_inset
 
- --- решение системы (1).
+ --- решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1406,7 +1472,14 @@ status open
 \begin_inset Formula $y=Re\, h\um e^{\lambda x}$
 \end_inset
 
- --- тоже будет решением системы (1).
+ --- тоже будет решением системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1434,7 +1507,14 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \begin_inset Formula $\varphi\left(x\right)=c\um y$
 \end_inset
 
- --- тоже решенние системы (1).
+ --- тоже решенние системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+).
  (
 \begin_inset Formula $c=const$
 \end_inset
@@ -1480,7 +1560,14 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \begin_inset Formula $A$
 \end_inset
 
- системы (1) есть собственное число 
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) есть собственное число 
 \begin_inset Formula $\lambda$
 \end_inset
 
@@ -1512,7 +1599,14 @@ y=Re\, h^{\lambda x}=Re\,\left(\left(h^{\left(1\right)}+ih^{\left(2\right)}\righ
 \end_inset
 
  --- собственный вектор, а остальные присоедененные.
- И у системы (1) будет решение:
+ И у системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) будет решение:
 \begin_inset Formula 
 \[
 \varphi\left(x,y^{\left(0\right)}\right)=e^{\lambda x}\left(h^{\left(1\right)}+xh^{\left(2\right)}+\tr+\df{x^{p-1}}{\left(p-1\right)!}h^{\left(p\right)}\right)
@@ -1567,7 +1661,14 @@ status open
 \end_layout
 
 \begin_layout Proof
-В этом случае любое решение системы (1) можно представить в виде 
+В этом случае любое решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_1"
+
+\end_inset
+
+) можно представить в виде 
 \begin_inset Formula $y\left(x\right)=\un{\Sigma}{Re\,\lambda<0}g_{k}\left(x\right)e^{\lambda x}+\un{\Sigma}{Re\,\lambda=0}c_{k}h^{\left(k\right)}e^{\lambda x}$
 \end_inset
 
@@ -1817,7 +1918,14 @@ status open
 \begin_inset Formula $\varepsilon_{0}>0$
 \end_inset
 
- правая часть системы (1) определена и непрерывна для 
+ правая часть системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_1_2_1"
+
+\end_inset
+
+) определена и непрерывна для 
 \begin_inset Formula $x_{0}\mr x$
 \end_inset
 
@@ -1869,7 +1977,7 @@ reference "eq:_1_2_1"
 \begin_inset Formula $W\left(y\right)$
 \end_inset
 
- --- некоторая неотрицательная непрерывная функция, равная нулю ттогль в
+ --- некоторая неотрицательная непрерывная функция, равная нулю только в
  начале координат, то нулевое решение системы (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6602,7 +6710,7 @@ x\left(0\right)=x\left(1\right)=0
 Альтернатива Фредгольма
 \end_layout
 
-\begin_layout Standard
+\begin_layout Claim
 Либа краевая задача (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -8220,8 +8328,530 @@ c_{1}\cos\sqrt{\lambda}t+c_{2}\sin\sqrt{\lambda}=0
  значению пропорциональны.
 \end_layout
 
+\begin_layout Subsection
+Уравнение с часными производными первого порядка
+\end_layout
+
+\begin_layout Standard
+Уравнения вида:
+\begin_inset Formula 
+\begin{equation}
+F\left(x_{1}\tr x_{n},u\left(x_{1}\tr x_{n}\right),\df{\dd u}{\dd x_{1}},\tr,\df{\dd u}{\dd x_{n}}\right)=0\label{eq:_2_8_1}
+\end{equation}
+
+\end_inset
+
+ Дифференциальное уравнение с часными производными первного порядка.
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ --- извесная функция своих переменных, 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ --- независимые переменные, 
+\begin_inset Formula $u\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ --- неизвесная функция, решение --- функция 
+\begin_inset Formula $u\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ непрерывная со своими часными производными, которые при подстановки превращаю.т
+ уравнение в тождество.
+ 
+\begin_inset Formula 
+\begin{equation}
+a_{1}\left(x_{1}\tr x_{n},u\right)\df{\dd u}{\dd x_{1}}+\tr+a_{n}\left(x_{1}\tr x_{n},u\right)\df{\dd u}{\dd x_{n}}=a\left(x_{1}\tr x_{n},u\right)\label{eq:_2_8_2}
+\end{equation}
+
+\end_inset
+
+ квази-линейное диференциальное уравнение.
+ 
+\begin_inset Formula $a_{1}\tr a_{n},\, a$
+\end_inset
+
+ --- известные функции своих переменных, 
+\begin_inset Formula $u$
+\end_inset
+
+ --- неизвесная функция.
+\end_layout
+
+\begin_layout Standard
+Уравнение вида:
+\begin_inset Formula 
+\[
+x=\left(\begin{array}{c}
+x_{1}\\
+\vtr\\
+x_{n}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a_{1}\left(x\right)\df{\dd u}{\dd x_{1}}+\tr+a_{n}\left(x\right)\df{\dd u}{\dd x_{n}}=a\left(x\right)u+b\left(x\right)\label{eq:_2_8_3}
+\end{equation}
+
+\end_inset
+
+линейное дифференциальное уравнение.
+\begin_inset Formula 
+\begin{equation}
+a_{1}\left(x\right)\df{\dd u}{\dd x_{1}}+\tr+a_{n}\left(x\right)\df{\dd u}{\dd x_{n}}=0\label{eq:_2_8_4}
+\end{equation}
+
+\end_inset
+
+Будем предпологать, что 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ изменяются в области 
+\begin_inset Formula $G$
+\end_inset
+
+, и пусть в области 
+\begin_inset Formula $B$
+\end_inset
+
+ функции 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ обладают непрерыными производными, и 
+\begin_inset Formula $\ous{i=1}na_{i}^{2}\nr0$
+\end_inset
+
+ (одновременно не отображаются в ноль).
+ Подставим в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+) сисмему обыкновенных дифференциальных уравнений.
+\begin_inset Formula 
+\begin{equation}
+\df{\dd x_{i}}{\dd t}=a_{1}\left(x_{1}\tr x_{n}\right),\ i=\overline{1,n}\label{eq:_2_8_5}
+\end{equation}
+
+\end_inset
+
+Система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_5"
+
+\end_inset
+
+) называется характеристической системой уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+).
+ Фозовые траэктории 
+\begin_inset Formula $\begin{array}{c}
+x_{1}\left(t\right)\\
+\vtr\\
+x_{n}\left(t\right)
+\end{array}$
+\end_inset
+
+, где 
+\begin_inset Formula $t$
+\end_inset
+
+ --- параметр (в фазовой плоскости 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+) называются характеристическими уравнениями (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+\df{\dd x_{1}}{a_{1}}=\tr=\df{\dd x_{n}}{a_{n}}\label{eq:_2_8_6}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd x_{i}}{\dd x_{n}}=(\nr)\df{a_{i}}{a_{n}},\ i=\overline{1,n-1}
+\]
+
+\end_inset
+
+Решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+) называются характеристика (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+В силу найденных условий на (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+) система разрешима.
+ (справедливо т.
+ 
+\begin_inset Formula $\exists!)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Через кваходуло т.
+ 
+\begin_inset Formula $\in G.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Первым интегралом (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+)
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ обращающаеся тождественно в констанут, когда 
+\begin_inset Formula $x_{1}\tr x_{n}$
+\end_inset
+
+ пробегают интегральную прямую системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Theorem
+Всякое решение 
+\begin_inset Formula $\psi\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ уранвнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+) является первым интегралом системы(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+).
+ И обратно всякий первый игнтнграл 
+\begin_inset Formula $\varphi\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+является решениям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout --Separator--
 
+\end_layout
+
+\begin_layout Theorem
+Всякое решение 
+\begin_inset Formula $u=\psi\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_4"
+
+\end_inset
+
+) представимо в виде:
+\begin_inset Formula 
+\[
+U=\Pi\left(\varphi_{1}\left(x_{1}\tr x_{n}\right)\tr\varphi_{n}\left(x_{1}\tr x_{n}\right)\right)
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $\Pi\left(\varphi_{1}\tr\varphi_{n}\right)$
+\end_inset
+
+ --- некоторое дифференциальное функция своих аргументов, а 
+\begin_inset Formula $\varphi_{1}\left(x_{1}\tr x_{n}\right)\tr\varphi_{n-1}\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ --- независимые первые интегралы системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Theorem
+Справедливо и обратно, что 
+\begin_inset Formula $\psi=\Pi\left(\varphi_{1}\tr\varphi_{n}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{1}\tr\varphi_{n-1}$
+\end_inset
+
+ --- независимые пмервые интегралы системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_6"
+
+\end_inset
+
+), а 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ --- произвольная непрерывная дифференцируемая функция.
+\end_layout
+
+\begin_layout Subsection
+Квазилинейные уравнения
+\end_layout
+
+\begin_layout Standard
+Рассмотрим квазилинейные дифференциальные уравнения вида:
+\begin_inset Formula 
+\begin{equation}
+a_{1}\left(x_{1}\tr x_{n},u\right)\df{\dd u}{\dd x_{1}}+\tr+a_{n}\left(x_{1}\tr,x_{n},u\right)\df{\dd u}{\dd x_{n}}=a\left(x_{1}\tr,x_{n},u\right)\label{eq:_2_8_9}
+\end{equation}
+
+\end_inset
+
+Пусть функции 
+\begin_inset Formula $a\left(x_{1}\tr,x_{n},u\right),\ a_{i}\left(x_{1}\tr,x_{n},u\right)$
+\end_inset
+
+, 
+\begin_inset Formula $i=\overline{1,n}$
+\end_inset
+
+ --- непрырывные дифференцируемые функции своих аргументов в некоторой области
+ 
+\begin_inset Formula $D\in R_{n}$
+\end_inset
+
+.
+ Поставим в соответствию уравнению (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_9"
+
+\end_inset
+
+) линейное однородное уравнение......
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $\upsilon=V\left(x_{1}\tr x_{n},u\right)$
+\end_inset
+
+ --- решение уравнения (-10).
+ Пусть 
+\begin_inset Formula $V\left(x_{1}\tr x_{n},U\right)=0$
+\end_inset
+
+ определяет в области 
+\begin_inset Formula $G$
+\end_inset
+
+ переменных 
+\begin_inset Formula $\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ функциию 
+\begin_inset Formula $U=\varphi\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\df{\dd V}{\dd U}|_{U=\varphi}\nr0$
+\end_inset
+
+ в 
+\begin_inset Formula $G$
+\end_inset
+
+, тогда 
+\begin_inset Formula $U=\varphi\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ является решением уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_9"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Чтобы построить общее решение уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_9"
+
+\end_inset
+
+) мы записываем характеристическую систему вида:
+\begin_inset Formula 
+\begin{equation}
+\df{dx_{1}}{a_{1}}=\tr=\df{dx_{n}}{a_{n}}=\df{dU}a\label{eq:_2_8_11}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Интегральные кривые этой системы называются характеристическими уравнениями
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_9"
+
+\end_inset
+
+).
+ Тогда у этой системы существует 
+\begin_inset Formula $n$
+\end_inset
+
+ независимых первых интегралов 
+\begin_inset Formula $\varphi_{1}\left(x_{1}\tr x_{n},U\right),\tr,\varphi_{n}\left(x_{1}\tr,x_{n},U\right)$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\upsilon=\Pi\left(\varphi_{1}\left(x_{1}\tr x_{n},U\right),\tr,\varphi_{n}\left(x_{1}\tr,x_{n},U\right)\right)$
+\end_inset
+
+ общее решение уравнения (-10).
+\begin_inset Formula 
+\begin{equation}
+\Pi\left(\varphi_{1}\left(x_{1}\tr x_{n},U\right),\tr,\varphi_{n}\left(x_{1}\tr,x_{n},U\right)\right)=0\label{eq:_2_8_12}
+\end{equation}
+
+\end_inset
+
+является неявным заданием решения уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_9"
+
+\end_inset
+
+).
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_12"
+
+\end_inset
+
+) называется убщим интегралом уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_2_8_9"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Нужног задавать дополнительные условия для 
+\begin_inset Formula $U\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+ если нужно единственное решение, например 
+\begin_inset Formula $U|_{\gamma}=q\left(x_{1}\tr x_{n}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ --- н6екоторая кривая в 
+\begin_inset Formula $G$
+\end_inset
+
+ , и если 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ не является характеристическим, то существует единственное решение.
 \end_layout
 
 \begin_layout Standard
