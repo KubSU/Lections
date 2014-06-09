@@ -1,0 +1,320 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Системное программное обеспечение
+\end_layout
+
+\begin_layout Section
+Операционные системы
+\end_layout
+
+\begin_layout Standard
+Большинство пользователей имеют опыт эксплуатации ОС, но затрудняются дать
+ точное определение ОС.
+ Рассмотрим основные точки зрения.
+\end_layout
+
+\begin_layout Subsection
+Определения операционной системы
+\end_layout
+
+\begin_layout Subsubsection
+Операционная система как виртуальная машина
+\end_layout
+
+\begin_layout Standard
+При разработке ОС, широко применяется абстрагирование, которое позволяет
+ сконцентрироваться на взаимодействии высокоуровневых компонентов системы,
+ игнорируя детали их реализации.
+ В этом смысле ОС представляет собой интерфейс между пользователем и компьютером.
+ Архитектура большинства компьютеров на уровне машинных команд очень неудобна
+ для использования прикладными программами.
+ Программист не в состоянии учитывать все особенности оборудования (то есть
+ заниматься разработкой драйверов).
+ Он должен иметь простую высокоуровневую абстракцию, с помощью которой скрываютс
+я все ненужные подробности организации прерываний, работы таймера и т.д.
+\end_layout
+
+\begin_layout Standard
+В современных вычислительных комплексах можно создать иллюзию неограниченного
+ размера RAM и числа процессоров.
+ Всем этим занимается ОС.
+ Таким образом, ОС представляется пользователю виртуальной машиной, с которой
+ проще иметь дело, чем непосредственно с оборудованием.
+\end_layout
+
+\begin_layout Subsubsection
+Операционная система, как менеджер ресурсов.
+\end_layout
+
+\begin_layout Standard
+ОС предназначена для управления всеми частями весьма сложной архитектуры
+ компьютера.
+ ОС за счет буферизации предотвращает неорганизованный обмен информацией
+ между устройствами (например вывод на печать, чтение, запись на диск).
+ Для многопользовательских систем необходимость управления ресурсами и их
+ защитой еще более очевидна.
+ Следовательно ОС как менеджер ресурсов осуществляет упорядоченное и контролируе
+мое распределение процессоров, памяти и других ресурсов между различными
+ программами.
+\end_layout
+
+\begin_layout Subsubsection
+Операционная система, как защитник пользователей и программ.
+\end_layout
+
+\begin_layout Standard
+Если допускается совместная работа нескольких пользователей, то возникает
+ проблема организации их безопасной деятельности.
+ Необходимо обеспечить сохранность информации на диске, нельзя разрешить
+ программам одних пользователей произвольно вмешиваться в работу программ
+ других пользователей.
+ Всю эту деятельность осуществляет ОС как организатор безопасной работы
+ пользователей и их программ.
+\end_layout
+
+\begin_layout Subsubsection
+Операционная система, как постоянно функционирующее ядро.
+\end_layout
+
+\begin_layout Standard
+Можно дать и такое определение: ОС --- программа постоянно работающая на
+ компьютере и взаимодействующая со всеми прикладными программами.
+ Но далее мы увидим, что во многих современных ОС постоянно работает на
+ компьютере лишь часть ОС, которую принято называть ядром.
+\end_layout
+
+\begin_layout Subsection
+Функции ОС
+\end_layout
+
+\begin_layout Standard
+Можно выделить 6 основных функций, которые выполняли ОС в процессе эволюции:
+\end_layout
+
+\begin_layout Enumerate
+Планирование заданий и использование процессора.
+\end_layout
+
+\begin_layout Enumerate
+Обеспечение программ средствами коммуникации и синхронизации.
+\end_layout
+
+\begin_layout Enumerate
+Управление памятью.
+\end_layout
+
+\begin_layout Enumerate
+Управление файловой системой.
+\end_layout
+
+\begin_layout Enumerate
+Управление вводом--выводом.
+\end_layout
+
+\begin_layout Enumerate
+Обеспечение безопасности.
+\end_layout
+
+\begin_layout Standard
+Каждая из этих функций обычно реализована в виде подсистемы, являющейся
+ структурным компонентом ОС.
+ В каждой ОС эти функции реализовывались по разному.
+ Они появились в процессе развития.
+\end_layout
+
+\begin_layout Subsection
+Основные концепции ОС
+\end_layout
+
+\begin_layout Subsubsection
+Системные вызовы
+\end_layout
+
+\begin_layout Standard
+В любой ОС поддерживается механизм обращения пользовательских программ к
+ ядру ОС.
+ В различных ОС эти механизмы назывались по разному (экстракоды, системные
+ макрокоманды, системные вызовы).
+\end_layout
+
+\begin_layout Definition
+Системные вызовы --- интерфейс между ОС и пользовательской программой.
+\end_layout
+
+\begin_layout Standard
+Они создают, удаляют и используют различные объекты, главные из которых
+ процессы и файлы.
+ Пользовательская программа запрашивает сервис у ОС, осуществляя системный
+ вызов.
+ Имеются библиотеки функций, которые загружают регистры определенными параметрам
+и и осуществляют прерывания процессора, после чего управление передается
+ обработчику данного вызова, входящего в ядро ОС.
+ Цель таких библиотек --- сделать системный вызов похожим на обычный вызов
+ подпрограммы.
+ Основное отличие состоит в том, что при системном вызове задачи переходят
+ в привилегированный режим (режим ядра).
+ Поэтому системные вызовы иногда называют программными прерываниями.
+ В большинстве ОС системный вызов осуществляется командой программного прерывани
+я.
+\end_layout
+
+\begin_layout Subsubsection
+Прерывания (HardWare Interrupt)
+\end_layout
+
+\begin_layout Standard
+Это событие, генерируемое внешним, по отношению к процессору устройством.
+ Посредством аппаратных прерываний, аппаратура либо информирует ЦП о том,
+ что произошло какое либо событие, требующее немедленной реакции, либо сообщает
+ о завершении асинхронной операции ввода вывода.
+\end_layout
+
+\begin_layout Standard
+Важный тип аппаратных прерываний --- прерывания таймера, которые генерируются
+ периодически, через фиксированный промежуток времени.
+ Прерывания таймера используются ОС при планировании процессов.
+ Каждый тип аппаратных прерываний имеет собственный номер, однозначно определяющ
+ий источник прерывания.
+ Обработка аппаратного прерывания не должна учитывать какой процесс является
+ текущим.
+\end_layout
+
+\begin_layout Subsubsection
+Исключительная ситуация (Exeption)
+\end_layout
+
+\begin_layout Standard
+Событие, возникающее в результате попытки выполнения программной команды,
+ которая не может быть выполнена до конца по каким либо причинам.
+ Исключительные ситуации, как и системные вызовы, являются синхронными событиями
+, возникающие в контексте текущей задачи.
+ Исключительные ситуации можно разделить на исправимые и не исправимые.
+ После устранения причины исправимой ИС программа может исполняться дальше.
+ возникновение исправимых ИС считается нормальным явлением.
+\end_layout
+
+\begin_layout Subsubsection
+Файлы
+\end_layout
+
+\begin_layout Standard
+Предназначены для хранения информации на внешних носителях, главная задача
+ файловой системы --- это скрыть особенности ввода--вывода и дать программисту
+ простую, абстрактную модель файлов, независимых от устройств.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Процессы
+\end_layout
+
+\begin_layout Standard
+Понятие процесса является одним из фундаментальных и об этом мы будем говорить
+ в ближайшем будущем.
+ 
+\end_layout
+
+\begin_layout Subsection
+История эволюции вычислительных систем
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

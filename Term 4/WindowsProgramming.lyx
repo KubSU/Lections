@@ -1,0 +1,847 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Windows programming
+\end_layout
+
+\begin_layout Section
+Инструменты
+\end_layout
+
+\begin_layout Enumerate
+Borland Pascal for Windows.
+\end_layout
+
+\begin_layout Enumerate
+Под си любой удобный редактор.
+\end_layout
+
+\begin_layout Section
+Пример простейшего Windows приложения
+\end_layout
+
+\begin_layout Standard
+Практически каждая Windows программа состоит из ряда обязательных частей:
+ 
+\end_layout
+
+\begin_layout Enumerate
+Функция WinMain --- точка входа в программу.
+\end_layout
+
+\begin_layout Enumerate
+Создание и описание атрибутов класса окна
+\end_layout
+
+\begin_layout Enumerate
+Создание экземпляра окна данного класса
+\end_layout
+
+\begin_layout Enumerate
+Цикл обработки сообщений
+\end_layout
+
+\begin_layout Enumerate
+Оконная функция, обрабатывающая сообщения
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пример программы:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+uses
+\end_layout
+
+\begin_layout Plain Layout
+
+    WinTypes, WinProcs;
+\end_layout
+
+\begin_layout Plain Layout
+
+var
+\end_layout
+
+\begin_layout Plain Layout
+
+    Wnd: HWND;
+\end_layout
+
+\begin_layout Plain Layout
+
+    Msg: TMsg;
+\end_layout
+
+\begin_layout Plain Layout
+
+function Window1(Wnd: HWND; 
+\end_layout
+
+\begin_layout Plain Layout
+
+                 iMessage, wParam: Word;
+\end_layout
+
+\begin_layout Plain Layout
+
+                 LParam:LongInt):LongInt; export;
+\end_layout
+
+\begin_layout Plain Layout
+
+begin
+\end_layout
+
+\begin_layout Plain Layout
+
+    case iMessage of
+\end_layout
+
+\begin_layout Plain Layout
+
+    WM_DESTROY:
+\end_layout
+
+\begin_layout Plain Layout
+
+        begin
+\end_layout
+
+\begin_layout Plain Layout
+
+            PostQuitMessage(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+            exit;
+\end_layout
+
+\begin_layout Plain Layout
+
+        end;
+\end_layout
+
+\begin_layout Plain Layout
+
+    end;
+\end_layout
+
+\begin_layout Plain Layout
+
+    Window1:=DefWindowProc(Wnd, iMessage, wParam, LParam);
+\end_layout
+
+\begin_layout Plain Layout
+
+end;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Standard
+Оконная функция выполняет непосредственную обработку сообщений.
+ Параметры передаваемые этой функции эквивалентны полям структуры типа TMsg.
+ Каждое получаемое оконной функцией сообщение имеет уникальный идентификатор.
+ Для обработки сообщений используется конструкция типа переключателя.
+ Все сообщения не обрабатываемые оконной функцией передаются специальной
+ функции ядра ОС DefWindowProc.
+ Описанное сообщение WM_DESTROY означает, что система пытается закрыть окно.
+ В ответ на это сообщение вызовом процедуры PostQuitMessage программа помещает
+ в очередь сообщение WM_QUIT и когда цикл обработки получает это сообщение,
+ программа завершается.
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+procedure Register;
+\end_layout
+
+\begin_layout Plain Layout
+
+var
+\end_layout
+
+\begin_layout Plain Layout
+
+	w:TWndClass;
+\end_layout
+
+\begin_layout Plain Layout
+
+begin
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (hPrevInst <> 0) then 
+\end_layout
+
+\begin_layout Plain Layout
+
+		Exit;
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.Style:=cs_HRedraw or cs_VRedraw;
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.lpfnWndProc:=@Window1;
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.cbClsExtra:=0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.cbWndExtra:=0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.hInstance:=hInstance;
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.hCursor:=LoadCursor(0, idc_arrow);
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.hIcon:=LoadIcon(0, idi_application);
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.hbrBackground:=GetStockObject(white_brush);
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.lpszMenuName:='';
+\end_layout
+
+\begin_layout Plain Layout
+
+	w.lpszClassName:='Class1';
+\end_layout
+
+\begin_layout Plain Layout
+
+	if not RegisterClass(w) then
+\end_layout
+
+\begin_layout Plain Layout
+
+	begin
+\end_layout
+
+\begin_layout Plain Layout
+
+		MessageBox(GetFocus, 
+\end_layout
+
+\begin_layout Plain Layout
+
+		           'Cannot register class', 
+\end_layout
+
+\begin_layout Plain Layout
+
+		           'Error', MB_OK);
+\end_layout
+
+\begin_layout Plain Layout
+
+		Halt;
+\end_layout
+
+\begin_layout Plain Layout
+
+	end;
+\end_layout
+
+\begin_layout Plain Layout
+
+end;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+procedure WinMain;
+\end_layout
+
+\begin_layout Plain Layout
+
+begin
+\end_layout
+
+\begin_layout Plain Layout
+
+	Register;
+\end_layout
+
+\begin_layout Plain Layout
+
+	Wnd:=CreateWindow('Class1', 'Main Window',
+\end_layout
+
+\begin_layout Plain Layout
+
+	                  WS_OverlappedWindow, 0, 0,
+\end_layout
+
+\begin_layout Plain Layout
+
+	                  200, 400, 0, 0, 
+\end_layout
+
+\begin_layout Plain Layout
+
+	                  hPrevInst, nil);
+\end_layout
+
+\begin_layout Plain Layout
+
+	ShowWindow(Wnd, CmdShow);
+\end_layout
+
+\begin_layout Plain Layout
+
+	UpdateWindow(Wnd);
+\end_layout
+
+\begin_layout Plain Layout
+
+	while GetMessage(Msg, 0, 0, 0) do
+\end_layout
+
+\begin_layout Plain Layout
+
+	begin
+\end_layout
+
+\begin_layout Plain Layout
+
+		TranslateMessage(Msg);
+\end_layout
+
+\begin_layout Plain Layout
+
+		DispatchMessage(Msg);
+\end_layout
+
+\begin_layout Plain Layout
+
+	end;
+\end_layout
+
+\begin_layout Plain Layout
+
+end;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+После того как окно отображено на экране, управление передается циклу обработки
+ сообщений.
+ Функция GetMessage извлекает сообщение из очереди и помещает в структуру
+ типа TMsg.
+ Для всех сообщений, кроме сообщения WM_QUIT, функция GEtMessage возвращает
+ ненулевое значение и цикл продолжает обработку сообщений.
+ Процедура TranslateMessage передает структуру типа TMsg ядру Windows для
+ преобразования сообщений виртуальных клавиш в сообщения о символах.
+ Процедура DispatchMessage используется для распределения текущего сообщения
+ соответствующей функции окна.
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Begin
+\end_layout
+
+\begin_layout Plain Layout
+
+	WinMain;
+\end_layout
+
+\begin_layout Plain Layout
+
+End.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Графический интерфейс
+\end_layout
+
+\begin_layout Subsection
+Интерфейс графических устройств
+\end_layout
+
+\begin_layout Standard
+Интерфейс графических устройств это модуль программы, который обрабатывает
+ операторы работы с графикой.
+ По умолчанию он работает в режиме пиксельных координат.
+ Перед началом работы необхрдимо получить контекст устройства --- специальную
+ структуру даннных, соде
+\emph on
+ржащую остовные характеристики устройства, а так же различные средства отображен
+ия.
+ Существуют 2 способа получения контеста устройства:
+\end_layout
+
+\begin_layout Enumerate
+Внутри сообщения WM_PAINT
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout LyX-Code
+
+HDC hwnd;
+\end_layout
+
+\begin_layout LyX-Code
+
+PAINTSTRUCT ps;
+\end_layout
+
+\begin_layout LyX-Code
+
+hdc = BeginPaint(hwnd,&ps);
+\end_layout
+
+\begin_layout LyX-Code
+
+//...// Происходит рисование
+\end_layout
+
+\begin_layout LyX-Code
+
+EndPaint(hwnd);//Освобождение контекста устройства посленрисования
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Используется в тех случаях когда приходится рисовать в сообщения отличных
+ от WM_PAINT
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout LyX-Code
+
+hdc = GetDC(hwnd);
+\end_layout
+
+\begin_layout LyX-Code
+
+//....// Происходит рисование
+\end_layout
+
+\begin_layout LyX-Code
+
+ReleaseDC(hwnd,hdc);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Инструменты рисования
+\end_layout
+
+\begin_layout Subsubsection
+Карандаш 
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+HPEN pen = CreatePen(стиль, толщина, цвет);
+\end_layout
+
+\begin_layout Plain Layout
+
+SelectObject(hdc, pen);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Стиль
+\end_layout
+
+\begin_layout Enumerate
+PS_SOLID
+\end_layout
+
+\begin_layout Enumerate
+PS_DASH
+\end_layout
+
+\begin_layout Enumerate
+PS_DOT
+\end_layout
+
+\begin_layout Enumerate
+PS_DASHDOT
+\end_layout
+
+\begin_layout Enumerate
+PS_DASHDOTDOT
+\end_layout
+
+\begin_layout Paragraph
+Цвет
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+RGB(R, G, B);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Ширина
+\end_layout
+
+\begin_layout Standard
+Работает только для PS_SOLID.
+ (Для всех остальных стилей ширина должна быть равна еденице)
+\end_layout
+
+\begin_layout Subsubsection
+Кисть
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+HBRUSH brush;
+\end_layout
+
+\begin_layout Plain Layout
+
+brush = CreateSolidBrush(цвет);
+\end_layout
+
+\begin_layout Plain Layout
+
+brush = CreateHatchBrush(стиль, цвет);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+HBITMAP hBitmap;//Рисунок BMP
+\end_layout
+
+\begin_layout Plain Layout
+
+brush = CreatePatternBrush(hBitmap);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Стиль
+\end_layout
+
+\begin_layout Enumerate
+HS_VERTICA
+\end_layout
+
+\begin_layout Enumerate
+HS_HORISONTAL
+\end_layout
+
+\begin_layout Enumerate
+HS_CROSS
+\end_layout
+
+\begin_layout Enumerate
+HS_BDIAGONAL
+\end_layout
+
+\begin_layout Enumerate
+HS_FDIAGONAL
+\end_layout
+
+\begin_layout Enumerate
+HS_DIAGCROSS
+\end_layout
+
+\begin_layout Subsection
+Графические примитивы
+\end_layout
+
+\begin_layout Standard
+Необходимо получить контекст устройства.
+\end_layout
+
+\begin_layout Enumerate
+Rectangle(hdc, x1, y1, x2, y2);
+\end_layout
+
+\begin_layout Enumerate
+Ellipse(hdc, x1, y1, x2, y2);
+\end_layout
+
+\begin_layout Enumerate
+Arc(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+x3, y3, x4, y4 Задают угол.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Chord(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+\end_layout
+
+\begin_layout Enumerate
+Pie(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+\end_layout
+
+\begin_layout Enumerate
+RoundRect(hdc, x1, y1, x2, y2, x3, y3);
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+x3, y3 --- радиус закругления
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Polyline(hdc,p,n); //Ломаная
+\end_layout
+
+\begin_layout Enumerate
+Polygone(hdc,p,n); //Замктурый многоугольник
+\end_layout
+
+\begin_layout Subsection
+Сообщение от мыши.
+\end_layout
+
+\begin_layout Standard
+WM_MOUSEMOVE
+\end_layout
+
+\begin_layout Standard
+WM_LBUTTONDOWB
+\end_layout
+
+\begin_layout Standard
+WM_RBUTTONDOWN
+\end_layout
+
+\begin_layout Standard
+WM_LBUTTONUP
+\end_layout
+
+\begin_layout Standard
+WM_RBUTTONUP
+\end_layout
+
+\begin_layout Standard
+Для того чтобы ваще предложение обрабатывало 2йной клик необходимо добывать
+ следующий стиль: CS_DBLCLKS
+\end_layout
+
+\begin_layout Standard
+Координаты мышки ипередаются в параметре LParam.
+\end_layout
+
+\begin_layout Standard
+Параметр WParam содержит слово, описывающее состояние клавиатуры
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

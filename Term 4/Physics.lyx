@@ -1,0 +1,4677 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{'}
+{'}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Физика.
+ Электромагнетизм.
+\end_layout
+
+\begin_layout Section
+Электрическое поле в вакууме.
+\end_layout
+
+\begin_layout Subsection
+Закон сохранения электрического заряда
+\end_layout
+
+\begin_layout Standard
+Имеются 2 типа электрических зарядов (положительный, отрицательный).
+ Элементарный заряд 
+\begin_inset Formula $(e)$
+\end_inset
+
+.
+ Отрицательный элементарный заряд 
+\begin_inset Formula $(-e)$
+\end_inset
+
+.
+ В природе не существует заряда меньше заряда электрона (по модулю).
+ Любой заряд можно представить в виде: 
+\begin_inset Formula $q=\pm N\um e$
+\end_inset
+
+.
+ То есть это величина дискретная, но мы будем считать ее непрерывной, пока
+ не перейдем к квантовой теории.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Закон сохранения электрического заряда
+\end_layout
+
+\end_inset
+
+Суммарный заряд электрически изолированной системы не может меняться.
+\end_layout
+
+\begin_layout Definition
+Ионы --- атомы с потерявшие или взявшие электроны.
+ Могут быть отрицательно или положительно заряженными.
+\end_layout
+
+\begin_layout Standard
+Три класса веществ:
+\end_layout
+
+\begin_layout Enumerate
+Диэлектрики (изоляторы) проводят ток в 
+\begin_inset Formula $10^{20}$
+\end_inset
+
+ раз хуже, чем проводники.
+\end_layout
+
+\begin_layout Enumerate
+Полупроводники чуть лучше проводят электрический ток.
+\end_layout
+
+\begin_layout Enumerate
+Проводники имеют большое количество носителей заряда.
+\end_layout
+
+\begin_layout Subsection
+Взаимодействие зарядов.
+ Закон Кулона.
+\end_layout
+
+\begin_layout Definition
+Точечный заряд --- заряженное тело, размерами которого можно пренебречь,
+ по сравнению с расстояниями от этого тела до других заряженных тел.
+\end_layout
+
+\begin_layout Standard
+Заряд, как правило, распределяется по поверхности тела.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Закон Кулона
+\end_layout
+
+\end_inset
+
+Сила взаимодействия двух точечных зарядов пропорциональна величине каждого
+ из зарядов и обратно пропорциональна квадрату расстояния между ними.
+\begin_inset Formula 
+\[
+F=k\um\df{q_{1}\um q_{2}}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если силы одинакового заряда, то сила положительная (тела отталкиваются),
+ иначе отрицательная (притягиваются).
+\end_layout
+
+\begin_layout Standard
+В системе СГС выбирают такую величину заряда, чтобы 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Единица заряда СГСЭ --- такой заряд, который взаимодействует в вакууме с
+ равным ему и находящимся на расстоянии 1см с силой 1дина.
+ 
+\begin_inset Formula $e=4,8\um10^{-10}\text{ед.з.СГСЭ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Кулон [Кл] --- связан с СГСЭ следующим соотношением:
+\begin_inset Formula 
+\[
+1\text{ Кл}=2,998\um10^{9}\text{ ед.з.СГСЭ}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Элементарный заряд в кулонах (нужно знать):
+\begin_inset Formula 
+\[
+e=1,60\um10^{-19}\text{ Кл}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Нормализованный вид формулы Кулона:
+\begin_inset Formula 
+\[
+F=\df 1{4\pi\varepsilon_{0}}\um\df{q_{1}\um q_{2}}{r^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left[\varepsilon_{0}\right]=\df{\Phi}{\text{м}}$
+\end_inset
+
+ --- электрическая постоянная.
+\end_layout
+
+\begin_layout Standard
+Найдем электрическую постоянную:
+\begin_inset Formula 
+\[
+9\um10^{9}=\df 1{4\pi\varepsilon_{0}}\df{1\um1}1\quad\then\quad\varepsilon_{0}=\df 1{4\pi\um9\um10^{9}}=8,85\um10^{-12}\df{\text{Ф}}{\text{м}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Электрическое поле.
+ Напряженность поля.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Img 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возьмем некий точечный заряд 
+\begin_inset Formula $q_{0}.$
+\end_inset
+
+ Внесем в поле пробный заряд 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ Тогда они взаимодействуют следующим образом:
+\begin_inset Formula 
+\begin{alignat*}{1}
+F & =\df 1{4\pi\varepsilon_{0}}\df{q_{0}q}{r^{2}}\\
+\vec F & =q\left(\df 1{4\pi\varepsilon_{0}}\um\df{q_{0}}{r^{2}}\um\df{\vec r}r\right)
+\end{alignat*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Напряженность электрического поля в данной точке:
+\begin_inset Formula 
+\begin{alignat*}{1}
+\vec E & =\df{\vec F}q\\
+\vec E & =\df 1{4\pi\varepsilon_{0}}\df{q_{0}}{r^{2}}\df{\vec r}r
+\end{alignat*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Измеряется: 
+\begin_inset Formula $\left[E\right]=\df{\text{В}}{\text{м}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Направление поля совпадает по направлению с силой, действущей на положительный
+ заряд, помещенный в данное поле.
+\end_layout
+
+\begin_layout Subsection
+Суперпозиция полей, диполь.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Принцип суперпозиции электрических полей
+\end_layout
+
+\end_inset
+
+Напряженность поля системы зарядов равна векторной сумме напряженностей
+ полей, которые создавал бы каждый из зарядов системы в отдельности.
+\begin_inset Formula 
+\[
+\vec E=\ous{i=1}n\vec{E_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Линии напряженности.
+ Поток вектора напряженности.
+\end_layout
+
+\begin_layout Definition
+Линия напряженности --- линия, которая проводится так, чтобы касательная
+ к ней в любой точке совпадала по направлению с вектором напряженности.
+\end_layout
+
+\begin_layout Standard
+Густота линий выбирается так, чтобы количество линий пронизывающих единицу
+ поверхности, перпендикулярной к линиям площадки, было равно численному
+ значению вектора 
+\begin_inset Formula $\v E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Линии электрического поля начинаются в положительном заряде и заканчиваются
+ на отрицательном (либо уходят на бесконечность).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=E\um dS
+\]
+
+\end_inset
+
+Где K --- количество линий, проходящих через элементарную площадку.
+\end_layout
+
+\begin_layout Standard
+Если взять некую поверхность S, то количество линий, проходящих через эту
+ площадку, равно
+\begin_inset Formula 
+\[
+N=\oudi S{}E\um\cos\alpha\um dS=\oudi S{}\left(\v E,\v n\right)dS=\Phi_{E}=\oudi S{}E_{n}dS
+\]
+
+\end_inset
+
+Эта величина --- поток вектора напряженности.
+\end_layout
+
+\begin_layout Subsection
+Теорема Гаусса
+\end_layout
+
+\begin_layout Standard
+Возьмем точечный заряд и окружим сферой радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в заряде.
+\begin_inset Formula 
+\begin{multline*}
+\Phi_{E}=N=\oiint\limits _{S_{r}}\left(\v E,\v n\right)dS=\\
+\left\{ \text{В силу перпендикулярности сил напряженности поверхности}\right\} \\
+=\oiint\limits _{S_{r}}E\um dS=\oiint\limits _{S_{r}}\df 1{4\pi\varepsilon_{0}}\um\df q{r^{2}}dS=\df 1{4\pi\varepsilon_{0}}\um\df q{r^{2}}\oiint\limits _{S_{r}}dS=\df q{\varepsilon_{0}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь возьмем неправильную поверхность, но результат останется тем же самым,
+ за счет того, что количество пересечений с 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ для одной линии будет на 1 больше чем с 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $-$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Возьмем произвольное количество произвольных зарядов внутри поверхности:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\left(\v E,\v n\right)dS=\oiint\limits _{S}\left(\ous{i=1}N\v{E_{i}},\v n\right)dS=\ous{i=1}N\oiint\limits _{S}\left(\v{E_{i}},\v n\right)dS=\ous{i=1}N\df{q_{i}}{\varepsilon_{0}}=\df 1{\varepsilon_{0}}\ous{i=1}Nq_{i}
+\]
+
+\end_inset
+
+Мы доказали теорему:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Гаусса
+\end_layout
+
+\end_inset
+
+Поток вектора напряженности электрического поля через замкнутую поверхность
+ равен алгебраической сумме заключенных внутри этой поверхности зарядов,
+ деленных на 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\fbox{\Phi_{E}=\oiint\limits _{S}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\ous{i=1}Nq_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Объемная плотность зарядов 
+\begin_inset Formula $\rho=\ul{\Delta V\to0}\df{\Delta q}{\Delta V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда имеет место представление:
+\begin_inset Formula 
+\[
+\oiint\limits _{S}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\iiint\limits _{D}\rho\um dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Поверхностная плотность заряда: 
+\begin_inset Formula $\sigma=\ul{\Delta S\to0}\df{\Delta q}{\Delta S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Линейная плотность заряда: 
+\begin_inset Formula $\lambda=\ul{\Delta l\to0}\df{\Delta q}{\Delta l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Поле бесконечной равномерно заряженной плоскости
+\end_layout
+
+\begin_layout Standard
+Расстояние до исследуемой точки пренебрежимо мало по сравнению с размерами
+ поверхности.
+\end_layout
+
+\begin_layout Standard
+В каждой точке пространства вектор напряженности будет направлен перпендикулярно
+ плоскости.
+ Чтобы посчитать величину вектора напряженности, воспользуемся теоремой
+ Гаусса.
+\end_layout
+
+\begin_layout Standard
+Рисунок
+\end_layout
+
+\begin_layout Standard
+Посчитаем поток вектора через эту поверхность:
+\begin_inset Formula 
+\begin{align*}
+\Phi_{E} & =\oudi{S_{\text{ц}}}{}\left(\v E,\v n\right)dS=2\um\Delta S\um E\\
+\Phi_{E} & =\oudi{S_{\text{ц}}}{}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\um\sigma\um\Delta S
+\end{align*}
+
+\end_inset
+
+Откуда, приравняв, получим: 
+\begin_inset Formula 
+\[
+E=\df{\sigma}{2\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим две плоскости, заряды на которых равны по модулю, но разные по
+ знаку.
+ Получим, что все поле будет сосредоточено между плоскостями, причем его
+ величина удваивается: 
+\begin_inset Formula $E=\frac{\sigma}{\varepsilon_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Поле бесконечно заряженного цилиндра
+\end_layout
+
+\begin_layout Standard
+Рассмотрим бесконечную цилиндрическую поверхность, радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Будем считать, что на поверхности распределен заряд с поверхностной плотностью
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ Окружим другой цилиндрической поверхностью, радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Причем: 
+\begin_inset Formula $R<r$
+\end_inset
+
+.
+ Положим высоту цилиндра 2 --- 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=\df 1{\epsilon}\um2\pi Rh\um\sigma
+\]
+
+\end_inset
+
+С другой стороны:
+\begin_inset Formula 
+\[
+\Phi_{E}=\iint\limits _{S\text{осн}}\underset{0}{\underbrace{\v E\um\v n}}dS+\iint\limits _{S\text{бок}}\v E\um\v ndS=\iint\limits _{S}EdS=E\iint\limits _{S}dS=2\pi rh\um E
+\]
+
+\end_inset
+
+Тогда:
+\begin_inset Formula 
+\begin{align*}
+\df 1{\epsilon_{0}}\um2\pi Rh\sigma & =E\um2\pi rh\\
+E & =\df{\sigma\um R}{\epsilon_{0}\um r}
+\end{align*}
+
+\end_inset
+
+Если радиусом можно пренебречь, то: 
+\begin_inset Formula 
+\[
+E=\df 1{2\pi\varepsilon_{0}}\um\df{\lambda}r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $E=0$
+\end_inset
+
+ если 
+\begin_inset Formula $R>r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Поле заряженной сферической поверхности
+\end_layout
+
+\begin_layout Standard
+Возьмем сферу радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, с поверхностной плотностью 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=\df 1{\epsilon_{0}}\um\sigma\um4\pi R^{2}=E\um4\pi r^{2}
+\]
+
+\end_inset
+
+Откуда: 
+\begin_inset Formula 
+\[
+\begin{cases}
+E=\df{\sigma R^{2}}{\varepsilon_{0}r^{2}}, & R<r\\
+E=0, & R>r
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Работа сил электростатического поля
+\end_layout
+
+\begin_layout Standard
+В поле 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ будем перемещать заряд 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+A=\ui L\v F\um d\v r=\oiu{r_{1}}{r_{2}}Fdr=\oiu{r_{1}}{r_{2}}E_{0}q\um dr
+\]
+
+\end_inset
+
+Взяв замкнутую траекторию, и учитывая, что сила Кулона --- сила консервативная:
+\begin_inset Formula 
+\[
+\fbox{\oint\limits _{L}\v Ed\v l=0}
+\]
+
+\end_inset
+
+То есть циркуляция равна нулю.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\delta A=-dW$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+A_{12}=\oiu{r_{1}}{r_{2}}E_{0}qdr=\oiu{r_{1}}{r_{2}}\df 1{4\pi\varepsilon_{0}}\um\df{q_{0}}{r^{2}}\um q\um dr=\df{q_{0}q}{4\pi\varepsilon_{0}}\oiu{r_{1}}{r_{2}}\df{dr}{r^{2}}=\\
+=\df{q_{0}q}{4\pi\varepsilon_{0}}\left(\df 1{r_{1}}-\df 1{r_{2}}\right)=\df{q_{0}q}{4\pi\varepsilon_{0}r_{1}}-\df{q_{0}q}{4\pi\varepsilon_{0}r_{2}}=W_{1}-W_{2}=-\Delta W
+\end{multline*}
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $W=\df 1{4\pi\varepsilon_{0}}\df{q_{0}q}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля: 
+\begin_inset Formula $\varphi=\df Wq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля точечного заряда: 
+\begin_inset Formula $\varphi=\df 1{4\pi\varepsilon_{0}}\df{q_{0}}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля системы точечных зарядов: 
+\begin_inset Formula $\varphi=\df 1{4\pi\varepsilon_{0}}\ous{i=1}n\df{q_{i}}{r_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда через потенциалы:
+\begin_inset Formula $A=W_{1}-W_{2}=q\left(\varphi_{1}-\varphi_{2}\right)$
+\end_inset
+
+.
+ А тогда работа по перемещению заряда из бесконечности в некоторую точку:
+ 
+\begin_inset Formula $A_{\b}=\varphi\um q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Потенциал численно равен работе по перемещению единичного заряда из бесконечност
+и в некоторую точку.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\varphi\right]=\df{\text{Дж}}{\text{Кл}}=\text{В}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для измерения работы используют еще эВ (электрон Вольт)
+\end_layout
+
+\begin_layout Definition
+Электрон Вольт --- работа, совершаемая силами поля над зарядом равным заряду
+ электрона при прохождении им разности потенциалов, равным 1В.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $1эВ=1.6\um10^{-19}Дж$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Связь между напряженностью и потенциалом.
+\end_layout
+
+\begin_layout Standard
+Возьмем элементарное перемещение 
+\begin_inset Formula $dr$
+\end_inset
+
+ и элементарный потенциал 
+\begin_inset Formula $d\varphi$
+\end_inset
+
+.
+ Посчитаем элементарную работу: 
+\begin_inset Formula 
+\begin{align*}
+\delta A & =-q\um d\varphi\\
+\delta A & =q\um\v Ed\v r=qE_{r}dr
+\end{align*}
+
+\end_inset
+
+Приравняем: 
+\begin_inset Formula $-qd\varphi=qE_{r}dr$
+\end_inset
+
+, получим:
+\begin_inset Formula 
+\[
+E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{\v E=\left(E_{x},E_{y},E_{z}\right)=-\left(\df{\dd\varphi}{\dd x},\df{\dd\varphi}{\dd y},\df{\dd\varphi}{\dd z}\right)=-\grad\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Эквипотенциальноая поверхность
+\end_layout
+
+\begin_layout Standard
+Потенциаль электрического поля - 
+\begin_inset Formula $\varphi\left(x,y,z\right)=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В любой точке пространства можно провести эсвипотенциальную поверхность.
+\end_layout
+
+\begin_layout Standard
+Вектор напряженность электрического поля портендикулярен эквипотенциальной
+ поверхности.
+ 
+\end_layout
+
+\begin_layout Subsection
+Электрическое поля в диэлектриках.
+\end_layout
+
+\begin_layout Standard
+Диэлектрико --- такой материал, к коготором почти отсутствуют свободные
+ заряженные частицы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{r_{c}}=\df{\sum m_{i}r_{i}}{\sum m_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{+}$
+\end_inset
+
+ --- центр положительных задрядов (центр масс положительных зарядов, центр
+ тяжести полоожиьтельных зарядов)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{+}=\df{\sum q_{i}^{+}r_{i}^{+}}{\sum q_{i}^{+}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{-}=\df{\sum q_{i}^{-}r_{i}^{-}}{\sum q_{i}^{-}}=\df{\sum q_{i}^{-}r_{i}^{-}}{q^{-}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если диэлекстрик нейтральный: 
+\begin_inset Formula $q^{+}=-q^{-}=q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Применим эти операции для одной малекулы.
+ В том слкчае, когда 
+\begin_inset Formula $\v{r^{+}}=\v{r^{-}}$
+\end_inset
+
+, тогда говорят, что диэлектрик не полярный (или молекула не полярная).
+ Когда 
+\begin_inset Formula $\v{r^{+}}\nr\v{r^{-}}$
+\end_inset
+
+ , то мы имем полярный диэлексрик (полярную молекулу).
+ Тогда мы можем представить эту полекулу как диполь.
+ 
+\begin_inset Formula $l=\left|\v{r^{+}}-\v{r^{-}}\right|\nr0$
+\end_inset
+
+.
+ Кроме того мы ставим каждому диполю ставим вектор начального момента диполя
+ (электрического момента).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=q\um\v l=q\left(\v{r^{+}}-\v{r^{-}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Полеризация диэлектрика.
+\end_layout
+
+\begin_layout Standard
+Поместим некий диэлекстрик в электричесоке поле.
+ Электрическое части сместятся, и молекула, которая была не полярная, будет
+ полярной.
+ Тем самым возникает полеризация.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v P=\beta\um\varepsilon_{0}\um\v E$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ --- коофициент полеризуемости молекулы.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ --- не зависимая от 
+\begin_inset Formula $\beta$
+\end_inset
+
+, называемая диэлектрическая восприимчивость диэлектрика.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v P=x\um\varepsilon_{0}\um E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для неполярных диэлектриков 
+\begin_inset Formula $x$
+\end_inset
+
+ --- константа, а для полярных --- эта функция температуры.
+\end_layout
+
+\begin_layout Subsubsection
+Описание электрического поля в диэлектрике
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v E=\v{E_{0}}+E\pr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Электрическим смещением н6азывается физическая величина, определяемая соотношени
+ем:
+\begin_inset Formula 
+\[
+\v D=\varepsilon_{0}\v E+\v P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{D}=\un{\oiint}S\left(\v D,\v n\right)dS=\sum q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поток вектора электрического смещения через замкнутую поверхность равен
+ алгербаической сумме заключенных внутри этой поверхности свободных зарядов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1+x=\varepsilon$
+\end_inset
+
+ --- Относительной диэлектрической проницаемость.
+\end_layout
+
+\begin_layout Standard
+Относительной диэлектрической проницаемость.
+ показывается, во сколько раз ослабляется поле внутри диэлектрика.
+\end_layout
+
+\begin_layout Subsubsection
+Преломление линий электрического поля
+\end_layout
+
+\begin_layout Standard
+Пусть есть 2 диэлектрика соответственно с диэлектрической проницаемостью
+ 
+\begin_inset Formula $\varepsilon_{1},\ \varepsilon_{2}$
+\end_inset
+
+.
+ Так как свойства диэлектриков разные, то на границах возникают 
+\begin_inset Formula $\sigma_{1}^{-},\ \sigma_{1}^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sigma_{2}^{-},\ \sigma_{2}^{+}$
+\end_inset
+
+.
+ Если будем рассматривать электрическое смещение, и воспользуемся теоремой
+ Гаусса, чтобы посчитать его.
+ Посчитаем поток вектора эектрического смещения через этот цилиндр.
+\begin_inset Formula 
+\begin{align*}
+\Phi_{D} & =\oiint\limits _{\Omega}\v D\v nds=0\\
+\v{E_{1}} & =-E_{1n}\um\v{n_{1}}+E_{1\tau}\v{\tau} & \v{D_{1}} & =-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\\
+\v{E_{2}} & =-E_{2n}\um\v{n_{2}}+E_{2\tau}\v{\tau} & \v{D_{2}} & =-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\\
+\Phi_{D} & =\oudi{S_{1}}{}\left(-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\right)\v{n_{1}}ds+\\
+ & \quad+\oudi{S_{2}}{}\left(-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\right)\v{n_{2}}ds=\\
+ & =-\oudi{S_{1}}{}D_{1n}ds+\oudi{S_{2}}{}D_{2n}ds=\\
+ & =-D_{1n}S_{1}+D_{2n}S_{2}
+\end{align*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $D=\epsilon\varepsilon_{0}E$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\df{E_{1n}}{E_{2n}}=\df{\varepsilon_{2}}{\varepsilon_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Посчитаем циркуляцию 
+\begin_inset Formula $\v E$
+\end_inset
+
+ по линии 
+\begin_inset Formula $L$
+\end_inset
+
+: 
+\begin_inset Formula $\oint\limits _{L}\v Ed\v l=0$
+\end_inset
+
+.
+ С другой стороны: 
+\begin_inset Formula 
+\begin{multline*}
+\oint\limits _{L_{12}}\v{E_{1}}d\v l+\oint\limits _{23}\v Ed\v l+\oint\limits _{L_{31}}\v{E_{2}}d\v l+\oint\limits _{41}\v Ed\v l=\\
+=\oiu{L_{12}}{}-E_{1\tau}dl+\oui{L_{34}E_{2gt}}{}dl=-aE_{1\tau}+aE_{2\tau}=\left(-E_{1\tau}+E_{2\tau}\right)a=0
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\df{D_{1\varepsilon}}{\varepsilon_{1}\varepsilon_{2}} & =\df{D_{2\tau}}{\varepsilon_{2}\varepsilon_{0}} & \df{D_{1\tau}}{D_{2\tau}} & =\df{\varepsilon_{1}}{\varepsilon_{2}} & D_{2n} & =D_{1n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tg\alpha_{1}=\df{D_{1\tau}}{D_{1n}},\ \tg\alpha_{2}=\df{D_{2\tau}}{D_{2n}},\ \df{\tg\alpha_{1}}{\tg\alpha_{2}}=\df{D_{1\tau}D_{2n}}{D_{1n}D_{2\tau}}=\df{\varepsilon_{1}}{\varepsilon_{2}}
+\]
+
+\end_inset
+
+Рассмотрим закон Кулона в диэлектриках.
+ 
+\begin_inset Formula $\v F=q\um\v E$
+\end_inset
+
+ преобразуется в безграничном диэлектрике в 
+\begin_inset Formula 
+\[
+\fbox{F=\df 1{4\pi\varepsilon_{0}}\df{q_{1}q_{2}}{\varepsilon r^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Сегнетоэлектрики
+\end_layout
+
+\begin_layout Standard
+Это такие элексрики, которые могут обладать полеризацией, при отсутствуе
+ внешнего элестрическое паля.
+ Это было обнаружено в первый раз для сигнетовой соли.
+ Особенности:
+\end_layout
+
+\begin_layout Enumerate
+Диэлектрическая проницаемость составляет несколько тысяч единиц.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Зависимость между 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $E$
+\end_inset
+
+ нелинейная.
+\end_layout
+
+\begin_layout Enumerate
+Значение вектора поляризации отстает от изменения вектора напряженности.
+\end_layout
+
+\begin_layout Standard
+Поляризация 
+\begin_inset Formula $P$
+\end_inset
+
+ зависит не только от текущего значения 
+\begin_inset Formula $E$
+\end_inset
+
+, но и от предшествующих значений.
+ 
+\end_layout
+
+\begin_layout Standard
+Эта петля называется петлей Гистерезиса.
+ Этими свойствами диэлектрик обладает только в определенном диапазоне температур.
+ Если при деформации диэлектрик поляризуется, то это явление называется
+ прямым пьезо-электрическим эффектои.
+ Если при проведении тока диэлестрик диформирется, то это обратный пьезоэлектрич
+еский эффект.
+\end_layout
+
+\begin_layout Subsection
+Проводники в электрическом поле
+\end_layout
+
+\begin_layout Subsubsection
+Равновесие заряда на проводнике
+\end_layout
+
+\begin_layout Standard
+Внутри проводника...
+\end_layout
+
+\begin_layout Subsubsection
+Проводник во внешнем элекстрическом поле
+\end_layout
+
+\begin_layout Standard
+Напряженности внутри не будет.
+\end_layout
+
+\begin_layout Subsubsection
+Электроемкость
+\end_layout
+
+\begin_layout Standard
+Различные по величине заряды распределяются на уединенном проводние подобным
+ образом.
+ Если я сообщаю ему разные заряды то отношение величин зарядов будет константой.
+ Отсюда получаается, что потенциал изолированного проводника пропорционален
+ находящегося на нем заряду.
+ 
+\begin_inset Formula 
+\[
+q=C\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+ --- (электро)емкость.
+ Коэффициент пропорциональности 
+\begin_inset Formula $C$
+\end_inset
+
+ называется элексроемкостью (или просто емкостью) проводника.
+ 
+\end_layout
+
+\begin_layout Definition
+Емкость численно равна заряду, сообщение которого проводнику повышает его
+ потенциал на еденицу.
+\end_layout
+
+\begin_layout Example
+Вычислам емкость шара
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+E=\df 1{4\pi\varepsilon_{0}}\um\df q{\varepsilon r^{2}},\quad F=E\um1\,\text{Кулон}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi=\oui{\b}R\df 1{4\pi\varepsilon_{0}}\df q{\varepsilon r^{2}}dr=\df q{4\pi\varepsilon\varepsilon_{0}}\left(-\df 1r\mid_{\b}^{R}\right)=\df q{4\pi\varepsilon\varepsilon_{0}R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $C=4\pi\varepsilon\varepsilon_{0}R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+За еденицу емкости принимают емкость такого проводника, потенциал которого
+ изменяется на один вольт при сообщение ему заряда на один кулон.
+ Емкость измеряется в фарадах (
+\begin_inset Formula $\Phi$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+Конденсатор
+\end_layout
+
+\begin_layout Standard
+.......
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 2 точечьных заряда 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+, которые находятся на расстояннии 
+\begin_inset Formula $r_{12}$
+\end_inset
+
+.
+ Обозначим чеорез 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ потенциал, который создает заряд 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ в точке, где находится 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ --- потенциал, который создает заряд 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, в точке, где находится 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем перемещать заряд 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ из бесконечности в точку 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D A=-dU$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}=q_{1}\varphi_{1}=q_{i}\um\df{q_{2}}{4\pi\varepsilon\varepsilon_{0}\um r_{12}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{2}=q_{2}\varphi_{2}=q_{2}\df{q_{1}}{4\pi\varepsilon\varepsilon_{0}\um r_{12}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=A_{1}=A_{2}=q_{1}\varphi_{1}=q_{2}\varphi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df 12\left(q_{1}\varphi_{1}+q_{2}\varphi_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обозначим чсерез 
+\begin_inset Formula $\varphi_{3}$
+\end_inset
+
+ потенциал элексрического поля который создается в точке, куда перемещшается
+ зарад 
+\begin_inset Formula $q_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ --- работа по перемещению зарада.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{3}=q_{3}\varphi_{3}=q_{3}\left(\df 1{4\pi\varepsilon\varepsilon_{0}}\um\df{q_{1}}{r_{13}}+\df 1{4\pi\varepsilon\varepsilon_{0}}\df{q_{2}}{r_{23}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W_{1}=\df 12\left(q_{1}\varphi_{1}+q_{2}\varphi_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+W & = & W_{1}+A_{3}=\\
+ & = & \df 1{4\pi\varepsilon\varepsilon_{0}}\left(\df{q_{1}q_{2}}{r_{12}}+\df{q_{1}q_{3}}{r_{13}}+\df{q_{2}q_{3}}{r_{23}}\right)=\\
+ & = & \df 12\left(\df{q_{1}}{4\pi\varepsilon\varepsilon_{0}}\left(\df{q_{2}}{r_{12}}+\df{q_{3}}{r_{13}}\right)+\df{q_{2}}{4\pi\varepsilon\varepsilon_{0}}\left(\df{q_{1}}{r_{12}}+\df{q_{3}}{r_{23}}\right)+\df{q_{3}}{4\pi\varepsilon\varepsilon_{0}}\left(\df{q_{1}}{r_{12}}+\df{q_{2}}{r_{23}}\right)\right)=\\
+ & = & \df 12\left(q_{1}\varphi_{1}+q_{2}\varphi_{2}+q_{3}\varphi_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Можем утверждать что энергия системы для 
+\begin_inset Formula $n$
+\end_inset
+
+ зарадов записывается в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W=\df 12\ous{i=1}nq_{i}\varphi_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ --- потенциал, котоорый создают все точки кроме 
+\begin_inset Formula $i$
+\end_inset
+
+-ой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W=\df 12\sum dq_{i}\varphi_{i}=\df 12\varphi\sum dq_{i}=\df 12q\varphi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=c\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df{c\varphi^{2}}2=\df{q^{2}}{2c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для конденсатора:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df{cu^{2}}2=\df{q^{2}}{2c}=\df{qu}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=\df{\varepsilon\varepsilon_{0}s}d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df{q^{2}d}{2\varepsilon\varepsilon_{0}s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df{q^{2}x}{2\varepsilon\varepsilon_{0}s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=-\grad W$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=-\df{dW}{dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=-\df{q^{2}}{2\varepsilon\varepsilon_{0}s}$
+\end_inset
+
+ --- сила взаимодействия вкладок конденсатора
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df{cu^{2}}2=\df{\varepsilon\varepsilon_{0}s}{2d}u^{2}=\df{\varepsilon\varepsilon_{0}s}{2d}E^{2}d^{2}=\df{\varepsilon\varepsilon_{0}E^{2}}2Sd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=E\um d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $W=\df{\varepsilon\varepsilon_{0}}2E^{2}V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\df WV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\df{\varepsilon\varepsilon_{0}}2E^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\varepsilon\varepsilon_{0}E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\df{DE}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\df 12\overline{D}\overline{E}$
+\end_inset
+
+ --- для анизотропной среды.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\df 12\left(\varepsilon_{0}\overline{E}+P\right)\overline{E}=\df 12\varepsilon_{0}E^{2}+\df 12\overline{P}\overline{E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Постоянный электрический ток
+\end_layout
+
+\begin_layout Definition
+Электрический ток --- направленое движение заряженных частиц.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I,\ i$
+\end_inset
+
+ --- сида тока.
+\end_layout
+
+\begin_layout Standard
+Если ток постоянный то 
+\begin_inset Formula $I$
+\end_inset
+
+, если переменный --- 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Сила тока --- количество заряда, порошедшее через поперечное сечение проводника
+ в еденицу времени.
+\begin_inset Formula 
+\[
+i=\df{dq}{dt}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\df{\D q}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\df{dq^{+}}{dt}+\df{dq^{-}}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+За направление тока принимается направление движения 
+\emph on
+положительных 
+\emph default
+зарядов.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Плотность тока --- сила тока, приходящаяся на еденицу площади.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+j=\df{di}{ds_{\bot}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Это величина векторная.
+ За направление плотности тока принимается направление скорости упорядоченного
+ движения положительный носителей заряда.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\un{\iint}s\overline{j}\overline{n}ds
+\]
+
+\end_inset
+
+В еденице обьема проводника находится
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ положительных зарядов и 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ отрицательных зарядов.
+\end_layout
+
+\begin_layout Standard
+Пусть у нас 
+\begin_inset Formula $v^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $v^{-}$
+\end_inset
+
+скаорости 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+j=k^{+}\um e^{+}\um v^{+}+k^{-}e^{-}v^{-}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Электродвижущая сила
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varepsilon(\text{большой})=\df Aq
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{F_{\text{э}}}=\overline{E_{\text{э}}}\um q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{F_{\text{ст}}}=\overline{E_{\text{ст}}}\um q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\un{\oint}LE_{\text{ст}}qdl=q\un{\oint}LE_{\text{ст}}dl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon(\text{большой})=\un{\oint}L\overline{E_{\text{ст}}}d\overline{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon_{23}=\un{\int}{M_{1}M_{2}}\overline{E_{\text{ст}}}\um d\overline{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=F_{\text{э}}+F_{\text{ст}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=q\un{\int}{M_{1}M_{2}}\left(\overline{E_{\text{э}}}+\overline{E_{\text{ст}}}\right)d\overline{l}=q\um\varepsilon(\text{большая})+q\left(\varphi_{1}-\varphi_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\int}{M_{1}M_{2}}\overline{E_{\text{э}}}d\overline{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{E}=-\grad u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Величена, численно равноя работе по перемещению еденичного заряда 
+\begin_inset Formula $q$
+\end_inset
+
+ электрическими и сторонними силами называется подением напряжении, или
+ просто напряжением на данном участке.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{12}=\varepsilon(\text{большая})+\left(\varphi_{1}-\varphi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Закон Ома.
+ Сопротивление проводников.
+\end_layout
+
+\begin_layout Definition
+Участок цепи на котором отсутствует ЭДС называется однородным.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\df UR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I --- Сила тока.
+\end_layout
+
+\begin_layout Standard
+U --- Напряжение на участке.
+\end_layout
+
+\begin_layout Standard
+R --- сопротивление участка.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\rho\um\df lS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- Длина проводника.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ --- Поперечное сечение проводника.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- Удельное сопротивление.
+\end_layout
+
+\begin_layout Claim
+Для последовательного соединения сопротивлений:
+\begin_inset Formula 
+\[
+R=\ous{i=1}nR_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Claim
+Для параллельного соединения сопротивлений:
+\begin_inset Formula 
+\[
+\df 1R=\ous{i=1}n\df 1{R_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим закон Ома в дифференциальной форме:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+i & =\df{du\um ds}{\rho\um dl}\\
+jds & =\df{E\um dl\um ds}{\rho\um dl} & \then &  & j & =\df E{\rho}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+j --- плотность тока.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{\rho}=\sigma$
+\end_inset
+
+ --- коэффициент электропроводимости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\rho & =\rho_{0}\left(1+\alpha t\right)\\
+\alpha & =\df 1{273.15}\\
+\rho & =\rho_{0}\df T{T_{0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Закон Джоуля--Ленца.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Q & =R\um I^{2}\um t=\df{U^{2}}R\um t=U\um I\um t\\
+Q & =R\oiu 0ti^{2}\left(\tau\right)d\tau
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta A=U\um dq=Uidt=R\um i\um idt=Ri^{2}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\delta Q=Ri^{2}dt=\rho\df{dl}{ds}\um\left(j\um ds\right)^{2}dt=\\
+=\rho j^{2}\um dl\um ds\um dt=\rho j^{2}dv\um dt
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Удельная мощность тока --- 
+\begin_inset Formula $w=\rho j^{2}=\v j\um\v E$
+\end_inset
+
+.
+ Это и есть закон Джоуля--Ленца в дифференциальной форме.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+Q=\oiu 0t\iiint\limits _{D}\rho j^{2}\left(\tau\right)\um dv\um d\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Закон Ома для неоднородного участка цепи
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{12}=\varphi_{1}-\varphi_{2}+\varepsilon_{12}
+\]
+
+\end_inset
+
+Тогда
+\begin_inset Formula 
+\begin{align*}
+\delta A & =U_{12}dq=\left(\varphi_{1}-\varphi_{2}\right)dq+\varepsilon_{12}dq\\
+\delta Q & =R\um i^{2}dt=R\um i\um dq
+\end{align*}
+
+\end_inset
+
+Но так как 
+\begin_inset Formula $\delta A=\delta Q$
+\end_inset
+
+, то
+\begin_inset Formula 
+\begin{align*}
+R\um i & =\left(\varphi_{1}-\varphi_{2}\right)+\varepsilon_{12}\\
+i & =\df{\left(\varphi_{1}-\varphi_{2}\right)+\varepsilon_{12}}R
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Закон Ома для замкнутой цепи:
+\begin_inset Formula 
+\[
+i=\df{\varepsilon}R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Разветвленные цепи.
+ Правило Кирхгофа.
+\end_layout
+
+\begin_layout Definition
+Узел разветвленной цепи --- точка, в которой сходится 3 и более проводников.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Первое правило Киркгофа
+\end_layout
+
+\end_inset
+
+ Алгебраическая сумма токов, сходящихся в узле равна нулю.
+ Ток который входит в узел положительный, который выходит --- отрицательный.
+\begin_inset Formula 
+\[
+\ous{i=1}nI_{i}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рисунок!!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{1}R_{1}=\varphi_{a}-\varphi_{b}+\varepsilon_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{2}R_{2}=\varphi_{b}-\varphi_{c}+\varepsilon_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{3}R_{4}=\varphi_{c}-\varphi_{a}+\varepsilon_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{1}R_{1}-i_{2}R_{2}+i_{3}R_{4}=\varepsilon_{1}-\varepsilon_{3}-\varepsilon_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Второе правило Киркгофа
+\end_layout
+
+\end_inset
+
+ Если в цепи 
+\begin_inset Formula $n$
+\end_inset
+
+ циклов, то правило Киркгофа записывется для 
+\begin_inset Formula $n-1$
+\end_inset
+
+ цикла.
+\begin_inset Formula 
+\[
+\ous{k=1}ni_{k}R_{k}=\ous{k=1}n\varepsilon_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Коэффициет полезного действия тока
+\end_layout
+
+\begin_layout Standard
+Для замктутой цепи:
+\begin_inset Formula 
+\begin{align*}
+I & =\df{\varepsilon}{R+r}\\
+U & =I\um R=\df{\varepsilon}{R+r}\um R
+\end{align*}
+
+\end_inset
+
+Когда берем 
+\begin_inset Formula $R=\b$
+\end_inset
+
+ то есть цепь не замкнута.
+ Тогда 
+\begin_inset Formula $U=\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Для источника тока: 
+\begin_inset Formula 
+\begin{align*}
+\delta A & =\varepsilon\um dq\\
+P & =\df{\delta A}{dt}=\varepsilon\df{dq}{dt}=\varepsilon\um I=\df{\varepsilon^{2}}{R+r}
+\end{align*}
+
+\end_inset
+
+Значит чем меньше внешняя нагрузка тем больше мощность.
+\end_layout
+
+\begin_layout Standard
+Мощность на сопротивлении:
+\begin_inset Formula 
+\begin{align*}
+Q & =U\um I\um t=I^{2}\um R\um t\\
+\delta Q & =I^{2}\um R\um dt\\
+P_{\text{н}} & =I^{2}\um R=\df{\varepsilon^{2}R}{\left(R+r\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда КПД:
+\begin_inset Formula 
+\[
+\eta=\df{P_{\text{н}}}P=\df R{R+r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чем больше внешняя нагрузка тем выше КПД.
+\end_layout
+
+\begin_layout Section
+Магнитное поле в вакууме.
+\end_layout
+
+\begin_layout Subsection
+Взаимодействие токов
+\end_layout
+
+\begin_layout Standard
+Берем 2 прямолинейных проводника по которым течет ток.
+ Если токи текут в одном направлении, то проводники будут притягиваться
+ друг к другу, иначе отталкиваться.
+ Ампер получил закон, по которому для единицы длины проводника:
+\begin_inset Formula 
+\[
+f=k\um\df{2\um i_{1}\um i_{2}}b
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $k$
+\end_inset
+
+ --- некий коэффициент, 
+\begin_inset Formula $b$
+\end_inset
+
+ --- расстояние между проводниками.
+\end_layout
+
+\begin_layout Standard
+1Кл = 1А/сек.
+\end_layout
+
+\begin_layout Standard
+Магнитная постоянная 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{f=\df{\mu_{0}}{4\pi}\um\df{2\um i_{1}\um i_{2}}b}
+\]
+
+\end_inset
+
+Отсюда посчитаем 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+.
+ Возьмем 
+\begin_inset Formula $i_{1}=i_{2}=1A$
+\end_inset
+
+, 
+\begin_inset Formula $b=1m$
+\end_inset
+
+, 
+\begin_inset Formula $f=2\um10^{-7}$
+\end_inset
+
+Н.
+ Тогда
+\begin_inset Formula 
+\begin{align*}
+\mu_{0} & =1.26\um10^{-6}\\
+\left[\mu_{0}\right] & =\df{\text{Н}}{\text{А}^{2}}=\df{\text{Гн}}{\text{м}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнитное поле.
+\end_layout
+
+\begin_layout Standard
+Возьмем плоский пробный контур.
+ Будем его характеризовать силой тока и направлением нормали к нему.
+ Когда мы вносим его в поле, то возникает момент сил:
+\begin_inset Formula 
+\[
+p_{m}=I\um S
+\]
+
+\end_inset
+
+где S --- площадь контура.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\v{P_{m}}=P_{m}\um\v n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Магнитная индукция поля
+\begin_inset Formula 
+\[
+B=\df{M_{\max}}{P_{m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v B$
+\end_inset
+
+ --- вектор магнитной индукции, направление которого определяется равновесным
+ направлением нормали пробного контура.
+\end_layout
+
+\begin_layout Standard
+В каждой точке касательной к линии направление вектора совпадает с вектором
+ магнитной индукции.
+ Густота этих линий характеризует величину магнитной индукции.
+\end_layout
+
+\begin_layout Subsection
+Закон Био--Савара--Лапласса
+\end_layout
+
+\begin_layout Standard
+Установили что магнитная индукция прямопропорциональна силе тока.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dB=k\df{\left[d\v l;\v r\right]i}{r^{3}}
+\]
+
+\end_inset
+
+В СИ 
+\begin_inset Formula $k=\frac{\mu_{0}}{4\pi}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+dB=\df{\mu_{0}}{4\pi}\um\df{i\um dl\um\sin\alpha}{r^{2}}
+\]
+
+\end_inset
+
+В системе СИ 
+\begin_inset Formula $\left[B\right]=\text{Тл}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Плотность тока 
+\begin_inset Formula 
+\begin{align*}
+dl\um\v j & =\frac{i}{S}d\v l\\
+S\um dl\um\v j & =i\um d\v l\\
+d\v B & =\df{\mu_{0}}{4\pi}\df{\left[\v j;\v r\right]Sdl}{r^{3}}=\df{\mu_{0}}{4\pi}\df{n_{l}\um e\um Sdl\um\left[\v v,\v r\right]}{r^{3}}\\
+\v B_{e} & =\df{d\v B}{N_{e}}=\df{\mu_{0}}{4\pi}\df{e\um\left[\v v,\v r\right]}{r^{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+30.04.14
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Поле прямого тока
+\end_layout
+
+\begin_layout Standard
+Возьмем бесконечный прямолинейный проводник.
+ Найдем 
+\begin_inset Formula $d\v B$
+\end_inset
+
+ в некоторой точке:
+\begin_inset Formula 
+\[
+d\v B=\df{\mu_{0}}{4\pi}\um\df{i\left[d\v l;\v r\right]}{r^{3}}
+\]
+
+\end_inset
+
+Обозначим расстояние от точки до провода через 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Очевидно что 
+\begin_inset Formula $r=b/\sin\alpha$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+dr & =r\um\sin\alpha=rd\alpha\\
+dl & =\df{dr}{\sin\alpha}=\df{rd\alpha}{\sin\alpha}
+\end{align*}
+
+\end_inset
+
+Так как с направлением 
+\begin_inset Formula $dB$
+\end_inset
+
+ мы уже определились, то будем находить только величину:
+\begin_inset Formula 
+\begin{multline*}
+dB=\df{\mu_{0}}{4\pi}\um\df{i\um r\um d\alpha\um b\um\sin\alpha}{\sin\alpha\um\sin\alpha}\um\df{\sin^{3}\alpha}{b^{3}}=\\
+=\df{\mu_{0}}{4\pi}\um\df{i\um r\um\sin^{2}\alpha\um d\alpha}{b^{2}}=\df{\mu_{0}}{4\pi}\um\df{i\um\sin\alpha\um d\alpha}b
+\end{multline*}
+
+\end_inset
+
+Тогда
+\begin_inset Formula 
+\[
+B=\oui 0{\pi}\df{\mu_{0}}{4\pi}\df{i\um\sin\alpha}bd\alpha=\df{\mu_{0}i}{4\pi b}\um\oiu 0{\pi}\sin\alpha d\alpha=\df{\mu_{0}i}{2\pi b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнитное поле кругового тока
+\end_layout
+
+\begin_layout Standard
+Пусть ток течет по контуру против часовой стрелки.
+ Найдем вектор магнитной индукции в центре контура.
+ Он будет направлен к нам.
+\begin_inset Formula 
+\[
+dB=\df{\mu_{0}}{4\pi}\um\df{i\um dl}{R^{2}}
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula 
+\[
+B=\oint\limits _{C_{R}}\df{\mu_{0}}{4\pi}\df{i\um dl}{R^{2}}=\df{\mu_{0}i}{2R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Циркуляция вектора магнитной индукции в поле соленоида
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint\limits _{L}\v B\um d\v l=\oint\limits _{L}B_{l}dl
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для простоты расчитаем все для окружности.
+ 
+\begin_inset Formula $dl=R\um d\alpha$
+\end_inset
+
+, а тогда
+\begin_inset Formula 
+\[
+\v B\um d\v l=BRd\alpha=\df{\mu_{0}}{2\pi}\df iRR\um d\alpha=\df{\mu_{0}}{2\pi}id\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\limits _{C}\v B\um d\v l=\oint\limits _{C}\df{\mu_{0}}{2\pi}id\alpha=\mu_{0}i
+\]
+
+\end_inset
+
+Так как в формуле нет 
+\begin_inset Formula $R$
+\end_inset
+
+ то можем ее использовать для любого контура (не только окружности).
+\begin_inset Formula 
+\[
+\oiu L{}\v B\um d\v l=\mu_{0}i
+\]
+
+\end_inset
+
+В итоге:
+\begin_inset Formula 
+\[
+\fbox{\oiu L{}\v B\um d\v l=\mu_{0}\sum i}
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $\sum i$
+\end_inset
+
+ --- алгебраическая сумма токов охватываемых контуром 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Векторные поля у которых циркуляция не равна нулю называются вихревыми полями.
+ Для них нет понятия потенциала.
+\end_layout
+
+\begin_layout Subsection
+Действие магнитного поля на токи и заряды.
+ Сила Лоренца.
+\end_layout
+
+\begin_layout Standard
+На некий элемент 
+\begin_inset Formula $d\v l$
+\end_inset
+
+ со стороны магнитного поля действует сила
+\begin_inset Formula 
+\[
+d\v f=ki\left[d\v l;\v B\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\df{\mu_{0}i}{2\pi b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+df=ki_{2}dl\df{\mu_{0}i_{1}}{2\pi B}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+df=k\df{\mu_{0}}{4\pi}\tr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\v j\um s
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+id\v l=\v js\um dl=\v j\um dv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+df=\left[\v j,\v B\right]\um dv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v j=\v v\um c\um n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+ --- концентрация заряженых частиц в еденице обьема
+\begin_inset Formula 
+\[
+df=e\um\left[\v v,\v B\right]\um n\um dv
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $n\um dv$
+\end_inset
+
+ --- общее число заряженных частиц, движущихся в проводнике
+\end_layout
+
+\begin_layout Standard
+Сила, действующая со стороны магнитного поля на одну частицу (сила Лорпенса):
+\begin_inset Formula 
+\[
+F_{\Lambda}=e\left[\v v;\v B\right]
+\]
+
+\end_inset
+
+Сила всегда будет направлена перепендикулярно вектору перемещения.
+ И получается, что сила Лоренса работы не совершает, и следователдьно, не
+ меняет энергию частици.
+ Это характерно только для постоянного магнитного поля, а для непостоянного
+ там она меняется.
+\end_layout
+
+\begin_layout Subsection
+Кoнтур с током в магнитном поле
+\end_layout
+
+\begin_layout Standard
+Рассмотрим прямоугольный контур с током.
+\begin_inset Formula 
+\[
+df=i\left[d\v l,B\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v M=f_{a}\df b2+f_{a}\df b2=f_{a}\um b
+\]
+
+\end_inset
+
+Момент сил, котрый действует на такой проводник:
+\begin_inset Formula 
+\[
+M=i\um B\um a\um b=i\um B\um S=p_{m}\um B
+\]
+
+\end_inset
+
+Эта формула и указанные выводы справедливы для плоского контура любой формы.
+\begin_inset Formula 
+\[
+M=P_{m}\um B\um\sin\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v M=\left[\v{P_{m}};\v B\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнетики
+\end_layout
+
+\begin_layout Subsubsection
+Классификация магнетиков
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi$
+\end_inset
+
+ --- магнитная восприимчивость.
+ 
+\end_layout
+
+\begin_layout Standard
+В зависимости от величитны магтитной восприимчивости все магнетики разделяются
+ на три группы:
+\end_layout
+
+\begin_layout Enumerate
+Дио-магнетики.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi<0,\ \chi\sim10^{-8}\div10^{-7}$
+\end_inset
+
+, 
+\begin_inset Formula $\v J\rightleftarrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пара-магнетики
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi>0,\ \chi\sim10^{-7}\div10^{-6}$
+\end_inset
+
+, 
+\begin_inset Formula $\v J\upuparrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ферро-магнетики
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi>0;\ \chi\sim10^{3}$
+\end_inset
+
+ , 
+\begin_inset Formula $\v J\upuparrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если для дио- и пара- .....
+ то у ферро-магнетиков 
+\begin_inset Formula $\chi$
+\end_inset
+
+ является функцией напряженности магнитного поля.
+ 
+\begin_inset Formula 
+\[
+P_{m}=i\um S=e\um\nu\um S=e\um\nu\pi r^{2}=\df{erv}2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{e}=\nu2\pi r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{m}=\df{erv}2
+\]
+
+\end_inset
+
+Момент импульса электрона:
+\begin_inset Formula 
+\[
+L=v\um n\um r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{P_{m}}L=-\df 12\df em
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Электрон обладает своими 
+\begin_inset Formula $P_{ms}$
+\end_inset
+
+ и 
+\begin_inset Formula $L_{s}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\df{P_{ms}}{L_{s}}=-\df em
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ферро-магнентики
+\end_layout
+
+\begin_layout Standard
+Они обладают намагничеванием в отсутствие магнитного поля.
+ Название получило от железа.
+ Полупроводники, обрадающие такими свойствами называются ферритами.
+\end_layout
+
+\begin_layout Subsection
+Электромагнитная индукция.
+\end_layout
+
+\begin_layout Standard
+В 1831 году Фарадей открыл явление магнитной индукции.
+ Он показал, что во всяком замкнутом проводящем контуре при изменении потока
+ магнитной индукции через поверхность, ограниченную этим контуром, возникает
+ электрический ток.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+24.5.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когдла сила тока растет или уменьшается, поворачивать, то в другом возникает
+ индукционный эликтрический ток.
+ Он фиксируется гальванометром.
+ От способа измемения магнитной индекции ничего не зависит.
+ 
+\end_layout
+
+\begin_layout Standard
+Ленц сформулировал закон направления тока в новом контуре: Индукционный
+ ток, возникающий в контуре направлен так, чтобы противодействовать причине
+ его вызывающей.
+\end_layout
+
+\begin_layout Standard
+Если приближаем, то проводники должны отталкиватьлся, то возникает ток с
+ противоположным направдением.
+ Если отталкиваем то наоборот.
+\end_layout
+
+\begin_layout Standard
+Величина индукционного тока зависит не от напряженнрости магнитного поля,
+ я от величины магнитной индукции.
+\end_layout
+
+\begin_layout Subsubsection
+ЭДС индукции
+\end_layout
+
+\begin_layout Standard
+Раз есть ток в контуре, значит есть и ЭДС.
+ Вoзьмем простой эксперемент.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рисунок
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+НАчинаем двигать планку со скоростью 
+\begin_inset Formula $\v v$
+\end_inset
+
+.
+ На каждую частицу будет действоваать сила Лоренса: 
+\begin_inset Formula $\v F_{\Lambda}=e\left[\v v;\v B\right]$
+\end_inset
+
+.
+ Сила Лолренса будет направлена вниз, тоесть электроны будут по контуру
+ двигаться вниз.
+ А ток будет направлен вверх.
+ У нас возникает ЭДС, который закручивает ток по контуру.
+ 
+\begin_inset Formula $F_{\Lambda}=ev\um B$
+\end_inset
+
+.
+ Напряженностьть внешних (сторонних) сил: 
+\begin_inset Formula 
+\[
+E=\df{F_{\Lambda}}e=v\um B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{i} & = & \oint\v E\um d\v l=\\
+ & = & E\um l=\\
+ & = & v\um B\um l=\\
+ & = & v\um B\um\df{ldt}{dt}=\\
+ & = & B\df{ds}{dt}=\\
+ & = & \df{d\Phi_{B}}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+Поток магнитной индукции (Измеряется в: вебер):
+\begin_inset Formula 
+\[
+\Phi_{B}=\un{\iint}S\v B\um\v n\um ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{i}=-\df{d\Phi}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Явление самоиндукции
+\end_layout
+
+\begin_layout Standard
+Когда мы берез некий контур и пускаем там ток, получается, что этот ток
+ не является постоянным, он нарастает, а значит меняется магнитная эндукция,
+ а значит что в этом контуре возникает еще один ток, который противодействиет
+ первому.
+ Это явление самоиндукци.
+\end_layout
+
+\begin_layout Standard
+Через
+\begin_inset Formula $\Psi$
+\end_inset
+
+ обозначим поток через контур в самом контуре, в котором мы измеряем ток.
+ Он оказался пропорционален силе тока.
+ 
+\begin_inset Formula $\Psi=L\um i$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ называется индуктивностью контура.
+ Оказывается что тут написали линейную зависимость, но на самом деле она
+ не совсем такая.
+ Если такие магнитики, например феромегнетики, то эта зависимость становится
+ нелиннйной.
+ То 
+\begin_inset Formula $L$
+\end_inset
+
+ зависит от магнитных свойств вещества.
+ Зависит от формы и размера.
+ 
+\end_layout
+
+\begin_layout Standard
+Пробнем вычислить индуктивность 
+\begin_inset Formula $L$
+\end_inset
+
+ для кокогонибудь контура.
+ Например для солиноида.
+ Будет 
+\begin_inset Formula $N$
+\end_inset
+
+ витков.
+ 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ --- поток.
+ Индуктивность: 
+\begin_inset Formula 
+\[
+\Psi=N\um\Phi=B\um S\um n\um l
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ --- плотность намотки, 
+\begin_inset Formula $l$
+\end_inset
+
+ --- длинна.
+\begin_inset Formula 
+\begin{eqnarray*}
+\Psi & = & N\um\Phi=B\um S\um n\um l=\\
+ & = & \mu\mu_{0}in^{2}Sl=\\
+ & = & \mu\mu_{0}in^{2}V
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}n^{2}v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n=\df Nl
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}N^{2}\df Sl
+\]
+
+\end_inset
+
+ Чем больше пложадь и меньше длинна чем больше индуктивность, при такомже
+ количестве витков.
+ ВОзникает ЭДС самоиндукции.
+ Оно связано с изменением потока 
+\begin_inset Formula $\Psi$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{c} & = & -\df{d\Psi}{dt}=\\
+ & = & -\df{dl}{dt}\um i-l\um\df{di}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+ Если 
+\begin_inset Formula $L$
+\end_inset
+
+ --- константа:
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dl}{dt}=\df{dl}{di}\um\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-\left(i\df{dL}{di}+L\right)\df{di}{dt}
+\]
+
+\end_inset
+
+Еденица измерения индлуктивности: 
+\begin_inset Formula $\left[L\right]=\df{\text{Вольт}\um\text{Секунду}}{\text{Ампер}}=\text{Генри}=\text{Гн}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ток при замыкании и размыкании цепи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{0}=\df{\varepsilon}R
+\]
+
+\end_inset
+
+Сопротивленгие источника пренебружимо мало.
+\begin_inset Formula 
+\[
+i\um R=\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}+\df RLi=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i\left(0\right)=I_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{0}\um e^{-\frac{L}{R}t}
+\]
+
+\end_inset
+
+Постоянная времени, характеризующая контур:
+\begin_inset Formula 
+\[
+\df LR=\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{0}e^{-\df t{\tau}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ток при замыкании цепи
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+i\um R & = & \varepsilon_{c}+\varepsilon=\\
+ & = & \varepsilon-L\df{di}{dt}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}+\df RLi=\df{\varepsilon}L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i\left(0\right)=0
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+i=I_{0}+ce^{-\df Blt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При размыканнии цепи ток вычисляется так:
+\begin_inset Formula 
+\[
+i=I_{0}\left(1-e^{-\frac{R}{L}t}\right)
+\]
+
+\end_inset
+
+Это если индуктивность постоянная
+\end_layout
+
+\begin_layout Subsection
+Энергия магнитного поля
+\end_layout
+
+\begin_layout Standard
+Закон Джоуля-Ленца:
+\begin_inset Formula 
+\begin{eqnarray*}
+dA & = & \varepsilon_{c}\um I\um dt=\\
+ & = & -\df{d\Psi}{dt}i\um dt=\\
+ & = & -d\Psi\um i=\\
+ & = & \left\{ \begin{array}{c}
+\Psi=L\um i\\
+d\psi=Ldi
+\end{array}\right\} =\\
+ & = & -Lidi
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\oui{I_{0}}0-Lidi=\df{I_{0}^{2}}2L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\df{i^{2}}2L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}n^{2}V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=in
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\mu\mu_{0}H
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\mu\mu_{0}\df{i^{2}n^{2}}2V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+w & = & \mu\mu_{0}\df{i^{2}n^{2}}2=\\
+ & = & \mu\mu_{0}\df{H^{2}}2=\\
+ & = & \df{B\um H}2
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+24.5.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Движение заряженной частицы в однородном магнитном поле
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{\Lambda}=e\left[\v v;\v B\right]
+\]
+
+\end_inset
+
+Сила Лоренса не меняет энергию частици.
+ Но есть ускорение.
+ Значит меняется направление.
+\end_layout
+
+\begin_layout Standard
+Ускоренпие этой частици:
+\begin_inset Formula 
+\[
+F=m\um\v w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=\df Fm
+\]
+
+\end_inset
+
+У нас частица будет двигаться по окружности.
+\begin_inset Formula 
+\[
+\v w_{n}=\df em\left[\v v;\v B\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w_{n}=\df em\um v\um B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w_{n}=\df{v^{2}}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=\df{v^{2}}{w_{n}}=\df me\df vB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Удельный заряд: 
+\begin_inset Formula $\df em$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+За какое время он делает полный оборот (периуд вращения):
+\begin_inset Formula 
+\[
+T=\df{2\pi R}v=\df{2\pi m}e\df 1B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+v_{1}=v\sin\alpha\\
+v_{2}=v\cos\alpha
+\end{array}
+\]
+
+\end_inset
+
+Таким образом частица будет двигаться по спирали, ось которой совподает
+ с направлением вектора 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ При этом не мняется величина скорости и работу оно не совершает.
+ Если частица положительная, то спираль закручивается по часовой стрелке,
+ если отрицательно, то наоборот.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\v w=\df{e\v E}m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Переменный ток
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- Длинна цепи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=\df lc<<T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Такой ток нызвается квазистационарным.
+ Для него хоть он и переменный действиют законы Киргофа и законы Ома.
+\end_layout
+
+\begin_layout Standard
+Сопротивление, которое обладает не емкостью, не индуктивностью называтеся
+ активным сопротивленимем.
+ Таких не бывает, но иногда им можно пренебречь.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u=u_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df UR=\df{u_{m}}R\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=\df{u_{m}}R
+\]
+
+\end_inset
+
+Тем самым характер изменения напряджения и тока один и тот же.
+\begin_inset Formula 
+\[
+u=I_{m}R\cos wt
+\]
+
+\end_inset
+
+Напряждение и сила тока меняются симфазно (тоесть в обной фазе).
+\end_layout
+
+\begin_layout Subsection
+Переменный ток, текущий через индуктивность
+\end_layout
+
+\begin_layout Standard
+Будем считать что 
+\begin_inset Formula $R=0$
+\end_inset
+
+ и емкость тоже равна нулю.
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u+\varepsilon_{c}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}\cos wt=L\df{di}{dt}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}=\df{u_{m}}L\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df{u_{m}}{Lw}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df{u_{m}}{Lw}\cos\left(wt-\df{\pi}2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=\df{u_{m}}{lw}
+\]
+
+\end_inset
+
+Вод если сопоставить это уравнения с законом Ома, то можно сказать что 
+\begin_inset Formula $Lw=R_{L}$
+\end_inset
+
+ можно рассматривать как некоторое сопротивлением, и называется (реактивным)
+ индуктивным соопротивлением.
+\begin_inset Formula 
+\[
+i=I_{m}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u=LwI_{m}\sin\left(wt+\df{\pi}2\right)
+\]
+
+\end_inset
+
+В этиом слкчае напряжение опережает по фазе ток на 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+, тоесть на 
+\begin_inset Formula $\df 14$
+\end_inset
+
+ периуда.
+\end_layout
+
+\begin_layout Subsection
+Переменный ток, текущий серез емкость
+\end_layout
+
+\begin_layout Standard
+Перменный ток через емкость может течь.
+\begin_inset Formula 
+\[
+U=\df qC=u_{m}\cos wt
+\]
+
+\end_inset
+
+Вспомним что такое 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ Это заряд.
+\begin_inset Formula 
+\[
+i=\df{dq}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=Cu_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dq}{dt}=i=-cwu_{m}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=cwu_{m}\cos\left(wt+\df{\pi}2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=cwu_{m}
+\]
+
+\end_inset
+
+Емкостное сопротивление:
+\begin_inset Formula 
+\[
+R_{c}=\df 1{wc}
+\]
+
+\end_inset
+
+Для конденсатора напряжение отстоет на 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+ от тока.
+\begin_inset Formula 
+\[
+u_{m}^{2}\left(u_{L}-u_{c}\right)^{2}+u_{R}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}^{2}=\left(I_{m}Lw-\df{I_{m}}{wc}\right)^{2}+\left(RI_{m}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}=I_{m}\sqrt{\left(Lw-\df 1{wc}\right)^{2}+R^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tg\varphi & = & \df{wL-\df 1{wc}}R=\\
+ & = & \df{R_{L}-R_{c}}R
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\sqrt{\left(Lw-\df 1{wc}\right)^{2}+R^{2}}
+\]
+
+\end_inset
+
+Преведущую величину называют полным сопротивлением цепи.
+\begin_inset Formula 
+\[
+u=u_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{m}\cos\left(wt-\varphi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}=I_{m}\um z
+\]
+
+\end_inset
+
+Реактивное сопротивление: 
+\begin_inset Formula 
+\[
+Lw-\df 1{wc}=X
+\]
+
+\end_inset
+
+Можно подобрать по 
+\begin_inset Formula $w$
+\end_inset
+
+ чтобы 
+\begin_inset Formula $X=0$
+\end_inset
+
+, то это резонансное явление, общее сопротивление минимальное.
+\begin_inset Formula 
+\[
+w_{res}=\df 1{\sqrt{Lc}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{L\ res} & = & u_{c\ res}=\\
+ & = & \sqrt{\df Lc}I_{m}=\\
+ & = & \df 1R\sqrt{\df Lc}u_{m}
+\end{eqnarray*}
+
+\end_inset
+
+ Если 
+\begin_inset Formula $\sqrt{\df Lc}>R$
+\end_inset
+
+ это приводит к тому, что напряджение на емкости и на конденсаторе выше
+ чем напряжение в цепи.
+\end_layout
+
+\begin_layout Subsection
+Электромагнитное поле
+\end_layout
+
+\begin_layout Subsubsection
+Вихревое электрическое поле
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varepsilon_{B}=\oint\v E_{B}d\v l
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{B} & = & -\df{d\Phi}{dt}=\\
+ & = & -\df d{dt}\un{\iint}SB\um\pi\um dS=\\
+ & = & \un{\iint}S\df{d\v B}{dt}\um\v n\um dS
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\v E_{q}d\v l=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\v E_{B}d\v l=-\un{\iint}S\df{d\v B}{dt}\pi dS
+\]
+
+\end_inset
+
+ Следовательно возникающее в пространстве электрическое поле, свзяанное
+ смагнитным полем, будет вихревым.
+\begin_inset Formula 
+\[
+\v E=\v E_{q}+\v E_{B}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\v Ed\v l=-\un{\iint}S\df{dB}{dt}ndS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+31 мая 2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когда мы рассмотрим мгновенное значение тока: 
+\begin_inset Formula $i=\df{dq}{dt}=\dot{q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С дриугой стороны рассмотрим плотность тогка с правой граници левой оплавки
+ конденсатора: 
+\begin_inset Formula 
+\[
+j=\df is=\df{\dot{q}}s=\df d{dt}\left(\df qs\right)=\dot{\sigma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df qs$
+\end_inset
+
+ --- плотность поверхностногог заряда.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j_{\text{СМ}}=j_{\text{ПР}}=\dot{\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Электрическое смещение: 
+\begin_inset Formula $D=\varepsilon_{0}E_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E=\df{\sigma}{\varepsilon_{0}}$
+\end_inset
+
+ --- электрический ток между двумя пластинами
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\varepsilon_{0}E_{0}=\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{D}=\dot{\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j_{\text{СМ}}=\dot{D}$
+\end_inset
+
+ --- Но дело в том что и то и то это вектора
+\end_layout
+
+\begin_layout Standard
+Получаетсмя что направление тока и направление электрического смещения совподут.т
+ Получается, что равенство не только скалярное, но и векторное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v{j_{\text{СМ}}}=\dot{\v D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полная плотность тока: 
+\begin_inset Formula $\v{j_{\text{Полная}}}=\v{j_{\text{ПР}}}+\v{j_{\text{СМ}}}=\v{j_{\text{ПР}}}+\dot{\v D}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint\v Hd\v l=\sum i=\un{\iint}s\v{j_{\text{Полная}}}\v nds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{\oint\v Hd\v l=\un{\iint}s\left(\v{j_{\text{ПР}}}+\dot{\v D}\right)\v nds}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\oint\v Ed\v l=-\un{\iint}s\df{\dd\v B}{\dd t}\v nds\label{eq:_18_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Смысл формулы: Переменное магнитное поле создает электрическое поле.
+\begin_inset Formula 
+\begin{equation}
+\un{\oiint}s\v B\v nds=0\label{eq:_18_2}
+\end{equation}
+
+\end_inset
+
+Смысл формулы: Эта формула говорит что не существует магнитных зарядов и
+ линии магнитного поля всегда замкнуты.
+\begin_inset Formula 
+\begin{equation}
+\oint\v Hd\v l=\un{\iint}s\left(\v{j_{\text{ПР}}}+\dot{\v D}\right)\v nds\label{eq:_18_3}
+\end{equation}
+
+\end_inset
+
+Смысл формулы: Магнитное поле возникает вследствии существования станционарных
+ токов, либо переменным электрическим полем.
+\begin_inset Formula 
+\begin{equation}
+\un{\oiint}sDds=\un{\iiint}V\rho dv\label{eq:_18_4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- обьемная плотность заряда.
+ Означает что станционарное электрическоет поле создается станционарными
+ зарядами, и линии электрического поля начинаются на одних(положительных)
+ зарядах и заканчиваются на других(отрицательных).
+\end_layout
+
+\begin_layout Standard
+Эти уравнения образуют полную систему Максвелла.
+\end_layout
+
+\begin_layout Standard
+Согласно формуле Стокса:
+\begin_inset Formula 
+\[
+\oint\v Ed\v l=\un{\iint}srot\v E\v nds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iint}srot\v E\v nds+\un{\iint}s\df{\dd\v B}{\dd t}\v nds=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iint}s\left(rot\v E+\df{\dd\v B}{\dd t}\right)\v nds=0
+\]
+
+\end_inset
+
+Дифференцианьное уравнения Максвелла:
+\begin_inset Formula 
+\begin{equation}
+rot\v E+\df{\dd B}{\dd t}=0\label{eq:_18_1'}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_18_3"
+
+\end_inset
+
+): Применим к ней формулу стокса.
+\begin_inset Formula 
+\[
+\un{\iint}srot\v H\v nds=\un{\iint}s\left(\v{j_{\text{ПР}}}+\dot{\v D}\right)\v nds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+rot\v H=\v{j_{\text{ПР}}}+\dot{\v D}\label{eq:_18_3'}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Применим формулу Гаусса-Острогратского к формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_18_4"
+
+\end_inset
+
+) и (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:_18_2"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\un{\iiint}Vdiv\v Bdv=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+div\v B=0\label{eq:_18_2'}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iiint div\v Ddv=\un{\iiint}V\rho
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+div\v D=\rho\label{eq:_18_4'}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+rot\v E+\dot{\v B=0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v D=\varepsilon\varepsilon_{0}\v E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\mu\mu_{0}H
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j=\sigma E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
