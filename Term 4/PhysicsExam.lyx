@@ -872,6 +872,70 @@ status open
  Эквипотенциальные поверхности.
 \end_layout
 
+\begin_layout Standard
+Возьмем элементарное перемещение 
+\begin_inset Formula $dr$
+\end_inset
+
+ и элементарный потенциал 
+\begin_inset Formula $d\varphi$
+\end_inset
+
+.
+ Посчитаем элементарную работу: 
+\begin_inset Formula 
+\begin{align*}
+\delta A & =-q\um d\varphi\\
+\delta A & =q\um\v Ed\v r=qE_{r}dr
+\end{align*}
+
+\end_inset
+
+Приравняем: 
+\begin_inset Formula $-qd\varphi=qE_{r}dr$
+\end_inset
+
+, получим:
+\begin_inset Formula 
+\[
+E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{\v E=\left(E_{x},E_{y},E_{z}\right)=-\left(\df{\dd\varphi}{\dd x},\df{\dd\varphi}{\dd y},\df{\dd\varphi}{\dd z}\right)=-\grad\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Эквипотенциальноая поверхность
+\end_layout
+
+\begin_layout Standard
+Потенциал электрического поля - 
+\begin_inset Formula $\varphi\left(x,y,z\right)=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В любой точке пространства можно провести эквипотенциальную поверхность.
+\end_layout
+
+\begin_layout Standard
+Вектор напряженность электрического поля перпендикулярен эквипотенциальной
+ поверхности.
+ 
+\end_layout
+
 \begin_layout Section
 Полярные и неполярные поверхности.
  Поляризация диэлектриков.
