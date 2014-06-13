@@ -862,6 +862,183 @@ status open
  заряженного цилиндра, заряженной сферической поверхности.
 \end_layout
 
+\begin_layout Subsection
+Плоскость
+\end_layout
+
+\begin_layout Standard
+Пусть расстояние до исследуемой точки пренебрежимо мало по сравнению с размерами
+ поверхности.
+ В каждой точке пространства вектор напряженности будет направлен перпендикулярн
+о плоскости.
+ Чтобы посчитать величину вектора напряженности, воспользуемся теоремой
+ Гаусса.
+\end_layout
+
+\begin_layout Standard
+Посчитаем поток вектора через эту поверхность:
+\begin_inset Formula 
+\[
+\Phi_{E}=\oudi{S_{\text{ц}}}{}\left(\v E,\v n\right)dS=2\um\Delta S\um E
+\]
+
+\end_inset
+
+С другой стороны:
+\begin_inset Formula 
+\[
+\Phi_{E}=\oudi{S_{\text{ц}}}{}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\um\sigma\um\Delta S
+\]
+
+\end_inset
+
+Откуда, приравняв, получим:
+\begin_inset Formula 
+\[
+E=\df{\sigma}{2\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим две плоскости, заряды на которых равны по модулю, но разные по
+ знаку.
+ Получим, что все поле будет сосредоточено между плоскостями, причем его
+ величина удваивается: 
+\begin_inset Formula $E=\frac{\sigma}{\varepsilon_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Цилиндр
+\end_layout
+
+\begin_layout Standard
+Рассмотрим бесконечную цилиндрическую поверхность, радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Будем считать, что на поверхности распределен заряд с поверхностной плотностью
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ Окружим другой цилиндрической поверхностью, радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Причем: 
+\begin_inset Formula $R<r$
+\end_inset
+
+.
+ Положим высоту второго цилиндра --- 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=\df 1{\epsilon}\um2\pi Rh\um\sigma
+\]
+
+\end_inset
+
+С другой стороны:
+\begin_inset Formula 
+\[
+\Phi_{E}=\iint\limits _{S\text{осн}}\underset{0}{\underbrace{\v E\um\v n}}dS+\iint\limits _{S\text{бок}}\v E\um\v ndS=\iint\limits _{S}EdS=E\iint\limits _{S}dS=2\pi rh\um E
+\]
+
+\end_inset
+
+Тогда:
+\begin_inset Formula 
+\begin{align*}
+\df 1{\epsilon_{0}}\um2\pi Rh\sigma & =E\um2\pi rh\\
+E & =\df{\sigma\um R}{\epsilon_{0}\um r}
+\end{align*}
+
+\end_inset
+
+Если радиусом можно пренебречь, то: 
+\begin_inset Formula 
+\[
+E=\df 1{2\pi\varepsilon_{0}}\um\df{\lambda}r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $E=0$
+\end_inset
+
+ если 
+\begin_inset Formula $R>r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Сфера
+\end_layout
+
+\begin_layout Standard
+Возьмем сферу радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, с поверхностной плотностью 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ Окружим другой сферой, радиуса 
+\begin_inset Formula $r>R$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=\df 1{\epsilon_{0}}\um\sigma\um4\pi R^{2}
+\]
+
+\end_inset
+
+Иначе:
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\v E\um\v n\um dS=E\um4\pi r^{2}
+\]
+
+\end_inset
+
+Откуда: 
+\begin_inset Formula 
+\[
+\begin{cases}
+E=\df{\sigma R^{2}}{\varepsilon_{0}r^{2}}, & R<r\\
+E=0, & R>r
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Работа и энергия электрического поля.
  Потенциал.
