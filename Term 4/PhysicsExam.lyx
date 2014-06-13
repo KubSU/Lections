@@ -675,6 +675,188 @@ status open
  Теорема Гаусса.
 \end_layout
 
+\begin_layout Subsection
+Линии напряженности.
+ Поток вектора напряженности.
+\end_layout
+
+\begin_layout Definition
+Линия напряженности --- линия, которая проводится так, чтобы касательная
+ к ней в любой точке совпадала по направлению с вектором напряженности.
+\end_layout
+
+\begin_layout Standard
+Густота линий выбирается так, чтобы количество линий пронизывающих единицу
+ поверхности, перпендикулярной к линиям площадки, было равно численному
+ значению вектора 
+\begin_inset Formula $\v E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Линии электрического поля начинаются в положительном заряде и заканчиваются
+ на отрицательном (либо уходят на бесконечность).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=E\um dS
+\]
+
+\end_inset
+
+Где K --- количество линий, проходящих через элементарную площадку.
+\end_layout
+
+\begin_layout Standard
+Если взять некую поверхность S, то количество линий, проходящих через эту
+ площадку, равно
+\begin_inset Formula 
+\[
+N=\oudi S{}E\um\cos\alpha\um dS=\oudi S{}\left(\v E,\v n\right)dS=\Phi_{E}=\oudi S{}E_{n}dS
+\]
+
+\end_inset
+
+Эта величина --- поток вектора напряженности.
+\end_layout
+
+\begin_layout Subsection
+Теорема Гаусса
+\end_layout
+
+\begin_layout Standard
+Возьмем точечный заряд и окружим сферой радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в заряде.
+\begin_inset Formula 
+\begin{multline*}
+\Phi_{E}=N=\oiint\limits _{S_{r}}\left(\v E,\v n\right)dS=\\
+\left\{ \text{В силу перпендикулярности сил напряженности поверхности}\right\} \\
+=\oiint\limits _{S_{r}}E\um dS=\oiint\limits _{S_{r}}\df 1{4\pi\varepsilon_{0}}\um\df q{r^{2}}dS=\df 1{4\pi\varepsilon_{0}}\um\df q{r^{2}}\oiint\limits _{S_{r}}dS=\df q{\varepsilon_{0}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь возьмем неправильную поверхность, но результат останется тем же самым,
+ за счет того, что количество пересечений с 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ для одной линии будет на 1 больше чем с 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $-$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Возьмем произвольное количество произвольных зарядов внутри поверхности:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{E}=\oiint\limits _{S}\left(\v E,\v n\right)dS=\oiint\limits _{S}\left(\ous{i=1}N\v{E_{i}},\v n\right)dS=\ous{i=1}N\oiint\limits _{S}\left(\v{E_{i}},\v n\right)dS=\ous{i=1}N\df{q_{i}}{\varepsilon_{0}}=\df 1{\varepsilon_{0}}\ous{i=1}Nq_{i}
+\]
+
+\end_inset
+
+Мы доказали теорему:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Гаусса
+\end_layout
+
+\end_inset
+
+Поток вектора напряженности электрического поля через замкнутую поверхность
+ равен алгебраической сумме заключенных внутри этой поверхности зарядов,
+ деленных на 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\fbox{\Phi_{E}=\oiint\limits _{S}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\ous{i=1}Nq_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Объемная плотность зарядов 
+\begin_inset Formula $\rho=\ul{\Delta V\to0}\df{\Delta q}{\Delta V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда имеет место представление:
+\begin_inset Formula 
+\[
+\oiint\limits _{S}\left(\v E,\v n\right)dS=\df 1{\varepsilon_{0}}\iiint\limits _{D}\rho\um dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Поверхностная плотность заряда: 
+\begin_inset Formula $\sigma=\ul{\Delta S\to0}\df{\Delta q}{\Delta S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Линейная плотность заряда: 
+\begin_inset Formula $\lambda=\ul{\Delta l\to0}\df{\Delta q}{\Delta l}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Напряженность поля бесконечной однородно заряженной плоскости, бесконечного
  заряженного цилиндра, заряженной сферической поверхности.
