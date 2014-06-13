@@ -1754,6 +1754,81 @@ status open
 Проводники в электростатическом поле.
 \end_layout
 
+\begin_layout Subsection
+Равновесие зарядов на проводнике.
+\end_layout
+
+\begin_layout Standard
+Равновесие зарядов на проводнике наблюдается при выполнении условий:
+\end_layout
+
+\begin_layout Enumerate
+Напряженность всюду вокруг проводника должна быть равно 0 E=0 (тоесть потенциал
+ внутри проводника 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Напряженность поля на поверхности проводника должна быть в каждой точке
+ направлена по нормали к поверхности 
+\begin_inset Formula $E=E_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В случае равновесия зарядов поверхность проводника будет эквипотенциальной.
+\end_layout
+
+\begin_layout Standard
+~~~~~~~~~~~~~~~~~~~
+\end_layout
+
+\begin_layout Standard
+написать сюда еще чегонибудь...
+\end_layout
+
+\begin_layout Standard
+~~~~~~~~~~~~~~~~~~~
+\end_layout
+
+\begin_layout Subsection
+Проводник во внешнем электрическом поле.
+\end_layout
+
+\begin_layout Standard
+При внесении незаряженного проводника в электрическое поле носители заряда
+ приходят в движение: положительные в направлении вектора 
+\begin_inset Formula $E$
+\end_inset
+
+, отрицательные в противоположную сторону.
+ В резулльтате у концов проводника возникают заряды провотивоположного знака,
+ называемые индуцированными зарядами (картинка) пунктиром показаны линии
+ напряженности внешнего поля.
+\end_layout
+
+\begin_layout Standard
+_
+\end_layout
+
+\begin_layout Standard
+Картинка
+\end_layout
+
+\begin_layout Standard
+_
+\end_layout
+
+\begin_layout Standard
+Таким образом, накапливание зарядов у концов проводника приводит к ослаблению
+ в нем поля
+\end_layout
+
 \begin_layout Section
 Электроемкость.
  Конденсатор.
