@@ -1630,6 +1630,61 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 
 \end_layout
 
+\begin_layout Standard
+Посчитаем циркуляцию 
+\begin_inset Formula $\v E$
+\end_inset
+
+ по линии 
+\begin_inset Formula $L$
+\end_inset
+
+: 
+\begin_inset Formula $\oint\limits _{L}\v Ed\v l=0$
+\end_inset
+
+.
+ С другой стороны: 
+\begin_inset Formula 
+\begin{multline*}
+\oint\limits _{L_{12}}\v{E_{1}}d\v l+\oint\limits _{23}\v Ed\v l+\oint\limits _{L_{31}}\v{E_{2}}d\v l+\oint\limits _{41}\v Ed\v l=\\
+=\oiu{L_{12}}{}-E_{1\tau}dl+\oui{L_{34}E_{2gt}}{}dl=-aE_{1\tau}+aE_{2\tau}=\left(-E_{1\tau}+E_{2\tau}\right)a=0
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\df{D_{1\varepsilon}}{\varepsilon_{1}\varepsilon_{2}} & =\df{D_{2\tau}}{\varepsilon_{2}\varepsilon_{0}} & \df{D_{1\tau}}{D_{2\tau}} & =\df{\varepsilon_{1}}{\varepsilon_{2}} & D_{2n} & =D_{1n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tg\alpha_{1}=\df{D_{1\tau}}{D_{1n}},\ \tg\alpha_{2}=\df{D_{2\tau}}{D_{2n}},\ \df{\tg\alpha_{1}}{\tg\alpha_{2}}=\df{D_{1\tau}D_{2n}}{D_{1n}D_{2\tau}}=\df{\varepsilon_{1}}{\varepsilon_{2}}
+\]
+
+\end_inset
+
+Рассмотрим закон Кулона в диэлектриках.
+ 
+\begin_inset Formula $\v F=q\um\v E$
+\end_inset
+
+ преобразуется в безграничном диэлектрике в 
+\begin_inset Formula 
+\[
+\fbox{F=\df 1{4\pi\varepsilon_{0}}\df{q_{1}q_{2}}{\varepsilon r^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Преломление линий электрического поля.
 \end_layout
