@@ -27,6 +27,7 @@ theorems-starred
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing single
 \use_hyperref true
@@ -1551,7 +1552,7 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 \begin_inset Formula 
 \[
 \Phi_{D}=\un{\oiint}S\left(\v D,\v n\right)dS=\sum q
@@ -1696,16 +1697,17 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0col%
-width "50col%"
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Pictures/Physics/9_1.gif
+	lyxscale 20
+	height 4cm
 
 \end_inset
 
@@ -1721,10 +1723,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1739,24 +1737,24 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0col%
-width "50col%"
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Pictures/Physics/9_2.gif
+	lyxscale 20
+	height 4cm
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1765,10 +1763,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1803,6 +1797,104 @@ status open
 
 \begin_layout Section
 Сегнетоэлектрики.
+\end_layout
+
+\begin_layout Standard
+Это такие элексрики, которые могут обладать полеризацией, при отсутствуе
+ внешнего элестрическое паля.
+ Это было обнаружено в первый раз для сигнетовой соли.
+ Особенности:
+\end_layout
+
+\begin_layout Enumerate
+Диэлектрическая проницаемость составляет несколько тысяч единиц.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Зависимость между 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $E$
+\end_inset
+
+ нелинейная.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Segneto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Значение вектора поляризации отстает от изменения вектора напряженности.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pictures/Physics/13.jpg
+	lyxscale 20
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Segneto"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поляризация 
+\begin_inset Formula $P$
+\end_inset
+
+ зависит не только от текущего значения 
+\begin_inset Formula $E$
+\end_inset
+
+, но и от предшествующих значений.
+ 
+\end_layout
+
+\begin_layout Standard
+Эта петля называется петлей Гистерезиса.
+ Этими свойствами диэлектрик обладает только в определенном диапазоне температур.
+ Если при деформации диэлектрик поляризуется, то это явление называется
+ прямым пьезо-электрическим эффектом.
+ Если при проведении тока диэлектрик деформируется, то это обратный пьезоэлектри
+ческий эффект.
 \end_layout
 
 \begin_layout Section
