@@ -1492,6 +1492,118 @@ E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
 Преломление линий электрического поля.
 \end_layout
 
+\begin_layout Standard
+На границе двух диэлектриков с различными диэлектрическими проницаемостями
+ 1, и 2 при наличии внешнего поля возникают поляризационные заряды разного
+ знака с различными поверхностными плотностями зарядов +1' и +2'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Pictures/Physics/9_1.gif
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из данных граничных условий можно получить еще одно условие – условие преломлени
+я линий поля при переходе их из одного диэлектрика в другой:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Pictures/Physics/9_2.gif
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где и – углы между вектором напряженности (или плотности тока) и нормалями
+ к границе раздела сред.
+ При этом, если вектор напряженности перпендикулярен к границе раздела,
+ то плотность тока не меняется при переходе из одной среды в другую, а напряженн
+ость поля меняется скачком.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Закон преломления
+\emph default
+ линий тока по форме вполне аналогичен закону преломления линий электрического
+ смещения на границе двух диэлектриков в электростатическом поле.
+ Во многих практических случаях мы встречаемся с переходом тока из металлических
+ тел в окружающую среду, удельная проводимость которой во много раз меньше
+ удельной проводимости материала этих тел.
+ Такие условия имеют место, например, в случае перехода тока через зарытые
+ в землю металлические электроды.
+ Обычно применяют стальные электроды.
+\end_layout
+
 \begin_layout Section
 Сегнетоэлектрики.
 \end_layout
