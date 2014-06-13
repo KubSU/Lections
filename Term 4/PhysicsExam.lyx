@@ -867,6 +867,137 @@ status open
  Потенциал.
 \end_layout
 
+\begin_layout Subsection
+Работа и энергия электростатического поля.
+\end_layout
+
+\begin_layout Standard
+В поле 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ будем перемещать заряд 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+A=\ui L\v F\um d\v r=\oiu{r_{1}}{r_{2}}Fdr=\oiu{r_{1}}{r_{2}}E_{0}q\um dr
+\]
+
+\end_inset
+
+Взяв замкнутую траекторию, и учитывая, что сила Кулона --- сила консервативная:
+\begin_inset Formula 
+\[
+\fbox{\oint\limits _{L}\v Ed\v l=0}
+\]
+
+\end_inset
+
+То есть циркуляция равна нулю.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\delta A=-dW$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+A_{12}=\oiu{r_{1}}{r_{2}}E_{0}qdr=\oiu{r_{1}}{r_{2}}\df 1{4\pi\varepsilon_{0}}\um\df{q_{0}}{r^{2}}\um q\um dr=\df{q_{0}q}{4\pi\varepsilon_{0}}\oiu{r_{1}}{r_{2}}\df{dr}{r^{2}}=\\
+=\df{q_{0}q}{4\pi\varepsilon_{0}}\left(\df 1{r_{1}}-\df 1{r_{2}}\right)=\df{q_{0}q}{4\pi\varepsilon_{0}r_{1}}-\df{q_{0}q}{4\pi\varepsilon_{0}r_{2}}=W_{1}-W_{2}=-\Delta W
+\end{multline*}
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $W=\df 1{4\pi\varepsilon_{0}}\df{q_{0}q}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Потенциал.
+\end_layout
+
+\begin_layout Definition
+Потенциал поля: 
+\begin_inset Formula $\varphi=\df Wq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля точечного заряда: 
+\begin_inset Formula $\varphi=\df 1{4\pi\varepsilon_{0}}\df{q_{0}}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Потенциал поля системы точечных зарядов: 
+\begin_inset Formula $\varphi=\df 1{4\pi\varepsilon_{0}}\ous{i=1}n\df{q_{i}}{r_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда через потенциалы:
+\begin_inset Formula $A=W_{1}-W_{2}=q\left(\varphi_{1}-\varphi_{2}\right)$
+\end_inset
+
+.
+ А тогда работа по перемещению заряда из бесконечности в некоторую точку:
+ 
+\begin_inset Formula $A_{\b}=\varphi\um q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Потенциал численно равен работе по перемещению единичного заряда из бесконечност
+и в некоторую точку.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\varphi\right]=\df{\text{Дж}}{\text{Кл}}=\text{В}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для измерения работы используют еще эВ (электрон Вольт)
+\end_layout
+
+\begin_layout Definition
+Электрон Вольт --- работа, совершаемая силами поля над зарядом равным заряду
+ электрона при прохождении им разности потенциалов, равным 1В.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $1эВ=1.6\um10^{-19}Дж$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Связь потенциала и напряженности электрического поля.
  Эквипотенциальные поверхности.
