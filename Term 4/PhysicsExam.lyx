@@ -3036,6 +3036,197 @@ B=\df{M_{\max}}{P_{m}}
 Преломление линий магнитного поля.
 \end_layout
 
+\begin_layout Standard
+Выясним что происходит на границе двух однородных магнетиков с разными 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ Рассмотрим воображаемый цилиндр 
+\begin_inset Formula $h$
+\end_inset
+
+ основания которого 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+расположены по разные стороны раздела.
+ ~Рисунок~ (учебник стр152)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ - поток через циллиндр.
+\end_layout
+
+\begin_layout Standard
+Применим теорему Гаусса
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi=B_{1n}S_{1}+B_{2n}S_{2}=(B_{1n}+B_{2n})S=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Откуда следует 
+\begin_inset Formula $B_{1n}=-B_{2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Используя отношение 
+\begin_inset Formula $H=\frac{B}{\mu_{0}\mu}$
+\end_inset
+
+ заменим 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{1n}\mu_{0}\mu_{1}=H_{2n}\mu_{0}\mu_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{H_{1n}}{H_{2n}}=\frac{\mu_{2}}{\mu_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь озьмем на границе магнетиков прямоугольный контур и вычислим для
+ него циркуляцию 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+~Картинка рис80 стр 152~ 
+\end_layout
+
+\begin_layout Standard
+Ширину контура 
+\begin_inset Formula $a$
+\end_inset
+
+ возьмем столь малой что циркуляция
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b(H_{1\tau}-H_{2\tau})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{1\tau}=H_{2\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{B_{1\tau}}{\mu_{0}\mu_{1}}=\frac{B_{2\tau}}{\mu_{0}\mu_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{B_{1\tau}}{B_{2\tau}}=\frac{\mu_{2}}{\mu_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получаем что вектора 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ ведут себя так же как и вектора 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $E$
+\end_inset
+
+ (Не вижу какие вектора на картинке) при преломлении линий электрического
+ поля 
+\begin_inset Quotes fld
+\end_inset
+
+Билета 9
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+~Картинка рис81 стр 152~ 
+\end_layout
+
+\begin_layout Standard
+Обозначим углы между линиями 
+\begin_inset Formula $B$
+\end_inset
+
+ и нормулью соответственно 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{tg\alpha_{1}}{tg\alpha_{2}}=\frac{B_{1\tau}/B_{1\text{n}}}{B_{2\tau}/B_{2n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим закон преломления линий магнитной индукции:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{tg\alpha_{1}}{tg\alpha_{2}}=\frac{\mu_{1}}{\mu_{2}}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Закон Ампера.
  Сила Лоренца.
