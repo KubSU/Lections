@@ -2484,6 +2484,11 @@ status open
 КПД источника тока.
 \end_layout
 
+\begin_layout Standard
+Повтор 17 вопроса.
+ >_<
+\end_layout
+
 \begin_layout Section
 Взаимодействие токов.
  Магнитное поле.
@@ -2497,6 +2502,80 @@ status open
 \begin_layout Section
 Циркуляция вектора магнитной индукции.
  Поле соленоида.
+\end_layout
+
+\begin_layout Standard
+Возьмем контур, охватывающий прямой ток, и выислим для него циркуляцию вектора
+ В:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint\limits _{L}\v B\um d\v l=\oint\limits _{L}B_{l}dl
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для простоты расчитаем все для окружности.
+ 
+\begin_inset Formula $dl=R\um d\alpha$
+\end_inset
+
+, а тогда
+\begin_inset Formula 
+\[
+\v B\um d\v l=BRd\alpha=\df{\mu_{0}}{2\pi}\df iRR\um d\alpha=\df{\mu_{0}}{2\pi}id\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint\limits _{C}\v B\um d\v l=\oint\limits _{C}\df{\mu_{0}}{2\pi}id\alpha=\mu_{0}i
+\]
+
+\end_inset
+
+Так как в формуле нет 
+\begin_inset Formula $R$
+\end_inset
+
+ то можем ее использовать для любого контура (не только окружности).
+\begin_inset Formula 
+\[
+\oiu L{}\v B\um d\v l=\mu_{0}i
+\]
+
+\end_inset
+
+В итоге:
+\begin_inset Formula 
+\[
+\fbox{\oiu L{}\v B\um d\v l=\mu_{0}\sum i}
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $\sum i$
+\end_inset
+
+ --- алгебраическая сумма токов охватываемых контуром 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Векторные поля у которых циркуляция не равна нулю называются вихревыми полями.
+ Для них нет понятия потенциала.
 \end_layout
 
 \begin_layout Section
