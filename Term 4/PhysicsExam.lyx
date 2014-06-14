@@ -2191,7 +2191,65 @@ U_{12}=\mathcal{E}_{12}+\left(\varphi_{1}-\varphi_{2}\right)
 \end_layout
 
 \begin_layout Section
-Правило Кирхгофа.
+Правила Кирхгофа.
+\end_layout
+
+\begin_layout Definition
+Узел --- точка, в которой сходятся более чем 2 проводника.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Первое правило Кирхгофа
+\end_layout
+
+\end_inset
+
+Алгебраическая сумма токов, сходящихся в узле, равна нулю.
+\begin_inset Formula 
+\[
+\sum I_{k}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Второе правило Кирхгофа
+\end_layout
+
+\end_inset
+
+Если в цепи 
+\begin_inset Formula $n$
+\end_inset
+
+ циклов, то правило Кирхгофа записывается для 
+\begin_inset Formula $n-1$
+\end_inset
+
+ цикла:
+\begin_inset Formula 
+\[
+\ous{k=1}ni_{k}R_{k}=\ous{k=1}n\varepsilon_{k}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
