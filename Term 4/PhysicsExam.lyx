@@ -3401,6 +3401,112 @@ L=v\um n\um r
 Энергия магнитного поля.
 \end_layout
 
+\begin_layout Subsection
+Энергия магнитного поля
+\end_layout
+
+\begin_layout Standard
+Закон Джоуля-Ленца:
+\begin_inset Formula 
+\begin{eqnarray*}
+dA & = & \varepsilon_{c}\um I\um dt=\\
+ & = & -\df{d\Psi}{dt}i\um dt=\\
+ & = & -d\Psi\um i=\\
+ & = & \left\{ \begin{array}{c}
+\Psi=L\um i\\
+d\psi=Ldi
+\end{array}\right\} =\\
+ & = & -Lidi
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\oui{I_{0}}0-Lidi=\df{I_{0}^{2}}2L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\df{i^{2}}2L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\mu\mu_{0}n^{2}V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=in
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\mu\mu_{0}H
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\mu\mu_{0}\df{i^{2}n^{2}}2V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+w & = & \mu\mu_{0}\df{i^{2}n^{2}}2=\\
+ & = & \mu\mu_{0}\df{H^{2}}2=\\
+ & = & \df{B\um H}2=\\
+ & = & \frac{B^{2}}{2\mu\mu_{0}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если магнитное поле неоднородно, плотность энергии больше там, где больше
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ Чтобы найти энергию магнитного поля, заключенную в некотором объеме 
+\begin_inset Formula $V$
+\end_inset
+
+, нужно вычеслить интеграл
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\oui V{}(w)dV=\oui V{}\mu\mu_{0}\df{H^{2}}2dV$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Переменный электрический ток.
  Ток, текущий через индуктивность.
