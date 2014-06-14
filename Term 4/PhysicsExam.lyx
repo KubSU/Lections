@@ -1985,6 +1985,86 @@ _
 Соединение конденсаторов.
 \end_layout
 
+\begin_layout Subsection
+Параллельное соединение конденсаторов
+\end_layout
+
+\begin_layout Standard
+При параллельном соединении на каждой паре обкладок разность потенциалов
+ равна 
+\begin_inset Formula $\varphi_{1}-\varphi_{2}$
+\end_inset
+
+.
+ Тогда суммарный заряд:
+\begin_inset Formula 
+\[
+q=\ous{}{}q_{k}=\ous{}{}C_{k}\left(\varphi_{1}-\varphi_{2}\right)=\left(\varphi_{1}-\varphi_{2}\right)\ous{}{}C_{k}
+\]
+
+\end_inset
+
+Получим емкость, разделив суммарный заряд на напряжение:
+\begin_inset Formula 
+\[
+C=\sum C_{k}
+\]
+
+\end_inset
+
+Следовательно при параллельном соединении емкости конденсаторов складываются.
+ Предельное напряжение равно:
+\begin_inset Formula 
+\[
+U_{max}=\min\limits _{i=\overline{1,n}}U_{max}^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Последовательное соединение конденсаторов
+\end_layout
+
+\begin_layout Standard
+На участке между самой первой обкладкой и самой последней возникают индуцированн
+ые заряды такой же величины как на первой обкладке первого конденсатора
+ и второй обкладке последнего (так как они образуют единый проводник).
+ Значит на всех конденсаторах одинаковая величина 
+\begin_inset Formula $q$
+\end_inset
+
+ на обкладках.
+ Значит напряжение на каждом конденсаторе: 
+\begin_inset Formula $U_{i}=\nicefrac{q}{C_{i}}$
+\end_inset
+
+.
+ Тогда разность потенциалов равна:
+\begin_inset Formula 
+\[
+\varphi_{1}-\varphi_{2}=\ous{i=1}nU_{i}=\ous{i=1}n\df q{C_{i}}=q\ous{i=1}n\df 1{C_{i}}
+\]
+
+\end_inset
+
+Разделим на 
+\begin_inset Formula $q$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\df 1C=\ous{i=1}n\df 1{C_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Энергия электрического поля.
 \end_layout
