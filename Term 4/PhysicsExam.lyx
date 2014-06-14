@@ -2173,6 +2173,144 @@ Eсли поле однородно, заключенная в нем энерг
  Плотность тока.
 \end_layout
 
+\begin_layout Definition
+Электрический ток --- направленое движение заряженных частиц.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I,\ i$
+\end_inset
+
+ --- сида тока.
+\end_layout
+
+\begin_layout Standard
+Если ток постоянный то 
+\begin_inset Formula $I$
+\end_inset
+
+, если переменный --- 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Сила тока --- количество заряда, порошедшее через поперечное сечение проводника
+ в еденицу времени.
+\begin_inset Formula 
+\[
+i=\df{dq}{dt}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\df{\D q}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\df{dq^{+}}{dt}+\df{dq^{-}}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+За направление тока принимается направление движения 
+\emph on
+положительных 
+\emph default
+зарядов.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Плотность тока --- сила тока, приходящаяся на еденицу площади.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+j=\df{di}{ds_{\bot}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Это величина векторная.
+ За направление плотности тока принимается направление скорости упорядоченного
+ движения положительный носителей заряда.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\un{\iint}s\overline{j}\overline{n}ds
+\]
+
+\end_inset
+
+В еденице обьема проводника находится
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ положительных зарядов и 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ отрицательных зарядов.
+\end_layout
+
+\begin_layout Standard
+Пусть у нас 
+\begin_inset Formula $v^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $v^{-}$
+\end_inset
+
+скорости 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ и 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+j=k^{+}\um e^{+}\um v^{+}+k^{-}e^{-}v^{-}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Электродвижущая сила.
  Работа источника тока.
@@ -2418,6 +2556,182 @@ P_{\text{н}} & =I^{2}\um R=\df{\varepsilon^{2}R}{\left(R+r\right)^{2}}
 Закон Ома для однородного и неоднородного участка цепи.
 \end_layout
 
+\begin_layout Definition
+Участок цепи на котором отсутствует ЭДС называется однородным.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\df UR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I --- Сила тока.
+\end_layout
+
+\begin_layout Standard
+U --- Напряжение на участке.
+\end_layout
+
+\begin_layout Standard
+R --- сопротивление участка.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\rho\um\df lS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- Длина проводника.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ --- Поперечное сечение проводника.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- Удельное сопротивление.
+\end_layout
+
+\begin_layout Claim
+Для последовательного соединения сопротивлений:
+\begin_inset Formula 
+\[
+R=\ous{i=1}nR_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Claim
+Для параллельного соединения сопротивлений:
+\begin_inset Formula 
+\[
+\df 1R=\ous{i=1}n\df 1{R_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим закон Ома в дифференциальной форме:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+i & =\df{du\um ds}{\rho\um dl}\\
+jds & =\df{E\um dl\um ds}{\rho\um dl} & \then &  & j & =\df E{\rho}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+j --- плотность тока.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{\rho}=\sigma$
+\end_inset
+
+ --- коэффициент электропроводимости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\rho & =\rho_{0}\left(1+\alpha t\right)\\
+\alpha & =\df 1{273.15}\\
+\rho & =\rho_{0}\df T{T_{0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Закон Ома для неоднородного участка цепи
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{12}=\varphi_{1}-\varphi_{2}+\varepsilon_{12}
+\]
+
+\end_inset
+
+Тогда
+\begin_inset Formula 
+\begin{align*}
+\delta A & =U_{12}dq=\left(\varphi_{1}-\varphi_{2}\right)dq+\varepsilon_{12}dq\\
+\delta Q & =R\um i^{2}dt=R\um i\um dq
+\end{align*}
+
+\end_inset
+
+Но так как 
+\begin_inset Formula $\delta A=\delta Q$
+\end_inset
+
+, то
+\begin_inset Formula 
+\begin{align*}
+R\um i & =\left(\varphi_{1}-\varphi_{2}\right)+\varepsilon_{12}\\
+i & =\df{\left(\varphi_{1}-\varphi_{2}\right)+\varepsilon_{12}}R
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Закон Ома для замкнутой цепи:
+\begin_inset Formula 
+\[
+i=\df{\varepsilon}R
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Правила Кирхгофа.
 \end_layout
@@ -2492,6 +2806,135 @@ status open
 \begin_layout Section
 Взаимодействие токов.
  Магнитное поле.
+\end_layout
+
+\begin_layout Subsection
+Взаимодействие токов
+\end_layout
+
+\begin_layout Standard
+Берем 2 прямолинейных проводника по которым течет ток.
+ Если токи текут в одном направлении, то проводники будут притягиваться
+ друг к другу, иначе отталкиваться.
+ Ампер получил закон, по которому для единицы длины проводника:
+\begin_inset Formula 
+\[
+f=k\um\df{2\um i_{1}\um i_{2}}b
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $k$
+\end_inset
+
+ --- некий коэффициент, 
+\begin_inset Formula $b$
+\end_inset
+
+ --- расстояние между проводниками.
+\end_layout
+
+\begin_layout Standard
+1Кл = 1А/сек.
+\end_layout
+
+\begin_layout Standard
+Магнитная постоянная 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\fbox{f=\df{\mu_{0}}{4\pi}\um\df{2\um i_{1}\um i_{2}}b}
+\]
+
+\end_inset
+
+Отсюда посчитаем 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+.
+ Возьмем 
+\begin_inset Formula $i_{1}=i_{2}=1A$
+\end_inset
+
+, 
+\begin_inset Formula $b=1m$
+\end_inset
+
+, 
+\begin_inset Formula $f=2\um10^{-7}$
+\end_inset
+
+Н.
+ Тогда
+\begin_inset Formula 
+\begin{align*}
+\mu_{0} & =1.26\um10^{-6}\\
+\left[\mu_{0}\right] & =\df{\text{Н}}{\text{А}^{2}}=\df{\text{Гн}}{\text{м}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Магнитное поле.
+\end_layout
+
+\begin_layout Standard
+Возьмем плоский пробный контур.
+ Будем его характеризовать силой тока и направлением нормали к нему.
+ Когда мы вносим его в поле, то возникает момент сил:
+\begin_inset Formula 
+\[
+p_{m}=I\um S
+\]
+
+\end_inset
+
+где S --- площадь контура.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\v{P_{m}}=P_{m}\um\v n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Магнитная индукция поля
+\begin_inset Formula 
+\[
+B=\df{M_{\max}}{P_{m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v B$
+\end_inset
+
+ --- вектор магнитной индукции, направление которого определяется равновесным
+ направлением нормали пробного контура.
+\end_layout
+
+\begin_layout Standard
+В каждой точке касательной к линии направление вектора совпадает с вектором
+ магнитной индукции.
+ Густота этих линий характеризует величину магнитной индукции.
 \end_layout
 
 \begin_layout Section
