@@ -2079,6 +2079,108 @@ U_{max}=\min\limits _{i=\overline{1,n}}U_{max}^{i}
  Работа источника тока.
 \end_layout
 
+\begin_layout Standard
+Чтобы поддерживать ток в проводнике длительное время необходимо от конца
+ проводника с меньшим потенциалом переносить заряды на конец проводника
+ с большим потенциалом.
+ Так как циркуляция вектора электростатического поля равна нулю, то это
+ возможно только с помощью сил неэлектростатического происхождения.
+ Эти силы можно охарактеризовать работой по перемещению зарядов в цепи.
+\end_layout
+
+\begin_layout Definition
+ЭДС --- величина равная работе сторонних сил отнесенная к единице положительного
+ заряда.
+\begin_inset Formula 
+\[
+\mathcal{E}=\df Aq
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Стороннюю силу можно представить в виде 
+\begin_inset Formula $F_{\text{ст}}=E_{\text{ст}}\um q$
+\end_inset
+
+, где 
+\begin_inset Formula $E_{\text{ст}}$
+\end_inset
+
+ --- напряженность поля сторонних сил.
+ Тогда работа по перемещению заряда по всей цепи:
+\begin_inset Formula 
+\[
+A=\ointop_{L}E_{\text{ст}}qdl=q\ointop_{L}E_{\text{ст}}dl
+\]
+
+\end_inset
+
+Разделим на 
+\begin_inset Formula $q$
+\end_inset
+
+, получим ЭДС:
+\begin_inset Formula 
+\[
+\mathcal{E}=\ointop_{L}E_{\text{ст}}dl
+\]
+
+\end_inset
+
+То есть это циркуляция вектора напряженности сторонних сил.
+ ЭДС на участке 1-2 равна:
+\begin_inset Formula 
+\[
+\mathcal{E}_{12}=\oiu 12E_{\text{ст}}dl
+\]
+
+\end_inset
+
+Кроме того на заряд действуют силы электростатического поля, тогда:
+\begin_inset Formula 
+\[
+f=F_{\text{ст}}+F_{E}=q\left(E_{\text{ст}}+E\right)
+\]
+
+\end_inset
+
+А значит работа на участке 1-2 равна:
+\begin_inset Formula 
+\[
+A_{12}=q\oiu 12\left(E_{\text{ст}}+E\right)=q\mathcal{E}_{12}+q\left(\varphi_{1}-\varphi_{2}\right)
+\]
+
+\end_inset
+
+Заметим что для замкнутой цепи работа электростатических сил равна 0, значит
+ 
+\begin_inset Formula $A=q\mathcal{E}_{12}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Величина, численно равная работе по перемещению единичного заряда 
+\begin_inset Formula $q$
+\end_inset
+
+ электрическими и сторонними силами, называется падением напряжения или
+ просто напряжением на данном участке.
+\begin_inset Formula 
+\[
+U_{12}=\mathcal{E}_{12}+\left(\varphi_{1}-\varphi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Закон Джоуля--Ленца.
  Мощность тока.
