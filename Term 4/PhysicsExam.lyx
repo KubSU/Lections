@@ -2069,6 +2069,105 @@ U_{max}=\min\limits _{i=\overline{1,n}}U_{max}^{i}
 Энергия электрического поля.
 \end_layout
 
+\begin_layout Standard
+Энергию конденсатора можно выразить через величины, характерезующие электрическо
+е поле в зазоре между обкладками.
+ Сделаем это для плоского конденсора.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\frac{CU^{2}}{2}=\frac{\varepsilon_{0}\varepsilon SU^{2}}{2d}=\frac{\varepsilon_{0}\varepsilon}{2}(\frac{U}{d})^{2}Sd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Согласно 
+\begin_inset Formula $\frac{U}{d}=E$
+\end_inset
+
+ произведение 
+\begin_inset Formula $Sd$
+\end_inset
+
+ представляет собой объем 
+\begin_inset Formula $V$
+\end_inset
+
+, занимаемы полем.
+ Таким образом, можно записать
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\frac{\varepsilon_{0}\varepsilon E^{2}}{2}V$
+\end_inset
+
+- данная формула связывает энергию конденсатора с напряженностью поля.
+\end_layout
+
+\begin_layout Standard
+Eсли поле однородно, заключенная в нем энергия распределяется в пространстве
+ с постоянной плотностью 
+\begin_inset Formula $w$
+\end_inset
+
+, равной энергии поля, деленной на заполняемый полем объем.Следовательно
+ плотность энергии плоского конденсатора:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w=\frac{\varepsilon_{0}\varepsilon E^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Она справедлива и для неоднородного поля.Её можно записать в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w=\frac{ED}{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $w=\frac{D^{2}}{2\varepsilon_{0}\varepsilon}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим изотопный диэлектрик.
+ Так как направления векторов 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+ будут совподать получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w=\frac{ED}{2}=\frac{E(\varepsilon_{0}E+P)}{2}=\frac{\varepsilon_{0}E^{2}}{2}+\frac{EP}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Первое слагаемое в этом выражении совподает с плотностью энергии поля 
+\begin_inset Formula $E$
+\end_inset
+
+ в вакуумее.
+ Второе слагаемое представляет собой энергию, затрачиваемую на поляризацию
+ диэлектрика.
+\end_layout
+
 \begin_layout Section
 Электрический ток.
  Плотность тока.
@@ -2184,6 +2283,135 @@ U_{12}=\mathcal{E}_{12}+\left(\varphi_{1}-\varphi_{2}\right)
 \begin_layout Section
 Закон Джоуля--Ленца.
  Мощность тока.
+\end_layout
+
+\begin_layout Subsection
+Закон Джоуля--Ленца.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Q & =R\um I^{2}\um t=\df{U^{2}}R\um t=U\um I\um t\\
+Q & =R\oiu 0ti^{2}\left(\tau\right)d\tau
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta A=U\um dq=Uidt=R\um i\um idt=Ri^{2}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\delta Q=Ri^{2}dt=\rho\df{dl}{ds}\um\left(j\um ds\right)^{2}dt=\\
+=\rho j^{2}\um dl\um ds\um dt=\rho j^{2}dv\um dt
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Удельная мощность тока --- 
+\begin_inset Formula $w=\rho j^{2}=\v j\um\v E$
+\end_inset
+
+.
+ Это и есть закон Джоуля--Ленца в дифференциальной форме.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+Q=\oiu 0t\iiint\limits _{D}\rho j^{2}\left(\tau\right)\um dv\um d\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Коэфициент полезного действия источника тока и мощность тока.
+\end_layout
+
+\begin_layout Standard
+Для замктутой цепи:
+\begin_inset Formula 
+\begin{align*}
+I & =\df{\varepsilon}{R+r}\\
+U & =I\um R=\df{\varepsilon}{R+r}\um R
+\end{align*}
+
+\end_inset
+
+Когда берем 
+\begin_inset Formula $R=\b$
+\end_inset
+
+ то есть цепь не замкнута.
+ Тогда 
+\begin_inset Formula $U=\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Для источника тока: 
+\begin_inset Formula 
+\begin{align*}
+\delta A & =\varepsilon\um dq\\
+P & =\df{\delta A}{dt}=\varepsilon\df{dq}{dt}=\varepsilon\um I=\df{\varepsilon^{2}}{R+r}
+\end{align*}
+
+\end_inset
+
+Значит чем меньше внешняя нагрузка тем больше мощность.
+\end_layout
+
+\begin_layout Standard
+Мощность на сопротивлении:
+\begin_inset Formula 
+\begin{align*}
+Q & =U\um I\um t=I^{2}\um R\um t\\
+\delta Q & =I^{2}\um R\um dt\\
+P_{\text{н}} & =I^{2}\um R=\df{\varepsilon^{2}R}{\left(R+r\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда КПД:
+\begin_inset Formula 
+\[
+\eta=\df{P_{\text{н}}}P=\df R{R+r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чем больше внешняя нагрузка тем выше КПД.
 \end_layout
 
 \begin_layout Section
