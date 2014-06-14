@@ -3241,6 +3241,150 @@ B=\df{M_{\max}}{P_{m}}
  Ферромагнетизм.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\chi$
+\end_inset
+
+ --- магнитная восприимчивость.
+ 
+\end_layout
+
+\begin_layout Standard
+В зависимости от величитны магтитной восприимчивости все магнетики разделяются
+ на три группы:
+\end_layout
+
+\begin_layout Enumerate
+Диамагнетики.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi<0,\ \chi\sim10^{-8}\div10^{-7}$
+\end_inset
+
+, 
+\begin_inset Formula $\v J\rightleftarrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Парамагнетики
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi>0,\ \chi\sim10^{-7}\div10^{-6}$
+\end_inset
+
+, 
+\begin_inset Formula $\v J\upuparrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ферромагнетики
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\chi>0;\ \chi\sim10^{3}$
+\end_inset
+
+ , 
+\begin_inset Formula $\v J\upuparrows\v H$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Если для дио- и пара- .....
+ то у ферро-магнетиков 
+\begin_inset Formula $\chi$
+\end_inset
+
+ является функцией напряженности магнитного поля.
+ 
+\begin_inset Formula 
+\[
+P_{m}=i\um S=e\um\nu\um S=e\um\nu\pi r^{2}=\df{erv}2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{e}=\nu2\pi r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{m}=\df{erv}2
+\]
+
+\end_inset
+
+Момент импульса электрона:
+\begin_inset Formula 
+\[
+L=v\um n\um r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{P_{m}}L=-\df 12\df em
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Электрон обладает своими 
+\begin_inset Formula $P_{ms}$
+\end_inset
+
+ и 
+\begin_inset Formula $L_{s}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\df{P_{ms}}{L_{s}}=-\df em
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ферромагнентизм
+\end_layout
+
+\begin_layout Standard
+Ферромагнентики обладают намагничеванием в отсутствие магнитного поля.
+ Название получило от железа.
+ Полупроводники, обрадающие такими свойствами называются ферритами.
+\end_layout
+
 \begin_layout Section
 Явление электромагнитной индукции.
  Правило Ленца.
