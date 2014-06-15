@@ -742,7 +742,7 @@ K=E\um dS
  площадку, равно
 \begin_inset Formula 
 \[
-N=\oudi S{}E\um\cos\alpha\um dS=\oudi S{}\left(\v E,\v n\right)dS=\Phi_{E}=\oudi S{}E_{n}dS
+N=\iintop_{S}E\um\cos\alpha\um dS=\oudi S{}\left(\v E,\v n\right)dS=\Phi_{E}=\oudi S{}E_{n}dS
 \]
 
 \end_inset
@@ -1287,13 +1287,6 @@ E_{r}=-\df{d\varphi}{dr}=-\df{\dd\varphi}{\dd r}
 \begin_layout Definition
 Диэлектрик --- такой материал, в котором почти отсутствуют свободные заряженные
  частицы.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\v{r_{c}}=\df{\sum m_{i}r_{i}}{\sum m_{i}}$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
