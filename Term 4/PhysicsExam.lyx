@@ -1772,8 +1772,16 @@ status open
 \end_layout
 
 \begin_layout Standard
-где и – углы между вектором напряженности (или плотности тока) и нормалями
- к границе раздела сред.
+где 
+\begin_inset Formula $\Theta_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Theta_{2}$
+\end_inset
+
+ – углы между вектором напряженности (или плотности тока) и нормалями к
+ границе раздела сред.
  При этом, если вектор напряженности перпендикулярен к границе раздела,
  то плотность тока не меняется при переходе из одной среды в другую, а напряженн
 ость поля меняется скачком.
@@ -1801,7 +1809,7 @@ status open
 
 \begin_layout Standard
 Это такие элексрики, которые могут обладать полеризацией, при отсутствуе
- внешнего элестрическое паля.
+ внешнего элестрическое поля.
  Это было обнаружено в первый раз для сигнетовой соли.
  Особенности:
 \end_layout
@@ -3514,11 +3522,174 @@ w & = & \mu\mu_{0}\df{i^{2}n^{2}}2=\\
 \end_layout
 
 \begin_layout Section
-Цепь переменного тока, содержащая емкость, индуктивность и сопротивление.
+Движение заряженной частицы в магнитном поле.
+\end_layout
+
+\begin_layout Standard
+Представим себе заряд 
+\begin_inset Formula $e'$
+\end_inset
+
+, влетающий в однородное поле со скоростью 
+\begin_inset Formula $v$
+\end_inset
+
+, перпендикулярной к 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заряд получит нормальное ускорение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w_{n}=\frac{f}{m}=\frac{e'}{m}vB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заряд начнет двигаться по окружности с радиусом:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\frac{m}{e'}\frac{v}{B}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{e'}{B}$
+\end_inset
+
+ - называется удельным зарядом.
+\end_layout
+
+\begin_layout Standard
+Найдем время 
+\begin_inset Formula $T$
+\end_inset
+
+ затрачиваемое зарядом на 1 оборот:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=2\pi\frac{m}{e'}\frac{1}{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Период не зависит от скорости значит если 2 частицы одновременно выходят
+ из одной точки то совершив полный оборот они снова встретятся в той же
+ точке.
+\end_layout
+
+\begin_layout Standard
+~рисунок окружности стр220~
+\end_layout
+
+\begin_layout Standard
+В случае когда скорость заряда образует с направлением поля угол 
+\begin_inset Formula $\alpha\nr\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{\bot}$
+\end_inset
+
+и 
+\begin_inset Formula $v_{\Vert}$
+\end_inset
+
+составляющие вектора 
+\begin_inset Formula $v$
+\end_inset
+
+, перпендикулярную и паралельную вектору 
+\begin_inset Formula $B$
+\end_inset
+
+ соответственно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{\bot}=v\, sin\alpha$
+\end_inset
+
+ 
+\begin_inset Formula $v_{\Vert}=v\, cos\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сила Лоренца равна:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=e'vB\, sin\alpha=e'v_{\bot}B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+И лежит в плоскости перпендикулярной к 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заряд будет двигаться по спирали расстояние между витками спирали равно:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l=v_{\Vert}T=2\pi\frac{m}{e'}\frac{1}{B}v\, cos\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Направление в котором закручивается спираль зависит от знака частицы.
+ 
+\begin_inset Formula $+$
+\end_inset
+
+ против часовой стрелки, 
+\begin_inset Formula $-$
+\end_inset
+
+ по.Если 
+\begin_inset Formula $\alpha<\frac{\pi}{2}$
+\end_inset
+
+ заряд движется от нас, 
+\begin_inset Formula $\alpha\text{>}\frac{\pi}{2}$
+\end_inset
+
+ на нас(предполагается что мы смотрим на спираль вдоль направления 
+\begin_inset Formula $B$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Section
-Движение заряженной частицы в магнитном поле.
+Цепь переменного тока, содержащая емкость, индуктивность и сопротивление.
 \end_layout
 
 \begin_layout Section
