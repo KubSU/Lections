@@ -3546,7 +3546,7 @@ w & = & \mu\mu_{0}\df{i^{2}n^{2}}2=\\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $w_{n}=\frac{f}{m}=\frac{e'}{m}vB$
+\begin_inset Formula $w_{n}=\frac{F}{m}=\frac{e'}{m}vB$
 \end_inset
 
 
@@ -3690,6 +3690,344 @@ w & = & \mu\mu_{0}\df{i^{2}n^{2}}2=\\
 
 \begin_layout Section
 Цепь переменного тока, содержащая емкость, индуктивность и сопротивление.
+\end_layout
+
+\begin_layout Subsection
+Переменный ток
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l$
+\end_inset
+
+ --- Длинна цепи.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=\df lc<<T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Такой ток нызвается квазистационарным.
+ Для него хоть он и переменный действиют законы Киргофа и законы Ома.
+\end_layout
+
+\begin_layout Standard
+Сопротивление, которое обладает не емкостью, не индуктивностью называтеся
+ активным сопротивленимем.
+ Таких не бывает, но иногда им можно пренебречь.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u=u_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df UR=\df{u_{m}}R\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=\df{u_{m}}R
+\]
+
+\end_inset
+
+Тем самым характер изменения напряджения и тока один и тот же.
+\begin_inset Formula 
+\[
+u=I_{m}R\cos wt
+\]
+
+\end_inset
+
+Напряждение и сила тока меняются симфазно (тоесть в обной фазе).
+\end_layout
+
+\begin_layout Subsection
+Переменный ток, текущий через индуктивность.
+\end_layout
+
+\begin_layout Standard
+Будем считать что 
+\begin_inset Formula $R=0$
+\end_inset
+
+ и емкость тоже равна нулю.
+\begin_inset Formula 
+\[
+\varepsilon_{c}=-L\df{di}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u+\varepsilon_{c}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}\cos wt=L\df{di}{dt}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{di}{dt}=\df{u_{m}}L\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df{u_{m}}{Lw}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=\df{u_{m}}{Lw}\cos\left(wt-\df{\pi}2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=\df{u_{m}}{lw}
+\]
+
+\end_inset
+
+Вод если сопоставить это уравнения с законом Ома, то можно сказать что 
+\begin_inset Formula $Lw=R_{L}$
+\end_inset
+
+ можно рассматривать как некоторое сопротивлением, и называется (реактивным)
+ индуктивным соопротивлением.
+\begin_inset Formula 
+\[
+i=I_{m}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u=LwI_{m}\sin\left(wt+\df{\pi}2\right)
+\]
+
+\end_inset
+
+В этиом слкчае напряжение опережает по фазе ток на 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+, тоесть на 
+\begin_inset Formula $\df 14$
+\end_inset
+
+ периуда.
+\end_layout
+
+\begin_layout Subsection
+Переменный ток, текущий серез емкость.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U=\df qC=u_{m}\cos wt
+\]
+
+\end_inset
+
+Вспомним что такое 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ Это заряд.
+\begin_inset Formula 
+\[
+i=\df{dq}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=Cu_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dq}{dt}=i=-cwu_{m}\sin wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=cwu_{m}\cos\left(wt+\df{\pi}2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{m}=cwu_{m}
+\]
+
+\end_inset
+
+Емкостное сопротивление:
+\begin_inset Formula 
+\[
+R_{c}=\df 1{wc}
+\]
+
+\end_inset
+
+Для конденсатора напряжение отстоет на 
+\begin_inset Formula $\df{\pi}2$
+\end_inset
+
+ от тока.
+\begin_inset Formula 
+\[
+u_{m}^{2}\left(u_{L}-u_{c}\right)^{2}+u_{R}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}^{2}=\left(I_{m}Lw-\df{I_{m}}{wc}\right)^{2}+\left(RI_{m}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}=I_{m}\sqrt{\left(Lw-\df 1{wc}\right)^{2}+R^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tg\varphi & = & \df{wL-\df 1{wc}}R=\\
+ & = & \df{R_{L}-R_{c}}R
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\sqrt{\left(Lw-\df 1{wc}\right)^{2}+R^{2}}
+\]
+
+\end_inset
+
+Преведущую величину называют полным сопротивлением цепи.
+\begin_inset Formula 
+\[
+u=u_{m}\cos wt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=I_{m}\cos\left(wt-\varphi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{m}=I_{m}\um z
+\]
+
+\end_inset
+
+Реактивное сопротивление.
+ 
+\begin_inset Formula 
+\[
+Lw-\df 1{wc}=X
+\]
+
+\end_inset
+
+Можно подобрать по 
+\begin_inset Formula $w$
+\end_inset
+
+ чтобы 
+\begin_inset Formula $X=0$
+\end_inset
+
+, то это резонансное явление, общее сопротивление минимальное.
+\begin_inset Formula 
+\[
+w_{res}=\df 1{\sqrt{Lc}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{L\ res} & = & u_{c\ res}=\\
+ & = & \sqrt{\df Lc}I_{m}=\\
+ & = & \df 1R\sqrt{\df Lc}u_{m}
+\end{eqnarray*}
+
+\end_inset
+
+ Если 
+\begin_inset Formula $\sqrt{\df Lc}>R$
+\end_inset
+
+ это приводит к тому, что напряджение на емкости и на конденсаторе выше
+ чем напряжение в цепи.
 \end_layout
 
 \begin_layout Section
