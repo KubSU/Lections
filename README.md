@@ -5,5 +5,5 @@ Lections
 
 Используется процессор документов [LyX](http://ru.wikipedia.org/wiki/LyX).
 
-Скомпилированные документы хранятся [тут](http://fpm.8gs.ru/)
+Скомпилированные документы хранятся [тут](http://fpm.babichev.net/)
 
