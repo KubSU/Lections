@@ -1396,132 +1396,6 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 \end_layout
 
 \begin_layout Subsection
-Диэлектрики.
-\end_layout
-
-\begin_layout Standard
-Диэлектрики --- такой материал, к коготором почти отсутствуют свободные
- заряженные частицы.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\v{r_{c}}=\df{\sum m_{i}r_{i}}{\sum m_{i}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $r^{+}$
-\end_inset
-
- --- центр положительных задрядов (центр масс положительных зарядов, центр
- тяжести полоожиьтельных зарядов)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $r^{+}=\df{\sum q_{i}^{+}r_{i}^{+}}{\sum q_{i}^{+}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $r^{-}=\df{\sum q_{i}^{-}r_{i}^{-}}{\sum q_{i}^{-}}=\df{\sum q_{i}^{-}r_{i}^{-}}{q^{-}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Если диэлекстрик нейтральный: 
-\begin_inset Formula $q^{+}=-q^{-}=q$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Применим эти операции для одной малекулы.
- В том слкчае, когда 
-\begin_inset Formula $\v{r^{+}}=\v{r^{-}}$
-\end_inset
-
-, тогда говорят, что диэлектрик не полярный (или молекула не полярная).
- Когда 
-\begin_inset Formula $\v{r^{+}}\nr\v{r^{-}}$
-\end_inset
-
- , то мы имем полярный диэлексрик (полярную молекулу).
- Тогда мы можем представить эту полекулу как диполь.
- 
-\begin_inset Formula $l=\left|\v{r^{+}}-\v{r^{-}}\right|\nr0$
-\end_inset
-
-.
- Кроме того мы ставим каждому диполю ставим вектор начального момента диполя
- (электрического момента).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p=q\um\v l=q\left(\v{r^{+}}-\v{r^{-}}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Электрическое поле в диэлектриках
-\end_layout
-
-\begin_layout Subsubsection
-Поляризация диэлектрика.
-\end_layout
-
-\begin_layout Standard
-Поместим некий диэлекстрик в электричесоке поле.
- Электрическое части сместятся, и молекула, которая была не полярная, будет
- полярной.
- Тем самым возникает полеризация.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\v P=\beta\um\varepsilon_{0}\um\v E$
-\end_inset
-
-.
- 
-\begin_inset Formula $\beta$
-\end_inset
-
- --- коофициент полеризуемости молекулы.
- 
-\begin_inset Formula $E$
-\end_inset
-
- --- не зависимая от 
-\begin_inset Formula $\beta$
-\end_inset
-
-, называемая диэлектрическая восприимчивость диэлектрика.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\v P=x\um\varepsilon_{0}\um E$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Для неполярных диэлектриков 
-\begin_inset Formula $x$
-\end_inset
-
- --- константа, а для полярных --- эта функция температуры.
-\end_layout
-
-\begin_layout Subsubsection
 Описание электрического поля в диэлектрике
 \end_layout
 
@@ -1533,8 +1407,8 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 \end_layout
 
 \begin_layout Definition
-Электрическим смещением н6азывается физическая величина, определяемая соотношени
-ем:
+Электрическим смещением называется физическая величина, определяемая соотношение
+м:
 \begin_inset Formula 
 \[
 \v D=\varepsilon_{0}\v E+\v P
@@ -1548,7 +1422,7 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 \begin_layout Definition
 \begin_inset Formula 
 \[
-\Phi_{D}=\un{\oiint}S\left(\v D,\v n\right)dS=\sum q
+\Phi_{D}=\oiintop_{S}\left(\v D,\v n\right)dS=\sum q
 \]
 
 \end_inset
@@ -1558,7 +1432,7 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 
 \begin_layout Standard
 Поток вектора электрического смещения через замкнутую поверхность равен
- алгербаической сумме заключенных внутри этой поверхности свободных зарядов.
+ алгебраической сумме заключенных внутри этой поверхности свободных зарядов.
 \end_layout
 
 \begin_layout Standard
@@ -1595,17 +1469,29 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 .
  Если будем рассматривать электрическое смещение, и воспользуемся теоремой
  Гаусса, чтобы посчитать его.
- Посчитаем поток вектора эектрического смещения через этот цилиндр.
+ Посчитаем поток вектора электрического смещения через этот цилиндр.
+\begin_inset Formula 
+\[
+\Phi_{D}=\oiint\limits _{\Omega}\v D\v nds=0
+\]
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
-\Phi_{D} & =\oiint\limits _{\Omega}\v D\v nds=0\\
 \v{E_{1}} & =-E_{1n}\um\v{n_{1}}+E_{1\tau}\v{\tau} & \v{D_{1}} & =-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\\
-\v{E_{2}} & =-E_{2n}\um\v{n_{2}}+E_{2\tau}\v{\tau} & \v{D_{2}} & =-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\\
-\Phi_{D} & =\oudi{S_{1}}{}\left(-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\right)\v{n_{1}}ds+\\
- & \quad+\oudi{S_{2}}{}\left(-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\right)\v{n_{2}}ds=\\
- & =-\oudi{S_{1}}{}D_{1n}ds+\oudi{S_{2}}{}D_{2n}ds=\\
- & =-D_{1n}S_{1}+D_{2n}S_{2}
+\v{E_{2}} & =-E_{2n}\um\v{n_{2}}+E_{2\tau}\v{\tau} & \v{D_{2}} & =-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\Phi_{D}=\oudi{S_{1}}{}\left(-D_{1n}\um\v{n_{1}}+D_{1\tau}\v{\tau}\right)\v{n_{1}}ds+\oudi{S_{2}}{}\left(-D_{2n}\um\v{n_{2}}+D_{2\tau}\v{\tau}\right)\v{n_{2}}ds=\\
+=-\oudi{S_{1}}{}D_{1n}ds+\oudi{S_{2}}{}D_{2n}ds=-D_{1n}S_{1}+D_{2n}S_{2}
+\end{multline*}
 
 \end_inset
 
@@ -1650,16 +1536,9 @@ p=q\um\v l=q\left(\v r^{+}-\v r^{-}\right)
 
 \begin_inset Formula 
 \begin{align*}
-\df{D_{1\varepsilon}}{\varepsilon_{1}\varepsilon_{2}} & =\df{D_{2\tau}}{\varepsilon_{2}\varepsilon_{0}} & \df{D_{1\tau}}{D_{2\tau}} & =\df{\varepsilon_{1}}{\varepsilon_{2}} & D_{2n} & =D_{1n}
+\df{D_{1\varepsilon}}{\varepsilon_{1}\varepsilon_{2}} & =\df{D_{2\tau}}{\varepsilon_{2}\varepsilon_{0}} & \df{D_{1\tau}}{D_{2\tau}} & =\df{\varepsilon_{1}}{\varepsilon_{2}} & D_{2n} & =D_{1n}\\
+\tg\alpha_{1} & =\df{D_{1\tau}}{D_{1n}} & \tg\alpha_{2} & =\df{D_{2\tau}}{D_{2n}} & \df{\tg\alpha_{1}}{\tg\alpha_{2}} & =\df{D_{1\tau}D_{2n}}{D_{1n}D_{2\tau}}=\df{\varepsilon_{1}}{\varepsilon_{2}}
 \end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\tg\alpha_{1}=\df{D_{1\tau}}{D_{1n}},\ \tg\alpha_{2}=\df{D_{2\tau}}{D_{2n}},\ \df{\tg\alpha_{1}}{\tg\alpha_{2}}=\df{D_{1\tau}D_{2n}}{D_{1n}D_{2\tau}}=\df{\varepsilon_{1}}{\varepsilon_{2}}
-\]
 
 \end_inset
 
@@ -1982,6 +1861,140 @@ _
  Конденсатор.
 \end_layout
 
+\begin_layout Subsection
+Электроемкость
+\end_layout
+
+\begin_layout Standard
+Различные по величине заряды распределяются на уединенном проводнике подобным
+ образом.
+ Если я сообщаю ему разные заряды то отношение величин зарядов будет константой.
+ Отсюда получается, что потенциал изолированного проводника пропорционален
+ находящемуся на нем заряду.
+\begin_inset Formula 
+\[
+q=C\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+ --- (электро)емкость.
+ Коэффициент пропорциональности 
+\begin_inset Formula $C$
+\end_inset
+
+ называется электроемкостью (или просто емкостью) проводника.
+ 
+\end_layout
+
+\begin_layout Definition
+Емкость численно равна заряду, сообщение которого проводнику повышает его
+ потенциал на единицу.
+\end_layout
+
+\begin_layout Example
+Вычислим емкость шара:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+E=\df 1{4\pi\varepsilon_{0}}\um\df q{\varepsilon r^{2}},\quad F=E\um1\,\text{Кулон}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi=\oui{\b}R\df 1{4\pi\varepsilon_{0}}\df q{\varepsilon r^{2}}dr=\df q{4\pi\varepsilon\varepsilon_{0}}\left(-\df 1r\mid_{\b}^{R}\right)=\df q{4\pi\varepsilon\varepsilon_{0}R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=4\pi\varepsilon\varepsilon_{0}R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+За единицу емкости принимают емкость такого проводника, потенциал которого
+ изменяется на один вольт при сообщение ему заряда на один кулон.
+ Емкость измеряется в фарадах (
+\begin_inset Formula $\Phi$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Конденсатор
+\end_layout
+
+\begin_layout Definition
+Емкостью конденсатора называется величина:
+\begin_inset Formula 
+\[
+C=\df q{\varphi_{1}-\varphi_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найдем формулу для емкости плоского конденсатора.
+ Пусть площадь обкладки 
+\begin_inset Formula $S$
+\end_inset
+
+, а заряд на ней 
+\begin_inset Formula $q$
+\end_inset
+
+, тогда напряженность поля:
+\begin_inset Formula 
+\[
+E=\df{\sigma}{\varepsilon_{0}\varepsilon}=\df q{S\varepsilon_{0}\varepsilon}
+\]
+
+\end_inset
+
+Разность потенциалов между обкладками равна:
+\begin_inset Formula 
+\[
+\varphi_{1}-\varphi_{2}=Ed=\df{qd}{S\varepsilon_{0}\varepsilon}
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $d$
+\end_inset
+
+ --- расстояние между пластинами.
+ Откуда получаем емкость:
+\begin_inset Formula 
+\[
+C=\df{S\varepsilon_{0}\varepsilon}d
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Соединение конденсаторов.
 \end_layout
@@ -2175,18 +2188,15 @@ Eсли поле однородно, заключенная в нем энерг
 \end_layout
 
 \begin_layout Definition
-Электрический ток --- направленое движение заряженных частиц.
+Электрический ток --- направленное движение заряженных частиц.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $I,\ i$
 \end_inset
 
- --- сида тока.
-\end_layout
-
-\begin_layout Standard
-Если ток постоянный то 
+ --- сила тока.
+ Причем, если ток постоянный --- 
 \begin_inset Formula $I$
 \end_inset
 
@@ -2198,37 +2208,15 @@ Eсли поле однородно, заключенная в нем энерг
 \end_layout
 
 \begin_layout Definition
-Сила тока --- количество заряда, порошедшее через поперечное сечение проводника
- в еденицу времени.
+Сила тока --- количество заряда, прошедшее через поперечное сечение проводника
+ в единицу времени.
 \begin_inset Formula 
-\[
-i=\df{dq}{dt}
-\]
+\begin{align*}
+i & =\df{dq}{dt} & I & =\df{\D q}t & i & =\df{dq^{+}}{dt}+\df{dq^{-}}{dt}
+\end{align*}
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I=\df{\D q}t$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-i=\df{dq^{+}}{dt}+\df{dq^{-}}{dt}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
 За направление тока принимается направление движения 
 \emph on
 положительных 
@@ -2241,10 +2229,7 @@ i=\df{dq^{+}}{dt}+\df{dq^{-}}{dt}
 \end_layout
 
 \begin_layout Definition
-Плотность тока --- сила тока, приходящаяся на еденицу площади.
-\end_layout
-
-\begin_layout Definition
+Плотность тока --- сила тока, приходящаяся на единицу площади.
 \begin_inset Formula 
 \[
 j=\df{di}{ds_{\bot}}
@@ -2252,16 +2237,9 @@ j=\df{di}{ds_{\bot}}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition
 Это величина векторная.
  За направление плотности тока принимается направление скорости упорядоченного
- движения положительный носителей заряда.
-\end_layout
-
-\begin_layout Standard
+ движения положительных носителей заряда.
 \begin_inset Formula 
 \[
 i=\un{\iint}s\overline{j}\overline{n}ds
@@ -2269,7 +2247,11 @@ i=\un{\iint}s\overline{j}\overline{n}ds
 
 \end_inset
 
-В еденице обьема проводника находится
+
+\end_layout
+
+\begin_layout Standard
+В единице объема проводника находится 
 \begin_inset Formula $k^{+}$
 \end_inset
 
@@ -2278,10 +2260,7 @@ i=\un{\iint}s\overline{j}\overline{n}ds
 \end_inset
 
  отрицательных зарядов.
-\end_layout
-
-\begin_layout Standard
-Пусть у нас 
+ Пусть 
 \begin_inset Formula $v^{+}$
 \end_inset
 
@@ -2297,11 +2276,7 @@ i=\un{\iint}s\overline{j}\overline{n}ds
 \begin_inset Formula $k^{-}$
 \end_inset
 
-.
- 
-\end_layout
-
-\begin_layout Standard
+, тогда:
 \begin_inset Formula 
 \[
 j=k^{+}\um e^{+}\um v^{+}+k^{-}e^{-}v^{-}
