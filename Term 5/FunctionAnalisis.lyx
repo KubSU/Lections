@@ -1,0 +1,2832 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 5
+\tocdepth 5
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\prime}
+{\prime}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\underset{#1}{\lim}}
+{\underset{#1}{\lim}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\underset{#1}{\max}}
+{\underset{#1}{\max}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\underset{#1}{\min}}
+{\underset{#1}{\min}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{\pr\pr}
+{\pr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{\ppr\pr}
+{\ppr\pr}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\oui{#1}{#2}}
+{\oui{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\text{\emph{д}}}
+{\text{\emph{д}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\const}{\text{константа}}
+{\text{константа}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Функциональный анализ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дофига пропущено....
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства измеримых функций:
+\end_layout
+
+\begin_layout Enumerate
+Если измерима функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, то для лубого 
+\begin_inset Formula $k\in\R$
+\end_inset
+
+ оказываются измеримы функии, такие как 
+\begin_inset Formula $f\left(x\right)+k,\ f\left(x\right)\um k$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $\forall c\in\R\ E\left(f+k>c\right)=E\left(f>c-k\right)$
+\end_inset
+
+ где 
+\begin_inset Formula $c-k=const$
+\end_inset
+
+ следовательно она измерима.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall c\in\R\ E\left(f\um k>c\right)=E\left(f>\df ck\right)$
+\end_inset
+
+ --- ищмерима при 
+\begin_inset Formula $k\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+при 
+\begin_inset Formula $k=0\ \sl\ E\left(f\um0>k\right)=\begin{cases}
+\left(a,b\right) & c<0\\
+\textrm{Ø} & c\br0
+\end{cases}$
+\end_inset
+
+ --- измерима
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ измеримы, то 
+\begin_inset Formula $E\left(f>g\right)$
+\end_inset
+
+ --- измеримое множество.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Если при некотором 
+\begin_inset Formula $x\in\left(a,b\right)\ \un{\underbrace{f\left(x\right)}}{\in\R}>\un{\underbrace{g\left(x\right)}}{\in\R}$
+\end_inset
+
+, то 
+\begin_inset Formula $\exists r\in\R$
+\end_inset
+
+ : 
+\begin_inset Formula $f\left(x\right)>r>g\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E\left(f>g\right)=\sum E\left(f>r\right)\um E\left(r>g\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $\begin{matrix}E\left(r>g\right)-\text{измеримо}\\
+E\left(f>r\right)-\text{измеримо}
+\end{matrix}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Все измеримо.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ --- измеримые функции, то 
+\begin_inset Formula $f\left(x\right)\pm g\left(x\right)$
+\end_inset
+
+ --- измеримая функция.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $\forall c\in\R\ E\left(f\left(x\right)\pm g\left(x\right)>c\right)=E\left(f\left(x\right)>c\mp g\left(x\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ --- измеримы, то 
+\begin_inset Formula $f\left(x\right)\um g\left(x\right)$
+\end_inset
+
+ также измеримая функция.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Докажем что 
+\begin_inset Formula $f^{2}\left(x\right)$
+\end_inset
+
+ --- измеримая функция.
+ 
+\end_layout
+
+\begin_layout Proof
+Берем 
+\begin_inset Formula $\forall c>0\ E\left(f^{2}>c\right)=E\left(f>\sqrt{c}\right)+E\left(f<-\sqrt{c}\right)$
+\end_inset
+
+ --- измеримое множество.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall c\mr0\ E\left(f^{2}\br c\right)=\left(a,b\right)$
+\end_inset
+
+ --- измеримое множество.
+\end_layout
+
+\begin_layout Proof
+Из равенства 
+\begin_inset Formula $f\left(x\right)\um g\left(x\right)=\df{\left(f+g\right)^{2}-\left(f-g\right)^{2}}4$
+\end_inset
+
+ --- измеримая функция.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Непрерывная фунцкия измерима.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Так какмножество 
+\begin_inset Formula $E\left(f\left(x\right)\mr c\right)$
+\end_inset
+
+ --- замкнутоь(по 2й теореме Вейерштрассе).
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $CE\left(f\left(x\right)\mr c\right)$
+\end_inset
+
+ --- открытое множество.
+ Оно измеримо 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $E=C\left(CE\right)$
+\end_inset
+
+ --- также измеримо.
+\end_layout
+
+\begin_layout Remark
+Обратное неверно.
+ 
+\begin_inset Formula $\dd\left(x\right)$
+\end_inset
+
+ --- измерима, но не непрерывна.
+\end_layout
+
+\begin_layout Theorem
+Докажем измеримость 
+\begin_inset Formula $\dd\left(x\right)=\begin{cases}
+0, & x\in\left[0,1\right]\backslash Q\\
+1, & x\in Q\wedge\left[0,1\right]
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $m\left(Q\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c<0\ m\, E\left(\dd\left(\tau\right)\mr c\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c=0\ E\left(\dd\left(x\right)\right)\mr0=E\left(\dd\left(x\right)=0\right)\text{-измеримо}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left[0,1\right]\backslash Q$
+\end_inset
+
+ измеримо, и его мера равна еденице.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall0<c<1$
+\end_inset
+
+ 
+\begin_inset Formula $E\left(\dd\left(x\right)\mr c\right)=E\left(\dd\left(x\right)=0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall c>1\ E\left(\dd\left(x\right)\mr c\right)$
+\end_inset
+
+ измеримо.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Интеграл Либега от ограниченых функций
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+1, & x\in E\\
+0m & x\in CE
+\end{cases},\ E\subseteq\left(a,b\right)$
+\end_inset
+
+, то интеграл Либега от 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ по 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ принимается равным числу:
+\begin_inset Formula 
+\[
+\left(L\right)\,\oui abf\left(x\right)dx=m\left(E\right)
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+k, & x\in E\\
+0, & x\in CE
+\end{cases},$
+\end_inset
+
+ то 
+\begin_inset Formula 
+\[
+\left(L\right)\,\oui abf\left(x\right)dx=k\um m\left(E\right)
+\]
+
+\end_inset
+
+В общем случае измеримой и ограниченой функции, определенной на 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ поступим следующим образом.
+\end_layout
+
+\begin_layout Standard
+Обозначим: 
+\begin_inset Formula $\alpha=\un{\inf}{\left(a,b\right)}f\left(x\right),\ \beta=\un{\sup}{\left(a,b\right)}f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмоторим разбиение отрезка 
+\begin_inset Formula $\left[\alpha,\beta\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha=y_{0}<y_{1}<\tr<y_{i}<y_{i+1}<\tr y_{n}=\beta
+\]
+
+\end_inset
+
+Обозначим 
+\begin_inset Formula $e_{i}=\left\{ x|y_{i}\mr f\left(x\right)<y_{i+1}\right\} ,\ i=\overline{0,n-1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $e_{n}=\left\{ x|f\left(x\right)=\beta=y_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Очевидно 
+\begin_inset Formula $\ous{i=0}ne_{i}\left(a,b\right)$
+\end_inset
+
+ 
+\begin_inset Formula $e_{i}\cap e_{j}=\textrm{Ø}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ --- измерима, то мноества 
+\begin_inset Formula $e_{i},\ i=\overline{0,n}$
+\end_inset
+
+ --- измерима.
+\end_layout
+
+\begin_layout Standard
+Положим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s=\ous{i=0}ny_{i}\um m\left(e_{i}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\ous{i=0}ny_{i+1}\um m\left(e_{i}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n=1}=\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Очевидно 
+\begin_inset Formula $S\br s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Интегралом Либега от функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ по промежутку 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ называется общий предел сумм 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $S$
+\end_inset
+
+ при 
+\begin_inset Formula $n\st\b,\ \un{\max}i\left(y_{i+1}-y_{i}\right)=\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Если функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ измерима на 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(L\right)\oui abf\left(x\right)dx$
+\end_inset
+
+ обязательно существует.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ --- произвольное.
+ Выберем два различных разбиения.
+ 
+\begin_inset Formula $\left\{ y_{i}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ y_{i}'\right\} $
+\end_inset
+
+, так, что 
+\begin_inset Formula $\un{max}i\left|y_{i+1}-y_{i}\right|<\varepsilon,\ \un{\max}i\left|y_{i+1}'-y_{i}'\right|<\varepsilon$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|S-s\right| & = & \left|\ous{i=0}n\left(y_{i+1}-y_{i}\right)\um m\left(e_{i}\right)\right|\mr\\
+ & \mr & \ous{i=0}n\left|y_{i+1}-y_{i}\right|m\left(e_{i}\right)<\\
+ & < & \varepsilon\um\ous{i=0}nm\left(e_{i}\right)=\\
+ & = & \varepsilon\left(b-a\right)
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|S'-s'\right|<\varepsilon\left(b-a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим разбиение 
+\begin_inset Formula $\left\{ y_{i}''\right\} =\left\{ y_{i}\right\} \cup\left\{ y_{i}'\right\} \sl$
+\end_inset
+
+ при добавлении точек в разбиение верхняя сумма не возрастает, нижняя не
+ убывает.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $s\mr s''\mr S''\mr S$
+\end_inset
+
+ и 
+\begin_inset Formula $s'\mr s''\mr S''\, S'$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $s',s,S,S'$
+\end_inset
+
+ --- отличаются друг от друга на 
+\begin_inset Formula $2\varepsilon\left(b-a\right)$
+\end_inset
+
+, тоесть на сколь угодно малую величину 
+\begin_inset Formula $\sl$
+\end_inset
+
+ при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda\st0$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\lim s=\lim S=\left(L\right)\oui abf\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Сравнение интеграла Либега и интеграла Римана.
+ В обоих случаях верхняя и нижняя суммы стремятся к пределу.
+ В случае интеграла Римана пределы могут не совпадать, а с случае интеграла
+ Либега для класса измеримых функций эти пределы равны.
+ Следовательно интеграл Либега это обобщение интеграла Римана.
+\end_layout
+
+\begin_layout Definition
+Функция, интегрируемая по Либегу, называется суммированой функцией.
+\end_layout
+
+\begin_layout Subsection
+Интеграл Либега по произвольному извмеримому множесству.
+ Свойства интеграла.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $E\subseteq\left(a,b\right)$
+\end_inset
+
+ --- произвольное измеримое множество.
+ Для произвольной измеримой функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ обозначим: 
+\begin_inset Formula $e_{i}=\left\{ x|y_{i}\mr f\left(x\right)<y_{i+1}\right\} ,\ i=\overline{-0,n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $e_{n}=\left\{ x|f\left(x\right)=\beta=e_{n}\right\} ,\ \alpha=\un{\inf}Ef\left(x\right),\ \beta=\un{\sup}Ef\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{i=0}ne_{i}=E,\ e_{i}\cap e_{j}\textrm{Ø}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аналогично интегралу Либега по промежутку 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ опрееляется интеграл по множеству 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(L\right)\oui E{}f\left(x\right)dx
+\]
+
+\end_inset
+
+причем доказательства существования интеграла(суммироимости функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на множестве 
+\begin_inset Formula $E$
+\end_inset
+
+) аналогично параграфу 5.
+ В дальнейшем будем расссматривать измеримые функции на измеримых множествах.
+\end_layout
+
+\begin_layout Subsubsection
+Свойства иннтеграла либега
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Тееорема о среднем.
+
+\emph default
+ Если 
+\begin_inset Formula $\alpha\mr f\left(x\right)\mr\beta$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+, то 
+\begin_inset Formula $\alpha\um m\left(E\right)\mr\left(L\right)\oui E{}f\left(x\right)dx\mr\beta\um m\left(E\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Рассмотрим неравенство:
+\begin_inset Formula 
+\[
+\alpha\um\ous{i=0}nm\left(e_{i}\right)\mr s\mr\beta\um\ous{i=0}nm\left(e_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 1.
+ 
+\begin_inset Formula $f\left(x\right)\equiv C$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui E{}f\left(x\right)dx=c\um m\left(E\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 2.
+ 
+\begin_inset Formula $f\left(x\right)\un{\mr}{\left(\br\right)}0$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui E{}f\left(x\right)dx\un{\mr}{\left(\br\right)}0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Следствие 3.
+ Если 
+\begin_inset Formula $m\left(E\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui E{}f\left(x\right)dx=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если некоторое слваойство выполнено всюду на интервале 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, за исключение быть может множество меры 0, то гвоорят, что это свойство
+ выполнено почти всюду на почти всюду 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Теорема о полной аддитивности интеграла Либбега.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Если 
+\begin_inset Formula $E=E_{1}+E_{2}+\tr+E_{n}+\tr$
+\end_inset
+
+, причем 
+\begin_inset Formula $E_{j}\cap E_{i}=\textrm{Ø}$
+\end_inset
+
+ и функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ограничена, измерима, то 
+\begin_inset Formula $\oui E{}f\left(x\right)dx=\ous{k=1}{\b}\oui{E_{k}}{}f\left(x\right)dx$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $E=E_{1}+E_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $E_{1}\cap E_{2}=\textrm{Ø}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Рассмотрим разбиение 
+\begin_inset Formula $\left\{ y_{k}\right\} ,\ k=\overline{1,n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ e_{k}^{1}\right\} ,\ ,\left\{ e_{k}^{2}\right\} ,\ \left\{ e_{k}\right\} $
+\end_inset
+
+, причем 
+\begin_inset Formula $e_{k}=e_{k}^{1}+e_{k}^{2},\ e_{k}^{1}\cap e_{k}^{2}=\textrm{Ø}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m\left(e_{k}\right)=m\left(e_{k}^{1}\right)+m\left(e_{k}^{2}\right)$
+\end_inset
+
+ (из свойств меры)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui{E_{1}}{}f\left(x\right)dx+\oui{E_{2}}{}f\left(x\right)dx=\ul{n\st\b}\ous{k=0}ny_{k}\um m\left(e_{k}^{1}\right)+\ul{n\st\b}\ous{k=0}ny_{k}\um m\left(e_{k}^{2}\right)=\ul{n\st\b}\ous{n=0}ny_{k}\left(m\left(e_{l}^{1}\right)+m\left(e_{k}^{2}\right)\right)=\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Для конечного числа множеств докажется по индукции.
+\end_layout
+
+\begin_layout Enumerate
+Докажем для счетного количества множеств.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Обозначим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{n}=E_{1}+\tr+E_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n}=E_{n+1}+\tr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E=S_{n}+R_{n}\sl\left\{ \text{из 1го}\right\} \sl\oui E{}f\left(x\right)dx=\oui{S_{n}}{}f\left(x\right)dx+\oui{R_{n}}{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ограничена на множестве 
+\begin_inset Formula $E$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists M>0\ \left|f\left(x\right)\right|\mr M\ \forall x\in E$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\oui{R_{n}}{}f\left(x\right)dx\right|\mr M\um m\left(R_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\ous{n=1}{\b}m\left(E_{n}\right)=m\left(E\right)$
+\end_inset
+
+ --- конечное число.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $m\left(R_{n}\right)=\ous{m=n+1}{\b}m\left(E_{m}\right)\ov{\st}{m\st\b}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\ul{n\st\b}\left(\oui{S_{n}}{}f\left(x\right)dx+\oui{R_{n}}{}f\left(x\right)dx\right) & = & \ul{n\st\b}\oui{S_{n}}{}f\left(x\right)dx=\\
+ & = & \ul{n\st\b}\ous{k=1}{\b}\oui{E_{k}}{}f\left(x\right)dx=\\
+ & = & \ous{k=1}{\b}\oui{E_{k}}{}f\left(x\right)dx=\\
+ & = & \tr
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x\right)\mr\varphi\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+, то 
+\begin_inset Formula $\oui E{}f\left(x\right)dx\mr\oui E{}\varphi\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Построим для функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ по точкам разбиения 
+\begin_inset Formula $\left\{ y_{k}\right\} ,\ k=\overline{0,n}$
+\end_inset
+
+, множество 
+\begin_inset Formula $\left\{ e_{k}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+На 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ : 
+\begin_inset Formula $y_{k}\mr f\left(x\right)\mr\varphi\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\ov{\sl}{1^{o}}$
+\end_inset
+
+ 
+\begin_inset Formula $\oui E{}\varphi\left(x\right)dx=\ous{k=0}n\oui{e_{k}}{}\varphi\left(x\right)dx\ov{\br}{1^{o}}\ous{k=0}ny_{k}\um m\left(e_{k}\right)\ov{\st}{n\st\b}\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ограничены и измеримы, то 
+\begin_inset Formula $\oui E{}\left(f\left(x\right)+g\left(x\right)\right)dx=\oui E{}f\left(x\right)dx+\oui E{}g\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $g\left(x\right)=C=const$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Докажем что в этом случае это свойство сработает.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\oui E{}\left(f\left(x\right)+C\right)dx=\oui E{}f\left(x\right)dx+C\um m\left(E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сумму 
+\begin_inset Formula $S$
+\end_inset
+
+, отвечающую рабзиению 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ для функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и сумму 
+\begin_inset Formula $S'$
+\end_inset
+
+ отвечающую разюиению 
+\begin_inset Formula $\left\{ y_{k}+C\right\} $
+\end_inset
+
+ для функции 
+\begin_inset Formula $f\left(x\right)+C$
+\end_inset
+
+ .
+ В этому случае множества 
+\begin_inset Formula $\left\{ e_{k}\right\} $
+\end_inset
+
+ совпадут, и м получим: 
+\begin_inset Formula 
+\begin{eqnarray*}
+S' & = & \ous{k=0}n\left(y_{k}+C\right)\um m\left(e_{k}\right)=\\
+ & = & \ous{k=0}n\left(y_{k}m\left(e_{k}\right)+c\um m\left(e_{k}\right)\right)=\\
+ & = & S+C\um m\left(e_{k}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S'\ov{\st}{n\st\b}\oui E{}\left(f\left(x\right)+C\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\ov{\st}{n\st\b}\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ --- произвольные ограниченные функии
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui E{}\left(f\left(x\right)+g\left(x\right)\right)dx & \ov ={2^{0}} & \ous{k=0}n\oui{E_{k}}{}\left(f\left(x\right)+g\left(x\right)\right)dx\br\\
+ & \br & \ous{k=0}n\oui{e_{k}}{}\left(y_{k}+g\left(x\right)\right)dx\ov ={1^{0}}\\
+ & \ov ={1^{0}} & \ous{k=0}n\left(\oui{e_{k}}{}g\left(x\right)dx+y_{k}\um m\left(e_{k}\right)\right)=\\
+ & = & \oui E{}g\left(x\right)dx+S
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\ov{\st}{n\st\b}\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны:
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui E{}\left(f\left(x\right)+g\left(x\right)\right)dx & \mr & \oui{e_{k}}{}\left(y_{k+1}+g\left(x\right)\right)dx=\\
+ & = & \ous{k=0}ny_{k+1}\um m\left(e_{k}\right)+\oui E{}g\left(x\right)dx
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+s+\oui E{}g\left(x\right)dx\mr\oui E{}\left(f\left(x\right)+g\left(x\right)\right)dx\mr S+\oui E{}g\left(x\right)dx
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\ov{\st}{}\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall C\in\R\ \oui E{}c\um f\left(x\right)dx=c\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Рассмотрим разбиение 
+\begin_inset Formula $\left\{ y_{k}\right\} $
+\end_inset
+
+, отвечающее функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula $\left\{ c\um y_{k}\right\} \longleftrightarrow c\um f\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{k=0}n\left(c\um y_{k}\right)m\left(e_{k}\right)=c\um\ous{k=0}ny_{k}\um m\left(e_{k}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui E{}c\um f\left(x\right)dx=c\oui E{}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|\oui E{}f\left(x\right)dx\right|\mr\oui E{}\left|f\left(x\right)\right|dx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Рассмотрим слудующие множества:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $E_{1}=\left\{ x\in E|f\left(x\right)\br0\right\} ,\ E_{2}=\left\{ x\in E|f\left(x\right)<0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что: 
+\begin_inset Formula $E_{1}+E_{2}=E,\ E_{1}\cap E_{2}=\textrm{Ø}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui E{}f\left(x\right)dx=\oui{E_{1}}{}f\left(x\right)dx-\oui{E_{2}}{}\left|f\left(x\right)\right|dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui E{}\left|f\left(x\right)\right|dx=\oui{E_{1}}{}f\left(x\right)dx+\oui{E_{2}}{}\left|f\left(x\right)\right|dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a=\oui{E1}{}f\left(x\right)dx\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $b=\oui{E_{2}}{}\left|f\left(x\right)\right|dx\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall a,b\br0\ \left|a-b\right|\mr a+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ называются эквивалентными на 
+\begin_inset Formula $E$
+\end_inset
+
+, если 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)$
+\end_inset
+
+ за исключением конечного числа точек меры 0, и записывают 
+\begin_inset Formula $f\left(x\right)\sim g\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)\sim g\left(x\right)\sl\oui E{}f\left(x\right)dx=\oui E{}g\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $e=\left\{ x\in E|f\left(x\right)\nr g\left(x\right)\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $m\left(e\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui E{}\left(f\left(x\right)-g\left(x\right)\right)dx & = & \oui{ce}{}\left(f\left(x\right)-g\left(x\right)\right)dx+\oui e{}\left(f\left(x\right)+g\left(x\right)\right)dx=\\
+ & = & \left\{ \begin{array}{c}
+\oui e{}\left(f\left(x\right)+g\left(x\right)\right)dx=0\\
+\oui{ce}{}\left(f\left(x\right)-g\left(x\right)\right)dx=0
+\end{array}\right\} =\\
+ & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x\right)\br0$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $\oui E{}f\left(x\right)dx=0$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ почти всюду на 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $E_{0}=\left\{ x\in E|f\left(x\right)=0\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $M=\un{\sup}Ef\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $E_{n}=\left\{ x\in E|\df M{n+1}<f\left(x\right)\mr\df Mn\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Очевидно что: 
+\begin_inset Formula $E_{j}\cap E_{i}=\textrm{Ø}$
+\end_inset
+
+, 
+\begin_inset Formula $E=E_{1}+E_{2}+\tr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\df M{n+1}\um m\left(E_{n}\right)\mr\oui{E_{n}}{}f\left(x\right)dx\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $0\mr m\left(E_{n}\right)\mr\df{n+1}M\oui{E_{n}}{}f\left(x\right)dx\mr\left\{ E_{n}\subset E,\ f\left(x\right)\br0\right\} \mr\df{n+1}M\oui E{}f\left(x\right)dx=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall n\in\N\ m\left(E_{n}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $m\left(E\backslash E_{0}\right)=m\left(\ous{n=0}{\b}E_{n}\right)=0$
+\end_inset
+
+ --- мера счетных множеств меры 0.
+\end_layout
+
+\begin_layout Proof
+Но 
+\begin_inset Formula $\ous{n=1}{\b}E_{n}=\left\{ x\in E|x\nr0\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ интегрируема по Риману на 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, то она интегрирована по Либеггу на 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\left(L\right)\oui abf\left(x\right)dx=\left(R\right)\oui abf\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Интеграл Либега от неограниченой функции
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ измерима, и в общем случае неограничная на множестве 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ --- знакопостоянна, например 
+\begin_inset Formula $f\left(x\right)\br0$
+\end_inset
+
+ на 
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Определим вспомогательную функцию (срезка)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{t}\left(x\right)=\begin{cases}
+t, & f\left(x\right)>t\\
+f\left(x\right), & f\left(x\right)\mr t
+\end{cases}$
+\end_inset
+
+ --- играничена, измерима.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\left(L\right)\oui E{}f\left(x\right)dx=\ul{t\st+\b}\oui E{}f_{t}\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ знакопеременная.
+ Рассмотрим множества: 
+\begin_inset Formula $E_{1}=\left\{ x\in E|f\left(x\right)\br0\right\} ,\ E_{2}=\left\{ x\in E|f\left(x\right)<0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{+}\left(x\right)=\begin{cases}
+f\left(x\right), & x\in E_{1}\\
+0, & x\in E_{2}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{-}\left(x\right)=\begin{cases}
+0, & x\in E_{1}\\
+-f\left(x\right), & x\in E_{2}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\oui E{}f\left(x\right)dx=\oui{E_{1}}{}f_{+}\left(x\right)dx-\oui{E_{2}}{}f_{-}\left(x\right)dx=\oui E{}f_{+}\left(x\right)dx-\oui E{}f_{-}\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом существование интеграла Либега по 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ разносильно существованию интегралов по 
+\begin_inset Formula $f_{+}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{-}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Интегрируемость по Либегу --- абсолютное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+15.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Доказать что 
+\begin_inset Formula $\left(L\right)\oui 01\df{dx}{x^{\alpha}}=\begin{cases}
+\df 1{1-\alpha}, & 0<\alpha<1\\
+\b, & \alpha\br1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Функция срезки: 
+\begin_inset Formula $f_{t}\left(x\right)=\begin{cases}
+t, & \df 1{x^{\alpha}}>t\\
+\df 1{x^{\alpha}}, & \df 1{x^{\alpha}}\mr t
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(L\right) & = & \ul{t\st+\b}\oui 01f_{t}\left(x\right)dx=\\
+ & = & \ul{t\st+\b}\left(\oui 0{t^{\frac{-1}{\alpha}}}tdx+\oui{t^{\frac{-1}{\alpha}}}1\df{dx}{x^{\alpha}}\right)
+\end{eqnarray*}
+
+\end_inset
+
+Дорешать дома...
+\end_layout
+
+\begin_layout Section
+Пространства суммируемых функций (пространства Либега) 
+\begin_inset Formula $L_{P}\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Понятия 
+\begin_inset Formula $L_{P}\left[a,b\right]$
+\end_inset
+
+.
+ Линейность 
+\begin_inset Formula $L_{P}\left[a,b\right]$
+\end_inset
+
+.
+ Соотношения между 
+\begin_inset Formula $L_{P}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Измеримая функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, заданная на отрезке 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ называется суммируемой функцией с 
+\begin_inset Formula $p$
+\end_inset
+
+-ой степенью, где 
+\begin_inset Formula $p\br1$
+\end_inset
+
+, если 
+\begin_inset Formula $\left(L\right)\oui ab\left|f\left(x\right)\right|^{P}dx<\b$
+\end_inset
+
+.
+ Множесто таких фуфнкций будем обозначать 
+\begin_inset Formula $L_{P}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Очевидно что 
+\begin_inset Formula $L_{1}=L$
+\end_inset
+
+ --- пространство Либега суммируемых функций.
+\end_layout
+
+\begin_layout Remark
+В дальнейшем не будем различать эквивалентные функции: 
+\begin_inset Formula $f\left(x\right)\sim g\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $p_{1}>p_{1}>1$
+\end_inset
+
+, то 
+\begin_inset Formula $L_{p_{2}}\vkl L_{p_{1}}\vkl L_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Воспользуемся очевыдным свойством:
+\begin_inset Formula 
+\[
+p_{2}>p_{1}\ \sl\ t^{p_{2}}+1>t^{p_{1}}\ \forall t\br0
+\]
+
+\end_inset
+
+Отсюда следует, если 
+\begin_inset Formula $f\in L_{p_{2}}\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|^{p_{1}}<\left|f\left(x\right)\right|^{p_{2}}+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oui ab\left|f\left(x\right)\right|^{p_{1}}dx<\oui ab\left(\left|f\left(x\right)\right|^{p_{2}}+1\right)=\oui ab\left|f\left(x\right)\right|^{p_{2}}dx+\left(b-a\right)<\b
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)\in L_{p_{1}}\left[a,b\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Самостоятельно: Доказать что обратного вложения нету.
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если функции 
+\begin_inset Formula $f\left(x\right),g\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)+g\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $E=\left\{ x\in\left[a,b\right]|\left|f\left(x\right)\right|\mr\left|g\left(x\right)\right|\right\} $
+\end_inset
+
+.
+ Очевидно что это измеримое множество.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\left|f\left(x\right)+g\left(x\right)\right|\right)^{p}\mr\left(\left|f\left(x\right)\right|+\left|g\left(x\right)\right|\right)^{p}\mr2^{p}\um\left|g\left(x\right)\right|^{P}\ \forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall x\in CE=\left\{ x\in\left[a,b\right]|\left|f\left(x\right)\right|>\left|g\left(x\right)\right|\right\} \ \left(\left|f\left(x\right)+g\left(x\right)\right|\right)^{p}\mr2^{p}\um\left|f\left(x\right)\right|^{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\oui ab=\un{\int}E+\un{\int}{CE}$
+\end_inset
+
+ от 
+\begin_inset Formula $\left|f\left(x\right)+g\left(x\right)\right|^{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{p}dx & < & 2^{p}\un{\int}E\left|g\left(x\right)\right|^{P}dx+2^{p}\un{\int}{CE}\left|f\left(x\right)\right|^{p}dx\mr\\
+ & \mr & \left\{ \begin{array}{c}
+E\vkl\left[a,b\right]\\
+CE\vkl\left[a,b\right]
+\end{array}\right\} \mr\\
+ & \mr & 2^{p}\left(\oui ab\left|g\left(x\right)\right|^{p}dx+\oui ab\left|f\left(x\right)\right|dx\right)<\b
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $f\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $\forall k\in\R$
+\end_inset
+
+ функции 
+\begin_inset Formula $g\left(x\right)=k\um f\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $L_{p}\left[a,b\right]$
+\end_inset
+
+ --- линейное пространство.
+\end_layout
+
+\begin_layout Subsection
+Неравенства Гёльдера и Минковского
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $p>1$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $q$
+\end_inset
+
+ называется показателем, сопряженным с 
+\begin_inset Formula $p$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\df 1p+\df 1q=1
+\]
+
+\end_inset
+
+Заметим, что 
+\begin_inset Formula 
+\[
+q=\df p{p-1}
+\]
+
+\end_inset
+
+Очевидно 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ взаимно сопряжены.
+ В часности 
+\begin_inset Formula $p=2\longleftrightarrow q=2,$
+\end_inset
+
+ поэтому пространство 
+\begin_inset Formula $L_{2}\left[a,b\right]$
+\end_inset
+
+ называют, вполне заслужено, самосопряженным пространством.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $f\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+, а 
+\begin_inset Formula $g\left(x\right)\in L_{q}\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)\um g\left(x\right)\in L_{1}\left[a,b\right]$
+\end_inset
+
+ и выполняется неравенство:
+\begin_inset Formula 
+\begin{equation}
+\oui ab\left|f\left(x\right)\um g\left(x\right)\right|dx\mr\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}\um\left(\oui ab\left|g\left(x\right)\right|^{q}dx\right)^{\frac{1}{q}}\label{eq:1_*}
+\end{equation}
+
+\end_inset
+
+это неравенство Гёльдера.
+\end_layout
+
+\begin_layout Proof
+Докажем вспомогательную Лемму.
+\end_layout
+
+\begin_deeper
+\begin_layout Lemma
+Если 
+\begin_inset Formula $a\br0,b\br0$
+\end_inset
+
+, то 
+\begin_inset Formula $ab\mr\df{a^{p}}p+\df{b^{q}}q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $a=0$
+\end_inset
+
+ и 
+\begin_inset Formula $b=0$
+\end_inset
+
+ --- очевидно.
+\end_layout
+
+\begin_layout Proof
+Теперь доажем при 
+\begin_inset Formula $a>0,b>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $S_{1}=\oui 0ax^{p-1}dx=\df{x^{p}}p|_{0}^{a}=\df{a^{p}}p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $S_{2}=\left\{ \begin{array}{c}
+y=x^{p-1}\\
+x=y^{\frac{1}{p-1}}=y^{q-1}
+\end{array}\right\} =\oui 0by^{q-1}dy=\df{y^{q}}q|_{0}^{b}=\df{b^{q}}q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $ab\mr S_{1}+S_{2}$
+\end_inset
+
+, то Лемма доказана.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Заметим что если 
+\begin_inset Formula $f\sim0$
+\end_inset
+
+ или 
+\begin_inset Formula $g\sim0$
+\end_inset
+
+, то неравенство очевидно.
+\end_layout
+
+\begin_layout Proof
+Пусть в дальнейшем 
+\begin_inset Formula $f\nsim0$
+\end_inset
+
+ и 
+\begin_inset Formula $g\nsim0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oui ab\left|f\left(x\right)\right|^{p}dx>0,\ \oui ab\left|g\left(x\right)\right|^{p}dx>0
+\]
+
+\end_inset
+
+Рассмотрим функции 
+\begin_inset Formula $\varphi\left(x\right)=\df{f\left(x\right)}{\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}}$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\left(x\right)=\df{g\left(x\right)}{\left(\oui ab\left|g\left(x\right)\right|^{q}\right)^{\frac{q}{q}}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Положим в качестве числа 
+\begin_inset Formula $a=\left|\varphi\left(x\right)\right|$
+\end_inset
+
+, 
+\begin_inset Formula $b=\left|\psi\left(x\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ \Lambda\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\left|\varphi\left(x\right)\um\psi\left(x\right)\right|\mr\df{\left|\varphi\left(x\right)\right|^{p}}p+\df{\left|\psi\left(x\right)\right|^{q}}q\label{eq:1_**}
+\end{equation}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\oui ab\left|\varphi\left(x\right)\right|^{p}dx=\oui ab\left|\psi\left(x\right)\right|^{q}dx=1$
+\end_inset
+
+, то интегрируя (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_**"
+
+\end_inset
+
+) на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ получим:
+\begin_inset Formula 
+\[
+\oui ab\left|\varphi\left(x\right)\um\psi\left(x\right)\right|dx\mr\df 1p+\df 1q=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\oui ab\left|f\left(x\right)g\left(x\right)\right|dx}{\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}\left(\oui ab\left|g\left(x\right)\right|^{\frac{1}{q}}dx\right)}\mr1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_*"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+В классическом неравенстве Гёльдера в левой части стоит 
+\begin_inset Formula 
+\[
+\left|\oui abf\left(x\right)g\left(x\right)dx\right|
+\]
+
+\end_inset
+
+но если присмотреться, то мы с вами доказали более сильное усверждение.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $p=q=2$
+\end_inset
+
+, то мы получим неравенство Буняковского.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $f\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(x\right)\in L_{p}\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left(\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{P}dx\right)^{\frac{1}{p}}\mr\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}+\left(\oui ab\left|g\left(x\right)\right|^{p}\right)^{\frac{1}{p}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $p=1$
+\end_inset
+
+ очевидно.
+ 
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $p>1$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ сопряжен с 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По теорееме 2 
+\begin_inset Formula $f\left(x\right)+g\left(x\right)\in L_{p}\left[a,b\right]\sl\left(f\left(x\right)+g\left(x\right)\right)^{\frac{p}{q}}\in L_{q}\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В неравенстве Гёльдера сделаем замену: 
+\begin_inset Formula $f\left(x\right)\longleftrightarrow\left|f\left(x\right)\right|,\ g\left(x\right)\longleftrightarrow\left|f\left(x\right)+g\left(x\right)\right|^{\frac{p}{q}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\oui ab\left|f\left(x\right)\right|\um\left|f\left(x\right)+g\left(x\right)\right|^{\frac{p}{q}}dx\mr\left(\oui ab\left|f\left(x\right)\right|dx\right)^{\frac{1}{p}}\um\left(\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{\frac{1}{q}}\right)\label{eq:1_f}
+\end{equation}
+
+\end_inset
+
+Аналогично:
+\begin_inset Formula 
+\begin{equation}
+\oui ab\left|g\left(x\right)\right|\um\left|f\left(x\right)+g\left(x\right)\right|^{\frac{p}{q}}dx\mr\left(\oui ab\left|g\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}\um\left(\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{p}dx\right)^{\frac{1}{q}}\label{eq:1_g}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f+g\right|^{p}=\left|f+g\right|^{1+\frac{p}{q}}=\left|f+g\right|\um\left|f+g\right|^{\frac{p}{q}}\mr\left|f\right|\um\left|f+g\right|^{\frac{p}{q}}+\left|g\right|\left|f+g\right|^{\frac{p}{q}}
+\]
+
+\end_inset
+
+Используя оценки 
+\begin_inset Formula $f$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+, интегрируя по отрезку 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ получим: 
+\begin_inset Formula 
+\[
+\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{p}dx\mr\left(\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}+\left(\oui ab\left|g\left(x\right)\right|^{q}\right)^{\frac{1}{q}}\right)\um\left(\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{p}dx\right)^{\frac{1}{q}}
+\]
+
+\end_inset
+
+Разделим обе части на 
+\begin_inset Formula $\left(\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{p}dx\right)^{\frac{1}{q}}$
+\end_inset
+
+, получим:
+\begin_inset Formula 
+\[
+\left(\oui ab\left|f\left(x\right)+g\left(x\right)\right|^{P}dx\right)^{\frac{1}{p}}\mr\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}+\left(\oui ab\left|g\left(x\right)\right|^{p}\right)^{\frac{1}{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+При 
+\begin_inset Formula $p=q=2$
+\end_inset
+
+ получим неравенство Коши.
+\end_layout
+
+\begin_layout Subsection
+Норма в 
+\begin_inset Formula $L_{p}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $L_{p}\left[a,b\right]$
+\end_inset
+
+ введем понятие нормы:
+\begin_inset Formula 
+\[
+\left|\left|f\right|\right|=\left(\oui ab\left|f\left(x\right)\right|^{p}dx\right)^{\frac{1}{p}}
+\]
+
+\end_inset
+
+Она подчинена аксиомам нормы.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall f\in L_{p}\ \left|\left|f\right|\right|_{L_{p}}\br0,\ \left|\left|f\right|\right|_{L_{p}}=0\dsl f\left(x\right)\sim0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|k\um f\right|\right|_{L_{p}}=\left|k\right|\um\left|\left|f\right|\right|_{L_{p}}\ \forall k\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|f+g\right|\right|_{L_{p}}\mr\left|\left|f\right|\right|_{L_{p}}+\left|\left|g\right|\right|_{L_{p}}$
+\end_inset
+
+ --- неравенство треугольника, оно же неравенство Минковского.
+ Мы его только что доказали.
+\end_layout
+
+\begin_layout Definition
+Метрикой в 
+\begin_inset Formula $L_{p}$
+\end_inset
+
+ называется вещественнозначная функция, определенная на 
+\begin_inset Formula $L_{p}$
+\end_inset
+
+ следубщим образом:
+\begin_inset Formula 
+\[
+\rho\left(f,g\right)=\left|\left|f-g\right|\right|_{L_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аксиомы:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho\left(f,g\right)\br0,\ \rho\left(f,g\right)=0\dsl f\sim g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho\left(f,g\right)=\rho\left(g,f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho\left(f,g\right)\mr\rho\left(f,h\right)+$
+\end_inset
+
+
+\begin_inset Formula $\rho\left(h,g\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

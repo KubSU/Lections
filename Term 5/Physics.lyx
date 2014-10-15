@@ -1,0 +1,1454 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{'}
+{'}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Физические основы ЭВМ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пиздец сколько пропущено.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Карбат кремия: 
+\begin_inset Formula $SiC$
+\end_inset
+
+.
+ У него запрещенная зона прядка 
+\begin_inset Formula $2.4$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Раньше вы разберали 2мерный потенциальный ящик.
+ Теперь мы его распростроним на 3х-мерное пространство.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{e}=\df hLn$
+\end_inset
+
+ --- импульс электрона, который зависит от 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=\df{P_{e}L}h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{x}=\df{P_{x}L}h$
+\end_inset
+
+, 
+\begin_inset Formula $n_{y}=\df{P_{y}L}h$
+\end_inset
+
+, 
+\begin_inset Formula $n_{z}=\df{P_{z}L}h$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Полный импульс: 
+\begin_inset Formula $P^{2}=\df{h^{2}}{L^{2}}\left(n_{x}^{2}+n_{y}^{2}+n_{z}^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Значения импульса квантованые, тоесть принимают дискретные значения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E=\df{P^{2}}{2\um m}=\df{h^{2}}{2L^{2}m}\left(n_{x}^{2}+n_{y}^{2}+n_{z}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ --- длинна нашего потенциального ящика.
+ Если мы будем его увеличивать, то уровни энергии будут ближе друг к другу.
+\end_layout
+
+\begin_layout Standard
+Принцим минимума потенциальной энергия --- каждое тело всегда стремится
+ к минимму потениальной энергии, поэтому и электроны стараются находиться
+ ближе к ядру.
+ 
+\end_layout
+
+\begin_layout Standard
+Есть такое понятие в квантовой механике, так называемый, уровень Ферми:
+ Это уровень энергии 
+\begin_inset Formula $W_{F}$
+\end_inset
+
+, до которого заполнены электронные состояния.
+ В полупроводниках и диэлектриках уровень Ферми проводится по середине запрещенн
+ой зоны.
+ Вероятность нахождения электрона на уровне Ферми считается равным 
+\begin_inset Formula $\df 12$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+26.09.2014, пятница, я второй раз пришел на эту пару
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Оценка числа возможных состояний
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{x\ max},\ n_{y\ max},\ n_{z\ max}$
+\end_inset
+
+ --- максимально возможные квантовые числа, которые возможны по каждым координат
+ам.
+ Оно должно соответствовать уровню Ферми.
+ Оно определяется импульсом элкутрона на уровне Ферми.
+ 
+\begin_inset Formula 
+\[
+n_{x\ max}=n_{y\ max}=n_{z\ max}=\df Lh\um P_{F}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{F}$
+\end_inset
+
+ --- Импульс.
+\end_layout
+
+\begin_layout Standard
+Возьммем систему координат в пространстве квантовых чисел.
+ Это пространство квантовых состояний.
+ 
+\begin_inset Formula $n_{max}$
+\end_inset
+
+ не может быть отрицательным.
+ 
+\begin_inset Formula 
+\[
+n_{x,y,z}\mr\df Lh\um P_{F}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это неравенство показывается, что все возможные состояния лежат внутри 
+\begin_inset Formula $\df 18$
+\end_inset
+
+ шара радиуса
+\begin_inset Formula $\df Lh\um P_{F}$
+\end_inset
+
+.
+ Мы можем теперь получить число этих состояний способом вычисления обьема
+ шара.
+ Число возможных состояний: 
+\begin_inset Formula 
+\[
+S=\df 18\df 43\pi\df{L^{3}}{h^{3}}P_{F}^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 43\pi L^{3}$
+\end_inset
+
+ --- Реальный обьем (Не квантовый).
+\begin_inset Formula 
+\begin{eqnarray*}
+S & = & \df 18\df 43\pi\df{L^{3}}{h^{3}}P_{F}^{3}=\\
+ & = & \df 16\pi L^{3}\df{P_{F}^{3}}{h^{3}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L^{3}$
+\end_inset
+
+ --- Это дает нам обьем потенциального ящика
+\begin_inset Formula 
+\begin{eqnarray*}
+S & = & \df 16\df{\pi P_{F}^{3}}{h^{3}}\um V
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Число возможных состояний:
+\begin_inset Formula 
+\[
+N=\df SV\um2
+\]
+
+\end_inset
+
+ Умножаем на 2 по принципу Пауля, что на одной орбите находится 2 электрона.
+\begin_inset Formula 
+\[
+N=\df 13\df{\pi P_{F}^{3}}{h^{3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{F}=h\um\left(\df{3N}{\pi}\right)^{\frac{1}{3}}
+\]
+
+\end_inset
+
+Энергия ферми:
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{F} & = & \df{P_{F}^{2}}{2m}=\\
+ & = & \df{h^{2}}{2m}\um\left(\df{3N}{\pi}\right)^{\frac{2}{3}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когда мы подвигаемся к границе края, то состояния уплотняются, при подходе
+ к уровню Ферми.
+ Введем плотность состоянний, и оценим ее.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{F}=\left(2mE_{F}\right)^{\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=\df{\pi}{2h^{3}}\left(2mE_{F}\right)^{\frac{3}{2}}
+\]
+
+\end_inset
+
+Теперь чтобы найти плотность нужно продеференцировать.
+\begin_inset Formula 
+\[
+n=\df{dN}{dE}=\df 12\df{\pi}{h^{3}}\um2m\um\left(2mE_{F}\right)^{\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\left(E\right)=\df{\sqrt{2}\pi}{h^{3}}m^{\frac{3}{2}}E^{\frac{1}{2}}
+\]
+
+\end_inset
+
+ Это плотность 
+\emph on
+возможных 
+\emph default
+состояний.
+ Там электрон может находиться, но это не значит, что электрон там находится.
+ Если мы хотим посчитать число электронов, то нам еще нужна плотность.
+ Вероятность заполнения энергетического уровня 
+\begin_inset Formula $E$
+\end_inset
+
+ обозначим через 
+\begin_inset Formula $f\left(E\right)$
+\end_inset
+
+.
+ Тогда мы можм посчитать число электронов, носителей заряда 
+\begin_inset Formula $n_{e}\left(E\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+n_{e}\left(E\right)=n\left(E\right)\um f\left(E\right)
+\]
+
+\end_inset
+
+Если мы хотим найти общее число электронов, концентрацию, то нам нужно посчитать
+ 
+\begin_inset Formula $n_{e}\left(E\right)$
+\end_inset
+
+ на каждом уровне энергии.
+\begin_inset Formula 
+\[
+n_{e}=\oui 0{\b}n\left(E\right)f\left(E\right)dE
+\]
+
+\end_inset
+
+Функция 
+\begin_inset Formula $f\left(E\right)$
+\end_inset
+
+ была получена Ферми, и названа распределением Ферми.
+ Это вероятность заполнения электроном энергетического уровня.
+\begin_inset Formula 
+\[
+f\left(E\right)=\df 1{1+e^{\frac{E-E_{F}}{kT}}}
+\]
+
+\end_inset
+
+Переход через уровень Ферни жлектроном означает переход от валентной зоны
+ в зону проводимости.
+\end_layout
+
+\begin_layout Subsection
+Собственная электропроводимость проводников.
+\end_layout
+
+\begin_layout Standard
+Полупроводниками являются элементы 4й группы.Типичным представителями является
+ углерод: 
+\begin_inset Formula $C$
+\end_inset
+
+, кремний: 
+\begin_inset Formula $Si$
+\end_inset
+
+ и германий: 
+\begin_inset Formula $Ge$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+У кремния есть кресталическая решетка.
+ У каждого атома 4 электрона и 4 соседа, и каждый электрон вращается вокруг
+ собя и соседа.
+ На бывает что электрон вырывается и бружныет в межатомном пространстве,
+ и тогда он находит пустое место и занимает его место, если нету магнитного
+ поля.
+ Кроме того поле добавляет энергии электрону.
+ И поэтому может возрасти электрический ток.
+ Но если ток будет большим, то разрушится кристалическая решетка, и тогда
+ полупроводник разрушится.
+ Когда у 2х соседей только 1н электрон - это называют дыркой.
+ Что характеризует дырку: она положительно заряжена.
+ Так вод кроме с путешествия электрона есть еще и путеществие дырок.
+ Это когда соседний электрон занимает место ушедшему, и получается дырочная
+ проводимость.
+ Получается что у полупроводника ест как движение отрицательных, так и движение
+ положительных зарядов.
+ Когда мы берем 
+\begin_inset Formula $T=0$
+\end_inset
+
+ то некакой проводимости не будет.
+ Чем больше температура, тем больше 
+\begin_inset Formula $kT$
+\end_inset
+
+ и тем больше электронов путешествует, но есть грань, после которой все
+ - ничегоне проводит.
+ У некоторых полупроводников при облучении светом может возрасти проводимость.
+ Называется 
+\emph on
+фотоэффектом
+\emph default
+.
+ Энергии фотона хватает, чтобы выбить электрон, и образовать электрический
+ ток.
+ На этой основе работают солнечные батареи.
+\end_layout
+
+\begin_layout Standard
+Еслимы хотим посчитать число электронов в зоне проводимости:
+\begin_inset Formula 
+\[
+n_{e}=\oui{E_{F}}{\b}n_{e}\left(E\right)f\left(E\right)dE
+\]
+
+\end_inset
+
+Энергия валентной зоны(Верхняя граница): 
+\begin_inset Formula $E_{V}$
+\end_inset
+
+, а энергия в зоне проводимости(Нижняя граница): 
+\begin_inset Formula $E_{C}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+E_{C}-E_{F}=E_{F}-E_{V}>>kT
+\]
+
+\end_inset
+
+В зоне проводимости:
+\begin_inset Formula 
+\[
+f_{F}\approx e^{-\frac{E-E_{F}}{kT}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+n_{e} & = & \oui{E_{F}}{\b}\df{\sqrt{2}\pi}{h^{3}}m^{\frac{3}{2}}\sqrt{E}\um e^{-\frac{E-E_{F}}{kT}}dE=\\
+ & = & \oui{E_{C}}{\b}\df{\sqrt{2}\pi}{h^{3}}m^{\frac{3}{2}}\sqrt{E-E_{C}}\um e^{-\frac{E-E_{FC}}{kT}}\um e^{-\frac{E_{C}-E_{F}}{kT}}dE=\\
+ & = & \df{\sqrt{2}\pi m^{\frac{3}{2}}}{h^{3}}\um e^{-\frac{E_{C}-E_{F}}{kT}}\um\oui{E_{C}}{\b}\sqrt{E-E_{C}}\um e^{-\frac{E-E_{C}}{kT}}
+\end{eqnarray*}
+
+\end_inset
+
+ Как нам его посчитать?...
+ Хз как...
+ Кароч..
+ В итоге мы придем к интегралу:
+\begin_inset Formula 
+\[
+\oui 0{\b}\sqrt{u}\um e^{-u}du
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+10.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{n}^{*}=\df{P_{0}}{v_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ это соответственно импульс и скорость на уровне Ферми.
+ Тоже самое идет для дырок, но у них скорость меньше.
+ 
+\end_layout
+
+\begin_layout Standard
+Эффективная массы дырки всегда блольше чем эффективная масса электрона,
+ но это только когда есть движение.
+\begin_inset Formula 
+\[
+n=N_{C}e^{\frac{E-E_{F}}{kT}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P=N_{V}e^{\frac{E_{F}-E}{kT}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{i}\approx N_{C}e^{\frac{E_{0}}{2kT}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Дрейфовый ток
+\end_layout
+
+\begin_layout Standard
+Пусть у нас какой то полупроводник, неважно собственый, донорный или акцепторный.
+ Прикладываем к нему внешнее поле
+\begin_inset Formula $E$
+\end_inset
+
+, тогда начинается движение заряженных частиц.
+ То значит возникает ток.
+ Ток вызвыный наличием электрического поля называется 
+\emph on
+дрейфовым
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+По закону Ома 
+\begin_inset Formula $I=\df UR$
+\end_inset
+
+ через плотность тока 
+\begin_inset Formula $\v j=\sigma\v E$
+\end_inset
+
+.
+\begin_inset Formula $\sigma$
+\end_inset
+
+ --- удельная проводимость материала, 
+\begin_inset Formula $\sigma=\df 1{\rho}$
+\end_inset
+
+, где 
+\begin_inset Formula $\rho$
+\end_inset
+
+ --- удельное сопротивление.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\v j=e\um n\um\v v$
+\end_inset
+
+, 
+\begin_inset Formula $v$
+\end_inset
+
+ --- скорость направленого движения электронов, 
+\begin_inset Formula $n$
+\end_inset
+
+ --- концинтрация, 
+\begin_inset Formula $e$
+\end_inset
+
+ --- заряд.
+\begin_inset Formula 
+\[
+e\v E=m\um\df{dv}{dt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\v{v_{0}}+a\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau$
+\end_inset
+
+ --- время свободного движения электрона, или время релаксации.
+\begin_inset Formula 
+\[
+\df{e\v E}m=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\df{a\tau}2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{cp}=\df{a\tau}2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{\text{др}}=\df{e\v E}{2m_{n}}\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v{j_{n}}=e\um n\um\v{v_{\text{др}}}=en\df{e\um\tau}{2m_{n}}\um\v E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{e\um\tau}{2m}$
+\end_inset
+
+ --- зависит от свойств материала, и обозначается 
+\begin_inset Formula $\mu_{n}$
+\end_inset
+
+ , а называется она подвижностью электрона.
+\begin_inset Formula 
+\[
+\v{v_{\text{др}}}=\mu_{n}\v E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu_{n}=\df vE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Движение дырок:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+j_{p}=e\um p\um\v{v_{\text{др}}}=ep\mu_{p}\v E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu_{p}=\df{e\tau}{2m_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полный дрейфовый ток:
+\begin_inset Formula 
+\[
+j_{\text{др}}=\left(p\mu_{p}+n\mu_{n}\right)e\v E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Диффузионный ток
+\end_layout
+
+\begin_layout Standard
+На торец полупроводника попадает свет.
+ Там образовываются и дырки и электроны, а на другом конце их мало.
+ Возникает диффузия.
+ Помимо дрейфового тока бывает 
+\emph on
+диффузионный 
+\emph default
+ток.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N$
+\end_inset
+
+ --- поток частиц, количество частиц, или прошедших через площадку 
+\begin_inset Formula $S$
+\end_inset
+
+ за время 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+ --- коэфициент диффузии, 
+\begin_inset Formula $n$
+\end_inset
+
+ --- нормаль
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=-D\df{\dd m}{\dd n}S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi=-D\grad m
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ --- количество вещества прошедшее через площадку 
+\begin_inset Formula $S$
+\end_inset
+
+ в еденицу времени.
+\begin_inset Formula 
+\[
+\v{j_{\text{диф}}}=+e\um D_{n}\um\grad n
+\]
+
+\end_inset
+
+Если будем рассматривать движение в проводнике для одномерного движения
+ получим соотношение:
+\begin_inset Formula 
+\[
+\v{j_{\text{диф}}}=e\um D_{n}\df{dn}{dx}
+\]
+
+\end_inset
+
+Это была диффузия электронов, теперь получим диффузию дырок.
+\begin_inset Formula 
+\[
+\v{j_{\text{диф}}}=-eD_{p}\grad p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\v{j_{\text{диф}}}=-eD_{p}\df{dp}{dx}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D_{n}=\df{kT}e\mu_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D_{p}=\df{kT}em_{p}
+\]
+
+\end_inset
+
+ Запишем диффузионный ток, который у нас тут возникает.
+ Дело в том что в полупроводнике и дырки и электроны двигаются в одну сторону,
+ и они друг друга компенсируют,и токак как такового не возникает.
+\end_layout
+
+\begin_layout Standard
+В гидродинамике уравнение неразрывности имеет вид:
+\begin_inset Formula 
+\[
+\df{d\rho}{dt}+\text{div}\rho\v v=0
+\]
+
+\end_inset
+
+Обозначим черещ 
+\begin_inset Formula $\rho$
+\end_inset
+
+ плотность носителей заряда в полупроводнике.
+ Получим уравнение:
+\begin_inset Formula 
+\[
+\df{d\rho}{dt}+\text{div}\v j=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dq}{dt}=i
+\]
+
+\end_inset
+
+Так вод к чему это все.
+ Если мы рассматриваем электрон:
+\begin_inset Formula 
+\[
+\rho=e\um n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j_{e}=en\mu_{n}E+eD_{n}\df{dn}{dx}
+\]
+
+\end_inset
+
+Уравнение неразрывности для электрона:
+\begin_inset Formula 
+\[
+-\df{dn}{dt}+\df d{dx}\left(n\mu_{n}E+D_{n}\df{dn}{dx}\right)=0
+\]
+
+\end_inset
+
+Уравнение, описывающее движение электронов в полупроводнике:
+\begin_inset Formula 
+\[
+\df{dn}{dt}=\mu_{n}E\df{dn}{dx}+D_{n}\df{d^{2}n}{dx^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dp}{dt}+\df d{dx}\left(n\mu_{p}E-D_{p}\df{dp}{dx}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dp}{dt}=-\mu_{p}E\df{dp}{dx}+D\df{d^{2}p}{dx^{2}}
+\]
+
+\end_inset
+
+Мы получили уравнение параболичиского типа.
+\end_layout
+
+\begin_layout Standard
+В полупроводнике может происходить генерация электронов и дырок.
+ 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ --- коэфициант генерации.
+ 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ начальная концентрация, а 
+\begin_inset Formula $\tau$
+\end_inset
+
+ --- время релоксации.
+\begin_inset Formula 
+\[
+\df{dn}{dt}=\mu_{n}E\df{dn}{dx}+D_{n}\df{d^{2}n}{dx^{2}}+G_{n}-\df{n-n_{0}}{\tau}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{dp}{dt}=-\mu_{p}E\df{dp}{dx}+D\df{d^{2}p}{dx^{2}}+G_{p}-\df{p-p_{0}}{\tau}
+\]
+
+\end_inset
+
+Эти слогаемы обычно используются для неосновных носителей.
+ Они не играют большую роль для основных носителей заряда.
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Электронно-дырочные переходы и их характеристики
+\end_layout
+
+\begin_layout Standard
+Электронно-дырочный переход --- это контакт между проводниками 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ типа, его еще называют 
+\emph on
+PN переходом
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Когда соприкасаются полупроводники 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ типа на границе в какой то окресности возникает разность потенциалов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

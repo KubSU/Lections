@@ -1,0 +1,1902 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{'}
+{'}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddf}[2]{\df{\dd#1}{\dd#2}}
+{\df{\dd#1}{\dd#2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Урматы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+2.октябрь.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Введем новвые переменные:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{1}=x-x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}=y-y_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{1}=z-z_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{1}=t+\df ra$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{2}=x-x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{2}=y-y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{2}=z-z_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{2}=t-\df ra$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Перейдем в уравнении (1) к новым епеременныи.
+ Для этовго воспользуемся первым комплектом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u\left(x,y,z,t\right)=u_{1}\left(x_{1},y_{1},z_{1},t_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd u}{\dd t}=\df{\dd u_{1}}{\dd t_{1}},\ \df{\dd^{2}u}{\dd t^{2}}=\df{\dd^{2}u_{1}}{\dd t_{1}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd u}{\dd x}=\df{\dd u_{1}}{\dd x_{1}}+\df{\dd u_{1}}{\dd t_{2}}\um\df{x_{1}}{a\um r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd^{2}u}{\dd x^{2}}=\df{\dd^{2}u_{1}}{\dd x_{1}^{2}}+2\um\df{\dd^{2}u_{1}}{\dd x_{1}\dd t_{1}}\um\df{x_{1}}{a\um r}+\df{\dd^{2}u_{1}}{\dd t_{1}^{2}}\um\df{x_{1}^{2}}{a^{2}\um r^{2}}+\df{\dd u_{1}}{\dd t_{1}}\left(\df 1{a\um r}-\df{x_{1}^{2}}{a\um r^{3}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd^{2}u_{1}}{\dd t_{1}^{2}}=a^{2}\left[\D_{1}u_{1}+\df 2{a\um r}\left(x_{1}\df{\dd^{2}u_{1}}{\dd x_{1}\dd t_{1}}+y_{1}\df{\dd^{2}u_{1}}{\dd y_{1}\dd t_{1}}+z_{1}\df{\dd^{2}u_{1}}{\dd z_{1}\dd t_{1}}\right)+\df{\dd^{2}u_{1}}{\dd t_{1}^{2}}\df 1{a^{2}}+\df{\dd u_{1}}{\dd t_{1}}\um\df 2{a\um r}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd^{2}u_{1}}{\dd t_{1}^{2}}=a^{2}\left[\D_{1}u_{1}+\df 2a\left(\df{x_{1}}r\df{\dd^{2}u_{1}}{\dd x_{1}\dd t_{1}}+\df{y_{1}}r\df{\dd^{2}u_{1}}{\dd y_{1}\dd t_{1}}+\df{z_{1}}r\df{\dd^{2}u_{1}}{\dd z_{1}\dd t_{1}}\right)+\df{\dd^{2}u_{1}}{\dd t_{1}^{2}}\df 1{a^{2}}+\df{\dd u_{1}}{\dd t_{1}}\um\df 2{a\um r}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=a^{2}\left[\D_{1}u_{1}+\df 2a\left(\cos\alpha\df{\dd^{2}u_{1}}{\dd x_{1}\dd t_{1}}+\cos\beta\df{\dd^{2}u_{1}}{\dd y_{1}\dd t_{1}}+\cos\gamma\df{\dd^{2}u_{1}}{\dd z_{1}\dd t_{1}}\right)+\df{\dd u_{1}}{\dd t_{1}}\um\df 2{a\um r}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D_{1}u_{1}+\df 2{a\um r}\df{\dd u_{1}}{\dd t_{1}}+\df 2a\df{\dd}{\dd r}\left(\df{\dd u_{1}}{\dd t_{1}}\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 2{a\um r}\left[\df{\dd u}{\dd t_{1}}+r\df{\dd}{\dd r}\left(\df{\dd u_{1}}{\dd t_{1}}\right)\right]$
+\end_inset
+
+ --- 
+\begin_inset Formula $\df{\dd}{\dd r}\left[r\df{\dd u_{1}}{\dd t_{1}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\D_{1}u_{1}+\df 2{a\um r}\df{\dd}{\dd r}\left(r\df{\dd u_{1}}{\dd t_{1}}\right)=0\label{eq:1_3}
+\end{equation}
+
+\end_inset
+
+Нетрудно показать что решения уравнения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_3"
+
+\end_inset
+
+) можно предствить в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}=\df{\Phi_{1}\left(t_{1}\right)}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Очевидно:
+\begin_inset Formula $\df{\dd}{\dd r}\left(r\df{\dd}{\dd t_{1}}\left(\df{\Phi_{1}\left(t_{1}\right)}r\right)\right)=\df{\dd}{\dd r}\left(r\df{\Phi_{1}\pr\left(t_{1}\right)}r\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd}{\dd x_{1}}\df{\Phi_{1}\left(t_{1}\right)}r=\Phi_{1}\left(t_{1}\right)\df{\dd}{\dd x_{1}}\left(\df 12\right)=\Phi_{1}\left(t_{1}\right)\left[-\df 1{z^{2}}\df{2x_{1}}{2r}\right]=-\df{\Phi_{1}\left(t_{1}\right)x_{1}}{r^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd^{2}}{\dd x_{1}}\left(\df 12\right)=\df{3x_{1}^{2}}{r^{5}}-\df 1{r^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D_{1}\left(\df{\Phi_{1}\left(t_{1}\right)}r\right)=\Phi_{1}\left(t_{1}\right)\left[\df 3{z^{5}}........\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аналогично выберая новые переменные (2) уравнение 1 можно привести к виду:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\D_{2}u_{2}+\df 2{a\um r}\df{\dd}{\dd r}\left(r\df{\dd u_{2}}{\dd t_{2}}\right)=0\label{eq:1_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Общее решение которого представимо в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{2}=\df{\Phi_{2}\left(t_{2}\right)}r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда возвращаясь к старым переменным общее решение 1 можно записать:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u\left(M,t\right)=\df{\Phi_{1}\left(t+\df ra\right)+\Phi_{2}\left(t-\df ra\right)}r\label{eq:1_5}
+\end{equation}
+
+\end_inset
+
+Соотношение 5 по форме очень напоминает одномерное решение задачи Коши.
+\end_layout
+
+\begin_layout Standard
+В данном случае общее решение предстваляет собой суперпозицию сферических
+ волн.
+ При этом первое слогаемое описывает волну, сходящуюся в точке 
+\begin_inset Formula $r=0$
+\end_inset
+
+, амплитуда которой вохрастает при приближении к нулю.
+ А второе слагаемое описывает расходящуюся волну, амплитуда которой убывает
+ на бесконечности.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим задачу коши 1-6, где 6 имеет вид:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+u|_{t=0}=\varphi\left(M\right),\ \varphi\left(M\right)\in C^{3}\\
+\df{\dd u}{\dd t}|_{t=0}=\psi\left(M\right),\ \psi\left(M\right)\in C^{2}
+\end{array}
+\]
+
+\end_inset
+
+Нетрудно убедиться, что решение уравнения 1 можно предствить в виде интеграла:
+\begin_inset Formula 
+\begin{equation}
+u\left(M,t\right)=\df 1{4\pi a}\un{\iint}{S_{r}}\df{\omega\left(\xi,\nu,\mu\right)}rd\sigma_{p}\label{eq:1_*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\left(x,y,z\right),\ P\left(\xi,\nu,\mu\right),\ r=at,\ S_{r}\equiv S_{at}=\left\{ \left(\xi,\nu,\mu\right):\left(x-\xi\right)^{2}+\left(y-\nu\right)^{2}+\left(z-\mu\right)^{2}=a^{2}t^{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ --- произвольная функция, свойства которой определим походу.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\xi=x+\alpha at\\
+\nu=y+\beta at\\
+\mu=z+\gamma at
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Представим (*) иначе обозначим через 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ сферу еденичную радиуса сцентром 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Элементы площади поверхности 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $S_{r}$
+\end_inset
+
+ соотносятся следующим образом:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\sigma_{at}=a^{2}t^{2}d\sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u_{1}\left(M,t\right)=\df 1{4\pi a^{2}t}\un{\iint}{S_{1}}\omega\left(\xi,\nu,\mu\right)d\sigma_{1}\label{eq:1_**}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+u_{1}\left(M,t\right)=\df t{4\pi}\un{\iint}{S_{1}}\omega\left(\xi,\nu,\mu\right)d\sigma_{1}\label{eq:1_***}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\D u=\df t{4\pi}\un{\iint}{S_{1}}\D\omega d\sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\sigma_{at}=a^{2}t^{2}d\sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd u}{\dd t}=\df 1{4\pi}\un{\iint}{S_{1}}\omega d\sigma_{1}+\df{at}{4\pi}\un{\iint}{S_{1}}\left[\df{\dd\omega}{\dd\xi}\alpha+\df{\dd\omega}{\dd\nu}\beta+\df{\dd\omega}{\dd\mu}\gamma\right]d\sigma_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+По формуле Острагратского-Гаусса перейдем к интегралу по Шару:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf ut=\df ut+\df 1{4\pi at}\un{\underbrace{\un{\iint}{S_{at}}\left[\ddf{^{2}\omega}{\xi^{2}}+\ddf{^{2}\omega}{\nu^{2}}+\ddf{^{2}\omega}{\mu^{2}}\right]d\xi f\nu d\mu}}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf{^{2}u}{t^{2}}=-\df u{t^{2}}+\df 1t\left[\df ut+\df y{4\pi at}\right]-\df y{4\pi\alpha t}+\df 1{4\pi at}\df{\dd y}{\dd t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ddf{^{2}u}{t^{2}}=\df 1{4\pi at}\df{\dd y}{\dd t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=\oui 0{at}\oui 0{2\pi}\oui 0{\pi}\D_{\Theta}\omega\sin\Theta\rho^{2}d\Theta d\varphi d\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf yt=a\oui 0{2\pi}\oui 0{\pi}\D_{\Theta}\omega\sin\Theta a^{2}t^{2}d\Theta d\varphi=a\un{\iint}{S_{at}}\D\omega d\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf{^{2}u}{t^{2}}=\df 1{4\pi t}\un{\iint}{S_{at}}\D\omega d\sigma_{at}=\df{a^{2}t}{4\pi}\un{\iint}{S_{1}}\D\omega d\sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим что 
+\begin_inset Formula $\df{\dd^{2}\omega}{d\xi^{2}}+\ddf{^{2}\omega}{\nu^{2}}+\ddf{^{2}\omega}{\mu^{2}}=\ddf{^{2}\omega}{x^{2}}+\ddf{^{2}\omega}{y^{2}}+\ddf{^{2}\omega}{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{a^{2}t}{4\pi}\un{\iint}{S_{1}}\D_{\xi}\omega d\sigma_{1}=a^{2}\df t{4\pi}\un{\iint}{S_{1}}\D\omega d\sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим каким начальным условиям удовлетворяет уравнение ***.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u\left(M,0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf{u\left(M,0\right)}t=\df 1{4\pi}\un{\iint}{S_{1}}\omega\left(\xi,\nu,\mu\right)d\sigma_{1}+\df{at}{4\pi}\un{\iint}{S_{1}}\tr\tr d\Theta=\df 1{4\pi}\un{\iint}{S_{1}}\omega\left(x,y,z\right)d\sigma_{1}=\omega\left(x,y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tогда функция вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}\left(M,t\right)=\df 1{4\pi a}\un{\iint}{S_{r}}\df{\psi\left(\xi,\nu,\mu\right)}rd\sigma_{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}|_{t=0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf{u_{1}}t|_{t=0}=\psi\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\left(M,t\right)=\df{\dd u\left(M,t\right)}{\dd t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+очевидно 
+\begin_inset Formula $v$
+\end_inset
+
+ также уддовлетворяет уранвнению 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf{^{2}v}{t^{2}}=\ddf{^{2}}{t^{2}}\left(\ddf ut\right)=\ddf{}t\left(\ddf{^{2}u}{t^{2}}\right)=\ddf{}t\left(a^{2}\D u\right)=a^{2}\D\left(\df{\dd u}{\dd t}\right)=a^{2}\D v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v|_{t=0}=\ddf ut|_{t=0}=\omega\left(x,y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf vt|_{t=0}=\ddf{^{2}u}{t^{2}}|_{t=0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда функция вида:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{2}\left(M,t\right)=\df 1{4\pi a}\ddf{}t\un{\iint}{S_{r}}\df{\varphi\left(\xi,\nu,\mu\right)}rd\sigma_{r}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда решение задачи коши 1-6 можно предствить в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u\left(M,t\right)=\df 1{4\pi a}\un{\iint}{S_{r}}\df{\psi\left(\xi,\nu,\mu\right)}rd\sigma_{r}+\df 1{4\pi a}\ddf{}t\un{\iint}{S_{r}}\df{\varphi\left(\xi,\nu,\mu\right)}rd\sigma_{r}\label{eq:1_7}
+\end{equation}
+
+\end_inset
+
+
+\emph on
+\noun on
+ 
+\noun default
+Рассмотрим задачу Коши на плоскости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf{^{2}u}{t^{2}}=a^{2}\left(\ddf{^{2}u}{x^{2}}+\ddf{^{2}u}{y^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u|_{t=0}=\varphi\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ddf ut=\psi\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\left(x,y\right)\in\R^{2},\ t>0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\in C^{3},\ \psi\in C^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из формулы 7 решение получается при помощи методакоординатного спуска.
+ Интегралы по сфере можно свести к интегралу по большому кругу этой сферы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{at}=\left\{ \left(\xi,\nu\right):\left(x-\xi\right)^{2}+\left(y-\nu\right)^{2}\mr a^{2}t^{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{4\pi a}\un{\iint}{S_{at}}\df{\psi\left(\xi,\nu,\mu\right)}rd\sigma_{r}\st\df 2{4\pi a}\un{\iint}{Q_{at}}\df{\psi\left(\xi,\nu\right)}{at}\df{dS}{\cos\gamma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\gamma=\df{\left|PP_{1}\right|}{at}=\df{\sqrt{a^{2}t^{2}-\left(x-\xi\right)^{2}-\left(y-\nu\right)^{2}}}{at}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df 1{4\pi a}\un{\iint}{S_{at}}\df{\psi\left(\xi,\nu,\mu\right)}rd\sigma_{r}\st\df 2{4\pi a}\un{\iint}{Q_{at}}\df{\psi\left(\xi,\nu\right)}{at}\df{dS}{\cos\gamma}=\df 1{2\pi a}\un{\iint}{Q_{at}}\df{\psi\left(\xi,\nu\right)d\xi d\nu}{\sqrt{a^{2}t^{2}-\left(x-\xi\right)^{2}-\left(y-\nu\right)^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аналогично со вторым слагаемым.
+\end_layout
+
+\begin_layout Standard
+Получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u\left(M,t\right)=\df 1{2\pi a}\df{\dd}{\dd t}\un{\iint}{Q_{at}}\df{\varphi\left(\xi,\nu\right)d\xi d\nu}{\sqrt{a^{2}t^{2}-\left(x-\xi\right)^{2}-\left(y-\nu\right)^{2}}}+\df 1{2\pi a}\un{\iint}{Q_{at}}\df{\psi\left(\xi,\nu\right)d\xi d\nu}{\sqrt{a^{2}t^{2}-\left(x-\xi\right)^{2}-\left(y-\nu\right)^{2}}}\label{eq:1_7_}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Используя метод координатного спуска, проектируя шар на его деаметр, из
+ (7_) могут получить формулу Даламбера.
+\end_layout
+
+\begin_layout Standard
+Формула (7_) описывает процесс распространения целиндрических волн.
+\end_layout
+
+\begin_layout Subsection
+Физическая интерпритация формул Киргоффа и Пуассона
+\end_layout
+
+\begin_layout Standard
+Рассмотрим решения задачи Коши 1,6 описываемого формулой 7.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(M\right)\begin{cases}
+\nr0, & M\in\Omega\vkl\R^{3}\\
+=0, & M\notin\Omega
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{1}=\df da$
+\end_inset
+
+ в тот момент когда радиус сферы обеспечил сфере косание с обрастью, где
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi$
+\end_inset
+
+ отличны от нуля.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{2}=\df Da$
+\end_inset
+
+ коснется последний раз, и вся область будет внутри, и на сфере подинтегральные
+ функции снова станут нуленвыми.
+\end_layout
+
+\begin_layout Standard
+Это моменты прохождения переднего и заднегго фронта волны.
+ Принцип Югинса выполняется.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим решение задачи (1_,6_) описываемое (7_) при тех же условиях.
+\end_layout
+
+\begin_layout Standard
+В начальные момент 
+\begin_inset Formula $r=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{1}=\df da$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{2}=\df Da$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Бесконечно затухающие колебания.
+ Нету заднего фронта.
+ Принцип Югинса не выполняется.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+9.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Решение задачи Коши на плоскости и в пространстве для неоднородного волнового
+ уравнения
+\end_layout
+
+\begin_layout Standard
+Рассмотрим следующую задачу:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\widetilde{1}\right)\df{\dd^{2}u}{\dd t^{2}}=a^{2}\D u\left(M,t\right)+f\left(M,t\right),\ t>0,\ M\in\R^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(2\right)\begin{array}{c}
+u|_{t=0}=\varphi\left(M\right)\\
+\df{\dd u}{\dd t}|_{t=0}=\psi\left(M\right)
+\end{array}
+\]
+
+\end_inset
+
+Вынужденые колебания 3-хмерного обьема.
+\end_layout
+
+\begin_layout Standard
+В силу линейности задачи решение может быть представлено в виде:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(2_{0}\right)\begin{array}{c}
+u|_{t=0}=0\\
+\df{\dd u}{\dd t}|_{t=0}=0
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(M,t\right)=u_{1}\left(M,t\right)+u_{2}\left(M,t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{1}\left(7\right)\st\left(1\right),\left(2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{2}\st\left(\widetilde{1}\right),\left(2_{0}\right)
+\]
+
+\end_inset
+
+Для построения 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ рассмотрим вспомогательную задачу:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{\dd^{2}\omega\left(M,t,\tau\right)}{\dd t^{2}}=a^{2}\D\omega\left(M,tm\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\omega|_{t=\tau}=0\\
+\df{\dd\omega}{\dd t}|_{t=\tau}=f\left(M,t\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\in C^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega\left(M,t,\tau\right)=\df 1{4\pi a}\un{\iint}{\sigma_{a}\left(t-\tau\right)}\df{f\left(\xi,\nu,\rho,\tau\right)}{a\left(t-\tau\right)}d\sigma_{a}\left(t-\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{2}\left(M,t\right)=\oui at\omega\left(M,t,\tau\right)d\tau\left(\D\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D u_{2}=\oui 0t\D\omega\left(M,t,\tau\right)d\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd u_{2}}{\dd t}=\oui 0t\df{\dd\omega\left(M,t,\tau\right)}{\dd t}d\tau+\omega\left(M,t,\tau\right)\left(\D\D\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd^{2}u}{\dd t^{2}}=\oui 0t\df{\dd^{2}\omega}{\dd t^{2}}d\tau+\df{\dd\omega\left(M,t,\tau\right)}{\dd t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd\omega\left(M,t,\tau\right)}{\dd t}=f\left(M,t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oui 0t\left[\df{\dd^{2}\omega}{\dd t^{2}}-a^{2}\D\omega\right]d\tau+f\left(M,t\right)=f\left(M,t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\omega|_{t=0}=0\text{из}\left(\D\right)\\
+\df{\dd\omega}{\dd t}|_{t=0}=0\text{из}\left(\D\D\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{2}\left(M,t\right)=\df 1{4\pi a}\oui 0t\un{\iint}{\sigma_{a}\left(t-\tau\right)}\df{f\left(\xi,\nu,\rho,\tau\right)}{a\left(t-\tau\right)}d\sigma_{a}\left(t-\tau\right)d\tau=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\df 1{4\pi}\oui 0t\left(t-\tau\right)\un{\iint}{\sigma_{1}}f\left(\xi,\nu,\rho,\tau\right)d\sigma_{1}d\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\xi=x+\alpha a\left(t-\tau\right)\\
+\nu=y+\beta a\left(t-\tau\right)\\
+\rho=z+\gamma a\left(t-\tau\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+a\left(t-\tau\right)=r\\
+\tau=t-\df ra\\
+d\tau=-\df{dr}a
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\df 1{4\pi a^{2}}\oui 0{at}r\un{\iint}{\sigma_{1}}f\left(\xi,\nu,\rho,\tau-\df ra\right)d\sigma_{1}d\tau=
+\]
+
+\end_inset
+
+Возвращаясь к сфере радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+=\df 1{4\pi a^{2}}\oui 0{at}\un{\iint}{\sigma_{r}}\df{f\left(\xi,\nu,\rho,\tau-\df ra\right)}rd\sigma_{r}d\tau=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\df 1{4\pi a^{2}}\un{\iiint}{D_{at}}\df{f\left(\xi,\nu,\rho,\tau-\df ra\right)}rdV\left(8\right)
+\]
+
+\end_inset
+
+Аналогично определяется задачи на плоскости, при этом 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ имеет вид:
+\begin_inset Formula 
+\[
+u_{2}\left(x,y,t\right)=\df 1{2\pi a}\oui 0t\un{\iint}{Q_{a}\left(t-\tau\right)}\df{f\left(\xi,\nu,\tau\right)d\xi f\nu d\tau}{\sqrt{a^{2}\left(t-\tau\right)^{2}-\left(x-\xi\right)^{2}-\left(y-\nu\right)^{2}}}\left(\overline{8}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Корректность постановки задачи Коши в пространстве
+\end_layout
+
+\begin_layout Standard
+Существование решения задачи (1,2) продемонстрировано при построении решения
+ для 
+\begin_inset Formula $\varphi\in C^{3},\ \psi\in C^{2}$
+\end_inset
+
+.
+ Вопрос единственности, докажем его:
+\end_layout
+
+\begin_layout Standard
+Введем для упрощения построенийновые переменные:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=at$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Задача при этом примет вид:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{\dd^{2}u}{\dd t^{2}}=\D u\left(M,\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+u|_{\tau=0}=\varphi\left(M\right)\\
+\df{\dd u}{\dd t}|_{\tau=0}=\df{\psi\left(M\right)}a
+\end{array}
+\]
+
+\end_inset
+
+Характеристическое уравнение:
+\begin_inset Formula 
+\[
+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}-\left(\df{\dd\omega}{\dd\tau}\right)^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega:\ \left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}+\left(z-z_{0}\right)^{2}-\left(\tau-\tau_{0}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Проведем сечения конуса: 
+\begin_inset Formula $\tau=\tau_{1},\ \tau=0,\ \tau_{1}>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ --- нижнее основание, 
+\begin_inset Formula $\sigma_{\tau}$
+\end_inset
+
+ --- верхнее основание усеченного конуса,
+\begin_inset Formula $\gamma_{\tau}$
+\end_inset
+
+ --- боковая поверхность.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\iiiint}{D_{\tau}}2\df{\dd t}{\dd t}\left(\df{\dd^{2}u}{\dd t^{2}}-\D u\right)dV=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\df{\dd u}{\dd t}\df{\dd^{2}u}{\dd\tau^{2}}=\df{\dd}{\dd t}\left(\df{\dd u}{\dd t}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\df{\dd u}{\dd t}\df{\dd^{2}u}{\dd x^{2}}=2\df{\dd}{\dd x}\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd x}\right)-2\df{\dd u}{\dd x}\df{\dd^{2}u}{\dd\tau\dd x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\df{\dd u}{\dd t}\df{\dd^{2}u}{\dd x^{2}}=2\df{\dd}{\dd x}\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd x}\right)-\df{\dd}{\dd\tau}\left(\df{\dd u}{\dd x}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iiiint}{D_{t}}\left[\df{\dd}{\dd\tau}\left(\df{\dd u}{\dd\tau}\right)^{2}+\df{\dd}{\dd\tau}\left(\df{\dd u}{\dd x}\right)^{2}+\df{\dd}{\dd\tau}\left(\df{\dd u}{\dd y}\right)^{2}+\df{\dd}{\dd\tau}\left(\df{\dd u}{\dd z}\right)^{2}-2\df{\dd}{\dd x}\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd x}\right)-2\df{\dd u}{\dd y}\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd y}\right)-2\df{\dd}{\dd z}\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd z}\right)\right]dV
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iiint}{\Gamma_{\tau},\sigma_{\tau},\sigma_{0}}\left[\left(\left(\df{\dd u}{\dd\tau}\right)^{2}+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right)\cos\left(\tau,n\right)-2\cos\left(x,n\right)\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd x}\right)-2\cos\left(y,n\right)\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd y}\right)-2\cos\left(z,n\right)\left(\df{\dd u}{\dd\tau}\df{\dd u}{\dd z}\right)\right]d\sigma=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\sigma_{\tau}:\ \cos\left(\tau,n\right)=\ 1,\ \cos\left(x,n\right)=\cos\left(y,n\right)=\cos\left(z,n\right)=0\\
+\sigma_{0}:\ \cos\left(\tau,n\right)=-1,\ \cos\left(x,n\right)=\cos\left(y,n\right)=\cos\left(z,n\right)=0\\
+\Gamma_{\tau}:\ \vec n=\grad\omega=\left(\begin{array}{c}
+\df{\dd\omega}{\dd x}\\
+\df{\dd\omega}{\dd y}\\
+\df{\dd\omega}{\dd z}\\
+\df{\dd\omega}{\dd\tau}
+\end{array}\right),\ \cos\left(\tau,n\right)=\df{\df{\dd\omega}{\dd\tau}}{\left|\v n\right|}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd\omega}{\dd x}=2\left(x-x_{0}\right),\ \df{\dd\omega}{\dd y}=2\left(y-y_{0}\right),\ \df{\dd\omega}{\dd z}=2\left(z-z_{0}\right),\ \df{\dd\omega}{\dd\tau}=-2\left(\tau-\tau_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\v n\right| & = & 2\sqrt{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}+\left(z-z_{0}\right)^{2}+\left(\tau-\tau_{0}\right)^{2}}=\\
+ & = & 2\sqrt{2\left(\tau-\tau_{0}\right)^{2}}=\\
+ & = & 2\sqrt{2}\left(\tau_{0}-\tau\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\left(\tau,n\right)=\df{-2\left(\tau-\tau_{0}\right)}{2\sqrt{2}\left(\tau_{0}-\tau\right)}=\df 1{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\left(x,n\right)=\df{2\left(x-x_{0}\right)}{\left|\v n\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\cos^{2}\left(x,n\right)+\cos^{2}\left(y,n\right)+\cos^{2}\left(z,n\right) & = & \df{4\left(\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}+\left(z-z_{0}\right)^{2}\right)}{\left|\v n\right|^{2}}=\\
+ & = & \cos^{2}\left(\tau,n\right)
+\end{eqnarray*}
+
+\end_inset
+
+Покажем что интеграл по 
+\begin_inset Formula $\Gamma_{\tau}$
+\end_inset
+
+ больше или равен нулю.
+\begin_inset Formula 
+\[
+\oui{\Gamma_{\tau}}{}\br0
+\]
+
+\end_inset
+
+Вынесем в подинтегральном выражении множитель 
+\begin_inset Formula $\df 1{\cos\left(\tau,n\right)}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\un{\int}{\Gamma_{\tau}}\sqrt{2}[\left(\left(\df{\dd u}{\dd\tau}\right)^{2}+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right)\left(\cos^{2}\left(x,n\right)+\cos^{2}\left(y,n\right)+\cos^{2}\left(z,n\right)\right)\\
+-2\df{\dd u}{\dd\tau}\df{\dd u}{\dd x}\cos\left(x,n\right)\cos\left(\tau,n\right)-2\df{\dd u}{\dd\tau}\df{\dd u}{\dd y}\cos\left(y,n\right)\cos\left(\tau,n\right)-2\df{\dd u}{\dd\tau}\df{\dd u}{\dd z}\cos\left(z,n\right)\cos\left(\tau,n\right)]d\sigma\br0
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\un{\int}{\Gamma_{\tau}}\sqrt{2}[\left(\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right)\cos^{2}\left(\tau,n\right)+\left(\df{\dd u}{\dd\tau}\right)^{2}\left(\cos^{2}\left(x,n\right)+\cos^{2}\left(y,n\right)+\cos^{2}\left(z,n\right)\right)\\
+-2\df{\dd u}{\dd\tau}\df{\dd u}{\dd x}\cos\left(x,n\right)\cos\left(\tau,n\right)-2\df{\dd u}{\dd\tau}\df{\dd u}{\dd y}\cos\left(y,n\right)\cos\left(\tau,n\right)-2\df{\dd u}{\dd\tau}\df{\dd u}{\dd z}\cos\left(z,n\right)\cos\left(\tau,n\right)]d\sigma\br0
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{2}\oui{\Gamma_{\tau}}{}\left[\left(\df{\dd u}{\dd x}\cos\left(\tau,n\right)-\df{\dd u}{\dd\tau}\cos\left(x,n\right)\right)^{2}+\left(\df{\dd u}{\dd y}\cos\left(\tau,n\right)-\df{\dd u}{\dd\tau}\cos\left(y,n\right)\right)^{2}+\left(\df{\dd u}{\dd z}\cos\left(\tau,n\right)-\df{\dd u}{\dd\tau}\cos\left(z,n\right)\right)^{2}\right]d\sigma\br0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\int}{\Gamma_{\tau}}+\un{\int}{\sigma_{\tau}}+\un{\int}{\sigma_{0}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\int}{\sigma_{\tau}}+\un{\int}{\sigma_{0}}\mr0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iiint}{\sigma_{\tau}}\left[\left(\df{\dd u}{\dd\tau}\right)^{2}+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right]d\sigma\mr\un{\iiint}{\sigma_{0}}\left[\left(\df{\dd u}{\dd\tau}\right)^{2}+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right]d\sigma
+\]
+
+\end_inset
+
+Спроэктируем выражение справа и слева на плоскость 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+, тогда с учетом начальных условий будим иметь:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\un{\iiint}{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}+\left(z-z_{0}\right)^{2}\mr\left(\tau_{0}-\tau_{1}\right)^{2}}\left[\left(\df{\dd u}{\dd\tau}\right)^{2}+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right]dxdydz\mr\\
+\mr\un{\iiint}{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}+\left(z-z_{0}\right)^{2}\mr\tau_{0}^{2}}\left[\left(\df{\dd\psi\left(M\right)}{\dd a}\right)^{2}+\left(\df{\dd\varphi}{\dd x}\right)^{2}+\left(\df{\dd\varphi}{\dd y}\right)^{2}+\left(\df{\dd\varphi}{\dd z}\right)^{2}\right]dxdydz
+\end{array}\left(9\right)
+\]
+
+\end_inset
+
+ Неравенство 9 носит название энергетического неравенства.
+\end_layout
+
+\begin_layout Standard
+Для доказательства единственности воспользуемсяс неравенством (9).
+\end_layout
+
+\begin_layout Standard
+Предположим существуют 2 решения: 
+\begin_inset Formula $u_{1}\left(M,\tau\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{2}\left(M,\tau\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u=u_{1}-u_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u|_{\tau=0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\df{\dd u}{\dd\tau}|_{\tau=0}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда в (9) будем иметь:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\un{\iiint}{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}+\left(z-z_{0}\right)^{2}\mr\left(\tau_{0}-\tau_{1}\right)^{2}}\left[\left(\df{\dd u}{\dd\tau}\right)^{2}+\left(\df{\dd u}{\dd x}\right)^{2}+\left(\df{\dd u}{\dd y}\right)^{2}+\left(\df{\dd u}{\dd z}\right)^{2}\right]dxdydz\mr0\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $u\equiv0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Предложение решения задачи (1,2) непрерывно зависит от начальных данных,
+ тоесть если 
+\begin_inset Formula $u$
+\end_inset
+
+ решение задачи (1,2) , а 
+\begin_inset Formula $\widetilde{u}$
+\end_inset
+
+ --- (1,
+\begin_inset Formula $\widetilde{2}$
+\end_inset
+
+), то
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \forall T>0\ \exists c\left(T\right):\left|\varphi-\widetilde{\varphi}\right|\mr\varepsilon,\ \left|\psi-\widetilde{\psi}\right|\mr\varepsilon,\ \left|\varphi_{x}\pr-\widetilde{\varphi_{x}\pr}\right|\mr\varepsilon,\ \left|\varphi_{y}\pr-\widetilde{\varphi_{y}\pr}\right|\mr\varepsilon,\ \left|\varphi_{z}\pr-\widetilde{\varphi_{z}\pr}\right|\mr\varepsilon\sl\left|u-\widetilde{u}\right|\mr c\left(T\right)\varepsilon
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=u-u^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v|_{t=0}=\varphi-\varphi^{2}-\varphi_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd v}{\dd t}|_{t=0}=\psi-\psi^{2}=\psi_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{\omega} & = & \df 1{4\pi a}\un{\iint}{S_{r}}\df{\omega\left(\xi,\nu,\rho\right)}rd\sigma_{r}=\\
+ & = & \df t{4\pi}\un{\iint}{S_{1}}\omega\left(x+\alpha at,y+\beta at,z+\gamma at\right)d\sigma_{1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|y_{\omega}\right|\mr\df t{4\pi}\left|\omega\right|4\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{\psi_{1}}\mr t\left(\varphi-\varphi^{2}\right)\mr T\varepsilon
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd}{\dd t}y_{\omega}=\df 1{4\pi}\un{\iint}{\sigma_{1}}\omega\left(x+\alpha at,y+\beta at,z+\gamma at\right)d\sigma_{1}+\df t{4\pi}\un{\iint}{\sigma_{1}}\left(\df{\dd\omega}{\dd\xi}\alpha a+\df{\dd\omega}{\dd\nu}\beta a+\df{\dd\omega}{\dd\rho}\gamma a\right)d\sigma_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd\omega}{\dd\xi}>\df{\dd\omega}{\dd x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\df{\dd y_{\omega}}{\dd t}\right|\mr\left|\omega\right|+\df{3t}{4\pi}ma4\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\df{\dd y_{\varphi_{1}}}{\dd t}\right|\mr\varepsilon+3T\varepsilon
+\]
+
+\end_inset
+
+Тогда:
+\begin_inset Formula 
+\[
+\left|v\right|\mr T\varepsilon+\varepsilon+3T\varepsilon=\varepsilon\left(1+4T\right)=c\left(T\right)\varepsilon
+\]
+
+\end_inset
+
+ Предложение доказано.
+ Таким образом задача Коши для волнового уравнения поставлена корректно.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

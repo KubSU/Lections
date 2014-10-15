@@ -1,0 +1,694 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{'}
+{'}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Дискретное программирование
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+26/09/2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Задача модификации сети по принципу выгода(поток) - затраты(деньги).
+\end_layout
+
+\begin_layout Standard
+Внесем дополнительные сведения в задачу о максимальном потоке в сети.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ --- дуга
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\left(i,j\right)$
+\end_inset
+
+ --- максимально способное увеличение пропускной способности дуги 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c\left(i,j\right)$
+\end_inset
+
+ --- стоимость увеличения на еденицу пропускной способности дуги 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(i,j\right)$
+\end_inset
+
+ --- искомый поток
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(i,j\right)$
+\end_inset
+
+ --- увеличение пропускной способности дуги 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ --- множество всех дуг в сети.
+\end_layout
+
+\begin_layout Standard
+В задаче теперь будет присутствовать 2 цели:
+\end_layout
+
+\begin_layout Enumerate
+Поток: 
+\begin_inset Formula $V=\ous{\left(i,j\right)\in\Gamma\left(s\right)}{}f\left(s,j\right)=\ous{\left(i,t\right)\in\Gamma\left(t\right)}{}f\left(i,t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Затраты: 
+\begin_inset Formula $S=\ous{\left(i,j\right)\in\Gamma}{}c\left(i,j\right)\um y\left(i,j\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0\mr y\left(i,j\right)\mr d\left(i,j\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возможны следующие постановки задач:
+\end_layout
+
+\begin_layout Enumerate
+Имеются некоторая сумма средств.
+ Требуется проведя модернизацию сети в пределах этой суммы в целью получения
+ максимального потока в сети.
+\end_layout
+
+\begin_layout Enumerate
+Пусть задана проэктная величина потока в сети 
+\begin_inset Formula $\overline{V}$
+\end_inset
+
+.
+ Нужно провести модернизацию с минимальными затратами чтобы обеспечить соответст
+вующую мощность.
+\end_layout
+
+\begin_layout Standard
+Будем считать что затраты пропорциональны пропускным способностям дуг(они
+ в 2 раза больше для примера).
+\end_layout
+
+\begin_layout Standard
+......
+\end_layout
+
+\begin_layout Section
+Сетевые графики.
+ Анализ проектов
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+6.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Любой проэкт может быть разбит на более маленькие проэкты, операции, которые
+ определены в порядке следования.
+ Каждая операция имеет свой нормативный срок исполнения.
+ 
+\end_layout
+
+\begin_layout Standard
+Для того, чтобы сделать проэкт обозримым, удобным для рассмотрения и анализа,
+ его представляют в виде графа.
+ Тогда каждой операции проэкта соответствует некоторая дуга графа, а вершины
+ этого графа соответствуют событиям, связаным с исполнением проэкта.
+ В дальнейшем будем считать что все вершины занумерованы, а дуги --- упорядоченн
+ые пары вершин.
+ Тогда исходя и порядка предшествования операций проэкта мы этот граф можем
+ построить.
+ Ясно что в любом графе представляющем проэкт (сетевым графиком) должны
+ выполняться ряд свойств.
+\end_layout
+
+\begin_layout Enumerate
+Существует только 1на вершина, из которой дуги только выходят, она соответствует
+ началу проэкта.
+\end_layout
+
+\begin_layout Enumerate
+Существует только 1на вершина, в которую дуги только входят, она соответствует
+ моменту завершения проэкта.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Будем говорить что событие наступило, если все непосредствено предшествующие
+ ему операцию завершены.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+В сетевом графике отсутствуют циклы.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Полныы путем будем называть путь, ведущий из начального события в заключительном
+у событию.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Любая дуга(операция) пренадлежит некоторому полному пути.
+\end_layout
+
+\begin_layout Subsection
+Нумерация событий в сетевом графике
+\end_layout
+
+\begin_layout Standard
+В сетевом графике события можно занумеровать так, натуральными числами,
+ чтобы выполнялость условие:
+\end_layout
+
+\begin_layout Standard
+Что для любой операции 
+\begin_inset Formula $\left(i,j\right):\ i<j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Первый номер получает начальное событие.
+ А следующий присваем номер которому, кого все предшествующие занумерованы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\left(i,j\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Некоторые операции в проэкте могут быть фиктивными, тоесть реально им ничто
+ не соответствует.
+ Они нужы для того чтобы задать порядок предшествования работ в проэкте.
+ 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим некоторый обстрактный проэкт.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

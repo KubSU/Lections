@@ -1,0 +1,1867 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{'}
+{'}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddf}[2]{\df{\dd#1}{\dd#2}}
+{\df{\dd#1}{\dd#2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Численные методы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+2.октябрь.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть дана квадратная матрица 
+\begin_inset Formula $A=\left(a_{i,j}\right)$
+\end_inset
+
+.
+ Получим разложение матрции 
+\begin_inset Formula $A$
+\end_inset
+
+ в произведение нижней и верхней треугольной матриц.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\ob=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}[t]{cccc}
+1 & 0 & \tr & 0\\
+l_{21} & 1 & \tr & 0\\
+\vtr & \vtr & \ntr & \vtr\\
+l_{n1} & l_{n2} & \tr & 1
+\end{array}\right)\left(\begin{array}[t]{cccc}
+u_{1,1} & u_{1,2} & \tr & u_{1,n}\\
+0 & u_{2,2} & \tr & u_{2,n}\\
+\vtr & \vtr & \ntr & \vtr\\
+0 & 0 & \tr & u_{n,n}
+\end{array}\right)=\left(\begin{array}[t]{ccc}
+a_{1,1} & \tr & a_{1,n}\\
+\vtr & \ntr & \vtr\\
+a_{n,1} & \tr & a_{n,n}
+\end{array}\right)\label{eq:1_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чтобы определить элементы матриц 
+\begin_inset Formula $L$
+\end_inset
+
+ и 
+\begin_inset Formula $U$
+\end_inset
+
+ перемножим матрицы и приравняем поэлементно.
+ Получим 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ уравнений для 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ неизвестных.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+u_{1,1}=a_{1,1},\ \tr\ u_{1,2}=a_{1,2},\ \tr,\ u_{1,n}=a_{1,n}\\
+l_{2,1}u_{1,1}=a_{2,1},\ \tr,\ l_{2,1}u_{1,2}+u_{2,2}=a_{2,2},\ \tr,\ l_{2,1}u_{1,n}+u_{2,n}=a_{2,n}\\
+\vtr\\
+l_{n,1}u_{1,1}=a_{n,1},\ \tr,\ l_{n,1}u_{1,2}+l_{n,2}u_{2,2}=a_{n,2},\ \tr,\ l_{n,1}u_{1,n}+l_{n,2}u_{2,n}+\tr+u_{n,n}=a_{n,n}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из первой строки уравнений мы найдем первую строку матрции 
+\begin_inset Formula $U$
+\end_inset
+
+, а именно: 
+\begin_inset Formula $u_{1,j}=a_{1,j},\ n=\overline{1,n}$
+\end_inset
+
+.
+ Из первого столбца уравнений найдем элементы первого столбца матрци 
+\begin_inset Formula $L$
+\end_inset
+
+, а именно 
+\begin_inset Formula $l_{i,1}=\df{a_{i,1}}{u_{1,1}},\ i=\overline{2,n}$
+\end_inset
+
+.
+ Из второй строки уравнений, начиная со второго уравнения найдем элементы
+ второй строки матрицы 
+\begin_inset Formula $U$
+\end_inset
+
+, а именно: 
+\begin_inset Formula $u_{2,j}=a_{2,j}-l_{2,1}\um u_{1,j}$
+\end_inset
+
+.
+ Из второго столбца уравнений находим элементы второго столбца матрицы 
+\begin_inset Formula $L$
+\end_inset
+
+ по фромулам: 
+\begin_inset Formula $l_{i,2}=\left(a_{i,2}-l_{i,1}\um u_{1,2}\right)/u_{2,2},\ i=\overline{3,n}$
+\end_inset
+
+.
+ И так далее, последнее находим 
+\begin_inset Formula $u_{n,n}=a_{n,n}-\ous{k=1}{n-1}l_{n,k}u_{k,n}$
+\end_inset
+
+.
+ Таким образом элементы матрици 
+\begin_inset Formula $L$
+\end_inset
+
+ и матрици 
+\begin_inset Formula $U$
+\end_inset
+
+ могут быть найдены по формулам 
+\begin_inset Formula 
+\begin{equation}
+u_{i,j}=a_{i,j}-\ous{k=1}{i-1}l_{i,k}u_{l,j},\ j\br i\label{eq:1_2}
+\end{equation}
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{equation}
+l_{i,j}=\df 1{u_{j,j}}\left(a_{i,j}-\ous{k=1}{j-1}l_{i,k}u_{k,j}\right),\ i>j\label{eq:1_3}
+\end{equation}
+
+\end_inset
+
+Если в суммах верхний индекс меньше нижнего, то сумма заменяется нулем.
+\end_layout
+
+\begin_layout Standard
+Справедливо 
+\emph on
+утверждение
+\emph default
+: Если все главные миноры матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ отличны от нуля, то существуют разложение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_1"
+
+\end_inset
+
+) и матрицы 
+\begin_inset Formula $L$
+\end_inset
+
+ и 
+\begin_inset Formula $U$
+\end_inset
+
+ могут быть найдены по формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_3"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Требования утверждения о существованиях 
+\begin_inset Formula $LU$
+\end_inset
+
+ разложениях будут выполнены, например, для матриц с диагональным преобладанием.т
+оесть для матриц, у которых модуль диагональных элементтоов будет больше
+ суммы модулей всех недиагональных элементов.
+ Так же 
+\begin_inset Formula $LU$
+\end_inset
+
+ разложения будет, если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ симметричная положительно определенная.
+\end_layout
+
+\begin_layout Subsection
+Решения линейных систем с помощью 
+\begin_inset Formula $LU$
+\end_inset
+
+ разложений или метод Халецкого
+\end_layout
+
+\begin_layout Standard
+Пусть рассматриваем систему 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+.
+ И пусть найдено разложение матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ в произведение 
+\begin_inset Formula $LU$
+\end_inset
+
+.
+ Тогда можем записать что 
+\begin_inset Formula $LUx=b$
+\end_inset
+
+.
+ Введем вспомогательный вектор 
+\begin_inset Formula $y=\left(\begin{array}{c}
+y_{1}\\
+\vtr\\
+y_{n}
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+y=Ux
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+Ly=b\\
+Ux=y
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом решение исходной системы свелось к последовательному решению
+ двух систем с треугольными матрицами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+y_{1}=b_{1}\\
+l_{2,1}y_{1}+y_{2}=b_{2}\\
+\vtr\\
+l_{i,1}y_{1}+\tr+l_{i,i-1}y_{i-1}+y_{i}=b_{i}\\
+\vtr\\
+l_{n,1}y_{1}+\tr+l_{n,n-1}y_{n-1}+y_{n}=b_{n}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда отсюда находим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{i}=b_{i}-\ous{k=1}{i-1}l_{i,k}y_{k},\ i=\overline{1,n}`\label{eq:1_4}
+\end{equation}
+
+\end_inset
+
+Найдя 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ найдем из системы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+u_{1,1}+u_{1,2}x_{2}+\tr+u_{1,n}x_{n}=y_{1}\\
+u_{2,2}x_{2}+\tr+u_{2,n}x_{n}=y_{2}\\
+\vtr\\
+u_{i,i}x_{i}+\tr+u_{i,n}x_{n}=y_{i}\\
+\vtr\\
+u_{n,n}x_{n}=y_{n}
+\end{cases}\label{eq:1_5}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+x_{i}=\df{y_{i}-\ous{k=i+1}nu_{i,k}x_{k}}{u_{i,i}},\ i=\overline{n,1}\label{eq:1_6}
+\end{equation}
+
+\end_inset
+
+Таким образом решение исходной системы линейных уравнений свелось к четырем
+ формулам, а именно по формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_3"
+
+\end_inset
+
+) находим элементы матриц 
+\begin_inset Formula $L$
+\end_inset
+
+ и 
+\begin_inset Formula $U$
+\end_inset
+
+ по формуле (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_4"
+
+\end_inset
+
+) находим 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+, а по формуле (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_6"
+
+\end_inset
+
+) находим решение исходной системы.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Замечания:
+\end_layout
+
+\begin_layout Enumerate
+Метод удобен, если приходится решатьресколько систем линейных уравнений,
+ с одной и той же матрицой, но разными правыми частями.
+\end_layout
+
+\begin_layout Enumerate
+Заметим, что выполнение расчетов по тформулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_3"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_4"
+
+\end_inset
+
+) можно интерпритировать как преобразование исходной системы 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ к треугольной системе (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_5"
+
+\end_inset
+
+).
+ Система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_5"
+
+\end_inset
+
+) и система, полученая прямым ходом метода Гаусса полностью совподают.
+ А Это означает что решение линейно системы с помощью 
+\begin_inset Formula $LU$
+\end_inset
+
+ разложения это просто другая схема реальзации метода Гаусса.
+\end_layout
+
+\begin_layout Subsection
+Метод Гаусса с выбором ведущегоэлемента
+\end_layout
+
+\begin_layout Standard
+Когода мы делали метод Гаусса, мы предпологали, что все ведущие ...
+ отличны отнуля, но силу предположения невырожденности матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ в столбце ниже главной диагонали и на ней найдется отличный от нуля элемент.
+ Чтобы продолжить исключения нужно переставить строки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}[t]{cc}
+\varepsilon & 1\\
+1 & 1
+\end{array}\right)\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\varepsilon=10^{-10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}[t]{cc}
+\varepsilon & 1\\
+0 & 1-\varepsilon^{-1}
+\end{array}\right)\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)=\left(\begin{array}{c}
+1\end{array}2-\varepsilon^{-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Предположим что вычисления проводятся с девятью значащими десятичными цифрами,
+ тогда числа 
+\begin_inset Formula $1-\varepsilon^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $2-\varepsilon^{-1}$
+\end_inset
+
+ будут округлены до блищайщего целого, а именно, до 
+\begin_inset Formula $-\varepsilon^{-1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x_{2}\approx1,\ x_{1}\approx0$
+\end_inset
+
+, хотя точные решения близки к еденицы.
+ 
+\begin_inset Formula $\overline{x_{1}}\approx1,\ \overline{x_{2}}\approx1$
+\end_inset
+
+.
+ Чтобы избежать такой погрешности переставим уравнения в системе.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}[t]{cc}
+1 & 1\\
+\varepsilon & 1
+\end{array}\right)\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)=\left(\begin{array}{c}
+2\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}[t]{cc}
+1 & 1\\
+0 & 1-\varepsilon
+\end{array}\right)\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)=\left(\begin{array}{c}
+2\\
+1-2\um\varepsilon
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+И тогда получается: 
+\begin_inset Formula $x_{1}\approx1$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}\approx1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из приведенного примера следует, что нужно избегать малых по модулю ведущих
+ элементов 
+\begin_inset Formula $a_{i,i}^{\left(i-1\right)}$
+\end_inset
+
+.
+ В каестве ведущего элемента нужно выберать максимальный по модулю элемент
+ в 
+\begin_inset Formula $j$
+\end_inset
+
+-ом столбце из лежащих на главной диагонали или ниже.
+ После чего происходит перестановка соответствующих строк.
+ Проводя такую перестановку мы добиваемся уменьшения погрешности округления,
+ а соответствно , тоность решения увеличивается.
+ Иногда используют алгоритм Гаусса с выбором максимального по модулю во
+ всей матрицы.
+ В этом случае происходит перестановка строк и столбцов матрицы, так как
+ при перестановке столбцов меняется порядок неизвестных, то этот порядок
+ необходимо запоминать.
+ Перестановке любых двух строк как и любых двух столбцов матрицы меняется
+ знак определителя, поэтому если было сделано нечетное число перестановок,
+ то определитель треугольной матрицы нужно умножить на -1.
+\end_layout
+
+\begin_layout Subsection
+Метод квадратного корня
+\end_layout
+
+\begin_layout Standard
+Этот метод применяется для решения линейных систем с Эрмитовой матрицей.
+\begin_inset Formula 
+\begin{equation}
+Ax=b\label{eq:2_1}
+\end{equation}
+
+\end_inset
+
+Эрмитова матрицы : 
+\begin_inset Formula $a_{i,j}=\overline{a_{j,i}}$
+\end_inset
+
+.
+ В вещественном случае Эрмитова матрица будет симметрична.
+ 
+\end_layout
+
+\begin_layout Standard
+Метод основан на представлении Эрмитовой матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ в произведение трух матриц
+\begin_inset Formula 
+\begin{equation}
+A=S^{*}DS\label{eq:2_2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ --- диагональная матрица.
+ 
+\begin_inset Formula $D=\left(\begin{array}[t]{ccc}
+d_{1,1} & \tr & 0\\
+\vtr & \ntr & \vtr\\
+0 & \tr & d_{n,n}
+\end{array}\right),\ d_{i,i}=\pm1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ --- верхняя треугольная матрица 
+\begin_inset Formula $S=\left(\begin{array}[t]{cccc}
+s_{1,1} & s_{1,2} & \tr & s_{1,n}\\
+0 & s_{2,1} & \tr & s_{2,n}\\
+\vtr & \vtr & \ntr & \vtr\\
+0 & 0 & \tr & s_{n,n}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S^{*}$
+\end_inset
+
+ --- транспонированная и комплексносппряденнная матрица 
+\begin_inset Formula $S=\left(\begin{array}[t]{cccc}
+\overline{s_{1,1}} & 0 & \tr & 0\\
+\overline{s_{1,2}} & \overline{s_{2,2}} & \tr & 0\\
+\vtr & \vtr & \ntr & \vtr\\
+\overline{s_{1,n}} & \overline{s_{2,n}} & \tr & \overline{s_{n,n}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(S^{*}\right)_{i,j}=\overline{S_{i,j}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(a_{i,j}\right),\ B=\left(b_{i,j}\right),\ C=\left(c_{i,j}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=AB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{i,j}=\ous{k=1}na_{i,k}a_{k.j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(DS\right)=\ous{k=1}nd_{i,k}s_{k,j}=D_{i,i}S_{i,j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{i,j}=\left(S^{*}DS\right)_{i,j}=\ous{k=1}n\left(S^{*}\right)_{i,k}\um\left(DS\right)_{k,j}=\ous{k=1}ns_{k,j}d_{k,k}s_{k,j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ous{k=1}n\overline{s_{k,i}}d_{k,k}s_{k,j}=a_{i,j},\ i,j=\overline{1,n}\label{eq:2_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+9.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать только когда 
+\begin_inset Formula $j\br i$
+\end_inset
+
+, так как при 
+\begin_inset Formula $i<j$
+\end_inset
+
+ и 
+\begin_inset Formula $i>j$
+\end_inset
+
+ часть уравнений будет одинакова.
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $i=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ous{k=1}n\overline{s_{k,1}}d_{k,k}s_{k,j}=a_{1,j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Элементы 
+\begin_inset Formula $s_{i,j}=0$
+\end_inset
+
+ когда 
+\begin_inset Formula $i>j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Поэтому 
+\begin_inset Formula $\overline{s_{k,1}}=0$
+\end_inset
+
+ когда 
+\begin_inset Formula $k\br2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overline{s_{1,1}}d_{1,1}s_{1,j}=a_{1,j},\ j\br1
+\]
+
+\end_inset
+
+Тогда при 
+\begin_inset Formula $j=1$
+\end_inset
+
+ мы получаем:
+\begin_inset Formula 
+\[
+\left|s_{1,1}\right|^{2}\um d_{1,1}=a_{1,1}
+\]
+
+\end_inset
+
+Поэтому знаки 
+\begin_inset Formula $d_{1,1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{1,1}$
+\end_inset
+
+ будут иметь одинаковые знаки.
+ 
+\begin_inset Formula 
+\[
+d_{1,1}=\text{sign}\left(a_{1,1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+s_{1,1}=\sqrt{\left|a_{1,1}\right|}\label{eq:2_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s_{1,j}=\df{a_{1,j}}{s_{1,1}d_{1,1}},\ j\br2\label{eq:2_5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Рассмотрим при 
+\begin_inset Formula $i\br2$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ous{k=1}{i-1}\overline{s_{k,j}}d_{k,k}s_{k,j}+\overline{s_{i,i}}d_{i,i}s_{i,j}+\ous{k=i+1}n\overline{s_{k,i}}d_{k,k}s_{k,j}=a_{i,j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{s_{k,j}}=0$
+\end_inset
+
+ при 
+\begin_inset Formula $k\br i+1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ous{k=1}{i-1}\overline{s_{k,j}}d_{k,k}s_{k,j}+\overline{s_{i,i}}d_{i,i}s_{i,j}=a_{i,j}
+\]
+
+\end_inset
+
+Тогда в этом равенстве при 
+\begin_inset Formula $j=i\br2$
+\end_inset
+
+ получим:
+\begin_inset Formula 
+\[
+\ous{k=1}{i-1}\left|s_{k,i}\right|^{2}d_{k,k}+\left|s_{i,i}\right|^{2}d_{i,i}=a_{i,i}
+\]
+
+\end_inset
+
+или
+\begin_inset Formula 
+\[
+\left|s_{i,i}\right|^{2}d_{i,i}=a_{i,i}-\ous{k=1}{i-1}\left|s_{k,i}\right|^{2}d_{k,k}
+\]
+
+\end_inset
+
+Тогда чтобы выполнялось равенство, нужно чтобы:
+\begin_inset Formula 
+\begin{equation}
+d_{i,i}=\text{sign}\left(a_{i,i}-\ous{k=1}{i-1}\left|s_{k,i}\right|^{2}d_{k,k}\right)\label{eq:2_6}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+s_{i,i}=\sqrt{\left|a_{i,i}-\ous{k=1}{i-1}\left|s_{k,i}\right|^{2}d_{k,k}\right|}\label{eq:2_7}
+\end{equation}
+
+\end_inset
+
+ А при остальных 
+\begin_inset Formula $j$
+\end_inset
+
+ мы получим:
+\begin_inset Formula 
+\begin{equation}
+s_{i,j}=\df{a_{i,j}-\ous{k=1}{i-1}\overline{s_{k,i}}d_{k,k}s_{k,j}}{s_{i,i}d_{i,i}},\ j=\overline{i+1,n}\label{eq:2_8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Таким образом мы получили расчетные формулы для нахождения элементов матриц
+ 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Они находятся в следующем порядке, сначала по формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_4"
+
+\end_inset
+
+) находим 
+\begin_inset Formula $d_{1,1}$
+\end_inset
+
+ и 
+\begin_inset Formula $s_{1,1}$
+\end_inset
+
+.
+ Затем по (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_5"
+
+\end_inset
+
+) находим элементы первой строки матрицы 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Находим
+\begin_inset Formula $d_{2,2}$
+\end_inset
+
+ по (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_6"
+
+\end_inset
+
+), по (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_7"
+
+\end_inset
+
+) находим 
+\begin_inset Formula $s_{2,2}$
+\end_inset
+
+ и потом по (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_8"
+
+\end_inset
+
+) элементы 2й строки матрицы 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ И так далее...
+ 
+\end_layout
+
+\begin_layout Standard
+Когда расчет ведется в таком порядке, у нас успользуются уже известные элементы.
+ Можно все вычислени я проводить по формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_6"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_7"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_8"
+
+\end_inset
+
+) при 
+\begin_inset Formula $i=\overline{1,n}$
+\end_inset
+
+ и в случае, если верхний предел суммирования меньше нижнего, сумму заменять
+ нулем.
+\end_layout
+
+\begin_layout Standard
+Когда элементы 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $S$
+\end_inset
+
+ найдены решенире системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1"
+
+\end_inset
+
+) сводится к решению 2х систем линейных алгебраических уравнений в труугольными
+ матрицами.
+\end_layout
+
+\begin_layout Standard
+Действительно, подствим разложение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_1"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+S^{*}DSx=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Sx=y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S^{*}Dy=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S^{*}D=\left(\begin{array}[t]{cccc}
+\overline{s_{1,1}} & 0 & \tr & 0\\
+\overline{s_{1,2}} & \overline{s_{2,2}} & \tr & 0\\
+\vtr & \vtr & \ntr & \vtr\\
+\overline{s_{1,n}} & \overline{s_{2,n}} & \tr & \overline{s_{n,n}}
+\end{array}\right)\left(\begin{array}[t]{ccc}
+d_{1,1} & \tr & 0\\
+\vtr & \ntr & \vtr\\
+0 & \tr & d_{n,n}
+\end{array}\right)=\left(\begin{array}[t]{cccc}
+\overline{s_{1,1}}d_{1,1} & 0 & \tr & 0\\
+\overline{s_{1,2}}d_{1,1} & \overline{s_{2,2}}d_{2,2} & \tr & 0\\
+\vtr & \vtr & \ntr & \vtr\\
+\overline{s_{1,n}}d_{1,1} & \overline{s_{2,n}}d_{2,2} & \tr & \overline{s_{n,n}}d_{n,n}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\overline{s_{1,1}}d_{1,1}y_{1}=b_{1}\\
+\overline{s_{1,2}}d_{1,1}y_{1}+\overline{s_{2,2}}d_{2,2}y_{2}=b_{2}\\
+\vtr\\
+\overline{s_{1,i}}d_{1,1}y_{1}+\overline{s_{2,i}}d_{2,2}y_{2}+\tr+\overline{s_{i,i}}d_{i,i}y_{i}=b_{i}\\
+\vtr\\
+\overline{s_{1,n}}d_{1,1}y_{1}+\overline{s_{2,n}}d_{2,2}y_{2}+\tr+\overline{s_{n,n}}d_{n,n}y_{n}=b_{n}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+y_{1}=\df{b_{1}}{\overline{s_{1,1}}d_{1,1}}\\
+\vtr\\
+y_{i}=\df{b_{i}-\ous{k=1}{i-1}\overline{s_{k,i}}d_{k,k}y_{k}}{\overline{s_{i,i}}d_{i,i}}, & i=\overline{2,n}\\
+\vtr
+\end{cases}
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $s_{i,i}$
+\end_inset
+
+ вещественные, пожтому черту можно убрать.
+\end_layout
+
+\begin_layout Standard
+Тогда система 
+\begin_inset Formula $Sx=y$
+\end_inset
+
+ примет вид:
+\begin_inset Formula 
+\[
+\begin{cases}
+s_{1,1}x_{1}+\tr+s_{1,n}x_{n}=y_{1}\\
+s_{2,2}x_{2}+\tr+s_{2,n}x_{n}=y_{2}\\
+\vtr\\
+s_{i,i}x_{i}+\tr+s_{i,n}x_{n}=y_{i}\\
+\vtr\\
+s_{n,n}x_{n}=y_{n}
+\end{cases}
+\]
+
+\end_inset
+
+Тогда из последнего уравнениянаходим 
+\begin_inset Formula 
+\[
+x_{n}=\df{y_{n}}{s_{n,n}}
+\]
+
+\end_inset
+
+ Подставляем найденое в уравнение, найдем:
+\begin_inset Formula 
+\[
+x_{i}=\df{y_{i}-\ous{k=i+1}ns_{i,k}x_{k}}{s_{i,i}},\ i=\overline{n-1,1}
+\]
+
+\end_inset
+
+ Метод кравратного корня требует примерно в 2е меньше арифметических операций,
+ чем метод Гаусса, потому что он использует 
+\emph on
+эрмитовость
+\emph default
+ матрицы.
+ 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $A$
+\end_inset
+
+ --- вещественная и симметричная, то при вычисленнии матриц 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+ комплексных чисел не возникает, так как в этом случае 
+\begin_inset Formula $S$
+\end_inset
+
+ будет вещественная.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $A$
+\end_inset
+
+ --- вещественная, положительно-определенная матрица, то все 
+\begin_inset Formula $d_{i,i}=1\ \forall i$
+\end_inset
+
+ и формулы можно упростить.
+\end_layout
+
+\begin_layout Subsection
+Метод прогонки
+\end_layout
+
+\begin_layout Standard
+Метод прогонки применяется для решения систем линейных алгебраических уравнений
+ с 
+\emph on
+трехдиагональной 
+\emph default
+матрицей.
+ 
+\end_layout
+
+\begin_layout Definition
+Матрицу называют 
+\emph on
+трехдиагональной 
+\emph default
+если ненулевые элементы находятся рна главной диагонали и примыкающих к
+ ней.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ax=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{i,j}=0\ \text{если}\ \left|i-j\right|>1
+\]
+
+\end_inset
+
+Рассмотрим систему линейных алгебраических уравнений вида:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+b_{1}x_{1}+c_{1}x_{2}=d_{1}\\
+a_{2}x_{1}+b_{2}x_{2}+c_{2}x_{3}=d_{2}\\
+\vtr\\
+a_{i}x_{i-1}+b_{i}x_{i}+c_{i}x_{i+1}=d_{i}, & i=\overline{2,n-1}\\
+\vtr\\
+a_{n}x_{n-1}+b_{n}x_{n}=d_{n}
+\end{cases}\label{eq:3_1}
+\end{equation}
+
+\end_inset
+
+Применим метод Гаусса для нахождения решений системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_1"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\begin{equation}
+x_{1}=-\df{c_{1}}{b_{1}}x_{2}+\df{d_{1}}{b_{1}}\label{eq:3_2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+x_{1}=\alpha_{1}x_{2}+\beta_{1},\ \alpha_{1}=-\df{c_{1}}{b_{1}},\ \beta_{1}=\df{d_{1}}{b_{1}}\label{eq:3_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Исключим 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ из второго уравнения:
+\begin_inset Formula 
+\[
+a_{2}\left(\alpha_{1}x_{2}+\beta_{1}\right)+b_{2}x_{2}+c_{2}x_{3}=d_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(b_{2}+a_{2}\alpha_{1}\right)x_{2}+c_{2}x_{3}=d_{2}-a_{2}\beta_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=\alpha_{2}x_{3}+\beta_{2},\ \alpha_{2}=-\df{c_{2}}{b_{2}+a_{2}\alpha_{1}},\ \beta_{2}=\df{d_{2}-a_{2}\beta_{1}}{b_{2}+a_{2}\alpha_{1}}
+\]
+
+\end_inset
+
+И так далее...
+\begin_inset Formula 
+\[
+x_{i-1}=\alpha_{i-1}x_{i}+b_{i-1}
+\]
+
+\end_inset
+
+Подставим в 
+\begin_inset Formula $i$
+\end_inset
+
+е уравнение, получим:
+\begin_inset Formula 
+\[
+a_{i}\left(\alpha_{i-1}x_{i}+\beta_{i-1}\right)+\beta_{i}x_{i}+c_{i}x_{i+1}=d_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(b_{i}+a_{i}\alpha_{i-1}\right)x_{i}+c_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
