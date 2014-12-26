@@ -431,6 +431,12 @@ theorems-starred
 
 \begin_layout Title
 Физические основы ЭВМ
+\backslash
+
+\end_layout
+
+\begin_layout Section
+Физические основы электропроводимости металлов и полупроводников
 \end_layout
 
 \begin_layout Standard
@@ -912,6 +918,10 @@ n_{e} & = & \oui{E_{F}}{\b}\df{\sqrt{2}\pi}{h^{3}}m^{\frac{3}{2}}\sqrt{E}\um e^{
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Элементы физики полупроводников и полупроводниковые диоды
 \end_layout
 
 \begin_layout Standard
@@ -1432,6 +1442,1021 @@ PN переходом
 \end_inset
 
  типа на границе в какой то окресности возникает разность потенциалов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+17.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eN_{D}l_{n}=eN_{A}l_{p}
+\]
+
+\end_inset
+
+Общее количество зарядов так и так одинаковое, потому что в целом обьект
+ нейтрален.
+\begin_inset Formula 
+\[
+\v E=-\grad\varphi,\ \ \ \text{div}\v E=\df{\rho}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi=-\df{\rho}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E=-\df{d\varphi}{dx},\ \df{dE}{dx}=\df{\rho}{\varepsilon\varepsilon_{0}},\ \df{d^{2}\varphi}{dx^{2}}=-\df{\rho}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+Давайте бля каждой из областей запишем дифференциально уравнение.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\mr0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{dE}{dx}=\df{e\um N_{D}}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(-l_{n}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E=\df{eN_{D}}{\varepsilon\varepsilon_{0}}x+c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c=\df{eN_{D}l_{n}}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E_{n}=\df{eN_{D}}{\varepsilon\varepsilon_{0}}\left(l_{n}+x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{dE}{dx}=-\df{eN_{A}}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(l_{p}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E=-\df{eN_{A}}{\varepsilon\varepsilon_{0}}x+c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c=\df{eN_{A}l_{p}}{\varepsilon\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E_{p}=\df{eN_{A}}{\varepsilon\varepsilon_{0}}\left(l_{p}-x\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\mr0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{d\varphi}{dx}=-\df{\varepsilon N_{D}}{\varepsilon\varepsilon_{0}}\left(l_{n}+x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(-l_{n}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi=-\df{eN_{D}}{2\varepsilon\varepsilon_{0}}\left(l_{n}+x\right)^{2}+c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{n}=-\df{eN_{D}}{2\varepsilon\varepsilon_{0}}\left(l_{n}+x\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\br0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{d\varphi}{dx}=-\df{\varepsilon N_{A}}{\varepsilon\varepsilon_{0}}\left(l_{p}-x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(l_{p}\right)=\D\varphi_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi=\df{eN_{A}}{2\varepsilon\varepsilon_{0}}\left(l_{p}-x\right)^{2}+c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c=\D\varphi_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{p}=\D\varphi_{0}+\df{eN_{A}}{2\varepsilon\varepsilon_{0}}\left(l_{p}-x\right)^{2}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{n}\left(0\right)=\varphi_{p}\left(0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi_{0}+\df{eN_{A}}{\varepsilon\varepsilon_{0}}l_{p}^{2}=-\df{eN_{D}}{2\varepsilon\varepsilon_{0}}l_{n}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi_{0}=-\df e{2\varepsilon\varepsilon_{0}}\left(N_{A}l_{p}^{2}+N_{D}l_{n}^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{D}l_{n}=N_{A}l_{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+l_{n}=\df{N_{A}}{N_{D}}l_{p},\ l_{p}=\df{N_{D}}{N_{A}}l_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi_{0}=-\df{eN_{A}}{2\varepsilon\varepsilon_{0}}\df{N_{D}+N_{A}}{N_{D}}\um l_{p}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+l_{p}=\sqrt{\df{2\varepsilon\varepsilon_{0}N_{D}\D\varphi_{0}}{eN_{A}\left(N_{A}+N_{D}\right)}},\ l_{n}=\sqrt{\df{2\varepsilon\varepsilon_{0}N_{A}\D\varphi_{0}}{eN_{D}\left(N_{D}+N_{A}\right)}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+l=l_{p}+l_{n}=l_{p}\df{N_{A}+N_{D}}{N_{D}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+l=\sqrt{\df{2\varepsilon\varepsilon_{0}}e\um\df{\left(N_{A}+N_{D}\right)\D\varphi_{0}}{N_{A}N_{D}}}
+\]
+
+\end_inset
+
+Характеристиками являются гирина слоя и высота потенциального барьера.
+\begin_inset Formula 
+\[
+E_{F_{n}}=E_{V_{n}}+\df{E_{G}}2+kT\ln\df{N_{D}}{n_{i}},\ E_{F_{p}}=E_{V_{p}}+\df{E_{G}}2-kT\ln\df{N_{A}}{n_{i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E_{V_{p}}-E_{V_{n}}=kT\left(\ln\df{N_{A}}{n_{i}}+\ln\df{N_{D}}{n_{i}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi=-\df{kT}e\ln\df{N_{A}N_{D}}{n_{i}^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{i}^{2}=np=n_{n}p_{n}=p_{p}p_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{D}\approx n_{n},\ N_{A}\approx p_{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi_{0}=-\df{kT}e\ln\df{p_{p}}{p_{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi_{0}=-\df{kT}e\ln\df{n_{n}}{n_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+24.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассморим величину потенциального борьера, не учитывая знак:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\D\varphi_{0}=\df{kT}e
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln\df{n_{n_{0}}}{n_{p_{0}}}=\df{kT}e\ln\df{p_{p_{0}}}{p_{n_{0}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\D\varphi=\D\varphi_{0}+u
+\]
+
+\end_inset
+
+При вод таком подключение идет запирание полупроводника, тоесть идет ток,
+ но очень маленький.
+ Он вызван дрейфом неосновных носителей.
+ И у этого процесса есть свое название: 
+\emph on
+экстракция
+\emph default
+ неосновных носителей.
+\end_layout
+
+\begin_layout Standard
+Такое подключение тока называется обратное подключение.
+\begin_inset Formula 
+\[
+\D\varphi=\df{kT}e\ln\df{n_{n}}{n_{p}}
+\]
+
+\end_inset
+
+Количество основных носителей: 
+\begin_inset Formula 
+\[
+n_{n}=N_{D},\ P_{p}\approx P_{D_{0}},\ n_{n}=n_{n_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+u & = & \D\varphi-\D\varphi_{0}=\\
+ & = & \df{kT}e\left(\ln\df{n_{n}}{n_{p}}-\ln\df{n_{n_{0}}}{n_{p_{0}}}\right)=\\
+ & = & \df{kT}e\ln\df{n_{p_{0}}}{n_{p}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{p}=n_{p_{0}}e^{-\frac{u\um e}{kT}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{n}=p_{n_{0}}e^{-\frac{u\um e}{kT}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь ток направим в другую сторону.
+\end_layout
+
+\begin_layout Standard
+Получится что ток будет идти хороший.
+ Это прямое включение проводника.
+\end_layout
+
+\begin_layout Standard
+Давайте посчитаем количество неосновных носителей: Оно будет рости.
+ Такой процесс называется 
+\emph on
+инжекцией
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Слой, который отдает свои носители, называется 
+\emph on
+эмиmтором
+\emph default
+.
+ А слой, куда происходит инжекция неосновных носителей называется 
+\emph on
+базой
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Электроннодырочный переход образуется на граниице проводников 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $P$
+\end_inset
+
+ типа.
+\end_layout
+
+\begin_layout Enumerate
+В результате диффузии в 
+\begin_inset Formula $PN$
+\end_inset
+
+ переходе возникает электрическое поле, создающее потенциальный барьер,
+ который препятствует вы равниванию основных носителей заряда в соседних
+ областях.
+\end_layout
+
+\begin_layout Enumerate
+При отсутствие внешнего напряжения 
+\begin_inset Formula $U$
+\end_inset
+
+ в 
+\begin_inset Formula $PN$
+\end_inset
+
+ переходе устанавливается динамическое равновесие.
+ Диффузионный ток (ток основных носителей) становится равным дрейфовому
+ току неосновных.
+\end_layout
+
+\begin_layout Enumerate
+При прямом подключении 
+\begin_inset Formula $PN$
+\end_inset
+
+ перехода потенциальный барьер понижается и через 
+\begin_inset Formula $PN$
+\end_inset
+
+ переход идет достаточно большой диффузионный ток.
+\end_layout
+
+\begin_layout Enumerate
+При обратном подключении потенциальных барьер увеличивается, следовательно
+ диффузионный ток уменьшается до нуля и через переход протикает малый по
+ величине дрейфовый ток.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $PN$
+\end_inset
+
+ переход обладает односторонней проводимостью.
+ И его можно использовать для выпрямления токов.
+ Тоесть для получения тока в постоянном направлении.
+\end_layout
+
+\begin_layout Enumerate
+Ширина 
+\begin_inset Formula $PN$
+\end_inset
+
+ перехода зависит от концентрации примесей в 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ областях и величины внешнего напряжения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+j_{pn}=j_{n\text{диф}}+j_{p\text{диф}}-j_{n\text{др}}-j_{p\text{др}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j_{n\text{диф}}=en_{p}v_{n\text{диф}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j_{p\text{диф}}=ep_{n}v_{p\text{диф}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j_{n\text{др}}=en_{p_{0}}v_{n\text{др}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+j_{p\text{др}}=ep_{n_{0}}v_{p\text{др}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+j_{pn} & = & en_{p_{0}}v_{n}\left(e^{\df{ue}{kT}}-1\right)+ep_{n_{0}}v_{p}\left(e^{\df{ue}{kT}}-1\right)=\\
+ & = & e\left(n_{p_{0}}v_{n}+p_{n_{0}}v_{p}\right)\left(e^{\df{ue}{kT}}-1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $e\left(n_{p_{0}}v_{n}+p_{n_{0}}v_{p}\right)$
+\end_inset
+
+ --- ток насыщения (максимальный ток, который может течь при обратном подключени
+и).
+\begin_inset Formula 
+\begin{eqnarray*}
+j_{0} & = & e\left(n_{p_{0}}v_{n}+p_{n_{0}}v_{p}\right)=\\
+ & = & e\left(\df{D_{n}}{L_{n}}n_{p_{0}}+\df{D_{p}}{L_{p}}p_{n_{0}}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=i_{0}\left(e^{\df{ue}{kT}}-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+31.10.14
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=i_{0}\left(e^{\df{ue}{kT}}-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Дифференциальное исчисление 
+\begin_inset Formula $PN$
+\end_inset
+
+ перехода.
+\begin_inset Formula 
+\[
+r_{PN}=\df{dU}{dI}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U=\df{kT}e\um\ln\left(\df I{I_{0}}+1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{PN}=\df{kT}e\df 1{I_{0}+I}
+\]
+
+\end_inset
+
+Емкость перехода.
+ Различают в вида емкости: 
+\emph on
+барьерная 
+\emph default
+емкость и 
+\emph on
+диффузионная 
+\emph default
+емкость.
+ 
+\begin_inset Formula 
+\[
+C_{\text{бар}}=\df{\varepsilon\varepsilon_{0}S}l
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{\text{диф}}=\df{\D Q_{\text{диф}}}{\D U_{PN}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Контакт металл-полупроводник
+\end_layout
+
+\begin_layout Standard
+Работа выхода электрона из металла: 
+\begin_inset Formula $A_{m}$
+\end_inset
+
+.
+ Работа выхода электрона из полупроводника: 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Это работа, которую должен сделать электрон, чтобы перевести его с уровня
+ Ферми в зону проводимости.
+\begin_inset Formula 
+\[
+\varphi=\df{A_{m}-A_{n}}q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пепеходной слой, в котором существует контактное электрическое поле при
+ контакте металл-полупроводник называется переходом Шоттки.
+\end_layout
+
+\begin_layout Standard
+В зависимости от типа проводника слой, который возникает, может быть обогощенный
+ слой и наоборот.
+\end_layout
+
+\begin_layout Standard
+Рассмоторим полупроводник 
+\begin_inset Formula $n$
+\end_inset
+
+ типа и 
+\begin_inset Formula $A_{m}<A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $A_{m}<A_{\text{п}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\begin_inset Formula $A_{m}>A_{\text{п}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $A_{m}>A_{\text{п}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Обедденный слой.
+ А тогда возрастает сопротивление и возникает потенциальный барьер.
+\end_layout
+
+\begin_layout Standard
+А если 
+\begin_inset Formula $A_{m}>>A_{\text{п}}$
+\end_inset
+
+.
+ Тогда образуется дырочная проходимость.
+ Образвется инверсный тип.
+ И такой контакт обладает обладает выплямляющим свойством(В одну сторону
+ идет, а в другую не идет).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Контакт между полупроводниками одного типа проводимости.
+\end_layout
+
+\begin_layout Standard
+Обозначают: 
+\begin_inset Formula $p^{+}-p$
+\end_inset
+
+ или 
+\begin_inset Formula $n^{+}-n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Есть еще Гетеропереходы.
+ Это переходный слой между 2мя различными по химическому состову полупроводникам
+и.
+\end_layout
+
+\begin_layout Standard
+Вариакан - управляемый нелинейный конденсатор.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+14.11.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Полевые или унилолярные транзисторы
+\end_layout
+
+\begin_layout Standard
+ПРимер электронной реализоции логичского элемента.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+21.11.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Реализация элементарных логических функций
+\end_layout
+
+\begin_layout Subsection
+Интегральные логические элементы
+\end_layout
+
+\begin_layout Standard
+В логических устройствах 0 и 1 различают в разных напряжениях.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{0}$
+\end_inset
+
+ --- напряжение уровеня нуля.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{1}$
+\end_inset
+
+ --- напряжение уровеня еденице.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $U_{1}>U_{0}$
+\end_inset
+
+ то говорят что схема реализована в положительной логике, в противном случае,
+ в отрицательной логике.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|U_{1}-U_{0}\right|=\D U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ИЛЭ составляют базу сложных интегральных схем и больших устройств.
+ ИЛЭ чаще всего бывают : отрицание, коньюнкция, дезьюнкция, и еще чаще:
+ 
+\begin_inset Formula $C=\overline{A+B}$
+\end_inset
+
+ и 
+\begin_inset Formula $C=\overline{A\um B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Схемные варианты интегралшьных логических элементов принято называть транзисторн
+ыми логиками, или ТМ.
+\end_layout
+
+\begin_layout Standard
+Первая логика, которая была создана называлась резисторно-транзисторная
+ логика.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{И}^{2}\text{Л}$
+\end_inset
+
+ --- интегральная инжекционная логика.
+\end_layout
+
+\begin_layout Standard
+ЭСЛ --- эмиторно-связная логика.
+ Тут все сделано на транзисторах, и еще добавлены переключатели тока.
+\end_layout
+
+\begin_layout Standard
+Транзисторы:
+\end_layout
+
+\begin_layout Enumerate
+МОП --- метал-оксид-полупроводник
+\end_layout
+
+\begin_layout Enumerate
+МДП --- метал-диэлектрик-полупроводник
+\end_layout
+
+\begin_layout Section
+Запоминающие устройства
 \end_layout
 
 \begin_layout Standard

@@ -1882,7 +1882,1530 @@ y_{\psi_{1}}\mr t\left(\varphi-\varphi^{2}\right)\mr T\varepsilon
 
  Предложение доказано.
  Таким образом задача Коши для волнового уравнения поставлена корректно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+16.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Решение начальной граничной задачи для волнового уравнения в ограниченой
+ области.
+ Метод Фурье.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим задачу вида:
+\begin_inset Formula 
+\begin{equation}
+\df{\dd^{2}u\left(M,t\right)}{\dd t^{2}}=a^{2}\D u\left(M,t\right)+f\left(M,t\right),\ M\in\Theta\vkl\R^{3},\ t>0,\ \dd\Theta=S\label{eq:2_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\df{\dd^{2}u\left(M,t\right)}{\dd t^{2}}=a^{2}\D u\left(M,t\right)\label{eq:2_10}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+u|_{t=0}=\varphi\left(t\right)\\
+\df{\dd u}{\dd t}|_{t=0}=\psi\left(t\right)
+\end{array}\label{eq:2_2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left[\alpha\df{\dd u}{\dd n}+\beta u\right]|_{S}=g\left(M,t\right)\label{eq:2_3}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left[\alpha\df{\dd u}{\dd n}+\beta u\right]|_{S}=0\label{eq:2_30}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сначала бедем кассматривать (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_10"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_30"
+
+\end_inset
+
+).
+ Называется основная вспомогательная задача.
  
+\end_layout
+
+\begin_layout Enumerate
+Отыскиваем все нетривиальные решения задачи и собераем общее ее решение
+ в виде их линейной комбинации.
+ При этом неизвестные коэфициенты определяются из начальных условий (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Решение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_10"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_30"
+
+\end_inset
+
+) ищем в виде:
+\begin_inset Formula 
+\begin{equation}
+u\left(M,t\right)=\Phi\left(M\right)T\left(t\right)\label{eq:2_*}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\ppr\left(t\right)\Phi\left(M\right)=a^{2}T\left(t\right)\D\Phi\left(M\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{T\ppr\left(t\right)\Phi\left(M\right)}{a^{2}T\left(t\right)\Phi\left(M\right)}=\df{a^{2}T\left(t\right)\D\Phi\left(M\right)}{a^{2}T\left(t\right)\Phi\left(M\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{T\ppr\left(t\right)}{a^{2}T\left(t\right)}=\df{\D\Phi\left(M\right)}{\Phi\left(M\right)}
+\]
+
+\end_inset
+
+Отсюда и правая и левая часть равна константе.
+\begin_inset Formula 
+\[
+\df{T\ppr\left(t\right)}{a^{2}T\left(t\right)}=\df{\D\Phi\left(M\right)}{\Phi\left(M\right)}=-\lambda,\ \lambda-const
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+T\ppr\left(t\right)+a^{2}\lambda T\left(t\right)=0\label{eq:2_4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\D\Phi\left(M\right)+\lambda\Phi\left(M\right)=0\label{eq:2_5}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(t\right)\left[\alpha\df{\dd\Phi}{\dd n}+\beta\Phi\left(M\right)\right]|_{S}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left[\alpha\df{\dd\Phi}{\dd n}+\beta\Phi\right]|_{S}=0\label{eq:2_6}
+\end{equation}
+
+\end_inset
+
+Задача (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_5"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_6"
+
+\end_inset
+
+) носит название Штурма-Леувилля.
+\end_layout
+
+\begin_layout Definition
+Значиня 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ для которых существуют ненулевые решения (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_5"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_6"
+
+\end_inset
+
+) носят название собственные числа, а соответствующие им ненулевые решение
+ --- собственных функций этой задачи.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Существует счетное множество собственных чисел задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_5"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_6"
+
+\end_inset
+
+) 
+\begin_inset Formula $\lambda_{n}>0$
+\end_inset
+
+ и соответствующих им линейно независимых собственых функций 
+\begin_inset Formula $\left\{ \Phi_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\un{\iiint}{\Theta}\Phi_{n}\left(M\right)\Phi_{m}\left(M\right)dV=0,\ n\nr m
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iiint}{\Theta}\Phi_{n}^{2}\left(M\right)dV=\left|\left|\Phi_{n}\right|\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $f\left(M\right),\ M\in\Theta$
+\end_inset
+
+ задана в области 
+\begin_inset Formula $\Theta$
+\end_inset
+
+, и 
+\begin_inset Formula $\left\{ \Phi_{n}\left(M\right)\right\} $
+\end_inset
+
+ полная система ортогнальных функций данной области.
+ Тогда функция 
+\begin_inset Formula $f\left(M\right)$
+\end_inset
+
+ может быть предствлена рядом фурье
+\begin_inset Formula 
+\[
+f\left(M\right)=\ous{k=1}{\b}c_{k}\Phi_{k}\left(M\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{k}=\df 1{\left|\left|\Phi_{k}\right|\right|^{2}}\un{\iiint}{\Theta}f\left(M\right)\Phi_{k}\left(M\right)dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2, Разложение Стеклова
+\end_layout
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $f\left(M\right)\in C_{\Theta}^{2}\cap C_{\overline{\Theta}}^{1}$
+\end_inset
+
+ и удовлетворяет граничному условию (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_30"
+
+\end_inset
+
+).
+ Тоггда она разлагается в ряд по собственным функция задачи Штурма-Леувиля
+ равномерно и абсолютно сходящейся.
+ 
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+\end_layout
+
+\begin_layout Standard
+Вернемся к задаче (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_5"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_6"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Согласно теореме 1 
+\begin_inset Formula $\exists\lambda_{n},\ \Phi_{n}\left(M\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\Phi\left(M\right)$
+\end_inset
+
+ тождественно неравно нулю.
+ Предположим мы нашли их.
+\end_layout
+
+\begin_layout Standard
+Маленькое отступление: получить в собственные функции в явном виде можно
+ для узкого круга задач.
+\begin_inset Formula 
+\[
+T_{n}\ppr\left(t\right)+a^{2}\lambda_{n}T_{n}\left(t\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{n}\left(t\right)=A_{n}\cos a\sqrt{\lambda_{n}}t+B_{n}\sin a\sqrt{\lambda_{n}}t
+\]
+
+\end_inset
+
+Тогда часные решения имеет вид:
+\begin_inset Formula 
+\[
+u_{n}\left(M,t\right)=\left[A_{n}\cos a\sqrt{\lambda_{n}}t+B_{n}\sin a\sqrt{\lambda_{n}}t\right]\Phi_{n}\left(M\right)
+\]
+
+\end_inset
+
+Тогда общее решение умеет вид:
+\begin_inset Formula 
+\begin{equation}
+u\left(M,t\right)=\ous{n=1}{\b}\left[A_{n}\cos a\sqrt{\lambda_{n}}t+B_{n}\sin a\sqrt{\lambda_{n}}t\right]\Phi_{n}\left(M\right)\label{eq:2_7}
+\end{equation}
+
+\end_inset
+
+Для нахождения 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ подставим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_7"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\[
+\varphi\left(M\right)=\ous{n=1}{\b}A_{n}\Phi_{n}\left(M\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+A_{n}=\df 1{\left|\left|\Phi_{n}\right|\right|^{2}}\un{\iiint}{\Theta}\varphi\left(M\right)\Phi_{n}\left(M\right)dV\label{eq:2_8}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi\left(M\right)=\ous{n=1}{\b}B_{n}a\sqrt{\lambda_{n}}\Phi_{n}\left(M\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+B_{n}=\df 1{a\sqrt{\lambda_{n}}\left|\left|\Phi_{n}\right|\right|^{2}}\un{\iiint}{\Theta}\psi\left(M\right)\Phi_{n}\left(M\right)dV\label{eq:2_9}
+\end{equation}
+
+\end_inset
+
+Таким образом полученное решнеие задачи (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_10"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_30"
+
+\end_inset
+
+) в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_7"
+
+\end_inset
+
+) коэфициенты которого выражаются формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_8"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2_9"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Задача о колебания струны с закрепленными концами.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим свободные колебания однородной струны длиллы 
+\begin_inset Formula $l$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{equation}
+\df{\dd^{2}u\left(x,t\right)}{\dd t^{2}}=a^{2}\df{\dd^{2}u}{\dd x^{2}},\ 0<x<l,\ t>0\label{eq:3_10}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+u|_{t=0}=\varphi\left(x\right)\\
+\df{\dd u}{\dd t}|_{t=0}=\psi\left(x\right)
+\end{array}\label{eq:3_2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+u|_{x=0}=0\\
+u|_{x=l}=0
+\end{array}\label{eq:3_30}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+u\left(x,t\right)=X\left(x\right)T\left(t\right)\label{eq:3_**}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+T\ppr\left(t\right)+a^{2}\lambda T\left(t\right)=0\label{eq:3_4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+X\ppr\left(x\right)+\lambda X\left(x\right)=0\label{eq:3_5*}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+X\left(0\right)=0\\
+X\left(l\right)=0
+\end{array}\label{eq:3_6*}
+\end{equation}
+
+\end_inset
+
+ Рассмотрим все случаи:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\alpha^{2}-\left(-\lambda\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{1,2}=\pm\sqrt{-\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\left(x\right)=C_{1}e^{\sqrt{-\lambda}x}+C_{2}e^{-\sqrt{-\lambda}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=C_{1}+C_{2}\sl$
+\end_inset
+
+ 
+\begin_inset Formula $C_{2}=-C_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=2C_{1}\left(e^{\sqrt{-\lambda}l}-e^{-\sqrt{-\lambda}l}\right)=2C_{1}\sh\sqrt{-\lambda}e$
+\end_inset
+
+
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{1}=0,\ C_{2}=0,\ X\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\alpha^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{1,2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\left(x\right)=C_{1}+C_{2}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=C_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=C_{2}l$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $C_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\alpha^{2}+\lambda=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{1,2}=\pm i\sqrt{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\left(x\right)=C_{1}\cos\sqrt{\lambda}x+C_{2}\sin\sqrt{\lambda}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=C_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=C_{2}\sin\sqrt{\lambda}l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin\sqrt{\lambda}l=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{\lambda_{k}}l=\pi k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{\lambda_{k}}==\df{\pi k}l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{k}=\left(\df{\pi k}l\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{k}\left(x\right)=\sin\df{\pi k}lx,\ k=1,2...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_4"
+
+\end_inset
+
+) принимает вид:
+\begin_inset Formula 
+\[
+T_{k}\ppr\left(t\right)+\left(\df{a\pi k}l\right)^{2}T_{k}\left(t\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{k}\left(t\right)=A_{k}\cos\df{a\pi k}lt+B_{k}\sin\df{a\pi k}lt
+\]
+
+\end_inset
+
+Общее решение принимает вид:
+\begin_inset Formula 
+\begin{equation}
+u\left(x,t\right)=\ous{k=1}{\b}\left[A_{k}\cos\df{a\pi k}lt+B_{k}\sin\df{a\pi k}lt\right]\sin\df{\pi k}lx\label{eq:3_7*}
+\end{equation}
+
+\end_inset
+
+Для нахождения констант подставим (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_7*"
+
+\end_inset
+
+) в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_2"
+
+\end_inset
+
+).
+\begin_inset Formula 
+\[
+\varphi\left(x\right)=\ous{k=1}{\b}A_{k}\sin\df{\pi k}lx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi\left(x\right)=\ous{k=1}{\b}\df{a\pi k}lB_{k}\sin\df{\pi k}lx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui 0l\sin^{2}\df{\pi kx}ldx & = & \df 12\oui 0l\left[1-\cos\df{2\pi k}lx\right]dx=\\
+ & = & \df l2-\df 12\df l{2\pi k}\sin\df{2\pi kx}l|_{0}^{l}=\df e2
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+A_{k}=\df 2e\oui 0l\varphi\left(x\right)\sin\df{\pi kx}ldx\label{eq:3_8*}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+B_{k}=\df 2{a\pi k}\oui 0l\psi\left(x\right)\sin\df{\pi kx}ldx\label{eq:3_9*}
+\end{equation}
+
+\end_inset
+
+Таким образом получили решение (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_10"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_30"
+
+\end_inset
+
+) виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_7*"
+
+\end_inset
+
+) с коэфициентами в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_8*"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_9*"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Если на отрезке 
+\begin_inset Formula $\varphi\in C^{2},\ x\in\left[0,l\right]$
+\end_inset
+
+ и имеет кусочно непрерывную 3ю производную, и выполняются граничные условия
+ для нее, при этом: 
+\begin_inset Formula $\varphi\left(0\right)=\varphi\left(l\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\ppr\left(0\right)=\varphi\left(l\right)=0$
+\end_inset
+
+ , а 
+\begin_inset Formula $\psi\in C^{1}$
+\end_inset
+
+ при 
+\begin_inset Formula $\psi\left(0\right)=\psi\left(l\right)=0$
+\end_inset
+
+.
+ Тогда (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_7*"
+
+\end_inset
+
+) с коэфициентами в виде (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_8*"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_9*"
+
+\end_inset
+
+) является непррерывной и имеет неприрывный 1е и 2е производные по 
+\begin_inset Formula $x$
+\end_inset
+
+ и по 
+\begin_inset Formula $t$
+\end_inset
+
+, которые могут быть получены путем почленного дифференцирования ряда р
+ удовлетворяют уравнению (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_10"
+
+\end_inset
+
+) и условиям (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_2"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_30"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+ Только общие сообращения.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ous{k=1}{\b}\left[\left|A_{k}\right|+\left|B_{k}\right|\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+4.12.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{\dd u\left(x,t\right)}{\dd t}=a^{2}\df{\dd^{2}u}{\dd x^{2}},\ -\b<x<\b,\ t>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x,0\right)=\varphi\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\varphi\right|\mr C,\ \left|u\right|\mr M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x,t\right)=\df 1{2a\sqrt{\pi t}}\oui{-\b}{+\b}\varphi\left(y\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\zeta=\df{x-y}{2a\sqrt{t}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=x-2a\sqrt{t}\zeta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x,t\right)=\df 1{\pi}\oui{-\b}{+\b}\varphi\left(x-2a\sqrt{t}\zeta\right)e^{-\zeta^{2}}d\zeta
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ по модулю не привосходит 
+\begin_inset Formula $C$
+\end_inset
+
+ нетрубдо показаить что этот интеграл называется сходящимся.
+\begin_inset Formula 
+\[
+\left|u\right|\mr\df 1{\pi}\oui{-\b}{+\b}\left|\varphi\left(x-2a\sqrt{t}\zeta\right)\right|e^{-\zeta^{2}}d\zeta\mr\df C{\sqrt{\pi}}\oui{-\b}{+\b}e^{-\zeta^{2}}d\zeta=C
+\]
+
+\end_inset
+
+Покажем так же что при 
+\begin_inset Formula $t>0$
+\end_inset
+
+ сходятся интегралы, полученные дифференцированием по 
+\begin_inset Formula $t$
+\end_inset
+
+ и по 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{\dd u}{\dd t} & = & -\df 1{4a\sqrt{\pi t^{3}}}\oui{-\b}{+\b}\varphi\left(y\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy+\df 1{2a\sqrt{\pi t}}\oui{-\b}{+\b}\varphi\left(y\right)\df{\left(x-y\right)^{2}}{4a^{2}t^{2}}e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy=\\
+ & = & -\df 1{4a\sqrt{\pi t^{3}}}\oui{-\b}{+\b}\varphi\left(y\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy+\df 1{2a\sqrt{\pi t^{3}}}\oui{-\b}{+\b}\varphi\left(y\right)\df{\left(x-y\right)^{2}}{4a^{2}t}e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy=\\
+ & = & -\df 1{2\sqrt{\pi}t}\oui{-\b}{+\b}\varphi\left(x-2a\sqrt{t}\zeta\right)e^{-\zeta^{2}}d\zeta+\df 1{\sqrt{\pi}t}\oui{-\b}{+\b}\varphi\left(x-2a\sqrt{t}\zeta\right)\zeta^{2}e^{-\zeta^{2}}d\zeta
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\df{\dd u}{\dd t}\right| & \mr & \df 1{2\sqrt{\pi}t}\oui{-\b}{+\b}\left|\varphi\left(x-2a\sqrt{t}\zeta\right)\right|e^{-\zeta^{2}}d\zeta+\df 1{\sqrt{\pi}t}\oui{-\b}{+\b}\left|\varphi\left(x-2a\sqrt{t}\zeta\right)\right|\zeta^{2}e^{-\zeta^{2}}d\zeta=\\
+ & = & \df C{2\sqrt{\pi}t}\oui{-\b}{+\b}e^{-\zeta^{2}}d\zeta+\df C{\sqrt{\pi}t}\oui{-\b}{+\b}\zeta^{2}e^{-\zeta^{2}}d\zeta=\\
+ & = & \df C{2t}+\df C{\sqrt{\pi}t}\left(-\df 12\oui{-\b}{+\b}\zeta e^{-\zeta^{2}}d\left(-\zeta^{2}\right)\right)=\df C{2t}+\df C{2t}=\df Ct
+\end{eqnarray*}
+
+\end_inset
+
+Аналогично доказывается сзодимость интеграла для 
+\begin_inset Formula $\df{\dd^{2}u}{\dd x^{2}}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\df{\dd u}{\dd x}=\df 1{a\sqrt{\pi}t}\oui{-\b}{+\b}\varphi\left(y\right)\df{x-y}{4a^{2}t}e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd^{2}u}{\dd x^{2}}=-\df 1{2a^{2}\sqrt{\pi}t}\oui{-\b}{+\b}\varphi\left(x-2a\sqrt{t}\zeta\right)\zeta e^{-\zeta^{2}}d\zeta+\df 1{2a^{2}\sqrt{\pi}t}\oui{-\b}{+\b}\varphi\left(x-2a\sqrt{t}\zeta\right)\zeta^{2}e^{-\zeta^{2}}d\zeta
+\]
+
+\end_inset
+
+Покажем что 
+\begin_inset Formula $\forall x_{0}\ \begin{array}{c}
+x\st x_{0}\\
+t\st0
+\end{array}\sl u\left(x,t\right)\st\varphi\left(x_{0}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left|u\left(x,y\right)-\varphi\left(x_{0}\right)\right|\mr\left|u\left(x,t\right)-\varphi\left(x\right)\right|+\left|\varphi\left(x\right)-\varphi\left(x_{0}\right)\right|
+\]
+
+\end_inset
+
+Нам потребуется чтобы 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ была непрерывная.
+\begin_inset Formula 
+\[
+\left|\oui{-\b}{-L}\varphi\left(y\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy+\oui{-L}L\tr-\varphi\left(x\right)+\oui L{+\b}\tr\right|\mr\left|\oui{-\b}{-L}\varphi\left(y\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy\right|+\left|\oui{-L}L\tr-\varphi\left(x\right)\right|+\left|\oui L{+\b}\tr\right|
+\]
+
+\end_inset
+
+Так как интеграл (8) схдится:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists L:\ \left|\oui{-\b}L\varphi\left(y\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}t}}dy\right|\mr\df{\varepsilon}4
+\]
+
+\end_inset
+
+Аналогично: 
+\begin_inset Formula 
+\[
+\left|\oui L{+\b}\tr\right|<\df{\varepsilon}4
+\]
+
+\end_inset
+
+Рассмотрим:
+\begin_inset Formula 
+\[
+\left|\df 1{\sqrt{\pi}}\oui{-L}L\varphi\left(x-2a\sqrt{t}\zeta\right)e^{-\zeta^{2}}d\zeta-\df{\varphi\left(x\right)}{\sqrt{\pi}}\oui{-L}Le^{-\zeta^{2}}d\zeta\right|=\left|\df 1{\sqrt{\pi}}\oui{-L}L\left(\varphi\left(x-2a\sqrt{t}\zeta\right)-\varphi\left(x\right)\right)e^{-\zeta^{2}}d\zeta\right|\mr\df{\varepsilon}4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\varphi\left(x\right)-\varphi\left(x_{0}\right)\right|\mr\df{\varepsilon}4\ \text{при}\ x\st x_{0}\ \text{так как }\varphi\in C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+....формула Пуассона (8) дает...
+\end_layout
+
+\begin_layout Theorem
+Решение задачи Коши о теплопроводности устойчиво по отношению к начальным
+ данным.
+ Тоесть если у нас есть 2 задачи:
+\begin_inset Formula 
+\[
+\df{\dd u_{1,2}}{\dd t}=a^{2}\df{\dd^{2}u_{1,2}}{\dd x^{2}},\ \left|x\right|<\b,t>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{1,2}\left(x,0\right)=\varphi_{1,2}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \left|\varphi_{1}\left(x\right)-\varphi_{2}\left(x\right)\right|<\varepsilon\sl\left|u_{1}\left(x,t\right)-u_{2}\left(x,t\right)\right|<\delta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим: 
+\begin_inset Formula $v=u_{1}-u_{2}$
+\end_inset
+
+.
+ В силу линейности задачи 
+\begin_inset Formula $v|_{t=0}=\varphi_{1}-\varphi_{2}=\varphi$
+\end_inset
+
+ для 
+\begin_inset Formula $v$
+\end_inset
+
+ справедливого представления (8,10).
+\begin_inset Formula 
+\[
+\left|v\right|\mr\df 1{\sqrt{\pi}}\oui{-\b}{\b}\left|\varphi_{1}-\varphi_{2}\right|e^{-\zeta^{2}}d\zeta<\df{\varepsilon}{\sqrt{\pi}}\oui{-\b}{\b}e^{-\zeta^{2}}d\zeta=\varepsilon
+\]
+
+\end_inset
+
+Таким образом залача Коши для уравнения теплопроводности поставлено корректно.
+ Решение существует, единственное.
+\end_layout
+
+\begin_layout Subsection
+Hеоднородные задачи Коши
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{\dd\omega\left(x,t,\tau\right)}{\dd t}=a^{2}\df{\dd^{2}\omega\left(x,t,\tau\right)}{\dd x^{2}},\ t>\tau>0,\ \left|x\right|<\b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega|_{t=\tau}=f\left(x,\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(x,t\right)\right|<C_{2}=const
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $f$
+\end_inset
+
+ непрерывна то уравнение (8) умеет решение (*).
+\begin_inset Formula 
+\[
+\omega\left(x,t,\tau\right)=\df 1{2a\sqrt{\pi\left(t-\tau\right)}}\oui{-\b}{\b}f\left(y,\tau\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}\left(t-\tau\right)}}dy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{2}\left(x,t\right)=\oui 0t\omega\left(x,t,\tau\right)d\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd^{2}u_{2}}{\dd x^{2}}=\oui 0t\df{\dd^{2}\omega\left(x,t,\tau\right)}{\dd x^{2}}d\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd u_{2}}{\dd t}=\omega\left(x,t,\tau\right)+\oui 0t\df{\dd\omega\left(x,t,\tau\right)}{\dd t}d\tau
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oui 0t\left(\df{\dd\omega\left(x,t,\tau\right)}{\dd t}-a^{2}\df{\dd^{2}\omega\left(x,t,\tau\right)}{\dd x^{2}}\right)d\tau+f\left(x,t\right)=f\left(x,t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+u_{2}\left(x,t\right)=\df 1{2a\sqrt{\pi}}\oui 0t\df 1{\sqrt{t-\tau}}\oui{-\b}{\b}f\left(y,\tau\right)e^{-\frac{\left(x-y\right)^{2}}{4a^{2}\left(t-\tau\right)}}dyd\tau\label{eq:_30_11}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Задача Окши для уравнения теплопроводности в пространстве
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{\dd u\left(M,t\right)}{\dd t}=a^{2}\D u\left(M,t\right),\ M\left(x,y,z\right)\in\R^{3},\ t>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(M,0\right)=\varphi\left(M\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\varphi\right|\mr C_{1}
+\]
+
+\end_inset
+
+Тогда
+\begin_inset Formula 
+\[
+u\left(M,t\right)=\un{\iiint}{\R^{3}}G\left(M,P,t\right)\varphi\left(P\right)dV
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\df{\dd G\left(M,P,t\right)}{\dd t}=a^{2}\D G\left(M,P,t\right)\\
+G|_{t=0}=\delta\left(M,P\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\un{\iiint}{\R}\left(\df{\dd G}{\dd t}-a^{2}\D G\right)\varphi\left(P\right)dV=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Если 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ допускает разделение переменных, то решение пространственной задачи можно
+ получить в виде трех одномерных.
+\begin_inset Formula 
+\[
+u\left(M,t\right)=u_{1}\left(x,t\right)u_{2}\left(y,t\right)u_{3}\left(z,t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{\dd u_{j}}{\dd t}=a^{2}\df{\dd^{2}u_{j}}{\dd x_{j}^{2}},\ x_{j}\in\R,\ t>0,\ j=\overline{1,3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{j}|_{t=0}=\varphi_{j}\left(x_{j}\right),\ j=\overline{1,3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x_{1},x_{2},x_{3}\right)=\left(x,y,z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Очевидно что неочевидно и очевидно впадлу писать.(бее..)
+\end_layout
+
+\begin_layout Proof
+Дельта функция допускает разделение переменных
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $G(M,P)=\df 1{2\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Решение задач на полупрямой для уравнения теплопроводности
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если в щадаче (1,2) функция 
+\begin_inset Formula $\varphi\left(x\right)=-\varphi\left(x\right)$
+\end_inset
+
+ то решение 
+\begin_inset Formula $u|_{x=0}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Если в щадаче (1,2) функция 
+\begin_inset Formula $\varphi\left(x\right)=\varphi\left(-x\right)$
+\end_inset
+
+ то решение 
+\begin_inset Formula $u|_{x=0}=0$
+\end_inset
+
+.
 \begin_inset Newpage newpage
 \end_inset
 

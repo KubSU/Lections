@@ -1818,9 +1818,9 @@ x_{2}=\alpha_{2}x_{3}+\beta_{2},\ \alpha_{2}=-\df{c_{2}}{b_{2}+a_{2}\alpha_{1}},
 
 И так далее...
 \begin_inset Formula 
-\[
-x_{i-1}=\alpha_{i-1}x_{i}+b_{i-1}
-\]
+\begin{equation}
+x_{i-1}=\alpha_{i-1}x_{i}+b_{i-1}\label{eq:3_6}
+\end{equation}
 
 \end_inset
 
@@ -1840,6 +1840,2691 @@ a_{i}\left(\alpha_{i-1}x_{i}+\beta_{i-1}\right)+\beta_{i}x_{i}+c_{i}x_{i+1}=d_{i
 \begin_inset Formula 
 \[
 \left(b_{i}+a_{i}\alpha_{i-1}\right)x_{i}+c_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+16.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+О устойчивости и корректности метода прогонки
+\end_layout
+
+\end_inset
+
+Пусть коэфициенты системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_1"
+
+\end_inset
+
+) вещественные и удовлетворяют условиям 
+\begin_inset Formula $b_{1}\nr0,\ b_{n}\nr0,\ a_{i}\nr0,\ c_{i}\nr0,\ i=\overline{2,n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{equation}
+\left|b_{i}\right|\br\left|a_{i}\right|+\left|c_{i}\right|,\ i=\overline{2,n-1}\label{eq:3_7}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\left|b_{1}\right|\br\left|c_{1}\right|,\ \left|b_{n}\right|\br\left|a_{n}\right|\label{eq:3_8}
+\end{equation}
+
+\end_inset
+
+Причем в хотябы 1м из неравенств (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_7"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_8"
+
+\end_inset
+
+) выполняется строгое неравенство.
+ Тоесть матрица системы имеетт диагональное преобладание.
+ Тогда алгоритм метода прогонки (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_3"
+
+\end_inset
+
+---
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_6"
+
+\end_inset
+
+) корректен и устойчив.
+\end_layout
+
+\begin_layout Proof
+В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_3"
+
+\end_inset
+
+) мы можем записать: 
+\begin_inset Formula $\left|\alpha_{1}\right|=\df{\left|c_{1}\right|}{\left|b_{1}\right|}$
+\end_inset
+
+.
+ В силу (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_8"
+
+\end_inset
+
+):
+\begin_inset Formula $\left|\alpha_{1}\right|=\df{\left|c_{1}\right|}{\left|b_{1}\right|}\mr\df{\left|c_{1}\right|}{\left|c_{1}\right|}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Воспользуемся методом индукции:
+\begin_inset Formula 
+\[
+\left|\alpha_{i-1}\right|\mr1,\ i\br2
+\]
+
+\end_inset
+
+Покажем что тогда 
+\begin_inset Formula $\left|\alpha_{i}\right|\mr1,\ 2\mr i\mr n-1$
+\end_inset
+
+ и все 
+\begin_inset Formula $b_{i}+\alpha_{i-1}a_{i}\nr0$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|b_{i}+\alpha_{i-1}a_{i}\right| & \br & \left|b_{i}\right|-\left|\alpha_{i-1}\right|\um\left|a_{i}\right|\br\\
+ & \br & \left|a_{i}\right|+\left|c_{i}\right|-\left|\alpha_{i-1}\right|\um\left|a_{i}\right|=\\
+ & = & \left|c_{i}\right|+\left(1-\left|\alpha_{i-1}\right|\right)\left|a_{i}\right|\br\\
+ & \br & \left|c_{i}\right|>0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\alpha_{i}\right|=\df{\left|c_{i}\right|}{\left|b_{i}+\alpha_{i-1}a_{i}\right|}\mr\df{\left|c_{i}\right|}{\left|c_{i}\right|}=1
+\]
+
+\end_inset
+
+Мы покащали что все 
+\begin_inset Formula $\lambda_{i}\mr1,\ i=\overline{2,n-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Осталось показать что 
+\begin_inset Formula $b_{n}+a_{n-1}a_{n}\nr0$
+\end_inset
+
+.
+ Для этого воспользуемся условием что хотябы одно из неравенств (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_7"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_8"
+
+\end_inset
+
+) выполняется строго.
+ Пусть вначале 
+\begin_inset Formula $\left|b_{n}\right|>\left|a_{n}\right|$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|b_{n}+\alpha_{n-1}a_{n}\right| & \br & \left|b_{n}\right|-\left|\alpha_{n-1}\right|\left|a_{n}\right|>\\
+ & > & \left|a_{n}\right|-\left|\alpha_{n-1}\right|\left|a_{n}\right|=\\
+ & = & \left|a_{n}\right|\left(1-\left|\alpha_{n-1}\right|\right)\br0
+\end{eqnarray*}
+
+\end_inset
+
+ Если выполнено строгое неравенство то этот знаменатель отличен от нуля.
+ Пусть теперь в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_7"
+
+\end_inset
+
+) при каком то 
+\begin_inset Formula $i=i_{0}$
+\end_inset
+
+ знак будет строгий.
+\begin_inset Formula $\left|b_{i_{0}}\right|>\left|a_{i_{0}}\right|+\left|c_{i_{0}}\right|$
+\end_inset
+
+.
+ Тогда:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|b_{i_{0}}+\alpha_{i_{0}}a_{i_{0}}\right| & \br & \left|b_{i_{0}}\right|-\left|\alpha_{i_{0}}\right|\left|a_{i_{0}}\right|>\\
+ & > & \left|c_{i_{0}}\right|+\left|a_{i_{0}}\right|\left(1-\left|\alpha_{i_{0}}\right|\right)\br\\
+ & \br & \left|c_{i_{0}}\right|
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\alpha_{i_{0}}\right| & = & \df{\left|c_{i_{0}}\right|}{\left|b_{i_{0}}+\alpha_{i_{0}-1}a_{i_{0}}\right|}<\\
+ & < & \df{\left|c_{i_{0}}\right|}{\left|c_{i_{0}}\right|}=1
+\end{eqnarray*}
+
+\end_inset
+
+По индукции показываем:
+\begin_inset Formula 
+\[
+\left|\alpha_{i}\right|<1,\ i\br i_{0}+1
+\]
+
+\end_inset
+
+Следовательно в этом случае 
+\begin_inset Formula $\left|\alpha_{n-1}\right|<1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|b_{n}+\alpha_{n-1}a_{n}\right| & \br & \left|b_{n}\right|-\left|\alpha_{n-1}\right|\left|a_{n}\right|\br\\
+ & \br & \left|a_{n}\right|\left(1-\left|\alpha_{n-1}\right|\right)
+\end{eqnarray*}
+
+\end_inset
+
+Если 
+\begin_inset Formula $a_{n}\nr0$
+\end_inset
+
+ то 
+\begin_inset Formula $\left|a_{n}\right|\left(1-\left|\alpha_{n-1}\right|\right)$
+\end_inset
+
+.
+ а если 
+\begin_inset Formula $a_{n}=0$
+\end_inset
+
+ то 
+\begin_inset Formula $\left|b_{n}\right|>\left|a_{n}\right|$
+\end_inset
+
+, а этот случай мы рассмотрели.
+\end_layout
+
+\begin_layout Proof
+Предположим теперь 
+\begin_inset Formula $\left|b_{1}\right|>\left|c_{1}\right|$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|\alpha_{1}\right|=\df{\left|c_{1}\right|}{\left|b_{1}\right|}<1$
+\end_inset
+
+, а тогда как и раньше по индукции показываем, что будут все 
+\begin_inset Formula $\left|\alpha_{i}\right|<1,\ i\br2$
+\end_inset
+
+, ну а тогда 
+\begin_inset Formula $\left|\alpha_{n-1}\right|<1$
+\end_inset
+
+.
+ В обзщем все повторяется.
+ 
+\end_layout
+
+\begin_layout Proof
+Тоесть мы доказали, что если вы полняется одно из неравенст строго, то этот
+ знаменатель в 0 обратиться не можеит.
+\end_layout
+
+\begin_layout Remark
+Условия, приведенные в теореме являются 
+\emph on
+достаточными 
+\emph default
+и эти условия можно ослабить, а именно не требовать чтобы 
+\begin_inset Formula $c_{i}\nr0,\ a_{i}\nr0,\ i=\overline{2,n-1}$
+\end_inset
+
+.
+ Ну действительно пусть при некотром 
+\begin_inset Formula $k$
+\end_inset
+
+ : 
+\begin_inset Formula $a_{k}=0,\ k=\overline{2,n-1}$
+\end_inset
+
+, тогда система (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_1"
+
+\end_inset
+
+) расподается на две системы: 
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{k}x_{k}+c_{k}x_{k+1}=d_{k}\\
+\vtr\\
+a_{i}x_{i-1}+b_{i}x_{i}+c_{i}x_{i+1}=d_{i}\\
+\vtr\\
+a_{n}x_{n-1}+b_{n}x_{n}=d_{n}
+\end{cases},\ i=\overline{k+1,n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{1}x_{1}c_{1}x_{2}=d_{2}\\
+\vtr\\
+a_{i}x_{i-1}+b_{i}x_{i}+c_{i}x_{i+1}=d_{i}\\
+\vtr\\
+a_{k-1}x_{k-2}+b_{k-1}x_{k-1}=d_{k-1}-c_{k-1}x_{k}
+\end{cases},\ i=\overline{2,k-2}
+\]
+
+\end_inset
+
+Если условия доказываемой теоремы выполнены, то для первйо системы алгоритм
+ метода прогонки корректен и устойчив, следовательно мы найдем 
+\begin_inset Formula $x_{k}\tr x_{n}$
+\end_inset
+
+, и потом подставим в систему 2, и все нормально будет кароч! Но на самом
+ деле можно проводить расчеты по формулам (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_3"
+
+\end_inset
+
+---
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_6"
+
+\end_inset
+
+), не обращая внимание на то, что система распалась на 2 системы, точнее
+ форулы совпадут.
+\end_layout
+
+\begin_layout Remark
+При 
+\begin_inset Formula $c_{k}=0$
+\end_inset
+
+ доказывается аналогично.
+ Что для нахождения решения системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_1"
+
+\end_inset
+
+) методом прогонки можно использовать формулы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_3"
+
+\end_inset
+
+---
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_6"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Remark
+Теорема так-же справедлива и для случая системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3_1"
+
+\end_inset
+
+) с комплексными коэфициентами.
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $b_{1}=0$
+\end_inset
+
+ или 
+\begin_inset Formula $b_{n}=0$
+\end_inset
+
+ то формулы использовать нельзя, но можно переделать систему, и решить кароч
+ все.
+\end_layout
+
+\begin_layout Subsection
+Поведение числа абусловленосте при матричных приобразованиях.
+\end_layout
+
+\begin_layout Standard
+Покажем что для некоторых систем линейных уравнений метод Гаусса не всегда
+ хорошо работает.
+ Преобразования Гаусса оказывается могу в некоторых случаях существенно
+ изменять число обусловленностей матрицы.
+ И воообще метод Гаусса фуфло и нужно использовать методы, которые не меняют
+ числа обусловленностей матрицы, и нужно использоваль алгоритмы, использующие
+ оортогональные преобразования или ортогональные преобразования.
+\end_layout
+
+\begin_layout Standard
+Ранее мы говорили что расчетные формулы метога гаусса эквивалентны разложению
+ матрици 
+\begin_inset Formula $A$
+\end_inset
+
+ в произведения нижней треугольной и верхней треуголььной.
+ В результате исходная система сводится к решению системы с верхней треугольной
+ матрицей 
+\begin_inset Formula $U=L^{-1}A$
+\end_inset
+
+.
+ Появление перед 
+\begin_inset Formula $A$
+\end_inset
+
+ множителя 
+\begin_inset Formula $L^{-1}$
+\end_inset
+
+ может ухудшить обусловленность матрицы 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Покажем что если число обусловленности матрициы 
+\begin_inset Formula $L^{-1}$
+\end_inset
+
+ большое то и число обусловленностей матрицы 
+\begin_inset Formula $U$
+\end_inset
+
+ также велико.
+\end_layout
+
+\begin_layout Standard
+В силу свойства числа обусловнленностей: 
+\begin_inset Formula $\nu\left(U\right)\mr\nu\left(L^{-1}\right)\um\nu\left(A\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L^{-1}=UA^{-1}$
+\end_inset
+
+, тогда: 
+\begin_inset Formula $\nu\left(L^{-1}\right)\mr\nu\left(U\right)\um\nu\left(A^{-1}\right)$
+\end_inset
+
+ но так как 
+\begin_inset Formula $\nu\left(A\right)=\nu\left(A^{-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\df{\nu\left(L^{-1}\right)}{\nu\left(A\right)}\mr\nu\left(U\right)\mr\nu\left(L^{-1}\right)\nu\left(A\right)
+\]
+
+\end_inset
+
+ Если число обусловленностей 
+\begin_inset Formula $L^{-1}$
+\end_inset
+
+ большое, то число обусловленностей матрицы 
+\begin_inset Formula $U$
+\end_inset
+
+ велико и обратный ход метода Гаусса окажется хуже обусловлен, чем исходная
+ задача.
+ И возможно большая потеря точности.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $Q$
+\end_inset
+
+ называется ортогональной, если обратная совподает с транспонировной.
+\end_layout
+
+\begin_layout Standard
+Покажем что если 
+\begin_inset Formula $Q$
+\end_inset
+
+ ортогональная матрица, то 
+\begin_inset Formula $\left|\left|Qx\right|\right|_{2}=\left|\left|x\right|\right|_{2}$
+\end_inset
+
+.
+ Тоесть длинна вектора не меняется.
+ Так же не меняется нормы матрицы.
+ 
+\begin_inset Formula $\left|\left|QA\right|\right|_{2}=\left|\left|A\right|\right|_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\left|AQ\right|\right|_{2}=\left|\left|A\right|\right|_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\left|\left|x\right|\right|_{2}^{2}=\ous{i=1}nx_{i}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\left|\left|Qx\right|\right|_{2}=\left(\left(Qx\right)^{T}\um Qx\right)^{\frac{1}{2}}=\left(x^{T}Q^{T}Qx\right)^{\frac{1}{2}}=\left(x^{T}x\right)^{\frac{1}{2}}=\left|\left|x\right|\right|_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+И еще 
+\begin_inset Formula $\left|\left|QA\right|\right|_{2}=\un{\sup}{\left|\left|x\right|\right|_{2}\nr0}\df{\left|\left|QAx\right|\right|_{2}}{\left|\left|x\right|\right|_{2}}=\un{\sup}{\left|\left|x\right|\right|_{2}\nr0}\df{\left(x^{T}A^{T}Q^{T}QAx\right)^{\frac{1}{2}}}{\left|\left|x\right|\right|_{2}}=\un{\sup}{\left|\left|x\right|\right|_{2}\nr0}\df{\left|\left|Ax\right|\right|_{2}}{\left|\left|x\right|\right|_{2}}=\left|\left|A\right|\right|_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А и еще кое что 
+\begin_inset Formula $\left|\left|AQx\right|\right|_{2}=\un{\sup}{\left|\left|x\right|\right|_{2}\nr0}\df{\left|\left|AQx\right|\right|_{2}}{\left|\left|x\right|\right|_{2}}$
+\end_inset
+
+ Можно сделать замену: 
+\begin_inset Formula $x=Q^{T}y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+И тогда 
+\begin_inset Formula $\left|\left|AQx\right|\right|_{2}=\un{\sup}{\left|\left|Q^{T}y\right|\right|_{2}\nr0}\df{\left|\left|AQQ^{T}y\right|\right|_{2}}{\left|\left|Q^{T}y\right|\right|_{2}}=\un{\sup}{\left|\left|Q^{T}y\right|\right|_{2}\nr0}\df{\left|\left|Ay\right|\right|_{2}}{\left|\left|y\right|\right|_{2}}=\left|\left|A\right|\right|_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ну а теперь в качестве следствия из этих вод свойств вытекает, что число
+ обусловленностей 
+\begin_inset Formula $QA$
+\end_inset
+
+ это есть норма 
+\begin_inset Formula $QA$
+\end_inset
+
+ умножит на норму 
+\begin_inset Formula $QA^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Тоесть при ортогональных преобразованиях обусловленнность матрицы не меняется.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+23.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Метод вращений решения линейных систем
+\end_layout
+
+\begin_layout Standard
+Метож вращения преобразует матрицу к треугольному виду, так же как и в методе
+ Гаусса.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Свойство 1.
+ 
+\emph default
+Произведение ортогональных матриц является орторональной матрицей.
+\begin_inset Formula 
+\[
+UQ\ :\ UU^{T}=EQQ^{T}=E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+UQ\m\left(UQ\right)^{T}=UQQ^{T}U^{T}=UEU^{T}=UU^{T}=E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим матрицу 
+\begin_inset Formula $Q_{kl},\ l>k$
+\end_inset
+
+.
+ Это матрица, которая отличается от едениченой матрицей четырмя элементами,
+ а именно: 
+\begin_inset Formula $Q_{kl}\left(k,k\right)=Q_{kl}\left(l,l\right)=C$
+\end_inset
+
+, 
+\begin_inset Formula $Q_{kl}\left(k,l\right)=S,\ Q_{kl}\left(l,k\right)=-S$
+\end_inset
+
+, 
+\begin_inset Formula $S^{2}+C^{2}=1$
+\end_inset
+
+.
+ Матрица имеет вид:
+\begin_inset Formula 
+\[
+Q_{kl}=\left(\begin{array}[t]{ccccccc}
+1 & \tr & 0 & \tr & 0 & \tr & 0\\
+\vtr & \ntr & \vtr & \tr & \vtr & \tr & \vtr\\
+0 & \tr & C & \tr & S & \tr & 0\\
+\vtr & \tr & \vtr & \ntr & \vtr & \tr & \vtr\\
+0 & \tr & -S & \tr & C & \tr & 0\\
+\vtr & \tr & \vtr & \tr & \vtr & \ntr & \vtr\\
+0 & \tr & 0 & \tr & 0 & \tr & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим что при умножении 
+\begin_inset Formula $Q_{kl}$
+\end_inset
+
+ на некоторую матрицу 
+\begin_inset Formula $A.$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\left(\begin{array}[t]{cccc}
+a_{1,1} & a_{1,2} & \tr & a_{1,n}\\
+\vtr & \vtr & \tr & \vtr\\
+a_{k,1} & a_{k,2} & \tr & a_{k,n}\\
+\vtr & \vtr & \tr & \vtr\\
+a_{l,1} & a_{l,2} & \tr & a_{l,n}\\
+\vtr & \vtr & \tr & \vtr\\
+a_{n,1} & a_{n,2} & \tr & a_{n,n}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будет:
+\begin_inset Formula 
+\[
+Q_{kl}A=\left(\begin{array}[t]{cccc}
+a_{1,1} & a_{1,2} & \tr & a_{1,n}\\
+\vtr & \vtr & \tr & \vtr\\
+ca_{k,1}+sa_{l.1}\\
+\\
+\\
+\\
+\\
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Матрица 
+\begin_inset Formula $Q_{kl}$
+\end_inset
+
+ называется матрицей вращения.
+\end_layout
+
+\begin_layout Standard
+Пусть у матицы 
+\begin_inset Formula $A$
+\end_inset
+
+ элемент 
+\begin_inset Formula $a_{2,1}\nr0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+U_{1,2}A & = & \left(\begin{array}[t]{ccccc}
+C & S & 0 & \tr & 0\\
+-S & C & 0 & \tr & 0\\
+0 & 0 & 1 & \tr & 0\\
+\vtr & \vtr & \vtr & \ntr & \vtr\\
+0 & 0 & 0 & \tr & 1
+\end{array}\right)\left(\begin{array}[t]{ccc}
+a_{1,1} & \tr & a_{1,n}\\
+\vtr & \ntr & \vtr\\
+a_{n,1} & \tr & a_{n,n}
+\end{array}\right)=\\
+ & = & \left(\begin{array}[t]{cccc}
+ca_{1,1}+sa_{2,1} & ca_{1,2}+sa_{2,1} & \tr & ca_{1,n}+sa_{2,1}\\
+-sa_{1,1}+ca_{2,1} & -sa_{1,2}+ca_{2,2} & \tr & -sa_{1,1}+ca_{2,n}\\
+\vtr & \vtr & \ntr & \vtr\\
+a_{n,1} & a_{n,2} & \tr & a_{n,n}
+\end{array}\right)=\\
+ & = & \left(\begin{array}[t]{cccc}
+a_{1,1}^{\left(1\right)} & a_{1,2}^{\left(1\right)} & \tr & a_{1,n}^{\left(1\right)}\\
+a_{2,1}^{\left(1\right)} & a_{2,2}^{\left(1\right)} & \tr & a_{2,n}^{\left(1\right)}\\
+\vtr & \vtr & \ntr & \vtr\\
+a_{n,1} & a_{n,2} & \tr & a_{n,n}
+\end{array}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{1,j}^{\left(1\right)}=ca_{i,j}+sa_{2,j},\ a_{2,j}^{\left(1\right)}=-sa_{1,j}+ca_{2,j},\ j=\overline{1,n}
+\]
+
+\end_inset
+
+Тогда чтобы 
+\begin_inset Formula $a_{2,1}^{\left(1\right)}=0$
+\end_inset
+
+ нужно чтобы:
+\begin_inset Formula 
+\[
+\begin{cases}
+-sa_{1,1}+ca_{2,1}=0\\
+S^{2}+c^{2}=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=\df{S\um a_{1,1}}{a_{2,1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S^{2}\left(1+\df{a_{1,1}^{2}}{a_{2,1}^{2}}\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\df{a_{2,1}}{\sqrt{a_{2,1}^{2}+a_{1,1}^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=\df{a_{1,1}}{\sqrt{a_{2,1}^{2}+a_{1,1}^{2}}}
+\]
+
+\end_inset
+
+И так далее обнуляем 
+\begin_inset Formula $a_{2,1}$
+\end_inset
+
+, и на 
+\begin_inset Formula $i$
+\end_inset
+
+-ом шаге обнуляем элемент 
+\begin_inset Formula $a_{i+1,1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+U_{1,i+1}A & = & \left(\begin{array}[t]{ccccc}
+C & \tr & S & \tr & 0\\
+\vtr & \tr & \vtr & \tr & \vtr\\
+-S & \tr & C & \tr & 0\\
+\vtr & \tr & \vtr & \tr & \vtr\\
+0 & \tr & 0 & \tr & 1
+\end{array}\right)\left(\begin{array}[t]{cccc}
+a_{1,1}^{\left(i-1\right)} & a_{1,2}^{\left(i-1\right)} & \tr & a_{1,n}^{\left(i-1\right)}\\
+\vtr & \vtr & \tr & \vtr\\
+a_{i+1,1} & a_{i+1,2} & \tr & a_{i+1,n}\\
+\vtr & \vtr & \ntr & \vtr\\
+a_{n,1} & a_{n,2} & \tr & a_{n,n}
+\end{array}\right)=\\
+ & = & \tr
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+-Sa_{1,1}^{\left(i-1\right)}-Ca_{i+1,1}=0\\
+S^{2}+C^{2}=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=\df{Sa_{1,1}^{\left(i-1\right)}}{a_{i+1,1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S^{2}\left(1+\df{\left(a_{1,1}^{\left(i-1\right)}\right)^{2}}{a_{i+1,1}^{2}}\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\df{a_{i+1,1}}{\sqrt{a_{i+1,1}^{2}+\left(a_{1,1}^{\left(i-1\right)}\right)^{2}}},\ C=\df{a_{1,1}^{\left(i-1\right)}}{\sqrt{a_{i+1,1}^{2}+\left(a_{1,1}^{\left(i-1\right)}\right)^{2}}}
+\]
+
+\end_inset
+
+ Таким образом получим:
+\begin_inset Formula 
+\[
+Q_{1,n}\tr Q_{1,2}\widetilde{A}=\left(\begin{array}[t]{ccc}
+a_{1,1}^{\left(n-1\right)} & \tr & a_{1,n}^{\left(n-1\right)}\\
+0 & \tr & a_{2,n}^{\left(1\right)}\\
+\vtr & \tr & \vtr\\
+0 & \tr & a_{n,n}^{\left(1\right)}
+\end{array}\right)
+\]
+
+\end_inset
+
+Так же будет меняться и вектор 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Аналогично обнуляем поддиагональные элементы второго столбца и последующих.
+ И так далее для исключения 
+\begin_inset Formula $\left(l,k\right)$
+\end_inset
+
+ элемента матрицу 
+\begin_inset Formula $U_{k,l}$
+\end_inset
+
+ умножим на 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+-s\widetilde{a_{k,k}}+c\widetilde{a_{l,k}}=0\\
+S^{2}+C^{2}=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\df{\widetilde{a_{l,k}}}{\sqrt{\widetilde{a_{l,k}}^{2}+\widetilde{a_{k,k}}^{2}}},\ C=\df{\widetilde{a_{k,k}}}{\sqrt{\widetilde{a_{l,k}}^{2}+\widetilde{a_{k,k}}}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+В результате этих всех преобразований мы получаем 
+\begin_inset Formula 
+\[
+Q_{n-1,n}\tr Q_{1,2}A=Q^{T}A=R
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $R$
+\end_inset
+
+ верхняя треугольная матрица.
+\begin_inset Formula 
+\[
+A=QR
+\]
+
+\end_inset
+
+Это разложение матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ в произведение орторональной и верхней треугольной, где 
+\begin_inset Formula $Q=\left(Q_{n-1,n}\tr Q_{1,2}\right)^{T}=Q_{1,2}^{T}\tr Q_{n-1,n}^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда решение системы 
+\begin_inset Formula $Ax=B$
+\end_inset
+
+ сводится к решению системы 
+\begin_inset Formula $Rx=Q^{T}B$
+\end_inset
+
+ с верзней треугольной матрицей, причем число обусловленностей матриц 
+\begin_inset Formula $R$
+\end_inset
+
+ и 
+\begin_inset Formula $A$
+\end_inset
+
+ ьудет равно.
+ Поэтому метод вращения численно более устойчив чем метод Гаусса.
+ Метод вращения требует 
+\begin_inset Formula $2n^{3}$
+\end_inset
+
+ арифметических операций, что в 3 раза больше чем в методе Гаусса.
+\end_layout
+
+\begin_layout Section
+Метод отражений
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $W$
+\end_inset
+
+ --- некоторый вектор-столбец еденичной длинны.
+ 
+\begin_inset Formula $W=\left(\begin{array}{c}
+w_{1}\\
+\vtr\\
+w_{n}
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|\left|W\right|\right|_{2}^{2}=\left(W,W\right)=W^{T}W=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда уравнение 
+\begin_inset Formula $\left(Z,W\right)=0$
+\end_inset
+
+ задает в 
+\begin_inset Formula $\left(n-1\right)$
+\end_inset
+
+ом пространстве гиперплоскость.
+ Пространство состоящих из вектором, ортогональных вектору 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ Произвольный вектор 
+\begin_inset Formula $y$
+\end_inset
+
+ представим в виде суммы вектора 
+\begin_inset Formula $z$
+\end_inset
+
+, лежащего в этой гиперплоскости, и векторa, коллинеарному вектору 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y=z+\alpha W
+\]
+
+\end_inset
+
+Умножим скалярно на 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(y,W\right)=\un{\underbrace{\left(z,W\right)}}0+\un{\alpha\underbrace{\left(W,W\right)}}1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha=\left(y,W\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=y-\left(y,W\right)W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=z+\left(y,W\right)W
+\]
+
+\end_inset
+
+Построим вектор 
+\begin_inset Formula $U$
+\end_inset
+
+ который зеркален вектору 
+\begin_inset Formula $Y$
+\end_inset
+
+ относительно этой гиперплоскости.
+ Чтобы зеркально отразить вектор 
+\begin_inset Formula $Y$
+\end_inset
+
+ относительно гипеерплоскости, нужно к векторру 
+\begin_inset Formula $Z$
+\end_inset
+
+ прибавить вектор 
+\begin_inset Formula $\left(-\alpha W\right)$
+\end_inset
+
+.
+ Тоесть:
+\begin_inset Formula 
+\begin{eqnarray*}
+U & = & z-\alpha W=\\
+ & = & y-\alpha W-\alpha W=\\
+ & = & y-2\alpha W=\\
+ & = & y-2\left(y,W\right)W
+\end{eqnarray*}
+
+\end_inset
+
+Преобразования, переводящие вектор 
+\begin_inset Formula $Y$
+\end_inset
+
+ в его отрадение 
+\begin_inset Formula $U$
+\end_inset
+
+ называется 
+\emph on
+преобразованием отражения Хаусхолдера
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Матрица преобразования отражения определяется вектором 
+\begin_inset Formula $W$
+\end_inset
+
+ и задается как 
+\begin_inset Formula 
+\[
+H=E-2WW^{T}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+Hy & = & \left(E-2WW^{T}\right)y=\\
+ & = & y-2WW^{T}y=\\
+ & = & y-2W\left(W^{T}y\right)=\\
+ & = & y-2W\left(W,y\right)=\\
+ & = & y-2\alpha W
+\end{eqnarray*}
+
+\end_inset
+
+Матрица 
+\begin_inset Formula $H$
+\end_inset
+
+ является симметричной и артогональной.
+\begin_inset Formula 
+\[
+H^{T}=\left(E-2WW^{T}\right)^{T}=E-2\left(WW^{T}\right)^{T}=E-2WW^{T}
+\]
+
+\end_inset
+
+ Тоесть действительно симметричная.
+ Покажем что матрица отражения является ортогональной: 
+\begin_inset Formula 
+\begin{eqnarray*}
+H^{T}H & = & \left(E-2WW^{T}\right)\left(E-2WW^{T}\right)=\\
+ & = & E-2WW^{T}-2WW^{T}+4W\left(W^{T}W\right)W^{T}=\\
+ & = & E
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $e_{1}=\left(\begin{array}{c}
+1\\
+0\\
+\vtr\\
+0
+\end{array}\right)$
+\end_inset
+
+.
+ Подберем вектор 
+\begin_inset Formula $W$
+\end_inset
+
+ в матрице отражения так\SpecialChar \@.
+ чтобы заданный ненулевой вектор 
+\begin_inset Formula $y$
+\end_inset
+
+ матрицей отражения 
+\begin_inset Formula $H$
+\end_inset
+
+ преобразовывался бы в вектор, коллинеарный 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+.
+ Тоесть 
+\begin_inset Formula 
+\begin{eqnarray*}
+Hy & = & \left(E-2WW^{T}\right)y=\\
+ & = & y-2WW^{T}y=\\
+ & = & y-2W\left(W,y\right)=\\
+ & = & \sigma\um e_{1}
+\end{eqnarray*}
+
+\end_inset
+
+ Так как ортогональное преобразование сохраняет длинну вектора, то 
+\begin_inset Formula $\sigma=\pm\left|\left|y\right|\right|_{2}$
+\end_inset
+
+.
+ Следовательно мы получаем, что 
+\begin_inset Formula 
+\[
+2W\left(W,y\right)=y-\sigma\um e_{1}
+\]
+
+\end_inset
+
+ Справа стоит вектор, коолинеарный вектору 
+\begin_inset Formula $W$
+\end_inset
+
+, следовательно вектор 
+\begin_inset Formula $W$
+\end_inset
+
+ отличается от 
+\begin_inset Formula $y-\sigma\um e_{1}$
+\end_inset
+
+ отличается на некоторый множитель.
+ 
+\begin_inset Formula 
+\[
+k\left(y-\sigma\um e_{1}\right)=W,\ k\in\R
+\]
+
+\end_inset
+
+И так как век тор 
+\begin_inset Formula $W$
+\end_inset
+
+ имеет еденичную длинну, то 
+\begin_inset Formula 
+\[
+W=\df{y-\sigma\um e_{1}}{\left|\left|y-\sigma\um e_{1}\right|\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+30 октября 2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e_{1}=\left(\begin{array}{c}
+1\\
+0\\
+\vtr\\
+0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\nr0$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+W=\df{y-\sigma\um e_{1}}{\left|\left|y-\sigma\um e_{1}\right|\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\pm\left|\left|y\right|\right|_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=E-2WW^{T}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Hy=\sigma e_{1}
+\]
+
+\end_inset
+
+Знак кооэфициента 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ выберается таким образом, чтобы недопустить малость длинны вектора 
+\begin_inset Formula $y-\sigma e_{1}$
+\end_inset
+
+.
+ А следовательно обеспечить большую устойчивость метода по отношению ошибкам
+ округления.
+ Для этого 
+\begin_inset Formula $\sigma=-\text{sign}\left(y_{1}\right)\left|\left|y\right|\right|_{2}$
+\end_inset
+
+ где 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ это первая компонента вектора 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Таким образом чтобы вектор ненулевой вектор 
+\begin_inset Formula $y$
+\end_inset
+
+ преобразованием отражения перевести в вектор, коллиниарный еденичному вектору
+ 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+.
+ В качестве 
+\begin_inset Formula $W$
+\end_inset
+
+ нужно взять вектор 
+\begin_inset Formula $\df p{\left|\left|p\right|\right|}$
+\end_inset
+
+, 
+\begin_inset Formula $p=y+\text{sign}\left(y_{1}\right)\left|\left|y\right|\right|_{2}e_{1}$
+\end_inset
+
+.
+ При этом если 
+\begin_inset Formula $y_{1}=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\text{sign}\left(y_{1}\right)=1$
+\end_inset
+
+.
+ Если векторы 
+\begin_inset Formula $y$
+\end_inset
+
+ и 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ коллинеарны, то никаких преобразований делать не нада, и в этом случае
+ 
+\begin_inset Formula $H=E$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+В силу вышеизложенного получаем следующий алгоритм преобразования матрицы
+ к верхней треугольной с помощью преобразования отражения.
+ На первом шаге в качестве вектора 
+\begin_inset Formula $y$
+\end_inset
+
+, из преведущих рассуждений, возьмем первый столбец матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+Ax=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\left(\begin{array}{c}
+a_{1,1}\\
+a_{2,1}\\
+\vtr\\
+a_{n,1}
+\end{array}\right)
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $a_{2,1}=\tr=a_{n,1}=0$
+\end_inset
+
+ то переходим к следующему шагу, тоесть 
+\begin_inset Formula $A^{\left(1\right)}=A,$
+\end_inset
+
+ 
+\begin_inset Formula $b^{\left(1\right)}=b$
+\end_inset
+
+, 
+\begin_inset Formula $H^{\left(1\right)}=E$
+\end_inset
+
+, 
+\begin_inset Formula $a_{i,j}^{\left(1\right)}=a_{i,j}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{i}^{\left(1\right)}=b_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $i=\overline{1,n}$
+\end_inset
+
+.
+ Если это не так, то умножим мматрицу 
+\begin_inset Formula $A$
+\end_inset
+
+ и вектор правых частей 
+\begin_inset Formula $b$
+\end_inset
+
+ слева на матрицу 
+\begin_inset Formula $H^{\left(1\right)}=E_{n}-2WW^{T}$
+\end_inset
+
+, где вектор 
+\begin_inset Formula $W$
+\end_inset
+
+ подбираем так, чтобы 
+\begin_inset Formula $H^{\left(1\right)}y$
+\end_inset
+
+ был коллинеарен вектору 
+\begin_inset Formula $e_{1}=\left(\begin{array}{c}
+1\\
+0\\
+\vtr\\
+0
+\end{array}\right)$
+\end_inset
+
+.
+ В этом случае 
+\begin_inset Formula $W=\df P{\left|\left|P\right|\right|}$
+\end_inset
+
+, где 
+\begin_inset Formula $P=y+\text{sign}\left(y_{1}\right)\left|\left|y\right|\right|_{2}e_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть сделано 
+\begin_inset Formula $l-1$
+\end_inset
+
+ шагов.И получана система 
+\begin_inset Formula $A^{\left(l-1\right)}x=b^{\left(l-1\right)}.$
+\end_inset
+
+ 
+\begin_inset Formula $a_{i,j}^{\left(l-1\right)}=0,\ j\mr l-1\ \ i>j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим вектор размерности 
+\begin_inset Formula $n-l+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{\left(l\right)}=\left(\begin{array}{c}
+a_{l,l}^{\left(l-1\right)}\\
+a_{l+1,l}^{\left(l-1\right)}\\
+\vtr\\
+a_{n,l}^{\left(l-1\right)}
+\end{array}\right)
+\]
+
+\end_inset
+
+Снова если 
+\begin_inset Formula $a_{l+1,l}^{\left(l-1\right)}=\tr=a_{n,l}^{\left(l-1\right)}=0$
+\end_inset
+
+, то мы переходим к следующему шагу, в противном случае строим матрицу отражения.
+ размерности 
+\begin_inset Formula $n-l+1$
+\end_inset
+
+, равной, 
+\begin_inset Formula $U^{\left(l\right)}=E-2WW^{T}$
+\end_inset
+
+, где 
+\begin_inset Formula $W=\df P{\left|\left|P\right|\right|}$
+\end_inset
+
+, где 
+\begin_inset Formula $P=y^{\left(l\right)}+\text{sign}\left(y_{1}^{\left(l\right)}\right)\left|\left|y\right|\right|_{2}e_{1}$
+\end_inset
+
+.
+ Затем построим матрицу 
+\begin_inset Formula $H^{\left(l\right)}=\left(\begin{array}[t]{cc}
+E_{l-1} & 0\\
+0 & U^{\left(l\right)}
+\end{array}\right)$
+\end_inset
+
+.
+ И 
+\begin_inset Formula $A^{\left(l\right)}=H^{\left(l\right)}A^{\left(l-1\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $b^{\left(l\right)}=H^{\left(l\right)}b^{\left(l-1\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $A^{\left(l\right)}x=b^{\left(l\right)}$
+\end_inset
+
+.
+ И так далее после 
+\begin_inset Formula $n-1$
+\end_inset
+
+шага придем к системе 
+\begin_inset Formula $A^{\left(n-1\right)}x=b^{\left(n-1\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Матрица 
+\begin_inset Formula $A^{\left(n-1\right)}$
+\end_inset
+
+ имеет верхнюю треугольную фуорму.
+ Если все ее диагональные элементы отличны от нуля, то последовательно найдем
+ 
+\begin_inset Formula $x_{n},\tr,x_{1}$
+\end_inset
+
+.
+ Если же хотябы один из диаголььных элементов матрицы 
+\begin_inset Formula $A^{\left(n-1\right)}$
+\end_inset
+
+ равен нулю, то матрица 
+\begin_inset Formula $A^{\left(n-1\right)}$
+\end_inset
+
+ вырожденая, а следовательно будет вырожденной матрица 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Метод отражения требует 
+\begin_inset Formula $\df 43n^{3}$
+\end_inset
+
+ арифметических операций, тоесть в полтора раза меньше чем метод вращения,
+ но в 2 раза больше чем метод Гаусса.
+ 
+\end_layout
+
+\begin_layout Standard
+Если система 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ с комплексными 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Возможно нахождения решения рассмотренными выше методами с введения комплексной
+ арифметики и вместо ортогоналыных матриц рассматривать унитарные матрицы.
+ 
+\begin_inset Formula $H=E-2WW^{*},$
+\end_inset
+
+ где 
+\begin_inset Formula $W^{*}=\left(\overline{W_{1}}\tr\overline{W_{n}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Вторая возможность, это сведение этой системы к вспомогаетльной вещественной
+ системе.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=A_{1}+iA_{2},\ b=b_{1}+ib_{2}
+\]
+
+\end_inset
+
+Где 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ вещественные матрицы размерности 
+\begin_inset Formula $n\x n$
+\end_inset
+
+, а 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{2}$
+\end_inset
+
+ вещественные вектора размерности 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(A_{1}+iA_{2}\right)\left(x_{1}+ix_{2}\right)=b_{1}+ib_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{1}x_{1}-A_{2}x_{2}+i\left(A_{2}x_{1}+A_{1}x_{2}\right)=b_{1}+ib_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+A_{1}x_{1}-A_{2}x_{2}=b_{1}\\
+A_{2}x_{1}+A_{1}x_{2}=b_{2}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}[t]{cc}
+A_{1} & -A_{2}\\
+A_{2} & A_{1}
+\end{array}\right)\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)=\left(\begin{array}{c}
+b_{1}\\
+b_{2}
+\end{array}\right)
+\]
+
+\end_inset
+
+Переобозначим это как:
+\begin_inset Formula 
+\[
+Cy=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Итерационные методы решения СЛАУ
+\end_layout
+
+\begin_layout Standard
+Прямые методы используют как правило для систем средней размерности.
+ Итерационные методы применяют для систем с разрежеными матрицами большой
+ размерности, тоесть для матриц, с большим числом нулевых элементов.
+ Если для них применять прямые методы, то через несколько количество шагов
+ перестают быть разрежеными, и тем самым теряетсяс это приимужество.
+ При использовании итерационных методов матрица не меняется и остается разреженн
+ой и этим пользуются.
+\end_layout
+
+\begin_layout Subsection
+Метод простой итерации
+\end_layout
+
+\begin_layout Standard
+Рассмотрим систему 
+\begin_inset Formula 
+\[
+Ax=b
+\]
+
+\end_inset
+
+ с квадратной невырожденной матрицей 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Преобразуем систему 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ к виду 
+\begin_inset Formula $x=Bx+c$
+\end_inset
+
+.
+ Где 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ известны.
+\end_layout
+
+\begin_layout Standard
+Есть много способов такого приведения, то как правило, не при любой матрицы
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ итерационный метод будет сходится, и эта матрица очень сильно влияет на
+ успех и скорость итерационного метода.
+ Например если диагональные элементы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ отличны от нуля, то систему можно привести следующим образом, а именно:
+ из первого уравнения выразим 
+\begin_inset Formula $x_{1}=-\df{a_{1,2}}{a_{1,1}}x_{2}-\tr-\df{a_{1,n}}{a_{1,1}}x_{n}+\df{b_{1}}{a_{1,1}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x_{2}=-\df{a_{2,2}}{a_{2,1}}x_{1}-\tr-\df{a_{2,n}}{a_{2,1}}x_{n}+\df{b_{2}}{a_{2,1}}$
+\end_inset
+
+, и так далее 
+\begin_inset Formula $x_{n}=-\df{a_{n,1}}{a_{n,n}}x_{1}-\tr-\df{a_{n,n-1}}{a_{n,n}}x_{n-1}+\df{b_{n}}{a_{n,n}}$
+\end_inset
+
+.
+ Вот мы и нашли 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Где на главной диагонали расположены нули, и другие элементы 
+\begin_inset Formula $b_{i,j}=-\df{a_{i,j}}{a_{i,i}},\ j\nr i$
+\end_inset
+
+.
+ 
+\begin_inset Formula $c_{i}=\df{b_{i}}{a_{i,i}},\ i=\overline{1,n},\ i\nr j$
+\end_inset
+
+.
+ Систему можно преобразовать и следующим образом: 
+\begin_inset Formula 
+\[
+x=x-\tau\left(Ax-b\right)
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $\tau$
+\end_inset
+
+ специально выбранный числовой параметр.
+ Рассмотрим приведенную систему.
+ Выберем некоторый начальный вектор.
+ 
+\begin_inset Formula $x^{(0)}=\left(\begin{array}{c}
+x_{1}^{\left(0\right)}\\
+\vtr\\
+x_{n}^{\left(0\right)}
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x^{\left(1\right)}=Bx^{\left(0\right)}+c$
+\end_inset
+
+ 
+\begin_inset Formula $\tr$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+x^{\left(k+1\right)}=Bx^{\left(k\right)}+c
+\]
+
+\end_inset
+
+Это и есть метод простой итерации.
+ В случае когда для итераций используется приведенная система с элементами,
+ вычисленными по выведеными нами формулам, то метод простой итерации называют
+ методом Якоби.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+О сходимости метода простой итерации
+\end_layout
+
+\end_inset
+
+Если норма матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ меньше еденицы, то приведенная система имеет единственное решение, обозначим
+ через 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+, а метод простой итерации сходится при любом начальном приближении.
+ И справедлива оценка погрешности: 
+\begin_inset Formula 
+\[
+\left|\left|x^{\left(k\right)}-\overline{x}\right|\right|\mr\left|\left|B\right|\right|^{k}\left|\left|x^{\left(0\right)}-\overline{x}\right|\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из курса линейной алгебры мы знаем что неоднородная система имеет реения,
+ то следовательно отдородная система имеет только нулевое решение.
+ 
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $x$
+\end_inset
+
+ какое то решение однородной системы.
+ Тогда 
+\begin_inset Formula $\left|\left|x\right|\right|=\left|\left|Bx\right|\right|\mr\left|\left|B\right|\right|\um\left|\left|x\right|\right|$
+\end_inset
+
+.
+ Получаем 
+\begin_inset Formula $\left(1-\left|\left|B\right|\right|\right)\left|\left|x\right|\right|\mr0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|\left|B\right|\right|<1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\left|x\right|\right|\mr0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|x\right|\right|=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+ точное решение приведенной системы, тоесть верно тождество: 
+\begin_inset Formula $\overline{x}=B\overline{x}+c$
+\end_inset
+
+.
+ Тогда вычитая из 
+\begin_inset Formula 
+\[
+x^{\left(k+1\right)}=Bx^{\left(k\right)}+c
+\]
+
+\end_inset
+
+это равенство получим:
+\begin_inset Formula 
+\[
+x^{\left(k+1\right)}-\overline{x}=B\left(x^{\left(k\right)}-\overline{x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left|x^{\left(k+1\right)}-\overline{x}\right|\right|=\left|\left|B\left(x^{\left(k\right)}-\overline{x}\right)\right|\right|\mr\left|\left|B\right|\right|\left|\left|x^{\left(k\right)}-\overline{x}\right|\right|
+\]
+
+\end_inset
+
+Это неравенство справедиво для любого 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left|\left|x^{\left(k\right)}-\overline{x}\right|\right|\mr\left|\left|B\right|\right|\left(x^{\left(k+1\right)}-\overline{x}\right)\mr\left|\left|x^{\left(k+1\right)}-\overline{x}\right|\right|=\left|\left|B\left(x^{\left(k\right)}-\overline{x}\right)\right|\right|\mr\left|\left|B\right|\right|\left|\left|x^{\left(k\right)}-\overline{x}\right|\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+....................................
+\end_layout
+
+\begin_layout Proof
+Тоесть неравенство мы доказали.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+11.12.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Метод наименьших квадратов
+\end_layout
+
+\begin_layout Standard
+Пусть у нас есть 
+\begin_inset Formula $x_{0},x_{1},\tr,x_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x_{0}\right),\tr,f\left(x_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\umin{i=\overline{0,n}}x_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=\umax{i=\overline{0,n}}x_{i}
+\]
+
+\end_inset
+
+Аппроксимируем 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ функцией 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+.
+ Пусть
+\begin_inset Formula 
+\[
+\varphi\left(x\right)=\varphi\left(x,a_{0},\tr,a_{m}\right)
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{i},\ i=\overline{0,m}$
+\end_inset
+
+ --- неизвестные параметры.
+ Выберем эти параметры 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ так, чтобы 
+\begin_inset Formula 
+\[
+S\left(a_{0},\tr,a_{m}\right)=\ous{i=0}n\left(\varphi\left(x_{i},a_{0},\tr,a_{m}\right)-f\left(x_{i}\right)\right)^{2}\st\min
+\]
+
+\end_inset
+
+Такой подбор параметров 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ называют методом наименьших квадратов.
+ Пусть на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ задана линейно не зависимая система функций 
+\begin_inset Formula $\left\{ \varphi_{k}\left(x\right)\right\} _{k=\overline{0,m}}$
+\end_inset
+
+, образующая базис.
+ Тогда 
+\begin_inset Formula 
+\[
+\varphi\left(x,a_{0},\tr,a_{m}\right)=\ous{k=0}ma_{k}\varphi_{k}\left(x\right)
+\]
+
+\end_inset
+
+В этом случае 
+\begin_inset Formula 
+\[
+S\left(a_{0},\tr,a_{m}\right)=\ous{i=0}n\left(-f\left(x_{i}\right)+\ous{j=0}ma_{j}\varphi_{j}\left(x_{i}\right)\right)
+\]
+
+\end_inset
+
+По необходимому условию в точке минимума потребуем:
+\begin_inset Formula 
+\[
+\df{\dd S}{\dd a_{k}}=0,\ k=\overline{0,m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\df{\dd S}{\dd a_{0}}=2\ous{i=0}n\left(a_{0}\varphi_{0}\left(x_{i}\right)+\tr+a_{m}\varphi_{m}\left(x_{i}\right)-f\left(x_{i}\right)\right)\varphi_{0}\left(x_{i}\right)=0\\
+\vtr\\
+\df{\dd S}{\dd a_{m}}=2\ous{i=0}{\b}\left(a_{0}\varphi_{0}\left(x_{i}\right)+\tr+a_{m}\varphi_{m}\left(x_{i}\right)-f\left(x_{i}\right)\right)\varphi_{m}\left(x_{i}\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+Преобразуем эту систему, тогда:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+a_{0}\ous{i=0}n\varphi_{0}^{2}\left(x_{i}\right)+a_{1}\ous{i=0}n\varphi_{1}\left(x_{i}\right)\varphi_{0}\left(x_{i}\right)+\tr+a_{m}\ous{i=0}n\varphi_{m}\left(x_{i}\right)\varphi_{0}\left(x_{i}\right)=\ous{i=0}nf\left(x_{i}\right)\varphi_{0}\left(x_{i}\right)\\
+a_{0}\ous{i=0}n\varphi_{0}\left(x_{i}\right)\varphi_{1}\left(x_{i}\right)+a_{1}\ous{i=0}n\varphi_{1}^{2}\left(x_{i}\right)+\tr+a_{m}\ous{i=0}n\varphi_{m}\left(x_{i}\right)\varphi_{1}\left(x_{i}\right)=\ous{i=0}nf\left(x_{i}\right)\varphi_{1}\left(x_{i}\right)\\
+\vtr\\
+a_{0}\ous{i=0}n\varphi_{0}\left(x_{i}\right)\varphi_{m}\left(x_{i}\right)+a_{1}\ous{i=0}n\varphi_{1}\left(x_{i}\right)\varphi_{m}\left(x_{i}\right)+\tr+a_{m}\ous{i=0}n\varphi_{m}^{2}\left(x_{i}\right)=\ous{i=0}nf\left(x_{i}\right)\varphi_{m}\left(x_{i}\right)
+\end{cases}\label{eq:50_1}
+\end{equation}
+
+\end_inset
+
+Получили 
+\begin_inset Formula $\left(m+1\right)$
+\end_inset
+
+ уровнение и 
+\begin_inset Formula $\left(m+1\right)$
+\end_inset
+
+ неизвестных.
+ Матрица это йсистемы симметрична.
+ И если функции 
+\begin_inset Formula $\varphi_{k}\left(x\right),\ k=\overline{0,m}$
+\end_inset
+
+ линейно независимы на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, то определитель системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:50_1"
+
+\end_inset
+
+) отличен от нуля.
+ Его называют определителем 
+\emph on
+Грамма.
+ 
+\emph default
+Поэтому решение системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:50_1"
+
+\end_inset
+
+) существет и единственно.
+ 
+\emph on
+Можно 
+\emph default
+доказать что 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+, являющиеся решением системмы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:50_1"
+
+\end_inset
+
+) действительно минимизируют суммарную квадратичную погрешность.
+ Возьмем в качестве базисных функций 
+\begin_inset Formula $\varphi_{k}\left(x\right)=x^{k},\ k=\overline{0,m}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\varphi\left(x,a_{0},\tr,a_{m}\right)=a_{0}+a_{1}x+\tr+a_{m}x^{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+a_{0}\left(n+1\right)+a_{1}\ous{i=0}nx_{i}+\tr+a_{m}\ous{i=0}nx_{i}^{m}=\ous{i=0}nf\left(x_{i}\right)\\
+a_{0}\ous{i=0}nx_{i}+a_{1}\ous{i=0}nx_{i}^{2}+\tr+a_{m}\ous{i=0}nx_{i}^{m+1}=\ous{i=0}nf\left(x_{i}\right)x_{i}\\
+\vtr\\
+a_{0}\ous{i=0}nx_{i}^{m}+a_{1}\ous{i=0}nx_{i}^{m+1}+\tr+a_{m}\ous{i=0}nx_{i}^{2\um m}=\ous{i=0}nf\left(x_{i}\right)x_{i}^{m}
+\end{cases}\label{eq:50_2}
+\end{equation}
+
+\end_inset
+
+Обозначим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{0}=W+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{0}=f\left(x_{0}\right)+f\left(x_{1}\right)+\tr+f\left(x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{k}=x_{0}^{k}+x_{1}^{k}+\tr+x_{n}^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{k}=f\left(x_{0}\right)x_{0}^{k}+f\left(x_{i}\right)x_{1}^{k}+\tr+f\left(x_{n}\right)x_{n}^{k},\ k=\overline{1,m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вернемся к системе:
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+S_{0}a_{0}+S_{1}a_{1}+\tr+S_{m}a_{m}=t_{0}\\
+S_{1}a_{0}+S_{2}a_{2}+\tr+S_{m+1}a_{m}=t_{1}\\
+\vtr\\
+S_{m}a_{0}+S_{m+1}a_{1}+\tr+S_{2m}a_{m}=t_{m}
+\end{cases}\label{eq:50_3}
+\end{equation}
+
+\end_inset
+
+При больших 
+\begin_inset Formula $m$
+\end_inset
+
+ матрица очень часто является плохообусловленной.
+ 
+\end_layout
+
+\begin_layout Standard
+Если взять на отрезке равномерное распределение узлов, то матрица коэффициентов
+ системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:50_3"
+
+\end_inset
+
+) будет с увеличением 
+\begin_inset Formula $n$
+\end_inset
+
+ ассимптотически приближаться к матрице 
+\emph on
+Гильберта 
+\emph default
+
+\begin_inset Formula $H_{m+1}$
+\end_inset
+
+.
+ Поэтому метод наименьших квадратов применяют как правило, когда 
+\begin_inset Formula $n<5\tr8$
+\end_inset
+
+, и 
+\begin_inset Formula $m<<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Численное дифференцирование
+\end_layout
+
+\begin_layout Standard
+Формулы численного дифференцирования можно получить дифференцированием интерполя
+ционных формул.
+ Тоесть пусть значение функциии извество в узлах 
+\begin_inset Formula $x_{1},\tr,x_{n}$
+\end_inset
+
+.
+ Построим интерпаляционный многочлен 
+\begin_inset Formula $L_{n-1}\left(x\right)$
+\end_inset
+
+ и положим, что 
+\begin_inset Formula $\df{d^{k}f\left(x\right)}{dx^{k}}\approx\df{d^{k}L_{n-1}\left(x\right)}{dx^{k}}$
+\end_inset
+
+.
+ Другой способ формул численного дифференцирования, приводящий к 
+\emph on
+тем же 
+\emph default
+формулам это метод неопределенных коэффициентов.
+\begin_inset Formula 
+\begin{equation}
+\df{d^{k}f\left(x\right)}{dx^{k}}\approx\ous{i=1}nc_{i}f\left(x_{i}\right)\label{eq:51_1}
+\end{equation}
+
+\end_inset
+
+Коэффициенты находятся из условий чтобы формула (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:51_1"
+
+\end_inset
+
+) была точна для многочленов максимально высокой степени.
+\begin_inset Formula 
+\[
+f\left(x\right)=\ous{j=0}ma_{j}x^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\df{d^{k}}{dx^{k}}\left(\ous{j=0}ma_{j}x^{j}\right)=\ous{i=1}nc_{i}\ous{j=0}ma_{j}x_{i}^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ous{j=0}ma_{j}\df{d^{k}x^{j}}{dx^{k}}=\ous{j=0}ma_{j}\ous{i=1}nc_{i}x_{i}^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\df{d^{k}x^{j}}{dx^{k}}=\ous{i=1}nc_{i}x_{i}^{j},\ j=\overline{0,m}\label{eq:51_2}
+\end{equation}
+
+\end_inset
+
+Тоесть это означает что для того, чтобы формула (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:51_1"
+
+\end_inset
+
+) была точна для многочленов 
+\begin_inset Formula $m$
+\end_inset
+
+-ной степени достаточно чтобы формула (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:51_1"
+
+\end_inset
+
+) была точна для одночленов 
+\begin_inset Formula $1,x,\tr,x^{m}$
+\end_inset
+
+, тоесть у нас есть 
+\begin_inset Formula $n$
+\end_inset
+
+ неизвестных 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $m=n-1$
+\end_inset
+
+, то число уравнений удет равняться числу неизвестных.
+ Определитель системы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:51_2"
+
+\end_inset
+
+) является опреелителем 
+\emph on
+Вандермонта
+\emph default
+.
+ Он отличен от 0, следовательно всегда можно построить формулу численного
+ дифференцирования с 
+\begin_inset Formula $n$
+\end_inset
+
+ узлами точную для многочленов степени 
+\begin_inset Formula $\left(n-1\right)$
+\end_inset
+
+.
+ Иногда при определенном расположении узлов формула численного дифференцирования
+ оказывается верной и для многочленов 
+\begin_inset Formula $n$
+\end_inset
+
+-й степени.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Несколько примеров:
+\end_layout
+
+\begin_layout Standard
+Построим формулу численного дифференцирования.
+\begin_inset Formula 
+\[
+f\pr\left(0\right)\approx c_{1}f\left(-h\right)+c_{2}f\left(0\right)+c_{3}f\left(h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+0=c_{1}+c_{2}+c_{3}, & 1\\
+1=c_{1}\left(-h\right)+c_{3}h, & 2\\
+0=c_{1}\left(-h\right)^{2}+c_{3}h^{2}, & 3
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+c_{2}=0\\
+c_{1}=\df{-1}{2h}\\
+c_{3}=\df 1{2h}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\pr\left(0\right)=\df{f\left(h\right)-f\left(-h\right)}{2h}
+\]
+
+\end_inset
+
+Построим формулу для вычисления второй производной.
+\begin_inset Formula 
+\[
+\begin{cases}
+0=c_{1}+c_{2}+c_{3}, & 1\\
+0=c_{1}\left(-h\right)+c_{3}h, & 2\\
+2=c_{1}\left(-h\right)^{2}+c_{3}h^{2}, & 3
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+c_{1}=\df 1{h^{2}}\\
+c_{3}=\df 1{h^{2}}\\
+c_{2}=-\df 2{h^{2}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\ppr\left(0\right)=\df{f\left(-h\right)-2f\left(0\right)+f\left(h\right)}{h^{2}}
+\]
+
+\end_inset
+
+Получим оценки погрешности аппроксимации некоторых формул численного дифференцир
+ования.
+ Будем прелпологать что функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ достаточно гладкая.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i-1},x_{i},x_{i+1}$
+\end_inset
+
+, причем 
+\begin_inset Formula $x_{i}-x_{i-1}=x_{i+1}-x_{i}=h$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=f\left(x_{i}\right)+f\pr\left(x_{i}\right)\left(x-x_{i}\right)+\df{f\ppr\left(\xi\right)}2\left(x-x_{i}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+f\pr\left(x_{i}\right)=\df{f\left(x\right)-f\left(x_{i}\right)}{x-x_{i}}-\df{f\ppr\left(\xi\right)}2\left(x-x_{i}\right)\label{eq:51_3}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\pr\left(x_{i}\right)=\df{f\left(x_{i}\right)-f\left(x_{i-1}\right)}h+\df{f\ppr\left(\xi\right)h}2,\ \xi\in\left(x_{i-1},x_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\pr\left(x_{i}\right)\approx\df{f_{i}-f_{i-1}}2,\ O\left(h\right)
+\]
+
+\end_inset
+
+Аналогично при 
+\begin_inset Formula 
+\[
+x_{i}=x_{i+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\pr\left(x_{i}\right)\approx\df{f_{i+1}-f_{i}}h,\ O\left(h\right)
 \]
 
 \end_inset

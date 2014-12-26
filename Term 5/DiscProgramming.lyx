@@ -675,6 +675,121 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+20.10.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Задача о назначениях
+\end_layout
+
+\begin_layout Standard
+Постановка: Пусть имеется n работников: 
+\begin_inset Formula $A_{i},\ i=\overline{1,n}$
+\end_inset
+
+ и столько-же 
+\begin_inset Formula $n$
+\end_inset
+
+ работ 
+\begin_inset Formula $B_{j},\ j=\overline{1,n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $C_{i,j}\ \ A_{i}\st B_{i}$
+\end_inset
+
+.
+ Требуется установить взаимно однозначиное соответствие можду работниками
+ и работами.
+ Тоесть каждый работник может выполнять только одну работу, а каждая работа
+ может быть выполнена только одним рабочим.
+ ПРи это суммарные издержки должны быть минимальтными.Нам дан граф, вершины
+ которого расположены в виде 2х слоев,один слой : работники, другой слой:
+ рабочие.
+ Каддая вершина одного слоя связана с каждой вершинах вторго стоя.
+ И длинна каждого ребра - издержки.
+ 
+\begin_inset Formula 
+\[
+x_{i,j}=\begin{cases}
+1, & A_{i}\leftrightarrow B_{i}\\
+0, & A_{i}\overline{\leftrightarrow}B_{i}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ous{i=1}n\ous{j=1}nc_{i,j}x_{i,j}-min
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ous{j=1}nx_{i,j}=1,\ i=\overline{1,n}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\ous{i=1}nx_{i,j}=1,\ j=\overline{1,n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Оказывается задачу 1-4 с бинарными переменными мы должны свести к задаче
+ где условие 4 должо выть сведено к 4'.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula 
+\[
+x_{i,j}\br0,\ \begin{array}{c}
+i=\overline{1,n}\\
+j=\overline{1,n}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Задание 9.
+ 
+\emph default
+Решить задачу о назначениях, сведя ее к задачи линейного прогамирования.
+\end_layout
+
+\begin_layout Standard
+Решть задачу методом ветвей и границ.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 

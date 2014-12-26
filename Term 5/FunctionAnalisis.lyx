@@ -2828,5 +2828,4595 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Функции, суммируемые с квадратом
+\end_layout
+
+\begin_layout Subsection
+Определение, неравенства, понятия нормы
+\end_layout
+
+\begin_layout Definition
+Функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ из 
+\begin_inset Formula $L_{2}\left[a,b\right]$
+\end_inset
+
+ --- называется функцией, суммируемой с квадратом.
+\end_layout
+
+\begin_layout Standard
+Свойства функций из 
+\begin_inset Formula $L_{2}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{2}\vkl L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Это мы доказывали.
+ Была теорема о вложении пространств.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{2}\left[a,b\right]\vkl L_{1}\left[a,b\right]\ p=2>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|f\right|\mr\df{1+f^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\in L_{2},\ g\in L_{2}\ \sl fg\in L_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|fg\right|\mr\df{g^{2}+f^{2}}2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f,\, g\in L_{2}\ \sl\ f\pm g\in L_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left(f\pm g\right)^{2}=f^{2}+2fg+g^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Неравенство буняковсткого.
+ 
+\begin_inset Formula $\left|\oui abf\left(x\right)g\left(x\right)dx\right|\mr\left(\oui ab\left|f\left(x\right)\right|^{2}dx\right)^{\frac{1}{2}}\um\left(\oui ab\left|g\left(x\right)\right|^{2}dx\right)^{\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Неравенство Коши.
+ 
+\begin_inset Formula $\left(\oui ab\left|f\left(x+g\left(x\right)\right)^{2}\right|dx\right)^{\frac{1}{2}}\mr\left(\oui ab\left|f\left(x\right)\right|^{2}dx\right)^{\frac{1}{2}}+\left(\oui ab\left|g\left(x\right)\right|^{2}dx\right)^{\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Число 
+\begin_inset Formula $\left|\left|f\right|\right|_{L_{2}}=\left(\oui ab\left|f\left(x\right)\right|^{2}dx\right)^{\frac{1}{2}}$
+\end_inset
+
+ называется нормой в пространстве 
+\begin_inset Formula $L_{2}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+4: 
+\begin_inset Formula $\left|\oui abf\left(x\right)g\left(x\right)dx\right|\mr\left|\left|f\right|\right|\um\left|\left|g\right|\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+5: 
+\begin_inset Formula $\left|\left|f+g\right|\right|\mr\left|\left|f\right|\right|+\left|\left|g\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Сходимость в 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эквивалентные на интервале 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ функции будем считать тождественные.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ пространства 
+\begin_inset Formula $L_{2}\left[a,b\right]$
+\end_inset
+
+ называется пределом последовательности 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} \vkl L_{2}\left[a,b\right]$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|\left|f_{n}-f\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+ Обощначается: 
+\begin_inset Formula 
+\[
+\ul{n\st\b}f_{n}=f
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula $f_{n}\ov{\st}{n\st\b}f$
+\end_inset
+
+ в норме пространства 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Необходимо различать со сходимостью 
+\begin_inset Formula $f_{n}\left(x\right)\st f\left(x\right)$
+\end_inset
+
+ поточечьной и равномерной.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1, Единственностьпредела
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\left\{ f_{n}\right\} \vkl L_{2}$
+\end_inset
+
+ сходится, то ее предел единственный.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $f_{n}\st f;\ f_{n}\st g$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+0\mr\left|\left|f-g\right|\right| & = & \left|\left|\left(f-f_{n}\right)+\left(f_{n}-g\right)\right|\right|\mr\\
+ & \mr & \left|\left|f-f_{n}\right|\right|+\left|\left|f_{n}-g\right|\right|
+\end{eqnarray*}
+
+\end_inset
+
+Получается что 
+\begin_inset Formula $f-g=0$
+\end_inset
+
+ почти всюду на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, а из этого следует что 
+\begin_inset Formula $f=g$
+\end_inset
+
+ в 
+\begin_inset Formula $L_{2}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2, Непрерывность нормы
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $\ul{n\st\b}f_{n}=f$
+\end_inset
+
+ в 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\ul{n\st\b}\left|\left|f_{n}\right|\right|=\left|\left|f\right|\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\left|f\right|\right|=\left|\left|\left(f-f_{n}\right)+f_{n}\right|\right|\mr\left|\left|f-f_{n}\right|\right|+\left|\left|f_{n}\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\left|f_{n}\right|\right|=\left|\left|\left(f_{n}-f\right)+f\right|\right|\mr\left|\left|f-f_{n}\right|\right|+\left|\left|f\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{array}{c}
+\left|\left|f\right|\right|-\left|\left|f_{n}\right|\right|\mr\left|\left|f_{n}-f\right|\right|\\
+\left|\left|f_{n}\right|\right|-\left|\left|f\right|\right|\mr\left|\left|f_{n}-f\right|\right|
+\end{array}\sl$
+\end_inset
+
+ 
+\begin_inset Formula $0\mr\left|\left|\left|f\right|\right|-\left|\left|f_{n}\right|\right|\right|\mr\left|\left|f_{n}-f\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+ 
+\emph default
+Последовательность норм, сходящейся в 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ ограничена.
+\end_layout
+
+\begin_layout Definition
+Последовательность 
+\begin_inset Formula $\left\{ f_{n}\right\} \vkl L_{2}$
+\end_inset
+
+ называется фундаментальной, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\left|f_{n+p}-f_{n}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+Если последовательность сходится, то она фундаментальна.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\exists\ul{n\st\b}f_{n}\left(x\right)=f\left(x\right)\in L_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \begin{array}{c}
+\forall n\br N\ \left|\left|f_{n}-f\right|\right|<\df{\varepsilon}2\\
+\forall p\in\N\ \left|\left|f_{n+p}-f\right|\right|<\df{\varepsilon}2
+\end{array}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left|\left|f_{n+p}\right|\right|=\left|\left|\left(f_{n+p}-f\right)+\left(f-f_{n}\right)\right|\right|\mr\left|\left|f_{n+p}-f\right|\right|+\left|\left|f_{n}-f\right|\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Все утверждения теорем 1---3 справедливы для всех пространств 
+\begin_inset Formula $L_{p},\ p\br1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Пространство называется 
+\emph on
+полным, 
+\emph default
+если в нем всякая фундаментальная последовательнсоть сходится.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Пространство 
+\begin_inset Formula $L_{p},\ p\br1$
+\end_inset
+
+ --- полное.
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+Если последовательсность фундаментальна в пространстве 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, то она сходится в 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Приближение функций из 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $A\vkl L_{2}$
+\end_inset
+
+ называется всюду плотным в 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \forall f\in L_{2}\ \exists\varphi\in A\ \left|\left|f-\varphi\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ В пространстве 
+\begin_inset Formula $L_{2}\left(a,b\right)$
+\end_inset
+
+ всюдуплотны классы функций:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ --- множество ограниченых изеримых функций.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C$
+\end_inset
+
+ --- множества непрерывных функций.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P$
+\end_inset
+
+ --- множества многочленов
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ --- множества ступенчатых функций
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+ --- множество тригонометрических многочленов в 
+\begin_inset Formula $L_{2}\left[-\pi;\pi\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left(a,b\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Воспользуемся свойством абсолютной непрерывности интеграла Либега.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall E\in\left(a,b\right)\ mE<\delta\ \sl\ \oui E{}f^{2}\left(x\right)dx<\varepsilon
+\]
+
+\end_inset
+
+Без доказательство, но рекомендация познакомится.
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left[a,b\right]$
+\end_inset
+
+ --- измеримая, почти всюду конечна.
+ Тогда:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists g\left(x\right)\in M\ m\left(f\nr g\right)<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Без доказателсьва.
+\end_layout
+
+\begin_layout Standard
+Полагая 
+\begin_inset Formula $g\left(x\right)=0$
+\end_inset
+
+ на 
+\begin_inset Formula $E\left(f\nr g\right)$
+\end_inset
+
+, 
+\begin_inset Formula $mE\left(f\nr g\right)<\delta\left(\varepsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Получим: 
+\begin_inset Formula $\left|\left|f-g\right|\right|^{2}=\oui ab\left(f-g\right)^{2}dx=\oui{E\left(f\nr g\right)}{}\left(f-g\right)^{2}dx=\oui{E\left(f\ne g\right)}{}f^{2}dx<\varepsilon^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left(a,b\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ --- произвольное.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\left(a\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\exists g\left(x\right)\in M\ :\ \left|\left|f-g\right|\right|<\df{\varepsilon}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся теоремой Лузина.
+\begin_inset Formula 
+\[
+\forall g\left(x\right)\in M\ \forall\varepsilon>0\ \exists\varphi\in C\ mE\left(g\nr\varphi\right)<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $\exists k>0\ \left|\left|g\left(x\right)\right|\right|\mr k$
+\end_inset
+
+ (так как 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ ограничена) 
+\begin_inset Formula $\forall x\in\left[a,b\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда по теореме Лузина 
+\begin_inset Formula $\exists\varphi\left(x\right)\in C\left[a,b\right]\ :\ mE\left(g\nr\varphi\right)<\df{\varepsilon^{2}}{16k^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|g-\varphi\right|\right|^{2}=\un{\int}{E\left(g\nr\varphi\right)}\left(g\left(x\right)-\varphi\left(x\right)\right)^{2}dx\mr4k^{2}\um mE\left(g\nr\varphi\right)<\df{\varepsilon^{2}}4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|f-\varphi\right|\right|=\left|\left|\left(f-g\right)+\left(g-\varphi\right)\right|\right|\mr\left|\left|f-g\right|\right|+\left|\left|g-\varphi\right|\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Первая теорема Вейерштрассе по апроксимаци
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\forall\varphi\left(x\right)\in C\left[a,b\right]\ \forall\varepsilon>0\ \exists P_{n}\left(x\right)\in P\ \left|\varphi\left(x\right)-P_{n}\left(x\right)\right|<\varepsilon\ \forall x\in\left[a,b\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Без доказательства.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{n}\left(x\right)=a_{0}x^{n}+a_{1}x^{n-1}+\tr+a_{n-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.......
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+12.11.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Пусть функция 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left[a;b\right]$
+\end_inset
+
+.
+ Покажем что ее можно приблизитьь многочленом.
+ 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ --- точность.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Из пункта 
+\emph on
+Б
+\emph default
+ следует, что 
+\begin_inset Formula $\exists\varphi\left(x\right)\in C\left[a;b\right]\ \left|\left|f-\varphi\right|\right|<\df{\varepsilon}2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+По первой теореме Вейерштрассе:
+\begin_inset Formula 
+\[
+\exists P_{n}\left(x\right)\in P\ \forall x\in\left[a,b\right]\ \left|\varphi\left(x\right)-P_{n}\left(x\right)\right|<\df{\varepsilon}{2\sqrt{b-a}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left|\varphi-P_{n}\right|\right|^{2}=\oui ab\left(\varphi\left(x\right)-P_{n}\left(x\right)\right)^{2}dx<\df{\varepsilon^{2}}4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists\left|\left|f-P\right|\right|\mr\left|\left|f-\varphi\right|\right|+\left|\left|\varphi-P_{n}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left[a;b\right],\ \varepsilon>0$
+\end_inset
+
+ --- произвольная точность.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ из пункта Б 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\varphi\left(x\right)\in C\left[a;b\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left|f-\varphi\right|\right|<\df{\varepsilon}2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ --- непрерывна на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ равномерно непрерывна на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\left\{ x_{i}\right\} :\ a=x_{0}<x_{1}<\tr<x_{i}<\tr<x_{n}=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\un{\max}{\left[x_{i},x_{i+1}\right]}\left(M_{i}-m_{i}\right)<\df{\varepsilon}{2\sqrt{b-a}},$
+\end_inset
+
+ если брать 
+\begin_inset Formula $\lambda=\max\D x$
+\end_inset
+
+ достаточно малым 
+\begin_inset Formula $<\delta=\delta\left(\varepsilon\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\varepsilon>0\ \exists\delta=\delta\left(\varepsilon\right)\ \forall x',x''\ \left|x'-x''\right|<\delta\sl\left|\varphi\left(x'\right)-\varphi\left(x''\right)\right|<\df{\varepsilon}{2\sqrt{b-a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{i}=\un{\max}{\left[x_{i},x_{i+1}\right]}\varphi\left(x\right),\ m_{i}=\un{\min}{\left[x_{i},x_{i+1}\right]}\varphi\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\left(x\right)=\begin{cases}
+\varphi\left(x_{i}\right), & \forall x\in\left[x_{i};x_{i+1}\right]\\
+\varphi\left(x_{n-1}\right), & x=b
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl\forall x\in\left[a;b\right]\ \left|\varphi\left(x\right)-S\left(x\right)\right|<\df{\varepsilon}{2\sqrt{b-a}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|\varphi-S\right|\right|<\df{\varepsilon}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|f-S\right|\right|<\df{\varepsilon}2+\df{\varepsilon}2=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Вторая теорема Вейерштрассе
+\end_layout
+
+\end_inset
+
+Если функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ непрерывна на отрезке 
+\begin_inset Formula $\left[-\pi;\pi\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(-\pi\right)=f\left(\pi\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ существует тригонометрический многочлен:
+\begin_inset Formula 
+\[
+T_{n}\left(x\right)=\df{a_{0}}2+\ous{k=1}n\left(a_{k}\cos kx+b_{k}\sin kx\right):
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in\left[-\pi;\pi\right]\ \left|f\left(x\right)-T_{n}\left(x\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left[-\pi;\pi\right],\ \varepsilon>0$
+\end_inset
+
+ --- произвольная точность.
+\end_layout
+
+\begin_layout Standard
+см пункт 
+\emph on
+Б 
+\emph default
+
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $\exists\varphi\left(x\right)\in C\left[-\pi;\pi\right]\ \left|\left|f-\varphi\right|\right|<\df{\varepsilon}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+так как 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ --- ограничена, то 
+\begin_inset Formula $\exists K>0\ \left|\varphi\left(x\right)\right|\mr K\ \forall x\in\left[-\pi;\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим вспомогательную функцию:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi\left(x\right)=\begin{cases}
+\psi\left(-\pi\right)=\psi\left(\pi\right)\\
+\psi\left(x\right)=\varphi\left(x\right) & ,x\in\left[-\pi+\delta;\pi\right]
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+ --- линейна на 
+\begin_inset Formula $\left[-\pi;-\pi+\delta\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Определим 
+\begin_inset Formula $\delta$
+\end_inset
+
+ из условия: 
+\begin_inset Formula $\delta<\df{\varepsilon}{64k^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|\varphi-\psi\right|\right|^{2}=\oui{-\pi}{-\pi+\delta}\left(\varphi\left(x\right)-\psi\left(x\right)\right)^{2}dx\mr4k^{2}\delta<\df{4k^{2}\varepsilon^{2}}{64k^{2}}=\df{\varepsilon^{2}}{16}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+По второй теореме Вейерштрассе 
+\begin_inset Formula $\exists T_{n}\left(x\right)\in T:\ \left|\psi\left(x\right)-T_{n}\left(x\right)\right|<\df{\varepsilon}{4\sqrt{2\pi}}\sl\left|\left|\varphi-T\right|\right|<\df{\varepsilon}4$
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula $\left|\left|f-T_{n}\right|\right|<\df{\varepsilon}2+\df{\varepsilon}4+\df{\varepsilon}4=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Ортогональные системы функций в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ называются ортогональными в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\oui abf\left(x\right)g\left(x\right)dx=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Функция называется нормированной в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\left|\left|f\right|\right|^{2}=\oui abf^{2}\left(x\right)dx=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Система функций 
+\begin_inset Formula $\left\{ \omega_{i}\left(x\right)\right\} \vkl L_{2}\left[a;b\right]$
+\end_inset
+
+ ортонормирована, если 
+\begin_inset Formula $\oui ab\omega_{i}\left(x\right)\um\omega_{k}\left(x\right)dx=\delta_{ik}=\begin{cases}
+0, & i\nr k\\
+1, & i=k
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Пусть система 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+ ортонормированная в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+, числа 
+\begin_inset Formula $c_{k}=\oui abf\left(x\right)\um\omega_{k}\left(x\right)dx$
+\end_inset
+
+, 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+, называются кофициентами Фурье функции 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left[a;b\right]$
+\end_inset
+
+ в системе 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функциональный ряд 
+\begin_inset Formula $\ous{k=1}{\b}c_{k}\omega_{k}\left(x\right)$
+\end_inset
+
+ называется рядом Фурье функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ по системе 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{n}\left(x\right)=\ous{k=1}nc_{k}\omega_{k}\left(x\right)$
+\end_inset
+
+ --- 
+\begin_inset Formula $n$
+\end_inset
+
+-ая частичная сумма ряда Фурье.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|f-S_{n}\right|\right|^{2}=\oui ab\left(f\left(x\right)-\ous{k=1}nc_{k}\omega_{k}\right)^{2}dx=\left|\left|f\right|\right|^{2}-2\ous{k=1}nc_{k}\oui abf\left(x\right)\um\omega_{k}\left(x\right)dx+\ous{k=1}n\ous{i=1}nc_{i}c_{k}\oui ab\omega_{i}\left(x\right)\omega_{k}\left(x\right)dx=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\left|\left|f\right|\right|^{2}-\ous{k=1}nc_{k}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Итак: 
+\begin_inset Formula 
+\[
+\left|\left|f-S_{n}\right|\right|^{2}=\left|\left|f\right|\right|^{2}-\ous{k=1}nc_{k}^{2}
+\]
+
+\end_inset
+
+ Это было тождество Бесселя.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\left|\left|f-S_{n}\right|\right|^{2}\br0$
+\end_inset
+
+, то 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|f\right|\right|^{2}\br\ous{k=1}nc_{k}^{2}\ \forall n\in\N$
+\end_inset
+
+ --- неравенство Бесселя
+\end_layout
+
+\begin_layout Standard
+В пределе при 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ous{k=1}nc_{k}^{2}\mr\left|\left|f\right|\right|^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Левыя ряд сходится так как последовательность частичных сумм монотонно возрастае
+т и ограничена сверху 
+\begin_inset Formula $\left|\left|f\right|\right|^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В часном случае, 
+\begin_inset Formula $\left|\left|f\right|\right|^{2}=\ous{k=1}{\b}c_{k}^{2}$
+\end_inset
+
+ --- равенство Парсеваля или условие замкнутости.
+\end_layout
+
+\begin_layout Standard
+Очевидно что 
+\begin_inset Formula $\left|\left|f\right|\right|^{2}=\ous{k=1}{\b}c_{k}^{2}$
+\end_inset
+
+
+\begin_inset Formula $\dsl$
+\end_inset
+
+
+\begin_inset Formula $\ul{n\st\b}\left|\left|f-S_{n}\right|\right|=0$
+\end_inset
+
+, так как ряд Фурье сходится к указаной функции.
+\end_layout
+
+\begin_layout Definition
+Ортонормированная система 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+ замкнута если условие замкнутости выполнено для любой функциии 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ из 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Риса-Фишера
+\end_layout
+
+\end_inset
+
+Пусть на отрезке 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ задана ортонормированная система 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+, пусть числа 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ таковы что 
+\begin_inset Formula $\ous{k=1}nc_{k}^{2}<\b$
+\end_inset
+
+.
+ Тогда существует и при том единственный 
+\begin_inset Formula $f\left(x\right)\in L_{2}\left[a;b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ --- ее коэфициенты Фурье
+\end_layout
+
+\begin_layout Enumerate
+для 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ выполнены условия замкнутости
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $S_{n}\left(x\right)=\ous{k=1}nc_{k}\omega_{k}\left(x\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Докажем фундаментальность 
+\begin_inset Formula $\left\{ S_{n}\left(x\right)\right\} $
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\left|S_{n+p}\left(x\right)-S_{n}\left(x\right)\right|\right|^{2} & = & \oui ab\left(\ous{k=n+1}{n+p}c_{k}\omega_{k}\left(x\right)\right)^{2}dx=\\
+ & = & \ous{k=n+1}{n+p}\ous{i=n+1}{n+p}c_{k}c_{i}\delta_{ik}=\\
+ & = & \ous{k=n+1}{n+p}c_{k}^{2}\mr\\
+ & \mr & \ous{k=n+1}{\b}c_{k}^{2}=\rho_{n}
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ ....
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $S_{n}\left(x\right)\ov{\st}{n\st\b}f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем вспомогательное утверждение:
+\begin_inset Formula 
+\[
+\forall g\left(x\right)\in L_{2}\left[a;b\right]\ \ul{n\st\b}\oui abS_{n}\left(x\right)g\left(x\right)dx=\oui abf\left(x\right)g\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Из неравенства Буняковского: 
+\begin_inset Formula $\left(\oui abg\left(x\right)\um\left(S_{n}\left(x\right)-f\left(x\right)\right)dx\right)^{2}\mr\oui abg^{2}\left(x\right)d\um\oui ab\left(S_{n}\left(x\right)f\left(x\right)\right)dx=\left|\left|g\right|\right|\um\left|\left|S_{n}-f\right|\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+...
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+В часности выберем 
+\begin_inset Formula $g\left(x\right)=\omega_{i}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui abf\left(x\right)\omega_{i}\left(x\right)dx & = & \ul{n\st\b}\oui abS_{n}\left(x\right)\omega_{i}\left(x\right)dx=\\
+ & = & \ul{n\st\b}\oui ab\left(\ous{k=1}nc_{k}\omega_{k}\left(x\right)\right)\omega_{i}\left(x\right)dx=c_{i}\ \forall i\in\N
+\end{eqnarray*}
+
+\end_inset
+
+ ....
+\end_layout
+
+\begin_layout Definition
+Система 
+\begin_inset Formula $\omega_{k}\left(x\right)$
+\end_inset
+
+ полна в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+ если в 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ несуществует отличной от 0, ортогональной всем функциям системы.
+\end_layout
+
+\begin_layout Theorem
+Ортонормированная система 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+ полна в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+
+\begin_inset Formula $\dsl$
+\end_inset
+
+ система 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+ --- замкнута в 
+\begin_inset Formula $L_{2}\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\left\{ \omega_{k}\left(x\right)\right\} $
+\end_inset
+
+ полна.
+ Предположим противное.
+\end_layout
+
+\begin_layout Standard
+........
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $\ous{k=1}{\b}c_{k}^{2}$
+\end_inset
+
+ --- сходится, то по теореме Риса-Фишера 
+\begin_inset Formula 
+\[
+\exists!f\left(x\right)\in L_{2}\left[a;b\right]:\ \left|\left|f\right|\right|^{2}=\ous{k=1}{\b}c_{k}^{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{k}=\oui abf\left(x\right)\omega_{k}\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl f\left(x\right)-g\left(x\right)\bot\omega_{k}\left(x\right)\ \forall k\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+26.11.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Линейные нормированные пространства(ЛНП)
+\end_layout
+
+\begin_layout Subsection
+Определения ЛНП.
+ Примеры.
+\end_layout
+
+\begin_layout Definition
+Линейное пространство 
+\begin_inset Formula $L$
+\end_inset
+
+ называется нормированым если каждому элементу 
+\begin_inset Formula $x$
+\end_inset
+
+ из 
+\begin_inset Formula $L$
+\end_inset
+
+ поставлено в соответствии определенное неотрицательное число, обозначаемое
+ 
+\begin_inset Formula $\left|\left|x\right|\right|$
+\end_inset
+
+ и называемого нормой элемента 
+\begin_inset Formula $x$
+\end_inset
+
+, при этом выполняются условия:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|x\right|\right|\br0\ \forall x\in L$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\left|x\right|\right|=0\dsl x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|k\um x\right|\right|=\left|k\right|\um\left|\left|x\right|\right|\ \forall k\in\R\left(k\in C\right)\ \forall x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|x+y\right|\right|\mr\left|\left|x\right|\right|+\left|\left|y\right|\right|\ \forall x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+B 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+: 
+\begin_inset Formula $\left|\left|x\right|\right|=\left(\ous{i=1}m\left|x_{i}\right|^{p}\right)^{\frac{1}{p}},$
+\end_inset
+
+ 
+\begin_inset Formula $p\br1$
+\end_inset
+
+ --- обозначим 
+\begin_inset Formula $l_{p}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+В часности 
+\begin_inset Formula $l_{2}^{m}=\R^{m}$
+\end_inset
+
+ ---пространоство с эвклидовой нормой
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $l_{p}=\left\{ x=\left(x_{1},\tr,x_{n},\tr\right)|\ous{i=1}{\b}\left|x_{i}\right|^{p}<\b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|\left|x\right|\right|=\left(\ous{i=1}{\b}\left|x_{i}\right|^{p}\right)^{\frac{1}{p}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $L=C\left[a;b\right];\ \left|\left|x\right|\right|=\umax{t\in\left[a;b\right]}\left|x\left(t\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $L=C^{k}\left[a;b\right]=\left\{ x\left(t\right)|x^{\left(m\right)}\left(t\right)-\text{непрерывная},\ m=\overline{1,k}\right\} ,\ \left|\left|x\right|\right|=\ous{j=1}k\umax{t\in\left[a;b\right]}\left|x^{\left(j\right)}\left(t\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $L=\widetilde{L_{p}}\left[a;b\right]$
+\end_inset
+
+ --- множество непрерывное на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ функций.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|\left|x\right|\right|=\left(\oui ab\left|x\left(t\right)\right|^{p}dt\right)^{\frac{1}{p}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $L=L_{p}\left[a;b\right]$
+\end_inset
+
+ --- множество измеримых функций, сумма с 
+\begin_inset Formula $p$
+\end_inset
+
+-й ступенью
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\left|\left|x\right|\right|=\left(\oui ab\left|x\left(t\right)\right|^{p}dt\right)^{\frac{1}{p}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Заменим что 
+\begin_inset Formula $\left|\left|x\right|\right|=0\dsl x\left(t\right)=0$
+\end_inset
+
+ неверно, тоесть не обязательно 
+\begin_inset Formula $x\left(t\right)\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+..........
+\end_layout
+
+\begin_layout Subsection
+Свойства нормы и нормированного пространсыва
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $\forall x,y\in L\ \left|\left|x-y\right|\right|\br\left|\left|\left|x\right|\right|-\left|\left|y\right|\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\begin{cases}
+\left|\left|x\right|\right|=\left|\left|\left(x-y\right)+y\right|\right|\mr\left|\left|x-y\right|\right|+\left|\left|y\right|\right|\\
+\left|\left|y\right|\right|=\left|\left|\left(y-x\right)+x\right|\right|\mr\left|\left|x-y\right|\right|+\left|\left|x\right|\right|
+\end{cases}\sl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl\begin{cases}
+\left|\left|x\right|\right|-\left|\left|y\right|\right|\mr\grave{\left|\left|x-y\right|\right|}\\
+\left|\left|y\right|\right|-\left|\left|x\right|\right|\mr\left|\left|x-y\right|\right|
+\end{cases}\sl\left|\left|x-y\right|\right|\br\left|\left|\left|x\right|\right|-\left|\left|y\right|\right|\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Problem*
+\begin_inset Formula $\forall x\nr0\ \left|\left|\df x{\left|\left|x\right|\right|}\right|\right|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Множество
+\begin_inset Formula $X$
+\end_inset
+
+ называется метрическим пространством, если 
+\begin_inset Formula $\forall x,y\in X$
+\end_inset
+
+ можно определить неотрицательное число 
+\begin_inset Formula $\rho\left(x,y\right)$
+\end_inset
+
+, удовлетворяющее следующим условиям:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\rho\left(x,y\right)\br0\ \forall x,y\in X,\ \rho\left(x,x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho\left(x,y\right)=\rho\left(y,x\right)\ \forall x,y\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho\left(x,y\right)\mr\rho\left(x,z\right)+\rho\left(z,y\right)\ \forall x,y,z\in X$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Всякое линейное нормированое пространство моно метризовать слудубщим образом:
+ 
+\begin_inset Formula 
+\[
+\rho\left(x,y\right)=\left|\left|x-y\right|\right|
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $\rho\left(x,y\right)$
+\end_inset
+
+ --- метрика в пространстве 
+\begin_inset Formula $X$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Definition
+Множества:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $S_{r}\left(x_{0}\right)=\left\{ x\in L|\left|\left|x-x_{0}\right|\right|<r\right\} $
+\end_inset
+
+ --- открытый шаp с центром в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\overline{S_{r}}\left(x_{0}\right)=\left\{ x\in L|\left|\left|x-x_{0}\right|\right|\mr r\right\} $
+\end_inset
+
+ --- закрытый шар с центром в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\sigma_{r}\left(x_{0}\right)=\left\{ x\in L|\left|\left|x-x_{0}\right|\right|=r\right\} $
+\end_inset
+
+ --- сфера с цетсром в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem*
+Рассмотрим в 
+\begin_inset Formula $\R^{n}$
+\end_inset
+
+ кубическую норму:
+\end_layout
+
+\begin_layout Problem*
+\begin_inset Formula $\left|\left|x\right|\right|=\umax{i=\overline{1,n}}\left|x_{i}\right|$
+\end_inset
+
+ --- обозначается это ЛНП 
+\begin_inset Formula $C^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem*
+Изобразить 
+\begin_inset Formula $S_{r}\left(x_{0}\right),\overline{S_{r}}\left(x_{0}\right),\sigma_{r}\left(x_{0}\right)$
+\end_inset
+
+ если 
+\begin_inset Formula $n=1,2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Предел последовательности
+\end_layout
+
+\begin_layout Standard
+В линейном нормированном пространстве рассмотрим последовательность точек
+ 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $x_{0}\in L$
+\end_inset
+
+ называется пределом поледовательности 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \begin{array}{c}
+\left|\left|x_{n}-x_{0}\right|\right|<\varepsilon\\
+x_{n}\in S_{\varepsilon}\left(x_{0}\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+Пусть 
+\begin_inset Formula $\ul{n\st\b}x_{n}=x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Доказать:
+\end_layout
+
+\begin_layout Enumerate
+Единственность предела.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda_{n}\ov{\st}{n\st\b}\sl\lambda_{n}x_{n}\ov{\st}{n\st\b}\lambda_{0}x_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $\left\{ \lambda_{n}\right\} \in\R\left(C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y_{n}\ov{\st}{n\st\b}y_{0}\left(\left\{ y_{n}\right\} ,y_{0}\in L\right)\sl x_{n}\pm y_{n}\ov{\st}{n\st\b}x_{0}\pm y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|x_{n}\right|\right|\ov{\st}{n\st\b}\left|\left|x_{0}\right|\right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ называется ограниченым, если 
+\begin_inset Formula $\exists K>0\ \forall x\in M\ \left|\left|x\right|\right|\mr k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem*
+Доказать что всякая сходящаяся последовательность лограничена.
+\end_layout
+
+\begin_layout Standard
+Выясним какой характер сходимости в пространстве 
+\begin_inset Formula $C^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Решение.
+
+\emph default
+ Пусть 
+\begin_inset Formula $x_{n}=\left(\xi_{1}^{n},\tr,\xi_{m}^{n}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\mbox{\ul{n\st\b}}x_{n}=x_{0}=\left(\xi_{1}^{0},\tr,\xi_{m}^{0}\right)$
+\end_inset
+
+ тоесть
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left|x_{n}-x_{0}\right|\right|_{C}=\umax{u=\overline{1,m}}\left|\xi_{i}^{n}-\xi_{i}^{0}\right|\st0\dsl\forall i=\overline{1,m}\ \ul{n\st\b}\xi_{i}^{n}=\xi_{i}^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ранее доказали что в 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+ сходимость покоординатная.
+\end_layout
+
+\begin_layout Subsection
+Открытые и замкнутые множества в ЛНП
+\end_layout
+
+\begin_layout Definition
+Окресностью точки 
+\begin_inset Formula $x_{0}\in L$
+\end_inset
+
+ называется любой открытый шар с центром в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ называется открытым, если всякая точка из 
+\begin_inset Formula $M$
+\end_inset
+
+ пренадлежит множеству 
+\begin_inset Formula $M$
+\end_inset
+
+ вместе с некоторой своей окресностью.
+\end_layout
+
+\begin_layout Remark
+Пустоемножество открытое.
+\end_layout
+
+\begin_layout Problem*
+Пусть 
+\begin_inset Formula $M_{i},\ i=\overline{1,m}$
+\end_inset
+
+ --- открытые множества.
+\end_layout
+
+\begin_layout Problem*
+Доказать:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\stackrel[i=1]{n}{\bigcap}M_{i}=H$
+\end_inset
+
+ --- открытое
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\stackrel[i=1]{n}{\bigcup}M_{i}=H$
+\end_inset
+
+ --- открытое
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{r}\left(x_{0}\right)$
+\end_inset
+
+ --- открытое 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T=\left\{ x|r_{1}<\left|\left|x-x_{0}\right|\right|<r_{2},r_{1}<r_{2}\right\} $
+\end_inset
+
+ открытое
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+Точка 
+\begin_inset Formula $A$
+\end_inset
+
+ называется предельной точкой мнодества т
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ если 
+\begin_inset Formula 
+\[
+\forall r>0\ \exists x\in M\ x\nr a\ x\in S_{r}\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Точка 
+\begin_inset Formula $a$
+\end_inset
+
+ --- предельная точка множества 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\un{\left\{ x_{n}\right\} }{x_{0}\nr a}\vkl M\ \ul{n\st\b}x_{n}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\sl\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ --- предельная точка 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ выберая последовательность 
+\begin_inset Formula $r=1,\df 12,\tr,\df 1n,\tr$
+\end_inset
+
+ получим 
+\begin_inset Formula $\exists x_{1},x_{2},\tr x_{n},\tr\in M\nr a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $0<\left|\left|x_{n}-a\right|\right|<r_{n}=\df 1n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\Longleftarrow\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\ul{n\st\b}x_{n}=a,$
+\end_inset
+
+ где 
+\begin_inset Formula $\left\{ x_{n}\right\} \vkl M,\ x_{n}\nr a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\left(\varepsilon\right)r>0\ \exists N=N\left(r\right)\ \forall n\br N\ \begin{array}{c}
+0<\left|\left|x_{n}-a\right|\right|<r\\
+x_{n}\in S_{r}\left(a\right)
+\end{array}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ называется замкнутым если оно содержит все свои предельные точки.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $M'$
+\end_inset
+
+ --- множество всех предельных точек в 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\overline{M}=M\bigcup M'$
+\end_inset
+
+ называется замыканием множетва 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+Доказать:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{M}$
+\end_inset
+
+ --- замкнутое множество
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{S_{r}}\left(a\right)$
+\end_inset
+
+ --- замкнуто
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{M\bigcup N}=\overline{M}\bigcup\overline{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ --- замкнуто 
+\begin_inset Formula $\dsl$
+\end_inset
+
+ 
+\begin_inset Formula $M=\overline{M}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Эквивалентные нормы в ЛНП
+\end_layout
+
+\begin_layout Definition
+Пусть в ЛНП 
+\begin_inset Formula $L$
+\end_inset
+
+ различными способами введены нормы: 
+\begin_inset Formula $\left|\left|x\right|\right|_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\left|x\right|\right|_{2}$
+\end_inset
+
+.
+ Нормы 
+\begin_inset Formula $\left|\left|x\right|\right|_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\left|x\right|\right|_{2}$
+\end_inset
+
+ называются эквивалентными, если 
+\begin_inset Formula $\exists\alpha,\beta>0\ \forall x\in L\ \alpha\left|\left|x\right|\right|_{1}\mr\left|\left|x\right|\right|_{2}\mr\beta\left|\left|x\right|\right|_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Обозначается: 
+\begin_inset Formula $\left|\left|\um\right|\right|_{1}\sim\left|\left|\um\right|\right|_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если в определении выполнено только левоя часть неравенства, то говорят,
+ что норма 
+\begin_inset Formula $\left|\left|\um\right|\right|_{1}$
+\end_inset
+
+ подчинена норме 
+\begin_inset Formula $\left|\left|\um\right|\right|_{2}$
+\end_inset
+
+, записывают 
+\begin_inset Formula $\left|\left|\um\right|\right|_{1}\preccurlyeq\left|\left|\um\right|\right|_{2}$
+\end_inset
+
+, если правая, то 
+\begin_inset Formula $\left|\left|\um\right|\right|_{2}\preccurlyeq\left|\left|\um\right|\right|_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Во всяком конечномерном линейном пространстве все нормы эквивалентны.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $L$
+\end_inset
+
+ --- 
+\begin_inset Formula $m$
+\end_inset
+
+-мерное линейное пространство, 
+\begin_inset Formula $\left\{ e_{k}\right\} ,\ k=\overline{1,m}$
+\end_inset
+
+ --- его базис.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим: 
+\begin_inset Formula $\forall x\in L\ x=\ous{k=1}m\xi_{k}e_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Введем в 
+\begin_inset Formula $L$
+\end_inset
+
+ сферическую норму: 
+\begin_inset Formula $\left|\left|x\right|\right|_{c}=\left(\ous{k=1}m\left|\xi_{k}\right|^{2}\right)^{\frac{1}{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ --- изоморфное пространство 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+, 
+\begin_inset Formula $\ous{k=1}m\xi_{k}e_{k}\longleftrightarrow\left(\begin{array}{c}
+\xi_{1}\\
+\vdots\\
+\xi_{m}
+\end{array}\right)$
+\end_inset
+
+ с увклидовой нормой.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\left|\left|x\right|\right|$
+\end_inset
+
+--- любая другая норма в 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Получим оценку: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\left|x\right|\right| & = & \left|\left|\ous{k=1}m\xi_{k}e_{k}\right|\right|\mr\ous{k=1}m\left|\xi_{k}\right|\um\left|\left|e_{k}\right|\right|\mr\\
+ & \mr & \left\{ \text{Неравенство Коши-Бунековского}\right\} \mr\\
+ & \mr & \left(\ous{k=1}m\left|\xi_{k}\right|^{2}\right)^{\frac{1}{2}}\um\left(\ous{k=1}m\left|\left|e_{k}\right|\right|^{2}\right)^{\frac{1}{2}}=\\
+ & = & \alpha\um\left|\left|x\right|\right|_{c}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Доказать что сферичвеская норма подчинена пространственной.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим 
+\begin_inset Formula $\left|\left|x\right|\right|$
+\end_inset
+
+ на множестве 
+\begin_inset Formula $\left|\left|x\right|\right|_{c}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $0\mr\left|\left||x'\right|-\left|\left|x''\right|\right|\right|\mr\left|\left|x'-x''\right|\right|\mr\alpha\um\left|\left|x'-x''\right|\right|_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что из схождения 
+\begin_inset Formula $x'\st x''$
+\end_inset
+
+ в 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|\left|x'\right|\right|\st\left|\left|x''\right|\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Функция 
+\begin_inset Formula $\left|\left|x\right|\right|$
+\end_inset
+
+ непрерывная в 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Так как множество 
+\begin_inset Formula $\left|\left|x\right|\right|_{c}=1$
+\end_inset
+
+ --- ограничено и замкнуто в 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+, то по второй теореме Вейерштрассе 
+\begin_inset Formula $\left|\left|x\right|\right|$
+\end_inset
+
+ достигает на этой сфере своих точных граней 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\exists x_{0}\in\R^{m}\ :\ \left|\left|x_{0}\right|\right|_{c}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\inf\left|\left|x\right|\right|=\lambda=\left|\left|x_{0}\right|\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x:\ \left|\left|x\right|\right|_{c}=1\ \left|\left|x\right|\right|\br\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заметим что 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+, тоесть при 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|x_{0}\right|\right|_{c}=0$
+\end_inset
+
+ противоречие(первая аксиома норм)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\df{\left|\left|x\right|\right|}{\left|\left|x\right|\right|_{c}} & = & \left|\left|\df x{\left|\left|x\right|\right|_{c}}\right|\right|=\\
+ & = & \left\{ \begin{array}{c}
+z=\df x{\left|\left|x\right|\right|_{c}}\\
+\left|\left|z\right|\right|_{c}=\left|\left|\df x{\left|\left|x\right|\right|_{c}}\right|\right|_{c}=\df 1{\left|\left|x\right|\right|_{c}}\um\left|\left|x\right|\right|_{c}=1
+\end{array}\right\} =\\
+ & = & \left|\left|z\right|\right|\br\lambda
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula $\sl\ \left|\left|x\right|\right|_{c}\mr\df 1{\lambda}\left|\left|x\right|\right|\ \forall x\in\R^{m}\ \left|\left|\um\right|\right|\preccurlyeq\left|\left|\um\right|\right|_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Если 
+\begin_inset Formula $\left|\left|\um\right|\right|_{1}\sim\left|\left|\um\right|\right|_{2}$
+\end_inset
+
+ в ЛНП 
+\begin_inset Formula $L$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\left|x_{n}-x_{0}\right|\right|_{1}\ov{\st}{n\st\b}\dsl\left|\left|x_{n}-x_{0}\right|\right|_{2}\ov{\st}{n\st\b}0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem*
+Доказать в 
+\begin_inset Formula $C\left[0;1\right]$
+\end_inset
+
+ нормы 
+\begin_inset Formula $\left|\left|x\right|\right|_{1}=\umax{t\in\left[0;1\right]}\left|x\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\left|x\right|\right|_{2}=\left(\oui 01x^{2}\left(t\right)dt\right)^{\frac{1}{2}}$
+\end_inset
+
+ неэквивалентны.
+\end_layout
+
+\begin_layout Subsection
+Расстояния от точки до подпространства
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ называется линейным многообразием линейного пространства 
+\begin_inset Formula $L$
+\end_inset
+
+ если 
+\begin_inset Formula 
+\[
+\forall\alpha,\beta\in\R\ \forall x,y\in M\ \alpha\um x+\beta\um y\in M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Замкнутое линейное многообразие в линейном нормированном пространстве 
+\begin_inset Formula $L$
+\end_inset
+
+ называется подпространством в 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Множество многочленов степени не выше 
+\begin_inset Formula $\left(n-1\right)$
+\end_inset
+
+ --- это подпространство в 
+\begin_inset Formula $C\left[0;1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $P_{n-1}\left(t\right)=\ous{i=0}{n-1}a_{i}t^{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Множество многочленов в 
+\begin_inset Formula $C\left[0;1\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Рассмотрим последовательность многочленов: 
+\begin_inset Formula $f_{n}\left(t\right)=\ous{k=1}n\df{t^{k}}{k!}\ov{\st}{n\st\b}f\left(t\right)=e^{t}\notin M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ является линейным многообразием, но не является линейным пространством.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ --- подпространство.
+\end_layout
+
+\begin_layout Definition
+Расстояние от точки 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ до подпространства 
+\begin_inset Formula $M$
+\end_inset
+
+ называется число 
+\begin_inset Formula $\rho\left(x,M\right)=\un{\inf}{y\in M}\left|\left|x-y\right|\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $x\in M$
+\end_inset
+
+, то 
+\begin_inset Formula $\rho\left(x,M\right)=0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $x\notin M$
+\end_inset
+
+, то 
+\begin_inset Formula $\rho\left(x,M\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $x\in M$
+\end_inset
+
+, то 
+\begin_inset Formula $y=x$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|y-x\right|\right|=0\sl$
+\end_inset
+
+
+\begin_inset Formula $\un{\inf}{y\in M}\left|\left|x-y\right|\right|=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $x\notin M$
+\end_inset
+
+, докажем от противного, тоесть 
+\begin_inset Formula $\rho\left(x,M\right)=\un{\inf}{y\in M}\left|\left|x-y\right|\right|=0$
+\end_inset
+
+.
+ По основному свойству точных граней:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall\varepsilon_{n}=\df 1n\ \exists y_{n}\in M\ 0\mr\left|\left|x-y_{n}\right|\right|<\df 1n\st0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\ul{n\st\b}\left|\left|y_{n}-x\right|\right|=0\ \sl\ \exists\left\{ y_{n}\right\} \in M:\ul{n\st\b}y_{n}=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ --- предельная точна мнодества 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ --- подпространство, замкнуто, и содержит в себе все предельные точки 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x\in M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2, Рисса о почти перпендикулярности
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $M\in L$
+\end_inset
+
+ --- нетривиальное подпространство ЛНП 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Lemma
+Тогда 
+\begin_inset Formula $\forall\varepsilon\in\left(0;1\right)\ \exists z_{\varepsilon}\in L\backslash M\ \left|\left|z\right|\right|_{\varepsilon}=1\ \rho\left(z_{\varepsilon},M\right)>1-\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ --- произвольный вектор, 
+\begin_inset Formula $x\notin M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+....
+\end_layout
+
+\begin_layout Proof
+По основному свойству точных граней .........
+\end_layout
+
+\begin_layout Section
+Банаховы пространства
+\end_layout
+
+\begin_layout Subsection
+Фундаментальные последовательности
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $L$
+\end_inset
+
+ -- ЛНП 
+\end_layout
+
+\begin_layout Definition
+Последовательность 
+\begin_inset Formula $\left\{ x_{n}\right\} \vkl L$
+\end_inset
+
+ называется фундаментальной, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\left|x_{n+p}-x_{n}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Если последовательность сходится, то она фундаментальна.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\ul{n\st\b}x_{n}=x_{0}\in L\ \sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \left|\left|x_{0}-x_{n}\right|\right|<\df{\varepsilon}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall p\in\N\ n+p>N\ \left|\left|x_{n+p}-x_{0}\right|\right|<\df{\varepsilon}2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|x_{n+p}-x_{n}\right|\right|=\left|\left|\left(x_{n+p}-x_{n}\right)+\left(x_{0}-x_{n}\right)\right|\right|\mr\left|\left|x_{n+p}-x_{0}\right|\right|+\left|\left|x_{n}-x_{0}\right|\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Обратное в общем случае ЛНП не верно.
+\end_layout
+
+\begin_layout Problem*
+Доказать что если последовательность 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ фундаментальна
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \lambda x_{n}\right\} $
+\end_inset
+
+ --- фундаментальна 
+\begin_inset Formula $\forall\lambda\in\R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ --- ограничена
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ фундаментальной проследовательности 
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+ : 
+\begin_inset Formula $\left\{ x_{n}\pm y_{n}\right\} $
+\end_inset
+
+ --- фундаментальна
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Банаховы пространства
+\end_layout
+
+\begin_layout Definition
+ЛНП 
+\begin_inset Formula $L$
+\end_inset
+
+ называется полным или Банаховым, если в нем всякая фундаментальная проследовате
+льность сходится к элементу из 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Обозначение 
+\begin_inset Formula $B$
+\end_inset
+
+-пространство.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\R^{1}:\ \left|\left|x\right|\right|=\left|x\right|$
+\end_inset
+
+ --- полное пространство по Критерию Коши.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+ --- полное, так как сходимость в 
+\begin_inset Formula $\R^{m}$
+\end_inset
+
+ покоординатная, а по каждой координате применяется Критерий Коши.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\left[a,b\right]$
+\end_inset
+
+ --- полное.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ фундаментальна в 
+\begin_inset Formula $C\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем что 
+\begin_inset Formula $\exists f_{0}\left(x\right)\in C\left[a,b\right]:\ \left|\left|f_{n}-f_{0}\right|\right|\ov{\st}{n\st\b}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из фундаментальности 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} :$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\left|f_{n+p}-f_{n}\right|\right|<\df{\varepsilon}2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left|f_{n+p}-f_{n}\right|\right|<\df{\varepsilon}2\dsl\umax{x\in\left[a,b\right]}\left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|<\df{\varepsilon}2\dsl\forall x\in\left[a,b\right]\ \left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|<\df{\varepsilon}2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Зафиксируем произвольный 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ --- числовая последовательность 
+\begin_inset Formula $\sl$
+\end_inset
+
+ по Критерию Коши: 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall x\in\left[a,b\right]\ \exists y_{0}=\ul{n\st\b}f_{n}\left(x\right)=f_{0}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В неравенстве 
+\begin_inset Formula $\umax{x\in\left[a,b\right]}\left|f_{n+p}\left(x\right)-f_{n}\left(x\right)\right|<\df{\varepsilon}2$
+\end_inset
+
+ устремим 
+\begin_inset Formula $p\st\b$
+\end_inset
+
+ и воспользуемся свойством:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\ul{n\st\b}\umax{}f_{n}\left(x\right)=\umax{}\ul{n\st\b}f_{n}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\umax{x\in\left[a,b\right]}\left|f_{0}\left(x\right)-f_{n}\left(x\right)\right|\mr\df{\varepsilon}2<\varepsilon\dsl\left|\left|f_{0}-f_{n}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $\left|\left|f_{n}-f_{0}\right|\right|\ov{\st}{n\st\b}0$
+\end_inset
+
+, тоесть 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} $
+\end_inset
+
+ сходятся в 
+\begin_inset Formula $C\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{p}\left[a,b\right]$
+\end_inset
+
+ полное 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $l_{p}$
+\end_inset
+
+ полное 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Пример неполного ЛНП
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пространство 
+\begin_inset Formula $\widetilde{L_{2}}\left[-1;1\right]$
+\end_inset
+
+ --- множзество непрерывных на 
+\begin_inset Formula $\left[-1;1\right]$
+\end_inset
+
+ функций с нормой 
+\begin_inset Formula $\left|\left|x\right|\right|=\left(\oui{-1}1x^{2}\left(t\right)dt\right)^{\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим последовательность 
+\begin_inset Formula $x_{n}\left(t\right)=\begin{cases}
+-1, & t\in\left[-1;-\df 1n\right]\\
+nt, & t\in\left(-\df 1n;\df 1n\right)\\
+1, & t\in\left[\df 1n;1\right]
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Расммотрим 
+\begin_inset Formula $\left|\left|x_{n+p}-x_{n}\right|\right|^{2}=\oui{-1}1\left(x_{n+p}\left(t\right)-x_{n}\left(t\right)\right)^{2}dt=\oui{-1}{-\frac{1}{n}}+\oui{-\frac{1}{n}}{\frac{1}{n}}\left(x_{n+p}\left(t\right)-x_{n}\left(t\right)\right)dt+\oui{\frac{1}{n}}1\mr4\um\df 2n=\df 8n\ov{\st}{n\st\b}0\ \forall p\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ x_{n}\left(t\right)\right\} $
+\end_inset
+
+ --- фундаментальна
+\end_layout
+
+\begin_layout Standard
+Но так как поточечьно 
+\begin_inset Formula $x_{n}\left(t\right)\st\text{sign}\!$
+\end_inset
+
+на 
+\begin_inset Formula $\left[-1;1\right],\ \notin\widetilde{L_{2}}\left[-1;1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+10.12.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ряды в ЛНП
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $L$
+\end_inset
+
+ --- ЛНП, 
+\begin_inset Formula $\left\{ x_{n}\right\} \in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\ous{i=1}{\b}x_{n}$
+\end_inset
+
+ называется рядом в 
+\begin_inset Formula $L$
+\end_inset
+
+, а 
+\begin_inset Formula $\ous{k=1}n$
+\end_inset
+
+--- 
+\begin_inset Formula $n$
+\end_inset
+
+-ая частичная сумма преведущего ряда
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Ряд 
+\begin_inset Formula $\ous{i=1}{\b}x_{n}$
+\end_inset
+
+ называется сходящимся в 
+\begin_inset Formula $L$
+\end_inset
+
+, если в 
+\begin_inset Formula $L$
+\end_inset
+
+ сходится последовательность частичных сумм 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+.
+ При этом записывают, что 
+\begin_inset Formula $S_{n}\ov{\st}{n\st\b}S\in L$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left|S_{n}-S\right|\right|\ov{\st}{n\st\b}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left|\ous{k=n+1}{\b}x_{k}\right|\right|\ov{\st}{n\st\b}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Критерий Коши
+\end_layout
+
+\end_inset
+
+Для сходимсоти ряда 
+\begin_inset Formula $\ous{i=1}{\b}x_{n}$
+\end_inset
+
+ необходимо в случае, когда 
+\begin_inset Formula $L$
+\end_inset
+
+--- Банахово пространство, и достаточно выполнение условия:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ \forall p\in\N\ \left|\left|\ous{k=n+1}{n+p}x_{k}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Получается сходится к фундаментальной последовательности 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ и оценка:
+\begin_inset Formula 
+\[
+\left|\left|S_{n+p}-S_{n}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+Доказать что есть ряд 
+\begin_inset Formula $\ous{n=1}{\b}x_{n}$
+\end_inset
+
+ сходится, что 
+\begin_inset Formula $\ul{n\st\b}x_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Если сходится числовой ряд 
+\begin_inset Formula $\ous{n=1}{\b}\left|\left|x_{n}\right|\right|$
+\end_inset
+
+, то ряд 
+\begin_inset Formula $\ous{n=1}{\b}x_{n}$
+\end_inset
+
+ называется абсолютно сходящимся.
+\end_layout
+
+\begin_layout Theorem
+В Банаховом пространстве всякий абсолютно сходящийся ряд сходится.
+\end_layout
+
+\begin_layout Proof
+Следует из неравенства треугольника и оценки:
+\begin_inset Formula 
+\[
+\left|\left|\ous{k=n+1}{n+p}x_{k}\right|\right|\mr\ous{k=n+1}{n+p}\left|\left|x_{k}\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+Отсюда следует требуемое, что 
+\begin_inset Formula $\left|\left|\ous{k=n+1}{n+p}x_{k}\right|\right|<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ По Критерию Коши 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Сходимость ряда 
+\begin_inset Formula $\ous{n=1}{\b}x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Принцип вложеных шаров
+\end_layout
+
+\begin_layout Theorem
+Пусть в 
+\begin_inset Formula $B$
+\end_inset
+
+---пространстве задано последовательность замкнутых вложеных шаров 
+\begin_inset Formula $\left\{ \overline{S}_{R_{n}}\left(x_{n}\right)\right\} $
+\end_inset
+
+: 
+\begin_inset Formula $\overline{S}_{R_{1}}\left(x_{1}\right)\supseteq\overline{S}_{R_{2}}\left(x_{2}\right)\supseteq\tr\supseteq\overline{S}_{R_{n}}\left(x_{n}\right)\supseteq\tr$
+\end_inset
+
+ и 
+\begin_inset Formula $\ul{n\st\b}R_{n}=0$
+\end_inset
+
+.
+ Существует и притом единственная точка 
+\begin_inset Formula $x$
+\end_inset
+
+, принадлежащая всем шарам.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим последовательность центров 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ указанных шаров.
+ Так как 
+\begin_inset Formula $x_{n},x_{n+1},\tr,x_{n+p},\tr\vkl\overline{S}_{R_{n}}\left(x_{n}\right)$
+\end_inset
+
+, то получается: 
+\begin_inset Formula $0\mr\left|\left|x_{n}-x_{n+p}\right|\right|\mr R_{n}$
+\end_inset
+
+.
+ Устремим в этом неравенстве 
+\begin_inset Formula $n\st\b$
+\end_inset
+
+.
+\begin_inset Formula $0\mr0\mr0$
+\end_inset
+
+.
+ Последовательность 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ фундаментальна в 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ --- полное пространство, последовательность 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ сходится к 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ --- придельная точка последовательности 
+\begin_inset Formula $\left\{ x_{n}\right\} \vkl\overline{S}_{R_{n}}\left(x_{n}\right)$
+\end_inset
+
+ --- замкнутое множество.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\overline{S}_{R_{n}}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\N$
+\end_inset
+
+.
+ Существование 
+\begin_inset Formula $x$
+\end_inset
+
+ доказано.
+ 
+\end_layout
+
+\begin_layout Proof
+Единственность: Пусть 
+\begin_inset Formula $\exists y\in B$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\N$
+\end_inset
+
+ 
+\begin_inset Formula $y\in\overline{S}_{R_{n}}\left(x_{n}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $0\mr\left|\left|x-y\right|\right|=\left|\left|\left(x-x_{n}\right)+\left(x_{n}-y\right)\right|\right|\mr\left|\left|x_{n}-x\right|\right|+\left|\left|x_{n}-y\right|\right|\mr R_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|x-y\right|\right|=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ называется нигде не плотным в ЛНП 
+\begin_inset Formula $L$
+\end_inset
+
+, если в каждом шаре 
+\begin_inset Formula $S\vkl L$
+\end_inset
+
+ можно указать шар 
+\begin_inset Formula $\tilde{S}\vkl S$
+\end_inset
+
+, не содержащий точек из 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\forall S\ \exists\tilde{S}\vkl S\ \tilde{S}\cap M=\textrm{Ø}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M=\left\{ n\right\} =\N,\ L=\R^{1}$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ --- нигде не плотное
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M=\left\{ \df 1n\right\} ,\ L=\R^{1}$
+\end_inset
+
+
+\begin_inset Formula $M$
+\end_inset
+
+ --- все равно нигде не плотное
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M=\left[0;1\right]\cap Q,\ L=\R^{1}$
+\end_inset
+
+ а тут 
+\begin_inset Formula $M$
+\end_inset
+
+ плотное где то....
+\end_layout
+
+\end_deeper
+\begin_layout Remark
+В определении нигде не плотного множества можно рассматривать замкнутые
+ шары.
+ Определение от этого не изменится.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Бэра
+\end_layout
+
+\end_inset
+
+Всякая 
+\begin_inset Formula $B$
+\end_inset
+
+---пространтсво нельзя представить в виде счетного обьединения нигде не
+ плотных множетв.
+\end_layout
+
+\begin_layout Proof
+От противного.
+ Пусть возможно вредставление: 
+\begin_inset Formula $B=M_{1}\cup M_{2}\cup M_{3}\cup\tr\cup M_{n}\cup\tr$
+\end_inset
+
+, где 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ нигде не плотно в 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $i\in\N$
+\end_inset
+
+.
+ Рассмотрим произвольный замкнутый шар.
+ 
+\begin_inset Formula $\overline{S}_{R_{0}}\left(x_{0}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ нигде не плотно в пространстве 
+\begin_inset Formula $B$
+\end_inset
+
+, то 
+\begin_inset Formula $\exists\overline{S}_{R_{1}}\left(x_{1}\right)\vkl\overline{S}_{R_{0}}\left(x_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $R_{1}<R_{0}$
+\end_inset
+
+ такой что в нем нет не одной точки с множества 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ нигде не плотно, то 
+\begin_inset Formula $\exists\overline{S}_{R_{2}}\left(x_{2}\right)\vkl\overline{S}_{R_{1}}\left(x_{1}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $R_{2}<R_{1}$
+\end_inset
+
+ не содержащих точек из 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\ul{n\st\b}R\_n=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Принцип вложеных шаров 
+\begin_inset Formula $\sl$
+\end_inset
+
+
+\begin_inset Formula $\exists x\in\overline{S}_{R_{n}}\ \forall n\in\N$
+\end_inset
+
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ не пренадлежит 
+\begin_inset Formula $B$
+\end_inset
+
+, но так как 
+\begin_inset Formula $\exists\ul{n\st\b}x_{n}=x$
+\end_inset
+
+, 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+-банахово 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Противоречие.
+\end_layout
+
+\begin_layout Section
+Компактные множества в ЛНП
+\end_layout
+
+\begin_layout Subsection
+Определение, основные свойства
+\end_layout
+
+\begin_layout Standard
+Для случая 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ было доказано, что всякое ограниченное бесконечное множество точек имеет
+ хротябы одну предельную точку.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+ --- ЛНП, называется компактным, если из всякого бесконечного множества
+ из 
+\begin_inset Formula $M$
+\end_inset
+
+ можно извлечь сходящуюся в 
+\begin_inset Formula $M$
+\end_inset
+
+ подпоследовательность.
+ (Из всякой подпоследовательности 
+\begin_inset Formula $M$
+\end_inset
+
+ можно извлечь сходящуюся к 
+\begin_inset Formula $M$
+\end_inset
+
+ подпоследовательность)
+\end_layout
+
+\begin_layout Subsection
+Свойства компактных множеств
+\end_layout
+
+\begin_layout Enumerate
+Всякое компактное множество ограничено.
+\end_layout
+
+\begin_layout Enumerate
+Всякое компактное множество обязательно замкнуто.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ называется предкомпактным, если из любой последоватеьнсоти точек 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+можно извлечь фундаментальную подноследовательность.
+\end_layout
+
+\begin_layout Definition
+Очевидидно что, так как из сходимости следует фундаментальность, то всякое
+ компактное множество является конечно же и предкомпактным.
+ А обратное не всегда верно.
+\end_layout
+
+\begin_layout Theorem
+Предкомпактное множество 
+\begin_inset Formula $M\vkl B$
+\end_inset
+
+ компактно, тогда и только тогда, когда 
+\begin_inset Formula $M$
+\end_inset
+
+ --- замкнуто.
+\end_layout
+
+\begin_layout Standard
+Всякое ли огринененое замкнутое мнжество является компактным? В конечномерном
+ пространстве это так (Критерий Коши) Рассмотрим бесконечно-мерное пространство
+ 
+\begin_inset Formula $l_{2}=\left\{ x=\left(x_{1},x_{2},\tr,x_{n},\tr\right)|\left|\left|x\right|\right|_{l_{2}}=\left(\ous{i=1}{\b}x_{i}^{2}\right)^{\frac{1}{2}}\right\} $
+\end_inset
+
+ множество 
+\begin_inset Formula $M=\overline{S}_{1}\left(0\right)=\left\{ x\in l_{2}|\left|\left|x\right|\right|\mr1\right\} $
+\end_inset
+
+.
+ Рассмотрим последовательность элементов вида 
+\begin_inset Formula $e_{1}=\left(1,0,0,0,0,\tr\right)$
+\end_inset
+
+, 
+\begin_inset Formula $e_{2}=\left(0,1,0,0,0,\tr\right),\tr,e_{n}=\left(0,0,0,\tr,0,\hat{1},0,\tr\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|\left|e\right|\right|=1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left\{ e_{n}\right\} \vkl\overline{S}_{1}\left(0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\left|e_{n}-e_{m}\right|\right| & = & \left|\left|0,\tr,1,\tr,-1,\tr0,\tr\right|\right|=\\
+ & = & \sqrt{2}
+\end{eqnarray*}
+
+\end_inset
+
+ Не стремится к нулю, следовательно, никакая последовательность не является
+ фунаментальной и сходящейся.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+17.12.2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Критерий Аусдорфа
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $M\in B$
+\end_inset
+
+.
+ Множество 
+\begin_inset Formula $M_{\varepsilon}\vkl B$
+\end_inset
+
+ называется 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-сетью множества 
+\begin_inset Formula $M$
+\end_inset
+
+ (
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+), если 
+\begin_inset Formula $\forall x\in M\ \exists y\in M_{\varepsilon}\ \left|\left|x-y\right|\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Критерий Хаусдерфа
+\end_layout
+
+\end_inset
+
+Множество 
+\begin_inset Formula $M\vkl B$
+\end_inset
+
+ предкомпактно тогда и только тогда, когда 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ существует конечная 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-сеть 
+\begin_inset Formula $M_{\varepsilon}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказываем необходимость.
+ Пусть 
+\begin_inset Formula $M\vkl B$
+\end_inset
+
+ предкомпактное множество.
+ Возьмем произвольное 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ и докажем что существует конечная 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-сеть 
+\begin_inset Formula $M_{\varepsilon}$
+\end_inset
+
+.
+ Возьмем произвольный элемент 
+\begin_inset Formula $x_{1}\in M$
+\end_inset
+
+ и рассмотрим множество 
+\begin_inset Formula $S_{\varepsilon}\left(x_{1}\right)$
+\end_inset
+
+.
+ Если окажество что 
+\begin_inset Formula $\forall x\in M\ \left|\left|x-x_{1}\right|\right|<\varepsilon\ \left(x\in S_{\varepsilon}\left(x_{1}\right)\right)$
+\end_inset
+
+, то в этом случае 
+\begin_inset Formula $M_{\varepsilon}=\left\{ x_{1}\right\} $
+\end_inset
+
+ --- искомая конечная сеть, в противном случае 
+\begin_inset Formula $\forall x_{2}\in M\ \left|\left|x_{1}-x_{2}\right|\right|\br\varepsilon$
+\end_inset
+
+.
+ Тогда либо 
+\begin_inset Formula $\forall x\in M\ \left|\left|x_{1}-x\right|\right|<\varepsilon$
+\end_inset
+
+ или 
+\begin_inset Formula $\left|\left|x_{2}-x\right|\right|<\varepsilon$
+\end_inset
+
+ и тогда 
+\begin_inset Formula $M_{\varepsilon}=\left\{ x_{1},x_{2}\right\} $
+\end_inset
+
+ --- искомая конечная 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-сеть, или тогда 
+\begin_inset Formula $\exists x_{3}\in M\ \left|\left|x_{1}-x_{3}\right|\right|\br\varepsilon$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\left|x_{2}-x_{3}\right|\right|\br\varepsilon$
+\end_inset
+
+.
+ Продолжаем процесс, получим получится 2 возможных исхода:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+На некотором шаге получится 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-сеть 
+\begin_inset Formula $M_{\varepsilon}=\left\{ x_{1},\tr,x_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Процесс продолжается бесконечно.
+ 
+\begin_inset Formula $x_{1},\tr,x_{n},\tr\vkl M_{\varepsilon}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|\left|x_{m}-x_{n}\right|\right|\br\varepsilon\ \forall n,m\in\N$
+\end_inset
+
+.
+ Второй случай невозможен.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Proof
+Докажем достаточность.
+ Пусть 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ можно построитьконечную 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-сеть 
+\begin_inset Formula $M_{\varepsilon}$
+\end_inset
+
+.
+ Выберем последовательно значения 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, таким что 
+\begin_inset Formula $\ul{n\st\b}=0$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\forall\varepsilon_{n}$
+\end_inset
+
+ существует конечная сеть 
+\begin_inset Formula $M_{\varepsilon_{n}}=\left\{ x_{1}^{\left(n\right)},\tr,x_{k_{n}}^{\left(n\right)}\right\} $
+\end_inset
+
+ из 
+\begin_inset Formula $k_{n}$
+\end_inset
+
+ элементов.
+ Выберем произвольное бесконечное множество точек 
+\begin_inset Formula $T\vkl M$
+\end_inset
+
+.
+ Около каждой точки 
+\begin_inset Formula $x_{1}^{\left(1\right)},x_{2}^{\left(1\right)},\tr,x_{k}^{\left(1\right)}\in M_{\varepsilon_{1}}$
+\end_inset
+
+ опишем шар радиуса 
+\begin_inset Formula $\varepsilon_{1}$
+\end_inset
+
+, тогда так как число число шаров конечно, то хотябы в один из них попадает
+ бесконечное подмножество точек из 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Обозначим это подмножество 
+\begin_inset Formula $T_{1}\vkl T$
+\end_inset
+
+.
+ Около каждой точки 
+\begin_inset Formula $x_{1}^{\left(2\right)},x_{2}^{\left(2\right)},\tr,x_{k_{2}}^{\left(2\right)}\in M_{\varepsilon_{2}}$
+\end_inset
+
+ опишим шары радиуса 
+\begin_inset Formula $\varepsilon_{2}$
+\end_inset
+
+.
+ И хотябы один из этих шаров содержит бесконечное подмножество 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ множества 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+.
+ И так далее процесс продолжается...
+ Продалжая процесс, получим 
+\begin_inset Formula $T\subset T_{1}\subset T_{2}\subset\tr\subset T_{n}\subset\tr$
+\end_inset
+
+, причем 
+\begin_inset Formula $T_{n}$
+\end_inset
+
+ содержится в замкнутом шаре 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x,y\in T_{n}\ \left|\left|x-y\right|\right|\mr2\varepsilon_{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Возьмем:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\xi_{1}\in T_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\xi_{2}\in T_{2},\ \xi_{2}\nr\xi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\xi_{3}\in T_{3},\ \xi_{3}\nr\xi_{1},\ \xi_{3}\nr\xi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+И так далее...
+ Получим последовательность точек.
+\end_layout
+
+\begin_layout Proof
+Она фундоментальна так как:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists N=N\left(\varepsilon\right)\ \forall n\br N\ 0<2\varepsilon_{n}<\varepsilon\ \sl\ \forall p\in\N\ \left|\left|\xi_{n+p}-\xi_{n}\right|\right|\mr2\varepsilon_{n}<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Компактность и конечномерность 
+\end_layout
+
+\begin_layout Definition
+Линейное нормированое пространство 
+\begin_inset Formula $L$
+\end_inset
+
+ называется локально компактным, если в нем всякое ограниченое замкнутое
+ множество компактно.
+\end_layout
+
+\begin_layout Theorem
+Линейное нормированое пространство 
+\begin_inset Formula $L$
+\end_inset
+
+ локально компактно, тогда и только тогда, когда 
+\begin_inset Formula $L$
+\end_inset
+
+ конечномерно.
+\end_layout
+
+\begin_layout Proof
+Докажем необходимость.
+ Пусть в 
+\begin_inset Formula $L$
+\end_inset
+
+ всякое ограничено е замкнутое множество компактно.
+ Возьмем в пространстве 
+\begin_inset Formula $L$
+\end_inset
+
+ произвольный элемент 
+\begin_inset Formula $x_{1},\ \left|\left|x_{1}\right|\right|=1$
+\end_inset
+
+.
+ Обозначим через 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ пространство, натянутое на 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+.
+ (Это множество векторов 
+\begin_inset Formula $\alpha x_{1},\ \alpha\in\R$
+\end_inset
+
+).
+ Если 
+\begin_inset Formula $L=L_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $L$
+\end_inset
+
+ - одномерное и теорема доказана, а если 
+\begin_inset Formula $L\nr L_{1}$
+\end_inset
+
+, то по лемме Рисса о почти перпендикулярее:
+\begin_inset Formula 
+\[
+\forall\varepsilon\in\left(0;1\right)\leftrightarrow\varepsilon=\df 12\ \forall x_{2}\in L\backslash L_{1}\ \left|\left|x_{2}\right|\right|=1\ \left|\left|x_{2}-x_{1}\right|\right|\br1-\varepsilon=\df 12
+\]
+
+\end_inset
+
+Обозначим 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+- подмножество.
+ Если 
+\begin_inset Formula $L_{2}=L_{1}$
+\end_inset
+
+, по теореме док..
+\end_layout
+
+\begin_layout Proof
+Продолжаем процесс, у нас могут быть 2 возможных исхода.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+На 
+\begin_inset Formula $n$
+\end_inset
+
+-ом шаге 
+\begin_inset Formula $L_{n}=L$
+\end_inset
+
+.
+ теорема доказана.
+\end_layout
+
+\begin_layout Enumerate
+Получим последовательность 
+\begin_inset Formula $x_{1},x_{2},\tr,x_{n},\tr$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\left|x_{n}\right|\right|=1$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\N$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|\left|x_{n}-x_{m}\right|\right|\br\df 12\ \forall n,m\in\N$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+то 
+\begin_inset Formula $\overline{S_{1}}\left(0\right)$
+\end_inset
+
+ --- замкнуто ограничено....
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Proof
+Докажем достаточность.
+ Пусть 
+\begin_inset Formula $L$
+\end_inset
+
+ - конечномерно.
+ 
+\begin_inset Formula $\sl$
+\end_inset
+
+ Данное пространство изоморфно 
+\begin_inset Formula $\R^{n}$
+\end_inset
+
+ .
+ Расмотрим в 
+\begin_inset Formula $L$
+\end_inset
+
+ ограниченое замкнутое множество 
+\begin_inset Formula $M$
+\end_inset
+
+ --- ему соответствует так же замкнутое ограниченое множество 
+\begin_inset Formula $\widetilde{M}\in\R^{n}$
+\end_inset
+
+ Так как 
+\begin_inset Formula $\widetilde{M}$
+\end_inset
+
+ --- компактно (Теорема Больцана-Вейштрасса в 
+\begin_inset Formula $\R^{n}$
+\end_inset
+
+) 
+\begin_inset Formula $\sl$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ \left|\left|\tilde{x_{n}}-\tilde{x_{0}}\right|\right|\st0\dsl\left|\left|x_{n}-x_{0}\right|\right|_{L}\st0\right\} \sl$
+\end_inset
+
+ 
+\begin_inset Formula $M\vkl L$
+\end_inset
+
+ --- компактно.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 1.
+ 
+\emph default
+В бесконечно мерном пространстве всякий замкнутый шам не является компактным.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Следствие 2.
+
+\emph default
+ В бесконечномерном просранстве компактное множество нигде не плотно.
+\end_layout
+
+\begin_layout Subsection
+Предкомпактность в 
+\begin_inset Formula $C\left[a;b\right].$
+\end_inset
+
+ Критерий Арцеля.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $M=\left\{ \varphi\left(x\right)\right\} \vkl C\left[a;b\right]$
+\end_inset
+
+ --- множество непрерывных на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ функций
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $M$
+\end_inset
+
+ называется равномерно ограниченым, если 
+\begin_inset Formula $\exists K>0\ \forall\varphi\left(x\right)\in M\ \forall x\in\left[a;b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Definition
+Функции 
+\begin_inset Formula $M=\left\{ \varphi\left(x\right)\right\} $
+\end_inset
+
+ называются равностепенно непрерывными на 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\ \exists\delta\left(\varepsilon\right)>0\ \forall x',x''\in\left[a;b\right]\ \forall\varphi\left(x\right)\in M\ \left|\left|x'-x''\right|\right|<\delta\ \sl\ \left|\left|\varphi\left(x'\right)-\varphi\left(x''\right)\right|\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
