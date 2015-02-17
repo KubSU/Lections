@@ -1,0 +1,999 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-starred
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\boxbgcolor #55ff00
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sl}{\Longrightarrow}
+{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddsl}{\overset{def}{\Longleftrightarrow}}
+{\overset{def}{\Longleftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dsl}{\Longleftrightarrow}
+{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\ldots}
+{\ldots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\nr}{\neq}
+{\neq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{\cdot}
+{\cdot}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{'}
+{'}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tg}{\text{tg}}
+{\text{tg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tan}{\tg}
+{\tg}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arctg}{\text{arctg}}
+{\text{arctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arcctg}{\text{arcctg}}
+{\text{arcctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\text{Q}}
+{\text{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\C}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sh}{\text{sh}}
+{\text{sh}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\text{ch}}
+{\text{ch}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\th}{\text{th}}
+{\text{th}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\st}{\to}
+{\to}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sinx}{\sin\left(x\right)}
+{\sin\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cosx}{\cos\left(x\right)}
+{\cos\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\fx}{f\left(x\right)}
+{f\left(x\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}[2]{\underset{#2}{#1}}
+{\underset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ov}[2]{\overset{#2}{#1}}
+{\overset{#2}{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ous}[2]{\sum\limits _{#1}^{#2}}
+{\sum\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ul}[1]{\lim\limits _{#1}}
+{\lim\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umax}[1]{\max\limits _{#1}}
+{\max\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\umin}[1]{\min\limits _{#1}}
+{\min\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oui}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oudi}[2]{\iint\limits _{#1}^{#2}}
+{\iint\limits _{#1}^{#2}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ppr}{^{\prime\prime}}
+{^{\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pppr}{^{\prime\prime\prime}}
+{^{\prime\prime\prime}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\br}{\geq}
+{\geq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mr}{\leq}
+{\leq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\oiu}[2]{\int\limits _{#1}^{#2}}
+{\int\limits _{#1}^{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+{\dfrac{#1}{#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tl}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\D}{\Delta}
+{\Delta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\b}{\infty}
+{\infty}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vkl}{\subset}
+{\subset}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\v}[1]{\overrightarrow{#1}}
+{\overrightarrow{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\mom}{\text{mom}}
+{\text{mom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\x}{\times}
+{\times}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\DD}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dd}{\partial}
+{\partial}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\grad}{\text{grad}}
+{\text{grad}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ctg}{\text{ctg}}
+{\text{ctg}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtr}{\vdots}
+{\vdots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ntr}{\ddots}
+{\ddots}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ob}{\cup}
+{\cup}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dint}{\iint}
+{\iint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pro}{\text{Пр}}
+{\text{Пр}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ui}[1]{\int\limits _{#1}}
+{\int\limits _{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\then}{\Rightarrow}
+{\Rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\m}{\um}
+{\um}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ddf}[2]{\df{\dd#1}{\dd#2}}
+{\df{\dd#1}{\dd#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prp}{\approx}
+{\approx}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rr}{\equiv}
+{\equiv}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Численные методы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+17.02.2015
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Численное интегрирование
+\end_layout
+
+\begin_layout Subsection
+Формула прямоугольников
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I\rr\oui abf\left(x\right)dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\oui abf\left(x\right)dx\prp f\left(\df{a+b}2\right)\left(b-a\right)\label{eq:1_1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oui{-\frac{h}{2}}{\frac{h}{2}}f\left(x\right)dx\prp f\left(0\right)\um h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найдем погрешность.
+\end_layout
+
+\begin_layout Standard
+Обозначим через 
+\begin_inset Formula $F\left(x\right)=\oui 0xf\left(t\right)dt$
+\end_inset
+
+ и будем предпологать, что функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ дважды непрерывно дифференцируема при 
+\begin_inset Formula $x\in\left[-\df h2;\df h2\right]$
+\end_inset
+
+.
+ Заметим, что 
+\begin_inset Formula $F\left(0\right)\rr0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F\pr\left(0\right)=f\left(0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F\ppr\left(0\right)=f\pr\left(0\right)$
+\end_inset
+
+.
+ и так далее.
+ 
+\end_layout
+
+\begin_layout Standard
+Воспользуемся формулой Тейлора с остаточным членом в формуле Лагранжа.
+ Тогда мы сможем записать: 
+\begin_inset Formula 
+\begin{eqnarray*}
+F\left(\pm\df h2\right) & = & F\left(0\right)\pm F\pr\left(0\right)\df h2+\df{F\ppr\left(0\right)}{2!}\df{h^{2}}4\pm\df{F\pppr\left(\xi_{\pm}\right)}{3!}\df{h^{3}}8=\\
+ & = & \pm f\left(0\right)\df h2+f\pr\left(0\right)\df{h^{2}}8\pm\df{f\ppr\left(\xi_{\pm}\right)}{48}h^{3}
+\end{eqnarray*}
+
+\end_inset
+
+ где 
+\begin_inset Formula $\xi_{+}\in\left[0;\df h2\right]$
+\end_inset
+
+,а 
+\begin_inset Formula $\xi_{-}\in\left[-\df h2;0\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\oui{-\frac{h}{2}}{\frac{h}{2}}f\left(x\right)dx & = & F\left(\df h2\right)-F\left(-\df h2\right)=\\
+ & = & f\left(0\right)\um h+\df{h^{3}}{24}\df{f\ppr\left(\xi_{-}\right)+f\ppr\left(\xi_{+}\right)}2
+\end{eqnarray*}
+
+\end_inset
+
+Поскольку 
+\begin_inset Formula $f\ppr\left(x\right)$
+\end_inset
+
+ непрерывная функция, то найдется 
+\begin_inset Formula $\xi\in\left[-\df h2;\df h2\right]$
+\end_inset
+
+, что 
+\begin_inset Formula $\df{f\ppr\left(\xi_{-}\right)+f\ppr\left(\xi_{+}\right)}2=f\ppr\left(\xi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Мы получаем, что:
+\begin_inset Formula 
+\begin{equation}
+\oui{-\frac{h}{2}}{\frac{h}{2}}f\left(x\right)dx=f\left(0\right)h+\df{h^{3}}{24}f\ppr\left(\xi\right)\label{eq:1_2}
+\end{equation}
+
+\end_inset
+
+ Таким образом заменяя интеграл по формуле треугольника мы допускаем вод
+ такую погрешность.
+ Иногра эту формулу называют формулой центральных прямоугольников.
+ НАряду с этой формулой рассматривают формулы левых и правых прямоугольников.
+ 
+\end_layout
+
+\begin_layout Standard
+В дальнейшем нам понадобится обобщенная теорема о среднем, из мат.
+ анализа.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $f,g\in\C\left[a;b\right]$
+\end_inset
+
+, причем 
+\begin_inset Formula $g\left(x\right)\br0,\ x\in\left[a,b\right]$
+\end_inset
+
+, тогда найдется точка 
+\begin_inset Formula $\xi\in\left[a;b\right]$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+\oui abf\left(x\right)g\left(x\right)dx=f\left(\xi\right)\oui abg\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Формула трапеций
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\oui abf\left(x\right)dx\prp\df{f\left(a\right)+f\left(b\right)}2\left(b-a\right)\label{eq:1_3}
+\end{equation}
+
+\end_inset
+
+Какаяже тут погрешность.
+\end_layout
+
+\begin_layout Standard
+Будем рассматривать для удобства отрезок 
+\begin_inset Formula $\left[0;h\right]$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\oui 0hf\left(x\right)dx\prp\df{f\left(h\right)+f\left(0\right)}2h
+\]
+
+\end_inset
+
+Для получения остаточного члена и оценки погрешности воспользуемся формулой
+ Тейлора с остаточным членом в интегральной форме.
+\begin_inset Formula 
+\begin{equation}
+f\left(h\right)=f\left(0\right)+f\pr\left(h\right)+\oui 0h\left(h-t\right)f\ppr\left(t\right)dt\label{eq:1_4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(x\right)=\oui 0xf\left(t\right)dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+F\left(h\right) & = & F\left(0\right)+F\pr\left(0\right)h+F\ppr\left(0\right)\df{h^{2}}2+\df 12\oui 0h\left(h-t\right)^{2}F\ppr\left(t\right)dt=\nonumber \\
+ & = & f\left(0\right)h+f\pr\left(0\right)\df{h^{2}}2+\df 12\oui 0h\left(h-t\right)^{2}f\ppr\left(t\right)dt\label{eq:1_5}
+\end{eqnarray}
+
+\end_inset
+
+Тогда из (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_4"
+
+\end_inset
+
+) можем получить, что 
+\begin_inset Formula 
+\[
+f\left(0\right)\df h2=\df h2f\left(h\right)-f\pr\left(0\right)\df{h^{2}}2-\df h2\oui 0h\left(h-t\right)f\ppr\left(t\right)dt
+\]
+
+\end_inset
+
+Подставим в (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_5"
+
+\end_inset
+
+), получим:
+\begin_inset Formula 
+\begin{eqnarray}
+F\left(h\right) & = & f\left(0\right)\df h2+\df h2f\left(h\right)-f\pr\left(0\right)\df{h^{2}}2-\df h2\oui 0h\left(h-t\right)f\ppr\left(t\right)dt+f\pr\left(0\right)\df{h^{2}}2+\df 12\oui 0h\left(h-t\right)^{2}f\ppr\left(t\right)dt=\nonumber \\
+ & = & \df{f\left(0\right)+f\left(h\right)}2h-\df 12\oui 0h\left(h^{2}-ht-h^{2}+2ht-t^{2}\right)f\ppr\left(t\right)dt=\nonumber \\
+ & = & \df{f\left(0\right)+f\left(h\right)}2h-\df 12\oui 0h\left(ht-t^{2}\right)f\ppr\left(t\right)dt=\nonumber \\
+ & = & \df{f\left(0\right)+f\left(h\right)}2h-\df 12\oui 0ht\left(h-t\right)f\ppr\left(t\right)dt=\nonumber \\
+ & = & \left\{ \begin{array}{c}
+t\left(h-t\right)\br0,\ t\in\left[0;h\right]\\
+\text{В силу обощенной теоремы о среднем.}
+\end{array}\right\} =\nonumber \\
+ & = & \df{f\left(0\right)+f\left(h\right)}2h-\df{f\ppr\left(\xi\right)}2\oui 0h\left(ft-t^{2}\right)dt=\nonumber \\
+ & = & \left\{ \begin{array}{c}
+\oui 0h\left(ft-t^{2}\right)dt=\left(h\df{t^{2}}2-\df{t^{3}}3\right)|_{0}^{h}=\\
+=\df{h^{3}}2-\df{h^{3}}3=\df{h^{3}}6
+\end{array}\right\} =\nonumber \\
+ & = & \df{f\left(0\right)+f\left(h\right)}2h-\df{h^{3}}{12}f\ppr\left(\xi\right),\ \xi\in\left[0;h\right]\label{eq:1_6}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Формула Симсона
+\end_layout
+
+\begin_layout Standard
+НАм нужно вычислить:
+\begin_inset Formula 
+\[
+\oui{-h}hf\left(x\right)dx,\ x\in\left[-h;h\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем предпологать что подинтегральная функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ четырежды непрерывно жифференцируема.
+ Заменим подинтегральную функцию 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ параболой, проходящей через точки: 
+\begin_inset Formula $\left(-h;f\left(-h\right)\right),$
+\end_inset
+
+ 
+\begin_inset Formula $\left(0;f\left(0\right)\right),$
+\end_inset
+
+ 
+\begin_inset Formula $\left(h;f\left(h\right)\right)$
+\end_inset
+
+.
+ Понятно что такая парабола строится однозначно.
+\begin_inset Formula 
+\[
+f\left(x\right)\prp y\left(x\right)=f\left(0\right)+\df{f\left(h\right)-f\left(-h\right)}{2h}x+\df{f\left(-h\right)-2f\left(0\right)+f\left(h\right)}{2h^{2}}x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как можно получить эту формулу?
+\end_layout
+
+\begin_layout Enumerate
+Можно подставить 3 точки в 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+ и решить систему уравнений.
+\end_layout
+
+\begin_layout Enumerate
+Разложить 
+\begin_inset Formula $f=ax^{2}+bx+c$
+\end_inset
+
+ в ряд Тейлора 
+\begin_inset Formula $f=f\left(0\right)+f\pr\left(0\right)x+\df{f\ppr}2x^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\oui{-h}hf\left(x\right)dx & \prp & \oui{-h}hy\left(x\right)dx=\nonumber \\
+ & = & f\left(0\right)2h+\df{f\left(-h\right)-2f\left(0\right)+f\left(h\right)}{2h^{2}}\df 23h^{3}=\label{eq:1_7}\\
+ & = & \df h3\left(f\left(-h\right)+4f\left(0\right)+f\left(h\right)\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выпишим оценку погрешности(получается аналогично: нужно раскладывать 
+\begin_inset Formula $F\left(h\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $f\left(h\right)$
+\end_inset
+
+, все аналогично с преведущими вычислениями, но тут нада выписывать слогамые
+ до 4й производных):
+\begin_inset Formula 
+\begin{equation}
+\oui{-h}hf\left(x\right)dx=\df h3\left(f\left(-h\right)+4f\left(0\right)+f\left(h\right)\right)-\df{h^{5}}{90}f^{IV}\left(\xi\right),\ \xi\in\left[-h,h\right]\label{eq:1_8}
+\end{equation}
+
+\end_inset
+
+Тут четвертая степерь, поэтому квадратурные формулы прямоугольников и трапеций
+ точны для многочленов первой степени, а формула Симсона точна для многочленов
+ 3й степени.
+\end_layout
+
+\begin_layout Standard
+Формулы (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_3"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_7"
+
+\end_inset
+
+) будем называть каноническими.
+\end_layout
+
+\begin_layout Subsection
+Составные формулы
+\end_layout
+
+\begin_layout Standard
+На практике для приближенного вычисления интегралов обычно отрезок 
+\begin_inset Formula $\left[a;b\right]$
+\end_inset
+
+ разбивают на 
+\begin_inset Formula $N$
+\end_inset
+
+ частей и на каждом из них применяют каноническую квадратурную формулу и
+ суммируют полученные результаты.
+ Построенные таким образом квадратурные формулы называют составными.
+\end_layout
+
+\begin_layout Standard
+Получим составные формулы.
+\end_layout
+
+\begin_layout Standard
+Вычислим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oui abf\left(x\right)dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h=\df{b-a}N,\ x_{i}=a+ih,\ i=\overline{0,N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oui abf\left(x\right)dx=\ous{i=0}{N-1}\oui{x_{i}}{x_{i+1}}f\left(x\right)dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oui{x_{i}}{x_{i+1}}f\left(x\right)dx=hf\left(x_{i}+\df h2\right)+\df{h^{3}}{24}f\ppr\left(\xi_{i}\right),\ \xi_{i}\in\left[x_{i};x_{i+1}\right]
+\]
+
+\end_inset
+
+Тогда суммируя мы получаем, что 
+\begin_inset Formula 
+\begin{eqnarray}
+\oui abf\left(x\right)dx & = & h\ous{i=0}{N-1}f\left(x_{i}+\df h2\right)+\df{h^{3}}{24}\ous{i=0}{N-1}f\ppr\left(\xi_{i}\right)=\nonumber \\
+ & = & \left\{ \ous{i=0}{N-1}f\ppr\left(\xi_{i}\right)=N\df{f\ppr\left(\xi_{0}\right)+\tr+f\ppr\left(\xi_{N-1}\right)}N=\df{b-a}hf\ppr\left(\xi\right),\ \xi\in\left[a,b\right]\right\} =\label{eq:1_9}\\
+ & = & h\left(f\left(a+\df h2\right)+f\left(a+\df{3h}2\right)+\tr+f\left(b-\df h2\right)\right)+\df{h^{2}\left(b-a\right)}{24}f\ppr\left(\xi\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(f\left(a+\df h2\right)+f\left(a+\df{3h}2\right)+\tr+f\left(b-\df h2\right)\right)=I_{\text{прямоугольник}}^{h}
+\]
+
+\end_inset
+
+Аналогично получим составлую формулу трапеций.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oui{x_{i}}{x_{i+1}}f\left(x\right)dx=\df{f\left(x_{i}\right)+f\left(x_{i+1}\right)}2h-\df{h^{3}}{12}f\ppr\left(\xi_{i}\right),\ \xi_{i}\in\left[x_{i};x_{i+1}\right]
+\]
+
+\end_inset
+
+ Проделывая тоже самое, получим:
+\begin_inset Formula 
+\begin{eqnarray}
+\oui abf\left(x\right)dx & = & h\ous{i=0}{N-1}\df{f\left(x_{i}\right)+f\left(x_{i+1}\right)}2-\df{h^{2}}{12}\left(b-a\right)f\ppr\left(\xi\right),\ \xi\in\left[a;b\right]=\nonumber \\
+ & = & h\left(\df{f\left(a\right)+f\left(b\right)}2+f\left(a+h\right)+\tr+f\left(a+\left(N-1\right)h\right)\right)-\df{h^{2}}{12}\left(b-a\right)f\ppr\left(\xi\right),\ \xi\in\left[a;b\right]\label{eq:1_10}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(\df{f\left(a\right)+f\left(b\right)}2+f\left(a+h\right)+\tr+f\left(a+\left(N-1\right)h\right)\right)=I_{\text{треугольник}}^{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
